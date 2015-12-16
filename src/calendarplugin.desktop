@@ -1,8 +1,20 @@
 [Desktop Entry]
 Name=Calendar Plugin Interface
+Name[nl]=Interface van agendaplug-in
+Name[pt]=Interface de 'Plugin' do Calendário
+Name[pt_BR]=Interface do Plugin de Calendário
+Name[sv]=Insticksprogram för kalendergränssnitt
+Name[uk]=Інтерфейс додатка календаря
+Name[x-test]=xxCalendar Plugin Interfacexx
 Type=ServiceType
 X-KDE-ServiceType=Calendar/Plugin
 Comment=Calendar Plugin
+Comment[nl]=Agendaplug-in
+Comment[pt]='Plugin' de Calendário
+Comment[pt_BR]=Plugin de Calendário
+Comment[sv]=Insticksprogram för kalender
+Comment[uk]=Додаток календаря
+Comment[x-test]=xxCalendar Pluginxx
 
 [PropertyDef::X-KDE-KOrganizer-HasSettings]
 Type=bool

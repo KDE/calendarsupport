@@ -1,7 +1,19 @@
 [Desktop Entry]
 X-KDE-Library=korg_listprint
 Name=List Print Style
+Name[nl]=Printstijl voor lijsten
+Name[pt]=Estilo de Impressão em Lista
+Name[pt_BR]=Estilo de impressão em lista
+Name[sv]=List-utskriftsstil
+Name[uk]=Стиль друку списком
+Name[x-test]=xxList Print Stylexx
 Comment=This plugin allows you to print out events and to-dos in list form.
+Comment[nl]=Deze plug-in maakt het mogelijk om evenementen en taken in lijstvorm uit te printen.
+Comment[pt]=Este 'plugin' permite-lhe imprimir os eventos e itens por-fazer sob a forma de uma lista.
+Comment[pt_BR]=Este plugin permite-lhe imprimir eventos e tarefas em forma de lista.
+Comment[sv]=Det här insticksprogrammet gör att du kan skriva ut händelser och uppgifter i en lista.
+Comment[uk]=Цей додаток надає змогу друкувати список подій і завдань.
+Comment[x-test]=xxThis plugin allows you to print out events and to-dos in list form.xx
 Type=Service
 X-KDE-ServiceTypes=Calendar/Plugin,KOrganizer/PrintPlugin
 X-KDE-KOrganizer-HasSettings=false
