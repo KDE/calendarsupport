@@ -1,6 +1,9 @@
 [Desktop Entry]
 Name=Calendar Plugin Interface
 Name[ca]=Interfície de connector del calendari
+Name[ca@valencia]=Interfície de connector del calendari
+Name[de]=Kalender-Modulschnittstelle
+Name[en_GB]=Calendar Plugin Interface
 Name[es]=Interfaz del complemento de calendario
 Name[fi]=Kalenteriliitännäisen käyttöliittymä
 Name[gl]=Interface do complemento de calendario
@@ -19,6 +22,9 @@ Type=ServiceType
 X-KDE-ServiceType=Calendar/Plugin
 Comment=Calendar Plugin
 Comment[ca]=Connector calendari
+Comment[ca@valencia]=Connector calendari
+Comment[de]=Kalender-Modul
+Comment[en_GB]=Calendar Plugin
 Comment[es]=Complemento de calendario
 Comment[fi]=Kalenteriliitännäinen
 Comment[gl]=Complemento de calendario
