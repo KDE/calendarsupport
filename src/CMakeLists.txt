@@ -141,7 +141,6 @@ ecm_generate_pri_file(BASE_NAME CalendarSupport
 
 
 
-if(${CMAKE_SOURCE_DIR} STREQUAL ${calendarsupport_SOURCE_DIR})
 install(FILES
     ${CalendarSupport_CamelCase_HEADERS}
     ${CalendarSupport_CamelCaseprinter_HEADERS}
@@ -172,7 +171,6 @@ install(FILES
     ${PRI_FILENAME}
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
-endif()
 
 install(FILES calendarplugin.desktop DESTINATION ${KDE_INSTALL_KSERVICETYPES5DIR})
 
