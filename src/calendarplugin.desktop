@@ -31,6 +31,7 @@ Name[zh_CN]=日历插件界面
 Type=ServiceType
 X-KDE-ServiceType=Calendar/Plugin
 Comment=Calendar Plugin
+Comment[ast]=Complementu del calendariu
 Comment[ca]=Connector calendari
 Comment[ca@valencia]=Connector calendari
 Comment[cs]=Kalendářový modul
