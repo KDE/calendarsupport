@@ -29,7 +29,7 @@
 
 using namespace KPIM;
 
-QTEST_MAIN(FreePeriodModelTest)
+QTEST_GUILESS_MAIN(FreePeriodModelTest)
 
 void FreePeriodModelTest::testModelValidity()
 {
