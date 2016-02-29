@@ -29,7 +29,7 @@
 
 using namespace KPIM;
 
-QTEST_MAIN(FreeBusyItemModelTest)
+QTEST_GUILESS_MAIN(FreeBusyItemModelTest)
 
 void FreeBusyItemModelTest::testModelValidity()
 {
