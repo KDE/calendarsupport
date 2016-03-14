@@ -13,6 +13,18 @@
    </rect>
   </property>
   <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item row="0" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
@@ -50,7 +62,7 @@ p, li { white-space: pre-wrap; }
          <string>When you want to print more months at once, you can define a month range. This option defines the first month to be printed. Use the option &lt;i&gt;End month&lt;/i&gt; to define the last month in this range.</string>
         </property>
         <property name="text">
-         <string>&amp;Start month:</string>
+         <string>Sta&amp;rt month:</string>
         </property>
         <property name="buddy">
          <cstring>mToMonth</cstring>
@@ -184,14 +196,14 @@ p, li { white-space: pre-wrap; }
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QCheckBox" name="mIncludeDescription">
-        <property name="text">
-         <string>Include &amp;descriptions</string>
-        </property>
         <property name="toolTip">
          <string>Print item descriptions</string>
         </property>
         <property name="whatsThis">
          <string>Check this option if you want to see the item descriptions printed.</string>
+        </property>
+        <property name="text">
+         <string>Include &amp;descriptions</string>
         </property>
        </widget>
       </item>
@@ -300,14 +312,14 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <widget class="QCheckBox" name="mPrintFooter">
-        <property name="text">
-         <string>Print &amp;Footer</string>
-        </property>
         <property name="toolTip">
          <string>Print a datetime footer on each page</string>
         </property>
         <property name="whatsThis">
          <string>Check this box if you want to print a small footer on each page that contains the date of the print.</string>
+        </property>
+        <property name="text">
+         <string>Print &amp;Footer</string>
         </property>
        </widget>
       </item>

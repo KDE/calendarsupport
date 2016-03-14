@@ -13,6 +13,18 @@
    </rect>
   </property>
   <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item row="0" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
@@ -75,7 +87,7 @@ p, li { white-space: pre-wrap; }
          <bool>true</bool>
         </property>
         <property name="text">
-         <string>Print &amp;unfinished to-dos only</string>
+         <string>Print unfinished to-dos onl&amp;y</string>
         </property>
        </widget>
       </item>
@@ -457,7 +469,7 @@ p, li { white-space: pre-wrap; }
   </customwidget>
   <customwidget>
    <class>KDateComboBox</class>
-   <extends>KComboBox</extends>
+   <extends>QComboBox</extends>
    <header>kdatecombobox.h</header>
   </customwidget>
  </customwidgets>

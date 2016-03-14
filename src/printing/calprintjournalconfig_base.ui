@@ -16,8 +16,17 @@
    <property name="spacing">
     <number>6</number>
    </property>
-   <property name="margin">
-    <number>9</number>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
    </property>
    <item>
     <widget class="QLabel" name="label">
@@ -63,7 +72,16 @@ p, li { white-space: pre-wrap; }
         <property name="spacing">
          <number>6</number>
         </property>
-        <property name="margin">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
          <number>0</number>
         </property>
         <item>
@@ -158,13 +176,8 @@ p, li { white-space: pre-wrap; }
  <customwidgets>
   <customwidget>
    <class>KDateComboBox</class>
-   <extends>KComboBox</extends>
-   <header>kdatecombobox.h</header>
-  </customwidget>
-  <customwidget>
-   <class>KComboBox</class>
    <extends>QComboBox</extends>
-   <header>kcombobox.h</header>
+   <header>kdatecombobox.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>

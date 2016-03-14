@@ -9,10 +9,25 @@
     <x>0</x>
     <y>0</y>
     <width>684</width>
-    <height>615</height>
+    <height>616</height>
    </rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>6</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
     <widget class="QLabel" name="label">
      <property name="text">
@@ -128,15 +143,15 @@ p, li { white-space: pre-wrap; }
         <property name="whatsThis">
          <string>All events which start later than the given time will not be printed.</string>
         </property>
+        <property name="displayFormat">
+         <string>hh:mm</string>
+        </property>
         <property name="time">
          <time>
           <hour>18</hour>
           <minute>0</minute>
           <second>0</second>
          </time>
-        </property>
-        <property name="displayFormat">
-         <string>hh:mm</string>
         </property>
        </widget>
       </item>
@@ -158,15 +173,15 @@ p, li { white-space: pre-wrap; }
         <property name="whatsThis">
          <string>All events which start earlier than the given time will not be printed.</string>
         </property>
+        <property name="displayFormat">
+         <string>hh:mm</string>
+        </property>
         <property name="time">
          <time>
           <hour>8</hour>
           <minute>0</minute>
           <second>0</second>
          </time>
-        </property>
-        <property name="displayFormat">
-         <string>hh:mm</string>
         </property>
        </widget>
       </item>
@@ -228,7 +243,7 @@ p, li { white-space: pre-wrap; }
          <string>The Filofax view prints one week per page, so all days have a large surface.</string>
         </property>
         <property name="text">
-         <string>Print as &amp;Filofax page</string>
+         <string>P&amp;rint as Filofax page</string>
         </property>
         <property name="checked">
          <bool>true</bool>
@@ -241,7 +256,7 @@ p, li { white-space: pre-wrap; }
          <string>This view is similar to the weekview. The week is printed in landscape layout. You can even use the same colors for the items if you check &lt;i&gt;Use Colors&lt;/i&gt;.</string>
         </property>
         <property name="text">
-         <string>Print as &amp;timetable view</string>
+         <string>Print as timeta&amp;ble view</string>
         </property>
        </widget>
       </item>
@@ -251,7 +266,7 @@ p, li { white-space: pre-wrap; }
          <string>This view is similar to the week view. The only difference with the timetable view is the page layout. Timetables are printed in landscape, the split week view in portrait.</string>
         </property>
         <property name="text">
-         <string>Print as split week view</string>
+         <string>Print as split wee&amp;k view</string>
         </property>
        </widget>
       </item>
@@ -298,14 +313,14 @@ p, li { white-space: pre-wrap; }
      <layout class="QGridLayout" name="includeInfoLayout">
       <item row="0" column="0">
        <widget class="QCheckBox" name="mIncludeDescription">
-        <property name="text">
-         <string>Include &amp;descriptions</string>
-        </property>
         <property name="toolTip">
          <string>Print item descriptions</string>
         </property>
         <property name="whatsThis">
          <string>Check this option if you want to see the item descriptions printed.</string>
+        </property>
+        <property name="text">
+         <string>Include &amp;descriptions</string>
         </property>
        </widget>
       </item>
@@ -379,14 +394,14 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <widget class="QCheckBox" name="mPrintFooter">
-        <property name="text">
-         <string>Print &amp;Footer</string>
-        </property>
         <property name="toolTip">
          <string>Print a datetime footer on each page</string>
         </property>
         <property name="whatsThis">
          <string>Check this box if you want to print a small footer on each page that contains the date of the print.</string>
+        </property>
+        <property name="text">
+         <string>Print &amp;Footer</string>
         </property>
        </widget>
       </item>
@@ -411,13 +426,8 @@ p, li { white-space: pre-wrap; }
  <customwidgets>
   <customwidget>
    <class>KDateComboBox</class>
-   <extends>KComboBox</extends>
-   <header>kdatecombobox.h</header>
-  </customwidget>
-  <customwidget>
-   <class>KComboBox</class>
    <extends>QComboBox</extends>
-   <header>kcombobox.h</header>
+   <header>kdatecombobox.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>
