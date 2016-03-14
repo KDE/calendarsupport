@@ -201,6 +201,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
 
     QWidget *splitterRight = new QWidget(splitter);
     QGridLayout *splitterRightLayout = new QGridLayout(splitterRight);
+    splitterRightLayout->setMargin(0);
     //splitterRightLayout->setMargin( marginHint() );
     //splitterRightLayout->setSpacing( spacingHint() );
 
