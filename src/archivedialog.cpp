@@ -76,6 +76,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
     mainLayout->addWidget(buttonBox);
 
     QVBoxLayout *topLayout = new QVBoxLayout(topFrame);
+    topLayout->setMargin(0);
     QLabel *descLabel = new QLabel(topFrame);
     descLabel->setText(
         xi18nc("@info:whatsthis",
