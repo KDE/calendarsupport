@@ -41,6 +41,8 @@
 #include <QDialogButtonBox>
 #include <QPushButton>
 
+#include <PimCommon/KPimPrintPreviewDialog>
+
 using namespace CalendarSupport;
 
 CalPrinter::CalPrinter(QWidget *parent, const Akonadi::ETMCalendar::Ptr &calendar,
@@ -152,7 +154,7 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle,
     }
 
     if (preview) {
-        QPointer<QPrintPreviewDialog> printPreview = new QPrintPreviewDialog(&printer);
+        QPointer<PimCommon::KPimPrintPreviewDialog> printPreview = new PimCommon::KPimPrintPreviewDialog(&printer);
         connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this, [selectedStyle, &printer]() {
             selectedStyle->doPrint(&printer);
         });

@@ -73,6 +73,7 @@ PRIVATE
   KF5::CalendarCore
   KF5::CalendarUtils
   KF5::KdepimDBusInterfaces
+  KF5::PimCommon
 )
 
 set_target_properties(KF5CalendarSupport PROPERTIES
