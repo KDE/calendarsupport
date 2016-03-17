@@ -570,12 +570,12 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
         }
 
         if (!ownerStr.isEmpty()) {
-            if (!ownerStr.compare( QLatin1String( "INBOX" ), Qt::CaseInsensitive )) {
+            if (!ownerStr.compare(QLatin1String("INBOX"), Qt::CaseInsensitive)) {
                 return i18nc("%1 is folder contents",
                              "My Kolab %1", typeStr);
-            } else if ( !ownerStr.compare( QLatin1String( "SHARED" ), Qt::CaseInsensitive) ||
-                        !ownerStr.compare( QLatin1String( "CALENDAR"), Qt::CaseInsensitive) ||
-                        !ownerStr.compare( QLatin1String( "RESOURCES"), Qt::CaseInsensitive)) {
+            } else if (!ownerStr.compare(QLatin1String("SHARED"), Qt::CaseInsensitive) ||
+                       !ownerStr.compare(QLatin1String("CALENDAR"), Qt::CaseInsensitive) ||
+                       !ownerStr.compare(QLatin1String("RESOURCES"), Qt::CaseInsensitive)) {
                 return i18nc("%1 is folder name, %2 is folder contents",
                              "Shared Kolab %1 %2", nameStr, typeStr);
             } else {
