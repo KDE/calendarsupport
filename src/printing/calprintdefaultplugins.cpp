@@ -36,7 +36,6 @@
 #include <KCalUtils/IncidenceFormatter>
 #include <KCalUtils/Stringify>
 
-#include <KCalendarSystem>
 #include <KDateTime>
 #include <KConfigGroup>
 #include <KSystemTimeZones>
@@ -1308,18 +1307,15 @@ void CalPrintMonth::setDateRange(const QDate &from, const QDate &to)
     CalPrintPluginBase::setDateRange(from, to);
     CalPrintMonthConfig *cfg =
         dynamic_cast<CalPrintMonthConfig *>((QWidget *)mConfigWidget);
-    const KCalendarSystem *calSys = calendarSystem();
-    if (cfg && calSys) {
+    if (cfg) {
         cfg->mFromMonth->clear();
-        for (int i = 0; i < calSys->monthsInYear(mFromDate); ++i) {
-            cfg->mFromMonth->addItem(calSys->monthName(i + 1, mFromDate.year()));
+        for (int i = 0; i < 12; ++i) {
+            cfg->mFromMonth->addItem(QLocale().monthName(i + 1, QLocale::LongFormat));
         }
         cfg->mToMonth->clear();
-        for (int i = 0; i < calSys->monthsInYear(mToDate); ++i) {
-            cfg->mToMonth->addItem(calSys->monthName(i + 1, mToDate.year()));
+        for (int i = 0; i < 12; ++i) {
+            cfg->mToMonth->addItem(QLocale().monthName(i + 1, QLocale::LongFormat));
         }
-    }
-    if (cfg) {
         cfg->mFromMonth->setCurrentIndex(from.month() - 1);
         cfg->mFromYear->setValue(to.year());
         cfg->mToMonth->setCurrentIndex(mToDate.month() - 1);

@@ -29,7 +29,6 @@
 #include "printplugin.h"
 
 #include <Akonadi/Calendar/ETMCalendar>
-#include <KCalendarSystem>
 
 #include <KCalCore/Event>
 #include <KCalCore/Journal>
@@ -154,8 +153,6 @@ public:
 
     int borderWidth() const;
     void setBorderWidth(const int border);
-
-    const KCalendarSystem *calendarSystem();
 
     /*****************************************************************
      **               PRINTING HELPER FUNCTIONS                     **
@@ -648,7 +645,6 @@ protected:
     int mMargin;
     int mPadding;
     int mBorder;
-    const KCalendarSystem *mCalSys;
 
 private:
     QColor categoryColor(const QStringList &categories) const;

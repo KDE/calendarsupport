@@ -22,7 +22,6 @@
 
 #include "yearprint.h"
 
-#include <KCalendarSystem>
 #include "calendarsupport_debug.h"
 #include <KConfigGroup>
 #include <KLocalizedString>
@@ -53,10 +52,8 @@ void CalPrintYear::setSettingsWidget()
     CalPrintYearConfig *cfg =
         dynamic_cast<CalPrintYearConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
-        const KCalendarSystem *calsys = calendarSystem();
-        QDate start;
-        calsys->setDate(start, mYear, 1, 1);
-        int months = calsys->monthsInYear(start);
+        QDate start(mYear, 1, 1);
+        const int months = 12;
         int prevPages = 0;
         for (int i = 1; i <= months; ++i) {
             const int pages = (months - 1) / i + 1;
@@ -117,27 +114,22 @@ void CalPrintYear::setDateRange(const QDate &from, const QDate &to)
 
 void CalPrintYear::print(QPainter &p, int width, int height)
 {
-    const KCalendarSystem *calsys = calendarSystem();
     auto locale = QLocale::system();
-    if (!calsys) {
-        return;
-    }
 
     QRect headerBox(0, 0, width, headerHeight());
     QRect footerBox(0, height - footerHeight(), width, footerHeight());
     height -= footerHeight();
 
-    QDate start;
-    calsys->setDate(start, mYear, 1, 1);
+    QDate start(mYear, 1, 1);
 
     // Determine the nr of months and the max nr of days per month (dependent on
     // calendar system!!!!)
     QDate temp(start);
-    int months = calsys->monthsInYear(start);
+    const int months = 12;
     int maxdays = 1;
     for (int i = 1; i < months; ++i) {
         maxdays = qMax(maxdays, temp.daysInMonth());
-        temp = calsys->addMonths(temp, 1);
+        temp.addMonths(1);
     }
 
     // Now determine the months per page so that the printout fits on
@@ -150,8 +142,8 @@ void CalPrintYear::print(QPainter &p, int width, int height)
         if (page > 0) {
             mPrinter->newPage();
         }
-        QDate end(calsys->addMonths(start, monthsPerPage));
-        end = calsys->addDays(end, -1);
+        QDate end = start.addMonths(monthsPerPage);
+        end = end.addDays(-1);
         QString stdate = locale.toString(start, QLocale::ShortFormat);
         QString endate = locale.toString(end, QLocale::ShortFormat);
         QString title;
@@ -160,8 +152,7 @@ void CalPrintYear::print(QPainter &p, int width, int height)
         } else {
             title = i18nc("date from -\nto", "%1 -\n%2", stdate, endate);
         }
-        drawHeader(p, title, calsys->addMonths(start, -1),
-                   calsys->addMonths(start, monthsPerPage), headerBox);
+        drawHeader(p, title, start.addMonths(-1), start.addMonths(monthsPerPage), headerBox);
 
         QRect monthesBox(headerBox);
         monthesBox.setTop(monthesBox.bottom() + padding());
@@ -179,10 +170,10 @@ void CalPrintYear::print(QPainter &p, int width, int height)
             QRect monthBox(xstart, monthesBox.top(), xend - xstart, monthesBox.height());
             drawMonth(p, temp, monthBox, maxdays, mSubDaysEvents, mHolidaysEvents);
 
-            temp = calsys->addMonths(temp, 1);
+            temp = temp.addMonths(1);
         }
 
         drawFooter(p, footerBox);
-        start = calsys->addMonths(start, monthsPerPage);
+        start = start.addMonths(monthsPerPage);
     }
 }
