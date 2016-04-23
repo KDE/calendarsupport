@@ -29,7 +29,14 @@
 
 using namespace KPIM;
 
+// Workaround QTBUG-51789 causing a crash when QtWebEngineWidgets
+// is linked into a QCoreApplication.
+// TODO: Remove once we hard-depend on Qt 5.7
+#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 1)
 QTEST_GUILESS_MAIN(FreeBusyItemModelTest)
+#else
+QTEST_MAIN(FreeBusyItemModelTest)
+#endif
 
 void FreeBusyItemModelTest::testModelValidity()
 {
