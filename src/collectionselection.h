@@ -57,10 +57,8 @@ Q_SIGNALS:
     void collectionDeselected(const Akonadi::Collection &);
     void collectionSelected(const Akonadi::Collection &);
 
-private Q_SLOTS:
-    void slotSelectionChanged(const QItemSelection &, const QItemSelection &);
-
 private:
+    void slotSelectionChanged(const QItemSelection &, const QItemSelection &);
     class Private;
     Private *const d;
 };

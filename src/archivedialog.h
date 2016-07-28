@@ -66,10 +66,8 @@ protected Q_SLOTS:
     void slotEnableUser1();
     void slotActionChanged();
 
-private Q_SLOTS:
-    void showWhatsThis();
-
 private:
+    void showWhatsThis();
     KUrlRequester *mArchiveFile;
     KDateComboBox *mDateEdit;
     QCheckBox *mDeleteCb;

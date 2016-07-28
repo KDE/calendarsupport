@@ -169,11 +169,9 @@ Q_SIGNALS:
     void viewFinished(const QString &uid, const QString &attachmentName, bool success);
     void saveAsFinished(const QString &uid, const QString &attachmentName, bool success);
 
-private Q_SLOTS:
+private:
     void slotFinishView(KJob *job);
     void slotFinishSaveAs(KJob *job);
-
-private:
     //@cond PRIVATE
     class Private;
     Private *const d;

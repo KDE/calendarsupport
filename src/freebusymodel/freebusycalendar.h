@@ -44,13 +44,11 @@ public:
     FreeBusyItemModel *model() const;
     KCalCore::Calendar::Ptr calendar() const;
 
-private Q_SLOTS:
+private:
     void onRowsChanged(const QModelIndex &, const QModelIndex &);
     void onRowsInserted(const QModelIndex &, int, int);
     void onRowsRemoved(const QModelIndex &, int, int);
     void onLayoutChanged();
-
-private:
     void deleteAllEvents();
     FreeBusyCalendarPrivate *const d;
 };
