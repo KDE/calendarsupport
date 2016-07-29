@@ -27,7 +27,7 @@
 
 #include <QAbstractTableModel>
 
-namespace KPIM
+namespace CalendarSupport
 {
 
 class CALENDARSUPPORT_EXPORT FreePeriodModel : public QAbstractTableModel

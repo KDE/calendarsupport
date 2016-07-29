@@ -29,7 +29,7 @@
 #include <QLocale>
 #include <QSet>
 
-using namespace KPIM;
+using namespace CalendarSupport;
 
 FreePeriodModel::FreePeriodModel(QObject *parent)
     : QAbstractTableModel(parent)

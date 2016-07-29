@@ -29,7 +29,7 @@
 #include <KCalCore/Calendar>
 #include <KCalCore/Event>
 
-namespace KPIM
+namespace CalendarSupport
 {
 class FreeBusyCalendarPrivate;
 class CALENDARSUPPORT_EXPORT FreeBusyCalendar : public QObject

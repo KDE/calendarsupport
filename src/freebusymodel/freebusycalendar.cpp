@@ -32,9 +32,9 @@
 
 #include <QStringList>
 
-using namespace KPIM;
+using namespace CalendarSupport;
 
-class KPIM::FreeBusyCalendarPrivate
+class CalendarSupport::FreeBusyCalendarPrivate
 {
 public:
     FreeBusyCalendarPrivate()
@@ -50,7 +50,7 @@ public:
 
 FreeBusyCalendar::FreeBusyCalendar(QObject *parent)
     : QObject(parent)
-    , d(new KPIM::FreeBusyCalendarPrivate)
+    , d(new CalendarSupport::FreeBusyCalendarPrivate)
 {
     d->mCalendar = KCalCore::Calendar::Ptr(new KCalCore::MemoryCalendar(KSystemTimeZones::local()));
     qCDebug(CALENDARSUPPORT_LOG) << "creating" << this;

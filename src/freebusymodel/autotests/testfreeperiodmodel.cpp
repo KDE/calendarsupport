@@ -27,7 +27,7 @@
 
 #include <qtest.h>
 
-using namespace KPIM;
+using namespace CalendarSupport;
 
 // Workaround QTBUG-51789 causing a crash when QtWebEngineWidgets
 // is linked into a QCoreApplication.

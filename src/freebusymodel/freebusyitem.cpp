@@ -24,7 +24,7 @@
 
 #include <Akonadi/Calendar/FreeBusyManager>
 
-using namespace KPIM;
+using namespace CalendarSupport;
 
 FreeBusyItem::FreeBusyItem(const KCalCore::Attendee::Ptr &attendee, QWidget *parentWidget)
     : mAttendee(attendee)

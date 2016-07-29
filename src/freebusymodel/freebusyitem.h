@@ -27,7 +27,7 @@
 
 #include <KCalCore/FreeBusy>
 
-namespace KPIM
+namespace CalendarSupport
 {
 
 /**

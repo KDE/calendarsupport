@@ -26,7 +26,7 @@
 
 #include <QTimerEvent>
 
-using namespace KPIM;
+using namespace CalendarSupport;
 
 class ItemPrivateData
 {
@@ -78,7 +78,7 @@ private:
     ItemPrivateData *parentItem;
 };
 
-class KPIM::FreeBusyItemModelPrivate
+class CalendarSupport::FreeBusyItemModelPrivate
 {
 public:
     FreeBusyItemModelPrivate()
@@ -98,7 +98,7 @@ public:
 };
 
 FreeBusyItemModel::FreeBusyItemModel(QObject *parent)
-    : QAbstractItemModel(parent), d(new KPIM::FreeBusyItemModelPrivate)
+    : QAbstractItemModel(parent), d(new CalendarSupport::FreeBusyItemModelPrivate)
 {
     qRegisterMetaType<KCalCore::Attendee::Ptr>("KCalCore::Attendee::Ptr");
     qRegisterMetaType<KCalCore::FreeBusy::Ptr>("KCalCore::FreeBusy::Ptr");

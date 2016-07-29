@@ -22,7 +22,7 @@
 
 #include <QObject>
 
-namespace KPIM
+namespace CalendarSupport
 {
 
 class FreeBusyItemModelTest: public QObject

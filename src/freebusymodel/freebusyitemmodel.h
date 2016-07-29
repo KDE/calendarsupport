@@ -30,7 +30,7 @@
 
 class ItemPrivateData;
 
-namespace KPIM
+namespace CalendarSupport
 {
 
 /**

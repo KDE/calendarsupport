@@ -281,7 +281,7 @@ bool KCalPrefs::thatIsMe(const QString &_email)
 
     // in case email contains a full name, strip it out.
     // the below is the simpler but slower version of the following code:
-    // const QString email = KPIM::getEmailAddress( _email );
+    // const QString email = CalendarSupport::getEmailAddress( _email );
     const QByteArray tmp = _email.toUtf8();
     const char *cursor = tmp.constData();
     const char *end = tmp.data() + tmp.length();
