@@ -113,7 +113,7 @@ KCalCore::Period::List FreePeriodModel::splitPeriodsByDay(
             continue;
         }
 
-        const int validPeriodSecs = 5 * 60; // 5 minutes
+        const int validPeriodSecs = 300; // 5 minutes
         KCalCore::Period tmpPeriod = period;
         while (tmpPeriod.start().date() != tmpPeriod.end().date()) {
             const KDateTime midnight(tmpPeriod.start().date(), QTime(23, 59, 59, 999),
@@ -132,15 +132,10 @@ KCalCore::Period::List FreePeriodModel::splitPeriodsByDay(
 
     // Perform some jiggery pokery to remove duplicates
 
-#pragma message("port to QT5")
-#if 0 //QT5 FIX ME
     QList<KCalCore::Period> tmpList = splitList.toList();
-    QSet<KCalCore::Period>set = tmpList.toSet();
+    const QSet<KCalCore::Period> set = tmpList.toSet();
     tmpList = QList<KCalCore::Period>::fromSet(set);
     return KCalCore::Period::List::fromList(tmpList);
-#else
-    return splitList;
-#endif
 }
 
 QString FreePeriodModel::day(int index) const
