@@ -252,7 +252,8 @@ QStringList KCalPrefs::fullEmails()
 
     QStringList::Iterator it;
     KIdentityManagement::IdentityManager::ConstIterator it1;
-    for (it1 = idmanager->begin(); it1 != idmanager->end(); ++it1) {
+    KIdentityManagement::IdentityManager::ConstIterator end1(idmanager->end());
+    for (it1 = idmanager->begin(); it1 != end1; ++it1) {
         fullEmails << (*it1).fullEmailAddr();
     }
     // Add emails configured in korganizer
@@ -294,8 +295,9 @@ bool KCalPrefs::thatIsMe(const QString &_email)
     }
 
     CalendarSupport::IdentityManager::ConstIterator it;
+    CalendarSupport::IdentityManager::ConstIterator endId(CalendarSupport::identityManager()->end());
     for (it = CalendarSupport::identityManager()->begin();
-            it != CalendarSupport::identityManager()->end(); ++it) {
+            it != endId; ++it) {
         if ((*it).matchesEmailAddress(email)) {
             return true;
         }
