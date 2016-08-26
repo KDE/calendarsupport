@@ -47,10 +47,16 @@ Akonadi::Tag TagCache::getTagByGid(const QByteArray &gid) const
     return mCache.value(mGidCache.value(gid));
 }
 
+Akonadi::Tag TagCache::getTagByName(const QString &name) const
+{
+    return mCache.value(mNameCache.value(name));
+}
+
 void TagCache::onTagAdded(const Akonadi::Tag &tag)
 {
     mCache.insert(tag.id(), tag);
     mGidCache.insert(tag.gid(), tag.id());
+    mNameCache.insert(tag.name(), tag.id());
 }
 
 void TagCache::onTagChanged(const Akonadi::Tag &tag)
@@ -62,6 +68,7 @@ void TagCache::onTagRemoved(const Akonadi::Tag &tag)
 {
     mCache.remove(tag.id());
     mGidCache.remove(tag.gid());
+    mNameCache.remove(tag.name());
 }
 
 void TagCache::retrieveTags()
