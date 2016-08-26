@@ -310,7 +310,7 @@ bool KCalPrefs::thatIsMe(const QString &_email)
 
 void KCalPrefs::setCategoryColor(const QString &cat, const QColor &color)
 {
-    Akonadi::Tag tag = d->mTagCache.getTagByGid(cat.toUtf8());
+    Akonadi::Tag tag = d->mTagCache.getTagByName(cat);
     Akonadi::TagAttribute *attr = tag.attribute<Akonadi::TagAttribute>(Akonadi::Tag::AddIfMissing);
     attr->setBackgroundColor(color);
     new Akonadi::TagModifyJob(tag);
@@ -321,7 +321,7 @@ QColor KCalPrefs::categoryColor(const QString &cat) const
     QColor color;
 
     if (!cat.isEmpty()) {
-        const Akonadi::Tag &tag = d->mTagCache.getTagByGid(cat.toUtf8());
+        const Akonadi::Tag &tag = d->mTagCache.getTagByName(cat);
         if (Akonadi::TagAttribute *attr = tag.attribute<Akonadi::TagAttribute>()) {
             color = attr->backgroundColor();
         }
