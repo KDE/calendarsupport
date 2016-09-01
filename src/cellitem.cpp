@@ -61,7 +61,7 @@ QList<CellItem *> CellItem::placeItem(const QList<CellItem *> &cells, CellItem *
     // Find all items which are in same cell
     QList<CellItem *>::ConstIterator it;
     QList<CellItem *>::ConstIterator end(cells.constEnd());
-    for (it = cells.constBegin(); it != cells.end(); ++it) {
+    for (it = cells.constBegin(); it != end; ++it) {
         CellItem *item = *it;
         if (item == placeItem) {
             continue;
