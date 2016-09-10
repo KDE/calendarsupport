@@ -152,7 +152,6 @@ install(FILES
 )
 
 install(FILES
-    ${CalendarSupport_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/calendarsupport_export.h
     ${CMAKE_CURRENT_BINARY_DIR}/ui_calprintincidenceconfig_base.h
     ${CMAKE_CURRENT_BINARY_DIR}/ui_calprintdayconfig_base.h
