@@ -85,4 +85,4 @@ feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 add_subdirectory(src)
 
-install( FILES calendarsupport.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
+install( FILES calendarsupport.categories calendarsupport.renamecategories DESTINATION ${KDE_INSTALL_CONFDIR} )
