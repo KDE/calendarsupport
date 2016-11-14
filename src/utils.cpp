@@ -534,23 +534,23 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
             while (p != Akonadi::Collection::root()) {
                 Akonadi::Collection tCol = calendar->collection(p.id());
                 const QString tName = tCol.name();
-                if (tName.toLower().startsWith(QStringLiteral("shared.cal"))) {
+                if (tName.startsWith(QStringLiteral("shared.cal"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = QStringLiteral("Calendar");
                     break;
-                } else if (tName.toLower().startsWith(QStringLiteral("shared.tasks")) ||
-                           tName.toLower().startsWith(QStringLiteral("shared.todo"))) {
+                } else if (tName.startsWith(QStringLiteral("shared.tasks"), Qt::CaseInsensitive) ||
+                           tName.startsWith(QStringLiteral("shared.todo"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = QStringLiteral("Tasks");
                     break;
-                } else if (tName.toLower().startsWith(QStringLiteral("shared.journal"))) {
+                } else if (tName.startsWith(QStringLiteral("shared.journal"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = QStringLiteral("Journal");
                     break;
-                } else if (tName.toLower().startsWith(QStringLiteral("shared.notes"))) {
+                } else if (tName.startsWith(QStringLiteral("shared.notes"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = QStringLiteral("Notes");
