@@ -74,7 +74,7 @@ Akonadi::Collection::List CollectionSelection::selectedCollections() const
     Akonadi::Collection::List selected;
     const QModelIndexList selectedIndexes = d->model->selectedIndexes();
     selected.reserve(selectedIndexes.count());
-    Q_FOREACH (const QModelIndex &idx, selectedIndexes) {
+    for (const QModelIndex &idx : selectedIndexes) {
         selected.append(collectionFromIndex(idx));
     }
     return selected;
@@ -85,7 +85,7 @@ QList<Akonadi::Collection::Id> CollectionSelection::selectedCollectionIds() cons
     QList<Akonadi::Collection::Id> selected;
     const QModelIndexList selectedIndexes = d->model->selectedIndexes();
     selected.reserve(selectedIndexes.count());
-    Q_FOREACH (const QModelIndex &idx, selectedIndexes) {
+    for (const QModelIndex &idx : selectedIndexes) {
         selected.append(collectionIdFromIndex(idx));
     }
     return selected;
@@ -98,10 +98,10 @@ void CollectionSelection::slotSelectionChanged(const QItemSelection &selectedInd
     const Akonadi::Collection::List deselected = collectionsFromIndexes(deselIndexes.indexes());
 
     Q_EMIT selectionChanged(selected, deselected);
-    Q_FOREACH (const Akonadi::Collection &c, deselected) {
+    for (const Akonadi::Collection &c : deselected) {
         Q_EMIT collectionDeselected(c);
     }
-    Q_FOREACH (const Akonadi::Collection &c, selected) {
+    for (const Akonadi::Collection &c : selected) {
         Q_EMIT collectionSelected(c);
     }
 }

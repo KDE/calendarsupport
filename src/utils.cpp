@@ -107,7 +107,7 @@ KCalCore::Event::Ptr CalendarSupport::event(const KCalCore::Incidence::Ptr &inci
 KCalCore::Incidence::List CalendarSupport::incidencesFromItems(const Akonadi::Item::List &items)
 {
     KCalCore::Incidence::List incidences;
-    Q_FOREACH (const Akonadi::Item &item, items) {
+    for (const Akonadi::Item &item : items) {
         if (const KCalCore::Incidence::Ptr e = CalendarSupport::incidence(item)) {
             incidences.push_back(e);
         }
@@ -203,7 +203,7 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items,
 
     QList<QUrl> urls;
     int incidencesFound = 0;
-    Q_FOREACH (const Akonadi::Item &item, items) {
+    for (const Akonadi::Item &item : items) {
         const KCalCore::Incidence::Ptr incidence(CalendarSupport::incidence(item));
         if (!incidence) {
             continue;
@@ -249,7 +249,7 @@ static QByteArray findMostCommonType(const Akonadi::Item::List &items)
         return "Incidence";
     }
 
-    Q_FOREACH (const Akonadi::Item &item, items) {
+    for (const Akonadi::Item &item : items) {
         if (!CalendarSupport::hasIncidence(item)) {
             continue;
         }
@@ -378,7 +378,7 @@ KCalCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData,
     if (cal) {
         const KCalCore::Todo::List calTodos = cal->todos();
         todos.reserve(calTodos.count());
-        Q_FOREACH (const KCalCore::Todo::Ptr &i, calTodos) {
+        for (const KCalCore::Todo::Ptr &i : calTodos) {
             todos.push_back(KCalCore::Todo::Ptr(i->clone()));
         }
     }
@@ -395,9 +395,9 @@ KCalCore::Incidence::List CalendarSupport::incidences(const QMimeData *mimeData,
 #ifndef QT_NO_DRAGANDDROP
     KCalCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData, spec));
     if (cal) {
-        KCalCore::Incidence::List calIncidences = cal->incidences();
+        const KCalCore::Incidence::List calIncidences = cal->incidences();
         incidences.reserve(calIncidences.count());
-        Q_FOREACH (const KCalCore::Incidence::Ptr &i, calIncidences) {
+        for (const KCalCore::Incidence::Ptr &i : calIncidences) {
             incidences.push_back(KCalCore::Incidence::Ptr(i->clone()));
         }
     }
@@ -506,7 +506,7 @@ Akonadi::Collection::List CalendarSupport::collectionsFromIndexes(const QModelIn
 {
     Akonadi::Collection::List l;
     l.reserve(indexes.count());
-    Q_FOREACH (const QModelIndex &idx, indexes) {
+    for (const QModelIndex &idx : indexes) {
         l.push_back(collectionFromIndex(idx));
     }
     return l;
@@ -767,10 +767,11 @@ QStringList CalendarSupport::categories(const KCalCore::Incidence::List &inciden
     QStringList cats, thisCats;
     // @TODO: For now just iterate over all incidences. In the future,
     // the list of categories should be built when reading the file.
-    Q_FOREACH (const KCalCore::Incidence::Ptr &incidence, incidences) {
+    for (const KCalCore::Incidence::Ptr &incidence : incidences) {
         thisCats = incidence->categories();
+        const QStringList::ConstIterator send(thisCats.constEnd());
         for (QStringList::ConstIterator si = thisCats.constBegin();
-                si != thisCats.constEnd(); ++si) {
+                si != send; ++si) {
             if (!cats.contains(*si)) {
                 cats.append(*si);
             }
