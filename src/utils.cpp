@@ -196,7 +196,7 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items,
         const KDateTime::Spec &timeSpec)
 {
     if (items.isEmpty()) {
-        return 0;
+        return Q_NULLPTR;
     }
 
     KCalCore::MemoryCalendar::Ptr cal(new KCalCore::MemoryCalendar(timeSpec));
@@ -215,7 +215,7 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items,
     }
 
     if (incidencesFound == 0) {
-        return 0;
+        return Q_NULLPTR;
     }
 
     std::unique_ptr<QMimeData> mimeData(new QMimeData);
