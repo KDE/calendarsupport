@@ -85,7 +85,8 @@ void TagCache::onTagsFetched(KJob *job)
         return;
     }
     Akonadi::TagFetchJob *fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
-    Q_FOREACH (const Akonadi::Tag &tag, fetchJob->tags()) {
+    const Akonadi::Tag::List lst = fetchJob->tags();
+    for (const Akonadi::Tag &tag : lst) {
         onTagAdded(tag);
     }
 }

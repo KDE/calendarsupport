@@ -126,9 +126,9 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
                      true);
     }
     if (KCalPrefs::instance()->mArchiveTodos) {
-        KCalCore::Todo::List rawTodos = calendar->rawTodos();
+        const KCalCore::Todo::List rawTodos = calendar->rawTodos();
 
-        foreach (const KCalCore::Todo::Ptr &todo, rawTodos) {
+        for (const KCalCore::Todo::Ptr &todo : rawTodos) {
             Q_ASSERT(todo);
             if (isSubTreeComplete(calendar, todo, limitDate)) {
                 todos.append(todo);
@@ -338,8 +338,8 @@ bool EventArchiver::isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
     }
 
     checkedUids.append(todo->uid());
-    KCalCore::Incidence::List childs = calendar->childIncidences(todo->uid());
-    foreach (const KCalCore::Incidence::Ptr &incidence, childs) {
+    const KCalCore::Incidence::List childs = calendar->childIncidences(todo->uid());
+    for (const KCalCore::Incidence::Ptr &incidence : childs) {
         const Todo::Ptr t = incidence.dynamicCast<KCalCore::Todo>();
         if (t && !isSubTreeComplete(calendar, t, limitDate, checkedUids)) {
             return false;

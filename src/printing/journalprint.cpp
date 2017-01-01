@@ -107,9 +107,9 @@ void CalPrintJournal::print(QPainter &p, int width, int height)
     int x = 0, y = 0;
     KCalCore::Journal::List journals(mCalendar->journals());
     if (mUseDateRange) {
-        KCalCore::Journal::List allJournals = journals;
+        const KCalCore::Journal::List allJournals = journals;
         journals.clear();
-        foreach (const KCalCore::Journal::Ptr &j, allJournals) {
+        for (const KCalCore::Journal::Ptr &j : allJournals) {
             const QDate dt = j->dtStart().date();
             if (mFromDate <= dt && dt <= mToDate) {
                 journals.append(j);

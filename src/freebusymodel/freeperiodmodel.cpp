@@ -107,7 +107,7 @@ KCalCore::Period::List FreePeriodModel::splitPeriodsByDay(
     const KCalCore::Period::List &freePeriods)
 {
     KCalCore::Period::List splitList;
-    foreach (const KCalCore::Period &period, freePeriods) {
+    for (const KCalCore::Period &period : freePeriods) {
         if (period.start().date() == period.end().date())  {
             splitList << period; // period occurs on the same day
             continue;

@@ -143,8 +143,8 @@ bool CalendarUtilsPrivate::purgeCompletedSubTodos(const KCalCore::Todo::Ptr &tod
     }
 
     bool deleteThisTodo = true;
-    Akonadi::Item::List subTodos = mCalendar->childItems(todo->uid());
-    foreach (const Akonadi::Item &item, subTodos) {
+    const Akonadi::Item::List subTodos = mCalendar->childItems(todo->uid());
+    for (const Akonadi::Item &item : subTodos) {
         if (CalendarSupport::hasTodo(item)) {
             deleteThisTodo &= purgeCompletedSubTodos(item.payload<KCalCore::Todo::Ptr>(), allPurged);
         }
