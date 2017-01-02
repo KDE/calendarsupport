@@ -110,7 +110,7 @@ FreeBusyItemModel::FreeBusyItemModel(QObject *parent)
     connect(&d->mReloadTimer, &QTimer::timeout, this, &FreeBusyItemModel::autoReload);
     d->mReloadTimer.setSingleShot(true);
 
-    d->mRootData = new ItemPrivateData(0);
+    d->mRootData = new ItemPrivateData(nullptr);
 }
 
 FreeBusyItemModel::~FreeBusyItemModel()
@@ -291,7 +291,7 @@ void FreeBusyItemModel::clear()
     beginResetModel();
     d->mFreeBusyItems.clear();
     delete d->mRootData;
-    d->mRootData = new ItemPrivateData(0);
+    d->mRootData = new ItemPrivateData(nullptr);
     endResetModel();
 }
 

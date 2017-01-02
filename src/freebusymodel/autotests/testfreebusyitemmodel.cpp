@@ -53,7 +53,7 @@ void FreeBusyItemModelTest::testModelValidity()
     fb1->addPeriod(dt1, KCalCore::Duration(60 * 60));
     fb1->addPeriod(dt2, KCalCore::Duration(60 * 60));
 
-    FreeBusyItem::Ptr item1(new FreeBusyItem(a1, 0));
+    FreeBusyItem::Ptr item1(new FreeBusyItem(a1, nullptr));
     item1->setFreeBusy(fb1);
 
     model->addItem(item1);
@@ -119,10 +119,10 @@ void FreeBusyItemModelTest::testModelValidity2()
     fb3->addPeriod(dt2, KCalCore::Duration(60 * 60));
     fb3->addPeriod(dt4, KCalCore::Duration(60 * 60 * 2));
 
-    FreeBusyItem::Ptr item1(new FreeBusyItem(a1, 0));
+    FreeBusyItem::Ptr item1(new FreeBusyItem(a1, nullptr));
     item1->setFreeBusy(fb1);
-    FreeBusyItem::Ptr item2(new FreeBusyItem(a2, 0));
-    FreeBusyItem::Ptr item3(new FreeBusyItem(a3, 0));
+    FreeBusyItem::Ptr item2(new FreeBusyItem(a2, nullptr));
+    FreeBusyItem::Ptr item3(new FreeBusyItem(a3, nullptr));
 
     model->addItem(item1);
     model->addItem(item2);
@@ -234,7 +234,7 @@ void FreeBusyItemModelTest::testInsertFreeBusy()
     fb2->addPeriod(dt3, KCalCore::Duration(60 * 60));
     fb2->addPeriod(dt4, KCalCore::Duration(60 * 60 * 2));
 
-    FreeBusyItem::Ptr item1(new FreeBusyItem(a1, 0));
+    FreeBusyItem::Ptr item1(new FreeBusyItem(a1, nullptr));
     item1->setFreeBusy(fb1);
 
     model->addItem(item1);

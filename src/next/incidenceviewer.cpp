@@ -100,7 +100,7 @@ public:
 
     void slotParentCollectionFetched(KJob *job)
     {
-        mParentCollectionFetchJob = 0;
+        mParentCollectionFetchJob = nullptr;
         mParentCollection = Akonadi::Collection();
 
         if (!job->error()) {

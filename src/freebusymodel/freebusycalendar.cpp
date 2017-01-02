@@ -76,7 +76,7 @@ void FreeBusyCalendar::setModel(FreeBusyItemModel *model)
 {
     if (model != d->mModel) {
         if (d->mModel) {
-            disconnect(d->mModel, 0, 0, 0);
+            disconnect(d->mModel, nullptr, nullptr, nullptr);
         }
         d->mModel = model;
         connect(d->mModel, &QAbstractItemModel::layoutChanged, this, &FreeBusyCalendar::onLayoutChanged);

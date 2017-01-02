@@ -1647,7 +1647,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
                      mConnectSubTodos,
                      mStrikeOutCompleted, mIncludeDescription,
                      pospriority, possummary, posdue, poscomplete,
-                     0, 0, mCurrentLinePos, width, height, todoList, 0,
+                     0, 0, mCurrentLinePos, width, height, todoList, nullptr,
                      mExcludeConfidential, mExcludePrivate);
         }
     }

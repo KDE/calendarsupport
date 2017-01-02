@@ -179,7 +179,7 @@ void CalPrintPluginBase::doPrint(QPrinter *printer)
     print(p, pageWidth, pageHeight);
 
     p.end();
-    mPrinter = 0;
+    mPrinter = nullptr;
 }
 
 void CalPrintPluginBase::doLoadConfig()
@@ -1512,7 +1512,7 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
 class MonthEventStruct
 {
 public:
-    MonthEventStruct() : event(0) {}
+    MonthEventStruct() : event(nullptr) {}
     MonthEventStruct(const KDateTime &s, const KDateTime &e, const KCalCore::Event::Ptr &ev)
     {
         event = ev;

@@ -312,7 +312,7 @@ PrintPlugin *CalPrintDialog::selectedPlugin()
     if (mPluginIDs.contains(id)) {
         return mPluginIDs[id];
     } else {
-        return 0;
+        return nullptr;
     }
 }
 
