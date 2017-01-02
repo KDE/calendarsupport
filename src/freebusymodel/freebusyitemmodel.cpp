@@ -83,7 +83,7 @@ class CalendarSupport::FreeBusyItemModelPrivate
 public:
     FreeBusyItemModelPrivate()
         : mForceDownload(false),
-          mRootData(Q_NULLPTR)
+          mRootData(nullptr)
     {
     }
     ~FreeBusyItemModelPrivate()

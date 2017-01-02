@@ -143,7 +143,7 @@ Attachment::Ptr AttachmentHandler::find(const QString &attachmentName,
     return find(attachmentName, incidence);
 }
 
-static QTemporaryFile *s_tempFile = Q_NULLPTR;
+static QTemporaryFile *s_tempFile = nullptr;
 
 static QUrl tempFileForAttachment(const Attachment::Ptr &attachment)
 {
@@ -165,7 +165,7 @@ static QUrl tempFileForAttachment(const Attachment::Ptr &attachment)
     if (tf.size() != attachment->size()) {
         //whoops. failed to write the entire attachment. return an invalid URL.
         delete s_tempFile;
-        s_tempFile = Q_NULLPTR;
+        s_tempFile = nullptr;
         return url;
     }
 
@@ -186,7 +186,7 @@ bool AttachmentHandler::view(const Attachment::Ptr &attachment)
         // put the attachment in a temporary file and launch it
         QUrl tempUrl = tempFileForAttachment(attachment);
         if (tempUrl.isValid()) {
-            stat = KRun::runUrl(tempUrl, attachment->mimeType(), Q_NULLPTR, true);
+            stat = KRun::runUrl(tempUrl, attachment->mimeType(), nullptr, true);
         } else {
             stat = false;
             KMessageBox::error(
@@ -194,7 +194,7 @@ bool AttachmentHandler::view(const Attachment::Ptr &attachment)
                 i18n("Unable to create a temporary file for the attachment."));
         }
         delete s_tempFile;
-        s_tempFile = Q_NULLPTR;
+        s_tempFile = nullptr;
     }
     return stat;
 }
@@ -257,7 +257,7 @@ bool AttachmentHandler::saveAs(const Attachment::Ptr &attachment)
                 i18n("Unable to create a temporary file for the attachment."));
         }
         delete s_tempFile;
-        s_tempFile = Q_NULLPTR;
+        s_tempFile = nullptr;
     }
     return stat;
 }

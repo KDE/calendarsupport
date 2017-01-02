@@ -52,7 +52,7 @@ class CALENDARSUPPORT_EXPORT ArchiveDialog : public QDialog
 public:
     ArchiveDialog(const Akonadi::ETMCalendar::Ptr &calendar,
                   Akonadi::IncidenceChanger *changer,
-                  QWidget *parent = Q_NULLPTR);
+                  QWidget *parent = nullptr);
     ~ArchiveDialog();
 
 Q_SIGNALS:

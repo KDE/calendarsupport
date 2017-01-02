@@ -33,7 +33,7 @@ class CALENDARSUPPORT_EXPORT IdentityManager : public KIdentityManagement::Ident
 {
     Q_OBJECT
 public:
-    explicit IdentityManager(QObject *parent = Q_NULLPTR, const char *name = Q_NULLPTR)
+    explicit IdentityManager(QObject *parent = nullptr, const char *name = nullptr)
         : KIdentityManagement::IdentityManager(true/*readonly*/, parent, name) {}
 
 protected:

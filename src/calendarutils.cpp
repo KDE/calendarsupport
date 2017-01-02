@@ -152,7 +152,7 @@ bool CalendarUtilsPrivate::purgeCompletedSubTodos(const KCalCore::Todo::Ptr &tod
 
     if (deleteThisTodo) {
         if (todo->isCompleted()) {
-            if (!mChanger->deleteIncidence(mCalendar->item(todo), Q_NULLPTR)) {
+            if (!mChanger->deleteIncidence(mCalendar->item(todo), nullptr)) {
                 allPurged = false;
             }
         } else {
@@ -259,7 +259,7 @@ void CalendarUtils::purgeCompletedTodos()
 //  endMultiModify();
     if (!allDeleted) {
         KMessageBox::information(
-            Q_NULLPTR,
+            nullptr,
             i18nc("@info",
                   "Unable to purge to-dos with uncompleted children."),
             i18nc("@title:window", "Delete To-do"),

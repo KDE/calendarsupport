@@ -70,8 +70,8 @@ class Q_DECL_HIDDEN IncidenceViewer::Private
 {
 public:
     Private(IncidenceViewer *parent)
-        : mCalendar(Q_NULLPTR), mParent(parent), mParentCollectionFetchJob(Q_NULLPTR),
-          mAttachmentModel(Q_NULLPTR), mDelayedClear(false)
+        : mCalendar(nullptr), mParent(parent), mParentCollectionFetchJob(nullptr),
+          mAttachmentModel(nullptr), mDelayedClear(false)
     {
         mAttachmentHandler = new AttachmentHandler(parent);
         mBrowser = new TextBrowser;
@@ -144,7 +144,7 @@ IncidenceViewer::IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent
 IncidenceViewer::IncidenceViewer(QWidget *parent)
     : QWidget(parent), d(new Private(this))
 {
-    d->mCalendar = Q_NULLPTR;
+    d->mCalendar = nullptr;
     init();
 }
 

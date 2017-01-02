@@ -53,11 +53,11 @@ public:
     };
 
     explicit IncidenceAttachmentModel(const QPersistentModelIndex &modelIndex,
-                                      QObject *parent = Q_NULLPTR);
+                                      QObject *parent = nullptr);
 
-    explicit IncidenceAttachmentModel(const Akonadi::Item &item, QObject *parent = Q_NULLPTR);
+    explicit IncidenceAttachmentModel(const Akonadi::Item &item, QObject *parent = nullptr);
 
-    explicit IncidenceAttachmentModel(QObject *parent = Q_NULLPTR);
+    explicit IncidenceAttachmentModel(QObject *parent = nullptr);
 
     ~IncidenceAttachmentModel();
 

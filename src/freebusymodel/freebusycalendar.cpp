@@ -38,7 +38,7 @@ class CalendarSupport::FreeBusyCalendarPrivate
 {
 public:
     FreeBusyCalendarPrivate()
-        : mModel(Q_NULLPTR)
+        : mModel(nullptr)
     {
 
     }

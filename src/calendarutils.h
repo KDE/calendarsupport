@@ -50,7 +50,7 @@ public:
      * Creates a new CalendarUtils instance. The instance does not take owner ship
      * over the Calendar.
      */
-    explicit CalendarUtils(const Akonadi::ETMCalendar::Ptr &calendar, QObject *parent = Q_NULLPTR);
+    explicit CalendarUtils(const Akonadi::ETMCalendar::Ptr &calendar, QObject *parent = nullptr);
 
     ~CalendarUtils();
 

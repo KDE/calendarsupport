@@ -254,7 +254,7 @@ CALENDARSUPPORT_EXPORT QList<QDate> workDays(const QDate &start, const QDate &en
 CALENDARSUPPORT_EXPORT QStringList holiday(const QDate &date);
 
 CALENDARSUPPORT_EXPORT void saveAttachments(const Akonadi::Item &item,
-        QWidget *widget = Q_NULLPTR);
+        QWidget *widget = nullptr);
 
 CALENDARSUPPORT_EXPORT QStringList categories(const KCalCore::Incidence::List &incidences);
 

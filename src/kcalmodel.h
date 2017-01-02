@@ -35,7 +35,7 @@ public:
         Type
     };
 
-    explicit KCalModel(QObject *parent = Q_NULLPTR);
+    explicit KCalModel(QObject *parent = nullptr);
 
     virtual ~KCalModel();
 
