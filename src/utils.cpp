@@ -610,7 +610,7 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
         const QString nameStr = c.displayName(); // folder name: can be anything
 
         QString typeStr;
-        const QString mimeStr = c.contentMimeTypes().join(QStringLiteral(","));
+        const QString mimeStr = c.contentMimeTypes().join(QLatin1Char(','));
         if (mimeStr.contains(QStringLiteral(".event"))) {
             typeStr = i18n("Calendar");
         } else if (mimeStr.contains(QStringLiteral(".todo"))) {
