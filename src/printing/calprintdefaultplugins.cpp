@@ -320,7 +320,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
             if (!recurs->exDates().isEmpty()) {
                 exceptString = i18nc("except for listed dates", " except");
                 for (int i = 0; i < recurs->exDates().size(); ++i) {
-                    exceptString.append(QStringLiteral(" "));
+                    exceptString.append(QLatin1Char(' '));
                     exceptString.append(QLocale::system().toString(recurs->exDates().at(i),
                                         QLocale::ShortFormat));
                 }
