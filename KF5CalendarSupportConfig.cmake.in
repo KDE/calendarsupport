@@ -1,5 +1,5 @@
 @PACKAGE_INIT@
-
+include(CMakeFindDependencyMacro)
 find_dependency(KF5Mime "@KMIME_LIB_VERSION@")
 find_dependency(KF5IdentityManagement "@IDENTITYMANAGEMENT_LIB_VERSION@")
 find_dependency(KF5AkonadiCalendar "@AKONADICALENDAR_LIB_VERSION@")
