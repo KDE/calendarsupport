@@ -32,7 +32,7 @@ class TextBrowser : public QTextBrowser
     Q_OBJECT
 
 public:
-    explicit TextBrowser(QWidget *parent = Q_NULLPTR);
+    explicit TextBrowser(QWidget *parent = nullptr);
 
     void setSource(const QUrl &name) Q_DECL_OVERRIDE;
 

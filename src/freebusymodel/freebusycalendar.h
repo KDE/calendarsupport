@@ -36,7 +36,7 @@ class CALENDARSUPPORT_EXPORT FreeBusyCalendar : public QObject
 {
     Q_OBJECT
 public:
-    explicit FreeBusyCalendar(QObject *parent = Q_NULLPTR);
+    explicit FreeBusyCalendar(QObject *parent = nullptr);
 
     virtual ~FreeBusyCalendar();
 

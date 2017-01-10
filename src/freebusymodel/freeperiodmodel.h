@@ -37,7 +37,7 @@ public:
     enum Roles {
         PeriodRole = Qt::UserRole
     };
-    explicit FreePeriodModel(QObject *parent = Q_NULLPTR);
+    explicit FreePeriodModel(QObject *parent = nullptr);
     virtual ~FreePeriodModel();
 
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
