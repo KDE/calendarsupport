@@ -24,6 +24,7 @@
 
 #include "utils.h"
 #include "kcalprefs.h"
+#include "helper_p.h"
 
 #include <Collection>
 #include <CollectionDialog>
@@ -342,7 +343,8 @@ bool CalendarSupport::canDecode(const QMimeData *md)
 QList<QUrl> CalendarSupport::incidenceItemUrls(const QMimeData *mimeData)
 {
     QList<QUrl> urls;
-    Q_FOREACH (const QUrl &i, mimeData->urls()) {
+    const QList<QUrl> urlsList = mimeData->urls();
+    for (const QUrl &i : urlsList ) {
         if (isValidIncidenceItemUrl(i)) {
             urls.push_back(i);
         }
@@ -354,7 +356,8 @@ QList<QUrl> CalendarSupport::todoItemUrls(const QMimeData *mimeData)
 {
     QList<QUrl> urls;
 
-    Q_FOREACH (const QUrl &i, mimeData->urls()) {
+    const QList<QUrl> urlList = mimeData->urls();
+    for (const QUrl &i : urlList) {
         if (isValidIncidenceItemUrl(i, QStringList() << KCalCore::Todo::todoMimeType())) {
             urls.push_back(i);
         }
@@ -746,7 +749,7 @@ void CalendarSupport::saveAttachments(const Akonadi::Item &item, QWidget *parent
         targetDir = QFileInfo(targetFile).absolutePath() + QLatin1Char('/');
     }
 
-    Q_FOREACH (const Attachment::Ptr &attachment, attachments) {
+    for (const Attachment::Ptr &attachment : qAsConst(attachments)) {
         targetFile = targetDir + attachment->label();
         QUrl sourceUrl;
         if (attachment->isUri()) {

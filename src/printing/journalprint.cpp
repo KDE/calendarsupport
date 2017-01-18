@@ -24,6 +24,7 @@
 #include "utils.h"
 #include <KConfigGroup>
 #include "calendarsupport_debug.h"
+#include "helper_p.h"
 
 using namespace CalendarSupport;
 
@@ -124,7 +125,7 @@ void CalPrintJournal::print(QPainter &p, int width, int height)
     drawHeader(p, i18n("Journal entries"), QDate(), QDate(), headerBox);
     y = headerHeight() + 15;
 
-    foreach (const KCalCore::Journal::Ptr &j, journals) {
+    for (const KCalCore::Journal::Ptr &j : qAsConst(journals)) {
         drawJournal(j, p, x, y, width, height);
     }
 

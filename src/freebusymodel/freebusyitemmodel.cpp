@@ -19,6 +19,7 @@
 */
 
 #include "freebusyitemmodel.h"
+#include "helper_p.h"
 
 #include <Akonadi/Calendar/FreeBusyManager>
 
@@ -359,7 +360,7 @@ void FreeBusyItemModel::updateFreeBusyData(const FreeBusyItem::Ptr &item)
 void FreeBusyItemModel::timerEvent(QTimerEvent *event)
 {
     killTimer(event->timerId());
-    Q_FOREACH (FreeBusyItem::Ptr item, d->mFreeBusyItems) {
+    for (FreeBusyItem::Ptr item : qAsConst(d->mFreeBusyItems)) {
         if (item->updateTimerID() == event->timerId()) {
             item->setUpdateTimerID(0);
             item->startDownload(d->mForceDownload);
@@ -381,7 +382,7 @@ void FreeBusyItemModel::slotInsertFreeBusy(const KCalCore::FreeBusy::Ptr &fb,
 
     fb->sortList();
 
-    Q_FOREACH (FreeBusyItem::Ptr item, d->mFreeBusyItems) {
+    for (FreeBusyItem::Ptr item : qAsConst(d->mFreeBusyItems)) {
         if (item->email() == email) {
             item->setFreeBusy(fb);
             const int row = d->mFreeBusyItems.indexOf(item);
@@ -400,7 +401,7 @@ void FreeBusyItemModel::autoReload()
 
 void FreeBusyItemModel::reload()
 {
-    Q_FOREACH (FreeBusyItem::Ptr item, d->mFreeBusyItems) {
+    for (FreeBusyItem::Ptr item : qAsConst(d->mFreeBusyItems)) {
         if (d->mForceDownload) {
             item->startDownload(d->mForceDownload);
         } else {

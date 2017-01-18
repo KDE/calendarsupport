@@ -28,6 +28,7 @@
 #include "calprintdefaultplugins.h"
 #include "kcalprefs.h"
 #include "utils.h"
+#include "helper_p.h"
 
 #include <Item>
 
@@ -502,7 +503,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 QString statusString;
                 QString datesString;
                 int count = 0;
-                foreach (const Akonadi::Item &item, relations) {
+                for (const Akonadi::Item &item : qAsConst(relations)) {
                     KCalCore::Todo::Ptr todo = CalendarSupport::todo(item);
                     ++count;
                     if (!todo) {   // defensive, skip any zero pointers
@@ -864,7 +865,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
 
             // split out the all day events as they will be printed in a separate box
             KCalCore::Event::List alldayEvents, timedEvents;
-            foreach (const KCalCore::Event::Ptr &event, eventList) {
+            for (const KCalCore::Event::Ptr &event : qAsConst(eventList)) {
                 if (event->allDay()) {
                     alldayEvents.append(event);
                 } else {
@@ -901,7 +902,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                 eventBox.setTop(eventBox.top() + padding());
                 eventBox.setBottom(eventBox.top() + lineSpacing);
                 int count = 0;
-                foreach (const KCalCore::Event::Ptr &event, alldayEvents) {
+                for (const KCalCore::Event::Ptr &event : qAsConst(alldayEvents)) {
                     if (count == maxAllDayEvents) {
                         break;
                     }
@@ -1609,7 +1610,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     case TodosAll:
         break;
     case TodosUnfinished:
-        foreach (const KCalCore::Todo::Ptr &todo, todoList) {
+        for (const KCalCore::Todo::Ptr &todo : qAsConst(todoList)) {
             Q_ASSERT(todo);
             if (!todo->isCompleted()) {
                 tempList.append(todo);
@@ -1618,7 +1619,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
         todoList = tempList;
         break;
     case TodosDueRange:
-        foreach (const KCalCore::Todo::Ptr &todo, todoList) {
+        for (const KCalCore::Todo::Ptr &todo : qAsConst(todoList)) {
             Q_ASSERT(todo);
             if (todo->hasDueDate()) {
                 if (todo->dtDue().date() >= mFromDate && todo->dtDue().date() <= mToDate) {
@@ -1634,7 +1635,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
 
     // Print to-dos
     int count = 0;
-    foreach (const KCalCore::Todo::Ptr &todo, todoList) {
+    for (const KCalCore::Todo::Ptr &todo : qAsConst(todoList)) {
         if ((mExcludeConfidential && todo->secrecy() == KCalCore::Incidence::SecrecyConfidential) ||
                 (mExcludePrivate      && todo->secrecy() == KCalCore::Incidence::SecrecyPrivate)) {
             continue;

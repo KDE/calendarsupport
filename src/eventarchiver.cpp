@@ -26,7 +26,7 @@
 
 #include "kcalprefs.h"
 #include "utils.h"
-
+#include "helper_p.h"
 #include <Akonadi/Calendar/IncidenceChanger>
 
 #include <KCalCore/ICalFormat>
@@ -237,10 +237,10 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     QStringList uids;
     Incidence::List allIncidences = archiveCalendar->rawIncidences();
     uids.reserve(incidences.count());
-    foreach (const KCalCore::Incidence::Ptr &incidence, incidences) {
+    for (const KCalCore::Incidence::Ptr &incidence : qAsConst(incidences)) {
         uids.append(incidence->uid());
     }
-    foreach (const KCalCore::Incidence::Ptr &incidence, allIncidences) {
+    for (const KCalCore::Incidence::Ptr &incidence : qAsConst(allIncidences)) {
         if (!uids.contains(incidence->uid())) {
             archiveCalendar->deleteIncidence(incidence);
         }
@@ -312,8 +312,8 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     changer->startAtomicOperation(i18n("Archiving events"));
 
     // Delete archived events from calendar
-    Akonadi::Item::List items = calendar->itemList(incidences);
-    foreach (const Akonadi::Item &item, items) {
+    const Akonadi::Item::List items = calendar->itemList(incidences);
+    for (const Akonadi::Item &item : items) {
         changer->deleteIncidence(item, widget);
     } // TODO: Q_EMIT only after hearing back from incidence changer
     changer->endAtomicOperation();

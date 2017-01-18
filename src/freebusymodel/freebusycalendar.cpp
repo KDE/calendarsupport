@@ -92,7 +92,8 @@ void FreeBusyCalendar::setModel(FreeBusyItemModel *model)
 
 void FreeBusyCalendar::deleteAllEvents()
 {
-    foreach (const KCalCore::Event::Ptr &event, d->mCalendar->events()) {
+    const KCalCore::Event::List lstEvents = d->mCalendar->events();
+    for (const KCalCore::Event::Ptr &event : lstEvents) {
         d->mCalendar->deleteEvent(event);
     }
 }

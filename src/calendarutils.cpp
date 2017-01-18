@@ -27,6 +27,7 @@
 
 #include "calendarutils.h"
 #include "utils.h"
+#include "helper_p.h"
 
 #include <KCalCore/Incidence>
 #include <Akonadi/Calendar/ETMCalendar>
@@ -223,7 +224,7 @@ bool CalendarUtils::makeChildrenIndependent(const Akonadi::Item &item)
 
     d->mMultiChange = MultiChange(item);
     bool allStarted = true;
-    foreach (const Akonadi::Item &subInc, subIncs) {
+    for (const Akonadi::Item &subInc : qAsConst(subIncs)) {
         d->mMultiChange.children.append(subInc.id());
         allStarted = allStarted && makeIndependent(subInc);
     }
@@ -245,14 +246,14 @@ void CalendarUtils::purgeCompletedTodos()
     KCalCore::Todo::List todos = calendar()->rawTodos();
     KCalCore::Todo::List rootTodos;
 
-    foreach (const KCalCore::Todo::Ptr &todo, todos) {
+    for (const KCalCore::Todo::Ptr &todo : qAsConst(todos)) {
         if (todo && todo->relatedTo().isEmpty()) {   // top level todo //REVIEW(AKONADI_PORT)
             rootTodos.append(todo);
         }
     }
 
     // now that we have a list of all root todos, check them and their children
-    foreach (const KCalCore::Todo::Ptr &todo, rootTodos) {
+    for (const KCalCore::Todo::Ptr &todo : qAsConst(rootTodos)) {
         d->purgeCompletedSubTodos(todo, allDeleted);
     }
 

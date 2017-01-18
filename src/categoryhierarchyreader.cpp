@@ -19,6 +19,7 @@
 
 #include "categoryhierarchyreader.h"
 #include "categoryconfig.h"
+#include "helper_p.h"
 
 #include <KComboBox>
 
@@ -59,7 +60,7 @@ void CategoryHierarchyReader::read(const QStringList &categories)
     }
 
     QStringList last_path;
-    foreach (const QString &category, sortedCategories) {
+    for (const QString &category : qAsConst(sortedCategories)) {
         QStringList _path = path(category);
 
         // we need to figure out where last item and the new one differ

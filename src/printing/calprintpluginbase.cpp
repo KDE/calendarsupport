@@ -27,6 +27,7 @@
 #include "cellitem.h"
 #include "kcalprefs.h"
 #include "utils.h"
+#include "helper_p.h"
 
 #include <Item>
 
@@ -897,7 +898,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalCore::Event::Li
 
     if (expandable) {
         // Adapt start/end times to include complete events
-        Q_FOREACH (const KCalCore::Event::Ptr &event, events) {
+        for (const KCalCore::Event::Ptr &event : qAsConst(events)) {
             Q_ASSERT(event);
             if ((excludeConfidential && event->secrecy() == KCalCore::Incidence::SecrecyConfidential) ||
                     (excludePrivate      && event->secrecy() == KCalCore::Incidence::SecrecyPrivate)) {
@@ -954,7 +955,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalCore::Event::Li
 
     QList<CellItem *> cells;
 
-    foreach (const KCalCore::Event::Ptr &event, events) {
+    for (const KCalCore::Event::Ptr &event : qAsConst(events)) {
         if (event->allDay()) {
             continue;
         }
@@ -1121,7 +1122,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
 
     int textY = mSubHeaderHeight; // gives the relative y-coord of the next printed entry
     unsigned int visibleEventsCounter = 0;
-    Q_FOREACH (const KCalCore::Event::Ptr &currEvent, eventList) {
+    for (const KCalCore::Event::Ptr &currEvent : qAsConst(eventList)) {
         Q_ASSERT(currEvent);
         if (!currEvent->allDay()) {
             if (currEvent->dtEnd().toLocalZone().time() <= myFromTime ||
@@ -1181,7 +1182,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
 
     if (textY < box.height()) {
         KCalCore::Todo::List todos = mCalendar->todos(qd);
-        foreach (const KCalCore::Todo::Ptr &todo, todos) {
+        for (const KCalCore::Todo::Ptr &todo : qAsConst(todos)) {
             if (!todo->allDay()) {
                 if ((todo->hasDueDate() && todo->dtDue().toLocalZone().time() <= myFromTime) ||
                         (todo->hasStartDate() && todo->dtStart().toLocalZone().time() > myToTime)) {
@@ -1452,7 +1453,7 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
         KDateTime::Spec timeSpec = KSystemTimeZones::local();
         while (curDate <= toDate) {
             KCalCore::Event::List eventList = mCalendar->events(curDate, timeSpec);
-            Q_FOREACH (const KCalCore::Event::Ptr &event, eventList) {
+            for (const KCalCore::Event::Ptr &event : qAsConst(eventList)) {
                 Q_ASSERT(event);
                 if (event->allDay()) {
                     continue;
@@ -1631,7 +1632,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
     QList<MonthEventStruct> monthentries;
 
     KDateTime::Spec timeSpec = KSystemTimeZones::local();
-    Q_FOREACH (const KCalCore::Event::Ptr &e, events) {
+    for (const KCalCore::Event::Ptr &e : qAsConst(events)) {
         if (!e) {
             continue;
         }
@@ -2001,9 +2002,9 @@ void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, Q
 
     // Make a list of all the sub-to-dos related to this to-do.
     KCalCore::Todo::List t;
-    KCalCore::Incidence::List relations = mCalendar->childIncidences(todo->uid());
+    const KCalCore::Incidence::List relations = mCalendar->childIncidences(todo->uid());
 
-    foreach (const KCalCore::Incidence::Ptr &incidence, relations) {
+    for (const KCalCore::Incidence::Ptr &incidence : relations) {
         // In the future, to-dos might also be related to events
         // Manually check if the sub-to-do is in the list of to-dos to print
         // The problem is that relations() does not apply filters, so
@@ -2017,7 +2018,7 @@ void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, Q
 #else
         bool subtodoOk = false;
         if (subtodo) {
-            foreach (const KCalCore::Todo::Ptr &tt, todoList) {
+            for (const KCalCore::Todo::Ptr &tt : qAsConst(todoList)) {
                 if (tt == subtodo) {
                     subtodoOk = true;
                     break;
@@ -2057,14 +2058,14 @@ void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, Q
 #else
     KCalCore::Todo::List tl;
     tl.reserve(t.count());
-    foreach (const KCalCore::Todo::Ptr &todo, t) {
+    for (const KCalCore::Todo::Ptr &todo : qAsConst(t)) {
         tl.append(todo);
     }
     KCalCore::Todo::List sl = mCalendar->sortTodos(tl, sortField, sortDir);
 #endif
 
     int subcount = 0;
-    foreach (const KCalCore::Todo::Ptr &isl, sl) {
+    for (const KCalCore::Todo::Ptr &isl : qAsConst(sl)) {
         count++;
         if (++subcount == sl.size()) {
             startpt.mHasLine = false;

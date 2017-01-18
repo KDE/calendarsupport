@@ -54,7 +54,8 @@ public:
     }
     bool collectionMatchesMimeTypes() const
     {
-        Q_FOREACH (const QString &type, allMimeTypes()) {
+        const QStringList lst = allMimeTypes();
+        for (const QString &type : lst) {
             if (q->collection().contentMimeTypes().contains(type)) {
                 return true;
             }
