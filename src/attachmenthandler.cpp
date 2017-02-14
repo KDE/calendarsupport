@@ -64,8 +64,8 @@ class Q_DECL_HIDDEN AttachmentHandler::Private
 {
 public:
     Private(QWidget *parent)
+        : mParent(parent)
     {
-        mParent = parent;
     }
     QMap<KJob *, ReceivedInfo> mJobToReceivedInfo;
     QPointer<QWidget> mParent;
