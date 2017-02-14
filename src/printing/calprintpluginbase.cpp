@@ -531,7 +531,7 @@ int CalPrintPluginBase::drawBoxWithCaption(QPainter &p, const QRect &allbox,
             QString contentText = toPlainText(contents);
             p.setFont(textFont);
             p.drawText(textBox, Qt::AlignLeft | Qt::AlignTop | Qt::TextSingleLine,
-                       contents);
+                       contentText);
         } else {
             QTextDocument rtb;
             int borderWidth = 2 * BOX_BORDER_WIDTH;
