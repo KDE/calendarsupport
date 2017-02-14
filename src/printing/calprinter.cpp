@@ -78,7 +78,8 @@ void CalPrinter::init(const Akonadi::ETMCalendar::Ptr &calendar)
     mPrintPlugins.prepend(new CalPrintIncidence());
 
     PrintPlugin::List::Iterator it = mPrintPlugins.begin();
-    for (; it != mPrintPlugins.end(); ++it) {
+    PrintPlugin::List::Iterator end = mPrintPlugins.end();
+    for (; it != end; ++it) {
         if (*it) {
             (*it)->setConfig(mConfig);
             (*it)->setCalendar(mCalendar);
@@ -90,7 +91,8 @@ void CalPrinter::init(const Akonadi::ETMCalendar::Ptr &calendar)
 void CalPrinter::setDateRange(const QDate &fd, const QDate &td)
 {
     PrintPlugin::List::Iterator it = mPrintPlugins.begin();
-    for (; it != mPrintPlugins.end(); ++it) {
+    const PrintPlugin::List::Iterator end = mPrintPlugins.end();
+    for (; it != end; ++it) {
         (*it)->setDateRange(fd, td);
     }
 }
@@ -99,7 +101,8 @@ void CalPrinter::print(int type, const QDate &fd, const QDate &td,
                        const KCalCore::Incidence::List &selectedIncidences, bool preview)
 {
     PrintPlugin::List::Iterator it;
-    for (it = mPrintPlugins.begin(); it != mPrintPlugins.end(); ++it) {
+    const PrintPlugin::List::Iterator end = mPrintPlugins.end();
+    for (it = mPrintPlugins.begin(); it != end; ++it) {
         (*it)->setSelectedIncidences(selectedIncidences);
     }
     QPointer<CalPrintDialog> printDialog =
@@ -178,7 +181,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Print"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
