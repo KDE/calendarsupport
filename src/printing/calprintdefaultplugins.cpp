@@ -336,7 +336,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
             QRect alarmBox(timesBox.left() + padding(), h + padding(),
                            timesBox.right() - padding(), lineHeight);
             KCalCore::Alarm::List alarms = (*it)->alarms();
-            if (alarms.count() == 0) {
+            if (alarms.isEmpty()) {
                 cap = i18n("No reminders");
                 txt.clear();
             } else {
@@ -490,7 +490,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
             } else {
 
                 QString subitemCaption;
-                if (relations.count() == 0) {
+                if (relations.isEmpty()) {
                     subitemCaption = i18n("No Subitems");
                     txt.clear();
                 } else {
@@ -574,9 +574,9 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
         }
 
         if (mShowAttachments && !isJournal) {
-            KCalCore::Attachment::List attachments = (*it)->attachments();
+            const KCalCore::Attachment::List attachments = (*it)->attachments();
             QString attachmentCaption;
-            if (attachments.count() == 0) {
+            if (attachments.isEmpty()) {
                 attachmentCaption = i18n("No Attachments");
                 txt.clear();
             } else {
@@ -598,9 +598,9 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                                captionFont, textFont);
         }
         if (mShowAttendees) {
-            KCalCore::Attendee::List attendees = (*it)->attendees();
+            const KCalCore::Attendee::List attendees = (*it)->attendees();
             QString attendeeCaption;
-            if (attendees.count() == 0) {
+            if (attendees.isEmpty()) {
                 attendeeCaption = i18n("No Attendees");
             } else {
                 attendeeCaption = i18np("1 Attendee:",
