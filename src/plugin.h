@@ -67,7 +67,7 @@ public:
 
 protected:
     QObject *createObject(QObject *, const char *, const QStringList &) Q_DECL_OVERRIDE {
-        return 0;
+        return nullptr;
     }
 };
 
