@@ -763,7 +763,7 @@ void CalPrintPluginBase::drawTimeLine(QPainter &p, const QTime &fromTime,
         if (newY < box.bottom()) {
             QFont oldFont(p.font());
             // draw the time:
-            if (!KLocale::global()->use12Clock()) {
+            if (!QLocale().timeFormat().contains(QLatin1String("AP"))) { // 12h clock
                 p.drawLine(xcenter, (int)newY, box.right(), (int)newY);
                 numStr.setNum(curTime.hour());
                 if (cellHeight > 30) {
