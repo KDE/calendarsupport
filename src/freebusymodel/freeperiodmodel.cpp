@@ -22,7 +22,7 @@
 
 #include <KCalCore/Period>
 
-#include <KLocale>
+#include <KLocalizedString>
 #include <KFormat>
 #include <KSystemTimeZones>
 
@@ -169,8 +169,8 @@ QString FreePeriodModel::stringify(int index) const
     KCalCore::Period period = mPeriodList.at(index);
 
     const QDate startDate = period.start().date();
-    const QString startTime = KLocale::global()->formatTime(period.start().time(), false, true);
-    const QString endTime = KLocale::global()->formatTime(period.end().time(), false, true);
+    const QString startTime = QLocale().toString(period.start().time(), QLocale::ShortFormat);
+    const QString endTime = QLocale().toString(period.end().time(), QLocale::ShortFormat);
     const QString longMonthName = QLocale::system().monthName(startDate.month(), QLocale::LongFormat);
     const QString dayofWeek = QLocale::system().dayName(startDate.dayOfWeek(), QLocale::LongFormat);
 
