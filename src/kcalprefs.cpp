@@ -55,7 +55,6 @@ public:
     {
     }
 
-    KDateTime::Spec mTimeSpec;
     Akonadi::Collection::Id mDefaultCalendarId;
 
     TagCache mTagCache;
@@ -100,19 +99,12 @@ void KCalPrefs::usrSetDefaults()
     }
     fillMailDefaults();
 
-    setTimeZoneDefault();
-
     KConfigSkeleton::usrSetDefaults();
 }
 
 KDateTime::Spec KCalPrefs::timeSpec()
 {
     return KSystemTimeZones::local();
-}
-
-void KCalPrefs::setTimeSpec(const KDateTime::Spec &spec)
-{
-    d->mTimeSpec = spec;
 }
 
 Akonadi::Collection::Id KCalPrefs::defaultCalendarId() const
@@ -123,19 +115,6 @@ Akonadi::Collection::Id KCalPrefs::defaultCalendarId() const
 void KCalPrefs::setDefaultCalendarId(Akonadi::Collection::Id id)
 {
     d->mDefaultCalendarId = id;
-}
-
-void KCalPrefs::setTimeZoneDefault()
-{
-    KTimeZone zone = KSystemTimeZones::local();
-    if (!zone.isValid()) {
-        qCCritical(CALENDARSUPPORT_LOG) << "KSystemTimeZones::local() return 0";
-        return;
-    }
-
-    qCDebug(CALENDARSUPPORT_LOG) << "----- time zone:" << zone.name();
-
-    d->mTimeSpec = zone;
 }
 
 void KCalPrefs::fillMailDefaults()
@@ -156,10 +135,6 @@ void KCalPrefs::fillMailDefaults()
 void KCalPrefs::usrRead()
 {
     KConfigGroup generalConfig(config(), "General");
-
-    if (!d->mTimeSpec.isValid()) {
-        setTimeZoneDefault();
-    }
 
     KConfigGroup defaultCalendarConfig(config(), "Calendar");
     d->mDefaultCalendarId = defaultCalendarConfig.readEntry("Default Calendar", -1);

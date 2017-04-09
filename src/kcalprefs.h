@@ -73,7 +73,6 @@ public:
     /// Return true if the given email belongs to the user
     bool thatIsMe(const QString &email);
 
-    void setTimeSpec(const KDateTime::Spec &spec);
     KDateTime::Spec timeSpec();
 
     QString mailTransport() const;
