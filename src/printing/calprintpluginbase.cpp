@@ -27,7 +27,7 @@
 #include "cellitem.h"
 #include "kcalprefs.h"
 #include "utils.h"
-#include "helper_p.h"
+
 
 #include <Item>
 

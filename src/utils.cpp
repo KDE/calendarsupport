@@ -24,7 +24,7 @@
 
 #include "utils.h"
 #include "kcalprefs.h"
-#include "helper_p.h"
+
 
 #include <Collection>
 #include <CollectionDialog>

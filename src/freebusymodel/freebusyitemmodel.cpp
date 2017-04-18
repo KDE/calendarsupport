@@ -19,7 +19,7 @@
 */
 
 #include "freebusyitemmodel.h"
-#include "helper_p.h"
+
 
 #include <Akonadi/Calendar/FreeBusyManager>
 

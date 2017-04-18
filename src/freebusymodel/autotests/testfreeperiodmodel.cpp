@@ -31,12 +31,7 @@ using namespace CalendarSupport;
 
 // Workaround QTBUG-51789 causing a crash when QtWebEngineWidgets
 // is linked into a QCoreApplication.
-// TODO: Remove once we hard-depend on Qt 5.7
-#if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
 QTEST_GUILESS_MAIN(FreePeriodModelTest)
-#else
-QTEST_MAIN(FreePeriodModelTest)
-#endif
 
 void FreePeriodModelTest::testModelValidity()
 {

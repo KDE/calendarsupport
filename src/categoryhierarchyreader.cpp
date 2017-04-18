@@ -19,7 +19,7 @@
 
 #include "categoryhierarchyreader.h"
 #include "categoryconfig.h"
-#include "helper_p.h"
+
 
 #include <KComboBox>
 

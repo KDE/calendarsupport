@@ -24,7 +24,7 @@
 #include "utils.h"
 #include <KConfigGroup>
 #include "calendarsupport_debug.h"
-#include "helper_p.h"
+
 
 using namespace CalendarSupport;
 

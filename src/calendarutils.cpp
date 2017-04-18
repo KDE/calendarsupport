@@ -27,7 +27,7 @@
 
 #include "calendarutils.h"
 #include "utils.h"
-#include "helper_p.h"
+
 
 #include <KCalCore/Incidence>
 #include <Akonadi/Calendar/ETMCalendar>
