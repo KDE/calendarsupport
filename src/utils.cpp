@@ -628,7 +628,8 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
 
         if (!ownerStr.isEmpty()) {
             const int atChar = ownerStr.lastIndexOf(QLatin1Char('@'));
-            ownerStr = ownerStr.left(atChar);
+            if (atChar >= 0)
+                ownerStr.truncate(atChar);
             if (nameStr.isEmpty()) {
                 return i18nc("%1 is folder owner name, %2 is folder contents",
                              "%1's Google %2", ownerStr, typeStr);
