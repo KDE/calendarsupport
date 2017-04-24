@@ -111,11 +111,7 @@ void CategoryConfig::writeConfig()
 QStringList CategoryConfig::customCategories() const
 {
     KConfigGroup group(d->config->config(), "General");
-    QStringList cats = group.readEntry("Custom Categories", QStringList());
-
-    if (cats.isEmpty()) {
-        cats = categoryDefaults();
-    }
+    QStringList cats = group.readEntry("Custom Categories", categoryDefaults());
     cats.sort();
     return cats;
 }

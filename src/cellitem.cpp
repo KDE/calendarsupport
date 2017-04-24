@@ -102,7 +102,8 @@ QList<CellItem *> CellItem::placeItem(const QList<CellItem *> &cells, CellItem *
         placeItem->setSubCells(maxSubCells);
 
         QList<CellItem *>::iterator it;
-        for (it = conflictItems.begin(); it != conflictItems.end(); ++it) {
+        QList<CellItem *>::iterator end(conflictItems.end());
+        for (it = conflictItems.begin(); it != end; ++it) {
             (*it)->setSubCells(maxSubCells);
         }
         // Todo: Adapt subCells of items conflicting with conflicting items
