@@ -72,6 +72,7 @@ public:
 
     QVariant headerData(int section, Qt::Orientation orientation,
                         int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
+    QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;
 
 Q_SIGNALS:
     void rowCountChanged();
@@ -81,7 +82,7 @@ private:
     IncidenceAttachmentModelPrivate *const d_ptr;
 
     Q_PRIVATE_SLOT(d_func(), void resetModel())
-    Q_PRIVATE_SLOT(d_func(), void itemFetched(Akonadi::Item::List))
+    Q_PRIVATE_SLOT(d_func(), void itemFetched(Akonadi::Item::List))    
 };
 
 }

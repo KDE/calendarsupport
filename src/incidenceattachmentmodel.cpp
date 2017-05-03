@@ -45,10 +45,6 @@ class IncidenceAttachmentModelPrivate
             createMonitor();
             resetInternalData();
         }
-        QHash<int, QByteArray> roleNames = qq->roleNames();
-        roleNames.insert(IncidenceAttachmentModel::MimeTypeRole, "mimeType");
-        roleNames.insert(IncidenceAttachmentModel::AttachmentUrl, "attachmentUrl");
-        qq->setRoleNames(roleNames);
     }
 
     void resetModel()
@@ -218,4 +214,14 @@ QVariant IncidenceAttachmentModel::headerData(int section,
     return QAbstractItemModel::headerData(section, orientation, role);
 }
 
+QHash<int, QByteArray> CalendarSupport::IncidenceAttachmentModel::roleNames() const
+{
+    QHash<int, QByteArray> roleNames = QAbstractListModel::roleNames();
+    roleNames.insert(IncidenceAttachmentModel::MimeTypeRole, "mimeType");
+    roleNames.insert(IncidenceAttachmentModel::AttachmentUrl, "attachmentUrl");
+    return roleNames;
+}
+
 #include "moc_incidenceattachmentmodel.cpp"
+
+

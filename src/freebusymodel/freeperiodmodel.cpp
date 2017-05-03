@@ -99,7 +99,7 @@ void FreePeriodModel::slotNewFreePeriods(const KCalCore::Period::List &freePerio
     beginResetModel();
     mPeriodList.clear();
     mPeriodList = splitPeriodsByDay(freePeriods);
-    qSort(mPeriodList);
+    std::sort(mPeriodList.begin(), mPeriodList.end());
     endResetModel();
 }
 

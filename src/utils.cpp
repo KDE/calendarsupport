@@ -65,6 +65,7 @@
 #include <QModelIndex>
 #include <QPointer>
 #include <QFileDialog>
+#include <QUrlQuery>
 
 #include <boost/bind.hpp>
 #include "calendarsupport_debug.h"
