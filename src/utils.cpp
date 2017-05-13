@@ -334,11 +334,14 @@ static bool containsValidIncidenceItemUrl(const QList<QUrl> &urls)
 
 bool CalendarSupport::canDecode(const QMimeData *md)
 {
-    Q_ASSERT(md);
-    return
-        containsValidIncidenceItemUrl(md->urls()) ||
-        KCalUtils::ICalDrag::canDecode(md) ||
-        KCalUtils::VCalDrag::canDecode(md);
+    if (md) {
+        return
+                containsValidIncidenceItemUrl(md->urls()) ||
+                KCalUtils::ICalDrag::canDecode(md) ||
+                KCalUtils::VCalDrag::canDecode(md);
+    } else {
+        return false;
+    }
 }
 
 QList<QUrl> CalendarSupport::incidenceItemUrls(const QMimeData *mimeData)
