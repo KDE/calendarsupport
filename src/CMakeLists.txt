@@ -1,7 +1,7 @@
 
 add_definitions(-DQT_NO_CAST_FROM_ASCII)
 add_definitions(-DQT_NO_CAST_TO_ASCII)
-add_definitions( -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT )
+add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"calendarsupport\")
 
