@@ -77,7 +77,7 @@ public:
     /**
       Returns widget for configuring the print format.
     */
-    QWidget *createConfigWidget(QWidget *) Q_DECL_OVERRIDE;
+    QWidget *createConfigWidget(QWidget *) override;
 
     /**
       Actually do the printing.
@@ -90,7 +90,7 @@ public:
     /**
       Start printing.
     */
-    void doPrint(QPrinter *printer) Q_DECL_OVERRIDE;
+    void doPrint(QPrinter *printer) override;
 
     /**
       Load print format configuration from config file.
@@ -104,11 +104,11 @@ public:
     /**
       Load complete config. This also calls loadConfig() of the derived class.
     */
-    void doLoadConfig() Q_DECL_OVERRIDE;
+    void doLoadConfig() override;
     /**
       Save complete config. This also calls saveConfig() of the derived class.
     */
-    void doSaveConfig() Q_DECL_OVERRIDE;
+    void doSaveConfig() override;
 
     /** HELPER FUNCTIONS */
 public:

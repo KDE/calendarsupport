@@ -34,36 +34,36 @@ class CalPrintYear : public CalPrintPluginBase
 public:
     CalPrintYear(): CalPrintPluginBase() {}
     ~CalPrintYear() {}
-    QString groupName() const Q_DECL_OVERRIDE
+    QString groupName() const override
     {
         return QStringLiteral("Print year");
     }
-    QString description() const Q_DECL_OVERRIDE
+    QString description() const override
     {
         return i18n("Print &year");
     }
-    QString info() const Q_DECL_OVERRIDE
+    QString info() const override
     {
         return i18n("Prints a calendar for an entire year");
     }
-    int sortID() const Q_DECL_OVERRIDE
+    int sortID() const override
     {
         return CalPrinterBase::Year;
     }
-    bool enabled() const Q_DECL_OVERRIDE
+    bool enabled() const override
     {
         return true;
     }
-    QWidget *createConfigWidget(QWidget *) Q_DECL_OVERRIDE;
-    QPrinter::Orientation defaultOrientation() const Q_DECL_OVERRIDE;
+    QWidget *createConfigWidget(QWidget *) override;
+    QPrinter::Orientation defaultOrientation() const override;
 
 public:
-    void print(QPainter &p, int width, int height) Q_DECL_OVERRIDE;
-    void readSettingsWidget() Q_DECL_OVERRIDE;
-    void setSettingsWidget() Q_DECL_OVERRIDE;
-    void loadConfig() Q_DECL_OVERRIDE;
-    void saveConfig() Q_DECL_OVERRIDE;
-    void setDateRange(const QDate &from, const QDate &to) Q_DECL_OVERRIDE;
+    void print(QPainter &p, int width, int height) override;
+    void readSettingsWidget() override;
+    void setSettingsWidget() override;
+    void loadConfig() override;
+    void saveConfig() override;
+    void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
     int mYear;

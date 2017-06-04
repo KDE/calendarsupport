@@ -100,7 +100,7 @@ public:
     /**
       Returns long description of print format.
     */
-    QString info() const Q_DECL_OVERRIDE = 0;
+    QString info() const override = 0;
 
     /**
       Returns the sort ID of the plugin. This value will be used to identify
@@ -198,7 +198,7 @@ class PrintPluginFactory : public PluginFactory
 {
     Q_OBJECT
 public:
-    PrintPlugin *createPluginFactory() Q_DECL_OVERRIDE = 0;
+    PrintPlugin *createPluginFactory() override = 0;
 };
 
 }

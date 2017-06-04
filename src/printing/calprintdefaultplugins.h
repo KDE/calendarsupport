@@ -44,40 +44,40 @@ class CALENDARSUPPORT_EXPORT CalPrintIncidence : public CalPrintPluginBase
 public:
     CalPrintIncidence();
     virtual ~CalPrintIncidence();
-    QString groupName() const Q_DECL_OVERRIDE
+    QString groupName() const override
     {
         return QStringLiteral("Print incidence");
     }
-    QString description() const Q_DECL_OVERRIDE
+    QString description() const override
     {
         return i18n("Print &incidence");
     }
-    QString info() const Q_DECL_OVERRIDE
+    QString info() const override
     {
         return i18n("Prints an incidence on one page");
     }
-    int sortID() const Q_DECL_OVERRIDE
+    int sortID() const override
     {
         return CalPrinterBase::Incidence;
     }
 
     // Enable the Print Incidence option only if there are selected incidences.
-    bool enabled() const Q_DECL_OVERRIDE
+    bool enabled() const override
     {
         return !mSelectedIncidences.isEmpty();
     }
-    QWidget *createConfigWidget(QWidget *) Q_DECL_OVERRIDE;
-    QPrinter::Orientation defaultOrientation() const Q_DECL_OVERRIDE
+    QWidget *createConfigWidget(QWidget *) override;
+    QPrinter::Orientation defaultOrientation() const override
     {
         return QPrinter::Portrait;
     }
 
 public:
-    void print(QPainter &p, int width, int height) Q_DECL_OVERRIDE;
-    void readSettingsWidget() Q_DECL_OVERRIDE;
-    void setSettingsWidget() Q_DECL_OVERRIDE;
-    void loadConfig() Q_DECL_OVERRIDE;
-    void saveConfig() Q_DECL_OVERRIDE;
+    void print(QPainter &p, int width, int height) override;
+    void readSettingsWidget() override;
+    void setSettingsWidget() override;
+    void loadConfig() override;
+    void saveConfig() override;
 
 protected:
     int printCaptionAndText(QPainter &p, const QRect &box, const QString &caption,
@@ -95,35 +95,35 @@ class CalPrintDay : public CalPrintPluginBase
 public:
     CalPrintDay();
     virtual ~CalPrintDay();
-    QString groupName() const Q_DECL_OVERRIDE
+    QString groupName() const override
     {
         return QStringLiteral("Print day");
     }
-    QString description() const Q_DECL_OVERRIDE
+    QString description() const override
     {
         return i18n("Print da&y");
     }
-    QString info() const Q_DECL_OVERRIDE
+    QString info() const override
     {
         return i18n("Prints all events of a single day on one page");
     }
-    int sortID() const Q_DECL_OVERRIDE
+    int sortID() const override
     {
         return CalPrinterBase::Day;
     }
-    bool enabled() const Q_DECL_OVERRIDE
+    bool enabled() const override
     {
         return true;
     }
-    QWidget *createConfigWidget(QWidget *) Q_DECL_OVERRIDE;
+    QWidget *createConfigWidget(QWidget *) override;
 
 public:
-    void print(QPainter &p, int width, int height) Q_DECL_OVERRIDE;
-    void readSettingsWidget() Q_DECL_OVERRIDE;
-    void setSettingsWidget() Q_DECL_OVERRIDE;
-    void loadConfig() Q_DECL_OVERRIDE;
-    void saveConfig() Q_DECL_OVERRIDE;
-    void setDateRange(const QDate &from, const QDate &to) Q_DECL_OVERRIDE;
+    void print(QPainter &p, int width, int height) override;
+    void readSettingsWidget() override;
+    void setSettingsWidget() override;
+    void loadConfig() override;
+    void saveConfig() override;
+    void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
     enum eDayPrintType {
@@ -147,40 +147,40 @@ public:
     CalPrintWeek();
     virtual ~CalPrintWeek();
 
-    QString groupName() const Q_DECL_OVERRIDE
+    QString groupName() const override
     {
         return QStringLiteral("Print week");
     }
-    QString description() const Q_DECL_OVERRIDE
+    QString description() const override
     {
         return i18n("Print &week");
     }
-    QString info() const Q_DECL_OVERRIDE
+    QString info() const override
     {
         return i18n("Prints all events of one week on one page");
     }
-    int sortID() const Q_DECL_OVERRIDE
+    int sortID() const override
     {
         return CalPrinterBase::Week;
     }
-    bool enabled() const Q_DECL_OVERRIDE
+    bool enabled() const override
     {
         return true;
     }
-    QWidget *createConfigWidget(QWidget *) Q_DECL_OVERRIDE;
+    QWidget *createConfigWidget(QWidget *) override;
 
     /**
       Returns the default orientation for the eWeekPrintType.
     */
-    QPrinter::Orientation defaultOrientation() const Q_DECL_OVERRIDE;
+    QPrinter::Orientation defaultOrientation() const override;
 
 public:
-    void print(QPainter &p, int width, int height) Q_DECL_OVERRIDE;
-    void readSettingsWidget() Q_DECL_OVERRIDE;
-    void setSettingsWidget() Q_DECL_OVERRIDE;
-    void loadConfig() Q_DECL_OVERRIDE;
-    void saveConfig() Q_DECL_OVERRIDE;
-    void setDateRange(const QDate &from, const QDate &to) Q_DECL_OVERRIDE;
+    void print(QPainter &p, int width, int height) override;
+    void readSettingsWidget() override;
+    void setSettingsWidget() override;
+    void loadConfig() override;
+    void saveConfig() override;
+    void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
     enum eWeekPrintType {
@@ -202,39 +202,39 @@ class CalPrintMonth : public CalPrintPluginBase
 public:
     CalPrintMonth();
     virtual ~CalPrintMonth();
-    QString groupName() const Q_DECL_OVERRIDE
+    QString groupName() const override
     {
         return QStringLiteral("Print month");
     }
-    QString description() const Q_DECL_OVERRIDE
+    QString description() const override
     {
         return i18n("Print mont&h");
     }
-    QString info() const Q_DECL_OVERRIDE
+    QString info() const override
     {
         return i18n("Prints all events of one month on one page");
     }
-    int sortID() const Q_DECL_OVERRIDE
+    int sortID() const override
     {
         return CalPrinterBase::Month;
     }
-    bool enabled() const Q_DECL_OVERRIDE
+    bool enabled() const override
     {
         return true;
     }
-    QWidget *createConfigWidget(QWidget *) Q_DECL_OVERRIDE;
-    QPrinter::Orientation defaultOrientation() const Q_DECL_OVERRIDE
+    QWidget *createConfigWidget(QWidget *) override;
+    QPrinter::Orientation defaultOrientation() const override
     {
         return QPrinter::Landscape;
     }
 
 public:
-    void print(QPainter &p, int width, int height) Q_DECL_OVERRIDE;
-    void readSettingsWidget() Q_DECL_OVERRIDE;
-    void setSettingsWidget() Q_DECL_OVERRIDE;
-    void loadConfig() Q_DECL_OVERRIDE;
-    void saveConfig() Q_DECL_OVERRIDE;
-    void setDateRange(const QDate &from, const QDate &to) Q_DECL_OVERRIDE;
+    void print(QPainter &p, int width, int height) override;
+    void readSettingsWidget() override;
+    void setSettingsWidget() override;
+    void loadConfig() override;
+    void saveConfig() override;
+    void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
     bool mWeekNumbers;
@@ -253,34 +253,34 @@ public:
     CalPrintTodos();
     virtual ~CalPrintTodos();
 
-    QString groupName() const Q_DECL_OVERRIDE
+    QString groupName() const override
     {
         return QStringLiteral("Print to-dos");
     }
-    QString description() const Q_DECL_OVERRIDE
+    QString description() const override
     {
         return i18n("Print to-&dos");
     }
-    QString info() const Q_DECL_OVERRIDE
+    QString info() const override
     {
         return i18n("Prints all to-dos in a (tree-like) list");
     }
-    int sortID() const Q_DECL_OVERRIDE
+    int sortID() const override
     {
         return CalPrinterBase::Todolist;
     }
-    bool enabled() const Q_DECL_OVERRIDE
+    bool enabled() const override
     {
         return true;
     }
-    QWidget *createConfigWidget(QWidget *) Q_DECL_OVERRIDE;
+    QWidget *createConfigWidget(QWidget *) override;
 
 public:
-    void print(QPainter &p, int width, int height) Q_DECL_OVERRIDE;
-    void readSettingsWidget() Q_DECL_OVERRIDE;
-    void setSettingsWidget() Q_DECL_OVERRIDE;
-    void loadConfig() Q_DECL_OVERRIDE;
-    void saveConfig() Q_DECL_OVERRIDE;
+    void print(QPainter &p, int width, int height) override;
+    void readSettingsWidget() override;
+    void setSettingsWidget() override;
+    void loadConfig() override;
+    void saveConfig() override;
 
 protected:
     QString mPageTitle;

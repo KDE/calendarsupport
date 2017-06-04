@@ -144,13 +144,13 @@ private:
     /**
      * This method is called whenever the displayed incidence @p item has been changed.
      */
-    void itemChanged(const Akonadi::Item &item) Q_DECL_OVERRIDE;
+    void itemChanged(const Akonadi::Item &item) override;
 
     /**
      * This method is called whenever the displayed incidence has been
      * removed from Akonadi.
      */
-    void itemRemoved() Q_DECL_OVERRIDE;
+    void itemRemoved() override;
 
 private:
     //@cond PRIVATE

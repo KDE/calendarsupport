@@ -36,35 +36,35 @@ public:
     CalPrintJournal(): CalPrintPluginBase() {}
     ~CalPrintJournal() {}
 
-    QString groupName() const Q_DECL_OVERRIDE
+    QString groupName() const override
     {
         return QStringLiteral("Print journal");
     }
-    QString description() const Q_DECL_OVERRIDE
+    QString description() const override
     {
         return i18n("Print &journal");
     }
-    QString info() const Q_DECL_OVERRIDE
+    QString info() const override
     {
         return i18n("Prints all journals for a given date range");
     }
-    QWidget *createConfigWidget(QWidget *) Q_DECL_OVERRIDE;
-    int sortID() const Q_DECL_OVERRIDE
+    QWidget *createConfigWidget(QWidget *) override;
+    int sortID() const override
     {
         return CalPrinterBase::Journallist;
     }
-    bool enabled() const Q_DECL_OVERRIDE
+    bool enabled() const override
     {
         return true;
     }
 
 public:
-    void print(QPainter &p, int width, int height) Q_DECL_OVERRIDE;
-    void readSettingsWidget() Q_DECL_OVERRIDE;
-    void setSettingsWidget() Q_DECL_OVERRIDE;
-    void loadConfig() Q_DECL_OVERRIDE;
-    void saveConfig() Q_DECL_OVERRIDE;
-    void setDateRange(const QDate &from, const QDate &to) Q_DECL_OVERRIDE;
+    void print(QPainter &p, int width, int height) override;
+    void readSettingsWidget() override;
+    void setSettingsWidget() override;
+    void loadConfig() override;
+    void saveConfig() override;
+    void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
     bool mUseDateRange;

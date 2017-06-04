@@ -88,7 +88,7 @@ public:
         return mEvent;
     }
 
-    QString label() const Q_DECL_OVERRIDE
+    QString label() const override
     {
         return mEvent->summary();
     }
@@ -104,7 +104,7 @@ public:
 
     /** Calculate the start and end date/time of the recurrence that
         happens on the given day */
-    bool overlaps(CellItem *o) const Q_DECL_OVERRIDE
+    bool overlaps(CellItem *o) const override
     {
         PrintCellItem *other = static_cast<PrintCellItem *>(o);
         return !(other->start() >= end() || other->end() <= start());
