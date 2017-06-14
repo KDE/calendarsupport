@@ -129,7 +129,7 @@ void CalPrintYear::print(QPainter &p, int width, int height)
     int maxdays = 1;
     for (int i = 1; i < months; ++i) {
         maxdays = qMax(maxdays, temp.daysInMonth());
-        temp.addMonths(1);
+        temp = temp.addMonths(1);
     }
 
     // Now determine the months per page so that the printout fits on
