@@ -158,8 +158,7 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle,
 
     if (preview) {
         QPointer<PimCommon::KPimPrintPreviewDialog> printPreview = new PimCommon::KPimPrintPreviewDialog(&printer);
-        connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this, [selectedStyle, &printer]() {
-            selectedStyle->doPrint(&printer);
+        connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this, [selectedStyle, &printer]() { selectedStyle->doPrint(&printer);
         });
         printPreview->exec();
         delete printPreview;
@@ -234,7 +233,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     splitterRightLayout->addWidget(mOrientationSelection, 1, 1);
 
     // signals and slots connections
-    connect(mTypeGroup, static_cast<void (QButtonGroup::*)(int)>(&QButtonGroup::buttonClicked), this, &CalPrintDialog::setPrintType);
+    connect(mTypeGroup, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &CalPrintDialog::setPrintType);
     orientationLabel->setBuddy(mOrientationSelection);
 
     // First insert the config widgets into the widget stack. This possibly assigns

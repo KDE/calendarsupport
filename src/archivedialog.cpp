@@ -98,7 +98,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
     connect(descLabel, &QLabel::linkActivated, this, &ArchiveDialog::showWhatsThis);
 
     QButtonGroup *radioBG = new QButtonGroup(this);
-    connect(radioBG, static_cast<void (QButtonGroup::*)(int)>(&QButtonGroup::buttonClicked), this, &ArchiveDialog::slotActionChanged);
+    connect(radioBG, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &ArchiveDialog::slotActionChanged);
 
     QHBoxLayout *dateLayout = new QHBoxLayout();
     dateLayout->setMargin(0);
