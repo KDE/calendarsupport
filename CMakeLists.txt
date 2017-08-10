@@ -51,6 +51,12 @@ find_package(KF5PimCommon ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5KdepimDBusInterfaces ${KDEPIM_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5IMAP ${KIMAP_LIB_VERSION} CONFIG REQUIRED)
 
+find_package(Boost MODULE)
+set_package_properties(Boost PROPERTIES
+  TYPE REQUIRED
+  URL "http://www.boost.org"
+)
+
 ecm_setup_version(PROJECT VARIABLE_PREFIX CALENDARSUPPORT
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/calendarsupport_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5CalendarSupportConfigVersion.cmake"
