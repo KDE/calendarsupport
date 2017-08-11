@@ -226,13 +226,8 @@ bool AttachmentHandler::view(const QString &attachmentName,
 bool AttachmentHandler::saveAs(const Attachment::Ptr &attachment)
 {
     // get the saveas file name
-    QString saveAsFile = QFileDialog::getSaveFileName(d->mParent, i18n("Save Attachment"), attachment->label());
-    if (saveAsFile.isEmpty() ||
-            (QFileInfo::exists(saveAsFile) &&
-             (KMessageBox::warningYesNo(
-                  d->mParent,
-                  i18n("%1 already exists. Do you want to overwrite it?",
-                       saveAsFile)) == KMessageBox::No))) {
+    const QString saveAsFile = QFileDialog::getSaveFileName(d->mParent, i18n("Save Attachment"), attachment->label());
+    if (saveAsFile.isEmpty()) {
         return false;
     }
 
