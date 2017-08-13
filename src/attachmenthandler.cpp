@@ -186,7 +186,10 @@ bool AttachmentHandler::view(const Attachment::Ptr &attachment)
         // put the attachment in a temporary file and launch it
         QUrl tempUrl = tempFileForAttachment(attachment);
         if (tempUrl.isValid()) {
-            stat = KRun::runUrl(tempUrl, attachment->mimeType(), nullptr, true);
+            KRun::RunFlags flags;
+            flags |= KRun::DeleteTemporaryFiles;
+            flags |= KRun::RunExecutables;
+            stat = KRun::runUrl(tempUrl, attachment->mimeType(), nullptr, flags);
         } else {
             stat = false;
             KMessageBox::error(
