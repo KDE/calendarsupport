@@ -883,7 +883,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
             allDayHeight = qMax(allDayHeight, (5 * lineSpacing)) + (2 * padding());
             QRect allDayBox(TIMELINE_WIDTH + padding(), headerBox.bottom() + padding(),
                             width - TIMELINE_WIDTH - padding(), allDayHeight);
-            if (alldayEvents.count() > 0) {
+            if (!alldayEvents.isEmpty()) {
                 // draw the side bar for all-day events
                 QFont oldFont(p.font());
                 p.setFont(QFont(QStringLiteral("sans-serif"), 9, QFont::Normal));
