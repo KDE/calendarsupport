@@ -59,7 +59,7 @@ protected:
     int depth() const override;
 
 private:
-    KComboBox *mBox;
+    KComboBox *mBox = nullptr;
     int mCurrentDepth;
 };
 
@@ -78,8 +78,8 @@ protected:
     int depth() const override;
 
 private:
-    QTreeWidget *mTree;
-    QTreeWidgetItem *mItem;
+    QTreeWidget *mTree = nullptr;
+    QTreeWidgetItem *mItem = nullptr;
     int mCurrentDepth;
 };
 #endif

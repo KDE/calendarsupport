@@ -68,18 +68,18 @@ protected Q_SLOTS:
 
 private:
     void showWhatsThis();
-    KUrlRequester *mArchiveFile;
-    KDateComboBox *mDateEdit;
-    QCheckBox *mDeleteCb;
-    QRadioButton *mArchiveOnceRB;
-    QRadioButton *mAutoArchiveRB;
-    QSpinBox *mExpiryTimeNumInput;
-    KComboBox *mExpiryUnitsComboBox;
-    QCheckBox *mEvents;
-    QCheckBox *mTodos;
-    Akonadi::IncidenceChanger *mChanger;
+    KUrlRequester *mArchiveFile = nullptr;
+    KDateComboBox *mDateEdit = nullptr;
+    QCheckBox *mDeleteCb = nullptr;
+    QRadioButton *mArchiveOnceRB = nullptr;
+    QRadioButton *mAutoArchiveRB = nullptr;
+    QSpinBox *mExpiryTimeNumInput = nullptr;
+    KComboBox *mExpiryUnitsComboBox = nullptr;
+    QCheckBox *mEvents = nullptr;
+    QCheckBox *mTodos = nullptr;
+    Akonadi::IncidenceChanger *mChanger = nullptr;
     Akonadi::ETMCalendar::Ptr mCalendar;
-    QPushButton *mUser1Button;
+    QPushButton *mUser1Button = nullptr;
 };
 
 }

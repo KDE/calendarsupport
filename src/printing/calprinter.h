@@ -93,8 +93,8 @@ protected:
 
 private:
     Akonadi::ETMCalendar::Ptr mCalendar;
-    QWidget *mParent;
-    KConfig *mConfig;
+    QWidget *mParent = nullptr;
+    KConfig *mConfig = nullptr;
     bool mUniqItem;
 };
 
@@ -122,12 +122,12 @@ protected Q_SLOTS:
     void slotOk();
 
 private:
-    QButtonGroup *mTypeGroup;
-    QStackedWidget *mConfigArea;
+    QButtonGroup *mTypeGroup = nullptr;
+    QStackedWidget *mConfigArea = nullptr;
     QMap<int, PrintPlugin *> mPluginIDs;
     QString mPreviewText;
     KComboBox *mOrientationSelection;
-    QPushButton *mOkButton;
+    QPushButton *mOkButton = nullptr;
     CalPrinter::ePrintOrientation mOrientation;
 };
 

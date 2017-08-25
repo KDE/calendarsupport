@@ -188,10 +188,10 @@ protected:
     QPointer<QWidget> mConfigWidget;
     /** The printer object. This will only be available in the doPrint method
         of the selected plugin */
-    QPrinter *mPrinter;
+    QPrinter *mPrinter = nullptr;
     Akonadi::ETMCalendar::Ptr mCalendar;
     KCalCore::Incidence::List mSelectedIncidences;
-    KConfig *mConfig;
+    KConfig *mConfig = nullptr;
 };
 
 class PrintPluginFactory : public PluginFactory
