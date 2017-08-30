@@ -120,18 +120,18 @@ public:
         mAttachmentHandler->view(attachmentName, CalendarSupport::incidence(mCurrentItem));
     }
 
-    Akonadi::ETMCalendar *mCalendar;
-    IncidenceViewer *mParent;
-    TextBrowser *mBrowser;
+    Akonadi::ETMCalendar *mCalendar = nullptr;
+    IncidenceViewer *mParent = nullptr;
+    TextBrowser *mBrowser = nullptr;
     Akonadi::Item mCurrentItem;
     QString mHeaderText;
     QString mDefaultText;
     Akonadi::Collection mParentCollection;
-    Akonadi::CollectionFetchJob *mParentCollectionFetchJob;
-    IncidenceAttachmentModel *mAttachmentModel;
-    AttachmentHandler *mAttachmentHandler;
+    Akonadi::CollectionFetchJob *mParentCollectionFetchJob = nullptr;
+    IncidenceAttachmentModel *mAttachmentModel = nullptr;
+    AttachmentHandler *mAttachmentHandler = nullptr;
     QDate mDate;
-    bool mDelayedClear;
+    bool mDelayedClear = false;
 };
 
 IncidenceViewer::IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent)

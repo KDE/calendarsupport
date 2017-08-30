@@ -102,7 +102,7 @@ class IncidenceAttachmentModelPrivate
     QModelIndex m_modelIndex;
     Akonadi::Item m_item;
     KCalCore::Incidence::Ptr m_incidence;
-    Akonadi::Monitor *m_monitor;
+    Akonadi::Monitor *m_monitor = nullptr;
 };
 
 }

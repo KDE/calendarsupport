@@ -75,7 +75,7 @@ public:
 
     /// Members
     Akonadi::ETMCalendar::Ptr mCalendar;
-    Akonadi::IncidenceChanger *mChanger;
+    Akonadi::IncidenceChanger *mChanger = nullptr;
     MultiChange       mMultiChange;
 
 private:

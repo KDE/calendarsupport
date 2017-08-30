@@ -35,7 +35,7 @@ public:
     {
     }
 
-    QItemSelectionModel *model;
+    QItemSelectionModel *model = nullptr;
 };
 
 CollectionSelection::CollectionSelection(QItemSelectionModel *selectionModel, QObject *parent)

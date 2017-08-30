@@ -126,7 +126,7 @@ private:
     QStackedWidget *mConfigArea = nullptr;
     QMap<int, PrintPlugin *> mPluginIDs;
     QString mPreviewText;
-    KComboBox *mOrientationSelection;
+    KComboBox *mOrientationSelection = nullptr;
     QPushButton *mOkButton = nullptr;
     CalPrinter::ePrintOrientation mOrientation;
 };

@@ -38,12 +38,11 @@ class CalendarSupport::FreeBusyCalendarPrivate
 {
 public:
     FreeBusyCalendarPrivate()
-        : mModel(nullptr)
     {
 
     }
 
-    FreeBusyItemModel *mModel;
+    FreeBusyItemModel *mModel = nullptr;
     KCalCore::Calendar::Ptr mCalendar;
     QMap<QModelIndex, KCalCore::Event::Ptr> mFbEvent;
 };

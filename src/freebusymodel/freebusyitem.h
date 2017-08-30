@@ -68,9 +68,9 @@ private:
     int mTimerID;
 
     // Only run one download job at a time
-    bool mIsDownloading;
+    bool mIsDownloading = false;
 
-    QWidget *mParentWidget;
+    QWidget *mParentWidget = nullptr;
 };
 
 }

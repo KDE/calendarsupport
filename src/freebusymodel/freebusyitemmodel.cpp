@@ -76,7 +76,7 @@ public:
 
 private:
     QList<ItemPrivateData *> childItems;
-    ItemPrivateData *parentItem;
+    ItemPrivateData *parentItem = nullptr;
 };
 
 class CalendarSupport::FreeBusyItemModelPrivate
@@ -93,9 +93,9 @@ public:
     }
 
     QTimer mReloadTimer;
-    bool mForceDownload;
+    bool mForceDownload = false;
     QList<FreeBusyItem::Ptr> mFreeBusyItems;
-    ItemPrivateData *mRootData;
+    ItemPrivateData *mRootData = nullptr;
 };
 
 FreeBusyItemModel::FreeBusyItemModel(QObject *parent)
@@ -168,7 +168,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
 
 int FreeBusyItemModel::rowCount(const QModelIndex &parent) const
 {
-    ItemPrivateData *parentData;
+    ItemPrivateData *parentData = nullptr;
     if (parent.column() > 0) {
         return 0;
     }
@@ -194,7 +194,7 @@ QModelIndex FreeBusyItemModel::index(int row, int column, const QModelIndex &par
         return QModelIndex();
     }
 
-    ItemPrivateData *parentData;
+    ItemPrivateData *parentData = nullptr;
     if (!parent.isValid()) {
         parentData = d->mRootData;
     } else {

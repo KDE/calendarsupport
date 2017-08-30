@@ -64,7 +64,7 @@ public:
     }
 
     bool m_wasEnabled;
-    Akonadi::IncidenceChanger *m_changer;
+    Akonadi::IncidenceChanger *m_changer = nullptr;
 };
 
 EventArchiver::EventArchiver(QObject *parent)
