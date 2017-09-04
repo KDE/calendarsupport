@@ -34,6 +34,7 @@ TagCache::TagCache()
     : QObject(),
       mMonitor(new Akonadi::Monitor(this))
 {
+    mMonitor->setObjectName(QStringLiteral("TagCacheMonitor"));
     mMonitor->setTypeMonitored(Akonadi::Monitor::Tags);
     mMonitor->tagFetchScope().fetchAttribute<Akonadi::TagAttribute>();
     connect(mMonitor, &Akonadi::Monitor::tagAdded, this, &TagCache::onTagAdded);
