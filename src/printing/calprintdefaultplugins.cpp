@@ -520,32 +520,21 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                     }
                     // format the dates if provided
                     datesString.clear();
-                    KDateTime::Spec spec = KCalPrefs::instance()->timeSpec();
                     if (todo->dtStart().isValid()) {
-                        datesString += i18nc(
-                                           "subitem start date", "Start Date: %1\n",
-                                           QLocale::system().toString(todo->dtStart().toTimeSpec(spec).date(),
-                                                   QLocale::ShortFormat));
+                        datesString += i18nc("subitem start date", "Start Date: %1\n",
+                            QLocale().toString(todo->dtStart().toLocalZone().date(), QLocale::ShortFormat));
                         if (!todo->allDay()) {
-                            datesString += i18nc(
-                                               "subitem start time", "Start Time: %1\n",
-                                               QLocale::system().toString(todo->dtStart().toTimeSpec(spec).time(),
-                                                       QLocale::ShortFormat));
+                            datesString += i18nc("subitem start time", "Start Time: %1\n",
+                                QLocale().toString(todo->dtStart().toLocalZone().time(), QLocale::ShortFormat));
                         }
                     }
                     if (todo->dateTime(KCalCore::Incidence::RoleEnd).isValid()) {
-                        subitemString +=
-                            i18nc("subitem due date", "Due Date: %1\n",
-                                  QLocale::system().toString(
-                                      todo->dateTime(KCalCore::Incidence::RoleEnd).toTimeSpec(spec).date(),
-                                      QLocale::ShortFormat));
+                        subitemString += i18nc("subitem due date", "Due Date: %1\n",
+                            QLocale().toString(todo->dateTime(KCalCore::Incidence::RoleEnd).toLocalZone().date(), QLocale::ShortFormat));
 
                         if (!todo->allDay()) {
-                            subitemString += i18nc(
-                                                 "subitem due time", "Due Time: %1\n",
-                                                 QLocale::system().toString(
-                                                     todo->dateTime(KCalCore::Incidence::RoleEnd).toTimeSpec(spec).time(),
-                                                     QLocale::ShortFormat));
+                            subitemString += i18nc("subitem due time", "Due Time: %1\n",
+                                QLocale().toString(todo->dateTime(KCalCore::Incidence::RoleEnd).toLocalZone().time(), QLocale::ShortFormat));
                         }
                     }
                     subitemString += i18nc("subitem counter", "%1: ", count);
