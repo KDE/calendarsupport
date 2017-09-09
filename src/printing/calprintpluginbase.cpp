@@ -1198,7 +1198,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
                 continue;
             }
             if (todo->hasStartDate() && !todo->allDay()) {
-                timeText = QLocale::system().toString(todo->dtStart().toLocalZone().time(), QLocale::ShortFormat) + QLatin1Char(' ');
+                timeText = QLocale().toString(todo->dtStart().toLocalZone().time(), QLocale::ShortFormat) + QLatin1Char(' ');
             } else {
                 timeText.clear();
             }
@@ -1214,13 +1214,11 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
             if (todo->hasDueDate()) {
                 if (!todo->allDay()) {
                     str = i18nc("to-do summary (Due: datetime)", "%1 (Due: %2)",
-                                summaryStr,
-                                KLocale::global()->formatDateTime(todo->dtDue().toLocalZone()));
+                                summaryStr, QLocale().toString(todo->dtDue().toLocalZone().dateTime(), QLocale::ShortFormat));
                 } else {
                     str = i18nc("to-do summary (Due: date)", "%1 (Due: %2)",
                                 summaryStr,
-                                QLocale::system().toString(
-                                    todo->dtDue().toLocalZone().date(), QLocale::ShortFormat));
+                                QLocale().toString( todo->dtDue().toLocalZone().date(), QLocale::ShortFormat));
                 }
             } else {
                 str = summaryStr;

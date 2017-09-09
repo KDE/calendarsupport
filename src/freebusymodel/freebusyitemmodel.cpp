@@ -23,8 +23,10 @@
 
 #include <Akonadi/Calendar/FreeBusyManager>
 
-#include <KLocale>
+#include <KLocalizedString>
 
+#include <QDateTime>
+#include <QLocale>
 #include <QTimerEvent>
 
 using namespace CalendarSupport;
@@ -158,7 +160,8 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
     switch (role) {
     case Qt::DisplayRole: // return something to make modeltest happy
         return QStringLiteral("%1 - %2").
-               arg(KLocale::global()->formatDateTime(period.start()), KLocale::global()->formatDateTime(period.end()));
+               arg(QLocale().toString(period.start().toLocalZone().dateTime(), QLocale::ShortFormat),
+                   QLocale().toString(period.end().toLocalZone().dateTime(), QLocale::ShortFormat));
     case FreeBusyItemModel::FreeBusyPeriodRole:
         return QVariant::fromValue(period);
     default:
