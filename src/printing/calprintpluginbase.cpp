@@ -33,7 +33,6 @@
 
 #include <KConfigGroup>
 #include "calendarsupport_debug.h"
-#include <KSystemTimeZones>
 #include <KWordWrap>
 #include <KConfig>
 
@@ -78,7 +77,7 @@ public:
 class PrintCellItem : public CellItem
 {
 public:
-    PrintCellItem(const KCalCore::Event::Ptr &event, const KDateTime &start, const KDateTime &end)
+    PrintCellItem(const KCalCore::Event::Ptr &event, const QDateTime &start, const QDateTime &end)
         : mEvent(event), mStart(start), mEnd(end)
     {
     }
@@ -93,11 +92,11 @@ public:
         return mEvent->summary();
     }
 
-    KDateTime start() const
+    QDateTime start() const
     {
         return mStart;
     }
-    KDateTime end() const
+    QDateTime end() const
     {
         return mEnd;
     }
@@ -112,7 +111,7 @@ public:
 
 private:
     KCalCore::Event::Ptr mEvent;
-    KDateTime mStart, mEnd;
+    QDateTime mStart, mEnd;
 };
 
 /******************************************************************
@@ -318,7 +317,7 @@ KCalCore::Event::Ptr CalPrintPluginBase::holidayEvent(const QDate &date) const
     holiday->setSummary(hstring);
     holiday->setCategories(i18n("Holiday"));
 
-    KDateTime kdt(date, QTime(),  KSystemTimeZones::local());
+    KDateTime kdt(date, QTime(), KDateTime::LocalZone);
     holiday->setDtStart(kdt);
     holiday->setDtEnd(kdt);
     holiday->setAllDay(true);
@@ -963,7 +962,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalCore::Event::Li
         cells.reserve(times.count());
         for (QList<KDateTime>::ConstIterator it = times.constBegin();
                 it != times.constEnd(); ++it) {
-            cells.append(new PrintCellItem(event, (*it), event->endDateForStart(*it)));
+            cells.append(new PrintCellItem(event, (*it).toLocalZone().dateTime(), event->endDateForStart(*it).toLocalZone().dateTime()));
         }
     }
 
@@ -991,8 +990,8 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item, QPainter &p,
     KCalCore::Event::Ptr event = item->event();
 
     // start/end of print area for event
-    QDateTime startTime = item->start().toLocalZone().dateTime();
-    QDateTime endTime = item->end().toLocalZone().dateTime();
+    QDateTime startTime = item->start();
+    QDateTime endTime = item->end();
     if ((startTime < endPrintDate && endTime > startPrintDate) ||
             (endTime > startPrintDate && startTime < endPrintDate)) {
         if (startTime < startPrintDate) {
@@ -1021,14 +1020,14 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item, QPainter &p,
             if (event->location().isEmpty()) {
                 str = i18nc("starttime - endtime summary",
                             "%1-%2 %3",
-                            QLocale::system().toString(item->start().toLocalZone().time(), QLocale::ShortFormat),
-                            QLocale::system().toString(item->end().toLocalZone().time(), QLocale::ShortFormat),
+                            QLocale::system().toString(item->start().time(), QLocale::ShortFormat),
+                            QLocale::system().toString(item->end().time(), QLocale::ShortFormat),
                             cleanStr(event->summary()));
             } else {
                 str = i18nc("starttime - endtime summary, location",
                             "%1-%2 %3, %4",
-                            QLocale::system().toString(item->start().toLocalZone().time(), QLocale::ShortFormat),
-                            QLocale::system().toString(item->end().toLocalZone().time(), QLocale::ShortFormat),
+                            QLocale::system().toString(item->start().time(), QLocale::ShortFormat),
+                            QLocale::system().toString(item->end().time(), QLocale::ShortFormat),
                             cleanStr(event->summary()),
                             cleanStr(event->location()));
             }
@@ -1113,7 +1112,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
     p.drawText(headerTextBox, Qt::AlignRight | Qt::AlignVCenter, dayNumStr);
 
     const KCalCore::Event::List eventList =
-        mCalendar->events(qd, KSystemTimeZones::local(),
+        mCalendar->events(qd, KDateTime::LocalZone,
                           KCalCore::EventSortStartDate,
                           KCalCore::SortDirectionAscending);
 
@@ -1448,9 +1447,8 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
     QTime myToTime = toTime;
     if (expandable) {
         QDate curDate(fromDate);
-        KDateTime::Spec timeSpec = KSystemTimeZones::local();
         while (curDate <= toDate) {
-            KCalCore::Event::List eventList = mCalendar->events(curDate, timeSpec);
+            KCalCore::Event::List eventList = mCalendar->events(curDate, KDateTime::LocalZone);
             for (const KCalCore::Event::Ptr &event : qAsConst(eventList)) {
                 Q_ASSERT(event);
                 if (event->allDay()) {
@@ -1483,7 +1481,6 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
 
     // draw each day
     QDate curDate(fromDate);
-    KDateTime::Spec timeSpec = KSystemTimeZones::local();
     int i = 0;
     double cellWidth = double(dowBox.width()) / double(fromDate.daysTo(toDate) + 1);
     const QList<QDate> workDays = CalendarSupport::workDays(fromDate, toDate);
@@ -1493,7 +1490,7 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
         QRect dayBox(allDayBox);
         dayBox.setTop(tlBox.top());
         dayBox.setBottom(box.bottom());
-        KCalCore::Event::List eventList = mCalendar->events(curDate, timeSpec,
+        KCalCore::Event::List eventList = mCalendar->events(curDate, KDateTime::LocalZone,
                                           KCalCore::EventSortStartDate,
                                           KCalCore::SortDirectionAscending);
 
@@ -1512,22 +1509,22 @@ class MonthEventStruct
 {
 public:
     MonthEventStruct() : event(nullptr) {}
-    MonthEventStruct(const KDateTime &s, const KDateTime &e, const KCalCore::Event::Ptr &ev)
+    MonthEventStruct(const QDateTime &s, const QDateTime &e, const KCalCore::Event::Ptr &ev)
     {
         event = ev;
         start = s;
         end = e;
         if (event->allDay()) {
-            start = KDateTime(start.date(), QTime(0, 0, 0));
-            end = KDateTime(end.date().addDays(1), QTime(0, 0, 0)).addSecs(-1);
+            start = QDateTime(start.date(), QTime(0, 0, 0));
+            end = QDateTime(end.date().addDays(1), QTime(0, 0, 0)).addSecs(-1);
         }
     }
     bool operator < (const MonthEventStruct &mes)
     {
         return start < mes.start;
     }
-    KDateTime start;
-    KDateTime end;
+    QDateTime start;
+    QDateTime end;
     KCalCore::Event::Ptr event;
 };
 
@@ -1618,8 +1615,8 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
         if (e) {
             holidays.append(e);
             if (holidaysFlags & TimeBoxes) {
-                timeboxItems.append(new PrintCellItem(e, KDateTime(d, QTime(0, 0, 0)),
-                                                      KDateTime(d.addDays(1), QTime(0, 0, 0))));
+                timeboxItems.append(new PrintCellItem(e, QDateTime(d, QTime(0, 0, 0)),
+                                                      QDateTime(d.addDays(1), QTime(0, 0, 0))));
             }
             if (holidaysFlags & Text) {
                 textEvents[d.day()] << e->summary();
@@ -1629,7 +1626,6 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
 
     QList<MonthEventStruct> monthentries;
 
-    KDateTime::Spec timeSpec = KSystemTimeZones::local();
     for (const KCalCore::Event::Ptr &e : qAsConst(events)) {
         if (!e) {
             continue;
@@ -1639,13 +1635,13 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
             continue;
         }
         if (e->recurs()) {
-            if (e->recursOn(start, timeSpec)) {
+            if (e->recursOn(start, KDateTime::LocalZone)) {
                 // This occurrence has possibly started before the beginning of the
                 // month, so obtain the start date before the beginning of the month
                 QList<KDateTime> starttimes = e->startDateTimesForDate(start);
                 QList<KDateTime>::ConstIterator it = starttimes.constBegin();
                 for (; it != starttimes.constEnd(); ++it) {
-                    monthentries.append(MonthEventStruct(*it, e->endDateForStart(*it), e));
+                    monthentries.append(MonthEventStruct((*it).toLocalZone().dateTime(), e->endDateForStart(*it).toLocalZone().dateTime(), e));
                 }
             }
             // Loop through all remaining days of the month and check if the event
@@ -1655,18 +1651,18 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
             KCalCore::Recurrence *recur = e->recurrence();
             QDate d1(start.addDays(1));
             while (d1 <= end) {
-                if (recur->recursOn(d1, timeSpec)) {
-                    KCalCore::TimeList times(recur->recurTimesOn(d1, timeSpec));
+                if (recur->recursOn(d1, KDateTime::LocalZone)) {
+                    KCalCore::TimeList times(recur->recurTimesOn(d1, KDateTime::LocalZone));
                     for (KCalCore::TimeList::ConstIterator it = times.constBegin();
                             it != times.constEnd(); ++it) {
-                        KDateTime d1start(d1, *it, timeSpec);
-                        monthentries.append(MonthEventStruct(d1start, e->endDateForStart(d1start), e));
+                        QDateTime d1start(d1, *it, Qt::LocalTime);
+                        monthentries.append(MonthEventStruct(d1start, e->endDateForStart(KDateTime(d1start)).toLocalZone().dateTime(), e));
                     }
                 }
                 d1 = d1.addDays(1);
             }
         } else {
-            monthentries.append(MonthEventStruct(e->dtStart(), e->dtEnd(), e));
+            monthentries.append(MonthEventStruct(e->dtStart().toLocalZone().dateTime(), e->dtEnd().toLocalZone().dateTime(), e));
         }
     }
 
@@ -1675,14 +1671,13 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
 //  qSort( monthentries.begin(), monthentries.end() );
 
     QList<MonthEventStruct>::ConstIterator mit = monthentries.constBegin();
-    KDateTime endofmonth(end, QTime(0, 0, 0));
+    QDateTime endofmonth(end, QTime(0, 0, 0));
     endofmonth = endofmonth.addDays(1);
     for (; mit != monthentries.constEnd(); ++mit) {
         if ((*mit).start.date() == (*mit).end.date()) {
             // Show also single-day events as time line boxes
             if (subDailyFlags & TimeBoxes) {
-                timeboxItems.append(
-                    new PrintCellItem((*mit).event, (*mit).start, (*mit).end));
+                timeboxItems.append(new PrintCellItem((*mit).event, (*mit).start, (*mit).end));
             }
             // Show as text in the box
             if (subDailyFlags & Text) {
@@ -1690,16 +1685,15 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
             }
         } else {
             // Multi-day events are always shown as time line boxes
-            KDateTime thisstart((*mit).start);
-            KDateTime thisend((*mit).end);
+            QDateTime thisstart((*mit).start);
+            QDateTime thisend((*mit).end);
             if (thisstart.date() < start) {
                 thisstart.setDate(start);
             }
             if (thisend > endofmonth) {
                 thisend = endofmonth;
             }
-            timeboxItems.append(
-                new PrintCellItem((*mit).event, thisstart, thisend));
+            timeboxItems.append(new PrintCellItem((*mit).event, thisstart, thisend));
         }
     }
 
@@ -1709,7 +1703,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
         CellItem *placeItem = it1.next();
         CellItem::placeItem(timeboxItems, placeItem);
     }
-    KDateTime starttime(start, QTime(0, 0, 0));
+    QDateTime starttime(start, QTime(0, 0, 0));
     int newxstartcont = xstartcont;
 
     QFont oldfont(p.font());

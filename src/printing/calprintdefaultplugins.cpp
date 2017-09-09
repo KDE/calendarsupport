@@ -39,7 +39,6 @@
 
 #include <KDateTime>
 #include <KConfigGroup>
-#include <KSystemTimeZones>
 
 #include <QDateTime>
 #include <QPainter>
@@ -795,8 +794,6 @@ void CalPrintDay::print(QPainter &p, int width, int height)
 {
     QDate curDay(mFromDate);
 
-    KDateTime::Spec timeSpec = KSystemTimeZones::local();
-
     QRect headerBox(0, 0, width, headerHeight());
     QRect footerBox(0, height - footerHeight(), width, footerHeight());
     height -= footerHeight();
@@ -848,7 +845,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
             }
 
             drawHeader(p, local.toString(curDay, QLocale::ShortFormat), curDay, QDate(), headerBox);
-            KCalCore::Event::List eventList = mCalendar->events(curDay, timeSpec,
+            KCalCore::Event::List eventList = mCalendar->events(curDay, KDateTime::LocalZone,
                                               KCalCore::EventSortStartDate,
                                               KCalCore::SortDirectionAscending);
 
