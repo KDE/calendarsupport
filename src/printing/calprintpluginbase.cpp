@@ -947,8 +947,8 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalCore::Event::Li
         currY += cellHeight / 2;
     }
 
-    KDateTime startPrintDate = KDateTime(qd, myFromTime);
-    KDateTime endPrintDate = KDateTime(qd, myToTime);
+    QDateTime startPrintDate = QDateTime(qd, myFromTime);
+    QDateTime endPrintDate = QDateTime(qd, myToTime);
 
     // Calculate horizontal positions and widths of events taking into account
     // overlapping events
@@ -982,8 +982,8 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalCore::Event::Li
 }
 
 void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item, QPainter &p,
-                                        const KDateTime &startPrintDate,
-                                        const KDateTime &endPrintDate,
+                                        const QDateTime &startPrintDate,
+                                        const QDateTime &endPrintDate,
                                         float minlen, const QRect &box,
                                         bool includeDescription,
                                         bool excludeTime)
@@ -991,8 +991,8 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item, QPainter &p,
     KCalCore::Event::Ptr event = item->event();
 
     // start/end of print area for event
-    KDateTime startTime = item->start();
-    KDateTime endTime = item->end();
+    QDateTime startTime = item->start().toLocalZone().dateTime();
+    QDateTime endTime = item->end().toLocalZone().dateTime();
     if ((startTime < endPrintDate && endTime > startPrintDate) ||
             (endTime > startPrintDate && startTime < endPrintDate)) {
         if (startTime < startPrintDate) {

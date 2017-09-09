@@ -33,8 +33,8 @@
 #include <KCalCore/Event>
 #include <KCalCore/Journal>
 #include <KCalCore/Todo>
-#include <KDateTime>
 
+#include <QDateTime>
 #include <QPainter>
 
 class PrintCellItem;
@@ -385,8 +385,8 @@ public:
                           const QList<QDate> &workDays);
 
     void drawAgendaItem(PrintCellItem *item, QPainter &p,
-                        const KDateTime &startPrintDate,
-                        const KDateTime &endPrintDate,
+                        const QDateTime &startPrintDate,
+                        const QDateTime &endPrintDate,
                         float minlen, const QRect &box,
                         bool includeDescription, bool excludeTime);
 
