@@ -36,8 +36,6 @@
 #include <KCalCore/ScheduleMessage>
 #include <KCalCore/Todo>
 
-#include <KDateTime>
-
 #include <QModelIndex>
 
 namespace KCalCore
@@ -159,36 +157,30 @@ CALENDARSUPPORT_EXPORT QList<QUrl> todoItemUrls(const QMimeData *mimeData);
 
 CALENDARSUPPORT_EXPORT bool mimeDataHasIncidence(const QMimeData *mimeData);
 
-CALENDARSUPPORT_EXPORT KCalCore::Todo::List todos(const QMimeData *mimeData,
-        const KDateTime::Spec &timeSpec);
+CALENDARSUPPORT_EXPORT KCalCore::Todo::List todos(const QMimeData *mimeData);
 
-CALENDARSUPPORT_EXPORT KCalCore::Incidence::List incidences(const QMimeData *mimeData,
-        const KDateTime::Spec &timeSpec);
+CALENDARSUPPORT_EXPORT KCalCore::Incidence::List incidences(const QMimeData *mimeData);
 
 /**
 * creates mime data object for dragging an akonadi item containing an incidence
 */
-CALENDARSUPPORT_EXPORT QMimeData *createMimeData(const Akonadi::Item &item,
-        const KDateTime::Spec &timeSpec);
+CALENDARSUPPORT_EXPORT QMimeData *createMimeData(const Akonadi::Item &item);
 
 /**
 * creates mime data object for dragging akonadi items containing an incidence
 */
-CALENDARSUPPORT_EXPORT QMimeData *createMimeData(const Akonadi::Item::List &items,
-        const KDateTime::Spec &timeSpec);
+CALENDARSUPPORT_EXPORT QMimeData *createMimeData(const Akonadi::Item::List &items);
 
 #ifndef QT_NO_DRAGANDDROP
 /**
  * creates a drag object for dragging an akonadi item containing an incidence
  */
-CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item &item,
-        const KDateTime::Spec &timeSpec, QWidget *parent);
+CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item &item, QWidget *parent);
 
 /**
  * creates a drag object for dragging akonadi items containing an incidence
  */
-CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item::List &items,
-        const KDateTime::Spec &timeSpec, QWidget *parent);
+CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item::List &items, QWidget *parent);
 #endif
 /**
   Applies a filter to a list of items containing incidences.

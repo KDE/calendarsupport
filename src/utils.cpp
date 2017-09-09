@@ -194,14 +194,13 @@ bool CalendarSupport::hasJournal(const KCalCore::Incidence::Ptr &incidence)
     return incidence && incidence->type() ==  KCalCore::Incidence::TypeJournal;
 }
 
-QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items,
-        const KDateTime::Spec &timeSpec)
+QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items)
 {
     if (items.isEmpty()) {
         return nullptr;
     }
 
-    KCalCore::MemoryCalendar::Ptr cal(new KCalCore::MemoryCalendar(timeSpec));
+    KCalCore::MemoryCalendar::Ptr cal(new KCalCore::MemoryCalendar(KDateTime::LocalZone));
 
     QList<QUrl> urls;
     int incidencesFound = 0;
@@ -230,17 +229,15 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items,
     return mimeData.release();
 }
 
-QMimeData *CalendarSupport::createMimeData(const Akonadi::Item &item,
-        const KDateTime::Spec &timeSpec)
+QMimeData *CalendarSupport::createMimeData(const Akonadi::Item &item)
 {
-    return createMimeData(Akonadi::Item::List() << item, timeSpec);
+    return createMimeData(Akonadi::Item::List() << item);
 }
 
 #ifndef QT_NO_DRAGANDDROP
-QDrag *CalendarSupport::createDrag(const Akonadi::Item &item,
-                                   const KDateTime::Spec &timeSpec, QWidget *parent)
+QDrag *CalendarSupport::createDrag(const Akonadi::Item &item, QWidget *parent)
 {
-    return createDrag(Akonadi::Item::List() << item, timeSpec, parent);
+    return createDrag(Akonadi::Item::List() << item, parent);
 }
 #endif
 
@@ -265,11 +262,10 @@ static QByteArray findMostCommonType(const Akonadi::Item::List &items)
 }
 
 #ifndef QT_NO_DRAGANDDROP
-QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items,
-                                   const KDateTime::Spec &timeSpec, QWidget *parent)
+QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QWidget *parent)
 {
     std::unique_ptr<QDrag> drag(new QDrag(parent));
-    drag->setMimeData(CalendarSupport::createMimeData(items, timeSpec));
+    drag->setMimeData(CalendarSupport::createMimeData(items));
 
     const QByteArray common = findMostCommonType(items);
     if (common == "Event") {
@@ -372,16 +368,15 @@ QList<QUrl> CalendarSupport::todoItemUrls(const QMimeData *mimeData)
 bool CalendarSupport::mimeDataHasIncidence(const QMimeData *mimeData)
 {
     return !incidenceItemUrls(mimeData).isEmpty() ||
-           !incidences(mimeData, KDateTime::Spec()).isEmpty();
+           !incidences(mimeData).isEmpty();
 }
 
-KCalCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData,
-        const KDateTime::Spec &spec)
+KCalCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData)
 {
     KCalCore::Todo::List todos;
 
 #ifndef QT_NO_DRAGANDDROP
-    KCalCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData, spec));
+    KCalCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
     if (cal) {
         const KCalCore::Todo::List calTodos = cal->todos();
         todos.reserve(calTodos.count());
@@ -394,13 +389,12 @@ KCalCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData,
     return todos;
 }
 
-KCalCore::Incidence::List CalendarSupport::incidences(const QMimeData *mimeData,
-        const KDateTime::Spec &spec)
+KCalCore::Incidence::List CalendarSupport::incidences(const QMimeData *mimeData)
 {
     KCalCore::Incidence::List incidences;
 
 #ifndef QT_NO_DRAGANDDROP
-    KCalCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData, spec));
+    KCalCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
     if (cal) {
         const KCalCore::Incidence::List calIncidences = cal->incidences();
         incidences.reserve(calIncidences.count());
