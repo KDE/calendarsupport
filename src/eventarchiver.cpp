@@ -122,7 +122,7 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
                      QDate(1769, 12, 1),
                      // #29555, also advertised by the "limitDate not included" in the class docu
                      limitDate.addDays(-1),
-                     CalendarSupport::KCalPrefs::instance()->timeSpec(),
+                     KDateTime::LocalZone,
                      true);
     }
     if (KCalPrefs::instance()->mArchiveTodos) {
@@ -219,8 +219,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     }
 
     // Duplicate current calendar by loading in new calendar object
-    MemoryCalendar::Ptr archiveCalendar(
-        new MemoryCalendar(CalendarSupport::KCalPrefs::instance()->timeSpec()));
+    MemoryCalendar::Ptr archiveCalendar(new MemoryCalendar(KDateTime::LocalZone));
 
     FileStorage archiveStore(archiveCalendar);
     archiveStore.setFileName(tmpFileName);

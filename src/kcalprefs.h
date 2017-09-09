@@ -27,8 +27,6 @@
 
 #include <Collection>
 
-#include <KDateTime>
-
 namespace CalendarSupport
 {
 
@@ -72,8 +70,6 @@ public:
     QStringList fullEmails();
     /// Return true if the given email belongs to the user
     bool thatIsMe(const QString &email);
-
-    KDateTime::Spec timeSpec();
 
     QString mailTransport() const;
 

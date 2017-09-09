@@ -37,7 +37,6 @@
 #include <KCodecs/KEmailAddress>
 
 #include <KEMailSettings>
-#include <KSystemTimeZone>
 
 using namespace CalendarSupport;
 
@@ -100,11 +99,6 @@ void KCalPrefs::usrSetDefaults()
     fillMailDefaults();
 
     KConfigSkeleton::usrSetDefaults();
-}
-
-KDateTime::Spec KCalPrefs::timeSpec()
-{
-    return KSystemTimeZones::local();
 }
 
 Akonadi::Collection::Id KCalPrefs::defaultCalendarId() const
