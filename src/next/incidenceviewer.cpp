@@ -33,7 +33,6 @@
 #include <KCalUtils/IncidenceFormatter>
 
 #include <KJob>
-#include <KSystemTimeZone>
 #include <QTextBrowser>
 
 #include <QVBoxLayout>
@@ -85,8 +84,7 @@ public:
         if (mCurrentItem.isValid()) {
             text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(
                        CalendarSupport::displayName(mCalendar, mParentCollection),
-                       CalendarSupport::incidence(mCurrentItem),
-                       mDate, KSystemTimeZones::local());
+                       CalendarSupport::incidence(mCurrentItem), mDate);
             text.prepend(mHeaderText);
             mBrowser->setHtml(text);
         } else {
