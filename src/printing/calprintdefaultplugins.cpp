@@ -33,6 +33,7 @@
 #include <Item>
 
 #include <KCalCore/Visitor>
+#include <KCalCore/Utils>
 
 #include <KCalUtils/IncidenceFormatter>
 #include <KCalUtils/Stringify>
@@ -145,7 +146,7 @@ protected:
         {
             mStartCaption =  i18n("Start date: ");
             mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(
-                event->dtStart().dateTime(), event->allDay(), false);
+                KCalCore::k2q(event->dtStart()), event->allDay(), false);
         } else {
             mStartCaption = i18n("No start date");
             mStartString.clear();
@@ -155,7 +156,7 @@ protected:
         {
             mEndCaption = i18n("End date: ");
             mEndString = KCalUtils::IncidenceFormatter::dateTimeToString(
-                event->dtEnd().dateTime(), event->allDay(), false);
+                KCalCore::k2q(event->dtEnd()), event->allDay(), false);
         } else if (event->hasDuration())
         {
             mEndCaption = i18n("Duration: ");
@@ -177,7 +178,7 @@ protected:
         {
             mStartCaption =  i18n("Start date: ");
             mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(
-                todo->dtStart().dateTime(), todo->allDay(), false);
+                KCalCore::k2q(todo->dtStart()), todo->allDay(), false);
         } else {
             mStartCaption = i18n("No start date");
             mStartString.clear();
@@ -187,7 +188,7 @@ protected:
         {
             mEndCaption = i18n("Due date: ");
             mEndString = KCalUtils::IncidenceFormatter::dateTimeToString(
-                todo->dtDue().dateTime(), todo->allDay(), false);
+                KCalCore::k2q(todo->dtDue()), todo->allDay(), false);
         } else {
             mEndCaption = i18n("No due date");
             mEndString.clear();
@@ -197,7 +198,7 @@ protected:
     bool visit(const KCalCore::Journal::Ptr &journal) override {
         mStartCaption = i18n("Start date: ");
         mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(
-            journal->dtStart().dateTime(), journal->allDay(), false);
+            KCalCore::k2q(journal->dtStart()), journal->allDay(), false);
         mEndCaption.clear();
         mEndString.clear();
         return true;
