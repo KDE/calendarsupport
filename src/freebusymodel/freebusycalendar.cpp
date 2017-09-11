@@ -30,6 +30,7 @@
 #include <KLocalizedString>
 
 #include <QStringList>
+#include <QTimeZone>
 
 using namespace CalendarSupport;
 
@@ -50,7 +51,7 @@ FreeBusyCalendar::FreeBusyCalendar(QObject *parent)
     : QObject(parent)
     , d(new CalendarSupport::FreeBusyCalendarPrivate)
 {
-    d->mCalendar = KCalCore::Calendar::Ptr(new KCalCore::MemoryCalendar(KDateTime::LocalZone));
+    d->mCalendar = KCalCore::Calendar::Ptr(new KCalCore::MemoryCalendar(QTimeZone::systemTimeZone()));
     qCDebug(CALENDARSUPPORT_LOG) << "creating" << this;
 }
 

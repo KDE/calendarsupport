@@ -44,6 +44,7 @@
 
 #include <QLocale>
 #include <QTemporaryFile>
+#include <QTimeZone>
 
 using namespace KCalCore;
 using namespace KCalUtils;
@@ -219,7 +220,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     }
 
     // Duplicate current calendar by loading in new calendar object
-    MemoryCalendar::Ptr archiveCalendar(new MemoryCalendar(KDateTime::LocalZone));
+    MemoryCalendar::Ptr archiveCalendar(new MemoryCalendar(QTimeZone::systemTimeZone()));
 
     FileStorage archiveStore(archiveCalendar);
     archiveStore.setFileName(tmpFileName);

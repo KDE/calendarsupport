@@ -66,6 +66,7 @@
 #include <QPointer>
 #include <QFileDialog>
 #include <QUrlQuery>
+#include <QTimeZone>
 
 #include <boost/bind.hpp>
 #include "calendarsupport_debug.h"
@@ -200,7 +201,7 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items)
         return nullptr;
     }
 
-    KCalCore::MemoryCalendar::Ptr cal(new KCalCore::MemoryCalendar(KDateTime::LocalZone));
+    KCalCore::MemoryCalendar::Ptr cal(new KCalCore::MemoryCalendar(QTimeZone::systemTimeZone()));
 
     QList<QUrl> urls;
     int incidencesFound = 0;
