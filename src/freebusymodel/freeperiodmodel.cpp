@@ -26,6 +26,7 @@
 #include <KFormat>
 
 #include <QDateTime>
+#include <QTimeZone>
 #include <QLocale>
 #include <QSet>
 
@@ -116,8 +117,8 @@ KCalCore::Period::List FreePeriodModel::splitPeriodsByDay(
         const int validPeriodSecs = 300; // 5 minutes
         KCalCore::Period tmpPeriod = period;
         while (tmpPeriod.start().date() != tmpPeriod.end().date()) {
-            const KDateTime midnight(tmpPeriod.start().date(), QTime(23, 59, 59, 999),
-                                     tmpPeriod.start().timeSpec());
+            const QDateTime midnight(tmpPeriod.start().date(), QTime(23, 59, 59, 999),
+                                     tmpPeriod.start().timeZone());
             KCalCore::Period firstPeriod(tmpPeriod.start(), midnight);
             KCalCore::Period secondPeriod(midnight.addMSecs(1), tmpPeriod.end());
             if (firstPeriod.duration().asSeconds() >= validPeriodSecs) {
@@ -193,10 +194,10 @@ QString FreePeriodModel::tooltipify(int index) const
     toolTip += QLatin1String("<b>") + i18nc("@info:tooltip", "Free Period") + QLatin1String("</b>");
     toolTip += QLatin1String("<hr>");
     toolTip += QLatin1String("<i>") + i18nc("@info:tooltip period start time", "Start:") + QLatin1String("</i>&nbsp;");
-    toolTip += QLocale().toString(period.start().toLocalZone().dateTime(), QLocale::ShortFormat);
+    toolTip += QLocale().toString(period.start().toLocalTime(), QLocale::ShortFormat);
     toolTip += QLatin1String("<br>");
     toolTip += QLatin1String("<i>") + i18nc("@info:tooltip period end time", "End:") + QLatin1String("</i>&nbsp;");
-    toolTip += QLocale().toString(period.end().toLocalZone().dateTime(), QLocale::ShortFormat);
+    toolTip += QLocale().toString(period.end().toLocalTime(), QLocale::ShortFormat);
     toolTip += QLatin1String("<br>");
     toolTip += QLatin1String("<i>") + i18nc("@info:tooltip period duration", "Duration:") + QLatin1String("</i>&nbsp;");
     toolTip += KFormat().formatSpelloutDuration(duration);

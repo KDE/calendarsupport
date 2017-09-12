@@ -26,6 +26,7 @@
 #include <KCalCore/FreeBusyPeriod>
 #include <KCalCore/MemoryCalendar>
 #include <KCalCore/CalFormat>
+#include <KCalCore/Utils>
 
 #include <KLocalizedString>
 
@@ -121,8 +122,8 @@ void FreeBusyCalendar::onRowsInserted(const QModelIndex &parent, int first, int 
         const KCalCore::FreeBusy::Ptr &fb = d->mModel->data(parent, FreeBusyItemModel::FreeBusyRole).value<KCalCore::FreeBusy::Ptr>();
 
         KCalCore::Event::Ptr inc = KCalCore::Event::Ptr(new KCalCore::Event());
-        inc->setDtStart(period.start());
-        inc->setDtEnd(period.end());
+        inc->setDtStart(KCalCore::q2k(period.start()));
+        inc->setDtEnd(KCalCore::q2k(period.end()));
         inc->setUid(QLatin1String("fb-") + fb->uid() + QLatin1String("-") + QString::number(i));
 
         inc->setCustomProperty("FREEBUSY", "STATUS", QString::number(period.type()));

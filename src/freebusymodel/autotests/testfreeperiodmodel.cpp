@@ -38,8 +38,8 @@ void FreePeriodModelTest::testModelValidity()
     FreePeriodModel *model = new FreePeriodModel(this);
     new ModelTest(model, this);
 
-    const KDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), KDateTime::UTC);
-    const KDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), KDateTime::UTC);
+    const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
+    const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
 
     KCalCore::Period::List list;
 
@@ -56,8 +56,8 @@ void FreePeriodModelTest::testSplitByDay()
     FreePeriodModel *model = new FreePeriodModel(this);
     new ModelTest(model, this);
 
-    const KDateTime startDt(QDate(2010, 7, 24), QTime(8, 0, 0), KDateTime::UTC);
-    const KDateTime endDt(QDate(2010, 7, 25), QTime(8, 0, 0), KDateTime::UTC);
+    const QDateTime startDt(QDate(2010, 7, 24), QTime(8, 0, 0), Qt::UTC);
+    const QDateTime endDt(QDate(2010, 7, 25), QTime(8, 0, 0), Qt::UTC);
 
     KCalCore::Period::List list;
 
@@ -71,8 +71,8 @@ void FreePeriodModelTest::testSplitByDay()
     // one from 8am-12 on the 24th, and the second from 00-08 on the 25th
     model->slotNewFreePeriods(list);
 
-    const KDateTime endPeriod1(QDate(2010, 7, 24), QTime(23, 59, 59, 999), KDateTime::UTC);
-    const KDateTime startPeriod2(QDate(2010, 7, 25), QTime(0, 0, 0, 0), KDateTime::UTC);
+    const QDateTime endPeriod1(QDate(2010, 7, 24), QTime(23, 59, 59, 999), Qt::UTC);
+    const QDateTime startPeriod2(QDate(2010, 7, 25), QTime(0, 0, 0, 0), Qt::UTC);
 
     QModelIndex index = model->index(0, 0);
     KCalCore::Period period1 =

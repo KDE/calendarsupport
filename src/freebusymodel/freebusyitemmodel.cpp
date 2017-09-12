@@ -160,8 +160,8 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
     switch (role) {
     case Qt::DisplayRole: // return something to make modeltest happy
         return QStringLiteral("%1 - %2").
-               arg(QLocale().toString(period.start().toLocalZone().dateTime(), QLocale::ShortFormat),
-                   QLocale().toString(period.end().toLocalZone().dateTime(), QLocale::ShortFormat));
+               arg(QLocale().toString(period.start().toLocalTime(), QLocale::ShortFormat),
+                   QLocale().toString(period.end().toLocalTime(), QLocale::ShortFormat));
     case FreeBusyItemModel::FreeBusyPeriodRole:
         return QVariant::fromValue(period);
     default:
