@@ -28,8 +28,9 @@
 #include "kcalprefs.h"
 #include "utils.h"
 
-
 #include <Item>
+
+#include <KCalCore/Utils>
 
 #include <KConfigGroup>
 #include "calendarsupport_debug.h"
@@ -47,6 +48,7 @@
 #include <QVBoxLayout>
 #include <KLocalizedString>
 #include <QLocale>
+#include <QTimeZone>
 
 using namespace CalendarSupport;
 
@@ -1635,7 +1637,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
             continue;
         }
         if (e->recurs()) {
-            if (e->recursOn(start, KDateTime::LocalZone)) {
+            if (e->recursOn(start, QTimeZone::systemTimeZone())) {
                 // This occurrence has possibly started before the beginning of the
                 // month, so obtain the start date before the beginning of the month
                 QList<KDateTime> starttimes = e->startDateTimesForDate(start);
@@ -1651,8 +1653,8 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
             KCalCore::Recurrence *recur = e->recurrence();
             QDate d1(start.addDays(1));
             while (d1 <= end) {
-                if (recur->recursOn(d1, KDateTime::LocalZone)) {
-                    KCalCore::TimeList times(recur->recurTimesOn(d1, KDateTime::LocalZone));
+                if (recur->recursOn(d1, QTimeZone::systemTimeZone())) {
+                    KCalCore::TimeList times(recur->recurTimesOn(d1, QTimeZone::systemTimeZone()));
                     for (KCalCore::TimeList::ConstIterator it = times.constBegin();
                             it != times.constEnd(); ++it) {
                         QDateTime d1start(d1, *it, Qt::LocalTime);
