@@ -1112,7 +1112,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
     p.drawText(headerTextBox, Qt::AlignRight | Qt::AlignVCenter, dayNumStr);
 
     const KCalCore::Event::List eventList =
-        mCalendar->events(qd, KDateTime::LocalZone,
+        mCalendar->events(qd, QTimeZone::systemTimeZone(),
                           KCalCore::EventSortStartDate,
                           KCalCore::SortDirectionAscending);
 
@@ -1448,7 +1448,7 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
     if (expandable) {
         QDate curDate(fromDate);
         while (curDate <= toDate) {
-            KCalCore::Event::List eventList = mCalendar->events(curDate, KDateTime::LocalZone);
+            KCalCore::Event::List eventList = mCalendar->events(curDate, QTimeZone::systemTimeZone());
             for (const KCalCore::Event::Ptr &event : qAsConst(eventList)) {
                 Q_ASSERT(event);
                 if (event->allDay()) {
@@ -1490,7 +1490,7 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
         QRect dayBox(allDayBox);
         dayBox.setTop(tlBox.top());
         dayBox.setBottom(box.bottom());
-        KCalCore::Event::List eventList = mCalendar->events(curDate, KDateTime::LocalZone,
+        KCalCore::Event::List eventList = mCalendar->events(curDate, QTimeZone::systemTimeZone(),
                                           KCalCore::EventSortStartDate,
                                           KCalCore::SortDirectionAscending);
 

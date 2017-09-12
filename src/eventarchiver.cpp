@@ -123,7 +123,7 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
                      QDate(1769, 12, 1),
                      // #29555, also advertised by the "limitDate not included" in the class docu
                      limitDate.addDays(-1),
-                     KDateTime::LocalZone,
+                     QTimeZone::systemTimeZone(),
                      true);
     }
     if (KCalPrefs::instance()->mArchiveTodos) {

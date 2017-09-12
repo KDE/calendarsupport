@@ -846,7 +846,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
             }
 
             drawHeader(p, local.toString(curDay, QLocale::ShortFormat), curDay, QDate(), headerBox);
-            KCalCore::Event::List eventList = mCalendar->events(curDay, KDateTime::LocalZone,
+            KCalCore::Event::List eventList = mCalendar->events(curDay, QTimeZone::systemTimeZone(),
                                               KCalCore::EventSortStartDate,
                                               KCalCore::SortDirectionAscending);
 
