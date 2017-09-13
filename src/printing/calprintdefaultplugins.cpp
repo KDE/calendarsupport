@@ -33,14 +33,12 @@
 #include <Item>
 
 #include <KCalCore/Visitor>
-#include <KCalCore/Utils>
 
 #include <KCalUtils/IncidenceFormatter>
 #include <KCalUtils/Stringify>
 
 #include <KConfigGroup>
 
-#include <QDateTime>
 #include <QPainter>
 #include <QPrinter>
 #include <KLocalizedString>
@@ -144,8 +142,7 @@ protected:
         if (event->dtStart().isValid())
         {
             mStartCaption =  i18n("Start date: ");
-            mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(
-                KCalCore::k2q(event->dtStart()), event->allDay(), false);
+            mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(event->dtStart(), event->allDay(), false);
         } else {
             mStartCaption = i18n("No start date");
             mStartString.clear();
@@ -154,8 +151,7 @@ protected:
         if (event->hasEndDate())
         {
             mEndCaption = i18n("End date: ");
-            mEndString = KCalUtils::IncidenceFormatter::dateTimeToString(
-                KCalCore::k2q(event->dtEnd()), event->allDay(), false);
+            mEndString = KCalUtils::IncidenceFormatter::dateTimeToString(event->dtEnd(), event->allDay(), false);
         } else if (event->hasDuration())
         {
             mEndCaption = i18n("Duration: ");
@@ -176,8 +172,7 @@ protected:
         if (todo->hasStartDate())
         {
             mStartCaption =  i18n("Start date: ");
-            mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(
-                KCalCore::k2q(todo->dtStart()), todo->allDay(), false);
+            mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(todo->dtStart(), todo->allDay(), false);
         } else {
             mStartCaption = i18n("No start date");
             mStartString.clear();
@@ -186,8 +181,7 @@ protected:
         if (todo->hasDueDate())
         {
             mEndCaption = i18n("Due date: ");
-            mEndString = KCalUtils::IncidenceFormatter::dateTimeToString(
-                KCalCore::k2q(todo->dtDue()), todo->allDay(), false);
+            mEndString = KCalUtils::IncidenceFormatter::dateTimeToString(todo->dtDue(), todo->allDay(), false);
         } else {
             mEndCaption = i18n("No due date");
             mEndString.clear();
@@ -196,8 +190,7 @@ protected:
     }
     bool visit(const KCalCore::Journal::Ptr &journal) override {
         mStartCaption = i18n("Start date: ");
-        mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(
-            KCalCore::k2q(journal->dtStart()), journal->allDay(), false);
+        mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(journal->dtStart(), journal->allDay(), false);
         mEndCaption.clear();
         mEndString.clear();
         return true;
@@ -521,19 +514,19 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                     datesString.clear();
                     if (todo->dtStart().isValid()) {
                         datesString += i18nc("subitem start date", "Start Date: %1\n",
-                            QLocale().toString(todo->dtStart().toLocalZone().date(), QLocale::ShortFormat));
+                            QLocale().toString(todo->dtStart().toLocalTime().date(), QLocale::ShortFormat));
                         if (!todo->allDay()) {
                             datesString += i18nc("subitem start time", "Start Time: %1\n",
-                                QLocale().toString(todo->dtStart().toLocalZone().time(), QLocale::ShortFormat));
+                                QLocale().toString(todo->dtStart().toLocalTime().time(), QLocale::ShortFormat));
                         }
                     }
                     if (todo->dateTime(KCalCore::Incidence::RoleEnd).isValid()) {
                         subitemString += i18nc("subitem due date", "Due Date: %1\n",
-                            QLocale().toString(todo->dateTime(KCalCore::Incidence::RoleEnd).toLocalZone().date(), QLocale::ShortFormat));
+                            QLocale().toString(todo->dateTime(KCalCore::Incidence::RoleEnd).toLocalTime().date(), QLocale::ShortFormat));
 
                         if (!todo->allDay()) {
                             subitemString += i18nc("subitem due time", "Due Time: %1\n",
-                                QLocale().toString(todo->dateTime(KCalCore::Incidence::RoleEnd).toLocalZone().time(), QLocale::ShortFormat));
+                                QLocale().toString(todo->dateTime(KCalCore::Incidence::RoleEnd).toLocalTime().time(), QLocale::ShortFormat));
                         }
                     }
                     subitemString += i18nc("subitem counter", "%1: ", count);

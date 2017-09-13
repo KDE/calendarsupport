@@ -67,6 +67,11 @@ PUBLIC
   KF5::IdentityManagement
   KF5::AkonadiCalendar
 PRIVATE
+  KF5::I18n
+  KF5::Completion
+  KF5::KIOWidgets
+  KF5::IconThemes
+  KF5::GuiAddons
   KF5::AkonadiWidgets
   KF5::Holidays
   KF5::Codecs
@@ -75,6 +80,7 @@ PRIVATE
   KF5::CalendarUtils
   KF5::KdepimDBusInterfaces
   KF5::PimCommon
+  Qt5::PrintSupport
 )
 
 set_target_properties(KF5CalendarSupport PROPERTIES

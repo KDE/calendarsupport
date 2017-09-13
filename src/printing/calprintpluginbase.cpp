@@ -30,8 +30,6 @@
 
 #include <Item>
 
-#include <KCalCore/Utils>
-
 #include <KConfigGroup>
 #include "calendarsupport_debug.h"
 #include <KWordWrap>
@@ -319,7 +317,7 @@ KCalCore::Event::Ptr CalPrintPluginBase::holidayEvent(const QDate &date) const
     holiday->setSummary(hstring);
     holiday->setCategories(i18n("Holiday"));
 
-    KDateTime kdt(date, QTime(), KDateTime::LocalZone);
+    QDateTime kdt(date, QTime(0, 0), Qt::LocalTime);
     holiday->setDtStart(kdt);
     holiday->setDtEnd(kdt);
     holiday->setAllDay(true);
@@ -960,11 +958,10 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalCore::Event::Li
         if (event->allDay()) {
             continue;
         }
-        QList<KDateTime> times = event->startDateTimesForDate(qd);
+        QList<QDateTime> times = event->startDateTimesForDate(qd, QTimeZone::systemTimeZone());
         cells.reserve(times.count());
-        for (QList<KDateTime>::ConstIterator it = times.constBegin();
-                it != times.constEnd(); ++it) {
-            cells.append(new PrintCellItem(event, (*it).toLocalZone().dateTime(), event->endDateForStart(*it).toLocalZone().dateTime()));
+        for (auto it = times.constBegin(); it != times.constEnd(); ++it) {
+            cells.append(new PrintCellItem(event, (*it).toLocalTime(), event->endDateForStart(*it).toLocalTime()));
         }
     }
 
@@ -1126,8 +1123,8 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
     for (const KCalCore::Event::Ptr &currEvent : qAsConst(eventList)) {
         Q_ASSERT(currEvent);
         if (!currEvent->allDay()) {
-            if (currEvent->dtEnd().toLocalZone().time() <= myFromTime ||
-                    currEvent->dtStart().toLocalZone().time() > myToTime) {
+            if (currEvent->dtEnd().toLocalTime().time() <= myFromTime ||
+                    currEvent->dtStart().toLocalTime().time() > myToTime) {
                 continue;
             }
         }
@@ -1142,7 +1139,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
         if (currEvent->allDay() || currEvent->isMultiDay()) {
             timeText.clear();
         } else {
-            timeText = local.toString(currEvent->dtStart().toLocalZone().time(), QLocale::ShortFormat) + QLatin1Char(' ');
+            timeText = local.toString(currEvent->dtStart().toLocalTime().time(), QLocale::ShortFormat) + QLatin1Char(' ');
         }
         p.save();
         setColorsByIncidenceCategory(p, currEvent);
@@ -1185,8 +1182,8 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
         KCalCore::Todo::List todos = mCalendar->todos(qd);
         for (const KCalCore::Todo::Ptr &todo : qAsConst(todos)) {
             if (!todo->allDay()) {
-                if ((todo->hasDueDate() && todo->dtDue().toLocalZone().time() <= myFromTime) ||
-                        (todo->hasStartDate() && todo->dtStart().toLocalZone().time() > myToTime)) {
+                if ((todo->hasDueDate() && todo->dtDue().toLocalTime().time() <= myFromTime) ||
+                        (todo->hasStartDate() && todo->dtStart().toLocalTime().time() > myToTime)) {
                     continue;
                 }
             }
@@ -1199,7 +1196,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
                 continue;
             }
             if (todo->hasStartDate() && !todo->allDay()) {
-                timeText = QLocale().toString(todo->dtStart().toLocalZone().time(), QLocale::ShortFormat) + QLatin1Char(' ');
+                timeText = QLocale().toString(todo->dtStart().toLocalTime().time(), QLocale::ShortFormat) + QLatin1Char(' ');
             } else {
                 timeText.clear();
             }
@@ -1215,11 +1212,11 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd,
             if (todo->hasDueDate()) {
                 if (!todo->allDay()) {
                     str = i18nc("to-do summary (Due: datetime)", "%1 (Due: %2)",
-                                summaryStr, QLocale().toString(todo->dtDue().toLocalZone().dateTime(), QLocale::ShortFormat));
+                                summaryStr, QLocale().toString(todo->dtDue().toLocalTime(), QLocale::ShortFormat));
                 } else {
                     str = i18nc("to-do summary (Due: date)", "%1 (Due: %2)",
                                 summaryStr,
-                                QLocale().toString( todo->dtDue().toLocalZone().date(), QLocale::ShortFormat));
+                                QLocale().toString( todo->dtDue().toLocalTime().date(), QLocale::ShortFormat));
                 }
             } else {
                 str = summaryStr;
@@ -1640,10 +1637,9 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
             if (e->recursOn(start, QTimeZone::systemTimeZone())) {
                 // This occurrence has possibly started before the beginning of the
                 // month, so obtain the start date before the beginning of the month
-                QList<KDateTime> starttimes = e->startDateTimesForDate(start);
-                QList<KDateTime>::ConstIterator it = starttimes.constBegin();
-                for (; it != starttimes.constEnd(); ++it) {
-                    monthentries.append(MonthEventStruct((*it).toLocalZone().dateTime(), e->endDateForStart(*it).toLocalZone().dateTime(), e));
+                QList<QDateTime> starttimes = e->startDateTimesForDate(start, QTimeZone::systemTimeZone());
+                for (auto it = starttimes.constBegin(); it != starttimes.constEnd(); ++it) {
+                    monthentries.append(MonthEventStruct((*it).toLocalTime(), e->endDateForStart(*it).toLocalTime(), e));
                 }
             }
             // Loop through all remaining days of the month and check if the event
@@ -1658,13 +1654,12 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt,
                     for (KCalCore::TimeList::ConstIterator it = times.constBegin();
                             it != times.constEnd(); ++it) {
                         QDateTime d1start(d1, *it, Qt::LocalTime);
-                        monthentries.append(MonthEventStruct(d1start, e->endDateForStart(KDateTime(d1start)).toLocalZone().dateTime(), e));
                     }
                 }
                 d1 = d1.addDays(1);
             }
         } else {
-            monthentries.append(MonthEventStruct(e->dtStart().toLocalZone().dateTime(), e->dtEnd().toLocalZone().dateTime(), e));
+            monthentries.append(MonthEventStruct(e->dtStart().toLocalTime(), e->dtEnd().toLocalTime(), e));
         }
     }
 
@@ -1964,7 +1959,7 @@ void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, Q
     p.setFont(oldFont);
     // due date
     if (todo->hasDueDate() && posDueDt >= 0) {
-        outStr = local.toString(todo->dtDue().toLocalZone().date(), QLocale::ShortFormat);
+        outStr = local.toString(todo->dtDue().toLocalTime().date(), QLocale::ShortFormat);
         rect = p.boundingRect(posDueDt, y, x + width, -1,
                               Qt::AlignTop | Qt::AlignLeft, outStr);
         p.drawText(rect, Qt::AlignTop | Qt::AlignLeft, outStr);
@@ -2112,7 +2107,7 @@ void CalPrintPluginBase::drawJournal(const KCalCore::Journal::Ptr &journal, QPai
     QFont oldFont(p.font());
     p.setFont(QFont(QStringLiteral("sans-serif"), 15));
     QString headerText;
-    QString dateText(QLocale::system().toString(journal->dtStart().toLocalZone().date(),
+    QString dateText(QLocale::system().toString(journal->dtStart().toLocalTime().date(),
                      QLocale::LongFormat));
 
     if (journal->summary().isEmpty()) {

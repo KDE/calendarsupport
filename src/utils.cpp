@@ -56,6 +56,7 @@
 #include <KMessageBox>
 #include <KIO/FileCopyJob>
 #include <KIconLoader>
+#include <KLocalizedString>
 
 #include <QUrl>
 #include <QAbstractItemModel>
