@@ -66,6 +66,7 @@ PUBLIC
   KF5::Mime
   KF5::IdentityManagement
   KF5::AkonadiCalendar
+  Qt5::PrintSupport
 PRIVATE
   KF5::I18n
   KF5::Completion
@@ -80,7 +81,6 @@ PRIVATE
   KF5::CalendarUtils
   KF5::KdepimDBusInterfaces
   KF5::PimCommon
-  Qt5::PrintSupport
 )
 
 set_target_properties(KF5CalendarSupport PROPERTIES
