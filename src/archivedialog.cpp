@@ -47,7 +47,6 @@
 #include <QRadioButton>
 #include <QVBoxLayout>
 #include <QWhatsThis>
-#include <KConfigGroup>
 #include <QDialogButtonBox>
 #include <QPushButton>
 

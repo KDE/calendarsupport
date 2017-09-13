@@ -28,10 +28,8 @@
 #include <KCalCore/Journal>
 #include <KCalCore/Todo>
 
-#include <KIconLoader>
 #include <KLocalizedString>
 
-#include <QPixmap>
 #include <QIcon>
 using namespace CalendarSupport;
 

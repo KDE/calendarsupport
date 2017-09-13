@@ -32,8 +32,6 @@
 #include <KMime/HeaderParsing>
 
 #include <KIdentityManagement/Identity>
-#include <KIdentityManagement/IdentityManager>
-
 #include <KCodecs/KEmailAddress>
 
 #include <KEMailSettings>

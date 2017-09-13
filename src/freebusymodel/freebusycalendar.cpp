@@ -30,7 +30,6 @@
 
 #include <KLocalizedString>
 
-#include <QStringList>
 #include <QTimeZone>
 
 using namespace CalendarSupport;

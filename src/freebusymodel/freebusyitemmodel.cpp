@@ -25,7 +25,6 @@
 
 #include <KLocalizedString>
 
-#include <QDateTime>
 #include <QLocale>
 #include <QTimerEvent>
 

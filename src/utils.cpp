@@ -38,7 +38,6 @@
 
 #include <KHolidays/HolidayRegion>
 
-#include <KIdentityManagement/IdentityManager>
 
 #include <KCalCore/CalFilter>
 #include <KCalCore/Event>
@@ -54,9 +53,9 @@
 #include <KCalUtils/ICalDrag>
 #include <KCalUtils/VCalDrag>
 
-#include <KIconLoader>
 #include <KMessageBox>
 #include <KIO/FileCopyJob>
+#include <KIconLoader>
 
 #include <QUrl>
 #include <QAbstractItemModel>

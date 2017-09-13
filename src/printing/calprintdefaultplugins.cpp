@@ -38,7 +38,6 @@
 #include <KCalUtils/IncidenceFormatter>
 #include <KCalUtils/Stringify>
 
-#include <KDateTime>
 #include <KConfigGroup>
 
 #include <QDateTime>
