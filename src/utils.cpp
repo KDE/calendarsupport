@@ -225,7 +225,6 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items)
     mimeData->setUrls(urls);
 
     KCalUtils::ICalDrag::populateMimeData(mimeData.get(), cal);
-    KCalUtils::VCalDrag::populateMimeData(mimeData.get(), cal);
 
     return mimeData.release();
 }
