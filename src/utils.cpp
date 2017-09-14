@@ -68,7 +68,6 @@
 #include <QUrlQuery>
 #include <QTimeZone>
 
-#include <boost/bind.hpp>
 #include "calendarsupport_debug.h"
 
 using namespace CalendarSupport;
@@ -293,8 +292,9 @@ Akonadi::Item::List CalendarSupport::applyCalFilter(const Akonadi::Item::List &i
 {
     Q_ASSERT(filter);
     Akonadi::Item::List items(items_);
-    items.erase(std::remove_if(items.begin(), items.end(),
-                               !bind(itemMatches, _1, filter)), items.end());
+    items.erase(std::remove_if(items.begin(), items.end(), [filter](const Akonadi::Item &item) {
+        return !itemMatches(item, filter);
+    }), items.end());
     return items;
 }
 
@@ -324,8 +324,9 @@ bool CalendarSupport::isValidIncidenceItemUrl(const QUrl &url)
 static bool containsValidIncidenceItemUrl(const QList<QUrl> &urls)
 {
     return
-        std::find_if(urls.begin(), urls.end(),
-                     bind(CalendarSupport::isValidIncidenceItemUrl, _1)) != urls.constEnd();
+        std::find_if(urls.begin(), urls.end(), [](const QUrl &url) {
+            return CalendarSupport::isValidIncidenceItemUrl(url);
+        }) != urls.constEnd();
 }
 
 bool CalendarSupport::canDecode(const QMimeData *md)
