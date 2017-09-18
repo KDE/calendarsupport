@@ -22,9 +22,7 @@
 
 #include <ItemModel>
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class KCalModel : public Akonadi::ItemModel
 {
 public:
@@ -53,8 +51,6 @@ private:
     class Private;
     Private *const d;
 };
-
 }
 
 #endif
-

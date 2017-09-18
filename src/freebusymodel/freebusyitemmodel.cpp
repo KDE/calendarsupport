@@ -20,7 +20,6 @@
 
 #include "freebusyitemmodel.h"
 
-
 #include <Akonadi/Calendar/FreeBusyManager>
 
 #include <KLocalizedString>
@@ -84,10 +83,11 @@ class CalendarSupport::FreeBusyItemModelPrivate
 {
 public:
     FreeBusyItemModelPrivate()
-        : mForceDownload(false),
-          mRootData(nullptr)
+        : mForceDownload(false)
+        , mRootData(nullptr)
     {
     }
+
     ~FreeBusyItemModelPrivate()
     {
         delete mRootData;
@@ -100,14 +100,16 @@ public:
 };
 
 FreeBusyItemModel::FreeBusyItemModel(QObject *parent)
-    : QAbstractItemModel(parent), d(new CalendarSupport::FreeBusyItemModelPrivate)
+    : QAbstractItemModel(parent)
+    , d(new CalendarSupport::FreeBusyItemModelPrivate)
 {
     qRegisterMetaType<KCalCore::Attendee::Ptr>("KCalCore::Attendee::Ptr");
     qRegisterMetaType<KCalCore::FreeBusy::Ptr>("KCalCore::FreeBusy::Ptr");
     qRegisterMetaType<KCalCore::Period>("KCalCore::Period");
 
     Akonadi::FreeBusyManager *m = Akonadi::FreeBusyManager::self();
-    connect(m, &Akonadi::FreeBusyManager::freeBusyRetrieved, this, &FreeBusyItemModel::slotInsertFreeBusy);
+    connect(m, &Akonadi::FreeBusyManager::freeBusyRetrieved, this,
+            &FreeBusyItemModel::slotInsertFreeBusy);
 
     connect(&d->mReloadTimer, &QTimer::timeout, this, &FreeBusyItemModel::autoReload);
     d->mReloadTimer.setSingleShot(true);
@@ -126,7 +128,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
         return QVariant();
     }
 
-    ItemPrivateData *data = (ItemPrivateData *) index.internalPointer();
+    ItemPrivateData *data = (ItemPrivateData *)index.internalPointer();
 
     if (data->parent() == d->mRootData) {
         int row = index.row();
@@ -251,7 +253,7 @@ void FreeBusyItemModel::addItem(const FreeBusyItem::Ptr &freebusy)
 }
 
 void FreeBusyItemModel::setFreeBusyPeriods(const QModelIndex &parent,
-        const KCalCore::FreeBusyPeriod::List &list)
+                                           const KCalCore::FreeBusyPeriod::List &list)
 {
     if (!parent.isValid()) {
         return;
@@ -371,8 +373,7 @@ void FreeBusyItemModel::timerEvent(QTimerEvent *event)
     }
 }
 
-void FreeBusyItemModel::slotInsertFreeBusy(const KCalCore::FreeBusy::Ptr &fb,
-        const QString &email)
+void FreeBusyItemModel::slotInsertFreeBusy(const KCalCore::FreeBusy::Ptr &fb, const QString &email)
 {
     if (!fb) {
         return;

@@ -33,9 +33,7 @@
 class QItemSelection;
 class QItemSelectionModel;
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CALENDARSUPPORT_EXPORT CollectionSelection : public QObject
 {
     Q_OBJECT
@@ -62,7 +60,6 @@ private:
     class Private;
     Private *const d;
 };
-
 }
 
 #endif

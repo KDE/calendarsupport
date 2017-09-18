@@ -109,7 +109,7 @@ KCalCore::Period::List FreePeriodModel::splitPeriodsByDay(
 {
     KCalCore::Period::List splitList;
     for (const KCalCore::Period &period : freePeriods) {
-        if (period.start().date() == period.end().date())  {
+        if (period.start().date() == period.end().date()) {
             splitList << period; // period occurs on the same day
             continue;
         }
@@ -152,7 +152,8 @@ QString FreePeriodModel::date(int index) const
     KCalCore::Period period = mPeriodList.at(index);
 
     const QDate startDate = period.start().date();
-    const QString startTime = QLocale::system().toString(period.start().time(), QLocale::ShortFormat);
+    const QString startTime
+        = QLocale::system().toString(period.start().time(), QLocale::ShortFormat);
     const QString endTime = QLocale::system().toString(period.end().time(), QLocale::ShortFormat);
     const QString longMonthName = QLocale::system().monthName(startDate.month());
     return ki18nc("@label A time period duration. It is preceded/followed (based on the "
@@ -172,7 +173,8 @@ QString FreePeriodModel::stringify(int index) const
     const QDate startDate = period.start().date();
     const QString startTime = QLocale().toString(period.start().time(), QLocale::ShortFormat);
     const QString endTime = QLocale().toString(period.end().time(), QLocale::ShortFormat);
-    const QString longMonthName = QLocale::system().monthName(startDate.month(), QLocale::LongFormat);
+    const QString longMonthName
+        = QLocale::system().monthName(startDate.month(), QLocale::LongFormat);
     const QString dayofWeek = QLocale::system().dayName(startDate.dayOfWeek(), QLocale::LongFormat);
 
     // TODO i18n, ping chusslove
@@ -193,15 +195,17 @@ QString FreePeriodModel::tooltipify(int index) const
     QString toolTip = QStringLiteral("<qt>");
     toolTip += QLatin1String("<b>") + i18nc("@info:tooltip", "Free Period") + QLatin1String("</b>");
     toolTip += QLatin1String("<hr>");
-    toolTip += QLatin1String("<i>") + i18nc("@info:tooltip period start time", "Start:") + QLatin1String("</i>&nbsp;");
+    toolTip += QLatin1String("<i>")
+               + i18nc("@info:tooltip period start time", "Start:") + QLatin1String("</i>&nbsp;");
     toolTip += QLocale().toString(period.start().toLocalTime(), QLocale::ShortFormat);
     toolTip += QLatin1String("<br>");
-    toolTip += QLatin1String("<i>") + i18nc("@info:tooltip period end time", "End:") + QLatin1String("</i>&nbsp;");
+    toolTip += QLatin1String("<i>")
+               + i18nc("@info:tooltip period end time", "End:") + QLatin1String("</i>&nbsp;");
     toolTip += QLocale().toString(period.end().toLocalTime(), QLocale::ShortFormat);
     toolTip += QLatin1String("<br>");
-    toolTip += QLatin1String("<i>") + i18nc("@info:tooltip period duration", "Duration:") + QLatin1String("</i>&nbsp;");
+    toolTip += QLatin1String("<i>")
+               + i18nc("@info:tooltip period duration", "Duration:") + QLatin1String("</i>&nbsp;");
     toolTip += KFormat().formatSpelloutDuration(duration);
     toolTip += QLatin1String("</qt>");
     return toolTip;
 }
-

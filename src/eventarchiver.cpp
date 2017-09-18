@@ -78,15 +78,14 @@ EventArchiver::~EventArchiver()
 }
 
 void EventArchiver::runOnce(const Akonadi::ETMCalendar::Ptr &calendar,
-                            Akonadi::IncidenceChanger *changer,
-                            const QDate &limitDate, QWidget *widget)
+                            Akonadi::IncidenceChanger *changer, const QDate &limitDate,
+                            QWidget *widget)
 {
     run(calendar, changer, limitDate, widget, true, true);
 }
 
 void EventArchiver::runAuto(const Akonadi::ETMCalendar::Ptr &calendar,
-                            Akonadi::IncidenceChanger *changer,
-                            QWidget *widget, bool withGUI)
+                            Akonadi::IncidenceChanger *changer, QWidget *widget, bool withGUI)
 {
     QDate limitDate(QDate::currentDate());
     const int expiryTime = KCalPrefs::instance()->mExpiryTime;
@@ -107,8 +106,7 @@ void EventArchiver::runAuto(const Akonadi::ETMCalendar::Ptr &calendar,
 }
 
 void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
-                        Akonadi::IncidenceChanger *changer,
-                        const QDate &limitDate, QWidget *widget,
+                        Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget,
                         bool withGUI, bool errorIfNone)
 {
     GroupwareScoppedDisabler disabler(changer); // Disables groupware communication temporarily
@@ -120,11 +118,11 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
 
     if (KCalPrefs::instance()->mArchiveEvents) {
         events = calendar->rawEvents(
-                     QDate(1769, 12, 1),
-                     // #29555, also advertised by the "limitDate not included" in the class docu
-                     limitDate.addDays(-1),
-                     QTimeZone::systemTimeZone(),
-                     true);
+            QDate(1769, 12, 1),
+            // #29555, also advertised by the "limitDate not included" in the class docu
+            limitDate.addDays(-1),
+            QTimeZone::systemTimeZone(),
+            true);
     }
     if (KCalPrefs::instance()->mArchiveTodos) {
         const KCalCore::Todo::List rawTodos = calendar->rawTodos();
@@ -137,7 +135,8 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
         }
     }
 
-    const KCalCore::Incidence::List incidences = calendar->mergeIncidenceList(events, todos, journals);
+    const KCalCore::Incidence::List incidences = calendar->mergeIncidenceList(events, todos,
+                                                                              journals);
 
     qCDebug(CALENDARSUPPORT_LOG) << "archiving incidences before" << limitDate
                                  << " ->" << incidences.count() << " incidences found.";
@@ -145,7 +144,8 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
         if (withGUI && errorIfNone) {
             KMessageBox::information(widget,
                                      i18n("There are no items before %1",
-                                          QLocale::system().toString(limitDate, QLocale::ShortFormat)),
+                                          QLocale::system().toString(limitDate,
+                                                                     QLocale::ShortFormat)),
                                      QStringLiteral("ArchiverNoIncidences"));
         }
         return;
@@ -161,9 +161,9 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
     }
 }
 
-void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer,
-                                     const QDate &limitDate, QWidget *widget,
-                                     const Akonadi::Item::List &items, bool withGUI)
+void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer, const QDate &limitDate,
+                                     QWidget *widget, const Akonadi::Item::List &items,
+                                     bool withGUI)
 {
     QStringList incidenceStrs;
     Akonadi::Item::List::ConstIterator it;
@@ -175,27 +175,27 @@ void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer,
 
     if (withGUI) {
         const int result = KMessageBox::warningContinueCancelList(
-                               widget,
-                               i18n("Delete all items before %1 without saving?\n"
-                                    "The following items will be deleted:",
-                                    QLocale::system().toString(limitDate, QLocale::ShortFormat)),
-                               incidenceStrs,
-                               i18n("Delete Old Items"), KStandardGuiItem::del());
+            widget,
+            i18n("Delete all items before %1 without saving?\n"
+                 "The following items will be deleted:",
+                 QLocale::system().toString(limitDate, QLocale::ShortFormat)),
+            incidenceStrs,
+            i18n("Delete Old Items"), KStandardGuiItem::del());
         if (result != KMessageBox::Continue) {
             return;
         }
     }
 
-    changer->deleteIncidences(items, /**parent=*/widget);
+    changer->deleteIncidences(items, /**parent=*/ widget);
 
     // TODO: Q_EMIT only after hearing back from incidence changer
     Q_EMIT eventsDeleted();
 }
 
 void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
-                                      Akonadi::IncidenceChanger *changer,
-                                      const QDate &limitDate, QWidget *widget,
-                                      const KCalCore::Incidence::List &incidences, bool withGUI)
+                                      Akonadi::IncidenceChanger *changer, const QDate &limitDate,
+                                      QWidget *widget, const KCalCore::Incidence::List &incidences,
+                                      bool withGUI)
 {
     Q_UNUSED(limitDate);
     Q_UNUSED(withGUI);
@@ -322,8 +322,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
 }
 
 bool EventArchiver::isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
-                                      const Todo::Ptr &todo,
-                                      const QDate &limitDate,
+                                      const Todo::Ptr &todo, const QDate &limitDate,
                                       QStringList checkedUids) const
 {
     if (!todo->isCompleted() || todo->completed().date() >= limitDate) {
@@ -348,4 +347,3 @@ bool EventArchiver::isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
 
     return true;
 }
-

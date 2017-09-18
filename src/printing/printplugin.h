@@ -30,9 +30,7 @@
 #include <QPrinter>
 #include <QDate>
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 /**
   Base class of Calendar printer class.
 */
@@ -59,9 +57,17 @@ public:
 class PrintPlugin : public Plugin
 {
 public:
-    PrintPlugin() : Plugin(), mConfigWidget(0), mPrinter(0),
-        mCalendar(0), mConfig(0) {}
-    virtual ~PrintPlugin() {}
+    PrintPlugin() : Plugin()
+        , mConfigWidget(0)
+        , mPrinter(0)
+        , mCalendar(0)
+        , mConfig(0)
+    {
+    }
+
+    virtual ~PrintPlugin()
+    {
+    }
 
     typedef QList<PrintPlugin *> List;
     static int interfaceVersion()
@@ -131,6 +137,7 @@ public:
         }
         return mConfigWidget;
     }
+
     /* Create the config widget. setSettingsWidget will be automatically
        called on it */
     virtual QWidget *createConfigWidget(QWidget *) = 0;
@@ -154,22 +161,31 @@ public:
     /**
       Load complete config.
     */
-    virtual void doLoadConfig() {}
+    virtual void doLoadConfig()
+    {
+    }
+
     /**
       Save complete config.
     */
-    virtual void doSaveConfig() {}
+    virtual void doSaveConfig()
+    {
+    }
 
 public:
     /**
       Read settings from configuration widget and apply them to current object.
     */
-    virtual void readSettingsWidget() {}
+    virtual void readSettingsWidget()
+    {
+    }
 
     /**
       Set configuration widget to reflect settings of current object.
     */
-    virtual void setSettingsWidget() {}
+    virtual void setSettingsWidget()
+    {
+    }
 
     /**
       Set date range which should be printed.
@@ -200,7 +216,6 @@ class PrintPluginFactory : public PluginFactory
 public:
     PrintPlugin *createPluginFactory() override = 0;
 };
-
 }
 
 #endif

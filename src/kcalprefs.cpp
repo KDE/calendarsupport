@@ -59,7 +59,8 @@ public:
     QDateTime mDayBegins;
 };
 
-KCalPrefs::KCalPrefs() : KCalPrefsBase(), d(new Private())
+KCalPrefs::KCalPrefs() : KCalPrefsBase()
+    , d(new Private())
 {
 }
 
@@ -134,8 +135,8 @@ void KCalPrefs::usrRead()
 #if 0
     config()->setGroup("FreeBusy");
     if (mRememberRetrievePw) {
-        d->mRetrievePassword =
-            KStringHandler::obscure(config()->readEntry("Retrieve Server Password"));
+        d->mRetrievePassword
+            = KStringHandler::obscure(config()->readEntry("Retrieve Server Password"));
     }
 #endif
 
@@ -264,7 +265,7 @@ bool KCalPrefs::thatIsMe(const QString &_email)
     CalendarSupport::IdentityManager::ConstIterator it;
     CalendarSupport::IdentityManager::ConstIterator endId(CalendarSupport::identityManager()->end());
     for (it = CalendarSupport::identityManager()->begin();
-            it != endId; ++it) {
+         it != endId; ++it) {
         if ((*it).matchesEmailAddress(email)) {
             return true;
         }
@@ -301,7 +302,7 @@ QColor KCalPrefs::categoryColor(const QString &cat) const
 
 bool KCalPrefs::hasCategoryColor(const QString &cat) const
 {
-    return (categoryColor(cat) != d->mDefaultCategoryColor);
+    return categoryColor(cat) != d->mDefaultCategoryColor;
 }
 
 void KCalPrefs::setDayBegins(const QDateTime &dateTime)
@@ -313,4 +314,3 @@ QDateTime KCalPrefs::dayBegins() const
 {
     return d->mDayBegins;
 }
-

@@ -36,19 +36,19 @@ static QStringList categoryDefaults()
       << i18nc("incidence category: phone call", "Phone Call")
       << i18nc("incidence category", "Education")
       << i18nc("incidence category: "
-               "official or unofficial observance of "
-               "religious/national/cultural/other significance, "
-               "often accompanied by celebrations or festivities", "Holiday")
+             "official or unofficial observance of "
+             "religious/national/cultural/other significance, "
+             "often accompanied by celebrations or festivities", "Holiday")
       << i18nc("incidence category: "
-               "a lengthy time away from work or school, a trip abroad, "
-               "or simply a pleasure trip away from home", "Vacation")
+             "a lengthy time away from work or school, a trip abroad, "
+             "or simply a pleasure trip away from home", "Vacation")
       << i18nc("incidence category: "
-               "examples: anniversary of historical or personal event; "
-               "big date; remembrance, etc", "Special Occasion")
+             "examples: anniversary of historical or personal event; "
+             "big date; remembrance, etc", "Special Occasion")
       << i18nc("incidence category", "Personal")
       << i18nc("incidence category: "
-               "typically associated with leaving home for business, "
-               "and not pleasure", "Travel")
+             "typically associated with leaving home for business, "
+             "and not pleasure", "Travel")
       << i18nc("incidence category", "Miscellaneous")
       << i18nc("incidence category", "Birthday");
     return l;
@@ -94,7 +94,8 @@ void CategoryConfig::setColors(const QHash<QString, QColor> &colors)
 }
 
 CategoryConfig::CategoryConfig(KCoreConfigSkeleton *cfg, QObject *parent)
-    : QObject(parent), d(new Private(cfg))
+    : QObject(parent)
+    , d(new Private(cfg))
 {
 }
 
@@ -123,4 +124,3 @@ void CategoryConfig::setCustomCategories(const QStringList &categories)
 }
 
 const QString CategoryConfig::categorySeparator(QLatin1Char(':'));
-

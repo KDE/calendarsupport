@@ -52,9 +52,7 @@
 using namespace KCalCore;
 using namespace Akonadi;
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 struct ReceivedInfo {
     QString uid;
     QString attachmentName;
@@ -67,13 +65,14 @@ public:
         : mParent(parent)
     {
     }
+
     QMap<KJob *, ReceivedInfo> mJobToReceivedInfo;
     QPointer<QWidget> mParent;
 };
 
-AttachmentHandler::AttachmentHandler(QWidget *parent) : QObject(parent), d(new Private(parent))
+AttachmentHandler::AttachmentHandler(QWidget *parent) : QObject(parent)
+    , d(new Private(parent))
 {
-
 }
 
 AttachmentHandler::~AttachmentHandler()
@@ -152,7 +151,9 @@ static QUrl tempFileForAttachment(const Attachment::Ptr &attachment)
     QMimeDatabase db;
     QStringList patterns = db.mimeTypeForName(attachment->mimeType()).globPatterns();
     if (!patterns.empty()) {
-        s_tempFile = new QTemporaryFile(QDir::tempPath() + QLatin1String("/attachementview_XXXXXX") + patterns.first().remove(QLatin1Char('*')));
+        s_tempFile = new QTemporaryFile(QDir::tempPath() + QLatin1String(
+                                            "/attachementview_XXXXXX")
+                                        + patterns.first().remove(QLatin1Char('*')));
     } else {
         s_tempFile = new QTemporaryFile();
     }
@@ -202,8 +203,7 @@ bool AttachmentHandler::view(const Attachment::Ptr &attachment)
     return stat;
 }
 
-bool AttachmentHandler::view(const QString &attachmentName,
-                             const Incidence::Ptr &incidence)
+bool AttachmentHandler::view(const QString &attachmentName, const Incidence::Ptr &incidence)
 {
     return view(find(attachmentName, incidence));
 }
@@ -220,8 +220,7 @@ void AttachmentHandler::view(const QString &attachmentName, const QString &uid)
     d->mJobToReceivedInfo[job] = info;
 }
 
-bool AttachmentHandler::view(const QString &attachmentName,
-                             const ScheduleMessage::Ptr &message)
+bool AttachmentHandler::view(const QString &attachmentName, const ScheduleMessage::Ptr &message)
 {
     return view(find(attachmentName, message));
 }
@@ -229,7 +228,9 @@ bool AttachmentHandler::view(const QString &attachmentName,
 bool AttachmentHandler::saveAs(const Attachment::Ptr &attachment)
 {
     // get the saveas file name
-    const QString saveAsFile = QFileDialog::getSaveFileName(d->mParent, i18n("Save Attachment"), attachment->label());
+    const QString saveAsFile = QFileDialog::getSaveFileName(d->mParent, i18n(
+                                                                "Save Attachment"),
+                                                            attachment->label());
     if (saveAsFile.isEmpty()) {
         return false;
     }
@@ -260,8 +261,7 @@ bool AttachmentHandler::saveAs(const Attachment::Ptr &attachment)
     return stat;
 }
 
-bool AttachmentHandler::saveAs(const QString &attachmentName,
-                               const Incidence::Ptr &incidence)
+bool AttachmentHandler::saveAs(const QString &attachmentName, const Incidence::Ptr &incidence)
 {
     return saveAs(find(attachmentName, incidence));
 }
@@ -279,8 +279,7 @@ void AttachmentHandler::saveAs(const QString &attachmentName, const QString &uid
     d->mJobToReceivedInfo[job] = info;
 }
 
-bool AttachmentHandler::saveAs(const QString &attachmentName,
-                               const ScheduleMessage::Ptr &message)
+bool AttachmentHandler::saveAs(const QString &attachmentName, const ScheduleMessage::Ptr &message)
 {
     return saveAs(find(attachmentName, message));
 }
@@ -328,6 +327,4 @@ void AttachmentHandler::slotFinishView(KJob *job)
     Q_EMIT viewFinished(info.uid, info.attachmentName, success);
     d->mJobToReceivedInfo.remove(job);
 }
-
 } // namespace CalendarSupport
-

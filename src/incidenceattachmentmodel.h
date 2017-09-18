@@ -28,13 +28,11 @@
 
 #include <QAbstractListModel>
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 }
 
-namespace CalendarSupport
-{
+namespace CalendarSupport {
 class IncidenceAttachmentModelPrivate;
 
 class IncidenceAttachmentModel : public QAbstractListModel
@@ -82,9 +80,8 @@ private:
     IncidenceAttachmentModelPrivate *const d_ptr;
 
     Q_PRIVATE_SLOT(d_func(), void resetModel())
-    Q_PRIVATE_SLOT(d_func(), void itemFetched(Akonadi::Item::List))    
+    Q_PRIVATE_SLOT(d_func(), void itemFetched(Akonadi::Item::List))
 };
-
 }
 
 #endif

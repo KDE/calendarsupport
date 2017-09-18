@@ -53,8 +53,7 @@
 using namespace CalendarSupport;
 
 ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
-                             Akonadi::IncidenceChanger *changer,
-                             QWidget *parent)
+                             Akonadi::IncidenceChanger *changer, QWidget *parent)
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Archive/Delete Past Events and To-dos"));
@@ -89,15 +88,16 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
               "other calendar. It is not saved in a special format, but as "
               "vCalendar."));
     descLabel->setTextInteractionFlags(
-        Qt::TextSelectableByMouse | Qt::TextSelectableByKeyboard |
-        Qt::LinksAccessibleByMouse | Qt::LinksAccessibleByKeyboard);
+        Qt::TextSelectableByMouse | Qt::TextSelectableByKeyboard
+        |Qt::LinksAccessibleByMouse | Qt::LinksAccessibleByKeyboard);
     descLabel->setWordWrap(true);
     descLabel->setContextMenuPolicy(Qt::NoContextMenu);
     topLayout->addWidget(descLabel);
     connect(descLabel, &QLabel::linkActivated, this, &ArchiveDialog::showWhatsThis);
 
     QButtonGroup *radioBG = new QButtonGroup(this);
-    connect(radioBG, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &ArchiveDialog::slotActionChanged);
+    connect(radioBG, QOverload<int>::of(
+                &QButtonGroup::buttonClicked), this, &ArchiveDialog::slotActionChanged);
 
     QHBoxLayout *dateLayout = new QHBoxLayout();
     dateLayout->setMargin(0);
@@ -184,7 +184,8 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
     fileLayout->setMargin(0);
     QLabel *l = new QLabel(i18nc("@label", "Archive &file:"), topFrame);
     fileLayout->addWidget(l);
-    mArchiveFile = new KUrlRequester(QUrl::fromLocalFile(KCalPrefs::instance()->mArchiveFile), topFrame);
+    mArchiveFile = new KUrlRequester(QUrl::fromLocalFile(
+                                         KCalPrefs::instance()->mArchiveFile), topFrame);
     mArchiveFile->setMode(KFile::File);
     mArchiveFile->setFilter(i18nc("@label filter for KUrlRequester", "*.ics|iCalendar Files"));
     mArchiveFile->setToolTip(
@@ -240,7 +241,8 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
     topLayout->addWidget(mDeleteCb);
     connect(mDeleteCb, &QCheckBox::toggled, mArchiveFile, &KUrlRequester::setDisabled);
     connect(mDeleteCb, &QCheckBox::toggled, this, &ArchiveDialog::slotEnableUser1);
-    connect(mArchiveFile->lineEdit(), &QLineEdit::textChanged, this, &ArchiveDialog::slotEnableUser1);
+    connect(mArchiveFile->lineEdit(), &QLineEdit::textChanged, this,
+            &ArchiveDialog::slotEnableUser1);
 
     // Load settings from KCalPrefs
     mExpiryTimeNumInput->setValue(KCalPrefs::instance()->mExpiryTime);
@@ -269,7 +271,8 @@ ArchiveDialog::~ArchiveDialog()
 
 void ArchiveDialog::slotEnableUser1()
 {
-    const bool state = (mDeleteCb->isChecked() || !mArchiveFile->lineEdit()->text().trimmed().isEmpty());
+    const bool state
+        = (mDeleteCb->isChecked() || !mArchiveFile->lineEdit()->text().trimmed().isEmpty());
     mUser1Button->setEnabled(state);
 }
 
@@ -303,8 +306,8 @@ void ArchiveDialog::slotUser1()
         }
         // Force filename to be ending with vCalendar extension
         QString filename = destUrl.fileName();
-        if (!filename.endsWith(QStringLiteral(".vcs")) &&
-                !filename.endsWith(QStringLiteral(".ics"))) {
+        if (!filename.endsWith(QStringLiteral(".vcs"))
+            && !filename.endsWith(QStringLiteral(".ics"))) {
             filename.append(QStringLiteral(".ics"));
             destUrl = destUrl.adjusted(QUrl::RemoveFilename);
             destUrl.setPath(destUrl.path() +  filename);
@@ -337,4 +340,3 @@ void ArchiveDialog::showWhatsThis()
         QWhatsThis::showText(QCursor::pos(), widget->whatsThis());
     }
 }
-

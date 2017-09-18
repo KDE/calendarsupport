@@ -36,9 +36,7 @@
 
 #include <KLocalizedString>
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CALENDARSUPPORT_EXPORT CalPrintIncidence : public CalPrintPluginBase
 {
 public:
@@ -48,14 +46,17 @@ public:
     {
         return QStringLiteral("Print incidence");
     }
+
     QString description() const override
     {
         return i18n("Print &incidence");
     }
+
     QString info() const override
     {
         return i18n("Prints an incidence on one page");
     }
+
     int sortID() const override
     {
         return CalPrinterBase::Incidence;
@@ -66,6 +67,7 @@ public:
     {
         return !mSelectedIncidences.isEmpty();
     }
+
     QWidget *createConfigWidget(QWidget *) override;
     QPrinter::Orientation defaultOrientation() const override
     {
@@ -99,22 +101,27 @@ public:
     {
         return QStringLiteral("Print day");
     }
+
     QString description() const override
     {
         return i18n("Print da&y");
     }
+
     QString info() const override
     {
         return i18n("Prints all events of a single day on one page");
     }
+
     int sortID() const override
     {
         return CalPrinterBase::Day;
     }
+
     bool enabled() const override
     {
         return true;
     }
+
     QWidget *createConfigWidget(QWidget *) override;
 
 public:
@@ -151,22 +158,27 @@ public:
     {
         return QStringLiteral("Print week");
     }
+
     QString description() const override
     {
         return i18n("Print &week");
     }
+
     QString info() const override
     {
         return i18n("Prints all events of one week on one page");
     }
+
     int sortID() const override
     {
         return CalPrinterBase::Week;
     }
+
     bool enabled() const override
     {
         return true;
     }
+
     QWidget *createConfigWidget(QWidget *) override;
 
     /**
@@ -206,22 +218,27 @@ public:
     {
         return QStringLiteral("Print month");
     }
+
     QString description() const override
     {
         return i18n("Print mont&h");
     }
+
     QString info() const override
     {
         return i18n("Prints all events of one month on one page");
     }
+
     int sortID() const override
     {
         return CalPrinterBase::Month;
     }
+
     bool enabled() const override
     {
         return true;
     }
+
     QWidget *createConfigWidget(QWidget *) override;
     QPrinter::Orientation defaultOrientation() const override
     {
@@ -257,22 +274,27 @@ public:
     {
         return QStringLiteral("Print to-dos");
     }
+
     QString description() const override
     {
         return i18n("Print to-&dos");
     }
+
     QString info() const override
     {
         return i18n("Prints all to-dos in a (tree-like) list");
     }
+
     int sortID() const override
     {
         return CalPrinterBase::Todolist;
     }
+
     bool enabled() const override
     {
         return true;
     }
+
     QWidget *createConfigWidget(QWidget *) override;
 
 public:
@@ -367,7 +389,6 @@ public:
         setupUi(this);
     }
 };
-
 }
 
 #endif

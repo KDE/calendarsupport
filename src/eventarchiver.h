@@ -35,14 +35,11 @@
 
 class QDate;
 
-namespace Akonadi
-{
+namespace Akonadi {
 class IncidenceChanger;
 }
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 /**
  * This class handles expiring and archiving of events.
  * It is used directly by the archivedialog, and it is also
@@ -88,17 +85,12 @@ private:
     void run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer,
              const QDate &limitDate, QWidget *widget, bool withGUI, bool errorIfNone);
 
-    void deleteIncidences(Akonadi::IncidenceChanger *changer,
-                          const QDate &limitDate,
-                          QWidget *widget,
-                          const Akonadi::Item::List &items,
-                          bool withGUI);
+    void deleteIncidences(Akonadi::IncidenceChanger *changer, const QDate &limitDate,
+                          QWidget *widget, const Akonadi::Item::List &items, bool withGUI);
 
     void archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
-                           Akonadi::IncidenceChanger *changer,
-                           const QDate &limitDate,
-                           QWidget *widget,
-                           const KCalCore::Incidence::List &incidences,
+                           Akonadi::IncidenceChanger *changer, const QDate &limitDate,
+                           QWidget *widget, const KCalCore::Incidence::List &incidences,
                            bool withGUI);
 
     /**
@@ -109,10 +101,9 @@ private:
      * @param checkedUids used internaly to prevent infinit recursion due to invalid calendar files
      */
     bool isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
-                           const KCalCore::Todo::Ptr &todo,
-                           const QDate &limitDate, QStringList checkedUids = QStringList()) const;
+                           const KCalCore::Todo::Ptr &todo, const QDate &limitDate,
+                           QStringList checkedUids = QStringList()) const;
 };
-
 }
 
 #endif // EVENTARCHIVER_H

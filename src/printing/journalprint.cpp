@@ -25,7 +25,6 @@
 #include <KConfigGroup>
 #include "calendarsupport_debug.h"
 
-
 using namespace CalendarSupport;
 
 /**************************************************************
@@ -39,8 +38,8 @@ QWidget *CalPrintJournal::createConfigWidget(QWidget *w)
 
 void CalPrintJournal::readSettingsWidget()
 {
-    CalPrintJournalConfig *cfg =
-        dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
+    CalPrintJournalConfig *cfg
+        = dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         mFromDate = cfg->mFromDate->date();
         mToDate = cfg->mToDate->date();
@@ -50,8 +49,8 @@ void CalPrintJournal::readSettingsWidget()
 
 void CalPrintJournal::setSettingsWidget()
 {
-    CalPrintJournalConfig *cfg =
-        dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
+    CalPrintJournalConfig *cfg
+        = dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(mFromDate);
         cfg->mToDate->setDate(mToDate);
@@ -95,8 +94,8 @@ void CalPrintJournal::saveConfig()
 void CalPrintJournal::setDateRange(const QDate &from, const QDate &to)
 {
     CalPrintPluginBase::setDateRange(from, to);
-    CalPrintJournalConfig *cfg =
-        dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
+    CalPrintJournalConfig *cfg
+        = dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(from);
         cfg->mToDate->setDate(to);

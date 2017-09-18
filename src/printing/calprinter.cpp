@@ -45,9 +45,9 @@
 
 using namespace CalendarSupport;
 
-CalPrinter::CalPrinter(QWidget *parent, const Akonadi::ETMCalendar::Ptr &calendar,
-                       bool uniqItem)
-    : QObject(parent), mUniqItem(uniqItem)
+CalPrinter::CalPrinter(QWidget *parent, const Akonadi::ETMCalendar::Ptr &calendar, bool uniqItem)
+    : QObject(parent)
+    , mUniqItem(uniqItem)
 {
     mParent = parent;
     mConfig = new KConfig(QStringLiteral("calendar_printing.rc"), KConfig::SimpleConfig);
@@ -105,8 +105,8 @@ void CalPrinter::print(int type, const QDate &fd, const QDate &td,
     for (it = mPrintPlugins.begin(); it != end; ++it) {
         (*it)->setSelectedIncidences(selectedIncidences);
     }
-    QPointer<CalPrintDialog> printDialog =
-        new CalPrintDialog(type, mPrintPlugins, mParent, mUniqItem);
+    QPointer<CalPrintDialog> printDialog
+        = new CalPrintDialog(type, mPrintPlugins, mParent, mUniqItem);
 
     KConfigGroup grp(mConfig, "");   //orientation setting isn't in a group
     printDialog->setOrientation(CalPrinter::ePrintOrientation(grp.readEntry("Orientation", 1)));
@@ -129,8 +129,8 @@ void CalPrinter::print(int type, const QDate &fd, const QDate &td,
     }
 }
 
-void CalPrinter::doPrint(PrintPlugin *selectedStyle,
-                         CalPrinter::ePrintOrientation dlgorientation, bool preview)
+void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientation dlgorientation,
+                         bool preview)
 {
     if (!selectedStyle) {
         KMessageBox::error(
@@ -157,8 +157,11 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle,
     }
 
     if (preview) {
-        QPointer<PimCommon::KPimPrintPreviewDialog> printPreview = new PimCommon::KPimPrintPreviewDialog(&printer);
-        connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this, [selectedStyle, &printer]() { selectedStyle->doPrint(&printer);
+        QPointer<PimCommon::KPimPrintPreviewDialog> printPreview
+            = new PimCommon::KPimPrintPreviewDialog(&printer);
+        connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this,
+                [selectedStyle, &printer]() {
+            selectedStyle->doPrint(&printer);
         });
         printPreview->exec();
         delete printPreview;
@@ -180,7 +183,8 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Print"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(
+        QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
@@ -233,14 +237,15 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     splitterRightLayout->addWidget(mOrientationSelection, 1, 1);
 
     // signals and slots connections
-    connect(mTypeGroup, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &CalPrintDialog::setPrintType);
+    connect(mTypeGroup, QOverload<int>::of(
+                &QButtonGroup::buttonClicked), this, &CalPrintDialog::setPrintType);
     orientationLabel->setBuddy(mOrientationSelection);
 
     // First insert the config widgets into the widget stack. This possibly assigns
     // proper ids (when two plugins have the same sortID), so store them in a map
     // and use these new IDs to later sort the plugins for the type selection.
     for (PrintPlugin::List::ConstIterator it = plugins.constBegin();
-            it != plugins.constEnd(); ++it) {
+         it != plugins.constEnd(); ++it) {
         int newid = mConfigArea->insertWidget((*it)->sortID(), (*it)->configWidget(mConfigArea));
         mPluginIDs[newid] = (*it);
     }
@@ -320,8 +325,8 @@ PrintPlugin *CalPrintDialog::selectedPlugin()
 
 void CalPrintDialog::slotOk()
 {
-    mOrientation =
-        (CalPrinter::ePrintOrientation)mOrientationSelection->currentIndex();
+    mOrientation
+        = (CalPrinter::ePrintOrientation)mOrientationSelection->currentIndex();
 
     QMap<int, PrintPlugin *>::ConstIterator it = mPluginIDs.constBegin();
     for (; it != mPluginIDs.constEnd(); ++it) {

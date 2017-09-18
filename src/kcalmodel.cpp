@@ -50,6 +50,7 @@ public:
               << KCalCore::FreeBusy::freeBusyMimeType();
         return types;
     }
+
     bool collectionMatchesMimeTypes() const
     {
         const QStringList lst = allMimeTypes();
@@ -64,9 +65,9 @@ public:
     bool collectionIsValid()
     {
         return
-            !q->collection().isValid() ||
-            collectionMatchesMimeTypes() ||
-            q->collection().contentMimeTypes() == QStringList(QStringLiteral("inode/directory"));
+            !q->collection().isValid()
+            || collectionMatchesMimeTypes()
+            || q->collection().contentMimeTypes() == QStringList(QStringLiteral("inode/directory"));
     }
 
 private:
@@ -74,7 +75,8 @@ private:
 };
 
 KCalModel::KCalModel(QObject *parent)
-    : ItemModel(parent), d(new Private(this))
+    : ItemModel(parent)
+    , d(new Private(this))
 {
     fetchScope().fetchFullPayload();
 }
@@ -191,7 +193,8 @@ QVariant KCalModel::headerData(int section, Qt::Orientation orientation, int rol
         case Summary:
             return i18nc("@title:column, calendar event summary", "Summary");
         case DateTimeStart:
-            return i18nc("@title:column, calendar event start date and time", "Start date and time");
+            return i18nc("@title:column, calendar event start date and time",
+                         "Start date and time");
         case DateTimeEnd:
             return i18nc("@title:column, calendar event end date and time", "End date and time");
         case Type:

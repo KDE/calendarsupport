@@ -25,17 +25,20 @@
 #include "calendarsupport_export.h"
 #include <QList>
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CALENDARSUPPORT_EXPORT CellItem
 {
 public:
     CellItem()
-        : mSubCells(0), mSubCell(-1)
+        : mSubCells(0)
+        , mSubCell(-1)
     {
     }
-    virtual ~CellItem() {}
+
+    virtual ~CellItem()
+    {
+    }
+
     void setSubCells(int v);
     int subCells() const;
 
@@ -60,7 +63,6 @@ private:
     int mSubCells;
     int mSubCell;
 };
-
 }
 
 #endif

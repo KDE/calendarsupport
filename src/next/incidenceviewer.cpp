@@ -50,11 +50,11 @@ void TextBrowser::setSource(const QUrl &name)
     QString uri = name.toString();
     // QTextBrowser for some reason insists on putting // or / in links,
     // this is a crude workaround
-    if (uri.startsWith(QStringLiteral("uid:")) ||
-            uri.startsWith(QStringLiteral("kmail:")) ||
-            uri.startsWith(QStringLiteral("urn:x-ical").section(QLatin1Char(':'), 0, 0)) ||
-            uri.startsWith(QStringLiteral("news:")) ||
-            uri.startsWith(QStringLiteral("mailto:"))) {
+    if (uri.startsWith(QStringLiteral("uid:"))
+        || uri.startsWith(QStringLiteral("kmail:"))
+        || uri.startsWith(QStringLiteral("urn:x-ical").section(QLatin1Char(':'), 0, 0))
+        || uri.startsWith(QStringLiteral("news:"))
+        || uri.startsWith(QStringLiteral("mailto:"))) {
         uri.replace(QRegExp(QLatin1String("^([^:]+:)/+")), QStringLiteral("\\1"));
     }
 
@@ -69,12 +69,16 @@ class Q_DECL_HIDDEN IncidenceViewer::Private
 {
 public:
     Private(IncidenceViewer *parent)
-        : mCalendar(nullptr), mParent(parent), mParentCollectionFetchJob(nullptr),
-          mAttachmentModel(nullptr), mDelayedClear(false)
+        : mCalendar(nullptr)
+        , mParent(parent)
+        , mParentCollectionFetchJob(nullptr)
+        , mAttachmentModel(nullptr)
+        , mDelayedClear(false)
     {
         mAttachmentHandler = new AttachmentHandler(parent);
         mBrowser = new TextBrowser;
-        parent->connect(mBrowser, SIGNAL(attachmentUrlClicked(QString)), parent, SLOT(slotAttachmentUrlClicked(QString)));
+        parent->connect(mBrowser, SIGNAL(attachmentUrlClicked(QString)), parent,
+                        SLOT(slotAttachmentUrlClicked(QString)));
     }
 
     void updateView()
@@ -83,8 +87,8 @@ public:
 
         if (mCurrentItem.isValid()) {
             text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(
-                       CalendarSupport::displayName(mCalendar, mParentCollection),
-                       CalendarSupport::incidence(mCurrentItem), mDate);
+                CalendarSupport::displayName(mCalendar, mParentCollection),
+                CalendarSupport::incidence(mCurrentItem), mDate);
             text.prepend(mHeaderText);
             mBrowser->setHtml(text);
         } else {
@@ -93,7 +97,6 @@ public:
                 mBrowser->setHtml(text);
             }
         }
-
     }
 
     void slotParentCollectionFetched(KJob *job)
@@ -102,7 +105,8 @@ public:
         mParentCollection = Akonadi::Collection();
 
         if (!job->error()) {
-            Akonadi::CollectionFetchJob *fetchJob = qobject_cast<Akonadi::CollectionFetchJob *>(job);
+            Akonadi::CollectionFetchJob *fetchJob
+                = qobject_cast<Akonadi::CollectionFetchJob *>(job);
             if (!fetchJob->collections().isEmpty()) {
                 mParentCollection = fetchJob->collections().at(0);
             }
@@ -113,8 +117,8 @@ public:
 
     void slotAttachmentUrlClicked(const QString &uri)
     {
-        const QString attachmentName =
-            QString::fromUtf8(QByteArray::fromBase64(uri.mid(7).toUtf8()));
+        const QString attachmentName
+            = QString::fromUtf8(QByteArray::fromBase64(uri.mid(7).toUtf8()));
         mAttachmentHandler->view(attachmentName, CalendarSupport::incidence(mCurrentItem));
     }
 
@@ -133,14 +137,16 @@ public:
 };
 
 IncidenceViewer::IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent)
-    : QWidget(parent), d(new Private(this))
+    : QWidget(parent)
+    , d(new Private(this))
 {
     d->mCalendar = calendar;
     init();
 }
 
 IncidenceViewer::IncidenceViewer(QWidget *parent)
-    : QWidget(parent), d(new Private(this))
+    : QWidget(parent)
+    , d(new Private(this))
 {
     d->mCalendar = nullptr;
     init();
@@ -186,8 +192,8 @@ QDate IncidenceViewer::activeDate() const
 QAbstractItemModel *IncidenceViewer::attachmentModel() const
 {
     if (!d->mAttachmentModel) {
-        d->mAttachmentModel =
-            new IncidenceAttachmentModel(const_cast<IncidenceViewer *>(this));
+        d->mAttachmentModel
+            = new IncidenceAttachmentModel(const_cast<IncidenceViewer *>(this));
     }
     return d->mAttachmentModel;
 }
@@ -229,15 +235,17 @@ void IncidenceViewer::itemChanged(const Akonadi::Item &item)
     }
 
     if (d->mParentCollectionFetchJob) {
-        disconnect(d->mParentCollectionFetchJob, SIGNAL(result(KJob*)), this, SLOT(slotParentCollectionFetched(KJob*)));
+        disconnect(d->mParentCollectionFetchJob, SIGNAL(result(KJob *)), this,
+                   SLOT(slotParentCollectionFetched(KJob *)));
         delete d->mParentCollectionFetchJob;
     }
 
-    d->mParentCollectionFetchJob =
-        new Akonadi::CollectionFetchJob(d->mCurrentItem.parentCollection(),
-                                        Akonadi::CollectionFetchJob::Base, this);
+    d->mParentCollectionFetchJob
+        = new Akonadi::CollectionFetchJob(d->mCurrentItem.parentCollection(),
+                                          Akonadi::CollectionFetchJob::Base, this);
 
-    connect(d->mParentCollectionFetchJob, SIGNAL(result(KJob*)),  this, SLOT(slotParentCollectionFetched(KJob*)));
+    connect(d->mParentCollectionFetchJob, SIGNAL(result(KJob *)), this,
+            SLOT(slotParentCollectionFetched(KJob *)));
 }
 
 void IncidenceViewer::itemRemoved()

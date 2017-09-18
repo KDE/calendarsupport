@@ -22,16 +22,13 @@
 
 #include <QObject>
 
-namespace CalendarSupport
-{
-
-class FreePeriodModelTest: public QObject
+namespace CalendarSupport {
+class FreePeriodModelTest : public QObject
 {
     Q_OBJECT
 private Q_SLOTS:
     void testModelValidity();
     void testSplitByDay();
 };
-
 }
 #endif

@@ -20,7 +20,6 @@
 #include "categoryhierarchyreader.h"
 #include "categoryconfig.h"
 
-
 #include <KComboBox>
 
 #include <QTreeWidget>
@@ -30,9 +29,10 @@ using namespace CalendarSupport;
 inline QString &quote(QString &string)
 {
     Q_ASSERT(CategoryConfig::categorySeparator != QLatin1String("@"));
-    return string.replace(QLatin1Char('@'), QStringLiteral("@0")).replace(QLatin1Char('\\') +
-            CategoryConfig::categorySeparator,
-            QStringLiteral("@1"));
+    return string.replace(QLatin1Char('@'), QStringLiteral("@0")).replace(QLatin1Char(
+                                                                              '\\')
+                                                                          +CategoryConfig::categorySeparator,
+                                                                          QStringLiteral("@1"));
 }
 
 inline QStringList &unquote(QStringList &strings)
@@ -44,8 +44,8 @@ inline QStringList &unquote(QStringList &strings)
 
 QStringList CategoryHierarchyReader::path(QString string)
 {
-    QStringList _path =
-        quote(string).split(CategoryConfig::categorySeparator, QString::SkipEmptyParts);
+    QStringList _path
+        = quote(string).split(CategoryConfig::categorySeparator, QString::SkipEmptyParts);
     return unquote(_path);
 }
 
@@ -68,7 +68,7 @@ void CategoryHierarchyReader::read(const QStringList &categories)
         int split_level = 0;
         QStringList new_path = _path; // save it for later
         for (jt = _path.begin(), kt = last_path.begin();
-                jt != _path.end() && kt != last_path.end(); ++jt, ++kt) {
+             jt != _path.end() && kt != last_path.end(); ++jt, ++kt) {
             if (*jt == *kt) {
                 split_level++;
             } else {
@@ -156,4 +156,5 @@ int CategoryHierarchyReaderQTreeWidget::depth() const
 {
     return mCurrentDepth;
 }
+
 #endif

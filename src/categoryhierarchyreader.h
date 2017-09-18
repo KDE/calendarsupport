@@ -28,18 +28,22 @@ class KComboBox;
 class QTreeWidget;
 class QTreeWidgetItem;
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReader
 {
 public:
     void read(const QStringList &categories);
-    virtual ~CategoryHierarchyReader() {}
+    virtual ~CategoryHierarchyReader()
+    {
+    }
+
     static QStringList path(QString string);
 
 protected:
-    CategoryHierarchyReader() {}
+    CategoryHierarchyReader()
+    {
+    }
+
     virtual void clear() = 0;
     virtual void goUp() = 0;
     virtual void addChild(const QString &label, const QVariant &userData = QVariant()) = 0;
@@ -49,8 +53,14 @@ protected:
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQComboBox : public CategoryHierarchyReader
 {
 public:
-    explicit CategoryHierarchyReaderQComboBox(KComboBox *box) : mBox(box), mCurrentDepth(0) {}
-    virtual ~CategoryHierarchyReaderQComboBox() {}
+    explicit CategoryHierarchyReaderQComboBox(KComboBox *box) : mBox(box)
+        , mCurrentDepth(0)
+    {
+    }
+
+    virtual ~CategoryHierarchyReaderQComboBox()
+    {
+    }
 
 protected:
     void clear() override;
@@ -68,8 +78,15 @@ class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQTreeWidget : public Categor
 {
 public:
     explicit CategoryHierarchyReaderQTreeWidget(QTreeWidget *tree)
-        : mTree(tree), mItem(0), mCurrentDepth(0) {}
-    virtual ~CategoryHierarchyReaderQTreeWidget() {}
+        : mTree(tree)
+        , mItem(0)
+        , mCurrentDepth(0)
+    {
+    }
+
+    virtual ~CategoryHierarchyReaderQTreeWidget()
+    {
+    }
 
 protected:
     void clear() override;
@@ -83,7 +100,6 @@ private:
     int mCurrentDepth;
 };
 #endif
-
 }
 
 #endif

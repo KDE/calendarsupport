@@ -28,9 +28,7 @@
 class KCoreConfigSkeleton;
 class QColor;
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CALENDARSUPPORT_EXPORT CategoryConfig : public QObject
 {
     Q_OBJECT
@@ -51,7 +49,6 @@ private:
     class Private;
     Private *const d;
 };
-
 }
 
 #endif

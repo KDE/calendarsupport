@@ -30,9 +30,7 @@
 
 class ItemPrivateData;
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 /**
  * The FreeBusyItemModel is a 2-level tree structure.
  *
@@ -102,12 +100,10 @@ private Q_SLOTS:
     void autoReload();
 
 private:
-    void setFreeBusyPeriods(const QModelIndex &parent,
-                            const KCalCore::FreeBusyPeriod::List &list);
+    void setFreeBusyPeriods(const QModelIndex &parent, const KCalCore::FreeBusyPeriod::List &list);
     void updateFreeBusyData(const FreeBusyItem::Ptr &);
 
     FreeBusyItemModelPrivate *const d;
 };
-
 }
 #endif

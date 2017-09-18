@@ -52,9 +52,7 @@ class QWidget;
 
 #define TIMELINE_WIDTH 50           // width of timeline (day and timetable)
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 /**
   Base class for Calendar printing classes. Each sub class represents one
   calendar print format.
@@ -193,7 +191,8 @@ public:
       @param flags is a bitwise OR of Qt::AlignmentFlags and Qt::TextFlags values.
     */
     void showEventBox(QPainter &p, int linewidth, const QRect &box,
-                      const KCalCore::Incidence::Ptr &incidence, const QString &str, int flags = -1);
+                      const KCalCore::Incidence::Ptr &incidence, const QString &str,
+                      int flags = -1);
 
     /**
       Draw a subheader box with a shaded background and the given string
@@ -268,10 +267,8 @@ public:
               is box.bottom, otherwise it is larger than box.bottom
               and matches the y-coordinate of the surrounding rectangle.
     */
-    int drawHeader(QPainter &p, const QString &title,
-                   const QDate &month1, const QDate &month2,
-                   const QRect &box, bool expand = false,
-                   QColor backColor = QColor());
+    int drawHeader(QPainter &p, const QString &title, const QDate &month1, const QDate &month2,
+                   const QRect &box, bool expand = false, QColor backColor = QColor());
 
     /**
       Draw a page footer containing the printing date and possibly
@@ -300,9 +297,7 @@ public:
       @param toDate Last date of the printed dates
       @param box coordinates of the box for the days of the week
     */
-    void drawDaysOfWeek(QPainter &p,
-                        const QDate &fromDate, const QDate &toDate,
-                        const QRect &box);
+    void drawDaysOfWeek(QPainter &p, const QDate &fromDate, const QDate &toDate, const QRect &box);
     /**
       Draw a single weekday name in a box inside the given area of the painter.
       This is called in a loop by drawDaysOfWeek.
@@ -322,9 +317,7 @@ public:
       @param toTime End time of the time range to display
       @param box coordinates of the timeline
     */
-    void drawTimeLine(QPainter &p,
-                      const QTime &fromTime, const QTime &toTime,
-                      const QRect &box);
+    void drawTimeLine(QPainter &p, const QTime &fromTime, const QTime &toTime, const QRect &box);
 
     /**
       Draw the all-day box for the agenda print view (the box on top which
@@ -346,10 +339,9 @@ public:
       @param excludePrivate Whether to exclude Incidence marked private.
       @return The height used for the all-day box.
     */
-    int drawAllDayBox(QPainter &p, const KCalCore::Event::List &eventList,
-                      const QDate &qd, bool expandable,
-                      const QRect &box,
-                      bool excludeConfidential, bool excludePrivate);
+    int drawAllDayBox(QPainter &p, const KCalCore::Event::List &eventList, const QDate &qd,
+                      bool expandable, const QRect &box, bool excludeConfidential,
+                      bool excludePrivate);
     /**
       Draw the agenda box for the day print style (the box showing all events of that day).
       Also draws a grid with half-hour spacing of the grid lines.
@@ -376,18 +368,14 @@ public:
       @param excludePrivate Whether to exclude Incidence marked private.
       @param workDays List of workDays
     */
-    void drawAgendaDayBox(QPainter &p, const KCalCore::Event::List &eventList,
-                          const QDate &qd, bool expandable,
-                          const QTime &fromTime, const QTime &toTime,
-                          const QRect &box,
-                          bool includeDescription, bool excludeTime,
+    void drawAgendaDayBox(QPainter &p, const KCalCore::Event::List &eventList, const QDate &qd,
+                          bool expandable, const QTime &fromTime, const QTime &toTime,
+                          const QRect &box, bool includeDescription, bool excludeTime,
                           bool excludeConfidential, bool excludePrivate,
                           const QList<QDate> &workDays);
 
-    void drawAgendaItem(PrintCellItem *item, QPainter &p,
-                        const QDateTime &startPrintDate,
-                        const QDateTime &endPrintDate,
-                        float minlen, const QRect &box,
+    void drawAgendaItem(PrintCellItem *item, QPainter &p, const QDateTime &startPrintDate,
+                        const QDateTime &endPrintDate, float minlen, const QRect &box,
                         bool includeDescription, bool excludeTime);
 
     /**
@@ -409,16 +397,11 @@ public:
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
     */
-    void drawDayBox(QPainter &p, const QDate &qd,
-                    const QTime &fromTime, const QTime &toTime,
-                    const QRect &box,
-                    bool fullDate = false, bool printRecurDaily = true,
-                    bool printRecurWeekly = true,
-                    bool singleLineLimit = true,
-                    bool showNoteLines = false,
-                    bool includeDescription = false,
-                    bool excludeDescription = true,
-                    bool excludePrivate = true);
+    void drawDayBox(QPainter &p, const QDate &qd, const QTime &fromTime, const QTime &toTime,
+                    const QRect &box, bool fullDate = false, bool printRecurDaily = true,
+                    bool printRecurWeekly = true, bool singleLineLimit = true,
+                    bool showNoteLines = false, bool includeDescription = false,
+                    bool excludeDescription = true, bool excludePrivate = true);
     /**
       Draw the week (filofax) table of the week containing the date qd. The first
       three days of the week will be shown in the first column (using drawDayBox),
@@ -435,11 +418,9 @@ public:
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
     */
-    void drawWeek(QPainter &p, const QDate &qd,
-                  const QTime &fromTime, const QTime &toTime,
-                  const QRect &box, bool singleLineLimit,
-                  bool showNoteLines, bool includeDescription,
-                  bool excludeConfidential, bool excludePrivate);
+    void drawWeek(QPainter &p, const QDate &qd, const QTime &fromTime, const QTime &toTime,
+                  const QRect &box, bool singleLineLimit, bool showNoteLines,
+                  bool includeDescription, bool excludeConfidential, bool excludePrivate);
     /**
       Draw the (filofax) table for a bunch of days, using drawDayBox.
       @param p QPainter of the printout
@@ -454,11 +435,9 @@ public:
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
     */
-    void drawDays(QPainter &p, const QDate &start, const QDate &end,
-                  const QTime &fromTime, const QTime &toTime,
-                  const QRect &box, bool singleLineLimit, bool showNoteLines,
-                  bool includeDescription, bool excludeConfidential,
-                  bool excludePrivate);
+    void drawDays(QPainter &p, const QDate &start, const QDate &end, const QTime &fromTime,
+                  const QTime &toTime, const QRect &box, bool singleLineLimit, bool showNoteLines,
+                  bool includeDescription, bool excludeConfidential, bool excludePrivate);
     /**
       Draw the timetable view of the given time range from fromDate to toDate.
       On the left side the time scale is printed (using drawTimeLine), then each
@@ -479,10 +458,9 @@ public:
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
     */
-    void drawTimeTable(QPainter &p, const QDate &fromDate, const QDate &toDate,
-                       bool expandable, const QTime &fromTime, const QTime &toTime,
-                       const QRect &box, bool includeDescription,
-                       bool excludeTime, bool excludeConfidential,
+    void drawTimeTable(QPainter &p, const QDate &fromDate, const QDate &toDate, bool expandable,
+                       const QTime &fromTime, const QTime &toTime, const QRect &box,
+                       bool includeDescription, bool excludeTime, bool excludeConfidential,
                        bool excludePrivate);
 
     /**
@@ -505,13 +483,10 @@ public:
       @param excludePrivate Whether to exclude Incidence marked private.
       @param box coordinates of the month.
     */
-    void drawMonthTable(QPainter &p, const QDate &qd,
-                        const QTime &fromTime, const QTime &toTime,
-                        bool weeknumbers,
-                        bool recurDaily, bool recurWeekly, bool singleLineLimit,
-                        bool showNoteLines, bool includeDescription,
-                        bool excludeConfidential, bool excludePrivate,
-                        const QRect &box);
+    void drawMonthTable(QPainter &p, const QDate &qd, const QTime &fromTime, const QTime &toTime,
+                        bool weeknumbers, bool recurDaily, bool recurWeekly, bool singleLineLimit,
+                        bool showNoteLines, bool includeDescription, bool excludeConfidential,
+                        bool excludePrivate, const QRect &box);
     /**
       Draw a vertical representation of the month containing the date dt. Each
       day gets one line.
@@ -529,9 +504,8 @@ public:
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
     */
-    void drawMonth(QPainter &p, const QDate &dt, const QRect &box,
-                   int maxdays = -1, int subDailyFlags = TimeBoxes,
-                   int holidaysFlags = Text,
+    void drawMonth(QPainter &p, const QDate &dt, const QRect &box, int maxdays = -1,
+                   int subDailyFlags = TimeBoxes, int holidaysFlags = Text,
                    bool excludeConfidential = false, bool excludePrivate = false);
 
     /**
@@ -576,14 +550,11 @@ public:
       about its parent)
     */
     void drawTodo(int &count, const KCalCore::Todo::Ptr &todo, QPainter &p,
-                  KCalCore::TodoSortField sortField,
-                  KCalCore::SortDirection sortDir,
-                  bool connectSubTodos, bool strikeoutCompleted, bool desc,
-                  int posPriority, int posSummary, int posDueDt,
-                  int posPercentComplete, int level, int x, int &y,
-                  int width, int pageHeight,
-                  const KCalCore::Todo::List &todoList, TodoParentStart *r,
-                  bool excludeConfidential, bool excludePrivate);
+                  KCalCore::TodoSortField sortField, KCalCore::SortDirection sortDir,
+                  bool connectSubTodos, bool strikeoutCompleted, bool desc, int posPriority,
+                  int posSummary, int posDueDt, int posPercentComplete, int level, int x, int &y,
+                  int width, int pageHeight, const KCalCore::Todo::List &todoList,
+                  TodoParentStart *r, bool excludeConfidential, bool excludePrivate);
 
     /**
       Draws single journal item.
@@ -595,8 +566,8 @@ public:
       @param pageHeight Total height allowed for the list on a page. If an item
                    would be below that line, a new page is started.
     */
-    void drawJournal(const KCalCore::Journal::Ptr &journal, QPainter &p, int x, int &y,
-                     int width, int pageHeight);
+    void drawJournal(const KCalCore::Journal::Ptr &journal, QPainter &p, int x, int &y, int width,
+                     int pageHeight);
     /**
       Draws text lines splitting on page boundaries.
       @param p QPainter of the printout
@@ -606,12 +577,11 @@ public:
       @param pageHeight size of the page. A new page is started when the
              text reaches the end of the page.
     */
-    void drawTextLines(QPainter &p, const QString &entry,
-                       int x, int &y, int width, int pageHeight,
+    void drawTextLines(QPainter &p, const QString &entry, int x, int &y, int width, int pageHeight,
                        bool richTextEntry);
 
-    void drawSplitHeaderRight(QPainter &p, const QDate &fd, const QDate &td,
-                              const QDate &cd, int width, int height);
+    void drawSplitHeaderRight(QPainter &p, const QDate &fd, const QDate &td, const QDate &cd,
+                              int width, int height);
 
     /**
       Draws dotted lines for notes in a box.
@@ -626,12 +596,10 @@ protected:
     QColor categoryBgColor(const KCalCore::Incidence::Ptr &incidence) const;
 
     void drawIncidence(QPainter &p, const QRect &dayBox, const QString &time,
-                       const QString &summary, const QString &description,
-                       int &textY, bool singleLineLimit,
-                       bool includeDescription, bool richDescription);
+                       const QString &summary, const QString &description, int &textY,
+                       bool singleLineLimit, bool includeDescription, bool richDescription);
     QString toPlainText(const QString &htmlText);
-    void drawTodoLines(QPainter &p, const QString &entry,
-                       int x, int &y, int width, int pageHeight,
+    void drawTodoLines(QPainter &p, const QString &entry, int x, int &y, int width, int pageHeight,
                        bool richTextEntry, QList<TodoParentStart *> &startPoints,
                        bool connectSubTodos);
 
@@ -652,8 +620,7 @@ private:
     /**
      * Sets the QPainter's brush and pen color according to the Incidence's category.
      */
-    void setColorsByIncidenceCategory(QPainter &p,
-                                      const KCalCore::Incidence::Ptr &incidence) const;
+    void setColorsByIncidenceCategory(QPainter &p, const KCalCore::Incidence::Ptr &incidence) const;
 
     QString holidayString(const QDate &date) const;
 
@@ -664,7 +631,6 @@ private:
      */
     QColor getTextColor(const QColor &c) const;
 };
-
 }
 
 #endif

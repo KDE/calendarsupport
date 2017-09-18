@@ -38,13 +38,11 @@
 
 #include <QModelIndex>
 
-namespace KCalCore
-{
+namespace KCalCore {
 class CalFilter;
 }
 
-namespace Akonadi
-{
+namespace Akonadi {
 class ETMCalendar;
 }
 
@@ -54,9 +52,7 @@ class QMimeData;
 
 typedef QList<QModelIndex> QModelIndexList;
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class Calendar;
 /**
  * returns the incidence from an akonadi item, or a null pointer if the item has no such payload
@@ -137,8 +133,7 @@ CALENDARSUPPORT_EXPORT bool hasJournal(const KCalCore::Incidence::Ptr &incidence
 /**
  * returns @p true if the URL represents an Akonadi item and has one of the given mimetypes.
  */
-bool isValidIncidenceItemUrl(const QUrl &url,
-                             const QStringList &supportedMimeTypes);
+bool isValidIncidenceItemUrl(const QUrl &url, const QStringList &supportedMimeTypes);
 
 bool isValidIncidenceItemUrl(const QUrl &url);
 
@@ -192,7 +187,7 @@ CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item::List &items, QWidg
   @return the filtered list of items
 */
 CALENDARSUPPORT_EXPORT Akonadi::Item::List applyCalFilter(const Akonadi::Item::List &items,
-        const KCalCore::CalFilter *filter);
+                                                          const KCalCore::CalFilter *filter);
 
 /**
   Shows a modal dialog that allows to select a collection.
@@ -204,23 +199,18 @@ CALENDARSUPPORT_EXPORT Akonadi::Item::List applyCalFilter(const Akonadi::Item::L
   there was no collection selected.
 */
 CALENDARSUPPORT_EXPORT Akonadi::Collection selectCollection(
-    QWidget *parent, int &dialogCode,
-    const QStringList &mimeTypes,
+    QWidget *parent, int &dialogCode, const QStringList &mimeTypes,
     const Akonadi::Collection &defaultCollection = Akonadi::Collection());
 
 CALENDARSUPPORT_EXPORT Akonadi::Item itemFromIndex(const QModelIndex &index);
 
 CALENDARSUPPORT_EXPORT Akonadi::Item::List itemsFromModel(
     const QAbstractItemModel *model,
-    const QModelIndex &parentIndex = QModelIndex(),
-    int start = 0,
-    int end = -1);
+    const QModelIndex &parentIndex = QModelIndex(), int start = 0, int end = -1);
 
 CALENDARSUPPORT_EXPORT Akonadi::Collection::List collectionsFromModel(
     const QAbstractItemModel *model,
-    const QModelIndex &parentIndex = QModelIndex(),
-    int start = 0,
-    int end = -1);
+    const QModelIndex &parentIndex = QModelIndex(), int start = 0, int end = -1);
 
 CALENDARSUPPORT_EXPORT Akonadi::Collection collectionFromIndex(const QModelIndex &index);
 
@@ -230,7 +220,7 @@ CALENDARSUPPORT_EXPORT Akonadi::Collection::List collectionsFromIndexes(
     const QModelIndexList &indexes);
 
 CALENDARSUPPORT_EXPORT QString displayName(Akonadi::ETMCalendar *calendar,
-        const Akonadi::Collection &coll);
+                                           const Akonadi::Collection &coll);
 
 CALENDARSUPPORT_EXPORT QString subMimeTypeForIncidence(
     const KCalCore::Incidence::Ptr &incidence);
@@ -245,12 +235,12 @@ CALENDARSUPPORT_EXPORT QList<QDate> workDays(const QDate &start, const QDate &en
  */
 CALENDARSUPPORT_EXPORT QStringList holiday(const QDate &date);
 
-CALENDARSUPPORT_EXPORT void saveAttachments(const Akonadi::Item &item,
-        QWidget *widget = nullptr);
+CALENDARSUPPORT_EXPORT void saveAttachments(const Akonadi::Item &item, QWidget *widget = nullptr);
 
 CALENDARSUPPORT_EXPORT QStringList categories(const KCalCore::Incidence::List &incidences);
 
-CALENDARSUPPORT_EXPORT bool mergeCalendar(const QString &srcFilename, const KCalCore::Calendar::Ptr &destCalendar);
+CALENDARSUPPORT_EXPORT bool mergeCalendar(const QString &srcFilename,
+                                          const KCalCore::Calendar::Ptr &destCalendar);
 }
 
 #endif

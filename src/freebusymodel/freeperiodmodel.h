@@ -27,9 +27,7 @@
 
 #include <QAbstractTableModel>
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CALENDARSUPPORT_EXPORT FreePeriodModel : public QAbstractTableModel
 {
     Q_OBJECT
@@ -61,6 +59,5 @@ private:
     KCalCore::Period::List mPeriodList;
     friend class FreePeriodModelTest;
 };
-
 }
 #endif

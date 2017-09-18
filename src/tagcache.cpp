@@ -31,8 +31,8 @@
 using namespace CalendarSupport;
 
 TagCache::TagCache()
-    : QObject(),
-      mMonitor(new Akonadi::Monitor(this))
+    : QObject()
+    , mMonitor(new Akonadi::Monitor(this))
 {
     mMonitor->setObjectName(QStringLiteral("TagCacheMonitor"));
     mMonitor->setTypeMonitored(Akonadi::Monitor::Tags);

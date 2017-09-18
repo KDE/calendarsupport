@@ -26,34 +26,43 @@
 #include "calprintpluginbase.h"
 #include "ui_calprintyearconfig_base.h"
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CalPrintYear : public CalPrintPluginBase
 {
 public:
-    CalPrintYear(): CalPrintPluginBase() {}
-    ~CalPrintYear() {}
+    CalPrintYear() : CalPrintPluginBase()
+    {
+    }
+
+    ~CalPrintYear()
+    {
+    }
+
     QString groupName() const override
     {
         return QStringLiteral("Print year");
     }
+
     QString description() const override
     {
         return i18n("Print &year");
     }
+
     QString info() const override
     {
         return i18n("Prints a calendar for an entire year");
     }
+
     int sortID() const override
     {
         return CalPrinterBase::Year;
     }
+
     bool enabled() const override
     {
         return true;
     }
+
     QWidget *createConfigWidget(QWidget *) override;
     QPrinter::Orientation defaultOrientation() const override;
 
@@ -71,8 +80,7 @@ protected:
     int mSubDaysEvents, mHolidaysEvents;
 };
 
-class CalPrintYearConfig
-    : public QWidget, public Ui::CalPrintYearConfig_Base
+class CalPrintYearConfig : public QWidget, public Ui::CalPrintYearConfig_Base
 {
 public:
     explicit CalPrintYearConfig(QWidget *parent) : QWidget(parent)
@@ -80,7 +88,6 @@ public:
         setupUi(this);
     }
 };
-
 }
 
 #endif

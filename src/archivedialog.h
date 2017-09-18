@@ -37,21 +37,17 @@ class QCheckBox;
 class QRadioButton;
 class QPushButton;
 
-namespace Akonadi
-{
+namespace Akonadi {
 class IncidenceChanger;
 class ETMCalendar;
 }
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CALENDARSUPPORT_EXPORT ArchiveDialog : public QDialog
 {
     Q_OBJECT
 public:
-    ArchiveDialog(const Akonadi::ETMCalendar::Ptr &calendar,
-                  Akonadi::IncidenceChanger *changer,
+    ArchiveDialog(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer,
                   QWidget *parent = nullptr);
     ~ArchiveDialog();
 
@@ -81,7 +77,6 @@ private:
     Akonadi::ETMCalendar::Ptr mCalendar;
     QPushButton *mUser1Button = nullptr;
 };
-
 }
 
 #endif

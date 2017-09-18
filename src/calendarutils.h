@@ -27,14 +27,11 @@
 
 #include <QObject>
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 }
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CalendarUtilsPrivate;
 
 /** Some calendar/Incidence related utilitly methods.
@@ -95,7 +92,6 @@ private:
                                            Akonadi::IncidenceChanger::ResultCode resultCode,
                                            const QString &errorString))
 };
-
 }
 
 #endif // CALENDARUTILS_H

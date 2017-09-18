@@ -23,9 +23,7 @@
 
 #include <KPluginFactory>
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 /**
    @class Plugin
 
@@ -51,12 +49,19 @@ public:
         return QStringLiteral("Calendar/Plugin");
     }
 
-    Plugin() {}
-    virtual ~Plugin() {}
+    Plugin()
+    {
+    }
+
+    virtual ~Plugin()
+    {
+    }
 
     virtual QString info() const = 0;
 
-    virtual void configure(QWidget *) {}
+    virtual void configure(QWidget *)
+    {
+    }
 };
 
 class CALENDARSUPPORT_EXPORT PluginFactory : public KPluginFactory
@@ -66,11 +71,11 @@ public:
     virtual Plugin *createPluginFactory() = 0;
 
 protected:
-    QObject *createObject(QObject *, const char *, const QStringList &) override {
+    QObject *createObject(QObject *, const char *, const QStringList &) override
+    {
         return nullptr;
     }
 };
-
 }
 
 #endif

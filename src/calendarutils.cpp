@@ -28,7 +28,6 @@
 #include "calendarutils.h"
 #include "utils.h"
 
-
 #include <KCalCore/Incidence>
 #include <Akonadi/Calendar/ETMCalendar>
 #include <Akonadi/Calendar/IncidenceChanger>
@@ -43,14 +42,15 @@ using namespace KCalCore;
 /// CalendarUtilsPrivate
 
 struct MultiChange {
-    Akonadi::Item              parent;
+    Akonadi::Item parent;
     QVector<Akonadi::Item::Id> children;
-    bool              success;
+    bool success;
 
     explicit MultiChange(const Akonadi::Item &parent = Akonadi::Item())
-        : parent(parent),
-          success(true)
-    {}
+        : parent(parent)
+        , success(true)
+    {
+    }
 
     bool inProgress() const
     {
@@ -58,16 +58,13 @@ struct MultiChange {
     }
 };
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CalendarUtilsPrivate
 {
 public:
     /// Methods
     CalendarUtilsPrivate(const Akonadi::ETMCalendar::Ptr &calendar, CalendarUtils *qq);
-    void handleChangeFinish(int changeId,
-                            const Akonadi::Item &item,
+    void handleChangeFinish(int changeId, const Akonadi::Item &item,
                             Akonadi::IncidenceChanger::ResultCode resultCode,
                             const QString &errorString);
 
@@ -76,32 +73,33 @@ public:
     /// Members
     Akonadi::ETMCalendar::Ptr mCalendar;
     Akonadi::IncidenceChanger *mChanger = nullptr;
-    MultiChange       mMultiChange;
+    MultiChange mMultiChange;
 
 private:
     CalendarUtils *const q_ptr;
     Q_DECLARE_PUBLIC(CalendarUtils)
 };
-
 }
 
-CalendarUtilsPrivate::CalendarUtilsPrivate(const Akonadi::ETMCalendar::Ptr &calendar, CalendarUtils *qq)
-    : mCalendar(calendar),
-      mChanger(new Akonadi::IncidenceChanger(qq)),
-      q_ptr(qq)
+CalendarUtilsPrivate::CalendarUtilsPrivate(const Akonadi::ETMCalendar::Ptr &calendar,
+                                           CalendarUtils *qq)
+    : mCalendar(calendar)
+    , mChanger(new Akonadi::IncidenceChanger(qq))
+    , q_ptr(qq)
 {
     Q_Q(CalendarUtils);
     Q_ASSERT(mCalendar);
 
     q->connect(mChanger,
-               SIGNAL(modifyFinished(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,QString)),
-               SLOT(handleChangeFinish(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,QString)));
+               SIGNAL(modifyFinished(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,
+                                     QString)),
+               SLOT(handleChangeFinish(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,
+                                       QString)));
 }
 
-void CalendarUtilsPrivate::handleChangeFinish(int,
-        const Akonadi::Item &item,
-        Akonadi::IncidenceChanger::ResultCode resultCode,
-        const QString &errorString)
+void CalendarUtilsPrivate::handleChangeFinish(int, const Akonadi::Item &item,
+                                              Akonadi::IncidenceChanger::ResultCode resultCode,
+                                              const QString &errorString)
 {
     Q_Q(CalendarUtils);
     const bool success = resultCode == Akonadi::IncidenceChanger::ResultCodeSuccess;
@@ -147,7 +145,8 @@ bool CalendarUtilsPrivate::purgeCompletedSubTodos(const KCalCore::Todo::Ptr &tod
     const Akonadi::Item::List subTodos = mCalendar->childItems(todo->uid());
     for (const Akonadi::Item &item : subTodos) {
         if (CalendarSupport::hasTodo(item)) {
-            deleteThisTodo &= purgeCompletedSubTodos(item.payload<KCalCore::Todo::Ptr>(), allPurged);
+            deleteThisTodo
+                &= purgeCompletedSubTodos(item.payload<KCalCore::Todo::Ptr>(), allPurged);
         }
     }
 
@@ -170,8 +169,8 @@ bool CalendarUtilsPrivate::purgeCompletedSubTodos(const KCalCore::Todo::Ptr &tod
 /// CalendarUtils
 
 CalendarUtils::CalendarUtils(const Akonadi::ETMCalendar::Ptr &calendar, QObject *parent)
-    : QObject(parent),
-      d_ptr(new CalendarUtilsPrivate(calendar, this))
+    : QObject(parent)
+    , d_ptr(new CalendarUtilsPrivate(calendar, this))
 {
     Q_ASSERT(calendar);
 }

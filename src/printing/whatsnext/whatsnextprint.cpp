@@ -44,8 +44,8 @@ QWidget *CalPrintWhatsNext::createConfigWidget(QWidget *w)
 
 void CalPrintWhatsNext::readSettingsWidget()
 {
-    CalPrintWhatsNextConfig *cfg =
-        dynamic_cast<CalPrintWhatsNextConfig *>((QWidget *)mConfigWidget);
+    CalPrintWhatsNextConfig *cfg
+        = dynamic_cast<CalPrintWhatsNextConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         mFromDate = cfg->mFromDate->date();
         mToDate = cfg->mToDate->date();
@@ -54,8 +54,8 @@ void CalPrintWhatsNext::readSettingsWidget()
 
 void CalPrintWhatsNext::setSettingsWidget()
 {
-    CalPrintWhatsNextConfig *cfg =
-        dynamic_cast<CalPrintWhatsNextConfig *>((QWidget *)mConfigWidget);
+    CalPrintWhatsNextConfig *cfg
+        = dynamic_cast<CalPrintWhatsNextConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(mFromDate);
         cfg->mToDate->setDate(mToDate);
@@ -85,8 +85,8 @@ void CalPrintWhatsNext::saveConfig()
 void CalPrintWhatsNext::setDateRange(const QDate &from, const QDate &to)
 {
     CalPrintPluginBase::setDateRange(from, to);
-    CalPrintWhatsNextConfig *cfg =
-        dynamic_cast<CalPrintWhatsNextConfig *>((QWidget *)mConfigWidget);
+    CalPrintWhatsNextConfig *cfg
+        = dynamic_cast<CalPrintWhatsNextConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(from);
         cfg->mToDate->setDate(to);

@@ -27,9 +27,7 @@
 
 #include <KCalCore/FreeBusy>
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 /**
  * The FreeBusyItem is the whole line for a given attendee..
  */
@@ -42,7 +40,9 @@ public:
      * @param parentWidget is passed to Akonadi when fetching free/busy data.
      */
     FreeBusyItem(const KCalCore::Attendee::Ptr &attendee, QWidget *parentWidget);
-    ~FreeBusyItem() {}
+    ~FreeBusyItem()
+    {
+    }
 
     KCalCore::Attendee::Ptr attendee() const;
     void setFreeBusy(const KCalCore::FreeBusy::Ptr &fb);
@@ -72,6 +72,5 @@ private:
 
     QWidget *mParentWidget = nullptr;
 };
-
 }
 #endif

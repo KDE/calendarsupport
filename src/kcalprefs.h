@@ -27,9 +27,7 @@
 
 #include <Collection>
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CALENDARSUPPORT_EXPORT KCalPrefs : public KCalPrefsBase
 {
     Q_OBJECT
@@ -87,7 +85,6 @@ private:
     class Private;
     Private *const d;
 };
-
 }
 
 #endif

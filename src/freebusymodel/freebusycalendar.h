@@ -29,8 +29,7 @@
 #include <KCalCore/Calendar>
 #include <KCalCore/Event>
 
-namespace CalendarSupport
-{
+namespace CalendarSupport {
 class FreeBusyCalendarPrivate;
 class CALENDARSUPPORT_EXPORT FreeBusyCalendar : public QObject
 {
@@ -52,6 +51,5 @@ private:
     void deleteAllEvents();
     FreeBusyCalendarPrivate *const d;
 };
-
 }
 #endif // FBMODEL_FBCALENDAR_H

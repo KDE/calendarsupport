@@ -22,10 +22,8 @@
 
 #include <QObject>
 
-namespace CalendarSupport
-{
-
-class FreeBusyItemModelTest: public QObject
+namespace CalendarSupport {
+class FreeBusyItemModelTest : public QObject
 {
     Q_OBJECT
 private Q_SLOTS:
@@ -33,6 +31,5 @@ private Q_SLOTS:
     void testModelValidity2();
     void testInsertFreeBusy();
 };
-
 }
 #endif

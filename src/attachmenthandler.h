@@ -36,9 +36,7 @@ class KJob;
 
 class QWidget;
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 /**
   @brief
   Provides methods to handle incidence attachments.
@@ -94,8 +92,7 @@ public:
      * @return true if the attachment could be found and the viewer program successfully launched;
      * false otherwise.
      */
-    bool view(const QString &attachmentName,
-              const KCalCore::Incidence::Ptr &incidence);
+    bool view(const QString &attachmentName, const KCalCore::Incidence::Ptr &incidence);
 
     /**
       Launches a viewer on the specified attachment.
@@ -118,8 +115,7 @@ public:
       @return true if the attachment could be found and the viewer program successfully launched;
       false otherwise.
     */
-    bool view(const QString &attachmentName,
-              const KCalCore::ScheduleMessage::Ptr &message);
+    bool view(const QString &attachmentName, const KCalCore::ScheduleMessage::Ptr &message);
 
     /**
       Saves the specified attachment to a file of the user's choice.
@@ -139,8 +135,7 @@ public:
       @return true if the attachment could be found and the save operation was successful;
       false otherwise.
     */
-    bool saveAs(const QString &attachmentName,
-                const KCalCore::Incidence::Ptr &incidence);
+    bool saveAs(const QString &attachmentName, const KCalCore::Incidence::Ptr &incidence);
 
     /**
       Saves the specified attachment to a file of the user's choice.
@@ -162,8 +157,7 @@ public:
       @return true if the attachment could be found and the save operation was successful;
       false otherwise.
     */
-    bool saveAs(const QString &attachmentName,
-                const KCalCore::ScheduleMessage::Ptr &message);
+    bool saveAs(const QString &attachmentName, const KCalCore::ScheduleMessage::Ptr &message);
 
 Q_SIGNALS:
     void viewFinished(const QString &uid, const QString &attachmentName, bool success);
@@ -176,9 +170,7 @@ private:
     class Private;
     Private *const d;
     //@endcond
-
 }; // class AttachmentHandler
-
 } // namespace CalendarSupport
 
 #endif

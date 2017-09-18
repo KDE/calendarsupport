@@ -39,8 +39,9 @@ Akonadi::ETMCalendar::Ptr CalendarSupport::calendarSingleton(bool createIfNull)
     if (!calendar && createIfNull) {
         calendar = Akonadi::ETMCalendar::Ptr(new Akonadi::ETMCalendar());
         calendar->setCollectionFilteringEnabled(false);
-        calendar->setOwner(KCalCore::Person::Ptr(new KCalCore::Person(KCalPrefs::instance()->fullName(),
-                           KCalPrefs::instance()->email())));
+        calendar->setOwner(KCalCore::Person::Ptr(new KCalCore::Person(KCalPrefs::instance()->
+                                                                      fullName(),
+                                                                      KCalPrefs::instance()->email())));
     }
 
     return calendar;

@@ -27,32 +27,39 @@
 #include "calprintpluginbase.h"
 #include "ui_calprintjournalconfig_base.h"
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class CalPrintJournal : public CalPrintPluginBase
 {
 public:
-    CalPrintJournal(): CalPrintPluginBase() {}
-    ~CalPrintJournal() {}
+    CalPrintJournal() : CalPrintPluginBase()
+    {
+    }
+
+    ~CalPrintJournal()
+    {
+    }
 
     QString groupName() const override
     {
         return QStringLiteral("Print journal");
     }
+
     QString description() const override
     {
         return i18n("Print &journal");
     }
+
     QString info() const override
     {
         return i18n("Prints all journals for a given date range");
     }
+
     QWidget *createConfigWidget(QWidget *) override;
     int sortID() const override
     {
         return CalPrinterBase::Journallist;
     }
+
     bool enabled() const override
     {
         return true;
@@ -70,8 +77,7 @@ protected:
     bool mUseDateRange;
 };
 
-class CalPrintJournalConfig
-    : public QWidget, public Ui::CalPrintJournalConfig_Base
+class CalPrintJournalConfig : public QWidget, public Ui::CalPrintJournalConfig_Base
 {
 public:
     explicit CalPrintJournalConfig(QWidget *parent) : QWidget(parent)
@@ -79,7 +85,6 @@ public:
         setupUi(this);
     }
 };
-
 }
 
 #endif

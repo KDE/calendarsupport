@@ -39,9 +39,11 @@ public:
 };
 
 CollectionSelection::CollectionSelection(QItemSelectionModel *selectionModel, QObject *parent)
-    : QObject(parent), d(new Private(selectionModel))
+    : QObject(parent)
+    , d(new Private(selectionModel))
 {
-    connect(selectionModel, &QItemSelectionModel::selectionChanged, this, &CollectionSelection::slotSelectionChanged);
+    connect(selectionModel, &QItemSelectionModel::selectionChanged, this,
+            &CollectionSelection::slotSelectionChanged);
 }
 
 CollectionSelection::~CollectionSelection()
@@ -92,7 +94,7 @@ QList<Akonadi::Collection::Id> CollectionSelection::selectedCollectionIds() cons
 }
 
 void CollectionSelection::slotSelectionChanged(const QItemSelection &selectedIndexes,
-        const QItemSelection &deselIndexes)
+                                               const QItemSelection &deselIndexes)
 {
     const Akonadi::Collection::List selected = collectionsFromIndexes(selectedIndexes.indexes());
     const Akonadi::Collection::List deselected = collectionsFromIndexes(deselIndexes.indexes());

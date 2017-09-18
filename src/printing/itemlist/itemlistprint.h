@@ -33,7 +33,7 @@ using namespace KOrg;
 class CalPrintItemList : public CalPrintPluginBase
 {
 public:
-    CalPrintItemList(): CalPrintPluginBase()
+    CalPrintItemList() : CalPrintPluginBase()
     {
     }
 

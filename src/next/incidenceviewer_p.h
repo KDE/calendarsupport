@@ -24,9 +24,7 @@
 
 #include <QTextBrowser>
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class TextBrowser : public QTextBrowser
 {
     Q_OBJECT
@@ -39,7 +37,6 @@ public:
 Q_SIGNALS:
     void attachmentUrlClicked(const QString &uri);
 };
-
 }
 
 #endif

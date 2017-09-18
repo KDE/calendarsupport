@@ -28,15 +28,16 @@
 using namespace CalendarSupport;
 using namespace Akonadi;
 
-namespace CalendarSupport
-{
-
+namespace CalendarSupport {
 class IncidenceAttachmentModelPrivate
 {
     IncidenceAttachmentModelPrivate(IncidenceAttachmentModel *qq,
                                     const QPersistentModelIndex &modelIndex,
                                     const Akonadi::Item &item = Akonadi::Item())
-        : q_ptr(qq), m_modelIndex(modelIndex), m_item(item), m_monitor(nullptr)
+        : q_ptr(qq)
+        , m_modelIndex(modelIndex)
+        , m_item(item)
+        , m_monitor(nullptr)
     {
         if (modelIndex.isValid()) {
             QObject::connect(modelIndex.model(), SIGNAL(dataChanged(QModelIndex,QModelIndex)),
@@ -105,29 +106,25 @@ class IncidenceAttachmentModelPrivate
     KCalCore::Incidence::Ptr m_incidence;
     Akonadi::Monitor *m_monitor = nullptr;
 };
-
 }
 
 IncidenceAttachmentModel::IncidenceAttachmentModel(const QPersistentModelIndex &modelIndex,
-        QObject *parent)
-    : QAbstractListModel(parent),
-      d_ptr(new IncidenceAttachmentModelPrivate(this, modelIndex))
+                                                   QObject *parent)
+    : QAbstractListModel(parent)
+    , d_ptr(new IncidenceAttachmentModelPrivate(this, modelIndex))
 {
-
 }
 
 IncidenceAttachmentModel::IncidenceAttachmentModel(const Akonadi::Item &item, QObject *parent)
-    : QAbstractListModel(parent),
-      d_ptr(new IncidenceAttachmentModelPrivate(this, QModelIndex(), item))
+    : QAbstractListModel(parent)
+    , d_ptr(new IncidenceAttachmentModelPrivate(this, QModelIndex(), item))
 {
-
 }
 
 IncidenceAttachmentModel::IncidenceAttachmentModel(QObject *parent)
-    : QAbstractListModel(parent),
-      d_ptr(new IncidenceAttachmentModelPrivate(this, QModelIndex()))
+    : QAbstractListModel(parent)
+    , d_ptr(new IncidenceAttachmentModelPrivate(this, QModelIndex()))
 {
-
 }
 
 IncidenceAttachmentModel::~IncidenceAttachmentModel()
@@ -208,9 +205,8 @@ QVariant IncidenceAttachmentModel::data(const QModelIndex &index, int role) cons
     return QVariant();
 }
 
-QVariant IncidenceAttachmentModel::headerData(int section,
-        Qt::Orientation orientation,
-        int role) const
+QVariant IncidenceAttachmentModel::headerData(int section, Qt::Orientation orientation,
+                                              int role) const
 {
     return QAbstractItemModel::headerData(section, orientation, role);
 }
@@ -224,5 +220,3 @@ QHash<int, QByteArray> CalendarSupport::IncidenceAttachmentModel::roleNames() co
 }
 
 #include "moc_incidenceattachmentmodel.cpp"
-
-
