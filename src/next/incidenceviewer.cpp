@@ -235,8 +235,8 @@ void IncidenceViewer::itemChanged(const Akonadi::Item &item)
     }
 
     if (d->mParentCollectionFetchJob) {
-        disconnect(d->mParentCollectionFetchJob, SIGNAL(result(KJob *)), this,
-                   SLOT(slotParentCollectionFetched(KJob *)));
+        disconnect(d->mParentCollectionFetchJob, SIGNAL(result(KJob*)), this,
+                   SLOT(slotParentCollectionFetched(KJob*)));
         delete d->mParentCollectionFetchJob;
     }
 
@@ -244,8 +244,8 @@ void IncidenceViewer::itemChanged(const Akonadi::Item &item)
         = new Akonadi::CollectionFetchJob(d->mCurrentItem.parentCollection(),
                                           Akonadi::CollectionFetchJob::Base, this);
 
-    connect(d->mParentCollectionFetchJob, SIGNAL(result(KJob *)), this,
-            SLOT(slotParentCollectionFetched(KJob *)));
+    connect(d->mParentCollectionFetchJob, SIGNAL(result(KJob*)), this,
+            SLOT(slotParentCollectionFetched(KJob*)));
 }
 
 void IncidenceViewer::itemRemoved()
