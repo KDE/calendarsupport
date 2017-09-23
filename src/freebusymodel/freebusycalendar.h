@@ -19,8 +19,8 @@
  *
  */
 
-#ifndef FBMODEL_FBCALENDAR_H
-#define FBMODEL_FBCALENDAR_H
+#ifndef FREEBUSYCALENDAR_H
+#define FREEBUSYCALENDAR_H
 
 #include "calendarsupport_export.h"
 
@@ -52,4 +52,4 @@ private:
     FreeBusyCalendarPrivate *const d;
 };
 }
-#endif // FBMODEL_FBCALENDAR_H
+#endif // FREEBUSYCALENDAR_H
