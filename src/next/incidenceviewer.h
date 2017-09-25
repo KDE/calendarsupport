@@ -155,7 +155,6 @@ private:
     Private *const d;
 
     Q_PRIVATE_SLOT(d, void slotParentCollectionFetched(KJob *))
-    Q_PRIVATE_SLOT(d, void slotAttachmentUrlClicked(const QString &))
     //@endcond
 };
 }
