@@ -79,7 +79,7 @@ class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQTreeWidget : public Categor
 public:
     explicit CategoryHierarchyReaderQTreeWidget(QTreeWidget *tree)
         : mTree(tree)
-        , mItem(0)
+        , mItem(nullptr)
         , mCurrentDepth(0)
     {
     }
@@ -97,7 +97,7 @@ protected:
 private:
     QTreeWidget *mTree = nullptr;
     QTreeWidgetItem *mItem = nullptr;
-    int mCurrentDepth;
+    int mCurrentDepth = 0;
 };
 #endif
 }
