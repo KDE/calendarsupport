@@ -93,13 +93,10 @@ public Q_SLOTS:
 protected:
     void timerEvent(QTimerEvent *) override;
 
-private Q_SLOTS:
-    // Force the download of FB information
-    void manualReload();
+private:
     // Only download FB if the auto-download option is set in config
     void autoReload();
 
-private:
     void setFreeBusyPeriods(const QModelIndex &parent, const KCalCore::FreeBusyPeriod::List &list);
     void updateFreeBusyData(const FreeBusyItem::Ptr &);
 

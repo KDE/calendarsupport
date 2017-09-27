@@ -423,8 +423,3 @@ void FreeBusyItemModel::cancelReload()
     d->mReloadTimer.stop();
 }
 
-void FreeBusyItemModel::manualReload()
-{
-    d->mForceDownload = true;
-    reload();
-}
