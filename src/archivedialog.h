@@ -56,13 +56,11 @@ Q_SIGNALS:
     void eventsDeleted();
     void autoArchivingSettingsModified();
 
-protected Q_SLOTS:
+private:
     void slotEventsDeleted();
     void slotUser1();
     void slotEnableUser1();
     void slotActionChanged();
-
-private:
     void showWhatsThis();
     KUrlRequester *mArchiveFile = nullptr;
     KDateComboBox *mDateEdit = nullptr;

@@ -105,19 +105,14 @@ public:
 
     PrintPlugin *selectedPlugin();
     void setOrientation(CalPrinter::ePrintOrientation orientation);
-    CalPrinter::ePrintOrientation orientation()
-    {
-        return mOrientation;
-    }
+    CalPrinter::ePrintOrientation orientation() const;
 
 public Q_SLOTS:
     void setPrintType(int);
     void setPreview(bool);
 
-protected Q_SLOTS:
-    void slotOk();
-
 private:
+    void slotOk();
     QButtonGroup *mTypeGroup = nullptr;
     QStackedWidget *mConfigArea = nullptr;
     QMap<int, PrintPlugin *> mPluginIDs;

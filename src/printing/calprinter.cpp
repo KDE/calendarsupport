@@ -313,6 +313,11 @@ void CalPrintDialog::setOrientation(CalPrinter::ePrintOrientation orientation)
     mOrientationSelection->setCurrentIndex(mOrientation);
 }
 
+CalPrinter::ePrintOrientation CalPrintDialog::orientation() const
+{
+    return mOrientation;
+}
+
 PrintPlugin *CalPrintDialog::selectedPlugin()
 {
     int id = mConfigArea->currentIndex();
