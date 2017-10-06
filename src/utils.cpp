@@ -800,13 +800,11 @@ bool CalendarSupport::mergeCalendar(const QString &srcFilename,
         qCCritical(CALENDARSUPPORT_LOG) << "File'" << srcFilename << "' doesn't exist.";
     }
 
-    bool loadedSuccesfully = true;
-
     // merge in a file
     destCalendar->startBatchAdding();
     KCalCore::FileStorage storage(destCalendar);
     storage.setFileName(srcFilename);
-    loadedSuccesfully = storage.load();
+    bool loadedSuccesfully = storage.load();
     destCalendar->endBatchAdding();
 
     return loadedSuccesfully;

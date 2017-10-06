@@ -1519,8 +1519,6 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     int possummary = 100;
     int posdue = width - 65;
     int poscomplete = posdue - 70; //Complete column is to right of the Due column
-    int lineSpacing = 15;
-    //int fontHeight = 10;
 
     QRect headerBox(0, 0, width, headerHeight());
     QRect footerBox(0, height - footerHeight(), width, footerHeight());
@@ -1535,7 +1533,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     QFont oldFont(p.font());
 
     p.setFont(QFont(QStringLiteral("sans-serif"), 9, QFont::Bold));
-    lineSpacing = p.fontMetrics().lineSpacing();
+    int lineSpacing = p.fontMetrics().lineSpacing();
     mCurrentLinePos += lineSpacing;
     if (mIncludePriority) {
         outStr += i18n("Priority");

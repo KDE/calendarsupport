@@ -89,7 +89,6 @@ protected:
     bool mShowSubitemsNotes;
     bool mShowAttendees;
     bool mShowAttachments;
-    bool mShowNoteLines;
 };
 
 class CalPrintDay : public CalPrintPluginBase
