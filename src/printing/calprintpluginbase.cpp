@@ -455,7 +455,7 @@ void CalPrintPluginBase::showEventBox(QPainter &p, int linewidth, const QRect &b
     QPen oldpen(p.pen());
     QBrush oldbrush(p.brush());
     QColor bgColor(categoryBgColor(incidence));
-    if (mUseColors & bgColor.isValid()) {
+    if (mUseColors && bgColor.isValid()) {
         p.setBrush(bgColor);
     } else {
         p.setBrush(QColor(232, 232, 232));
