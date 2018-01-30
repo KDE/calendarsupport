@@ -538,25 +538,25 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
                 if (tName.startsWith(QStringLiteral("shared.cal"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
-                    typeStr = QStringLiteral("Calendar");
+                    typeStr = i18n("Calendar");
                     break;
                 } else if (tName.startsWith(QStringLiteral("shared.tasks"), Qt::CaseInsensitive)
                            || tName.startsWith(QStringLiteral("shared.todo"),
                                                Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
-                    typeStr = QStringLiteral("Tasks");
+                    typeStr = i18n("Tasks");
                     break;
                 } else if (tName.startsWith(QStringLiteral("shared.journal"),
                                             Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
-                    typeStr = QStringLiteral("Journal");
+                    typeStr = i18n("Journal");
                     break;
                 } else if (tName.startsWith(QStringLiteral("shared.notes"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
-                    typeStr = QStringLiteral("Notes");
+                    typeStr = i18n("Notes");
                     break;
                 } else if (tName != i18n("Calendar")
                            && tName != i18n("Tasks")
