@@ -58,10 +58,10 @@ class PrintPlugin : public Plugin
 {
 public:
     PrintPlugin() : Plugin()
-        , mConfigWidget(0)
-        , mPrinter(0)
-        , mCalendar(0)
-        , mConfig(0)
+        , mConfigWidget(nullptr)
+        , mPrinter(nullptr)
+        , mCalendar(nullptr)
+        , mConfig(nullptr)
     {
     }
 
