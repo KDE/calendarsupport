@@ -50,11 +50,11 @@ void TextBrowser::setSource(const QUrl &name)
     QString uri = name.toString();
     // QTextBrowser for some reason insists on putting // or / in links,
     // this is a crude workaround
-    if (uri.startsWith(QStringLiteral("uid:"))
-        || uri.startsWith(QStringLiteral("kmail:"))
+    if (uri.startsWith(QLatin1String("uid:"))
+        || uri.startsWith(QLatin1String("kmail:"))
         || uri.startsWith(QStringLiteral("urn:x-ical").section(QLatin1Char(':'), 0, 0))
-        || uri.startsWith(QStringLiteral("news:"))
-        || uri.startsWith(QStringLiteral("mailto:"))) {
+        || uri.startsWith(QLatin1String("news:"))
+        || uri.startsWith(QLatin1String("mailto:"))) {
         uri.replace(QRegExp(QLatin1String("^([^:]+:)/+")), QStringLiteral("\\1"));
     }
 

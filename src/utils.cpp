@@ -535,25 +535,25 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
             while (p != Akonadi::Collection::root()) {
                 Akonadi::Collection tCol = calendar->collection(p.id());
                 const QString tName = tCol.name();
-                if (tName.startsWith(QStringLiteral("shared.cal"), Qt::CaseInsensitive)) {
+                if (tName.startsWith(QLatin1String("shared.cal"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = i18n("Calendar");
                     break;
-                } else if (tName.startsWith(QStringLiteral("shared.tasks"), Qt::CaseInsensitive)
-                           || tName.startsWith(QStringLiteral("shared.todo"),
+                } else if (tName.startsWith(QLatin1String("shared.tasks"), Qt::CaseInsensitive)
+                           || tName.startsWith(QLatin1String("shared.todo"),
                                                Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = i18n("Tasks");
                     break;
-                } else if (tName.startsWith(QStringLiteral("shared.journal"),
+                } else if (tName.startsWith(QLatin1String("shared.journal"),
                                             Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = i18n("Journal");
                     break;
-                } else if (tName.startsWith(QStringLiteral("shared.notes"), Qt::CaseInsensitive)) {
+                } else if (tName.startsWith(QLatin1String("shared.notes"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = i18n("Notes");
@@ -651,7 +651,7 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
     const QString dName = fullCollection.displayName();
 
     if (!dName.isEmpty()) {
-        return fullCollection.name().startsWith(QStringLiteral("akonadi_")) ? i18n("My %1",
+        return fullCollection.name().startsWith(QLatin1String("akonadi_")) ? i18n("My %1",
                                                                                    dName) : dName;
     } else if (!fullCollection.name().isEmpty()) {
         return fullCollection.name();
