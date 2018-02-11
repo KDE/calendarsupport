@@ -35,7 +35,7 @@ public:
     /** Constructor disabled for public. Use instance() to create a KCalPrefs
     object. */
     KCalPrefs();
-    virtual ~KCalPrefs();
+    ~KCalPrefs() override;
 
     /** Get instance of KCalPrefs. It is made sure that there is only one
     instance. */

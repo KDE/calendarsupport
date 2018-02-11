@@ -59,7 +59,7 @@ public:
     */
     CalPrinter(QWidget *par, const Akonadi::ETMCalendar::Ptr &calendar, bool uniqItem = false);
 
-    virtual ~CalPrinter();
+    ~CalPrinter() override;
 
     void init(const Akonadi::ETMCalendar::Ptr &calendar);
 
@@ -101,7 +101,7 @@ public:
     explicit CalPrintDialog(int initialPrintType, const PrintPlugin::List &plugins,
                             QWidget *parent = nullptr, bool mUniqItem = false);
 
-    virtual ~CalPrintDialog();
+    ~CalPrintDialog() override;
 
     PrintPlugin *selectedPlugin();
     void setOrientation(CalPrinter::ePrintOrientation orientation);

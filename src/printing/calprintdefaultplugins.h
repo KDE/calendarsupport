@@ -41,7 +41,7 @@ class CALENDARSUPPORT_EXPORT CalPrintIncidence : public CalPrintPluginBase
 {
 public:
     CalPrintIncidence();
-    virtual ~CalPrintIncidence();
+    ~CalPrintIncidence() override;
     QString groupName() const override
     {
         return QStringLiteral("Print incidence");
@@ -95,7 +95,7 @@ class CalPrintDay : public CalPrintPluginBase
 {
 public:
     CalPrintDay();
-    virtual ~CalPrintDay();
+    ~CalPrintDay() override;
     QString groupName() const override
     {
         return QStringLiteral("Print day");
@@ -151,7 +151,7 @@ class CalPrintWeek : public CalPrintPluginBase
 {
 public:
     CalPrintWeek();
-    virtual ~CalPrintWeek();
+    ~CalPrintWeek() override;
 
     QString groupName() const override
     {
@@ -212,7 +212,7 @@ class CalPrintMonth : public CalPrintPluginBase
 {
 public:
     CalPrintMonth();
-    virtual ~CalPrintMonth();
+    ~CalPrintMonth() override;
     QString groupName() const override
     {
         return QStringLiteral("Print month");
@@ -267,7 +267,7 @@ class CalPrintTodos : public CalPrintPluginBase
 {
 public:
     CalPrintTodos();
-    virtual ~CalPrintTodos();
+    ~CalPrintTodos() override;
 
     QString groupName() const override
     {

@@ -70,7 +70,7 @@ public:
       Constructor
     */
     CalPrintPluginBase();
-    virtual ~CalPrintPluginBase();
+    ~CalPrintPluginBase() override;
 
     /**
       Returns widget for configuring the print format.

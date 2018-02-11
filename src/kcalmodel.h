@@ -35,7 +35,7 @@ public:
 
     explicit KCalModel(QObject *parent = nullptr);
 
-    virtual ~KCalModel();
+    ~KCalModel() override;
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
     int columnCount(const QModelIndex &parent = QModelIndex()) const override;

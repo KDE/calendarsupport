@@ -37,7 +37,7 @@ class CALENDARSUPPORT_EXPORT FreeBusyCalendar : public QObject
 public:
     explicit FreeBusyCalendar(QObject *parent = nullptr);
 
-    virtual ~FreeBusyCalendar();
+    ~FreeBusyCalendar() override;
 
     void setModel(FreeBusyItemModel *model);
     FreeBusyItemModel *model() const;
