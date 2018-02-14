@@ -760,7 +760,7 @@ void CalPrintDay::loadConfig()
         mIncludeDescription = grp.readEntry("Include description", false);
         mIncludeTodos = grp.readEntry("Include todos", false);
         mIncludeAllEvents = grp.readEntry("Include all events", false);
-        mDayPrintType = (eDayPrintType)(grp.readEntry("Print type", (int)Timetable));
+        mDayPrintType = static_cast<eDayPrintType>(grp.readEntry("Print type", static_cast<int>(Timetable)));
         mSingleLineLimit = grp.readEntry("Single line limit", false);
         mShowNoteLines = grp.readEntry("Note Lines", false);
         mExcludeTime = grp.readEntry("Exclude time", false);
@@ -1475,7 +1475,7 @@ void CalPrintTodos::loadConfig()
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
         mPageTitle = grp.readEntry("Page title", i18n("To-do list"));
-        mTodoPrintType = (eTodoPrintType)grp.readEntry("Print type", (int)TodosAll);
+        mTodoPrintType = (eTodoPrintType)grp.readEntry("Print type", static_cast<int>(TodosAll));
         mIncludeDescription = grp.readEntry("Include description", true);
         mIncludePriority = grp.readEntry("Include priority", true);
         mIncludeDueDate = grp.readEntry("Include due date", true);
@@ -1483,9 +1483,9 @@ void CalPrintTodos::loadConfig()
         mConnectSubTodos = grp.readEntry("Connect subtodos", true);
         mStrikeOutCompleted = grp.readEntry("Strike out completed summaries", true);
         mTodoSortField
-            = (eTodoSortField)grp.readEntry("Sort field", (int)TodoFieldSummary);
+            = (eTodoSortField)grp.readEntry("Sort field", static_cast<int>(TodoFieldSummary));
         mTodoSortDirection
-            = (eTodoSortDirection)grp.readEntry("Sort direction", (int)TodoDirectionAscending);
+            = (eTodoSortDirection)grp.readEntry("Sort direction", static_cast<int>(TodoDirectionAscending));
         mExcludeConfidential = grp.readEntry("Exclude confidential", true);
         mExcludePrivate = grp.readEntry("Exclude private", true);
     }
@@ -1505,8 +1505,8 @@ void CalPrintTodos::saveConfig()
         grp.writeEntry("Include percentage completed", mIncludePercentComplete);
         grp.writeEntry("Connect subtodos", mConnectSubTodos);
         grp.writeEntry("Strike out completed summaries", mStrikeOutCompleted);
-        grp.writeEntry("Sort field", (int)mTodoSortField);
-        grp.writeEntry("Sort direction", (int)mTodoSortDirection);
+        grp.writeEntry("Sort field", static_cast<int>(mTodoSortField));
+        grp.writeEntry("Sort direction", static_cast<int>(mTodoSortDirection));
         grp.writeEntry("Exclude confidential", mExcludeConfidential);
         grp.writeEntry("Exclude private", mExcludePrivate);
     }

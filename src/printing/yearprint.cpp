@@ -77,8 +77,8 @@ void CalPrintYear::loadConfig()
         KConfigGroup config(mConfig, "Yearprint");
         mYear = config.readEntry("Year", QDate::currentDate().year());
         mPages = config.readEntry("Pages", 1);
-        mSubDaysEvents = config.readEntry("ShowSubDayEventsAs", (int)TimeBoxes);
-        mHolidaysEvents = config.readEntry("ShowHolidaysAs", (int)Text);
+        mSubDaysEvents = config.readEntry("ShowSubDayEventsAs", static_cast<int>(TimeBoxes));
+        mHolidaysEvents = config.readEntry("ShowHolidaysAs", static_cast<int>(Text));
     }
     setSettingsWidget();
 }

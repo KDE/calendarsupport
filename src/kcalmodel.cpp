@@ -160,23 +160,18 @@ QVariant KCalModel::data(const QModelIndex &index, int role) const
         switch (index.column()) {
         case Summary:
             return incidence->summary();
-            break;
         case DateTimeStart:
             return incidence->dtStart().toString();
-            break;
         case DateTimeEnd:
             return incidence->dateTime(KCalCore::Incidence::RoleEnd).toString();
-            break;
         case Type:
             return incidence->type();
-            break;
         default:
             break;
         }
         break;
     default:
         return QVariant();
-        break;
     }
 
     return QVariant();
