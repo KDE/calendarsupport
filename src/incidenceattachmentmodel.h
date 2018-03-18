@@ -57,7 +57,7 @@ public:
 
     explicit IncidenceAttachmentModel(QObject *parent = nullptr);
 
-    ~IncidenceAttachmentModel();
+    ~IncidenceAttachmentModel() override;
 
     KCalCore::Incidence::Ptr incidence() const;
 

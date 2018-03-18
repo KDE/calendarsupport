@@ -35,7 +35,7 @@ public:
     {
     }
 
-    ~CalPrintJournal()
+    ~CalPrintJournal() override
     {
     }
 

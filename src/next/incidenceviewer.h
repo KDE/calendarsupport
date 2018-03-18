@@ -83,7 +83,7 @@ public:
     /**
      * Destroys the incidence viewer.
      */
-    ~IncidenceViewer();
+    ~IncidenceViewer() override;
 
     /**
      * Sets the Calendar for this viewer.

@@ -54,11 +54,10 @@ class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQComboBox : public CategoryH
 {
 public:
     explicit CategoryHierarchyReaderQComboBox(KComboBox *box) : mBox(box)
-        , mCurrentDepth(0)
     {
     }
 
-    virtual ~CategoryHierarchyReaderQComboBox()
+    ~CategoryHierarchyReaderQComboBox() override
     {
     }
 
@@ -70,7 +69,7 @@ protected:
 
 private:
     KComboBox *mBox = nullptr;
-    int mCurrentDepth;
+    int mCurrentDepth = 0;
 };
 
 #ifndef QT_NO_TREEWIDGET
@@ -84,7 +83,7 @@ public:
     {
     }
 
-    virtual ~CategoryHierarchyReaderQTreeWidget()
+    ~CategoryHierarchyReaderQTreeWidget() override
     {
     }
 

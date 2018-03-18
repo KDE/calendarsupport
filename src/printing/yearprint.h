@@ -34,7 +34,7 @@ public:
     {
     }
 
-    ~CalPrintYear()
+    ~CalPrintYear() override
     {
     }
 
