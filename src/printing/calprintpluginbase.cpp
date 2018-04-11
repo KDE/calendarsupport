@@ -1967,7 +1967,7 @@ void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, Q
         int lwidth = 24;
         int lheight = 12;
         //first, draw the progress bar
-        int progress = (int)((lwidth * todo->percentComplete()) / 100.0 + 0.5);
+        int progress = static_cast<int>(((lwidth * todo->percentComplete()) / 100.0 + 0.5));
 
         p.setBrush(QBrush(Qt::NoBrush));
         p.drawRect(posPercentComplete, y + 3, lwidth, lheight);

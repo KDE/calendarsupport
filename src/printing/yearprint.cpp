@@ -165,8 +165,8 @@ void CalPrintYear::print(QPainter &p, int width, int height)
             if (++thismonth > months) {
                 break;
             }
-            int xstart = int(j * monthwidth + 0.5);
-            int xend = int((j + 1) * monthwidth + 0.5);
+            int xstart = static_cast<int>(j * monthwidth + 0.5);
+            int xend = static_cast<int>((j + 1) * monthwidth + 0.5);
             QRect monthBox(xstart, monthesBox.top(), xend - xstart, monthesBox.height());
             drawMonth(p, temp, monthBox, maxdays, mSubDaysEvents, mHolidaysEvents);
 

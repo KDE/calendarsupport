@@ -78,8 +78,6 @@ class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQTreeWidget : public Categor
 public:
     explicit CategoryHierarchyReaderQTreeWidget(QTreeWidget *tree)
         : mTree(tree)
-        , mItem(nullptr)
-        , mCurrentDepth(0)
     {
     }
 

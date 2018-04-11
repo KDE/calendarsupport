@@ -114,7 +114,7 @@ void CalPrinter::print(int type, const QDate &fd, const QDate &td,
     setDateRange(fd, td);
 
     if (printDialog->exec() == QDialog::Accepted) {
-        grp.writeEntry("Orientation", (int)printDialog->orientation());
+        grp.writeEntry("Orientation", static_cast<int>(printDialog->orientation()));
 
         // Save all changes in the dialog
         for (it = mPrintPlugins.begin(); it != mPrintPlugins.end(); ++it) {
@@ -152,7 +152,6 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientati
         printer.setOrientation(QPrinter::Landscape);
         break;
     case eOrientPrinter:
-    default:
         break;
     }
 
@@ -244,8 +243,8 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     // First insert the config widgets into the widget stack. This possibly assigns
     // proper ids (when two plugins have the same sortID), so store them in a map
     // and use these new IDs to later sort the plugins for the type selection.
-    for (PrintPlugin::List::ConstIterator it = plugins.constBegin();
-         it != plugins.constEnd(); ++it) {
+    for (PrintPlugin::List::ConstIterator it = plugins.constBegin(), total = plugins.constEnd();
+         it != total; ++it) {
         int newid = mConfigArea->insertWidget((*it)->sortID(), (*it)->configWidget(mConfigArea));
         mPluginIDs[newid] = (*it);
     }
@@ -331,7 +330,7 @@ PrintPlugin *CalPrintDialog::selectedPlugin()
 void CalPrintDialog::slotOk()
 {
     mOrientation
-        = (CalPrinter::ePrintOrientation)mOrientationSelection->currentIndex();
+        = static_cast<CalPrinter::ePrintOrientation>(mOrientationSelection->currentIndex());
 
     QMap<int, PrintPlugin *>::ConstIterator it = mPluginIDs.constBegin();
     for (; it != mPluginIDs.constEnd(); ++it) {

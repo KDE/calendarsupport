@@ -311,7 +311,7 @@ void AttachmentHandler::slotFinishView(KJob *job)
     ReceivedInfo info = d->mJobToReceivedInfo[job];
     bool success = false;
 
-    if (job->error() != 0) {
+    if (job->error()) {
         ItemFetchJob *fetchJob = qobject_cast<ItemFetchJob *>(job);
         const Item::List items = fetchJob->items();
         if (!items.isEmpty()) {

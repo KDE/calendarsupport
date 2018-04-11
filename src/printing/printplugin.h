@@ -65,7 +65,7 @@ public:
     {
     }
 
-    virtual ~PrintPlugin()
+    ~PrintPlugin() override
     {
     }
 
