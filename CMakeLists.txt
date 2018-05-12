@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-set(PIM_VERSION "5.8.40")
+set(PIM_VERSION "5.8.41")
 
 project(calendarsupport VERSION ${PIM_VERSION})
 
@@ -22,8 +22,6 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 include(ECMCoverageOption)
-
-
 
 set(CALENDARSUPPORT_LIB_VERSION ${PIM_VERSION})
 set(AKONADI_MIMELIB_VERSION "5.7.80")
@@ -61,7 +59,6 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX CALENDARSUPPORT
                         SOVERSION 5
 )
 
-
 ########### Targets ###########
 
 add_definitions("-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII")
@@ -74,7 +71,7 @@ set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5CalendarSupport")
 configure_package_config_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/KF5CalendarSupportConfig.cmake.in"
   "${CMAKE_CURRENT_BINARY_DIR}/KF5CalendarSupportConfig.cmake"
-  INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
+  INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR}
 )
 
 install(FILES
@@ -86,8 +83,8 @@ install(FILES
 
 install(EXPORT KF5CalendarSupportTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5CalendarSupportTargets.cmake NAMESPACE KF5::)
 
-install(FILES
-   ${CMAKE_CURRENT_BINARY_DIR}/calendarsupport_version.h
+install(
+  FILES ${CMAKE_CURRENT_BINARY_DIR}/calendarsupport_version.h
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
 )
 
@@ -95,4 +92,7 @@ feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 add_subdirectory(src)
 
-install( FILES calendarsupport.categories calendarsupport.renamecategories DESTINATION ${KDE_INSTALL_CONFDIR} )
+install(
+  FILES calendarsupport.categories calendarsupport.renamecategories
+  DESTINATION ${KDE_INSTALL_CONFDIR}
+)

@@ -30,7 +30,10 @@
 #include <EntityDisplayAttribute>
 #include <EntityTreeModel>
 #include <Item>
+
+#include <AkonadiCore/AgentInstance>
 #include <AkonadiCore/AgentManager>
+#include <AkonadiCore/EntityDisplayAttribute>
 #include <Akonadi/Calendar/ETMCalendar>
 #include <Akonadi/Calendar/PublishDialog>
 #include <akonadi/calendar/calendarsettings.h>
@@ -540,15 +543,13 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
                     nameStr = cName;
                     typeStr = i18n("Calendar");
                     break;
-                } else if (tName.startsWith(QLatin1String("shared.tasks"), Qt::CaseInsensitive)
-                           || tName.startsWith(QLatin1String("shared.todo"),
-                                               Qt::CaseInsensitive)) {
+                } else if (tName.startsWith(QLatin1String("shared.tasks"), Qt::CaseInsensitive) ||
+                           tName.startsWith(QLatin1String("shared.todo"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = i18n("Tasks");
                     break;
-                } else if (tName.startsWith(QLatin1String("shared.journal"),
-                                            Qt::CaseInsensitive)) {
+                } else if (tName.startsWith(QLatin1String("shared.journal"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = i18n("Journal");
@@ -558,10 +559,10 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
                     nameStr = cName;
                     typeStr = i18n("Notes");
                     break;
-                } else if (tName != i18n("Calendar")
-                           && tName != i18n("Tasks")
-                           && tName != i18n("Journal")
-                           && tName != i18n("Notes")) {
+                } else if (tName != i18n("Calendar") &&
+                           tName != i18n("Tasks") &&
+                           tName != i18n("Journal") &&
+                           tName != i18n("Notes")) {
                     ownerStr = tName;
                     break;
                 } else {
@@ -576,9 +577,9 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
             if (!ownerStr.compare(QLatin1String("INBOX"), Qt::CaseInsensitive)) {
                 return i18nc("%1 is folder contents",
                              "My Kolab %1", typeStr);
-            } else if (!ownerStr.compare(QLatin1String("SHARED"), Qt::CaseInsensitive)
-                       || !ownerStr.compare(QLatin1String("CALENDAR"), Qt::CaseInsensitive)
-                       || !ownerStr.compare(QLatin1String("RESOURCES"), Qt::CaseInsensitive)) {
+            } else if (!ownerStr.compare(QLatin1String("SHARED"), Qt::CaseInsensitive) ||
+                       !ownerStr.compare(QLatin1String("CALENDAR"), Qt::CaseInsensitive) ||
+                       !ownerStr.compare(QLatin1String("RESOURCES"), Qt::CaseInsensitive)) {
                 return i18nc("%1 is folder name, %2 is folder contents",
                              "Shared Kolab %1 %2", nameStr, typeStr);
             } else {
@@ -659,6 +660,52 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
         return i18nc("unknown resource", "Unknown");
     }
 }
+
+QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool richText)
+{
+    Q_UNUSED(richText);
+
+    QString str = QLatin1String("<qt>");
+
+    // Display Name
+    QString displayName;
+    if (coll.hasAttribute<Akonadi::EntityDisplayAttribute>()) {
+        displayName = coll.attribute<Akonadi::EntityDisplayAttribute>()->displayName();
+    }
+
+    if (displayName.isEmpty()) {
+        displayName = coll.name();
+    }
+    str += QLatin1String("<b>") + displayName + QLatin1String("</b>");
+    str += QLatin1String("<hr>");
+
+    // Calendar Type
+    QString calendarType;
+    if (!coll.isVirtual()) {
+        const Akonadi::AgentInstance instance =
+            Akonadi::AgentManager::self()->instance(coll.resource());
+        calendarType = instance.type().name();
+    } else {
+        calendarType = i18nc("unknown calendar type", "unknown");
+    }
+    str += QLatin1String("<i>") + i18n("Calendar type:") + QLatin1String("</i>");
+    str += QLatin1String("&nbsp;") + calendarType;
+
+    // Read only?
+    bool isReadOnly = !(coll.rights() & Akonadi::Collection::CanChangeItem);
+    str += QLatin1String("<br>");
+    str += QLatin1String("<i>") + i18n("Rights:") + QLatin1String("</i>");
+    str += QLatin1String("&nbsp;");
+    if (isReadOnly) {
+        str += i18nc("the calendar is read-only", "read-only");
+    } else {
+        str += i18nc("the calendar is read and write", "read+write");
+    }
+    str += QLatin1String("</br>");
+
+    str += QLatin1String("</qt>");
+    return str;
+ }
 
 QString CalendarSupport::subMimeTypeForIncidence(const KCalCore::Incidence::Ptr &incidence)
 {

@@ -231,6 +231,18 @@ CALENDARSUPPORT_EXPORT QString subMimeTypeForIncidence(
 CALENDARSUPPORT_EXPORT QList<QDate> workDays(const QDate &start, const QDate &end);
 
 /**
+ * Creates a nicely formatted toolTip string for a calendar, containing some quick,
+ * useful information to the user.
+ *
+ * @param coll is the Akonadi collection representing the calendar.
+ * @param richText switches off richText (on by default) [CURRENTLY UNIMPLEMENTED]
+ *
+ * @return a QString containing the calendar info suitable for a toolTip.
+ * @since 5.9
+ */
+CALENDARSUPPORT_EXPORT QString toolTipString(const Akonadi::Collection &coll, bool richText=true);
+
+/**
  * Returns a list of holidays that occur at @param date.
  */
 CALENDARSUPPORT_EXPORT QStringList holiday(const QDate &date);
