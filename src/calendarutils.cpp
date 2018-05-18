@@ -91,10 +91,8 @@ CalendarUtilsPrivate::CalendarUtilsPrivate(const Akonadi::ETMCalendar::Ptr &cale
     Q_ASSERT(mCalendar);
 
     q->connect(mChanger,
-               SIGNAL(modifyFinished(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,
-                                     QString)),
-               SLOT(handleChangeFinish(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,
-                                       QString)));
+               SIGNAL(modifyFinished(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,QString)),
+               SLOT(handleChangeFinish(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,QString)));
 }
 
 void CalendarUtilsPrivate::handleChangeFinish(int, const Akonadi::Item &item,
