@@ -653,7 +653,6 @@ int CalPrintPluginBase::drawFooter(QPainter &p, const QRect &footbox)
 {
     QFont oldfont(p.font());
     p.setFont(QFont(QStringLiteral("sans-serif"), 6));
-    QFontMetrics fm(p.font());
     QString dateStr = QLocale::system().toString(QDateTime::currentDateTime(), QLocale::LongFormat);
     p.drawText(footbox, Qt::AlignCenter | Qt::AlignVCenter | Qt::TextSingleLine,
                i18nc("print date: formatted-datetime", "printed: %1", dateStr));
@@ -1658,6 +1657,10 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt, const QRect &bo
                     for (KCalCore::TimeList::ConstIterator it = times.constBegin();
                          it != times.constEnd(); ++it) {
                         QDateTime d1start(d1, *it, Qt::LocalTime);
+                        monthentries.append(
+                            MonthEventStruct(d1start,
+                                             e->endDateForStart(d1start).toLocalTime(), e));
+
                     }
                 }
                 d1 = d1.addDays(1);
