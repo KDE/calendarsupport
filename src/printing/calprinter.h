@@ -75,7 +75,8 @@ public Q_SLOTS:
     void updateConfig();
 
 private Q_SLOTS:
-    void doPrint(PrintPlugin *selectedStyle, ePrintOrientation dlgorientation,
+    void doPrint(CalendarSupport::PrintPlugin *selectedStyle,
+                 CalendarSupport::CalPrinter::ePrintOrientation dlgorientation,
                  bool preview = false);
 
 public:
