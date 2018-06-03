@@ -67,6 +67,7 @@
 #include <QPointer>
 #include <QFileDialog>
 #include <QUrlQuery>
+#include <QRegularExpression>
 #include <QTimeZone>
 
 #include "calendarsupport_debug.h"
@@ -727,16 +728,17 @@ QList<QDate> CalendarSupport::workDays(const QDate &startDate, const QDate &endD
     }
 
     if (KCalPrefs::instance()->mExcludeHolidays) {
-        // NOTE: KOGlobals, where this method comes from, used to hold a pointer to
-        //       a KHolidays object. I'm not sure about how expensive it is, just
-        //       creating one here.
-        const HolidayRegion holidays(KCalPrefs::instance()->mHolidays);
-        const Holiday::List list = holidays.holidays(startDate, endDate);
-        const int listCount(list.count());
-        for (int i = 0; i < listCount; ++i) {
-            const Holiday &h = list.at(i);
-            if (h.dayType() == Holiday::NonWorkday) {
-                result.removeAll(h.observedStartDate());
+        foreach (const QString &regionStr, KCalPrefs::instance()->mHolidays) {
+            KHolidays::HolidayRegion region(regionStr);
+            if (region.isValid()) {
+                const KHolidays::Holiday::List list = region.holidays(startDate, endDate);
+                const int listCount(list.count());
+                for (int i = 0; i < listCount; ++i) {
+                    const Holiday &h = list.at(i);
+                    if (h.dayType() == Holiday::NonWorkday) {
+                        result.removeAll(h.observedStartDate());
+                    }
+                }
             }
         }
     }
@@ -748,13 +750,41 @@ QStringList CalendarSupport::holiday(const QDate &date)
 {
     QStringList hdays;
 
-    const HolidayRegion holidays(KCalPrefs::instance()->mHolidays);
-    const Holiday::List list = holidays.holidays(date);
-    const int listCount = list.count();
-    hdays.reserve(listCount);
-    for (int i = 0; i < listCount; ++i) {
-        hdays.append(list.at(i).name());
+    bool showCountryCode = (KCalPrefs::instance()->mHolidays.count() > 1);
+    foreach (const QString &regionStr, KCalPrefs::instance()->mHolidays) {
+        KHolidays::HolidayRegion region(regionStr);
+        if (region.isValid()) {
+            const Holiday::List list = region.holidays(date);
+            const int listCount = list.count();
+            for (int i = 0; i < listCount; ++i) {
+                // don't add duplicates.
+                // TODO: won't find duplicates in different languages however.
+                const QString name = list.at(i).name();
+                if (showCountryCode) {
+                    // If more than one holiday region, append the country code to the holiday
+                    // display name to help the user identify which region it belongs to.
+                    const QRegularExpression holidaySE(
+                        i18nc("search pattern for holidayname", "^%1", name));
+                    if (hdays.filter(holidaySE).isEmpty()) {
+                        const QString pholiday = i18n("%1 (%2)", name, region.countryCode());
+                        hdays.append(pholiday);
+                    } else {
+                        // More than 1 region has the same holiday => remove the country code
+                        // i.e don't show "Holiday (US)" and "Holiday(FR)"; just show "Holiday".
+                        const QRegularExpression holidayRE(
+                            i18nc("replace pattern for holidayname (countrycode)", "^%1 \\(.*\\)", name));
+                        hdays.replaceInStrings(holidayRE, name);
+                        hdays.removeDuplicates();
+                    }
+                } else {
+                    if (!hdays.contains(name)) {
+                        hdays.append(name);
+                    }
+                }
+            }
+        }
     }
+
     return hdays;
 }
 
