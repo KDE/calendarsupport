@@ -81,7 +81,7 @@ KCalCore::Incidence::Ptr CalendarSupport::incidence(const Akonadi::Item &item)
     //relying on exception for performance reasons
     try {
         return item.payload<KCalCore::Incidence::Ptr>();
-    } catch (Akonadi::PayloadException) {
+    } catch (const Akonadi::PayloadException &) {
         return KCalCore::Incidence::Ptr();
     }
 }
@@ -94,7 +94,7 @@ KCalCore::Event::Ptr CalendarSupport::event(const Akonadi::Item &item)
         if (hasEvent(incidence)) {
             return item.payload<KCalCore::Event::Ptr>();
         }
-    } catch (Akonadi::PayloadException) {
+    } catch (const Akonadi::PayloadException &) {
         return KCalCore::Event::Ptr();
     }
     return KCalCore::Event::Ptr();
@@ -126,7 +126,7 @@ KCalCore::Todo::Ptr CalendarSupport::todo(const Akonadi::Item &item)
         if (hasTodo(incidence)) {
             return item.payload<KCalCore::Todo::Ptr>();
         }
-    } catch (Akonadi::PayloadException) {
+    } catch (const Akonadi::PayloadException &) {
         return KCalCore::Todo::Ptr();
     }
     return KCalCore::Todo::Ptr();
@@ -147,7 +147,7 @@ KCalCore::Journal::Ptr CalendarSupport::journal(const Akonadi::Item &item)
         if (hasJournal(incidence)) {
             return item.payload<KCalCore::Journal::Ptr>();
         }
-    } catch (Akonadi::PayloadException) {
+    } catch (const Akonadi::PayloadException &) {
         return KCalCore::Journal::Ptr();
     }
     return KCalCore::Journal::Ptr();
