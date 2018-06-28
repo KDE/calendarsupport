@@ -38,8 +38,8 @@ class TagCache : public QObject
     Q_OBJECT
 public:
     TagCache();
-    Akonadi::Tag getTagByGid(const QByteArray &gid) const;
-    Akonadi::Tag getTagByName(const QString &name) const;
+    Q_REQUIRED_RESULT Akonadi::Tag getTagByGid(const QByteArray &gid) const;
+    Q_REQUIRED_RESULT Akonadi::Tag getTagByName(const QString &name) const;
 
 private Q_SLOTS:
     void onTagAdded(const Akonadi::Tag &);

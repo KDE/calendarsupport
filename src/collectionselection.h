@@ -42,12 +42,12 @@ public:
     ~CollectionSelection();
 
     QItemSelectionModel *model() const;
-    Akonadi::Collection::List selectedCollections() const;
-    QList<Akonadi::Collection::Id> selectedCollectionIds() const;
+    Q_REQUIRED_RESULT Akonadi::Collection::List selectedCollections() const;
+    Q_REQUIRED_RESULT QList<Akonadi::Collection::Id> selectedCollectionIds() const;
     bool contains(const Akonadi::Collection &c) const;
     bool contains(Akonadi::Collection::Id id) const;
 
-    bool hasSelection() const;
+    Q_REQUIRED_RESULT bool hasSelection() const;
 
 Q_SIGNALS:
     void selectionChanged(const Akonadi::Collection::List &selected,

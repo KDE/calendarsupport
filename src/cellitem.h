@@ -40,14 +40,14 @@ public:
     }
 
     void setSubCells(int v);
-    int subCells() const;
+    Q_REQUIRED_RESULT int subCells() const;
 
     void setSubCell(int v);
-    int subCell() const;
+    Q_REQUIRED_RESULT int subCell() const;
 
     virtual bool overlaps(CellItem *other) const = 0;
 
-    virtual QString label() const;
+    Q_REQUIRED_RESULT virtual QString label() const;
 
     /**
       Place item @p placeItem into stripe containing items @p cells in a

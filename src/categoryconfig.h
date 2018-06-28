@@ -35,10 +35,10 @@ class CALENDARSUPPORT_EXPORT CategoryConfig : public QObject
 public:
     explicit CategoryConfig(KCoreConfigSkeleton *cfg, QObject *parent = nullptr);
     ~CategoryConfig();
-    QStringList customCategories() const;
+    Q_REQUIRED_RESULT QStringList customCategories() const;
     void setCustomCategories(const QStringList &categories);
 
-    QHash<QString, QColor> readColors() const;
+    Q_REQUIRED_RESULT QHash<QString, QColor> readColors() const;
     void setColors(const QHash<QString, QColor> &colors);
 
     void writeConfig();

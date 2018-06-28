@@ -38,33 +38,33 @@ public:
     {
     }
 
-    QString groupName() const override
+    Q_REQUIRED_RESULT QString groupName() const override
     {
         return QStringLiteral("Print year");
     }
 
-    QString description() const override
+    Q_REQUIRED_RESULT QString description() const override
     {
         return i18n("Print &year");
     }
 
-    QString info() const override
+    Q_REQUIRED_RESULT QString info() const override
     {
         return i18n("Prints a calendar for an entire year");
     }
 
-    int sortID() const override
+    Q_REQUIRED_RESULT int sortID() const override
     {
         return CalPrinterBase::Year;
     }
 
-    bool enabled() const override
+    Q_REQUIRED_RESULT bool enabled() const override
     {
         return true;
     }
 
     QWidget *createConfigWidget(QWidget *) override;
-    QPrinter::Orientation defaultOrientation() const override;
+    Q_REQUIRED_RESULT QPrinter::Orientation defaultOrientation() const override;
 
 public:
     void print(QPainter &p, int width, int height) override;

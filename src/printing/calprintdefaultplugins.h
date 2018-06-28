@@ -42,34 +42,34 @@ class CALENDARSUPPORT_EXPORT CalPrintIncidence : public CalPrintPluginBase
 public:
     CalPrintIncidence();
     ~CalPrintIncidence() override;
-    QString groupName() const override
+    Q_REQUIRED_RESULT QString groupName() const override
     {
         return QStringLiteral("Print incidence");
     }
 
-    QString description() const override
+    Q_REQUIRED_RESULT QString description() const override
     {
         return i18n("Print &incidence");
     }
 
-    QString info() const override
+    Q_REQUIRED_RESULT QString info() const override
     {
         return i18n("Prints an incidence on one page");
     }
 
-    int sortID() const override
+    Q_REQUIRED_RESULT int sortID() const override
     {
         return CalPrinterBase::Incidence;
     }
 
     // Enable the Print Incidence option only if there are selected incidences.
-    bool enabled() const override
+    Q_REQUIRED_RESULT bool enabled() const override
     {
         return !mSelectedIncidences.isEmpty();
     }
 
     QWidget *createConfigWidget(QWidget *) override;
-    QPrinter::Orientation defaultOrientation() const override
+    Q_REQUIRED_RESULT QPrinter::Orientation defaultOrientation() const override
     {
         return QPrinter::Portrait;
     }

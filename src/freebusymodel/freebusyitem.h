@@ -48,13 +48,13 @@ public:
     void setFreeBusy(const KCalCore::FreeBusy::Ptr &fb);
     KCalCore::FreeBusy::Ptr freeBusy() const;
 
-    QString email() const;
+    Q_REQUIRED_RESULT QString email() const;
     void setUpdateTimerID(int id);
-    int updateTimerID() const;
+    Q_REQUIRED_RESULT int updateTimerID() const;
 
     void startDownload(bool forceDownload);
     void setIsDownloading(bool d);
-    bool isDownloading() const;
+    Q_REQUIRED_RESULT bool isDownloading() const;
 
 Q_SIGNALS:
     void attendeeChanged(const KCalCore::Attendee::Ptr &attendee);

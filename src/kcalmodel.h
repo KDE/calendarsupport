@@ -45,7 +45,7 @@ public:
     /**
       Reimplemented from QAbstractItemModel.
     */
-    QStringList mimeTypes() const override;
+    Q_REQUIRED_RESULT QStringList mimeTypes() const override;
 
 private:
     class Private;

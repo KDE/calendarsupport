@@ -68,7 +68,7 @@ public:
     void removeItem(const FreeBusyItem::Ptr &freebusy);
     void removeRow(int row);
 
-    bool containsAttendee(const KCalCore::Attendee::Ptr &attendee);
+    Q_REQUIRED_RESULT bool containsAttendee(const KCalCore::Attendee::Ptr &attendee);
 
     /**
      * Queues a reload of free/busy data.

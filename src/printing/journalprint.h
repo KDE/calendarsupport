@@ -39,28 +39,28 @@ public:
     {
     }
 
-    QString groupName() const override
+    Q_REQUIRED_RESULT QString groupName() const override
     {
         return QStringLiteral("Print journal");
     }
 
-    QString description() const override
+    Q_REQUIRED_RESULT QString description() const override
     {
         return i18n("Print &journal");
     }
 
-    QString info() const override
+    Q_REQUIRED_RESULT QString info() const override
     {
         return i18n("Prints all journals for a given date range");
     }
 
     QWidget *createConfigWidget(QWidget *) override;
-    int sortID() const override
+    Q_REQUIRED_RESULT int sortID() const override
     {
         return CalPrinterBase::Journallist;
     }
 
-    bool enabled() const override
+    Q_REQUIRED_RESULT bool enabled() const override
     {
         return true;
     }

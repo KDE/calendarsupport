@@ -94,12 +94,12 @@ public:
     /**
      * Returns the incidence that is currently displayed.
      */
-    Akonadi::Item incidence() const;
+    Q_REQUIRED_RESULT Akonadi::Item incidence() const;
 
     /**
      * Returns the active date used for the currently displayed incidence
      */
-    QDate activeDate() const;
+    Q_REQUIRED_RESULT QDate activeDate() const;
 
     /**
      * Returns the attachment model for the currently displayed incidence.
