@@ -1554,7 +1554,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt, const QRect &bo
 
     QColor holidayColor(240, 240, 240);
     QColor workdayColor(255, 255, 255);
-    int dayNrWidth = p.fontMetrics().width(QStringLiteral("99"));
+    int dayNrWidth = p.fontMetrics().boundingRect(QStringLiteral("99")).width();
 
     // Fill the remaining space (if a month has less days than others) with a crossed-out pattern
     if (daysinmonth < maxdays) {

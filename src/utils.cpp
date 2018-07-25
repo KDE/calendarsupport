@@ -462,7 +462,7 @@ Akonadi::Collection::List CalendarSupport::collectionsFromModel(const QAbstractI
         const Akonadi::Collection collection = collectionFromIndex(i);
         if (collection.isValid()) {
             collections << collection;
-            QModelIndex childIndex = i.child(0, 0);
+            QModelIndex childIndex = model->index(0, 0, i);
             if (childIndex.isValid()) {
                 collections << collectionsFromModel(model, i);
             }
@@ -486,7 +486,7 @@ Akonadi::Item::List CalendarSupport::itemsFromModel(const QAbstractItemModel *mo
         if (CalendarSupport::hasIncidence(item)) {
             items << item;
         } else {
-            QModelIndex childIndex = i.child(0, 0);
+            QModelIndex childIndex = model->index(0, 0, i);
             if (childIndex.isValid()) {
                 items << itemsFromModel(model, i);
             }

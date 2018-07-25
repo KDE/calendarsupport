@@ -215,7 +215,7 @@ int CalPrintIncidence::printCaptionAndText(QPainter &p, const QRect &box, const 
                                            const QFont &textFont)
 {
     QFontMetrics captionFM(captionFont);
-    int textWd = captionFM.width(caption);
+    int textWd = captionFM.boundingRect(caption).width();
     QRect textRect(box);
 
     QFont oldFont(p.font());
