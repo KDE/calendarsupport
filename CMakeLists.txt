@@ -21,7 +21,7 @@ include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
-include(ECMCoverageOption)
+
 
 set(CALENDARSUPPORT_LIB_VERSION ${PIM_VERSION})
 set(AKONADI_MIMELIB_VERSION "5.9.40")
