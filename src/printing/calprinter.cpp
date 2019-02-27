@@ -193,7 +193,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     setModal(true);
     QWidget *page = new QWidget(this);
     QVBoxLayout *pageVBoxLayout = new QVBoxLayout(page);
-    pageVBoxLayout->setMargin(0);
+    pageVBoxLayout->setContentsMargins(0, 0, 0, 0);
     mainLayout->addWidget(page);
     mainLayout->addWidget(buttonBox);
 
@@ -207,7 +207,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
 
     QWidget *splitterRight = new QWidget(splitter);
     QGridLayout *splitterRightLayout = new QGridLayout(splitterRight);
-    splitterRightLayout->setMargin(0);
+    splitterRightLayout->setContentsMargins(0, 0, 0, 0);
     //splitterRightLayout->setMargin( marginHint() );
     //splitterRightLayout->setSpacing( spacingHint() );
 

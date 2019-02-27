@@ -154,7 +154,7 @@ IncidenceViewer::IncidenceViewer(QWidget *parent)
 void IncidenceViewer::init()
 {
     QVBoxLayout *layout = new QVBoxLayout(this);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     d->mBrowser->setOpenLinks(true);
     d->mBrowser->setMinimumHeight(1);

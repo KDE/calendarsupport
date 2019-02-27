@@ -73,7 +73,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
     mainLayout->addWidget(buttonBox);
 
     QVBoxLayout *topLayout = new QVBoxLayout(topFrame);
-    topLayout->setMargin(0);
+    topLayout->setContentsMargins(0, 0, 0, 0);
     QLabel *descLabel = new QLabel(topFrame);
     descLabel->setText(
         xi18nc("@info:whatsthis",
@@ -100,7 +100,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
                 &QButtonGroup::buttonClicked), this, &ArchiveDialog::slotActionChanged);
 
     QHBoxLayout *dateLayout = new QHBoxLayout();
-    dateLayout->setMargin(0);
+    dateLayout->setContentsMargins(0, 0, 0, 0);
     mArchiveOnceRB = new QRadioButton(i18nc("@option:radio",
                                             "Archive now items older than:"),
                                       topFrame);
@@ -132,7 +132,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
     // mExpireFolderCheckBox/mReadExpiryTimeNumInput in kmfolderdia.cpp)
     QWidget *autoArchiveHBox = new QWidget(topFrame);
     QHBoxLayout *autoArchiveHBoxHBoxLayout = new QHBoxLayout(autoArchiveHBox);
-    autoArchiveHBoxHBoxLayout->setMargin(0);
+    autoArchiveHBoxHBoxLayout->setContentsMargins(0, 0, 0, 0);
     topLayout->addWidget(autoArchiveHBox);
     mAutoArchiveRB = new QRadioButton(i18nc("@option:radio",
                                             "Automaticall&y archive items older than:"),
@@ -181,7 +181,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
     mExpiryUnitsComboBox->setEnabled(false);
 
     QHBoxLayout *fileLayout = new QHBoxLayout();
-    fileLayout->setMargin(0);
+    fileLayout->setContentsMargins(0, 0, 0, 0);
     QLabel *l = new QLabel(i18nc("@label", "Archive &file:"), topFrame);
     fileLayout->addWidget(l);
     mArchiveFile = new KUrlRequester(QUrl::fromLocalFile(
