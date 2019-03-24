@@ -292,7 +292,7 @@ QColor KCalPrefs::categoryColor(const QString &cat) const
 
     if (!cat.isEmpty()) {
         const Akonadi::Tag &tag = d->mTagCache.getTagByName(cat);
-        if (Akonadi::TagAttribute *attr = tag.attribute<Akonadi::TagAttribute>()) {
+        if (const Akonadi::TagAttribute *attr = tag.attribute<Akonadi::TagAttribute>()) {
             color = attr->backgroundColor();
         }
     }
