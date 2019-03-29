@@ -728,7 +728,7 @@ QList<QDate> CalendarSupport::workDays(const QDate &startDate, const QDate &endD
     }
 
     if (KCalPrefs::instance()->mExcludeHolidays) {
-        foreach (const QString &regionStr, KCalPrefs::instance()->mHolidays) {
+        for (const QString &regionStr : qAsConst(KCalPrefs::instance()->mHolidays)) {
             KHolidays::HolidayRegion region(regionStr);
             if (region.isValid()) {
                 const KHolidays::Holiday::List list = region.holidays(startDate, endDate);
@@ -751,7 +751,7 @@ QStringList CalendarSupport::holiday(const QDate &date)
     QStringList hdays;
 
     bool showCountryCode = (KCalPrefs::instance()->mHolidays.count() > 1);
-    foreach (const QString &regionStr, KCalPrefs::instance()->mHolidays) {
+    for (const QString &regionStr : qAsConst(KCalPrefs::instance()->mHolidays)) {
         KHolidays::HolidayRegion region(regionStr);
         if (region.isValid()) {
             const Holiday::List list = region.holidays(date);

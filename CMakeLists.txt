@@ -91,7 +91,11 @@ install(
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
 )
 
-feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
+if (${KF5Config_VERSION} STRGREATER "5.56.0")
+        add_definitions(-DQT_NO_FOREACH)
+        MESSAGE(STATUS "compile without foreach")
+endif()
+
 
 add_subdirectory(src)
 
@@ -99,3 +103,5 @@ install(
   FILES calendarsupport.categories calendarsupport.renamecategories
   DESTINATION ${KDE_INSTALL_CONFDIR}
 )
+
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
