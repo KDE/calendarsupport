@@ -25,7 +25,7 @@
 
 #include <KCalCore/Attendee>
 
-#include <qtest.h>
+#include <QTest>
 
 using namespace CalendarSupport;
 

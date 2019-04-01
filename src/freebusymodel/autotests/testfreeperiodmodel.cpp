@@ -25,7 +25,7 @@
 #include <KCalCore/Period>
 #include <KCalCore/Duration>
 
-#include <qtest.h>
+#include <QTest>
 
 using namespace CalendarSupport;
 
