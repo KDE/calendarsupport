@@ -666,7 +666,7 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
 {
     Q_UNUSED(richText);
 
-    QString str = QLatin1String("<qt>");
+    QString str = QStringLiteral("<qt>");
 
     // Display Name
     QString displayName;
