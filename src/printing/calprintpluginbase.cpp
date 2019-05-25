@@ -2129,8 +2129,8 @@ void CalPrintPluginBase::drawJournal(const KCalCore::Journal::Ptr &journal, QPai
 
     p.drawLine(x + 3, y, x + width - 6, y);
     y += 5;
-    if (!(journal->organizer()->fullName().isEmpty())) {
-        drawTextLines(p, i18n("Person: %1", journal->organizer()->fullName()),
+    if (!(journal->organizer().fullName().isEmpty())) {
+        drawTextLines(p, i18n("Person: %1", journal->organizer().fullName()),
                       x, y, width, pageHeight, false);
         y += 7;
     }
