@@ -39,12 +39,12 @@ public:
     /**
      * @param parentWidget is passed to Akonadi when fetching free/busy data.
      */
-    FreeBusyItem(const KCalCore::Attendee::Ptr &attendee, QWidget *parentWidget);
+    FreeBusyItem(const KCalCore::Attendee &attendee, QWidget *parentWidget);
     ~FreeBusyItem()
     {
     }
 
-    KCalCore::Attendee::Ptr attendee() const;
+    KCalCore::Attendee attendee() const;
     void setFreeBusy(const KCalCore::FreeBusy::Ptr &fb);
     KCalCore::FreeBusy::Ptr freeBusy() const;
 
@@ -57,11 +57,11 @@ public:
     Q_REQUIRED_RESULT bool isDownloading() const;
 
 Q_SIGNALS:
-    void attendeeChanged(const KCalCore::Attendee::Ptr &attendee);
+    void attendeeChanged(const KCalCore::Attendee &attendee);
     void freebusyChanged(const KCalCore::FreeBusy::Ptr fb);
 
 private:
-    KCalCore::Attendee::Ptr mAttendee;
+    KCalCore::Attendee mAttendee;
     KCalCore::FreeBusy::Ptr mFreeBusy;
 
     // This is used for the update timer

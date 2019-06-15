@@ -103,7 +103,7 @@ FreeBusyItemModel::FreeBusyItemModel(QObject *parent)
     : QAbstractItemModel(parent)
     , d(new CalendarSupport::FreeBusyItemModelPrivate)
 {
-    qRegisterMetaType<KCalCore::Attendee::Ptr>("KCalCore::Attendee::Ptr");
+    qRegisterMetaType<KCalCore::Attendee>();
     qRegisterMetaType<KCalCore::FreeBusy::Ptr>("KCalCore::FreeBusy::Ptr");
     qRegisterMetaType<KCalCore::Period>("KCalCore::Period");
 
@@ -138,7 +138,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
 
         switch (role) {
         case Qt::DisplayRole:
-            return d->mFreeBusyItems.at(row)->attendee()->fullName();
+            return d->mFreeBusyItems.at(row)->attendee().fullName();
         case FreeBusyItemModel::AttendeeRole:
             return QVariant::fromValue(d->mFreeBusyItems.at(row)->attendee());
         case FreeBusyItemModel::FreeBusyRole:
@@ -317,12 +317,12 @@ void FreeBusyItemModel::removeItem(const FreeBusyItem::Ptr &freebusy)
     }
 }
 
-void FreeBusyItemModel::removeAttendee(const KCalCore::Attendee::Ptr &attendee)
+void FreeBusyItemModel::removeAttendee(const KCalCore::Attendee &attendee)
 {
     FreeBusyItem::Ptr anItem;
     for (int i = 0; i < d->mFreeBusyItems.count(); ++i) {
         anItem = d->mFreeBusyItems[i];
-        if (*anItem->attendee() == *attendee) {
+        if (anItem->attendee() == attendee) {
             if (anItem->updateTimerID() != 0) {
                 killTimer(anItem->updateTimerID());
             }
@@ -332,12 +332,12 @@ void FreeBusyItemModel::removeAttendee(const KCalCore::Attendee::Ptr &attendee)
     }
 }
 
-bool FreeBusyItemModel::containsAttendee(const KCalCore::Attendee::Ptr &attendee)
+bool FreeBusyItemModel::containsAttendee(const KCalCore::Attendee &attendee)
 {
     FreeBusyItem::Ptr anItem;
     for (int i = 0; i < d->mFreeBusyItems.count(); ++i) {
         anItem = d->mFreeBusyItems[i];
-        if (*anItem->attendee() == *attendee) {
+        if (anItem->attendee() == attendee) {
             return true;
         }
     }

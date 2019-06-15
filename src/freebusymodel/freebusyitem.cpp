@@ -26,17 +26,17 @@
 
 using namespace CalendarSupport;
 
-FreeBusyItem::FreeBusyItem(const KCalCore::Attendee::Ptr &attendee, QWidget *parentWidget)
+FreeBusyItem::FreeBusyItem(const KCalCore::Attendee &attendee, QWidget *parentWidget)
     : mAttendee(attendee)
     , mTimerID(0)
     , mIsDownloading(false)
     , mParentWidget(parentWidget)
 {
-    Q_ASSERT(attendee);
+    Q_ASSERT(!attendee.isNull());
     setFreeBusy(KCalCore::FreeBusy::Ptr());
 }
 
-KCalCore::Attendee::Ptr FreeBusyItem::attendee() const
+KCalCore::Attendee FreeBusyItem::attendee() const
 {
     return mAttendee;
 }
@@ -54,7 +54,7 @@ KCalCore::FreeBusy::Ptr FreeBusyItem::freeBusy() const
 
 QString FreeBusyItem::email() const
 {
-    return mAttendee->email();
+    return mAttendee.email();
 }
 
 void FreeBusyItem::setUpdateTimerID(int id)
@@ -71,7 +71,7 @@ void FreeBusyItem::startDownload(bool forceDownload)
 {
     mIsDownloading = true;
     Akonadi::FreeBusyManager *m = Akonadi::FreeBusyManager::self();
-    if (!m->retrieveFreeBusy(attendee()->email(), forceDownload, mParentWidget)) {
+    if (!m->retrieveFreeBusy(attendee().email(), forceDownload, mParentWidget)) {
         mIsDownloading = false;
     }
 }

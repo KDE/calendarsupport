@@ -64,11 +64,11 @@ public:
     void addItem(const FreeBusyItem::Ptr &freebusy);
 
     void clear();
-    void removeAttendee(const KCalCore::Attendee::Ptr &attendee);
+    void removeAttendee(const KCalCore::Attendee &attendee);
     void removeItem(const FreeBusyItem::Ptr &freebusy);
     void removeRow(int row);
 
-    Q_REQUIRED_RESULT bool containsAttendee(const KCalCore::Attendee::Ptr &attendee);
+    Q_REQUIRED_RESULT bool containsAttendee(const KCalCore::Attendee &attendee);
 
     /**
      * Queues a reload of free/busy data.

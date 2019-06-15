@@ -42,8 +42,7 @@ void FreeBusyItemModelTest::testModelValidity()
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
-    KCalCore::Attendee::Ptr a1(new KCalCore::Attendee(QStringLiteral("fred"), QStringLiteral(
-                                                          "fred@example.com")));
+    KCalCore::Attendee a1(QStringLiteral("fred"), QStringLiteral( "fred@example.com"));
     KCalCore::FreeBusy::Ptr fb1(new KCalCore::FreeBusy());
 
     fb1->addPeriod(dt1, KCalCore::Duration(60 * 60));
@@ -57,9 +56,9 @@ void FreeBusyItemModelTest::testModelValidity()
     QVERIFY(model->containsAttendee(a1));
 
     QModelIndex i = model->index(0, 0);
-    QCOMPARE(a1->fullName(), model->data(i, Qt::DisplayRole).toString());
+    QCOMPARE(a1.fullName(), model->data(i, Qt::DisplayRole).toString());
     QCOMPARE(a1,
-             model->data(i, FreeBusyItemModel::AttendeeRole).value<KCalCore::Attendee::Ptr>());
+             model->data(i, FreeBusyItemModel::AttendeeRole).value<KCalCore::Attendee>());
     QCOMPARE(item1->freeBusy(),
              model->data(i, FreeBusyItemModel::FreeBusyRole).value<KCalCore::FreeBusy::Ptr>());
 
@@ -97,12 +96,9 @@ void FreeBusyItemModelTest::testModelValidity2()
     const QDateTime dt3(QDate(2010, 7, 24), QTime(12, 0, 0), Qt::UTC);
     const QDateTime dt4(QDate(2010, 7, 24), QTime(14, 0, 0), Qt::UTC);
 
-    KCalCore::Attendee::Ptr a1(new KCalCore::Attendee(QStringLiteral("fred"), QStringLiteral(
-                                                          "fred@example.com")));
-    KCalCore::Attendee::Ptr a2(new KCalCore::Attendee(QStringLiteral("joe"), QStringLiteral(
-                                                          "joe@example.com")));
-    KCalCore::Attendee::Ptr a3(new KCalCore::Attendee(QStringLiteral("max"), QStringLiteral(
-                                                          "max@example.com")));
+    KCalCore::Attendee a1(QStringLiteral("fred"), QStringLiteral( "fred@example.com"));
+    KCalCore::Attendee a2(QStringLiteral("joe"), QStringLiteral( "joe@example.com"));
+    KCalCore::Attendee a3(QStringLiteral("max"), QStringLiteral( "max@example.com"));
     KCalCore::FreeBusy::Ptr fb1(new KCalCore::FreeBusy());
     KCalCore::FreeBusy::Ptr fb2(new KCalCore::FreeBusy());
     KCalCore::FreeBusy::Ptr fb3(new KCalCore::FreeBusy());
@@ -134,24 +130,24 @@ void FreeBusyItemModelTest::testModelValidity2()
     QVERIFY(model->containsAttendee(a3));
 
     QModelIndex i1 = model->index(0, 0);
-    QCOMPARE(a1->fullName(), model->data(i1, Qt::DisplayRole).toString());
+    QCOMPARE(a1.fullName(), model->data(i1, Qt::DisplayRole).toString());
     QCOMPARE(a1,
-             model->data(i1, FreeBusyItemModel::AttendeeRole).value<KCalCore::Attendee::Ptr>());
+             model->data(i1, FreeBusyItemModel::AttendeeRole).value<KCalCore::Attendee>());
     QCOMPARE(item1->freeBusy(),
              model->data(i1, FreeBusyItemModel::FreeBusyRole).value<KCalCore::FreeBusy::Ptr>());
 
     QModelIndex i2 = model->index(1, 0);
-    QCOMPARE(a2->fullName(), model->data(i2, Qt::DisplayRole).toString());
+    QCOMPARE(a2.fullName(), model->data(i2, Qt::DisplayRole).toString());
     QCOMPARE(a2,
-             model->data(i2, FreeBusyItemModel::AttendeeRole).value<KCalCore::Attendee::Ptr>());
+             model->data(i2, FreeBusyItemModel::AttendeeRole).value<KCalCore::Attendee>());
     QVERIFY(model->rowCount(i2) == 0);
     QVERIFY(model->data(i2, FreeBusyItemModel::FreeBusyRole).isValid() == false);
 
     QModelIndex i3 = model->index(2, 0);
-    QCOMPARE(a3->fullName(),
+    QCOMPARE(a3.fullName(),
              model->data(i3, Qt::DisplayRole).toString());
     QCOMPARE(a3,
-             model->data(i3, FreeBusyItemModel::AttendeeRole).value<KCalCore::Attendee::Ptr>());
+             model->data(i3, FreeBusyItemModel::AttendeeRole).value<KCalCore::Attendee>());
     QVERIFY(model->rowCount(i3) == 0);
     QVERIFY(model->data(i3, FreeBusyItemModel::FreeBusyRole).isValid() == false);
 
@@ -220,8 +216,7 @@ void FreeBusyItemModelTest::testInsertFreeBusy()
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
-    KCalCore::Attendee::Ptr a1(new KCalCore::Attendee(QStringLiteral("fred"), QStringLiteral(
-                                                          "fred@example.com")));
+    KCalCore::Attendee a1(QStringLiteral("fred"), QStringLiteral( "fred@example.com"));
     KCalCore::FreeBusy::Ptr fb1(new KCalCore::FreeBusy());
     fb1->addPeriod(dt1, KCalCore::Duration(60 * 60));
     fb1->addPeriod(dt2, KCalCore::Duration(60 * 60));

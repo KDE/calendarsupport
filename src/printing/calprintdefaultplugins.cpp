@@ -615,9 +615,9 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                     "'Name (Role): Status', e.g. 'Reinhold Kainhofer "
                     "<reinhold@kainhofer.com> (Participant): Awaiting Response'",
                     "%1 (%2): %3",
-                    (*ait)->fullName(),
-                    KCalUtils::Stringify::attendeeRole((*ait)->role()),
-                    KCalUtils::Stringify::attendeeStatus((*ait)->status()));
+                    (*ait).fullName(),
+                    KCalUtils::Stringify::attendeeRole((*ait).role()),
+                    KCalUtils::Stringify::attendeeStatus((*ait).status()));
             }
             drawBoxWithCaption(p, attendeesBox, attendeeCaption, attendeeString,
                                /*sameLine=*/ false, /*expand=*/ false,
