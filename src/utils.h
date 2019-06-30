@@ -247,8 +247,6 @@ CALENDARSUPPORT_EXPORT QString toolTipString(const Akonadi::Collection &coll, bo
  */
 CALENDARSUPPORT_EXPORT QStringList holiday(const QDate &date);
 
-CALENDARSUPPORT_EXPORT void saveAttachments(const Akonadi::Item &item, QWidget *widget = nullptr);
-
 CALENDARSUPPORT_EXPORT QStringList categories(const KCalCore::Incidence::List &incidences);
 
 CALENDARSUPPORT_EXPORT bool mergeCalendar(const QString &srcFilename,

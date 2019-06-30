@@ -790,65 +790,6 @@ QStringList CalendarSupport::holiday(const QDate &date)
     return hdays;
 }
 
-void CalendarSupport::saveAttachments(const Akonadi::Item &item, QWidget *parentWidget)
-{
-    Incidence::Ptr incidence = CalendarSupport::incidence(item);
-
-    if (!incidence) {
-        KMessageBox::sorry(
-            parentWidget,
-            i18n("No item selected."));
-        return;
-    }
-
-    Attachment::List attachments = incidence->attachments();
-
-    if (attachments.empty()) {
-        return;
-    }
-
-    QString targetFile, targetDir;
-    if (attachments.count() > 1) {
-        // get the dir
-        targetDir = QFileDialog::getExistingDirectory(parentWidget, i18n("Save Attachments To"));
-        if (targetDir.isEmpty()) {
-            return;
-        }
-
-        // we may not get a slash-terminated url out of KFileDialog
-        if (!targetDir.endsWith(QLatin1Char('/'))) {
-            targetDir.append(QLatin1Char('/'));
-        }
-    } else {
-        // only one item, get the desired filename
-        QString fileName = attachments.first()->label();
-        if (fileName.isEmpty()) {
-            fileName = i18nc("filename for an unnamed attachment", "attachment.1");
-        }
-        targetFile = QFileDialog::getSaveFileName(parentWidget, i18n("Save Attachment"), fileName);
-        if (targetFile.isEmpty()) {
-            return;
-        }
-
-        targetDir = QFileInfo(targetFile).absolutePath() + QLatin1Char('/');
-    }
-
-    for (const Attachment::Ptr &attachment : qAsConst(attachments)) {
-        targetFile = targetDir + attachment->label();
-        QUrl sourceUrl;
-        if (attachment->isUri()) {
-            sourceUrl = QUrl(attachment->uri());
-        } else {
-            sourceUrl = QUrl::fromLocalFile(incidence->writeAttachmentToTempFile(attachment));
-        }
-        // save the attachment url
-        auto job = KIO::file_copy(sourceUrl, QUrl::fromLocalFile(targetFile));
-        if (!job->exec() && job->error()) {
-            KMessageBox::error(parentWidget, job->errorString());
-        }
-    }
-}
-
 QStringList CalendarSupport::categories(const KCalCore::Incidence::List &incidences)
 {
     QStringList cats, thisCats;

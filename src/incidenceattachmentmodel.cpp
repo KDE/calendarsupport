@@ -199,8 +199,6 @@ QVariant IncidenceAttachmentModel::data(const QModelIndex &index, int role) cons
         return attachment->decodedData();
     case MimeTypeRole:
         return attachment->mimeType();
-    case AttachmentUrl:
-        return d->m_incidence->writeAttachmentToTempFile(attachment);
     }
     return QVariant();
 }
@@ -215,7 +213,6 @@ QHash<int, QByteArray> CalendarSupport::IncidenceAttachmentModel::roleNames() co
 {
     QHash<int, QByteArray> roleNames = QAbstractListModel::roleNames();
     roleNames.insert(IncidenceAttachmentModel::MimeTypeRole, "mimeType");
-    roleNames.insert(IncidenceAttachmentModel::AttachmentUrl, "attachmentUrl");
     return roleNames;
 }
 

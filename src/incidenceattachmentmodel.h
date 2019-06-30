@@ -44,7 +44,6 @@ public:
     enum Roles {
         AttachmentDataRole = Qt::UserRole,
         MimeTypeRole,
-        AttachmentUrl,
         AttachmentCountRole,
 
         UserRole = Qt::UserRole + 100
