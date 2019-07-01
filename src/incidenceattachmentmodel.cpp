@@ -83,9 +83,6 @@ class IncidenceAttachmentModelPrivate
 
     void resetInternalData()
     {
-        if (m_incidence) {
-            m_incidence->clearTempFiles();
-        }
         Item item = m_item;
         if (m_modelIndex.isValid()) {
             item = m_modelIndex.data(EntityTreeModel::ItemRole).value<Akonadi::Item>();
