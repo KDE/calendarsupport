@@ -80,54 +80,54 @@ AttachmentHandler::~AttachmentHandler()
     delete d;
 }
 
-Attachment::Ptr AttachmentHandler::find(const QString &attachmentName,
-                                        const Incidence::Ptr &incidence)
+Attachment AttachmentHandler::find(const QString &attachmentName,
+                                   const Incidence::Ptr &incidence)
 {
     if (!incidence) {
-        return Attachment::Ptr();
+        return Attachment();
     }
 
     // get the attachment by name from the incidence
     const Attachment::List as = incidence->attachments();
-    Attachment::Ptr a;
+    Attachment a;
     if (!as.isEmpty()) {
         Attachment::List::ConstIterator it;
         Attachment::List::ConstIterator end(as.constEnd());
 
         for (it = as.constBegin(); it != end; ++it) {
-            if ((*it)->label() == attachmentName) {
+            if ((*it).label() == attachmentName) {
                 a = *it;
                 break;
             }
         }
     }
 
-    if (!a) {
+    if (a.isEmpty()) {
         KMessageBox::error(
             d->mParent,
             i18n("No attachment named \"%1\" found in the incidence.", attachmentName));
-        return Attachment::Ptr();
+        return Attachment();
     }
 
-    if (a->isUri()) {
-        auto job = KIO::stat(QUrl(a->uri()), KIO::StatJob::SourceSide, 0);
+    if (a.isUri()) {
+        auto job = KIO::stat(QUrl(a.uri()), KIO::StatJob::SourceSide, 0);
         KJobWidgets::setWindow(job, d->mParent);
         if (!job->exec()) {
             KMessageBox::sorry(
                 d->mParent,
                 i18n("The attachment \"%1\" is a web link that is inaccessible from this computer. ",
-                     QUrl::fromPercentEncoding(a->uri().toLatin1())));
-            return Attachment::Ptr();
+                     QUrl::fromPercentEncoding(a.uri().toLatin1())));
+            return Attachment();
         }
     }
     return a;
 }
 
-Attachment::Ptr AttachmentHandler::find(const QString &attachmentName,
-                                        const ScheduleMessage::Ptr &message)
+Attachment AttachmentHandler::find(const QString &attachmentName,
+                                   const ScheduleMessage::Ptr &message)
 {
     if (!message) {
-        return Attachment::Ptr();
+        return Attachment();
     }
 
     Incidence::Ptr incidence = message->event().dynamicCast<Incidence>();
@@ -136,7 +136,7 @@ Attachment::Ptr AttachmentHandler::find(const QString &attachmentName,
             d->mParent,
             i18n("The calendar invitation stored in this email message is broken in some way. "
                  "Unable to continue."));
-        return Attachment::Ptr();
+        return Attachment();
     }
 
     return find(attachmentName, incidence);
@@ -144,12 +144,12 @@ Attachment::Ptr AttachmentHandler::find(const QString &attachmentName,
 
 static QTemporaryFile *s_tempFile = nullptr;
 
-static QUrl tempFileForAttachment(const Attachment::Ptr &attachment)
+static QUrl tempFileForAttachment(const Attachment &attachment)
 {
     QUrl url;
 
     QMimeDatabase db;
-    QStringList patterns = db.mimeTypeForName(attachment->mimeType()).globPatterns();
+    QStringList patterns = db.mimeTypeForName(attachment.mimeType()).globPatterns();
     if (!patterns.empty()) {
         s_tempFile = new QTemporaryFile(QDir::tempPath() + QLatin1String(
                                             "/attachementview_XXXXXX")
@@ -160,10 +160,10 @@ static QUrl tempFileForAttachment(const Attachment::Ptr &attachment)
     s_tempFile->setAutoRemove(false);
     s_tempFile->open();
     s_tempFile->setPermissions(QFile::ReadUser);
-    s_tempFile->write(QByteArray::fromBase64(attachment->data()));
+    s_tempFile->write(QByteArray::fromBase64(attachment.data()));
     s_tempFile->close();
     QFile tf(s_tempFile->fileName());
-    if (tf.size() != attachment->size()) {
+    if (tf.size() != attachment.size()) {
         //whoops. failed to write the entire attachment. return an invalid URL.
         delete s_tempFile;
         s_tempFile = nullptr;
@@ -174,15 +174,15 @@ static QUrl tempFileForAttachment(const Attachment::Ptr &attachment)
     return url;
 }
 
-bool AttachmentHandler::view(const Attachment::Ptr &attachment)
+bool AttachmentHandler::view(const Attachment &attachment)
 {
-    if (!attachment) {
+    if (attachment.isEmpty()) {
         return false;
     }
 
     bool stat = true;
-    if (attachment->isUri()) {
-        QDesktopServices::openUrl(QUrl(attachment->uri()));
+    if (attachment.isUri()) {
+        QDesktopServices::openUrl(QUrl(attachment.uri()));
     } else {
         // put the attachment in a temporary file and launch it
         QUrl tempUrl = tempFileForAttachment(attachment);
@@ -190,7 +190,7 @@ bool AttachmentHandler::view(const Attachment::Ptr &attachment)
             KRun::RunFlags flags;
             flags |= KRun::DeleteTemporaryFiles;
             flags |= KRun::RunExecutables;
-            stat = KRun::runUrl(tempUrl, attachment->mimeType(), nullptr, flags);
+            stat = KRun::runUrl(tempUrl, attachment.mimeType(), nullptr, flags);
         } else {
             stat = false;
             KMessageBox::error(
@@ -225,20 +225,20 @@ bool AttachmentHandler::view(const QString &attachmentName, const ScheduleMessag
     return view(find(attachmentName, message));
 }
 
-bool AttachmentHandler::saveAs(const Attachment::Ptr &attachment)
+bool AttachmentHandler::saveAs(const Attachment &attachment)
 {
     // get the saveas file name
     const QString saveAsFile = QFileDialog::getSaveFileName(d->mParent, i18n(
                                                                 "Save Attachment"),
-                                                            attachment->label());
+                                                            attachment.label());
     if (saveAsFile.isEmpty()) {
         return false;
     }
 
     bool stat = false;
-    if (attachment->isUri()) {
+    if (attachment.isUri()) {
         // save the attachment url
-        auto job = KIO::file_copy(QUrl(attachment->uri()), QUrl::fromLocalFile(saveAsFile));
+        auto job = KIO::file_copy(QUrl(attachment.uri()), QUrl::fromLocalFile(saveAsFile));
         stat = job->exec();
     } else {
         // put the attachment in a temporary file and save it

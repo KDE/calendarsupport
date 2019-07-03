@@ -587,7 +587,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 if (!attachmentString.isEmpty()) {
                     attachmentString += i18nc("Spacer for list of attachments", "  ");
                 }
-                attachmentString.append((*ait)->label());
+                attachmentString.append((*ait).label());
             }
             drawBoxWithCaption(p, attachmentsBox,
                                attachmentCaption, attachmentString,

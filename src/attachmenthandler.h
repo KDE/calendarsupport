@@ -62,8 +62,8 @@ public:
      * @param incidence is a pointer to a valid Incidence object containing the attachment.
      * @return a pointer to the Attachment object located; 0 if no such attachment could be found.
      */
-    KCalCore::Attachment::Ptr find(const QString &attachmentName,
-                                   const KCalCore::Incidence::Ptr &incidence);
+    KCalCore::Attachment find(const QString &attachmentName,
+                              const KCalCore::Incidence::Ptr &incidence);
 
     /**
      * Finds the attachment in the user's calendar, by @p attachmentName and a scheduler message;
@@ -73,8 +73,8 @@ public:
      * @param message is a pointer to a valid ScheduleMessage object containing the attachment.
      * @return a pointer to the Attachment object located; 0 if no such attachment could be found.
      */
-    KCalCore::Attachment::Ptr find(const QString &attachmentName,
-                                   const KCalCore::ScheduleMessage::Ptr &message);
+    KCalCore::Attachment find(const QString &attachmentName,
+                              const KCalCore::ScheduleMessage::Ptr &message);
 
     /**
      * Launches a viewer on the specified attachment.
@@ -82,7 +82,7 @@ public:
      * @param attachment is a pointer to a valid Attachment object.
      * @return true if the viewer program successfully launched; false otherwise.
      */
-    bool view(const KCalCore::Attachment::Ptr &attachment);
+    bool view(const KCalCore::Attachment &attachment);
 
     /**
      * Launches a viewer on the specified attachment.
@@ -124,7 +124,7 @@ public:
 
       @return true if the save operation was successful; false otherwise.
     */
-    bool saveAs(const KCalCore::Attachment::Ptr &attachment);
+    bool saveAs(const KCalCore::Attachment &attachment);
 
     /**
       Saves the specified attachment to a file of the user's choice.

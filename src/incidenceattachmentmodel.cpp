@@ -188,14 +188,14 @@ QVariant IncidenceAttachmentModel::data(const QModelIndex &index, int role) cons
         return QVariant();
     }
 
-    KCalCore::Attachment::Ptr attachment = d->m_incidence->attachments().at(index.row());
+    const KCalCore::Attachment attachment = d->m_incidence->attachments().at(index.row());
     switch (role) {
     case Qt::DisplayRole:
-        return attachment->label();
+        return attachment.label();
     case AttachmentDataRole:
-        return attachment->decodedData();
+        return attachment.decodedData();
     case MimeTypeRole:
-        return attachment->mimeType();
+        return attachment.mimeType();
     }
     return QVariant();
 }
