@@ -103,9 +103,9 @@ FreeBusyItemModel::FreeBusyItemModel(QObject *parent)
     : QAbstractItemModel(parent)
     , d(new CalendarSupport::FreeBusyItemModelPrivate)
 {
-    qRegisterMetaType<KCalCore::Attendee>();
-    qRegisterMetaType<KCalCore::FreeBusy::Ptr>("KCalCore::FreeBusy::Ptr");
-    qRegisterMetaType<KCalCore::Period>("KCalCore::Period");
+    qRegisterMetaType<KCalendarCore::Attendee>();
+    qRegisterMetaType<KCalendarCore::FreeBusy::Ptr>("KCalendarCore::FreeBusy::Ptr");
+    qRegisterMetaType<KCalendarCore::Period>("KCalendarCore::Period");
 
     Akonadi::FreeBusyManager *m = Akonadi::FreeBusyManager::self();
     connect(m, &Akonadi::FreeBusyManager::freeBusyRetrieved, this,
@@ -157,7 +157,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
         return QVariant();
     }
 
-    KCalCore::FreeBusyPeriod period = fbitem->freeBusy()->fullBusyPeriods().at(index.row());
+    KCalendarCore::FreeBusyPeriod period = fbitem->freeBusy()->fullBusyPeriods().at(index.row());
     switch (role) {
     case Qt::DisplayRole: // return something to make modeltest happy
         return QStringLiteral("%1 - %2").
@@ -253,7 +253,7 @@ void FreeBusyItemModel::addItem(const FreeBusyItem::Ptr &freebusy)
 }
 
 void FreeBusyItemModel::setFreeBusyPeriods(const QModelIndex &parent,
-                                           const KCalCore::FreeBusyPeriod::List &list)
+                                           const KCalendarCore::FreeBusyPeriod::List &list)
 {
     if (!parent.isValid()) {
         return;
@@ -317,7 +317,7 @@ void FreeBusyItemModel::removeItem(const FreeBusyItem::Ptr &freebusy)
     }
 }
 
-void FreeBusyItemModel::removeAttendee(const KCalCore::Attendee &attendee)
+void FreeBusyItemModel::removeAttendee(const KCalendarCore::Attendee &attendee)
 {
     FreeBusyItem::Ptr anItem;
     for (int i = 0; i < d->mFreeBusyItems.count(); ++i) {
@@ -332,7 +332,7 @@ void FreeBusyItemModel::removeAttendee(const KCalCore::Attendee &attendee)
     }
 }
 
-bool FreeBusyItemModel::containsAttendee(const KCalCore::Attendee &attendee)
+bool FreeBusyItemModel::containsAttendee(const KCalendarCore::Attendee &attendee)
 {
     FreeBusyItem::Ptr anItem;
     for (int i = 0; i < d->mFreeBusyItems.count(); ++i) {
@@ -373,7 +373,7 @@ void FreeBusyItemModel::timerEvent(QTimerEvent *event)
     }
 }
 
-void FreeBusyItemModel::slotInsertFreeBusy(const KCalCore::FreeBusy::Ptr &fb, const QString &email)
+void FreeBusyItemModel::slotInsertFreeBusy(const KCalendarCore::FreeBusy::Ptr &fb, const QString &email)
 {
     if (!fb) {
         return;

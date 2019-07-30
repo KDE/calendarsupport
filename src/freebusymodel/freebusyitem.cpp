@@ -26,28 +26,28 @@
 
 using namespace CalendarSupport;
 
-FreeBusyItem::FreeBusyItem(const KCalCore::Attendee &attendee, QWidget *parentWidget)
+FreeBusyItem::FreeBusyItem(const KCalendarCore::Attendee &attendee, QWidget *parentWidget)
     : mAttendee(attendee)
     , mTimerID(0)
     , mIsDownloading(false)
     , mParentWidget(parentWidget)
 {
     Q_ASSERT(!attendee.isNull());
-    setFreeBusy(KCalCore::FreeBusy::Ptr());
+    setFreeBusy(KCalendarCore::FreeBusy::Ptr());
 }
 
-KCalCore::Attendee FreeBusyItem::attendee() const
+KCalendarCore::Attendee FreeBusyItem::attendee() const
 {
     return mAttendee;
 }
 
-void FreeBusyItem::setFreeBusy(const KCalCore::FreeBusy::Ptr &fb)
+void FreeBusyItem::setFreeBusy(const KCalendarCore::FreeBusy::Ptr &fb)
 {
     mFreeBusy = fb;
     mIsDownloading = false;
 }
 
-KCalCore::FreeBusy::Ptr FreeBusyItem::freeBusy() const
+KCalendarCore::FreeBusy::Ptr FreeBusyItem::freeBusy() const
 {
     return mFreeBusy;
 }

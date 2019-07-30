@@ -98,7 +98,7 @@ void CalPrinter::setDateRange(const QDate &fd, const QDate &td)
 }
 
 void CalPrinter::print(int type, const QDate &fd, const QDate &td,
-                       const KCalCore::Incidence::List &selectedIncidences, bool preview)
+                       const KCalendarCore::Incidence::List &selectedIncidences, bool preview)
 {
     PrintPlugin::List::Iterator it;
     const PrintPlugin::List::Iterator end = mPrintPlugins.end();
@@ -125,7 +125,7 @@ void CalPrinter::print(int type, const QDate &fd, const QDate &td,
     delete printDialog;
 
     for (it = mPrintPlugins.begin(); it != mPrintPlugins.end(); ++it) {
-        (*it)->setSelectedIncidences(KCalCore::Incidence::List());
+        (*it)->setSelectedIncidences(KCalendarCore::Incidence::List());
     }
 }
 

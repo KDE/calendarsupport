@@ -49,7 +49,7 @@
 #include <QMimeDatabase>
 #include <QDesktopServices>
 
-using namespace KCalCore;
+using namespace KCalendarCore;
 using namespace Akonadi;
 
 namespace CalendarSupport {

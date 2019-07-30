@@ -105,11 +105,11 @@ void CalPrintJournal::setDateRange(const QDate &from, const QDate &to)
 void CalPrintJournal::print(QPainter &p, int width, int height)
 {
     int x = 0, y = 0;
-    KCalCore::Journal::List journals(mCalendar->journals());
+    KCalendarCore::Journal::List journals(mCalendar->journals());
     if (mUseDateRange) {
-        const KCalCore::Journal::List allJournals = journals;
+        const KCalendarCore::Journal::List allJournals = journals;
         journals.clear();
-        for (const KCalCore::Journal::Ptr &j : allJournals) {
+        for (const KCalendarCore::Journal::Ptr &j : allJournals) {
             const QDate dt = j->dtStart().date();
             if (mFromDate <= dt && dt <= mToDate) {
                 journals.append(j);
@@ -124,7 +124,7 @@ void CalPrintJournal::print(QPainter &p, int width, int height)
     drawHeader(p, i18n("Journal entries"), QDate(), QDate(), headerBox);
     y = headerHeight() + 15;
 
-    for (const KCalCore::Journal::Ptr &j : qAsConst(journals)) {
+    for (const KCalendarCore::Journal::Ptr &j : qAsConst(journals)) {
         drawJournal(j, p, x, y, width, height);
     }
 

@@ -31,7 +31,7 @@
 
 #include <Item>
 
-#include <KCalCore/Visitor>
+#include <KCalendarCore/Visitor>
 
 #include <KCalUtils/IncidenceFormatter>
 #include <KCalUtils/Stringify>
@@ -123,14 +123,14 @@ void CalPrintIncidence::saveConfig()
     }
 }
 
-class TimePrintStringsVisitor : public KCalCore::Visitor
+class TimePrintStringsVisitor : public KCalendarCore::Visitor
 {
 public:
     TimePrintStringsVisitor()
     {
     }
 
-    bool act(KCalCore::IncidenceBase::Ptr incidence)
+    bool act(KCalendarCore::IncidenceBase::Ptr incidence)
     {
         return incidence->accept(*this, incidence);
     }
@@ -140,7 +140,7 @@ public:
     QString mDurationCaption, mDurationString;
 
 protected:
-    bool visit(const KCalCore::Event::Ptr &event) override
+    bool visit(const KCalendarCore::Event::Ptr &event) override
     {
         if (event->dtStart().isValid()) {
             mStartCaption = i18n("Start date: ");
@@ -171,7 +171,7 @@ protected:
         return true;
     }
 
-    bool visit(const KCalCore::Todo::Ptr &todo) override
+    bool visit(const KCalendarCore::Todo::Ptr &todo) override
     {
         if (todo->hasStartDate()) {
             mStartCaption = i18n("Start date: ");
@@ -193,7 +193,7 @@ protected:
         return true;
     }
 
-    bool visit(const KCalCore::Journal::Ptr &journal) override
+    bool visit(const KCalendarCore::Journal::Ptr &journal) override
     {
         mStartCaption = i18n("Start date: ");
         mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(
@@ -203,7 +203,7 @@ protected:
         return true;
     }
 
-    bool visit(const KCalCore::FreeBusy::Ptr &fb) override
+    bool visit(const KCalendarCore::FreeBusy::Ptr &fb) override
     {
         Q_UNUSED(fb);
         return true;
@@ -240,7 +240,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
     int lineHeight = p.fontMetrics().lineSpacing();
     QString cap, txt;
 
-    KCalCore::Incidence::List::ConstIterator it;
+    KCalendarCore::Incidence::List::ConstIterator it;
     for (it = mSelectedIncidences.constBegin(); it != mSelectedIncidences.constEnd(); ++it) {
         // don't do anything on a 0-pointer!
         if (!(*it)) {
@@ -250,7 +250,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
             mPrinter->newPage();
         }
 
-        const bool isJournal = ((*it)->type() == KCalCore::Incidence::TypeJournal);
+        const bool isJournal = ((*it)->type() == KCalendarCore::Incidence::TypeJournal);
 
         //  PAGE Layout (same for landscape and portrait! astonishingly, it looks good with both!):
         //  +-----------------------------------+
@@ -314,7 +314,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
         if ((*it)->recurs()) {
             QRect recurBox(timesBox.left() + padding(), h + padding(),
                            timesBox.right() - padding(), lineHeight);
-            KCalCore::Recurrence *recurs = (*it)->recurrence();
+            KCalendarCore::Recurrence *recurs = (*it)->recurrence();
             QString displayString = KCalUtils::IncidenceFormatter::recurrenceString((*it));
             // exception dates
             QString exceptString;
@@ -335,7 +335,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
             // Alarms Printing
             QRect alarmBox(timesBox.left() + padding(), h + padding(),
                            timesBox.right() - padding(), lineHeight);
-            KCalCore::Alarm::List alarms = (*it)->alarms();
+            KCalendarCore::Alarm::List alarms = (*it)->alarms();
             if (alarms.isEmpty()) {
                 cap = i18n("No reminders");
                 txt.clear();
@@ -343,10 +343,10 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 cap = i18np("Reminder: ", "%1 reminders: ", alarms.count());
 
                 QStringList alarmStrings;
-                KCalCore::Alarm::List::ConstIterator it;
+                KCalendarCore::Alarm::List::ConstIterator it;
                 alarmStrings.reserve(alarms.count());
                 for (it = alarms.constBegin(); it != alarms.constEnd(); ++it) {
-                    KCalCore::Alarm::Ptr alarm = *it;
+                    KCalendarCore::Alarm::Ptr alarm = *it;
 
                     // Alarm offset, copied from koeditoralarms.cpp:
                     KLocalizedString offsetstr;
@@ -481,7 +481,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
         Akonadi::Item::List relations = mCalendar->childItems(item.id());
 
         if (mShowSubitemsNotes && !isJournal) {
-            if (relations.isEmpty() || (*it)->type() != KCalCore::Incidence::TypeTodo) {
+            if (relations.isEmpty() || (*it)->type() != KCalendarCore::Incidence::TypeTodo) {
                 int notesPosition = drawBoxWithCaption(p, notesBox, i18n("Notes:"),
                                                        QString(), /*sameLine=*/ false,
                                                        /*expand=*/ false, captionFont, textFont);
@@ -502,7 +502,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 QString datesString;
                 int count = 0;
                 for (const Akonadi::Item &item : qAsConst(relations)) {
-                    KCalCore::Todo::Ptr todo = CalendarSupport::todo(item);
+                    KCalendarCore::Todo::Ptr todo = CalendarSupport::todo(item);
                     ++count;
                     if (!todo) {   // defensive, skip any zero pointers
                         continue;
@@ -510,7 +510,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                     // format the status
                     statusString = KCalUtils::Stringify::incidenceStatus(todo->status());
                     if (statusString.isEmpty()) {
-                        if (todo->status() == KCalCore::Incidence::StatusNone) {
+                        if (todo->status() == KCalendarCore::Incidence::StatusNone) {
                             statusString = i18nc("no status", "none");
                         } else {
                             statusString = i18nc("unknown status", "unknown");
@@ -528,16 +528,16 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                                                                     time(), QLocale::ShortFormat));
                         }
                     }
-                    if (todo->dateTime(KCalCore::Incidence::RoleEnd).isValid()) {
+                    if (todo->dateTime(KCalendarCore::Incidence::RoleEnd).isValid()) {
                         subitemString += i18nc("subitem due date", "Due Date: %1\n",
-                                               QLocale().toString(todo->dateTime(KCalCore::Incidence
+                                               QLocale().toString(todo->dateTime(KCalendarCore::Incidence
                                                                                  ::RoleEnd).
                                                                   toLocalTime().date(),
                                                                   QLocale::ShortFormat));
 
                         if (!todo->allDay()) {
                             subitemString += i18nc("subitem due time", "Due Time: %1\n",
-                                                   QLocale().toString(todo->dateTime(KCalCore::
+                                                   QLocale().toString(todo->dateTime(KCalendarCore::
                                                                                      Incidence::
                                                                                      RoleEnd).
                                                                       toLocalTime().time(),
@@ -571,7 +571,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
         }
 
         if (mShowAttachments && !isJournal) {
-            const KCalCore::Attachment::List attachments = (*it)->attachments();
+            const KCalendarCore::Attachment::List attachments = (*it)->attachments();
             QString attachmentCaption;
             if (attachments.isEmpty()) {
                 attachmentCaption = i18n("No Attachments");
@@ -582,7 +582,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                                           attachments.count());
             }
             QString attachmentString;
-            KCalCore::Attachment::List::ConstIterator ait = attachments.constBegin();
+            KCalendarCore::Attachment::List::ConstIterator ait = attachments.constBegin();
             for (; ait != attachments.constEnd(); ++ait) {
                 if (!attachmentString.isEmpty()) {
                     attachmentString += i18nc("Spacer for list of attachments", "  ");
@@ -595,7 +595,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                                captionFont, textFont);
         }
         if (mShowAttendees) {
-            const KCalCore::Attendee::List attendees = (*it)->attendees();
+            const KCalendarCore::Attendee::List attendees = (*it)->attendees();
             QString attendeeCaption;
             if (attendees.isEmpty()) {
                 attendeeCaption = i18n("No Attendees");
@@ -605,7 +605,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                                         attendees.count());
             }
             QString attendeeString;
-            KCalCore::Attendee::List::ConstIterator ait = attendees.constBegin();
+            KCalendarCore::Attendee::List::ConstIterator ait = attendees.constBegin();
             for (; ait != attendees.constEnd(); ++ait) {
                 if (!attendeeString.isEmpty()) {
                     attendeeString += QLatin1Char('\n');
@@ -637,21 +637,21 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                             KCalUtils::Stringify::incidenceSecrecy((*it)->secrecy()));
                 optionsString += QLatin1Char('\n');
             }
-            if ((*it)->type() == KCalCore::Incidence::TypeEvent) {
-                KCalCore::Event::Ptr e = (*it).staticCast<KCalCore::Event>();
-                if (e->transparency() == KCalCore::Event::Opaque) {
+            if ((*it)->type() == KCalendarCore::Incidence::TypeEvent) {
+                KCalendarCore::Event::Ptr e = (*it).staticCast<KCalendarCore::Event>();
+                if (e->transparency() == KCalendarCore::Event::Opaque) {
                     optionsString += i18n("Show as: Busy");
                 } else {
                     optionsString += i18n("Show as: Free");
                 }
                 optionsString += QLatin1Char('\n');
-            } else if ((*it)->type() == KCalCore::Incidence::TypeTodo) {
-                KCalCore::Todo::Ptr t = (*it).staticCast<KCalCore::Todo>();
+            } else if ((*it)->type() == KCalendarCore::Incidence::TypeTodo) {
+                KCalendarCore::Todo::Ptr t = (*it).staticCast<KCalendarCore::Todo>();
                 if (t->isOverdue()) {
                     optionsString += i18n("This task is overdue!");
                     optionsString += QLatin1Char('\n');
                 }
-            } else if ((*it)->type() == KCalCore::Incidence::TypeJournal) {
+            } else if ((*it)->type() == KCalendarCore::Incidence::TypeJournal) {
                 //TODO: Anything Journal-specific?
             }
             drawBoxWithCaption(p, optionsBox, i18n("Settings: "),
@@ -859,13 +859,13 @@ void CalPrintDay::print(QPainter &p, int width, int height)
             }
 
             drawHeader(p, local.toString(curDay, QLocale::ShortFormat), curDay, QDate(), headerBox);
-            KCalCore::Event::List eventList = mCalendar->events(curDay, QTimeZone::systemTimeZone(),
-                                                                KCalCore::EventSortStartDate,
-                                                                KCalCore::SortDirectionAscending);
+            KCalendarCore::Event::List eventList = mCalendar->events(curDay, QTimeZone::systemTimeZone(),
+                                                                KCalendarCore::EventSortStartDate,
+                                                                KCalendarCore::SortDirectionAscending);
 
             // split out the all day events as they will be printed in a separate box
-            KCalCore::Event::List alldayEvents, timedEvents;
-            for (const KCalCore::Event::Ptr &event : qAsConst(eventList)) {
+            KCalendarCore::Event::List alldayEvents, timedEvents;
+            for (const KCalendarCore::Event::Ptr &event : qAsConst(eventList)) {
                 if (event->allDay()) {
                     alldayEvents.append(event);
                 } else {
@@ -903,7 +903,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                 eventBox.setTop(eventBox.top() + padding());
                 eventBox.setBottom(eventBox.top() + lineSpacing);
                 int count = 0;
-                for (const KCalCore::Event::Ptr &event : qAsConst(alldayEvents)) {
+                for (const KCalendarCore::Event::Ptr &event : qAsConst(alldayEvents)) {
                     if (count == maxAllDayEvents) {
                         break;
                     }
@@ -1568,37 +1568,37 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     p.setFont(QFont(QStringLiteral("sans-serif"), 10));
     //fontHeight = p.fontMetrics().height();
 
-    KCalCore::Todo::List todoList;
-    KCalCore::Todo::List tempList;
+    KCalendarCore::Todo::List todoList;
+    KCalendarCore::Todo::List tempList;
 
-    KCalCore::SortDirection sortDirection = KCalCore::SortDirectionAscending;
+    KCalendarCore::SortDirection sortDirection = KCalendarCore::SortDirectionAscending;
     switch (mTodoSortDirection) {
     case TodoDirectionAscending:
-        sortDirection = KCalCore::SortDirectionAscending;
+        sortDirection = KCalendarCore::SortDirectionAscending;
         break;
     case TodoDirectionDescending:
-        sortDirection = KCalCore::SortDirectionDescending;
+        sortDirection = KCalendarCore::SortDirectionDescending;
         break;
     case TodoDirectionUnset:
         break;
     }
 
-    KCalCore::TodoSortField sortField = KCalCore::TodoSortSummary;
+    KCalendarCore::TodoSortField sortField = KCalendarCore::TodoSortSummary;
     switch (mTodoSortField) {
     case TodoFieldSummary:
-        sortField = KCalCore::TodoSortSummary;
+        sortField = KCalendarCore::TodoSortSummary;
         break;
     case TodoFieldStartDate:
-        sortField = KCalCore::TodoSortStartDate;
+        sortField = KCalendarCore::TodoSortStartDate;
         break;
     case TodoFieldDueDate:
-        sortField = KCalCore::TodoSortDueDate;
+        sortField = KCalendarCore::TodoSortDueDate;
         break;
     case TodoFieldPriority:
-        sortField = KCalCore::TodoSortPriority;
+        sortField = KCalendarCore::TodoSortPriority;
         break;
     case TodoFieldPercentComplete:
-        sortField = KCalCore::TodoSortPercentComplete;
+        sortField = KCalendarCore::TodoSortPercentComplete;
         break;
     case TodoFieldUnset:
         break;
@@ -1610,7 +1610,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     case TodosAll:
         break;
     case TodosUnfinished:
-        for (const KCalCore::Todo::Ptr &todo : qAsConst(todoList)) {
+        for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todoList)) {
             Q_ASSERT(todo);
             if (!todo->isCompleted()) {
                 tempList.append(todo);
@@ -1619,7 +1619,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
         todoList = tempList;
         break;
     case TodosDueRange:
-        for (const KCalCore::Todo::Ptr &todo : qAsConst(todoList)) {
+        for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todoList)) {
             Q_ASSERT(todo);
             if (todo->hasDueDate()) {
                 if (todo->dtDue().date() >= mFromDate && todo->dtDue().date() <= mToDate) {
@@ -1635,9 +1635,9 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
 
     // Print to-dos
     int count = 0;
-    for (const KCalCore::Todo::Ptr &todo : qAsConst(todoList)) {
-        if ((mExcludeConfidential && todo->secrecy() == KCalCore::Incidence::SecrecyConfidential)
-            || (mExcludePrivate && todo->secrecy() == KCalCore::Incidence::SecrecyPrivate)) {
+    for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todoList)) {
+        if ((mExcludeConfidential && todo->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+            || (mExcludePrivate && todo->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
         }
         // Skip sub-to-dos. They will be printed recursively in drawTodo()

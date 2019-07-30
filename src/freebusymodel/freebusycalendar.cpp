@@ -22,10 +22,10 @@
 #include "freebusycalendar.h"
 #include "calendarsupport_debug.h"
 
-#include <KCalCore/Event>
-#include <KCalCore/FreeBusyPeriod>
-#include <KCalCore/MemoryCalendar>
-#include <KCalCore/CalFormat>
+#include <KCalendarCore/Event>
+#include <KCalendarCore/FreeBusyPeriod>
+#include <KCalendarCore/MemoryCalendar>
+#include <KCalendarCore/CalFormat>
 
 #include <KLocalizedString>
 
@@ -41,8 +41,8 @@ public:
     }
 
     FreeBusyItemModel *mModel = nullptr;
-    KCalCore::Calendar::Ptr mCalendar;
-    QMap<QModelIndex, KCalCore::Event::Ptr> mFbEvent;
+    KCalendarCore::Calendar::Ptr mCalendar;
+    QMap<QModelIndex, KCalendarCore::Event::Ptr> mFbEvent;
 };
 
 FreeBusyCalendar::FreeBusyCalendar(QObject *parent)
@@ -50,7 +50,7 @@ FreeBusyCalendar::FreeBusyCalendar(QObject *parent)
     , d(new CalendarSupport::FreeBusyCalendarPrivate)
 {
     d->mCalendar
-        = KCalCore::Calendar::Ptr(new KCalCore::MemoryCalendar(QTimeZone::systemTimeZone()));
+        = KCalendarCore::Calendar::Ptr(new KCalendarCore::MemoryCalendar(QTimeZone::systemTimeZone()));
     qCDebug(CALENDARSUPPORT_LOG) << "creating" << this;
 }
 
@@ -60,7 +60,7 @@ FreeBusyCalendar::~FreeBusyCalendar()
     delete d;
 }
 
-KCalCore::Calendar::Ptr FreeBusyCalendar::calendar() const
+KCalendarCore::Calendar::Ptr FreeBusyCalendar::calendar() const
 {
     return d->mCalendar;
 }
@@ -92,8 +92,8 @@ void FreeBusyCalendar::setModel(FreeBusyItemModel *model)
 
 void FreeBusyCalendar::deleteAllEvents()
 {
-    const KCalCore::Event::List lstEvents = d->mCalendar->events();
-    for (const KCalCore::Event::Ptr &event : lstEvents) {
+    const KCalendarCore::Event::List lstEvents = d->mCalendar->events();
+    for (const KCalendarCore::Event::Ptr &event : lstEvents) {
         d->mCalendar->deleteEvent(event);
     }
 }
@@ -118,14 +118,14 @@ void FreeBusyCalendar::onRowsInserted(const QModelIndex &parent, int first, int 
     for (int i = first; i <= last; ++i) {
         QModelIndex index = d->mModel->index(i, 0, parent);
 
-        const KCalCore::FreeBusyPeriod &period = d->mModel->data(index,
+        const KCalendarCore::FreeBusyPeriod &period = d->mModel->data(index,
                                                                  FreeBusyItemModel::FreeBusyPeriodRole)
-                                                 .value<KCalCore::FreeBusyPeriod>();
-        const KCalCore::FreeBusy::Ptr &fb
+                                                 .value<KCalendarCore::FreeBusyPeriod>();
+        const KCalendarCore::FreeBusy::Ptr &fb
             = d->mModel->data(parent,
-                              FreeBusyItemModel::FreeBusyRole).value<KCalCore::FreeBusy::Ptr>();
+                              FreeBusyItemModel::FreeBusyRole).value<KCalendarCore::FreeBusy::Ptr>();
 
-        KCalCore::Event::Ptr inc = KCalCore::Event::Ptr(new KCalCore::Event());
+        KCalendarCore::Event::Ptr inc = KCalendarCore::Event::Ptr(new KCalendarCore::Event());
         inc->setDtStart(period.start());
         inc->setDtEnd(period.end());
         inc->setUid(QLatin1String("fb-") + fb->uid() + QLatin1String("-") + QString::number(i));
@@ -134,16 +134,16 @@ void FreeBusyCalendar::onRowsInserted(const QModelIndex &parent, int first, int 
         QString summary = period.summary();
         if (summary.isEmpty()) {
             switch (period.type()) {
-            case KCalCore::FreeBusyPeriod::Free:
+            case KCalendarCore::FreeBusyPeriod::Free:
                 summary = i18n("Free");
                 break;
-            case KCalCore::FreeBusyPeriod::Busy:
+            case KCalendarCore::FreeBusyPeriod::Busy:
                 summary = i18n("Busy");
                 break;
-            case KCalCore::FreeBusyPeriod::BusyUnavailable:
+            case KCalendarCore::FreeBusyPeriod::BusyUnavailable:
                 summary = i18n("Unavailable");
                 break;
-            case KCalCore::FreeBusyPeriod::BusyTentative:
+            case KCalendarCore::FreeBusyPeriod::BusyTentative:
                 summary = i18n("Tentative");
                 break;
             default:
@@ -167,7 +167,7 @@ void FreeBusyCalendar::onRowsRemoved(const QModelIndex &parent, int first, int l
     } else {
         for (int i = first; i <= last; ++i) {
             QModelIndex index = d->mModel->index(i, 0, parent);
-            KCalCore::Event::Ptr inc = d->mFbEvent.take(index);
+            KCalendarCore::Event::Ptr inc = d->mFbEvent.take(index);
             d->mCalendar->deleteEvent(inc);
         }
     }
@@ -180,7 +180,7 @@ void FreeBusyCalendar::onRowsChanged(const QModelIndex &topLeft, const QModelInd
     }
     for (int i = topLeft.row(); i <= bottomRight.row(); ++i) {
         QModelIndex index = d->mModel->index(i, 0, topLeft.parent());
-        KCalCore::Event::Ptr inc = d->mFbEvent.value(index);
+        KCalendarCore::Event::Ptr inc = d->mFbEvent.value(index);
         d->mCalendar->beginChange(inc);
         d->mCalendar->endChange(inc);
     }

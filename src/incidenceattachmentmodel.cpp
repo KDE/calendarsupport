@@ -88,11 +88,11 @@ class IncidenceAttachmentModelPrivate
             item = m_modelIndex.data(EntityTreeModel::ItemRole).value<Akonadi::Item>();
         }
 
-        if (!item.isValid() || !item.hasPayload<KCalCore::Incidence::Ptr>()) {
-            m_incidence = KCalCore::Incidence::Ptr();
+        if (!item.isValid() || !item.hasPayload<KCalendarCore::Incidence::Ptr>()) {
+            m_incidence = KCalendarCore::Incidence::Ptr();
             return;
         }
-        m_incidence = item.payload<KCalCore::Incidence::Ptr>();
+        m_incidence = item.payload<KCalendarCore::Incidence::Ptr>();
     }
 
     Q_DECLARE_PUBLIC(IncidenceAttachmentModel)
@@ -100,7 +100,7 @@ class IncidenceAttachmentModelPrivate
 
     QModelIndex m_modelIndex;
     Akonadi::Item m_item;
-    KCalCore::Incidence::Ptr m_incidence;
+    KCalendarCore::Incidence::Ptr m_incidence;
     Akonadi::Monitor *m_monitor = nullptr;
 };
 }
@@ -129,7 +129,7 @@ IncidenceAttachmentModel::~IncidenceAttachmentModel()
     delete d_ptr;
 }
 
-KCalCore::Incidence::Ptr IncidenceAttachmentModel::incidence() const
+KCalendarCore::Incidence::Ptr IncidenceAttachmentModel::incidence() const
 {
     Q_D(const IncidenceAttachmentModel);
     return d->m_incidence;
@@ -149,7 +149,7 @@ void IncidenceAttachmentModel::setIndex(const QPersistentModelIndex &modelIndex)
 void IncidenceAttachmentModel::setItem(const Akonadi::Item &item)
 {
     Q_D(IncidenceAttachmentModel);
-    if (!item.hasPayload<KCalCore::Incidence::Ptr>()) {
+    if (!item.hasPayload<KCalendarCore::Incidence::Ptr>()) {
         ItemFetchJob *job = new ItemFetchJob(item);
         job->fetchScope().fetchFullPayload(true);
         connect(job, SIGNAL(itemsReceived(Akonadi::Item::List)),
@@ -188,7 +188,7 @@ QVariant IncidenceAttachmentModel::data(const QModelIndex &index, int role) cons
         return QVariant();
     }
 
-    const KCalCore::Attachment attachment = d->m_incidence->attachments().at(index.row());
+    const KCalendarCore::Attachment attachment = d->m_incidence->attachments().at(index.row());
     switch (role) {
     case Qt::DisplayRole:
         return attachment.label();

@@ -23,10 +23,10 @@
 #include <Item>
 #include <ItemFetchScope>
 
-#include <KCalCore/FreeBusy>
-#include <KCalCore/Event>
-#include <KCalCore/Journal>
-#include <KCalCore/Todo>
+#include <KCalendarCore/FreeBusy>
+#include <KCalendarCore/Event>
+#include <KCalendarCore/Journal>
+#include <KCalendarCore/Todo>
 
 #include <KLocalizedString>
 
@@ -44,10 +44,10 @@ public:
     static QStringList allMimeTypes()
     {
         QStringList types;
-        types << KCalCore::Event::eventMimeType()
-              << KCalCore::Todo::todoMimeType()
-              << KCalCore::Journal::journalMimeType()
-              << KCalCore::FreeBusy::freeBusyMimeType();
+        types << KCalendarCore::Event::eventMimeType()
+              << KCalendarCore::Todo::todoMimeType()
+              << KCalendarCore::Journal::journalMimeType()
+              << KCalendarCore::FreeBusy::freeBusyMimeType();
         return types;
     }
 
@@ -135,21 +135,21 @@ QVariant KCalModel::data(const QModelIndex &index, int role) const
 
     const Akonadi::Item item = itemForIndex(index);
 
-    if (!item.hasPayload<KCalCore::Incidence::Ptr>()) {
+    if (!item.hasPayload<KCalendarCore::Incidence::Ptr>()) {
         return QVariant();
     }
 
-    const KCalCore::Incidence::Ptr incidence = item.payload<KCalCore::Incidence::Ptr>();
+    const KCalendarCore::Incidence::Ptr incidence = item.payload<KCalendarCore::Incidence::Ptr>();
 
     // Icon for the model entry
     switch (role) {
     case Qt::DecorationRole:
         if (index.column() == 0) {
-            if (incidence->type() == KCalCore::Incidence::TypeTodo) {
+            if (incidence->type() == KCalendarCore::Incidence::TypeTodo) {
                 return QIcon::fromTheme(QStringLiteral("view-pim-tasks"));
-            } else if (incidence->type() == KCalCore::Incidence::TypeJournal) {
+            } else if (incidence->type() == KCalendarCore::Incidence::TypeJournal) {
                 return QIcon::fromTheme(QStringLiteral("view-pim-journal"));
-            } else if (incidence->type() == KCalCore::Incidence::TypeEvent) {
+            } else if (incidence->type() == KCalendarCore::Incidence::TypeEvent) {
                 return QIcon::fromTheme(QStringLiteral("view-calendar"));
             } else {
                 return QIcon::fromTheme(QStringLiteral("network-wired"));
@@ -163,7 +163,7 @@ QVariant KCalModel::data(const QModelIndex &index, int role) const
         case DateTimeStart:
             return incidence->dtStart().toString();
         case DateTimeEnd:
-            return incidence->dateTime(KCalCore::Incidence::RoleEnd).toString();
+            return incidence->dateTime(KCalendarCore::Incidence::RoleEnd).toString();
         case Type:
             return incidence->type();
         default:

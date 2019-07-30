@@ -20,7 +20,7 @@
 
 #include "freeperiodmodel.h"
 
-#include <KCalCore/Period>
+#include <KCalendarCore/Period>
 
 #include <KLocalizedString>
 #include <KFormat>
@@ -95,7 +95,7 @@ QVariant FreePeriodModel::headerData(int section, Qt::Orientation orientation, i
     return QAbstractItemModel::headerData(section, orientation, role);
 }
 
-void FreePeriodModel::slotNewFreePeriods(const KCalCore::Period::List &freePeriods)
+void FreePeriodModel::slotNewFreePeriods(const KCalendarCore::Period::List &freePeriods)
 {
     beginResetModel();
     mPeriodList.clear();
@@ -104,23 +104,23 @@ void FreePeriodModel::slotNewFreePeriods(const KCalCore::Period::List &freePerio
     endResetModel();
 }
 
-KCalCore::Period::List FreePeriodModel::splitPeriodsByDay(
-    const KCalCore::Period::List &freePeriods)
+KCalendarCore::Period::List FreePeriodModel::splitPeriodsByDay(
+    const KCalendarCore::Period::List &freePeriods)
 {
-    KCalCore::Period::List splitList;
-    for (const KCalCore::Period &period : freePeriods) {
+    KCalendarCore::Period::List splitList;
+    for (const KCalendarCore::Period &period : freePeriods) {
         if (period.start().date() == period.end().date()) {
             splitList << period; // period occurs on the same day
             continue;
         }
 
         const int validPeriodSecs = 300; // 5 minutes
-        KCalCore::Period tmpPeriod = period;
+        KCalendarCore::Period tmpPeriod = period;
         while (tmpPeriod.start().date() != tmpPeriod.end().date()) {
             const QDateTime midnight(tmpPeriod.start().date(), QTime(23, 59, 59, 999),
                                      tmpPeriod.start().timeZone());
-            KCalCore::Period firstPeriod(tmpPeriod.start(), midnight);
-            KCalCore::Period secondPeriod(midnight.addMSecs(1), tmpPeriod.end());
+            KCalendarCore::Period firstPeriod(tmpPeriod.start(), midnight);
+            KCalendarCore::Period secondPeriod(midnight.addMSecs(1), tmpPeriod.end());
             if (firstPeriod.duration().asSeconds() >= validPeriodSecs) {
                 splitList << firstPeriod;
             }
@@ -133,15 +133,15 @@ KCalCore::Period::List FreePeriodModel::splitPeriodsByDay(
 
     // Perform some jiggery pokery to remove duplicates
 
-    QList<KCalCore::Period> tmpList = splitList.toList();
-    const QSet<KCalCore::Period> set = tmpList.toSet();
-    tmpList = QList<KCalCore::Period>::fromSet(set);
-    return KCalCore::Period::List::fromList(tmpList);
+    QList<KCalendarCore::Period> tmpList = splitList.toList();
+    const QSet<KCalendarCore::Period> set = tmpList.toSet();
+    tmpList = QList<KCalendarCore::Period>::fromSet(set);
+    return KCalendarCore::Period::List::fromList(tmpList);
 }
 
 QString FreePeriodModel::day(int index) const
 {
-    KCalCore::Period period = mPeriodList.at(index);
+    KCalendarCore::Period period = mPeriodList.at(index);
     const QDate startDate = period.start().date();
     return ki18nc("@label Day of the week name, example: Monday,", "%1,").
            subs(QLocale::system().dayName(startDate.dayOfWeek(), QLocale::LongFormat)).toString();
@@ -149,7 +149,7 @@ QString FreePeriodModel::day(int index) const
 
 QString FreePeriodModel::date(int index) const
 {
-    KCalCore::Period period = mPeriodList.at(index);
+    KCalendarCore::Period period = mPeriodList.at(index);
 
     const QDate startDate = period.start().date();
     const QString startTime
@@ -168,7 +168,7 @@ QString FreePeriodModel::date(int index) const
 
 QString FreePeriodModel::stringify(int index) const
 {
-    KCalCore::Period period = mPeriodList.at(index);
+    KCalendarCore::Period period = mPeriodList.at(index);
 
     const QDate startDate = period.start().date();
     const QString startTime = QLocale().toString(period.start().time(), QLocale::ShortFormat);
@@ -190,7 +190,7 @@ QString FreePeriodModel::stringify(int index) const
 
 QString FreePeriodModel::tooltipify(int index) const
 {
-    KCalCore::Period period = mPeriodList.at(index);
+    KCalendarCore::Period period = mPeriodList.at(index);
     unsigned long duration = period.duration().asSeconds() * 1000; // we want milliseconds
     QString toolTip = QStringLiteral("<qt>");
     toolTip += QLatin1String("<b>") + i18nc("@info:tooltip", "Free Period") + QLatin1String("</b>");

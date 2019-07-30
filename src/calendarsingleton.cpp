@@ -24,7 +24,7 @@
 #include "kcalprefs.h"
 
 #include <Akonadi/Calendar/ETMCalendar>
-#include <KCalCore/Person>
+#include <KCalendarCore/Person>
 
 /**
  * Singleton is implemented through qApp parenting because we can't rely on K_GLOBAL_STATIC.
@@ -39,7 +39,7 @@ Akonadi::ETMCalendar::Ptr CalendarSupport::calendarSingleton(bool createIfNull)
     if (!calendar && createIfNull) {
         calendar = Akonadi::ETMCalendar::Ptr(new Akonadi::ETMCalendar());
         calendar->setCollectionFilteringEnabled(false);
-        calendar->setOwner(KCalCore::Person(KCalPrefs::instance()->fullName(), KCalPrefs::instance()->email()));
+        calendar->setOwner(KCalendarCore::Person(KCalPrefs::instance()->fullName(), KCalPrefs::instance()->email()));
     }
 
     return calendar;

@@ -24,7 +24,7 @@
 
 #include <Akonadi/Calendar/ETMCalendar>
 
-#include <KCalCore/Incidence>
+#include <KCalendarCore/Incidence>
 #include <KConfig>
 
 #include <QPrinter>
@@ -85,12 +85,12 @@ public:
         mCalendar = cal;
     }
 
-    virtual void setSelectedIncidences(const KCalCore::Incidence::List &inc)
+    virtual void setSelectedIncidences(const KCalendarCore::Incidence::List &inc)
     {
         mSelectedIncidences = inc;
     }
 
-    virtual KCalCore::Incidence::List selectedIncidences() const
+    virtual KCalendarCore::Incidence::List selectedIncidences() const
     {
         return mSelectedIncidences;
     }
@@ -206,7 +206,7 @@ protected:
         of the selected plugin */
     QPrinter *mPrinter = nullptr;
     Akonadi::ETMCalendar::Ptr mCalendar;
-    KCalCore::Incidence::List mSelectedIncidences;
+    KCalendarCore::Incidence::List mSelectedIncidences;
     KConfig *mConfig = nullptr;
 };
 

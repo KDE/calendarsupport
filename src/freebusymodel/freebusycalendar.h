@@ -26,8 +26,8 @@
 
 #include "freebusyitemmodel.h"
 
-#include <KCalCore/Calendar>
-#include <KCalCore/Event>
+#include <KCalendarCore/Calendar>
+#include <KCalendarCore/Event>
 
 namespace CalendarSupport {
 class FreeBusyCalendarPrivate;
@@ -41,7 +41,7 @@ public:
 
     void setModel(FreeBusyItemModel *model);
     FreeBusyItemModel *model() const;
-    KCalCore::Calendar::Ptr calendar() const;
+    KCalendarCore::Calendar::Ptr calendar() const;
 
 private:
     void onRowsChanged(const QModelIndex &, const QModelIndex &);

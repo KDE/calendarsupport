@@ -26,9 +26,9 @@
 #ifndef CALENDARSUPPORT_ATTACHMENTHANDLER_H
 #define CALENDARSUPPORT_ATTACHMENTHANDLER_H
 
-#include <KCalCore/Attachment>
-#include <KCalCore/Incidence>
-#include <KCalCore/ScheduleMessage>
+#include <KCalendarCore/Attachment>
+#include <KCalendarCore/Incidence>
+#include <KCalendarCore/ScheduleMessage>
 
 #include <QObject>
 
@@ -62,8 +62,8 @@ public:
      * @param incidence is a pointer to a valid Incidence object containing the attachment.
      * @return a pointer to the Attachment object located; 0 if no such attachment could be found.
      */
-    KCalCore::Attachment find(const QString &attachmentName,
-                              const KCalCore::Incidence::Ptr &incidence);
+    KCalendarCore::Attachment find(const QString &attachmentName,
+                              const KCalendarCore::Incidence::Ptr &incidence);
 
     /**
      * Finds the attachment in the user's calendar, by @p attachmentName and a scheduler message;
@@ -73,8 +73,8 @@ public:
      * @param message is a pointer to a valid ScheduleMessage object containing the attachment.
      * @return a pointer to the Attachment object located; 0 if no such attachment could be found.
      */
-    KCalCore::Attachment find(const QString &attachmentName,
-                              const KCalCore::ScheduleMessage::Ptr &message);
+    KCalendarCore::Attachment find(const QString &attachmentName,
+                              const KCalendarCore::ScheduleMessage::Ptr &message);
 
     /**
      * Launches a viewer on the specified attachment.
@@ -82,7 +82,7 @@ public:
      * @param attachment is a pointer to a valid Attachment object.
      * @return true if the viewer program successfully launched; false otherwise.
      */
-    bool view(const KCalCore::Attachment &attachment);
+    bool view(const KCalendarCore::Attachment &attachment);
 
     /**
      * Launches a viewer on the specified attachment.
@@ -92,7 +92,7 @@ public:
      * @return true if the attachment could be found and the viewer program successfully launched;
      * false otherwise.
      */
-    bool view(const QString &attachmentName, const KCalCore::Incidence::Ptr &incidence);
+    bool view(const QString &attachmentName, const KCalendarCore::Incidence::Ptr &incidence);
 
     /**
       Launches a viewer on the specified attachment.
@@ -115,7 +115,7 @@ public:
       @return true if the attachment could be found and the viewer program successfully launched;
       false otherwise.
     */
-    bool view(const QString &attachmentName, const KCalCore::ScheduleMessage::Ptr &message);
+    bool view(const QString &attachmentName, const KCalendarCore::ScheduleMessage::Ptr &message);
 
     /**
       Saves the specified attachment to a file of the user's choice.
@@ -124,7 +124,7 @@ public:
 
       @return true if the save operation was successful; false otherwise.
     */
-    bool saveAs(const KCalCore::Attachment &attachment);
+    bool saveAs(const KCalendarCore::Attachment &attachment);
 
     /**
       Saves the specified attachment to a file of the user's choice.
@@ -135,7 +135,7 @@ public:
       @return true if the attachment could be found and the save operation was successful;
       false otherwise.
     */
-    bool saveAs(const QString &attachmentName, const KCalCore::Incidence::Ptr &incidence);
+    bool saveAs(const QString &attachmentName, const KCalendarCore::Incidence::Ptr &incidence);
 
     /**
       Saves the specified attachment to a file of the user's choice.
@@ -157,7 +157,7 @@ public:
       @return true if the attachment could be found and the save operation was successful;
       false otherwise.
     */
-    bool saveAs(const QString &attachmentName, const KCalCore::ScheduleMessage::Ptr &message);
+    bool saveAs(const QString &attachmentName, const KCalendarCore::ScheduleMessage::Ptr &message);
 
 Q_SIGNALS:
     void viewFinished(const QString &uid, const QString &attachmentName, bool success);

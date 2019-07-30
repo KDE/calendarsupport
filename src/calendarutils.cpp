@@ -28,7 +28,7 @@
 #include "calendarutils.h"
 #include "utils.h"
 
-#include <KCalCore/Incidence>
+#include <KCalendarCore/Incidence>
 #include <Akonadi/Calendar/ETMCalendar>
 #include <Akonadi/Calendar/IncidenceChanger>
 
@@ -37,7 +37,7 @@
 #include "calendarsupport_debug.h"
 
 using namespace CalendarSupport;
-using namespace KCalCore;
+using namespace KCalendarCore;
 
 /// CalendarUtilsPrivate
 
@@ -68,7 +68,7 @@ public:
                             Akonadi::IncidenceChanger::ResultCode resultCode,
                             const QString &errorString);
 
-    bool purgeCompletedSubTodos(const KCalCore::Todo::Ptr &todo, bool &allPurged);
+    bool purgeCompletedSubTodos(const KCalendarCore::Todo::Ptr &todo, bool &allPurged);
 
     /// Members
     Akonadi::ETMCalendar::Ptr mCalendar;
@@ -133,7 +133,7 @@ void CalendarUtilsPrivate::handleChangeFinish(int, const Akonadi::Item &item,
     }
 }
 
-bool CalendarUtilsPrivate::purgeCompletedSubTodos(const KCalCore::Todo::Ptr &todo, bool &allPurged)
+bool CalendarUtilsPrivate::purgeCompletedSubTodos(const KCalendarCore::Todo::Ptr &todo, bool &allPurged)
 {
     if (!todo) {
         return true;
@@ -144,7 +144,7 @@ bool CalendarUtilsPrivate::purgeCompletedSubTodos(const KCalCore::Todo::Ptr &tod
     for (const Akonadi::Item &item : subTodos) {
         if (CalendarSupport::hasTodo(item)) {
             deleteThisTodo
-                &= purgeCompletedSubTodos(item.payload<KCalCore::Todo::Ptr>(), allPurged);
+                &= purgeCompletedSubTodos(item.payload<KCalendarCore::Todo::Ptr>(), allPurged);
         }
     }
 
@@ -240,17 +240,17 @@ void CalendarUtils::purgeCompletedTodos()
     Q_D(CalendarUtils);
     bool allDeleted = true;
 //  startMultiModify( i18n( "Purging completed to-dos" ) );
-    KCalCore::Todo::List todos = calendar()->rawTodos();
-    KCalCore::Todo::List rootTodos;
+    KCalendarCore::Todo::List todos = calendar()->rawTodos();
+    KCalendarCore::Todo::List rootTodos;
 
-    for (const KCalCore::Todo::Ptr &todo : qAsConst(todos)) {
+    for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todos)) {
         if (todo && todo->relatedTo().isEmpty()) {   // top level todo //REVIEW(AKONADI_PORT)
             rootTodos.append(todo);
         }
     }
 
     // now that we have a list of all root todos, check them and their children
-    for (const KCalCore::Todo::Ptr &todo : qAsConst(rootTodos)) {
+    for (const KCalendarCore::Todo::Ptr &todo : qAsConst(rootTodos)) {
         d->purgeCompletedSubTodos(todo, allDeleted);
     }
 

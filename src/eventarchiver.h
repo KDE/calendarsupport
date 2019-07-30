@@ -28,8 +28,8 @@
 
 #include <Item>
 #include <Akonadi/Calendar/ETMCalendar>
-#include <KCalCore/Event>
-#include <KCalCore/Todo>
+#include <KCalendarCore/Event>
+#include <KCalendarCore/Todo>
 
 #include <QObject>
 
@@ -90,7 +90,7 @@ private:
 
     void archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
                            Akonadi::IncidenceChanger *changer, const QDate &limitDate,
-                           QWidget *widget, const KCalCore::Incidence::List &incidences,
+                           QWidget *widget, const KCalendarCore::Incidence::List &incidences,
                            bool withGUI);
 
     /**
@@ -101,7 +101,7 @@ private:
      * @param checkedUids used internaly to prevent infinit recursion due to invalid calendar files
      */
     bool isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
-                           const KCalCore::Todo::Ptr &todo, const QDate &limitDate,
+                           const KCalendarCore::Todo::Ptr &todo, const QDate &limitDate,
                            QStringList checkedUids = QStringList()) const;
 };
 }

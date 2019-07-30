@@ -222,7 +222,7 @@ void IncidenceViewer::setIncidence(const Akonadi::Item &incidence, const QDate &
 
 void IncidenceViewer::itemChanged(const Akonadi::Item &item)
 {
-    if (!item.hasPayload<KCalCore::Incidence::Ptr>()) {
+    if (!item.hasPayload<KCalendarCore::Incidence::Ptr>()) {
         d->mBrowser->clear();
         return;
     }
