@@ -81,14 +81,14 @@ public:
 class PrintCellItem : public CellItem
 {
 public:
-    PrintCellItem(const KCalCore::Event::Ptr &event, const QDateTime &start, const QDateTime &end)
+    PrintCellItem(const KCalendarCore::Event::Ptr &event, const QDateTime &start, const QDateTime &end)
         : mEvent(event)
         , mStart(start)
         , mEnd(end)
     {
     }
 
-    KCalCore::Event::Ptr event() const
+    KCalendarCore::Event::Ptr event() const
     {
         return mEvent;
     }
@@ -117,7 +117,7 @@ public:
     }
 
 private:
-    KCalCore::Event::Ptr mEvent;
+    KCalendarCore::Event::Ptr mEvent;
     QDateTime mStart, mEnd;
 };
 
@@ -270,7 +270,7 @@ QTime CalPrintPluginBase::dayStart() const
 }
 
 void CalPrintPluginBase::setColorsByIncidenceCategory(QPainter &p,
-                                                      const KCalCore::Incidence::Ptr &incidence)
+                                                      const KCalendarCore::Incidence::Ptr &incidence)
 const
 {
     QColor bgColor = categoryBgColor(incidence);
@@ -299,12 +299,12 @@ QColor CalPrintPluginBase::categoryColor(const QStringList &categories) const
     return bgColor;
 }
 
-QColor CalPrintPluginBase::categoryBgColor(const KCalCore::Incidence::Ptr &incidence) const
+QColor CalPrintPluginBase::categoryBgColor(const KCalendarCore::Incidence::Ptr &incidence) const
 {
     if (incidence) {
         QColor backColor = categoryColor(incidence->categories());
-        if (incidence->type() == KCalCore::Incidence::TypeTodo) {
-            if ((incidence.staticCast<KCalCore::Todo>())->isOverdue()) {
+        if (incidence->type() == KCalendarCore::Incidence::TypeTodo) {
+            if ((incidence.staticCast<KCalendarCore::Todo>())->isOverdue()) {
                 backColor = QColor(255, 100, 100);    //was KOPrefs::instance()->todoOverdueColor();
             }
         }
@@ -320,14 +320,14 @@ QString CalPrintPluginBase::holidayString(const QDate &date) const
     return lst.join(i18nc("@item:intext delimiter for joining holiday names", ","));
 }
 
-KCalCore::Event::Ptr CalPrintPluginBase::holidayEvent(const QDate &date) const
+KCalendarCore::Event::Ptr CalPrintPluginBase::holidayEvent(const QDate &date) const
 {
     QString hstring(holidayString(date));
     if (hstring.isEmpty()) {
-        return KCalCore::Event::Ptr();
+        return KCalendarCore::Event::Ptr();
     }
 
-    KCalCore::Event::Ptr holiday(new KCalCore::Event);
+    KCalendarCore::Event::Ptr holiday(new KCalendarCore::Event);
     holiday->setSummary(hstring);
     holiday->setCategories(i18n("Holiday"));
 
@@ -449,7 +449,7 @@ void CalPrintPluginBase::printEventString(QPainter &p, const QRect &box, const Q
 }
 
 void CalPrintPluginBase::showEventBox(QPainter &p, int linewidth, const QRect &box,
-                                      const KCalCore::Incidence::Ptr &incidence, const QString &str,
+                                      const KCalendarCore::Incidence::Ptr &incidence, const QString &str,
                                       int flags)
 {
     QPen oldpen(p.pen());
@@ -484,7 +484,7 @@ void CalPrintPluginBase::drawVerticalBox(QPainter &p, int linewidth, const QRect
     p.save();
     p.rotate(-90);
     QRect rotatedBox(-box.top() - box.height(), box.left(), box.height(), box.width());
-    showEventBox(p, linewidth, rotatedBox, KCalCore::Incidence::Ptr(), str,
+    showEventBox(p, linewidth, rotatedBox, KCalendarCore::Incidence::Ptr(), str,
                  (flags == -1) ? Qt::AlignLeft | Qt::AlignVCenter | Qt::TextSingleLine : flags);
 
     p.restore();
@@ -814,26 +814,26 @@ void CalPrintPluginBase::drawTimeLine(QPainter &p, const QTime &fromTime, const 
   be the total height used for the all-day events. If !expandable, only one
   cell will be used, and multiple events are concatenated using ", ".
 */
-int CalPrintPluginBase::drawAllDayBox(QPainter &p, const KCalCore::Event::List &eventList_,
+int CalPrintPluginBase::drawAllDayBox(QPainter &p, const KCalendarCore::Event::List &eventList_,
                                       const QDate &qd, bool expandable, const QRect &box,
                                       bool excludeConfidential, bool excludePrivate)
 {
-    KCalCore::Event::List::Iterator it;
+    KCalendarCore::Event::List::Iterator it;
     int offset = box.top();
     QString multiDayStr;
 
-    KCalCore::Event::List eventList = eventList_;
-    KCalCore::Event::Ptr hd = holidayEvent(qd);
+    KCalendarCore::Event::List eventList = eventList_;
+    KCalendarCore::Event::Ptr hd = holidayEvent(qd);
     if (hd) {
         eventList.prepend(hd);
     }
 
     it = eventList.begin();
     while (it != eventList.end()) {
-        KCalCore::Event::Ptr currEvent = *it;
+        KCalendarCore::Event::Ptr currEvent = *it;
         if ((excludeConfidential
-             && currEvent->secrecy() == KCalCore::Incidence::SecrecyConfidential)
-            || (excludePrivate && currEvent->secrecy() == KCalCore::Incidence::SecrecyPrivate)) {
+             && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+            || (excludePrivate && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
         }
         if (currEvent && currEvent->allDay()) {
@@ -872,7 +872,7 @@ int CalPrintPluginBase::drawAllDayBox(QPainter &p, const KCalCore::Event::List &
     return ret;
 }
 
-void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalCore::Event::List &events,
+void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalendarCore::Event::List &events,
                                           const QDate &qd, bool expandable, const QTime &fromTime,
                                           const QTime &toTime, const QRect &oldbox,
                                           bool includeDescription, bool excludeTime,
@@ -902,11 +902,11 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalCore::Event::Li
 
     if (expandable) {
         // Adapt start/end times to include complete events
-        for (const KCalCore::Event::Ptr &event : qAsConst(events)) {
+        for (const KCalendarCore::Event::Ptr &event : qAsConst(events)) {
             Q_ASSERT(event);
             if ((excludeConfidential
-                 && event->secrecy() == KCalCore::Incidence::SecrecyConfidential)
-                || (excludePrivate && event->secrecy() == KCalCore::Incidence::SecrecyPrivate)) {
+                 && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+                || (excludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
                 continue;
             }
             // skip items without times so that we do not adjust for all day items
@@ -960,7 +960,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalCore::Event::Li
 
     QList<CellItem *> cells;
 
-    for (const KCalCore::Event::Ptr &event : qAsConst(events)) {
+    for (const KCalendarCore::Event::Ptr &event : qAsConst(events)) {
         if (event->allDay()) {
             continue;
         }
@@ -991,7 +991,7 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item, QPainter &p,
                                         const QDateTime &endPrintDate, float minlen,
                                         const QRect &box, bool includeDescription, bool excludeTime)
 {
-    KCalCore::Event::Ptr event = item->event();
+    KCalendarCore::Event::Ptr event = item->event();
 
     // start/end of print area for event
     QDateTime startTime = item->start();
@@ -1113,17 +1113,17 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd, const QTime &f
     p.setFont(QFont(QStringLiteral("sans-serif"), 10, QFont::Bold));
     p.drawText(headerTextBox, Qt::AlignRight | Qt::AlignVCenter, dayNumStr);
 
-    const KCalCore::Event::List eventList
+    const KCalendarCore::Event::List eventList
         = mCalendar->events(qd, QTimeZone::systemTimeZone(),
-                            KCalCore::EventSortStartDate,
-                            KCalCore::SortDirectionAscending);
+                            KCalendarCore::EventSortStartDate,
+                            KCalendarCore::SortDirectionAscending);
 
     QString timeText;
     p.setFont(QFont(QStringLiteral("sans-serif"), 7));
 
     int textY = mSubHeaderHeight; // gives the relative y-coord of the next printed entry
     unsigned int visibleEventsCounter = 0;
-    for (const KCalCore::Event::Ptr &currEvent : qAsConst(eventList)) {
+    for (const KCalendarCore::Event::Ptr &currEvent : qAsConst(eventList)) {
         Q_ASSERT(currEvent);
         if (!currEvent->allDay()) {
             if (currEvent->dtEnd().toLocalTime().time() <= myFromTime
@@ -1131,14 +1131,14 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd, const QTime &f
                 continue;
             }
         }
-        if ((!printRecurDaily && currEvent->recurrenceType() == KCalCore::Recurrence::rDaily)
+        if ((!printRecurDaily && currEvent->recurrenceType() == KCalendarCore::Recurrence::rDaily)
             || (!printRecurWeekly
-                && currEvent->recurrenceType() == KCalCore::Recurrence::rWeekly)) {
+                && currEvent->recurrenceType() == KCalendarCore::Recurrence::rWeekly)) {
             continue;
         }
         if ((excludeConfidential
-             && currEvent->secrecy() == KCalCore::Incidence::SecrecyConfidential)
-            || (excludePrivate && currEvent->secrecy() == KCalCore::Incidence::SecrecyPrivate)) {
+             && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+            || (excludePrivate && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
         }
         if (currEvent->allDay() || currEvent->isMultiDay()) {
@@ -1186,20 +1186,20 @@ void CalPrintPluginBase::drawDayBox(QPainter &p, const QDate &qd, const QTime &f
     }
 
     if (textY < box.height()) {
-        KCalCore::Todo::List todos = mCalendar->todos(qd);
-        for (const KCalCore::Todo::Ptr &todo : qAsConst(todos)) {
+        KCalendarCore::Todo::List todos = mCalendar->todos(qd);
+        for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todos)) {
             if (!todo->allDay()) {
                 if ((todo->hasDueDate() && todo->dtDue().toLocalTime().time() <= myFromTime)
                     || (todo->hasStartDate() && todo->dtStart().toLocalTime().time() > myToTime)) {
                     continue;
                 }
             }
-            if ((!printRecurDaily && todo->recurrenceType() == KCalCore::Recurrence::rDaily)
-                || (!printRecurWeekly && todo->recurrenceType() == KCalCore::Recurrence::rWeekly)) {
+            if ((!printRecurDaily && todo->recurrenceType() == KCalendarCore::Recurrence::rDaily)
+                || (!printRecurWeekly && todo->recurrenceType() == KCalendarCore::Recurrence::rWeekly)) {
                 continue;
             }
-            if ((excludeConfidential && todo->secrecy() == KCalCore::Incidence::SecrecyConfidential)
-                || (excludePrivate && todo->secrecy() == KCalCore::Incidence::SecrecyPrivate)) {
+            if ((excludeConfidential && todo->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+                || (excludePrivate && todo->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
                 continue;
             }
             if (todo->hasStartDate() && !todo->allDay()) {
@@ -1443,9 +1443,9 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p, const QDate &fromDate, const
     if (expandable) {
         QDate curDate(fromDate);
         while (curDate <= toDate) {
-            KCalCore::Event::List eventList
+            KCalendarCore::Event::List eventList
                 = mCalendar->events(curDate, QTimeZone::systemTimeZone());
-            for (const KCalCore::Event::Ptr &event : qAsConst(eventList)) {
+            for (const KCalendarCore::Event::Ptr &event : qAsConst(eventList)) {
                 Q_ASSERT(event);
                 if (event->allDay()) {
                     continue;
@@ -1486,9 +1486,9 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p, const QDate &fromDate, const
         QRect dayBox(allDayBox);
         dayBox.setTop(tlBox.top());
         dayBox.setBottom(box.bottom());
-        KCalCore::Event::List eventList = mCalendar->events(curDate, QTimeZone::systemTimeZone(),
-                                                            KCalCore::EventSortStartDate,
-                                                            KCalCore::SortDirectionAscending);
+        KCalendarCore::Event::List eventList = mCalendar->events(curDate, QTimeZone::systemTimeZone(),
+                                                            KCalendarCore::EventSortStartDate,
+                                                            KCalendarCore::SortDirectionAscending);
 
         alldayHeight = drawAllDayBox(p, eventList, curDate, false, allDayBox,
                                      excludeConfidential, excludePrivate);
@@ -1508,7 +1508,7 @@ public:
     {
     }
 
-    MonthEventStruct(const QDateTime &s, const QDateTime &e, const KCalCore::Event::Ptr &ev)
+    MonthEventStruct(const QDateTime &s, const QDateTime &e, const KCalendarCore::Event::Ptr &ev)
     {
         event = ev;
         start = s;
@@ -1526,7 +1526,7 @@ public:
 
     QDateTime start;
     QDateTime end;
-    KCalCore::Event::Ptr event;
+    KCalendarCore::Event::Ptr event;
 };
 
 void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt, const QRect &box, int maxdays,
@@ -1598,7 +1598,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt, const QRect &bo
     QDate end = start.addMonths(1);
     end = end.addDays(-1);
 
-    const KCalCore::Event::List events = mCalendar->events(start, end);
+    const KCalendarCore::Event::List events = mCalendar->events(start, end);
     QMap<int, QStringList> textEvents;
     QList<CellItem *> timeboxItems;
 
@@ -1609,9 +1609,9 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt, const QRect &bo
     // 3) Draw some kind of timeline showing free and busy times
 
     // Holidays
-    QList<KCalCore::Event::Ptr> holidays;
+    QList<KCalendarCore::Event::Ptr> holidays;
     for (QDate d(start); d <= end; d = d.addDays(1)) {
-        KCalCore::Event::Ptr e = holidayEvent(d);
+        KCalendarCore::Event::Ptr e = holidayEvent(d);
         if (e) {
             holidays.append(e);
             if (holidaysFlags & TimeBoxes) {
@@ -1626,12 +1626,12 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt, const QRect &bo
 
     QList<MonthEventStruct> monthentries;
 
-    for (const KCalCore::Event::Ptr &e : qAsConst(events)) {
+    for (const KCalendarCore::Event::Ptr &e : qAsConst(events)) {
         if (!e) {
             continue;
         }
-        if ((excludeConfidential && e->secrecy() == KCalCore::Incidence::SecrecyConfidential)
-            || (excludePrivate && e->secrecy() == KCalCore::Incidence::SecrecyPrivate)) {
+        if ((excludeConfidential && e->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+            || (excludePrivate && e->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
         }
         if (e->recurs()) {
@@ -1649,12 +1649,12 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt, const QRect &bo
             // begins on that day (don't use Event::recursOn, as that will
             // also return events that have started earlier. These start dates
             // however, have already been treated!
-            KCalCore::Recurrence *recur = e->recurrence();
+            KCalendarCore::Recurrence *recur = e->recurrence();
             QDate d1(start.addDays(1));
             while (d1 <= end) {
                 if (recur->recursOn(d1, QTimeZone::systemTimeZone())) {
-                    KCalCore::TimeList times(recur->recurTimesOn(d1, QTimeZone::systemTimeZone()));
-                    for (KCalCore::TimeList::ConstIterator it = times.constBegin();
+                    KCalendarCore::TimeList times(recur->recurTimesOn(d1, QTimeZone::systemTimeZone()));
+                    for (KCalendarCore::TimeList::ConstIterator it = times.constBegin();
                          it != times.constEnd(); ++it) {
                         QDateTime d1start(d1, *it, Qt::LocalTime);
                         monthentries.append(
@@ -1864,13 +1864,13 @@ void CalPrintPluginBase::drawTodoLines(QPainter &p, const QString &entry, int x,
     }
 }
 
-void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, QPainter &p,
-                                  KCalCore::TodoSortField sortField,
-                                  KCalCore::SortDirection sortDir, bool connectSubTodos,
+void CalPrintPluginBase::drawTodo(int &count, const KCalendarCore::Todo::Ptr &todo, QPainter &p,
+                                  KCalendarCore::TodoSortField sortField,
+                                  KCalendarCore::SortDirection sortDir, bool connectSubTodos,
                                   bool strikeoutCompleted, bool desc, int posPriority,
                                   int posSummary, int posDueDt, int posPercentComplete, int level,
                                   int x, int &y, int width, int pageHeight,
-                                  const KCalCore::Todo::List &todoList, TodoParentStart *r,
+                                  const KCalendarCore::Todo::List &todoList, TodoParentStart *r,
                                   bool excludeConfidential, bool excludePrivate)
 {
     QString outStr;
@@ -1989,15 +1989,15 @@ void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, Q
     y += 10;
 
     // Make a list of all the sub-to-dos related to this to-do.
-    KCalCore::Todo::List t;
-    const KCalCore::Incidence::List relations = mCalendar->childIncidences(todo->uid());
+    KCalendarCore::Todo::List t;
+    const KCalendarCore::Incidence::List relations = mCalendar->childIncidences(todo->uid());
 
-    for (const KCalCore::Incidence::Ptr &incidence : relations) {
+    for (const KCalendarCore::Incidence::Ptr &incidence : relations) {
         // In the future, to-dos might also be related to events
         // Manually check if the sub-to-do is in the list of to-dos to print
         // The problem is that relations() does not apply filters, so
         // we need to compare manually with the complete filtered list!
-        KCalCore::Todo::Ptr subtodo = incidence.dynamicCast<KCalCore::Todo>();
+        KCalendarCore::Todo::Ptr subtodo = incidence.dynamicCast<KCalendarCore::Todo>();
         if (!subtodo) {
             continue;
         }
@@ -2006,7 +2006,7 @@ void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, Q
 #else
         bool subtodoOk = false;
         if (subtodo) {
-            for (const KCalCore::Todo::Ptr &tt : qAsConst(todoList)) {
+            for (const KCalendarCore::Todo::Ptr &tt : qAsConst(todoList)) {
                 if (tt == subtodo) {
                     subtodoOk = true;
                     break;
@@ -2016,9 +2016,9 @@ void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, Q
         if (subtodoOk) {
 #endif
             if ((excludeConfidential
-                 && subtodo->secrecy() == KCalCore::Incidence::SecrecyConfidential)
+                 && subtodo->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
                 || (excludePrivate
-                    && subtodo->secrecy() == KCalCore::Incidence::SecrecyPrivate)) {
+                    && subtodo->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
                 continue;
             }
             t.append(subtodo);
@@ -2042,18 +2042,18 @@ void CalPrintPluginBase::drawTodo(int &count, const KCalCore::Todo::Ptr &todo, Q
 
     // Sort the sub-to-dos and print them
 #ifdef AKONADI_PORT_DISABLED
-    KCalCore::Todo::List sl = mCalendar->sortTodos(&t, sortField, sortDir);
+    KCalendarCore::Todo::List sl = mCalendar->sortTodos(&t, sortField, sortDir);
 #else
-    KCalCore::Todo::List tl;
+    KCalendarCore::Todo::List tl;
     tl.reserve(t.count());
-    for (const KCalCore::Todo::Ptr &todo : qAsConst(t)) {
+    for (const KCalendarCore::Todo::Ptr &todo : qAsConst(t)) {
         tl.append(todo);
     }
-    KCalCore::Todo::List sl = mCalendar->sortTodos(tl, sortField, sortDir);
+    KCalendarCore::Todo::List sl = mCalendar->sortTodos(tl, sortField, sortDir);
 #endif
 
     int subcount = 0;
-    for (const KCalCore::Todo::Ptr &isl : qAsConst(sl)) {
+    for (const KCalendarCore::Todo::Ptr &isl : qAsConst(sl)) {
         count++;
         if (++subcount == sl.size()) {
             startpt.mHasLine = false;
@@ -2099,7 +2099,7 @@ void CalPrintPluginBase::drawTextLines(QPainter &p, const QString &entry, int x,
     }
 }
 
-void CalPrintPluginBase::drawJournal(const KCalCore::Journal::Ptr &journal, QPainter &p, int x,
+void CalPrintPluginBase::drawJournal(const KCalendarCore::Journal::Ptr &journal, QPainter &p, int x,
                                      int &y, int width, int pageHeight)
 {
     QFont oldFont(p.font());

@@ -30,9 +30,9 @@
 
 #include <Akonadi/Calendar/ETMCalendar>
 
-#include <KCalCore/Event>
-#include <KCalCore/Journal>
-#include <KCalCore/Todo>
+#include <KCalendarCore/Event>
+#include <KCalendarCore/Journal>
+#include <KCalendarCore/Todo>
 
 #include <QDateTime>
 #include <QPainter>
@@ -191,7 +191,7 @@ public:
       @param flags is a bitwise OR of Qt::AlignmentFlags and Qt::TextFlags values.
     */
     void showEventBox(QPainter &p, int linewidth, const QRect &box,
-                      const KCalCore::Incidence::Ptr &incidence, const QString &str,
+                      const KCalendarCore::Incidence::Ptr &incidence, const QString &str,
                       int flags = -1);
 
     /**
@@ -339,7 +339,7 @@ public:
       @param excludePrivate Whether to exclude Incidence marked private.
       @return The height used for the all-day box.
     */
-    int drawAllDayBox(QPainter &p, const KCalCore::Event::List &eventList, const QDate &qd,
+    int drawAllDayBox(QPainter &p, const KCalendarCore::Event::List &eventList, const QDate &qd,
                       bool expandable, const QRect &box, bool excludeConfidential,
                       bool excludePrivate);
     /**
@@ -368,7 +368,7 @@ public:
       @param excludePrivate Whether to exclude Incidence marked private.
       @param workDays List of workDays
     */
-    void drawAgendaDayBox(QPainter &p, const KCalCore::Event::List &eventList, const QDate &qd,
+    void drawAgendaDayBox(QPainter &p, const KCalendarCore::Event::List &eventList, const QDate &qd,
                           bool expandable, const QTime &fromTime, const QTime &toTime,
                           const QRect &box, bool includeDescription, bool excludeTime,
                           bool excludeConfidential, bool excludePrivate,
@@ -549,11 +549,11 @@ public:
       @param r Internal (used when printing sub-to-dos to give information
       about its parent)
     */
-    void drawTodo(int &count, const KCalCore::Todo::Ptr &todo, QPainter &p,
-                  KCalCore::TodoSortField sortField, KCalCore::SortDirection sortDir,
+    void drawTodo(int &count, const KCalendarCore::Todo::Ptr &todo, QPainter &p,
+                  KCalendarCore::TodoSortField sortField, KCalendarCore::SortDirection sortDir,
                   bool connectSubTodos, bool strikeoutCompleted, bool desc, int posPriority,
                   int posSummary, int posDueDt, int posPercentComplete, int level, int x, int &y,
-                  int width, int pageHeight, const KCalCore::Todo::List &todoList,
+                  int width, int pageHeight, const KCalendarCore::Todo::List &todoList,
                   TodoParentStart *r, bool excludeConfidential, bool excludePrivate);
 
     /**
@@ -566,7 +566,7 @@ public:
       @param pageHeight Total height allowed for the list on a page. If an item
                    would be below that line, a new page is started.
     */
-    void drawJournal(const KCalCore::Journal::Ptr &journal, QPainter &p, int x, int &y, int width,
+    void drawJournal(const KCalendarCore::Journal::Ptr &journal, QPainter &p, int x, int &y, int width,
                      int pageHeight);
     /**
       Draws text lines splitting on page boundaries.
@@ -593,7 +593,7 @@ public:
 
 protected:
     QTime dayStart() const;
-    QColor categoryBgColor(const KCalCore::Incidence::Ptr &incidence) const;
+    QColor categoryBgColor(const KCalendarCore::Incidence::Ptr &incidence) const;
 
     void drawIncidence(QPainter &p, const QRect &dayBox, const QString &time,
                        const QString &summary, const QString &description, int &textY,
@@ -620,11 +620,11 @@ private:
     /**
      * Sets the QPainter's brush and pen color according to the Incidence's category.
      */
-    void setColorsByIncidenceCategory(QPainter &p, const KCalCore::Incidence::Ptr &incidence) const;
+    void setColorsByIncidenceCategory(QPainter &p, const KCalendarCore::Incidence::Ptr &incidence) const;
 
     QString holidayString(const QDate &date) const;
 
-    KCalCore::Event::Ptr holidayEvent(const QDate &date) const;
+    KCalendarCore::Event::Ptr holidayEvent(const QDate &date) const;
 
     /**
      * Returns a nice QColor for text, give the input color &c.

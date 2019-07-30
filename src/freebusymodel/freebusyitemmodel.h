@@ -64,11 +64,11 @@ public:
     void addItem(const FreeBusyItem::Ptr &freebusy);
 
     void clear();
-    void removeAttendee(const KCalCore::Attendee &attendee);
+    void removeAttendee(const KCalendarCore::Attendee &attendee);
     void removeItem(const FreeBusyItem::Ptr &freebusy);
     void removeRow(int row);
 
-    Q_REQUIRED_RESULT bool containsAttendee(const KCalCore::Attendee &attendee);
+    Q_REQUIRED_RESULT bool containsAttendee(const KCalendarCore::Attendee &attendee);
 
     /**
      * Queues a reload of free/busy data.
@@ -88,7 +88,7 @@ public:
     void reload();
 
 public Q_SLOTS:
-    void slotInsertFreeBusy(const KCalCore::FreeBusy::Ptr &fb, const QString &email);
+    void slotInsertFreeBusy(const KCalendarCore::FreeBusy::Ptr &fb, const QString &email);
 
 protected:
     void timerEvent(QTimerEvent *) override;
@@ -97,7 +97,7 @@ private:
     // Only download FB if the auto-download option is set in config
     void autoReload();
 
-    void setFreeBusyPeriods(const QModelIndex &parent, const KCalCore::FreeBusyPeriod::List &list);
+    void setFreeBusyPeriods(const QModelIndex &parent, const KCalendarCore::FreeBusyPeriod::List &list);
     void updateFreeBusyData(const FreeBusyItem::Ptr &);
 
     FreeBusyItemModelPrivate *const d;

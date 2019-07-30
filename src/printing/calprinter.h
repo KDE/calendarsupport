@@ -81,7 +81,7 @@ private Q_SLOTS:
 
 public:
     void print(int type, const QDate &fd, const QDate &td,
-               const KCalCore::Incidence::List &selectedIncidences = KCalCore::Incidence::List(), bool preview = false);
+               const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(), bool preview = false);
     Akonadi::ETMCalendar::Ptr calendar() const;
     KConfig *config() const;
 

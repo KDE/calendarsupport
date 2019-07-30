@@ -29,9 +29,9 @@
 
 #include <Akonadi/Calendar/IncidenceChanger>
 
-#include <KCalCore/ICalFormat>
-#include <KCalCore/FileStorage>
-#include <KCalCore/MemoryCalendar>
+#include <KCalendarCore/ICalFormat>
+#include <KCalendarCore/FileStorage>
+#include <KCalendarCore/MemoryCalendar>
 
 #include <KCalUtils/Stringify>
 
@@ -46,7 +46,7 @@
 #include <QTemporaryFile>
 #include <QTimeZone>
 
-using namespace KCalCore;
+using namespace KCalendarCore;
 using namespace KCalUtils;
 using namespace CalendarSupport;
 
@@ -112,9 +112,9 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
     GroupwareScoppedDisabler disabler(changer); // Disables groupware communication temporarily
 
     // We need to use rawEvents, otherwise events hidden by filters will not be archived.
-    KCalCore::Event::List events;
-    KCalCore::Todo::List todos;
-    KCalCore::Journal::List journals;
+    KCalendarCore::Event::List events;
+    KCalendarCore::Todo::List todos;
+    KCalendarCore::Journal::List journals;
 
     if (KCalPrefs::instance()->mArchiveEvents) {
         events = calendar->rawEvents(
@@ -125,9 +125,9 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
             true);
     }
     if (KCalPrefs::instance()->mArchiveTodos) {
-        const KCalCore::Todo::List rawTodos = calendar->rawTodos();
+        const KCalendarCore::Todo::List rawTodos = calendar->rawTodos();
 
-        for (const KCalCore::Todo::Ptr &todo : rawTodos) {
+        for (const KCalendarCore::Todo::Ptr &todo : rawTodos) {
             Q_ASSERT(todo);
             if (isSubTreeComplete(calendar, todo, limitDate)) {
                 todos.append(todo);
@@ -135,7 +135,7 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
         }
     }
 
-    const KCalCore::Incidence::List incidences = calendar->mergeIncidenceList(events, todos,
+    const KCalendarCore::Incidence::List incidences = calendar->mergeIncidenceList(events, todos,
                                                                               journals);
 
     qCDebug(CALENDARSUPPORT_LOG) << "archiving incidences before" << limitDate
@@ -194,7 +194,7 @@ void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer, const Q
 
 void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
                                       Akonadi::IncidenceChanger *changer, const QDate &limitDate,
-                                      QWidget *widget, const KCalCore::Incidence::List &incidences,
+                                      QWidget *widget, const KCalendarCore::Incidence::List &incidences,
                                       bool withGUI)
 {
     Q_UNUSED(limitDate);
@@ -237,10 +237,10 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     QStringList uids;
     Incidence::List allIncidences = archiveCalendar->rawIncidences();
     uids.reserve(incidences.count());
-    for (const KCalCore::Incidence::Ptr &incidence : qAsConst(incidences)) {
+    for (const KCalendarCore::Incidence::Ptr &incidence : qAsConst(incidences)) {
         uids.append(incidence->uid());
     }
-    for (const KCalCore::Incidence::Ptr &incidence : qAsConst(allIncidences)) {
+    for (const KCalendarCore::Incidence::Ptr &incidence : qAsConst(allIncidences)) {
         if (!uids.contains(incidence->uid())) {
             archiveCalendar->deleteIncidence(incidence);
         }
@@ -337,9 +337,9 @@ bool EventArchiver::isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
     }
 
     checkedUids.append(todo->uid());
-    const KCalCore::Incidence::List childs = calendar->childIncidences(todo->uid());
-    for (const KCalCore::Incidence::Ptr &incidence : childs) {
-        const Todo::Ptr t = incidence.dynamicCast<KCalCore::Todo>();
+    const KCalendarCore::Incidence::List childs = calendar->childIncidences(todo->uid());
+    for (const KCalendarCore::Incidence::Ptr &incidence : childs) {
+        const Todo::Ptr t = incidence.dynamicCast<KCalendarCore::Todo>();
         if (t && !isSubTreeComplete(calendar, t, limitDate, checkedUids)) {
             return false;
         }

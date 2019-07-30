@@ -40,15 +40,15 @@
 
 #include <KHolidays/HolidayRegion>
 
-#include <KCalCore/CalFilter>
-#include <KCalCore/Event>
-#include <KCalCore/FreeBusy>
-#include <KCalCore/Incidence>
-#include <KCalCore/Journal>
-#include <KCalCore/MemoryCalendar>
-#include <KCalCore/Todo>
-#include <KCalCore/ICalFormat>
-#include <KCalCore/FileStorage>
+#include <KCalendarCore/CalFilter>
+#include <KCalendarCore/Event>
+#include <KCalendarCore/FreeBusy>
+#include <KCalendarCore/Incidence>
+#include <KCalendarCore/Journal>
+#include <KCalendarCore/MemoryCalendar>
+#include <KCalendarCore/Todo>
+#include <KCalendarCore/ICalFormat>
+#include <KCalendarCore/FileStorage>
 
 #include <KCalUtils/DndFactory>
 #include <KCalUtils/ICalDrag>
@@ -74,126 +74,126 @@
 
 using namespace CalendarSupport;
 using namespace KHolidays;
-using namespace KCalCore;
+using namespace KCalendarCore;
 
-KCalCore::Incidence::Ptr CalendarSupport::incidence(const Akonadi::Item &item)
+KCalendarCore::Incidence::Ptr CalendarSupport::incidence(const Akonadi::Item &item)
 {
     //relying on exception for performance reasons
     try {
-        return item.payload<KCalCore::Incidence::Ptr>();
+        return item.payload<KCalendarCore::Incidence::Ptr>();
     } catch (const Akonadi::PayloadException &) {
-        return KCalCore::Incidence::Ptr();
+        return KCalendarCore::Incidence::Ptr();
     }
 }
 
-KCalCore::Event::Ptr CalendarSupport::event(const Akonadi::Item &item)
+KCalendarCore::Event::Ptr CalendarSupport::event(const Akonadi::Item &item)
 {
     //relying on exception for performance reasons
     try {
-        KCalCore::Incidence::Ptr incidence = item.payload<KCalCore::Incidence::Ptr>();
+        KCalendarCore::Incidence::Ptr incidence = item.payload<KCalendarCore::Incidence::Ptr>();
         if (hasEvent(incidence)) {
-            return item.payload<KCalCore::Event::Ptr>();
+            return item.payload<KCalendarCore::Event::Ptr>();
         }
     } catch (const Akonadi::PayloadException &) {
-        return KCalCore::Event::Ptr();
+        return KCalendarCore::Event::Ptr();
     }
-    return KCalCore::Event::Ptr();
+    return KCalendarCore::Event::Ptr();
 }
 
-KCalCore::Event::Ptr CalendarSupport::event(const KCalCore::Incidence::Ptr &incidence)
+KCalendarCore::Event::Ptr CalendarSupport::event(const KCalendarCore::Incidence::Ptr &incidence)
 {
     if (hasEvent(incidence)) {
-        return incidence.staticCast<KCalCore::Event>();
+        return incidence.staticCast<KCalendarCore::Event>();
     }
-    return KCalCore::Event::Ptr();
+    return KCalendarCore::Event::Ptr();
 }
 
-KCalCore::Incidence::List CalendarSupport::incidencesFromItems(const Akonadi::Item::List &items)
+KCalendarCore::Incidence::List CalendarSupport::incidencesFromItems(const Akonadi::Item::List &items)
 {
-    KCalCore::Incidence::List incidences;
+    KCalendarCore::Incidence::List incidences;
     for (const Akonadi::Item &item : items) {
-        if (const KCalCore::Incidence::Ptr e = CalendarSupport::incidence(item)) {
+        if (const KCalendarCore::Incidence::Ptr e = CalendarSupport::incidence(item)) {
             incidences.push_back(e);
         }
     }
     return incidences;
 }
 
-KCalCore::Todo::Ptr CalendarSupport::todo(const Akonadi::Item &item)
+KCalendarCore::Todo::Ptr CalendarSupport::todo(const Akonadi::Item &item)
 {
     try {
-        KCalCore::Incidence::Ptr incidence = item.payload<KCalCore::Incidence::Ptr>();
+        KCalendarCore::Incidence::Ptr incidence = item.payload<KCalendarCore::Incidence::Ptr>();
         if (hasTodo(incidence)) {
-            return item.payload<KCalCore::Todo::Ptr>();
+            return item.payload<KCalendarCore::Todo::Ptr>();
         }
     } catch (const Akonadi::PayloadException &) {
-        return KCalCore::Todo::Ptr();
+        return KCalendarCore::Todo::Ptr();
     }
-    return KCalCore::Todo::Ptr();
+    return KCalendarCore::Todo::Ptr();
 }
 
-KCalCore::Todo::Ptr CalendarSupport::todo(const KCalCore::Incidence::Ptr &incidence)
+KCalendarCore::Todo::Ptr CalendarSupport::todo(const KCalendarCore::Incidence::Ptr &incidence)
 {
     if (hasTodo(incidence)) {
-        return incidence.staticCast<KCalCore::Todo>();
+        return incidence.staticCast<KCalendarCore::Todo>();
     }
-    return KCalCore::Todo::Ptr();
+    return KCalendarCore::Todo::Ptr();
 }
 
-KCalCore::Journal::Ptr CalendarSupport::journal(const Akonadi::Item &item)
+KCalendarCore::Journal::Ptr CalendarSupport::journal(const Akonadi::Item &item)
 {
     try {
-        KCalCore::Incidence::Ptr incidence = item.payload<KCalCore::Incidence::Ptr>();
+        KCalendarCore::Incidence::Ptr incidence = item.payload<KCalendarCore::Incidence::Ptr>();
         if (hasJournal(incidence)) {
-            return item.payload<KCalCore::Journal::Ptr>();
+            return item.payload<KCalendarCore::Journal::Ptr>();
         }
     } catch (const Akonadi::PayloadException &) {
-        return KCalCore::Journal::Ptr();
+        return KCalendarCore::Journal::Ptr();
     }
-    return KCalCore::Journal::Ptr();
+    return KCalendarCore::Journal::Ptr();
 }
 
-KCalCore::Journal::Ptr CalendarSupport::journal(const KCalCore::Incidence::Ptr &incidence)
+KCalendarCore::Journal::Ptr CalendarSupport::journal(const KCalendarCore::Incidence::Ptr &incidence)
 {
     if (hasJournal(incidence)) {
-        return incidence.staticCast<KCalCore::Journal>();
+        return incidence.staticCast<KCalendarCore::Journal>();
     }
-    return KCalCore::Journal::Ptr();
+    return KCalendarCore::Journal::Ptr();
 }
 
 bool CalendarSupport::hasIncidence(const Akonadi::Item &item)
 {
-    return item.hasPayload<KCalCore::Incidence::Ptr>();
+    return item.hasPayload<KCalendarCore::Incidence::Ptr>();
 }
 
 bool CalendarSupport::hasEvent(const Akonadi::Item &item)
 {
-    return item.hasPayload<KCalCore::Event::Ptr>();
+    return item.hasPayload<KCalendarCore::Event::Ptr>();
 }
 
-bool CalendarSupport::hasEvent(const KCalCore::Incidence::Ptr &incidence)
+bool CalendarSupport::hasEvent(const KCalendarCore::Incidence::Ptr &incidence)
 {
-    return incidence && incidence->type() == KCalCore::Incidence::TypeEvent;
+    return incidence && incidence->type() == KCalendarCore::Incidence::TypeEvent;
 }
 
 bool CalendarSupport::hasTodo(const Akonadi::Item &item)
 {
-    return item.hasPayload<KCalCore::Todo::Ptr>();
+    return item.hasPayload<KCalendarCore::Todo::Ptr>();
 }
 
-bool CalendarSupport::hasTodo(const KCalCore::Incidence::Ptr &incidence)
+bool CalendarSupport::hasTodo(const KCalendarCore::Incidence::Ptr &incidence)
 {
-    return incidence && incidence->type() == KCalCore::Incidence::TypeTodo;
+    return incidence && incidence->type() == KCalendarCore::Incidence::TypeTodo;
 }
 
 bool CalendarSupport::hasJournal(const Akonadi::Item &item)
 {
-    return item.hasPayload<KCalCore::Journal::Ptr>();
+    return item.hasPayload<KCalendarCore::Journal::Ptr>();
 }
 
-bool CalendarSupport::hasJournal(const KCalCore::Incidence::Ptr &incidence)
+bool CalendarSupport::hasJournal(const KCalendarCore::Incidence::Ptr &incidence)
 {
-    return incidence && incidence->type() == KCalCore::Incidence::TypeJournal;
+    return incidence && incidence->type() == KCalendarCore::Incidence::TypeJournal;
 }
 
 QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items)
@@ -202,18 +202,18 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items)
         return nullptr;
     }
 
-    KCalCore::MemoryCalendar::Ptr cal(new KCalCore::MemoryCalendar(QTimeZone::systemTimeZone()));
+    KCalendarCore::MemoryCalendar::Ptr cal(new KCalendarCore::MemoryCalendar(QTimeZone::systemTimeZone()));
 
     QList<QUrl> urls;
     int incidencesFound = 0;
     for (const Akonadi::Item &item : items) {
-        const KCalCore::Incidence::Ptr incidence(CalendarSupport::incidence(item));
+        const KCalendarCore::Incidence::Ptr incidence(CalendarSupport::incidence(item));
         if (!incidence) {
             continue;
         }
         ++incidencesFound;
         urls.push_back(item.url());
-        KCalCore::Incidence::Ptr i(incidence->clone());
+        KCalendarCore::Incidence::Ptr i(incidence->clone());
         cal->addIncidence(i);
     }
 
@@ -281,10 +281,10 @@ QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QWidget *pa
 
 #endif
 
-static bool itemMatches(const Akonadi::Item &item, const KCalCore::CalFilter *filter)
+static bool itemMatches(const Akonadi::Item &item, const KCalendarCore::CalFilter *filter)
 {
     assert(filter);
-    KCalCore::Incidence::Ptr inc = CalendarSupport::incidence(item);
+    KCalendarCore::Incidence::Ptr inc = CalendarSupport::incidence(item);
     if (!inc) {
         return false;
     }
@@ -292,7 +292,7 @@ static bool itemMatches(const Akonadi::Item &item, const KCalCore::CalFilter *fi
 }
 
 Akonadi::Item::List CalendarSupport::applyCalFilter(const Akonadi::Item::List &items_,
-                                                    const KCalCore::CalFilter *filter)
+                                                    const KCalendarCore::CalFilter *filter)
 {
     Q_ASSERT(filter);
     Akonadi::Item::List items(items_);
@@ -319,10 +319,10 @@ bool CalendarSupport::isValidIncidenceItemUrl(const QUrl &url,
 bool CalendarSupport::isValidIncidenceItemUrl(const QUrl &url)
 {
     return isValidIncidenceItemUrl(url,
-                                   QStringList() << KCalCore::Event::eventMimeType()
-                                                 << KCalCore::Todo::todoMimeType()
-                                                 << KCalCore::Journal::journalMimeType()
-                                                 << KCalCore::FreeBusy::freeBusyMimeType());
+                                   QStringList() << KCalendarCore::Event::eventMimeType()
+                                                 << KCalendarCore::Todo::todoMimeType()
+                                                 << KCalendarCore::Journal::journalMimeType()
+                                                 << KCalendarCore::FreeBusy::freeBusyMimeType());
 }
 
 static bool containsValidIncidenceItemUrl(const QList<QUrl> &urls)
@@ -363,7 +363,7 @@ QList<QUrl> CalendarSupport::todoItemUrls(const QMimeData *mimeData)
 
     const QList<QUrl> urlList = mimeData->urls();
     for (const QUrl &i : urlList) {
-        if (isValidIncidenceItemUrl(i, QStringList() << KCalCore::Todo::todoMimeType())) {
+        if (isValidIncidenceItemUrl(i, QStringList() << KCalendarCore::Todo::todoMimeType())) {
             urls.push_back(i);
         }
     }
@@ -376,17 +376,17 @@ bool CalendarSupport::mimeDataHasIncidence(const QMimeData *mimeData)
            || !incidences(mimeData).isEmpty();
 }
 
-KCalCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData)
+KCalendarCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData)
 {
-    KCalCore::Todo::List todos;
+    KCalendarCore::Todo::List todos;
 
 #ifndef QT_NO_DRAGANDDROP
-    KCalCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
+    KCalendarCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
     if (cal) {
-        const KCalCore::Todo::List calTodos = cal->todos();
+        const KCalendarCore::Todo::List calTodos = cal->todos();
         todos.reserve(calTodos.count());
-        for (const KCalCore::Todo::Ptr &i : calTodos) {
-            todos.push_back(KCalCore::Todo::Ptr(i->clone()));
+        for (const KCalendarCore::Todo::Ptr &i : calTodos) {
+            todos.push_back(KCalendarCore::Todo::Ptr(i->clone()));
         }
     }
 #endif
@@ -394,17 +394,17 @@ KCalCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData)
     return todos;
 }
 
-KCalCore::Incidence::List CalendarSupport::incidences(const QMimeData *mimeData)
+KCalendarCore::Incidence::List CalendarSupport::incidences(const QMimeData *mimeData)
 {
-    KCalCore::Incidence::List incidences;
+    KCalendarCore::Incidence::List incidences;
 
 #ifndef QT_NO_DRAGANDDROP
-    KCalCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
+    KCalendarCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
     if (cal) {
-        const KCalCore::Incidence::List calIncidences = cal->incidences();
+        const KCalendarCore::Incidence::List calIncidences = cal->incidences();
         incidences.reserve(calIncidences.count());
-        for (const KCalCore::Incidence::Ptr &i : calIncidences) {
-            incidences.push_back(KCalCore::Incidence::Ptr(i->clone()));
+        for (const KCalendarCore::Incidence::Ptr &i : calIncidences) {
+            incidences.push_back(KCalendarCore::Incidence::Ptr(i->clone()));
         }
     }
 #endif
@@ -708,7 +708,7 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     return str;
  }
 
-QString CalendarSupport::subMimeTypeForIncidence(const KCalCore::Incidence::Ptr &incidence)
+QString CalendarSupport::subMimeTypeForIncidence(const KCalendarCore::Incidence::Ptr &incidence)
 {
     return incidence->mimeType();
 }
@@ -790,12 +790,12 @@ QStringList CalendarSupport::holiday(const QDate &date)
     return hdays;
 }
 
-QStringList CalendarSupport::categories(const KCalCore::Incidence::List &incidences)
+QStringList CalendarSupport::categories(const KCalendarCore::Incidence::List &incidences)
 {
     QStringList cats, thisCats;
     // @TODO: For now just iterate over all incidences. In the future,
     // the list of categories should be built when reading the file.
-    for (const KCalCore::Incidence::Ptr &incidence : incidences) {
+    for (const KCalendarCore::Incidence::Ptr &incidence : incidences) {
         thisCats = incidence->categories();
         const QStringList::ConstIterator send(thisCats.constEnd());
         for (QStringList::ConstIterator si = thisCats.constBegin();
@@ -809,7 +809,7 @@ QStringList CalendarSupport::categories(const KCalCore::Incidence::List &inciden
 }
 
 bool CalendarSupport::mergeCalendar(const QString &srcFilename,
-                                    const KCalCore::Calendar::Ptr &destCalendar)
+                                    const KCalendarCore::Calendar::Ptr &destCalendar)
 {
     if (srcFilename.isEmpty()) {
         qCCritical(CALENDARSUPPORT_LOG) << "Empty filename.";
@@ -822,7 +822,7 @@ bool CalendarSupport::mergeCalendar(const QString &srcFilename,
 
     // merge in a file
     destCalendar->startBatchAdding();
-    KCalCore::FileStorage storage(destCalendar);
+    KCalendarCore::FileStorage storage(destCalendar);
     storage.setFileName(srcFilename);
     bool loadedSuccesfully = storage.load();
     destCalendar->endBatchAdding();

@@ -25,7 +25,7 @@
 
 #include "calendarsupport_export.h"
 
-#include <KCalCore/FreeBusy>
+#include <KCalendarCore/FreeBusy>
 
 namespace CalendarSupport {
 /**
@@ -39,14 +39,14 @@ public:
     /**
      * @param parentWidget is passed to Akonadi when fetching free/busy data.
      */
-    FreeBusyItem(const KCalCore::Attendee &attendee, QWidget *parentWidget);
+    FreeBusyItem(const KCalendarCore::Attendee &attendee, QWidget *parentWidget);
     ~FreeBusyItem()
     {
     }
 
-    KCalCore::Attendee attendee() const;
-    void setFreeBusy(const KCalCore::FreeBusy::Ptr &fb);
-    KCalCore::FreeBusy::Ptr freeBusy() const;
+    KCalendarCore::Attendee attendee() const;
+    void setFreeBusy(const KCalendarCore::FreeBusy::Ptr &fb);
+    KCalendarCore::FreeBusy::Ptr freeBusy() const;
 
     Q_REQUIRED_RESULT QString email() const;
     void setUpdateTimerID(int id);
@@ -57,12 +57,12 @@ public:
     Q_REQUIRED_RESULT bool isDownloading() const;
 
 Q_SIGNALS:
-    void attendeeChanged(const KCalCore::Attendee &attendee);
-    void freebusyChanged(const KCalCore::FreeBusy::Ptr fb);
+    void attendeeChanged(const KCalendarCore::Attendee &attendee);
+    void freebusyChanged(const KCalendarCore::FreeBusy::Ptr fb);
 
 private:
-    KCalCore::Attendee mAttendee;
-    KCalCore::FreeBusy::Ptr mFreeBusy;
+    KCalendarCore::Attendee mAttendee;
+    KCalendarCore::FreeBusy::Ptr mFreeBusy;
 
     // This is used for the update timer
     int mTimerID;

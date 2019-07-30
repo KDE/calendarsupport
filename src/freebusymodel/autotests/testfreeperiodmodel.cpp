@@ -22,8 +22,8 @@
 #include "modeltest.h"
 #include "../freeperiodmodel.h"
 
-#include <KCalCore/Period>
-#include <KCalCore/Duration>
+#include <KCalendarCore/Period>
+#include <KCalendarCore/Duration>
 
 #include <QTest>
 
@@ -41,10 +41,10 @@ void FreePeriodModelTest::testModelValidity()
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
 
-    KCalCore::Period::List list;
+    KCalendarCore::Period::List list;
 
-    list << KCalCore::Period(dt1, KCalCore::Duration(60 * 60));
-    list << KCalCore::Period(dt2, KCalCore::Duration(60 * 60));
+    list << KCalendarCore::Period(dt1, KCalendarCore::Duration(60 * 60));
+    list << KCalendarCore::Period(dt2, KCalendarCore::Duration(60 * 60));
 
     QCOMPARE(model->rowCount(), 0);
     model->slotNewFreePeriods(list);
@@ -59,10 +59,10 @@ void FreePeriodModelTest::testSplitByDay()
     const QDateTime startDt(QDate(2010, 7, 24), QTime(8, 0, 0), Qt::UTC);
     const QDateTime endDt(QDate(2010, 7, 25), QTime(8, 0, 0), Qt::UTC);
 
-    KCalCore::Period::List list;
+    KCalendarCore::Period::List list;
 
     // This period goes from 8am on the 24th to 8am on the 25th
-    list << KCalCore::Period(startDt, endDt);
+    list << KCalendarCore::Period(startDt, endDt);
 
     QCOMPARE(model->rowCount(), 0);
 
@@ -75,11 +75,11 @@ void FreePeriodModelTest::testSplitByDay()
     const QDateTime startPeriod2(QDate(2010, 7, 25), QTime(0, 0, 0, 0), Qt::UTC);
 
     QModelIndex index = model->index(0, 0);
-    KCalCore::Period period1
-        = model->data(index, FreePeriodModel::PeriodRole).value<KCalCore::Period>();
+    KCalendarCore::Period period1
+        = model->data(index, FreePeriodModel::PeriodRole).value<KCalendarCore::Period>();
     index = model->index(1, 0);
-    KCalCore::Period period2
-        = model->data(index, FreePeriodModel::PeriodRole).value<KCalCore::Period>();
+    KCalendarCore::Period period2
+        = model->data(index, FreePeriodModel::PeriodRole).value<KCalendarCore::Period>();
 
     QCOMPARE(period1.start(), startDt);
     QCOMPARE(period1.end(), endPeriod1);

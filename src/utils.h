@@ -30,15 +30,15 @@
 #include <Item>
 #include <Akonadi/Calendar/ETMCalendar>
 
-#include <KCalCore/Event>
-#include <KCalCore/Incidence>
-#include <KCalCore/Journal>
-#include <KCalCore/ScheduleMessage>
-#include <KCalCore/Todo>
+#include <KCalendarCore/Event>
+#include <KCalendarCore/Incidence>
+#include <KCalendarCore/Journal>
+#include <KCalendarCore/ScheduleMessage>
+#include <KCalendarCore/Todo>
 
 #include <QModelIndex>
 
-namespace KCalCore {
+namespace KCalendarCore {
 class CalFilter;
 }
 
@@ -57,43 +57,43 @@ class Calendar;
 /**
  * returns the incidence from an akonadi item, or a null pointer if the item has no such payload
  */
-CALENDARSUPPORT_EXPORT KCalCore::Incidence::Ptr incidence(const Akonadi::Item &item);
+CALENDARSUPPORT_EXPORT KCalendarCore::Incidence::Ptr incidence(const Akonadi::Item &item);
 
 /**
  * returns the event from an akonadi item, or a null pointer if the item has no such payload
  */
-CALENDARSUPPORT_EXPORT KCalCore::Event::Ptr event(const Akonadi::Item &item);
+CALENDARSUPPORT_EXPORT KCalendarCore::Event::Ptr event(const Akonadi::Item &item);
 
 /**
  * returns the event from an incidence, or a null pointer if the item has no such payload
  */
-CALENDARSUPPORT_EXPORT KCalCore::Event::Ptr event(const KCalCore::Incidence::Ptr &incidence);
+CALENDARSUPPORT_EXPORT KCalendarCore::Event::Ptr event(const KCalendarCore::Incidence::Ptr &incidence);
 
 /**
  * returns incidence pointers from an akonadi item.
  */
-CALENDARSUPPORT_EXPORT KCalCore::Incidence::List incidencesFromItems(
+CALENDARSUPPORT_EXPORT KCalendarCore::Incidence::List incidencesFromItems(
     const Akonadi::Item::List &items);
 
 /**
  * returns the todo from an akonadi item, or a null pointer if the item has no such payload
  */
-CALENDARSUPPORT_EXPORT KCalCore::Todo::Ptr todo(const Akonadi::Item &item);
+CALENDARSUPPORT_EXPORT KCalendarCore::Todo::Ptr todo(const Akonadi::Item &item);
 
 /**
  * returns the todo from an incidence, or a null pointer if the item has no such payload
  */
-CALENDARSUPPORT_EXPORT KCalCore::Todo::Ptr todo(const KCalCore::Incidence::Ptr &incidence);
+CALENDARSUPPORT_EXPORT KCalendarCore::Todo::Ptr todo(const KCalendarCore::Incidence::Ptr &incidence);
 
 /**
  * returns the journal from an akonadi item, or a null pointer if the item has no such payload
  */
-CALENDARSUPPORT_EXPORT KCalCore::Journal::Ptr journal(const Akonadi::Item &item);
+CALENDARSUPPORT_EXPORT KCalendarCore::Journal::Ptr journal(const Akonadi::Item &item);
 
 /**
  * returns the journal from an incidence, or a null pointer if the item has no such payload
  */
-CALENDARSUPPORT_EXPORT KCalCore::Journal::Ptr journal(const KCalCore::Incidence::Ptr &incidence);
+CALENDARSUPPORT_EXPORT KCalendarCore::Journal::Ptr journal(const KCalendarCore::Incidence::Ptr &incidence);
 
 /**
  * returns whether an Akonadi item contains an incidence
@@ -108,7 +108,7 @@ CALENDARSUPPORT_EXPORT bool hasEvent(const Akonadi::Item &item);
 /**
  * returns whether an incidence contains an event
  */
-CALENDARSUPPORT_EXPORT bool hasEvent(const KCalCore::Incidence::Ptr &incidence);
+CALENDARSUPPORT_EXPORT bool hasEvent(const KCalendarCore::Incidence::Ptr &incidence);
 
 /**
  * returns whether an Akonadi item contains a todo
@@ -118,7 +118,7 @@ CALENDARSUPPORT_EXPORT bool hasTodo(const Akonadi::Item &item);
 /**
  * returns whether an incidence contains a todo
  */
-CALENDARSUPPORT_EXPORT bool hasTodo(const KCalCore::Incidence::Ptr &incidence);
+CALENDARSUPPORT_EXPORT bool hasTodo(const KCalendarCore::Incidence::Ptr &incidence);
 
 /**
  * returns whether an Akonadi item contains a journal
@@ -128,7 +128,7 @@ CALENDARSUPPORT_EXPORT bool hasJournal(const Akonadi::Item &item);
 /**
  * returns whether an incidence contains a journal
  */
-CALENDARSUPPORT_EXPORT bool hasJournal(const KCalCore::Incidence::Ptr &incidence);
+CALENDARSUPPORT_EXPORT bool hasJournal(const KCalendarCore::Incidence::Ptr &incidence);
 
 /**
  * returns @p true if the URL represents an Akonadi item and has one of the given mimetypes.
@@ -152,9 +152,9 @@ CALENDARSUPPORT_EXPORT QList<QUrl> todoItemUrls(const QMimeData *mimeData);
 
 CALENDARSUPPORT_EXPORT bool mimeDataHasIncidence(const QMimeData *mimeData);
 
-CALENDARSUPPORT_EXPORT KCalCore::Todo::List todos(const QMimeData *mimeData);
+CALENDARSUPPORT_EXPORT KCalendarCore::Todo::List todos(const QMimeData *mimeData);
 
-CALENDARSUPPORT_EXPORT KCalCore::Incidence::List incidences(const QMimeData *mimeData);
+CALENDARSUPPORT_EXPORT KCalendarCore::Incidence::List incidences(const QMimeData *mimeData);
 
 /**
 * creates mime data object for dragging an akonadi item containing an incidence
@@ -180,14 +180,14 @@ CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item::List &items, QWidg
 /**
   Applies a filter to a list of items containing incidences.
   Items not containing incidences or not matching the filter are removed.
-  Helper method anologous to KCalCore::CalFilter::apply()
-  @see KCalCore::CalFilter::apply()
+  Helper method anologous to KCalendarCore::CalFilter::apply()
+  @see KCalendarCore::CalFilter::apply()
   @param items the list of items to filter
   @param filter the filter to apply to the list of items
   @return the filtered list of items
 */
 CALENDARSUPPORT_EXPORT Akonadi::Item::List applyCalFilter(const Akonadi::Item::List &items,
-                                                          const KCalCore::CalFilter *filter);
+                                                          const KCalendarCore::CalFilter *filter);
 
 /**
   Shows a modal dialog that allows to select a collection.
@@ -223,7 +223,7 @@ CALENDARSUPPORT_EXPORT QString displayName(Akonadi::ETMCalendar *calendar,
                                            const Akonadi::Collection &coll);
 
 CALENDARSUPPORT_EXPORT QString subMimeTypeForIncidence(
-    const KCalCore::Incidence::Ptr &incidence);
+    const KCalendarCore::Incidence::Ptr &incidence);
 
 /**
  * Returns a list containing work days between @p start and @end.
@@ -247,10 +247,10 @@ CALENDARSUPPORT_EXPORT QString toolTipString(const Akonadi::Collection &coll, bo
  */
 CALENDARSUPPORT_EXPORT QStringList holiday(const QDate &date);
 
-CALENDARSUPPORT_EXPORT QStringList categories(const KCalCore::Incidence::List &incidences);
+CALENDARSUPPORT_EXPORT QStringList categories(const KCalendarCore::Incidence::List &incidences);
 
 CALENDARSUPPORT_EXPORT bool mergeCalendar(const QString &srcFilename,
-                                          const KCalCore::Calendar::Ptr &destCalendar);
+                                          const KCalendarCore::Calendar::Ptr &destCalendar);
 }
 
 #endif

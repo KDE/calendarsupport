@@ -24,7 +24,7 @@
 #include <Attribute>
 #include <Item>
 
-#include <KCalCore/Incidence>
+#include <KCalendarCore/Incidence>
 
 #include <QAbstractListModel>
 
@@ -58,7 +58,7 @@ public:
 
     ~IncidenceAttachmentModel() override;
 
-    KCalCore::Incidence::Ptr incidence() const;
+    KCalendarCore::Incidence::Ptr incidence() const;
 
     void setItem(const Akonadi::Item &item);
     void setIndex(const QPersistentModelIndex &modelIndex);

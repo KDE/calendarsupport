@@ -23,7 +23,7 @@
 
 #include "calendarsupport_export.h"
 
-#include <KCalCore/Period>
+#include <KCalendarCore/Period>
 
 #include <QAbstractTableModel>
 
@@ -45,18 +45,18 @@ public:
                         int role = Qt::DisplayRole) const override;
 
 public Q_SLOTS:
-    void slotNewFreePeriods(const KCalCore::Period::List &freePeriods);
+    void slotNewFreePeriods(const KCalendarCore::Period::List &freePeriods);
 
 private:
     /** Splits period blocks in the provided list, so that each period occurs on one day */
-    KCalCore::Period::List splitPeriodsByDay(const KCalCore::Period::List &freePeriods);
+    KCalendarCore::Period::List splitPeriodsByDay(const KCalendarCore::Period::List &freePeriods);
 
     QString day(int index) const;
     QString date(int index) const;
     QString stringify(int index) const;
     QString tooltipify(int index) const;
 
-    KCalCore::Period::List mPeriodList;
+    KCalendarCore::Period::List mPeriodList;
     friend class FreePeriodModelTest;
 };
 }
