@@ -829,3 +829,27 @@ bool CalendarSupport::mergeCalendar(const QString &srcFilename,
 
     return loadedSuccesfully;
 }
+
+void CalendarSupport::createAlarmReminder(const Alarm::Ptr &alarm, KCalendarCore::IncidenceBase::IncidenceType type)
+{
+    int duration; // in secs
+    switch (CalendarSupport::KCalPrefs::instance()->mReminderTimeUnits) {
+    default:
+    case 0: // mins
+        duration = CalendarSupport::KCalPrefs::instance()->mReminderTime * 60;
+        break;
+    case 1: // hours
+        duration = CalendarSupport::KCalPrefs::instance()->mReminderTime * 60 * 60;
+        break;
+    case 2: // days
+        duration = CalendarSupport::KCalPrefs::instance()->mReminderTime * 60 * 60 * 24;
+        break;
+    }
+    alarm->setType(KCalendarCore::Alarm::Display);
+    alarm->setEnabled(true);
+    if (type == KCalendarCore::Incidence::TypeEvent) {
+        alarm->setStartOffset(KCalendarCore::Duration(-duration));
+    } else {
+        alarm->setEndOffset(KCalendarCore::Duration(-duration));
+    }
+}
