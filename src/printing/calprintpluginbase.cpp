@@ -1734,7 +1734,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt, const QRect &bo
     // space of the day's cell
     for (int d = 0; d < daysinmonth; ++d) {
         QStringList dayEvents(textEvents[d + 1]);
-        QString txt = dayEvents.join(QStringLiteral(", "));
+        QString txt = dayEvents.join(QLatin1String(", "));
         QRect dayBox(xstartcont, daysBox.top() + qRound(dayheight *d), 0, 0);
         dayBox.setRight(box.right());
         dayBox.setBottom(daysBox.top() + qRound(dayheight * (d + 1)));

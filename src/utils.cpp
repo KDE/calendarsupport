@@ -530,7 +530,7 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
     const QString resourceName = fullCollection.resource();
 
     // Kolab Groupware
-    if (resourceName.contains(QStringLiteral("kolab"))) {
+    if (resourceName.contains(QLatin1String("kolab"))) {
         QString typeStr = cName; // contents type: "Calendar", "Tasks", etc
         QString ownerStr;        // folder owner: "fred", "ethel", etc
         QString nameStr;         // folder name: "Public", "Test", etc
@@ -600,7 +600,7 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
     } //end kolab section
 
     // Dav Groupware
-    if (resourceName.contains(QStringLiteral("davgroupware"))) {
+    if (resourceName.contains(QLatin1String("davgroupware"))) {
         const QString resourceDisplayName
             = Akonadi::AgentManager::self()->instance(resourceName).name();
         return i18nc("%1 is the folder name", "%1 in %2",
@@ -608,7 +608,7 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
     } //end caldav section
 
     // Google
-    if (resourceName.contains(QStringLiteral("google"))) {
+    if (resourceName.contains(QLatin1String("google"))) {
         QString ownerStr;        // folder owner: "user@gmail.com"
         if (calendar) {
             Akonadi::Collection p = c.parentCollection();
@@ -619,13 +619,13 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
 
         QString typeStr;
         const QString mimeStr = c.contentMimeTypes().join(QLatin1Char(','));
-        if (mimeStr.contains(QStringLiteral(".event"))) {
+        if (mimeStr.contains(QLatin1String(".event"))) {
             typeStr = i18n("Calendar");
-        } else if (mimeStr.contains(QStringLiteral(".todo"))) {
+        } else if (mimeStr.contains(QLatin1String(".todo"))) {
             typeStr = i18n("Tasks");
-        } else if (mimeStr.contains(QStringLiteral(".journal"))) {
+        } else if (mimeStr.contains(QLatin1String(".journal"))) {
             typeStr = i18n("Journal");
-        } else if (mimeStr.contains(QStringLiteral(".note"))) {
+        } else if (mimeStr.contains(QLatin1String(".note"))) {
             typeStr = i18n("Notes");
         } else {
             typeStr = mimeStr;

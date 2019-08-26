@@ -58,7 +58,7 @@ void TextBrowser::setSource(const QUrl &name)
         uri.replace(QRegExp(QLatin1String("^([^:]+:)/+")), QStringLiteral("\\1"));
     }
 
-    if (uri.startsWith(QStringLiteral("ATTACH:"))) {
+    if (uri.startsWith(QLatin1String("ATTACH:"))) {
         Q_EMIT attachmentUrlClicked(uri);
     } else {
         UriHandler::process(uri);
