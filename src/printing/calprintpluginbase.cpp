@@ -1274,7 +1274,7 @@ void CalPrintPluginBase::drawIncidence(QPainter &p, const QRect &dayBox, const Q
 
     if (singleLineLimit) {
         if (includeDescription && !descText.isEmpty()) {
-            summaryText += QStringLiteral(", ") + descText;
+            summaryText += QLatin1String(", ") + descText;
         }
         int totalHeight = fm.lineSpacing() + borderWidth;
         int textBoxHeight = (totalHeight > (dayBox.height() - textY))
