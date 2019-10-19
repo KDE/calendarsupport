@@ -67,7 +67,6 @@ PRIVATE
   KF5::I18n
   KF5::Completion
   KF5::KIOWidgets
-  KF5::IconThemes
   KF5::GuiAddons
   KF5::AkonadiWidgets
   KF5::Holidays

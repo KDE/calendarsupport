@@ -56,9 +56,9 @@
 
 #include <KMessageBox>
 #include <KIO/FileCopyJob>
-#include <KIconLoader>
 #include <KLocalizedString>
 
+#include <QApplication>
 #include <QUrl>
 #include <QAbstractItemModel>
 #include <QDrag>
@@ -69,6 +69,7 @@
 #include <QUrlQuery>
 #include <QRegularExpression>
 #include <QTimeZone>
+#include <QStyle>
 
 #include "calendarsupport_debug.h"
 
@@ -271,9 +272,9 @@ QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QWidget *pa
 
     const QByteArray common = findMostCommonType(items);
     if (common == "Event") {
-        drag->setPixmap(BarIcon(QStringLiteral("view-calendar-day")));
+        drag->setPixmap(QIcon::fromTheme(QStringLiteral("view-calendar-day")).pixmap(qApp->style()->pixelMetric(QStyle::PM_ToolBarIconSize)));
     } else if (common == "Todo") {
-        drag->setPixmap(BarIcon(QStringLiteral("view-calendar-tasks")));
+        drag->setPixmap(QIcon::fromTheme(QStringLiteral("view-calendar-tasks")).pixmap(qApp->style()->pixelMetric(QStyle::PM_ToolBarIconSize)));
     }
 
     return drag.release();
