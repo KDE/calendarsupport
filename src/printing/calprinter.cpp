@@ -217,7 +217,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     orientationLabel->setAlignment(Qt::AlignRight);
     splitterRightLayout->addWidget(orientationLabel, 1, 0);
 
-    mOrientationSelection = new KComboBox(splitterRight);
+    mOrientationSelection = new QComboBox(splitterRight);
     mOrientationSelection->setToolTip(
         i18nc("@info:tooltip", "Set the print orientation"));
     mOrientationSelection->setWhatsThis(

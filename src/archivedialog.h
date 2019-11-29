@@ -28,7 +28,7 @@
 #include <Akonadi/Calendar/ETMCalendar>
 #include <QDialog>
 
-class KComboBox;
+class QComboBox;
 class KDateComboBox;
 class QSpinBox;
 class KUrlRequester;
@@ -68,7 +68,7 @@ private:
     QRadioButton *mArchiveOnceRB = nullptr;
     QRadioButton *mAutoArchiveRB = nullptr;
     QSpinBox *mExpiryTimeNumInput = nullptr;
-    KComboBox *mExpiryUnitsComboBox = nullptr;
+    QComboBox *mExpiryUnitsComboBox = nullptr;
     QCheckBox *mEvents = nullptr;
     QCheckBox *mTodos = nullptr;
     Akonadi::IncidenceChanger *mChanger = nullptr;

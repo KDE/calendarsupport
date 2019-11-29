@@ -112,7 +112,7 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="KComboBox" name="mPages"/>
+         <widget class="QComboBox" name="mPages"/>
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="mSubDaysLabel">
@@ -125,7 +125,7 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="KComboBox" name="mSubDays">
+         <widget class="QComboBox" name="mSubDays">
           <property name="currentIndex">
            <number>1</number>
           </property>
@@ -152,7 +152,7 @@
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="KComboBox" name="mHolidays">
+         <widget class="QComboBox" name="mHolidays">
           <item>
            <property name="text">
             <string>Text</string>
@@ -185,13 +185,6 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>KComboBox</class>
-   <extends>QComboBox</extends>
-   <header>kcombobox.h</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

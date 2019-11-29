@@ -29,7 +29,7 @@
 
 #include <Akonadi/Calendar/IncidenceChanger>
 
-#include <KComboBox>
+#include <QComboBox>
 #include <KDateComboBox>
 #include <KLineEdit>
 #include <KLocalizedString>
@@ -163,7 +163,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
               "The age of the events and to-dos to archive. All older items "
               "will be saved and deleted, the newer will be kept."));
 
-    mExpiryUnitsComboBox = new KComboBox(autoArchiveHBox);
+    mExpiryUnitsComboBox = new QComboBox(autoArchiveHBox);
     autoArchiveHBoxHBoxLayout->addWidget(mExpiryUnitsComboBox);
     mExpiryUnitsComboBox->setToolTip(
         i18nc("@info:tooltip",

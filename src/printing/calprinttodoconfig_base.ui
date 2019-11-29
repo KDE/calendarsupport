@@ -360,7 +360,7 @@ p, li { white-space: pre-wrap; }
          </widget>
         </item>
         <item>
-         <widget class="KComboBox" name="mSortField">
+         <widget class="QComboBox" name="mSortField">
           <property name="enabled">
            <bool>true</bool>
           </property>
@@ -387,7 +387,7 @@ p, li { white-space: pre-wrap; }
          </widget>
         </item>
         <item>
-         <widget class="KComboBox" name="mSortDirection">
+         <widget class="QComboBox" name="mSortDirection">
           <property name="enabled">
            <bool>true</bool>
           </property>
@@ -462,11 +462,6 @@ p, li { white-space: pre-wrap; }
   </layout>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>KComboBox</class>
-   <extends>QComboBox</extends>
-   <header>kcombobox.h</header>
-  </customwidget>
   <customwidget>
    <class>KDateComboBox</class>
    <extends>QComboBox</extends>

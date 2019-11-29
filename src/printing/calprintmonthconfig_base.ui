@@ -70,7 +70,7 @@ p, li { white-space: pre-wrap; }
        </widget>
       </item>
       <item>
-       <widget class="KComboBox" name="mFromMonth">
+       <widget class="QComboBox" name="mFromMonth">
         <property name="toolTip">
          <string>Starting month for printing</string>
         </property>
@@ -109,7 +109,7 @@ p, li { white-space: pre-wrap; }
        </widget>
       </item>
       <item>
-       <widget class="KComboBox" name="mToMonth">
+       <widget class="QComboBox" name="mToMonth">
         <property name="toolTip">
          <string>Ending month for the print</string>
         </property>
@@ -341,13 +341,6 @@ p, li { white-space: pre-wrap; }
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>KComboBox</class>
-   <extends>QComboBox</extends>
-   <header>kcombobox.h</header>
-  </customwidget>
- </customwidgets>
  <tabstops>
   <tabstop>mFromMonth</tabstop>
   <tabstop>mFromYear</tabstop>

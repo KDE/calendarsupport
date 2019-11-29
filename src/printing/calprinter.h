@@ -26,7 +26,7 @@
 #include "calendarsupport_export.h"
 #include "printplugin.h"
 
-#include <KComboBox>
+#include <QComboBox>
 #include <QDialog>
 #include <QPushButton>
 class QButtonGroup;
@@ -118,7 +118,7 @@ private:
     QStackedWidget *mConfigArea = nullptr;
     QMap<int, PrintPlugin *> mPluginIDs;
     QString mPreviewText;
-    KComboBox *mOrientationSelection = nullptr;
+    QComboBox *mOrientationSelection = nullptr;
     QPushButton *mOkButton = nullptr;
     CalPrinter::ePrintOrientation mOrientation;
 };
