@@ -418,7 +418,7 @@ Akonadi::Collection CalendarSupport::selectCollection(QWidget *parent, int &dial
                                                       const Akonadi::Collection &defCollection)
 {
     QPointer<Akonadi::CollectionDialog> dlg(new Akonadi::CollectionDialog(parent));
-    dlg->setWindowTitle(i18n("Select Calendar"));
+    dlg->setWindowTitle(i18nc("@title:window", "Select Calendar"));
     dlg->setDescription(i18n("Select the calendar where this item will be stored."));
     dlg->changeCollectionDialogOptions(Akonadi::CollectionDialog::KeepTreeExpanded);
     qCDebug(CALENDARSUPPORT_LOG) << "selecting collections with mimeType in " << mimeTypes;
