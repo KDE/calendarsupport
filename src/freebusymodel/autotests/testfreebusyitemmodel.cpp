@@ -42,7 +42,7 @@ void FreeBusyItemModelTest::testModelValidity()
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
-    KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral( "fred@example.com"));
+    KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral("fred@example.com"));
     KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
 
     fb1->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
@@ -96,9 +96,9 @@ void FreeBusyItemModelTest::testModelValidity2()
     const QDateTime dt3(QDate(2010, 7, 24), QTime(12, 0, 0), Qt::UTC);
     const QDateTime dt4(QDate(2010, 7, 24), QTime(14, 0, 0), Qt::UTC);
 
-    KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral( "fred@example.com"));
-    KCalendarCore::Attendee a2(QStringLiteral("joe"), QStringLiteral( "joe@example.com"));
-    KCalendarCore::Attendee a3(QStringLiteral("max"), QStringLiteral( "max@example.com"));
+    KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral("fred@example.com"));
+    KCalendarCore::Attendee a2(QStringLiteral("joe"), QStringLiteral("joe@example.com"));
+    KCalendarCore::Attendee a3(QStringLiteral("max"), QStringLiteral("max@example.com"));
     KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
     KCalendarCore::FreeBusy::Ptr fb2(new KCalendarCore::FreeBusy());
     KCalendarCore::FreeBusy::Ptr fb3(new KCalendarCore::FreeBusy());
@@ -216,7 +216,7 @@ void FreeBusyItemModelTest::testInsertFreeBusy()
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
-    KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral( "fred@example.com"));
+    KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral("fred@example.com"));
     KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
     fb1->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
     fb1->addPeriod(dt2, KCalendarCore::Duration(60 * 60));

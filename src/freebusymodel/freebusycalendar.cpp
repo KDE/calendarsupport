@@ -119,8 +119,8 @@ void FreeBusyCalendar::onRowsInserted(const QModelIndex &parent, int first, int 
         QModelIndex index = d->mModel->index(i, 0, parent);
 
         const KCalendarCore::FreeBusyPeriod &period = d->mModel->data(index,
-                                                                 FreeBusyItemModel::FreeBusyPeriodRole)
-                                                 .value<KCalendarCore::FreeBusyPeriod>();
+                                                                      FreeBusyItemModel::FreeBusyPeriodRole)
+                                                      .value<KCalendarCore::FreeBusyPeriod>();
         const KCalendarCore::FreeBusy::Ptr &fb
             = d->mModel->data(parent,
                               FreeBusyItemModel::FreeBusyRole).value<KCalendarCore::FreeBusy::Ptr>();

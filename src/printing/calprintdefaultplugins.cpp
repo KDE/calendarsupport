@@ -210,9 +210,7 @@ protected:
     }
 };
 
-int CalPrintIncidence::printCaptionAndText(QPainter &p, const QRect &box, const QString &caption,
-                                           const QString &text, const QFont &captionFont,
-                                           const QFont &textFont)
+int CalPrintIncidence::printCaptionAndText(QPainter &p, const QRect &box, const QString &caption, const QString &text, const QFont &captionFont, const QFont &textFont)
 {
     QFontMetrics captionFM(captionFont);
     int textWd = captionFM.boundingRect(caption).width();
@@ -541,7 +539,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                                                                                      Incidence::
                                                                                      RoleEnd).
                                                                       toLocalTime().time(),
-                            QLocale::ShortFormat));
+                                                                      QLocale::ShortFormat));
                         }
                     }
                     subitemString += i18nc("subitem counter", "%1: ", count);
@@ -860,8 +858,8 @@ void CalPrintDay::print(QPainter &p, int width, int height)
 
             drawHeader(p, local.toString(curDay, QLocale::ShortFormat), curDay, QDate(), headerBox);
             KCalendarCore::Event::List eventList = mCalendar->events(curDay, QTimeZone::systemTimeZone(),
-                                                                KCalendarCore::EventSortStartDate,
-                                                                KCalendarCore::SortDirectionAscending);
+                                                                     KCalendarCore::EventSortStartDate,
+                                                                     KCalendarCore::SortDirectionAscending);
 
             // split out the all day events as they will be printed in a separate box
             KCalendarCore::Event::List alldayEvents, timedEvents;

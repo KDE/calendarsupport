@@ -52,8 +52,7 @@
 
 using namespace CalendarSupport;
 
-ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal,
-                             Akonadi::IncidenceChanger *changer, QWidget *parent)
+ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::IncidenceChanger *changer, QWidget *parent)
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Archive/Delete Past Events and To-dos"));

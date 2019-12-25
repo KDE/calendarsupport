@@ -31,9 +31,7 @@ using namespace Akonadi;
 namespace CalendarSupport {
 class IncidenceAttachmentModelPrivate
 {
-    IncidenceAttachmentModelPrivate(IncidenceAttachmentModel *qq,
-                                    const QPersistentModelIndex &modelIndex,
-                                    const Akonadi::Item &item = Akonadi::Item())
+    IncidenceAttachmentModelPrivate(IncidenceAttachmentModel *qq, const QPersistentModelIndex &modelIndex, const Akonadi::Item &item = Akonadi::Item())
         : q_ptr(qq)
         , m_modelIndex(modelIndex)
         , m_item(item)
@@ -105,8 +103,7 @@ class IncidenceAttachmentModelPrivate
 };
 }
 
-IncidenceAttachmentModel::IncidenceAttachmentModel(const QPersistentModelIndex &modelIndex,
-                                                   QObject *parent)
+IncidenceAttachmentModel::IncidenceAttachmentModel(const QPersistentModelIndex &modelIndex, QObject *parent)
     : QAbstractListModel(parent)
     , d_ptr(new IncidenceAttachmentModelPrivate(this, modelIndex))
 {
@@ -200,8 +197,7 @@ QVariant IncidenceAttachmentModel::data(const QModelIndex &index, int role) cons
     return QVariant();
 }
 
-QVariant IncidenceAttachmentModel::headerData(int section, Qt::Orientation orientation,
-                                              int role) const
+QVariant IncidenceAttachmentModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
     return QAbstractItemModel::headerData(section, orientation, role);
 }

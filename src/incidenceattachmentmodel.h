@@ -49,8 +49,7 @@ public:
         UserRole = Qt::UserRole + 100
     };
 
-    explicit IncidenceAttachmentModel(const QPersistentModelIndex &modelIndex,
-                                      QObject *parent = nullptr);
+    explicit IncidenceAttachmentModel(const QPersistentModelIndex &modelIndex, QObject *parent = nullptr);
 
     explicit IncidenceAttachmentModel(const Akonadi::Item &item, QObject *parent = nullptr);
 
@@ -67,8 +66,7 @@ public:
 
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
 
-    QVariant headerData(int section, Qt::Orientation orientation,
-                        int role = Qt::DisplayRole) const override;
+    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
     QHash<int, QByteArray> roleNames() const override;
 
 Q_SIGNALS:

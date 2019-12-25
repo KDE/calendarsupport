@@ -93,8 +93,7 @@ QList<Akonadi::Collection::Id> CollectionSelection::selectedCollectionIds() cons
     return selected;
 }
 
-void CollectionSelection::slotSelectionChanged(const QItemSelection &selectedIndexes,
-                                               const QItemSelection &deselIndexes)
+void CollectionSelection::slotSelectionChanged(const QItemSelection &selectedIndexes, const QItemSelection &deselIndexes)
 {
     const Akonadi::Collection::List selected = collectionsFromIndexes(selectedIndexes.indexes());
     const Akonadi::Collection::List deselected = collectionsFromIndexes(deselIndexes.indexes());

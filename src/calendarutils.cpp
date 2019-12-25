@@ -64,9 +64,7 @@ class CalendarUtilsPrivate
 public:
     /// Methods
     CalendarUtilsPrivate(const Akonadi::ETMCalendar::Ptr &calendar, CalendarUtils *qq);
-    void handleChangeFinish(int changeId, const Akonadi::Item &item,
-                            Akonadi::IncidenceChanger::ResultCode resultCode,
-                            const QString &errorString);
+    void handleChangeFinish(int changeId, const Akonadi::Item &item, Akonadi::IncidenceChanger::ResultCode resultCode, const QString &errorString);
 
     bool purgeCompletedSubTodos(const KCalendarCore::Todo::Ptr &todo, bool &allPurged);
 
@@ -81,8 +79,7 @@ private:
 };
 }
 
-CalendarUtilsPrivate::CalendarUtilsPrivate(const Akonadi::ETMCalendar::Ptr &calendar,
-                                           CalendarUtils *qq)
+CalendarUtilsPrivate::CalendarUtilsPrivate(const Akonadi::ETMCalendar::Ptr &calendar, CalendarUtils *qq)
     : mCalendar(calendar)
     , mChanger(new Akonadi::IncidenceChanger(qq))
     , q_ptr(qq)
@@ -95,9 +92,7 @@ CalendarUtilsPrivate::CalendarUtilsPrivate(const Akonadi::ETMCalendar::Ptr &cale
                SLOT(handleChangeFinish(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,QString)));
 }
 
-void CalendarUtilsPrivate::handleChangeFinish(int, const Akonadi::Item &item,
-                                              Akonadi::IncidenceChanger::ResultCode resultCode,
-                                              const QString &errorString)
+void CalendarUtilsPrivate::handleChangeFinish(int, const Akonadi::Item &item, Akonadi::IncidenceChanger::ResultCode resultCode, const QString &errorString)
 {
     Q_Q(CalendarUtils);
     const bool success = resultCode == Akonadi::IncidenceChanger::ResultCodeSuccess;

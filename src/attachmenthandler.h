@@ -62,8 +62,7 @@ public:
      * @param incidence is a pointer to a valid Incidence object containing the attachment.
      * @return a pointer to the Attachment object located; 0 if no such attachment could be found.
      */
-    KCalendarCore::Attachment find(const QString &attachmentName,
-                              const KCalendarCore::Incidence::Ptr &incidence);
+    KCalendarCore::Attachment find(const QString &attachmentName, const KCalendarCore::Incidence::Ptr &incidence);
 
     /**
      * Finds the attachment in the user's calendar, by @p attachmentName and a scheduler message;
@@ -73,8 +72,7 @@ public:
      * @param message is a pointer to a valid ScheduleMessage object containing the attachment.
      * @return a pointer to the Attachment object located; 0 if no such attachment could be found.
      */
-    KCalendarCore::Attachment find(const QString &attachmentName,
-                              const KCalendarCore::ScheduleMessage::Ptr &message);
+    KCalendarCore::Attachment find(const QString &attachmentName, const KCalendarCore::ScheduleMessage::Ptr &message);
 
     /**
      * Launches a viewer on the specified attachment.

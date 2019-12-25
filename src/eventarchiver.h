@@ -63,8 +63,7 @@ public:
      * @param widget parent widget for message boxes
      * Confirmation and "no events to process" dialogs will be shown
      */
-    void runOnce(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer,
-                 const QDate &limitDate, QWidget *widget);
+    void runOnce(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget);
 
     /**
      * Delete or archive events. This is called regularly, when auto-archiving
@@ -75,23 +74,17 @@ public:
      * Note that error dialogs like "cannot save" are shown even if from this method, so widget
      * should be set in all cases.
      */
-    void runAuto(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer,
-                 QWidget *widget, bool withGUI);
+    void runAuto(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QWidget *widget, bool withGUI);
 
 Q_SIGNALS:
     void eventsDeleted();
 
 private:
-    void run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer,
-             const QDate &limitDate, QWidget *widget, bool withGUI, bool errorIfNone);
+    void run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget, bool withGUI, bool errorIfNone);
 
-    void deleteIncidences(Akonadi::IncidenceChanger *changer, const QDate &limitDate,
-                          QWidget *widget, const Akonadi::Item::List &items, bool withGUI);
+    void deleteIncidences(Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget, const Akonadi::Item::List &items, bool withGUI);
 
-    void archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
-                           Akonadi::IncidenceChanger *changer, const QDate &limitDate,
-                           QWidget *widget, const KCalendarCore::Incidence::List &incidences,
-                           bool withGUI);
+    void archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget, const KCalendarCore::Incidence::List &incidences, bool withGUI);
 
     /**
      * Checks if all to-dos under @p todo and including @p todo were completed before @p limitDate.
@@ -100,9 +93,7 @@ private:
      * @param limitDate
      * @param checkedUids used internaly to prevent infinit recursion due to invalid calendar files
      */
-    bool isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
-                           const KCalendarCore::Todo::Ptr &todo, const QDate &limitDate,
-                           QStringList checkedUids = QStringList()) const;
+    bool isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar, const KCalendarCore::Todo::Ptr &todo, const QDate &limitDate, QStringList checkedUids = QStringList()) const;
 };
 }
 

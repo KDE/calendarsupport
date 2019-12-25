@@ -97,8 +97,7 @@ void CalPrinter::setDateRange(const QDate &fd, const QDate &td)
     }
 }
 
-void CalPrinter::print(int type, const QDate &fd, const QDate &td,
-                       const KCalendarCore::Incidence::List &selectedIncidences, bool preview)
+void CalPrinter::print(int type, const QDate &fd, const QDate &td, const KCalendarCore::Incidence::List &selectedIncidences, bool preview)
 {
     PrintPlugin::List::Iterator it;
     const PrintPlugin::List::Iterator end = mPrintPlugins.end();
@@ -129,8 +128,7 @@ void CalPrinter::print(int type, const QDate &fd, const QDate &td,
     }
 }
 
-void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientation dlgorientation,
-                         bool preview)
+void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientation dlgorientation, bool preview)
 {
     if (!selectedStyle) {
         KMessageBox::error(
@@ -177,8 +175,7 @@ void CalPrinter::updateConfig()
 {
 }
 
-CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &plugins,
-                               QWidget *parent, bool uniqItem)
+CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &plugins, QWidget *parent, bool uniqItem)
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Print"));

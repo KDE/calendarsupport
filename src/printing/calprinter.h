@@ -75,13 +75,10 @@ public Q_SLOTS:
     void updateConfig();
 
 private Q_SLOTS:
-    void doPrint(CalendarSupport::PrintPlugin *selectedStyle,
-                 CalendarSupport::CalPrinter::ePrintOrientation dlgorientation,
-                 bool preview = false);
+    void doPrint(CalendarSupport::PrintPlugin *selectedStyle, CalendarSupport::CalPrinter::ePrintOrientation dlgorientation, bool preview = false);
 
 public:
-    void print(int type, const QDate &fd, const QDate &td,
-               const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(), bool preview = false);
+    void print(int type, const QDate &fd, const QDate &td, const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(), bool preview = false);
     Akonadi::ETMCalendar::Ptr calendar() const;
     KConfig *config() const;
 
@@ -99,8 +96,7 @@ class CalPrintDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit CalPrintDialog(int initialPrintType, const PrintPlugin::List &plugins,
-                            QWidget *parent = nullptr, bool mUniqItem = false);
+    explicit CalPrintDialog(int initialPrintType, const PrintPlugin::List &plugins, QWidget *parent = nullptr, bool mUniqItem = false);
 
     ~CalPrintDialog() override;
 

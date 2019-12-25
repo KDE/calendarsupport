@@ -50,8 +50,7 @@ public:
     Q_REQUIRED_RESULT bool hasSelection() const;
 
 Q_SIGNALS:
-    void selectionChanged(const Akonadi::Collection::List &selected,
-                          const Akonadi::Collection::List &deselected);
+    void selectionChanged(const Akonadi::Collection::List &selected, const Akonadi::Collection::List &deselected);
     void collectionDeselected(const Akonadi::Collection &);
     void collectionSelected(const Akonadi::Collection &);
 

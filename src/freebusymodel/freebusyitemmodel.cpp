@@ -252,8 +252,7 @@ void FreeBusyItemModel::addItem(const FreeBusyItem::Ptr &freebusy)
     updateFreeBusyData(freebusy);
 }
 
-void FreeBusyItemModel::setFreeBusyPeriods(const QModelIndex &parent,
-                                           const KCalendarCore::FreeBusyPeriod::List &list)
+void FreeBusyItemModel::setFreeBusyPeriods(const QModelIndex &parent, const KCalendarCore::FreeBusyPeriod::List &list)
 {
     if (!parent.isValid()) {
         return;
@@ -422,4 +421,3 @@ void FreeBusyItemModel::cancelReload()
 {
     d->mReloadTimer.stop();
 }
-

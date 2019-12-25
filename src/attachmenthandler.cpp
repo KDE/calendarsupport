@@ -80,8 +80,7 @@ AttachmentHandler::~AttachmentHandler()
     delete d;
 }
 
-Attachment AttachmentHandler::find(const QString &attachmentName,
-                                   const Incidence::Ptr &incidence)
+Attachment AttachmentHandler::find(const QString &attachmentName, const Incidence::Ptr &incidence)
 {
     if (!incidence) {
         return Attachment();
@@ -123,8 +122,7 @@ Attachment AttachmentHandler::find(const QString &attachmentName,
     return a;
 }
 
-Attachment AttachmentHandler::find(const QString &attachmentName,
-                                   const ScheduleMessage::Ptr &message)
+Attachment AttachmentHandler::find(const QString &attachmentName, const ScheduleMessage::Ptr &message)
 {
     if (!message) {
         return Attachment();

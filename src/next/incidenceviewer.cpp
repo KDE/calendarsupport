@@ -77,7 +77,9 @@ public:
     {
         mAttachmentHandler = new AttachmentHandler(parent);
         mBrowser = new TextBrowser;
-        parent->connect(mBrowser, &TextBrowser::attachmentUrlClicked, parent, [this](const QString &str) { slotAttachmentUrlClicked(str); });
+        parent->connect(mBrowser, &TextBrowser::attachmentUrlClicked, parent, [this](const QString &str) {
+            slotAttachmentUrlClicked(str);
+        });
     }
 
     void updateView()
