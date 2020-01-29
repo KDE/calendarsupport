@@ -233,7 +233,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     splitterRightLayout->addWidget(mOrientationSelection, 1, 1);
 
     // signals and slots connections
-    connect(mTypeGroup, QOverload<int>::of(
+    connect(mTypeGroup, QOverload<QAbstractButton *>::of(
                 &QButtonGroup::buttonClicked), this, &CalPrintDialog::setPrintType);
     orientationLabel->setBuddy(mOrientationSelection);
 
@@ -266,7 +266,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
         if ((firstButton || p->sortID() == initialPrintType) && p->enabled()) {
             firstButton = false;
             radioButton->setChecked(true);
-            setPrintType(id);
+            changePrintType(id);
         }
         mTypeGroup->addButton(radioButton, mapit.key());
         typeLayout->addWidget(radioButton);
@@ -293,13 +293,23 @@ void CalPrintDialog::setPreview(bool preview)
     }
 }
 
-void CalPrintDialog::setPrintType(int i)
+void CalPrintDialog::changePrintType(int i)
 {
     mConfigArea->setCurrentIndex(i);
     mConfigArea->currentWidget()->raise();
     QAbstractButton *btn = mTypeGroup->button(i);
     if (btn) {
         btn->setChecked(true);
+    }
+}
+
+void CalPrintDialog::setPrintType(QAbstractButton *button)
+{
+    if (button) {
+        const int i = mTypeGroup->id(button);
+        mConfigArea->setCurrentIndex(i);
+        mConfigArea->currentWidget()->raise();
+        button->setChecked(true);
     }
 }
 

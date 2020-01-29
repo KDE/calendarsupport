@@ -105,11 +105,12 @@ public:
     CalPrinter::ePrintOrientation orientation() const;
 
 public Q_SLOTS:
-    void setPrintType(int);
+    void setPrintType(QAbstractButton *button);
     void setPreview(bool);
 
 private:
     void slotOk();
+    void changePrintType(int id);
     QButtonGroup *mTypeGroup = nullptr;
     QStackedWidget *mConfigArea = nullptr;
     QMap<int, PrintPlugin *> mPluginIDs;
