@@ -45,7 +45,14 @@ ki18n_wrap_ui(calendarsupport_LIB_SRCS
   printing/calprintweekconfig_base.ui
   printing/calprintyearconfig_base.ui
 )
-ecm_qt_declare_logging_category(calendarsupport_LIB_SRCS HEADER calendarsupport_debug.h IDENTIFIER CALENDARSUPPORT_LOG CATEGORY_NAME org.kde.pim.calendarsupport)
+if (ECM_VERSION VERSION_LESS "5.68.0")
+    ecm_qt_declare_logging_category(calendarsupport_LIB_SRCS HEADER calendarsupport_debug.h IDENTIFIER CALENDARSUPPORT_LOG CATEGORY_NAME org.kde.pim.calendarsupport)
+else()
+    ecm_qt_declare_logging_category(calendarsupport_LIB_SRCS HEADER calendarsupport_debug.h IDENTIFIER CALENDARSUPPORT_LOG CATEGORY_NAME org.kde.pim.calendarsupport
+        OLD_CATEGORY_NAMES log_calendarsupport
+        DESCRIPTION "calendarsupport (calendarsupport)" EXPORT CALENDARSUPPORT)
+endif()
+
 
 kconfig_add_kcfg_files(calendarsupport_LIB_SRCS kcalprefs_base.kcfgc)
 
@@ -182,3 +189,6 @@ if(BUILD_TESTING)
 endif()
 
 
+if (NOT ECM_VERSION VERSION_LESS "5.68.0")
+   ecm_qt_install_logging_categories(EXPORT CALENDARSUPPORT FILE calendarsupport.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+endif()

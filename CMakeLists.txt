@@ -92,8 +92,10 @@ add_definitions(-DQT_NO_FOREACH)
 
 
 add_subdirectory(src)
+if (ECM_VERSION VERSION_LESS "5.68.0")
+   install(FILES calendarsupport.categories calendarsupport.renamecategories DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+endif()
 
-install(FILES calendarsupport.categories calendarsupport.renamecategories DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
