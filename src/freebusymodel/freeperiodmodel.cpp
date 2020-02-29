@@ -132,15 +132,9 @@ KCalendarCore::Period::List FreePeriodModel::splitPeriodsByDay(
     }
 
     // Perform some jiggery pokery to remove duplicates
-
-    QList<KCalendarCore::Period> tmpList = splitList.toList();
-#if QT_VERSION < QT_VERSION_CHECK(5, 14, 0)
-    const QSet<KCalendarCore::Period> set = tmpList.toSet();
-#else
-    const QSet<KCalendarCore::Period> set = QSet<KCalendarCore::Period>(tmpList.begin(), tmpList.end());
-#endif
-    tmpList = QList<KCalendarCore::Period>::fromSet(set);
-    return KCalendarCore::Period::List::fromList(tmpList);
+    std::sort(splitList.begin(), splitList.end());
+    splitList.erase(std::unique(splitList.begin(), splitList.end()), splitList.end());
+    return splitList;
 }
 
 QString FreePeriodModel::day(int index) const
