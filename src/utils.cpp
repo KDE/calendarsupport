@@ -670,6 +670,9 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     if (displayName.isEmpty()) {
         displayName = coll.name();
     }
+    if (coll.id() == CalendarSupport::KCalPrefs::instance()->defaultCalendarId()) {
+        displayName = i18nc("this is the default calendar", "%1 (Default Calendar)", displayName);
+    }
     str += QLatin1String("<b>") + displayName + QLatin1String("</b>");
     str += QLatin1String("<hr>");
 
@@ -680,10 +683,27 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
             = Akonadi::AgentManager::self()->instance(coll.resource());
         calendarType = instance.type().name();
     } else {
-        calendarType = i18nc("unknown calendar type", "unknown");
+        calendarType = i18nc("a virtual folder type", "Virtual");
     }
-    str += QLatin1String("<i>") + i18n("Calendar type:") + QLatin1String("</i>");
+    str += QLatin1String("<i>") + i18n("Folder type:") + QLatin1String("</i>");
     str += QLatin1String("&nbsp;") + calendarType;
+
+    // Content Type
+    QStringList mimeTypes = coll.contentMimeTypes();
+    mimeTypes.removeAll(QLatin1String("inode/directory"));
+    QString mimeTypeStr;
+    if (!mimeTypes.isEmpty()) {
+        mimeTypeStr = QLocale().createSeparatedList(
+                          mimeTypes.
+                          replaceInStrings(
+                              QLatin1String("application/x-vnd.akonadi.calendar."), QString()));
+    } else {
+        mimeTypeStr = i18nc("collection has no mimetypes to show the user", "none");
+    }
+    str += QLatin1String("<br>");
+    str += QLatin1String("<i>") + i18n("Content type:") + QLatin1String("</i>");
+    str += QLatin1String("&nbsp;") + mimeTypeStr;
+    str += QLatin1String("</br>");
 
     // Read only?
     bool isReadOnly = !(coll.rights() & Akonadi::Collection::CanChangeItem);
