@@ -45,7 +45,11 @@ inline QStringList &unquote(QStringList &strings)
 QStringList CategoryHierarchyReader::path(QString string)
 {
     QStringList _path
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
         = quote(string).split(CategoryConfig::categorySeparator, QString::SkipEmptyParts);
+#else
+        = quote(string).split(CategoryConfig::categorySeparator, Qt::SkipEmptyParts);
+#endif
     return unquote(_path);
 }
 
