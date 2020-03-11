@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.5)
-set(PIM_VERSION "5.13.40")
+set(PIM_VERSION "5.13.80")
 
 project(calendarsupport VERSION ${PIM_VERSION})
 
-set(KF5_MIN_VERSION "5.67.0")
+set(KF5_MIN_VERSION "5.68.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
@@ -92,10 +92,6 @@ add_definitions(-DQT_NO_FOREACH)
 
 
 add_subdirectory(src)
-if (ECM_VERSION VERSION_LESS "5.68.0")
-   install(FILES calendarsupport.categories calendarsupport.renamecategories DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
-endif()
-
 
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
