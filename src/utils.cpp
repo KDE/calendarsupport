@@ -34,9 +34,11 @@
 #include <AkonadiCore/AgentInstance>
 #include <AkonadiCore/AgentManager>
 #include <AkonadiCore/EntityDisplayAttribute>
+
+#include <Akonadi/Calendar/BlockAlarmsAttribute>
 #include <Akonadi/Calendar/ETMCalendar>
 #include <Akonadi/Calendar/PublishDialog>
-#include <akonadi/calendar/calendarsettings.h>
+#include <akonadi/calendar/calendarsettings.h> //krazy:exclude=camelcase it's a generated file
 
 #include <KHolidays/HolidayRegion>
 
@@ -715,6 +717,33 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     } else {
         str += i18nc("the calendar is read and write", "read+write");
     }
+    str += QLatin1String("</br>");
+
+    // Blocking reminders?
+    QStringList blockList;
+    if (coll.hasAttribute<Akonadi::BlockAlarmsAttribute>()) {
+        if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isEverythingBlocked()) {
+            blockList << i18nc("blocking all reminders for this calendar", "all");
+        } else {
+            if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(Alarm::Audio)) {
+                blockList << i18nc("blocking audio reminders for this calendar", "audio");
+            } else if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(Alarm::Display)) {
+                blockList << i18nc("blocking display pop-up dialog reminders for this calendar", "display");
+            } else if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(Alarm::Email)) {
+                blockList << i18nc("blocking email reminders for this calendar", "email");
+            } else if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(Alarm::Procedure)) {
+                blockList << i18nc("blocking run a command reminders for this calendar", "procedure");
+            } else {
+                blockList << i18nc("blocking unknown type reminders for this calendar", "other");
+            }
+        }
+    } else {
+        blockList << i18nc("not blocking any reminder types for this calendar", "none");
+    }
+    str += QLatin1String("<br>");
+    str += QLatin1String("<i>") + i18n("Blocked Reminders:") + QLatin1String("</i>");
+    str += QLatin1String("&nbsp;");
+    str += QLocale().createSeparatedList(blockList);
     str += QLatin1String("</br>");
 
     str += QLatin1String("</qt>");
