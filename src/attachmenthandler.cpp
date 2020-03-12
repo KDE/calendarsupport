@@ -31,6 +31,7 @@
 #include "attachmenthandler.h"
 #include "calendarsupport_debug.h"
 #include "calendarsupport/utils.h"
+#include <kio_version.h>
 
 #include <ItemFetchJob>
 
@@ -109,7 +110,12 @@ Attachment AttachmentHandler::find(const QString &attachmentName, const Incidenc
     }
 
     if (a.isUri()) {
+#if KIO_VERSION < QT_VERSION_CHECK(5, 69, 0)
         auto job = KIO::stat(QUrl(a.uri()), KIO::StatJob::SourceSide, 0);
+#else
+        auto job = KIO::statDetails(QUrl(a.uri()), KIO::StatJob::SourceSide, KIO::StatDetail::Basic);
+#endif
+
         KJobWidgets::setWindow(job, d->mParent);
         if (!job->exec()) {
             KMessageBox::sorry(
