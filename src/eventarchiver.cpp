@@ -248,7 +248,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
 #if KIO_VERSION < QT_VERSION_CHECK(5, 69, 0)
         auto job = KIO::stat(archiveURL, KIO::StatJob::SourceSide, 0);
 #else
-        auto job = KIO::statDetails(archiveURL, KIO::StatJob::SourceSide, KIO::StatDetail::Basic);
+        auto job = KIO::statDetails(archiveURL, KIO::StatJob::SourceSide, KIO::StatBasic);
 #endif
 
         KJobWidgets::setWindow(job, widget);
