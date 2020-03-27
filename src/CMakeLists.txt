@@ -15,7 +15,6 @@ set(calendarsupport_LIB_SRCS
   eventarchiver.cpp
   identitymanager.cpp
   incidenceattachmentmodel.cpp
-  kcalmodel.cpp
   kcalprefs.cpp
   messagewidget.cpp
   utils.cpp
