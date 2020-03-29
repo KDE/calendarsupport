@@ -1,0 +1,13 @@
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR})
+
+########### next target ###############
+
+add_executable(noteeditdialogtest noteeditdialogtest.cpp ../noteeditdialog.cpp)
+add_test(NAME noteeditdialogtest COMMAND noteeditdialogtest)
+ecm_mark_as_test(noteeditdialogtest)
+target_link_libraries(noteeditdialogtest
+  Qt5::Test
+  KF5::AkonadiWidgets
+  KF5::AkonadiNotes
+  KF5::CalendarSupport
+)
