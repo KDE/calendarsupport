@@ -49,7 +49,6 @@ ecm_qt_declare_logging_category(calendarsupport_LIB_SRCS HEADER calendarsupport_
         OLD_CATEGORY_NAMES log_calendarsupport
         DESCRIPTION "calendarsupport (calendarsupport)" EXPORT CALENDARSUPPORT)
 
-
 kconfig_add_kcfg_files(calendarsupport_LIB_SRCS kcalprefs_base.kcfgc)
 
 add_library(KF5CalendarSupport ${calendarsupport_LIB_SRCS})
@@ -147,8 +146,6 @@ ecm_generate_pri_file(BASE_NAME CalendarSupport
     DEPS "Mime IdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/CalendarSupport
 )
 
-
-
 install(FILES
     ${CalendarSupport_CamelCase_HEADERS}
     ${CalendarSupport_CamelCaseprinter_HEADERS}
@@ -178,13 +175,11 @@ install(FILES
     ${PRI_FILENAME}
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
-
 install(FILES calendarplugin.desktop DESTINATION ${KDE_INSTALL_KSERVICETYPES5DIR})
 
-
 if(BUILD_TESTING)
-   add_subdirectory(freebusymodel/autotests)
+    add_subdirectory(autotests)
+    add_subdirectory(freebusymodel/autotests)
 endif()
-
 
 ecm_qt_install_logging_categories(EXPORT CALENDARSUPPORT FILE calendarsupport.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
