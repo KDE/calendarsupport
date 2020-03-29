@@ -21,7 +21,6 @@
  */
 
 #include "noteeditdialog.h"
-#include "calendarsupport_debug.h"
 
 #include <Akonadi/Notes/NoteUtils>
 #include <AkonadiWidgets/CollectionComboBox>
@@ -188,12 +187,10 @@ void NoteEditDialog::accept()
     QDialog::accept();
     const Akonadi::Collection collection = mCollectionCombobox->currentCollection();
     if (!collection.isValid()) {
-        qCDebug(CALENDARSUPPORT_LOG) << " Collection is not valid";
         return;
     }
 
     if (mNoteTitle->text().isEmpty() && mNoteText->isEmpty()) {
-        qCDebug(CALENDARSUPPORT_LOG) << " empty note do not save it";
         return;
     }
 
