@@ -17,6 +17,7 @@ set(calendarsupport_LIB_SRCS
   incidenceattachmentmodel.cpp
   kcalprefs.cpp
   messagewidget.cpp
+  noteeditdialog.cpp
   utils.cpp
   tagcache.cpp
   plugin.cpp
@@ -71,6 +72,7 @@ PRIVATE
   KF5::KIOWidgets
   KF5::GuiAddons
   KF5::AkonadiWidgets
+  KF5::AkonadiNotes
   KF5::Holidays
   KF5::Codecs
   KF5::AkonadiCore
@@ -105,6 +107,7 @@ ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
   CalendarSingleton
   MessageWidget
   ArchiveDialog
+  NoteEditDialog
   REQUIRED_HEADERS CalendarSupport_HEADERS
   PREFIX CalendarSupport
 )

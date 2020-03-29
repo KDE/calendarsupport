@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-set(PIM_VERSION "5.14.40")
+set(PIM_VERSION "5.14.41")
 
 project(calendarsupport VERSION ${PIM_VERSION})
 
@@ -24,7 +24,6 @@ include(FeatureSummary)
 include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 
-
 set(CALENDARSUPPORT_LIB_VERSION ${PIM_VERSION})
 set(AKONADI_MIMELIB_VERSION "5.14.40")
 set(KDEPIM_LIB_VERSION "5.14.40")
@@ -35,6 +34,7 @@ set(IDENTITYMANAGEMENT_LIB_VERSION "5.14.40")
 set(AKONADICALENDAR_LIB_VERSION "5.14.40")
 set(PIMCOMMON_LIB_VERSION "5.14.40")
 set(AKONADI_VERSION "5.14.40")
+set(AKONADI_NOTES_VERSION "5.14.40")
 find_package(KF5Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test PrintSupport)
 find_package(KF5I18n ${KF5_MIN_VERSION} CONFIG REQUIRED)
@@ -50,6 +50,7 @@ find_package(KF5Holidays ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5AkonadiCalendar ${AKONADICALENDAR_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5PimCommon ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5KdepimDBusInterfaces ${KDEPIM_LIB_VERSION} CONFIG REQUIRED)
+find_package(KF5AkonadiNotes ${AKONADI_NOTES_VERSION} CONFIG REQUIRED)
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX CALENDARSUPPORT
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/calendarsupport_version.h"
