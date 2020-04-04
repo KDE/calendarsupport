@@ -23,7 +23,7 @@
 #include "attachmenthandler.h"
 #include "utils.h"
 
-#include "KdepimDBusInterfaces/UriHandler"
+#include <KdepimDBusInterfaces/UriHandler>
 #include "incidenceattachmentmodel.h"
 
 #include <CollectionFetchJob>
