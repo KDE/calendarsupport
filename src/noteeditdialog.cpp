@@ -90,17 +90,10 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
 #endif
     mCollectionCombobox->setToolTip(i18nc("@info:tooltip",
                                           "Calendar where the new note will be stored."));
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(mCollectionCombobox,
             QOverload<int>::of(
                 &Akonadi::CollectionComboBox::currentIndexChanged), this,
             &NoteEditDialog::slotCollectionChanged);
-#else
-    connect(mCollectionCombobox,
-            QOverload<int, const QString &>::of(
-                &Akonadi::CollectionComboBox::currentIndexChanged), this,
-            &NoteEditDialog::slotCollectionChanged);
-#endif
     connect(mCollectionCombobox, QOverload<int>::of(
                 &Akonadi::CollectionComboBox::activated), this,
             &NoteEditDialog::slotCollectionChanged);
