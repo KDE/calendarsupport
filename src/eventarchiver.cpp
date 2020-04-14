@@ -26,7 +26,6 @@
 
 #include "kcalprefs.h"
 #include "utils.h"
-#include <kio_version.h>
 #include <Akonadi/Calendar/IncidenceChanger>
 
 #include <KCalendarCore/ICalFormat>
@@ -245,11 +244,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     if (archiveURL.isLocalFile()) {
         fileExists = QFile::exists(archiveURL.toLocalFile());
     } else {
-#if KIO_VERSION < QT_VERSION_CHECK(5, 69, 0)
-        auto job = KIO::stat(archiveURL, KIO::StatJob::SourceSide, 0);
-#else
         auto job = KIO::statDetails(archiveURL, KIO::StatJob::SourceSide, KIO::StatBasic);
-#endif
 
         KJobWidgets::setWindow(job, widget);
         fileExists = job->exec();
