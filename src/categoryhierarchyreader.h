@@ -23,7 +23,7 @@
 
 #include <QVariant>
 
-class KComboBox;
+class QComboBox;
 
 class QTreeWidget;
 class QTreeWidgetItem;
@@ -53,7 +53,7 @@ protected:
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQComboBox : public CategoryHierarchyReader
 {
 public:
-    explicit CategoryHierarchyReaderQComboBox(KComboBox *box) : mBox(box)
+    explicit CategoryHierarchyReaderQComboBox(QComboBox *box) : mBox(box)
     {
     }
 
@@ -68,7 +68,7 @@ protected:
     int depth() const override;
 
 private:
-    KComboBox *mBox = nullptr;
+    QComboBox *mBox = nullptr;
     int mCurrentDepth = 0;
 };
 

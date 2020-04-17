@@ -20,7 +20,7 @@
 #include "categoryhierarchyreader.h"
 #include "categoryconfig.h"
 
-#include <KComboBox>
+#include <QComboBox>
 
 #include <QTreeWidget>
 
