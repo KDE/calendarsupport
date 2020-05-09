@@ -21,6 +21,7 @@ set(calendarsupport_LIB_SRCS
   utils.cpp
   tagcache.cpp
   plugin.cpp
+  urihandler.cpp
 
   printing/calprintpluginbase.cpp
   printing/calprintdefaultplugins.cpp
@@ -77,7 +78,6 @@ PRIVATE
   KF5::AkonadiCore
   KF5::CalendarCore
   KF5::CalendarUtils
-  KF5::KdepimDBusInterfaces
   KF5::PimCommon
 )
 
@@ -107,6 +107,7 @@ ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
   MessageWidget
   ArchiveDialog
   NoteEditDialog
+  UriHandler
   REQUIRED_HEADERS CalendarSupport_HEADERS
   PREFIX CalendarSupport
 )

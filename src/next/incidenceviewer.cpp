@@ -22,8 +22,8 @@
 #include "incidenceviewer_p.h"
 #include "attachmenthandler.h"
 #include "utils.h"
+#include "urihandler.h"
 
-#include <KdepimDBusInterfaces/UriHandler>
 #include "incidenceattachmentmodel.h"
 
 #include <CollectionFetchJob>
