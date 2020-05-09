@@ -24,9 +24,9 @@
 #include "urihandler.h"
 #include "calendarsupport_debug.h"
 
+#include <KIO/ApplicationLauncherJob>
 #include <KRun>
 #include <KService>
-#include <KDesktopFile>
 
 #include <QUrl>
 #include <QUrlQuery>
@@ -38,29 +38,35 @@ namespace {
 
 bool startService(const QString &desktopFileName, const QString &uri)
 {
-    KDesktopFile desktopFile(QStandardPaths::ApplicationsLocation, desktopFileName);
-    const KService service{&desktopFile};
-    if (!KRun::run(service.exec(), {QUrl{uri}}, nullptr)) {
-        qCWarning(CALENDARSUPPORT_LOG) << "Failed to start" << desktopFileName;
+    const auto service = KService::serviceByDesktopName(desktopFileName);
+    if (!service) {
+        qWarning() << "Desktop file not found:" << desktopFileName << ".desktop  -- please check your installation";
         return false;
     }
-
+    auto job = new KIO::ApplicationLauncherJob(service);
+    job->setUrls({QUrl{uri}});
+    QObject::connect(job, &KJob::result, [desktopFileName](KJob *job) {
+        if (job->error()) {
+            qCWarning(CALENDARSUPPORT_LOG) << "Failed to start" << desktopFileName << ":" << job->errorText();
+        }
+    });
+    job->start();
     return true;
 }
 
 bool startKOrganizer(const QString &uri)
 {
-    return startService(QStringLiteral("korganizer-view.desktop"), uri);
+    return startService(QStringLiteral("korganizer-view"), uri);
 }
 
 bool startKMail(const QString &uri)
 {
-    return startService(QStringLiteral("kmail_view.desktop"), uri);
+    return startService(QStringLiteral("kmail_view"), uri);
 }
 
 bool startKAddressbook(const QString &uri)
 {
-    return startService(QStringLiteral("kaddressbook-view.desktop"), uri);
+    return startService(QStringLiteral("kaddressbook-view"), uri);
 }
 
 } // namespace
