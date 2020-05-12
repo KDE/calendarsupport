@@ -206,9 +206,11 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items)
 
     mimeData->setUrls(urls);
 
-    KCalUtils::ICalDrag::populateMimeData(mimeData.get(), cal);
-
-    return mimeData.release();
+    if (KCalUtils::ICalDrag::populateMimeData(mimeData.get(), cal)) {
+        return mimeData.release();
+    } else {
+        return nullptr;
+    }
 }
 
 QMimeData *CalendarSupport::createMimeData(const Akonadi::Item &item)
