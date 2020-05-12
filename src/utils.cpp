@@ -23,61 +23,39 @@
 */
 
 #include "utils.h"
+#include "calendarsupport_debug.h"
 #include "kcalprefs.h"
-
-#include <Collection>
-#include <CollectionDialog>
-#include <EntityDisplayAttribute>
-#include <EntityTreeModel>
-#include <Item>
 
 #include <AkonadiCore/AgentInstance>
 #include <AkonadiCore/AgentManager>
 #include <AkonadiCore/EntityDisplayAttribute>
+#include <AkonadiCore/EntityTreeModel>
+
+#include <AkonadiWidgets/CollectionDialog>
 
 #include <Akonadi/Calendar/BlockAlarmsAttribute>
 #include <Akonadi/Calendar/ETMCalendar>
-#include <Akonadi/Calendar/PublishDialog>
-#include <akonadi/calendar/calendarsettings.h> //krazy:exclude=camelcase it's a generated file
 
 #include <KHolidays/HolidayRegion>
 
 #include <KCalendarCore/CalFilter>
-#include <KCalendarCore/Event>
-#include <KCalendarCore/FreeBusy>
-#include <KCalendarCore/Incidence>
-#include <KCalendarCore/Journal>
-#include <KCalendarCore/MemoryCalendar>
-#include <KCalendarCore/Todo>
-#include <KCalendarCore/ICalFormat>
 #include <KCalendarCore/FileStorage>
+#include <KCalendarCore/FreeBusy>
+#include <KCalendarCore/MemoryCalendar>
 
 #include <KCalUtils/DndFactory>
 #include <KCalUtils/ICalDrag>
 #include <KCalUtils/VCalDrag>
 
-#include <KMessageBox>
-#include <KIO/FileCopyJob>
 #include <KLocalizedString>
 
 #include <QApplication>
-#include <QUrl>
-#include <QAbstractItemModel>
 #include <QDrag>
+#include <QFile>
 #include <QMimeData>
-#include <QModelIndex>
 #include <QPointer>
-#include <QFileDialog>
-#include <QUrlQuery>
-#include <QRegularExpression>
-#include <QTimeZone>
 #include <QStyle>
-
-#include "calendarsupport_debug.h"
-
-using namespace CalendarSupport;
-using namespace KHolidays;
-using namespace KCalendarCore;
+#include <QUrlQuery>
 
 KCalendarCore::Incidence::Ptr CalendarSupport::incidence(const Akonadi::Item &item)
 {
@@ -294,7 +272,8 @@ static bool itemMatches(const Akonadi::Item &item, const KCalendarCore::CalFilte
     return filter->filterIncidence(inc);
 }
 
-Akonadi::Item::List CalendarSupport::applyCalFilter(const Akonadi::Item::List &items_, const KCalendarCore::CalFilter *filter)
+Akonadi::Item::List CalendarSupport::applyCalFilter(const Akonadi::Item::List &items_,
+                                                    const KCalendarCore::CalFilter *filter)
 {
     Q_ASSERT(filter);
     Akonadi::Item::List items(items_);
@@ -413,7 +392,9 @@ KCalendarCore::Incidence::List CalendarSupport::incidences(const QMimeData *mime
     return incidences;
 }
 
-Akonadi::Collection CalendarSupport::selectCollection(QWidget *parent, int &dialogCode, const QStringList &mimeTypes, const Akonadi::Collection &defCollection)
+Akonadi::Collection CalendarSupport::selectCollection(
+    QWidget *parent, int &dialogCode, const QStringList &mimeTypes,
+    const Akonadi::Collection &defCollection)
 {
     QPointer<Akonadi::CollectionDialog> dlg(new Akonadi::CollectionDialog(parent));
     dlg->setWindowTitle(i18nc("@title:window", "Select Calendar"));
@@ -449,7 +430,9 @@ Akonadi::Item CalendarSupport::itemFromIndex(const QModelIndex &idx)
     return item;
 }
 
-Akonadi::Collection::List CalendarSupport::collectionsFromModel(const QAbstractItemModel *model, const QModelIndex &parentIndex, int start, int end)
+Akonadi::Collection::List CalendarSupport::collectionsFromModel(const QAbstractItemModel *model,
+                                                                const QModelIndex &parentIndex,
+                                                                int start, int end)
 {
     const int endRow = end >= 0 ? end : model->rowCount(parentIndex) - 1;
     Akonadi::Collection::List collections;
@@ -470,7 +453,9 @@ Akonadi::Collection::List CalendarSupport::collectionsFromModel(const QAbstractI
     return collections;
 }
 
-Akonadi::Item::List CalendarSupport::itemsFromModel(const QAbstractItemModel *model, const QModelIndex &parentIndex, int start, int end)
+Akonadi::Item::List CalendarSupport::itemsFromModel(const QAbstractItemModel *model,
+                                                    const QModelIndex &parentIndex,
+                                                    int start, int end)
 {
     const int endRow = end >= 0 ? end : model->rowCount(parentIndex) - 1;
     Akonadi::Item::List items;
@@ -539,8 +524,8 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
                     nameStr = cName;
                     typeStr = i18n("Calendar");
                     break;
-                } else if (tName.startsWith(QLatin1String("shared.tasks"), Qt::CaseInsensitive)
-                           || tName.startsWith(QLatin1String("shared.todo"), Qt::CaseInsensitive)) {
+                } else if (tName.startsWith(QLatin1String("shared.tasks"), Qt::CaseInsensitive) ||
+                           tName.startsWith(QLatin1String("shared.todo"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = i18n("Tasks");
@@ -555,10 +540,10 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
                     nameStr = cName;
                     typeStr = i18n("Notes");
                     break;
-                } else if (tName != i18n("Calendar")
-                           && tName != i18n("Tasks")
-                           && tName != i18n("Journal")
-                           && tName != i18n("Notes")) {
+                } else if (tName != i18n("Calendar") &&
+                           tName != i18n("Tasks") &&
+                           tName != i18n("Journal") &&
+                           tName != i18n("Notes")) {
                     ownerStr = tName;
                     break;
                 } else {
@@ -571,11 +556,10 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
 
         if (!ownerStr.isEmpty()) {
             if (!ownerStr.compare(QLatin1String("INBOX"), Qt::CaseInsensitive)) {
-                return i18nc("%1 is folder contents",
-                             "My Kolab %1", typeStr);
-            } else if (!ownerStr.compare(QLatin1String("SHARED"), Qt::CaseInsensitive)
-                       || !ownerStr.compare(QLatin1String("CALENDAR"), Qt::CaseInsensitive)
-                       || !ownerStr.compare(QLatin1String("RESOURCES"), Qt::CaseInsensitive)) {
+                return i18nc("%1 is folder contents", "My Kolab %1", typeStr);
+            } else if (!ownerStr.compare(QLatin1String("SHARED"), Qt::CaseInsensitive) ||
+                       !ownerStr.compare(QLatin1String("CALENDAR"), Qt::CaseInsensitive) ||
+                       !ownerStr.compare(QLatin1String("RESOURCES"), Qt::CaseInsensitive)) {
                 return i18nc("%1 is folder name, %2 is folder contents",
                              "Shared Kolab %1 %2", nameStr, typeStr);
             } else {
@@ -725,13 +709,13 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
         if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isEverythingBlocked()) {
             blockList << i18nc("blocking all reminders for this calendar", "all");
         } else {
-            if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(Alarm::Audio)) {
+            if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(KCalendarCore::Alarm::Audio)) {
                 blockList << i18nc("blocking audio reminders for this calendar", "audio");
-            } else if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(Alarm::Display)) {
+            } else if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(KCalendarCore::Alarm::Display)) {
                 blockList << i18nc("blocking display pop-up dialog reminders for this calendar", "display");
-            } else if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(Alarm::Email)) {
+            } else if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(KCalendarCore::Alarm::Email)) {
                 blockList << i18nc("blocking email reminders for this calendar", "email");
-            } else if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(Alarm::Procedure)) {
+            } else if (coll.attribute<Akonadi::BlockAlarmsAttribute>()->isAlarmTypeBlocked(KCalendarCore::Alarm::Procedure)) {
                 blockList << i18nc("blocking run a command reminders for this calendar", "procedure");
             } else {
                 blockList << i18nc("blocking unknown type reminders for this calendar", "other");
@@ -777,8 +761,8 @@ QList<QDate> CalendarSupport::workDays(const QDate &startDate, const QDate &endD
                 const KHolidays::Holiday::List list = region.holidays(startDate, endDate);
                 const int listCount(list.count());
                 for (int i = 0; i < listCount; ++i) {
-                    const Holiday &h = list.at(i);
-                    if (h.dayType() == Holiday::NonWorkday) {
+                    const KHolidays::Holiday &h = list.at(i);
+                    if (h.dayType() == KHolidays::Holiday::NonWorkday) {
                         result.removeAll(h.observedStartDate());
                     }
                 }
@@ -798,7 +782,7 @@ QStringList CalendarSupport::holiday(const QDate &date)
     for (const QString &regionStr : holidays) {
         KHolidays::HolidayRegion region(regionStr);
         if (region.isValid()) {
-            const Holiday::List list = region.holidays(date);
+            const KHolidays::Holiday::List list = region.holidays(date);
             const int listCount = list.count();
             for (int i = 0; i < listCount; ++i) {
                 // don't add duplicates.
@@ -871,7 +855,8 @@ bool CalendarSupport::mergeCalendar(const QString &srcFilename, const KCalendarC
     return loadedSuccesfully;
 }
 
-void CalendarSupport::createAlarmReminder(const Alarm::Ptr &alarm, KCalendarCore::IncidenceBase::IncidenceType type)
+void CalendarSupport::createAlarmReminder(const KCalendarCore::Alarm::Ptr &alarm,
+                                          KCalendarCore::IncidenceBase::IncidenceType type)
 {
     int duration; // in secs
     switch (CalendarSupport::KCalPrefs::instance()->mReminderTimeUnits) {

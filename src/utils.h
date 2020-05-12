@@ -26,31 +26,27 @@
 
 #include "calendarsupport_export.h"
 
-#include <Collection>
-#include <Item>
-#include <Akonadi/Calendar/ETMCalendar>
+#include <AkonadiCore/Item>
 
+#include <KCalendarCore/Calendar>
 #include <KCalendarCore/Event>
 #include <KCalendarCore/Incidence>
 #include <KCalendarCore/Journal>
-#include <KCalendarCore/ScheduleMessage>
 #include <KCalendarCore/Todo>
 
 #include <QModelIndex>
-
-namespace KCalendarCore {
-class CalFilter;
-}
 
 namespace Akonadi {
 class ETMCalendar;
 }
 
+namespace KCalendarCore {
+class CalFilter;
+}
+
 class QAbstractItemModel;
 class QDrag;
 class QMimeData;
-
-typedef QList<QModelIndex> QModelIndexList;
 
 namespace CalendarSupport {
 class Calendar;
@@ -186,7 +182,8 @@ CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item::List &items, QWidg
   @param filter the filter to apply to the list of items
   @return the filtered list of items
 */
-CALENDARSUPPORT_EXPORT Akonadi::Item::List applyCalFilter(const Akonadi::Item::List &items, const KCalendarCore::CalFilter *filter);
+CALENDARSUPPORT_EXPORT Akonadi::Item::List applyCalFilter(const Akonadi::Item::List &items,
+                                                          const KCalendarCore::CalFilter *filter);
 
 /**
   Shows a modal dialog that allows to select a collection.
@@ -198,7 +195,8 @@ CALENDARSUPPORT_EXPORT Akonadi::Item::List applyCalFilter(const Akonadi::Item::L
   there was no collection selected.
 */
 CALENDARSUPPORT_EXPORT Akonadi::Collection selectCollection(
-    QWidget *parent, int &dialogCode, const QStringList &mimeTypes, const Akonadi::Collection &defaultCollection = Akonadi::Collection());
+    QWidget *parent, int &dialogCode, const QStringList &mimeTypes,
+    const Akonadi::Collection &defaultCollection = Akonadi::Collection());
 
 CALENDARSUPPORT_EXPORT Akonadi::Item itemFromIndex(const QModelIndex &index);
 
@@ -248,7 +246,8 @@ CALENDARSUPPORT_EXPORT bool mergeCalendar(const QString &srcFilename, const KCal
 
 CALENDARSUPPORT_EXPORT bool mergeCalendar(const QString &srcFilename, const KCalendarCore::Calendar::Ptr &destCalendar);
 
-CALENDARSUPPORT_EXPORT void createAlarmReminder(const KCalendarCore::Alarm::Ptr &alarm, KCalendarCore::IncidenceBase::IncidenceType type);
+CALENDARSUPPORT_EXPORT void createAlarmReminder(const KCalendarCore::Alarm::Ptr &alarm,
+                                                KCalendarCore::IncidenceBase::IncidenceType type);
 }
 
 #endif
