@@ -25,7 +25,13 @@
 #include "calendarsupport_debug.h"
 
 #include <KIO/ApplicationLauncherJob>
+#include <kio_version.h>
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 71, 0)
+#include <KIO/JobUiDelegate>
+#include <KIO/OpenUrlJob>
+#else
 #include <KRun>
+#endif
 #include <KService>
 
 #include <QUrl>
@@ -99,7 +105,12 @@ bool UriHandler::process(const QString &uri)
             return startKAddressbook(uri);
         }
     } else {  // no special URI, let KDE handle it
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 71, 0)
+        KIO::OpenUrlJob *job = new KIO::OpenUrlJob(QUrl(uri));
+        job->start();
+#else
         new KRun(QUrl(uri), nullptr);
+#endif
     }
 
     return false;
