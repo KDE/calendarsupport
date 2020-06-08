@@ -372,7 +372,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                     }
 
                     offset = offset / 60; // make minutes
-                    int useoffset = offset;
+                    int useoffset = 0;
 
                     if (offset % (24 * 60) == 0 && offset > 0) {     // divides evenly into days?
                         useoffset = offset / (24 * 60);
