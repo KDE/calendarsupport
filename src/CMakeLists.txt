@@ -22,6 +22,7 @@ set(calendarsupport_LIB_SRCS
   tagcache.cpp
   plugin.cpp
   urihandler.cpp
+  kdatepickerpopup.cpp
 
   printing/calprintpluginbase.cpp
   printing/calprintdefaultplugins.cpp
@@ -107,6 +108,7 @@ ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
   MessageWidget
   ArchiveDialog
   NoteEditDialog
+  KDatePickerPopup
   UriHandler
   REQUIRED_HEADERS CalendarSupport_HEADERS
   PREFIX CalendarSupport
