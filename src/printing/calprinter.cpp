@@ -57,7 +57,7 @@ CalPrinter::CalPrinter(QWidget *parent, const Akonadi::ETMCalendar::Ptr &calenda
 
 CalPrinter::~CalPrinter()
 {
-    mPrintPlugins.clear();
+    qDeleteAll(mPrintPlugins);
     delete mConfig;
 }
 
@@ -65,6 +65,7 @@ void CalPrinter::init(const Akonadi::ETMCalendar::Ptr &calendar)
 {
     mCalendar = calendar;
 
+    qDeleteAll(mPrintPlugins);
     mPrintPlugins.clear();
 
     if (!mUniqItem) {
