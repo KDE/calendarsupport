@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-set(PIM_VERSION "5.14.43")
+set(PIM_VERSION "5.14.80")
 
 project(calendarsupport VERSION ${PIM_VERSION})
 
