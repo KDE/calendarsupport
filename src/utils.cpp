@@ -678,13 +678,13 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
 
     // Content Type
     QStringList mimeTypes = coll.contentMimeTypes();
-    mimeTypes.removeAll(QLatin1String("inode/directory"));
+    mimeTypes.removeAll(QStringLiteral("inode/directory"));
     QString mimeTypeStr;
     if (!mimeTypes.isEmpty()) {
         mimeTypeStr = QLocale().createSeparatedList(
                           mimeTypes.
                           replaceInStrings(
-                              QLatin1String("application/x-vnd.akonadi.calendar."), QString()));
+                              QStringLiteral("application/x-vnd.akonadi.calendar."), QString()));
     } else {
         mimeTypeStr = i18nc("collection has no mimetypes to show the user", "none");
     }
