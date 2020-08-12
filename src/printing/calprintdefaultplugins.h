@@ -4,11 +4,7 @@
   SPDX-FileCopyrightText: 2008 Ron Goodheart <rong.dev@gmail.com>
   SPDX-FileCopyrightText: 2012-2013 Allen Winter <winter@kde.org>
 
-  SPDX-License-Identifier: GPL-2.0-or-later
-
-  As a special exception, permission is given to link this program
-  with any edition of Qt, and distribute the resulting executable,
-  without including the source code for Qt in the source distribution.
+  SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 #ifndef CALENDARSUPPORT_CALPRINTDEFAULTPLUGINS_H
 #define CALENDARSUPPORT_CALPRINTDEFAULTPLUGINS_H

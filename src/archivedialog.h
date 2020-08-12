@@ -2,11 +2,7 @@
   SPDX-FileCopyrightText: 2000, 2001 Cornelius Schumacher <schumacher@kde.org>
   SPDX-FileCopyrightText: 2003-2004 Reinhold Kainhofer <reinhold@kainhofer.com>
 
-  SPDX-License-Identifier: GPL-2.0-or-later
-
-  As a special exception, permission is given to link this program
-  with any edition of Qt, and distribute the resulting executable,
-  without including the source code for Qt in the source distribution.
+  SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 #ifndef CALENDARSUPPORT_ARCHIVEDIALOG_H
 #define CALENDARSUPPORT_ARCHIVEDIALOG_H
