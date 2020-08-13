@@ -6,12 +6,12 @@
 */
 
 #include "testfreebusyitemmodel.h"
-#include "modeltest.h"
 #include "../freebusyitemmodel.h"
 #include "../freebusyitem.h"
 
 #include <KCalendarCore/Attendee>
 
+#include <QAbstractItemModelTester>
 #include <QTest>
 
 using namespace CalendarSupport;
@@ -23,7 +23,7 @@ QTEST_GUILESS_MAIN(FreeBusyItemModelTest)
 void FreeBusyItemModelTest::testModelValidity()
 {
     FreeBusyItemModel *model = new FreeBusyItemModel(this);
-    new ModelTest(model, this);
+    new QAbstractItemModelTester(model, this);
 
     QVERIFY(model->rowCount() == 0);
 
@@ -76,7 +76,7 @@ void FreeBusyItemModelTest::testModelValidity()
 void FreeBusyItemModelTest::testModelValidity2()
 {
     FreeBusyItemModel *model = new FreeBusyItemModel(this);
-    new ModelTest(model, this);
+    new QAbstractItemModelTester(model, this);
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
@@ -199,7 +199,7 @@ void FreeBusyItemModelTest::testModelValidity2()
 void FreeBusyItemModelTest::testInsertFreeBusy()
 {
     FreeBusyItemModel *model = new FreeBusyItemModel(this);
-    new ModelTest(model, this);
+    new QAbstractItemModelTester(model, this);
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);

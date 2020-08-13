@@ -6,12 +6,12 @@
 */
 
 #include "testfreeperiodmodel.h"
-#include "modeltest.h"
 #include "../freeperiodmodel.h"
 
 #include <KCalendarCore/Period>
 #include <KCalendarCore/Duration>
 
+#include <QAbstractItemModelTester>
 #include <QTest>
 
 using namespace CalendarSupport;
@@ -23,7 +23,7 @@ QTEST_GUILESS_MAIN(FreePeriodModelTest)
 void FreePeriodModelTest::testModelValidity()
 {
     FreePeriodModel *model = new FreePeriodModel(this);
-    new ModelTest(model, this);
+    new QAbstractItemModelTester(model, this);
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
@@ -41,7 +41,7 @@ void FreePeriodModelTest::testModelValidity()
 void FreePeriodModelTest::testSplitByDay()
 {
     FreePeriodModel *model = new FreePeriodModel(this);
-    new ModelTest(model, this);
+    new QAbstractItemModelTester(model, this);
 
     const QDateTime startDt(QDate(2010, 7, 24), QTime(8, 0, 0), Qt::UTC);
     const QDateTime endDt(QDate(2010, 7, 25), QTime(8, 0, 0), Qt::UTC);
