@@ -2,6 +2,7 @@
 X-KDE-Library=korg_listprint
 Name=List Print Style
 Name[ar]=نمط الطّباعة ”قائمة“
+Name[az]=Çap Üslubu Siyahısı
 Name[ca]=Estil d'impressió en llista
 Name[ca@valencia]=Estil d'impressió en llista
 Name[cs]=Styl deníku - seznam
@@ -39,6 +40,7 @@ Name[zh_CN]=列表打印样式
 Name[zh_TW]=列出列印樣式
 Comment=This plugin allows you to print out events and to-dos in list form.
 Comment[ar]=تتيح لك هذه الملحقة طباعة الأحداث والمهامّ بصيغة قائمة.
+Comment[az]=Bu əlavə sizə tədbir və tapşırırqları siyahı formasında çap etməyə imkan verir.
 Comment[ca]=Aquest connector permet imprimir esdeveniments i tasques pendents en forma de llista.
 Comment[ca@valencia]=Aquest connector permet imprimir esdeveniments i tasques pendents en forma de llista.
 Comment[cs]=tento modul umožňuje tisknout události a úlohy do seznamu.
