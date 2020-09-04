@@ -22,7 +22,6 @@ class IncidenceAttachmentModelPrivate
         : q_ptr(qq)
         , m_modelIndex(modelIndex)
         , m_item(item)
-        , m_monitor(nullptr)
     {
         if (modelIndex.isValid()) {
             QObject::connect(modelIndex.model(), SIGNAL(dataChanged(QModelIndex,QModelIndex)),

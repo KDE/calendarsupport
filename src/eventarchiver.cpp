@@ -47,8 +47,8 @@ public:
         m_changer->setGroupwareCommunication(m_wasEnabled);
     }
 
-    bool m_wasEnabled;
-    Akonadi::IncidenceChanger *m_changer = nullptr;
+    bool m_wasEnabled = false;
+    Akonadi::IncidenceChanger *const m_changer;
 };
 
 EventArchiver::EventArchiver(QObject *parent)

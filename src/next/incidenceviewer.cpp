@@ -56,11 +56,7 @@ class Q_DECL_HIDDEN IncidenceViewer::Private
 {
 public:
     Private(IncidenceViewer *parent)
-        : mCalendar(nullptr)
-        , mParent(parent)
-        , mParentCollectionFetchJob(nullptr)
-        , mAttachmentModel(nullptr)
-        , mDelayedClear(false)
+        : mParent(parent)
     {
         mAttachmentHandler = new AttachmentHandler(parent);
         mBrowser = new TextBrowser;
@@ -111,7 +107,7 @@ public:
     }
 
     Akonadi::ETMCalendar *mCalendar = nullptr;
-    IncidenceViewer *mParent = nullptr;
+    IncidenceViewer *const mParent;
     TextBrowser *mBrowser = nullptr;
     Akonadi::Item mCurrentItem;
     QString mHeaderText;

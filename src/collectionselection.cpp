@@ -19,7 +19,7 @@ public:
     {
     }
 
-    QItemSelectionModel *model = nullptr;
+    QItemSelectionModel *const model;
 };
 
 CollectionSelection::CollectionSelection(QItemSelectionModel *selectionModel, QObject *parent)

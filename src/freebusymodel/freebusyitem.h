@@ -52,12 +52,12 @@ private:
     KCalendarCore::FreeBusy::Ptr mFreeBusy;
 
     // This is used for the update timer
-    int mTimerID;
+    int mTimerID = 0;
 
     // Only run one download job at a time
     bool mIsDownloading = false;
 
-    QWidget *mParentWidget = nullptr;
+    QWidget *const mParentWidget;
 };
 }
 #endif

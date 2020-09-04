@@ -28,11 +28,10 @@ using namespace KCalendarCore;
 struct MultiChange {
     Akonadi::Item parent;
     QVector<Akonadi::Item::Id> children;
-    bool success;
+    bool success = true;
 
     explicit MultiChange(const Akonadi::Item &parent = Akonadi::Item())
         : parent(parent)
-        , success(true)
     {
     }
 

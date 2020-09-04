@@ -15,8 +15,6 @@ using namespace CalendarSupport;
 
 FreeBusyItem::FreeBusyItem(const KCalendarCore::Attendee &attendee, QWidget *parentWidget)
     : mAttendee(attendee)
-    , mTimerID(0)
-    , mIsDownloading(false)
     , mParentWidget(parentWidget)
 {
     Q_ASSERT(!attendee.isNull());

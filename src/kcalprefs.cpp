@@ -39,7 +39,7 @@ public:
     Akonadi::Collection::Id mDefaultCalendarId;
 
     TagCache mTagCache;
-    QColor mDefaultCategoryColor;
+    const QColor mDefaultCategoryColor;
     QDateTime mDayBegins;
 };
 

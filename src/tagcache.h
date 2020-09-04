@@ -38,7 +38,7 @@ private:
     QHash<Akonadi::Tag::Id, Akonadi::Tag> mCache;
     QHash<QByteArray, Akonadi::Tag::Id> mGidCache;
     QHash<QString, Akonadi::Tag::Id> mNameCache;
-    Akonadi::Monitor *mMonitor = nullptr;
+    Akonadi::Monitor *const mMonitor;
 };
 }
 

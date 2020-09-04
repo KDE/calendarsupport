@@ -43,8 +43,8 @@ protected:
     }
 
 private:
-    KDatePicker *mDatePicker = nullptr;
-    QWidget *mOriginalParent = nullptr;
+    KDatePicker *const mDatePicker;
+    QWidget *const mOriginalParent;
 };
 
 class Q_DECL_HIDDEN KDatePickerPopup::Private
@@ -52,7 +52,6 @@ class Q_DECL_HIDDEN KDatePickerPopup::Private
 public:
     Private(KDatePickerPopup *qq)
         : q(qq)
-        , mDatePicker(nullptr)
     {
     }
 
@@ -65,7 +64,7 @@ public:
     void slotNextMonth();
     void slotNoDate();
 
-    KDatePickerPopup *q = nullptr;
+    KDatePickerPopup *const q;
     KDatePicker *mDatePicker = nullptr;
     Modes mModes;
 };
