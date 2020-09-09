@@ -126,13 +126,13 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientati
     QPrinter printer;
     switch (dlgorientation) {
     case eOrientPlugin:
-        printer.setOrientation(selectedStyle->defaultOrientation());
+        printer.setPageOrientation(selectedStyle->defaultOrientation());
         break;
     case eOrientPortrait:
-        printer.setOrientation(QPrinter::Portrait);
+        printer.setPageOrientation(QPageLayout::Portrait);
         break;
     case eOrientLandscape:
-        printer.setOrientation(QPrinter::Landscape);
+        printer.setPageOrientation(QPageLayout::Landscape);
         break;
     case eOrientPrinter:
         break;

@@ -82,9 +82,9 @@ void CalPrintYear::saveConfig()
     }
 }
 
-QPrinter::Orientation CalPrintYear::defaultOrientation() const
+QPageLayout::Orientation CalPrintYear::defaultOrientation() const
 {
-    return (mPages == 1) ? QPrinter::Landscape : QPrinter::Portrait;
+    return (mPages == 1) ? QPageLayout::Landscape : QPageLayout::Portrait;
 }
 
 void CalPrintYear::setDateRange(const QDate &from, const QDate &to)
@@ -131,7 +131,7 @@ void CalPrintYear::print(QPainter &p, int width, int height)
         QString stdate = locale.toString(start, QLocale::ShortFormat);
         QString endate = locale.toString(end, QLocale::ShortFormat);
         QString title;
-        if (orientation() == QPrinter::Landscape) {
+        if (orientation() == QPageLayout::Landscape) {
             title = i18nc("date from - to", "%1 - %2", stdate, endate);
         } else {
             title = i18nc("date from -\nto", "%1 -\n%2", stdate, endate);

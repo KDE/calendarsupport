@@ -108,7 +108,7 @@ public:
     */
     static int weekdayColumn(int weekday);
 
-    QPrinter::Orientation orientation() const;
+    QPageLayout::Orientation orientation() const;
 
     /** Returns the height of the page header. If the height was explicitly
         set using setHeaderHeight, that value is returned, otherwise a

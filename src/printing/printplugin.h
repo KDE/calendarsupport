@@ -140,9 +140,9 @@ public:
       config settings), implement this function in your subclass and
       return the desired orientation.
     */
-    virtual QPrinter::Orientation defaultOrientation() const
+    virtual QPageLayout::Orientation defaultOrientation() const
     {
-        return QPrinter::Portrait;
+        return QPageLayout::Portrait;
     }
 
     /**

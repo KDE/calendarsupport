@@ -48,7 +48,7 @@ public:
     }
 
     QWidget *createConfigWidget(QWidget *) override;
-    Q_REQUIRED_RESULT QPrinter::Orientation defaultOrientation() const override;
+    Q_REQUIRED_RESULT QPageLayout::Orientation defaultOrientation() const override;
 
 public:
     void print(QPainter &p, int width, int height) override;

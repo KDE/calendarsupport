@@ -53,9 +53,9 @@ public:
     }
 
     QWidget *createConfigWidget(QWidget *) override;
-    Q_REQUIRED_RESULT QPrinter::Orientation defaultOrientation() const override
+    Q_REQUIRED_RESULT QPageLayout::Orientation defaultOrientation() const override
     {
-        return QPrinter::Portrait;
+        return QPageLayout::Portrait;
     }
 
 public:
@@ -166,7 +166,7 @@ public:
     /**
       Returns the default orientation for the eWeekPrintType.
     */
-    QPrinter::Orientation defaultOrientation() const override;
+    QPageLayout::Orientation defaultOrientation() const override;
 
 public:
     void print(QPainter &p, int width, int height) override;
@@ -222,9 +222,9 @@ public:
     }
 
     QWidget *createConfigWidget(QWidget *) override;
-    QPrinter::Orientation defaultOrientation() const override
+    QPageLayout::Orientation defaultOrientation() const override
     {
-        return QPrinter::Landscape;
+        return QPageLayout::Landscape;
     }
 
 public:

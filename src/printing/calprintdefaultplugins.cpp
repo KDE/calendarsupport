@@ -805,7 +805,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
         QString line1 = local.toString(mFromDate, QLocale::ShortFormat);
         QString line2 = local.toString(mToDate, QLocale::ShortFormat);
         QString title;
-        if (orientation() == QPrinter::Landscape) {
+        if (orientation() == QPageLayout::Landscape) {
             title = i18nc("date from-to", "%1 - %2", line1, line2);
         } else {
             title = i18nc("date from-\nto", "%1 -\n%2", line1, line2);
@@ -1050,14 +1050,14 @@ void CalPrintWeek::saveConfig()
     }
 }
 
-QPrinter::Orientation CalPrintWeek::defaultOrientation() const
+QPageLayout::Orientation CalPrintWeek::defaultOrientation() const
 {
     if (mWeekPrintType == Filofax) {
-        return QPrinter::Portrait;
+        return QPageLayout::Portrait;
     } else if (mWeekPrintType == SplitWeek) {
-        return QPrinter::Portrait;
+        return QPageLayout::Portrait;
     } else {
-        return QPrinter::Landscape;
+        return QPageLayout::Landscape;
     }
 }
 
@@ -1099,7 +1099,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
         do {
             line1 = local.toString(curWeek.addDays(-6), QLocale::ShortFormat);
             line2 = local.toString(curWeek, QLocale::ShortFormat);
-            if (orientation() == QPrinter::Landscape) {
+            if (orientation() == QPageLayout::Landscape) {
                 title = i18nc("date from-to", "%1 - %2", line1, line2);
             } else {
                 title = i18nc("date from-\nto", "%1 -\n%2", line1, line2);
@@ -1126,7 +1126,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
         do {
             line1 = local.toString(curWeek.addDays(-6), QLocale::ShortFormat);
             line2 = local.toString(curWeek, QLocale::ShortFormat);
-            if (orientation() == QPrinter::Landscape) {
+            if (orientation() == QPageLayout::Landscape) {
                 title = i18nc("date from - to (week number)", "%1 - %2 (Week %3)",
                               line1, line2, curWeek.weekNumber());
             } else {

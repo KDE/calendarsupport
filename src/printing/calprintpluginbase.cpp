@@ -232,9 +232,9 @@ void CalPrintPluginBase::setPrintFooter(bool printFooter)
     mPrintFooter = printFooter;
 }
 
-QPrinter::Orientation CalPrintPluginBase::orientation() const
+QPageLayout::Orientation CalPrintPluginBase::orientation() const
 {
-    return mPrinter ? mPrinter->orientation() : QPrinter::Portrait;
+    return mPrinter ? mPrinter->pageLayout().orientation() : QPageLayout::Portrait;
 }
 
 QColor CalPrintPluginBase::getTextColor(const QColor &c) const
@@ -326,7 +326,7 @@ int CalPrintPluginBase::headerHeight() const
 {
     if (mHeaderHeight >= 0) {
         return mHeaderHeight;
-    } else if (orientation() == QPrinter::Portrait) {
+    } else if (orientation() == QPageLayout::Portrait) {
         return PORTRAIT_HEADER_HEIGHT;
     } else {
         return LANDSCAPE_HEADER_HEIGHT;
@@ -356,7 +356,7 @@ int CalPrintPluginBase::footerHeight() const
 
     if (mFooterHeight >= 0) {
         return mFooterHeight;
-    } else if (orientation() == QPrinter::Portrait) {
+    } else if (orientation() == QPageLayout::Portrait) {
         return PORTRAIT_FOOTER_HEIGHT;
     } else {
         return LANDSCAPE_FOOTER_HEIGHT;
