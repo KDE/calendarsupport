@@ -50,7 +50,7 @@ public:
     }
 
     QColor mDefaultCategoryColor;
-    KCoreConfigSkeleton *config = nullptr;
+    KCoreConfigSkeleton *const config;
 };
 
 QHash<QString, QColor> CategoryConfig::readColors() const

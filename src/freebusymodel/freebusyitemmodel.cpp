@@ -69,12 +69,6 @@ private:
 class CalendarSupport::FreeBusyItemModelPrivate
 {
 public:
-    FreeBusyItemModelPrivate()
-        : mForceDownload(false)
-        , mRootData(nullptr)
-    {
-    }
-
     ~FreeBusyItemModelPrivate()
     {
         delete mRootData;

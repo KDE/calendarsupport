@@ -56,7 +56,7 @@ public:
     }
 
     QMap<KJob *, ReceivedInfo> mJobToReceivedInfo;
-    QPointer<QWidget> mParent;
+    QPointer<QWidget> const mParent;
 };
 
 AttachmentHandler::AttachmentHandler(QWidget *parent) : QObject(parent)

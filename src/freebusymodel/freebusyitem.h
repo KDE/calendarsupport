@@ -48,7 +48,7 @@ Q_SIGNALS:
     void freebusyChanged(const KCalendarCore::FreeBusy::Ptr fb);
 
 private:
-    KCalendarCore::Attendee mAttendee;
+    const KCalendarCore::Attendee mAttendee;
     KCalendarCore::FreeBusy::Ptr mFreeBusy;
 
     // This is used for the update timer

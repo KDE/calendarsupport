@@ -73,7 +73,7 @@ private:
     Akonadi::ETMCalendar::Ptr mCalendar;
     QWidget *mParent = nullptr;
     KConfig *mConfig = nullptr;
-    bool mUniqItem;
+    const bool mUniqItem;
 };
 
 class CalPrintDialog : public QDialog
