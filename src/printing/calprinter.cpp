@@ -23,7 +23,6 @@
 #include <QStackedWidget>
 #include <KConfigGroup>
 #include <QDialogButtonBox>
-#include <QPushButton>
 
 #include <PimCommon/KPimPrintPreviewDialog>
 

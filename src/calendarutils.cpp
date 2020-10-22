@@ -13,7 +13,6 @@
 #include "utils.h"
 
 #include <KCalendarCore/Incidence>
-#include <Akonadi/Calendar/ETMCalendar>
 #include <Akonadi/Calendar/IncidenceChanger>
 
 #include <KLocalizedString>

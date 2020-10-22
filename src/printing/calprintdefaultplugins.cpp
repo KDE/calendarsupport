@@ -24,7 +24,6 @@
 
 #include <QPainter>
 #include <QPrinter>
-#include <KLocalizedString>
 
 using namespace CalendarSupport;
 

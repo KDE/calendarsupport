@@ -7,7 +7,6 @@
 
 #include "freeperiodmodel.h"
 
-#include <KCalendarCore/Period>
 
 #include <KLocalizedString>
 #include <KFormat>

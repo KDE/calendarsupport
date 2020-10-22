@@ -22,7 +22,6 @@
 #include <QAbstractTextDocumentLayout>
 #include <QFrame>
 #include <QLabel>
-#include <QPainter>
 #include <QTextCursor>
 #include <QTextDocument>
 #include <QTextDocumentFragment>

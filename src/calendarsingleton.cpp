@@ -7,7 +7,6 @@
 #include "calendarsingleton.h"
 #include "kcalprefs.h"
 
-#include <Akonadi/Calendar/ETMCalendar>
 #include <KCalendarCore/Person>
 
 /**
