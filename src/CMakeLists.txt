@@ -146,7 +146,7 @@ ecm_generate_headers(CalendarSupport_CamelCasefreebusy_HEADERS
 
 ecm_generate_pri_file(BASE_NAME CalendarSupport
     LIB_NAME KF5CalendarSupport
-    DEPS "Mime IdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/CalendarSupport
+    DEPS "KMime KIdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/CalendarSupport
 )
 
 install(FILES
