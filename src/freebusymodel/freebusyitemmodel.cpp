@@ -109,7 +109,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
         return QVariant();
     }
 
-    ItemPrivateData *data = (ItemPrivateData *)index.internalPointer();
+    auto *data = (ItemPrivateData *)index.internalPointer();
 
     if (data->parent() == d->mRootData) {
         int row = index.row();
@@ -200,7 +200,7 @@ QModelIndex FreeBusyItemModel::parent(const QModelIndex &child) const
         return QModelIndex();
     }
 
-    ItemPrivateData *childData = static_cast<ItemPrivateData *>(child.internalPointer());
+    auto *childData = static_cast<ItemPrivateData *>(child.internalPointer());
     ItemPrivateData *parentData = childData->parent();
     if (parentData == d->mRootData) {
         return QModelIndex();
@@ -222,7 +222,7 @@ void FreeBusyItemModel::addItem(const FreeBusyItem::Ptr &freebusy)
     int row = d->mFreeBusyItems.size();
     beginInsertRows(QModelIndex(), row, row);
     d->mFreeBusyItems.append(freebusy);
-    ItemPrivateData *data = new ItemPrivateData(d->mRootData);
+    auto *data = new ItemPrivateData(d->mRootData);
     d->mRootData->appendChild(data);
     endInsertRows();
 
@@ -239,7 +239,7 @@ void FreeBusyItemModel::setFreeBusyPeriods(const QModelIndex &parent, const KCal
         return;
     }
 
-    ItemPrivateData *parentData = static_cast<ItemPrivateData *>(parent.internalPointer());
+    auto *parentData = static_cast<ItemPrivateData *>(parent.internalPointer());
     int fb_count = list.size();
     int childCount = parentData->childCount();
     QModelIndex first = index(0, 0, parent);
@@ -258,7 +258,7 @@ void FreeBusyItemModel::setFreeBusyPeriods(const QModelIndex &parent, const KCal
     } else if (fb_count > childCount) {
         beginInsertRows(parent, childCount, fb_count - 1);
         for (int i = childCount; i < fb_count; ++i) {
-            ItemPrivateData *childData = new ItemPrivateData(parentData);
+            auto *childData = new ItemPrivateData(parentData);
             parentData->appendChild(childData);
         }
         endInsertRows();

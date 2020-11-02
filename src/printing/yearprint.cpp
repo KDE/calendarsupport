@@ -22,7 +22,7 @@ QWidget *CalPrintYear::createConfigWidget(QWidget *w)
 
 void CalPrintYear::readSettingsWidget()
 {
-    CalPrintYearConfig *cfg = dynamic_cast<CalPrintYearConfig *>((QWidget *)mConfigWidget);
+    auto *cfg = dynamic_cast<CalPrintYearConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         mYear = cfg->mYear->value();
         mPages = cfg->mPages->currentText().toInt();
@@ -33,7 +33,7 @@ void CalPrintYear::readSettingsWidget()
 
 void CalPrintYear::setSettingsWidget()
 {
-    CalPrintYearConfig *cfg
+    auto *cfg
         = dynamic_cast<CalPrintYearConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         QDate start(mYear, 1, 1);
@@ -90,7 +90,7 @@ QPageLayout::Orientation CalPrintYear::defaultOrientation() const
 void CalPrintYear::setDateRange(const QDate &from, const QDate &to)
 {
     CalPrintPluginBase::setDateRange(from, to);
-    CalPrintYearConfig *cfg = dynamic_cast<CalPrintYearConfig *>((QWidget *)mConfigWidget);
+    auto *cfg = dynamic_cast<CalPrintYearConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mYear->setValue(from.year());
     }

@@ -165,7 +165,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     setWindowTitle(i18nc("@title:window", "Print"));
     QDialogButtonBox *buttonBox = new QDialogButtonBox(
         QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
@@ -173,12 +173,12 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     connect(buttonBox, &QDialogButtonBox::rejected, this, &CalPrintDialog::reject);
     setModal(true);
     QWidget *page = new QWidget(this);
-    QVBoxLayout *pageVBoxLayout = new QVBoxLayout(page);
+    auto *pageVBoxLayout = new QVBoxLayout(page);
     pageVBoxLayout->setContentsMargins(0, 0, 0, 0);
     mainLayout->addWidget(page);
     mainLayout->addWidget(buttonBox);
 
-    QSplitter *splitter = new QSplitter(page);
+    auto *splitter = new QSplitter(page);
     pageVBoxLayout->addWidget(splitter);
     splitter->setOrientation(Qt::Horizontal);
     splitter->setChildrenCollapsible(false);
@@ -187,7 +187,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     mTypeGroup = new QButtonGroup(typeBox);
 
     QWidget *splitterRight = new QWidget(splitter);
-    QGridLayout *splitterRightLayout = new QGridLayout(splitterRight);
+    auto *splitterRightLayout = new QGridLayout(splitterRight);
     splitterRightLayout->setContentsMargins(0, 0, 0, 0);
     //splitterRightLayout->setMargin( marginHint() );
     //splitterRightLayout->setSpacing( spacingHint() );

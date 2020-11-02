@@ -40,7 +40,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Archive/Delete Past Events and To-dos"));
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
+    auto *mainLayout = new QVBoxLayout(this);
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
     mUser1Button = new QPushButton;
     buttonBox->addButton(mUser1Button, QDialogButtonBox::ActionRole);
@@ -55,7 +55,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     mainLayout->addWidget(topFrame);
     mainLayout->addWidget(buttonBox);
 
-    QVBoxLayout *topLayout = new QVBoxLayout(topFrame);
+    auto *topLayout = new QVBoxLayout(topFrame);
     topLayout->setContentsMargins(0, 0, 0, 0);
     QLabel *descLabel = new QLabel(topFrame);
     descLabel->setText(
@@ -78,11 +78,11 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     topLayout->addWidget(descLabel);
     connect(descLabel, &QLabel::linkActivated, this, &ArchiveDialog::showWhatsThis);
 
-    QButtonGroup *radioBG = new QButtonGroup(this);
+    auto *radioBG = new QButtonGroup(this);
     connect(radioBG, QOverload<QAbstractButton *>::of(
                 &QButtonGroup::buttonClicked), this, &ArchiveDialog::slotActionChanged);
 
-    QHBoxLayout *dateLayout = new QHBoxLayout();
+    auto *dateLayout = new QHBoxLayout();
     dateLayout->setContentsMargins(0, 0, 0, 0);
     mArchiveOnceRB = new QRadioButton(i18nc("@option:radio",
                                             "Archive now items older than:"),
@@ -114,7 +114,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     // Checkbox, numinput and combo for auto-archiving (similar to kmail's
     // mExpireFolderCheckBox/mReadExpiryTimeNumInput in kmfolderdia.cpp)
     QWidget *autoArchiveHBox = new QWidget(topFrame);
-    QHBoxLayout *autoArchiveHBoxHBoxLayout = new QHBoxLayout(autoArchiveHBox);
+    auto *autoArchiveHBoxHBoxLayout = new QHBoxLayout(autoArchiveHBox);
     autoArchiveHBoxHBoxLayout->setContentsMargins(0, 0, 0, 0);
     topLayout->addWidget(autoArchiveHBox);
     mAutoArchiveRB = new QRadioButton(i18nc("@option:radio",
@@ -163,7 +163,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
         i18nc("@item:inlistbox expiration in monthly units", "Month(s)"));
     mExpiryUnitsComboBox->setEnabled(false);
 
-    QHBoxLayout *fileLayout = new QHBoxLayout();
+    auto *fileLayout = new QHBoxLayout();
     fileLayout->setContentsMargins(0, 0, 0, 0);
     QLabel *l = new QLabel(i18nc("@label", "Archive &file:"), topFrame);
     fileLayout->addWidget(l);

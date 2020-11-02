@@ -95,7 +95,7 @@ public:
         happens on the given day */
     bool overlaps(CellItem *o) const override
     {
-        PrintCellItem *other = static_cast<PrintCellItem *>(o);
+        auto *other = static_cast<PrintCellItem *>(o);
         return !(other->start() >= end() || other->end() <= start());
     }
 
@@ -127,7 +127,7 @@ CalPrintPluginBase::~CalPrintPluginBase()
 QWidget *CalPrintPluginBase::createConfigWidget(QWidget *w)
 {
     QFrame *wdg = new QFrame(w);
-    QVBoxLayout *layout = new QVBoxLayout(wdg);
+    auto *layout = new QVBoxLayout(wdg);
 
     QLabel *title = new QLabel(description(), wdg);
     QFont titleFont(title->font());
@@ -944,7 +944,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p, const KCalendarCore::Even
 
     QListIterator<CellItem *> it2(cells);
     while (it2.hasNext()) {
-        PrintCellItem *placeItem = static_cast<PrintCellItem *>(it2.next());
+        auto *placeItem = static_cast<PrintCellItem *>(it2.next());
         drawAgendaItem(placeItem, p, startPrintDate, endPrintDate, minlen, box,
                        includeDescription, excludeTime);
     }
@@ -1656,7 +1656,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, const QDate &dt, const QRect &bo
     QFont oldfont(p.font());
     p.setFont(QFont(QStringLiteral("sans-serif"), 7));
     while (it1.hasNext()) {
-        PrintCellItem *placeItem = static_cast<PrintCellItem *>(it1.next());
+        auto *placeItem = static_cast<PrintCellItem *>(it1.next());
         int minsToStart = starttime.secsTo(placeItem->start()) / 60;
         int minsToEnd = starttime.secsTo(placeItem->end()) / 60;
 

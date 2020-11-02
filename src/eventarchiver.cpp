@@ -197,7 +197,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
 
     FileStorage archiveStore(archiveCalendar);
     archiveStore.setFileName(tmpFileName);
-    ICalFormat *format = new ICalFormat();
+    auto *format = new ICalFormat();
     archiveStore.setSaveFormat(format);
     if (!archiveStore.load()) {
         qCDebug(CALENDARSUPPORT_LOG) << "Can't load calendar from temp file";

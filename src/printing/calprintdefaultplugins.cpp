@@ -52,7 +52,7 @@ QWidget *CalPrintIncidence::createConfigWidget(QWidget *w)
 
 void CalPrintIncidence::readSettingsWidget()
 {
-    CalPrintIncidenceConfig *cfg
+    auto *cfg
         = dynamic_cast<CalPrintIncidenceConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         mUseColors = cfg->mColors->isChecked();
@@ -67,7 +67,7 @@ void CalPrintIncidence::readSettingsWidget()
 
 void CalPrintIncidence::setSettingsWidget()
 {
-    CalPrintIncidenceConfig *cfg
+    auto *cfg
         = dynamic_cast<CalPrintIncidenceConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mColors->setChecked(mUseColors);
@@ -671,7 +671,7 @@ QWidget *CalPrintDay::createConfigWidget(QWidget *w)
 
 void CalPrintDay::readSettingsWidget()
 {
-    CalPrintDayConfig *cfg
+    auto *cfg
         = dynamic_cast<CalPrintDayConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         mFromDate = cfg->mFromDate->date();
@@ -703,7 +703,7 @@ void CalPrintDay::readSettingsWidget()
 
 void CalPrintDay::setSettingsWidget()
 {
-    CalPrintDayConfig *cfg = dynamic_cast<CalPrintDayConfig *>((QWidget *)mConfigWidget);
+    auto *cfg = dynamic_cast<CalPrintDayConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(mFromDate);
         cfg->mToDate->setDate(mToDate);
@@ -776,7 +776,7 @@ void CalPrintDay::saveConfig()
 void CalPrintDay::setDateRange(const QDate &from, const QDate &to)
 {
     CalPrintPluginBase::setDateRange(from, to);
-    CalPrintDayConfig *cfg
+    auto *cfg
         = dynamic_cast<CalPrintDayConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(from);
@@ -950,7 +950,7 @@ QWidget *CalPrintWeek::createConfigWidget(QWidget *w)
 
 void CalPrintWeek::readSettingsWidget()
 {
-    CalPrintWeekConfig *cfg = dynamic_cast<CalPrintWeekConfig *>((QWidget *)mConfigWidget);
+    auto *cfg = dynamic_cast<CalPrintWeekConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         mFromDate = cfg->mFromDate->date();
         mToDate = cfg->mToDate->date();
@@ -982,7 +982,7 @@ void CalPrintWeek::readSettingsWidget()
 
 void CalPrintWeek::setSettingsWidget()
 {
-    CalPrintWeekConfig *cfg = dynamic_cast<CalPrintWeekConfig *>((QWidget *)mConfigWidget);
+    auto *cfg = dynamic_cast<CalPrintWeekConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(mFromDate);
         cfg->mToDate->setDate(mToDate);
@@ -1063,7 +1063,7 @@ QPageLayout::Orientation CalPrintWeek::defaultOrientation() const
 void CalPrintWeek::setDateRange(const QDate &from, const QDate &to)
 {
     CalPrintPluginBase::setDateRange(from, to);
-    CalPrintWeekConfig *cfg
+    auto *cfg
         = dynamic_cast<CalPrintWeekConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(from);
@@ -1211,7 +1211,7 @@ QWidget *CalPrintMonth::createConfigWidget(QWidget *w)
 
 void CalPrintMonth::readSettingsWidget()
 {
-    CalPrintMonthConfig *cfg = dynamic_cast<CalPrintMonthConfig *>((QWidget *)mConfigWidget);
+    auto *cfg = dynamic_cast<CalPrintMonthConfig *>((QWidget *)mConfigWidget);
 
     if (cfg) {
         mFromDate = QDate(cfg->mFromYear->value(), cfg->mFromMonth->currentIndex() + 1, 1);
@@ -1233,7 +1233,7 @@ void CalPrintMonth::readSettingsWidget()
 
 void CalPrintMonth::setSettingsWidget()
 {
-    CalPrintMonthConfig *cfg = dynamic_cast<CalPrintMonthConfig *>((QWidget *)mConfigWidget);
+    auto *cfg = dynamic_cast<CalPrintMonthConfig *>((QWidget *)mConfigWidget);
 
     if (cfg) {
         setDateRange(mFromDate, mToDate);
@@ -1289,7 +1289,7 @@ void CalPrintMonth::saveConfig()
 void CalPrintMonth::setDateRange(const QDate &from, const QDate &to)
 {
     CalPrintPluginBase::setDateRange(from, to);
-    CalPrintMonthConfig *cfg
+    auto *cfg
         = dynamic_cast<CalPrintMonthConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromMonth->clear();
@@ -1372,7 +1372,7 @@ QWidget *CalPrintTodos::createConfigWidget(QWidget *w)
 
 void CalPrintTodos::readSettingsWidget()
 {
-    CalPrintTodoConfig *cfg = dynamic_cast<CalPrintTodoConfig *>((QWidget *)mConfigWidget);
+    auto *cfg = dynamic_cast<CalPrintTodoConfig *>((QWidget *)mConfigWidget);
 
     if (cfg) {
         mPageTitle = cfg->mTitle->text();
@@ -1408,7 +1408,7 @@ void CalPrintTodos::readSettingsWidget()
 
 void CalPrintTodos::setSettingsWidget()
 {
-    CalPrintTodoConfig *cfg
+    auto *cfg
         = dynamic_cast<CalPrintTodoConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mTitle->setText(mPageTitle);

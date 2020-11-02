@@ -30,7 +30,7 @@ NoteEditDialogTest::NoteEditDialogTest()
     qRegisterMetaType<Akonadi::Item>();
     qRegisterMetaType<KMime::Message::Ptr>();
 
-    QStandardItemModel *model = new QStandardItemModel;
+    auto *model = new QStandardItemModel;
     for (int id = 42; id < 51; ++id) {
         Akonadi::Collection collection(id);
         collection.setRights(Akonadi::Collection::AllRights);
@@ -52,10 +52,10 @@ void NoteEditDialogTest::shouldHaveDefaultValuesOnCreation()
 {
     NoteEditDialog edit;
     QVERIFY(!edit.note());
-    QLineEdit *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
-    KPIMTextEdit::RichTextEditorWidget *notetext
+    auto *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
+    auto *notetext
         = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
-    QPushButton *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
+    auto *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
     QVERIFY(notetitle);
     QCOMPARE(notetitle->text(), QString());
     QVERIFY(notetext);
@@ -112,8 +112,8 @@ void NoteEditDialogTest::shouldHaveFilledText()
     item.setPayload(note.message());
 
     edit.load(item);
-    QLineEdit *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
-    KPIMTextEdit::RichTextEditorWidget *notetext
+    auto *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
+    auto *notetext
         = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     QCOMPARE(notetitle->text(), title);
     QCOMPARE(notetext->toPlainText(), text);
@@ -133,7 +133,7 @@ void NoteEditDialogTest::shouldHaveRichText()
     item.setPayload(note.message());
 
     edit.load(item);
-    KPIMTextEdit::RichTextEditorWidget *notetext
+    auto *notetext
         = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     QCOMPARE(notetext->toPlainText(), text);
     QVERIFY(notetext->editor()->acceptRichText());
@@ -142,7 +142,7 @@ void NoteEditDialogTest::shouldHaveRichText()
 void NoteEditDialogTest::shouldDefaultCollectionIsValid()
 {
     NoteEditDialog edit;
-    Akonadi::CollectionComboBox *akonadicombobox =
+    auto *akonadicombobox =
         edit.findChild<Akonadi::CollectionComboBox *>(QStringLiteral("akonadicombobox"));
     QVERIFY(akonadicombobox);
     QVERIFY(akonadicombobox->currentCollection().isValid());
@@ -151,7 +151,7 @@ void NoteEditDialogTest::shouldDefaultCollectionIsValid()
 void NoteEditDialogTest::shouldEmitCollectionChangedWhenCurrentCollectionWasChanged()
 {
     NoteEditDialog edit;
-    Akonadi::CollectionComboBox *akonadicombobox =
+    auto *akonadicombobox =
         edit.findChild<Akonadi::CollectionComboBox *>(QStringLiteral("akonadicombobox"));
     akonadicombobox->setCurrentIndex(0);
     QCOMPARE(akonadicombobox->currentIndex(), 0);
@@ -164,7 +164,7 @@ void NoteEditDialogTest::shouldEmitCollectionChangedWhenCurrentCollectionWasChan
 void NoteEditDialogTest::shouldEmitCorrectCollection()
 {
     NoteEditDialog edit;
-    Akonadi::CollectionComboBox *akonadicombobox =
+    auto *akonadicombobox =
         edit.findChild<Akonadi::CollectionComboBox *>(QStringLiteral("akonadicombobox"));
 
     Akonadi::NoteUtils::NoteMessageWrapper note;
@@ -180,7 +180,7 @@ void NoteEditDialogTest::shouldEmitCorrectCollection()
     akonadicombobox->setCurrentIndex(3);
     Akonadi::Collection col = akonadicombobox->currentCollection();
     QSignalSpy spy(&edit, &NoteEditDialog::createNote);
-    QPushButton *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
+    auto *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 1);
     QCOMPARE(spy.at(0).at(1).value<Akonadi::Collection>(), col);
@@ -196,9 +196,9 @@ void NoteEditDialogTest::shouldNotEmitNoteWhenTitleIsEmpty()
 
     edit.load(item);
     QSignalSpy spy(&edit, &NoteEditDialog::createNote);
-    QPushButton *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
+    auto *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
 
-    QLineEdit *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
+    auto *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
     notetitle->setText(QString());
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 0);
@@ -217,15 +217,15 @@ void NoteEditDialogTest::shouldNotEmitNoteWhenTextIsEmpty()
 
     edit.load(item);
     QSignalSpy spy(&edit, &NoteEditDialog::createNote);
-    QPushButton *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
+    auto *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
 
     //Need to set title to empty, 'cause NoteUtils uses default title: "New Note"
-    QLineEdit *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
+    auto *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
     notetitle->setText(QString());
 
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 0);
-    KPIMTextEdit::RichTextEditorWidget *notetext
+    auto *notetext
         = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     notetext->editor()->setText(QStringLiteral("F"));
     QTest::mouseClick(ok, Qt::LeftButton);
@@ -244,14 +244,14 @@ void NoteEditDialogTest::shouldNoteHasCorrectText()
 
     edit.load(item);
     QSignalSpy spy(&edit, &NoteEditDialog::createNote);
-    QPushButton *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
+    auto *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
 
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 1);
     Akonadi::NoteUtils::NoteMessageWrapper rNote(
         spy.at(0).at(0).value<Akonadi::Item>().payload<KMime::Message::Ptr>());
     QCOMPARE(rNote.text(), text);
-    KPIMTextEdit::RichTextEditorWidget *notetext
+    auto *notetext
         = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     QString text2 = QStringLiteral("F");
     notetext->editor()->setText(text2);
@@ -274,14 +274,14 @@ void NoteEditDialogTest::shouldNoteHasCorrectTitle()
 
     edit.load(item);
     QSignalSpy spy(&edit, &NoteEditDialog::createNote);
-    QPushButton *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
+    auto *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
 
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 1);
     Akonadi::NoteUtils::NoteMessageWrapper rNote(
         spy.at(0).at(0).value<Akonadi::Item>().payload<KMime::Message::Ptr>());
     QCOMPARE(rNote.title(), text);
-    QLineEdit *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
+    auto *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
     QString text2 = QStringLiteral("F");
     notetitle->setText(text2);
     QTest::mouseClick(ok, Qt::LeftButton);
@@ -303,14 +303,14 @@ void NoteEditDialogTest::shouldNoteHasCorrectTextFormat()
 
     edit.load(item);
     QSignalSpy spy(&edit, &NoteEditDialog::createNote);
-    QPushButton *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
+    auto *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
 
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 1);
     Akonadi::NoteUtils::NoteMessageWrapper rNote(
         spy.at(0).at(0).value<Akonadi::Item>().payload<KMime::Message::Ptr>());
     QCOMPARE(rNote.textFormat(), Qt::PlainText);
-    KPIMTextEdit::RichTextEditorWidget *notetext
+    auto *notetext
         = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     notetext->editor()->setAcceptRichText(true);
     QTest::mouseClick(ok, Qt::LeftButton);
@@ -332,8 +332,8 @@ void NoteEditDialogTest::shouldShouldEnabledSaveEditorButton()
 
     edit.load(item);
 
-    QPushButton *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
-    QLineEdit *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
+    auto *ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
+    auto *notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
 
     QCOMPARE(ok->isEnabled(), true);
     notetitle->clear();

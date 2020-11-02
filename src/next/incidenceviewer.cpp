@@ -89,7 +89,7 @@ public:
         mParentCollection = Akonadi::Collection();
 
         if (!job->error()) {
-            Akonadi::CollectionFetchJob *fetchJob
+            auto *fetchJob
                 = qobject_cast<Akonadi::CollectionFetchJob *>(job);
             if (!fetchJob->collections().isEmpty()) {
                 mParentCollection = fetchJob->collections().at(0);
@@ -138,7 +138,7 @@ IncidenceViewer::IncidenceViewer(QWidget *parent)
 
 void IncidenceViewer::init()
 {
-    QVBoxLayout *layout = new QVBoxLayout(this);
+    auto *layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
 
     d->mBrowser->setOpenLinks(true);

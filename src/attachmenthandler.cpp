@@ -200,7 +200,7 @@ void AttachmentHandler::view(const QString &attachmentName, const QString &uid)
 {
     Item item;
     item.setGid(uid);
-    ItemFetchJob *job = new ItemFetchJob(item);
+    auto *job = new ItemFetchJob(item);
     connect(job, &ItemFetchJob::result, this, &AttachmentHandler::slotFinishView);
     ReceivedInfo info;
     info.attachmentName = attachmentName;
@@ -258,7 +258,7 @@ void AttachmentHandler::saveAs(const QString &attachmentName, const QString &uid
 {
     Item item;
     item.setGid(uid);
-    ItemFetchJob *job = new ItemFetchJob(item);
+    auto *job = new ItemFetchJob(item);
     connect(job, &ItemFetchJob::result, this, &AttachmentHandler::slotFinishView);
 
     ReceivedInfo info;
@@ -278,7 +278,7 @@ void AttachmentHandler::slotFinishSaveAs(KJob *job)
     bool success = false;
 
     if (job->error() != 0) {
-        ItemFetchJob *fetchJob = qobject_cast<ItemFetchJob *>(job);
+        auto *fetchJob = qobject_cast<ItemFetchJob *>(job);
         const Item::List items = fetchJob->items();
         if (!items.isEmpty()) {
             Incidence::Ptr incidence = CalendarSupport::incidence(items.first());
@@ -300,7 +300,7 @@ void AttachmentHandler::slotFinishView(KJob *job)
     bool success = false;
 
     if (job->error()) {
-        ItemFetchJob *fetchJob = qobject_cast<ItemFetchJob *>(job);
+        auto *fetchJob = qobject_cast<ItemFetchJob *>(job);
         const Item::List items = fetchJob->items();
         if (!items.isEmpty()) {
             Incidence::Ptr incidence = CalendarSupport::incidence(items.first());
