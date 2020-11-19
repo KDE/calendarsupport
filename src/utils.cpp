@@ -629,7 +629,7 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
 
 QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool richText)
 {
-    Q_UNUSED(richText);
+    Q_UNUSED(richText)
 
     QString str = QStringLiteral("<qt>");
 

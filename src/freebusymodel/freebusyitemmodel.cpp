@@ -169,7 +169,7 @@ int FreeBusyItemModel::rowCount(const QModelIndex &parent) const
 
 int FreeBusyItemModel::columnCount(const QModelIndex &parent) const
 {
-    Q_UNUSED(parent);
+    Q_UNUSED(parent)
     return 1;
 }
 

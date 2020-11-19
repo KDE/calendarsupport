@@ -170,8 +170,8 @@ void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer, const Q
 
 void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget, const KCalendarCore::Incidence::List &incidences, bool withGUI)
 {
-    Q_UNUSED(limitDate);
-    Q_UNUSED(withGUI);
+    Q_UNUSED(limitDate)
+    Q_UNUSED(withGUI)
 
     FileStorage storage(calendar);
 

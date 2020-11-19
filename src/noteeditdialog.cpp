@@ -147,7 +147,7 @@ Akonadi::Collection NoteEditDialog::collection() const
 
 void NoteEditDialog::slotCollectionChanged(int index)
 {
-    Q_UNUSED(index);
+    Q_UNUSED(index)
     setCollection(mCollectionCombobox->currentCollection());
 }
 

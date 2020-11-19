@@ -188,7 +188,7 @@ protected:
 
     bool visit(const KCalendarCore::FreeBusy::Ptr &fb) override
     {
-        Q_UNUSED(fb);
+        Q_UNUSED(fb)
         return true;
     }
 };

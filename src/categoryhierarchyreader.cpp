@@ -131,7 +131,7 @@ void CategoryHierarchyReaderQTreeWidget::goUp()
 
 void CategoryHierarchyReaderQTreeWidget::addChild(const QString &label, const QVariant &userData)
 {
-    Q_UNUSED(userData);
+    Q_UNUSED(userData)
 
     if (mItem) {
         mItem = new QTreeWidgetItem(mItem, QStringList() << label);

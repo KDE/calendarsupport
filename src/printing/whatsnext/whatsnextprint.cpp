@@ -79,8 +79,8 @@ void CalPrintWhatsNext::setDateRange(const QDate &from, const QDate &to)
 
 void CalPrintWhatsNext::print(QPainter &p, int width, int height)
 {
-    Q_UNUSED(p);
-    Q_UNUSED(width);
-    Q_UNUSED(height);
+    Q_UNUSED(p)
+    Q_UNUSED(width)
+    Q_UNUSED(height)
     //TODO: Print something!
 }
