@@ -54,6 +54,9 @@ ecm_qt_declare_logging_category(calendarsupport_LIB_SRCS HEADER calendarsupport_
 kconfig_add_kcfg_files(calendarsupport_LIB_SRCS kcalprefs_base.kcfgc)
 
 add_library(KF5CalendarSupport ${calendarsupport_LIB_SRCS})
+if (COMPILE_WITH_CMAKE_SUPPORT)
+    set_target_properties(KF5CalendarSupport PROPERTIES UNITY_BUILD ON)
+endif()
 generate_export_header(KF5CalendarSupport BASE_NAME calendarsupport)
 add_library(KF5::CalendarSupport ALIAS KF5CalendarSupport)
 

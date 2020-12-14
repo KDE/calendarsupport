@@ -27,7 +27,7 @@
 
 using namespace CalendarSupport;
 
-static QString cleanStr(const QString &instr)
+static QString cleanString(const QString &instr)
 {
     QString ret = instr;
     return ret.replace(QLatin1Char('\n'), QLatin1Char(' '));
@@ -891,10 +891,10 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                     count++;
                     QString str;
                     if (event->location().isEmpty()) {
-                        str = cleanStr(event->summary());
+                        str = cleanString(event->summary());
                     } else {
                         str = i18nc("summary, location", "%1, %2",
-                                    cleanStr(event->summary()), cleanStr(event->location()));
+                                    cleanString(event->summary()), cleanString(event->location()));
                     }
                     printEventString(p, eventBox, str);
                     eventBox.setTop(eventBox.bottom());
