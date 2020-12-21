@@ -22,7 +22,7 @@ QTEST_GUILESS_MAIN(FreeBusyItemModelTest)
 
 void FreeBusyItemModelTest::testModelValidity()
 {
-    auto *model = new FreeBusyItemModel(this);
+    auto model = new FreeBusyItemModel(this);
     new QAbstractItemModelTester(model, this);
 
     QVERIFY(model->rowCount() == 0);
@@ -75,7 +75,7 @@ void FreeBusyItemModelTest::testModelValidity()
 
 void FreeBusyItemModelTest::testModelValidity2()
 {
-    auto *model = new FreeBusyItemModel(this);
+    auto model = new FreeBusyItemModel(this);
     new QAbstractItemModelTester(model, this);
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
@@ -198,7 +198,7 @@ void FreeBusyItemModelTest::testModelValidity2()
 
 void FreeBusyItemModelTest::testInsertFreeBusy()
 {
-    auto *model = new FreeBusyItemModel(this);
+    auto model = new FreeBusyItemModel(this);
     new QAbstractItemModelTester(model, this);
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);

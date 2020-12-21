@@ -138,7 +138,7 @@ IncidenceViewer::IncidenceViewer(QWidget *parent)
 
 void IncidenceViewer::init()
 {
-    auto *layout = new QVBoxLayout(this);
+    auto layout = new QVBoxLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
 
     d->mBrowser->setOpenLinks(true);

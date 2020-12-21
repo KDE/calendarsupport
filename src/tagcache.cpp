@@ -58,7 +58,7 @@ void TagCache::onTagRemoved(const Akonadi::Tag &tag)
 
 void TagCache::retrieveTags()
 {
-    auto *tagFetchJob = new Akonadi::TagFetchJob(this);
+    auto tagFetchJob = new Akonadi::TagFetchJob(this);
     tagFetchJob->fetchScope().fetchAttribute<Akonadi::TagAttribute>();
     connect(tagFetchJob, &Akonadi::TagFetchJob::result, this, &TagCache::onTagsFetched);
 }
@@ -69,7 +69,7 @@ void TagCache::onTagsFetched(KJob *job)
         qCWarning(CALENDARSUPPORT_LOG) << "Failed to fetch tags: " << job->errorString();
         return;
     }
-    auto *fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
+    auto fetchJob = static_cast<Akonadi::TagFetchJob *>(job);
     const Akonadi::Tag::List lst = fetchJob->tags();
     for (const Akonadi::Tag &tag : lst) {
         onTagAdded(tag);

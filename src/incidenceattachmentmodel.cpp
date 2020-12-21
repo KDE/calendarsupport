@@ -133,7 +133,7 @@ void IncidenceAttachmentModel::setItem(const Akonadi::Item &item)
 {
     Q_D(IncidenceAttachmentModel);
     if (!item.hasPayload<KCalendarCore::Incidence::Ptr>()) {
-        auto *job = new ItemFetchJob(item);
+        auto job = new ItemFetchJob(item);
         job->fetchScope().fetchFullPayload(true);
         connect(job, SIGNAL(itemsReceived(Akonadi::Item::List)),
                 SLOT(itemFetched(Akonadi::Item::List)));

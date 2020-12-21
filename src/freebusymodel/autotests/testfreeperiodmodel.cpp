@@ -22,7 +22,7 @@ QTEST_GUILESS_MAIN(FreePeriodModelTest)
 
 void FreePeriodModelTest::testModelValidity()
 {
-    auto *model = new FreePeriodModel(this);
+    auto model = new FreePeriodModel(this);
     new QAbstractItemModelTester(model, this);
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
@@ -40,7 +40,7 @@ void FreePeriodModelTest::testModelValidity()
 
 void FreePeriodModelTest::testSplitByDay()
 {
-    auto *model = new FreePeriodModel(this);
+    auto model = new FreePeriodModel(this);
     new QAbstractItemModelTester(model, this);
 
     const QDateTime startDt(QDate(2010, 7, 24), QTime(8, 0, 0), Qt::UTC);

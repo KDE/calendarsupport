@@ -34,7 +34,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     QDialogButtonBox *buttonBox = new QDialogButtonBox(
         QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QWidget *mainWidget = new QWidget(this);
-    auto *mainLayout = new QVBoxLayout(this);
+    auto mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(mainWidget);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &NoteEditDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
@@ -51,9 +51,9 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     mOkButton->setIcon(QIcon::fromTheme(QStringLiteral("view-pim-notes")));
     mOkButton->setEnabled(false);
 
-    auto *layout = new QGridLayout(mainWidget);
+    auto layout = new QGridLayout(mainWidget);
     layout->setContentsMargins(0, 0, 0, 0);
-    auto *hbox = new QHBoxLayout;
+    auto hbox = new QHBoxLayout;
     hbox->setContentsMargins(0, 0, 0, 0);
     hbox->setSpacing(2);
 
