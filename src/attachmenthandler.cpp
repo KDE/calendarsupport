@@ -25,11 +25,12 @@
 
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KRun>
 #include <KIO/FileCopyJob>
 #include <KIO/StatJob>
 #include <KJobWidgets>
 #include <KJob>
+#include <KIO/JobUiDelegate>
+#include <KIO/OpenUrlJob>
 
 #include <QFileDialog>
 #include <QTemporaryFile>
@@ -175,10 +176,10 @@ bool AttachmentHandler::view(const Attachment &attachment)
         // put the attachment in a temporary file and launch it
         QUrl tempUrl = tempFileForAttachment(attachment);
         if (tempUrl.isValid()) {
-            KRun::RunFlags flags;
-            flags |= KRun::DeleteTemporaryFiles;
-            flags |= KRun::RunExecutables;
-            stat = KRun::runUrl(tempUrl, attachment.mimeType(), nullptr, flags);
+            KIO::OpenUrlJob *job = new KIO::OpenUrlJob(tempUrl, attachment.mimeType());
+            job->setDeleteTemporaryFile(true);
+            job->setRunExecutables(true);
+            job->start();
         } else {
             stat = false;
             KMessageBox::error(
