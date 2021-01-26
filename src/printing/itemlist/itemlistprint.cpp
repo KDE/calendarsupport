@@ -28,8 +28,7 @@ QWidget *CalPrintItemList::createConfigWidget(QWidget *w)
 
 void CalPrintItemList::readSettingsWidget()
 {
-    CalPrintItemListConfig *cfg
-        = dynamic_cast<CalPrintItemListConfig *>((QWidget *)mConfigWidget);
+    CalPrintItemListConfig *cfg = dynamic_cast<CalPrintItemListConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         mFromDate = cfg->mFromDate->date();
         mToDate = cfg->mToDate->date();
@@ -38,8 +37,7 @@ void CalPrintItemList::readSettingsWidget()
 
 void CalPrintItemList::setSettingsWidget()
 {
-    CalPrintItemListConfig *cfg
-        = dynamic_cast<CalPrintItemListConfig *>((QWidget *)mConfigWidget);
+    CalPrintItemListConfig *cfg = dynamic_cast<CalPrintItemListConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(mFromDate);
         cfg->mToDate->setDate(mToDate);
@@ -50,7 +48,7 @@ void CalPrintItemList::loadConfig()
 {
     if (mConfig) {
         KConfigGroup config(mConfig, "Itemlistprint");
-        //TODO: Read in settings
+        // TODO: Read in settings
     }
     setSettingsWidget();
 }
@@ -62,15 +60,14 @@ void CalPrintItemList::saveConfig()
     readSettingsWidget();
     if (mConfig) {
         KConfigGroup config(mConfig, "Itemlistprint");
-        //TODO: Write out settings
+        // TODO: Write out settings
     }
 }
 
 void CalPrintItemList::setDateRange(const QDate &from, const QDate &to)
 {
     CalPrintPluginBase::setDateRange(from, to);
-    CalPrintItemListConfig *cfg
-        = dynamic_cast<CalPrintItemListConfig *>((QWidget *)mConfigWidget);
+    CalPrintItemListConfig *cfg = dynamic_cast<CalPrintItemListConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         cfg->mFromDate->setDate(from);
         cfg->mToDate->setDate(to);
@@ -82,5 +79,5 @@ void CalPrintItemList::print(QPainter &p, int width, int height)
     Q_UNUSED(p)
     Q_UNUSED(width)
     Q_UNUSED(height)
-    //TODO: Print something!
+    // TODO: Print something!
 }

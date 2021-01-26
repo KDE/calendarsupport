@@ -33,8 +33,7 @@ void CalPrintYear::readSettingsWidget()
 
 void CalPrintYear::setSettingsWidget()
 {
-    auto *cfg
-        = dynamic_cast<CalPrintYearConfig *>((QWidget *)mConfigWidget);
+    auto *cfg = dynamic_cast<CalPrintYearConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
         QDate start(mYear, 1, 1);
         const int months = 12;

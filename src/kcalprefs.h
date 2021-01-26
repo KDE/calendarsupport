@@ -11,7 +11,8 @@
 
 #include <Collection>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT KCalPrefs : public KCalPrefsBase
 {
     Q_OBJECT

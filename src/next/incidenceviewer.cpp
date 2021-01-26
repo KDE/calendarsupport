@@ -6,16 +6,16 @@
 */
 
 #include "incidenceviewer.h"
-#include "incidenceviewer_p.h"
 #include "attachmenthandler.h"
-#include "utils.h"
+#include "incidenceviewer_p.h"
 #include "urihandler.h"
+#include "utils.h"
 
 #include "incidenceattachmentmodel.h"
 
+#include <Akonadi/Calendar/CalendarBase>
 #include <CollectionFetchJob>
 #include <ItemFetchScope>
-#include <Akonadi/Calendar/CalendarBase>
 
 #include <KCalUtils/IncidenceFormatter>
 
@@ -37,10 +37,8 @@ void TextBrowser::setSource(const QUrl &name)
     QString uri = name.toString();
     // QTextBrowser for some reason insists on putting // or / in links,
     // this is a crude workaround
-    if (uri.startsWith(QLatin1String("uid:"))
-        || uri.startsWith(QLatin1String("kmail:"))
-        || uri.startsWith(QStringLiteral("urn:x-ical").section(QLatin1Char(':'), 0, 0))
-        || uri.startsWith(QLatin1String("news:"))
+    if (uri.startsWith(QLatin1String("uid:")) || uri.startsWith(QLatin1String("kmail:"))
+        || uri.startsWith(QStringLiteral("urn:x-ical").section(QLatin1Char(':'), 0, 0)) || uri.startsWith(QLatin1String("news:"))
         || uri.startsWith(QLatin1String("mailto:"))) {
         uri.replace(QRegExp(QLatin1String("^([^:]+:)/+")), QStringLiteral("\\1"));
     }
@@ -70,9 +68,9 @@ public:
         QString text;
 
         if (mCurrentItem.isValid()) {
-            text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(
-                CalendarSupport::displayName(mCalendar, mParentCollection),
-                CalendarSupport::incidence(mCurrentItem), mDate);
+            text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(CalendarSupport::displayName(mCalendar, mParentCollection),
+                                                                      CalendarSupport::incidence(mCurrentItem),
+                                                                      mDate);
             text.prepend(mHeaderText);
             mBrowser->setHtml(text);
         } else {
@@ -89,8 +87,7 @@ public:
         mParentCollection = Akonadi::Collection();
 
         if (!job->error()) {
-            auto *fetchJob
-                = qobject_cast<Akonadi::CollectionFetchJob *>(job);
+            auto *fetchJob = qobject_cast<Akonadi::CollectionFetchJob *>(job);
             if (!fetchJob->collections().isEmpty()) {
                 mParentCollection = fetchJob->collections().at(0);
             }
@@ -101,8 +98,7 @@ public:
 
     void slotAttachmentUrlClicked(const QString &uri)
     {
-        const QString attachmentName
-            = QString::fromUtf8(QByteArray::fromBase64(uri.mid(7).toUtf8()));
+        const QString attachmentName = QString::fromUtf8(QByteArray::fromBase64(uri.mid(7).toUtf8()));
         mAttachmentHandler->view(attachmentName, CalendarSupport::incidence(mCurrentItem));
     }
 
@@ -176,8 +172,7 @@ QDate IncidenceViewer::activeDate() const
 QAbstractItemModel *IncidenceViewer::attachmentModel() const
 {
     if (!d->mAttachmentModel) {
-        d->mAttachmentModel
-            = new IncidenceAttachmentModel(const_cast<IncidenceViewer *>(this));
+        d->mAttachmentModel = new IncidenceAttachmentModel(const_cast<IncidenceViewer *>(this));
     }
     return d->mAttachmentModel;
 }
@@ -219,17 +214,13 @@ void IncidenceViewer::itemChanged(const Akonadi::Item &item)
     }
 
     if (d->mParentCollectionFetchJob) {
-        disconnect(d->mParentCollectionFetchJob, SIGNAL(result(KJob*)), this,
-                   SLOT(slotParentCollectionFetched(KJob*)));
+        disconnect(d->mParentCollectionFetchJob, SIGNAL(result(KJob *)), this, SLOT(slotParentCollectionFetched(KJob *)));
         delete d->mParentCollectionFetchJob;
     }
 
-    d->mParentCollectionFetchJob
-        = new Akonadi::CollectionFetchJob(d->mCurrentItem.parentCollection(),
-                                          Akonadi::CollectionFetchJob::Base, this);
+    d->mParentCollectionFetchJob = new Akonadi::CollectionFetchJob(d->mCurrentItem.parentCollection(), Akonadi::CollectionFetchJob::Base, this);
 
-    connect(d->mParentCollectionFetchJob, SIGNAL(result(KJob*)), this,
-            SLOT(slotParentCollectionFetched(KJob*)));
+    connect(d->mParentCollectionFetchJob, SIGNAL(result(KJob *)), this, SLOT(slotParentCollectionFetched(KJob *)));
 }
 
 void IncidenceViewer::itemRemoved()

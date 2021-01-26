@@ -14,7 +14,8 @@
 
 #include <KCalendarCore/FreeBusy>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 /**
  * The FreeBusyItem is the whole line for a given attendee..
  */

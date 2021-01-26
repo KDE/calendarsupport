@@ -15,11 +15,13 @@
 
 #include <QAbstractListModel>
 
-namespace Akonadi {
+namespace Akonadi
+{
 class Item;
 }
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class IncidenceAttachmentModelPrivate;
 
 class IncidenceAttachmentModel : public QAbstractListModel

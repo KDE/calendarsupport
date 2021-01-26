@@ -6,17 +6,17 @@
 */
 
 #include "kcalprefs.h"
+#include "calendarsupport_debug.h"
 #include "identitymanager.h"
 #include "tagcache.h"
-#include "calendarsupport_debug.h"
 
 #include <AkonadiCore/TagAttribute>
 #include <AkonadiCore/TagModifyJob>
 
 #include <KMime/HeaderParsing>
 
-#include <KIdentityManagement/Identity>
 #include <KCodecs/KEmailAddress>
+#include <KIdentityManagement/Identity>
 
 #include <KEMailSettings>
 
@@ -27,7 +27,8 @@ Q_GLOBAL_STATIC(KCalPrefs, globalPrefs)
 class Q_DECL_HIDDEN KCalPrefs::Private
 {
 public:
-    Private() : mDefaultCalendarId(-1)
+    Private()
+        : mDefaultCalendarId(-1)
         , mDefaultCategoryColor(QColor(151, 235, 121))
     {
     }
@@ -43,7 +44,8 @@ public:
     QDateTime mDayBegins;
 };
 
-KCalPrefs::KCalPrefs() : KCalPrefsBase()
+KCalPrefs::KCalPrefs()
+    : KCalPrefsBase()
     , d(new Private())
 {
 }
@@ -248,8 +250,7 @@ bool KCalPrefs::thatIsMe(const QString &_email)
 
     CalendarSupport::IdentityManager::ConstIterator it;
     CalendarSupport::IdentityManager::ConstIterator endId(CalendarSupport::identityManager()->end());
-    for (it = CalendarSupport::identityManager()->begin();
-         it != endId; ++it) {
+    for (it = CalendarSupport::identityManager()->begin(); it != endId; ++it) {
         if ((*it).matchesEmailAddress(email)) {
             return true;
         }

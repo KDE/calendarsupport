@@ -9,7 +9,8 @@
 
 #include <QObject>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class NoteEditDialogTest : public QObject
 {
     Q_OBJECT

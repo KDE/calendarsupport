@@ -19,15 +19,18 @@
 class QAbstractItemModel;
 class QLineEdit;
 
-namespace KPIMTextEdit {
+namespace KPIMTextEdit
+{
 class RichTextEditorWidget;
 }
 
-namespace Akonadi {
+namespace Akonadi
+{
 class CollectionComboBox;
 }
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT NoteEditDialog : public QDialog
 {
     Q_OBJECT
@@ -41,7 +44,7 @@ public:
     void load(const Akonadi::Item &item);
     Q_REQUIRED_RESULT KMime::Message::Ptr note() const;
 
-    //Used for tests
+    // Used for tests
     static QAbstractItemModel *_k_noteEditStubModel;
 
 public Q_SLOTS:

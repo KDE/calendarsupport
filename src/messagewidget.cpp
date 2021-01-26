@@ -13,7 +13,8 @@
 
 using namespace CalendarSupport;
 
-MessageWidget::MessageWidget(QWidget *parent) : KMessageWidget(parent)
+MessageWidget::MessageWidget(QWidget *parent)
+    : KMessageWidget(parent)
 {
     hide();
     setCloseButtonVisible(false);

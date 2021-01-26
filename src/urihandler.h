@@ -10,8 +10,8 @@
 
 class QString;
 
-namespace CalendarSupport {
-
+namespace CalendarSupport
+{
 /** URI handler. */
 class CALENDARSUPPORT_EXPORT UriHandler
 {

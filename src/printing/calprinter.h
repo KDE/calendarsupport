@@ -16,7 +16,8 @@
 class QButtonGroup;
 class QStackedWidget;
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 /**
   CalPrinter is a class for printing Calendars.  It can print in several
   different formats (day, week, month).  It also provides a way for setting
@@ -26,12 +27,7 @@ class CALENDARSUPPORT_EXPORT CalPrinter : public QObject, public CalPrinterBase
 {
     Q_OBJECT
 public:
-    enum ePrintOrientation {
-        eOrientPlugin = 0,
-        eOrientPrinter,
-        eOrientPortrait,
-        eOrientLandscape
-    };
+    enum ePrintOrientation { eOrientPlugin = 0, eOrientPrinter, eOrientPortrait, eOrientLandscape };
 
 public:
     /**
@@ -62,7 +58,11 @@ private Q_SLOTS:
     void doPrint(CalendarSupport::PrintPlugin *selectedStyle, CalendarSupport::CalPrinter::ePrintOrientation dlgorientation, bool preview = false);
 
 public:
-    void print(int type, const QDate &fd, const QDate &td, const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(), bool preview = false);
+    void print(int type,
+               const QDate &fd,
+               const QDate &td,
+               const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(),
+               bool preview = false);
     Akonadi::ETMCalendar::Ptr calendar() const;
     KConfig *config() const;
 

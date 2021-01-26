@@ -11,11 +11,13 @@
 #include "calprintpluginbase.h"
 #include "ui_calprintjournalconfig_base.h"
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CalPrintJournal : public CalPrintPluginBase
 {
 public:
-    CalPrintJournal() : CalPrintPluginBase()
+    CalPrintJournal()
+        : CalPrintPluginBase()
     {
     }
 
@@ -64,7 +66,8 @@ protected:
 class CalPrintJournalConfig : public QWidget, public Ui::CalPrintJournalConfig_Base
 {
 public:
-    explicit CalPrintJournalConfig(QWidget *parent) : QWidget(parent)
+    explicit CalPrintJournalConfig(QWidget *parent)
+        : QWidget(parent)
     {
         setupUi(this);
     }

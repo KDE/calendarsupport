@@ -19,7 +19,8 @@ using namespace CalendarSupport;
 class ItemPrivateData
 {
 public:
-    ItemPrivateData(ItemPrivateData *parent) : parentItem(parent)
+    ItemPrivateData(ItemPrivateData *parent)
+        : parentItem(parent)
     {
     }
 
@@ -89,8 +90,7 @@ FreeBusyItemModel::FreeBusyItemModel(QObject *parent)
     qRegisterMetaType<KCalendarCore::Period>("KCalendarCore::Period");
 
     Akonadi::FreeBusyManager *m = Akonadi::FreeBusyManager::self();
-    connect(m, &Akonadi::FreeBusyManager::freeBusyRetrieved, this,
-            &FreeBusyItemModel::slotInsertFreeBusy);
+    connect(m, &Akonadi::FreeBusyManager::freeBusyRetrieved, this, &FreeBusyItemModel::slotInsertFreeBusy);
 
     connect(&d->mReloadTimer, &QTimer::timeout, this, &FreeBusyItemModel::autoReload);
     d->mReloadTimer.setSingleShot(true);
@@ -141,9 +141,8 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
     KCalendarCore::FreeBusyPeriod period = fbitem->freeBusy()->fullBusyPeriods().at(index.row());
     switch (role) {
     case Qt::DisplayRole: // return something to make modeltest happy
-        return QStringLiteral("%1 - %2").
-               arg(QLocale().toString(period.start().toLocalTime(), QLocale::ShortFormat),
-                   QLocale().toString(period.end().toLocalTime(), QLocale::ShortFormat));
+        return QStringLiteral("%1 - %2").arg(QLocale().toString(period.start().toLocalTime(), QLocale::ShortFormat),
+                                             QLocale().toString(period.end().toLocalTime(), QLocale::ShortFormat));
     case FreeBusyItemModel::FreeBusyPeriodRole:
         return QVariant::fromValue(period);
     default:

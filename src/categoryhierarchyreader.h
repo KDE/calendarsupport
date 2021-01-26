@@ -16,7 +16,8 @@ class QComboBox;
 class QTreeWidget;
 class QTreeWidgetItem;
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReader
 {
 public:
@@ -41,7 +42,8 @@ protected:
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQComboBox : public CategoryHierarchyReader
 {
 public:
-    explicit CategoryHierarchyReaderQComboBox(QComboBox *box) : mBox(box)
+    explicit CategoryHierarchyReaderQComboBox(QComboBox *box)
+        : mBox(box)
     {
     }
 

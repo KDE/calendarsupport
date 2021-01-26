@@ -12,12 +12,12 @@
 #include "calendarutils.h"
 #include "utils.h"
 
-#include <KCalendarCore/Incidence>
 #include <Akonadi/Calendar/IncidenceChanger>
+#include <KCalendarCore/Incidence>
 
+#include "calendarsupport_debug.h"
 #include <KLocalizedString>
 #include <KMessageBox>
-#include "calendarsupport_debug.h"
 
 using namespace CalendarSupport;
 using namespace KCalendarCore;
@@ -40,7 +40,8 @@ struct MultiChange {
     }
 };
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CalendarUtilsPrivate
 {
 public:
@@ -70,8 +71,8 @@ CalendarUtilsPrivate::CalendarUtilsPrivate(const Akonadi::ETMCalendar::Ptr &cale
     Q_ASSERT(mCalendar);
 
     q->connect(mChanger,
-               SIGNAL(modifyFinished(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,QString)),
-               SLOT(handleChangeFinish(int,Akonadi::Item,Akonadi::IncidenceChanger::ResultCode,QString)));
+               SIGNAL(modifyFinished(int, Akonadi::Item, Akonadi::IncidenceChanger::ResultCode, QString)),
+               SLOT(handleChangeFinish(int, Akonadi::Item, Akonadi::IncidenceChanger::ResultCode, QString)));
 }
 
 void CalendarUtilsPrivate::handleChangeFinish(int, const Akonadi::Item &item, Akonadi::IncidenceChanger::ResultCode resultCode, const QString &errorString)
@@ -120,8 +121,7 @@ bool CalendarUtilsPrivate::purgeCompletedSubTodos(const KCalendarCore::Todo::Ptr
     const Akonadi::Item::List subTodos = mCalendar->childItems(todo->uid());
     for (const Akonadi::Item &item : subTodos) {
         if (CalendarSupport::hasTodo(item)) {
-            deleteThisTodo
-                &= purgeCompletedSubTodos(item.payload<KCalendarCore::Todo::Ptr>(), allPurged);
+            deleteThisTodo &= purgeCompletedSubTodos(item.payload<KCalendarCore::Todo::Ptr>(), allPurged);
         }
     }
 
@@ -203,7 +203,7 @@ bool CalendarUtils::makeChildrenIndependent(const Akonadi::Item &item)
         allStarted = allStarted && makeIndependent(subInc);
     }
 
-    Q_ASSERT(allStarted);   // OKay, maybe we should not assert here, but one or
+    Q_ASSERT(allStarted); // OKay, maybe we should not assert here, but one or
     // changes could have been started, so just returning
     // false isn't suitable either.
 
@@ -216,12 +216,12 @@ void CalendarUtils::purgeCompletedTodos()
 {
     Q_D(CalendarUtils);
     bool allDeleted = true;
-//  startMultiModify( i18n( "Purging completed to-dos" ) );
+    //  startMultiModify( i18n( "Purging completed to-dos" ) );
     KCalendarCore::Todo::List todos = calendar()->rawTodos();
     KCalendarCore::Todo::List rootTodos;
 
     for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todos)) {
-        if (todo && todo->relatedTo().isEmpty()) {   // top level todo //REVIEW(AKONADI_PORT)
+        if (todo && todo->relatedTo().isEmpty()) { // top level todo //REVIEW(AKONADI_PORT)
             rootTodos.append(todo);
         }
     }
@@ -231,14 +231,12 @@ void CalendarUtils::purgeCompletedTodos()
         d->purgeCompletedSubTodos(todo, allDeleted);
     }
 
-//  endMultiModify();
+    //  endMultiModify();
     if (!allDeleted) {
-        KMessageBox::information(
-            nullptr,
-            i18nc("@info",
-                  "Unable to purge to-dos with uncompleted children."),
-            i18nc("@title:window", "Delete To-do"),
-            QStringLiteral("UncompletedChildrenPurgeTodos"));
+        KMessageBox::information(nullptr,
+                                 i18nc("@info", "Unable to purge to-dos with uncompleted children."),
+                                 i18nc("@title:window", "Delete To-do"),
+                                 QStringLiteral("UncompletedChildrenPurgeTodos"));
     }
 }
 

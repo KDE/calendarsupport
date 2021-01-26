@@ -12,15 +12,16 @@
 #include "calendarsupport_export.h"
 #include "calprintpluginbase.h"
 
-#include "ui_calprintincidenceconfig_base.h"
 #include "ui_calprintdayconfig_base.h"
-#include "ui_calprintweekconfig_base.h"
+#include "ui_calprintincidenceconfig_base.h"
 #include "ui_calprintmonthconfig_base.h"
 #include "ui_calprinttodoconfig_base.h"
+#include "ui_calprintweekconfig_base.h"
 
 #include <KLocalizedString>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT CalPrintIncidence : public CalPrintPluginBase
 {
 public:
@@ -115,11 +116,7 @@ public:
     void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
-    enum eDayPrintType {
-        Filofax = 0,
-        Timetable,
-        SingleTimetable
-    } mDayPrintType;
+    enum eDayPrintType { Filofax = 0, Timetable, SingleTimetable } mDayPrintType;
     QTime mStartTime, mEndTime;
     bool mIncludeDescription;
     bool mSingleLineLimit;
@@ -177,11 +174,7 @@ public:
     void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
-    enum eWeekPrintType {
-        Filofax = 0,
-        Timetable,
-        SplitWeek
-    } mWeekPrintType;
+    enum eWeekPrintType { Filofax = 0, Timetable, SplitWeek } mWeekPrintType;
     QTime mStartTime, mEndTime;
     bool mSingleLineLimit;
     bool mIncludeTodos;
@@ -289,11 +282,7 @@ public:
 protected:
     QString mPageTitle;
 
-    enum eTodoPrintType {
-        TodosAll = 0,
-        TodosUnfinished,
-        TodosDueRange
-    } mTodoPrintType;
+    enum eTodoPrintType { TodosAll = 0, TodosUnfinished, TodosDueRange } mTodoPrintType;
 
     enum eTodoSortField {
         TodoFieldSummary = 0,
@@ -304,11 +293,7 @@ protected:
         TodoFieldUnset
     } mTodoSortField;
 
-    enum eTodoSortDirection {
-        TodoDirectionAscending = 0,
-        TodoDirectionDescending,
-        TodoDirectionUnset
-    } mTodoSortDirection;
+    enum eTodoSortDirection { TodoDirectionAscending = 0, TodoDirectionDescending, TodoDirectionUnset } mTodoSortDirection;
 
     bool mIncludeDescription;
     bool mIncludePriority;
@@ -326,7 +311,8 @@ class CalPrintIncidenceConfig : public QWidget, public Ui::CalPrintIncidenceConf
 {
     Q_OBJECT
 public:
-    explicit CalPrintIncidenceConfig(QWidget *parent) : QWidget(parent)
+    explicit CalPrintIncidenceConfig(QWidget *parent)
+        : QWidget(parent)
     {
         setupUi(this);
     }
@@ -336,7 +322,8 @@ class CalPrintDayConfig : public QWidget, public Ui::CalPrintDayConfig_Base
 {
     Q_OBJECT
 public:
-    explicit CalPrintDayConfig(QWidget *parent) : QWidget(parent)
+    explicit CalPrintDayConfig(QWidget *parent)
+        : QWidget(parent)
     {
         setupUi(this);
     }
@@ -346,7 +333,8 @@ class CalPrintWeekConfig : public QWidget, public Ui::CalPrintWeekConfig_Base
 {
     Q_OBJECT
 public:
-    explicit CalPrintWeekConfig(QWidget *parent) : QWidget(parent)
+    explicit CalPrintWeekConfig(QWidget *parent)
+        : QWidget(parent)
     {
         setupUi(this);
     }
@@ -356,7 +344,8 @@ class CalPrintMonthConfig : public QWidget, public Ui::CalPrintMonthConfig_Base
 {
     Q_OBJECT
 public:
-    explicit CalPrintMonthConfig(QWidget *parent) : QWidget(parent)
+    explicit CalPrintMonthConfig(QWidget *parent)
+        : QWidget(parent)
     {
         setupUi(this);
     }
@@ -366,7 +355,8 @@ class CalPrintTodoConfig : public QWidget, public Ui::CalPrintTodoConfig_Base
 {
     Q_OBJECT
 public:
-    explicit CalPrintTodoConfig(QWidget *parent) : QWidget(parent)
+    explicit CalPrintTodoConfig(QWidget *parent)
+        : QWidget(parent)
     {
         setupUi(this);
     }

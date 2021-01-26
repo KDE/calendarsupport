@@ -10,7 +10,8 @@
 #include "calendarsupport_export.h"
 #include <Akonadi/Calendar/ETMCalendar>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 /**
  * ETMCalendar to be used by kontact plugins to avoid having
  * 3 loaded calendars which occupy lots of memory.

@@ -14,27 +14,18 @@
 #include <KCalendarCore/Incidence>
 #include <KConfig>
 
-#include <QPrinter>
 #include <QDate>
+#include <QPrinter>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 /**
   Base class of Calendar printer class.
 */
 class CalPrinterBase
 {
 public:
-    enum PrintType {
-        Incidence = 100,
-        Day = 200,
-        Week = 300,
-        Month = 400,
-        Year = 900,
-        Todolist = 1000,
-        Journallist = 2000,
-        WhatsNext = 2100,
-        ItemList = 2200
-    };
+    enum PrintType { Incidence = 100, Day = 200, Week = 300, Month = 400, Year = 900, Todolist = 1000, Journallist = 2000, WhatsNext = 2100, ItemList = 2200 };
 };
 
 /**
@@ -44,7 +35,8 @@ public:
 class PrintPlugin : public Plugin
 {
 public:
-    PrintPlugin() : Plugin()
+    PrintPlugin()
+        : Plugin()
         , mConfigWidget(nullptr)
         , mPrinter(nullptr)
         , mCalendar(nullptr)

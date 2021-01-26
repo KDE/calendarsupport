@@ -31,8 +31,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
 {
     setAttribute(Qt::WA_DeleteOnClose);
     setWindowTitle(i18nc("@title:window", "Create Note"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(
-        QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QWidget *mainWidget = new QWidget(this);
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(mainWidget);
@@ -40,8 +39,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
     mainLayout->addWidget(buttonBox);
 
-    buttonBox->button(QDialogButtonBox::Cancel)->setText(i18nc("@action:button",
-                                                               "Cancel"));
+    buttonBox->button(QDialogButtonBox::Cancel)->setText(i18nc("@action:button", "Cancel"));
 
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setObjectName(QStringLiteral("save-button"));
@@ -69,26 +67,17 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     mCollectionCombobox->setMimeTypeFilter(QStringList() << Akonadi::NoteUtils::noteMimeType());
     mCollectionCombobox->setObjectName(QStringLiteral("akonadicombobox"));
 #ifndef QT_NO_ACCESSIBILITY
-    mCollectionCombobox->setAccessibleDescription(
-        i18nc("@info", "Calendar where the new note will be stored."));
+    mCollectionCombobox->setAccessibleDescription(i18nc("@info", "Calendar where the new note will be stored."));
 #endif
-    mCollectionCombobox->setToolTip(i18nc("@info:tooltip",
-                                          "Calendar where the new note will be stored."));
-    connect(mCollectionCombobox,
-            QOverload<int>::of(
-                &Akonadi::CollectionComboBox::currentIndexChanged), this,
-            &NoteEditDialog::slotCollectionChanged);
-    connect(mCollectionCombobox, QOverload<int>::of(
-                &Akonadi::CollectionComboBox::activated), this,
-            &NoteEditDialog::slotCollectionChanged);
+    mCollectionCombobox->setToolTip(i18nc("@info:tooltip", "Calendar where the new note will be stored."));
+    connect(mCollectionCombobox, QOverload<int>::of(&Akonadi::CollectionComboBox::currentIndexChanged), this, &NoteEditDialog::slotCollectionChanged);
+    connect(mCollectionCombobox, QOverload<int>::of(&Akonadi::CollectionComboBox::activated), this, &NoteEditDialog::slotCollectionChanged);
 
     mNoteText = new KPIMTextEdit::RichTextEditorWidget(parent);
     mNoteText->setObjectName(QStringLiteral("notetext"));
-    connect(
-        mNoteText->editor(), &KPIMTextEdit::RichTextEditor::textChanged, this,
-        &NoteEditDialog::slotUpdateButtons);
+    connect(mNoteText->editor(), &KPIMTextEdit::RichTextEditor::textChanged, this, &NoteEditDialog::slotUpdateButtons);
 
-    //First line
+    // First line
     hbox->addWidget(mNoteTitle);
     hbox->addSpacing(5);
     hbox->addWidget(mCollectionCombobox);
@@ -97,7 +86,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     layout->addWidget(lab, 0, 0);
     layout->addLayout(hbox, 0, 1);
 
-    //Second Line
+    // Second Line
     lab = new QLabel(i18nc("@label specify the text for this note", "Text:"), this);
     layout->addWidget(lab, 1, 0);
     layout->setAlignment(lab, Qt::AlignTop);
@@ -108,9 +97,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
 
 NoteEditDialog::~NoteEditDialog()
 {
-    disconnect(
-        mNoteText->editor(), &KPIMTextEdit::RichTextEditor::textChanged, this,
-        &NoteEditDialog::slotUpdateButtons);
+    disconnect(mNoteText->editor(), &KPIMTextEdit::RichTextEditor::textChanged, this, &NoteEditDialog::slotUpdateButtons);
     writeConfig();
 }
 

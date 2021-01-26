@@ -17,7 +17,8 @@
 class QItemSelection;
 class QItemSelectionModel;
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT CollectionSelection : public QObject
 {
     Q_OBJECT

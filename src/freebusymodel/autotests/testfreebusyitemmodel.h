@@ -10,7 +10,8 @@
 
 #include <QObject>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class FreeBusyItemModelTest : public QObject
 {
     Q_OBJECT

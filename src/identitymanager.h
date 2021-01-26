@@ -10,7 +10,8 @@
 #include "calendarsupport_export.h"
 #include <KIdentityManagement/IdentityManager>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT IdentityManager : public KIdentityManagement::IdentityManager
 {
     Q_OBJECT

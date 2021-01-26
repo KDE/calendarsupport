@@ -21,12 +21,14 @@ class QCheckBox;
 class QRadioButton;
 class QPushButton;
 
-namespace Akonadi {
+namespace Akonadi
+{
 class IncidenceChanger;
 class ETMCalendar;
 }
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT ArchiveDialog : public QDialog
 {
     Q_OBJECT

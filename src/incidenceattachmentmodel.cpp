@@ -15,7 +15,8 @@
 using namespace CalendarSupport;
 using namespace Akonadi;
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class IncidenceAttachmentModelPrivate
 {
     IncidenceAttachmentModelPrivate(IncidenceAttachmentModel *qq, const QPersistentModelIndex &modelIndex, const Akonadi::Item &item = Akonadi::Item())
@@ -24,8 +25,7 @@ class IncidenceAttachmentModelPrivate
         , m_item(item)
     {
         if (modelIndex.isValid()) {
-            QObject::connect(modelIndex.model(), SIGNAL(dataChanged(QModelIndex,QModelIndex)),
-                             qq, SLOT(resetModel()));
+            QObject::connect(modelIndex.model(), SIGNAL(dataChanged(QModelIndex, QModelIndex)), qq, SLOT(resetModel()));
         } else if (item.isValid()) {
             createMonitor();
             resetInternalData();
@@ -59,10 +59,8 @@ class IncidenceAttachmentModelPrivate
         m_monitor->setObjectName(QStringLiteral("IncidenceAttachmentModelMonitor"));
         m_monitor->setItemMonitored(m_item);
         m_monitor->itemFetchScope().fetchFullPayload(true);
-        QObject::connect(m_monitor, SIGNAL(itemChanged(Akonadi::Item,QSet<QByteArray>)),
-                         q_ptr, SLOT(resetModel()));
-        QObject::connect(m_monitor, SIGNAL(itemRemoved(Akonadi::Item)),
-                         q_ptr, SLOT(resetModel()));
+        QObject::connect(m_monitor, SIGNAL(itemChanged(Akonadi::Item, QSet<QByteArray>)), q_ptr, SLOT(resetModel()));
+        QObject::connect(m_monitor, SIGNAL(itemRemoved(Akonadi::Item)), q_ptr, SLOT(resetModel()));
     }
 
     void resetInternalData()
@@ -135,8 +133,7 @@ void IncidenceAttachmentModel::setItem(const Akonadi::Item &item)
     if (!item.hasPayload<KCalendarCore::Incidence::Ptr>()) {
         auto job = new ItemFetchJob(item);
         job->fetchScope().fetchFullPayload(true);
-        connect(job, SIGNAL(itemsReceived(Akonadi::Item::List)),
-                SLOT(itemFetched(Akonadi::Item::List)));
+        connect(job, SIGNAL(itemsReceived(Akonadi::Item::List)), SLOT(itemFetched(Akonadi::Item::List)));
         return;
     }
     d->setItem(item);

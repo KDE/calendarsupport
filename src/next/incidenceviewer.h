@@ -17,11 +17,13 @@
 
 class QAbstractItemModel;
 
-namespace Akonadi {
+namespace Akonadi
+{
 class ETMCalendar;
 }
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 /**
  * @short A viewer component for incidences in Akonadi.
  *

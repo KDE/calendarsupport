@@ -10,7 +10,8 @@
 #include "calendarsupport_export.h"
 #include <QList>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT CellItem
 {
 public:

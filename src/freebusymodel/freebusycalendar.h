@@ -15,7 +15,8 @@
 #include <KCalendarCore/Calendar>
 #include <KCalendarCore/Event>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class FreeBusyCalendarPrivate;
 class CALENDARSUPPORT_EXPORT FreeBusyCalendar : public QObject
 {

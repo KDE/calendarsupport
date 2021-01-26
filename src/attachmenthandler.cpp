@@ -18,31 +18,32 @@
   @author Allen Winter \<winter@kde.org\>
 */
 #include "attachmenthandler.h"
-#include "calendarsupport_debug.h"
 #include "calendarsupport/utils.h"
+#include "calendarsupport_debug.h"
 
 #include <ItemFetchJob>
 
-#include <KLocalizedString>
-#include <KMessageBox>
 #include <KIO/FileCopyJob>
-#include <KIO/StatJob>
-#include <KJobWidgets>
-#include <KJob>
 #include <KIO/JobUiDelegate>
 #include <KIO/OpenUrlJob>
+#include <KIO/StatJob>
+#include <KJob>
+#include <KJobWidgets>
+#include <KLocalizedString>
+#include <KMessageBox>
 
-#include <QFileDialog>
-#include <QTemporaryFile>
-#include <QFile>
-#include <QPointer>
-#include <QMimeDatabase>
 #include <QDesktopServices>
+#include <QFile>
+#include <QFileDialog>
+#include <QMimeDatabase>
+#include <QPointer>
+#include <QTemporaryFile>
 
 using namespace KCalendarCore;
 using namespace Akonadi;
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 struct ReceivedInfo {
     QString uid;
     QString attachmentName;
@@ -60,7 +61,8 @@ public:
     QPointer<QWidget> const mParent;
 };
 
-AttachmentHandler::AttachmentHandler(QWidget *parent) : QObject(parent)
+AttachmentHandler::AttachmentHandler(QWidget *parent)
+    : QObject(parent)
     , d(new Private(parent))
 {
 }
@@ -92,9 +94,7 @@ Attachment AttachmentHandler::find(const QString &attachmentName, const Incidenc
     }
 
     if (a.isEmpty()) {
-        KMessageBox::error(
-            d->mParent,
-            i18n("No attachment named \"%1\" found in the incidence.", attachmentName));
+        KMessageBox::error(d->mParent, i18n("No attachment named \"%1\" found in the incidence.", attachmentName));
         return Attachment();
     }
 
@@ -105,8 +105,7 @@ Attachment AttachmentHandler::find(const QString &attachmentName, const Incidenc
         if (!job->exec()) {
             KMessageBox::sorry(
                 d->mParent,
-                i18n("The attachment \"%1\" is a web link that is inaccessible from this computer. ",
-                     QUrl::fromPercentEncoding(a.uri().toLatin1())));
+                i18n("The attachment \"%1\" is a web link that is inaccessible from this computer. ", QUrl::fromPercentEncoding(a.uri().toLatin1())));
             return Attachment();
         }
     }
@@ -121,10 +120,9 @@ Attachment AttachmentHandler::find(const QString &attachmentName, const Schedule
 
     Incidence::Ptr incidence = message->event().dynamicCast<Incidence>();
     if (!incidence) {
-        KMessageBox::error(
-            d->mParent,
-            i18n("The calendar invitation stored in this email message is broken in some way. "
-                 "Unable to continue."));
+        KMessageBox::error(d->mParent,
+                           i18n("The calendar invitation stored in this email message is broken in some way. "
+                                "Unable to continue."));
         return Attachment();
     }
 
@@ -140,9 +138,7 @@ static QUrl tempFileForAttachment(const Attachment &attachment)
     QMimeDatabase db;
     QStringList patterns = db.mimeTypeForName(attachment.mimeType()).globPatterns();
     if (!patterns.empty()) {
-        s_tempFile = new QTemporaryFile(QDir::tempPath() + QLatin1String(
-                                            "/attachementview_XXXXXX")
-                                        + patterns.first().remove(QLatin1Char('*')));
+        s_tempFile = new QTemporaryFile(QDir::tempPath() + QLatin1String("/attachementview_XXXXXX") + patterns.first().remove(QLatin1Char('*')));
     } else {
         s_tempFile = new QTemporaryFile();
     }
@@ -153,7 +149,7 @@ static QUrl tempFileForAttachment(const Attachment &attachment)
     s_tempFile->close();
     QFile tf(s_tempFile->fileName());
     if (tf.size() != attachment.size()) {
-        //whoops. failed to write the entire attachment. return an invalid URL.
+        // whoops. failed to write the entire attachment. return an invalid URL.
         delete s_tempFile;
         s_tempFile = nullptr;
         return url;
@@ -182,9 +178,7 @@ bool AttachmentHandler::view(const Attachment &attachment)
             job->start();
         } else {
             stat = false;
-            KMessageBox::error(
-                d->mParent,
-                i18n("Unable to create a temporary file for the attachment."));
+            KMessageBox::error(d->mParent, i18n("Unable to create a temporary file for the attachment."));
         }
         delete s_tempFile;
         s_tempFile = nullptr;
@@ -217,9 +211,7 @@ bool AttachmentHandler::view(const QString &attachmentName, const ScheduleMessag
 bool AttachmentHandler::saveAs(const Attachment &attachment)
 {
     // get the saveas file name
-    const QString saveAsFile = QFileDialog::getSaveFileName(d->mParent, i18n(
-                                                                "Save Attachment"),
-                                                            attachment.label());
+    const QString saveAsFile = QFileDialog::getSaveFileName(d->mParent, i18n("Save Attachment"), attachment.label());
     if (saveAsFile.isEmpty()) {
         return false;
     }
@@ -240,9 +232,7 @@ bool AttachmentHandler::saveAs(const Attachment &attachment)
             }
         } else {
             stat = false;
-            KMessageBox::error(
-                d->mParent,
-                i18n("Unable to create a temporary file for the attachment."));
+            KMessageBox::error(d->mParent, i18n("Unable to create a temporary file for the attachment."));
         }
         delete s_tempFile;
         s_tempFile = nullptr;

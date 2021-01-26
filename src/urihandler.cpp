@@ -13,14 +13,14 @@
 #include <KIO/OpenUrlJob>
 #include <KService>
 
+#include <QDesktopServices>
 #include <QUrl>
 #include <QUrlQuery>
-#include <QDesktopServices>
 
 using namespace CalendarSupport;
 
-namespace {
-
+namespace
+{
 bool startService(const QString &desktopFileName, const QString &uri)
 {
     const auto service = KService::serviceByDesktopName(desktopFileName);
@@ -83,7 +83,7 @@ bool UriHandler::process(const QString &uri)
         } else if (mimeType.toLower() == QLatin1String("text/directory")) {
             return startKAddressbook(uri);
         }
-    } else {  // no special URI, let KDE handle it
+    } else { // no special URI, let KDE handle it
         KIO::OpenUrlJob *job = new KIO::OpenUrlJob(QUrl(uri));
         job->start();
     }

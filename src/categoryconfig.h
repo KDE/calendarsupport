@@ -16,7 +16,8 @@
 class KCoreConfigSkeleton;
 class QColor;
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT CategoryConfig : public QObject
 {
     Q_OBJECT
@@ -32,6 +33,7 @@ public:
     void writeConfig();
 
     static const QString categorySeparator;
+
 private:
     Q_DISABLE_COPY(CategoryConfig)
     class Private;

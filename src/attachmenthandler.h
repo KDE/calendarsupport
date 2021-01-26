@@ -24,7 +24,8 @@ class KJob;
 
 class QWidget;
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 /**
   @brief
   Provides methods to handle incidence attachments.
@@ -35,7 +36,6 @@ class AttachmentHandler : public QObject
 {
     Q_OBJECT
 public:
-
     /**
      * Constructs an AttachmentHandler.
      * @param parent is the parent widget for the dialogs used by this class.

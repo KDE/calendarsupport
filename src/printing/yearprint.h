@@ -10,11 +10,13 @@
 #include "calprintpluginbase.h"
 #include "ui_calprintyearconfig_base.h"
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CalPrintYear : public CalPrintPluginBase
 {
 public:
-    CalPrintYear() : CalPrintPluginBase()
+    CalPrintYear()
+        : CalPrintPluginBase()
     {
     }
 
@@ -67,7 +69,8 @@ protected:
 class CalPrintYearConfig : public QWidget, public Ui::CalPrintYearConfig_Base
 {
 public:
-    explicit CalPrintYearConfig(QWidget *parent) : QWidget(parent)
+    explicit CalPrintYearConfig(QWidget *parent)
+        : QWidget(parent)
     {
         setupUi(this);
     }

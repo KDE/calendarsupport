@@ -10,7 +10,8 @@
 
 #include <QTextBrowser>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class TextBrowser : public QTextBrowser
 {
     Q_OBJECT

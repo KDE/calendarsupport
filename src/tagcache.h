@@ -9,12 +9,14 @@
 
 #include <AkonadiCore/Tag>
 
-namespace Akonadi {
+namespace Akonadi
+{
 class Monitor;
 }
 class KJob;
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 /**
  * A tag cache
  */

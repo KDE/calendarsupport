@@ -6,16 +6,18 @@
 #ifndef CALENDARSUPPORT_CALENDARUTILS_H
 #define CALENDARSUPPORT_CALENDARUTILS_H
 
-#include <Collection>
 #include <Akonadi/Calendar/ETMCalendar>
+#include <Collection>
 
 #include <QObject>
 
-namespace Akonadi {
+namespace Akonadi
+{
 class Item;
 }
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CalendarUtilsPrivate;
 
 /** Some calendar/Incidence related utilitly methods.
@@ -70,11 +72,9 @@ private:
     CalendarUtilsPrivate *const d_ptr;
     Q_DECLARE_PRIVATE(CalendarUtils)
 
-    Q_PRIVATE_SLOT(d_ptr,
-                   void handleChangeFinish(int changeId,
-                                           const Akonadi::Item &item,
-                                           Akonadi::IncidenceChanger::ResultCode resultCode,
-                                           const QString &errorString))
+    Q_PRIVATE_SLOT(
+        d_ptr,
+        void handleChangeFinish(int changeId, const Akonadi::Item &item, Akonadi::IncidenceChanger::ResultCode resultCode, const QString &errorString))
 };
 }
 

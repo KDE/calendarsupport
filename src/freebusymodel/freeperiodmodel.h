@@ -14,14 +14,13 @@
 
 #include <QAbstractTableModel>
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 class CALENDARSUPPORT_EXPORT FreePeriodModel : public QAbstractTableModel
 {
     Q_OBJECT
 public:
-    enum Roles {
-        PeriodRole = Qt::UserRole
-    };
+    enum Roles { PeriodRole = Qt::UserRole };
     explicit FreePeriodModel(QObject *parent = nullptr);
     ~FreePeriodModel() override;
 

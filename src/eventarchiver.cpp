@@ -12,18 +12,18 @@
 #include "utils.h"
 #include <Akonadi/Calendar/IncidenceChanger>
 
-#include <KCalendarCore/ICalFormat>
 #include <KCalendarCore/FileStorage>
+#include <KCalendarCore/ICalFormat>
 #include <KCalendarCore/MemoryCalendar>
 
 #include <KCalUtils/Stringify>
 
 #include "calendarsupport_debug.h"
-#include <KLocalizedString>
-#include <KMessageBox>
 #include <KIO/FileCopyJob>
 #include <KIO/StatJob>
 #include <KJobWidgets>
+#include <KLocalizedString>
+#include <KMessageBox>
 
 #include <QLocale>
 #include <QTemporaryFile>
@@ -36,7 +36,8 @@ using namespace CalendarSupport;
 class GroupwareScoppedDisabler
 {
 public:
-    GroupwareScoppedDisabler(Akonadi::IncidenceChanger *changer) : m_changer(changer)
+    GroupwareScoppedDisabler(Akonadi::IncidenceChanger *changer)
+        : m_changer(changer)
     {
         m_wasEnabled = m_changer->groupwareCommunication();
         m_changer->setGroupwareCommunication(false);
@@ -85,7 +86,12 @@ void EventArchiver::runAuto(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::
     run(calendar, changer, limitDate, widget, withGUI, false);
 }
 
-void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget, bool withGUI, bool errorIfNone)
+void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
+                        Akonadi::IncidenceChanger *changer,
+                        const QDate &limitDate,
+                        QWidget *widget,
+                        bool withGUI,
+                        bool errorIfNone)
 {
     GroupwareScoppedDisabler disabler(changer); // Disables groupware communication temporarily
 
@@ -95,12 +101,11 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::Inci
     KCalendarCore::Journal::List journals;
 
     if (KCalPrefs::instance()->mArchiveEvents) {
-        events = calendar->rawEvents(
-            QDate(1769, 12, 1),
-            // #29555, also advertised by the "limitDate not included" in the class docu
-            limitDate.addDays(-1),
-            QTimeZone::systemTimeZone(),
-            true);
+        events = calendar->rawEvents(QDate(1769, 12, 1),
+                                     // #29555, also advertised by the "limitDate not included" in the class docu
+                                     limitDate.addDays(-1),
+                                     QTimeZone::systemTimeZone(),
+                                     true);
     }
     if (KCalPrefs::instance()->mArchiveTodos) {
         const KCalendarCore::Todo::List rawTodos = calendar->rawTodos();
@@ -113,17 +118,13 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::Inci
         }
     }
 
-    const KCalendarCore::Incidence::List incidences = calendar->mergeIncidenceList(events, todos,
-                                                                                   journals);
+    const KCalendarCore::Incidence::List incidences = calendar->mergeIncidenceList(events, todos, journals);
 
-    qCDebug(CALENDARSUPPORT_LOG) << "archiving incidences before" << limitDate
-                                 << " ->" << incidences.count() << " incidences found.";
+    qCDebug(CALENDARSUPPORT_LOG) << "archiving incidences before" << limitDate << " ->" << incidences.count() << " incidences found.";
     if (incidences.isEmpty()) {
         if (withGUI && errorIfNone) {
             KMessageBox::information(widget,
-                                     i18n("There are no items before %1",
-                                          QLocale::system().toString(limitDate,
-                                                                     QLocale::ShortFormat)),
+                                     i18n("There are no items before %1", QLocale::system().toString(limitDate, QLocale::ShortFormat)),
                                      QStringLiteral("ArchiverNoIncidences"));
         }
         return;
@@ -139,7 +140,11 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::Inci
     }
 }
 
-void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget, const Akonadi::Item::List &items, bool withGUI)
+void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer,
+                                     const QDate &limitDate,
+                                     QWidget *widget,
+                                     const Akonadi::Item::List &items,
+                                     bool withGUI)
 {
     QStringList incidenceStrs;
     Akonadi::Item::List::ConstIterator it;
@@ -150,25 +155,30 @@ void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer, const Q
     }
 
     if (withGUI) {
-        const int result = KMessageBox::warningContinueCancelList(
-            widget,
-            i18n("Delete all items before %1 without saving?\n"
-                 "The following items will be deleted:",
-                 QLocale::system().toString(limitDate, QLocale::ShortFormat)),
-            incidenceStrs,
-            i18n("Delete Old Items"), KStandardGuiItem::del());
+        const int result = KMessageBox::warningContinueCancelList(widget,
+                                                                  i18n("Delete all items before %1 without saving?\n"
+                                                                       "The following items will be deleted:",
+                                                                       QLocale::system().toString(limitDate, QLocale::ShortFormat)),
+                                                                  incidenceStrs,
+                                                                  i18n("Delete Old Items"),
+                                                                  KStandardGuiItem::del());
         if (result != KMessageBox::Continue) {
             return;
         }
     }
 
-    changer->deleteIncidences(items, /**parent=*/ widget);
+    changer->deleteIncidences(items, /**parent=*/widget);
 
     // TODO: Q_EMIT only after hearing back from incidence changer
     Q_EMIT eventsDeleted();
 }
 
-void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget, const KCalendarCore::Incidence::List &incidences, bool withGUI)
+void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
+                                      Akonadi::IncidenceChanger *changer,
+                                      const QDate &limitDate,
+                                      QWidget *widget,
+                                      const KCalendarCore::Incidence::List &incidences,
+                                      bool withGUI)
 {
     Q_UNUSED(limitDate)
     Q_UNUSED(withGUI)
@@ -262,8 +272,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
         } else {
             errmess = i18nc("save failure cause unknown", "Reason unknown");
         }
-        KMessageBox::error(widget, i18n("Cannot write archive file %1. %2",
-                                        archiveStore.fileName(), errmess));
+        KMessageBox::error(widget, i18n("Cannot write archive file %1. %2", archiveStore.fileName(), errmess));
         QFile::remove(tmpFileName);
         return;
     }

@@ -15,7 +15,8 @@
 
 class KDatePicker;
 
-namespace CalendarSupport {
+namespace CalendarSupport
+{
 /**
  * @short This menu helps the user to select a date quickly.
  *
@@ -40,9 +41,9 @@ public:
      * Describes the available selection modes.
      */
     enum Mode {
-        NoDate = 1,     ///< A menu-item with "No Date". Will always return an invalid date.
+        NoDate = 1, ///< A menu-item with "No Date". Will always return an invalid date.
         DatePicker = 2, ///< A menu-item with a KDatePicker.
-        Words = 4       ///< A menu-item with list of words that describe a date.
+        Words = 4 ///< A menu-item with list of words that describe a date.
     };
 
     /**

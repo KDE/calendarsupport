@@ -17,7 +17,8 @@ using namespace KOrg;
 class CalPrintItemList : public CalPrintPluginBase
 {
 public:
-    CalPrintItemList() : CalPrintPluginBase()
+    CalPrintItemList()
+        : CalPrintPluginBase()
     {
     }
 
@@ -62,7 +63,8 @@ protected:
 class CalPrintItemListConfig : public QWidget, public Ui::CalPrintItemListConfig_Base
 {
 public:
-    explicit CalPrintItemListConfig(QWidget *parent) : QWidget(parent)
+    explicit CalPrintItemListConfig(QWidget *parent)
+        : QWidget(parent)
     {
         setupUi(this);
     }

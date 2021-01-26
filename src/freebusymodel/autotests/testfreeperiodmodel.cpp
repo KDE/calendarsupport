@@ -8,8 +8,8 @@
 #include "testfreeperiodmodel.h"
 #include "../freeperiodmodel.h"
 
-#include <KCalendarCore/Period>
 #include <KCalendarCore/Duration>
+#include <KCalendarCore/Period>
 
 #include <QAbstractItemModelTester>
 #include <QTest>
@@ -62,11 +62,9 @@ void FreePeriodModelTest::testSplitByDay()
     const QDateTime startPeriod2(QDate(2010, 7, 25), QTime(0, 0, 0, 0), Qt::UTC);
 
     QModelIndex index = model->index(0, 0);
-    KCalendarCore::Period period1
-        = model->data(index, FreePeriodModel::PeriodRole).value<KCalendarCore::Period>();
+    KCalendarCore::Period period1 = model->data(index, FreePeriodModel::PeriodRole).value<KCalendarCore::Period>();
     index = model->index(1, 0);
-    KCalendarCore::Period period2
-        = model->data(index, FreePeriodModel::PeriodRole).value<KCalendarCore::Period>();
+    KCalendarCore::Period period2 = model->data(index, FreePeriodModel::PeriodRole).value<KCalendarCore::Period>();
 
     QCOMPARE(period1.start(), startDt);
     QCOMPARE(period1.end(), endPeriod1);

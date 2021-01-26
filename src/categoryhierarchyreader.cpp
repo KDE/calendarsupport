@@ -16,17 +16,12 @@ using namespace CalendarSupport;
 inline QString &quote(QString &string)
 {
     Q_ASSERT(CategoryConfig::categorySeparator != QLatin1String("@"));
-    return string.replace(QLatin1Char('@'), QStringLiteral("@0")).replace(QLatin1Char(
-                                                                              '\\')
-                                                                          +CategoryConfig::categorySeparator,
-                                                                          QStringLiteral("@1"));
+    return string.replace(QLatin1Char('@'), QStringLiteral("@0")).replace(QLatin1Char('\\') + CategoryConfig::categorySeparator, QStringLiteral("@1"));
 }
 
 inline QStringList &unquote(QStringList &strings)
 {
-    return
-        strings.replaceInStrings(QStringLiteral("@1"), CategoryConfig::categorySeparator).
-        replaceInStrings(QStringLiteral("@0"), QStringLiteral("@"));
+    return strings.replaceInStrings(QStringLiteral("@1"), CategoryConfig::categorySeparator).replaceInStrings(QStringLiteral("@0"), QStringLiteral("@"));
 }
 
 QStringList CategoryHierarchyReader::path(QString string)
@@ -53,8 +48,7 @@ void CategoryHierarchyReader::read(const QStringList &categories)
         QStringList::Iterator jt, kt;
         int split_level = 0;
         QStringList new_path = _path; // save it for later
-        for (jt = _path.begin(), kt = last_path.begin();
-             jt != _path.end() && kt != last_path.end(); ++jt, ++kt) {
+        for (jt = _path.begin(), kt = last_path.begin(); jt != _path.end() && kt != last_path.end(); ++jt, ++kt) {
             if (*jt == *kt) {
                 split_level++;
             } else {

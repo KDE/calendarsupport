@@ -43,7 +43,7 @@
 
 KCalendarCore::Incidence::Ptr CalendarSupport::incidence(const Akonadi::Item &item)
 {
-    //relying on exception for performance reasons
+    // relying on exception for performance reasons
     try {
         return item.payload<KCalendarCore::Incidence::Ptr>();
     } catch (const Akonadi::PayloadException &) {
@@ -53,7 +53,7 @@ KCalendarCore::Incidence::Ptr CalendarSupport::incidence(const Akonadi::Item &it
 
 KCalendarCore::Event::Ptr CalendarSupport::event(const Akonadi::Item &item)
 {
-    //relying on exception for performance reasons
+    // relying on exception for performance reasons
     try {
         KCalendarCore::Incidence::Ptr incidence = item.payload<KCalendarCore::Incidence::Ptr>();
         if (hasEvent(incidence)) {
@@ -258,14 +258,16 @@ static bool itemMatches(const Akonadi::Item &item, const KCalendarCore::CalFilte
     return filter->filterIncidence(inc);
 }
 
-Akonadi::Item::List CalendarSupport::applyCalFilter(const Akonadi::Item::List &items_,
-                                                    const KCalendarCore::CalFilter *filter)
+Akonadi::Item::List CalendarSupport::applyCalFilter(const Akonadi::Item::List &items_, const KCalendarCore::CalFilter *filter)
 {
     Q_ASSERT(filter);
     Akonadi::Item::List items(items_);
-    items.erase(std::remove_if(items.begin(), items.end(), [filter](const Akonadi::Item &item) {
-        return !itemMatches(item, filter);
-    }), items.end());
+    items.erase(std::remove_if(items.begin(),
+                               items.end(),
+                               [filter](const Akonadi::Item &item) {
+                                   return !itemMatches(item, filter);
+                               }),
+                items.end());
     return items;
 }
 
@@ -285,27 +287,24 @@ bool CalendarSupport::isValidIncidenceItemUrl(const QUrl &url, const QStringList
 bool CalendarSupport::isValidIncidenceItemUrl(const QUrl &url)
 {
     return isValidIncidenceItemUrl(url,
-                                   QStringList() << KCalendarCore::Event::eventMimeType()
-                                                 << KCalendarCore::Todo::todoMimeType()
-                                                 << KCalendarCore::Journal::journalMimeType()
-                                                 << KCalendarCore::FreeBusy::freeBusyMimeType());
+                                   QStringList() << KCalendarCore::Event::eventMimeType() << KCalendarCore::Todo::todoMimeType()
+                                                 << KCalendarCore::Journal::journalMimeType() << KCalendarCore::FreeBusy::freeBusyMimeType());
 }
 
 static bool containsValidIncidenceItemUrl(const QList<QUrl> &urls)
 {
-    return
-        std::find_if(urls.begin(), urls.end(), [](const QUrl &url) {
-        return CalendarSupport::isValidIncidenceItemUrl(url);
-    }) != urls.constEnd();
+    return std::find_if(urls.begin(),
+                        urls.end(),
+                        [](const QUrl &url) {
+                            return CalendarSupport::isValidIncidenceItemUrl(url);
+                        })
+        != urls.constEnd();
 }
 
 bool CalendarSupport::canDecode(const QMimeData *md)
 {
     if (md) {
-        return
-            containsValidIncidenceItemUrl(md->urls())
-            || KCalUtils::ICalDrag::canDecode(md)
-            || KCalUtils::VCalDrag::canDecode(md);
+        return containsValidIncidenceItemUrl(md->urls()) || KCalUtils::ICalDrag::canDecode(md) || KCalUtils::VCalDrag::canDecode(md);
     } else {
         return false;
     }
@@ -338,8 +337,7 @@ QList<QUrl> CalendarSupport::todoItemUrls(const QMimeData *mimeData)
 
 bool CalendarSupport::mimeDataHasIncidence(const QMimeData *mimeData)
 {
-    return !incidenceItemUrls(mimeData).isEmpty()
-           || !incidences(mimeData).isEmpty();
+    return !incidenceItemUrls(mimeData).isEmpty() || !incidences(mimeData).isEmpty();
 }
 
 KCalendarCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData)
@@ -378,9 +376,7 @@ KCalendarCore::Incidence::List CalendarSupport::incidences(const QMimeData *mime
     return incidences;
 }
 
-Akonadi::Collection CalendarSupport::selectCollection(
-    QWidget *parent, int &dialogCode, const QStringList &mimeTypes,
-    const Akonadi::Collection &defCollection)
+Akonadi::Collection CalendarSupport::selectCollection(QWidget *parent, int &dialogCode, const QStringList &mimeTypes, const Akonadi::Collection &defCollection)
 {
     QPointer<Akonadi::CollectionDialog> dlg(new Akonadi::CollectionDialog(parent));
     dlg->setWindowTitle(i18nc("@title:window", "Select Calendar"));
@@ -411,14 +407,11 @@ Akonadi::Collection CalendarSupport::selectCollection(
 Akonadi::Item CalendarSupport::itemFromIndex(const QModelIndex &idx)
 {
     Akonadi::Item item = idx.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
-    item.setParentCollection(
-        idx.data(Akonadi::EntityTreeModel::ParentCollectionRole).value<Akonadi::Collection>());
+    item.setParentCollection(idx.data(Akonadi::EntityTreeModel::ParentCollectionRole).value<Akonadi::Collection>());
     return item;
 }
 
-Akonadi::Collection::List CalendarSupport::collectionsFromModel(const QAbstractItemModel *model,
-                                                                const QModelIndex &parentIndex,
-                                                                int start, int end)
+Akonadi::Collection::List CalendarSupport::collectionsFromModel(const QAbstractItemModel *model, const QModelIndex &parentIndex, int start, int end)
 {
     const int endRow = end >= 0 ? end : model->rowCount(parentIndex) - 1;
     Akonadi::Collection::List collections;
@@ -439,9 +432,7 @@ Akonadi::Collection::List CalendarSupport::collectionsFromModel(const QAbstractI
     return collections;
 }
 
-Akonadi::Item::List CalendarSupport::itemsFromModel(const QAbstractItemModel *model,
-                                                    const QModelIndex &parentIndex,
-                                                    int start, int end)
+Akonadi::Item::List CalendarSupport::itemsFromModel(const QAbstractItemModel *model, const QModelIndex &parentIndex, int start, int end)
 {
     const int endRow = end >= 0 ? end : model->rowCount(parentIndex) - 1;
     Akonadi::Item::List items;
@@ -498,8 +489,8 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
     // Kolab Groupware
     if (resourceName.contains(QLatin1String("kolab"))) {
         QString typeStr = cName; // contents type: "Calendar", "Tasks", etc
-        QString ownerStr;        // folder owner: "fred", "ethel", etc
-        QString nameStr;         // folder name: "Public", "Test", etc
+        QString ownerStr; // folder owner: "fred", "ethel", etc
+        QString nameStr; // folder name: "Public", "Test", etc
         if (calendar) {
             Akonadi::Collection p = c.parentCollection();
             while (p != Akonadi::Collection::root()) {
@@ -510,8 +501,8 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
                     nameStr = cName;
                     typeStr = i18n("Calendar");
                     break;
-                } else if (tName.startsWith(QLatin1String("shared.tasks"), Qt::CaseInsensitive) ||
-                           tName.startsWith(QLatin1String("shared.todo"), Qt::CaseInsensitive)) {
+                } else if (tName.startsWith(QLatin1String("shared.tasks"), Qt::CaseInsensitive)
+                           || tName.startsWith(QLatin1String("shared.todo"), Qt::CaseInsensitive)) {
                     ownerStr = QStringLiteral("Shared");
                     nameStr = cName;
                     typeStr = i18n("Tasks");
@@ -526,10 +517,7 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
                     nameStr = cName;
                     typeStr = i18n("Notes");
                     break;
-                } else if (tName != i18n("Calendar") &&
-                           tName != i18n("Tasks") &&
-                           tName != i18n("Journal") &&
-                           tName != i18n("Notes")) {
+                } else if (tName != i18n("Calendar") && tName != i18n("Tasks") && tName != i18n("Journal") && tName != i18n("Notes")) {
                     ownerStr = tName;
                     break;
                 } else {
@@ -543,38 +531,30 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
         if (!ownerStr.isEmpty()) {
             if (!ownerStr.compare(QLatin1String("INBOX"), Qt::CaseInsensitive)) {
                 return i18nc("%1 is folder contents", "My Kolab %1", typeStr);
-            } else if (!ownerStr.compare(QLatin1String("SHARED"), Qt::CaseInsensitive) ||
-                       !ownerStr.compare(QLatin1String("CALENDAR"), Qt::CaseInsensitive) ||
-                       !ownerStr.compare(QLatin1String("RESOURCES"), Qt::CaseInsensitive)) {
-                return i18nc("%1 is folder name, %2 is folder contents",
-                             "Shared Kolab %1 %2", nameStr, typeStr);
+            } else if (!ownerStr.compare(QLatin1String("SHARED"), Qt::CaseInsensitive) || !ownerStr.compare(QLatin1String("CALENDAR"), Qt::CaseInsensitive)
+                       || !ownerStr.compare(QLatin1String("RESOURCES"), Qt::CaseInsensitive)) {
+                return i18nc("%1 is folder name, %2 is folder contents", "Shared Kolab %1 %2", nameStr, typeStr);
             } else {
                 if (nameStr.isEmpty()) {
-                    return i18nc("%1 is folder owner name, %2 is folder contents",
-                                 "%1's Kolab %2", ownerStr, typeStr);
+                    return i18nc("%1 is folder owner name, %2 is folder contents", "%1's Kolab %2", ownerStr, typeStr);
                 } else {
-                    return i18nc(
-                        "%1 is folder owner name, %2 is folder name, %3 is folder contents",
-                        "%1's %2 Kolab %3", ownerStr, nameStr, typeStr);
+                    return i18nc("%1 is folder owner name, %2 is folder name, %3 is folder contents", "%1's %2 Kolab %3", ownerStr, nameStr, typeStr);
                 }
             }
         } else {
-            return i18nc("%1 is folder contents",
-                         "Kolab %1", typeStr);
+            return i18nc("%1 is folder contents", "Kolab %1", typeStr);
         }
-    } //end kolab section
+    } // end kolab section
 
     // Dav Groupware
     if (resourceName.contains(QLatin1String("davgroupware"))) {
-        const QString resourceDisplayName
-            = Akonadi::AgentManager::self()->instance(resourceName).name();
-        return i18nc("%1 is the folder name", "%1 in %2",
-                     fullCollection.displayName(), resourceDisplayName);
-    } //end caldav section
+        const QString resourceDisplayName = Akonadi::AgentManager::self()->instance(resourceName).name();
+        return i18nc("%1 is the folder name", "%1 in %2", fullCollection.displayName(), resourceDisplayName);
+    } // end caldav section
 
     // Google
     if (resourceName.contains(QLatin1String("google"))) {
-        QString ownerStr;        // folder owner: "user@gmail.com"
+        QString ownerStr; // folder owner: "user@gmail.com"
         if (calendar) {
             Akonadi::Collection p = c.parentCollection();
             ownerStr = calendar->collection(p.id()).displayName();
@@ -602,24 +582,20 @@ QString CalendarSupport::displayName(Akonadi::ETMCalendar *calendar, const Akona
                 ownerStr.truncate(atChar);
             }
             if (nameStr.isEmpty()) {
-                return i18nc("%1 is folder owner name, %2 is folder contents",
-                             "%1's Google %2", ownerStr, typeStr);
+                return i18nc("%1 is folder owner name, %2 is folder contents", "%1's Google %2", ownerStr, typeStr);
             } else {
-                return i18nc("%1 is folder owner name, %2 is folder name",
-                             "%1's %2", ownerStr, nameStr);
+                return i18nc("%1 is folder owner name, %2 is folder name", "%1's %2", ownerStr, nameStr);
             }
         } else {
-            return i18nc("%1 is folder contents",
-                         "Google %1", typeStr);
+            return i18nc("%1 is folder contents", "Google %1", typeStr);
         }
-    } //end google section
+    } // end google section
 
     // Not groupware so the collection is "mine"
     const QString dName = fullCollection.displayName();
 
     if (!dName.isEmpty()) {
-        return fullCollection.name().startsWith(QLatin1String("akonadi_")) ? i18n("My %1",
-                                                                                  dName) : dName;
+        return fullCollection.name().startsWith(QLatin1String("akonadi_")) ? i18n("My %1", dName) : dName;
     } else if (!fullCollection.name().isEmpty()) {
         return fullCollection.name();
     } else {
@@ -651,8 +627,7 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     // Calendar Type
     QString calendarType;
     if (!coll.isVirtual()) {
-        const Akonadi::AgentInstance instance
-            = Akonadi::AgentManager::self()->instance(coll.resource());
+        const Akonadi::AgentInstance instance = Akonadi::AgentManager::self()->instance(coll.resource());
         calendarType = instance.type().name();
     } else {
         calendarType = i18nc("a virtual folder type", "Virtual");
@@ -665,10 +640,7 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     mimeTypes.removeAll(QStringLiteral("inode/directory"));
     QString mimeTypeStr;
     if (!mimeTypes.isEmpty()) {
-        mimeTypeStr = QLocale().createSeparatedList(
-                          mimeTypes.
-                          replaceInStrings(
-                              QStringLiteral("application/x-vnd.akonadi.calendar."), QString()));
+        mimeTypeStr = QLocale().createSeparatedList(mimeTypes.replaceInStrings(QStringLiteral("application/x-vnd.akonadi.calendar."), QString()));
     } else {
         mimeTypeStr = i18nc("collection has no mimetypes to show the user", "none");
     }
@@ -777,16 +749,14 @@ QStringList CalendarSupport::holiday(const QDate &date)
                 if (showCountryCode) {
                     // If more than one holiday region, append the country code to the holiday
                     // display name to help the user identify which region it belongs to.
-                    const QRegularExpression holidaySE(
-                        i18nc("search pattern for holidayname", "^%1", name));
+                    const QRegularExpression holidaySE(i18nc("search pattern for holidayname", "^%1", name));
                     if (hdays.filter(holidaySE).isEmpty()) {
                         const QString pholiday = i18n("%1 (%2)", name, region.countryCode());
                         hdays.append(pholiday);
                     } else {
                         // More than 1 region has the same holiday => remove the country code
                         // i.e don't show "Holiday (US)" and "Holiday(FR)"; just show "Holiday".
-                        const QRegularExpression holidayRE(
-                            i18nc("replace pattern for holidayname (countrycode)", "^%1 \\(.*\\)", name));
+                        const QRegularExpression holidayRE(i18nc("replace pattern for holidayname (countrycode)", "^%1 \\(.*\\)", name));
                         hdays.replaceInStrings(holidayRE, name);
                         hdays.removeDuplicates();
                     }
@@ -810,8 +780,7 @@ QStringList CalendarSupport::categories(const KCalendarCore::Incidence::List &in
     for (const KCalendarCore::Incidence::Ptr &incidence : incidences) {
         thisCats = incidence->categories();
         const QStringList::ConstIterator send(thisCats.constEnd());
-        for (QStringList::ConstIterator si = thisCats.constBegin();
-             si != send; ++si) {
+        for (QStringList::ConstIterator si = thisCats.constBegin(); si != send; ++si) {
             if (!cats.contains(*si)) {
                 cats.append(*si);
             }
@@ -841,8 +810,7 @@ bool CalendarSupport::mergeCalendar(const QString &srcFilename, const KCalendarC
     return loadedSuccesfully;
 }
 
-void CalendarSupport::createAlarmReminder(const KCalendarCore::Alarm::Ptr &alarm,
-                                          KCalendarCore::IncidenceBase::IncidenceType type)
+void CalendarSupport::createAlarmReminder(const KCalendarCore::Alarm::Ptr &alarm, KCalendarCore::IncidenceBase::IncidenceType type)
 {
     int duration; // in secs
     switch (CalendarSupport::KCalPrefs::instance()->mReminderTimeUnits) {

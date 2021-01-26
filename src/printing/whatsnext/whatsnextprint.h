@@ -17,7 +17,8 @@ using namespace KOrg;
 class CalPrintWhatsNext : public CalPrintPluginBase
 {
 public:
-    CalPrintWhatsNext() : CalPrintPluginBase()
+    CalPrintWhatsNext()
+        : CalPrintPluginBase()
     {
     }
 
@@ -62,7 +63,8 @@ protected:
 class CalPrintWhatsNextConfig : public QWidget, public Ui::CalPrintWhatsNextConfig_Base
 {
 public:
-    explicit CalPrintWhatsNextConfig(QWidget *parent) : QWidget(parent)
+    explicit CalPrintWhatsNextConfig(QWidget *parent)
+        : QWidget(parent)
     {
         setupUi(this);
     }

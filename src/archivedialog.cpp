@@ -13,26 +13,26 @@
 
 #include <Akonadi/Calendar/IncidenceChanger>
 
-#include <QComboBox>
 #include <KDateComboBox>
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <QUrl>
 #include <KUrlRequester>
+#include <QComboBox>
 #include <QHBoxLayout>
+#include <QUrl>
 
-#include <QSpinBox>
 #include <QButtonGroup>
 #include <QCheckBox>
+#include <QDialogButtonBox>
 #include <QFrame>
 #include <QGroupBox>
 #include <QLabel>
+#include <QPushButton>
 #include <QRadioButton>
+#include <QSpinBox>
 #include <QVBoxLayout>
 #include <QWhatsThis>
-#include <QDialogButtonBox>
-#include <QPushButton>
 
 using namespace CalendarSupport;
 
@@ -58,56 +58,43 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     auto topLayout = new QVBoxLayout(topFrame);
     topLayout->setContentsMargins(0, 0, 0, 0);
     QLabel *descLabel = new QLabel(topFrame);
-    descLabel->setText(
-        xi18nc("@info:whatsthis",
-               "Archiving saves old items into the given file and "
-               "then deletes them in the current calendar. If the archive file "
-               "already exists they will be added. "
-               "(<link url=\"#\">How to restore</link>)"));
-    descLabel->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "In order to add an archive to your calendar, use the Merge Calendar "
-              "function. You can view an archive by opening it like you would any "
-              "other calendar. It is not saved in a special format, but as "
-              "vCalendar."));
-    descLabel->setTextInteractionFlags(
-        Qt::TextSelectableByMouse | Qt::TextSelectableByKeyboard
-        |Qt::LinksAccessibleByMouse | Qt::LinksAccessibleByKeyboard);
+    descLabel->setText(xi18nc("@info:whatsthis",
+                              "Archiving saves old items into the given file and "
+                              "then deletes them in the current calendar. If the archive file "
+                              "already exists they will be added. "
+                              "(<link url=\"#\">How to restore</link>)"));
+    descLabel->setWhatsThis(i18nc("@info:whatsthis",
+                                  "In order to add an archive to your calendar, use the Merge Calendar "
+                                  "function. You can view an archive by opening it like you would any "
+                                  "other calendar. It is not saved in a special format, but as "
+                                  "vCalendar."));
+    descLabel->setTextInteractionFlags(Qt::TextSelectableByMouse | Qt::TextSelectableByKeyboard | Qt::LinksAccessibleByMouse | Qt::LinksAccessibleByKeyboard);
     descLabel->setWordWrap(true);
     descLabel->setContextMenuPolicy(Qt::NoContextMenu);
     topLayout->addWidget(descLabel);
     connect(descLabel, &QLabel::linkActivated, this, &ArchiveDialog::showWhatsThis);
 
     auto radioBG = new QButtonGroup(this);
-    connect(radioBG, QOverload<QAbstractButton *>::of(
-                &QButtonGroup::buttonClicked), this, &ArchiveDialog::slotActionChanged);
+    connect(radioBG, QOverload<QAbstractButton *>::of(&QButtonGroup::buttonClicked), this, &ArchiveDialog::slotActionChanged);
 
     auto dateLayout = new QHBoxLayout();
     dateLayout->setContentsMargins(0, 0, 0, 0);
-    mArchiveOnceRB = new QRadioButton(i18nc("@option:radio",
-                                            "Archive now items older than:"),
-                                      topFrame);
-    mArchiveOnceRB->setToolTip(
-        i18nc("@info:tooltip",
-              "Enable one time archiving or purging of older items"));
-    mArchiveOnceRB->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "If you check this box, events and to-dos older than the specified age "
-              "will be archived or purged. The items will be archived unless the "
-              "\"Delete only\" option is enabled; else the items will be purged "
-              "and not saved."));
+    mArchiveOnceRB = new QRadioButton(i18nc("@option:radio", "Archive now items older than:"), topFrame);
+    mArchiveOnceRB->setToolTip(i18nc("@info:tooltip", "Enable one time archiving or purging of older items"));
+    mArchiveOnceRB->setWhatsThis(i18nc("@info:whatsthis",
+                                       "If you check this box, events and to-dos older than the specified age "
+                                       "will be archived or purged. The items will be archived unless the "
+                                       "\"Delete only\" option is enabled; else the items will be purged "
+                                       "and not saved."));
 
     dateLayout->addWidget(mArchiveOnceRB);
     radioBG->addButton(mArchiveOnceRB);
     mDateEdit = new KDateComboBox(topFrame);
-    mDateEdit->setToolTip(
-        i18nc("@info:tooltip",
-              "Set the one time archiving cut-off date"));
-    mDateEdit->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "The date before which items should be archived. All older events "
-              "and to-dos will be saved and deleted, the newer (and events "
-              "exactly on that date) will be kept."));
+    mDateEdit->setToolTip(i18nc("@info:tooltip", "Set the one time archiving cut-off date"));
+    mDateEdit->setWhatsThis(i18nc("@info:whatsthis",
+                                  "The date before which items should be archived. All older events "
+                                  "and to-dos will be saved and deleted, the newer (and events "
+                                  "exactly on that date) will be kept."));
     dateLayout->addWidget(mDateEdit);
     topLayout->addLayout(dateLayout);
 
@@ -117,17 +104,12 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     auto autoArchiveHBoxHBoxLayout = new QHBoxLayout(autoArchiveHBox);
     autoArchiveHBoxHBoxLayout->setContentsMargins(0, 0, 0, 0);
     topLayout->addWidget(autoArchiveHBox);
-    mAutoArchiveRB = new QRadioButton(i18nc("@option:radio",
-                                            "Automaticall&y archive items older than:"),
-                                      autoArchiveHBox);
-    mAutoArchiveRB->setToolTip(
-        i18nc("@info:tooltip",
-              "Enable automatic archiving or purging of older items"));
-    mAutoArchiveRB->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "If this feature is enabled, the application will regularly check if "
-              "events and to-dos have to be archived; this means you will not "
-              "need to use this dialog box again, except to change the settings."));
+    mAutoArchiveRB = new QRadioButton(i18nc("@option:radio", "Automaticall&y archive items older than:"), autoArchiveHBox);
+    mAutoArchiveRB->setToolTip(i18nc("@info:tooltip", "Enable automatic archiving or purging of older items"));
+    mAutoArchiveRB->setWhatsThis(i18nc("@info:whatsthis",
+                                       "If this feature is enabled, the application will regularly check if "
+                                       "events and to-dos have to be archived; this means you will not "
+                                       "need to use this dialog box again, except to change the settings."));
     radioBG->addButton(mAutoArchiveRB);
     autoArchiveHBoxHBoxLayout->addWidget(mAutoArchiveRB);
 
@@ -138,94 +120,70 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
 
     mExpiryTimeNumInput->setEnabled(false);
     mExpiryTimeNumInput->setValue(7);
-    mExpiryTimeNumInput->setToolTip(
-        i18nc("@info:tooltip",
-              "Set the archival age in days, weeks or months"));
-    mExpiryTimeNumInput->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "The age of the events and to-dos to archive. All older items "
-              "will be saved and deleted, the newer will be kept."));
+    mExpiryTimeNumInput->setToolTip(i18nc("@info:tooltip", "Set the archival age in days, weeks or months"));
+    mExpiryTimeNumInput->setWhatsThis(i18nc("@info:whatsthis",
+                                            "The age of the events and to-dos to archive. All older items "
+                                            "will be saved and deleted, the newer will be kept."));
 
     mExpiryUnitsComboBox = new QComboBox(autoArchiveHBox);
     autoArchiveHBoxHBoxLayout->addWidget(mExpiryUnitsComboBox);
-    mExpiryUnitsComboBox->setToolTip(
-        i18nc("@info:tooltip",
-              "Set the units for the automatic archive age"));
-    mExpiryUnitsComboBox->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Select the time units (days, weeks or months) for automatic archiving."));
+    mExpiryUnitsComboBox->setToolTip(i18nc("@info:tooltip", "Set the units for the automatic archive age"));
+    mExpiryUnitsComboBox->setWhatsThis(i18nc("@info:whatsthis", "Select the time units (days, weeks or months) for automatic archiving."));
     // Those items must match the "Expiry Unit" enum in the kcfg file!
-    mExpiryUnitsComboBox->addItem(
-        i18nc("@item:inlistbox expires in daily units", "Day(s)"));
-    mExpiryUnitsComboBox->addItem(
-        i18nc("@item:inlistbox expiration in weekly units", "Week(s)"));
-    mExpiryUnitsComboBox->addItem(
-        i18nc("@item:inlistbox expiration in monthly units", "Month(s)"));
+    mExpiryUnitsComboBox->addItem(i18nc("@item:inlistbox expires in daily units", "Day(s)"));
+    mExpiryUnitsComboBox->addItem(i18nc("@item:inlistbox expiration in weekly units", "Week(s)"));
+    mExpiryUnitsComboBox->addItem(i18nc("@item:inlistbox expiration in monthly units", "Month(s)"));
     mExpiryUnitsComboBox->setEnabled(false);
 
     auto fileLayout = new QHBoxLayout();
     fileLayout->setContentsMargins(0, 0, 0, 0);
     QLabel *l = new QLabel(i18nc("@label", "Archive &file:"), topFrame);
     fileLayout->addWidget(l);
-    mArchiveFile = new KUrlRequester(QUrl::fromLocalFile(
-                                         KCalPrefs::instance()->mArchiveFile), topFrame);
+    mArchiveFile = new KUrlRequester(QUrl::fromLocalFile(KCalPrefs::instance()->mArchiveFile), topFrame);
     mArchiveFile->setMode(KFile::File);
     mArchiveFile->setFilter(i18nc("@label filter for KUrlRequester", "*.ics|iCalendar Files"));
-    mArchiveFile->setToolTip(
-        i18nc("@info:tooltip",
-              "Set the location of the archive"));
-    mArchiveFile->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "The path of the archive file. The events and to-dos will be appended "
-              "to the specified file, so any events that are already in the file "
-              "will not be modified or deleted. You can later load or merge the "
-              "file like any other calendar. It is not saved in a special "
-              "format, it uses the iCalendar format."));
+    mArchiveFile->setToolTip(i18nc("@info:tooltip", "Set the location of the archive"));
+    mArchiveFile->setWhatsThis(i18nc("@info:whatsthis",
+                                     "The path of the archive file. The events and to-dos will be appended "
+                                     "to the specified file, so any events that are already in the file "
+                                     "will not be modified or deleted. You can later load or merge the "
+                                     "file like any other calendar. It is not saved in a special "
+                                     "format, it uses the iCalendar format."));
     l->setBuddy(mArchiveFile->lineEdit());
     fileLayout->addWidget(mArchiveFile);
     topLayout->addLayout(fileLayout);
 
     QGroupBox *typeBox = new QGroupBox(i18nc("@title:group", "Type of Items to Archive"));
-    typeBox->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Here you can select which items "
-              "should be archived. Events are archived if they "
-              "ended before the date given above; to-dos are archived if "
-              "they were finished before the date."));
+    typeBox->setWhatsThis(i18nc("@info:whatsthis",
+                                "Here you can select which items "
+                                "should be archived. Events are archived if they "
+                                "ended before the date given above; to-dos are archived if "
+                                "they were finished before the date."));
 
     topLayout->addWidget(typeBox);
     QBoxLayout *typeLayout = new QVBoxLayout(typeBox);
 
     mEvents = new QCheckBox(i18nc("@option:check", "Archive &Events"));
-    mEvents->setToolTip(
-        i18nc("@option:check", "Archive or purge events"));
-    mEvents->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Select this option to archive events if they ended before the date given above."));
+    mEvents->setToolTip(i18nc("@option:check", "Archive or purge events"));
+    mEvents->setWhatsThis(i18nc("@info:whatsthis", "Select this option to archive events if they ended before the date given above."));
     typeLayout->addWidget(mEvents);
 
     mTodos = new QCheckBox(i18nc("@option:check", "Archive Completed &To-dos"));
-    mTodos->setToolTip(
-        i18nc("@option:check", "Archive or purge completed to-dos"));
-    mTodos->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Select this option to archive to-dos if they were completed "
-              "before the date given above."));
+    mTodos->setToolTip(i18nc("@option:check", "Archive or purge completed to-dos"));
+    mTodos->setWhatsThis(i18nc("@info:whatsthis",
+                               "Select this option to archive to-dos if they were completed "
+                               "before the date given above."));
     typeLayout->addWidget(mTodos);
 
     mDeleteCb = new QCheckBox(i18nc("@option:check", "&Delete only, do not save"), topFrame);
-    mDeleteCb->setToolTip(
-        i18nc("@info:tooltip",
-              "Purge the old items without saving them"));
-    mDeleteCb->setWhatsThis(
-        i18nc("@info:whatsthis",
-              "Select this option to delete old events and to-dos without saving "
-              "them. It is not possible to recover the events later."));
+    mDeleteCb->setToolTip(i18nc("@info:tooltip", "Purge the old items without saving them"));
+    mDeleteCb->setWhatsThis(i18nc("@info:whatsthis",
+                                  "Select this option to delete old events and to-dos without saving "
+                                  "them. It is not possible to recover the events later."));
     topLayout->addWidget(mDeleteCb);
     connect(mDeleteCb, &QCheckBox::toggled, mArchiveFile, &KUrlRequester::setDisabled);
     connect(mDeleteCb, &QCheckBox::toggled, this, &ArchiveDialog::slotEnableUser1);
-    connect(mArchiveFile->lineEdit(), &QLineEdit::textChanged, this,
-            &ArchiveDialog::slotEnableUser1);
+    connect(mArchiveFile->lineEdit(), &QLineEdit::textChanged, this, &ArchiveDialog::slotEnableUser1);
 
     // Load settings from KCalPrefs
     mExpiryTimeNumInput->setValue(KCalPrefs::instance()->mExpiryTime);
@@ -254,8 +212,7 @@ ArchiveDialog::~ArchiveDialog()
 
 void ArchiveDialog::slotEnableUser1()
 {
-    const bool state
-        = (mDeleteCb->isChecked() || !mArchiveFile->lineEdit()->text().trimmed().isEmpty());
+    const bool state = (mDeleteCb->isChecked() || !mArchiveFile->lineEdit()->text().trimmed().isEmpty());
     mUser1Button->setEnabled(state);
 }
 
@@ -289,11 +246,10 @@ void ArchiveDialog::slotUser1()
         }
         // Force filename to be ending with vCalendar extension
         QString filename = destUrl.fileName();
-        if (!filename.endsWith(QLatin1String(".vcs"))
-            && !filename.endsWith(QLatin1String(".ics"))) {
+        if (!filename.endsWith(QLatin1String(".vcs")) && !filename.endsWith(QLatin1String(".ics"))) {
             filename.append(QLatin1String(".ics"));
             destUrl = destUrl.adjusted(QUrl::RemoveFilename);
-            destUrl.setPath(destUrl.path() +  filename);
+            destUrl.setPath(destUrl.path() + filename);
         }
 
         KCalPrefs::instance()->mArchiveFile = destUrl.url();
@@ -318,7 +274,7 @@ void ArchiveDialog::slotEventsDeleted()
 
 void ArchiveDialog::showWhatsThis()
 {
-    QWidget *widget = qobject_cast< QWidget * >(sender());
+    QWidget *widget = qobject_cast<QWidget *>(sender());
     if (widget && !widget->whatsThis().isEmpty()) {
         QWhatsThis::showText(QCursor::pos(), widget->whatsThis());
     }
