@@ -9,7 +9,7 @@ endif()
 add_test(NAME noteeditdialogtest COMMAND noteeditdialogtest)
 ecm_mark_as_test(noteeditdialogtest)
 target_link_libraries(noteeditdialogtest
-  Qt::Test
+  Qt5::Test
   KF5::AkonadiWidgets
   KF5::AkonadiNotes
   KF5::CalendarSupport
