@@ -1,7 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2021 Glen Ditchfield <GJDitchfield@acm.org>
- *
- * SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
+ * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
 #include <QList>
