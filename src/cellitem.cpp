@@ -4,6 +4,8 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
+#include <QSet>
+
 #include "cellitem.h"
 
 #include "calendarsupport_debug.h"
@@ -38,63 +40,51 @@ QString CellItem::label() const
 
 QList<CellItem *> CellItem::placeItem(const QList<CellItem *> &cells, CellItem *placeItem)
 {
-    QList<CellItem *> conflictItems;
     int maxSubCells = 0;
-    QMultiHash<int, CellItem *> subCellDict;
+    QSet<int> subCellsInUse;
 
-    // Find all items which are in same cell
-    QList<CellItem *>::ConstIterator it;
-    QList<CellItem *>::ConstIterator end(cells.constEnd());
-    for (it = cells.constBegin(); it != end; ++it) {
-        CellItem *item = *it;
-        if (item == placeItem) {
-            continue;
-        }
-
-        if (item->overlaps(placeItem)) {
-            qCDebug(CALENDARSUPPORT_LOG) << "  Overlaps:" << item->label();
-
-            conflictItems.append(item);
-            if (item->subCells() > maxSubCells) {
-                maxSubCells = item->subCells();
+    // Find all items that overlap placeItem, the items that overlaps them, and so on.
+    QList<CellItem *> overlappingItems {placeItem};
+    for (int i = 0; i < overlappingItems.count(); i++) {
+        const auto checkItem = overlappingItems.at(i);
+        for (const auto item : cells) {
+            if (item->overlaps(checkItem) && !overlappingItems.contains(item)) {
+                qCDebug(CALENDARSUPPORT_LOG) << item->label() << "overlaps" << checkItem->label();
+                overlappingItems.append(item);
+                if (item->subCell() >= maxSubCells) {
+                    maxSubCells = item->subCells();
+                }
+                if (checkItem == placeItem) {
+                    subCellsInUse.insert(item->subCell());
+                }
             }
-            subCellDict.insert(item->subCell(), item);
         }
     }
 
-    if (!conflictItems.empty()) {
-        // Look for unused sub cell and insert item
+    if (overlappingItems.count() > 1) {
+        // Look for an unused subcell in placeItem's cells.  If all are used,
+        // all overlapping items have to squeeze over.
         int i;
         for (i = 0; i < maxSubCells; ++i) {
-            qCDebug(CALENDARSUPPORT_LOG) << "  Trying subcell" << i;
-            if (!subCellDict.contains(i)) {
-                qCDebug(CALENDARSUPPORT_LOG) << "  Use subcell" << i;
-                placeItem->setSubCell(i);
+            if (!subCellsInUse.contains(i)) {
                 break;
             }
         }
+        placeItem->setSubCell(i);
         if (i == maxSubCells) {
-            qCDebug(CALENDARSUPPORT_LOG) << "  New subcell" << i;
-            placeItem->setSubCell(maxSubCells);
-            maxSubCells++;  // add new item to number of sub cells
+            maxSubCells += 1;
+            for (auto item : overlappingItems) {
+                item->setSubCells(maxSubCells);
+            }
         }
-
-        qCDebug(CALENDARSUPPORT_LOG) << "  Sub cells:" << maxSubCells;
-
-        // Write results to item to be placed
-        conflictItems.append(placeItem);
         placeItem->setSubCells(maxSubCells);
-
-        QList<CellItem *>::iterator it;
-        QList<CellItem *>::iterator end(conflictItems.end());
-        for (it = conflictItems.begin(); it != end; ++it) {
-            (*it)->setSubCells(maxSubCells);
-        }
-        // Todo: Adapt subCells of items conflicting with conflicting items
+        qCDebug(CALENDARSUPPORT_LOG) << "use subcell" << i << "of" << maxSubCells;
     } else {
+        // Nothing overlapped placeItem, so:
+        overlappingItems.clear();
         placeItem->setSubCell(0);
         placeItem->setSubCells(1);
     }
 
-    return conflictItems;
+    return overlappingItems;
 }
