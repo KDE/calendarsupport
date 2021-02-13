@@ -63,7 +63,7 @@ public:
     /**
      * Destroys the date picker popup.
      */
-    ~KDatePickerPopup();
+    ~KDatePickerPopup() override;
 
     /**
      * Returns the used KDatePicker object.

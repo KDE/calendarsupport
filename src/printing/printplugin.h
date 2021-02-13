@@ -38,9 +38,7 @@ public:
     PrintPlugin()
         : Plugin()
         , mConfigWidget(nullptr)
-        , mPrinter(nullptr)
         , mCalendar(nullptr)
-        , mConfig(nullptr)
     {
     }
 

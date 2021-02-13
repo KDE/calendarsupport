@@ -35,7 +35,7 @@ public:
      */
     explicit CalendarUtils(const Akonadi::ETMCalendar::Ptr &calendar, QObject *parent = nullptr);
 
-    ~CalendarUtils();
+    ~CalendarUtils() override;
 
     /**
      * Returns the Caledar on which this utils class is operating.

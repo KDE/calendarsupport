@@ -41,7 +41,7 @@ public:
      * @param parent is the parent widget for the dialogs used by this class.
      */
     explicit AttachmentHandler(QWidget *parent);
-    ~AttachmentHandler();
+    ~AttachmentHandler() override;
 
     /**
      * Finds the attachment in the user's calendar, by @p attachmentName and @p incidence.

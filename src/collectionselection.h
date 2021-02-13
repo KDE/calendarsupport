@@ -24,7 +24,7 @@ class CALENDARSUPPORT_EXPORT CollectionSelection : public QObject
     Q_OBJECT
 public:
     explicit CollectionSelection(QItemSelectionModel *selectionModel, QObject *parent = nullptr);
-    ~CollectionSelection();
+    ~CollectionSelection() override;
 
     QItemSelectionModel *model() const;
     Q_REQUIRED_RESULT Akonadi::Collection::List selectedCollections() const;

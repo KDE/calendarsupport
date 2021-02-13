@@ -34,7 +34,7 @@ class CALENDARSUPPORT_EXPORT ArchiveDialog : public QDialog
     Q_OBJECT
 public:
     ArchiveDialog(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QWidget *parent = nullptr);
-    ~ArchiveDialog();
+    ~ArchiveDialog() override;
 
 Q_SIGNALS:
     // connected by KODialogManager to CalendarView

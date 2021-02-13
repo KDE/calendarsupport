@@ -16,8 +16,6 @@ class CALENDARSUPPORT_EXPORT CellItem
 {
 public:
     CellItem()
-        : mSubCells(0)
-        , mSubCell(-1)
     {
     }
 
@@ -46,8 +44,8 @@ public:
     static QList<CellItem *> placeItem(const QList<CellItem *> &cells, CellItem *placeItem);
 
 private:
-    int mSubCells;
-    int mSubCell;
+    int mSubCells = 0;
+    int mSubCell = -1;
 };
 }
 
