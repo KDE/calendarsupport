@@ -356,7 +356,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                     }
                     alarmStrings << offsetstr.toString();
                 }
-                txt = alarmStrings.join(i18nc("Spacer for the joined list of categories", ", "));
+                txt = alarmStrings.join(i18nc("Spacer for the joined list of categories/tags", ", "));
             }
             h = qMax(printCaptionAndText(p, alarmBox, cap, txt, captionFont, textFont), h);
         }
@@ -627,8 +627,8 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
 
         drawBoxWithCaption(p,
                            categoriesBox,
-                           i18n("Categories: "),
-                           (*it)->categories().join(i18nc("Spacer for the joined list of categories", ", ")),
+                           i18n("Tags: "),
+                           (*it)->categories().join(i18nc("Spacer for the joined list of categories/tags", ", ")),
                            /*sameLine=*/true,
                            /*expand=*/false,
                            captionFont,

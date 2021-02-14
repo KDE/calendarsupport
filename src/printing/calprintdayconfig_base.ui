@@ -378,7 +378,7 @@ p, li { white-space: pre-wrap; }
          <string>Print in color</string>
         </property>
         <property name="whatsThis">
-         <string>If you want to use colors to distinguish certain categories on the print, check this option.</string>
+         <string>If you want to use colors to distinguish certain tags in the printed output, check this option.</string>
         </property>
         <property name="text">
          <string>&amp;Use colors</string>
