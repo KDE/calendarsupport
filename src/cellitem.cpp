@@ -72,9 +72,10 @@ QList<CellItem *> CellItem::placeItem(const QList<CellItem *> &cells, CellItem *
         }
         placeItem->setSubCell(i);
         if (i == maxSubCells) {
-            qCDebug(CALENDARSUPPORT_LOG) << "  New subcell" << i;
-            placeItem->setSubCell(maxSubCells);
-            maxSubCells++; // add new item to number of sub cells
+            maxSubCells += 1;
+            for (auto item : overlappingItems) {
+                item->setSubCells(maxSubCells);
+            }
         }
         placeItem->setSubCells(maxSubCells);
         qCDebug(CALENDARSUPPORT_LOG) << "use subcell" << i << "of" << maxSubCells;
