@@ -35,17 +35,12 @@ public:
     /** Write preferences to config file */
     bool usrSave() override;
 
-protected:
-    void setTimeZoneDefault();
-
     /** Fill empty mail fields with default values. */
     void fillMailDefaults();
 
 public:
     // preferences data
-    void setFullName(const QString &);
     QString fullName();
-    void setEmail(const QString &);
     QString email();
     /// Returns all email addresses for the user.
     QStringList allEmails();
@@ -53,8 +48,6 @@ public:
     QStringList fullEmails();
     /// Return true if the given email belongs to the user
     bool thatIsMe(const QString &email);
-
-    QString mailTransport() const;
 
     Akonadi::Collection::Id defaultCalendarId() const;
     void setDefaultCalendarId(Akonadi::Collection::Id);
