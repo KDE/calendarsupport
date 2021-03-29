@@ -4,8 +4,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef CALENDARSUPPORT_PRINTING_PRINTPLUGIN_H
-#define CALENDARSUPPORT_PRINTING_PRINTPLUGIN_H
+#pragma once
 
 #include "plugin.h"
 
@@ -195,4 +194,3 @@ public:
 };
 }
 
-#endif

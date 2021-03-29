@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef CALENDARSUPPORT_IDENTITYMANAGER_H
-#define CALENDARSUPPORT_IDENTITYMANAGER_H
+#pragma once
 
 #include "calendarsupport_export.h"
 #include <KIdentityManagement/IdentityManager>
@@ -28,4 +27,3 @@ protected:
 KIdentityManagement::IdentityManager *identityManager();
 }
 
-#endif

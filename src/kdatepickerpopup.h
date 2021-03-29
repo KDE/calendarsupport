@@ -5,8 +5,7 @@
 
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
-#ifndef CALENDARSUPPORT_KDATEPICKERPOPUP_H
-#define CALENDARSUPPORT_KDATEPICKERPOPUP_H
+#pragma once
 
 #include "calendarsupport_export.h"
 
@@ -94,4 +93,3 @@ private:
 Q_DECLARE_OPERATORS_FOR_FLAGS(KDatePickerPopup::Modes)
 }
 
-#endif

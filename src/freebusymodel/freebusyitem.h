@@ -7,8 +7,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef INCIDENCEEDITOR_FREEBUSYITEM_H
-#define INCIDENCEEDITOR_FREEBUSYITEM_H
+#pragma once
 
 #include "calendarsupport_export.h"
 
@@ -61,4 +60,3 @@ private:
     QWidget *const mParentWidget;
 };
 }
-#endif

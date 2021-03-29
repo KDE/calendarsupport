@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef CALENDARSUPPORT_UTILS_H
-#define CALENDARSUPPORT_UTILS_H
+#pragma once
 
 #include "calendarsupport_export.h"
 
@@ -232,4 +231,3 @@ CALENDARSUPPORT_EXPORT bool mergeCalendar(const QString &srcFilename, const KCal
 CALENDARSUPPORT_EXPORT void createAlarmReminder(const KCalendarCore::Alarm::Ptr &alarm, KCalendarCore::IncidenceBase::IncidenceType type);
 }
 
-#endif

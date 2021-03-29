@@ -5,8 +5,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef CALENDARSUPPORT_INCIDENCEATTACHMENTMODEL_H
-#define CALENDARSUPPORT_INCIDENCEATTACHMENTMODEL_H
+#pragma once
 
 #include <Attribute>
 #include <Item>
@@ -70,4 +69,3 @@ private:
 };
 }
 
-#endif

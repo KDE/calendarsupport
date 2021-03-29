@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef CALENDARSUPPORT_CALENDARSINGLETON_H
-#define CALENDARSUPPORT_CALENDARSINGLETON_H
+#pragma once
 
 #include "calendarsupport_export.h"
 #include <Akonadi/Calendar/ETMCalendar>
@@ -19,4 +18,3 @@ namespace CalendarSupport
 CALENDARSUPPORT_EXPORT Akonadi::ETMCalendar::Ptr calendarSingleton(bool createIfNull = true);
 }
 
-#endif

@@ -3,8 +3,7 @@
 
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
-#ifndef CALENDARSUPPORT_CALENDARUTILS_H
-#define CALENDARSUPPORT_CALENDARUTILS_H
+#pragma once
 
 #include <Akonadi/Calendar/ETMCalendar>
 #include <Collection>
@@ -78,4 +77,3 @@ private:
 };
 }
 
-#endif // CALENDARUTILS_H

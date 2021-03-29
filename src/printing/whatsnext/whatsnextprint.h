@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef KORG_PLUGINS_PRINTING_WHATSNEXTPRINT_H
-#define KORG_PLUGINS_PRINTING_WHATSNEXTPRINT_H
+#pragma once
 
 #include "calprintpluginbase.h"
 #include "ui_calprintwhatsnextconfig_base.h"
@@ -70,4 +69,3 @@ public:
     }
 };
 
-#endif

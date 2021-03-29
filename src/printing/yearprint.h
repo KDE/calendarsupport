@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef CALENDARSUPPORT_PRINTING_YEARPRINT_H
-#define CALENDARSUPPORT_PRINTING_YEARPRINT_H
+#pragma once
 
 #include "calprintpluginbase.h"
 #include "ui_calprintyearconfig_base.h"
@@ -77,4 +76,3 @@ public:
 };
 }
 
-#endif

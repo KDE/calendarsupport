@@ -5,8 +5,7 @@
  *
  */
 
-#ifndef FREEBUSYCALENDAR_H
-#define FREEBUSYCALENDAR_H
+#pragma once
 
 #include "calendarsupport_export.h"
 
@@ -39,4 +38,3 @@ private:
     FreeBusyCalendarPrivate *const d;
 };
 }
-#endif // FREEBUSYCALENDAR_H

@@ -5,8 +5,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef INCIDENCEEDITOR_FREEPERIODMODEL_H
-#define INCIDENCEEDITOR_FREEPERIODMODEL_H
+#pragma once
 
 #include "calendarsupport_export.h"
 
@@ -45,4 +44,3 @@ private:
     friend class FreePeriodModelTest;
 };
 }
-#endif

@@ -5,8 +5,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef CALENDARSUPPORT_INCIDENCEVIEWER_H
-#define CALENDARSUPPORT_INCIDENCEVIEWER_H
+#pragma once
 
 #include "calendarsupport_export.h"
 
@@ -147,4 +146,3 @@ private:
 };
 }
 
-#endif

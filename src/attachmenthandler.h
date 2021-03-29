@@ -11,8 +11,7 @@
 
   @author Allen Winter \<winter@kde.org\>
 */
-#ifndef CALENDARSUPPORT_ATTACHMENTHANDLER_H
-#define CALENDARSUPPORT_ATTACHMENTHANDLER_H
+#pragma once
 
 #include <KCalendarCore/Attachment>
 #include <KCalendarCore/Incidence>
@@ -159,4 +158,3 @@ private:
 }; // class AttachmentHandler
 } // namespace CalendarSupport
 
-#endif

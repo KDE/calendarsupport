@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
  */
 
-#ifndef NOTEEDITDIALOGTEST_H
-#define NOTEEDITDIALOGTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -39,4 +38,3 @@ private Q_SLOTS:
 };
 }
 
-#endif

@@ -5,8 +5,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef FBMODEL_FREEBUSYITEMMODEL_H
-#define FBMODEL_FREEBUSYITEMMODEL_H
+#pragma once
 
 #include "calendarsupport_export.h"
 
@@ -85,4 +84,3 @@ private:
     FreeBusyItemModelPrivate *const d;
 };
 }
-#endif

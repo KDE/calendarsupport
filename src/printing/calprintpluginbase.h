@@ -7,8 +7,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef CALENDARSUPPORT_PRINTING_CALPRINTPLUGINBASE_H
-#define CALENDARSUPPORT_PRINTING_CALPRINTPLUGINBASE_H
+#pragma once
 
 #include "calendarsupport_export.h"
 #include "printplugin.h"
@@ -702,4 +701,3 @@ private:
 };
 }
 
-#endif

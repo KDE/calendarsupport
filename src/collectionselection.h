@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef CALENDARSUPPORT_COLLECTIONSELECTION_H
-#define CALENDARSUPPORT_COLLECTIONSELECTION_H
+#pragma once
 
 #include "calendarsupport_export.h"
 
@@ -46,4 +45,3 @@ private:
 };
 }
 
-#endif

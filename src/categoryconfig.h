@@ -5,8 +5,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef CALENDARSUPPORT_CATEGORYCONFIG_H
-#define CALENDARSUPPORT_CATEGORYCONFIG_H
+#pragma once
 
 #include "calendarsupport_export.h"
 
@@ -41,4 +40,3 @@ private:
 };
 }
 
-#endif

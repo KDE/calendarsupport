@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef CALENDARSUPPORT_CELLITEM_H
-#define CALENDARSUPPORT_CELLITEM_H
+#pragma once
 
 #include "calendarsupport_export.h"
 #include <QList>
@@ -49,4 +48,3 @@ private:
 };
 }
 
-#endif

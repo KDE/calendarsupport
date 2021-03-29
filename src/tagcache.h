@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
 */
 
-#ifndef CALENDARSUPPORT_TAGCACHE_H
-#define CALENDARSUPPORT_TAGCACHE_H
+#pragma once
 
 #include <AkonadiCore/Tag>
 
@@ -44,4 +43,3 @@ private:
 };
 }
 
-#endif

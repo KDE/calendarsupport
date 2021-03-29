@@ -5,8 +5,7 @@
   SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef CALENDARSUPPORT_INCIDENCEVIEWER_P_H
-#define CALENDARSUPPORT_INCIDENCEVIEWER_P_H
+#pragma once
 
 #include <QTextBrowser>
 
@@ -26,4 +25,3 @@ Q_SIGNALS:
 };
 }
 
-#endif
