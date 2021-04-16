@@ -15,4 +15,4 @@ target_link_libraries(noteeditdialogtest
   KF5::CalendarSupport
 )
 
-ecm_add_test(placeitemtest LINK_LIBRARIES Qt5::Test KF5::CalendarSupport)
+ecm_add_test(placeitemtest.cpp LINK_LIBRARIES Qt5::Test KF5::CalendarSupport)
