@@ -103,7 +103,7 @@ NoteEditDialog::~NoteEditDialog()
 
 void NoteEditDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "NoteEditDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "NoteEditDialog");
 
     const QSize size = group.readEntry("Size", QSize(500, 300));
     if (size.isValid()) {
@@ -113,7 +113,7 @@ void NoteEditDialog::readConfig()
 
 void NoteEditDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openConfig(), "NoteEditDialog");
+    KConfigGroup group(KSharedConfig::openStateConfig(), "NoteEditDialog");
     group.writeEntry("Size", size());
     group.sync();
 }
