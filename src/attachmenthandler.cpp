@@ -172,7 +172,7 @@ bool AttachmentHandler::view(const Attachment &attachment)
         // put the attachment in a temporary file and launch it
         QUrl tempUrl = tempFileForAttachment(attachment);
         if (tempUrl.isValid()) {
-            KIO::OpenUrlJob *job = new KIO::OpenUrlJob(tempUrl, attachment.mimeType());
+            auto job = new KIO::OpenUrlJob(tempUrl, attachment.mimeType());
             job->setDeleteTemporaryFile(true);
             job->setRunExecutables(true);
             job->start();

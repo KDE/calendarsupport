@@ -126,10 +126,10 @@ CalPrintPluginBase::~CalPrintPluginBase()
 
 QWidget *CalPrintPluginBase::createConfigWidget(QWidget *w)
 {
-    QFrame *wdg = new QFrame(w);
+    auto wdg = new QFrame(w);
     auto layout = new QVBoxLayout(wdg);
 
-    QLabel *title = new QLabel(description(), wdg);
+    auto title = new QLabel(description(), wdg);
     QFont titleFont(title->font());
     titleFont.setPointSize(20);
     titleFont.setBold(true);

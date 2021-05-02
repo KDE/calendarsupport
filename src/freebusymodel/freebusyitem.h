@@ -21,7 +21,7 @@ namespace CalendarSupport
 class CALENDARSUPPORT_EXPORT FreeBusyItem
 {
 public:
-    typedef QSharedPointer<FreeBusyItem> Ptr;
+    using Ptr = QSharedPointer<FreeBusyItem>;
 
     /**
      * @param parentWidget is passed to Akonadi when fetching free/busy data.

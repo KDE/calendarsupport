@@ -41,7 +41,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
 {
     setWindowTitle(i18nc("@title:window", "Archive/Delete Past Events and To-dos"));
     auto mainLayout = new QVBoxLayout(this);
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
     mUser1Button = new QPushButton;
     buttonBox->addButton(mUser1Button, QDialogButtonBox::ActionRole);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &ArchiveDialog::reject);
@@ -51,13 +51,13 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     mCalendar = cal;
     mChanger = changer;
 
-    QFrame *topFrame = new QFrame(this);
+    auto topFrame = new QFrame(this);
     mainLayout->addWidget(topFrame);
     mainLayout->addWidget(buttonBox);
 
     auto topLayout = new QVBoxLayout(topFrame);
     topLayout->setContentsMargins(0, 0, 0, 0);
-    QLabel *descLabel = new QLabel(topFrame);
+    auto descLabel = new QLabel(topFrame);
     descLabel->setText(xi18nc("@info:whatsthis",
                               "Archiving saves old items into the given file and "
                               "then deletes them in the current calendar. If the archive file "
@@ -100,7 +100,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
 
     // Checkbox, numinput and combo for auto-archiving (similar to kmail's
     // mExpireFolderCheckBox/mReadExpiryTimeNumInput in kmfolderdia.cpp)
-    QWidget *autoArchiveHBox = new QWidget(topFrame);
+    auto autoArchiveHBox = new QWidget(topFrame);
     auto autoArchiveHBoxHBoxLayout = new QHBoxLayout(autoArchiveHBox);
     autoArchiveHBoxHBoxLayout->setContentsMargins(0, 0, 0, 0);
     topLayout->addWidget(autoArchiveHBox);
@@ -137,7 +137,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
 
     auto fileLayout = new QHBoxLayout();
     fileLayout->setContentsMargins(0, 0, 0, 0);
-    QLabel *l = new QLabel(i18nc("@label", "Archive &file:"), topFrame);
+    auto l = new QLabel(i18nc("@label", "Archive &file:"), topFrame);
     fileLayout->addWidget(l);
     mArchiveFile = new KUrlRequester(QUrl::fromLocalFile(KCalPrefs::instance()->mArchiveFile), topFrame);
     mArchiveFile->setMode(KFile::File);
@@ -153,7 +153,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     fileLayout->addWidget(mArchiveFile);
     topLayout->addLayout(fileLayout);
 
-    QGroupBox *typeBox = new QGroupBox(i18nc("@title:group", "Type of Items to Archive"));
+    auto typeBox = new QGroupBox(i18nc("@title:group", "Type of Items to Archive"));
     typeBox->setWhatsThis(i18nc("@info:whatsthis",
                                 "Here you can select which items "
                                 "should be archived. Events are archived if they "

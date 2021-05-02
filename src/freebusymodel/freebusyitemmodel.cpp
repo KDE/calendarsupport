@@ -109,7 +109,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
         return QVariant();
     }
 
-    auto *data = (ItemPrivateData *)index.internalPointer();
+    auto data = (ItemPrivateData *)index.internalPointer();
 
     if (data->parent() == d->mRootData) {
         int row = index.row();

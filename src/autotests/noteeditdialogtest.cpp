@@ -37,7 +37,7 @@ NoteEditDialogTest::NoteEditDialogTest()
         collection.setName(QString::number(id));
         collection.setContentMimeTypes(QStringList() << Akonadi::NoteUtils::noteMimeType());
 
-        QStandardItem *item = new QStandardItem(collection.name());
+        auto item = new QStandardItem(collection.name());
         item->setData(QVariant::fromValue(collection), Akonadi::EntityTreeModel::CollectionRole);
         item->setData(QVariant::fromValue(collection.id()), Akonadi::EntityTreeModel::CollectionIdRole);
 
@@ -51,7 +51,7 @@ void NoteEditDialogTest::shouldHaveDefaultValuesOnCreation()
     NoteEditDialog edit;
     QVERIFY(!edit.note());
     auto notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
-    auto *notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     auto ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
     QVERIFY(notetitle);
     QCOMPARE(notetitle->text(), QString());
@@ -110,7 +110,7 @@ void NoteEditDialogTest::shouldHaveFilledText()
 
     edit.load(item);
     auto notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
-    auto *notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     QCOMPARE(notetitle->text(), title);
     QCOMPARE(notetext->toPlainText(), text);
 }
@@ -129,7 +129,7 @@ void NoteEditDialogTest::shouldHaveRichText()
     item.setPayload(note.message());
 
     edit.load(item);
-    auto *notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     QCOMPARE(notetext->toPlainText(), text);
     QVERIFY(notetext->editor()->acceptRichText());
 }
@@ -137,7 +137,7 @@ void NoteEditDialogTest::shouldHaveRichText()
 void NoteEditDialogTest::shouldDefaultCollectionIsValid()
 {
     NoteEditDialog edit;
-    auto *akonadicombobox = edit.findChild<Akonadi::CollectionComboBox *>(QStringLiteral("akonadicombobox"));
+    auto akonadicombobox = edit.findChild<Akonadi::CollectionComboBox *>(QStringLiteral("akonadicombobox"));
     QVERIFY(akonadicombobox);
     QVERIFY(akonadicombobox->currentCollection().isValid());
 }
@@ -145,7 +145,7 @@ void NoteEditDialogTest::shouldDefaultCollectionIsValid()
 void NoteEditDialogTest::shouldEmitCollectionChangedWhenCurrentCollectionWasChanged()
 {
     NoteEditDialog edit;
-    auto *akonadicombobox = edit.findChild<Akonadi::CollectionComboBox *>(QStringLiteral("akonadicombobox"));
+    auto akonadicombobox = edit.findChild<Akonadi::CollectionComboBox *>(QStringLiteral("akonadicombobox"));
     akonadicombobox->setCurrentIndex(0);
     QCOMPARE(akonadicombobox->currentIndex(), 0);
     QSignalSpy spy(&edit, &NoteEditDialog::collectionChanged);
@@ -157,7 +157,7 @@ void NoteEditDialogTest::shouldEmitCollectionChangedWhenCurrentCollectionWasChan
 void NoteEditDialogTest::shouldEmitCorrectCollection()
 {
     NoteEditDialog edit;
-    auto *akonadicombobox = edit.findChild<Akonadi::CollectionComboBox *>(QStringLiteral("akonadicombobox"));
+    auto akonadicombobox = edit.findChild<Akonadi::CollectionComboBox *>(QStringLiteral("akonadicombobox"));
 
     Akonadi::NoteUtils::NoteMessageWrapper note;
     QString title = QStringLiteral("title");
@@ -217,7 +217,7 @@ void NoteEditDialogTest::shouldNotEmitNoteWhenTextIsEmpty()
 
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 0);
-    auto *notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     notetext->editor()->setText(QStringLiteral("F"));
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 1);
@@ -241,7 +241,7 @@ void NoteEditDialogTest::shouldNoteHasCorrectText()
     QCOMPARE(spy.count(), 1);
     Akonadi::NoteUtils::NoteMessageWrapper rNote(spy.at(0).at(0).value<Akonadi::Item>().payload<KMime::Message::Ptr>());
     QCOMPARE(rNote.text(), text);
-    auto *notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     QString text2 = QStringLiteral("F");
     notetext->editor()->setText(text2);
     QTest::mouseClick(ok, Qt::LeftButton);
@@ -295,7 +295,7 @@ void NoteEditDialogTest::shouldNoteHasCorrectTextFormat()
     QCOMPARE(spy.count(), 1);
     Akonadi::NoteUtils::NoteMessageWrapper rNote(spy.at(0).at(0).value<Akonadi::Item>().payload<KMime::Message::Ptr>());
     QCOMPARE(rNote.textFormat(), Qt::PlainText);
-    auto *notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
     notetext->editor()->setAcceptRichText(true);
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 2);

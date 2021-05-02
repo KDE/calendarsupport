@@ -31,8 +31,8 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
 {
     setAttribute(Qt::WA_DeleteOnClose);
     setWindowTitle(i18nc("@title:window", "Create Note"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    QWidget *mainWidget = new QWidget(this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto mainWidget = new QWidget(this);
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(mainWidget);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &NoteEditDialog::accept);
@@ -82,7 +82,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     hbox->addSpacing(5);
     hbox->addWidget(mCollectionCombobox);
 
-    QLabel *lab = new QLabel(i18nc("@label specify the title for this note", "Title:"), this);
+    auto lab = new QLabel(i18nc("@label specify the title for this note", "Title:"), this);
     layout->addWidget(lab, 0, 0);
     layout->addLayout(hbox, 0, 1);
 

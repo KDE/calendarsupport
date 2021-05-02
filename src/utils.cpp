@@ -55,7 +55,7 @@ KCalendarCore::Event::Ptr CalendarSupport::event(const Akonadi::Item &item)
 {
     // relying on exception for performance reasons
     try {
-        KCalendarCore::Incidence::Ptr incidence = item.payload<KCalendarCore::Incidence::Ptr>();
+        auto incidence = item.payload<KCalendarCore::Incidence::Ptr>();
         if (hasEvent(incidence)) {
             return item.payload<KCalendarCore::Event::Ptr>();
         }
@@ -87,7 +87,7 @@ KCalendarCore::Incidence::List CalendarSupport::incidencesFromItems(const Akonad
 KCalendarCore::Todo::Ptr CalendarSupport::todo(const Akonadi::Item &item)
 {
     try {
-        KCalendarCore::Incidence::Ptr incidence = item.payload<KCalendarCore::Incidence::Ptr>();
+        auto incidence = item.payload<KCalendarCore::Incidence::Ptr>();
         if (hasTodo(incidence)) {
             return item.payload<KCalendarCore::Todo::Ptr>();
         }
@@ -108,7 +108,7 @@ KCalendarCore::Todo::Ptr CalendarSupport::todo(const KCalendarCore::Incidence::P
 KCalendarCore::Journal::Ptr CalendarSupport::journal(const Akonadi::Item &item)
 {
     try {
-        KCalendarCore::Incidence::Ptr incidence = item.payload<KCalendarCore::Incidence::Ptr>();
+        auto incidence = item.payload<KCalendarCore::Incidence::Ptr>();
         if (hasJournal(incidence)) {
             return item.payload<KCalendarCore::Journal::Ptr>();
         }
@@ -406,7 +406,7 @@ Akonadi::Collection CalendarSupport::selectCollection(QWidget *parent, int &dial
 
 Akonadi::Item CalendarSupport::itemFromIndex(const QModelIndex &idx)
 {
-    Akonadi::Item item = idx.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
+    auto item = idx.data(Akonadi::EntityTreeModel::ItemRole).value<Akonadi::Item>();
     item.setParentCollection(idx.data(Akonadi::EntityTreeModel::ParentCollectionRole).value<Akonadi::Collection>());
     return item;
 }

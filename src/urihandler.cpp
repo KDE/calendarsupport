@@ -84,7 +84,7 @@ bool UriHandler::process(const QString &uri)
             return startKAddressbook(uri);
         }
     } else { // no special URI, let KDE handle it
-        KIO::OpenUrlJob *job = new KIO::OpenUrlJob(QUrl(uri));
+        auto job = new KIO::OpenUrlJob(QUrl(uri));
         job->start();
     }
 

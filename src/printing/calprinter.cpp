@@ -157,7 +157,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     : QDialog(parent)
 {
     setWindowTitle(i18nc("@title:window", "Print"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     auto mainLayout = new QVBoxLayout(this);
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
     mOkButton->setDefault(true);
@@ -165,7 +165,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     connect(buttonBox, &QDialogButtonBox::accepted, this, &CalPrintDialog::slotOk);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &CalPrintDialog::reject);
     setModal(true);
-    QWidget *page = new QWidget(this);
+    auto page = new QWidget(this);
     auto pageVBoxLayout = new QVBoxLayout(page);
     pageVBoxLayout->setContentsMargins(0, 0, 0, 0);
     mainLayout->addWidget(page);
@@ -175,11 +175,11 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     pageVBoxLayout->addWidget(splitter);
     splitter->setOrientation(Qt::Horizontal);
     splitter->setChildrenCollapsible(false);
-    QGroupBox *typeBox = new QGroupBox(i18nc("@title:group", "Print Style"), splitter);
+    auto typeBox = new QGroupBox(i18nc("@title:group", "Print Style"), splitter);
     QBoxLayout *typeLayout = new QVBoxLayout(typeBox);
     mTypeGroup = new QButtonGroup(typeBox);
 
-    QWidget *splitterRight = new QWidget(splitter);
+    auto splitterRight = new QWidget(splitter);
     auto splitterRightLayout = new QGridLayout(splitterRight);
     splitterRightLayout->setContentsMargins(0, 0, 0, 0);
     // splitterRightLayout->setMargin( marginHint() );
@@ -187,7 +187,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
 
     mConfigArea = new QStackedWidget(splitterRight);
     splitterRightLayout->addWidget(mConfigArea, 0, 0, 1, 2);
-    QLabel *orientationLabel = new QLabel(i18nc("@label", "Page &orientation:"), splitterRight);
+    auto orientationLabel = new QLabel(i18nc("@label", "Page &orientation:"), splitterRight);
     orientationLabel->setAlignment(Qt::AlignRight);
     splitterRightLayout->addWidget(orientationLabel, 1, 0);
 
@@ -220,7 +220,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     int id = 0;
     for (mapit = mPluginIDs.constBegin(); mapit != mPluginIDs.constEnd(); ++mapit) {
         PrintPlugin *p = mapit.value();
-        QRadioButton *radioButton = new QRadioButton(p->description());
+        auto radioButton = new QRadioButton(p->description());
         radioButton->setEnabled(p->enabled());
         radioButton->setToolTip(i18nc("@info:tooltip", "Select the type of print"));
         radioButton->setWhatsThis(i18nc("@info:whatsthis",

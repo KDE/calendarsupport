@@ -45,7 +45,7 @@ public:
     {
     }
 
-    typedef QList<PrintPlugin *> List;
+    using List = QList<PrintPlugin *>;
     static int interfaceVersion()
     {
         return 2;
