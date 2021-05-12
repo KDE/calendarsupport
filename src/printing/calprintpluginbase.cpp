@@ -1610,11 +1610,11 @@ void CalPrintPluginBase::drawMonth(QPainter &p,
     // 3) Draw some kind of timeline showing free and busy times
 
     // Holidays
-    QList<KCalendarCore::Event::Ptr> holidays;
+    // QList<KCalendarCore::Event::Ptr> holidays;
     for (QDate d(start); d <= end; d = d.addDays(1)) {
         KCalendarCore::Event::Ptr e = holidayEvent(d);
         if (e) {
-            holidays.append(e);
+            // holidays.append(e);
             if (holidaysFlags & TimeBoxes) {
                 timeboxItems.append(new PrintCellItem(e, QDateTime(d, QTime(0, 0, 0)), QDateTime(d.addDays(1), QTime(0, 0, 0))));
             }
@@ -1624,7 +1624,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p,
         }
     }
 
-    QList<MonthEventStruct> monthentries;
+    QVector<MonthEventStruct> monthentries;
 
     for (const KCalendarCore::Event::Ptr &e : qAsConst(events)) {
         if (!e) {
@@ -1668,7 +1668,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p,
 
     //  qSort( monthentries.begin(), monthentries.end() );
 
-    QList<MonthEventStruct>::ConstIterator mit = monthentries.constBegin();
+    QVector<MonthEventStruct>::ConstIterator mit = monthentries.constBegin();
     QDateTime endofmonth(end, QTime(0, 0, 0));
     endofmonth = endofmonth.addDays(1);
     for (; mit != monthentries.constEnd(); ++mit) {
