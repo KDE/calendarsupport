@@ -2,8 +2,9 @@
 add_definitions(-DTRANSLATION_DOMAIN=\"calendarsupport\")
 
 ########### next target ###############
-
-set(calendarsupport_LIB_SRCS
+add_library(KF5CalendarSupport)
+add_library(KF5::CalendarSupport ALIAS KF5CalendarSupport)
+target_sources(KF5CalendarSupport PRIVATE
   archivedialog.cpp
   attachmenthandler.cpp
   calendarsingleton.cpp
@@ -38,7 +39,7 @@ set(calendarsupport_LIB_SRCS
   freebusymodel/freebusycalendar.cpp
 )
 
-ki18n_wrap_ui(calendarsupport_LIB_SRCS
+ki18n_wrap_ui(KF5CalendarSupport
   printing/calprintdayconfig_base.ui
   printing/calprintincidenceconfig_base.ui
   printing/calprintjournalconfig_base.ui
@@ -47,18 +48,17 @@ ki18n_wrap_ui(calendarsupport_LIB_SRCS
   printing/calprintweekconfig_base.ui
   printing/calprintyearconfig_base.ui
 )
-ecm_qt_declare_logging_category(calendarsupport_LIB_SRCS HEADER calendarsupport_debug.h IDENTIFIER CALENDARSUPPORT_LOG CATEGORY_NAME org.kde.pim.calendarsupport
+ecm_qt_declare_logging_category(KF5CalendarSupport HEADER calendarsupport_debug.h IDENTIFIER CALENDARSUPPORT_LOG CATEGORY_NAME org.kde.pim.calendarsupport
         OLD_CATEGORY_NAMES log_calendarsupport
         DESCRIPTION "calendarsupport (calendarsupport)" EXPORT CALENDARSUPPORT)
 
-kconfig_add_kcfg_files(calendarsupport_LIB_SRCS kcalprefs_base.kcfgc)
+kconfig_add_kcfg_files(KF5CalendarSupport kcalprefs_base.kcfgc)
 
-add_library(KF5CalendarSupport ${calendarsupport_LIB_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5CalendarSupport PROPERTIES UNITY_BUILD ON)
 endif()
 generate_export_header(KF5CalendarSupport BASE_NAME calendarsupport)
-add_library(KF5::CalendarSupport ALIAS KF5CalendarSupport)
+
 
 target_include_directories(KF5CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/CalendarSupport/;${KDE_INSTALL_INCLUDEDIR_KF5}/calendarsupport>")
 target_include_directories(KF5CalendarSupport PUBLIC "$<BUILD_INTERFACE:${calendarsupport_SOURCE_DIR}/src;${calendarsupport_BINARY_DIR}/src>")
