@@ -1497,11 +1497,8 @@ void CalPrintTodos::saveConfig()
 
 void CalPrintTodos::print(QPainter &p, int width, int height)
 {
-    // TODO: Find a good way to guarantee a nicely designed output
     int pospriority = 0;
     int possummary = 100;
-    int posdue = width - 65;
-    int poscomplete = posdue - 70; // Complete column is to right of the Due column
 
     QRect headerBox(0, 0, width, headerHeight());
     QRect footerBox(0, height - footerHeight(), width, footerHeight());
@@ -1510,10 +1507,15 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     // Draw the First Page Header
     drawHeader(p, mPageTitle, mFromDate, QDate(), headerBox);
 
+    // Estimate widths of some data columns.
+    QFont oldFont(p.font());
+    p.setFont(QFont(QStringLiteral("sans-serif"), 10));
+    const int widDate = p.fontMetrics().boundingRect(QLocale::system().toString(QDate(2222, 12, 22), QLocale::ShortFormat)).width();
+    const int widPct = p.fontMetrics().boundingRect(i18n("%1%", 100)).width() + 27;
+
     // Draw the Column Headers
     int mCurrentLinePos = headerHeight() + 5;
     QString outStr;
-    QFont oldFont(p.font());
 
     p.setFont(QFont(QStringLiteral("sans-serif"), 9, QFont::Bold));
     int lineSpacing = p.fontMetrics().lineSpacing();
@@ -1525,27 +1527,30 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
         pospriority = -1;
     }
 
-    outStr.truncate(0);
-    outStr += i18nc("@label to-do summary", "Title");
-    p.drawText(possummary, mCurrentLinePos - 2, outStr);
-
-    if (mIncludePercentComplete) {
-        if (!mIncludeDueDate) { // move Complete column to the right
-            poscomplete = posdue; // if not print the Due Date column
-        }
-        outStr.truncate(0);
-        outStr += i18nc("@label to-do percentage complete", "Complete");
-        p.drawText(poscomplete, mCurrentLinePos - 2, outStr);
-    } else {
-        poscomplete = -1;
-    }
-
+    int posdue;
     if (mIncludeDueDate) {
         outStr.truncate(0);
         outStr += i18nc("@label to-do due date", "Due");
+        const int widDue = std::max(p.fontMetrics().boundingRect(outStr).width(), widDate);
+        posdue = width - widDue;
         p.drawText(posdue, mCurrentLinePos - 2, outStr);
     } else {
         posdue = -1;
+    }
+
+    int poscomplete;
+    if (mIncludePercentComplete) {
+        outStr.truncate(0);
+        outStr += i18nc("@label to-do percentage complete", "Complete");
+        const int widComplete = std::max(p.fontMetrics().boundingRect(outStr).width(), widPct);
+        if (!mIncludeDueDate) {
+            poscomplete = width - widComplete;
+        } else {
+            poscomplete = posdue - widComplete - 5;
+        }
+        p.drawText(poscomplete, mCurrentLinePos - 2, outStr);
+    } else {
+        poscomplete = -1;
     }
 
     p.setFont(QFont(QStringLiteral("sans-serif"), 10));
