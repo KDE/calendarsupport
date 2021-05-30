@@ -1945,7 +1945,7 @@ void CalPrintPluginBase::drawTodo(int &count,
         p.drawLine(rect.topLeft(), rect.bottomRight());
         p.drawLine(rect.topRight(), rect.bottomLeft());
     }
-    lhs = rect.right() + 3;
+    lhs = rect.right() + 5;
 
     // Priority
     if (todo->priority() > 0 && showPriority) {
@@ -1992,7 +1992,7 @@ void CalPrintPluginBase::drawTodo(int &count,
     bool showPercentComplete = posPercentComplete >= 0;
     if (showPercentComplete) {
         int lwidth = 24;
-        int lheight = 12;
+        int lheight = p.fontMetrics().ascent();
         // first, draw the progress bar
         int progress = static_cast<int>(((lwidth * todo->percentComplete()) / 100.0 + 0.5));
 
@@ -2009,7 +2009,7 @@ void CalPrintPluginBase::drawTodo(int &count,
         p.drawText(rect, Qt::AlignTop | Qt::AlignLeft, outStr);
     }
 
-    y += 10;
+    y = newrect.bottom();
 
     // Make a list of all the sub-to-dos related to this to-do.
     KCalendarCore::Todo::List t;
@@ -2052,10 +2052,7 @@ void CalPrintPluginBase::drawTodo(int &count,
 
     // description
     if (!todo->description().isEmpty() && desc) {
-        y = newrect.bottom() + 5;
         drawTodoLines(p, todo->description(), left, y, width - (left + 10 - x), pageHeight, todo->descriptionIsRich(), startPoints, connectSubTodos);
-    } else {
-        y += 10;
     }
 
     // Sort the sub-to-dos and print them
