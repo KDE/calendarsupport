@@ -1398,6 +1398,8 @@ void CalPrintTodos::readSettingsWidget()
 
         mIncludeDescription = cfg->mDescription->isChecked();
         mIncludePriority = cfg->mPriority->isChecked();
+        mIncludeCategories = cfg->mCategories->isChecked();
+        mIncludeStartDate = cfg->mStartDate->isChecked();
         mIncludeDueDate = cfg->mDueDate->isChecked();
         mIncludePercentComplete = cfg->mPercentComplete->isChecked();
         mConnectSubTodos = cfg->mConnectSubTodos->isChecked();
@@ -1427,6 +1429,8 @@ void CalPrintTodos::setSettingsWidget()
 
         cfg->mDescription->setChecked(mIncludeDescription);
         cfg->mPriority->setChecked(mIncludePriority);
+        cfg->mCategories->setChecked(mIncludeCategories);
+        cfg->mStartDate->setChecked(mIncludeStartDate);
         cfg->mDueDate->setChecked(mIncludeDueDate);
         cfg->mPercentComplete->setChecked(mIncludePercentComplete);
         cfg->mConnectSubTodos->setChecked(mConnectSubTodos);
@@ -1463,6 +1467,8 @@ void CalPrintTodos::loadConfig()
         mTodoPrintType = (eTodoPrintType)grp.readEntry("Print type", static_cast<int>(TodosAll));
         mIncludeDescription = grp.readEntry("Include description", true);
         mIncludePriority = grp.readEntry("Include priority", true);
+        mIncludeCategories = grp.readEntry("Include categories", true);
+        mIncludeStartDate = grp.readEntry("Include start date", true);
         mIncludeDueDate = grp.readEntry("Include due date", true);
         mIncludePercentComplete = grp.readEntry("Include percentage completed", true);
         mConnectSubTodos = grp.readEntry("Connect subtodos", true);
@@ -1484,6 +1490,8 @@ void CalPrintTodos::saveConfig()
         grp.writeEntry("Print type", int(mTodoPrintType));
         grp.writeEntry("Include description", mIncludeDescription);
         grp.writeEntry("Include priority", mIncludePriority);
+        grp.writeEntry("Include categories", mIncludeCategories);
+        grp.writeEntry("Include start date", mIncludeStartDate);
         grp.writeEntry("Include due date", mIncludeDueDate);
         grp.writeEntry("Include percentage completed", mIncludePercentComplete);
         grp.writeEntry("Connect subtodos", mConnectSubTodos);
@@ -1497,7 +1505,6 @@ void CalPrintTodos::saveConfig()
 
 void CalPrintTodos::print(QPainter &p, int width, int height)
 {
-    int pospriority = 0;
     int possummary = 100;
 
     QRect headerBox(0, 0, width, headerHeight());
@@ -1520,41 +1527,55 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     p.setFont(QFont(QStringLiteral("sans-serif"), 9, QFont::Bold));
     int lineSpacing = p.fontMetrics().lineSpacing();
     mCurrentLinePos += lineSpacing;
+    int pospriority = -1;
     if (mIncludePriority) {
         outStr += i18n("Priority");
+        pospriority = 0;
         p.drawText(pospriority, mCurrentLinePos - 2, outStr);
-    } else {
-        pospriority = -1;
     }
 
-    int posdue;
+    int posSoFar = width;  // Position of leftmost optional header.
+
+    int posdue = -1;
     if (mIncludeDueDate) {
         outStr.truncate(0);
         outStr += i18nc("@label to-do due date", "Due");
         const int widDue = std::max(p.fontMetrics().boundingRect(outStr).width(), widDate);
-        posdue = width - widDue;
+        posdue = posSoFar - widDue;
         p.drawText(posdue, mCurrentLinePos - 2, outStr);
-    } else {
-        posdue = -1;
+        posSoFar = posdue;
     }
 
-    int poscomplete;
+    int posStart = -1;
+    if (mIncludeStartDate) {
+        outStr.truncate(0);
+        outStr += i18nc("@label to-do start date", "Start");
+        const int widStart = std::max(p.fontMetrics().boundingRect(outStr).width(), widDate);
+        posStart = posSoFar - widStart - 5;
+        p.drawText(posStart, mCurrentLinePos - 2, outStr);
+        posSoFar = posStart;
+    }
+
+    int poscomplete = -1;
     if (mIncludePercentComplete) {
         outStr.truncate(0);
         outStr += i18nc("@label to-do percentage complete", "Complete");
         const int widComplete = std::max(p.fontMetrics().boundingRect(outStr).width(), widPct);
-        if (!mIncludeDueDate) {
-            poscomplete = width - widComplete;
-        } else {
-            poscomplete = posdue - widComplete - 5;
-        }
+        poscomplete = posSoFar - widComplete - 5;
         p.drawText(poscomplete, mCurrentLinePos - 2, outStr);
-    } else {
-        poscomplete = -1;
+        posSoFar = poscomplete;
+    }
+
+    int posCategories = -1;
+    if (mIncludeCategories) {
+        outStr.truncate(0);
+        outStr += i18nc("@label to-do categories", "Tags");
+        const int widCats = std::max(p.fontMetrics().boundingRect(outStr).width(), 100); // Arbitrary!
+        posCategories = posSoFar - widCats - 5;
+        p.drawText(posCategories, mCurrentLinePos - 2, outStr);
     }
 
     p.setFont(QFont(QStringLiteral("sans-serif"), 10));
-    // fontHeight = p.fontMetrics().height();
 
     KCalendarCore::Todo::List todoList;
     KCalendarCore::Todo::List tempList;
@@ -1631,7 +1652,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
         // Skip sub-to-dos. They will be printed recursively in drawTodo()
         if (todo->relatedTo().isEmpty()) { // review(AKONADI_PORT)
             count++;
-            drawTodo(count,
+            drawTodo2(count,
                      todo,
                      p,
                      sortField,
@@ -1641,6 +1662,8 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
                      mIncludeDescription,
                      pospriority,
                      possummary,
+                     posCategories,
+                     posStart,
                      posdue,
                      poscomplete,
                      0,

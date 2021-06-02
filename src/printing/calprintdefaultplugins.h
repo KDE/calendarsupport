@@ -296,6 +296,8 @@ protected:
 
     bool mIncludeDescription;
     bool mIncludePriority;
+    bool mIncludeCategories;
+    bool mIncludeStartDate;
     bool mIncludeDueDate;
     bool mIncludePercentComplete;
     bool mConnectSubTodos;

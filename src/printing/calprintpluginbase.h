@@ -162,6 +162,7 @@ public:
       @param str The text to be printed in the box
     */
     void printEventString(QPainter &p, const QRect &box, const QString &str, int flags = -1);
+
     /**
       Print the box for the given event with the given string.
       @param p QPainter of the printout
@@ -282,6 +283,7 @@ public:
       @param box coordinates of the box for the days of the week
     */
     void drawDaysOfWeek(QPainter &p, const QDate &fromDate, const QDate &toDate, const QRect &box);
+
     /**
       Draw a single weekday name in a box inside the given area of the painter.
       This is called in a loop by drawDaysOfWeek.
@@ -330,6 +332,7 @@ public:
                       const QRect &box,
                       bool excludeConfidential,
                       bool excludePrivate);
+
     /**
       Draw the agenda box for the day print style (the box showing all events of that day).
       Also draws a grid with half-hour spacing of the grid lines.
@@ -410,6 +413,7 @@ public:
                     bool includeDescription = false,
                     bool excludeDescription = true,
                     bool excludePrivate = true);
+
     /**
       Draw the week (filofax) table of the week containing the date qd. The first
       three days of the week will be shown in the first column (using drawDayBox),
@@ -436,6 +440,7 @@ public:
                   bool includeDescription,
                   bool excludeConfidential,
                   bool excludePrivate);
+
     /**
       Draw the (filofax) table for a bunch of days, using drawDayBox.
       @param p QPainter of the printout
@@ -461,6 +466,7 @@ public:
                   bool includeDescription,
                   bool excludeConfidential,
                   bool excludePrivate);
+
     /**
       Draw the timetable view of the given time range from fromDate to toDate.
       On the left side the time scale is printed (using drawTimeLine), then each
@@ -526,6 +532,7 @@ public:
                         bool excludeConfidential,
                         bool excludePrivate,
                         const QRect &box);
+
     /**
       Draw a vertical representation of the month containing the date dt. Each
       day gets one line.
@@ -558,41 +565,8 @@ public:
     class TodoParentStart;
 
     /**
-      Draws single to-do and its (intented) sub-to-dos, optionally connects them
-      by a tree-like line, and optionally shows due date, summary, description
-      and priority.
-      @param count The number of the currently printed to-do (count will be
-      incremented for each to-do drawn)
-      @param todo The to-do to be printed. It's sub-to-dos are recursively drawn,
-      so drawTodo should only be called on the to-dos of the highest level.
-      @param p QPainter of the printout
-      @param sortField Specifies on which attribute of the todo you want to sort.
-      @param sortDir Specifies if you want to sort ascending or descending.
-      @param connectSubTodos Whether sub-to-dos shall be connected with
-      their parent by a line (tree-like).
-      @param strikeoutCompleted Whether completed to-dos should be printed with
-      strike-out summaries.
-      @param desc Whether to print the whole description of the to-do
-      (the summary is always printed).
-      @param posPriority x-coordinate where the priority is supposed to be
-      printed. If <0, no priority will be printed.
-      @param posSummary x-coordinate where the summary of the to-do is supposed
-      to be printed.
-      @param posDueDt x-coordinate where the due date is supposed to the be
-      printed. If <0, no due date will be printed.
-      @param posPercentComplete x-coordinate where the percentage complete is
-      supposed to be printed. If <0, percentage complete will not be printed.
-      @param level Level of the current to-do in the to-do hierarchy (0 means
-      highest level of printed to-dos, 1 are their sub-to-dos, etc.)
-      @param x x-coordinate of the upper left coordinate of the first to-do.
-      @param y y-coordinate of the upper left coordinate of the first to-do.
-      @param width width of the whole to-do list.
-      @param pageHeight Total height allowed for the to-do list on a page.
-      If an to-do would be below that line, a new page is started.
-      @param todoList Contains a list of sub-todos for the specified @p todo .
-      @param r Internal (used when printing sub-to-dos to give information
-      about its parent)
-    */
+     * @see drawTodo2().
+     */
     void drawTodo(int &count,
                   const KCalendarCore::Todo::Ptr &todo,
                   QPainter &p,
@@ -616,6 +590,70 @@ public:
                   bool excludePrivate);
 
     /**
+      Draws single to-do and its (indented) sub-to-dos, optionally connects them
+      by a tree-like line, and optionally shows due date, summary, description
+      and priority.
+      @param count The number of the currently printed to-do (count will be
+      incremented for each to-do drawn)
+      @param todo The to-do to be printed. It's sub-to-dos are recursively drawn,
+      so drawTodo should only be called on the to-dos of the highest level.
+      @param p QPainter of the printout
+      @param sortField Specifies on which attribute of the todo you want to sort.
+      @param sortDir Specifies if you want to sort ascending or descending.
+      @param connectSubTodos Whether sub-to-dos shall be connected with
+      their parent by a line (tree-like).
+      @param strikeoutCompleted Whether completed to-dos should be printed with
+      strike-out summaries.
+      @param desc Whether to print the whole description of the to-do
+      (the summary is always printed).
+      @param posPriority x-coordinate where the priority is supposed to be
+      printed. If negative, no priority will be printed.
+      @param posSummary x-coordinate where the summary of the to-do is supposed
+      to be printed.
+      @param posCategories x-coordinate where the categories (tags) should be
+      printed. If negative, no categories will be printed.
+      @param posStartDt x-coordinate where the due date is supposed to the be
+      printed. If negative, no start date will be printed.
+      @param posDueDt x-coordinate where the due date is supposed to the be
+      printed. If negative, no due date will be printed.
+      @param posPercentComplete x-coordinate where the percentage complete is
+      supposed to be printed. If negative, percentage complete will not be printed.
+      @param level Level of the current to-do in the to-do hierarchy (0 means
+      highest level of printed to-dos, 1 are their sub-to-dos, etc.)
+      @param x x-coordinate of the upper left coordinate of the first to-do.
+      @param y y-coordinate of the upper left coordinate of the first to-do.
+      @param width width of the whole to-do list.
+      @param pageHeight Total height allowed for the to-do list on a page.
+      If an to-do would be below that line, a new page is started.
+      @param todoList Contains a list of sub-todos for the specified @p todo .
+      @param r Internal (used when printing sub-to-dos to give information
+      about its parent)
+    */
+    void drawTodo2(int &count,
+                  const KCalendarCore::Todo::Ptr &todo,
+                  QPainter &p,
+                  KCalendarCore::TodoSortField sortField,
+                  KCalendarCore::SortDirection sortDir,
+                  bool connectSubTodos,
+                  bool strikeoutCompleted,
+                  bool desc,
+                  int posPriority,
+                  int posSummary,
+                  int posCategories,
+                  int posStartDt,
+                  int posDueDt,
+                  int posPercentComplete,
+                  int level,
+                  int x,
+                  int &y,
+                  int width,
+                  int pageHeight,
+                  const KCalendarCore::Todo::List &todoList,
+                  TodoParentStart *r,
+                  bool excludeConfidential,
+                  bool excludePrivate);
+
+    /**
       Draws single journal item.
       @param journal The item to be printed.
       @param p QPainter of the printout
@@ -626,6 +664,7 @@ public:
                    would be below that line, a new page is started.
     */
     void drawJournal(const KCalendarCore::Journal::Ptr &journal, QPainter &p, int x, int &y, int width, int pageHeight);
+
     /**
       Draws text lines splitting on page boundaries.
       @param p QPainter of the printout

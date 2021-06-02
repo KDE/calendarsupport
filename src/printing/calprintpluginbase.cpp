@@ -1899,8 +1899,37 @@ void CalPrintPluginBase::drawTodo(int &count,
                                   bool excludeConfidential,
                                   bool excludePrivate)
 {
+    drawTodo2(count, todo, p, sortField, sortDir, connectSubTodos, strikeoutCompleted,
+              desc, posPriority, posSummary, -1, -1, posDueDt, posPercentComplete,
+              level, x, y, width, pageHeight, todoList, r, excludeConfidential, excludePrivate);
+}
+
+void CalPrintPluginBase::drawTodo2(int &count,
+                                  const KCalendarCore::Todo::Ptr &todo,
+                                  QPainter &p,
+                                  KCalendarCore::TodoSortField sortField,
+                                  KCalendarCore::SortDirection sortDir,
+                                  bool connectSubTodos,
+                                  bool strikeoutCompleted,
+                                  bool desc,
+                                  int posPriority,
+                                  int posSummary,
+                                  int posCategories,
+                                  int posStartDt,
+                                  int posDueDt,
+                                  int posPercentComplete,
+                                  int level,
+                                  int x,
+                                  int &y,
+                                  int width,
+                                  int pageHeight,
+                                  const KCalendarCore::Todo::List &todoList,
+                                  TodoParentStart *r,
+                                  bool excludeConfidential,
+                                  bool excludePrivate)
+{
     QString outStr;
-    const auto local = QLocale::system();
+    const auto locale = QLocale::system();
     QRect rect;
     TodoParentStart startpt;
     // This list keeps all starting points of the parent to-dos so the connection
@@ -1912,20 +1941,10 @@ void CalPrintPluginBase::drawTodo(int &count,
 
     y += 10;
 
-    // Compute the right hand side of the to-do box
-    int rhs = posPercentComplete;
-    if (rhs < 0) {
-        rhs = posDueDt; // not printing percent completed
-    }
-    if (rhs < 0) {
-        rhs = x + width; // not printing due dates either
-    }
-
     int left = posSummary + (level * 10);
 
     // If this is a sub-to-do, r will not be 0, and we want the LH side
     // of the priority line up to the RH side of the parent to-do's priority
-    bool showPriority = posPriority >= 0;
     int lhs = posPriority;
     if (r) {
         lhs = r->mRect.right() + 1;
@@ -1936,6 +1955,7 @@ void CalPrintPluginBase::drawTodo(int &count,
     // Make it a more reasonable size
     rect.setWidth(18);
     rect.setHeight(18);
+    const int top = rect.top();
 
     // Draw a checkbox
     p.setBrush(QBrush(Qt::NoBrush));
@@ -1948,7 +1968,7 @@ void CalPrintPluginBase::drawTodo(int &count,
     lhs = rect.right() + 5;
 
     // Priority
-    if (todo->priority() > 0 && showPriority) {
+    if (posPriority >= 0 && todo->priority() > 0) {
         p.drawText(rect, Qt::AlignCenter, outStr);
     }
     startpt.mRect = rect; // save for later
@@ -1968,48 +1988,74 @@ void CalPrintPluginBase::drawTodo(int &count,
         p.drawLine(center, bottom, center, to);
     }
 
-    // summary
-    outStr = todo->summary();
-    rect = p.boundingRect(lhs, rect.top(), (rhs - (left + rect.width() + 5)), -1, Qt::TextWordWrap, outStr);
+    int posSoFar = width;  // Position of leftmost optional field.
 
-    QRect newrect;
-    QFont newFont(p.font());
-    QFont oldFont(p.font());
-    if (todo->isCompleted() && strikeoutCompleted) {
-        newFont.setStrikeOut(true);
-        p.setFont(newFont);
-    }
-    p.drawText(rect, Qt::TextWordWrap, outStr, &newrect);
-    p.setFont(oldFont);
     // due date
-    if (todo->hasDueDate() && posDueDt >= 0) {
-        outStr = local.toString(todo->dtDue().toLocalTime().date(), QLocale::ShortFormat);
-        rect = p.boundingRect(posDueDt, y, x + width, -1, Qt::AlignTop | Qt::AlignLeft, outStr);
+    if (posDueDt >= 0 && todo->hasDueDate()) {
+        outStr = locale.toString(todo->dtDue().toLocalTime().date(), QLocale::ShortFormat);
+        rect = p.boundingRect(posDueDt, top, x + width, -1, Qt::AlignTop | Qt::AlignLeft, outStr);
         p.drawText(rect, Qt::AlignTop | Qt::AlignLeft, outStr);
+        posSoFar = posDueDt;
+    }
+
+    // start date
+    if (posStartDt >= 0 && todo->hasStartDate()) {
+        outStr = locale.toString(todo->dtStart().toLocalTime().date(), QLocale::ShortFormat);
+        rect = p.boundingRect(posStartDt, top, x + width, -1, Qt::AlignTop | Qt::AlignLeft, outStr);
+        p.drawText(rect, Qt::AlignTop | Qt::AlignLeft, outStr);
+        posSoFar = posStartDt;
     }
 
     // percentage completed
-    bool showPercentComplete = posPercentComplete >= 0;
-    if (showPercentComplete) {
+    if (posPercentComplete >= 0) {
         int lwidth = 24;
         int lheight = p.fontMetrics().ascent();
         // first, draw the progress bar
         int progress = static_cast<int>(((lwidth * todo->percentComplete()) / 100.0 + 0.5));
 
         p.setBrush(QBrush(Qt::NoBrush));
-        p.drawRect(posPercentComplete, y + 3, lwidth, lheight);
+        p.drawRect(posPercentComplete, top, lwidth, lheight);
         if (progress > 0) {
             p.setBrush(QColor(128, 128, 128));
-            p.drawRect(posPercentComplete, y + 3, progress, lheight);
+            p.drawRect(posPercentComplete, top, progress, lheight);
         }
 
         // now, write the percentage
         outStr = i18n("%1%", todo->percentComplete());
-        rect = p.boundingRect(posPercentComplete + lwidth + 3, y, x + width, -1, Qt::AlignTop | Qt::AlignLeft, outStr);
+        rect = p.boundingRect(posPercentComplete + lwidth + 3, top, x + width, -1, Qt::AlignTop | Qt::AlignLeft, outStr);
         p.drawText(rect, Qt::AlignTop | Qt::AlignLeft, outStr);
+        posSoFar = posPercentComplete;
     }
 
-    y = newrect.bottom();
+    // categories
+    QRect categoriesRect {0, 0, 0, 0};
+    if (posCategories >= 0) {
+        outStr = todo->categoriesStr();
+        outStr.replace(QLatin1Char(','), QLatin1Char('\n'));
+        rect = p.boundingRect(posCategories, top, posSoFar - posCategories, -1, Qt::TextWordWrap, outStr);
+        p.drawText(rect, Qt::TextWordWrap, outStr, &categoriesRect);
+        posSoFar = posCategories;
+    }
+
+    // summary
+    outStr = todo->summary();
+    rect = p.boundingRect(lhs, top, posSoFar - lhs - 5, -1, Qt::TextWordWrap, outStr);
+    QFont oldFont(p.font());
+    if (strikeoutCompleted && todo->isCompleted()) {
+        QFont newFont(p.font());
+        newFont.setStrikeOut(true);
+        p.setFont(newFont);
+    }
+    QRect summaryRect;
+    p.drawText(rect, Qt::TextWordWrap, outStr, &summaryRect);
+    p.setFont(oldFont);
+
+    y = std::max(categoriesRect.bottom(), summaryRect.bottom());
+
+    // description
+    if (desc && !todo->description().isEmpty()) {
+        drawTodoLines(p, todo->description(), left, y, width - (left + 10 - x), pageHeight, todo->descriptionIsRich(), startPoints, connectSubTodos);
+    }
 
     // Make a list of all the sub-to-dos related to this to-do.
     KCalendarCore::Todo::List t;
@@ -2050,11 +2096,6 @@ void CalPrintPluginBase::drawTodo(int &count,
     startpt.mHasLine = (relations.size() > 0);
     startPoints.append(&startpt);
 
-    // description
-    if (!todo->description().isEmpty() && desc) {
-        drawTodoLines(p, todo->description(), left, y, width - (left + 10 - x), pageHeight, todo->descriptionIsRich(), startPoints, connectSubTodos);
-    }
-
     // Sort the sub-to-dos and print them
 #ifdef AKONADI_PORT_DISABLED
     KCalendarCore::Todo::List sl = mCalendar->sortTodos(&t, sortField, sortDir);
@@ -2073,7 +2114,7 @@ void CalPrintPluginBase::drawTodo(int &count,
         if (++subcount == sl.size()) {
             startpt.mHasLine = false;
         }
-        drawTodo(count,
+        drawTodo2(count,
                  isl,
                  p,
                  sortField,
@@ -2083,6 +2124,8 @@ void CalPrintPluginBase::drawTodo(int &count,
                  desc,
                  posPriority,
                  posSummary,
+                 posCategories,
+                 posStartDt,
                  posDueDt,
                  posPercentComplete,
                  level + 1,

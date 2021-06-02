@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <author>Reinhold Kainhofer &lt;reinhold@kainhofer.com&gt;</author>
- <comment>Configuration page for the print day mode.</comment>
+ <comment>Configuration page for the print todo mode.</comment>
  <class>CalPrintTodoConfig_Base</class>
  <widget class="QWidget" name="CalPrintTodoConfig_Base">
   <property name="geometry">
@@ -87,7 +87,7 @@ p, li { white-space: pre-wrap; }
          <bool>true</bool>
         </property>
         <property name="text">
-         <string>Print unfinished to-dos onl&amp;y</string>
+         <string>Print &amp;uncompleted to-dos only</string>
         </property>
        </widget>
       </item>
@@ -256,7 +256,7 @@ p, li { white-space: pre-wrap; }
          <string>Check this option to exclude confidential events.</string>
         </property>
         <property name="text">
-         <string>Exclude c&amp;onfidential</string>
+         <string>Exclude &amp;confidential</string>
         </property>
        </widget>
       </item>
@@ -294,12 +294,31 @@ p, li { white-space: pre-wrap; }
          <string>Check this option if you want to see the item descriptions printed.</string>
         </property>
         <property name="text">
-         <string>Include &amp;descriptions</string>
+         <string>&amp;Description</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="mCategories">
+        <property name="toolTip">
+         <string>Print item tags</string>
+        </property>
+        <property name="whatsThis">
+         <string>Check this option if you want to see the item tags printed.</string>
+        </property>
+        <property name="text">
+         <string>Ta&amp;gs</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QCheckBox" name="mPriority">
+        <property name="toolTip">
+         <string>Print item priorities</string>
+        </property>
+        <property name="whatsThis">
+         <string>Check this option if you want to see the item priorities printed.</string>
+        </property>
         <property name="text">
          <string>&amp;Priority</string>
         </property>
@@ -309,12 +328,28 @@ p, li { white-space: pre-wrap; }
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="mDueDate">
-        <property name="text">
-         <string>Due date</string>
+       <widget class="QCheckBox" name="mStartDate">
+        <property name="toolTip">
+         <string>Print item start dates</string>
         </property>
-        <property name="shortcut">
-         <string/>
+        <property name="whatsThis">
+         <string>Check this option if you want to see the item start dates (when work can begin) printed.</string>
+        </property>
+        <property name="text">
+         <string>&amp;Start date</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="mDueDate">
+        <property name="toolTip">
+         <string>Print item due dates</string>
+        </property>
+        <property name="whatsThis">
+         <string>Check this option if you want to see the item due dates printed.</string>
+        </property>
+        <property name="text">
+         <string>Du&amp;e date</string>
         </property>
         <property name="checked">
          <bool>true</bool>
@@ -323,8 +358,14 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <widget class="QCheckBox" name="mPercentComplete">
+        <property name="toolTip">
+         <string>Print item completion percentage</string>
+        </property>
+        <property name="whatsThis">
+         <string>Check this option if you want to see the item completion percentage printed as a number and bar graph.</string>
+        </property>
         <property name="text">
-         <string>Per&amp;centage completed</string>
+         <string>Percentage co&amp;mpleted</string>
         </property>
         <property name="checked">
          <bool>true</bool>
@@ -333,6 +374,8 @@ p, li { white-space: pre-wrap; }
       </item>
      </layout>
      <zorder>mDescription</zorder>
+     <zorder>mCategories</zorder>
+     <zorder>mStartDate</zorder>
      <zorder>mDueDate</zorder>
      <zorder>mPercentComplete</zorder>
      <zorder>mPriority</zorder>
@@ -423,7 +466,7 @@ p, li { white-space: pre-wrap; }
       <item>
        <widget class="QCheckBox" name="mStrikeOutCompleted">
         <property name="text">
-         <string>Strike &amp;out completed to-do summaries</string>
+         <string>Stri&amp;ke out completed to-do summaries</string>
         </property>
         <property name="checked">
          <bool>true</bool>
@@ -475,14 +518,19 @@ p, li { white-space: pre-wrap; }
   <tabstop>mPrintDueRange</tabstop>
   <tabstop>mFromDate</tabstop>
   <tabstop>mToDate</tabstop>
+  <tabstop>mExcludeConfidential</tabstop>
+  <tabstop>mExcludePrivate</tabstop>
   <tabstop>mDescription</tabstop>
+  <tabstop>mCategories</tabstop>
   <tabstop>mPriority</tabstop>
+  <tabstop>mStartDate</tabstop>
   <tabstop>mDueDate</tabstop>
   <tabstop>mPercentComplete</tabstop>
-  <tabstop>mConnectSubTodos</tabstop>
-  <tabstop>mStrikeOutCompleted</tabstop>
   <tabstop>mSortField</tabstop>
   <tabstop>mSortDirection</tabstop>
+  <tabstop>mConnectSubTodos</tabstop>
+  <tabstop>mStrikeOutCompleted</tabstop>
+  <tabstop>mPrintFooter</tabstop>
  </tabstops>
  <resources/>
  <connections>
