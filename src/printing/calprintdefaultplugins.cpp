@@ -187,12 +187,7 @@ protected:
     }
 };
 
-int CalPrintIncidence::printCaptionAndText(QPainter &p,
-                                           const QRect &box,
-                                           const QString &caption,
-                                           const QString &text,
-                                           const QFont &captionFont,
-                                           const QFont &textFont)
+int CalPrintIncidence::printCaptionAndText(QPainter &p, QRect box, const QString &caption, const QString &text, const QFont &captionFont, const QFont &textFont)
 {
     QFontMetrics captionFM(captionFont);
     int textWd = captionFM.boundingRect(caption).width();

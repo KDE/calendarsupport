@@ -192,7 +192,7 @@ void IncidenceViewer::setHeaderText(const QString &text)
     d->mHeaderText = text;
 }
 
-void IncidenceViewer::setIncidence(const Akonadi::Item &incidence, const QDate &date)
+void IncidenceViewer::setIncidence(const Akonadi::Item &incidence, QDate date)
 {
     d->mDate = date;
     ItemMonitor::setItem(incidence);

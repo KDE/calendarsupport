@@ -57,7 +57,7 @@ public:
 
     void buildMenu();
 
-    void slotDateChanged(const QDate &);
+    void slotDateChanged(QDate);
     void slotToday();
     void slotTomorrow();
     void slotNextWeek();
@@ -111,7 +111,7 @@ void KDatePickerPopup::Private::buildMenu()
     }
 }
 
-void KDatePickerPopup::Private::slotDateChanged(const QDate &date)
+void KDatePickerPopup::Private::slotDateChanged(QDate date)
 {
     Q_EMIT q->dateChanged(date);
     q->hide();
@@ -142,7 +142,7 @@ void KDatePickerPopup::Private::slotNextMonth()
     Q_EMIT q->dateChanged(QDate::currentDate().addMonths(1));
 }
 
-KDatePickerPopup::KDatePickerPopup(Modes modes, const QDate &date, QWidget *parent)
+KDatePickerPopup::KDatePickerPopup(Modes modes, QDate date, QWidget *parent)
     : QMenu(parent)
     , d(new Private(this))
 {
@@ -151,10 +151,10 @@ KDatePickerPopup::KDatePickerPopup(Modes modes, const QDate &date, QWidget *pare
     d->mDatePicker = new KDatePicker(this);
     d->mDatePicker->setCloseButton(false);
 
-    connect(d->mDatePicker, &KDatePicker::dateEntered, this, [this](const QDate &date) {
+    connect(d->mDatePicker, &KDatePicker::dateEntered, this, [this](QDate date) {
         d->slotDateChanged(date);
     });
-    connect(d->mDatePicker, &KDatePicker::dateSelected, this, [this](const QDate &date) {
+    connect(d->mDatePicker, &KDatePicker::dateSelected, this, [this](QDate date) {
         d->slotDateChanged(date);
     });
 

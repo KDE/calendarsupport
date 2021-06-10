@@ -48,7 +48,7 @@ public:
       \param start Start date
       \param end   End date
     */
-    void setDateRange(const QDate &start, const QDate &end);
+    void setDateRange(QDate start, QDate end);
 
 public Q_SLOTS:
     void updateConfig();
@@ -57,11 +57,7 @@ private Q_SLOTS:
     void doPrint(CalendarSupport::PrintPlugin *selectedStyle, CalendarSupport::CalPrinter::ePrintOrientation dlgorientation, bool preview = false);
 
 public:
-    void print(int type,
-               const QDate &fd,
-               const QDate &td,
-               const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(),
-               bool preview = false);
+    void print(int type, QDate fd, QDate td, const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(), bool preview = false);
     Akonadi::ETMCalendar::Ptr calendar() const;
     KConfig *config() const;
 

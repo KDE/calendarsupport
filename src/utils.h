@@ -203,7 +203,7 @@ CALENDARSUPPORT_EXPORT QString subMimeTypeForIncidence(const KCalendarCore::Inci
 /**
  * Returns a list containing work days between @p start and @end.
  */
-CALENDARSUPPORT_EXPORT QList<QDate> workDays(const QDate &start, const QDate &end);
+CALENDARSUPPORT_EXPORT QList<QDate> workDays(QDate start, QDate end);
 
 /**
  * Creates a nicely formatted toolTip string for a calendar, containing some quick,
@@ -220,7 +220,7 @@ CALENDARSUPPORT_EXPORT QString toolTipString(const Akonadi::Collection &coll, bo
 /**
  * Returns a list of holidays that occur at @param date.
  */
-CALENDARSUPPORT_EXPORT QStringList holiday(const QDate &date);
+CALENDARSUPPORT_EXPORT QStringList holiday(QDate date);
 
 CALENDARSUPPORT_EXPORT QStringList categories(const KCalendarCore::Incidence::List &incidences);
 

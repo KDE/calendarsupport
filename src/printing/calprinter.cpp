@@ -72,7 +72,7 @@ void CalPrinter::init(const Akonadi::ETMCalendar::Ptr &calendar)
     }
 }
 
-void CalPrinter::setDateRange(const QDate &fd, const QDate &td)
+void CalPrinter::setDateRange(QDate fd, QDate td)
 {
     PrintPlugin::List::Iterator it = mPrintPlugins.begin();
     const PrintPlugin::List::Iterator end = mPrintPlugins.end();
@@ -81,7 +81,7 @@ void CalPrinter::setDateRange(const QDate &fd, const QDate &td)
     }
 }
 
-void CalPrinter::print(int type, const QDate &fd, const QDate &td, const KCalendarCore::Incidence::List &selectedIncidences, bool preview)
+void CalPrinter::print(int type, QDate fd, QDate td, const KCalendarCore::Incidence::List &selectedIncidences, bool preview)
 {
     PrintPlugin::List::Iterator it;
     const PrintPlugin::List::Iterator end = mPrintPlugins.end();

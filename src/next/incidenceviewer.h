@@ -116,7 +116,7 @@ public Q_SLOTS:
      * @param activeDate The active date is used to calculate the actual date of
      *                   the selected incidence in case of recurring incidences.
      */
-    void setIncidence(const Akonadi::Item &incidence, const QDate &activeDate = QDate());
+    void setIncidence(const Akonadi::Item &incidence, QDate activeDate = QDate());
 
 protected:
     /**

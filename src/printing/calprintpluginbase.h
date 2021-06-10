@@ -144,7 +144,7 @@ public:
       @param linewidth The border width of the box
       @param rect The rectangle of the box
     */
-    static void drawBox(QPainter &p, int linewidth, const QRect &rect);
+    static void drawBox(QPainter &p, int linewidth, QRect rect);
     /**
       Draw a shaded box with given width at the given coordinates.
       @param p The printer to be used
@@ -152,7 +152,7 @@ public:
       @param brush The brush to fill the box
       @param rect The rectangle of the box
     */
-    static void drawShadedBox(QPainter &p, int linewidth, const QBrush &brush, const QRect &rect);
+    static void drawShadedBox(QPainter &p, int linewidth, const QBrush &brush, QRect rect);
 
     /**
       Print the given string (event summary) in the given rectangle. Margins
@@ -161,7 +161,7 @@ public:
       @param box Coordinates of the surrounding event box
       @param str The text to be printed in the box
     */
-    void printEventString(QPainter &p, const QRect &box, const QString &str, int flags = -1);
+    void printEventString(QPainter &p, QRect box, const QString &str, int flags = -1);
 
     /**
       Print the box for the given event with the given string.
@@ -173,7 +173,7 @@ public:
       @param str The string to print inside the box
       @param flags is a bitwise OR of Qt::AlignmentFlags and Qt::TextFlags values.
     */
-    void showEventBox(QPainter &p, int linewidth, const QRect &box, const KCalendarCore::Incidence::Ptr &incidence, const QString &str, int flags = -1);
+    void showEventBox(QPainter &p, int linewidth, QRect box, const KCalendarCore::Incidence::Ptr &incidence, const QString &str, int flags = -1);
 
     /**
       Draw a subheader box with a shaded background and the given string
@@ -181,7 +181,7 @@ public:
       @param str Text to be printed inside the box
       @param box Coordinates of the box
     */
-    void drawSubHeaderBox(QPainter &p, const QString &str, const QRect &box);
+    void drawSubHeaderBox(QPainter &p, const QString &str, QRect box);
 
     /**
       Draw an event box with vertical text.
@@ -191,7 +191,7 @@ public:
       @param str ext to be printed inside the box
       @param flags is a bitwise OR of Qt::AlignmentFlags and Qt::TextFlags values.
     */
-    void drawVerticalBox(QPainter &p, int linewidth, const QRect &box, const QString &str, int flags = -1);
+    void drawVerticalBox(QPainter &p, int linewidth, QRect box, const QString &str, int flags = -1);
 
     /**
       Draw a component box with a heading (printed in bold).
@@ -215,7 +215,7 @@ public:
               custom contents in that case.
     */
     int drawBoxWithCaption(QPainter &p,
-                           const QRect &box,
+                           QRect box,
                            const QString &caption,
                            const QString &contents,
                            bool sameLine,
@@ -252,8 +252,7 @@ public:
               is box.bottom, otherwise it is larger than box.bottom
               and matches the y-coordinate of the surrounding rectangle.
     */
-    int
-    drawHeader(QPainter &p, const QString &title, const QDate &month1, const QDate &month2, const QRect &box, bool expand = false, QColor backColor = QColor());
+    int drawHeader(QPainter &p, const QString &title, QDate month1, QDate month2, QRect box, bool expand = false, QColor backColor = QColor());
 
     /**
       Draw a page footer containing the printing date and possibly
@@ -262,7 +261,7 @@ public:
       @param box coordinates of the footer
       @return The bottom of the printed box.
     */
-    int drawFooter(QPainter &p, const QRect &box);
+    int drawFooter(QPainter &p, QRect box);
 
     /**
       Draw a small calendar with the days of a month into the given area.
@@ -271,7 +270,7 @@ public:
       @param qd Arbitrary Date within the month to be printed.
       @param box coordinates of the small calendar
     */
-    void drawSmallMonth(QPainter &p, const QDate &qd, const QRect &box);
+    void drawSmallMonth(QPainter &p, QDate qd, QRect box);
 
     /**
       Draw a horizontal bar with the weekday names of the given date range
@@ -282,7 +281,7 @@ public:
       @param toDate Last date of the printed dates
       @param box coordinates of the box for the days of the week
     */
-    void drawDaysOfWeek(QPainter &p, const QDate &fromDate, const QDate &toDate, const QRect &box);
+    void drawDaysOfWeek(QPainter &p, const QDate &fromDate, QDate toDate, QRect box);
 
     /**
       Draw a single weekday name in a box inside the given area of the painter.
@@ -291,7 +290,7 @@ public:
       @param qd Date of the printed day
       @param box coordinates of the weekbox
     */
-    void drawDaysOfWeekBox(QPainter &p, const QDate &qd, const QRect &box);
+    void drawDaysOfWeekBox(QPainter &p, QDate qd, QRect box);
 
     /**
       Draw a (vertical) time scale from time fromTime to toTime inside the
@@ -303,7 +302,7 @@ public:
       @param toTime End time of the time range to display
       @param box coordinates of the timeline
     */
-    void drawTimeLine(QPainter &p, const QTime &fromTime, const QTime &toTime, const QRect &box);
+    void drawTimeLine(QPainter &p, QTime fromTime, QTime toTime, QRect box);
 
     /**
       Draw the all-day box for the agenda print view (the box on top which
@@ -327,9 +326,9 @@ public:
     */
     int drawAllDayBox(QPainter &p,
                       const KCalendarCore::Event::List &eventList,
-                      const QDate &qd,
+                      QDate qd,
                       bool expandable,
-                      const QRect &box,
+                      QRect box,
                       bool excludeConfidential,
                       bool excludePrivate);
 
@@ -676,7 +675,7 @@ public:
     */
     void drawTextLines(QPainter &p, const QString &entry, int x, int &y, int width, int pageHeight, bool richTextEntry);
 
-    void drawSplitHeaderRight(QPainter &p, const QDate &fd, const QDate &td, const QDate &cd, int width, int height);
+    void drawSplitHeaderRight(QPainter &p, QDate fd, QDate td, QDate cd, int width, int height);
 
     /**
       Draws dotted lines for notes in a box.
@@ -684,7 +683,7 @@ public:
       @param box coordinates of the box where the lines will be placed
       @param startY starting y-coordinate for the first line
     */
-    void drawNoteLines(QPainter &p, const QRect &box, int startY);
+    void drawNoteLines(QPainter &p, QRect box, int startY);
 
 protected:
     QTime dayStart() const;
@@ -729,9 +728,9 @@ private:
      */
     void setColorsByIncidenceCategory(QPainter &p, const KCalendarCore::Incidence::Ptr &incidence) const;
 
-    QString holidayString(const QDate &date) const;
+    QString holidayString(QDate date) const;
 
-    KCalendarCore::Event::Ptr holidayEvent(const QDate &date) const;
+    KCalendarCore::Event::Ptr holidayEvent(QDate date) const;
 
     /**
      * Returns a nice QColor for text, give the input color &c.

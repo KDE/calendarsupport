@@ -66,7 +66,7 @@ public:
     void saveConfig() override;
 
 protected:
-    int printCaptionAndText(QPainter &p, const QRect &box, const QString &caption, const QString &text, const QFont &captionFont, const QFont &textFont);
+    int printCaptionAndText(QPainter &p, QRect box, const QString &caption, const QString &text, const QFont &captionFont, const QFont &textFont);
 
     bool mShowOptions;
     bool mShowSubitemsNotes;

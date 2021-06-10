@@ -697,7 +697,7 @@ QString CalendarSupport::subMimeTypeForIncidence(const KCalendarCore::Incidence:
     return incidence->mimeType();
 }
 
-QList<QDate> CalendarSupport::workDays(const QDate &startDate, const QDate &endDate)
+QList<QDate> CalendarSupport::workDays(QDate startDate, QDate endDate)
 {
     QList<QDate> result;
 
@@ -731,7 +731,7 @@ QList<QDate> CalendarSupport::workDays(const QDate &startDate, const QDate &endD
     return result;
 }
 
-QStringList CalendarSupport::holiday(const QDate &date)
+QStringList CalendarSupport::holiday(QDate date)
 {
     QStringList hdays;
 

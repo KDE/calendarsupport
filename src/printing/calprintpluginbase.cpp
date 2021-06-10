@@ -45,7 +45,7 @@ static QString cleanStr(const QString &instr)
 class CalPrintPluginBase::TodoParentStart
 {
 public:
-    TodoParentStart(const QRect &pt = QRect(), bool hasLine = false, bool page = true)
+    TodoParentStart(QRect pt = QRect(), bool hasLine = false, bool page = true)
         : mRect(pt)
         , mHasLine(hasLine)
         , mSamePage(page)
@@ -292,13 +292,13 @@ QColor CalPrintPluginBase::categoryBgColor(const KCalendarCore::Incidence::Ptr &
     }
 }
 
-QString CalPrintPluginBase::holidayString(const QDate &date) const
+QString CalPrintPluginBase::holidayString(QDate date) const
 {
-    QStringList lst = holiday(date);
+    const QStringList lst = holiday(date);
     return lst.join(i18nc("@item:intext delimiter for joining holiday names", ","));
 }
 
-KCalendarCore::Event::Ptr CalPrintPluginBase::holidayEvent(const QDate &date) const
+KCalendarCore::Event::Ptr CalPrintPluginBase::holidayEvent(QDate date) const
 {
     QString hstring(holidayString(date));
     if (hstring.isEmpty()) {
@@ -393,7 +393,7 @@ void CalPrintPluginBase::setBorderWidth(const int borderwidth)
     mBorder = borderwidth;
 }
 
-void CalPrintPluginBase::drawBox(QPainter &p, int linewidth, const QRect &rect)
+void CalPrintPluginBase::drawBox(QPainter &p, int linewidth, QRect rect)
 {
     QPen pen(p.pen());
     QPen oldpen(pen);
@@ -408,7 +408,7 @@ void CalPrintPluginBase::drawBox(QPainter &p, int linewidth, const QRect &rect)
     p.setPen(oldpen);
 }
 
-void CalPrintPluginBase::drawShadedBox(QPainter &p, int linewidth, const QBrush &brush, const QRect &rect)
+void CalPrintPluginBase::drawShadedBox(QPainter &p, int linewidth, const QBrush &brush, QRect rect)
 {
     QBrush oldbrush(p.brush());
     p.setBrush(brush);
@@ -416,19 +416,14 @@ void CalPrintPluginBase::drawShadedBox(QPainter &p, int linewidth, const QBrush 
     p.setBrush(oldbrush);
 }
 
-void CalPrintPluginBase::printEventString(QPainter &p, const QRect &box, const QString &str, int flags)
+void CalPrintPluginBase::printEventString(QPainter &p, QRect box, const QString &str, int flags)
 {
     QRect newbox(box);
     newbox.adjust(3, 1, -1, -1);
     p.drawText(newbox, (flags == -1) ? (Qt::AlignTop | Qt::AlignLeft | Qt::TextWordWrap) : flags, str);
 }
 
-void CalPrintPluginBase::showEventBox(QPainter &p,
-                                      int linewidth,
-                                      const QRect &box,
-                                      const KCalendarCore::Incidence::Ptr &incidence,
-                                      const QString &str,
-                                      int flags)
+void CalPrintPluginBase::showEventBox(QPainter &p, int linewidth, QRect box, const KCalendarCore::Incidence::Ptr &incidence, const QString &str, int flags)
 {
     QPen oldpen(p.pen());
     QBrush oldbrush(p.brush());
@@ -447,7 +442,7 @@ void CalPrintPluginBase::showEventBox(QPainter &p,
     p.setBrush(oldbrush);
 }
 
-void CalPrintPluginBase::drawSubHeaderBox(QPainter &p, const QString &str, const QRect &box)
+void CalPrintPluginBase::drawSubHeaderBox(QPainter &p, const QString &str, QRect box)
 {
     drawShadedBox(p, BOX_BORDER_WIDTH, QColor(232, 232, 232), box);
     QFont oldfont(p.font());
@@ -456,7 +451,7 @@ void CalPrintPluginBase::drawSubHeaderBox(QPainter &p, const QString &str, const
     p.setFont(oldfont);
 }
 
-void CalPrintPluginBase::drawVerticalBox(QPainter &p, int linewidth, const QRect &box, const QString &str, int flags)
+void CalPrintPluginBase::drawVerticalBox(QPainter &p, int linewidth, QRect box, const QString &str, int flags)
 {
     p.save();
     p.rotate(-90);
@@ -471,7 +466,7 @@ void CalPrintPluginBase::drawVerticalBox(QPainter &p, int linewidth, const QRect
  * of the printed contents inside the box.
  */
 int CalPrintPluginBase::drawBoxWithCaption(QPainter &p,
-                                           const QRect &allbox,
+                                           QRect allbox,
                                            const QString &caption,
                                            const QString &contents,
                                            bool sameLine,
@@ -550,13 +545,7 @@ int CalPrintPluginBase::drawBoxWithCaption(QPainter &p,
     }
 }
 
-int CalPrintPluginBase::drawHeader(QPainter &p,
-                                   const QString &title,
-                                   const QDate &month1,
-                                   const QDate &month2,
-                                   const QRect &allbox,
-                                   bool expand,
-                                   QColor backColor)
+int CalPrintPluginBase::drawHeader(QPainter &p, const QString &title, QDate month1, QDate month2, QRect allbox, bool expand, QColor backColor)
 {
     // print previous month for month view, print current for to-do, day and week
     int smallMonthWidth = (allbox.width() / 4) - 10;
@@ -627,7 +616,7 @@ int CalPrintPluginBase::drawHeader(QPainter &p,
     return textRect.bottom();
 }
 
-int CalPrintPluginBase::drawFooter(QPainter &p, const QRect &footbox)
+int CalPrintPluginBase::drawFooter(QPainter &p, QRect footbox)
 {
     QFont oldfont(p.font());
     p.setFont(QFont(QStringLiteral("sans-serif"), 6));
@@ -638,7 +627,7 @@ int CalPrintPluginBase::drawFooter(QPainter &p, const QRect &footbox)
     return footbox.bottom();
 }
 
-void CalPrintPluginBase::drawSmallMonth(QPainter &p, const QDate &qd, const QRect &box)
+void CalPrintPluginBase::drawSmallMonth(QPainter &p, QDate qd, QRect box)
 {
     int weekdayCol = weekdayColumn(qd.dayOfWeek());
     int month = qd.month();
@@ -694,7 +683,7 @@ void CalPrintPluginBase::drawSmallMonth(QPainter &p, const QDate &qd, const QRec
  * This routine draws a header box over the main part of the calendar
  * containing the days of the week.
  */
-void CalPrintPluginBase::drawDaysOfWeek(QPainter &p, const QDate &fromDate, const QDate &toDate, const QRect &box)
+void CalPrintPluginBase::drawDaysOfWeek(QPainter &p, const QDate &fromDate, QDate toDate, QRect box)
 {
     double cellWidth = double(box.width()) / double(fromDate.daysTo(toDate) + 1);
     QDate cellDate(fromDate);
@@ -710,12 +699,12 @@ void CalPrintPluginBase::drawDaysOfWeek(QPainter &p, const QDate &fromDate, cons
     }
 }
 
-void CalPrintPluginBase::drawDaysOfWeekBox(QPainter &p, const QDate &qd, const QRect &box)
+void CalPrintPluginBase::drawDaysOfWeekBox(QPainter &p, QDate qd, QRect box)
 {
     drawSubHeaderBox(p, QLocale::system().dayName(qd.dayOfWeek()), box);
 }
 
-void CalPrintPluginBase::drawTimeLine(QPainter &p, const QTime &fromTime, const QTime &toTime, const QRect &box)
+void CalPrintPluginBase::drawTimeLine(QPainter &p, QTime fromTime, QTime toTime, QRect box)
 {
     drawBox(p, BOX_BORDER_WIDTH, box);
 
@@ -786,9 +775,9 @@ void CalPrintPluginBase::drawTimeLine(QPainter &p, const QTime &fromTime, const 
 */
 int CalPrintPluginBase::drawAllDayBox(QPainter &p,
                                       const KCalendarCore::Event::List &eventList_,
-                                      const QDate &qd,
+                                      QDate qd,
                                       bool expandable,
-                                      const QRect &box,
+                                      QRect box,
                                       bool excludeConfidential,
                                       bool excludePrivate)
 {
@@ -2211,7 +2200,7 @@ void CalPrintPluginBase::drawJournal(const KCalendarCore::Journal::Ptr &journal,
     y += 10;
 }
 
-void CalPrintPluginBase::drawSplitHeaderRight(QPainter &p, const QDate &fd, const QDate &td, const QDate &, int width, int height)
+void CalPrintPluginBase::drawSplitHeaderRight(QPainter &p, QDate fd, QDate td, QDate, int width, int height)
 {
     QFont oldFont(p.font());
 
@@ -2262,7 +2251,7 @@ void CalPrintPluginBase::drawSplitHeaderRight(QPainter &p, const QDate &fd, cons
     p.setFont(oldFont);
 }
 
-void CalPrintPluginBase::drawNoteLines(QPainter &p, const QRect &box, int startY)
+void CalPrintPluginBase::drawNoteLines(QPainter &p, QRect box, int startY)
 {
     int lineHeight = int(p.fontMetrics().lineSpacing() * 1.5);
     int linePos = box.y();

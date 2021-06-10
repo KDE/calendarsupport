@@ -49,7 +49,7 @@ public:
      * @param widget parent widget for message boxes
      * Confirmation and "no events to process" dialogs will be shown
      */
-    void runOnce(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget);
+    void runOnce(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QDate limitDate, QWidget *widget);
 
     /**
      * Delete or archive events. This is called regularly, when auto-archiving
@@ -66,14 +66,13 @@ Q_SIGNALS:
     void eventsDeleted();
 
 private:
-    void
-    run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget, bool withGUI, bool errorIfNone);
+    void run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QDate limitDate, QWidget *widget, bool withGUI, bool errorIfNone);
 
-    void deleteIncidences(Akonadi::IncidenceChanger *changer, const QDate &limitDate, QWidget *widget, const Akonadi::Item::List &items, bool withGUI);
+    void deleteIncidences(Akonadi::IncidenceChanger *changer, QDate limitDate, QWidget *widget, const Akonadi::Item::List &items, bool withGUI);
 
     void archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
                            Akonadi::IncidenceChanger *changer,
-                           const QDate &limitDate,
+                           QDate limitDate,
                            QWidget *widget,
                            const KCalendarCore::Incidence::List &incidences,
                            bool withGUI);
@@ -87,7 +86,7 @@ private:
      */
     bool isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
                            const KCalendarCore::Todo::Ptr &todo,
-                           const QDate &limitDate,
+                           QDate limitDate,
                            QStringList checkedUids = QStringList()) const;
 };
 }

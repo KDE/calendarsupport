@@ -57,7 +57,7 @@ public:
      * @param date The initial date of date picker widget.
      * @param parent The parent object.
      */
-    explicit KDatePickerPopup(Modes modes = DatePicker, const QDate &date = QDate::currentDate(), QWidget *parent = nullptr);
+    explicit KDatePickerPopup(Modes modes = DatePicker, QDate date = QDate::currentDate(), QWidget *parent = nullptr);
 
     /**
      * Destroys the date picker popup.
