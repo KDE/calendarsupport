@@ -640,11 +640,13 @@ void CalPrintPluginBase::drawSmallMonth(QPainter &p, QDate qd, QRect box)
     // 3 Pixel after month name, 2 after day names, 1 after the calendar
     double cellHeight = (box.height() - 5) / rownr;
     QFont oldFont(p.font());
-    p.setFont(QFont(QStringLiteral("sans-serif"), int(cellHeight - 2), QFont::Normal));
+    auto newFont = QFont(QStringLiteral("sans-serif"));
+    newFont.setPixelSize(cellHeight);
+    p.setFont(newFont);
 
     // draw the title
     QRect titleBox(box);
-    titleBox.setHeight(int(cellHeight + 1));
+    titleBox.setHeight(p.fontMetrics().height());
     p.drawText(titleBox, Qt::AlignTop | Qt::AlignHCenter, QLocale::system().monthName(month));
 
     // draw days of week
