@@ -118,6 +118,7 @@ protected:
     enum eDayPrintType { Filofax = 0, Timetable, SingleTimetable } mDayPrintType;
     QTime mStartTime, mEndTime;
     bool mIncludeDescription;
+    bool mIncludeCategories;
     bool mSingleLineLimit;
     bool mIncludeTodos;
     bool mIncludeAllEvents;
@@ -178,6 +179,7 @@ protected:
     bool mSingleLineLimit;
     bool mIncludeTodos;
     bool mIncludeDescription;
+    bool mIncludeCategories;
     bool mExcludeTime;
     bool mExcludeConfidential;
     bool mExcludePrivate;
@@ -234,6 +236,7 @@ protected:
     bool mIncludeTodos;
     bool mSingleLineLimit;
     bool mIncludeDescription;
+    bool mIncludeCategories;
     bool mExcludeConfidential;
     bool mExcludePrivate;
 };

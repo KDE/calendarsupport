@@ -353,6 +353,7 @@ public:
                    to include all events if expandable==true
       @param box coordinates of the agenda day box.
       @param includeDescription Whether to print the event description as well.
+      @param includeCategories Whether to print the event categories (tags) as well.
       @param excludeTime Whether the time is printed in the detail area.
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
@@ -366,6 +367,7 @@ public:
                           const QTime &toTime,
                           const QRect &box,
                           bool includeDescription,
+                          bool includeCategories,
                           bool excludeTime,
                           bool excludeConfidential,
                           bool excludePrivate,
@@ -378,6 +380,7 @@ public:
                         float minlen,
                         const QRect &box,
                         bool includeDescription,
+                        bool includeCategories,
                         bool excludeTime);
 
     /**
@@ -396,6 +399,8 @@ public:
       @param singleLineLimit Whether Incidence text wraps or truncates.
       @param showNoteLines Whether note lines are printed.
       @param includeDescription Whether to print the event description as well.
+      @param includeCategories Whether to print the event categories (tags) as well.
+      @param useColors Whether to use  event category colors to draw the events.
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
     */
@@ -410,6 +415,8 @@ public:
                     bool singleLineLimit = true,
                     bool showNoteLines = false,
                     bool includeDescription = false,
+                    bool includeCategories = false,
+                    bool useColors = true,
                     bool excludeDescription = true,
                     bool excludePrivate = true);
 
@@ -426,6 +433,8 @@ public:
       @param singleLineLimit Whether Incidence text wraps or truncates.
       @param showNoteLines Whether note lines are printed.
       @param includeDescription Whether to print the event description as well.
+      @param includeCategories Whether to print the event categories (tags) as well.
+      @param useColors Whether to use  event category colors to draw the events.
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
     */
@@ -437,6 +446,8 @@ public:
                   bool singleLineLimit,
                   bool showNoteLines,
                   bool includeDescription,
+                  bool includeCategories,
+                  bool useColors,
                   bool excludeConfidential,
                   bool excludePrivate);
 
@@ -451,6 +462,8 @@ public:
       @param singleLineLimit Whether Incidence text wraps or truncates.
       @param showNoteLines Whether note lines are printed.
       @param includeDescription Whether to print the event description as well.
+      @param includeCategories Whether to print the event categories (tags) as well.
+      @param useColors Whether to use  event category colors to draw the events.
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
     */
@@ -463,6 +476,8 @@ public:
                   bool singleLineLimit,
                   bool showNoteLines,
                   bool includeDescription,
+                  bool includeCategories,
+                  bool useColors,
                   bool excludeConfidential,
                   bool excludePrivate);
 
@@ -482,6 +497,7 @@ public:
       @param toTime End time of the displayed time range
       @param box coordinates of the time table.
       @param includeDescription Whether to print the event description as well.
+      @param includeCategories Whether to print the event categories (tags) as well.
       @param excludeTime Whether the time is printed in the detail area.
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
@@ -494,6 +510,7 @@ public:
                        const QTime &toTime,
                        const QRect &box,
                        bool includeDescription,
+                       bool includeCategories,
                        bool excludeTime,
                        bool excludeConfidential,
                        bool excludePrivate);
@@ -514,6 +531,8 @@ public:
       @param singleLineLimit Whether Incidence text wraps or truncates.
       @param showNoteLines Whether note lines are printed.
       @param includeDescription Whether descriptions are printed.
+      @param includeCategories Whether to print the event categories (tags) as well.
+      @param useColors Whether to use  event category colors to draw the events.
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
       @param box coordinates of the month.
@@ -528,6 +547,8 @@ public:
                         bool singleLineLimit,
                         bool showNoteLines,
                         bool includeDescription,
+                        bool includeCategories,
+                        bool useColors,
                         bool excludeConfidential,
                         bool excludePrivate,
                         const QRect &box);
@@ -562,31 +583,6 @@ public:
       Internal class representing the start of a todo.
     */
     class TodoParentStart;
-
-    /**
-     * @see drawTodo2().
-     */
-    void drawTodo(int &count,
-                  const KCalendarCore::Todo::Ptr &todo,
-                  QPainter &p,
-                  KCalendarCore::TodoSortField sortField,
-                  KCalendarCore::SortDirection sortDir,
-                  bool connectSubTodos,
-                  bool strikeoutCompleted,
-                  bool desc,
-                  int posPriority,
-                  int posSummary,
-                  int posDueDt,
-                  int posPercentComplete,
-                  int level,
-                  int x,
-                  int &y,
-                  int width,
-                  int pageHeight,
-                  const KCalendarCore::Todo::List &todoList,
-                  TodoParentStart *r,
-                  bool excludeConfidential,
-                  bool excludePrivate);
 
     /**
       Draws single to-do and its (indented) sub-to-dos, optionally connects them
@@ -628,7 +624,7 @@ public:
       @param r Internal (used when printing sub-to-dos to give information
       about its parent)
     */
-    void drawTodo2(int &count,
+    void drawTodo(int &count,
                   const KCalendarCore::Todo::Ptr &todo,
                   QPainter &p,
                   KCalendarCore::TodoSortField sortField,

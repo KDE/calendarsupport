@@ -575,27 +575,6 @@ int CalPrintPluginBase::drawHeader(QPainter &p, const QString &title, QDate mont
 
     drawShadedBox(p, BOX_BORDER_WIDTH, backColor, box);
 
-#if 0
-    // current month title left justified, prev month, next month right justified
-    QRect monthbox2(box.right() - 10 - smallMonthWidth, box.top(),
-                    smallMonthWidth, box.height());
-    if (month2.isValid()) {
-        drawSmallMonth(p, QDate(month2.year(), month2.month(), 1), monthbox2);
-        textRect.setRight(monthbox2.left());
-    }
-    QRect monthbox1(monthbox2.left() - 10 - smallMonthWidth, box.top(),
-                    smallMonthWidth, box.height());
-    if (month1.isValid()) {
-        drawSmallMonth(p, QDate(month1.year(), month1.month(), 1), monthbox1);
-        textRect.setRight(monthbox1.left());
-    }
-
-    // Set the margins
-    p.setFont(newFont);
-    textRect.adjust(5, 0, 0, 0);
-    p.drawText(textRect, Qt::AlignLeft | Qt::AlignVCenter | Qt::TextWordWrap, title);
-    p.setFont(oldFont);
-#endif
     // prev month left, current month centered, next month right
     QRect monthbox2(box.right() - 10 - smallMonthWidth, box.top(), smallMonthWidth, box.height());
     if (month2.isValid()) {
@@ -844,6 +823,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
                                           const QTime &toTime,
                                           const QRect &oldbox,
                                           bool includeDescription,
+                                          bool includeCategories,
                                           bool excludeTime,
                                           bool excludeConfidential,
                                           bool excludePrivate,
@@ -949,7 +929,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
     QListIterator<CellItem *> it2(cells);
     while (it2.hasNext()) {
         auto placeItem = static_cast<PrintCellItem *>(it2.next());
-        drawAgendaItem(placeItem, p, startPrintDate, endPrintDate, minlen, box, includeDescription, excludeTime);
+        drawAgendaItem(placeItem, p, startPrintDate, endPrintDate, minlen, box, includeDescription, includeCategories, excludeTime);
     }
 }
 
@@ -960,6 +940,7 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item,
                                         float minlen,
                                         const QRect &box,
                                         bool includeDescription,
+                                        bool includeCategories,
                                         bool excludeTime)
 {
     KCalendarCore::Event::Ptr event = item->event();
@@ -1003,6 +984,9 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item,
                             cleanStr(event->location()));
             }
         }
+        if (includeCategories && !event->categoriesStr().isEmpty()) {
+                str = i18nc("summary, categories", "%1, %2", str, event->categoriesStr());
+        }
         if (includeDescription && !event->description().isEmpty()) {
             str += QLatin1Char('\n');
             if (event->descriptionIsRich()) {
@@ -1041,6 +1025,8 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
                                     bool singleLineLimit,
                                     bool showNoteLines,
                                     bool includeDescription,
+                                    bool includeCategories,
+                                    bool useColors,
                                     bool excludeConfidential,
                                     bool excludePrivate)
 {
@@ -1116,10 +1102,15 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
             timeText = local.toString(currEvent->dtStart().toLocalTime().time(), QLocale::ShortFormat) + QLatin1Char(' ');
         }
         p.save();
-        setColorsByIncidenceCategory(p, currEvent);
+        if (useColors) {
+            setColorsByIncidenceCategory(p, currEvent);
+        }
         QString summaryStr = currEvent->summary();
         if (!currEvent->location().isEmpty()) {
             summaryStr = i18nc("summary, location", "%1, %2", summaryStr, currEvent->location());
+        }
+        if (includeCategories && !currEvent->categoriesStr().isEmpty()) {
+            summaryStr = i18nc("summary, categories", "%1, %2", summaryStr, currEvent->categoriesStr());
         }
         drawIncidence(p, box, timeText, summaryStr, currEvent->description(), textY, singleLineLimit, includeDescription, currEvent->descriptionIsRich());
         p.restore();
@@ -1242,24 +1233,18 @@ void CalPrintPluginBase::drawIncidence(QPainter &p,
     } else {
         QTextDocument textDoc;
         QTextCursor textCursor(&textDoc);
-        if (richDescription) {
-            QTextCursor textCursor(&textDoc);
-            textCursor.insertText(summaryText);
-            if (includeDescription && !description.isEmpty()) {
-                textCursor.insertText(QStringLiteral("\n"));
+        textCursor.insertText(summaryText);
+        if (includeDescription && !description.isEmpty()) {
+            textCursor.insertText(QStringLiteral("\n"));
+            if (richDescription) {
                 textCursor.insertHtml(description);
-            }
-        } else {
-            textCursor.insertText(summaryText);
-            if (includeDescription && !descText.isEmpty()) {
-                textCursor.insertText(QStringLiteral("\n"));
+            } else {
                 textCursor.insertText(descText);
             }
         }
         textDoc.setPageSize(QSize(summaryBound.width(), summaryBound.height()));
         p.save();
         QRect clipBox(0, 0, summaryBound.width(), summaryBound.height());
-        p.setFont(p.font());
         p.translate(summaryBound.x(), summaryBound.y());
         summaryBound.setHeight(textDoc.documentLayout()->documentSize().height());
         if (summaryBound.bottom() > dayBox.bottom()) {
@@ -1280,7 +1265,13 @@ void CalPrintPluginBase::drawIncidence(QPainter &p,
             p.drawText(timeBound, flags, time);
         }
         p.translate(summaryBound.x(), summaryBound.y());
-        textDoc.drawContents(&p, clipBox);
+
+        QAbstractTextDocumentLayout::PaintContext ctx;
+        ctx.palette.setColor(QPalette::Text, p.pen().color());
+        p.setClipRect(clipBox);
+        ctx.clip = clipBox;
+        textDoc.documentLayout()->draw(&p, ctx);
+
         p.restore();
         boxOverflow = textDoc.pageCount() > 1;
     }
@@ -1316,6 +1307,8 @@ void CalPrintPluginBase::drawWeek(QPainter &p,
                                   bool singleLineLimit,
                                   bool showNoteLines,
                                   bool includeDescription,
+                                  bool includeCategories,
+                                  bool useColors,
                                   bool excludeConfidential,
                                   bool excludePrivate)
 {
@@ -1355,6 +1348,8 @@ void CalPrintPluginBase::drawWeek(QPainter &p,
                    singleLineLimit,
                    showNoteLines,
                    includeDescription,
+                   includeCategories,
+                   useColors,
                    excludeConfidential,
                    excludePrivate);
     } // for i through all weekdays
@@ -1369,6 +1364,8 @@ void CalPrintPluginBase::drawDays(QPainter &p,
                                   bool singleLineLimit,
                                   bool showNoteLines,
                                   bool includeDescription,
+                                  bool includeCategories,
+                                  bool useColors,
                                   bool excludeConfidential,
                                   bool excludePrivate)
 {
@@ -1406,6 +1403,8 @@ void CalPrintPluginBase::drawDays(QPainter &p,
                    singleLineLimit,
                    showNoteLines,
                    includeDescription,
+                   includeCategories,
+                   useColors,
                    excludeConfidential,
                    excludePrivate);
     } // for i through all selected days
@@ -1419,6 +1418,7 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
                                        const QTime &toTime,
                                        const QRect &box,
                                        bool includeDescription,
+                                       bool includeCategories,
                                        bool excludeTime,
                                        bool excludeConfidential,
                                        bool excludePrivate)
@@ -1481,6 +1481,7 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
                          myToTime,
                          dayBox,
                          includeDescription,
+                         includeCategories,
                          excludeTime,
                          excludeConfidential,
                          excludePrivate,
@@ -1737,6 +1738,8 @@ void CalPrintPluginBase::drawMonthTable(QPainter &p,
                                         bool singleLineLimit,
                                         bool showNoteLines,
                                         bool includeDescription,
+                                        bool includeCategories,
+                                        bool useColors,
                                         bool excludeConfidential,
                                         bool excludePrivate,
                                         const QRect &box)
@@ -1807,6 +1810,8 @@ void CalPrintPluginBase::drawMonthTable(QPainter &p,
                        singleLineLimit,
                        showNoteLines,
                        includeDescription,
+                       includeCategories,
+                       useColors,
                        excludeConfidential,
                        excludePrivate);
             if (darkbg) {
@@ -1869,33 +1874,6 @@ void CalPrintPluginBase::drawTodoLines(QPainter &p,
 }
 
 void CalPrintPluginBase::drawTodo(int &count,
-                                  const KCalendarCore::Todo::Ptr &todo,
-                                  QPainter &p,
-                                  KCalendarCore::TodoSortField sortField,
-                                  KCalendarCore::SortDirection sortDir,
-                                  bool connectSubTodos,
-                                  bool strikeoutCompleted,
-                                  bool desc,
-                                  int posPriority,
-                                  int posSummary,
-                                  int posDueDt,
-                                  int posPercentComplete,
-                                  int level,
-                                  int x,
-                                  int &y,
-                                  int width,
-                                  int pageHeight,
-                                  const KCalendarCore::Todo::List &todoList,
-                                  TodoParentStart *r,
-                                  bool excludeConfidential,
-                                  bool excludePrivate)
-{
-    drawTodo2(count, todo, p, sortField, sortDir, connectSubTodos, strikeoutCompleted,
-              desc, posPriority, posSummary, -1, -1, posDueDt, posPercentComplete,
-              level, x, y, width, pageHeight, todoList, r, excludeConfidential, excludePrivate);
-}
-
-void CalPrintPluginBase::drawTodo2(int &count,
                                   const KCalendarCore::Todo::Ptr &todo,
                                   QPainter &p,
                                   KCalendarCore::TodoSortField sortField,
@@ -2105,7 +2083,7 @@ void CalPrintPluginBase::drawTodo2(int &count,
         if (++subcount == sl.size()) {
             startpt.mHasLine = false;
         }
-        drawTodo2(count,
+        drawTodo(count,
                  isl,
                  p,
                  sortField,

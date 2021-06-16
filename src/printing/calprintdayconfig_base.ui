@@ -291,7 +291,7 @@ p, li { white-space: pre-wrap; }
       <string>Include Information</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_4">
-      <item row="1" column="0">
+      <item row="1" column="0" colspan="2">
        <widget class="QCheckBox" name="mIncludeTodos">
         <property name="enabled">
          <bool>false</bool>
@@ -304,7 +304,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="2" column="0" colspan="2">
        <widget class="QCheckBox" name="mExcludeTime">
         <property name="whatsThis">
          <string>Check this option to exclude the time in description box</string>
@@ -323,7 +323,20 @@ p, li { white-space: pre-wrap; }
          <string>Check this option if you want to see the item descriptions printed.</string>
         </property>
         <property name="text">
-         <string>Include &amp;descriptions</string>
+         <string>&amp;Descriptions</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="mIncludeCategories">
+        <property name="toolTip">
+         <string>Print item tags</string>
+        </property>
+        <property name="whatsThis">
+         <string>Check this option if you want to see the item tags printed.</string>
+        </property>
+        <property name="text">
+         <string>Ta&amp;gs</string>
         </property>
        </widget>
       </item>

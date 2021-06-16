@@ -674,6 +674,7 @@ void CalPrintDay::readSettingsWidget()
         mIncludeAllEvents = cfg->mIncludeAllEvents->isChecked();
 
         mIncludeDescription = cfg->mIncludeDescription->isChecked();
+        mIncludeCategories = cfg->mIncludeCategories->isChecked();
         mSingleLineLimit = cfg->mSingleLineLimit->isChecked();
         mIncludeTodos = cfg->mIncludeTodos->isChecked();
         mUseColors = cfg->mColors->isChecked();
@@ -701,6 +702,7 @@ void CalPrintDay::setSettingsWidget()
         cfg->mIncludeAllEvents->setChecked(mIncludeAllEvents);
 
         cfg->mIncludeDescription->setChecked(mIncludeDescription);
+        cfg->mIncludeCategories->setChecked(mIncludeCategories);
         cfg->mSingleLineLimit->setChecked(mSingleLineLimit);
         cfg->mIncludeTodos->setChecked(mIncludeTodos);
         cfg->mColors->setChecked(mUseColors);
@@ -723,6 +725,7 @@ void CalPrintDay::loadConfig()
         mStartTime = grp.readEntry("Start time", startTm).time();
         mEndTime = grp.readEntry("End time", endTm).time();
         mIncludeDescription = grp.readEntry("Include description", false);
+        mIncludeCategories = grp.readEntry("Include categories", false);
         mIncludeTodos = grp.readEntry("Include todos", false);
         mIncludeAllEvents = grp.readEntry("Include all events", false);
         mDayPrintType = static_cast<eDayPrintType>(grp.readEntry("Print type", static_cast<int>(Timetable)));
@@ -746,6 +749,7 @@ void CalPrintDay::saveConfig()
         dt.setTime(mEndTime);
         grp.writeEntry("End time", dt);
         grp.writeEntry("Include description", mIncludeDescription);
+        grp.writeEntry("Include categories", mIncludeCategories);
         grp.writeEntry("Include todos", mIncludeTodos);
         grp.writeEntry("Include all events", mIncludeAllEvents);
         grp.writeEntry("Print type", int(mDayPrintType));
@@ -802,6 +806,8 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                      mSingleLineLimit,
                      mShowNoteLines,
                      mIncludeDescription,
+                     mIncludeCategories,
+                     mUseColors,
                      mExcludeConfidential,
                      mExcludePrivate);
         } else if (mDayPrintType == SingleTimetable) {
@@ -813,6 +819,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                           mEndTime,
                           daysBox,
                           mIncludeDescription,
+                          mIncludeCategories,
                           mExcludeTime,
                           mExcludeConfidential,
                           mExcludePrivate);
@@ -889,6 +896,9 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                     } else {
                         str = i18nc("summary, location", "%1, %2", cleanString(event->summary()), cleanString(event->location()));
                     }
+                    if (mIncludeCategories && !event->categoriesStr().isEmpty()) {
+                            str = i18nc("summary, categories", "%1, %2", str, cleanString(event->categoriesStr()));
+                    }
                     printEventString(p, eventBox, str);
                     eventBox.setTop(eventBox.bottom());
                     eventBox.setBottom(eventBox.top() + lineSpacing);
@@ -909,6 +919,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                              curEndTime,
                              dayBox,
                              mIncludeDescription,
+                             mIncludeCategories,
                              mExcludeTime,
                              mExcludeConfidential,
                              mExcludePrivate,
@@ -975,6 +986,7 @@ void CalPrintWeek::readSettingsWidget()
         mUseColors = cfg->mColors->isChecked();
         mPrintFooter = cfg->mPrintFooter->isChecked();
         mIncludeDescription = cfg->mIncludeDescription->isChecked();
+        mIncludeCategories = cfg->mIncludeCategories->isChecked();
         mExcludeTime = cfg->mExcludeTime->isChecked();
         mExcludeConfidential = cfg->mExcludeConfidential->isChecked();
         mExcludePrivate = cfg->mExcludePrivate->isChecked();
@@ -1001,6 +1013,7 @@ void CalPrintWeek::setSettingsWidget()
         cfg->mColors->setChecked(mUseColors);
         cfg->mPrintFooter->setChecked(mPrintFooter);
         cfg->mIncludeDescription->setChecked(mIncludeDescription);
+        cfg->mIncludeCategories->setChecked(mIncludeCategories);
         cfg->mExcludeTime->setChecked(mExcludeTime);
         cfg->mExcludeConfidential->setChecked(mExcludeConfidential);
         cfg->mExcludePrivate->setChecked(mExcludePrivate);
@@ -1022,6 +1035,7 @@ void CalPrintWeek::loadConfig()
         mIncludeTodos = grp.readEntry("Include todos", false);
         mWeekPrintType = (eWeekPrintType)(grp.readEntry("Print type", (int)Filofax));
         mIncludeDescription = grp.readEntry("Include Description", false);
+        mIncludeCategories = grp.readEntry("Include categories", false);
         mExcludeTime = grp.readEntry("Exclude Time", false);
         mExcludeConfidential = grp.readEntry("Exclude confidential", true);
         mExcludePrivate = grp.readEntry("Exclude private", true);
@@ -1044,6 +1058,7 @@ void CalPrintWeek::saveConfig()
         grp.writeEntry("Include todos", mIncludeTodos);
         grp.writeEntry("Print type", int(mWeekPrintType));
         grp.writeEntry("Include Description", mIncludeDescription);
+        grp.writeEntry("Include categories", mIncludeCategories);
         grp.writeEntry("Exclude Time", mExcludeTime);
         grp.writeEntry("Exclude confidential", mExcludeConfidential);
         grp.writeEntry("Exclude private", mExcludePrivate);
@@ -1105,7 +1120,8 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             }
             drawHeader(p, title, curWeek.addDays(-6), QDate(), headerBox);
 
-            drawWeek(p, curWeek, mStartTime, mEndTime, weekBox, mSingleLineLimit, mShowNoteLines, mIncludeDescription, mExcludeConfidential, mExcludePrivate);
+            drawWeek(p, curWeek, mStartTime, mEndTime, weekBox, mSingleLineLimit, mShowNoteLines,
+                      mIncludeDescription, mIncludeCategories, mUseColors, mExcludeConfidential, mExcludePrivate);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1130,7 +1146,8 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             }
             drawHeader(p, title, curWeek, QDate(), headerBox);
 
-            drawTimeTable(p, fromWeek, curWeek, false, mStartTime, mEndTime, weekBox, mIncludeDescription, mExcludeTime, mExcludeConfidential, mExcludePrivate);
+            drawTimeTable(p, fromWeek, curWeek, false, mStartTime, mEndTime, weekBox, mIncludeDescription,
+                           mIncludeCategories, mExcludeTime, mExcludeConfidential, mExcludePrivate);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1155,7 +1172,8 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             int hh = headerHeight();
 
             drawSplitHeaderRight(p, fromWeek, curWeek, QDate(), width, hh);
-            drawTimeTable(p, fromWeek, endLeft, false, mStartTime, mEndTime, weekBox, mIncludeDescription, mExcludeTime, mExcludeConfidential, mExcludePrivate);
+            drawTimeTable(p, fromWeek, endLeft, false, mStartTime, mEndTime, weekBox, mIncludeDescription,
+                           mIncludeCategories, mExcludeTime, mExcludeConfidential, mExcludePrivate);
             if (mPrintFooter) {
                 drawFooter(p, weekBox1);
             }
@@ -1169,6 +1187,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
                           mEndTime,
                           weekBox1,
                           mIncludeDescription,
+                          mIncludeCategories,
                           mExcludeTime,
                           mExcludeConfidential,
                           mExcludePrivate);
@@ -1223,6 +1242,7 @@ void CalPrintMonth::readSettingsWidget()
         mUseColors = cfg->mColors->isChecked();
         mPrintFooter = cfg->mPrintFooter->isChecked();
         mIncludeDescription = cfg->mIncludeDescription->isChecked();
+        mIncludeCategories = cfg->mIncludeCategories->isChecked();
         mExcludeConfidential = cfg->mExcludeConfidential->isChecked();
         mExcludePrivate = cfg->mExcludePrivate->isChecked();
     }
@@ -1244,6 +1264,7 @@ void CalPrintMonth::setSettingsWidget()
         cfg->mColors->setChecked(mUseColors);
         cfg->mPrintFooter->setChecked(mPrintFooter);
         cfg->mIncludeDescription->setChecked(mIncludeDescription);
+        cfg->mIncludeCategories->setChecked(mIncludeCategories);
         cfg->mExcludeConfidential->setChecked(mExcludeConfidential);
         cfg->mExcludePrivate->setChecked(mExcludePrivate);
     }
@@ -1260,6 +1281,7 @@ void CalPrintMonth::loadConfig()
         mSingleLineLimit = grp.readEntry("Single line limit", false);
         mShowNoteLines = grp.readEntry("Note Lines", false);
         mIncludeDescription = grp.readEntry("Include description", false);
+        mIncludeCategories = grp.readEntry("Include categories", false);
         mExcludeConfidential = grp.readEntry("Exclude confidential", true);
         mExcludePrivate = grp.readEntry("Exclude private", true);
     }
@@ -1278,6 +1300,7 @@ void CalPrintMonth::saveConfig()
         grp.writeEntry("Single line limit", mSingleLineLimit);
         grp.writeEntry("Note Lines", mShowNoteLines);
         grp.writeEntry("Include description", mIncludeDescription);
+        grp.writeEntry("Include categories", mIncludeCategories);
         grp.writeEntry("Exclude confidential", mExcludeConfidential);
         grp.writeEntry("Exclude private", mExcludePrivate);
     }
@@ -1336,6 +1359,8 @@ void CalPrintMonth::print(QPainter &p, int width, int height)
                        mSingleLineLimit,
                        mShowNoteLines,
                        mIncludeDescription,
+                       mIncludeCategories,
+                       mUseColors,
                        mExcludeConfidential,
                        mExcludePrivate,
                        monthBox);
@@ -1647,7 +1672,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
         // Skip sub-to-dos. They will be printed recursively in drawTodo()
         if (todo->relatedTo().isEmpty()) { // review(AKONADI_PORT)
             count++;
-            drawTodo2(count,
+            drawTodo(count,
                      todo,
                      p,
                      sortField,
