@@ -292,6 +292,7 @@ protected:
         TodoFieldDueDate,
         TodoFieldPriority,
         TodoFieldPercentComplete,
+        TodoFieldCategories,
         TodoFieldUnset
     } mTodoSortField;
 

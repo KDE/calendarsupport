@@ -1465,6 +1465,7 @@ void CalPrintTodos::setSettingsWidget()
             cfg->mSortField->addItem(i18nc("@option sort by due date/time", "Due Date"));
             cfg->mSortField->addItem(i18nc("@option sort by priority", "Priority"));
             cfg->mSortField->addItem(i18nc("@option sort by percent completed", "Percent Complete"));
+            cfg->mSortField->addItem(i18nc("@option sort by tags", "Tags"));
             cfg->mSortField->setCurrentIndex(mTodoSortField);
         }
 
@@ -1628,6 +1629,9 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
         break;
     case TodoFieldPercentComplete:
         sortField = KCalendarCore::TodoSortPercentComplete;
+        break;
+    case TodoFieldCategories:
+        sortField = KCalendarCore::TodoSortCategories;
         break;
     case TodoFieldUnset:
         break;
