@@ -2216,7 +2216,7 @@ void CalPrintPluginBase::drawSplitHeaderRight(QPainter &p, const QDate &fd, cons
     }
 
     title += QString::number(fd.year());
-    p.drawText(0, lineSpacing, width, lineSpacing, Qt::AlignRight | Qt::AlignTop, title);
+    p.drawText(0, lineSpacing + padding(), width, lineSpacing, Qt::AlignRight | Qt::AlignTop, title);
 
     p.setFont(oldFont);
 }

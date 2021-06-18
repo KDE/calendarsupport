@@ -1162,7 +1162,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             drawSplitHeaderRight(p, fromWeek, curWeek, QDate(), width, hh);
             drawTimeTable(p, fromWeek, endLeft, false, mStartTime, mEndTime, weekBox, mIncludeDescription, mExcludeTime, mExcludeConfidential, mExcludePrivate);
             if (mPrintFooter) {
-                drawFooter(p, weekBox1);
+                drawFooter(p, footerBox);
             }
             mPrinter->newPage();
             drawSplitHeaderRight(p, fromWeek, curWeek, QDate(), width, hh);
