@@ -531,7 +531,11 @@ int CalPrintPluginBase::drawBoxWithCaption(QPainter &p,
             p.save();
             p.translate(textBox.x() - borderWidth, textBox.y());
             QRect clipBox(0, 0, box.width(), boxHeight);
-            rtb.drawContents(&p, clipBox);
+            QAbstractTextDocumentLayout::PaintContext ctx;
+            ctx.palette.setColor(QPalette::Text, p.pen().color());
+            p.setClipRect(clipBox);
+            ctx.clip = clipBox;
+            rtb.documentLayout()->draw(&p, ctx);
             p.restore();
             textBox.setBottom(textBox.y() + rtb.documentLayout()->documentSize().height());
         }
@@ -575,6 +579,9 @@ int CalPrintPluginBase::drawHeader(QPainter &p, const QString &title, QDate mont
 
     drawShadedBox(p, BOX_BORDER_WIDTH, backColor, box);
 
+    const auto oldPen {p.pen()};
+    p.setPen(getTextColor(backColor));
+
     // prev month left, current month centered, next month right
     QRect monthbox2(box.right() - 10 - smallMonthWidth, box.top(), smallMonthWidth, box.height());
     if (month2.isValid()) {
@@ -590,6 +597,8 @@ int CalPrintPluginBase::drawHeader(QPainter &p, const QString &title, QDate mont
     // Set the margins
     p.setFont(newFont);
     p.drawText(textRect, Qt::AlignCenter | Qt::AlignVCenter | Qt::TextWordWrap, title);
+
+    p.setPen(oldPen);
     p.setFont(oldFont);
 
     return textRect.bottom();

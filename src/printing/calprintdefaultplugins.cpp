@@ -190,7 +190,7 @@ protected:
 int CalPrintIncidence::printCaptionAndText(QPainter &p, QRect box, const QString &caption, const QString &text, const QFont &captionFont, const QFont &textFont)
 {
     QFontMetrics captionFM(captionFont);
-    int textWd = captionFM.boundingRect(caption).width();
+    int textWd = captionFM.horizontalAdvance(caption);
     QRect textRect(box);
 
     QFont oldFont(p.font());
@@ -260,7 +260,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
         QRect box(0, 0, width, height);
         QRect titleBox(box);
         titleBox.setHeight(headerHeight());
-        QColor headerColor = categoryBgColor(*it);
+        QColor headerColor = mUseColors ? categoryBgColor(*it) : QColor();
         // Draw summary as header, no small calendars in title bar, expand height if needed
         int titleBottom = drawHeader(p, (*it)->summary(), QDate(), QDate(), titleBox, true, headerColor);
         titleBox.setBottom(titleBottom);
@@ -455,7 +455,9 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                                                        /*expand=*/false,
                                                        captionFont,
                                                        textFont);
-                drawNoteLines(p, notesBox, notesPosition);
+                if (mShowNoteLines) {
+                    drawNoteLines(p, notesBox, notesPosition);
+                }
             } else {
                 QString subitemCaption;
                 if (relations.isEmpty()) {
