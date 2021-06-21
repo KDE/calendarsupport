@@ -771,7 +771,6 @@ int CalPrintPluginBase::drawAllDayBox(QPainter &p,
                                       bool excludeConfidential,
                                       bool excludePrivate)
 {
-    KCalendarCore::Event::List::Iterator it;
     int offset = box.top();
     QString multiDayStr;
 
@@ -781,15 +780,13 @@ int CalPrintPluginBase::drawAllDayBox(QPainter &p,
         eventList.prepend(hd);
     }
 
-    it = eventList.begin();
-    while (it != eventList.end()) {
-        KCalendarCore::Event::Ptr currEvent = *it;
-        if ((excludeConfidential && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+    for (const KCalendarCore::Event::Ptr &currEvent : qAsConst(eventList)) {
+        if (!currEvent
+            || (excludeConfidential && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
             || (excludePrivate && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
         }
-        if (currEvent && currEvent->allDay()) {
-            // set the colors according to the categories
+        if (currEvent->allDay()) {
             if (expandable) {
                 QRect eventBox(box);
                 eventBox.setTop(offset);
@@ -801,9 +798,6 @@ int CalPrintPluginBase::drawAllDayBox(QPainter &p,
                 }
                 multiDayStr += currEvent->summary();
             }
-            it = eventList.erase(it);
-        } else {
-            ++it;
         }
     }
 
@@ -863,7 +857,8 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
         // Adapt start/end times to include complete events
         for (const KCalendarCore::Event::Ptr &event : qAsConst(events)) {
             Q_ASSERT(event);
-            if ((excludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+            if (!event
+                || (excludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
                 || (excludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
                 continue;
             }
@@ -919,6 +914,11 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
     QList<CellItem *> cells;
 
     for (const KCalendarCore::Event::Ptr &event : qAsConst(events)) {
+        if (!event
+            || (excludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+            || (excludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
+            continue;
+        }
         if (event->allDay()) {
             continue;
         }

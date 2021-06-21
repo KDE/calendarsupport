@@ -852,6 +852,11 @@ void CalPrintDay::print(QPainter &p, int width, int height)
             // split out the all day events as they will be printed in a separate box
             KCalendarCore::Event::List alldayEvents, timedEvents;
             for (const KCalendarCore::Event::Ptr &event : qAsConst(eventList)) {
+                if (!event
+                    || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+                    || (mExcludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
+                    continue;
+                }
                 if (event->allDay()) {
                     alldayEvents.append(event);
                 } else {
