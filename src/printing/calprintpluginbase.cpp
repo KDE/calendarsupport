@@ -794,7 +794,6 @@ int CalPrintPluginBase::drawAllDayBox(QPainter &p,
                                       bool excludeConfidential,
                                       bool excludePrivate)
 {
-    KCalendarCore::Event::List::Iterator it;
     int offset = box.top();
     QString multiDayStr;
 
@@ -804,15 +803,13 @@ int CalPrintPluginBase::drawAllDayBox(QPainter &p,
         eventList.prepend(hd);
     }
 
-    it = eventList.begin();
-    while (it != eventList.end()) {
-        KCalendarCore::Event::Ptr currEvent = *it;
-        if ((excludeConfidential && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+    for (const KCalendarCore::Event::Ptr &currEvent : qAsConst(eventList)) {
+        if (!currEvent
+            || (excludeConfidential && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
             || (excludePrivate && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
         }
-        if (currEvent && currEvent->allDay()) {
-            // set the colors according to the categories
+        if (currEvent->allDay()) {
             if (expandable) {
                 QRect eventBox(box);
                 eventBox.setTop(offset);
@@ -824,9 +821,6 @@ int CalPrintPluginBase::drawAllDayBox(QPainter &p,
                 }
                 multiDayStr += currEvent->summary();
             }
-            it = eventList.erase(it);
-        } else {
-            ++it;
         }
     }
 
