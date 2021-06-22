@@ -24,10 +24,13 @@ void CalPrintYear::readSettingsWidget()
 {
     auto cfg = dynamic_cast<CalPrintYearConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
+        mPrintFooter = cfg->mPrintFooter->isChecked();
         mYear = cfg->mYear->value();
         mPages = cfg->mPages->currentText().toInt();
         mSubDaysEvents = (cfg->mSubDays->currentIndex() == 0) ? Text : TimeBoxes;
         mHolidaysEvents = (cfg->mHolidays->currentIndex() == 0) ? Text : TimeBoxes;
+        mExcludeConfidential = cfg->mExcludeConfidential->isChecked();
+        mExcludePrivate = cfg->mExcludePrivate->isChecked();
     }
 }
 
@@ -46,11 +49,14 @@ void CalPrintYear::setSettingsWidget()
             }
         }
 
+        cfg->mPrintFooter->setChecked(mPrintFooter);
         cfg->mYear->setValue(mYear);
         cfg->mPages->setCurrentIndex(cfg->mPages->findData(mPages));
 
         cfg->mSubDays->setCurrentIndex((mSubDaysEvents == Text) ? 0 : 1);
         cfg->mHolidays->setCurrentIndex((mHolidaysEvents == Text) ? 0 : 1);
+        cfg->mExcludeConfidential->setChecked(mExcludeConfidential);
+        cfg->mExcludePrivate->setChecked(mExcludePrivate);
     }
 }
 
@@ -62,6 +68,8 @@ void CalPrintYear::loadConfig()
         mPages = config.readEntry("Pages", 1);
         mSubDaysEvents = config.readEntry("ShowSubDayEventsAs", static_cast<int>(TimeBoxes));
         mHolidaysEvents = config.readEntry("ShowHolidaysAs", static_cast<int>(Text));
+        mExcludeConfidential = config.readEntry("Exclude confidential", true);
+        mExcludePrivate = config.readEntry("Exclude private", true);
     }
     setSettingsWidget();
 }
@@ -78,6 +86,8 @@ void CalPrintYear::saveConfig()
         config.writeEntry("Pages", mPages);
         config.writeEntry("ShowSubDayEventsAs", mSubDaysEvents);
         config.writeEntry("ShowHolidaysAs", mHolidaysEvents);
+        config.writeEntry("Exclude confidential", mExcludeConfidential);
+        config.writeEntry("Exclude private", mExcludePrivate);
     }
 }
 
@@ -151,7 +161,8 @@ void CalPrintYear::print(QPainter &p, int width, int height)
             int xstart = static_cast<int>(j * monthwidth + 0.5);
             int xend = static_cast<int>((j + 1) * monthwidth + 0.5);
             QRect monthBox(xstart, monthesBox.top(), xend - xstart, monthesBox.height());
-            drawMonth(p, temp, monthBox, maxdays, mSubDaysEvents, mHolidaysEvents);
+            drawMonth(p, temp, monthBox, maxdays, mSubDaysEvents, mHolidaysEvents,
+                      mExcludeConfidential, mExcludePrivate);
 
             temp = temp.addMonths(1);
         }

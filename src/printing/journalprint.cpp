@@ -24,6 +24,7 @@ void CalPrintJournal::readSettingsWidget()
 {
     auto cfg = dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
+        mPrintFooter = cfg->mPrintFooter->isChecked();
         mFromDate = cfg->mFromDate->date();
         mToDate = cfg->mToDate->date();
         mUseDateRange = cfg->mRangeJournals->isChecked();
@@ -34,6 +35,7 @@ void CalPrintJournal::setSettingsWidget()
 {
     auto cfg = dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
+        cfg->mPrintFooter->setChecked(mPrintFooter);
         cfg->mFromDate->setDate(mFromDate);
         cfg->mToDate->setDate(mToDate);
 
@@ -109,5 +111,7 @@ void CalPrintJournal::print(QPainter &p, int width, int height)
         drawJournal(j, p, x, y, width, height);
     }
 
-    drawFooter(p, footerBox);
+    if (mPrintFooter) {
+        drawFooter(p, footerBox);
+    }
 }
