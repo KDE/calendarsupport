@@ -27,12 +27,6 @@
 
 using namespace CalendarSupport;
 
-static QString cleanString(const QString &instr)
-{
-    QString ret = instr;
-    return ret.replace(QLatin1Char('\n'), QLatin1Char(' '));
-}
-
 /**************************************************************
  *           Print Incidence
  **************************************************************/
@@ -780,15 +774,15 @@ void CalPrintDay::print(QPainter &p, int width, int height)
     QRect headerBox(0, 0, width, headerHeight());
     QRect footerBox(0, height - footerHeight(), width, footerHeight());
     height -= footerHeight();
+    QRect daysBox(headerBox);
+    daysBox.setTop(headerBox.bottom() + padding());
+    daysBox.setBottom(height);
 
     auto local = QLocale::system();
 
     switch (mDayPrintType) {
     case Filofax:
     case SingleTimetable: {
-        QRect daysBox(headerBox);
-        daysBox.setTop(headerBox.bottom() + padding());
-        daysBox.setBottom(height);
         QString line1 = local.toString(mFromDate, QLocale::ShortFormat);
         QString line2 = local.toString(mToDate, QLocale::ShortFormat);
         QString title;
@@ -846,97 +840,18 @@ void CalPrintDay::print(QPainter &p, int width, int height)
             }
 
             drawHeader(p, local.toString(curDay, QLocale::ShortFormat), curDay, QDate(), headerBox);
-            KCalendarCore::Event::List eventList =
-                mCalendar->events(curDay, QTimeZone::systemTimeZone(), KCalendarCore::EventSortStartDate, KCalendarCore::SortDirectionAscending);
-
-            // split out the all day events as they will be printed in a separate box
-            KCalendarCore::Event::List alldayEvents, timedEvents;
-            for (const KCalendarCore::Event::Ptr &event : qAsConst(eventList)) {
-                if (!event
-                    || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
-                    || (mExcludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
-                    continue;
-                }
-                if (event->allDay()) {
-                    alldayEvents.append(event);
-                } else {
-                    timedEvents.append(event);
-                }
-            }
-
-            int fontSize = 11;
-            QFont textFont(QStringLiteral("sans-serif"), fontSize, QFont::Normal);
-            p.setFont(textFont);
-            int lineSpacing = p.fontMetrics().lineSpacing();
-
-            int maxAllDayEvents = 8; // the max we allow to be printed, sorry.
-            int allDayHeight = qMin(alldayEvents.count(), maxAllDayEvents) * lineSpacing;
-            allDayHeight = qMax(allDayHeight, (5 * lineSpacing)) + (2 * padding());
-            QRect allDayBox(TIMELINE_WIDTH + padding(), headerBox.bottom() + padding(), width - TIMELINE_WIDTH - padding(), allDayHeight);
-            if (!alldayEvents.isEmpty()) {
-                // draw the side bar for all-day events
-                QFont oldFont(p.font());
-                p.setFont(QFont(QStringLiteral("sans-serif"), 9, QFont::Normal));
-                drawVerticalBox(p,
-                                BOX_BORDER_WIDTH,
-                                QRect(0, headerBox.bottom() + padding(), TIMELINE_WIDTH, allDayHeight),
-                                i18n("Today's Events"),
-                                Qt::AlignHCenter | Qt::AlignVCenter | Qt::TextWordWrap);
-                p.setFont(oldFont);
-
-                // now draw at most maxAllDayEvents in the all-day box
-                drawBox(p, BOX_BORDER_WIDTH, allDayBox);
-
-                QRect eventBox(allDayBox);
-                eventBox.setLeft(TIMELINE_WIDTH + (2 * padding()));
-                eventBox.setTop(eventBox.top() + padding());
-                eventBox.setBottom(eventBox.top() + lineSpacing);
-                int count = 0;
-                for (const KCalendarCore::Event::Ptr &event : qAsConst(alldayEvents)) {
-                    if (count == maxAllDayEvents) {
-                        break;
-                    }
-                    count++;
-                    QString str;
-                    if (event->location().isEmpty()) {
-                        str = cleanString(event->summary());
-                    } else {
-                        str = i18nc("summary, location", "%1, %2", cleanString(event->summary()), cleanString(event->location()));
-                    }
-                    if (mIncludeCategories && !event->categoriesStr().isEmpty()) {
-                            str = i18nc("summary, categories", "%1, %2", str, cleanString(event->categoriesStr()));
-                    }
-                    printEventString(p, eventBox, str);
-                    eventBox.setTop(eventBox.bottom());
-                    eventBox.setBottom(eventBox.top() + lineSpacing);
-                }
-            } else {
-                allDayBox.setBottom(headerBox.bottom());
-            }
-
-            QRect dayBox(allDayBox);
-            dayBox.setTop(allDayBox.bottom() + padding());
-            dayBox.setBottom(height);
-            QList<QDate> workDays = CalendarSupport::workDays(curDay, curDay);
-            drawAgendaDayBox(p,
-                             timedEvents,
-                             curDay,
-                             mIncludeAllEvents,
-                             curStartTime,
-                             curEndTime,
-                             dayBox,
-                             mIncludeDescription,
-                             mIncludeCategories,
-                             mExcludeTime,
-                             mExcludeConfidential,
-                             mExcludePrivate,
-                             workDays);
-
-            QRect tlBox(dayBox);
-            tlBox.setLeft(0);
-            tlBox.setWidth(TIMELINE_WIDTH);
-            drawTimeLine(p, curStartTime, curEndTime, tlBox);
-
+            drawTimeTable(p,
+                          curDay,
+                          curDay,
+                          mIncludeAllEvents,
+                          mStartTime,
+                          mEndTime,
+                          daysBox,
+                          mIncludeDescription,
+                          mIncludeCategories,
+                          mExcludeTime,
+                          mExcludeConfidential,
+                          mExcludePrivate);
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
             }

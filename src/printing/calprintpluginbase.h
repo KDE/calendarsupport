@@ -306,31 +306,25 @@ public:
 
     /**
       Draw the all-day box for the agenda print view (the box on top which
-      doesn't have a time on the time scale associated). If expandable is set,
-      height is the cell height of a single cell, and the returned height will
-      be the total height used for the all-day events. If !expandable, only one
-      cell will be used, and multiple events are concatenated using ", ".
+      doesn't have a time on the time scale associated).
       @param p QPainter of the printout
       @param eventList The list of all-day events that are supposed to be printed
              inside this box
       @param qd The date of the currently printed day
-      @param expandable If true, height is the height of one single cell, the printout
-             will use as many cells as events in the list and return the total height
-             needed for all of them. If false, height specifies the total height
-             allowed for all events, and the events are displayed in one cell,
-             with their summaries concatenated by ", ".
       @param box coordinates of the all day box.
+      @param includeCategories Whether to print the event categories (tags) as well.
       @param excludeConfidential Whether to exclude Incidence marked confidential.
       @param excludePrivate Whether to exclude Incidence marked private.
-      @return The height used for the all-day box.
+      @param workDays List of workDays
     */
-    int drawAllDayBox(QPainter &p,
+    void drawAllDayBox(QPainter &p,
                       const KCalendarCore::Event::List &eventList,
                       QDate qd,
-                      bool expandable,
                       QRect box,
+                      bool includeCategories,
                       bool excludeConfidential,
-                      bool excludePrivate);
+                      bool excludePrivate,
+                      const QList<QDate> &workDays);
 
     /**
       Draw the agenda box for the day print style (the box showing all events of that day).
