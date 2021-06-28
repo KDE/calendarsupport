@@ -213,6 +213,16 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
+      <item row="2" column="0" colspan="5">
+       <widget class="QCheckBox" name="mIncludeAllEvents">
+        <property name="whatsThis">
+         <string>Check this option to automatically determine the required time range, so all events will be shown.</string>
+        </property>
+        <property name="text">
+         <string>E&amp;xtend time range to include all events</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </widget>
    </item>
@@ -448,6 +458,7 @@ p, li { white-space: pre-wrap; }
   <tabstop>mFromTime</tabstop>
   <tabstop>mToDate</tabstop>
   <tabstop>mToTime</tabstop>
+  <tabstop>mIncludeAllEvents</tabstop>
   <tabstop>mPrintTypeFilofax</tabstop>
   <tabstop>mPrintTypeTimetable</tabstop>
   <tabstop>mPrintTypeSplitWeek</tabstop>

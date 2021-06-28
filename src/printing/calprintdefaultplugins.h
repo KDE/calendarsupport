@@ -180,6 +180,7 @@ protected:
     bool mIncludeTodos;
     bool mIncludeDescription;
     bool mIncludeCategories;
+    bool mIncludeAllEvents;
     bool mExcludeTime;
     bool mExcludeConfidential;
     bool mExcludePrivate;

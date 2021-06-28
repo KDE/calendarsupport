@@ -901,6 +901,7 @@ void CalPrintWeek::readSettingsWidget()
 
         mStartTime = cfg->mFromTime->time();
         mEndTime = cfg->mToTime->time();
+        mIncludeAllEvents = cfg->mIncludeAllEvents->isChecked();
 
         mShowNoteLines = cfg->mShowNoteLines->isChecked();
         mSingleLineLimit = cfg->mSingleLineLimit->isChecked();
@@ -928,6 +929,7 @@ void CalPrintWeek::setSettingsWidget()
 
         cfg->mFromTime->setTime(mStartTime);
         cfg->mToTime->setTime(mEndTime);
+        cfg->mIncludeAllEvents->setChecked(mIncludeAllEvents);
 
         cfg->mShowNoteLines->setChecked(mShowNoteLines);
         cfg->mSingleLineLimit->setChecked(mSingleLineLimit);
@@ -955,6 +957,7 @@ void CalPrintWeek::loadConfig()
         mShowNoteLines = grp.readEntry("Note Lines", false);
         mSingleLineLimit = grp.readEntry("Single line limit", false);
         mIncludeTodos = grp.readEntry("Include todos", false);
+        mIncludeAllEvents = grp.readEntry("Include all events", false);
         mWeekPrintType = (eWeekPrintType)(grp.readEntry("Print type", (int)Filofax));
         mIncludeDescription = grp.readEntry("Include Description", false);
         mIncludeCategories = grp.readEntry("Include categories", false);
@@ -978,6 +981,7 @@ void CalPrintWeek::saveConfig()
         grp.writeEntry("Note Lines", mShowNoteLines);
         grp.writeEntry("Single line limit", mSingleLineLimit);
         grp.writeEntry("Include todos", mIncludeTodos);
+        grp.writeEntry("Include all events", mIncludeAllEvents);
         grp.writeEntry("Print type", int(mWeekPrintType));
         grp.writeEntry("Include Description", mIncludeDescription);
         grp.writeEntry("Include categories", mIncludeCategories);
@@ -1068,7 +1072,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             }
             drawHeader(p, title, curWeek, QDate(), headerBox);
 
-            drawTimeTable(p, fromWeek, curWeek, false, mStartTime, mEndTime, weekBox, mIncludeDescription,
+            drawTimeTable(p, fromWeek, curWeek, mIncludeAllEvents, mStartTime, mEndTime, weekBox, mIncludeDescription,
                            mIncludeCategories, mExcludeTime, mExcludeConfidential, mExcludePrivate);
 
             if (mPrintFooter) {
@@ -1094,7 +1098,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             int hh = headerHeight();
 
             drawSplitHeaderRight(p, fromWeek, curWeek, QDate(), width, hh);
-            drawTimeTable(p, fromWeek, endLeft, false, mStartTime, mEndTime, weekBox, mIncludeDescription,
+            drawTimeTable(p, fromWeek, endLeft, mIncludeAllEvents, mStartTime, mEndTime, weekBox, mIncludeDescription,
                            mIncludeCategories, mExcludeTime, mExcludeConfidential, mExcludePrivate);
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1104,7 +1108,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             drawTimeTable(p,
                           endLeft.addDays(1),
                           curWeek,
-                          false,
+                          mIncludeAllEvents,
                           mStartTime,
                           mEndTime,
                           weekBox1,
