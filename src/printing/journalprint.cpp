@@ -88,7 +88,7 @@ void CalPrintJournal::setDateRange(const QDate &from, const QDate &to)
 void CalPrintJournal::print(QPainter &p, int width, int height)
 {
     int x = 0, y = 0;
-    KCalendarCore::Journal::List journals(mCalendar->journals());
+    KCalendarCore::Journal::List journals(mCalendar->journals(KCalendarCore::JournalSortDate, KCalendarCore::SortDirectionAscending));
     if (mUseDateRange) {
         const KCalendarCore::Journal::List allJournals = journals;
         journals.clear();
