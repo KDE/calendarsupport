@@ -4,28 +4,11 @@
  <comment>Configuration page for the print todo mode.</comment>
  <class>CalPrintTodoConfig_Base</class>
  <widget class="QWidget" name="CalPrintTodoConfig_Base">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>648</width>
-    <height>566</height>
-   </rect>
-  </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
+  <layout class="QVBoxLayout">
    <property name="rightMargin">
     <number>0</number>
    </property>
-   <property name="bottomMargin">
-    <number>0</number>
-   </property>
-   <item row="0" column="0">
+   <item>
     <widget class="QLabel" name="label">
      <property name="text">
       <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -35,10 +18,16 @@ p, li { white-space: pre-wrap; }
      </property>
     </widget>
    </item>
-   <item row="1" column="0">
+   <item>
     <layout class="QHBoxLayout">
      <item>
       <widget class="QLabel" name="mTitleLabel">
+       <property name="toolTip">
+        <string>Name for this to-do list</string>
+       </property>
+       <property name="whatsThis">
+        <string>Enter a name for this to-do list that will be put at the top of the print-out</string>
+       </property>
        <property name="text">
         <string>&amp;Title:</string>
        </property>
@@ -62,16 +51,13 @@ p, li { white-space: pre-wrap; }
      </item>
     </layout>
    </item>
-   <item row="2" column="0">
+   <item>
     <widget class="QGroupBox" name="mPrintType">
      <property name="title">
       <string>To-dos to Print</string>
      </property>
-     <layout class="QGridLayout">
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <item row="0" column="0">
+     <layout class="QVBoxLayout">
+      <item>
        <widget class="QRadioButton" name="mPrintAll">
         <property name="text">
          <string>Print &amp;all to-dos</string>
@@ -81,43 +67,22 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
+      <item>
        <widget class="QRadioButton" name="mPrintUnfinished">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
         <property name="text">
          <string>Print &amp;uncompleted to-dos only</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item>
        <widget class="QRadioButton" name="mPrintDueRange">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
         <property name="text">
          <string>Print only to-dos due in the &amp;range:</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="0">
+      <item>
        <layout class="QHBoxLayout">
-        <property name="spacing">
-         <number>6</number>
-        </property>
-        <property name="leftMargin">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>0</number>
-        </property>
-        <property name="rightMargin">
-         <number>0</number>
-        </property>
-        <property name="bottomMargin">
-         <number>0</number>
-        </property>
         <item>
          <spacer>
           <property name="orientation">
@@ -128,22 +93,19 @@ p, li { white-space: pre-wrap; }
           </property>
           <property name="sizeHint" stdset="0">
            <size>
-            <width>16</width>
-            <height>20</height>
+            <width>24</width>
+            <height>1</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
          <widget class="QLabel" name="mFromDateLabel">
-          <property name="enabled">
-           <bool>false</bool>
+          <property name="toolTip">
+           <string>Starting date for the print</string>
           </property>
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
+          <property name="whatsThis">
+           <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;End date&lt;/i&gt; option. This option is used to define the start date.</string>
           </property>
           <property name="text">
            <string>&amp;Start date:</string>
@@ -158,20 +120,11 @@ p, li { white-space: pre-wrap; }
           <property name="enabled">
            <bool>false</bool>
           </property>
-          <property name="font">
-           <font>
-            <family>Sans Serif</family>
-            <pointsize>9</pointsize>
-            <weight>50</weight>
-            <italic>false</italic>
-            <bold>false</bold>
-            <underline>false</underline>
-            <strikeout>false</strikeout>
-            <kerning>true</kerning>
-           </font>
-          </property>
           <property name="focusPolicy">
            <enum>Qt::StrongFocus</enum>
+          </property>
+          <property name="toolTip">
+           <string>Starting date for the print</string>
           </property>
           <property name="whatsThis">
            <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;End date&lt;/i&gt; option. This option is used to define the start date.</string>
@@ -185,14 +138,11 @@ p, li { white-space: pre-wrap; }
         </item>
         <item>
          <widget class="QLabel" name="mToDateLabel">
-          <property name="enabled">
-           <bool>false</bool>
+          <property name="toolTip">
+           <string>Ending date for the print</string>
           </property>
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
+          <property name="whatsThis">
+           <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;Start date&lt;/i&gt; option. This option is used to define the end date.</string>
           </property>
           <property name="text">
            <string>&amp;End date:</string>
@@ -209,6 +159,9 @@ p, li { white-space: pre-wrap; }
           </property>
           <property name="focusPolicy">
            <enum>Qt::StrongFocus</enum>
+          </property>
+          <property name="toolTip">
+           <string>Ending date for the print</string>
           </property>
           <property name="whatsThis">
            <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;Start date&lt;/i&gt; option. This option is used to define the end date.</string>
@@ -228,12 +181,6 @@ p, li { white-space: pre-wrap; }
           <property name="sizeType">
            <enum>QSizePolicy::Expanding</enum>
           </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>128</width>
-            <height>20</height>
-           </size>
-          </property>
          </spacer>
         </item>
        </layout>
@@ -241,19 +188,16 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </item>
-   <item row="3" column="0">
+   <item>
     <widget class="QGroupBox" name="mSecurity">
      <property name="title">
       <string>Security Exclusions</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
-      <property name="topMargin">
-       <number>0</number>
-      </property>
       <item>
        <widget class="QCheckBox" name="mExcludeConfidential">
-        <property name="whatsThis">
-         <string>Check this option to exclude confidential events.</string>
+        <property name="toolTip">
+         <string>Check this option to exclude items that have their Access level set to &#8220;Confidential&#8221;</string>
         </property>
         <property name="text">
          <string>Exclude &amp;confidential</string>
@@ -262,8 +206,8 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <widget class="QCheckBox" name="mExcludePrivate">
-        <property name="whatsThis">
-         <string>Check this option to exclude private events</string>
+        <property name="toolTip">
+         <string>Check this option to exclude items that have their Access level set to &#8220;Private&#8221;</string>
         </property>
         <property name="text">
          <string>Exclude pri&amp;vate</string>
@@ -273,7 +217,7 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </item>
-   <item row="4" column="0">
+   <item>
     <widget class="QGroupBox" name="includeInfoBox">
      <property name="title">
       <string>Include Information</string>
@@ -281,11 +225,8 @@ p, li { white-space: pre-wrap; }
      <property name="checkable">
       <bool>false</bool>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <item>
+     <layout class="QGridLayout" name="includeLayout">
+      <item row="0" column="0">
        <widget class="QCheckBox" name="mDescription">
         <property name="toolTip">
          <string>Print item descriptions</string>
@@ -294,11 +235,11 @@ p, li { white-space: pre-wrap; }
          <string>Check this option if you want to see the item descriptions printed.</string>
         </property>
         <property name="text">
-         <string>&amp;Description</string>
+         <string>&amp;Descriptions</string>
         </property>
        </widget>
       </item>
-      <item>
+      <item row="0" column="1">
        <widget class="QCheckBox" name="mCategories">
         <property name="toolTip">
          <string>Print item tags</string>
@@ -311,7 +252,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
-      <item>
+      <item row="0" column="2">
        <widget class="QCheckBox" name="mPriority">
         <property name="toolTip">
          <string>Print item priorities</string>
@@ -327,7 +268,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
-      <item>
+      <item row="1" column="0">
        <widget class="QCheckBox" name="mStartDate">
         <property name="toolTip">
          <string>Print item start dates</string>
@@ -340,7 +281,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
-      <item>
+      <item row="1" column="1">
        <widget class="QCheckBox" name="mDueDate">
         <property name="toolTip">
          <string>Print item due dates</string>
@@ -356,7 +297,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
-      <item>
+      <item row="1" column="2">
        <widget class="QCheckBox" name="mPercentComplete">
         <property name="toolTip">
          <string>Print item completion percentage</string>
@@ -381,15 +322,12 @@ p, li { white-space: pre-wrap; }
      <zorder>mPriority</zorder>
     </widget>
    </item>
-   <item row="5" column="0">
+   <item>
     <widget class="QGroupBox" name="sortingOptionsBox">
      <property name="title">
       <string>Sorting Options</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <property name="topMargin">
-       <number>0</number>
-      </property>
       <item>
        <layout class="QHBoxLayout">
         <item>
@@ -447,7 +385,7 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </item>
-   <item row="6" column="0">
+   <item>
     <widget class="QGroupBox" name="mGeneralGroup">
      <property name="title">
       <string comment="@title general print settings">General</string>
@@ -489,16 +427,10 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </item>
-   <item row="7" column="0">
+   <item>
     <spacer name="verticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>7</height>
-      </size>
      </property>
     </spacer>
    </item>
@@ -511,27 +443,6 @@ p, li { white-space: pre-wrap; }
    <header>kdatecombobox.h</header>
   </customwidget>
  </customwidgets>
- <tabstops>
-  <tabstop>mTitle</tabstop>
-  <tabstop>mPrintAll</tabstop>
-  <tabstop>mPrintUnfinished</tabstop>
-  <tabstop>mPrintDueRange</tabstop>
-  <tabstop>mFromDate</tabstop>
-  <tabstop>mToDate</tabstop>
-  <tabstop>mExcludeConfidential</tabstop>
-  <tabstop>mExcludePrivate</tabstop>
-  <tabstop>mDescription</tabstop>
-  <tabstop>mCategories</tabstop>
-  <tabstop>mPriority</tabstop>
-  <tabstop>mStartDate</tabstop>
-  <tabstop>mDueDate</tabstop>
-  <tabstop>mPercentComplete</tabstop>
-  <tabstop>mSortField</tabstop>
-  <tabstop>mSortDirection</tabstop>
-  <tabstop>mConnectSubTodos</tabstop>
-  <tabstop>mStrikeOutCompleted</tabstop>
-  <tabstop>mPrintFooter</tabstop>
- </tabstops>
  <resources/>
  <connections>
   <connection>

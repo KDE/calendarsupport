@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <author>Reinhold Kainhofer &lt;reinhold@kainhofer.com&gt;</author>
- <comment>Configuration page for the print day mode.</comment>
+ <comment>Configuration page for the print month mode.</comment>
  <class>CalPrintMonthConfig_Base</class>
  <widget class="QWidget" name="CalPrintMonthConfig_Base">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>578</width>
-    <height>551</height>
-   </rect>
-  </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
+  <layout class="QVBoxLayout">
    <property name="rightMargin">
     <number>0</number>
    </property>
-   <property name="bottomMargin">
-    <number>0</number>
-   </property>
-   <item row="0" column="0">
+   <item>
     <widget class="QLabel" name="label">
      <property name="text">
       <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -35,27 +18,12 @@ p, li { white-space: pre-wrap; }
      </property>
     </widget>
    </item>
-   <item row="1" column="0">
+   <item>
     <widget class="QGroupBox" name="mDateRangeGroup">
      <property name="title">
       <string>Date &amp;&amp; Time Range</string>
      </property>
      <layout class="QHBoxLayout">
-      <property name="spacing">
-       <number>6</number>
-      </property>
-      <property name="leftMargin">
-       <number>9</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>9</number>
-      </property>
-      <property name="bottomMargin">
-       <number>9</number>
-      </property>
       <item>
        <widget class="QLabel" name="mFromDateLabel">
         <property name="whatsThis">
@@ -139,33 +107,21 @@ p, li { white-space: pre-wrap; }
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>1</width>
-          <height>4</height>
-         </size>
-        </property>
        </spacer>
       </item>
      </layout>
     </widget>
    </item>
-   <item row="2" column="0">
+   <item>
     <widget class="QGroupBox" name="mSecurity">
      <property name="title">
       <string>Security Exclusions</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
-      <property name="topMargin">
-       <number>0</number>
-      </property>
       <item>
        <widget class="QCheckBox" name="mExcludeConfidential">
         <property name="toolTip">
-         <string>Exclude confidential items</string>
-        </property>
-        <property name="whatsThis">
-         <string>Check this option to exclude confidential events.</string>
+         <string>Check this option to exclude items that have their Access level set to &#8220;Confidential&#8221;</string>
         </property>
         <property name="text">
          <string>Exclude c&amp;onfidential</string>
@@ -175,10 +131,7 @@ p, li { white-space: pre-wrap; }
       <item>
        <widget class="QCheckBox" name="mExcludePrivate">
         <property name="toolTip">
-         <string>Exclude private items</string>
-        </property>
-        <property name="whatsThis">
-         <string>Check this option to exclude private events</string>
+         <string>Check this option to exclude items that have their Access level set to &#8220;Private&#8221;</string>
         </property>
         <property name="text">
          <string>Exclude pri&amp;vate</string>
@@ -188,7 +141,7 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </item>
-   <item row="3" column="0">
+   <item>
     <widget class="QGroupBox" name="mIncludeInfoGroup">
      <property name="title">
       <string>Include Information</string>
@@ -229,7 +182,7 @@ p, li { white-space: pre-wrap; }
          <string>Print to-dos due within the specified date range</string>
         </property>
         <property name="whatsThis">
-         <string>Check this option if you want to have to-dos on the print, placed by their due date.</string>
+         <string>You should check this option if you want to print to-dos which are due on one of the dates which are in the supplied date range.</string>
         </property>
         <property name="text">
          <string>Include to-&amp;dos that are due on the printed day(s)</string>
@@ -265,7 +218,7 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </item>
-   <item row="4" column="0">
+   <item>
     <widget class="QGroupBox" name="mGeneralGroup">
      <property name="title">
       <string comment="@title general print settings">General</string>
@@ -300,10 +253,7 @@ p, li { white-space: pre-wrap; }
       <item>
        <widget class="QCheckBox" name="mShowNoteLines">
         <property name="toolTip">
-         <string>Draw note lines in empty area</string>
-        </property>
-        <property name="whatsThis">
-         <string>Check this option to show note lines.</string>
+         <string>Check this option to draw note lines in empty areas.</string>
         </property>
         <property name="text">
          <string>Show note &amp;lines</string>
@@ -339,34 +289,15 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </item>
-   <item row="5" column="0">
+   <item>
     <spacer name="verticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>88</height>
-      </size>
      </property>
     </spacer>
    </item>
   </layout>
  </widget>
- <tabstops>
-  <tabstop>mFromMonth</tabstop>
-  <tabstop>mFromYear</tabstop>
-  <tabstop>mToMonth</tabstop>
-  <tabstop>mToYear</tabstop>
-  <tabstop>mWeekNumbers</tabstop>
-  <tabstop>mRecurDaily</tabstop>
-  <tabstop>mRecurWeekly</tabstop>
-  <tabstop>mIncludeTodos</tabstop>
-  <tabstop>mShowNoteLines</tabstop>
-  <tabstop>mSingleLineLimit</tabstop>
-  <tabstop>mColors</tabstop>
- </tabstops>
  <resources/>
  <connections/>
 </ui>

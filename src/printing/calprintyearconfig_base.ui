@@ -4,25 +4,8 @@
  <comment>Configuration page for the yearly print mode.</comment>
  <class>CalPrintYearConfig_Base</class>
  <widget class="QWidget" name="CalPrintYearConfig_Base">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>428</width>
-    <height>313</height>
-   </rect>
-  </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
    <property name="rightMargin">
-    <number>0</number>
-   </property>
-   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
@@ -47,9 +30,6 @@
          <widget class="QLabel" name="mYearLabel">
           <property name="text">
            <string>&amp;Year:</string>
-          </property>
-          <property name="wordWrap">
-           <bool>false</bool>
           </property>
           <property name="buddy">
            <cstring>mYear</cstring>
@@ -77,12 +57,6 @@
           <property name="sizeType">
            <enum>QSizePolicy::Expanding</enum>
           </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>120</width>
-            <height>21</height>
-           </size>
-          </property>
          </spacer>
         </item>
        </layout>
@@ -96,13 +70,10 @@
       <string>Security Exclusions</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
-      <property name="topMargin">
-       <number>0</number>
-      </property>
       <item>
        <widget class="QCheckBox" name="mExcludeConfidential">
-        <property name="whatsThis">
-         <string>Check this option to exclude confidential events.</string>
+        <property name="toolTip">
+         <string>Check this option to exclude items that have their Access level set to &#8220;Confidential&#8221;</string>
         </property>
         <property name="text">
          <string>Exclude &amp;confidential</string>
@@ -111,8 +82,8 @@
       </item>
       <item>
        <widget class="QCheckBox" name="mExcludePrivate">
-        <property name="whatsThis">
-         <string>Check this option to exclude private events</string>
+        <property name="toolTip">
+         <string>Check this option to exclude items that have their Access level set to &#8220;Private&#8221;</string>
         </property>
         <property name="text">
          <string>Exclude pri&amp;vate</string>
@@ -221,12 +192,6 @@
     <spacer name="verticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>71</height>
-      </size>
      </property>
     </spacer>
    </item>

@@ -4,28 +4,8 @@
  <comment>Configuration page for the print week mode.</comment>
  <class>CalPrintWeekConfig_Base</class>
  <widget class="QWidget" name="CalPrintWeekConfig_Base">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>684</width>
-    <height>616</height>
-   </rect>
-  </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
-   <property name="spacing">
-    <number>6</number>
-   </property>
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
    <property name="rightMargin">
-    <number>0</number>
-   </property>
-   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
@@ -44,44 +24,13 @@ p, li { white-space: pre-wrap; }
       <string>Date &amp;&amp; Time Range</string>
      </property>
      <layout class="QGridLayout">
-      <property name="leftMargin">
-       <number>9</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>9</number>
-      </property>
-      <property name="bottomMargin">
-       <number>9</number>
-      </property>
-      <property name="spacing">
-       <number>6</number>
-      </property>
-      <item row="0" column="4">
-       <spacer>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Expanding</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>16</width>
-          <height>21</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
       <item row="0" column="0">
        <widget class="QLabel" name="mFromDateLabel">
         <property name="toolTip">
          <string>Starting date for the print</string>
         </property>
         <property name="whatsThis">
-         <string>Here you can choose which events should be printed based on their date. This check enables you to enter the start date of the date range. Use the &lt;i&gt;End date&lt;/i&gt; to enter the end date of the daterange.</string>
+         <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;End date&lt;/i&gt; option. This option is used to define the start date.</string>
         </property>
         <property name="text">
          <string>&amp;Start date:</string>
@@ -100,7 +49,7 @@ p, li { white-space: pre-wrap; }
          <string>Starting date for the print</string>
         </property>
         <property name="whatsThis">
-         <string>Here you can choose which events should be printed based on their date. This check enables you to enter the start date of the date range. Use the &lt;i&gt;End date&lt;/i&gt; to enter the end date of the daterange.</string>
+         <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;End date&lt;/i&gt; option. This option is used to define the start date.</string>
         </property>
         <item>
          <property name="text">
@@ -109,56 +58,13 @@ p, li { white-space: pre-wrap; }
         </item>
        </widget>
       </item>
-      <item row="1" column="2">
-       <widget class="QLabel" name="mToTimeLabel">
-        <property name="whatsThis">
-         <string>All events which start later than the given time will not be printed.</string>
-        </property>
-        <property name="text">
-         <string>End ti&amp;me:</string>
-        </property>
-        <property name="buddy">
-         <cstring>mToTime</cstring>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="4">
-       <spacer>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Expanding</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>110</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="1" column="3">
-       <widget class="QTimeEdit" name="mToTime">
-        <property name="whatsThis">
-         <string>All events which start later than the given time will not be printed.</string>
-        </property>
-        <property name="displayFormat">
-         <string>hh:mm</string>
-        </property>
-        <property name="time">
-         <time>
-          <hour>18</hour>
-          <minute>0</minute>
-          <second>0</second>
-         </time>
-        </property>
-       </widget>
-      </item>
       <item row="0" column="2">
        <widget class="QLabel" name="mFromTimeLabel">
+        <property name="toolTip">
+         <string>Starting time for the print</string>
+        </property>
         <property name="whatsThis">
-         <string>All events which start earlier than the given time will not be printed.</string>
+         <string>It is possible to print only those events which are inside a given time range. With this time selection box you can define the start of this time range. The end time should be defined with the &lt;i&gt;End time&lt;/i&gt; option. Note you can automatically modify these settings if you check &lt;i&gt;Extend time range to include all events&lt;/i&gt;.</string>
         </property>
         <property name="text">
          <string>Start &amp;time:</string>
@@ -170,8 +76,11 @@ p, li { white-space: pre-wrap; }
       </item>
       <item row="0" column="3">
        <widget class="QTimeEdit" name="mFromTime">
+        <property name="toolTip">
+         <string>Starting time for the print</string>
+        </property>
         <property name="whatsThis">
-         <string>All events which start earlier than the given time will not be printed.</string>
+         <string>It is possible to print only those events which are inside a given time range. With this time selection box you can define the start of this time range. The end time should be defined with the &lt;i&gt;End time&lt;/i&gt; option. Note you can automatically modify these settings if you check &lt;i&gt;Extend time range to include all events&lt;/i&gt;.</string>
         </property>
         <property name="displayFormat">
          <string>hh:mm</string>
@@ -185,25 +94,23 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="KDateComboBox" name="mToDate">
-        <property name="focusPolicy">
-         <enum>Qt::StrongFocus</enum>
+      <item row="0" column="4">
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
         </property>
-        <property name="whatsThis">
-         <string>Here you can choose which events should be printed based on their date. This check enables you to enter the end date of the date range. Use the &lt;i&gt;Start date&lt;/i&gt; to enter the start date of the daterange.</string>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
         </property>
-        <item>
-         <property name="text">
-          <string>2009-01-19</string>
-         </property>
-        </item>
-       </widget>
+       </spacer>
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="mToDateLabel">
+        <property name="toolTip">
+         <string>Ending date for the print</string>
+        </property>
         <property name="whatsThis">
-         <string>Here you can choose which events should be printed based on their date. This check enables you to enter the end date of the date range. Use the &lt;i&gt;Start date&lt;/i&gt; to enter the start date of the daterange.</string>
+         <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;Start date&lt;/i&gt; option. This option is used to define the end date.</string>
         </property>
         <property name="text">
          <string>&amp;End date:</string>
@@ -213,9 +120,73 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
+      <item row="1" column="1">
+       <widget class="KDateComboBox" name="mToDate">
+        <property name="focusPolicy">
+         <enum>Qt::StrongFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Ending date for the print</string>
+        </property>
+        <property name="whatsThis">
+         <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;Start date&lt;/i&gt; option. This option is used to define the end date.</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>2009-01-19</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="mToTimeLabel">
+        <property name="toolTip">
+         <string>Ending time for the print</string>
+        </property>
+        <property name="whatsThis">
+         <string>It is possible to print only those events which are inside a given time range. With this time selection box you can define the end of this time range. The start time should be defined with the &lt;i&gt;Start time&lt;/i&gt; option. Note you can automatically modify these settings if you check &lt;i&gt;Extend time range to include all events&lt;/i&gt;.</string>
+        </property>
+        <property name="text">
+         <string>End ti&amp;me:</string>
+        </property>
+        <property name="buddy">
+         <cstring>mToTime</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QTimeEdit" name="mToTime">
+        <property name="toolTip">
+         <string>Ending time for the print</string>
+        </property>
+        <property name="whatsThis">
+         <string>It is possible to print only those events which are inside a given time range. With this time selection box you can define the end of this time range. The start time should be defined with the &lt;i&gt;Start time&lt;/i&gt; option. Note you can automatically modify these settings if you check &lt;i&gt;Extend time range to include all events&lt;/i&gt;.</string>
+        </property>
+        <property name="displayFormat">
+         <string>hh:mm</string>
+        </property>
+        <property name="time">
+         <time>
+          <hour>18</hour>
+          <minute>0</minute>
+          <second>0</second>
+         </time>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+       </spacer>
+      </item>
       <item row="2" column="0" colspan="5">
        <widget class="QCheckBox" name="mIncludeAllEvents">
-        <property name="whatsThis">
+        <property name="toolTip">
          <string>Check this option to automatically determine the required time range, so all events will be shown.</string>
         </property>
         <property name="text">
@@ -232,48 +203,30 @@ p, li { white-space: pre-wrap; }
       <string>Print Layout</string>
      </property>
      <layout class="QVBoxLayout">
-      <property name="spacing">
-       <number>6</number>
-      </property>
-      <property name="leftMargin">
-       <number>9</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>9</number>
-      </property>
-      <property name="bottomMargin">
-       <number>9</number>
-      </property>
       <item>
        <widget class="QRadioButton" name="mPrintTypeFilofax">
-        <property name="whatsThis">
-         <string>The Filofax view prints one week per page, so all days have a large surface.</string>
+        <property name="toolTip">
+         <string>The Filofax format prints the information for the days selected without a timeline.</string>
         </property>
         <property name="text">
-         <string>P&amp;rint as Filofax page</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
+         <string>Print date &amp;range as Filofax format, one week per page</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QRadioButton" name="mPrintTypeTimetable">
-        <property name="whatsThis">
-         <string>This view is similar to the weekview. The week is printed in landscape layout. You can even use the same colors for the items if you check &lt;i&gt;Use Colors&lt;/i&gt;.</string>
+        <property name="toolTip">
+         <string>The timetable print view has the times to the left of the page.</string>
         </property>
         <property name="text">
-         <string>Print as timeta&amp;ble view</string>
+         <string>Print as timeta&amp;ble view, one week per page</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QRadioButton" name="mPrintTypeSplitWeek">
-        <property name="whatsThis">
-         <string>This view is similar to the week view. The only difference with the timetable view is the page layout. Timetables are printed in landscape, the split week view in portrait.</string>
+        <property name="toolTip">
+         <string>The split week view has the times to the left of the page, with two pages per week.</string>
         </property>
         <property name="text">
          <string>Print as split wee&amp;k view</string>
@@ -289,13 +242,10 @@ p, li { white-space: pre-wrap; }
       <string>Security Exclusions</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
-      <property name="topMargin">
-       <number>0</number>
-      </property>
       <item>
        <widget class="QCheckBox" name="mExcludeConfidential">
-        <property name="whatsThis">
-         <string>Check this option to exclude confidential events.</string>
+        <property name="toolTip">
+         <string>Check this option to exclude items that have their Access level set to &#8220;Confidential&#8221;</string>
         </property>
         <property name="text">
          <string>Exclude c&amp;onfidential</string>
@@ -304,8 +254,8 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <widget class="QCheckBox" name="mExcludePrivate">
-        <property name="whatsThis">
-         <string>Check this option to exclude private events</string>
+        <property name="toolTip">
+         <string>Check this option to exclude items that have their Access level set to &#8220;Private&#8221;</string>
         </property>
         <property name="text">
          <string>Exclude pri&amp;vate</string>
@@ -352,8 +302,11 @@ p, li { white-space: pre-wrap; }
         <property name="enabled">
          <bool>false</bool>
         </property>
+        <property name="toolTip">
+         <string>Print to-dos due within the specified date range</string>
+        </property>
         <property name="whatsThis">
-         <string>Check this option if you want to have to-dos on the print, placed by their due date.</string>
+         <string>You should check this option if you want to print to-dos which are due on one of the dates which are in the supplied date range.</string>
         </property>
         <property name="text">
          <string>Include to-&amp;dos that are due on the printed day(s)</string>
@@ -362,7 +315,7 @@ p, li { white-space: pre-wrap; }
       </item>
       <item row="2" column="0" colspan="2">
        <widget class="QCheckBox" name="mExcludeTime">
-        <property name="whatsThis">
+        <property name="toolTip">
          <string>Check this option to exclude the time in description box</string>
         </property>
         <property name="text">
@@ -378,7 +331,7 @@ p, li { white-space: pre-wrap; }
      <property name="title">
       <string comment="@title general print settings">General</string>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout class="QVBoxLayout" name="generalLayout">
       <item>
        <widget class="QCheckBox" name="mSingleLineLimit">
         <property name="toolTip">
@@ -394,8 +347,8 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <widget class="QCheckBox" name="mShowNoteLines">
-        <property name="whatsThis">
-         <string>Check this option to draw note lines.</string>
+        <property name="toolTip">
+         <string>Check this option to draw note lines in empty areas.</string>
         </property>
         <property name="text">
          <string>Show note &amp;lines in Filofax layout</string>
@@ -436,12 +389,6 @@ p, li { white-space: pre-wrap; }
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>53</height>
-      </size>
-     </property>
     </spacer>
    </item>
   </layout>
@@ -453,20 +400,6 @@ p, li { white-space: pre-wrap; }
    <header>kdatecombobox.h</header>
   </customwidget>
  </customwidgets>
- <tabstops>
-  <tabstop>mFromDate</tabstop>
-  <tabstop>mFromTime</tabstop>
-  <tabstop>mToDate</tabstop>
-  <tabstop>mToTime</tabstop>
-  <tabstop>mIncludeAllEvents</tabstop>
-  <tabstop>mPrintTypeFilofax</tabstop>
-  <tabstop>mPrintTypeTimetable</tabstop>
-  <tabstop>mPrintTypeSplitWeek</tabstop>
-  <tabstop>mIncludeTodos</tabstop>
-  <tabstop>mShowNoteLines</tabstop>
-  <tabstop>mSingleLineLimit</tabstop>
-  <tabstop>mColors</tabstop>
- </tabstops>
  <resources/>
  <connections/>
 </ui>

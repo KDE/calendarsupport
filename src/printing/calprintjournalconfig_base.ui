@@ -4,28 +4,8 @@
  <comment>Configuration page for the print journal mode.</comment>
  <class>CalPrintJournalConfig_Base</class>
  <widget class="QWidget" name="CalPrintJournalConfig_Base">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>507</width>
-    <height>311</height>
-   </rect>
-  </property>
   <layout class="QVBoxLayout">
-   <property name="spacing">
-    <number>6</number>
-   </property>
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
    <property name="rightMargin">
-    <number>0</number>
-   </property>
-   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
@@ -69,21 +49,6 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <layout class="QHBoxLayout" name="mDateRangeLayout">
-        <property name="spacing">
-         <number>6</number>
-        </property>
-        <property name="leftMargin">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>0</number>
-        </property>
-        <property name="rightMargin">
-         <number>0</number>
-        </property>
-        <property name="bottomMargin">
-         <number>0</number>
-        </property>
         <item>
          <spacer>
           <property name="orientation">
@@ -94,14 +59,20 @@ p, li { white-space: pre-wrap; }
           </property>
           <property name="sizeHint" stdset="0">
            <size>
-            <width>15</width>
-            <height>20</height>
+            <width>24</width>
+            <height>1</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
          <widget class="QLabel" name="mFromDateLabel">
+          <property name="toolTip">
+           <string>Starting date for the print</string>
+          </property>
+          <property name="whatsThis">
+           <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;End date&lt;/i&gt; option. This option is used to define the start date.</string>
+          </property>
           <property name="text">
            <string>&amp;Start date:</string>
           </property>
@@ -115,10 +86,22 @@ p, li { white-space: pre-wrap; }
           <property name="focusPolicy">
            <enum>Qt::StrongFocus</enum>
           </property>
+          <property name="toolTip">
+           <string>Starting date for the print</string>
+          </property>
+          <property name="whatsThis">
+           <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;End date&lt;/i&gt; option. This option is used to define the start date.</string>
+          </property>
          </widget>
         </item>
         <item>
          <widget class="QLabel" name="mToDateLabel">
+          <property name="toolTip">
+           <string>Ending date for the print</string>
+          </property>
+          <property name="whatsThis">
+           <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;Start date&lt;/i&gt; option. This option is used to define the end date.</string>
+          </property>
           <property name="text">
            <string>&amp;End date:</string>
           </property>
@@ -132,6 +115,12 @@ p, li { white-space: pre-wrap; }
           <property name="focusPolicy">
            <enum>Qt::StrongFocus</enum>
           </property>
+          <property name="toolTip">
+           <string>Ending date for the print</string>
+          </property>
+          <property name="whatsThis">
+           <string>If you want to print more days at once, you can define a range of dates with this option and the &lt;i&gt;Start date&lt;/i&gt; option. This option is used to define the end date.</string>
+          </property>
          </widget>
         </item>
         <item>
@@ -141,12 +130,6 @@ p, li { white-space: pre-wrap; }
           </property>
           <property name="sizeType">
            <enum>QSizePolicy::Expanding</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>324</width>
-            <height>21</height>
-           </size>
           </property>
          </spacer>
         </item>
@@ -185,12 +168,6 @@ p, li { white-space: pre-wrap; }
      <property name="sizeType">
       <enum>QSizePolicy::Expanding</enum>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>301</width>
-       <height>211</height>
-      </size>
-     </property>
     </spacer>
    </item>
   </layout>
@@ -202,10 +179,6 @@ p, li { white-space: pre-wrap; }
    <header>kdatecombobox.h</header>
   </customwidget>
  </customwidgets>
- <tabstops>
-  <tabstop>mFromDate</tabstop>
-  <tabstop>mToDate</tabstop>
- </tabstops>
  <resources/>
  <connections>
   <connection>
