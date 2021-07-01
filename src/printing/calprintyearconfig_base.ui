@@ -76,7 +76,7 @@
          <string>Check this option to exclude items that have their Access level set to &#8220;Confidential&#8221;</string>
         </property>
         <property name="text">
-         <string>Exclude &amp;confidential</string>
+         <string>Exclude c&amp;onfidential</string>
         </property>
        </widget>
       </item>
