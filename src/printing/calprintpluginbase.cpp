@@ -2167,11 +2167,14 @@ void CalPrintPluginBase::drawTextLines(QPainter &p, const QString &entry, int x,
         QStringList textLine = ww.wrappedString().split(QLatin1Char('\n'));
         // print each individual line
         for (int lineCount = 0; lineCount < textLine.count(); lineCount++) {
+            y += fm.height();
             if (y >= pageHeight) {
-                y = 0;
+                if (mPrintFooter) {
+                    drawFooter(p, {0, pageHeight, width, footerHeight()});
+                }
+                y = fm.height();
                 mPrinter->newPage();
             }
-            y += fm.height();
             p.drawText(x, y, textLine[lineCount]);
         }
     }
@@ -2192,6 +2195,9 @@ void CalPrintPluginBase::drawJournal(const KCalendarCore::Journal::Ptr &journal,
 
     QRect rect(p.boundingRect(x, y, width, -1, Qt::TextWordWrap, headerText));
     if (rect.bottom() > pageHeight) {
+        if (mPrintFooter) {
+            drawFooter(p, {0, pageHeight, width, footerHeight()});
+        }
         // Start new page...
         y = 0;
         mPrinter->newPage();
