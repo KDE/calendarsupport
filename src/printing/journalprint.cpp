@@ -28,6 +28,8 @@ void CalPrintJournal::readSettingsWidget()
         mFromDate = cfg->mFromDate->date();
         mToDate = cfg->mToDate->date();
         mUseDateRange = cfg->mRangeJournals->isChecked();
+        mExcludeConfidential = cfg->mExcludeConfidential->isChecked();
+        mExcludePrivate = cfg->mExcludePrivate->isChecked();
     }
 }
 
@@ -38,6 +40,8 @@ void CalPrintJournal::setSettingsWidget()
         cfg->mPrintFooter->setChecked(mPrintFooter);
         cfg->mFromDate->setDate(mFromDate);
         cfg->mToDate->setDate(mToDate);
+        cfg->mExcludeConfidential->setChecked(mExcludeConfidential);
+        cfg->mExcludePrivate->setChecked(mExcludePrivate);
 
         if (mUseDateRange) {
             cfg->mRangeJournals->setChecked(true);
@@ -60,6 +64,8 @@ void CalPrintJournal::loadConfig()
     if (mConfig) {
         KConfigGroup config(mConfig, "Journalprint");
         mUseDateRange = config.readEntry("JournalsInRange", false);
+        mExcludeConfidential = config.readEntry("Exclude confidential", true);
+        mExcludePrivate = config.readEntry("Exclude private", true);
     }
     setSettingsWidget();
 }
@@ -72,6 +78,8 @@ void CalPrintJournal::saveConfig()
     if (mConfig) {
         KConfigGroup config(mConfig, "Journalprint");
         config.writeEntry("JournalsInRange", mUseDateRange);
+        config.writeEntry("Exclude confidential", mExcludeConfidential);
+        config.writeEntry("Exclude private", mExcludePrivate);
     }
 }
 
@@ -108,7 +116,12 @@ void CalPrintJournal::print(QPainter &p, int width, int height)
     y = headerHeight() + 15;
 
     for (const KCalendarCore::Journal::Ptr &j : qAsConst(journals)) {
-        drawJournal(j, p, x, y, width, height);
+        Q_ASSERT(j);
+        if (j
+            && (!mExcludeConfidential || j->secrecy() != KCalendarCore::Incidence::SecrecyConfidential)
+            && (!mExcludePrivate || j->secrecy() != KCalendarCore::Incidence::SecrecyPrivate)) {
+            drawJournal(j, p, x, y, width, height);
+        }
     }
 
     if (mPrintFooter) {

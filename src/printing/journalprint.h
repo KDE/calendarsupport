@@ -60,6 +60,8 @@ public:
 
 protected:
     bool mUseDateRange;
+    bool mExcludeConfidential;
+    bool mExcludePrivate;
 };
 
 class CalPrintJournalConfig : public QWidget, public Ui::CalPrintJournalConfig_Base
