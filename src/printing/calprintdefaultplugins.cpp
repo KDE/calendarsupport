@@ -786,10 +786,10 @@ void CalPrintDay::print(QPainter &p, int width, int height)
         QString line1 = local.toString(mFromDate, QLocale::ShortFormat);
         QString line2 = local.toString(mToDate, QLocale::ShortFormat);
         QString title;
-        if (orientation() == QPageLayout::Landscape) {
-            title = i18nc("date from-to", "%1 - %2", line1, line2);
+        if (mFromDate == mToDate) {
+            title = line1;
         } else {
-            title = i18nc("date from-\nto", "%1 -\n%2", line1, line2);
+            title =  i18nc("date from-to", "%1\u2013%2", line1, line2);
         }
         drawHeader(p, title, mFromDate, QDate(), headerBox);
         if (mDayPrintType == Filofax) {
@@ -1039,11 +1039,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
         do {
             line1 = local.toString(curWeek.addDays(-6), QLocale::ShortFormat);
             line2 = local.toString(curWeek, QLocale::ShortFormat);
-            if (orientation() == QPageLayout::Landscape) {
-                title = i18nc("date from-to", "%1 - %2", line1, line2);
-            } else {
-                title = i18nc("date from-\nto", "%1 -\n%2", line1, line2);
-            }
+            title =  i18nc("date from-to", "%1\u2013%2", line1, line2);
             drawHeader(p, title, curWeek.addDays(-6), QDate(), headerBox);
 
             drawWeek(p, curWeek, mStartTime, mEndTime, weekBox, mSingleLineLimit, mShowNoteLines,
@@ -1066,9 +1062,9 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             line1 = local.toString(curWeek.addDays(-6), QLocale::ShortFormat);
             line2 = local.toString(curWeek, QLocale::ShortFormat);
             if (orientation() == QPageLayout::Landscape) {
-                title = i18nc("date from - to (week number)", "%1 - %2 (Week %3)", line1, line2, curWeek.weekNumber());
+                title = i18nc("date from - to (week number)", "%1\u2013%2 (Week %3)", line1, line2, curWeek.weekNumber());
             } else {
-                title = i18nc("date from -\nto (week number)", "%1 -\n%2 (Week %3)", line1, line2, curWeek.weekNumber());
+                title = i18nc("date from - to\\n(week number)", "%1\u2013%2\n(Week %3)", line1, line2, curWeek.weekNumber());
             }
             drawHeader(p, title, curWeek, QDate(), headerBox);
 

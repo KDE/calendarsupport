@@ -2233,13 +2233,13 @@ void CalPrintPluginBase::drawSplitHeaderRight(QPainter &p, QDate fd, QDate td, Q
     QLocale locale;
     if (fd.month() == td.month()) {
         title = i18nc("Date range: Month dayStart - dayEnd",
-                      "%1 %2 - %3",
+                      "%1 %2\u2013%3",
                       locale.monthName(fd.month(), QLocale::LongFormat),
                       locale.toString(fd, QStringLiteral("dd")),
                       locale.toString(td, QStringLiteral("dd")));
     } else {
         title = i18nc("Date range: monthStart dayStart - monthEnd dayEnd",
-                      "%1 %2 - %3 %4",
+                      "%1 %2\u2013%3 %4",
                       locale.monthName(fd.month(), QLocale::LongFormat),
                       locale.toString(fd, QStringLiteral("dd")),
                       locale.monthName(td.month(), QLocale::LongFormat),

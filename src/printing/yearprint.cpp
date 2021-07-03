@@ -139,12 +139,7 @@ void CalPrintYear::print(QPainter &p, int width, int height)
         end = end.addDays(-1);
         QString stdate = locale.toString(start, QLocale::ShortFormat);
         QString endate = locale.toString(end, QLocale::ShortFormat);
-        QString title;
-        if (orientation() == QPageLayout::Landscape) {
-            title = i18nc("date from - to", "%1 - %2", stdate, endate);
-        } else {
-            title = i18nc("date from -\nto", "%1 -\n%2", stdate, endate);
-        }
+        QString title =i18nc("date from-to", "%1\u2013%2", stdate, endate);
         drawHeader(p, title, start.addMonths(-1), start.addMonths(monthsPerPage), headerBox);
 
         QRect monthesBox(headerBox);
