@@ -198,7 +198,7 @@ bool CalendarUtils::makeChildrenIndependent(const Akonadi::Item &item)
 
     d->mMultiChange = MultiChange(item);
     bool allStarted = true;
-    for (const Akonadi::Item &subInc : qAsConst(subIncs)) {
+    for (const Akonadi::Item &subInc : std::as_const(subIncs)) {
         d->mMultiChange.children.append(subInc.id());
         allStarted = allStarted && makeIndependent(subInc);
     }
@@ -220,14 +220,14 @@ void CalendarUtils::purgeCompletedTodos()
     KCalendarCore::Todo::List todos = calendar()->rawTodos();
     KCalendarCore::Todo::List rootTodos;
 
-    for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todos)) {
+    for (const KCalendarCore::Todo::Ptr &todo : std::as_const(todos)) {
         if (todo && todo->relatedTo().isEmpty()) { // top level todo //REVIEW(AKONADI_PORT)
             rootTodos.append(todo);
         }
     }
 
     // now that we have a list of all root todos, check them and their children
-    for (const KCalendarCore::Todo::Ptr &todo : qAsConst(rootTodos)) {
+    for (const KCalendarCore::Todo::Ptr &todo : std::as_const(rootTodos)) {
         d->purgeCompletedSubTodos(todo, allDeleted);
     }
 

@@ -343,7 +343,7 @@ void FreeBusyItemModel::updateFreeBusyData(const FreeBusyItem::Ptr &item)
 void FreeBusyItemModel::timerEvent(QTimerEvent *event)
 {
     killTimer(event->timerId());
-    for (FreeBusyItem::Ptr item : qAsConst(d->mFreeBusyItems)) {
+    for (FreeBusyItem::Ptr item : std::as_const(d->mFreeBusyItems)) {
         if (item->updateTimerID() == event->timerId()) {
             item->setUpdateTimerID(0);
             item->startDownload(d->mForceDownload);
@@ -364,7 +364,7 @@ void FreeBusyItemModel::slotInsertFreeBusy(const KCalendarCore::FreeBusy::Ptr &f
 
     fb->sortList();
 
-    for (FreeBusyItem::Ptr item : qAsConst(d->mFreeBusyItems)) {
+    for (FreeBusyItem::Ptr item : std::as_const(d->mFreeBusyItems)) {
         if (item->email() == email) {
             item->setFreeBusy(fb);
             const int row = d->mFreeBusyItems.indexOf(item);
@@ -383,7 +383,7 @@ void FreeBusyItemModel::autoReload()
 
 void FreeBusyItemModel::reload()
 {
-    for (FreeBusyItem::Ptr item : qAsConst(d->mFreeBusyItems)) {
+    for (FreeBusyItem::Ptr item : std::as_const(d->mFreeBusyItems)) {
         if (d->mForceDownload) {
             item->startDownload(d->mForceDownload);
         } else {

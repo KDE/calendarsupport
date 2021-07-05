@@ -115,7 +115,7 @@ void CalPrintJournal::print(QPainter &p, int width, int height)
     drawHeader(p, i18n("Journal entries"), QDate(), QDate(), headerBox);
     y = headerHeight() + 15;
 
-    for (const KCalendarCore::Journal::Ptr &j : qAsConst(journals)) {
+    for (const KCalendarCore::Journal::Ptr &j : std::as_const(journals)) {
         Q_ASSERT(j);
         if (j
             && (!mExcludeConfidential || j->secrecy() != KCalendarCore::Incidence::SecrecyConfidential)

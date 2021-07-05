@@ -216,10 +216,10 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     QStringList uids;
     Incidence::List allIncidences = archiveCalendar->rawIncidences();
     uids.reserve(incidences.count());
-    for (const KCalendarCore::Incidence::Ptr &incidence : qAsConst(incidences)) {
+    for (const KCalendarCore::Incidence::Ptr &incidence : std::as_const(incidences)) {
         uids.append(incidence->uid());
     }
-    for (const KCalendarCore::Incidence::Ptr &incidence : qAsConst(allIncidences)) {
+    for (const KCalendarCore::Incidence::Ptr &incidence : std::as_const(allIncidences)) {
         if (!uids.contains(incidence->uid())) {
             archiveCalendar->deleteIncidence(incidence);
         }

@@ -465,7 +465,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 QString statusString;
                 QString datesString;
                 int count = 0;
-                for (const Akonadi::Item &item : qAsConst(relations)) {
+                for (const Akonadi::Item &item : std::as_const(relations)) {
                     KCalendarCore::Todo::Ptr todo = CalendarSupport::todo(item);
                     ++count;
                     if (!todo) { // defensive, skip any zero pointers
@@ -1565,7 +1565,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     case TodosAll:
         break;
     case TodosUnfinished:
-        for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todoList)) {
+        for (const KCalendarCore::Todo::Ptr &todo : std::as_const(todoList)) {
             Q_ASSERT(todo);
             if (!todo->isCompleted()) {
                 tempList.append(todo);
@@ -1574,7 +1574,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
         todoList = tempList;
         break;
     case TodosDueRange:
-        for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todoList)) {
+        for (const KCalendarCore::Todo::Ptr &todo : std::as_const(todoList)) {
             Q_ASSERT(todo);
             if (todo->hasDueDate()) {
                 if (todo->dtDue().date() >= mFromDate && todo->dtDue().date() <= mToDate) {
@@ -1590,7 +1590,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
 
     // Print to-dos
     int count = 0;
-    for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todoList)) {
+    for (const KCalendarCore::Todo::Ptr &todo : std::as_const(todoList)) {
         if ((mExcludeConfidential && todo->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
             || (mExcludePrivate && todo->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;

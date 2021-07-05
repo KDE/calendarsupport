@@ -784,7 +784,7 @@ void CalPrintPluginBase::drawAllDayBox(QPainter &p,
     eventBox.setTop(box.top() + padding());
     eventBox.setBottom(eventBox.top() + lineSpacing);
 
-    for (const KCalendarCore::Event::Ptr &currEvent : qAsConst(eventList)) {
+    for (const KCalendarCore::Event::Ptr &currEvent : std::as_const(eventList)) {
         if (!currEvent
             || !currEvent->allDay()
             || (excludeConfidential && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
@@ -843,7 +843,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
 
     if (expandable) {
         // Adapt start/end times to include complete events
-        for (const KCalendarCore::Event::Ptr &event : qAsConst(events)) {
+        for (const KCalendarCore::Event::Ptr &event : std::as_const(events)) {
             Q_ASSERT(event);
             if (!event
                 || (excludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
@@ -901,7 +901,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
 
     QList<CellItem *> cells;
 
-    for (const KCalendarCore::Event::Ptr &event : qAsConst(events)) {
+    for (const KCalendarCore::Event::Ptr &event : std::as_const(events)) {
         if (!event
             || (excludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
             || (excludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
@@ -1078,7 +1078,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
 
     int textY = mSubHeaderHeight; // gives the relative y-coord of the next printed entry
     unsigned int visibleEventsCounter = 0;
-    for (const KCalendarCore::Event::Ptr &currEvent : qAsConst(eventList)) {
+    for (const KCalendarCore::Event::Ptr &currEvent : std::as_const(eventList)) {
         Q_ASSERT(currEvent);
         if (!currEvent->allDay()) {
             if (currEvent->dtEnd().toLocalTime().time() <= myFromTime || currEvent->dtStart().toLocalTime().time() > myToTime) {
@@ -1135,7 +1135,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
 
     if (textY < box.height()) {
         KCalendarCore::Todo::List todos = mCalendar->todos(qd);
-        for (const KCalendarCore::Todo::Ptr &todo : qAsConst(todos)) {
+        for (const KCalendarCore::Todo::Ptr &todo : std::as_const(todos)) {
             if (!todo->allDay()) {
                 if ((todo->hasDueDate() && todo->dtDue().toLocalTime().time() <= myFromTime)
                     || (todo->hasStartDate() && todo->dtStart().toLocalTime().time() > myToTime)) {
@@ -1428,7 +1428,7 @@ void CalPrintPluginBase::drawTimeTable(QPainter &p,
         KCalendarCore::Event::List eventList = mCalendar->events(curDate, QTimeZone::systemTimeZone());
         const auto holidays = holiday(curDate);
         int allDayEvents = holiday(curDate).isEmpty() ? 0 : 1;
-        for (const KCalendarCore::Event::Ptr &event : qAsConst(eventList)) {
+        for (const KCalendarCore::Event::Ptr &event : std::as_const(eventList)) {
             Q_ASSERT(event);
             if (!event
                 || (excludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
@@ -1654,7 +1654,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p,
 
     QVector<MonthEventStruct> monthentries;
 
-    for (const KCalendarCore::Event::Ptr &e : qAsConst(events)) {
+    for (const KCalendarCore::Event::Ptr &e : std::as_const(events)) {
         if (!e) {
             continue;
         }
@@ -2080,7 +2080,7 @@ void CalPrintPluginBase::drawTodo(int &count,
 #else
         bool subtodoOk = false;
         if (subtodo) {
-            for (const KCalendarCore::Todo::Ptr &tt : qAsConst(todoList)) {
+            for (const KCalendarCore::Todo::Ptr &tt : std::as_const(todoList)) {
                 if (tt == subtodo) {
                     subtodoOk = true;
                     break;
@@ -2107,14 +2107,14 @@ void CalPrintPluginBase::drawTodo(int &count,
 #else
     KCalendarCore::Todo::List tl;
     tl.reserve(t.count());
-    for (const KCalendarCore::Todo::Ptr &todo : qAsConst(t)) {
+    for (const KCalendarCore::Todo::Ptr &todo : std::as_const(t)) {
         tl.append(todo);
     }
     KCalendarCore::Todo::List sl = mCalendar->sortTodos(tl, sortField, sortDir);
 #endif
 
     int subcount = 0;
-    for (const KCalendarCore::Todo::Ptr &isl : qAsConst(sl)) {
+    for (const KCalendarCore::Todo::Ptr &isl : std::as_const(sl)) {
         count++;
         if (++subcount == sl.size()) {
             startpt.mHasLine = false;

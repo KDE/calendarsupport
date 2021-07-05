@@ -41,7 +41,7 @@ void CategoryHierarchyReader::read(const QStringList &categories)
     }
 
     QStringList last_path;
-    for (const QString &category : qAsConst(sortedCategories)) {
+    for (const QString &category : std::as_const(sortedCategories)) {
         QStringList _path = path(category);
 
         // we need to figure out where last item and the new one differ
