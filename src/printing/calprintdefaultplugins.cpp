@@ -728,8 +728,6 @@ void CalPrintDay::loadConfig()
         mSingleLineLimit = grp.readEntry("Single line limit", false);
         mShowNoteLines = grp.readEntry("Note Lines", false);
         mExcludeTime = grp.readEntry("Exclude time", false);
-        mExcludeConfidential = grp.readEntry("Exclude confidential", true);
-        mExcludePrivate = grp.readEntry("Exclude private", true);
     }
     setSettingsWidget();
 }
@@ -752,8 +750,6 @@ void CalPrintDay::saveConfig()
         grp.writeEntry("Single line limit", mSingleLineLimit);
         grp.writeEntry("Note Lines", mShowNoteLines);
         grp.writeEntry("Exclude time", mExcludeTime);
-        grp.writeEntry("Exclude confidential", mExcludeConfidential);
-        grp.writeEntry("Exclude private", mExcludePrivate);
     }
 }
 
@@ -803,9 +799,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                      mShowNoteLines,
                      mIncludeDescription,
                      mIncludeCategories,
-                     mUseColors,
-                     mExcludeConfidential,
-                     mExcludePrivate);
+                     mUseColors);
         } else if (mDayPrintType == SingleTimetable) {
             drawTimeTable(p,
                           mFromDate,
@@ -816,9 +810,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                           daysBox,
                           mIncludeDescription,
                           mIncludeCategories,
-                          mExcludeTime,
-                          mExcludeConfidential,
-                          mExcludePrivate);
+                          mExcludeTime);
         }
         if (mPrintFooter) {
             drawFooter(p, footerBox);
@@ -849,9 +841,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                           daysBox,
                           mIncludeDescription,
                           mIncludeCategories,
-                          mExcludeTime,
-                          mExcludeConfidential,
-                          mExcludePrivate);
+                          mExcludeTime);
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
             }
@@ -962,8 +952,6 @@ void CalPrintWeek::loadConfig()
         mIncludeDescription = grp.readEntry("Include Description", false);
         mIncludeCategories = grp.readEntry("Include categories", false);
         mExcludeTime = grp.readEntry("Exclude Time", false);
-        mExcludeConfidential = grp.readEntry("Exclude confidential", true);
-        mExcludePrivate = grp.readEntry("Exclude private", true);
     }
     setSettingsWidget();
 }
@@ -986,8 +974,6 @@ void CalPrintWeek::saveConfig()
         grp.writeEntry("Include Description", mIncludeDescription);
         grp.writeEntry("Include categories", mIncludeCategories);
         grp.writeEntry("Exclude Time", mExcludeTime);
-        grp.writeEntry("Exclude confidential", mExcludeConfidential);
-        grp.writeEntry("Exclude private", mExcludePrivate);
     }
 }
 
@@ -1043,7 +1029,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             drawHeader(p, title, curWeek.addDays(-6), QDate(), headerBox);
 
             drawWeek(p, curWeek, mStartTime, mEndTime, weekBox, mSingleLineLimit, mShowNoteLines,
-                      mIncludeDescription, mIncludeCategories, mUseColors, mExcludeConfidential, mExcludePrivate);
+                      mIncludeDescription, mIncludeCategories, mUseColors);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1069,7 +1055,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             drawHeader(p, title, curWeek, QDate(), headerBox);
 
             drawTimeTable(p, fromWeek, curWeek, mIncludeAllEvents, mStartTime, mEndTime, weekBox, mIncludeDescription,
-                           mIncludeCategories, mExcludeTime, mExcludeConfidential, mExcludePrivate);
+                           mIncludeCategories, mExcludeTime);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1095,7 +1081,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
 
             drawSplitHeaderRight(p, fromWeek, curWeek, QDate(), width, hh);
             drawTimeTable(p, fromWeek, endLeft, mIncludeAllEvents, mStartTime, mEndTime, weekBox, mIncludeDescription,
-                           mIncludeCategories, mExcludeTime, mExcludeConfidential, mExcludePrivate);
+                           mIncludeCategories, mExcludeTime);
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
             }
@@ -1110,9 +1096,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
                           weekBox1,
                           mIncludeDescription,
                           mIncludeCategories,
-                          mExcludeTime,
-                          mExcludeConfidential,
-                          mExcludePrivate);
+                          mExcludeTime);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1204,8 +1188,6 @@ void CalPrintMonth::loadConfig()
         mShowNoteLines = grp.readEntry("Note Lines", false);
         mIncludeDescription = grp.readEntry("Include description", false);
         mIncludeCategories = grp.readEntry("Include categories", false);
-        mExcludeConfidential = grp.readEntry("Exclude confidential", true);
-        mExcludePrivate = grp.readEntry("Exclude private", true);
     }
     setSettingsWidget();
 }
@@ -1223,8 +1205,6 @@ void CalPrintMonth::saveConfig()
         grp.writeEntry("Note Lines", mShowNoteLines);
         grp.writeEntry("Include description", mIncludeDescription);
         grp.writeEntry("Include categories", mIncludeCategories);
-        grp.writeEntry("Exclude confidential", mExcludeConfidential);
-        grp.writeEntry("Exclude private", mExcludePrivate);
     }
 }
 
@@ -1283,8 +1263,6 @@ void CalPrintMonth::print(QPainter &p, int width, int height)
                        mIncludeDescription,
                        mIncludeCategories,
                        mUseColors,
-                       mExcludeConfidential,
-                       mExcludePrivate,
                        monthBox);
 
         if (mPrintFooter) {
@@ -1418,8 +1396,6 @@ void CalPrintTodos::loadConfig()
         mStrikeOutCompleted = grp.readEntry("Strike out completed summaries", true);
         mTodoSortField = (eTodoSortField)grp.readEntry("Sort field", static_cast<int>(TodoFieldSummary));
         mTodoSortDirection = (eTodoSortDirection)grp.readEntry("Sort direction", static_cast<int>(TodoDirectionAscending));
-        mExcludeConfidential = grp.readEntry("Exclude confidential", true);
-        mExcludePrivate = grp.readEntry("Exclude private", true);
     }
     setSettingsWidget();
 }
@@ -1441,8 +1417,6 @@ void CalPrintTodos::saveConfig()
         grp.writeEntry("Strike out completed summaries", mStrikeOutCompleted);
         grp.writeEntry("Sort field", static_cast<int>(mTodoSortField));
         grp.writeEntry("Sort direction", static_cast<int>(mTodoSortDirection));
-        grp.writeEntry("Exclude confidential", mExcludeConfidential);
-        grp.writeEntry("Exclude private", mExcludePrivate);
     }
 }
 
@@ -1618,9 +1592,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
                      width,
                      height,
                      todoList,
-                     nullptr,
-                     mExcludeConfidential,
-                     mExcludePrivate);
+                     nullptr);
         }
     }
 

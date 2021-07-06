@@ -64,8 +64,6 @@ void CalPrintJournal::loadConfig()
     if (mConfig) {
         KConfigGroup config(mConfig, "Journalprint");
         mUseDateRange = config.readEntry("JournalsInRange", false);
-        mExcludeConfidential = config.readEntry("Exclude confidential", true);
-        mExcludePrivate = config.readEntry("Exclude private", true);
     }
     setSettingsWidget();
 }
@@ -78,8 +76,6 @@ void CalPrintJournal::saveConfig()
     if (mConfig) {
         KConfigGroup config(mConfig, "Journalprint");
         config.writeEntry("JournalsInRange", mUseDateRange);
-        config.writeEntry("Exclude confidential", mExcludeConfidential);
-        config.writeEntry("Exclude private", mExcludePrivate);
     }
 }
 

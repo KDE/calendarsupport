@@ -64,8 +64,6 @@ protected:
     int mPages;
     int mSubDaysEvents;
     int mHolidaysEvents;
-    bool mExcludeConfidential;
-    bool mExcludePrivate;
 };
 
 class CalPrintYearConfig : public QWidget, public Ui::CalPrintYearConfig_Base

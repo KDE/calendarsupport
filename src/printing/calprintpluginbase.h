@@ -307,14 +307,14 @@ public:
     /**
       Draw the all-day box for the agenda print view (the box on top which
       doesn't have a time on the time scale associated).
+
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
       @param p QPainter of the printout
       @param eventList The list of all-day events that are supposed to be printed
              inside this box
       @param qd The date of the currently printed day
       @param box coordinates of the all day box.
       @param includeCategories Whether to print the event categories (tags) as well.
-      @param excludeConfidential Whether to exclude Incidence marked confidential.
-      @param excludePrivate Whether to exclude Incidence marked private.
       @param workDays List of workDays
     */
     void drawAllDayBox(QPainter &p,
@@ -322,8 +322,6 @@ public:
                       QDate qd,
                       QRect box,
                       bool includeCategories,
-                      bool excludeConfidential,
-                      bool excludePrivate,
                       const QList<QDate> &workDays);
 
     /**
@@ -331,6 +329,7 @@ public:
       Also draws a grid with half-hour spacing of the grid lines.
       Does NOT draw allday events.  Use drawAllDayBox for allday events.
 
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
       @param p QPainter of the printout
       @param eventList The list of the events that are supposed to be printed
              inside this box
@@ -349,8 +348,6 @@ public:
       @param includeDescription Whether to print the event description as well.
       @param includeCategories Whether to print the event categories (tags) as well.
       @param excludeTime Whether the time is printed in the detail area.
-      @param excludeConfidential Whether to exclude Incidence marked confidential.
-      @param excludePrivate Whether to exclude Incidence marked private.
       @param workDays List of workDays
     */
     void drawAgendaDayBox(QPainter &p,
@@ -363,8 +360,6 @@ public:
                           bool includeDescription,
                           bool includeCategories,
                           bool excludeTime,
-                          bool excludeConfidential,
-                          bool excludePrivate,
                           const QList<QDate> &workDays);
 
     void drawAgendaItem(PrintCellItem *item,
@@ -380,6 +375,8 @@ public:
     /**
       Draw the box containing a list of all events of the given day (with their times,
       of course). Used in the Filofax and the month print style.
+
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
       @param p QPainter of the printout
       @param qd The date of the currently printed day. All events of the calendar
                 that appear on that day will be printed.
@@ -395,8 +392,6 @@ public:
       @param includeDescription Whether to print the event description as well.
       @param includeCategories Whether to print the event categories (tags) as well.
       @param useColors Whether to use  event category colors to draw the events.
-      @param excludeConfidential Whether to exclude Incidence marked confidential.
-      @param excludePrivate Whether to exclude Incidence marked private.
     */
     void drawDayBox(QPainter &p,
                     const QDate &qd,
@@ -410,15 +405,15 @@ public:
                     bool showNoteLines = false,
                     bool includeDescription = false,
                     bool includeCategories = false,
-                    bool useColors = true,
-                    bool excludeDescription = true,
-                    bool excludePrivate = true);
+                    bool useColors = true);
 
     /**
       Draw the week (filofax) table of the week containing the date qd. The first
       three days of the week will be shown in the first column (using drawDayBox),
       the remaining four in the second column, where the last two days of the week
       (typically Saturday and Sunday) only get half the height of the other day boxes.
+
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
       @param p QPainter of the printout
       @param qd Arbitrary date within the week to be printed.
       @param fromTime Start time of the displayed time range
@@ -429,8 +424,6 @@ public:
       @param includeDescription Whether to print the event description as well.
       @param includeCategories Whether to print the event categories (tags) as well.
       @param useColors Whether to use  event category colors to draw the events.
-      @param excludeConfidential Whether to exclude Incidence marked confidential.
-      @param excludePrivate Whether to exclude Incidence marked private.
     */
     void drawWeek(QPainter &p,
                   const QDate &qd,
@@ -441,12 +434,12 @@ public:
                   bool showNoteLines,
                   bool includeDescription,
                   bool includeCategories,
-                  bool useColors,
-                  bool excludeConfidential,
-                  bool excludePrivate);
+                  bool useColors);
 
     /**
       Draw the (filofax) table for a bunch of days, using drawDayBox.
+
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
       @param p QPainter of the printout
       @param start Start date
       @param end End date
@@ -458,8 +451,6 @@ public:
       @param includeDescription Whether to print the event description as well.
       @param includeCategories Whether to print the event categories (tags) as well.
       @param useColors Whether to use  event category colors to draw the events.
-      @param excludeConfidential Whether to exclude Incidence marked confidential.
-      @param excludePrivate Whether to exclude Incidence marked private.
     */
     void drawDays(QPainter &p,
                   const QDate &start,
@@ -471,9 +462,7 @@ public:
                   bool showNoteLines,
                   bool includeDescription,
                   bool includeCategories,
-                  bool useColors,
-                  bool excludeConfidential,
-                  bool excludePrivate);
+                  bool useColors);
 
     /**
       Draw the timetable view of the given time range from fromDate to toDate.
@@ -482,6 +471,8 @@ public:
       and the events are displayed as boxes (like in korganizer's day/week view).
       The first cell of each column contains the all-day events (using
       drawAllDayBox with expandable=false).
+
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
       @param p QPainter of the printout
       @param fromDate First day to be included in the page
       @param toDate Last day to be included in the page
@@ -493,8 +484,6 @@ public:
       @param includeDescription Whether to print the event description as well.
       @param includeCategories Whether to print the event categories (tags) as well.
       @param excludeTime Whether the time is printed in the detail area.
-      @param excludeConfidential Whether to exclude Incidence marked confidential.
-      @param excludePrivate Whether to exclude Incidence marked private.
     */
     void drawTimeTable(QPainter &p,
                        const QDate &fromDate,
@@ -505,9 +494,7 @@ public:
                        const QRect &box,
                        bool includeDescription,
                        bool includeCategories,
-                       bool excludeTime,
-                       bool excludeConfidential,
-                       bool excludePrivate);
+                       bool excludeTime);
 
     /**
       Draw the month table of the month containing the date qd. Each day gets one
@@ -515,6 +502,8 @@ public:
       in a matrix, with the first column being the first day of the
       week (so it might display some days of the previous and the next month).
       Above the matrix there is a bar showing the weekdays (drawn using drawDaysOfWeek).
+
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
       @param p QPainter of the printout
       @param qd Arbitrary date within the month to be printed.
       @param fromTime Start time of the displayed time range
@@ -527,8 +516,6 @@ public:
       @param includeDescription Whether descriptions are printed.
       @param includeCategories Whether to print the event categories (tags) as well.
       @param useColors Whether to use  event category colors to draw the events.
-      @param excludeConfidential Whether to exclude Incidence marked confidential.
-      @param excludePrivate Whether to exclude Incidence marked private.
       @param box coordinates of the month.
     */
     void drawMonthTable(QPainter &p,
@@ -543,13 +530,13 @@ public:
                         bool includeDescription,
                         bool includeCategories,
                         bool useColors,
-                        bool excludeConfidential,
-                        bool excludePrivate,
                         const QRect &box);
 
     /**
       Draw a vertical representation of the month containing the date dt. Each
       day gets one line.
+
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
       @param p QPainter of the printout
       @param dt Arbitrary date within the month to be printed
       @param box coordinates of the box reserved for the month
@@ -561,17 +548,13 @@ public:
                            how events that do not cross midnight should be printed.
       @param holidaysFlags Bitfield consisting of DisplayFlags flags to determine
                            how holidays should be printed.
-      @param excludeConfidential Whether to exclude Incidence marked confidential.
-      @param excludePrivate Whether to exclude Incidence marked private.
     */
     void drawMonth(QPainter &p,
                    const QDate &dt,
                    const QRect &box,
                    int maxdays = -1,
                    int subDailyFlags = TimeBoxes,
-                   int holidaysFlags = Text,
-                   bool excludeConfidential = false,
-                   bool excludePrivate = false);
+                   int holidaysFlags = Text);
 
     /**
       Internal class representing the start of a todo.
@@ -638,12 +621,12 @@ public:
                   int width,
                   int pageHeight,
                   const KCalendarCore::Todo::List &todoList,
-                  TodoParentStart *r,
-                  bool excludeConfidential,
-                  bool excludePrivate);
+                  TodoParentStart *r);
 
     /**
       Draws single journal item.
+
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
       @param journal The item to be printed.
       @param p QPainter of the printout
       @param x x-coordinate of the upper left coordinate of the first item
@@ -703,6 +686,8 @@ protected:
     bool mUseColors;
     bool mPrintFooter;
     bool mShowNoteLines;
+    bool mExcludeConfidential;
+    bool mExcludePrivate;
     int mHeaderHeight;
     int mSubHeaderHeight;
     int mFooterHeight;

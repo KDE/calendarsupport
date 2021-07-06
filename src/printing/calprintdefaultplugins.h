@@ -123,8 +123,6 @@ protected:
     bool mIncludeTodos;
     bool mIncludeAllEvents;
     bool mExcludeTime;
-    bool mExcludeConfidential;
-    bool mExcludePrivate;
 };
 
 class CalPrintWeek : public CalPrintPluginBase
@@ -182,8 +180,6 @@ protected:
     bool mIncludeCategories;
     bool mIncludeAllEvents;
     bool mExcludeTime;
-    bool mExcludeConfidential;
-    bool mExcludePrivate;
 };
 
 class CalPrintMonth : public CalPrintPluginBase
@@ -238,8 +234,6 @@ protected:
     bool mSingleLineLimit;
     bool mIncludeDescription;
     bool mIncludeCategories;
-    bool mExcludeConfidential;
-    bool mExcludePrivate;
 };
 
 class CalPrintTodos : public CalPrintPluginBase
@@ -309,8 +303,6 @@ protected:
     bool mStrikeOutCompleted;
     bool mSortField;
     bool mSortDirection;
-    bool mExcludeConfidential;
-    bool mExcludePrivate;
 };
 
 class CalPrintIncidenceConfig : public QWidget, public Ui::CalPrintIncidenceConfig_Base

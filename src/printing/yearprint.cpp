@@ -68,8 +68,6 @@ void CalPrintYear::loadConfig()
         mPages = config.readEntry("Pages", 1);
         mSubDaysEvents = config.readEntry("ShowSubDayEventsAs", static_cast<int>(TimeBoxes));
         mHolidaysEvents = config.readEntry("ShowHolidaysAs", static_cast<int>(Text));
-        mExcludeConfidential = config.readEntry("Exclude confidential", true);
-        mExcludePrivate = config.readEntry("Exclude private", true);
     }
     setSettingsWidget();
 }
@@ -86,8 +84,6 @@ void CalPrintYear::saveConfig()
         config.writeEntry("Pages", mPages);
         config.writeEntry("ShowSubDayEventsAs", mSubDaysEvents);
         config.writeEntry("ShowHolidaysAs", mHolidaysEvents);
-        config.writeEntry("Exclude confidential", mExcludeConfidential);
-        config.writeEntry("Exclude private", mExcludePrivate);
     }
 }
 
@@ -156,8 +152,7 @@ void CalPrintYear::print(QPainter &p, int width, int height)
             int xstart = static_cast<int>(j * monthwidth + 0.5);
             int xend = static_cast<int>((j + 1) * monthwidth + 0.5);
             QRect monthBox(xstart, monthesBox.top(), xend - xstart, monthesBox.height());
-            drawMonth(p, temp, monthBox, maxdays, mSubDaysEvents, mHolidaysEvents,
-                      mExcludeConfidential, mExcludePrivate);
+            drawMonth(p, temp, monthBox, maxdays, mSubDaysEvents, mHolidaysEvents);
 
             temp = temp.addMonths(1);
         }
