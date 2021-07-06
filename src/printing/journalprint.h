@@ -59,6 +59,20 @@ public:
     void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
+
+    /**
+      Draws single journal item.
+
+      Obeys configuration options #mExcludeConfidential, #excludePrivate.
+      @param journal The item to be printed.
+      @param p QPainter of the printout
+      @param x x-coordinate of the upper left coordinate of the first item
+      @param y y-coordinate of the upper left coordinate of the first item
+      @param width width of the whole list
+      @param pageHeight Total height allowed for the list on a page. If an item
+                   would be below that line, a new page is started.
+    */
+    void drawJournal(const KCalendarCore::Journal::Ptr &journal, QPainter &p, int x, int &y, int width, int pageHeight);
     bool mUseDateRange;
 };
 

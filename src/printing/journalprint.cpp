@@ -89,6 +89,48 @@ void CalPrintJournal::setDateRange(const QDate &from, const QDate &to)
     }
 }
 
+void CalPrintJournal::drawJournal(const KCalendarCore::Journal::Ptr &journal, QPainter &p, int x, int &y, int width, int pageHeight)
+{
+    QFont oldFont(p.font());
+    p.setFont(QFont(QStringLiteral("sans-serif"), 15));
+    QString headerText;
+    QString dateText(QLocale::system().toString(journal->dtStart().toLocalTime().date(), QLocale::LongFormat));
+
+    if (journal->summary().isEmpty()) {
+        headerText = dateText;
+    } else {
+        headerText = i18nc("Description - date", "%1 - %2", journal->summary(), dateText);
+    }
+
+    QRect rect(p.boundingRect(x, y, width, -1, Qt::TextWordWrap, headerText));
+    if (rect.bottom() > pageHeight) {
+        if (mPrintFooter) {
+            drawFooter(p, {0, pageHeight, width, footerHeight()});
+        }
+        // Start new page...
+        y = 0;
+        mPrinter->newPage();
+        rect = p.boundingRect(x, y, width, -1, Qt::TextWordWrap, headerText);
+    }
+    QRect newrect;
+    p.drawText(rect, Qt::TextWordWrap, headerText, &newrect);
+    p.setFont(oldFont);
+
+    y = newrect.bottom() + 4;
+
+    p.drawLine(x + 3, y, x + width - 6, y);
+    y += 5;
+    if (!(journal->organizer().fullName().isEmpty())) {
+        drawTextLines(p, i18n("Person: %1", journal->organizer().fullName()), x, y, width, pageHeight, false);
+        y += 7;
+    }
+    if (!(journal->description().isEmpty())) {
+        drawTextLines(p, journal->description(), x, y, width, pageHeight, journal->descriptionIsRich());
+        y += 7;
+    }
+    y += 10;
+}
+
 void CalPrintJournal::print(QPainter &p, int width, int height)
 {
     int x = 0, y = 0;
