@@ -796,10 +796,8 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                      mEndTime,
                      daysBox,
                      mSingleLineLimit,
-                     mShowNoteLines,
                      mIncludeDescription,
-                     mIncludeCategories,
-                     mUseColors);
+                     mIncludeCategories);
         } else if (mDayPrintType == SingleTimetable) {
             drawTimeTable(p,
                           mFromDate,
@@ -1028,8 +1026,8 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             title =  i18nc("date from-to", "%1\u2013%2", line1, line2);
             drawHeader(p, title, curWeek.addDays(-6), QDate(), headerBox);
 
-            drawWeek(p, curWeek, mStartTime, mEndTime, weekBox, mSingleLineLimit, mShowNoteLines,
-                      mIncludeDescription, mIncludeCategories, mUseColors);
+            drawWeek(p, curWeek, mStartTime, mEndTime, weekBox, mSingleLineLimit,
+                      mIncludeDescription, mIncludeCategories);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1259,10 +1257,8 @@ void CalPrintMonth::print(QPainter &p, int width, int height)
                        mRecurDaily,
                        mRecurWeekly,
                        mSingleLineLimit,
-                       mShowNoteLines,
                        mIncludeDescription,
                        mIncludeCategories,
-                       mUseColors,
                        monthBox);
 
         if (mPrintFooter) {

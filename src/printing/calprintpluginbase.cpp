@@ -1020,10 +1020,8 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
                                     bool printRecurDaily,
                                     bool printRecurWeekly,
                                     bool singleLineLimit,
-                                    bool showNoteLines,
                                     bool includeDescription,
-                                    bool includeCategories,
-                                    bool useColors)
+                                    bool includeCategories)
 {
     QString dayNumStr;
     const auto local = QLocale::system();
@@ -1097,7 +1095,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
             timeText = local.toString(currEvent->dtStart().toLocalTime().time(), QLocale::ShortFormat) + QLatin1Char(' ');
         }
         p.save();
-        if (useColors) {
+        if (mUseColors) {
             setColorsByIncidenceCategory(p, currEvent);
         }
         QString summaryStr = currEvent->summary();
@@ -1180,7 +1178,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
             p.restore();
         }
     }
-    if (showNoteLines) {
+    if (mShowNoteLines) {
         drawNoteLines(p, box, box.y() + textY);
     }
 
@@ -1300,10 +1298,8 @@ void CalPrintPluginBase::drawWeek(QPainter &p,
                                   const QTime &toTime,
                                   const QRect &box,
                                   bool singleLineLimit,
-                                  bool showNoteLines,
                                   bool includeDescription,
-                                  bool includeCategories,
-                                  bool useColors)
+                                  bool includeCategories)
 {
     QDate weekDate = qd;
     const bool portrait = (box.height() > box.width());
@@ -1339,10 +1335,8 @@ void CalPrintPluginBase::drawWeek(QPainter &p,
                    true,
                    true,
                    singleLineLimit,
-                   showNoteLines,
                    includeDescription,
-                   includeCategories,
-                   useColors);
+                   includeCategories);
     } // for i through all weekdays
 }
 
@@ -1353,10 +1347,8 @@ void CalPrintPluginBase::drawDays(QPainter &p,
                                   const QTime &toTime,
                                   const QRect &box,
                                   bool singleLineLimit,
-                                  bool showNoteLines,
                                   bool includeDescription,
-                                  bool includeCategories,
-                                  bool useColors)
+                                  bool includeCategories)
 {
     const int numberOfDays = start.daysTo(end) + 1;
     int vcells;
@@ -1390,10 +1382,8 @@ void CalPrintPluginBase::drawDays(QPainter &p,
                    true,
                    true,
                    singleLineLimit,
-                   showNoteLines,
                    includeDescription,
-                   includeCategories,
-                   useColors);
+                   includeCategories);
     } // for i through all selected days
 }
 
@@ -1754,10 +1744,8 @@ void CalPrintPluginBase::drawMonthTable(QPainter &p,
                                         bool recurDaily,
                                         bool recurWeekly,
                                         bool singleLineLimit,
-                                        bool showNoteLines,
                                         bool includeDescription,
                                         bool includeCategories,
-                                        bool useColors,
                                         const QRect &box)
 {
     int yoffset = mSubHeaderHeight;
@@ -1824,10 +1812,8 @@ void CalPrintPluginBase::drawMonthTable(QPainter &p,
                        recurDaily,
                        recurWeekly,
                        singleLineLimit,
-                       showNoteLines,
                        includeDescription,
-                       includeCategories,
-                       useColors);
+                       includeCategories);
             if (darkbg) {
                 p.setBackground(back);
                 darkbg = false;
