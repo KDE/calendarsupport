@@ -82,7 +82,7 @@ private:
      * If not, we can't archive this to-do.
      * @param todo root of the sub-tree we are checking
      * @param limitDate
-     * @param checkedUids used internaly to prevent infinit recursion due to invalid calendar files
+     * @param checkedUids used internally to prevent infinite recursion due to invalid calendar files
      */
     bool isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
                            const KCalendarCore::Todo::Ptr &todo,

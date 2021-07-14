@@ -306,7 +306,7 @@ bool EventArchiver::isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
         return false;
     }
 
-    // This QList is only to prevent infinit recursion
+    // This QList is only to prevent infinite recursion
     if (checkedUids.contains(todo->uid())) {
         // Probably will never happen, calendar.cpp checks for this
         qCWarning(CALENDARSUPPORT_LOG) << "To-do hierarchy loop detected!";
@@ -314,8 +314,8 @@ bool EventArchiver::isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
     }
 
     checkedUids.append(todo->uid());
-    const KCalendarCore::Incidence::List childs = calendar->childIncidences(todo->uid());
-    for (const KCalendarCore::Incidence::Ptr &incidence : childs) {
+    const KCalendarCore::Incidence::List children = calendar->childIncidences(todo->uid());
+    for (const KCalendarCore::Incidence::Ptr &incidence : children) {
         const Todo::Ptr t = incidence.dynamicCast<KCalendarCore::Todo>();
         if (t && !isSubTreeComplete(calendar, t, limitDate, checkedUids)) {
             return false;
