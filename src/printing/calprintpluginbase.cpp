@@ -451,7 +451,7 @@ void CalPrintPluginBase::drawSubHeaderBox(QPainter &p, const QString &str, QRect
     drawShadedBox(p, BOX_BORDER_WIDTH, QColor(232, 232, 232), box);
     QFont oldfont(p.font());
     p.setFont(QFont(QStringLiteral("sans-serif"), 10, QFont::Bold));
-    p.drawText(box, Qt::AlignCenter | Qt::AlignVCenter, str);
+    p.drawText(box, Qt::AlignHCenter | Qt::AlignTop, str);
     p.setFont(oldfont);
 }
 

@@ -24,9 +24,9 @@
 class PrintCellItem;
 class QWidget;
 
-#define PORTRAIT_HEADER_HEIGHT 72 // header height, for portrait orientation
+#define PORTRAIT_HEADER_HEIGHT 80 // header height, for portrait orientation
 #define LANDSCAPE_HEADER_HEIGHT 54 // header height, for landscape orientation
-#define SUBHEADER_HEIGHT 20 // subheader height, for all orientations
+#define SUBHEADER_HEIGHT 28 // subheader height, for all orientations
 #define PORTRAIT_FOOTER_HEIGHT 16 // footer height, for portrait orientation
 #define LANDSCAPE_FOOTER_HEIGHT 14 // footer height, for landscape orientation
 #define MARGIN_SIZE 36 // margins, for all orientations
