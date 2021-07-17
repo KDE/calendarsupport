@@ -184,9 +184,9 @@ void CalPrintPluginBase::doLoadConfig()
         mToDate = group.readEntry("ToDate", dt).date();
         mUseColors = group.readEntry("UseColors", true);
         mPrintFooter = group.readEntry("PrintFooter", true);
+        mShowNoteLines = group.readEntry("Note Lines", false);
         mExcludeConfidential = group.readEntry("Exclude confidential", true);
         mExcludePrivate = group.readEntry("Exclude private", true);
-        loadConfig();
     } else {
         qCDebug(CALENDARSUPPORT_LOG) << "No config available in loadConfig!!!!";
     }
@@ -196,7 +196,6 @@ void CalPrintPluginBase::doSaveConfig()
 {
     if (mConfig) {
         KConfigGroup group(mConfig, groupName());
-        saveConfig();
         QDateTime dt = QDateTime::currentDateTime(); // any valid QDateTime will do
         dt.setDate(mFromDate);
         group.writeEntry("FromDate", dt);
@@ -204,6 +203,7 @@ void CalPrintPluginBase::doSaveConfig()
         group.writeEntry("ToDate", dt);
         group.writeEntry("UseColors", mUseColors);
         group.writeEntry("PrintFooter", mPrintFooter);
+        group.writeEntry("Note Lines", mShowNoteLines);
         group.writeEntry("Exclude confidential", mExcludeConfidential);
         group.writeEntry("Exclude private", mExcludePrivate);
         mConfig->sync();

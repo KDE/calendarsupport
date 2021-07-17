@@ -73,20 +73,20 @@ void CalPrintIncidence::setSettingsWidget()
     }
 }
 
-void CalPrintIncidence::loadConfig()
+void CalPrintIncidence::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
         mShowOptions = grp.readEntry("Show Options", false);
         mShowSubitemsNotes = grp.readEntry("Show Subitems and Notes", false);
         mShowAttendees = grp.readEntry("Use Attendees", false);
         mShowAttachments = grp.readEntry("Use Attachments", false);
-        mShowNoteLines = grp.readEntry("Note Lines", false);
     }
     setSettingsWidget();
 }
 
-void CalPrintIncidence::saveConfig()
+void CalPrintIncidence::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
@@ -95,8 +95,8 @@ void CalPrintIncidence::saveConfig()
         grp.writeEntry("Show Subitems and Notes", mShowSubitemsNotes);
         grp.writeEntry("Use Attendees", mShowAttendees);
         grp.writeEntry("Use Attachments", mShowAttachments);
-        grp.writeEntry("Note Lines", mShowNoteLines);
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 class TimePrintStringsVisitor : public KCalendarCore::Visitor
@@ -710,8 +710,9 @@ void CalPrintDay::setSettingsWidget()
     }
 }
 
-void CalPrintDay::loadConfig()
+void CalPrintDay::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
         QDate dt = QDate::currentDate(); // any valid QDate will do
@@ -726,13 +727,12 @@ void CalPrintDay::loadConfig()
         mIncludeAllEvents = grp.readEntry("Include all events", false);
         mDayPrintType = static_cast<eDayPrintType>(grp.readEntry("Print type", static_cast<int>(Timetable)));
         mSingleLineLimit = grp.readEntry("Single line limit", false);
-        mShowNoteLines = grp.readEntry("Note Lines", false);
         mExcludeTime = grp.readEntry("Exclude time", false);
     }
     setSettingsWidget();
 }
 
-void CalPrintDay::saveConfig()
+void CalPrintDay::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
@@ -748,9 +748,9 @@ void CalPrintDay::saveConfig()
         grp.writeEntry("Include all events", mIncludeAllEvents);
         grp.writeEntry("Print type", int(mDayPrintType));
         grp.writeEntry("Single line limit", mSingleLineLimit);
-        grp.writeEntry("Note Lines", mShowNoteLines);
         grp.writeEntry("Exclude time", mExcludeTime);
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 void CalPrintDay::setDateRange(const QDate &from, const QDate &to)
@@ -932,8 +932,9 @@ void CalPrintWeek::setSettingsWidget()
     }
 }
 
-void CalPrintWeek::loadConfig()
+void CalPrintWeek::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
         QDate dt = QDate::currentDate(); // any valid QDate will do
@@ -942,7 +943,6 @@ void CalPrintWeek::loadConfig()
         QDateTime endTm(dt, tm1.addSecs(43200));
         mStartTime = grp.readEntry("Start time", startTm).time();
         mEndTime = grp.readEntry("End time", endTm).time();
-        mShowNoteLines = grp.readEntry("Note Lines", false);
         mSingleLineLimit = grp.readEntry("Single line limit", false);
         mIncludeTodos = grp.readEntry("Include todos", false);
         mIncludeAllEvents = grp.readEntry("Include all events", false);
@@ -954,7 +954,7 @@ void CalPrintWeek::loadConfig()
     setSettingsWidget();
 }
 
-void CalPrintWeek::saveConfig()
+void CalPrintWeek::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
@@ -964,7 +964,6 @@ void CalPrintWeek::saveConfig()
         grp.writeEntry("Start time", dt);
         dt.setTime(mEndTime);
         grp.writeEntry("End time", dt);
-        grp.writeEntry("Note Lines", mShowNoteLines);
         grp.writeEntry("Single line limit", mSingleLineLimit);
         grp.writeEntry("Include todos", mIncludeTodos);
         grp.writeEntry("Include all events", mIncludeAllEvents);
@@ -973,6 +972,7 @@ void CalPrintWeek::saveConfig()
         grp.writeEntry("Include categories", mIncludeCategories);
         grp.writeEntry("Exclude Time", mExcludeTime);
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 QPageLayout::Orientation CalPrintWeek::defaultOrientation() const
@@ -1174,8 +1174,9 @@ void CalPrintMonth::setSettingsWidget()
     }
 }
 
-void CalPrintMonth::loadConfig()
+void CalPrintMonth::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
         mWeekNumbers = grp.readEntry("Print week numbers", true);
@@ -1183,14 +1184,13 @@ void CalPrintMonth::loadConfig()
         mRecurWeekly = grp.readEntry("Print weekly incidences", true);
         mIncludeTodos = grp.readEntry("Include todos", false);
         mSingleLineLimit = grp.readEntry("Single line limit", false);
-        mShowNoteLines = grp.readEntry("Note Lines", false);
         mIncludeDescription = grp.readEntry("Include description", false);
         mIncludeCategories = grp.readEntry("Include categories", false);
     }
     setSettingsWidget();
 }
 
-void CalPrintMonth::saveConfig()
+void CalPrintMonth::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
@@ -1200,10 +1200,10 @@ void CalPrintMonth::saveConfig()
         grp.writeEntry("Print weekly incidences", mRecurWeekly);
         grp.writeEntry("Include todos", mIncludeTodos);
         grp.writeEntry("Single line limit", mSingleLineLimit);
-        grp.writeEntry("Note Lines", mShowNoteLines);
         grp.writeEntry("Include description", mIncludeDescription);
         grp.writeEntry("Include categories", mIncludeCategories);
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 void CalPrintMonth::setDateRange(const QDate &from, const QDate &to)
@@ -1376,8 +1376,9 @@ void CalPrintTodos::setSettingsWidget()
     }
 }
 
-void CalPrintTodos::loadConfig()
+void CalPrintTodos::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
         mPageTitle = grp.readEntry("Page title", i18n("To-do list"));
@@ -1396,7 +1397,7 @@ void CalPrintTodos::loadConfig()
     setSettingsWidget();
 }
 
-void CalPrintTodos::saveConfig()
+void CalPrintTodos::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
@@ -1414,6 +1415,7 @@ void CalPrintTodos::saveConfig()
         grp.writeEntry("Sort field", static_cast<int>(mTodoSortField));
         grp.writeEntry("Sort direction", static_cast<int>(mTodoSortDirection));
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 void CalPrintTodos::print(QPainter &p, int width, int height)

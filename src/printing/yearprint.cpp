@@ -60,8 +60,9 @@ void CalPrintYear::setSettingsWidget()
     }
 }
 
-void CalPrintYear::loadConfig()
+void CalPrintYear::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup config(mConfig, "Yearprint");
         mYear = config.readEntry("Year", QDate::currentDate().year());
@@ -72,7 +73,7 @@ void CalPrintYear::loadConfig()
     setSettingsWidget();
 }
 
-void CalPrintYear::saveConfig()
+void CalPrintYear::doSaveConfig()
 {
     qCDebug(CALENDARSUPPORT_LOG);
 
@@ -85,6 +86,7 @@ void CalPrintYear::saveConfig()
         config.writeEntry("ShowSubDayEventsAs", mSubDaysEvents);
         config.writeEntry("ShowHolidaysAs", mHolidaysEvents);
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 QPageLayout::Orientation CalPrintYear::defaultOrientation() const

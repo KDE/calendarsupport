@@ -135,14 +135,17 @@ public:
     }
 
     /**
-      Load complete config.
+      Load complete configuration.  Each implementation calls its parent's
+      implementation to load parent configuration options, then loads its own.
     */
     virtual void doLoadConfig()
     {
     }
 
     /**
-      Save complete config.
+      Save complete configuration.  Each implementation saves its own
+      configuration options, then calls its parent's implementation to save
+      parent options.
     */
     virtual void doSaveConfig()
     {

@@ -66,28 +66,15 @@ public:
       @param width Width of printable area
       @param height Height of printable area
     */
+
     virtual void print(QPainter &p, int width, int height) = 0;
     /**
       Start printing.
     */
     void doPrint(QPrinter *printer) override;
 
-    /**
-      Load print format configuration from config file.
-    */
-    virtual void loadConfig() = 0;
-    /**
-      Write print format configuration to config file.
-    */
-    virtual void saveConfig() = 0;
-
-    /**
-      Load complete config. This also calls loadConfig() of the derived class.
-    */
     void doLoadConfig() override;
-    /**
-      Save complete config. This also calls saveConfig() of the derived class.
-    */
+
     void doSaveConfig() override;
 
     /** HELPER FUNCTIONS */

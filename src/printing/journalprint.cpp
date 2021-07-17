@@ -59,8 +59,9 @@ void CalPrintJournal::setSettingsWidget()
     }
 }
 
-void CalPrintJournal::loadConfig()
+void CalPrintJournal::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup config(mConfig, "Journalprint");
         mUseDateRange = config.readEntry("JournalsInRange", false);
@@ -68,7 +69,7 @@ void CalPrintJournal::loadConfig()
     setSettingsWidget();
 }
 
-void CalPrintJournal::saveConfig()
+void CalPrintJournal::doSaveConfig()
 {
     qCDebug(CALENDARSUPPORT_LOG);
 
@@ -77,6 +78,7 @@ void CalPrintJournal::saveConfig()
         KConfigGroup config(mConfig, "Journalprint");
         config.writeEntry("JournalsInRange", mUseDateRange);
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 void CalPrintJournal::setDateRange(const QDate &from, const QDate &to)
