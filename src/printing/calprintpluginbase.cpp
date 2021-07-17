@@ -1152,7 +1152,9 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
                 timeText.clear();
             }
             p.save();
-            setColorsByIncidenceCategory(p, todo);
+            if (mUseColors) {
+                setColorsByIncidenceCategory(p, todo);
+            }
             QString summaryStr = todo->summary();
             if (!todo->location().isEmpty()) {
                 summaryStr = i18nc("summary, location", "%1, %2", summaryStr, todo->location());
