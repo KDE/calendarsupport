@@ -633,11 +633,63 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
 }
 
 /**************************************************************
+ *           Print Timetables
+ **************************************************************/
+
+CalPrintTimetable::CalPrintTimetable()
+    : CalPrintPluginBase()
+{
+}
+
+CalPrintTimetable::~CalPrintTimetable()
+{
+}
+
+void CalPrintTimetable::doLoadConfig()
+{
+    CalPrintPluginBase::doLoadConfig();
+    if (mConfig) {
+        KConfigGroup grp(mConfig, groupName());
+        QDate dt = QDate::currentDate(); // any valid QDate will do
+        QTime tm1(dayStart());
+        QDateTime startTm(dt, tm1);
+        QDateTime endTm(dt, tm1.addSecs(12 * 60 * 60));
+        mStartTime = grp.readEntry("Start time", startTm).time();
+        mEndTime = grp.readEntry("End time", endTm).time();
+        mIncludeDescription = grp.readEntry("Include description", false);
+        mIncludeCategories = grp.readEntry("Include categories", false);
+        mIncludeTodos = grp.readEntry("Include todos", false);
+        mIncludeAllEvents = grp.readEntry("Include all events", false);
+        mSingleLineLimit = grp.readEntry("Single line limit", false);
+        mExcludeTime = grp.readEntry("Exclude time", false);
+    }
+}
+
+void CalPrintTimetable::doSaveConfig()
+{
+    if (mConfig) {
+        KConfigGroup grp(mConfig, groupName());
+        QDateTime dt = QDateTime::currentDateTime(); // any valid QDateTime will do
+        dt.setTime(mStartTime);
+        grp.writeEntry("Start time", dt);
+        dt.setTime(mEndTime);
+        grp.writeEntry("End time", dt);
+        grp.writeEntry("Include description", mIncludeDescription);
+        grp.writeEntry("Include categories", mIncludeCategories);
+        grp.writeEntry("Include todos", mIncludeTodos);
+        grp.writeEntry("Include all events", mIncludeAllEvents);
+        grp.writeEntry("Single line limit", mSingleLineLimit);
+        grp.writeEntry("Exclude time", mExcludeTime);
+    }
+    CalPrintPluginBase::doSaveConfig();
+}
+
+/**************************************************************
  *           Print Day
  **************************************************************/
 
 CalPrintDay::CalPrintDay()
-    : CalPrintPluginBase()
+    : CalPrintTimetable()
 {
 }
 
@@ -712,22 +764,10 @@ void CalPrintDay::setSettingsWidget()
 
 void CalPrintDay::doLoadConfig()
 {
-    CalPrintPluginBase::doLoadConfig();
+    CalPrintTimetable::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
-        QDate dt = QDate::currentDate(); // any valid QDate will do
-        QTime tm1(dayStart());
-        QDateTime startTm(dt, tm1);
-        QDateTime endTm(dt, tm1.addSecs(12 * 60 * 60));
-        mStartTime = grp.readEntry("Start time", startTm).time();
-        mEndTime = grp.readEntry("End time", endTm).time();
-        mIncludeDescription = grp.readEntry("Include description", false);
-        mIncludeCategories = grp.readEntry("Include categories", false);
-        mIncludeTodos = grp.readEntry("Include todos", false);
-        mIncludeAllEvents = grp.readEntry("Include all events", false);
         mDayPrintType = static_cast<eDayPrintType>(grp.readEntry("Print type", static_cast<int>(Timetable)));
-        mSingleLineLimit = grp.readEntry("Single line limit", false);
-        mExcludeTime = grp.readEntry("Exclude time", false);
     }
     setSettingsWidget();
 }
@@ -737,20 +777,9 @@ void CalPrintDay::doSaveConfig()
     readSettingsWidget();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
-        QDateTime dt = QDateTime::currentDateTime(); // any valid QDateTime will do
-        dt.setTime(mStartTime);
-        grp.writeEntry("Start time", dt);
-        dt.setTime(mEndTime);
-        grp.writeEntry("End time", dt);
-        grp.writeEntry("Include description", mIncludeDescription);
-        grp.writeEntry("Include categories", mIncludeCategories);
-        grp.writeEntry("Include todos", mIncludeTodos);
-        grp.writeEntry("Include all events", mIncludeAllEvents);
         grp.writeEntry("Print type", int(mDayPrintType));
-        grp.writeEntry("Single line limit", mSingleLineLimit);
-        grp.writeEntry("Exclude time", mExcludeTime);
     }
-    CalPrintPluginBase::doSaveConfig();
+    CalPrintTimetable::doSaveConfig();
 }
 
 void CalPrintDay::setDateRange(const QDate &from, const QDate &to)
@@ -857,7 +886,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
  **************************************************************/
 
 CalPrintWeek::CalPrintWeek()
-    : CalPrintPluginBase()
+    : CalPrintTimetable()
 {
 }
 
@@ -930,26 +959,15 @@ void CalPrintWeek::setSettingsWidget()
         cfg->mExcludeConfidential->setChecked(mExcludeConfidential);
         cfg->mExcludePrivate->setChecked(mExcludePrivate);
     }
+    CalPrintTimetable::setSettingsWidget();
 }
 
 void CalPrintWeek::doLoadConfig()
 {
-    CalPrintPluginBase::doLoadConfig();
+    CalPrintTimetable::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
-        QDate dt = QDate::currentDate(); // any valid QDate will do
-        QTime tm1(dayStart());
-        QDateTime startTm(dt, tm1);
-        QDateTime endTm(dt, tm1.addSecs(43200));
-        mStartTime = grp.readEntry("Start time", startTm).time();
-        mEndTime = grp.readEntry("End time", endTm).time();
-        mSingleLineLimit = grp.readEntry("Single line limit", false);
-        mIncludeTodos = grp.readEntry("Include todos", false);
-        mIncludeAllEvents = grp.readEntry("Include all events", false);
         mWeekPrintType = (eWeekPrintType)(grp.readEntry("Print type", (int)Filofax));
-        mIncludeDescription = grp.readEntry("Include Description", false);
-        mIncludeCategories = grp.readEntry("Include categories", false);
-        mExcludeTime = grp.readEntry("Exclude Time", false);
     }
     setSettingsWidget();
 }
@@ -959,20 +977,9 @@ void CalPrintWeek::doSaveConfig()
     readSettingsWidget();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
-        QDateTime dt = QDateTime::currentDateTime(); // any valid QDateTime will do
-        dt.setTime(mStartTime);
-        grp.writeEntry("Start time", dt);
-        dt.setTime(mEndTime);
-        grp.writeEntry("End time", dt);
-        grp.writeEntry("Single line limit", mSingleLineLimit);
-        grp.writeEntry("Include todos", mIncludeTodos);
-        grp.writeEntry("Include all events", mIncludeAllEvents);
         grp.writeEntry("Print type", int(mWeekPrintType));
-        grp.writeEntry("Include Description", mIncludeDescription);
-        grp.writeEntry("Include categories", mIncludeCategories);
-        grp.writeEntry("Exclude Time", mExcludeTime);
     }
-    CalPrintPluginBase::doSaveConfig();
+    CalPrintTimetable::doSaveConfig();
 }
 
 QPageLayout::Orientation CalPrintWeek::defaultOrientation() const

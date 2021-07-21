@@ -74,7 +74,25 @@ protected:
     bool mShowAttachments;
 };
 
-class CalPrintDay : public CalPrintPluginBase
+class CalPrintTimetable : public CalPrintPluginBase
+{
+public:
+    CalPrintTimetable();
+    ~CalPrintTimetable() override;
+    void doLoadConfig() override;
+    void doSaveConfig() override;
+
+protected:
+    QTime mStartTime, mEndTime;
+    bool mSingleLineLimit;
+    bool mIncludeTodos;
+    bool mIncludeDescription;
+    bool mIncludeCategories;
+    bool mIncludeAllEvents;
+    bool mExcludeTime;
+};
+
+class CalPrintDay : public CalPrintTimetable
 {
 public:
     CalPrintDay();
@@ -116,16 +134,9 @@ public:
 
 protected:
     enum eDayPrintType { Filofax = 0, Timetable, SingleTimetable } mDayPrintType;
-    QTime mStartTime, mEndTime;
-    bool mIncludeDescription;
-    bool mIncludeCategories;
-    bool mSingleLineLimit;
-    bool mIncludeTodos;
-    bool mIncludeAllEvents;
-    bool mExcludeTime;
 };
 
-class CalPrintWeek : public CalPrintPluginBase
+class CalPrintWeek : public CalPrintTimetable
 {
 public:
     CalPrintWeek();
@@ -173,13 +184,6 @@ public:
 
 protected:
     enum eWeekPrintType { Filofax = 0, Timetable, SplitWeek } mWeekPrintType;
-    QTime mStartTime, mEndTime;
-    bool mSingleLineLimit;
-    bool mIncludeTodos;
-    bool mIncludeDescription;
-    bool mIncludeCategories;
-    bool mIncludeAllEvents;
-    bool mExcludeTime;
 };
 
 class CalPrintMonth : public CalPrintPluginBase
