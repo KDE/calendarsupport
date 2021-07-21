@@ -13,6 +13,8 @@
 #include "kcalprefs.h"
 #include "utils.h"
 
+#include <cmath>
+
 #include <Item>
 
 #include <KCalendarCore/Visitor>
@@ -684,6 +686,163 @@ void CalPrintTimetable::doSaveConfig()
     CalPrintPluginBase::doSaveConfig();
 }
 
+static QString cleanString(const QString &instr)
+{
+    QString ret = instr;
+    return ret.replace(QLatin1Char('\n'), QLatin1Char(' '));
+}
+
+void CalPrintTimetable::drawAllDayBox(QPainter &p,
+                                      const KCalendarCore::Event::List &eventList,
+                                      QDate qd,
+                                      QRect box,
+                                      const QList<QDate> &workDays)
+{
+    int lineSpacing = p.fontMetrics().lineSpacing();
+
+    if (!workDays.contains(qd)) {
+        drawShadedBox(p, BOX_BORDER_WIDTH, QColor(232, 232, 232), box);
+    } else {
+        drawBox(p, BOX_BORDER_WIDTH, box);
+    }
+
+    QRect eventBox(box);
+    eventBox.setTop(box.top() + padding());
+    eventBox.setBottom(eventBox.top() + lineSpacing);
+
+    for (const KCalendarCore::Event::Ptr &currEvent : std::as_const(eventList)) {
+        if (!currEvent
+            || !currEvent->allDay()
+            || (mExcludeConfidential && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+            || (mExcludePrivate && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
+            continue;
+        }
+        QString str;
+        if (currEvent->location().isEmpty()) {
+            str = cleanString(currEvent->summary());
+        } else {
+            str = i18nc("summary, location", "%1, %2", cleanString(currEvent->summary()), cleanString(currEvent->location()));
+        }
+        if (mIncludeCategories && !currEvent->categoriesStr().isEmpty()) {
+                str = i18nc("summary, categories", "%1, %2", str, currEvent->categoriesStr());
+        }
+        printEventString(p, eventBox, str);
+        eventBox.setTop(eventBox.bottom());
+        eventBox.setBottom(eventBox.top() + lineSpacing);
+    }
+}
+
+void CalPrintTimetable::drawTimeTable(QPainter &p,
+                                       const QDate &fromDate,
+                                       const QDate &toDate,
+                                       const QRect &box)
+{
+    QTime myFromTime = mStartTime;
+    QTime myToTime = mEndTime;
+    int maxAllDayEvents = 0;
+    QDate curDate(fromDate);
+    while (curDate <= toDate) {
+        KCalendarCore::Event::List eventList = mCalendar->events(curDate, QTimeZone::systemTimeZone());
+        const auto holidays = holiday(curDate);
+        int allDayEvents = holiday(curDate).isEmpty() ? 0 : 1;
+        for (const KCalendarCore::Event::Ptr &event : std::as_const(eventList)) {
+            Q_ASSERT(event);
+            if (!event
+                || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+                || (mExcludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
+                continue;
+            }
+            if (event->allDay()) {
+                allDayEvents += 1;
+            } else if (mIncludeAllEvents) {
+                if (event->dtStart().time() < myFromTime) {
+                    myFromTime = event->dtStart().time();
+                }
+                if (event->dtEnd().time() > myToTime) {
+                    myToTime = event->dtEnd().time();
+                }
+            }
+        }
+        if (allDayEvents > maxAllDayEvents) {
+            maxAllDayEvents = allDayEvents;
+        }
+        curDate = curDate.addDays(1);
+    }
+
+    QFont oldFont(p.font());
+    p.setFont(QFont(QStringLiteral("sans-serif"), 11, QFont::Normal));
+    const int lineSpacing = p.fontMetrics().lineSpacing();
+
+    int timelineWidth = TIMELINE_WIDTH + padding();
+
+    QRect dowBox(box);
+    dowBox.setLeft(box.left() + timelineWidth);
+    dowBox.setHeight(mSubHeaderHeight);
+    drawDaysOfWeek(p, fromDate, toDate, dowBox);
+
+    int tlTop = dowBox.bottom();
+
+    int alldayHeight = 0;
+    if (maxAllDayEvents > 0) {
+        // Draw the side bar for all-day events.
+        const auto alldayLabel =  i18nc("label for timetable all-day boxes", "All day");
+        QFont oldFont(p.font());
+        p.setFont(QFont(QStringLiteral("sans-serif"), 9, QFont::Normal));
+        const auto labelHeight = p.fontMetrics().horizontalAdvance(alldayLabel) + 2*padding();
+        alldayHeight = std::max(maxAllDayEvents*lineSpacing + 2*padding(), labelHeight);
+        drawVerticalBox(p,
+                        BOX_BORDER_WIDTH,
+                        QRect(0, tlTop, TIMELINE_WIDTH, alldayHeight),
+                        alldayLabel,
+                        Qt::AlignHCenter | Qt::AlignVCenter | Qt::TextWordWrap);
+        p.setFont(oldFont);
+        tlTop += alldayHeight +padding();
+    }
+
+    QRect tlBox(box);
+    tlBox.setWidth(TIMELINE_WIDTH);
+    tlBox.setTop(tlTop);
+    drawTimeLine(p, myFromTime, myToTime, tlBox);
+
+    // draw each day
+    curDate = fromDate;
+    int i = 0;
+    double cellWidth = double(dowBox.width() - 1) / double(fromDate.daysTo(toDate) + 1);
+    QRect allDayBox(dowBox.left(), dowBox.bottom(), cellWidth, alldayHeight);
+    const QList<QDate> workDays = CalendarSupport::workDays(fromDate, toDate);
+    while (curDate <= toDate) {
+        KCalendarCore::Event::List eventList =
+            mCalendar->events(curDate, QTimeZone::systemTimeZone(), KCalendarCore::EventSortStartDate, KCalendarCore::SortDirectionAscending);
+
+        allDayBox.setLeft(dowBox.left() + int(i * cellWidth));
+        allDayBox.setRight(dowBox.left() + int((i + 1) * cellWidth));
+        if (maxAllDayEvents > 0) {
+            if (const auto h = holidayEvent(curDate)) {
+                eventList.prepend(h);
+            }
+            drawAllDayBox(p, eventList, curDate, allDayBox, workDays);
+        }
+
+        QRect dayBox(allDayBox);
+        dayBox.setTop(tlTop);
+        dayBox.setBottom(box.bottom());
+        drawAgendaDayBox(p,
+                         eventList,
+                         curDate,
+                         false,
+                         myFromTime,
+                         myToTime,
+                         dayBox,
+                         mIncludeDescription,
+                         mIncludeCategories,
+                         mExcludeTime,
+                         workDays);
+
+        ++i;
+        curDate = curDate.addDays(1);
+    }
+}
+
 /**************************************************************
  *           Print Day
  **************************************************************/
@@ -792,6 +951,45 @@ void CalPrintDay::setDateRange(const QDate &from, const QDate &to)
     }
 }
 
+void CalPrintDay::drawDays(QPainter &p, const QRect &box)
+{
+    const int numberOfDays = mFromDate.daysTo(mToDate) + 1;
+    int vcells;
+    const bool portrait = (box.height() > box.width());
+    int cellWidth;
+    if (portrait) {
+        // 2 columns
+        vcells = std::ceil(static_cast<double>(numberOfDays) / 2.0);
+        if (numberOfDays > 1) {
+            cellWidth = box.width() / 2;
+        } else {
+            cellWidth = box.width();
+        }
+    } else {
+        // landscape: N columns
+        vcells = 1;
+        cellWidth = box.width() / numberOfDays;
+    }
+    const int cellHeight = box.height() / vcells;
+    QDate weekDate = mFromDate;
+    for (int i = 0; i < numberOfDays; ++i, weekDate = weekDate.addDays(1)) {
+        const int hpos = i / vcells;
+        const int vpos = i % vcells;
+        const QRect dayBox(box.left() + cellWidth * hpos, box.top() + cellHeight * vpos, cellWidth, cellHeight);
+        drawDayBox(p,
+                   weekDate,
+                   mStartTime,
+                   mEndTime,
+                   dayBox,
+                   true,
+                   true,
+                   true,
+                   mSingleLineLimit,
+                   mIncludeDescription,
+                   mIncludeCategories);
+    } // for i through all selected days
+}
+
 void CalPrintDay::print(QPainter &p, int width, int height)
 {
     QDate curDay(mFromDate);
@@ -818,26 +1016,9 @@ void CalPrintDay::print(QPainter &p, int width, int height)
         }
         drawHeader(p, title, mFromDate, QDate(), headerBox);
         if (mDayPrintType == Filofax) {
-            drawDays(p,
-                     mFromDate,
-                     mToDate,
-                     mStartTime,
-                     mEndTime,
-                     daysBox,
-                     mSingleLineLimit,
-                     mIncludeDescription,
-                     mIncludeCategories);
+            drawDays(p, daysBox);
         } else if (mDayPrintType == SingleTimetable) {
-            drawTimeTable(p,
-                          mFromDate,
-                          mToDate,
-                          mIncludeAllEvents,
-                          mStartTime,
-                          mEndTime,
-                          daysBox,
-                          mIncludeDescription,
-                          mIncludeCategories,
-                          mExcludeTime);
+            drawTimeTable(p, mFromDate, mToDate, daysBox);
         }
         if (mPrintFooter) {
             drawFooter(p, footerBox);
@@ -859,16 +1040,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
             }
 
             drawHeader(p, local.toString(curDay, QLocale::ShortFormat), curDay, QDate(), headerBox);
-            drawTimeTable(p,
-                          curDay,
-                          curDay,
-                          mIncludeAllEvents,
-                          mStartTime,
-                          mEndTime,
-                          daysBox,
-                          mIncludeDescription,
-                          mIncludeCategories,
-                          mExcludeTime);
+            drawTimeTable(p, curDay, curDay, daysBox);
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
             }
@@ -1003,6 +1175,49 @@ void CalPrintWeek::setDateRange(const QDate &from, const QDate &to)
     }
 }
 
+void CalPrintWeek::drawWeek(QPainter &p,
+                                  const QDate &qd,
+                                  const QRect &box)
+{
+    QDate weekDate = qd;
+    const bool portrait = (box.height() > box.width());
+    int cellWidth;
+    int vcells;
+    if (portrait) {
+        cellWidth = box.width() / 2;
+        vcells = 3;
+    } else {
+        cellWidth = box.width() / 6;
+        vcells = 1;
+    }
+    const int cellHeight = box.height() / vcells;
+
+    // correct begin of week
+    int weekdayCol = weekdayColumn(qd.dayOfWeek());
+    weekDate = qd.addDays(-weekdayCol);
+
+    for (int i = 0; i < 7; ++i, weekDate = weekDate.addDays(1)) {
+        // Saturday and sunday share a cell, so we have to special-case sunday
+        int hpos = ((i < 6) ? i : (i - 1)) / vcells;
+        int vpos = ((i < 6) ? i : (i - 1)) % vcells;
+        QRect dayBox(box.left() + cellWidth * hpos,
+                     box.top() + cellHeight * vpos + ((i == 6) ? (cellHeight / 2) : 0),
+                     cellWidth,
+                     (i < 5) ? (cellHeight) : (cellHeight / 2));
+        drawDayBox(p,
+                   weekDate,
+                   mStartTime,
+                   mEndTime,
+                   dayBox,
+                   true,
+                   true,
+                   true,
+                   mSingleLineLimit,
+                   mIncludeDescription,
+                   mIncludeCategories);
+    } // for i through all weekdays
+}
+
 void CalPrintWeek::print(QPainter &p, int width, int height)
 {
     QDate curWeek, fromWeek, toWeek;
@@ -1033,8 +1248,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             title =  i18nc("date from-to", "%1\u2013%2", line1, line2);
             drawHeader(p, title, curWeek.addDays(-6), QDate(), headerBox);
 
-            drawWeek(p, curWeek, mStartTime, mEndTime, weekBox, mSingleLineLimit,
-                      mIncludeDescription, mIncludeCategories);
+            drawWeek(p, curWeek, weekBox);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1059,8 +1273,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             }
             drawHeader(p, title, curWeek, QDate(), headerBox);
 
-            drawTimeTable(p, fromWeek, curWeek, mIncludeAllEvents, mStartTime, mEndTime, weekBox, mIncludeDescription,
-                           mIncludeCategories, mExcludeTime);
+            drawTimeTable(p, fromWeek, curWeek, weekBox);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1085,23 +1298,13 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             int hh = headerHeight();
 
             drawSplitHeaderRight(p, fromWeek, curWeek, QDate(), width, hh);
-            drawTimeTable(p, fromWeek, endLeft, mIncludeAllEvents, mStartTime, mEndTime, weekBox, mIncludeDescription,
-                           mIncludeCategories, mExcludeTime);
+            drawTimeTable(p, fromWeek, endLeft, weekBox);
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
             }
             mPrinter->newPage();
             drawSplitHeaderRight(p, fromWeek, curWeek, QDate(), width, hh);
-            drawTimeTable(p,
-                          endLeft.addDays(1),
-                          curWeek,
-                          mIncludeAllEvents,
-                          mStartTime,
-                          mEndTime,
-                          weekBox1,
-                          mIncludeDescription,
-                          mIncludeCategories,
-                          mExcludeTime);
+            drawTimeTable(p, endLeft.addDays(1), curWeek, weekBox1);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);

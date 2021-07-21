@@ -83,13 +83,52 @@ public:
     void doSaveConfig() override;
 
 protected:
-    QTime mStartTime, mEndTime;
-    bool mSingleLineLimit;
-    bool mIncludeTodos;
-    bool mIncludeDescription;
-    bool mIncludeCategories;
-    bool mIncludeAllEvents;
-    bool mExcludeTime;
+
+    /**
+      Draw the all-day box for the agenda print view (the box on top which
+      doesn't have a time on the time scale associated).
+
+      Obeys configuration options #mExcludeConfidential, #mExcludePrivate, #mIncludeCategories.
+      @param p QPainter of the printout
+      @param eventList The list of all-day events that are supposed to be printed
+             inside this box
+      @param qd The date of the currently printed day
+      @param box coordinates of the all day box.
+      @param workDays List of workDays
+    */
+    void drawAllDayBox(QPainter &p,
+                      const KCalendarCore::Event::List &eventList,
+                      QDate qd,
+                      QRect box,
+                      const QList<QDate> &workDays);
+
+    /**
+      Draw the timetable view of the given time range from fromDate to toDate.
+      On the left side the time scale is printed (using drawTimeLine), then each
+      day gets one column (printed using drawAgendaDayBox),
+      and the events are displayed as boxes (like in korganizer's day/week view).
+      The first cell of each column contains the all-day events (using
+      drawAllDayBox with expandable=false).
+
+      Obeys configuration options #mExcludeConfidential, #mExcludePrivate,
+      #mIncludeAllEvents, #mIncludeCategories, #mIncludeDescription, #mStartTime, #mEndTime.
+      @param p QPainter of the printout
+      @param fromDate First day to be included in the page
+      @param toDate Last day to be included in the page
+      @param box coordinates of the time table.
+    */
+    void drawTimeTable(QPainter &p,
+                       const QDate &fromDate,
+                       const QDate &toDate,
+                       const QRect &box);
+
+    QTime mStartTime, mEndTime; /**< Earliest and latest times of day to print. */
+    bool mSingleLineLimit;  /**< Should all fields be printed on the same line? */
+    bool mIncludeTodos; /**< Should to-dos be printed? */
+    bool mIncludeDescription;   /**< Should incidence descriptions be printed? */
+    bool mIncludeCategories;    /**< Should incidence tags be printed? */
+    bool mIncludeAllEvents; /**< If events occur outside the start/end times, should the times be adjusted? */
+    bool mExcludeTime;  /**< Should incidence times of day be printed? */
 };
 
 class CalPrintDay : public CalPrintTimetable
@@ -124,7 +163,6 @@ public:
 
     QWidget *createConfigWidget(QWidget *) override;
 
-public:
     void print(QPainter &p, int width, int height) override;
     void readSettingsWidget() override;
     void setSettingsWidget() override;
@@ -134,6 +172,17 @@ public:
 
 protected:
     enum eDayPrintType { Filofax = 0, Timetable, SingleTimetable } mDayPrintType;
+
+    /**
+      Draw the (filofax) table for a bunch of days, using drawDayBox.
+
+      Obeys configuration options #mExcludeConfidential, #mExcludePrivate, #mShowNoteLines, #mUseColors,
+      #mFromDate, #mToDate, #mStartTime, #mEndTime, #mSingleLineLimit,
+      #mIncludeDescription, #mIncludeCategories.
+      @param p QPainter of the printout
+      @param box coordinates of the week box.
+    */
+    void drawDays(QPainter &p, const QRect &box);
 };
 
 class CalPrintWeek : public CalPrintTimetable
@@ -174,7 +223,6 @@ public:
     */
     QPageLayout::Orientation defaultOrientation() const override;
 
-public:
     void print(QPainter &p, int width, int height) override;
     void readSettingsWidget() override;
     void setSettingsWidget() override;
@@ -184,6 +232,20 @@ public:
 
 protected:
     enum eWeekPrintType { Filofax = 0, Timetable, SplitWeek } mWeekPrintType;
+
+    /**
+      Draw the week (filofax) table of the week containing the date qd. The first
+      three days of the week will be shown in the first column (using drawDayBox),
+      the remaining four in the second column, where the last two days of the week
+      (typically Saturday and Sunday) only get half the height of the other day boxes.
+
+      Obeys configuration options #mExcludeConfidential, #mExcludePrivate, #mShowNoteLines, #mUseColors,
+      #mStartTime, #mEndTime, #mSingleLineLimit, #mIncludeDescription, #mIncludeCategories.
+      @param p QPainter of the printout
+      @param qd Arbitrary date within the week to be printed.
+      @param box coordinates of the week box.
+    */
+    void drawWeek(QPainter &p, const QDate &qd, const QRect &box);
 };
 
 class CalPrintMonth : public CalPrintPluginBase
