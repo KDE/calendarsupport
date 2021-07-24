@@ -55,8 +55,8 @@ public:
     void print(QPainter &p, int width, int height) override;
     void readSettingsWidget() override;
     void setSettingsWidget() override;
-    void loadConfig() override;
-    void saveConfig() override;
+    void doLoadConfig() override;
+    void doSaveConfig() override;
     void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:

@@ -73,20 +73,20 @@ void CalPrintIncidence::setSettingsWidget()
     }
 }
 
-void CalPrintIncidence::loadConfig()
+void CalPrintIncidence::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
         mShowOptions = grp.readEntry("Show Options", false);
         mShowSubitemsNotes = grp.readEntry("Show Subitems and Notes", false);
         mShowAttendees = grp.readEntry("Use Attendees", false);
         mShowAttachments = grp.readEntry("Use Attachments", false);
-        mShowNoteLines = grp.readEntry("Note Lines", false);
     }
     setSettingsWidget();
 }
 
-void CalPrintIncidence::saveConfig()
+void CalPrintIncidence::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
@@ -95,8 +95,8 @@ void CalPrintIncidence::saveConfig()
         grp.writeEntry("Show Subitems and Notes", mShowSubitemsNotes);
         grp.writeEntry("Use Attendees", mShowAttendees);
         grp.writeEntry("Use Attachments", mShowAttachments);
-        grp.writeEntry("Note Lines", mShowNoteLines);
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 class TimePrintStringsVisitor : public KCalendarCore::Visitor
@@ -633,11 +633,63 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
 }
 
 /**************************************************************
+ *           Print Timetables
+ **************************************************************/
+
+CalPrintTimetable::CalPrintTimetable()
+    : CalPrintPluginBase()
+{
+}
+
+CalPrintTimetable::~CalPrintTimetable()
+{
+}
+
+void CalPrintTimetable::doLoadConfig()
+{
+    CalPrintPluginBase::doLoadConfig();
+    if (mConfig) {
+        KConfigGroup grp(mConfig, groupName());
+        QDate dt = QDate::currentDate(); // any valid QDate will do
+        QTime tm1(dayStart());
+        QDateTime startTm(dt, tm1);
+        QDateTime endTm(dt, tm1.addSecs(12 * 60 * 60));
+        mStartTime = grp.readEntry("Start time", startTm).time();
+        mEndTime = grp.readEntry("End time", endTm).time();
+        mIncludeDescription = grp.readEntry("Include description", false);
+        mIncludeCategories = grp.readEntry("Include categories", false);
+        mIncludeTodos = grp.readEntry("Include todos", false);
+        mIncludeAllEvents = grp.readEntry("Include all events", false);
+        mSingleLineLimit = grp.readEntry("Single line limit", false);
+        mExcludeTime = grp.readEntry("Exclude time", false);
+    }
+}
+
+void CalPrintTimetable::doSaveConfig()
+{
+    if (mConfig) {
+        KConfigGroup grp(mConfig, groupName());
+        QDateTime dt = QDateTime::currentDateTime(); // any valid QDateTime will do
+        dt.setTime(mStartTime);
+        grp.writeEntry("Start time", dt);
+        dt.setTime(mEndTime);
+        grp.writeEntry("End time", dt);
+        grp.writeEntry("Include description", mIncludeDescription);
+        grp.writeEntry("Include categories", mIncludeCategories);
+        grp.writeEntry("Include todos", mIncludeTodos);
+        grp.writeEntry("Include all events", mIncludeAllEvents);
+        grp.writeEntry("Single line limit", mSingleLineLimit);
+        grp.writeEntry("Exclude time", mExcludeTime);
+    }
+    CalPrintPluginBase::doSaveConfig();
+}
+
+/**************************************************************
  *           Print Day
  **************************************************************/
 
 CalPrintDay::CalPrintDay()
-    : CalPrintPluginBase()
+    : CalPrintTimetable()
 {
 }
 
@@ -710,47 +762,24 @@ void CalPrintDay::setSettingsWidget()
     }
 }
 
-void CalPrintDay::loadConfig()
+void CalPrintDay::doLoadConfig()
 {
+    CalPrintTimetable::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
-        QDate dt = QDate::currentDate(); // any valid QDate will do
-        QTime tm1(dayStart());
-        QDateTime startTm(dt, tm1);
-        QDateTime endTm(dt, tm1.addSecs(12 * 60 * 60));
-        mStartTime = grp.readEntry("Start time", startTm).time();
-        mEndTime = grp.readEntry("End time", endTm).time();
-        mIncludeDescription = grp.readEntry("Include description", false);
-        mIncludeCategories = grp.readEntry("Include categories", false);
-        mIncludeTodos = grp.readEntry("Include todos", false);
-        mIncludeAllEvents = grp.readEntry("Include all events", false);
         mDayPrintType = static_cast<eDayPrintType>(grp.readEntry("Print type", static_cast<int>(Timetable)));
-        mSingleLineLimit = grp.readEntry("Single line limit", false);
-        mShowNoteLines = grp.readEntry("Note Lines", false);
-        mExcludeTime = grp.readEntry("Exclude time", false);
     }
     setSettingsWidget();
 }
 
-void CalPrintDay::saveConfig()
+void CalPrintDay::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
-        QDateTime dt = QDateTime::currentDateTime(); // any valid QDateTime will do
-        dt.setTime(mStartTime);
-        grp.writeEntry("Start time", dt);
-        dt.setTime(mEndTime);
-        grp.writeEntry("End time", dt);
-        grp.writeEntry("Include description", mIncludeDescription);
-        grp.writeEntry("Include categories", mIncludeCategories);
-        grp.writeEntry("Include todos", mIncludeTodos);
-        grp.writeEntry("Include all events", mIncludeAllEvents);
         grp.writeEntry("Print type", int(mDayPrintType));
-        grp.writeEntry("Single line limit", mSingleLineLimit);
-        grp.writeEntry("Note Lines", mShowNoteLines);
-        grp.writeEntry("Exclude time", mExcludeTime);
     }
+    CalPrintTimetable::doSaveConfig();
 }
 
 void CalPrintDay::setDateRange(const QDate &from, const QDate &to)
@@ -796,10 +825,8 @@ void CalPrintDay::print(QPainter &p, int width, int height)
                      mEndTime,
                      daysBox,
                      mSingleLineLimit,
-                     mShowNoteLines,
                      mIncludeDescription,
-                     mIncludeCategories,
-                     mUseColors);
+                     mIncludeCategories);
         } else if (mDayPrintType == SingleTimetable) {
             drawTimeTable(p,
                           mFromDate,
@@ -859,7 +886,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
  **************************************************************/
 
 CalPrintWeek::CalPrintWeek()
-    : CalPrintPluginBase()
+    : CalPrintTimetable()
 {
 }
 
@@ -932,49 +959,27 @@ void CalPrintWeek::setSettingsWidget()
         cfg->mExcludeConfidential->setChecked(mExcludeConfidential);
         cfg->mExcludePrivate->setChecked(mExcludePrivate);
     }
+    CalPrintTimetable::setSettingsWidget();
 }
 
-void CalPrintWeek::loadConfig()
+void CalPrintWeek::doLoadConfig()
 {
+    CalPrintTimetable::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
-        QDate dt = QDate::currentDate(); // any valid QDate will do
-        QTime tm1(dayStart());
-        QDateTime startTm(dt, tm1);
-        QDateTime endTm(dt, tm1.addSecs(43200));
-        mStartTime = grp.readEntry("Start time", startTm).time();
-        mEndTime = grp.readEntry("End time", endTm).time();
-        mShowNoteLines = grp.readEntry("Note Lines", false);
-        mSingleLineLimit = grp.readEntry("Single line limit", false);
-        mIncludeTodos = grp.readEntry("Include todos", false);
-        mIncludeAllEvents = grp.readEntry("Include all events", false);
         mWeekPrintType = (eWeekPrintType)(grp.readEntry("Print type", (int)Filofax));
-        mIncludeDescription = grp.readEntry("Include Description", false);
-        mIncludeCategories = grp.readEntry("Include categories", false);
-        mExcludeTime = grp.readEntry("Exclude Time", false);
     }
     setSettingsWidget();
 }
 
-void CalPrintWeek::saveConfig()
+void CalPrintWeek::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
-        QDateTime dt = QDateTime::currentDateTime(); // any valid QDateTime will do
-        dt.setTime(mStartTime);
-        grp.writeEntry("Start time", dt);
-        dt.setTime(mEndTime);
-        grp.writeEntry("End time", dt);
-        grp.writeEntry("Note Lines", mShowNoteLines);
-        grp.writeEntry("Single line limit", mSingleLineLimit);
-        grp.writeEntry("Include todos", mIncludeTodos);
-        grp.writeEntry("Include all events", mIncludeAllEvents);
         grp.writeEntry("Print type", int(mWeekPrintType));
-        grp.writeEntry("Include Description", mIncludeDescription);
-        grp.writeEntry("Include categories", mIncludeCategories);
-        grp.writeEntry("Exclude Time", mExcludeTime);
     }
+    CalPrintTimetable::doSaveConfig();
 }
 
 QPageLayout::Orientation CalPrintWeek::defaultOrientation() const
@@ -1028,8 +1033,8 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
             title =  i18nc("date from-to", "%1\u2013%2", line1, line2);
             drawHeader(p, title, curWeek.addDays(-6), QDate(), headerBox);
 
-            drawWeek(p, curWeek, mStartTime, mEndTime, weekBox, mSingleLineLimit, mShowNoteLines,
-                      mIncludeDescription, mIncludeCategories, mUseColors);
+            drawWeek(p, curWeek, mStartTime, mEndTime, weekBox, mSingleLineLimit,
+                      mIncludeDescription, mIncludeCategories);
 
             if (mPrintFooter) {
                 drawFooter(p, footerBox);
@@ -1176,8 +1181,9 @@ void CalPrintMonth::setSettingsWidget()
     }
 }
 
-void CalPrintMonth::loadConfig()
+void CalPrintMonth::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
         mWeekNumbers = grp.readEntry("Print week numbers", true);
@@ -1185,14 +1191,13 @@ void CalPrintMonth::loadConfig()
         mRecurWeekly = grp.readEntry("Print weekly incidences", true);
         mIncludeTodos = grp.readEntry("Include todos", false);
         mSingleLineLimit = grp.readEntry("Single line limit", false);
-        mShowNoteLines = grp.readEntry("Note Lines", false);
         mIncludeDescription = grp.readEntry("Include description", false);
         mIncludeCategories = grp.readEntry("Include categories", false);
     }
     setSettingsWidget();
 }
 
-void CalPrintMonth::saveConfig()
+void CalPrintMonth::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
@@ -1202,10 +1207,10 @@ void CalPrintMonth::saveConfig()
         grp.writeEntry("Print weekly incidences", mRecurWeekly);
         grp.writeEntry("Include todos", mIncludeTodos);
         grp.writeEntry("Single line limit", mSingleLineLimit);
-        grp.writeEntry("Note Lines", mShowNoteLines);
         grp.writeEntry("Include description", mIncludeDescription);
         grp.writeEntry("Include categories", mIncludeCategories);
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 void CalPrintMonth::setDateRange(const QDate &from, const QDate &to)
@@ -1259,10 +1264,8 @@ void CalPrintMonth::print(QPainter &p, int width, int height)
                        mRecurDaily,
                        mRecurWeekly,
                        mSingleLineLimit,
-                       mShowNoteLines,
                        mIncludeDescription,
                        mIncludeCategories,
-                       mUseColors,
                        monthBox);
 
         if (mPrintFooter) {
@@ -1380,8 +1383,9 @@ void CalPrintTodos::setSettingsWidget()
     }
 }
 
-void CalPrintTodos::loadConfig()
+void CalPrintTodos::doLoadConfig()
 {
+    CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
         KConfigGroup grp(mConfig, groupName());
         mPageTitle = grp.readEntry("Page title", i18n("To-do list"));
@@ -1400,7 +1404,7 @@ void CalPrintTodos::loadConfig()
     setSettingsWidget();
 }
 
-void CalPrintTodos::saveConfig()
+void CalPrintTodos::doSaveConfig()
 {
     readSettingsWidget();
     if (mConfig) {
@@ -1418,6 +1422,7 @@ void CalPrintTodos::saveConfig()
         grp.writeEntry("Sort field", static_cast<int>(mTodoSortField));
         grp.writeEntry("Sort direction", static_cast<int>(mTodoSortDirection));
     }
+    CalPrintPluginBase::doSaveConfig();
 }
 
 void CalPrintTodos::print(QPainter &p, int width, int height)

@@ -184,9 +184,9 @@ void CalPrintPluginBase::doLoadConfig()
         mToDate = group.readEntry("ToDate", dt).date();
         mUseColors = group.readEntry("UseColors", true);
         mPrintFooter = group.readEntry("PrintFooter", true);
+        mShowNoteLines = group.readEntry("Note Lines", false);
         mExcludeConfidential = group.readEntry("Exclude confidential", true);
         mExcludePrivate = group.readEntry("Exclude private", true);
-        loadConfig();
     } else {
         qCDebug(CALENDARSUPPORT_LOG) << "No config available in loadConfig!!!!";
     }
@@ -196,7 +196,6 @@ void CalPrintPluginBase::doSaveConfig()
 {
     if (mConfig) {
         KConfigGroup group(mConfig, groupName());
-        saveConfig();
         QDateTime dt = QDateTime::currentDateTime(); // any valid QDateTime will do
         dt.setDate(mFromDate);
         group.writeEntry("FromDate", dt);
@@ -204,6 +203,7 @@ void CalPrintPluginBase::doSaveConfig()
         group.writeEntry("ToDate", dt);
         group.writeEntry("UseColors", mUseColors);
         group.writeEntry("PrintFooter", mPrintFooter);
+        group.writeEntry("Note Lines", mShowNoteLines);
         group.writeEntry("Exclude confidential", mExcludeConfidential);
         group.writeEntry("Exclude private", mExcludePrivate);
         mConfig->sync();
@@ -451,7 +451,7 @@ void CalPrintPluginBase::drawSubHeaderBox(QPainter &p, const QString &str, QRect
     drawShadedBox(p, BOX_BORDER_WIDTH, QColor(232, 232, 232), box);
     QFont oldfont(p.font());
     p.setFont(QFont(QStringLiteral("sans-serif"), 10, QFont::Bold));
-    p.drawText(box, Qt::AlignCenter | Qt::AlignVCenter, str);
+    p.drawText(box, Qt::AlignHCenter | Qt::AlignTop, str);
     p.setFont(oldfont);
 }
 
@@ -1020,10 +1020,8 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
                                     bool printRecurDaily,
                                     bool printRecurWeekly,
                                     bool singleLineLimit,
-                                    bool showNoteLines,
                                     bool includeDescription,
-                                    bool includeCategories,
-                                    bool useColors)
+                                    bool includeCategories)
 {
     QString dayNumStr;
     const auto local = QLocale::system();
@@ -1097,7 +1095,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
             timeText = local.toString(currEvent->dtStart().toLocalTime().time(), QLocale::ShortFormat) + QLatin1Char(' ');
         }
         p.save();
-        if (useColors) {
+        if (mUseColors) {
             setColorsByIncidenceCategory(p, currEvent);
         }
         QString summaryStr = currEvent->summary();
@@ -1154,7 +1152,9 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
                 timeText.clear();
             }
             p.save();
-            setColorsByIncidenceCategory(p, todo);
+            if (mUseColors) {
+                setColorsByIncidenceCategory(p, todo);
+            }
             QString summaryStr = todo->summary();
             if (!todo->location().isEmpty()) {
                 summaryStr = i18nc("summary, location", "%1, %2", summaryStr, todo->location());
@@ -1180,7 +1180,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
             p.restore();
         }
     }
-    if (showNoteLines) {
+    if (mShowNoteLines) {
         drawNoteLines(p, box, box.y() + textY);
     }
 
@@ -1300,10 +1300,8 @@ void CalPrintPluginBase::drawWeek(QPainter &p,
                                   const QTime &toTime,
                                   const QRect &box,
                                   bool singleLineLimit,
-                                  bool showNoteLines,
                                   bool includeDescription,
-                                  bool includeCategories,
-                                  bool useColors)
+                                  bool includeCategories)
 {
     QDate weekDate = qd;
     const bool portrait = (box.height() > box.width());
@@ -1339,10 +1337,8 @@ void CalPrintPluginBase::drawWeek(QPainter &p,
                    true,
                    true,
                    singleLineLimit,
-                   showNoteLines,
                    includeDescription,
-                   includeCategories,
-                   useColors);
+                   includeCategories);
     } // for i through all weekdays
 }
 
@@ -1353,10 +1349,8 @@ void CalPrintPluginBase::drawDays(QPainter &p,
                                   const QTime &toTime,
                                   const QRect &box,
                                   bool singleLineLimit,
-                                  bool showNoteLines,
                                   bool includeDescription,
-                                  bool includeCategories,
-                                  bool useColors)
+                                  bool includeCategories)
 {
     const int numberOfDays = start.daysTo(end) + 1;
     int vcells;
@@ -1390,10 +1384,8 @@ void CalPrintPluginBase::drawDays(QPainter &p,
                    true,
                    true,
                    singleLineLimit,
-                   showNoteLines,
                    includeDescription,
-                   includeCategories,
-                   useColors);
+                   includeCategories);
     } // for i through all selected days
 }
 
@@ -1754,10 +1746,8 @@ void CalPrintPluginBase::drawMonthTable(QPainter &p,
                                         bool recurDaily,
                                         bool recurWeekly,
                                         bool singleLineLimit,
-                                        bool showNoteLines,
                                         bool includeDescription,
                                         bool includeCategories,
-                                        bool useColors,
                                         const QRect &box)
 {
     int yoffset = mSubHeaderHeight;
@@ -1824,10 +1814,8 @@ void CalPrintPluginBase::drawMonthTable(QPainter &p,
                        recurDaily,
                        recurWeekly,
                        singleLineLimit,
-                       showNoteLines,
                        includeDescription,
-                       includeCategories,
-                       useColors);
+                       includeCategories);
             if (darkbg) {
                 p.setBackground(back);
                 darkbg = false;

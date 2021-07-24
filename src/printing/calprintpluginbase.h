@@ -24,9 +24,9 @@
 class PrintCellItem;
 class QWidget;
 
-#define PORTRAIT_HEADER_HEIGHT 72 // header height, for portrait orientation
+#define PORTRAIT_HEADER_HEIGHT 80 // header height, for portrait orientation
 #define LANDSCAPE_HEADER_HEIGHT 54 // header height, for landscape orientation
-#define SUBHEADER_HEIGHT 20 // subheader height, for all orientations
+#define SUBHEADER_HEIGHT 28 // subheader height, for all orientations
 #define PORTRAIT_FOOTER_HEIGHT 16 // footer height, for portrait orientation
 #define LANDSCAPE_FOOTER_HEIGHT 14 // footer height, for landscape orientation
 #define MARGIN_SIZE 36 // margins, for all orientations
@@ -66,28 +66,15 @@ public:
       @param width Width of printable area
       @param height Height of printable area
     */
+
     virtual void print(QPainter &p, int width, int height) = 0;
     /**
       Start printing.
     */
     void doPrint(QPrinter *printer) override;
 
-    /**
-      Load print format configuration from config file.
-    */
-    virtual void loadConfig() = 0;
-    /**
-      Write print format configuration to config file.
-    */
-    virtual void saveConfig() = 0;
-
-    /**
-      Load complete config. This also calls loadConfig() of the derived class.
-    */
     void doLoadConfig() override;
-    /**
-      Save complete config. This also calls saveConfig() of the derived class.
-    */
+
     void doSaveConfig() override;
 
     /** HELPER FUNCTIONS */
@@ -376,7 +363,7 @@ public:
       Draw the box containing a list of all events of the given day (with their times,
       of course). Used in the Filofax and the month print style.
 
-      Obeys configuration options #mExcludeConfidential, #excludePrivate.
+      Obeys configuration options #mExcludeConfidential, #mExcludePrivate, #mShowNoteLines, #mUseColors.
       @param p QPainter of the printout
       @param qd The date of the currently printed day. All events of the calendar
                 that appear on that day will be printed.
@@ -388,10 +375,8 @@ public:
       @param printRecurDaily Whether daily recurring incidences should be printed.
       @param printRecurWeekly Whether weekly recurring incidences should be printed.
       @param singleLineLimit Whether Incidence text wraps or truncates.
-      @param showNoteLines Whether note lines are printed.
       @param includeDescription Whether to print the event description as well.
       @param includeCategories Whether to print the event categories (tags) as well.
-      @param useColors Whether to use  event category colors to draw the events.
     */
     void drawDayBox(QPainter &p,
                     const QDate &qd,
@@ -402,10 +387,8 @@ public:
                     bool printRecurDaily = true,
                     bool printRecurWeekly = true,
                     bool singleLineLimit = true,
-                    bool showNoteLines = false,
                     bool includeDescription = false,
-                    bool includeCategories = false,
-                    bool useColors = true);
+                    bool includeCategories = false);
 
     /**
       Draw the week (filofax) table of the week containing the date qd. The first
@@ -413,17 +396,15 @@ public:
       the remaining four in the second column, where the last two days of the week
       (typically Saturday and Sunday) only get half the height of the other day boxes.
 
-      Obeys configuration options #mExcludeConfidential, #excludePrivate.
+      Obeys configuration options #mExcludeConfidential, #mExcludePrivate, #mShowNoteLines, #mUseColors.
       @param p QPainter of the printout
       @param qd Arbitrary date within the week to be printed.
       @param fromTime Start time of the displayed time range
       @param toTime End time of the displayed time range
       @param box coordinates of the week box.
       @param singleLineLimit Whether Incidence text wraps or truncates.
-      @param showNoteLines Whether note lines are printed.
       @param includeDescription Whether to print the event description as well.
       @param includeCategories Whether to print the event categories (tags) as well.
-      @param useColors Whether to use  event category colors to draw the events.
     */
     void drawWeek(QPainter &p,
                   const QDate &qd,
@@ -431,15 +412,13 @@ public:
                   const QTime &toTime,
                   const QRect &box,
                   bool singleLineLimit,
-                  bool showNoteLines,
                   bool includeDescription,
-                  bool includeCategories,
-                  bool useColors);
+                  bool includeCategories);
 
     /**
       Draw the (filofax) table for a bunch of days, using drawDayBox.
 
-      Obeys configuration options #mExcludeConfidential, #excludePrivate.
+      Obeys configuration options #mExcludeConfidential, #mExcludePrivate, #mShowNoteLines, #mUseColors.
       @param p QPainter of the printout
       @param start Start date
       @param end End date
@@ -447,10 +426,8 @@ public:
       @param toTime End time of the displayed time range
       @param box coordinates of the week box.
       @param singleLineLimit Whether Incidence text wraps or truncates.
-      @param showNoteLines Whether note lines are printed.
       @param includeDescription Whether to print the event description as well.
       @param includeCategories Whether to print the event categories (tags) as well.
-      @param useColors Whether to use  event category colors to draw the events.
     */
     void drawDays(QPainter &p,
                   const QDate &start,
@@ -459,10 +436,8 @@ public:
                   const QTime &toTime,
                   const QRect &box,
                   bool singleLineLimit,
-                  bool showNoteLines,
                   bool includeDescription,
-                  bool includeCategories,
-                  bool useColors);
+                  bool includeCategories);
 
     /**
       Draw the timetable view of the given time range from fromDate to toDate.
@@ -503,7 +478,7 @@ public:
       week (so it might display some days of the previous and the next month).
       Above the matrix there is a bar showing the weekdays (drawn using drawDaysOfWeek).
 
-      Obeys configuration options #mExcludeConfidential, #excludePrivate.
+      Obeys configuration options #mExcludeConfidential, #mExcludePrivate, #mShowNoteLines, #mUseColors.
       @param p QPainter of the printout
       @param qd Arbitrary date within the month to be printed.
       @param fromTime Start time of the displayed time range
@@ -512,10 +487,8 @@ public:
       @param recurDaily Whether daily recurring incidences should be printed.
       @param recurWeekly Whether weekly recurring incidences should be printed.
       @param singleLineLimit Whether Incidence text wraps or truncates.
-      @param showNoteLines Whether note lines are printed.
       @param includeDescription Whether descriptions are printed.
       @param includeCategories Whether to print the event categories (tags) as well.
-      @param useColors Whether to use  event category colors to draw the events.
       @param box coordinates of the month.
     */
     void drawMonthTable(QPainter &p,
@@ -526,10 +499,8 @@ public:
                         bool recurDaily,
                         bool recurWeekly,
                         bool singleLineLimit,
-                        bool showNoteLines,
                         bool includeDescription,
                         bool includeCategories,
-                        bool useColors,
                         const QRect &box);
 
     /**
@@ -669,11 +640,11 @@ protected:
                        bool connectSubTodos);
 
 protected:
-    bool mUseColors;
-    bool mPrintFooter;
-    bool mShowNoteLines;
-    bool mExcludeConfidential;
-    bool mExcludePrivate;
+    bool mUseColors;    /**< Whether or not to use event category colors to draw the events. */
+    bool mPrintFooter;  /**< Whether or not to print a footer at the bottoms of pages. */
+    bool mShowNoteLines;    /**< Whether or not to print horizontal  lines in note areas. */
+    bool mExcludeConfidential;  /**< Whether or not to print incidences with secrecy "confidential". */
+    bool mExcludePrivate;   /**< Whether or not to print incidences with secrecy "private". */
     int mHeaderHeight;
     int mSubHeaderHeight;
     int mFooterHeight;
