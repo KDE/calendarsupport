@@ -292,26 +292,6 @@ public:
     void drawTimeLine(QPainter &p, QTime fromTime, QTime toTime, QRect box);
 
     /**
-      Draw the all-day box for the agenda print view (the box on top which
-      doesn't have a time on the time scale associated).
-
-      Obeys configuration options #mExcludeConfidential, #excludePrivate.
-      @param p QPainter of the printout
-      @param eventList The list of all-day events that are supposed to be printed
-             inside this box
-      @param qd The date of the currently printed day
-      @param box coordinates of the all day box.
-      @param includeCategories Whether to print the event categories (tags) as well.
-      @param workDays List of workDays
-    */
-    void drawAllDayBox(QPainter &p,
-                      const KCalendarCore::Event::List &eventList,
-                      QDate qd,
-                      QRect box,
-                      bool includeCategories,
-                      const QList<QDate> &workDays);
-
-    /**
       Draw the agenda box for the day print style (the box showing all events of that day).
       Also draws a grid with half-hour spacing of the grid lines.
       Does NOT draw allday events.  Use drawAllDayBox for allday events.
@@ -389,87 +369,6 @@ public:
                     bool singleLineLimit = true,
                     bool includeDescription = false,
                     bool includeCategories = false);
-
-    /**
-      Draw the week (filofax) table of the week containing the date qd. The first
-      three days of the week will be shown in the first column (using drawDayBox),
-      the remaining four in the second column, where the last two days of the week
-      (typically Saturday and Sunday) only get half the height of the other day boxes.
-
-      Obeys configuration options #mExcludeConfidential, #mExcludePrivate, #mShowNoteLines, #mUseColors.
-      @param p QPainter of the printout
-      @param qd Arbitrary date within the week to be printed.
-      @param fromTime Start time of the displayed time range
-      @param toTime End time of the displayed time range
-      @param box coordinates of the week box.
-      @param singleLineLimit Whether Incidence text wraps or truncates.
-      @param includeDescription Whether to print the event description as well.
-      @param includeCategories Whether to print the event categories (tags) as well.
-    */
-    void drawWeek(QPainter &p,
-                  const QDate &qd,
-                  const QTime &fromTime,
-                  const QTime &toTime,
-                  const QRect &box,
-                  bool singleLineLimit,
-                  bool includeDescription,
-                  bool includeCategories);
-
-    /**
-      Draw the (filofax) table for a bunch of days, using drawDayBox.
-
-      Obeys configuration options #mExcludeConfidential, #mExcludePrivate, #mShowNoteLines, #mUseColors.
-      @param p QPainter of the printout
-      @param start Start date
-      @param end End date
-      @param fromTime Start time of the displayed time range
-      @param toTime End time of the displayed time range
-      @param box coordinates of the week box.
-      @param singleLineLimit Whether Incidence text wraps or truncates.
-      @param includeDescription Whether to print the event description as well.
-      @param includeCategories Whether to print the event categories (tags) as well.
-    */
-    void drawDays(QPainter &p,
-                  const QDate &start,
-                  const QDate &end,
-                  const QTime &fromTime,
-                  const QTime &toTime,
-                  const QRect &box,
-                  bool singleLineLimit,
-                  bool includeDescription,
-                  bool includeCategories);
-
-    /**
-      Draw the timetable view of the given time range from fromDate to toDate.
-      On the left side the time scale is printed (using drawTimeLine), then each
-      day gets one column (printed using drawAgendaDayBox),
-      and the events are displayed as boxes (like in korganizer's day/week view).
-      The first cell of each column contains the all-day events (using
-      drawAllDayBox with expandable=false).
-
-      Obeys configuration options #mExcludeConfidential, #excludePrivate.
-      @param p QPainter of the printout
-      @param fromDate First day to be included in the page
-      @param toDate Last day to be included in the page
-      @param expandable If true, the start and end times are adjusted to include
-      the whole range of all events of that day, not just of the given time range.
-      @param fromTime Start time of the displayed time range
-      @param toTime End time of the displayed time range
-      @param box coordinates of the time table.
-      @param includeDescription Whether to print the event description as well.
-      @param includeCategories Whether to print the event categories (tags) as well.
-      @param excludeTime Whether the time is printed in the detail area.
-    */
-    void drawTimeTable(QPainter &p,
-                       const QDate &fromDate,
-                       const QDate &toDate,
-                       bool expandable,
-                       const QTime &fromTime,
-                       const QTime &toTime,
-                       const QRect &box,
-                       bool includeDescription,
-                       bool includeCategories,
-                       bool excludeTime);
 
     /**
       Draw the month table of the month containing the date qd. Each day gets one
@@ -628,7 +527,9 @@ protected:
                        bool singleLineLimit,
                        bool includeDescription,
                        bool richDescription);
+
     QString toPlainText(const QString &htmlText);
+
     void drawTodoLines(QPainter &p,
                        const QString &entry,
                        int x,
@@ -638,6 +539,8 @@ protected:
                        bool richTextEntry,
                        QList<TodoParentStart *> &startPoints,
                        bool connectSubTodos);
+
+    KCalendarCore::Event::Ptr holidayEvent(QDate date) const;
 
 protected:
     bool mUseColors;    /**< Whether or not to use event category colors to draw the events. */
@@ -661,8 +564,6 @@ private:
     void setColorsByIncidenceCategory(QPainter &p, const KCalendarCore::Incidence::Ptr &incidence) const;
 
     QString holidayString(QDate date) const;
-
-    KCalendarCore::Event::Ptr holidayEvent(QDate date) const;
 
     /**
      * Returns a nice QColor for text, give the input color &c.
