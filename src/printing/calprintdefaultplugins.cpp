@@ -701,7 +701,7 @@ void CalPrintTimetable::drawAllDayBox(QPainter &p,
     int lineSpacing = p.fontMetrics().lineSpacing();
 
     if (!workDays.contains(qd)) {
-        drawShadedBox(p, BOX_BORDER_WIDTH, QColor(232, 232, 232), box);
+        drawShadedBox(p, BOX_BORDER_WIDTH, sHolidayBackground, box);
     } else {
         drawBox(p, BOX_BORDER_WIDTH, box);
     }
