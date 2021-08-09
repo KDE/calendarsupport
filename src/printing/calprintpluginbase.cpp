@@ -39,6 +39,8 @@ static QString cleanStr(const QString &instr)
     return ret.replace(QLatin1Char('\n'), QLatin1Char(' '));
 }
 
+const QColor CalPrintPluginBase::sHolidayBackground = QColor(244, 244, 244);
+
 /******************************************************************
  **              The Todo positioning structure                  **
  ******************************************************************/
@@ -786,7 +788,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
     }
 
     if (!workDays.contains(qd)) {
-        drawShadedBox(p, BOX_BORDER_WIDTH, QColor(232, 232, 232), oldbox);
+        drawShadedBox(p, BOX_BORDER_WIDTH, sHolidayBackground, oldbox);
     } else {
         drawBox(p, BOX_BORDER_WIDTH, oldbox);
     }

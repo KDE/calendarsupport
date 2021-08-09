@@ -555,6 +555,8 @@ protected:
     int mPadding;
     int mBorder;
 
+    static const QColor sHolidayBackground;
+
 private:
     QColor categoryColor(const QStringList &categories) const;
 
