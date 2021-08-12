@@ -679,7 +679,7 @@ void CalPrintPluginBase::drawSmallMonth(QPainter &p, QDate qd, QRect box)
  * This routine draws a header box over the main part of the calendar
  * containing the days of the week.
  */
-void CalPrintPluginBase::drawDaysOfWeek(QPainter &p, const QDate &fromDate, QDate toDate, QRect box)
+void CalPrintPluginBase::drawDaysOfWeek(QPainter &p, QDate fromDate, QDate toDate, QRect box)
 {
     double cellWidth = double(box.width() - 1) / double(fromDate.daysTo(toDate) + 1);
     QDate cellDate(fromDate);
@@ -765,11 +765,11 @@ void CalPrintPluginBase::drawTimeLine(QPainter &p, QTime fromTime, QTime toTime,
 
 void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
                                           const KCalendarCore::Event::List &events,
-                                          const QDate &qd,
+                                          QDate qd,
                                           bool expandable,
-                                          const QTime &fromTime,
-                                          const QTime &toTime,
-                                          const QRect &oldbox,
+                                          QTime fromTime,
+                                          QTime toTime,
+                                          QRect oldbox,
                                           bool includeDescription,
                                           bool includeCategories,
                                           bool excludeTime,
@@ -890,7 +890,7 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item,
                                         const QDateTime &startPrintDate,
                                         const QDateTime &endPrintDate,
                                         float minlen,
-                                        const QRect &box,
+                                        QRect box,
                                         bool includeDescription,
                                         bool includeCategories,
                                         bool excludeTime)
@@ -967,10 +967,10 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item,
 }
 
 void CalPrintPluginBase::drawDayBox(QPainter &p,
-                                    const QDate &qd,
-                                    const QTime &fromTime,
-                                    const QTime &toTime,
-                                    const QRect &box,
+                                    QDate qd,
+                                    QTime fromTime,
+                                    QTime toTime,
+                                    QRect box,
                                     bool fullDate,
                                     bool printRecurDaily,
                                     bool printRecurWeekly,
@@ -1143,7 +1143,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
 }
 
 void CalPrintPluginBase::drawIncidence(QPainter &p,
-                                       const QRect &dayBox,
+                                       QRect dayBox,
                                        const QString &time,
                                        const QString &summary,
                                        const QString &description,
@@ -1279,8 +1279,8 @@ public:
 };
 
 void CalPrintPluginBase::drawMonth(QPainter &p,
-                                   const QDate &dt,
-                                   const QRect &box,
+                                   QDate dt,
+                                   QRect box,
                                    int maxdays,
                                    int subDailyFlags,
                                    int holidaysFlags)
@@ -1482,16 +1482,16 @@ void CalPrintPluginBase::drawMonth(QPainter &p,
 }
 
 void CalPrintPluginBase::drawMonthTable(QPainter &p,
-                                        const QDate &qd,
-                                        const QTime &fromTime,
-                                        const QTime &toTime,
+                                        QDate qd,
+                                        QTime fromTime,
+                                        QTime toTime,
                                         bool weeknumbers,
                                         bool recurDaily,
                                         bool recurWeekly,
                                         bool singleLineLimit,
                                         bool includeDescription,
                                         bool includeCategories,
-                                        const QRect &box)
+                                        QRect box)
 {
     int yoffset = mSubHeaderHeight;
     int xoffset = 0;

@@ -118,9 +118,9 @@ protected:
       @param box coordinates of the time table.
     */
     void drawTimeTable(QPainter &p,
-                       const QDate &fromDate,
-                       const QDate &toDate,
-                       const QRect &box);
+                       QDate fromDate,
+                       QDate toDate,
+                       QRect box);
 
     QTime mStartTime, mEndTime; /**< Earliest and latest times of day to print. */
     bool mSingleLineLimit;  /**< Should all fields be printed on the same line? */
@@ -182,7 +182,7 @@ protected:
       @param p QPainter of the printout
       @param box coordinates of the week box.
     */
-    void drawDays(QPainter &p, const QRect &box);
+    void drawDays(QPainter &p, QRect box);
 };
 
 class CalPrintWeek : public CalPrintTimetable

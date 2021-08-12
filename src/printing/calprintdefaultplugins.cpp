@@ -733,9 +733,9 @@ void CalPrintTimetable::drawAllDayBox(QPainter &p,
 }
 
 void CalPrintTimetable::drawTimeTable(QPainter &p,
-                                       const QDate &fromDate,
-                                       const QDate &toDate,
-                                       const QRect &box)
+                                       QDate fromDate,
+                                       QDate toDate,
+                                       QRect box)
 {
     QTime myFromTime = mStartTime;
     QTime myToTime = mEndTime;
@@ -951,7 +951,7 @@ void CalPrintDay::setDateRange(const QDate &from, const QDate &to)
     }
 }
 
-void CalPrintDay::drawDays(QPainter &p, const QRect &box)
+void CalPrintDay::drawDays(QPainter &p, QRect box)
 {
     const int numberOfDays = mFromDate.daysTo(mToDate) + 1;
     int vcells;
