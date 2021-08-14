@@ -1176,8 +1176,8 @@ void CalPrintWeek::setDateRange(const QDate &from, const QDate &to)
 }
 
 void CalPrintWeek::drawWeek(QPainter &p,
-                                  const QDate &qd,
-                                  const QRect &box)
+                                  QDate qd,
+                                  QRect box)
 {
     QDate weekDate = qd;
     const bool portrait = (box.height() > box.width());

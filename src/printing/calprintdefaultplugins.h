@@ -245,7 +245,7 @@ protected:
       @param qd Arbitrary date within the week to be printed.
       @param box coordinates of the week box.
     */
-    void drawWeek(QPainter &p, const QDate &qd, const QRect &box);
+    void drawWeek(QPainter &p, QDate qd, QRect box);
 };
 
 class CalPrintMonth : public CalPrintPluginBase
