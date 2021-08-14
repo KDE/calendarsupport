@@ -74,10 +74,8 @@ void CalPrinter::init(const Akonadi::ETMCalendar::Ptr &calendar)
 
 void CalPrinter::setDateRange(QDate fd, QDate td)
 {
-    PrintPlugin::List::Iterator it = mPrintPlugins.begin();
-    const PrintPlugin::List::Iterator end = mPrintPlugins.end();
-    for (; it != end; ++it) {
-        (*it)->setDateRange(fd, td);
+    for (const auto plugin : mPrintPlugins) {
+        plugin->setDateRange(fd, td);
     }
 }
 

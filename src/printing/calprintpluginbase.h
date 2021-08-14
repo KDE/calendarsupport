@@ -268,7 +268,7 @@ public:
       @param toDate Last date of the printed dates
       @param box coordinates of the box for the days of the week
     */
-    void drawDaysOfWeek(QPainter &p, const QDate &fromDate, QDate toDate, QRect box);
+    void drawDaysOfWeek(QPainter &p, QDate fromDate, QDate toDate, QRect box);
 
     /**
       Draw a single weekday name in a box inside the given area of the painter.
@@ -319,11 +319,11 @@ public:
     */
     void drawAgendaDayBox(QPainter &p,
                           const KCalendarCore::Event::List &eventList,
-                          const QDate &qd,
+                          QDate qd,
                           bool expandable,
-                          const QTime &fromTime,
-                          const QTime &toTime,
-                          const QRect &box,
+                          QTime fromTime,
+                          QTime toTime,
+                          QRect box,
                           bool includeDescription,
                           bool includeCategories,
                           bool excludeTime,
@@ -334,7 +334,7 @@ public:
                         const QDateTime &startPrintDate,
                         const QDateTime &endPrintDate,
                         float minlen,
-                        const QRect &box,
+                        QRect box,
                         bool includeDescription,
                         bool includeCategories,
                         bool excludeTime);
@@ -359,10 +359,10 @@ public:
       @param includeCategories Whether to print the event categories (tags) as well.
     */
     void drawDayBox(QPainter &p,
-                    const QDate &qd,
-                    const QTime &fromTime,
-                    const QTime &toTime,
-                    const QRect &box,
+                    QDate qd,
+                    QTime fromTime,
+                    QTime toTime,
+                    QRect box,
                     bool fullDate = false,
                     bool printRecurDaily = true,
                     bool printRecurWeekly = true,
@@ -391,16 +391,16 @@ public:
       @param box coordinates of the month.
     */
     void drawMonthTable(QPainter &p,
-                        const QDate &qd,
-                        const QTime &fromTime,
-                        const QTime &toTime,
+                        QDate qd,
+                        QTime fromTime,
+                        QTime toTime,
                         bool weeknumbers,
                         bool recurDaily,
                         bool recurWeekly,
                         bool singleLineLimit,
                         bool includeDescription,
                         bool includeCategories,
-                        const QRect &box);
+                        QRect box);
 
     /**
       Draw a vertical representation of the month containing the date dt. Each
@@ -420,8 +420,8 @@ public:
                            how holidays should be printed.
     */
     void drawMonth(QPainter &p,
-                   const QDate &dt,
-                   const QRect &box,
+                   QDate dt,
+                   QRect box,
                    int maxdays = -1,
                    int subDailyFlags = TimeBoxes,
                    int holidaysFlags = Text);
@@ -519,7 +519,7 @@ protected:
     QColor categoryBgColor(const KCalendarCore::Incidence::Ptr &incidence) const;
 
     void drawIncidence(QPainter &p,
-                       const QRect &dayBox,
+                       QRect dayBox,
                        const QString &time,
                        const QString &summary,
                        const QString &description,
