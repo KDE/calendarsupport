@@ -209,7 +209,8 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
     QFont captionFont(QStringLiteral("sans-serif"), 11, QFont::Bold);
     p.setFont(textFont);
     int lineHeight = p.fontMetrics().lineSpacing();
-    QString cap, txt;
+    QString cap;
+    QString txt;
 
     KCalendarCore::Incidence::List::ConstIterator it;
     for (it = mSelectedIncidences.constBegin(); it != mSelectedIncidences.constEnd(); ++it) {
@@ -1220,7 +1221,9 @@ void CalPrintWeek::drawWeek(QPainter &p,
 
 void CalPrintWeek::print(QPainter &p, int width, int height)
 {
-    QDate curWeek, fromWeek, toWeek;
+    QDate curWeek;
+    QDate fromWeek;
+    QDate toWeek;
 
     // correct begin and end to first and last day of week
     int weekdayCol = weekdayColumn(mFromDate.dayOfWeek());
@@ -1231,7 +1234,9 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
     curWeek = fromWeek.addDays(6);
     auto local = QLocale::system();
 
-    QString line1, line2, title;
+    QString line1;
+    QString line2;
+    QString title;
     QRect headerBox(0, 0, width, headerHeight());
     QRect footerBox(0, height - footerHeight(), width, footerHeight());
     height -= footerHeight();
@@ -1438,7 +1443,9 @@ void CalPrintMonth::setDateRange(const QDate &from, const QDate &to)
 
 void CalPrintMonth::print(QPainter &p, int width, int height)
 {
-    QDate curMonth, fromMonth, toMonth;
+    QDate curMonth;
+    QDate fromMonth;
+    QDate toMonth;
 
     fromMonth = mFromDate.addDays(-(mFromDate.day() - 1));
     toMonth = mToDate.addDays(mToDate.daysInMonth() - mToDate.day());

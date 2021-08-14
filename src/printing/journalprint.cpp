@@ -135,7 +135,8 @@ void CalPrintJournal::drawJournal(const KCalendarCore::Journal::Ptr &journal, QP
 
 void CalPrintJournal::print(QPainter &p, int width, int height)
 {
-    int x = 0, y = 0;
+    int x = 0;
+    int y = 0;
     KCalendarCore::Journal::List journals(mCalendar->journals(KCalendarCore::JournalSortDate, KCalendarCore::SortDirectionAscending));
     if (mUseDateRange) {
         const KCalendarCore::Journal::List allJournals = journals;

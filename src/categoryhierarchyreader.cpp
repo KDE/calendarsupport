@@ -45,7 +45,8 @@ void CategoryHierarchyReader::read(const QStringList &categories)
         QStringList _path = path(category);
 
         // we need to figure out where last item and the new one differ
-        QStringList::Iterator jt, kt;
+        QStringList::Iterator jt;
+        QStringList::Iterator kt;
         int split_level = 0;
         QStringList new_path = _path; // save it for later
         for (jt = _path.begin(), kt = last_path.begin(); jt != _path.end() && kt != last_path.end(); ++jt, ++kt) {

@@ -775,7 +775,8 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
                                           bool excludeTime,
                                           const QList<QDate> &workDays)
 {
-    QTime myFromTime, myToTime;
+    QTime myFromTime;
+    QTime myToTime;
     if (fromTime.isValid()) {
         myFromTime = fromTime;
     } else {
@@ -981,7 +982,8 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
     QString dayNumStr;
     const auto local = QLocale::system();
 
-    QTime myFromTime, myToTime;
+    QTime myFromTime;
+    QTime myToTime;
     if (fromTime.isValid()) {
         myFromTime = fromTime;
     } else {
@@ -1512,7 +1514,8 @@ void CalPrintPluginBase::drawMonthTable(QPainter &p,
 
     // Precalculate the grid...
     // rows is at most 6, so using 8 entries in the array is fine, too!
-    int coledges[8], rowedges[8];
+    int coledges[8];
+    int rowedges[8];
     for (int i = 0; i <= 7; ++i) {
         rowedges[i] = int(box.top() + yoffset + i * cellHeight);
         coledges[i] = int(box.left() + xoffset + i * cellWidth);

@@ -774,7 +774,8 @@ QStringList CalendarSupport::holiday(QDate date)
 
 QStringList CalendarSupport::categories(const KCalendarCore::Incidence::List &incidences)
 {
-    QStringList cats, thisCats;
+    QStringList cats;
+    QStringList thisCats;
     // @TODO: For now just iterate over all incidences. In the future,
     // the list of categories should be built when reading the file.
     for (const KCalendarCore::Incidence::Ptr &incidence : incidences) {
