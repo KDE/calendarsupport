@@ -45,10 +45,6 @@ public:
     }
 
     using List = QList<PrintPlugin *>;
-    static int interfaceVersion()
-    {
-        return 2;
-    }
 
     virtual void setConfig(KConfig *cfg)
     {
