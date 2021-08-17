@@ -189,3 +189,31 @@ if(BUILD_TESTING)
 endif()
 
 ecm_qt_install_logging_categories(EXPORT CALENDARSUPPORT FILE calendarsupport.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+
+if (BUILD_QCH)
+    ecm_add_qch(
+        KF5CalendarSupport_QCH
+        NAME KF5CalendarSupport
+        BASE_NAME KF5CalendarSupport
+        VERSION ${PIM_VERSION}
+        ORG_DOMAIN org.kde
+        SOURCES # using only public headers, to cover only public API
+        ${CalendarSupport_HEADERS}
+        ${CalendarSupport_printer_HEADERS}
+        ${CalendarSupport_next_HEADERS}
+        ${CalendarSupport_freebusy_HEADERS}
+        #MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
+        #IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
+        LINK_QCHS
+            Qt5Core_QCH
+            Qt5Gui_QCH
+            Qt5Widgets_QCH
+        INCLUDE_DIRS
+            ${CMAKE_CURRENT_BINARY_DIR}
+        BLANK_MACROS
+            KSIEVEUI_EXPORT
+        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        COMPONENT Devel
+    )
+endif()
