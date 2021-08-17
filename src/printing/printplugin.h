@@ -189,11 +189,5 @@ protected:
     KConfig *mConfig = nullptr;
 };
 
-class PrintPluginFactory : public PluginFactory
-{
-    Q_OBJECT
-public:
-    PrintPlugin *createPluginFactory() override = 0;
-};
 }
 

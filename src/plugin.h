@@ -19,8 +19,10 @@ namespace CalendarSupport
    This class is shared between korganizer's print plugins and
    calendarview's decoration plugins.
 */
-class Plugin
+class CALENDARSUPPORT_EXPORT Plugin : public QObject
 {
+    Q_OBJECT
+
     enum { INTERFACE_VERSION = 2 };
 
 public:
@@ -34,12 +36,10 @@ public:
         return QStringLiteral("Calendar/Plugin");
     }
 
-    Plugin()
+    Plugin(QObject *parent = nullptr, const QVariantList &args = {})
+        : QObject(parent)
     {
-    }
-
-    virtual ~Plugin()
-    {
+        Q_UNUSED(args);
     }
 
     virtual QString info() const = 0;
@@ -49,17 +49,5 @@ public:
     }
 };
 
-class CALENDARSUPPORT_EXPORT PluginFactory : public KPluginFactory
-{
-    Q_OBJECT
-public:
-    virtual Plugin *createPluginFactory() = 0;
-
-protected:
-    QObject *createObject(QObject *, const char *, const QStringList &) override
-    {
-        return nullptr;
-    }
-};
 }
 
