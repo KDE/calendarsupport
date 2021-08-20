@@ -202,7 +202,7 @@ if (BUILD_QCH)
         ${CalendarSupport_printer_HEADERS}
         ${CalendarSupport_next_HEADERS}
         ${CalendarSupport_freebusy_HEADERS}
-        #MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
+        MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
         #IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
         LINK_QCHS
             Qt5Core_QCH
