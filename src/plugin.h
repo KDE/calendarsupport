@@ -16,7 +16,8 @@ namespace CalendarSupport
 
    @brief Specifies the plugin interface.
 
-   This class is used for calendarview's decoration plugins.
+   This class is shared between korganizer's print plugins and
+   calendarview's decoration plugins.
 */
 class Plugin
 {

@@ -31,16 +31,17 @@ public:
   Base class for Calendar printing classes. Each sub class represents one
   calendar print format.
 */
-class PrintPlugin
+class PrintPlugin : public Plugin
 {
 public:
     PrintPlugin()
-        : mConfigWidget(nullptr)
+        : Plugin()
+        , mConfigWidget(nullptr)
         , mCalendar(nullptr)
     {
     }
 
-    virtual ~PrintPlugin()
+    ~PrintPlugin() override
     {
     }
 
@@ -81,7 +82,7 @@ public:
     /**
       Returns long description of print format.
     */
-    virtual QString info() const = 0;
+    QString info() const override = 0;
 
     /**
       Returns the sort ID of the plugin. This value will be used to identify
