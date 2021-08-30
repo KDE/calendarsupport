@@ -202,7 +202,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     splitterRightLayout->addWidget(mOrientationSelection, 1, 1);
 
     // signals and slots connections
-    connect(mTypeGroup, QOverload<QAbstractButton *>::of(&QButtonGroup::buttonClicked), this, &CalPrintDialog::setPrintType);
+    connect(mTypeGroup, qOverload<QAbstractButton *>(&QButtonGroup::buttonClicked), this, &CalPrintDialog::setPrintType);
     orientationLabel->setBuddy(mOrientationSelection);
 
     // First insert the config widgets into the widget stack. This possibly assigns
