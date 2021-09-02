@@ -173,7 +173,7 @@ KDatePicker *KDatePickerPopup::datePicker() const
     return d->mDatePicker;
 }
 
-void KDatePickerPopup::setDate(const QDate &date)
+void KDatePickerPopup::setDate(QDate date)
 {
     d->mDatePicker->setDate(date);
 }

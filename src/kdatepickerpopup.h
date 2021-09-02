@@ -73,7 +73,7 @@ public Q_SLOTS:
     /**
      * Sets the current @p date.
      */
-    void setDate(const QDate &date);
+    void setDate(QDate date);
 
 Q_SIGNALS:
     /**
