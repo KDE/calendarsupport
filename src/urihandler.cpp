@@ -75,12 +75,12 @@ bool UriHandler::process(const QString &uri)
         const QString uid = QUrl::fromPercentEncoding(uri.toLatin1()).mid(11);
         return startKOrganizer(QStringLiteral("akonadi://?item=%1").arg(uid));
     } else if (uri.startsWith(QLatin1String("akonadi:"))) {
-        const QString mimeType = QUrlQuery(QUrl(uri)).queryItemValue(QStringLiteral("type"));
-        if (mimeType.toLower() == QLatin1String("message/rfc822")) {
+        const QString mimeType = QUrlQuery(QUrl(uri)).queryItemValue(QStringLiteral("type")).toLower();
+        if (mimeType == QLatin1String("message/rfc822")) {
             return startKMail(uri);
-        } else if (mimeType.toLower() == QLatin1String("text/calendar")) {
+        } else if (mimeType == QLatin1String("text/calendar")) {
             return startKOrganizer(uri);
-        } else if (mimeType.toLower() == QLatin1String("text/directory")) {
+        } else if (mimeType == QLatin1String("text/directory")) {
             return startKAddressbook(uri);
         }
     } else { // no special URI, let KDE handle it

@@ -30,10 +30,10 @@ using namespace CalendarSupport;
 
 CalPrinter::CalPrinter(QWidget *parent, const Akonadi::ETMCalendar::Ptr &calendar, bool uniqItem)
     : QObject(parent)
+    , mParent(parent)
+    , mConfig(new KConfig(QStringLiteral("calendar_printing.rc"), KConfig::SimpleConfig))
     , mUniqItem(uniqItem)
 {
-    mParent = parent;
-    mConfig = new KConfig(QStringLiteral("calendar_printing.rc"), KConfig::SimpleConfig);
 
     init(calendar);
 }

@@ -55,13 +55,13 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     hbox->setContentsMargins(0, 0, 0, 0);
     hbox->setSpacing(2);
 
-    mNoteTitle = new QLineEdit;
+    mNoteTitle = new QLineEdit(this);
     mNoteTitle->setClearButtonEnabled(true);
     mNoteTitle->setObjectName(QStringLiteral("notetitle"));
     mNoteTitle->setFocus();
     connect(mNoteTitle, &QLineEdit::textChanged, this, &NoteEditDialog::slotUpdateButtons);
 
-    mCollectionCombobox = new Akonadi::CollectionComboBox(_k_noteEditStubModel);
+    mCollectionCombobox = new Akonadi::CollectionComboBox(_k_noteEditStubModel, this);
     mCollectionCombobox->setAccessRightsFilter(Akonadi::Collection::CanCreateItem);
     mCollectionCombobox->setMinimumWidth(250);
     mCollectionCombobox->setMimeTypeFilter(QStringList() << Akonadi::NoteUtils::noteMimeType());

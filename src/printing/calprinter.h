@@ -66,8 +66,8 @@ protected:
 
 private:
     Akonadi::ETMCalendar::Ptr mCalendar;
-    QWidget *mParent = nullptr;
-    KConfig *mConfig = nullptr;
+    QWidget *const mParent;
+    KConfig *const mConfig;
     const bool mUniqItem;
 };
 
