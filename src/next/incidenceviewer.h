@@ -9,7 +9,7 @@
 
 #include "calendarsupport_export.h"
 
-#include <ItemMonitor>
+#include <Akonadi/ItemMonitor>
 
 #include <QDate>
 #include <QWidget>

@@ -10,12 +10,12 @@
 #include "calendarsupport_debug.h"
 #include "kcalprefs.h"
 
-#include <AkonadiCore/AgentInstance>
-#include <AkonadiCore/AgentManager>
-#include <AkonadiCore/EntityDisplayAttribute>
-#include <AkonadiCore/EntityTreeModel>
+#include <Akonadi/AgentInstance>
+#include <Akonadi/AgentManager>
+#include <Akonadi/EntityDisplayAttribute>
+#include <Akonadi/EntityTreeModel>
 
-#include <AkonadiWidgets/CollectionDialog>
+#include <Akonadi/CollectionDialog>
 
 #include <Akonadi/Calendar/BlockAlarmsAttribute>
 #include <Akonadi/Calendar/ETMCalendar>

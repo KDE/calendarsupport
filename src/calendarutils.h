@@ -6,7 +6,7 @@
 #pragma once
 
 #include <Akonadi/Calendar/ETMCalendar>
-#include <Collection>
+#include <Akonadi/Collection>
 
 #include <QObject>
 

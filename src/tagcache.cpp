@@ -7,10 +7,10 @@
 #include "tagcache.h"
 #include "calendarsupport_debug.h"
 
-#include <AkonadiCore/Monitor>
-#include <AkonadiCore/TagAttribute>
-#include <AkonadiCore/TagFetchJob>
-#include <AkonadiCore/TagFetchScope>
+#include <Akonadi/Monitor>
+#include <Akonadi/TagAttribute>
+#include <Akonadi/TagFetchJob>
+#include <Akonadi/TagFetchScope>
 
 using namespace CalendarSupport;
 

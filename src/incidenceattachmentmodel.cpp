@@ -7,10 +7,10 @@
 
 #include "incidenceattachmentmodel.h"
 
-#include <EntityTreeModel>
-#include <ItemFetchJob>
-#include <ItemFetchScope>
-#include <Monitor>
+#include <Akonadi/EntityTreeModel>
+#include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemFetchScope>
+#include <Akonadi/Monitor>
 
 using namespace CalendarSupport;
 using namespace Akonadi;

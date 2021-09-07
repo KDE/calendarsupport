@@ -15,7 +15,7 @@
 
 #include <cmath>
 
-#include <Item>
+#include <Akonadi/Item>
 
 #include <KCalendarCore/Visitor>
 

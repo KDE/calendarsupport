@@ -10,8 +10,8 @@
 #include "identitymanager.h"
 #include "tagcache.h"
 
-#include <AkonadiCore/TagAttribute>
-#include <AkonadiCore/TagModifyJob>
+#include <Akonadi/TagAttribute>
+#include <Akonadi/TagModifyJob>
 
 #include <KMime/HeaderParsing>
 

@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include <Attribute>
-#include <Item>
+#include <Akonadi/Attribute>
+#include <Akonadi/Item>
 
 #include <KCalendarCore/Incidence>
 

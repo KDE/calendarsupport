@@ -7,9 +7,9 @@
 #include "noteeditdialogtest.h"
 #include "noteeditdialog.h"
 
+#include <Akonadi/CollectionComboBox>
+#include <Akonadi/EntityTreeModel>
 #include <Akonadi/Notes/NoteUtils>
-#include <AkonadiCore/EntityTreeModel>
-#include <AkonadiWidgets/CollectionComboBox>
 
 #include <KPIMTextEdit/RichTextEditor>
 #include <KPIMTextEdit/RichTextEditorWidget>

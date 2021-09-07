@@ -12,7 +12,7 @@
 #include "kcalprefs.h"
 #include "utils.h"
 
-#include <Item>
+#include <Akonadi/Item>
 
 #include "calendarsupport_debug.h"
 #include <KConfig>

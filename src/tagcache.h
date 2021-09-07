@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <AkonadiCore/Tag>
+#include <Akonadi/Tag>
 
 namespace Akonadi
 {

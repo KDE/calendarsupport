@@ -14,8 +14,8 @@
 #include "incidenceattachmentmodel.h"
 
 #include <Akonadi/Calendar/CalendarBase>
-#include <CollectionFetchJob>
-#include <ItemFetchScope>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/ItemFetchScope>
 
 #include <KCalUtils/IncidenceFormatter>
 

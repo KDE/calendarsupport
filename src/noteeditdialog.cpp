@@ -6,8 +6,8 @@
 
 #include "noteeditdialog.h"
 
+#include <Akonadi/CollectionComboBox>
 #include <Akonadi/Notes/NoteUtils>
-#include <AkonadiWidgets/CollectionComboBox>
 
 #include <KPIMTextEdit/RichTextEditor>
 #include <KPIMTextEdit/RichTextEditorWidget>

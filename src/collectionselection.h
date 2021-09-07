@@ -11,7 +11,7 @@
 
 #include <QObject>
 
-#include <Collection>
+#include <Akonadi/Collection>
 
 class QItemSelection;
 class QItemSelectionModel;

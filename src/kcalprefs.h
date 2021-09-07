@@ -8,7 +8,7 @@
 #include "calendarsupport_export.h"
 #include "kcalprefs_base.h"
 
-#include <Collection>
+#include <Akonadi/Collection>
 
 namespace CalendarSupport
 {
