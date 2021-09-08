@@ -21,7 +21,7 @@
 #include "calendarsupport/utils.h"
 #include "calendarsupport_debug.h"
 
-#include <ItemFetchJob>
+#include <Akonadi/ItemFetchJob>
 
 #include <KIO/FileCopyJob>
 #include <KIO/JobUiDelegate>
