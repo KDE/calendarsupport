@@ -716,12 +716,11 @@ QList<QDate> CalendarSupport::workDays(QDate startDate, QDate endDate)
         for (const QString &regionStr : holidays) {
             KHolidays::HolidayRegion region(regionStr);
             if (region.isValid()) {
-                const KHolidays::Holiday::List list = region.holidays(startDate, endDate);
-                const int listCount(list.count());
-                for (int i = 0; i < listCount; ++i) {
-                    const KHolidays::Holiday &h = list.at(i);
+                for (auto const h : region.holidays(startDate, endDate)) {
                     if (h.dayType() == KHolidays::Holiday::NonWorkday) {
-                        result.removeAll(h.observedStartDate());
+                        for (int i = 0; i < h.duration(); i++) {
+                            result.removeOne(h.observedStartDate().addDays(i));
+                        }
                     }
                 }
             }
