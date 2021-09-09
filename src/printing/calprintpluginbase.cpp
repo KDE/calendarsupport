@@ -1159,95 +1159,74 @@ void CalPrintPluginBase::drawIncidence(QPainter &p,
     int flags = Qt::AlignLeft | Qt::OpaqueMode;
     QFontMetrics fm = p.fontMetrics();
     const int borderWidth = p.pen().width() + 1;
-    QRect timeBound = p.boundingRect(dayBox.x() + borderWidth, dayBox.y() + textY, dayBox.width(), fm.lineSpacing(), flags, time);
 
-    int summaryWidth = time.isEmpty() ? 0 : timeBound.width() + 3;
-    QRect summaryBound =
-        QRect(dayBox.x() + borderWidth + summaryWidth, dayBox.y() + textY + 1, dayBox.width() - summaryWidth - (borderWidth * 2), dayBox.height() - textY);
-
-    QString summaryText = summary;
-    QString descText = toPlainText(description);
-    bool boxOverflow = false;
+    QString firstLine {time};
+    if (!firstLine.isEmpty()) {
+        firstLine += QStringLiteral(" ");
+    }
+    firstLine += summary;
 
     if (singleLineLimit) {
-        if (includeDescription && !descText.isEmpty()) {
-            summaryText += QLatin1String(", ") + descText;
+        if (includeDescription && !description.isEmpty()) {
+            firstLine += QStringLiteral(". ") + toPlainText(description);
         }
-        int totalHeight = fm.lineSpacing() + borderWidth;
+
+        int totalHeight = fm.height() + borderWidth;
         int textBoxHeight = (totalHeight > (dayBox.height() - textY)) ? dayBox.height() - textY : totalHeight;
-        summaryBound.setHeight(textBoxHeight);
-        QRect lineRect(dayBox.x() + borderWidth, dayBox.y() + textY, dayBox.width() - (borderWidth * 2), textBoxHeight);
-        drawBox(p, 1, lineRect);
-        if (!time.isEmpty()) {
-            p.drawText(timeBound, flags, time);
-        }
-        p.drawText(summaryBound, flags, summaryText);
+        QRect boxRect(dayBox.x() + p.pen().width(), dayBox.y() + textY, dayBox.width(), textBoxHeight);
+        drawBox(p, 1, boxRect);
+        p.drawText(boxRect.adjusted(3, 0, -3, 0), flags, firstLine);
+        textY += textBoxHeight;
     } else {
         QTextDocument textDoc;
         QTextCursor textCursor(&textDoc);
-        textCursor.insertText(summaryText);
+        textCursor.insertText(firstLine);
         if (includeDescription && !description.isEmpty()) {
             textCursor.insertText(QStringLiteral("\n"));
             if (richDescription) {
                 textCursor.insertHtml(description);
             } else {
-                textCursor.insertText(descText);
+                textCursor.insertText(toPlainText(description));
             }
         }
-        textDoc.setPageSize(QSize(summaryBound.width(), summaryBound.height()));
-        p.save();
-        QRect clipBox(0, 0, summaryBound.width(), summaryBound.height());
-        p.translate(summaryBound.x(), summaryBound.y());
-        summaryBound.setHeight(textDoc.documentLayout()->documentSize().height());
-        if (summaryBound.bottom() > dayBox.bottom()) {
-            summaryBound.setBottom(dayBox.bottom());
+
+        QRect textBox = QRect(dayBox.x(), dayBox.y() + textY + 1, dayBox.width(), dayBox.height() - textY);
+        textDoc.setPageSize(QSize(textBox.width(), textBox.height()));
+
+        textBox.setHeight(textDoc.documentLayout()->documentSize().height());
+        if (textBox.bottom() > dayBox.bottom()) {
+            textBox.setBottom(dayBox.bottom());
         }
-        clipBox.setHeight(summaryBound.height());
-        p.restore();
 
-        p.save();
-        QRect backBox(timeBound.x(), timeBound.y(), dayBox.width() - (borderWidth * 2), clipBox.height());
-        drawBox(p, 1, backBox);
+        QRect boxRext(dayBox.x() + p.pen().width(), dayBox.y() + textY, dayBox.width(), textBox.height());
+        drawBox(p, 1, boxRext);
 
-        if (!time.isEmpty()) {
-            if (timeBound.bottom() > dayBox.bottom()) {
-                timeBound.setBottom(dayBox.bottom());
-            }
-            timeBound.moveTop(timeBound.y() + (summaryBound.height() - timeBound.height()) / 2);
-            p.drawText(timeBound, flags, time);
-        }
-        p.translate(summaryBound.x(), summaryBound.y());
-
+        QRect clipRect(0, 0, textBox.width(), textBox.height());
         QAbstractTextDocumentLayout::PaintContext ctx;
         ctx.palette.setColor(QPalette::Text, p.pen().color());
-        p.setClipRect(clipBox);
-        ctx.clip = clipBox;
+        ctx.clip = clipRect;
+        p.save();
+        p.translate(textBox.x(), textBox.y());
+        p.setClipRect(clipRect);
         textDoc.documentLayout()->draw(&p, ctx);
-
         p.restore();
-        boxOverflow = textDoc.pageCount() > 1;
-    }
-    if (summaryBound.bottom() < dayBox.bottom()) {
-        QPen oldPen(p.pen());
-        p.setPen(QPen());
-        p.drawLine(dayBox.x(), summaryBound.bottom(), dayBox.x() + dayBox.width(), summaryBound.bottom());
-        p.setPen(oldPen);
-    }
-    textY += summaryBound.height();
 
-    // show that we have overflowed the box
-    if (boxOverflow) {
-        QPolygon poly(3);
-        int x = dayBox.x() + dayBox.width();
-        int y = dayBox.y() + dayBox.height();
-        poly.setPoint(0, x - 10, y);
-        poly.setPoint(1, x, y - 10);
-        poly.setPoint(2, x, y);
-        QBrush oldBrush(p.brush());
-        p.setBrush(QBrush(Qt::black));
-        p.drawPolygon(poly);
-        p.setBrush(oldBrush);
-        textY = dayBox.height();
+        textY += textBox.height();
+
+        if (textDoc.pageCount() > 1) {
+            // show that we have overflowed the box
+            QPolygon poly(3);
+            int x = dayBox.x() + dayBox.width();
+            int y = dayBox.y() + dayBox.height();
+            poly.setPoint(0, x - 10, y);
+            poly.setPoint(1, x, y - 10);
+            poly.setPoint(2, x, y);
+            QBrush oldBrush(p.brush());
+            p.setBrush(QBrush(Qt::black));
+            p.drawPolygon(poly);
+            p.setBrush(oldBrush);
+            textY = dayBox.height();
+        }
     }
 }
 
