@@ -1013,15 +1013,17 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
     QString hstring(holidayString(qd));
     const QFont oldFont(p.font());
 
-    QRect headerTextBox(subHeaderBox);
-    headerTextBox.setLeft(subHeaderBox.left() + 5);
-    headerTextBox.setRight(subHeaderBox.right() - 5);
+    QRect headerTextBox(subHeaderBox.adjusted(5, 0, -5, 0));
+    p.setFont(QFont(QStringLiteral("sans-serif"), 10, QFont::Bold));
+    QRect dayNumRect;
+    p.drawText(headerTextBox, Qt::AlignRight | Qt::AlignVCenter, dayNumStr, &dayNumRect);
     if (!hstring.isEmpty()) {
         p.setFont(QFont(QStringLiteral("sans-serif"), 8, QFont::Bold, true));
+        QFontMetrics fm(p.font());
+        hstring = fm.elidedText(hstring, Qt::ElideRight, headerTextBox.width() - dayNumRect.width() - 5);
         p.drawText(headerTextBox, Qt::AlignLeft | Qt::AlignVCenter, hstring);
+        p.setFont(QFont(QStringLiteral("sans-serif"), 10, QFont::Bold));
     }
-    p.setFont(QFont(QStringLiteral("sans-serif"), 10, QFont::Bold));
-    p.drawText(headerTextBox, Qt::AlignRight | Qt::AlignVCenter, dayNumStr);
 
     const KCalendarCore::Event::List eventList =
         mCalendar->events(qd, QTimeZone::systemTimeZone(), KCalendarCore::EventSortStartDate, KCalendarCore::SortDirectionAscending);
