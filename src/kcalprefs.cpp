@@ -15,7 +15,7 @@
 
 #include <KMime/HeaderParsing>
 
-#include <KCodecs/KEmailAddress>
+#include <KEmailAddress>
 #include <KIdentityManagement/Identity>
 
 #include <KEMailSettings>
