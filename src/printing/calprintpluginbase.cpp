@@ -1284,7 +1284,6 @@ void CalPrintPluginBase::drawMonth(QPainter &p,
         maxdays = daysinmonth;
     }
 
-    int d;
     float dayheight = float(daysBox.height()) / float(maxdays);
 
     QColor holidayColor(240, 240, 240);
@@ -1309,7 +1308,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p,
         workDays = CalendarSupport::workDays(startDate, endDate);
     }
 
-    for (d = 0; d < daysinmonth; ++d) {
+    for (int d = 0; d < daysinmonth; ++d) {
         QDate day(dt.year(), dt.month(), d + 1);
         QRect dayBox(daysBox.left() /*+rand()%50*/, daysBox.top() + qRound(dayheight * d), daysBox.width() /*-rand()%50*/, 0);
         // FIXME: When using a border width of 0 for event boxes,

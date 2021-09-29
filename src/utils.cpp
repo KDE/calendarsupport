@@ -716,7 +716,7 @@ QList<QDate> CalendarSupport::workDays(QDate startDate, QDate endDate)
         for (const QString &regionStr : holidays) {
             KHolidays::HolidayRegion region(regionStr);
             if (region.isValid()) {
-                for (auto const h : region.holidays(startDate, endDate)) {
+                for (auto const &h : region.holidays(startDate, endDate)) {
                     if (h.dayType() == KHolidays::Holiday::NonWorkday) {
                         for (int i = 0; i < h.duration(); i++) {
                             result.removeOne(h.observedStartDate().addDays(i));

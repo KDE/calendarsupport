@@ -770,7 +770,6 @@ void CalPrintTimetable::drawTimeTable(QPainter &p,
         curDate = curDate.addDays(1);
     }
 
-    QFont oldFont(p.font());
     p.setFont(QFont(QStringLiteral("sans-serif"), 11, QFont::Normal));
     const int lineSpacing = p.fontMetrics().lineSpacing();
 
@@ -787,7 +786,7 @@ void CalPrintTimetable::drawTimeTable(QPainter &p,
     if (maxAllDayEvents > 0) {
         // Draw the side bar for all-day events.
         const auto alldayLabel =  i18nc("label for timetable all-day boxes", "All day");
-        QFont oldFont(p.font());
+        const QFont oldFont(p.font());
         p.setFont(QFont(QStringLiteral("sans-serif"), 9, QFont::Normal));
         const auto labelHeight = p.fontMetrics().horizontalAdvance(alldayLabel) + 2*padding();
         alldayHeight = std::max(maxAllDayEvents*lineSpacing + 2*padding(), labelHeight);
