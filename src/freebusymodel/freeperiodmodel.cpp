@@ -12,7 +12,6 @@
 
 #include <QDateTime>
 #include <QLocale>
-#include <QSet>
 #include <QTimeZone>
 
 using namespace CalendarSupport;

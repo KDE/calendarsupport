@@ -25,7 +25,6 @@
 #include <KConfigGroup>
 
 #include <QPainter>
-#include <QPrinter>
 
 using namespace CalendarSupport;
 
