@@ -150,10 +150,7 @@ CalendarUtils::CalendarUtils(const Akonadi::ETMCalendar::Ptr &calendar, QObject 
     Q_ASSERT(calendar);
 }
 
-CalendarUtils::~CalendarUtils()
-{
-    delete d_ptr;
-}
+CalendarUtils::~CalendarUtils() = default;
 
 Akonadi::ETMCalendar::Ptr CalendarUtils::calendar() const
 {

@@ -10,6 +10,8 @@
 
 #include <Akonadi/Collection>
 
+#include <memory>
+
 namespace CalendarSupport
 {
 class CALENDARSUPPORT_EXPORT KCalPrefs : public KCalPrefsBase
@@ -60,7 +62,7 @@ public:
 
 private:
     class Private;
-    Private *const d;
+    std::unique_ptr<Private> const d;
 };
 }
 

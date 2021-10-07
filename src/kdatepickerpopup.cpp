@@ -163,10 +163,7 @@ KDatePickerPopup::KDatePickerPopup(Modes modes, QDate date, QWidget *parent)
     d->buildMenu();
 }
 
-KDatePickerPopup::~KDatePickerPopup()
-{
-    delete d;
-}
+KDatePickerPopup::~KDatePickerPopup() = default;
 
 KDatePicker *KDatePickerPopup::datePicker() const
 {

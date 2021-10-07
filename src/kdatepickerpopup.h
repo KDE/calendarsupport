@@ -12,6 +12,8 @@
 #include <QDate>
 #include <QMenu>
 
+#include <memory>
+
 class KDatePicker;
 
 namespace CalendarSupport
@@ -86,7 +88,7 @@ Q_SIGNALS:
 private:
     //@cond PRIVATE
     class Private;
-    Private *const d;
+    std::unique_ptr<Private> const d;
     //@endcond
 };
 

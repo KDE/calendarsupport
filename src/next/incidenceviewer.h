@@ -14,6 +14,8 @@
 #include <QDate>
 #include <QWidget>
 
+#include <memory>
+
 class QAbstractItemModel;
 
 namespace Akonadi
@@ -139,7 +141,7 @@ private:
 private:
     //@cond PRIVATE
     class Private;
-    Private *const d;
+    std::unique_ptr<Private> const d;
 
     Q_PRIVATE_SLOT(d, void slotParentCollectionFetched(KJob *))
     //@endcond

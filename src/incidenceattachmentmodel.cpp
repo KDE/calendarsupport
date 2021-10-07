@@ -105,10 +105,7 @@ IncidenceAttachmentModel::IncidenceAttachmentModel(QObject *parent)
 {
 }
 
-IncidenceAttachmentModel::~IncidenceAttachmentModel()
-{
-    delete d_ptr;
-}
+IncidenceAttachmentModel::~IncidenceAttachmentModel() = default;
 
 KCalendarCore::Incidence::Ptr IncidenceAttachmentModel::incidence() const
 {

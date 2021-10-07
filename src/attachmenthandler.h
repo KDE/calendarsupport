@@ -19,6 +19,8 @@
 
 #include <QObject>
 
+#include <memory>
+
 class KJob;
 
 class QWidget;
@@ -153,7 +155,7 @@ private:
     void slotFinishSaveAs(KJob *job);
     //@cond PRIVATE
     class Private;
-    Private *const d;
+    std::unique_ptr<Private> const d;
     //@endcond
 }; // class AttachmentHandler
 } // namespace CalendarSupport

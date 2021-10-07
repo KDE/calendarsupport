@@ -14,6 +14,8 @@
 #include <KCalendarCore/Calendar>
 #include <KCalendarCore/Event>
 
+#include <memory>
+
 namespace CalendarSupport
 {
 class FreeBusyCalendarPrivate;
@@ -35,6 +37,7 @@ private:
     void onRowsRemoved(const QModelIndex &, int, int);
     void onLayoutChanged();
     void deleteAllEvents();
-    FreeBusyCalendarPrivate *const d;
+
+    std::unique_ptr<FreeBusyCalendarPrivate> const d;
 };
 }

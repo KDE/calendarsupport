@@ -14,6 +14,8 @@
 #include <QAbstractItemModel>
 #include <QTimer>
 
+#include <memory>
+
 class ItemPrivateData;
 
 namespace CalendarSupport
@@ -81,6 +83,6 @@ private:
     void setFreeBusyPeriods(const QModelIndex &parent, const KCalendarCore::FreeBusyPeriod::List &list);
     void updateFreeBusyData(const FreeBusyItem::Ptr &);
 
-    FreeBusyItemModelPrivate *const d;
+    std::unique_ptr<FreeBusyItemModelPrivate> const d;
 };
 }

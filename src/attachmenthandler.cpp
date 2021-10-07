@@ -67,10 +67,7 @@ AttachmentHandler::AttachmentHandler(QWidget *parent)
 {
 }
 
-AttachmentHandler::~AttachmentHandler()
-{
-    delete d;
-}
+AttachmentHandler::~AttachmentHandler() = default;
 
 Attachment AttachmentHandler::find(const QString &attachmentName, const Incidence::Ptr &incidence)
 {

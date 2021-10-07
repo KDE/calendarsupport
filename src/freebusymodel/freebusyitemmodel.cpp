@@ -98,10 +98,7 @@ FreeBusyItemModel::FreeBusyItemModel(QObject *parent)
     d->mRootData = new ItemPrivateData(nullptr);
 }
 
-FreeBusyItemModel::~FreeBusyItemModel()
-{
-    delete d;
-}
+FreeBusyItemModel::~FreeBusyItemModel() = default;
 
 QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
 {

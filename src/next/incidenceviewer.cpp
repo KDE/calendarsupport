@@ -149,10 +149,7 @@ void IncidenceViewer::init()
     d->updateView();
 }
 
-IncidenceViewer::~IncidenceViewer()
-{
-    delete d;
-}
+IncidenceViewer::~IncidenceViewer() = default;
 
 void IncidenceViewer::setCalendar(Akonadi::ETMCalendar *calendar)
 {

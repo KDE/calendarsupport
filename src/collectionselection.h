@@ -13,6 +13,8 @@
 
 #include <Akonadi/Collection>
 
+#include <memory>
+
 class QItemSelection;
 class QItemSelectionModel;
 
@@ -41,7 +43,7 @@ Q_SIGNALS:
 private:
     void slotSelectionChanged(const QItemSelection &, const QItemSelection &);
     class Private;
-    Private *const d;
+    std::unique_ptr<Private> const d;
 };
 }
 

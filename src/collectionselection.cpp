@@ -30,10 +30,7 @@ CollectionSelection::CollectionSelection(QItemSelectionModel *selectionModel, QO
     connect(selectionModel, &QItemSelectionModel::selectionChanged, this, &CollectionSelection::slotSelectionChanged);
 }
 
-CollectionSelection::~CollectionSelection()
-{
-    delete d;
-}
+CollectionSelection::~CollectionSelection() = default;
 
 QItemSelectionModel *CollectionSelection::model() const
 {

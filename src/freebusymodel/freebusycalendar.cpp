@@ -41,7 +41,6 @@ FreeBusyCalendar::FreeBusyCalendar(QObject *parent)
 FreeBusyCalendar::~FreeBusyCalendar()
 {
     qCDebug(CALENDARSUPPORT_LOG) << "deleting" << this;
-    delete d;
 }
 
 KCalendarCore::Calendar::Ptr FreeBusyCalendar::calendar() const

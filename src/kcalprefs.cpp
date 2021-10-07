@@ -50,10 +50,7 @@ KCalPrefs::KCalPrefs()
 {
 }
 
-KCalPrefs::~KCalPrefs()
-{
-    delete d;
-}
+KCalPrefs::~KCalPrefs() = default;
 
 KCalPrefs *KCalPrefs::instance()
 {

@@ -14,6 +14,8 @@
 
 #include <QAbstractListModel>
 
+#include <memory>
+
 namespace Akonadi
 {
 }
@@ -61,7 +63,7 @@ Q_SIGNALS:
 
 private:
     Q_DECLARE_PRIVATE(IncidenceAttachmentModel)
-    IncidenceAttachmentModelPrivate *const d_ptr;
+    std::unique_ptr<IncidenceAttachmentModelPrivate> const d_ptr;
 
     Q_PRIVATE_SLOT(d_func(), void resetModel())
     Q_PRIVATE_SLOT(d_func(), void itemFetched(Akonadi::Item::List))

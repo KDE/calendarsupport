@@ -10,6 +10,8 @@
 
 #include <QObject>
 
+#include <memory>
+
 namespace Akonadi
 {
 class Item;
@@ -68,7 +70,7 @@ Q_SIGNALS:
     void actionFinished(const Akonadi::Item &item);
 
 private:
-    CalendarUtilsPrivate *const d_ptr;
+    std::unique_ptr<CalendarUtilsPrivate> const d_ptr;
     Q_DECLARE_PRIVATE(CalendarUtils)
 
     Q_PRIVATE_SLOT(

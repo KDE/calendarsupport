@@ -12,6 +12,8 @@
 #include <QHash>
 #include <QObject>
 
+#include <memory>
+
 class KCoreConfigSkeleton;
 class QColor;
 
@@ -36,7 +38,7 @@ public:
 private:
     Q_DISABLE_COPY(CategoryConfig)
     class Private;
-    Private *const d;
+    std::unique_ptr<Private> const d;
 };
 }
 

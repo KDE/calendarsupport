@@ -91,10 +91,7 @@ CategoryConfig::CategoryConfig(KCoreConfigSkeleton *cfg, QObject *parent)
 {
 }
 
-CategoryConfig::~CategoryConfig()
-{
-    delete d;
-}
+CategoryConfig::~CategoryConfig() = default;
 
 void CategoryConfig::writeConfig()
 {
