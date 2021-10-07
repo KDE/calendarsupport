@@ -12,10 +12,10 @@
 
 using namespace CalendarSupport;
 
-class Q_DECL_HIDDEN CollectionSelection::Private
+class CalendarSupport::CollectionSelectionPrivate
 {
 public:
-    explicit Private(QItemSelectionModel *model_)
+    explicit CollectionSelectionPrivate(QItemSelectionModel *model_)
         : model(model_)
     {
     }
@@ -25,7 +25,7 @@ public:
 
 CollectionSelection::CollectionSelection(QItemSelectionModel *selectionModel, QObject *parent)
     : QObject(parent)
-    , d(new Private(selectionModel))
+    , d(new CollectionSelectionPrivate(selectionModel))
 {
     connect(selectionModel, &QItemSelectionModel::selectionChanged, this, &CollectionSelection::slotSelectionChanged);
 }

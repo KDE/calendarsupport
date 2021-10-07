@@ -25,6 +25,8 @@ class ETMCalendar;
 
 namespace CalendarSupport
 {
+class IncidenceViewerPrivate;
+
 /**
  * @short A viewer component for incidences in Akonadi.
  *
@@ -140,8 +142,7 @@ private:
 
 private:
     //@cond PRIVATE
-    class Private;
-    std::unique_ptr<Private> const d;
+    std::unique_ptr<IncidenceViewerPrivate> const d;
 
     Q_PRIVATE_SLOT(d, void slotParentCollectionFetched(KJob *))
     //@endcond

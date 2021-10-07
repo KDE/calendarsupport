@@ -47,10 +47,10 @@ private:
     QWidget *const mOriginalParent;
 };
 
-class Q_DECL_HIDDEN KDatePickerPopup::Private
+class CalendarSupport::KDatePickerPopupPrivate
 {
 public:
-    Private(KDatePickerPopup *qq)
+    explicit KDatePickerPopupPrivate(KDatePickerPopup *qq)
         : q(qq)
     {
     }
@@ -66,10 +66,10 @@ public:
 
     KDatePickerPopup *const q;
     KDatePicker *mDatePicker = nullptr;
-    Modes mModes;
+    KDatePickerPopup::Modes mModes;
 };
 
-void KDatePickerPopup::Private::buildMenu()
+void KDatePickerPopupPrivate::buildMenu()
 {
     if (q->isVisible()) {
         return;
@@ -77,15 +77,15 @@ void KDatePickerPopup::Private::buildMenu()
 
     q->clear();
 
-    if (mModes & DatePicker) {
+    if (mModes & KDatePickerPopup::DatePicker) {
         q->addAction(new KDatePickerAction(mDatePicker, q));
 
-        if ((mModes & NoDate) || (mModes & Words)) {
+        if ((mModes & KDatePickerPopup::NoDate) || (mModes & KDatePickerPopup::Words)) {
             q->addSeparator();
         }
     }
 
-    if (mModes & Words) {
+    if (mModes & KDatePickerPopup::Words) {
         q->addAction(i18nc("@option today", "&Today"), q, [this]() {
             slotToday();
         });
@@ -99,52 +99,52 @@ void KDatePickerPopup::Private::buildMenu()
             slotNextMonth();
         });
 
-        if (mModes & NoDate) {
+        if (mModes & KDatePickerPopup::NoDate) {
             q->addSeparator();
         }
     }
 
-    if (mModes & NoDate) {
+    if (mModes & KDatePickerPopup::NoDate) {
         q->addAction(i18nc("@option do not specify a date", "No Date"), q, [this]() {
             slotNoDate();
         });
     }
 }
 
-void KDatePickerPopup::Private::slotDateChanged(QDate date)
+void KDatePickerPopupPrivate::slotDateChanged(QDate date)
 {
     Q_EMIT q->dateChanged(date);
     q->hide();
 }
 
-void KDatePickerPopup::Private::slotToday()
+void KDatePickerPopupPrivate::slotToday()
 {
     Q_EMIT q->dateChanged(QDate::currentDate());
 }
 
-void KDatePickerPopup::Private::slotTomorrow()
+void KDatePickerPopupPrivate::slotTomorrow()
 {
     Q_EMIT q->dateChanged(QDate::currentDate().addDays(1));
 }
 
-void KDatePickerPopup::Private::slotNoDate()
+void KDatePickerPopupPrivate::slotNoDate()
 {
     Q_EMIT q->dateChanged(QDate());
 }
 
-void KDatePickerPopup::Private::slotNextWeek()
+void KDatePickerPopupPrivate::slotNextWeek()
 {
     Q_EMIT q->dateChanged(QDate::currentDate().addDays(7));
 }
 
-void KDatePickerPopup::Private::slotNextMonth()
+void KDatePickerPopupPrivate::slotNextMonth()
 {
     Q_EMIT q->dateChanged(QDate::currentDate().addMonths(1));
 }
 
 KDatePickerPopup::KDatePickerPopup(Modes modes, QDate date, QWidget *parent)
     : QMenu(parent)
-    , d(new Private(this))
+    , d(new KDatePickerPopupPrivate(this))
 {
     d->mModes = modes;
 

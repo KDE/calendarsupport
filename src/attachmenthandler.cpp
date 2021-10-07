@@ -49,10 +49,10 @@ struct ReceivedInfo {
     QString attachmentName;
 };
 
-class Q_DECL_HIDDEN AttachmentHandler::Private
+class AttachmentHandlerPrivate
 {
 public:
-    Private(QWidget *parent)
+    explicit AttachmentHandlerPrivate(QWidget *parent)
         : mParent(parent)
     {
     }
@@ -63,7 +63,7 @@ public:
 
 AttachmentHandler::AttachmentHandler(QWidget *parent)
     : QObject(parent)
-    , d(new Private(parent))
+    , d(new AttachmentHandlerPrivate(parent))
 {
 }
 

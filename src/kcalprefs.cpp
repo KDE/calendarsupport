@@ -24,16 +24,16 @@ using namespace CalendarSupport;
 
 Q_GLOBAL_STATIC(KCalPrefs, globalPrefs)
 
-class Q_DECL_HIDDEN KCalPrefs::Private
+class CalendarSupport::KCalPrefsPrivate
 {
 public:
-    Private()
+    KCalPrefsPrivate()
         : mDefaultCalendarId(-1)
         , mDefaultCategoryColor(QColor(151, 235, 121))
     {
     }
 
-    ~Private()
+    ~KCalPrefsPrivate()
     {
     }
 
@@ -46,7 +46,7 @@ public:
 
 KCalPrefs::KCalPrefs()
     : KCalPrefsBase()
-    , d(new Private())
+    , d(new KCalPrefsPrivate())
 {
 }
 

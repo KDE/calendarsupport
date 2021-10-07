@@ -45,10 +45,10 @@ static QStringList categoryDefaults()
     return l;
 }
 
-class Q_DECL_HIDDEN CategoryConfig::Private
+class CalendarSupport::CategoryConfigPrivate
 {
 public:
-    explicit Private(KCoreConfigSkeleton *cfg)
+    explicit CategoryConfigPrivate(KCoreConfigSkeleton *cfg)
         : config(cfg)
     {
         mDefaultCategoryColor = QColor(151, 235, 121);
@@ -87,7 +87,7 @@ void CategoryConfig::setColors(const QHash<QString, QColor> &colors)
 
 CategoryConfig::CategoryConfig(KCoreConfigSkeleton *cfg, QObject *parent)
     : QObject(parent)
-    , d(new Private(cfg))
+    , d(new CategoryConfigPrivate(cfg))
 {
 }
 

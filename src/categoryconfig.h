@@ -19,6 +19,8 @@ class QColor;
 
 namespace CalendarSupport
 {
+class CategoryConfigPrivate;
+
 class CALENDARSUPPORT_EXPORT CategoryConfig : public QObject
 {
     Q_OBJECT
@@ -37,8 +39,7 @@ public:
 
 private:
     Q_DISABLE_COPY(CategoryConfig)
-    class Private;
-    std::unique_ptr<Private> const d;
+    std::unique_ptr<CategoryConfigPrivate> const d;
 };
 }
 

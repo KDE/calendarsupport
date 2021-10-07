@@ -18,6 +18,8 @@ class KDatePicker;
 
 namespace CalendarSupport
 {
+class KDatePickerPopupPrivate;
+
 /**
  * @short This menu helps the user to select a date quickly.
  *
@@ -87,8 +89,7 @@ Q_SIGNALS:
 
 private:
     //@cond PRIVATE
-    class Private;
-    std::unique_ptr<Private> const d;
+    std::unique_ptr<KDatePickerPopupPrivate> const d;
     //@endcond
 };
 

@@ -50,10 +50,10 @@ void TextBrowser::setSource(const QUrl &name)
     }
 }
 
-class Q_DECL_HIDDEN IncidenceViewer::Private
+class CalendarSupport::IncidenceViewerPrivate
 {
 public:
-    Private(IncidenceViewer *parent)
+    explicit IncidenceViewerPrivate(IncidenceViewer *parent)
         : mParent(parent)
     {
         mAttachmentHandler = new AttachmentHandler(parent);
@@ -118,7 +118,7 @@ public:
 
 IncidenceViewer::IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent)
     : QWidget(parent)
-    , d(new Private(this))
+    , d(new IncidenceViewerPrivate(this))
 {
     d->mCalendar = calendar;
     init();
@@ -126,7 +126,7 @@ IncidenceViewer::IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent
 
 IncidenceViewer::IncidenceViewer(QWidget *parent)
     : QWidget(parent)
-    , d(new Private(this))
+    , d(new IncidenceViewerPrivate(this))
 {
     d->mCalendar = nullptr;
     init();

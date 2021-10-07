@@ -27,6 +27,8 @@ class QWidget;
 
 namespace CalendarSupport
 {
+class AttachmentHandlerPrivate;
+
 /**
   @brief
   Provides methods to handle incidence attachments.
@@ -154,8 +156,7 @@ private:
     void slotFinishView(KJob *job);
     void slotFinishSaveAs(KJob *job);
     //@cond PRIVATE
-    class Private;
-    std::unique_ptr<Private> const d;
+    std::unique_ptr<AttachmentHandlerPrivate> const d;
     //@endcond
 }; // class AttachmentHandler
 } // namespace CalendarSupport

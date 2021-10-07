@@ -20,6 +20,8 @@ class QItemSelectionModel;
 
 namespace CalendarSupport
 {
+class CollectionSelectionPrivate;
+
 class CALENDARSUPPORT_EXPORT CollectionSelection : public QObject
 {
     Q_OBJECT
@@ -42,8 +44,8 @@ Q_SIGNALS:
 
 private:
     void slotSelectionChanged(const QItemSelection &, const QItemSelection &);
-    class Private;
-    std::unique_ptr<Private> const d;
+
+    std::unique_ptr<CollectionSelectionPrivate> const d;
 };
 }
 

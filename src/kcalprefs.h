@@ -14,6 +14,8 @@
 
 namespace CalendarSupport
 {
+class KCalPrefsPrivate;
+
 class CALENDARSUPPORT_EXPORT KCalPrefs : public KCalPrefsBase
 {
     Q_OBJECT
@@ -61,8 +63,7 @@ public:
     QDateTime dayBegins() const;
 
 private:
-    class Private;
-    std::unique_ptr<Private> const d;
+    std::unique_ptr<KCalPrefsPrivate> const d;
 };
 }
 
