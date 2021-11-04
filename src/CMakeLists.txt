@@ -37,6 +37,38 @@ target_sources(KF5CalendarSupport PRIVATE
   freebusymodel/freebusyitem.cpp
   freebusymodel/freebusyitemmodel.cpp
   freebusymodel/freebusycalendar.cpp
+  next/incidenceviewer.h
+  next/incidenceviewer_p.h
+  categoryhierarchyreader.h
+  calendarsingleton.h
+  utils.h
+  plugin.h
+  archivedialog.h
+  cellitem.h
+  identitymanager.h
+  noteeditdialog.h
+  attachmenthandler.h
+  eventarchiver.h
+  kdatepickerpopup.h
+  printing/printplugin.h
+  printing/calprintpluginbase.h
+  printing/journalprint.h
+  printing/calprintdefaultplugins.h
+  printing/yearprint.h
+  printing/calprinter.h
+  calendarutils.h
+  categoryconfig.h
+  kcalprefs.h
+  urihandler.h
+  incidenceattachmentmodel.h
+  freebusymodel/freeperiodmodel.h
+  freebusymodel/freebusyitemmodel.h
+  freebusymodel/freebusycalendar.h
+  freebusymodel/freebusyitem.h
+  collectionselection.h
+  messagewidget.h
+  tagcache.h
+
 )
 
 ki18n_wrap_ui(KF5CalendarSupport
