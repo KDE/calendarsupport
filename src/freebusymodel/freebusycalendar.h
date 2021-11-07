@@ -19,16 +19,24 @@
 namespace CalendarSupport
 {
 class FreeBusyCalendarPrivate;
+
+/// A FreeBusyCalendar exposes a FreeBusyItemModel as a KCalendarCore::Calendar::Ptr.
 class CALENDARSUPPORT_EXPORT FreeBusyCalendar : public QObject
 {
     Q_OBJECT
 public:
+    /// Constructor
     explicit FreeBusyCalendar(QObject *parent = nullptr);
 
     ~FreeBusyCalendar() override;
 
+    /// Set the FreeBusyItemModel used by the FreeBusyCalendar.
     void setModel(FreeBusyItemModel *model);
+
+    /// Get the FreeBusyItemModel used by the FreeBusyCalendar.
     FreeBusyItemModel *model() const;
+
+    /// Get the calendar created from the FreeBusyItemModel.
     KCalendarCore::Calendar::Ptr calendar() const;
 
 private:

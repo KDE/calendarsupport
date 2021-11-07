@@ -15,6 +15,7 @@
 
 namespace CalendarSupport
 {
+/// Model representing the free-busy periods
 class CALENDARSUPPORT_EXPORT FreePeriodModel : public QAbstractTableModel
 {
     Q_OBJECT
