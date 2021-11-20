@@ -73,22 +73,22 @@ public:
     {
     }
 
-    KCalendarCore::Event::Ptr event() const
+    Q_REQUIRED_RESULT KCalendarCore::Event::Ptr event() const
     {
         return mEvent;
     }
 
-    QString label() const override
+    Q_REQUIRED_RESULT QString label() const override
     {
         return mEvent->summary();
     }
 
-    QDateTime start() const
+    Q_REQUIRED_RESULT QDateTime start() const
     {
         return mStart;
     }
 
-    QDateTime end() const
+    Q_REQUIRED_RESULT QDateTime end() const
     {
         return mEnd;
     }

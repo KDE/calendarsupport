@@ -44,12 +44,12 @@ public:
         return childItems.takeAt(row);
     }
 
-    int childCount() const
+    Q_REQUIRED_RESULT int childCount() const
     {
         return childItems.count();
     }
 
-    int row() const
+    Q_REQUIRED_RESULT int row() const
     {
         if (parentItem) {
             return parentItem->childItems.indexOf(const_cast<ItemPrivateData *>(this));

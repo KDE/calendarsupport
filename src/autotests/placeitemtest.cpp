@@ -55,7 +55,7 @@ struct TestItem: public CellItem
         return !(other->endBefore <= startAt || other->startAt >= endBefore);
     }
 
-    QString label() const override
+    Q_REQUIRED_RESULT QString label() const override
     {
         return name;
     }

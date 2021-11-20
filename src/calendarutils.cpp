@@ -34,7 +34,7 @@ struct MultiChange {
     {
     }
 
-    bool inProgress() const
+    Q_REQUIRED_RESULT bool inProgress() const
     {
         return parent.isValid() && !children.isEmpty();
     }
