@@ -27,9 +27,7 @@ public:
      * @param parentWidget is passed to Akonadi when fetching free/busy data.
      */
     FreeBusyItem(const KCalendarCore::Attendee &attendee, QWidget *parentWidget);
-    ~FreeBusyItem()
-    {
-    }
+    ~FreeBusyItem() = default;
 
     KCalendarCore::Attendee attendee() const;
     void setFreeBusy(const KCalendarCore::FreeBusy::Ptr &fb);

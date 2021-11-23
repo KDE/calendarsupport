@@ -103,7 +103,7 @@ FreeBusyItemModel::~FreeBusyItemModel() = default;
 QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid()) {
-        return QVariant();
+        return {};
     }
 
     auto data = (ItemPrivateData *)index.internalPointer();
@@ -111,7 +111,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
     if (data->parent() == d->mRootData) {
         int row = index.row();
         if (row >= d->mFreeBusyItems.size()) {
-            return QVariant();
+            return {};
         }
 
         switch (role) {
@@ -123,16 +123,16 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
             if (d->mFreeBusyItems.at(row)->freeBusy()) {
                 return QVariant::fromValue(d->mFreeBusyItems.at(row)->freeBusy());
             } else {
-                return QVariant();
+                return {};
             }
         default:
-            return QVariant();
+            return {};
         }
     }
 
     FreeBusyItem::Ptr fbitem = d->mFreeBusyItems.at(data->parent()->row());
     if (!fbitem->freeBusy() || index.row() >= fbitem->freeBusy()->busyPeriods().size()) {
-        return QVariant();
+        return {};
     }
 
     KCalendarCore::FreeBusyPeriod period = fbitem->freeBusy()->fullBusyPeriods().at(index.row());
@@ -143,7 +143,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
     case FreeBusyItemModel::FreeBusyPeriodRole:
         return QVariant::fromValue(period);
     default:
-        return QVariant();
+        return {};
     }
 }
 
@@ -172,7 +172,7 @@ int FreeBusyItemModel::columnCount(const QModelIndex &parent) const
 QModelIndex FreeBusyItemModel::index(int row, int column, const QModelIndex &parent) const
 {
     if (!hasIndex(row, column, parent)) {
-        return QModelIndex();
+        return {};
     }
 
     ItemPrivateData *parentData = nullptr;
@@ -186,20 +186,20 @@ QModelIndex FreeBusyItemModel::index(int row, int column, const QModelIndex &par
     if (childData) {
         return createIndex(row, column, childData);
     } else {
-        return QModelIndex();
+        return {};
     }
 }
 
 QModelIndex FreeBusyItemModel::parent(const QModelIndex &child) const
 {
     if (!child.isValid()) {
-        return QModelIndex();
+        return {};
     }
 
     auto childData = static_cast<ItemPrivateData *>(child.internalPointer());
     ItemPrivateData *parentData = childData->parent();
     if (parentData == d->mRootData) {
-        return QModelIndex();
+        return {};
     }
 
     return createIndex(parentData->row(), 0, parentData);
@@ -210,7 +210,7 @@ QVariant FreeBusyItemModel::headerData(int section, Qt::Orientation orientation,
     if (role == Qt::DisplayRole && orientation == Qt::Horizontal && section == 0) {
         return i18n("Attendee");
     }
-    return QVariant();
+    return {};
 }
 
 void FreeBusyItemModel::addItem(const FreeBusyItem::Ptr &freebusy)

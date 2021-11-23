@@ -21,14 +21,12 @@ FreePeriodModel::FreePeriodModel(QObject *parent)
 {
 }
 
-FreePeriodModel::~FreePeriodModel()
-{
-}
+FreePeriodModel::~FreePeriodModel() = default;
 
 QVariant FreePeriodModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid() || !hasIndex(index.row(), index.column())) {
-        return QVariant();
+        return {};
     }
 
     if (index.column() == 0) { // day
@@ -42,7 +40,7 @@ QVariant FreePeriodModel::data(const QModelIndex &index, int role) const
         case Qt::TextAlignmentRole:
             return static_cast<int>(Qt::AlignRight | Qt::AlignVCenter);
         default:
-            return QVariant();
+            return {};
         }
     } else { // everything else
         switch (role) {
@@ -55,7 +53,7 @@ QVariant FreePeriodModel::data(const QModelIndex &index, int role) const
         case Qt::TextAlignmentRole:
             return static_cast<int>(Qt::AlignLeft | Qt::AlignVCenter);
         default:
-            return QVariant();
+            return {};
         }
     }
 }

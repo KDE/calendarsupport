@@ -21,9 +21,7 @@ using namespace CalendarSupport;
 class CalendarSupport::FreeBusyCalendarPrivate
 {
 public:
-    FreeBusyCalendarPrivate()
-    {
-    }
+    FreeBusyCalendarPrivate() = default;
 
     FreeBusyItemModel *mModel = nullptr;
     KCalendarCore::Calendar::Ptr mCalendar;

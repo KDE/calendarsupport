@@ -187,6 +187,6 @@ KMime::Message::Ptr NoteEditDialog::note() const
     if (mItem.hasPayload<KMime::Message::Ptr>()) {
         return mItem.payload<KMime::Message::Ptr>();
     } else {
-        return KMime::Message::Ptr();
+        return {};
     }
 }

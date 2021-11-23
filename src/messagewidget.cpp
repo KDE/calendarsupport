@@ -21,9 +21,7 @@ MessageWidget::MessageWidget(QWidget *parent)
     setWordWrap(true);
 }
 
-MessageWidget::~MessageWidget()
-{
-}
+MessageWidget::~MessageWidget() = default;
 
 void MessageWidget::showEvent(QShowEvent *event)
 {

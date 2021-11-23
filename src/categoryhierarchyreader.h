@@ -21,16 +21,12 @@ class CALENDARSUPPORT_EXPORT CategoryHierarchyReader
 {
 public:
     void read(const QStringList &categories);
-    virtual ~CategoryHierarchyReader()
-    {
-    }
+    virtual ~CategoryHierarchyReader() = default;
 
     static QStringList path(QString string);
 
 protected:
-    CategoryHierarchyReader()
-    {
-    }
+    CategoryHierarchyReader() = default;
 
     virtual void clear() = 0;
     virtual void goUp() = 0;
@@ -46,9 +42,7 @@ public:
     {
     }
 
-    ~CategoryHierarchyReaderQComboBox() override
-    {
-    }
+    ~CategoryHierarchyReaderQComboBox() override = default;
 
 protected:
     void clear() override;
@@ -70,9 +64,7 @@ public:
     {
     }
 
-    ~CategoryHierarchyReaderQTreeWidget() override
-    {
-    }
+    ~CategoryHierarchyReaderQTreeWidget() override = default;
 
 protected:
     void clear() override;

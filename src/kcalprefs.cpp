@@ -33,9 +33,7 @@ public:
     {
     }
 
-    ~KCalPrefsPrivate()
-    {
-    }
+    ~KCalPrefsPrivate() = default;
 
     Akonadi::Collection::Id mDefaultCalendarId;
 

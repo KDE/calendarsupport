@@ -245,9 +245,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     resize(minimumSizeHint());
 }
 
-CalPrintDialog::~CalPrintDialog()
-{
-}
+CalPrintDialog::~CalPrintDialog() = default;
 
 void CalPrintDialog::setPreview(bool preview)
 {

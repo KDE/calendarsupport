@@ -20,9 +20,7 @@ public:
     {
     }
 
-    ~CalPrintJournal() override
-    {
-    }
+    ~CalPrintJournal() override = default;
 
     Q_REQUIRED_RESULT QString groupName() const override
     {

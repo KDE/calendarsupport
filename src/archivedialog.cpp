@@ -206,9 +206,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     connect(mUser1Button, &QPushButton::clicked, this, &ArchiveDialog::slotUser1);
 }
 
-ArchiveDialog::~ArchiveDialog()
-{
-}
+ArchiveDialog::~ArchiveDialog() = default;
 
 void ArchiveDialog::slotEnableUser1()
 {

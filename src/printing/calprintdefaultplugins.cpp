@@ -37,9 +37,7 @@ CalPrintIncidence::CalPrintIncidence()
 {
 }
 
-CalPrintIncidence::~CalPrintIncidence()
-{
-}
+CalPrintIncidence::~CalPrintIncidence() = default;
 
 QWidget *CalPrintIncidence::createConfigWidget(QWidget *w)
 {
@@ -103,9 +101,7 @@ void CalPrintIncidence::doSaveConfig()
 class TimePrintStringsVisitor : public KCalendarCore::Visitor
 {
 public:
-    TimePrintStringsVisitor()
-    {
-    }
+    TimePrintStringsVisitor() = default;
 
     bool act(KCalendarCore::IncidenceBase::Ptr incidence)
     {
@@ -643,9 +639,7 @@ CalPrintTimetable::CalPrintTimetable()
 {
 }
 
-CalPrintTimetable::~CalPrintTimetable()
-{
-}
+CalPrintTimetable::~CalPrintTimetable() = default;
 
 void CalPrintTimetable::doLoadConfig()
 {
@@ -851,9 +845,7 @@ CalPrintDay::CalPrintDay()
 {
 }
 
-CalPrintDay::~CalPrintDay()
-{
-}
+CalPrintDay::~CalPrintDay() = default;
 
 QWidget *CalPrintDay::createConfigWidget(QWidget *w)
 {
@@ -1061,9 +1053,7 @@ CalPrintWeek::CalPrintWeek()
 {
 }
 
-CalPrintWeek::~CalPrintWeek()
-{
-}
+CalPrintWeek::~CalPrintWeek() = default;
 
 QWidget *CalPrintWeek::createConfigWidget(QWidget *w)
 {
@@ -1333,9 +1323,7 @@ CalPrintMonth::CalPrintMonth()
 {
 }
 
-CalPrintMonth::~CalPrintMonth()
-{
-}
+CalPrintMonth::~CalPrintMonth() = default;
 
 QWidget *CalPrintMonth::createConfigWidget(QWidget *w)
 {
@@ -1498,9 +1486,7 @@ CalPrintTodos::CalPrintTodos()
     mTodoSortDirection = TodoDirectionUnset;
 }
 
-CalPrintTodos::~CalPrintTodos()
-{
-}
+CalPrintTodos::~CalPrintTodos() = default;
 
 QWidget *CalPrintTodos::createConfigWidget(QWidget *w)
 {

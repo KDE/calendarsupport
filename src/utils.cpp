@@ -47,7 +47,7 @@ KCalendarCore::Incidence::Ptr CalendarSupport::incidence(const Akonadi::Item &it
     try {
         return item.payload<KCalendarCore::Incidence::Ptr>();
     } catch (const Akonadi::PayloadException &) {
-        return KCalendarCore::Incidence::Ptr();
+        return {};
     }
 }
 
@@ -60,9 +60,9 @@ KCalendarCore::Event::Ptr CalendarSupport::event(const Akonadi::Item &item)
             return item.payload<KCalendarCore::Event::Ptr>();
         }
     } catch (const Akonadi::PayloadException &) {
-        return KCalendarCore::Event::Ptr();
+        return {};
     }
-    return KCalendarCore::Event::Ptr();
+    return {};
 }
 
 KCalendarCore::Event::Ptr CalendarSupport::event(const KCalendarCore::Incidence::Ptr &incidence)
@@ -70,7 +70,7 @@ KCalendarCore::Event::Ptr CalendarSupport::event(const KCalendarCore::Incidence:
     if (hasEvent(incidence)) {
         return incidence.staticCast<KCalendarCore::Event>();
     }
-    return KCalendarCore::Event::Ptr();
+    return {};
 }
 
 KCalendarCore::Incidence::List CalendarSupport::incidencesFromItems(const Akonadi::Item::List &items)
@@ -92,9 +92,9 @@ KCalendarCore::Todo::Ptr CalendarSupport::todo(const Akonadi::Item &item)
             return item.payload<KCalendarCore::Todo::Ptr>();
         }
     } catch (const Akonadi::PayloadException &) {
-        return KCalendarCore::Todo::Ptr();
+        return {};
     }
-    return KCalendarCore::Todo::Ptr();
+    return {};
 }
 
 KCalendarCore::Todo::Ptr CalendarSupport::todo(const KCalendarCore::Incidence::Ptr &incidence)
@@ -102,7 +102,7 @@ KCalendarCore::Todo::Ptr CalendarSupport::todo(const KCalendarCore::Incidence::P
     if (hasTodo(incidence)) {
         return incidence.staticCast<KCalendarCore::Todo>();
     }
-    return KCalendarCore::Todo::Ptr();
+    return {};
 }
 
 KCalendarCore::Journal::Ptr CalendarSupport::journal(const Akonadi::Item &item)
@@ -113,9 +113,9 @@ KCalendarCore::Journal::Ptr CalendarSupport::journal(const Akonadi::Item &item)
             return item.payload<KCalendarCore::Journal::Ptr>();
         }
     } catch (const Akonadi::PayloadException &) {
-        return KCalendarCore::Journal::Ptr();
+        return {};
     }
-    return KCalendarCore::Journal::Ptr();
+    return {};
 }
 
 KCalendarCore::Journal::Ptr CalendarSupport::journal(const KCalendarCore::Incidence::Ptr &incidence)
@@ -123,7 +123,7 @@ KCalendarCore::Journal::Ptr CalendarSupport::journal(const KCalendarCore::Incide
     if (hasJournal(incidence)) {
         return incidence.staticCast<KCalendarCore::Journal>();
     }
-    return KCalendarCore::Journal::Ptr();
+    return {};
 }
 
 bool CalendarSupport::hasIncidence(const Akonadi::Item &item)

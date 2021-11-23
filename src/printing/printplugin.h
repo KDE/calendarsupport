@@ -40,9 +40,7 @@ public:
     {
     }
 
-    virtual ~PrintPlugin()
-    {
-    }
+    virtual ~PrintPlugin() = default;
 
     using List = QList<PrintPlugin *>;
 

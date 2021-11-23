@@ -57,9 +57,7 @@ EventArchiver::EventArchiver(QObject *parent)
 {
 }
 
-EventArchiver::~EventArchiver()
-{
-}
+EventArchiver::~EventArchiver() = default;
 
 void EventArchiver::runOnce(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QDate limitDate, QWidget *widget)
 {

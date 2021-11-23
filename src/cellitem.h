@@ -14,13 +14,9 @@ namespace CalendarSupport
 class CALENDARSUPPORT_EXPORT CellItem
 {
 public:
-    CellItem()
-    {
-    }
+    CellItem() = default;
 
-    virtual ~CellItem()
-    {
-    }
+    virtual ~CellItem() = default;
 
     void setSubCells(int v);
     Q_REQUIRED_RESULT int subCells() const;

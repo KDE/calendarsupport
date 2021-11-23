@@ -19,9 +19,7 @@ public:
     {
     }
 
-    ~CalPrintYear() override
-    {
-    }
+    ~CalPrintYear() override = default;
 
     Q_REQUIRED_RESULT QString groupName() const override
     {

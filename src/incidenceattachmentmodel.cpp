@@ -162,7 +162,7 @@ QVariant IncidenceAttachmentModel::data(const QModelIndex &index, int role) cons
 {
     Q_D(const IncidenceAttachmentModel);
     if (!d->m_incidence) {
-        return QVariant();
+        return {};
     }
 
     const KCalendarCore::Attachment attachment = d->m_incidence->attachments().at(index.row());
@@ -174,7 +174,7 @@ QVariant IncidenceAttachmentModel::data(const QModelIndex &index, int role) cons
     case MimeTypeRole:
         return attachment.mimeType();
     }
-    return QVariant();
+    return {};
 }
 
 QVariant IncidenceAttachmentModel::headerData(int section, Qt::Orientation orientation, int role) const

@@ -122,9 +122,7 @@ CalPrintPluginBase::CalPrintPluginBase()
 {
 }
 
-CalPrintPluginBase::~CalPrintPluginBase()
-{
-}
+CalPrintPluginBase::~CalPrintPluginBase() = default;
 
 QWidget *CalPrintPluginBase::createConfigWidget(QWidget *w)
 {
@@ -294,7 +292,7 @@ QColor CalPrintPluginBase::categoryBgColor(const KCalendarCore::Incidence::Ptr &
         }
         return backColor;
     } else {
-        return QColor();
+        return {};
     }
 }
 
@@ -308,7 +306,7 @@ KCalendarCore::Event::Ptr CalPrintPluginBase::holidayEvent(QDate date) const
 {
     QString hstring(holidayString(date));
     if (hstring.isEmpty()) {
-        return KCalendarCore::Event::Ptr();
+        return {};
     }
 
     KCalendarCore::Event::Ptr holiday(new KCalendarCore::Event);
