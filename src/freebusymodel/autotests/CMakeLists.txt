@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: none
+# SPDX-License-Identifier: BSD-3-Clause
 macro(add_libkdepim_freebusymodel_unittest _name)
     ecm_add_test(${_name}.cpp
         TEST_NAME ${_name}
