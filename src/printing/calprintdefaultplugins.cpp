@@ -3,7 +3,7 @@
   SPDX-FileCopyrightText: 2003 Reinhold Kainhofer <reinhold@kainhofer.com>
   SPDX-FileCopyrightText: 2003 Cornelius Schumacher <schumacher@kde.org>
   SPDX-FileCopyrightText: 2008 Ron Goodheart <rong.dev@gmail.com>
-  SPDX-FileCopyrightText: 2010-2021 Laurent Montel <montel@kde.org>
+  SPDX-FileCopyrightText: 2010-2022 Laurent Montel <montel@kde.org>
   SPDX-FileCopyrightText: 2012-2013 Allen Winter <winter@kde.org>
 
   SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
