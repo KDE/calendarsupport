@@ -93,7 +93,7 @@ endif()
 generate_export_header(KF5CalendarSupport BASE_NAME calendarsupport)
 
 
-target_include_directories(KF5CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/CalendarSupport/;${KDE_INSTALL_INCLUDEDIR_KF5}/calendarsupport>")
+target_include_directories(KF5CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport/;${KDE_INSTALL_INCLUDEDIR_KF}/calendarsupport>")
 target_include_directories(KF5CalendarSupport PUBLIC "$<BUILD_INTERFACE:${calendarsupport_SOURCE_DIR}/src;${calendarsupport_BINARY_DIR}/src>")
 
 target_link_libraries(
@@ -102,7 +102,7 @@ PUBLIC
   KF5::Mime
   KF5::IdentityManagement
   KF5::AkonadiCalendar
-  Qt::PrintSupport
+  Qt${QT_MAJOR_VERSION}::PrintSupport
 PRIVATE
   KF5::I18n
   KF5::Completion
@@ -182,7 +182,7 @@ ecm_generate_headers(CalendarSupport_CamelCasefreebusy_HEADERS
 
 ecm_generate_pri_file(BASE_NAME CalendarSupport
     LIB_NAME KF5CalendarSupport
-    DEPS "KMime KIdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/CalendarSupport
+    DEPS "KMime KIdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport
 )
 
 install(FILES
@@ -190,7 +190,7 @@ install(FILES
     ${CalendarSupport_CamelCaseprinter_HEADERS}
     ${CalendarSupport_CamelCasenext_HEADERS}
     ${CalendarSupport_CamelCasefreebusy_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/CalendarSupport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport
     COMPONENT Devel
 )
 
@@ -207,7 +207,7 @@ install(FILES
     ${CalendarSupport_printer_HEADERS}
     ${CalendarSupport_next_HEADERS}
     ${CalendarSupport_freebusy_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/calendarsupport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/calendarsupport
     COMPONENT Devel
 )
 install(FILES
