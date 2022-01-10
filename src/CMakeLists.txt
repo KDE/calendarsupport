@@ -214,7 +214,7 @@ install(FILES
     ${PRI_FILENAME}
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
-install(FILES calendarplugin.desktop DESTINATION ${KDE_INSTALL_KSERVICETYPES5DIR})
+install(FILES calendarplugin.desktop DESTINATION ${KDE_INSTALL_KSERVICETYPESDIR})
 
 if(BUILD_TESTING)
     add_subdirectory(autotests)
