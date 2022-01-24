@@ -93,7 +93,7 @@ endif()
 generate_export_header(KF5CalendarSupport BASE_NAME calendarsupport)
 
 
-target_include_directories(KF5CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport/;${KDE_INSTALL_INCLUDEDIR_KF}/calendarsupport>")
+target_include_directories(KF5CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport/>")
 target_include_directories(KF5CalendarSupport PUBLIC "$<BUILD_INTERFACE:${calendarsupport_SOURCE_DIR}/src;${calendarsupport_BINARY_DIR}/src>")
 
 target_link_libraries(
@@ -190,7 +190,7 @@ install(FILES
     ${CalendarSupport_CamelCaseprinter_HEADERS}
     ${CalendarSupport_CamelCasenext_HEADERS}
     ${CalendarSupport_CamelCasefreebusy_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport/CalendarSupport
     COMPONENT Devel
 )
 
@@ -207,7 +207,7 @@ install(FILES
     ${CalendarSupport_printer_HEADERS}
     ${CalendarSupport_next_HEADERS}
     ${CalendarSupport_freebusy_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/calendarsupport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport/calendarsupport
     COMPONENT Devel
 )
 install(FILES
