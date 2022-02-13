@@ -104,6 +104,7 @@ PUBLIC
   KF5::AkonadiCalendar
   Qt${QT_MAJOR_VERSION}::PrintSupport
 PRIVATE
+  KF5::PimTextEdit
   KF5::I18n
   KF5::Completion
   KF5::KIOWidgets

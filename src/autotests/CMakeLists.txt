@@ -15,6 +15,7 @@ target_link_libraries(noteeditdialogtest
   KF5::AkonadiWidgets
   KF5::AkonadiNotes
   KF5::CalendarSupport
+  KF5::PimTextEdit
 )
 
 ecm_add_test(placeitemtest.cpp LINK_LIBRARIES Qt${QT_MAJOR_VERSION}::Test KF5::CalendarSupport)
