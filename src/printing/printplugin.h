@@ -8,7 +8,7 @@
 
 #include "plugin.h"
 
-#include <Akonadi/Calendar/ETMCalendar>
+#include <Akonadi/ETMCalendar>
 
 #include <KCalendarCore/Incidence>
 #include <KConfig>

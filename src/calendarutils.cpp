@@ -12,7 +12,7 @@
 #include "calendarutils.h"
 #include "utils.h"
 
-#include <Akonadi/Calendar/IncidenceChanger>
+#include <Akonadi/IncidenceChanger>
 #include <KCalendarCore/Incidence>
 
 #include "calendarsupport_debug.h"

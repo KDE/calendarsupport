@@ -11,7 +11,7 @@
 #include "eventarchiver.h"
 #include "kcalprefs.h"
 
-#include <Akonadi/Calendar/IncidenceChanger>
+#include <Akonadi/IncidenceChanger>
 
 #include <KDateComboBox>
 #include <KLineEdit>

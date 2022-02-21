@@ -13,7 +13,7 @@
 
 #include "incidenceattachmentmodel.h"
 
-#include <Akonadi/Calendar/CalendarBase>
+#include <Akonadi/CalendarBase>
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/ItemFetchScope>
 

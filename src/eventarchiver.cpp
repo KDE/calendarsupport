@@ -10,7 +10,7 @@
 
 #include "kcalprefs.h"
 #include "utils.h"
-#include <Akonadi/Calendar/IncidenceChanger>
+#include <Akonadi/IncidenceChanger>
 
 #include <KCalendarCore/FileStorage>
 #include <KCalendarCore/ICalFormat>

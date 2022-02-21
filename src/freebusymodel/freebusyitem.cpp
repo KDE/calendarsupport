@@ -9,7 +9,7 @@
 
 #include "freebusyitem.h"
 
-#include <Akonadi/Calendar/FreeBusyManager>
+#include <Akonadi/FreeBusyManager>
 
 using namespace CalendarSupport;
 

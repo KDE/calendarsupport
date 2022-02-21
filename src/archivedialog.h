@@ -8,7 +8,7 @@
 
 #include "calendarsupport_export.h"
 
-#include <Akonadi/Calendar/ETMCalendar>
+#include <Akonadi/ETMCalendar>
 #include <QDialog>
 
 class QComboBox;

@@ -17,8 +17,8 @@
 
 #include <Akonadi/CollectionDialog>
 
-#include <Akonadi/Calendar/BlockAlarmsAttribute>
-#include <Akonadi/Calendar/ETMCalendar>
+#include <Akonadi/BlockAlarmsAttribute>
+#include <Akonadi/ETMCalendar>
 
 #include <KHolidays/HolidayRegion>
 

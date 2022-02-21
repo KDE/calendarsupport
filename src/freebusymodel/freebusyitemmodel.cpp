@@ -7,7 +7,7 @@
 
 #include "freebusyitemmodel.h"
 
-#include <Akonadi/Calendar/FreeBusyManager>
+#include <Akonadi/FreeBusyManager>
 
 #include <KLocalizedString>
 

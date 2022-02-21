@@ -7,7 +7,7 @@
 #pragma once
 
 #include "calendarsupport_export.h"
-#include <Akonadi/Calendar/ETMCalendar>
+#include <Akonadi/ETMCalendar>
 
 namespace CalendarSupport
 {
