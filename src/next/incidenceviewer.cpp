@@ -32,8 +32,15 @@ TextBrowser::TextBrowser(QWidget *parent)
     setFrameStyle(QFrame::NoFrame);
 }
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 void TextBrowser::setSource(const QUrl &name)
+#else
+void TextBrowser::doSetSource(const QUrl &name, QTextDocument::ResourceType type)
+#endif
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    Q_UNUSED(type);
+#endif
     QString uri = name.toString();
     // QTextBrowser for some reason insists on putting // or / in links,
     // this is a crude workaround
