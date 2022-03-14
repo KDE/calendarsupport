@@ -14,5 +14,4 @@ Dependencies:
     'pim/kidentitymanagement' : '@same'
     'pim/kimap' : '@same'
     'pim/kmime' : '@same'
-    'pim/pimcommon' : '@same'
     'pim/akonadi-notes' : '@same'

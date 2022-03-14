@@ -116,7 +116,6 @@ PRIVATE
   KF5::AkonadiCore
   KF5::CalendarCore
   KF5::CalendarUtils
-  KF5::PimCommon
 )
 
 set_target_properties(KF5CalendarSupport PROPERTIES

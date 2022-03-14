@@ -10,11 +10,11 @@
 #include "journalprint.h"
 #include "yearprint.h"
 
+#include <KConfigGroup>
 #include <KMessageBox>
 #include <KStandardGuiItem>
-#include <QVBoxLayout>
+#include <KWindowStateSaver>
 
-#include <KConfigGroup>
 #include <QButtonGroup>
 #include <QDialogButtonBox>
 #include <QGridLayout>
@@ -23,8 +23,7 @@
 #include <QPrintPreviewDialog>
 #include <QSplitter>
 #include <QStackedWidget>
-
-#include <PimCommon/KPimPrintPreviewDialog>
+#include <QVBoxLayout>
 
 using namespace CalendarSupport;
 
@@ -132,7 +131,8 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientati
     }
 
     if (preview) {
-        QPointer<PimCommon::KPimPrintPreviewDialog> printPreview = new PimCommon::KPimPrintPreviewDialog(&printer);
+        QPointer<QPrintPreviewDialog> printPreview = new QPrintPreviewDialog(&printer);
+        new KWindowStateSaver(printPreview.data(), "CalendarPrintPreviewDialog");
         connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this, [selectedStyle, &printer]() {
             selectedStyle->doPrint(&printer);
         });
