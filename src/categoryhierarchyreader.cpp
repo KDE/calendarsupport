@@ -9,8 +9,6 @@
 
 #include <QComboBox>
 
-#include <QTreeWidget>
-
 using namespace CalendarSupport;
 
 inline QString &quote(QString &string)
@@ -104,38 +102,3 @@ int CategoryHierarchyReaderQComboBox::depth() const
 {
     return mCurrentDepth;
 }
-
-#ifndef QT_NO_TREEWIDGET
-
-void CategoryHierarchyReaderQTreeWidget::clear()
-{
-    mTree->clear();
-}
-
-void CategoryHierarchyReaderQTreeWidget::goUp()
-{
-    Q_ASSERT(mItem);
-    mItem = mItem->parent();
-    --mCurrentDepth;
-}
-
-void CategoryHierarchyReaderQTreeWidget::addChild(const QString &label, const QVariant &userData)
-{
-    Q_UNUSED(userData)
-
-    if (mItem) {
-        mItem = new QTreeWidgetItem(mItem, QStringList() << label);
-    } else {
-        mItem = new QTreeWidgetItem(mTree, QStringList() << label);
-    }
-
-    mItem->setExpanded(true);
-    ++mCurrentDepth;
-}
-
-int CategoryHierarchyReaderQTreeWidget::depth() const
-{
-    return mCurrentDepth;
-}
-
-#endif

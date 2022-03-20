@@ -12,9 +12,6 @@
 
 class QComboBox;
 
-class QTreeWidget;
-class QTreeWidgetItem;
-
 namespace CalendarSupport
 {
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReader
@@ -55,27 +52,4 @@ private:
     int mCurrentDepth = 0;
 };
 
-#ifndef QT_NO_TREEWIDGET
-class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQTreeWidget : public CategoryHierarchyReader
-{
-public:
-    explicit CategoryHierarchyReaderQTreeWidget(QTreeWidget *tree)
-        : mTree(tree)
-    {
-    }
-
-    ~CategoryHierarchyReaderQTreeWidget() override = default;
-
-protected:
-    void clear() override;
-    void goUp() override;
-    void addChild(const QString &label, const QVariant &userData = QVariant()) override;
-    int depth() const override;
-
-private:
-    QTreeWidget *mTree = nullptr;
-    QTreeWidgetItem *mItem = nullptr;
-    int mCurrentDepth = 0;
-};
-#endif
 }
