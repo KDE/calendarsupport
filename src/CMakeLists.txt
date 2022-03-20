@@ -9,7 +9,6 @@ target_sources(KF5CalendarSupport PRIVATE
   archivedialog.cpp
   attachmenthandler.cpp
   calendarsingleton.cpp
-  calendarutils.cpp
   categoryconfig.cpp
   categoryhierarchyreader.cpp
   cellitem.cpp
@@ -57,7 +56,6 @@ target_sources(KF5CalendarSupport PRIVATE
   printing/calprintdefaultplugins.h
   printing/yearprint.h
   printing/calprinter.h
-  calendarutils.h
   categoryconfig.h
   kcalprefs.h
   urihandler.h
