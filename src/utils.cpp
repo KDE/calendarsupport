@@ -203,7 +203,7 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item &item)
 }
 
 #ifndef QT_NO_DRAGANDDROP
-QDrag *CalendarSupport::createDrag(const Akonadi::Item &item, QWidget *parent)
+QDrag *CalendarSupport::createDrag(const Akonadi::Item &item, QObject *parent)
 {
     return createDrag(Akonadi::Item::List() << item, parent);
 }
@@ -231,7 +231,7 @@ static QByteArray findMostCommonType(const Akonadi::Item::List &items)
 }
 
 #ifndef QT_NO_DRAGANDDROP
-QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QWidget *parent)
+QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QObject *parent)
 {
     std::unique_ptr<QDrag> drag(new QDrag(parent));
     drag->setMimeData(CalendarSupport::createMimeData(items));

@@ -152,12 +152,12 @@ CALENDARSUPPORT_EXPORT QMimeData *createMimeData(const Akonadi::Item::List &item
 /**
  * creates a drag object for dragging an akonadi item containing an incidence
  */
-CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item &item, QWidget *parent);
+CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item &item, QObject *parent);
 
 /**
  * creates a drag object for dragging akonadi items containing an incidence
  */
-CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item::List &items, QWidget *parent);
+CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item::List &items, QObject *parent);
 #endif
 /**
   Applies a filter to a list of items containing incidences.
