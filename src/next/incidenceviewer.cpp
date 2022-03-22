@@ -20,6 +20,7 @@
 #include <KCalUtils/IncidenceFormatter>
 
 #include <KJob>
+#include <QRegularExpression>
 #include <QTextBrowser>
 
 #include <QVBoxLayout>
@@ -47,7 +48,7 @@ void TextBrowser::doSetSource(const QUrl &name, QTextDocument::ResourceType type
     if (uri.startsWith(QLatin1String("uid:")) || uri.startsWith(QLatin1String("kmail:"))
         || uri.startsWith(QStringLiteral("urn:x-ical").section(QLatin1Char(':'), 0, 0)) || uri.startsWith(QLatin1String("news:"))
         || uri.startsWith(QLatin1String("mailto:"))) {
-        uri.replace(QRegExp(QLatin1String("^([^:]+:)/+")), QStringLiteral("\\1"));
+        uri.replace(QRegularExpression(QLatin1String("^([^:]+:)/+")), QStringLiteral("\\1"));
     }
 
     if (uri.startsWith(QLatin1String("ATTACH:"))) {
