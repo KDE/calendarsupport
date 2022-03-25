@@ -69,4 +69,3 @@ private:
     Q_PRIVATE_SLOT(d_func(), void itemFetched(Akonadi::Item::List))
 };
 }
-

@@ -78,4 +78,3 @@ private:
         void handleChangeFinish(int changeId, const Akonadi::Item &item, Akonadi::IncidenceChanger::ResultCode resultCode, const QString &errorString))
 };
 }
-

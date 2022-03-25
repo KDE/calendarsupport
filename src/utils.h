@@ -230,4 +230,3 @@ CALENDARSUPPORT_EXPORT bool mergeCalendar(const QString &srcFilename, const KCal
 
 CALENDARSUPPORT_EXPORT void createAlarmReminder(const KCalendarCore::Alarm::Ptr &alarm, KCalendarCore::IncidenceBase::IncidenceType type);
 }
-

@@ -68,4 +68,3 @@ private:
     Akonadi::CollectionComboBox *mCollectionCombobox = nullptr;
 };
 }
-

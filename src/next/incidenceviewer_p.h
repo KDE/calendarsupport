@@ -28,4 +28,3 @@ Q_SIGNALS:
     void attachmentUrlClicked(const QString &uri);
 };
 }
-

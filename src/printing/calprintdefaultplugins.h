@@ -83,7 +83,6 @@ public:
     void doSaveConfig() override;
 
 protected:
-
     /**
       Draw the all-day box for the agenda print view (the box on top which
       doesn't have a time on the time scale associated).
@@ -96,11 +95,7 @@ protected:
       @param box coordinates of the all day box.
       @param workDays List of workDays
     */
-    void drawAllDayBox(QPainter &p,
-                      const KCalendarCore::Event::List &eventList,
-                      QDate qd,
-                      QRect box,
-                      const QList<QDate> &workDays);
+    void drawAllDayBox(QPainter &p, const KCalendarCore::Event::List &eventList, QDate qd, QRect box, const QList<QDate> &workDays);
 
     /**
       Draw the timetable view of the given time range from fromDate to toDate.
@@ -117,18 +112,15 @@ protected:
       @param toDate Last day to be included in the page
       @param box coordinates of the time table.
     */
-    void drawTimeTable(QPainter &p,
-                       QDate fromDate,
-                       QDate toDate,
-                       QRect box);
+    void drawTimeTable(QPainter &p, QDate fromDate, QDate toDate, QRect box);
 
     QTime mStartTime, mEndTime; /**< Earliest and latest times of day to print. */
-    bool mSingleLineLimit;  /**< Should all fields be printed on the same line? */
+    bool mSingleLineLimit; /**< Should all fields be printed on the same line? */
     bool mIncludeTodos; /**< Should to-dos be printed? */
-    bool mIncludeDescription;   /**< Should incidence descriptions be printed? */
-    bool mIncludeCategories;    /**< Should incidence tags be printed? */
+    bool mIncludeDescription; /**< Should incidence descriptions be printed? */
+    bool mIncludeCategories; /**< Should incidence tags be printed? */
     bool mIncludeAllEvents; /**< If events occur outside the start/end times, should the times be adjusted? */
-    bool mExcludeTime;  /**< Should incidence times of day be printed? */
+    bool mExcludeTime; /**< Should incidence times of day be printed? */
 };
 
 class CalPrintDay : public CalPrintTimetable
@@ -426,4 +418,3 @@ public:
     }
 };
 }
-

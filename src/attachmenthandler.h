@@ -160,4 +160,3 @@ private:
     //@endcond
 }; // class AttachmentHandler
 } // namespace CalendarSupport
-

@@ -44,7 +44,7 @@ QList<CellItem *> CellItem::placeItem(const QList<CellItem *> &cells, CellItem *
     QSet<int> subCellsInUse;
 
     // Find all items that overlap placeItem, the items that overlaps them, and so on.
-    QList<CellItem *> overlappingItems {placeItem};
+    QList<CellItem *> overlappingItems{placeItem};
     for (int i = 0; i < overlappingItems.count(); i++) {
         const auto checkItem = overlappingItems.at(i);
         for (const auto item : cells) {

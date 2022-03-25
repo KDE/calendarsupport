@@ -90,4 +90,3 @@ private:
                            QStringList checkedUids = QStringList()) const;
 };
 }
-

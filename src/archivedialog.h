@@ -60,4 +60,3 @@ private:
     QPushButton *mUser1Button = nullptr;
 };
 }
-

@@ -48,4 +48,3 @@ private:
     std::unique_ptr<CollectionSelectionPrivate> const d;
 };
 }
-

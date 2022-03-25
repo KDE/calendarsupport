@@ -686,11 +686,7 @@ static QString cleanString(const QString &instr)
     return ret.replace(QLatin1Char('\n'), QLatin1Char(' '));
 }
 
-void CalPrintTimetable::drawAllDayBox(QPainter &p,
-                                      const KCalendarCore::Event::List &eventList,
-                                      QDate qd,
-                                      QRect box,
-                                      const QList<QDate> &workDays)
+void CalPrintTimetable::drawAllDayBox(QPainter &p, const KCalendarCore::Event::List &eventList, QDate qd, QRect box, const QList<QDate> &workDays)
 {
     int lineSpacing = p.fontMetrics().lineSpacing();
 
@@ -705,9 +701,7 @@ void CalPrintTimetable::drawAllDayBox(QPainter &p,
     eventBox.setBottom(eventBox.top() + lineSpacing);
 
     for (const KCalendarCore::Event::Ptr &currEvent : std::as_const(eventList)) {
-        if (!currEvent
-            || !currEvent->allDay()
-            || (mExcludeConfidential && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+        if (!currEvent || !currEvent->allDay() || (mExcludeConfidential && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
             || (mExcludePrivate && currEvent->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
         }
@@ -718,7 +712,7 @@ void CalPrintTimetable::drawAllDayBox(QPainter &p,
             str = i18nc("summary, location", "%1, %2", cleanString(currEvent->summary()), cleanString(currEvent->location()));
         }
         if (mIncludeCategories && !currEvent->categoriesStr().isEmpty()) {
-                str = i18nc("summary, categories", "%1, %2", str, currEvent->categoriesStr());
+            str = i18nc("summary, categories", "%1, %2", str, currEvent->categoriesStr());
         }
         printEventString(p, eventBox, str);
         eventBox.setTop(eventBox.bottom());
@@ -726,10 +720,7 @@ void CalPrintTimetable::drawAllDayBox(QPainter &p,
     }
 }
 
-void CalPrintTimetable::drawTimeTable(QPainter &p,
-                                       QDate fromDate,
-                                       QDate toDate,
-                                       QRect box)
+void CalPrintTimetable::drawTimeTable(QPainter &p, QDate fromDate, QDate toDate, QRect box)
 {
     QTime myFromTime = mStartTime;
     QTime myToTime = mEndTime;
@@ -741,8 +732,7 @@ void CalPrintTimetable::drawTimeTable(QPainter &p,
         int allDayEvents = holiday(curDate).isEmpty() ? 0 : 1;
         for (const KCalendarCore::Event::Ptr &event : std::as_const(eventList)) {
             Q_ASSERT(event);
-            if (!event
-                || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+            if (!event || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
                 || (mExcludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
                 continue;
             }
@@ -778,18 +768,18 @@ void CalPrintTimetable::drawTimeTable(QPainter &p,
     int alldayHeight = 0;
     if (maxAllDayEvents > 0) {
         // Draw the side bar for all-day events.
-        const auto alldayLabel =  i18nc("label for timetable all-day boxes", "All day");
+        const auto alldayLabel = i18nc("label for timetable all-day boxes", "All day");
         const QFont oldFont(p.font());
         p.setFont(QFont(QStringLiteral("sans-serif"), 9, QFont::Normal));
-        const auto labelHeight = p.fontMetrics().horizontalAdvance(alldayLabel) + 2*padding();
-        alldayHeight = std::max(maxAllDayEvents*lineSpacing + 2*padding(), labelHeight);
+        const auto labelHeight = p.fontMetrics().horizontalAdvance(alldayLabel) + 2 * padding();
+        alldayHeight = std::max(maxAllDayEvents * lineSpacing + 2 * padding(), labelHeight);
         drawVerticalBox(p,
                         BOX_BORDER_WIDTH,
                         QRect(0, tlTop, TIMELINE_WIDTH, alldayHeight),
                         alldayLabel,
                         Qt::AlignHCenter | Qt::AlignVCenter | Qt::TextWordWrap);
         p.setFont(oldFont);
-        tlTop += alldayHeight +padding();
+        tlTop += alldayHeight + padding();
     }
 
     QRect tlBox(box);
@@ -819,17 +809,7 @@ void CalPrintTimetable::drawTimeTable(QPainter &p,
         QRect dayBox(allDayBox);
         dayBox.setTop(tlTop);
         dayBox.setBottom(box.bottom());
-        drawAgendaDayBox(p,
-                         eventList,
-                         curDate,
-                         false,
-                         myFromTime,
-                         myToTime,
-                         dayBox,
-                         mIncludeDescription,
-                         mIncludeCategories,
-                         mExcludeTime,
-                         workDays);
+        drawAgendaDayBox(p, eventList, curDate, false, myFromTime, myToTime, dayBox, mIncludeDescription, mIncludeCategories, mExcludeTime, workDays);
 
         ++i;
         curDate = curDate.addDays(1);
@@ -967,17 +947,7 @@ void CalPrintDay::drawDays(QPainter &p, QRect box)
         const int hpos = i / vcells;
         const int vpos = i % vcells;
         const QRect dayBox(box.left() + cellWidth * hpos, box.top() + cellHeight * vpos, cellWidth, cellHeight);
-        drawDayBox(p,
-                   weekDate,
-                   mStartTime,
-                   mEndTime,
-                   dayBox,
-                   true,
-                   true,
-                   true,
-                   mSingleLineLimit,
-                   mIncludeDescription,
-                   mIncludeCategories);
+        drawDayBox(p, weekDate, mStartTime, mEndTime, dayBox, true, true, true, mSingleLineLimit, mIncludeDescription, mIncludeCategories);
     } // for i through all selected days
 }
 
@@ -1003,7 +973,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
         if (mFromDate == mToDate) {
             title = line1;
         } else {
-            title =  i18nc("date from-to", "%1\u2013%2", line1, line2);
+            title = i18nc("date from-to", "%1\u2013%2", line1, line2);
         }
         drawHeader(p, title, mFromDate, QDate(), headerBox);
         if (mDayPrintType == Filofax) {
@@ -1164,9 +1134,7 @@ void CalPrintWeek::setDateRange(const QDate &from, const QDate &to)
     }
 }
 
-void CalPrintWeek::drawWeek(QPainter &p,
-                                  QDate qd,
-                                  QRect box)
+void CalPrintWeek::drawWeek(QPainter &p, QDate qd, QRect box)
 {
     QDate weekDate = qd;
     const bool portrait = (box.height() > box.width());
@@ -1193,17 +1161,7 @@ void CalPrintWeek::drawWeek(QPainter &p,
                      box.top() + cellHeight * vpos + ((i == 6) ? (cellHeight / 2) : 0),
                      cellWidth,
                      (i < 5) ? (cellHeight) : (cellHeight / 2));
-        drawDayBox(p,
-                   weekDate,
-                   mStartTime,
-                   mEndTime,
-                   dayBox,
-                   true,
-                   true,
-                   true,
-                   mSingleLineLimit,
-                   mIncludeDescription,
-                   mIncludeCategories);
+        drawDayBox(p, weekDate, mStartTime, mEndTime, dayBox, true, true, true, mSingleLineLimit, mIncludeDescription, mIncludeCategories);
     } // for i through all weekdays
 }
 
@@ -1238,7 +1196,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
         do {
             line1 = local.toString(curWeek.addDays(-6), QLocale::ShortFormat);
             line2 = local.toString(curWeek, QLocale::ShortFormat);
-            title =  i18nc("date from-to", "%1\u2013%2", line1, line2);
+            title = i18nc("date from-to", "%1\u2013%2", line1, line2);
             drawHeader(p, title, curWeek.addDays(-6), QDate(), headerBox);
 
             drawWeek(p, curWeek, weekBox);
@@ -1650,7 +1608,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
         p.drawText(pospriority, mCurrentLinePos - 2, outStr);
     }
 
-    int posSoFar = width;  // Position of leftmost optional header.
+    int posSoFar = width; // Position of leftmost optional header.
 
     int posdue = -1;
     if (mIncludeDueDate) {

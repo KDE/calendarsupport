@@ -26,4 +26,3 @@ protected:
 
 KIdentityManagement::IdentityManager *identityManager();
 }
-

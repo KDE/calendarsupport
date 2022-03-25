@@ -419,12 +419,7 @@ public:
       @param holidaysFlags Bitfield consisting of DisplayFlags flags to determine
                            how holidays should be printed.
     */
-    void drawMonth(QPainter &p,
-                   QDate dt,
-                   QRect box,
-                   int maxdays = -1,
-                   int subDailyFlags = TimeBoxes,
-                   int holidaysFlags = Text);
+    void drawMonth(QPainter &p, QDate dt, QRect box, int maxdays = -1, int subDailyFlags = TimeBoxes, int holidaysFlags = Text);
 
     /**
       Internal class representing the start of a todo.
@@ -543,11 +538,11 @@ protected:
     KCalendarCore::Event::Ptr holidayEvent(QDate date) const;
 
 protected:
-    bool mUseColors;    /**< Whether or not to use event category colors to draw the events. */
-    bool mPrintFooter;  /**< Whether or not to print a footer at the bottoms of pages. */
-    bool mShowNoteLines;    /**< Whether or not to print horizontal  lines in note areas. */
-    bool mExcludeConfidential;  /**< Whether or not to print incidences with secrecy "confidential". */
-    bool mExcludePrivate;   /**< Whether or not to print incidences with secrecy "private". */
+    bool mUseColors; /**< Whether or not to use event category colors to draw the events. */
+    bool mPrintFooter; /**< Whether or not to print a footer at the bottoms of pages. */
+    bool mShowNoteLines; /**< Whether or not to print horizontal  lines in note areas. */
+    bool mExcludeConfidential; /**< Whether or not to print incidences with secrecy "confidential". */
+    bool mExcludePrivate; /**< Whether or not to print incidences with secrecy "private". */
     int mHeaderHeight;
     int mSubHeaderHeight;
     int mFooterHeight;
@@ -573,4 +568,3 @@ private:
     QColor getTextColor(const QColor &c) const;
 };
 }
-

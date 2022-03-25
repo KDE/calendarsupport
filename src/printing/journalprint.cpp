@@ -158,8 +158,7 @@ void CalPrintJournal::print(QPainter &p, int width, int height)
 
     for (const KCalendarCore::Journal::Ptr &j : std::as_const(journals)) {
         Q_ASSERT(j);
-        if (j
-            && (!mExcludeConfidential || j->secrecy() != KCalendarCore::Incidence::SecrecyConfidential)
+        if (j && (!mExcludeConfidential || j->secrecy() != KCalendarCore::Incidence::SecrecyConfidential)
             && (!mExcludePrivate || j->secrecy() != KCalendarCore::Incidence::SecrecyPrivate)) {
             drawJournal(j, p, x, y, width, height);
         }

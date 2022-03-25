@@ -66,4 +66,3 @@ private:
     std::unique_ptr<KCalPrefsPrivate> const d;
 };
 }
-

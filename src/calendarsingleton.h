@@ -17,4 +17,3 @@ namespace CalendarSupport
  */
 CALENDARSUPPORT_EXPORT Akonadi::ETMCalendar::Ptr calendarSingleton(bool createIfNull = true);
 }
-

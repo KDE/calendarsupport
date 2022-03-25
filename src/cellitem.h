@@ -43,4 +43,3 @@ private:
     int mSubCell = -1;
 };
 }
-

@@ -29,4 +29,3 @@ public:
     void hideEvent(QHideEvent *event) override;
 };
 }
-

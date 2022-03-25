@@ -12,7 +12,6 @@ class PlaceItemTest : public QObject
 {
     Q_OBJECT
 public:
-
 private Q_SLOTS:
     void soleItemHasNoOverlaps();
     void itemDoesNotOverlapItself();
@@ -28,8 +27,7 @@ using namespace CalendarSupport;
 
 // Skeletal item class, not unlike EventViews::AgendaItem.  Instances represent
 // a range of cell indexes from startAt up to but not including endBefore.
-struct TestItem: public CellItem
-{
+struct TestItem : public CellItem {
     const QString name;
     const int startAt, endBefore;
 
@@ -136,7 +134,7 @@ void PlaceItemTest::fillLeftGap()
     auto item2 = std::make_unique<TestItem>("item2", 1, 3, 1, 2);
     const QList<CellItem *> cells({item1.get(), item2.get()});
     auto newItem = std::make_unique<TestItem>("new", 2, 4);
-    (void) CellItem::placeItem(cells, newItem.get());
+    (void)CellItem::placeItem(cells, newItem.get());
     QCOMPARE(newItem->subCell(), item1->subCell());
     QCOMPARE(newItem->subCells(), 2);
 }
@@ -151,8 +149,8 @@ void PlaceItemTest::fillCenterGap()
     auto item2 = std::make_unique<TestItem>("item2", 1, 3, 0, 3);
     auto item3 = std::make_unique<TestItem>("item3", 1, 3, 2, 3);
     const QList<CellItem *> cells({item1.get(), item2.get(), item3.get()});
-    auto newItem= std::make_unique<TestItem>("new", 2, 4);
-    (void) CellItem::placeItem(cells, newItem.get());
+    auto newItem = std::make_unique<TestItem>("new", 2, 4);
+    (void)CellItem::placeItem(cells, newItem.get());
     QCOMPARE(newItem->subCell(), item1->subCell());
     QCOMPARE(newItem->subCells(), 3);
 }
@@ -169,8 +167,8 @@ void PlaceItemTest::transitiveOverlap()
     auto item2 = std::make_unique<TestItem>("item2", 2, 4, 0, 2);
     auto item3 = std::make_unique<TestItem>("item3", 1, 3, 1, 2);
     const QList<CellItem *> cells({item1.get(), item2.get(), item3.get()});
-    auto newItem= std::make_unique<TestItem>("new", 2, 4);
-    (void) CellItem::placeItem(cells, newItem.get());
+    auto newItem = std::make_unique<TestItem>("new", 2, 4);
+    (void)CellItem::placeItem(cells, newItem.get());
     QCOMPARE(newItem->subCells(), 3);
     QCOMPARE(item1->subCells(), 3);
     QCOMPARE(item2->subCells(), 3);

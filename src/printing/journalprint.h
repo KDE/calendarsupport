@@ -57,7 +57,6 @@ public:
     void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
-
     /**
       Draws single journal item.
 
@@ -84,4 +83,3 @@ public:
     }
 };
 }
-

@@ -583,7 +583,7 @@ int CalPrintPluginBase::drawHeader(QPainter &p, const QString &title, QDate mont
 
     drawShadedBox(p, BOX_BORDER_WIDTH, backColor, box);
 
-    const auto oldPen {p.pen()};
+    const auto oldPen{p.pen()};
     p.setPen(getTextColor(backColor));
 
     // prev month left, current month centered, next month right
@@ -799,8 +799,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
         // Adapt start/end times to include complete events
         for (const KCalendarCore::Event::Ptr &event : std::as_const(events)) {
             Q_ASSERT(event);
-            if (!event
-                || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+            if (!event || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
                 || (mExcludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
                 continue;
             }
@@ -856,8 +855,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
     QList<CellItem *> cells;
 
     for (const KCalendarCore::Event::Ptr &event : std::as_const(events)) {
-        if (!event
-            || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+        if (!event || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
             || (mExcludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
         }
@@ -936,7 +934,7 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item,
             }
         }
         if (includeCategories && !event->categoriesStr().isEmpty()) {
-                str = i18nc("summary, categories", "%1, %2", str, event->categoriesStr());
+            str = i18nc("summary, categories", "%1, %2", str, event->categoriesStr());
         }
         if (includeDescription && !event->description().isEmpty()) {
             str += QLatin1Char('\n');
@@ -1160,7 +1158,7 @@ void CalPrintPluginBase::drawIncidence(QPainter &p,
     QFontMetrics fm = p.fontMetrics();
     const int borderWidth = p.pen().width() + 1;
 
-    QString firstLine {time};
+    QString firstLine{time};
     if (!firstLine.isEmpty()) {
         firstLine += QStringLiteral(" ");
     }
@@ -1259,12 +1257,7 @@ public:
     KCalendarCore::Event::Ptr event;
 };
 
-void CalPrintPluginBase::drawMonth(QPainter &p,
-                                   QDate dt,
-                                   QRect box,
-                                   int maxdays,
-                                   int subDailyFlags,
-                                   int holidaysFlags)
+void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays, int subDailyFlags, int holidaysFlags)
 {
     p.save();
     QRect subheaderBox(box);
@@ -1354,8 +1347,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p,
     QVector<MonthEventStruct> monthentries;
 
     for (const KCalendarCore::Event::Ptr &e : std::as_const(events)) {
-        if (!e
-            || (mExcludeConfidential && e->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+        if (!e || (mExcludeConfidential && e->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
             || (mExcludePrivate && e->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
         }
@@ -1529,17 +1521,7 @@ void CalPrintPluginBase::drawMonthTable(QPainter &p,
                 darkbg = true;
             }
             QRect dayBox(coledges[col], rowedges[row], coledges[col + 1] - coledges[col], rowedges[row + 1] - rowedges[row]);
-            drawDayBox(p,
-                       monthDate,
-                       fromTime,
-                       toTime,
-                       dayBox,
-                       false,
-                       recurDaily,
-                       recurWeekly,
-                       singleLineLimit,
-                       includeDescription,
-                       includeCategories);
+            drawDayBox(p, monthDate, fromTime, toTime, dayBox, false, recurDaily, recurWeekly, singleLineLimit, includeDescription, includeCategories);
             if (darkbg) {
                 p.setBackground(back);
                 darkbg = false;
@@ -1681,7 +1663,7 @@ void CalPrintPluginBase::drawTodo(int &count,
         p.drawLine(center, bottom, center, to);
     }
 
-    int posSoFar = width;  // Position of leftmost optional field.
+    int posSoFar = width; // Position of leftmost optional field.
 
     // due date
     if (posDueDt >= 0 && todo->hasDueDate()) {
@@ -1721,7 +1703,7 @@ void CalPrintPluginBase::drawTodo(int &count,
     }
 
     // categories
-    QRect categoriesRect {0, 0, 0, 0};
+    QRect categoriesRect{0, 0, 0, 0};
     if (posCategories >= 0) {
         outStr = todo->categoriesStr();
         outStr.replace(QLatin1Char(','), QLatin1Char('\n'));
