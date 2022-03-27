@@ -9,7 +9,6 @@ target_sources(KF5CalendarSupport PRIVATE
   archivedialog.cpp
   attachmenthandler.cpp
   calendarsingleton.cpp
-  categoryconfig.cpp
   categoryhierarchyreader.cpp
   cellitem.cpp
   collectionselection.cpp
@@ -56,7 +55,6 @@ target_sources(KF5CalendarSupport PRIVATE
   printing/calprintdefaultplugins.h
   printing/yearprint.h
   printing/calprinter.h
-  categoryconfig.h
   kcalprefs.h
   urihandler.h
   incidenceattachmentmodel.h
@@ -130,7 +128,6 @@ install(TARGETS
 ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
   HEADER_NAMES
   Utils
-  CategoryConfig
   CellItem
   CollectionSelection
   KCalPrefs

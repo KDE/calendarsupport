@@ -5,11 +5,15 @@
 */
 
 #include "categoryhierarchyreader.h"
-#include "categoryconfig.h"
 
 #include <QComboBox>
 
 using namespace CalendarSupport;
+
+namespace CategoryConfig
+{
+static const QLatin1String categorySeparator(":");
+}
 
 inline QString &quote(QString &string)
 {
