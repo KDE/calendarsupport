@@ -17,4 +17,4 @@ Dependencies:
     'pim/akonadi-notes' : '@same'
 
 Options:
-  require-passing-tests-on: [ 'Linux', 'FreeBSD', 'Windows' ]
+  require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
