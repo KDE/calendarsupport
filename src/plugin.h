@@ -22,19 +22,7 @@ class CALENDARSUPPORT_EXPORT Plugin : public QObject
 {
     Q_OBJECT
 
-    enum { INTERFACE_VERSION = 2 };
-
 public:
-    static int interfaceVersion()
-    {
-        return INTERFACE_VERSION;
-    }
-
-    static QString serviceType()
-    {
-        return QStringLiteral("Calendar/Plugin");
-    }
-
     Plugin(QObject *parent = nullptr, const QVariantList &args = {})
         : QObject(parent)
     {
