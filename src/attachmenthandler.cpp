@@ -18,9 +18,9 @@
   @author Allen Winter \<winter@kde.org\>
 */
 #include "attachmenthandler.h"
-#include "calendarsupport/utils.h"
 #include "calendarsupport_debug.h"
 
+#include <Akonadi/CalendarUtils>
 #include <Akonadi/ItemFetchJob>
 
 #include <KIO/FileCopyJob>
@@ -269,7 +269,7 @@ void AttachmentHandler::slotFinishSaveAs(KJob *job)
         auto fetchJob = qobject_cast<ItemFetchJob *>(job);
         const Item::List items = fetchJob->items();
         if (!items.isEmpty()) {
-            Incidence::Ptr incidence = CalendarSupport::incidence(items.first());
+            Incidence::Ptr incidence = Akonadi::CalendarUtils::incidence(items.first());
             success = incidence && saveAs(info.attachmentName, incidence);
         } else {
             qCWarning(CALENDARSUPPORT_LOG) << Q_FUNC_INFO << "No item found";
@@ -291,7 +291,7 @@ void AttachmentHandler::slotFinishView(KJob *job)
         auto fetchJob = qobject_cast<ItemFetchJob *>(job);
         const Item::List items = fetchJob->items();
         if (!items.isEmpty()) {
-            Incidence::Ptr incidence = CalendarSupport::incidence(items.first());
+            Incidence::Ptr incidence = Akonadi::CalendarUtils::incidence(items.first());
             success = incidence && view(info.attachmentName, incidence);
         } else {
             qCWarning(CALENDARSUPPORT_LOG) << Q_FUNC_INFO << "No item found";

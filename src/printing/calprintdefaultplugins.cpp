@@ -15,6 +15,7 @@
 
 #include <cmath>
 
+#include <Akonadi/CalendarUtils>
 #include <Akonadi/Item>
 
 #include <KCalendarCore/Visitor>
@@ -464,7 +465,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 QString datesString;
                 int count = 0;
                 for (const Akonadi::Item &item : std::as_const(relations)) {
-                    KCalendarCore::Todo::Ptr todo = CalendarSupport::todo(item);
+                    KCalendarCore::Todo::Ptr todo = Akonadi::CalendarUtils::todo(item);
                     ++count;
                     if (!todo) { // defensive, skip any zero pointers
                         continue;

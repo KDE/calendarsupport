@@ -9,7 +9,8 @@
 #include "eventarchiver.h"
 
 #include "kcalprefs.h"
-#include "utils.h"
+
+#include <Akonadi/CalendarUtils>
 #include <Akonadi/IncidenceChanger>
 
 #include <KCalendarCore/FileStorage>
@@ -145,7 +146,7 @@ void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer, QDate l
     Akonadi::Item::List::ConstIterator end(items.constEnd());
     incidenceStrs.reserve(items.count());
     for (it = items.constBegin(); it != end; ++it) {
-        incidenceStrs.append(CalendarSupport::incidence(*it)->summary());
+        incidenceStrs.append(Akonadi::CalendarUtils::incidence(*it)->summary());
     }
 
     if (withGUI) {

@@ -12,6 +12,7 @@
 
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
+#include <Akonadi/CalendarUtils>
 #include <Akonadi/EntityDisplayAttribute>
 #include <Akonadi/EntityTreeModel>
 
@@ -41,30 +42,6 @@
 #include <QStyle>
 #include <QUrlQuery>
 
-KCalendarCore::Incidence::Ptr CalendarSupport::incidence(const Akonadi::Item &item)
-{
-    // relying on exception for performance reasons
-    try {
-        return item.payload<KCalendarCore::Incidence::Ptr>();
-    } catch (const Akonadi::PayloadException &) {
-        return {};
-    }
-}
-
-KCalendarCore::Event::Ptr CalendarSupport::event(const Akonadi::Item &item)
-{
-    // relying on exception for performance reasons
-    try {
-        auto incidence = item.payload<KCalendarCore::Incidence::Ptr>();
-        if (hasEvent(incidence)) {
-            return item.payload<KCalendarCore::Event::Ptr>();
-        }
-    } catch (const Akonadi::PayloadException &) {
-        return {};
-    }
-    return {};
-}
-
 KCalendarCore::Event::Ptr CalendarSupport::event(const KCalendarCore::Incidence::Ptr &incidence)
 {
     if (hasEvent(incidence)) {
@@ -77,43 +54,17 @@ KCalendarCore::Incidence::List CalendarSupport::incidencesFromItems(const Akonad
 {
     KCalendarCore::Incidence::List incidences;
     for (const Akonadi::Item &item : items) {
-        if (const KCalendarCore::Incidence::Ptr e = CalendarSupport::incidence(item)) {
+        if (const KCalendarCore::Incidence::Ptr e = Akonadi::CalendarUtils::incidence(item)) {
             incidences.push_back(e);
         }
     }
     return incidences;
 }
 
-KCalendarCore::Todo::Ptr CalendarSupport::todo(const Akonadi::Item &item)
-{
-    try {
-        auto incidence = item.payload<KCalendarCore::Incidence::Ptr>();
-        if (hasTodo(incidence)) {
-            return item.payload<KCalendarCore::Todo::Ptr>();
-        }
-    } catch (const Akonadi::PayloadException &) {
-        return {};
-    }
-    return {};
-}
-
 KCalendarCore::Todo::Ptr CalendarSupport::todo(const KCalendarCore::Incidence::Ptr &incidence)
 {
     if (hasTodo(incidence)) {
         return incidence.staticCast<KCalendarCore::Todo>();
-    }
-    return {};
-}
-
-KCalendarCore::Journal::Ptr CalendarSupport::journal(const Akonadi::Item &item)
-{
-    try {
-        auto incidence = item.payload<KCalendarCore::Incidence::Ptr>();
-        if (hasJournal(incidence)) {
-            return item.payload<KCalendarCore::Journal::Ptr>();
-        }
-    } catch (const Akonadi::PayloadException &) {
-        return {};
     }
     return {};
 }
@@ -172,7 +123,7 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items)
     QList<QUrl> urls;
     int incidencesFound = 0;
     for (const Akonadi::Item &item : items) {
-        const KCalendarCore::Incidence::Ptr incidence(CalendarSupport::incidence(item));
+        const KCalendarCore::Incidence::Ptr incidence(Akonadi::CalendarUtils::incidence(item));
         if (!incidence) {
             continue;
         }
@@ -221,7 +172,7 @@ static QByteArray findMostCommonType(const Akonadi::Item::List &items)
         if (!CalendarSupport::hasIncidence(item)) {
             continue;
         }
-        const QByteArray type = CalendarSupport::incidence(item)->typeStr();
+        const QByteArray type = Akonadi::CalendarUtils::incidence(item)->typeStr();
         if (!prev.isEmpty() && type != prev) {
             return "Incidence";
         }
@@ -251,7 +202,7 @@ QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QObject *pa
 static bool itemMatches(const Akonadi::Item &item, const KCalendarCore::CalFilter *filter)
 {
     assert(filter);
-    KCalendarCore::Incidence::Ptr inc = CalendarSupport::incidence(item);
+    KCalendarCore::Incidence::Ptr inc = Akonadi::CalendarUtils::incidence(item);
     if (!inc) {
         return false;
     }

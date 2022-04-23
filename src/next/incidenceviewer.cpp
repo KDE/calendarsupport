@@ -14,6 +14,7 @@
 #include "incidenceattachmentmodel.h"
 
 #include <Akonadi/CalendarBase>
+#include <Akonadi/CalendarUtils>
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/ItemFetchScope>
 
@@ -77,7 +78,7 @@ public:
 
         if (mCurrentItem.isValid()) {
             text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(CalendarSupport::displayName(mCalendar, mParentCollection),
-                                                                      CalendarSupport::incidence(mCurrentItem),
+                                                                      Akonadi::CalendarUtils::incidence(mCurrentItem),
                                                                       mDate);
             text.prepend(mHeaderText);
             mBrowser->setHtml(text);
@@ -107,7 +108,7 @@ public:
     void slotAttachmentUrlClicked(const QString &uri)
     {
         const QString attachmentName = QString::fromUtf8(QByteArray::fromBase64(uri.mid(7).toUtf8()));
-        mAttachmentHandler->view(attachmentName, CalendarSupport::incidence(mCurrentItem));
+        mAttachmentHandler->view(attachmentName, Akonadi::CalendarUtils::incidence(mCurrentItem));
     }
 
     Akonadi::ETMCalendar *mCalendar = nullptr;
