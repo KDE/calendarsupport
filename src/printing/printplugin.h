@@ -6,14 +6,13 @@
 
 #pragma once
 
-#include "plugin.h"
-
 #include <Akonadi/ETMCalendar>
 
 #include <KCalendarCore/Incidence>
 #include <KConfig>
 
 #include <QDate>
+#include <QPointer>
 #include <QPrinter>
 
 namespace CalendarSupport

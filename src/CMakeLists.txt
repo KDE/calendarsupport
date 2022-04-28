@@ -20,7 +20,6 @@ target_sources(KF5CalendarSupport PRIVATE
   noteeditdialog.cpp
   utils.cpp
   tagcache.cpp
-  plugin.cpp
   urihandler.cpp
   kdatepickerpopup.cpp
 
@@ -41,7 +40,6 @@ target_sources(KF5CalendarSupport PRIVATE
   categoryhierarchyreader.h
   calendarsingleton.h
   utils.h
-  plugin.h
   archivedialog.h
   cellitem.h
   identitymanager.h
@@ -133,7 +131,6 @@ ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
   KCalPrefs
   IdentityManager
   EventArchiver
-  Plugin
   CategoryHierarchyReader
   CalendarSingleton
   MessageWidget
@@ -208,8 +205,6 @@ install(FILES
 install(FILES
     ${PRI_FILENAME}
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
-
-install(FILES calendarplugin.desktop DESTINATION ${KDE_INSTALL_KSERVICETYPESDIR})
 
 if(BUILD_TESTING)
     add_subdirectory(autotests)
