@@ -1412,13 +1412,13 @@ void CalPrintMonth::setDateRange(const QDate &from, const QDate &to)
     CalPrintPluginBase::setDateRange(from, to);
     auto cfg = dynamic_cast<CalPrintMonthConfig *>((QWidget *)mConfigWidget);
     if (cfg) {
+        const QLocale locale;
         cfg->mFromMonth->clear();
-        for (int i = 0; i < 12; ++i) {
-            cfg->mFromMonth->addItem(QLocale().monthName(i + 1, QLocale::LongFormat));
-        }
         cfg->mToMonth->clear();
-        for (int i = 0; i < 12; ++i) {
-            cfg->mToMonth->addItem(QLocale().monthName(i + 1, QLocale::LongFormat));
+        for (int i = 1; i < 13; ++i) {
+            const auto monthName = locale.standaloneMonthName(i, QLocale::LongFormat);
+            cfg->mFromMonth->addItem(monthName);
+            cfg->mToMonth->addItem(monthName);
         }
         cfg->mFromMonth->setCurrentIndex(from.month() - 1);
         cfg->mFromYear->setValue(to.year());
@@ -1446,7 +1446,9 @@ void CalPrintMonth::print(QPainter &p, int width, int height)
     monthBox.setTop(headerBox.bottom() + padding());
 
     do {
-        QString title(i18nc("monthname year", "%1 %2", QLocale::system().monthName(curMonth.month()), QString::number(curMonth.year())));
+        QString title(i18nc("monthname year", "%1 %2",
+                            QLocale::system().standaloneMonthName(curMonth.month(), QLocale::LongFormat),
+                            QString::number(curMonth.year())));
         QDate tmp(fromMonth);
         int weekdayCol = weekdayColumn(tmp.dayOfWeek());
         tmp = tmp.addDays(-weekdayCol);
