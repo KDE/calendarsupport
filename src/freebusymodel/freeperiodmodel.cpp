@@ -156,7 +156,6 @@ QString FreePeriodModel::stringify(int index) const
     const QString longMonthName = QLocale::system().monthName(startDate.month(), QLocale::LongFormat);
     const QString dayofWeek = QLocale::system().dayName(startDate.dayOfWeek(), QLocale::LongFormat);
 
-    // TODO i18n, ping chusslove
     return ki18nc(
                "@label A time period duration. KLocale is used to format the components. "
                "example: Monday, 12 June, 8:00am to 9:30am",

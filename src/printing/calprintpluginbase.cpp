@@ -636,10 +636,12 @@ void CalPrintPluginBase::drawSmallMonth(QPainter &p, QDate qd, QRect box)
     newFont.setPixelSize(cellHeight);
     p.setFont(newFont);
 
+    const QLocale locale;
+
     // draw the title
     QRect titleBox(box);
     titleBox.setHeight(p.fontMetrics().height());
-    p.drawText(titleBox, Qt::AlignTop | Qt::AlignHCenter, QLocale::system().monthName(month));
+    p.drawText(titleBox, Qt::AlignTop | Qt::AlignHCenter, locale.standaloneMonthName(month));
 
     // draw days of week
     QRect wdayBox(box);
@@ -647,10 +649,10 @@ void CalPrintPluginBase::drawSmallMonth(QPainter &p, QDate qd, QRect box)
     wdayBox.setHeight(int(2 * cellHeight) - int(cellHeight));
 
     for (int col = 0; col < 7; ++col) {
-        QString tmpStr = QLocale::system().dayName(monthDate2.dayOfWeek())[0].toUpper();
+        const auto dayLetter = locale.standaloneDayName(monthDate2.dayOfWeek(), QLocale::ShortFormat)[0].toUpper();
         wdayBox.setLeft(int(box.left() + col * cellWidth));
         wdayBox.setRight(int(box.left() + (col + 1) * cellWidth));
-        p.drawText(wdayBox, Qt::AlignCenter, tmpStr);
+        p.drawText(wdayBox, Qt::AlignCenter, dayLetter);
         monthDate2 = monthDate2.addDays(1);
     }
 
@@ -1264,7 +1266,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays
     subheaderBox.setHeight(subHeaderHeight());
     QRect borderBox(box);
     borderBox.setTop(subheaderBox.bottom() + 1);
-    drawSubHeaderBox(p, QLocale::system().monthName(dt.month()), subheaderBox);
+    drawSubHeaderBox(p, QLocale().standaloneMonthName(dt.month()), subheaderBox);
     // correct for half the border width
     int correction = (BOX_BORDER_WIDTH /*-1*/) / 2;
     QRect daysBox(borderBox);
