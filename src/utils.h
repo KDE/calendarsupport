@@ -171,8 +171,6 @@ CALENDARSUPPORT_EXPORT Akonadi::Collection::Id collectionIdFromIndex(const QMode
 
 CALENDARSUPPORT_EXPORT Akonadi::Collection::List collectionsFromIndexes(const QModelIndexList &indexes);
 
-CALENDARSUPPORT_EXPORT QString displayName(Akonadi::ETMCalendar *calendar, const Akonadi::Collection &coll);
-
 CALENDARSUPPORT_EXPORT QString subMimeTypeForIncidence(const KCalendarCore::Incidence::Ptr &incidence);
 
 /**

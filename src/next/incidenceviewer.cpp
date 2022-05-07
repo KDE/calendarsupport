@@ -77,7 +77,7 @@ public:
         QString text;
 
         if (mCurrentItem.isValid()) {
-            text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(CalendarSupport::displayName(mCalendar, mParentCollection),
+            text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(Akonadi::CalendarUtils::displayName(mCalendar, mParentCollection),
                                                                       Akonadi::CalendarUtils::incidence(mCurrentItem),
                                                                       mDate);
             text.prepend(mHeaderText);
