@@ -156,20 +156,16 @@ QDrag *CalendarSupport::createDrag(const Akonadi::Item &item, QObject *parent)
 
 #endif
 
-static QByteArray findMostCommonType(const Akonadi::Item::List &items)
+static KCalendarCore::IncidenceBase::IncidenceType findMostCommonType(const Akonadi::Item::List &items)
 {
-    QByteArray prev;
-    if (items.isEmpty()) {
-        return "Incidence";
-    }
-
+    KCalendarCore::IncidenceBase::IncidenceType prev = KCalendarCore::IncidenceBase::TypeUnknown;
     for (const Akonadi::Item &item : items) {
         if (!CalendarSupport::hasIncidence(item)) {
             continue;
         }
-        const QByteArray type = Akonadi::CalendarUtils::incidence(item)->typeStr();
-        if (!prev.isEmpty() && type != prev) {
-            return "Incidence";
+        const auto type = Akonadi::CalendarUtils::incidence(item)->type();
+        if (prev != KCalendarCore::IncidenceBase::TypeUnknown && type != prev) {
+            return KCalendarCore::IncidenceBase::TypeUnknown;
         }
         prev = type;
     }
@@ -182,10 +178,10 @@ QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QObject *pa
     std::unique_ptr<QDrag> drag(new QDrag(parent));
     drag->setMimeData(CalendarSupport::createMimeData(items));
 
-    const QByteArray common = findMostCommonType(items);
-    if (common == "Event") {
+    const auto common = findMostCommonType(items);
+    if (common == KCalendarCore::IncidenceBase::TypeEvent) {
         drag->setPixmap(QIcon::fromTheme(QStringLiteral("view-calendar-day")).pixmap(qApp->style()->pixelMetric(QStyle::PM_ToolBarIconSize)));
-    } else if (common == "Todo") {
+    } else if (common == KCalendarCore::IncidenceBase::TypeTodo) {
         drag->setPixmap(QIcon::fromTheme(QStringLiteral("view-calendar-tasks")).pixmap(qApp->style()->pixelMetric(QStyle::PM_ToolBarIconSize)));
     }
 
