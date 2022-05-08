@@ -148,11 +148,6 @@ QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items)
     }
 }
 
-QMimeData *CalendarSupport::createMimeData(const Akonadi::Item &item)
-{
-    return createMimeData(Akonadi::Item::List() << item);
-}
-
 #ifndef QT_NO_DRAGANDDROP
 QDrag *CalendarSupport::createDrag(const Akonadi::Item &item, QObject *parent)
 {
