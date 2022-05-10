@@ -8,6 +8,8 @@
 #include "collectionselection.h"
 #include "utils.h"
 
+#include <Akonadi/CollectionUtils>
+
 #include <QItemSelectionModel>
 
 using namespace CalendarSupport;
@@ -58,7 +60,7 @@ Akonadi::Collection::List CollectionSelection::selectedCollections() const
     const QModelIndexList selectedIndexes = d->model->selectedIndexes();
     selected.reserve(selectedIndexes.count());
     for (const QModelIndex &idx : selectedIndexes) {
-        selected.append(collectionFromIndex(idx));
+        selected.append(Akonadi::CollectionUtils::fromIndex(idx));
     }
     return selected;
 }

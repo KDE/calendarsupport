@@ -13,6 +13,7 @@
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
 #include <Akonadi/CalendarUtils>
+#include <Akonadi/CollectionUtils>
 #include <Akonadi/EntityDisplayAttribute>
 #include <Akonadi/EntityTreeModel>
 
@@ -360,7 +361,7 @@ Akonadi::Collection::List CalendarSupport::collectionsFromModel(const QAbstractI
     int row = start;
     QModelIndex i = model->index(row, 0, parentIndex);
     while (row <= endRow) {
-        const Akonadi::Collection collection = collectionFromIndex(i);
+        const Akonadi::Collection collection = Akonadi::CollectionUtils::fromIndex(i);
         if (collection.isValid()) {
             collections << collection;
             QModelIndex childIndex = model->index(0, 0, i);
@@ -396,11 +397,6 @@ Akonadi::Item::List CalendarSupport::itemsFromModel(const QAbstractItemModel *mo
     return items;
 }
 
-Akonadi::Collection CalendarSupport::collectionFromIndex(const QModelIndex &index)
-{
-    return index.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
-}
-
 Akonadi::Collection::Id CalendarSupport::collectionIdFromIndex(const QModelIndex &index)
 {
     return index.data(Akonadi::EntityTreeModel::CollectionIdRole).value<Akonadi::Collection::Id>();
@@ -411,7 +407,7 @@ Akonadi::Collection::List CalendarSupport::collectionsFromIndexes(const QModelIn
     Akonadi::Collection::List l;
     l.reserve(indexes.count());
     for (const QModelIndex &idx : indexes) {
-        l.push_back(collectionFromIndex(idx));
+        l.push_back(Akonadi::CollectionUtils::fromIndex(idx));
     }
     return l;
 }

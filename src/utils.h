@@ -165,8 +165,6 @@ itemsFromModel(const QAbstractItemModel *model, const QModelIndex &parentIndex =
 CALENDARSUPPORT_EXPORT Akonadi::Collection::List
 collectionsFromModel(const QAbstractItemModel *model, const QModelIndex &parentIndex = QModelIndex(), int start = 0, int end = -1);
 
-CALENDARSUPPORT_EXPORT Akonadi::Collection collectionFromIndex(const QModelIndex &index);
-
 CALENDARSUPPORT_EXPORT Akonadi::Collection::Id collectionIdFromIndex(const QModelIndex &index);
 
 CALENDARSUPPORT_EXPORT Akonadi::Collection::List collectionsFromIndexes(const QModelIndexList &indexes);
