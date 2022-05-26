@@ -9,6 +9,7 @@
 #include "utils.h"
 #include "calendarsupport_debug.h"
 #include "kcalprefs.h"
+#include <kholidays_version.h>
 
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
@@ -525,7 +526,11 @@ QList<QDate> CalendarSupport::workDays(QDate startDate, QDate endDate)
         for (const QString &regionStr : holidays) {
             KHolidays::HolidayRegion region(regionStr);
             if (region.isValid()) {
+#if KHOLIDAYS_VERSION < QT_VERSION_CHECK(5, 95, 0)
                 for (auto const &h : region.holidays(startDate, endDate)) {
+#else
+                for (auto const &h : region.rawHolidaysWithAstroSeasons(startDate, endDate)) {
+#endif
                     if (h.dayType() == KHolidays::Holiday::NonWorkday) {
                         for (int i = 0; i < h.duration(); i++) {
                             result.removeOne(h.observedStartDate().addDays(i));
@@ -548,7 +553,11 @@ QStringList CalendarSupport::holiday(QDate date)
     for (const QString &regionStr : holidays) {
         KHolidays::HolidayRegion region(regionStr);
         if (region.isValid()) {
+#if KHOLIDAYS_VERSION < QT_VERSION_CHECK(5, 95, 0)
             const KHolidays::Holiday::List list = region.holidays(date);
+#else
+            const KHolidays::Holiday::List list = region.rawHolidaysWithAstroSeasons(date);
+#endif
             const int listCount = list.count();
             for (int i = 0; i < listCount; ++i) {
                 // don't add duplicates.
