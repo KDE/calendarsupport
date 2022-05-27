@@ -18,6 +18,7 @@
 #include <KConfig>
 #include <KConfigGroup>
 #include <KWordWrap>
+#include <kcalcore_version.h>
 
 #include <KLocalizedString>
 #include <QAbstractTextDocumentLayout>
@@ -1782,7 +1783,11 @@ void CalPrintPluginBase::drawTodo(int &count,
     for (const KCalendarCore::Todo::Ptr &todo : std::as_const(t)) {
         tl.append(todo);
     }
+#if KCALCORE_VERSION < QT_VERSION_CHECK(5, 95, 0)
     KCalendarCore::Todo::List sl = mCalendar->sortTodos(tl, sortField, sortDir);
+#else
+    KCalendarCore::Todo::List sl = mCalendar->sortTodos(std::move(tl), sortField, sortDir);
+#endif
 #endif
 
     int subcount = 0;
