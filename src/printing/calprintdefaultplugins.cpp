@@ -1405,9 +1405,8 @@ void CalPrintMonth::print(QPainter &p, int width, int height)
     monthBox.setTop(headerBox.bottom() + padding());
 
     do {
-        QString title(i18nc("monthname year", "%1 %2",
-                            QLocale::system().standaloneMonthName(curMonth.month(), QLocale::LongFormat),
-                            QString::number(curMonth.year())));
+        QString title(
+            i18nc("monthname year", "%1 %2", QLocale::system().standaloneMonthName(curMonth.month(), QLocale::LongFormat), QString::number(curMonth.year())));
         QDate tmp(fromMonth);
         int weekdayCol = weekdayColumn(tmp.dayOfWeek());
         tmp = tmp.addDays(-weekdayCol);
