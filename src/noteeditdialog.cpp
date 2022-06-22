@@ -28,6 +28,7 @@ QAbstractItemModel *NoteEditDialog::_k_noteEditStubModel = nullptr;
 
 NoteEditDialog::NoteEditDialog(QWidget *parent)
     : QDialog(parent)
+    , mNoteTitle(new QLineEdit(this))
 {
     setAttribute(Qt::WA_DeleteOnClose);
     setWindowTitle(i18nc("@title:window", "Create Note"));
@@ -55,7 +56,6 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     hbox->setContentsMargins(0, 0, 0, 0);
     hbox->setSpacing(2);
 
-    mNoteTitle = new QLineEdit(this);
     mNoteTitle->setClearButtonEnabled(true);
     mNoteTitle->setObjectName(QStringLiteral("notetitle"));
     mNoteTitle->setFocus();

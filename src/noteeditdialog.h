@@ -62,7 +62,7 @@ private:
     void writeConfig();
     Akonadi::Collection mCollection;
     Akonadi::Item mItem;
-    QLineEdit *mNoteTitle = nullptr;
+    QLineEdit *const mNoteTitle;
     QPushButton *mOkButton = nullptr;
     KPIMTextEdit::RichTextEditorWidget *mNoteText = nullptr;
     Akonadi::CollectionComboBox *mCollectionCombobox = nullptr;

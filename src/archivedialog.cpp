@@ -38,11 +38,11 @@ using namespace CalendarSupport;
 
 ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::IncidenceChanger *changer, QWidget *parent)
     : QDialog(parent)
+    , mUser1Button(new QPushButton(this))
 {
     setWindowTitle(i18nc("@title:window", "Archive/Delete Past Events and To-dos"));
     auto mainLayout = new QVBoxLayout(this);
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Cancel, this);
-    mUser1Button = new QPushButton(this);
     buttonBox->addButton(mUser1Button, QDialogButtonBox::ActionRole);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &ArchiveDialog::reject);
     mUser1Button->setDefault(true);

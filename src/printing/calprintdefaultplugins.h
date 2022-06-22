@@ -128,27 +128,27 @@ class CalPrintDay : public CalPrintTimetable
 public:
     CalPrintDay();
     ~CalPrintDay() override;
-    QString groupName() const override
+    Q_REQUIRED_RESULT QString groupName() const override
     {
         return QStringLiteral("Print day");
     }
 
-    QString description() const override
+    Q_REQUIRED_RESULT QString description() const override
     {
         return i18n("Print da&y");
     }
 
-    QString info() const override
+    Q_REQUIRED_RESULT QString info() const override
     {
         return i18n("Prints all events of a single day on one page");
     }
 
-    int sortID() const override
+    Q_REQUIRED_RESULT int sortID() const override
     {
         return CalPrinterBase::Day;
     }
 
-    bool enabled() const override
+    Q_REQUIRED_RESULT bool enabled() const override
     {
         return true;
     }

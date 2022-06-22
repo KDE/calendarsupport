@@ -48,7 +48,7 @@ protected:
     int depth() const override;
 
 private:
-    QComboBox *mBox = nullptr;
+    QComboBox *const mBox;
     int mCurrentDepth = 0;
 };
 

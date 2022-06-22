@@ -57,6 +57,6 @@ private:
     QCheckBox *mTodos = nullptr;
     Akonadi::IncidenceChanger *mChanger = nullptr;
     Akonadi::ETMCalendar::Ptr mCalendar;
-    QPushButton *mUser1Button = nullptr;
+    QPushButton *const mUser1Button;
 };
 }
