@@ -19,7 +19,6 @@ target_sources(KF5CalendarSupport PRIVATE
   messagewidget.cpp
   noteeditdialog.cpp
   utils.cpp
-  tagcache.cpp
   urihandler.cpp
 
   printing/calprintpluginbase.cpp
@@ -60,8 +59,6 @@ target_sources(KF5CalendarSupport PRIVATE
   freebusymodel/freebusyitem.h
   collectionselection.h
   messagewidget.h
-  tagcache.h
-
 )
 
 ki18n_wrap_ui(KF5CalendarSupport
