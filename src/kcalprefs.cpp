@@ -8,9 +8,9 @@
 #include "kcalprefs.h"
 #include "calendarsupport_debug.h"
 #include "identitymanager.h"
-#include "tagcache.h"
 
 #include <Akonadi/TagAttribute>
+#include <Akonadi/TagCache>
 #include <Akonadi/TagModifyJob>
 
 #include <KMime/HeaderParsing>
@@ -37,7 +37,6 @@ public:
 
     Akonadi::Collection::Id mDefaultCalendarId;
 
-    TagCache mTagCache;
     const QColor mDefaultCategoryColor;
     QDateTime mDayBegins;
 };
@@ -46,6 +45,7 @@ KCalPrefs::KCalPrefs()
     : KCalPrefsBase()
     , d(new KCalPrefsPrivate())
 {
+    Akonadi::TagCache::instance();
 }
 
 KCalPrefs::~KCalPrefs() = default;
@@ -261,23 +261,12 @@ bool KCalPrefs::thatIsMe(const QString &_email)
 
 void KCalPrefs::setCategoryColor(const QString &cat, const QColor &color)
 {
-    Akonadi::Tag tag = d->mTagCache.getTagByName(cat);
-    auto attr = tag.attribute<Akonadi::TagAttribute>(Akonadi::Tag::AddIfMissing);
-    attr->setBackgroundColor(color);
-    new Akonadi::TagModifyJob(tag);
+    Akonadi::TagCache::instance()->setTagColor(cat, color);
 }
 
 QColor KCalPrefs::categoryColor(const QString &cat) const
 {
-    QColor color;
-
-    if (!cat.isEmpty()) {
-        const Akonadi::Tag &tag = d->mTagCache.getTagByName(cat);
-        if (const auto attr = tag.attribute<Akonadi::TagAttribute>()) {
-            color = attr->backgroundColor();
-        }
-    }
-
+    QColor color = Akonadi::TagCache::instance()->tagColor(cat);
     return color.isValid() ? color : d->mDefaultCategoryColor;
 }
 
