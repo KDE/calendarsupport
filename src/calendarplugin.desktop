@@ -2,6 +2,7 @@
 Name=Calendar Plugin Interface
 Name[ar]=واجهة ملحقة التّقاويم
 Name[az]=Təqvim Əlavəsi İnterfeysi
+Name[bg]=Интерфейс на приставка на Calendar
 Name[ca]=Interfície de connector del calendari
 Name[ca@valencia]=Interfície de connector del calendari
 Name[cs]=Rozhraní modulu kalendáře
@@ -46,6 +47,7 @@ X-KDE-ServiceType=Calendar/Plugin
 Comment=Calendar Plugin
 Comment[ar]=ملحقة التّقاويم
 Comment[az]=Təqvim Əlavəsi
+Comment[bg]=Приставка на Calendar
 Comment[ca]=Connector calendari
 Comment[ca@valencia]=Connector calendari
 Comment[cs]=Kalendářový modul
