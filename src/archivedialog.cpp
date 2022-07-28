@@ -239,7 +239,7 @@ void ArchiveDialog::slotUser1()
         // Get destination URL
         QUrl destUrl(mArchiveFile->url());
         if (!destUrl.isValid()) {
-            KMessageBox::sorry(this, i18nc("@info", "The archive file name is not valid."));
+            KMessageBox::error(this, i18nc("@info", "The archive file name is not valid."));
             return;
         }
         // Force filename to be ending with vCalendar extension

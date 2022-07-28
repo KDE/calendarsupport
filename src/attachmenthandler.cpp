@@ -100,7 +100,7 @@ Attachment AttachmentHandler::find(const QString &attachmentName, const Incidenc
 
         KJobWidgets::setWindow(job, d->mParent);
         if (!job->exec()) {
-            KMessageBox::sorry(
+            KMessageBox::error(
                 d->mParent,
                 i18n("The attachment \"%1\" is a web link that is inaccessible from this computer. ", QUrl::fromPercentEncoding(a.uri().toLatin1())));
             return Attachment();
