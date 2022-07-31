@@ -13,6 +13,7 @@
 #include "utils.h"
 
 #include <Akonadi/Item>
+#include <Akonadi/TagCache>
 
 #include "calendarsupport_debug.h"
 #include <KConfig>
@@ -268,18 +269,13 @@ void CalPrintPluginBase::setColorsByIncidenceCategory(QPainter &p, const KCalend
 
 QColor CalPrintPluginBase::categoryColor(const QStringList &categories) const
 {
-    if (categories.isEmpty()) {
-        return KCalPrefs::instance()->unsetCategoryColor();
-    }
     // FIXME: Correctly treat events with multiple categories
-    const QString cat = categories.at(0);
     QColor bgColor;
-    if (cat.isEmpty()) {
-        bgColor = KCalPrefs::instance()->unsetCategoryColor();
-    } else {
-        bgColor = KCalPrefs::instance()->categoryColor(cat);
+    if (!categories.isEmpty()) {
+        bgColor = Akonadi::TagCache::instance()->tagColor(categories.at(0));
     }
-    return bgColor;
+
+    return bgColor.isValid() ? bgColor : KCalPrefs::instance()->unsetCategoryColor();
 }
 
 QColor CalPrintPluginBase::categoryBgColor(const KCalendarCore::Incidence::Ptr &incidence) const
