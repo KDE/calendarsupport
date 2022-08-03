@@ -20,11 +20,6 @@
 
 #include <QModelIndex>
 
-namespace Akonadi
-{
-class ETMCalendar;
-}
-
 namespace KCalendarCore
 {
 class CalFilter;
