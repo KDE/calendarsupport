@@ -1517,7 +1517,7 @@ void CalPrintTodos::setSettingsWidget()
 
         if (mTodoSortField != TodoFieldUnset) {
             // do not insert if already done so.
-            cfg->mSortField->addItem(i18nc("@option sort by title", "Title"));
+            cfg->mSortField->addItem(i18nc("@option sort by summary", "Summary"));
             cfg->mSortField->addItem(i18nc("@option sort by start date/time", "Start Date"));
             cfg->mSortField->addItem(i18nc("@option sort by due date/time", "Due Date"));
             cfg->mSortField->addItem(i18nc("@option sort by priority", "Priority"));
