@@ -11,7 +11,6 @@
 class PlaceItemTest : public QObject
 {
     Q_OBJECT
-public:
 private Q_SLOTS:
     void soleItemHasNoOverlaps();
     void itemDoesNotOverlapItself();
