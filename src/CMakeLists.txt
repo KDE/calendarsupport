@@ -91,7 +91,7 @@ PUBLIC
   KF5::Mime
   KF5::IdentityManagement
   KF5::AkonadiCalendar
-  Qt${QT_MAJOR_VERSION}::PrintSupport
+  Qt::PrintSupport
 PRIVATE
   KF5::PimTextEdit
   KF5::I18n
