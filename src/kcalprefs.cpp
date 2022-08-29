@@ -259,22 +259,6 @@ bool KCalPrefs::thatIsMe(const QString &_email)
     return false;
 }
 
-void KCalPrefs::setCategoryColor(const QString &cat, const QColor &color)
-{
-    Akonadi::TagCache::instance()->setTagColor(cat, color);
-}
-
-QColor KCalPrefs::categoryColor(const QString &cat) const
-{
-    QColor color = Akonadi::TagCache::instance()->tagColor(cat);
-    return color.isValid() ? color : d->mDefaultCategoryColor;
-}
-
-bool KCalPrefs::hasCategoryColor(const QString &cat) const
-{
-    return categoryColor(cat) != d->mDefaultCategoryColor;
-}
-
 void KCalPrefs::setDayBegins(const QDateTime &dateTime)
 {
     d->mDayBegins = dateTime;

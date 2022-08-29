@@ -55,10 +55,6 @@ public:
     Akonadi::Collection::Id defaultCalendarId() const;
     void setDefaultCalendarId(Akonadi::Collection::Id);
 
-    void setCategoryColor(const QString &cat, const QColor &color);
-    QColor categoryColor(const QString &cat) const;
-    bool hasCategoryColor(const QString &cat) const;
-
     void setDayBegins(const QDateTime &dateTime);
     QDateTime dayBegins() const;
 
