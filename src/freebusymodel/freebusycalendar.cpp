@@ -8,7 +8,6 @@
 #include "freebusycalendar.h"
 #include "calendarsupport_debug.h"
 
-#include <KCalendarCore/CalFormat>
 #include <KCalendarCore/FreeBusyPeriod>
 #include <KCalendarCore/MemoryCalendar>
 

@@ -9,7 +9,6 @@
 #include "calendarsupport_debug.h"
 
 #include <KIO/ApplicationLauncherJob>
-#include <KIO/JobUiDelegate>
 #include <KIO/OpenUrlJob>
 #include <KService>
 
