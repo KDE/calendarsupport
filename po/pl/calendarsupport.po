@@ -1,0 +1,3732 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Marta Rybczyńska <kde-i18n@rybczynska.net>, 2009.
+# Maciej Wikło <maciej.wiklo@wp.pl>, 2010.
+# EuGene Wolfe, 2011.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2020, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"PO-Revision-Date: 2022-08-16 20:56+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 22.04.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: archivedialog.cpp:43
+#, kde-format
+msgctxt "@title:window"
+msgid "Archive/Delete Past Events and To-dos"
+msgstr "Archiwizuj/usuń przeszłe wydarzenia i zadania"
+
+#: archivedialog.cpp:50
+#, kde-format
+msgctxt "@action:button"
+msgid "&Archive"
+msgstr "&Archiwum"
+
+#: archivedialog.cpp:62
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Archiving saves old items into the given file and then deletes them in the "
+"current calendar. If the archive file already exists they will be added. "
+"(<link url=\"#\">How to restore</link>)"
+msgstr ""
+"Archiwizacja zachowuje stare wpisy we wskazanym pliku a następnie usuwa je z "
+"bieżącego kalendarza. Jeśli plik archiwum już istnieje, wpisy zostaną do "
+"niego dodane. (<link url=\"#\">Jak przywrócić</link>)"
+
+#: archivedialog.cpp:67
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"In order to add an archive to your calendar, use the Merge Calendar "
+"function. You can view an archive by opening it like you would any other "
+"calendar. It is not saved in a special format, but as vCalendar."
+msgstr ""
+"Aby dodać archiwum do twojego kalendarza, użyj funkcji Scal Kalendarz. "
+"Możesz obejrzeć archiwum otwierając je tak jak każdy inny kalendarz. Nie "
+"jest on zapisywany w specjalnym formacie, ale w zwykłym vCalendar."
+
+#: archivedialog.cpp:82
+#, kde-format
+msgctxt "@option:radio"
+msgid "Archive now items older than:"
+msgstr "Archiwizuj teraz wpisy starsze niż:"
+
+#: archivedialog.cpp:83
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Enable one time archiving or purging of older items"
+msgstr "Włącz jednorazowe archiwizowanie lub czyszczenie startych elementów"
+
+#: archivedialog.cpp:85
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"If you check this box, events and to-dos older than the specified age will "
+"be archived or purged. The items will be archived unless the \"Delete only\" "
+"option is enabled; else the items will be purged and not saved."
+msgstr ""
+"Jeżeli zaznaczysz to pole, wydarzenia i zadania starsze niż podany wiek "
+"zostaną zarchiwizowane lub wyczyszczone. Elementy zostaną zarchiwizowane, "
+"jeżeli opcja \"Tylko usuń\" zostanie wyłączona ; w przeciwnym przypadku "
+"elementy zostaną wyczyszczone i niezapisane."
+
+#: archivedialog.cpp:93
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Set the one time archiving cut-off date"
+msgstr "Ustaw datę odcięcia jednorazowego archiwizowania"
+
+#: archivedialog.cpp:95
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"The date before which items should be archived. All older events and to-dos "
+"will be saved and deleted, the newer (and events exactly on that date) will "
+"be kept."
+msgstr ""
+"Data, przed którą wpisy mają zostać zarchiwizowane. Wszystkie starsze "
+"wydarzenia i zadania zostaną zapisane i usunięte, nowsze (oraz wydarzenia z "
+"daty granicznej) zostaną zachowane."
+
+#: archivedialog.cpp:107
+#, kde-format
+msgctxt "@option:radio"
+msgid "Automaticall&y archive items older than:"
+msgstr "Automat&ycznie archiwizuj wpisy starsze niż:"
+
+#: archivedialog.cpp:108
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Enable automatic archiving or purging of older items"
+msgstr "Włącz automatyczne archiwizowanie i czyszczenie starych elementów"
+
+#: archivedialog.cpp:110
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"If this feature is enabled, the application will regularly check if events "
+"and to-dos have to be archived; this means you will not need to use this "
+"dialog box again, except to change the settings."
+msgstr ""
+"Jeśli ta opcja jest włączona, program będzie regularnie sprawdzał, czy "
+"wydarzenia i zadania są archiwizowane. Oznacza to, że nie będzie konieczne "
+"ponowne używanie tego okna dialogowego, za wyjątkiem chęci zmiany ustawień."
+
+#: archivedialog.cpp:123
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Set the archival age in days, weeks or months"
+msgstr "Ustaw wiek archiwizacji w dniach, tygodniach lub miesiącach"
+
+#: archivedialog.cpp:125
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"The age of the events and to-dos to archive. All older items will be saved "
+"and deleted, the newer will be kept."
+msgstr ""
+"Wiek zdarzeń i zadań do archiwizacji. Wszystkie starsze wpisy będą "
+"zapisywane i usuwane, nowsze będą zachowane."
+
+#: archivedialog.cpp:130
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Set the units for the automatic archive age"
+msgstr "Ustaw jednostki dla automatycznego wieku archiwum"
+
+#: archivedialog.cpp:131
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "Select the time units (days, weeks or months) for automatic archiving."
+msgstr ""
+"Wybierz jednostki czasu (dni, tygodnie lub miesiące) dla automatycznego "
+"archiwizowania."
+
+#: archivedialog.cpp:133
+#, kde-format
+msgctxt "@item:inlistbox expires in daily units"
+msgid "Day(s)"
+msgstr "Dzień(Dni)"
+
+#: archivedialog.cpp:134
+#, kde-format
+msgctxt "@item:inlistbox expiration in weekly units"
+msgid "Week(s)"
+msgstr "Tydzień(Tygodnie)"
+
+#: archivedialog.cpp:135
+#, kde-format
+msgctxt "@item:inlistbox expiration in monthly units"
+msgid "Month(s)"
+msgstr "Miesiąc(e)"
+
+#: archivedialog.cpp:140
+#, kde-format
+msgctxt "@label"
+msgid "Archive &file:"
+msgstr "&Plik archiwum:"
+
+#: archivedialog.cpp:144
+#, kde-format
+msgctxt "@label filter for KUrlRequester"
+msgid "*.ics|iCalendar Files"
+msgstr "*.ics|Pliki iCalendar"
+
+#: archivedialog.cpp:145
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Set the location of the archive"
+msgstr "Ustaw położenie archiwum"
+
+#: archivedialog.cpp:147
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"The path of the archive file. The events and to-dos will be appended to the "
+"specified file, so any events that are already in the file will not be "
+"modified or deleted. You can later load or merge the file like any other "
+"calendar. It is not saved in a special format, it uses the iCalendar format."
+msgstr ""
+"Ścieżka do archiwum. wydarzenia i zadania będą dodawana do pliku archiwum, "
+"więc jakiekolwiek wydarzenia już dodane do pliku nie będą modyfikowane czy "
+"usunięte. Możesz później wczytywać i łączyć plik jak każdy inny kalendarz. "
+"Plik ten nie jest zapisywany w żadnym specjalnym formacie, używa on formatu "
+"iCalendar."
+
+#: archivedialog.cpp:156
+#, kde-format
+msgctxt "@title:group"
+msgid "Type of Items to Archive"
+msgstr "Rodzaj wpisów do archiwizacji"
+
+#: archivedialog.cpp:158
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Here you can select which items should be archived. Events are archived if "
+"they ended before the date given above; to-dos are archived if they were "
+"finished before the date."
+msgstr ""
+"Tutaj możesz wybrać, które wpisy mają zostać zarchiwizowane. wydarzenia są "
+"archiwizowane jeśli kończą się przed datą podaną powyżej; zadania są "
+"archiwizowane jeśli zostały ukończone przed tą datą."
+
+#: archivedialog.cpp:166
+#, kde-format
+msgctxt "@option:check"
+msgid "Archive &Events"
+msgstr "Archiwizuj wydarz&enia"
+
+#: archivedialog.cpp:167
+#, kde-format
+msgctxt "@option:check"
+msgid "Archive or purge events"
+msgstr "Archiwizuj lub wyczyść wydarzenia"
+
+#: archivedialog.cpp:168
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Select this option to archive events if they ended before the date given "
+"above."
+msgstr ""
+"Zaznacz tę opcję, aby zarchiwizować wydarzenia, jeśli zakończyły się przed "
+"podaną powyżej datą."
+
+#: archivedialog.cpp:171
+#, kde-format
+msgctxt "@option:check"
+msgid "Archive Completed &To-dos"
+msgstr "Archiwizuj ukończone &zadania"
+
+#: archivedialog.cpp:172
+#, kde-format
+msgctxt "@option:check"
+msgid "Archive or purge completed to-dos"
+msgstr "Archiwizuj lub wyczyść ukończone zadania"
+
+#: archivedialog.cpp:174
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Select this option to archive to-dos if they were completed before the date "
+"given above."
+msgstr ""
+"Wybierz tą opcję, aby zarchiwizować zadania, jeśli zakończyły się przed "
+"podaną powyżej datą."
+
+#: archivedialog.cpp:178
+#, kde-format
+msgctxt "@option:check"
+msgid "&Delete only, do not save"
+msgstr "Tylko &usuń, nie zapisuj"
+
+#: archivedialog.cpp:179
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Purge the old items without saving them"
+msgstr "Wyczyść stare elementy bez ich zapisywania"
+
+#: archivedialog.cpp:181
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Select this option to delete old events and to-dos without saving them. It "
+"is not possible to recover the events later."
+msgstr ""
+"Wybierz tę opcję aby usunąć stare wydarzenia i zadania bez ich zapisywania. "
+"Nie ma możliwości późniejszego ich przywrócenia."
+
+#: archivedialog.cpp:242
+#, kde-format
+msgctxt "@info"
+msgid "The archive file name is not valid."
+msgstr "Nazwa pliku archiwum jest niewłaściwa."
+
+#: attachmenthandler.cpp:94
+#, kde-format
+msgid "No attachment named \"%1\" found in the incidence."
+msgstr "Nie odnaleziono załącznika o nazwie \"%1\" w wydarzeniu."
+
+#: attachmenthandler.cpp:105
+#, kde-format
+msgid ""
+"The attachment \"%1\" is a web link that is inaccessible from this computer. "
+msgstr "Załącznik \"%1\" jest linkiem sieciowym niedostępnym z tego komputera."
+
+#: attachmenthandler.cpp:121
+#, kde-format
+msgid ""
+"The calendar invitation stored in this email message is broken in some way. "
+"Unable to continue."
+msgstr ""
+"Zaproszenie dotyczące kalendarza przechowywane w tej wiadomości e-mail jest "
+"w jakiś sposób uszkodzone. Nie można kontynuować."
+
+#: attachmenthandler.cpp:178 attachmenthandler.cpp:232
+#, kde-format
+msgid "Unable to create a temporary file for the attachment."
+msgstr "Nie można utworzyć pliku tymczasowego dla załącznika."
+
+#: attachmenthandler.cpp:211
+#, kde-format
+msgid "Save Attachment"
+msgstr "Zapisz załącznik"
+
+#: cellitem.cpp:38
+#, kde-kuit-format
+msgid "<placeholder>undefined</placeholder>"
+msgstr "<placeholder>nieokreślona</placeholder>"
+
+#: eventarchiver.cpp:126
+#, kde-format
+msgid "There are no items before %1"
+msgstr "Brak elementów przed %1"
+
+#: eventarchiver.cpp:154
+#, kde-format
+msgid ""
+"Delete all items before %1 without saving?\n"
+"The following items will be deleted:"
+msgstr ""
+"Czy usunąć wszystkie elementy przed %1 bez zapisywania?\n"
+"Następujące elementy zostaną usunięte:"
+
+#: eventarchiver.cpp:158
+#, kde-format
+msgid "Delete Old Items"
+msgstr "Usuń stare elementy"
+
+#: eventarchiver.cpp:268
+#, kde-format
+msgctxt "save failure cause unknown"
+msgid "Reason unknown"
+msgstr "Powód nieznany"
+
+#: eventarchiver.cpp:270
+#, kde-format
+msgid "Cannot write archive file %1. %2"
+msgstr "Nie można zapisać pliku archiwum %1. %2"
+
+#: eventarchiver.cpp:281
+#, kde-format
+msgid "Cannot write archive. %1"
+msgstr "Nie można zapisać archiwum. %1"
+
+#: eventarchiver.cpp:290
+#, kde-format
+msgid "Archiving events"
+msgstr "Archiwizowanie wydarzeń"
+
+#: freebusymodel/freebusycalendar.cpp:109
+#, kde-format
+msgid "Free"
+msgstr "Wolny"
+
+#: freebusymodel/freebusycalendar.cpp:112
+#, kde-format
+msgid "Busy"
+msgstr "Zajęty"
+
+#: freebusymodel/freebusycalendar.cpp:115
+#, kde-format
+msgid "Unavailable"
+msgstr "Niedostępny"
+
+#: freebusymodel/freebusycalendar.cpp:118
+#, kde-format
+msgid "Tentative"
+msgstr "Niepewny"
+
+#: freebusymodel/freebusycalendar.cpp:121
+#, kde-format
+msgid "Unknown"
+msgstr "Nieznany"
+
+#: freebusymodel/freebusyitemmodel.cpp:211
+#, kde-format
+msgid "Attendee"
+msgstr "Uczestnik"
+
+#: freebusymodel/freeperiodmodel.cpp:124
+#, kde-format
+msgctxt "@label Day of the week name, example: Monday,"
+msgid "%1,"
+msgstr "%1,"
+
+#: freebusymodel/freeperiodmodel.cpp:141
+#, kde-format
+msgctxt ""
+"@label A time period duration. It is preceded/followed (based on the "
+"orientation) by the name of the week, see the message above. example: 12 "
+"June, 8:00am to 9:30am"
+msgid "%1 %2, %3 to %4"
+msgstr "%1 %2, %3 do %4"
+
+#: freebusymodel/freeperiodmodel.cpp:162
+#, kde-format
+msgctxt ""
+"@label A time period duration. KLocale is used to format the components. "
+"example: Monday, 12 June, 8:00am to 9:30am"
+msgid "%1, %2 %3, %4 to %5"
+msgstr "%1, %2 %3, %4 do %5"
+
+#: freebusymodel/freeperiodmodel.cpp:176
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Free Period"
+msgstr "Okres trwania stanu wolny"
+
+#: freebusymodel/freeperiodmodel.cpp:178
+#, kde-format
+msgctxt "@info:tooltip period start time"
+msgid "Start:"
+msgstr "Początek:"
+
+#: freebusymodel/freeperiodmodel.cpp:181
+#, kde-format
+msgctxt "@info:tooltip period end time"
+msgid "End:"
+msgstr "Koniec:"
+
+#: freebusymodel/freeperiodmodel.cpp:184
+#, kde-format
+msgctxt "@info:tooltip period duration"
+msgid "Duration:"
+msgstr "Czas trwania:"
+
+#. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
+#: kcalprefs.kcfg:15
+#, kde-format
+msgid "Use email settings from System Settings"
+msgstr "Pobierz ustawienia poczty z ustawień systemowych"
+
+#. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
+#: kcalprefs.kcfg:16
+#, kde-format
+msgid ""
+"Check this box to use the KDE-wide e-mail settings, which are defined using "
+"the System Settings \"About Me\" Module. Uncheck this box to be able to "
+"specify your full name and e-mail."
+msgstr ""
+"Zaznacz to pole, aby użyć ustawień adresu poczty elektronicznej "
+"wykorzystywanych w KDE, które zostały podana przy użyciu modułu \"Informacje "
+"osobiste\" ustawień systemowych. Odznacz to pole, aby móc podać swoje imię, "
+"nazwisko i e-mail."
+
+#. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
+#: kcalprefs.kcfg:24
+#, kde-format
+msgid "Default appointment time"
+msgstr "Domyślny czas spotkania"
+
+#. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
+#: kcalprefs.kcfg:25
+#, kde-format
+msgid ""
+"Enter the default time for events here. The default is used if you do not "
+"supply a start time."
+msgstr ""
+"Podaj tutaj domyślny czas dla zdarzeń. Będzie on wykorzystywany jeśli nie "
+"określisz czasu rozpoczęcia danego wydarzenia."
+
+#. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
+#: kcalprefs.kcfg:30
+#, kde-format
+msgid "Default duration of new appointment (HH:MM)"
+msgstr "Domyślny okres trwania nowego spotkania (GG:MM) "
+
+#. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
+#: kcalprefs.kcfg:31
+#, kde-format
+msgid ""
+"Enter default duration for events here. The default is used if you do not "
+"supply an end time."
+msgstr ""
+"Podaj tutaj domyślny czas trwania zdarzeń.  Będzie on wykorzystywany jeśli "
+"nie określisz czasu zakończenia."
+
+#. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:36
+#, kde-format
+msgid "Enable a default sound file for audio reminders"
+msgstr "Włącz domyślny plik dźwiękowy dla przypomnień dźwiękowych."
+
+#. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:37
+#, kde-format
+msgid ""
+"Check this box if you want to enable the specified file to be used as the "
+"default sound file for new reminders. You can always specify another file in "
+"the Reminder configuration accessible from the Event or To-do editors."
+msgstr ""
+"Zaznacz to pole, jeśli chcesz wskazać plik dźwiękowy, który ma być używany "
+"jako domyślny dla nowych przypomnień. Zawsze możesz wskazać kolejny plik w "
+"przypomnieniu zaawansowanym dostępnym z edytorów zdarzeń lub zadań-do-"
+"zrobienia."
+
+#. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
+#: kcalprefs.kcfg:42
+#, kde-format
+msgid "Default audio file"
+msgstr "Domyślny plik dźwiękowy"
+
+#. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
+#: kcalprefs.kcfg:43
+#, kde-format
+msgid ""
+"Set a file to be used as the default sound file for new reminders. You can "
+"always specify another file in the Reminder configuration accessible from "
+"the Event or To-do editors."
+msgstr ""
+"Ustaw jaki plik dźwiękowy będzie używany jako domyślny dla nowych "
+"przypomnień. Zawsze możesz określić kolejny plik w przypomnieniu "
+"zaawansowanym dostępnym z edytorów zdarzeń lub zadań."
+
+#. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:47
+#, kde-format
+msgid "Enable reminders for new Events"
+msgstr "Włącz przypomnienia dla nowych zdarzeń"
+
+#. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:48
+#, kde-format
+msgid ""
+"Check this box if you want to enable reminders for all newly created Events. "
+"You can always turn-off the reminders in the Event editor dialog."
+msgstr ""
+"Oznacz to pole, jeśli chcesz włączyć przypominanie dla wszystkich nowo "
+"stworzonych zdarzeń. Możesz w każdej chwili wyłączyć przypominanie w oknie "
+"edycji wydarzenia."
+
+#. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:49
+#, kde-format
+msgid "By default, enable reminders for new events"
+msgstr "Domyślnie włącz przypominanie dla nowych zdarzeń"
+
+#. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:54
+#, kde-format
+msgid "Enable reminders for new To-dos"
+msgstr "Włącz przypominanie dla nowych zadań"
+
+#. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:55
+#, kde-format
+msgid ""
+"Check this box if you want to enable reminders for all newly created To-dos. "
+"You can always turn-off the reminders in the To-do editor dialog."
+msgstr ""
+"Oznacz to pole jeśli chcesz włączyć przypominanie dla nowo stworzonych "
+"zadań. Możesz w każdej chwili wyłączyć przypominanie w oknie edycji zadania."
+
+#. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:56
+#, kde-format
+msgid "By default, enable reminders for new to-dos"
+msgstr "Domyślnie włącz przypominanie dla nowych zadań"
+
+#. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
+#: kcalprefs.kcfg:62
+#, kde-format
+msgid "Default reminder time"
+msgstr "Domyślny czas przypomnienia"
+
+#. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
+#: kcalprefs.kcfg:63
+#, kde-format
+msgid ""
+"Enter the default reminder time for all newly created items. The time unit "
+"is specified in the adjacent combobox."
+msgstr ""
+"Wpisz domyślny czas przypomnienia dla wszystkich nowo stworzonych elementów. "
+"Jednostka czasu jest określana w sąsiedniej liście rozwijanej."
+
+#. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
+#: kcalprefs.kcfg:64
+#, kde-format
+msgid "Default time for reminders"
+msgstr "Domyślny czas dla przypomnień"
+
+#. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
+#: kcalprefs.kcfg:69
+#, kde-format
+msgid ""
+"Enter the default reminder time units for all newly created items. The time "
+"is specified in the adjacent spinbox."
+msgstr ""
+"Wskaż domyślną jednostkę czasu przypomnienia dla wszystkich nowo stworzonych "
+"elementów. Czas jest określony w sąsiednim przewijanym polu."
+
+#. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
+#: kcalprefs.kcfg:70
+#, kde-format
+msgid "Default time unit for reminders"
+msgstr "Domyślna jednostka czasu dla przypomnień"
+
+#. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
+#: kcalprefs.kcfg:78
+#, kde-format
+msgid "Day begins at"
+msgstr "Dzień zaczyna się o"
+
+#. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
+#: kcalprefs.kcfg:79
+#, kde-format
+msgid ""
+"Enter the start time for events here. This time should be the earliest time "
+"that you use for events."
+msgstr ""
+"Tutaj podaj czas początkowy dla wydarzeń. Czas ten powinien być "
+"najwcześniejszym, którego będziesz używał do wydarzeń."
+
+#. i18n: ectx: label, entry, group (Time &amp; Date)
+#: kcalprefs.kcfg:84
+#, kde-format
+msgid "Exclude holidays"
+msgstr "Wyklucz święta"
+
+#. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
+#: kcalprefs.kcfg:85
+#, kde-format
+msgid ""
+"Check this box to prevent KOrganizer from marking the working hours on "
+"holidays."
+msgstr ""
+"Zaznacz to pole, aby KOrgranizer unikał oznaczania godzin roboczych w święta."
+
+#. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
+#: kcalprefs.kcfg:90
+#, kde-format
+msgid "Use holiday regions:"
+msgstr "Użyj regionu świąt:"
+
+#. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
+#: kcalprefs.kcfg:91
+#, kde-format
+msgid ""
+"Select which regions you want to use the holidays here. Defined holidays are "
+"shown as non-working days in the date navigator, the agenda view, etc."
+msgstr ""
+"Wybierz region, z którego mają być pokazywane święta. Święta te są "
+"pokazywane jako dni wolne od pracy przy wyborze dat, widoku agendy, itd."
+
+#. i18n: ectx: label, entry, group (Group Scheduling)
+#: kcalprefs.kcfg:98
+#, kde-format
+msgid "Use Groupware communication"
+msgstr "Użyj komunikacji pracy grupowej"
+
+#. i18n: ectx: whatsthis, entry, group (Group Scheduling)
+#: kcalprefs.kcfg:99
+#, kde-format
+msgid ""
+"Check this box to enable automatic generation of mails when creating, "
+"updating or deleting events (or to-dos) involving other attendees. You "
+"should check this box if you want to use the groupware functionality (e.g. "
+"Configuring Kontact as a KDE Kolab client)."
+msgstr ""
+"Zaznacz to pole, aby włączyć samoczynne generowanie e-maili podczas "
+"tworzenia, edycji lub usuwania zdarzeń (lub zadań) z udziałem innych "
+"uczestników. Pole to powinno być oznaczone w przypadku chęci korzystania z "
+"funkcjonalności pracy grupowej (np.: ustawień kontaktu jako klienta KDE "
+"Kolab)."
+
+#. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
+#: kcalprefs.kcfg:104
+#, kde-format
+msgid "Default policy for invitations to other users:"
+msgstr "Domyślne zasady postępowania z zaproszeniami do innych użytkowników:"
+
+#. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
+#: kcalprefs.kcfg:107
+#, kde-format
+msgid "Send mails without asking."
+msgstr "Wysyłaj wiadomości bez pytania."
+
+#. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
+#: kcalprefs.kcfg:110
+#, kde-format
+msgid "Ask for every individual attendee what to do."
+msgstr "Przy każdym uczestniku z osobna pytaj co robić."
+
+#. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
+#: kcalprefs.kcfg:113
+#, kde-format
+msgid ""
+"Do not send invitation emails at all (this can break group scheduling for "
+"iTip compliant clients)."
+msgstr ""
+"W ogóle nie wysyłaj wiadomości zapraszających (może to popsuć planowanie "
+"grupowe dla klientów zgodnych z iTip)."
+
+#. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
+#: kcalprefs.kcfg:126
+#, kde-format
+msgid "Show timezone selectors in the event and todo editor dialog."
+msgstr "Pokazuje wybór strefy czasowej w oknie edycji wydarzenia i zadania."
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:134
+#, kde-format
+msgid "Regularly archive events"
+msgstr "Okresowo archiwizuj wydarzenia"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:139
+#, kde-format
+msgid ""
+"If auto-archiving is enabled, events older than this amount will be "
+"archived. The unit of this value is specified in another field."
+msgstr ""
+"Jeśli włączona jest samoczynna archiwizacja, wydarzenia starsze niż ta "
+"wartość będą archiwizowane. Jednostka tej wartości jest określona w kolejnym "
+"polu."
+
+#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
+#: kcalprefs.kcfg:144
+#, kde-format
+msgid "The unit in which the expiry time is expressed."
+msgstr "Jednostka, w której ma zostać wyrażony czas wygaśnięcia. "
+
+#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
+#: kcalprefs.kcfg:147
+#, kde-format
+msgid "In days"
+msgstr "W dniach"
+
+#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
+#: kcalprefs.kcfg:150
+#, kde-format
+msgid "In weeks"
+msgstr "W tygodniach"
+
+#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
+#: kcalprefs.kcfg:153
+#, kde-format
+msgid "In months"
+msgstr "W miesiącach"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:160
+#, kde-format
+msgid "URL of the file where old events should be archived"
+msgstr ""
+"Adres URL pliku, w którym stare wydarzenia powinny zostać zarchiwizowane"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:164
+#, kde-format
+msgid "Archive events"
+msgstr "Archiwizuj wydarzenia"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:169
+#, kde-format
+msgid "Archive to-dos"
+msgstr "Archiwizuj zadania"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:174
+#, kde-format
+msgid "What to do when archiving"
+msgstr "Co zrobić podczas archiwizacji"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:177
+#, kde-format
+msgid "Delete old events"
+msgstr "Usuń stare wydarzenia"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:180
+#, kde-format
+msgid "Archive old events to a separate file"
+msgstr "Archiwizuj stare wydarzenia w osobnym pliku"
+
+#. i18n: ectx: label, entry (UserName), group (Internal Settings)
+#: kcalprefs.kcfg:194
+#, kde-format
+msgid "Full &name"
+msgstr "Imię i &nazwisko"
+
+#. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
+#: kcalprefs.kcfg:195
+#, kde-format
+msgid ""
+"Enter your full name here. This name will be displayed as \"Organizer\" in "
+"to-dos and events you create."
+msgstr ""
+"Wpisz tu swoje imię i nazwisko. Będzie się ono wyświetlać jako \"Organizator"
+"\" w zadaniach i wydarzeniach, które stworzysz."
+
+#: kcalprefs.kcfg:196
+#, kde-format
+msgid "Anonymous"
+msgstr "Anonimowy"
+
+#. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
+#: kcalprefs.kcfg:200
+#, kde-format
+msgid "E&mail address"
+msgstr "Adres e-&mail"
+
+#. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
+#: kcalprefs.kcfg:201
+#, kde-format
+msgid ""
+"Enter here your e-mail address. This e-mail address will be used to identify "
+"the owner of the calendar, and displayed in events and to-dos you create."
+msgstr ""
+"Wpisz tu swój adres e-mail. Ten adres będzie używany do identyfikacji "
+"właściciela kalendarza i wyświetlany będzie w wydarzeniach i zadaniach, "
+"które stworzysz."
+
+#: kcalprefs.kcfg:202
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "nikt@nigdzie"
+
+#. i18n: ectx: label, entry, group (Colors)
+#: kcalprefs.kcfg:220
+#, kde-format
+msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
+msgstr "Kolor \"brak znacznika\" (dla układów graficznych \"tylko znacznik\")"
+
+#. i18n: ectx: whatsthis, entry, group (Colors)
+#: kcalprefs.kcfg:221
+#, kde-format
+msgid ""
+"Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
+"item does not have any tags.  This color is used when drawing items in the "
+"agenda or month views using the \"Only tag\" scheme."
+msgstr ""
+"Wybierz kolor, który będzie używany w przypadku sytuacji \"bez znacznika\" "
+"lub \"znacznik nieustawiony\", kiedy element nie przynależy do żadnego "
+"znacznika. Ten kolor jest używany w przypadku rysowania elementów w agendzie "
+"lub w widoku miesięcznym w czasie używania schematu \"tylko znacznik\"."
+
+#. i18n: ectx: tooltip, entry, group (Colors)
+#: kcalprefs.kcfg:222
+#, kde-format
+msgid "Use this color when drawing items without any tags"
+msgstr "Użyj tego koloru w przypadku rysowania elementów bez znaczników"
+
+#: noteeditdialog.cpp:34
+#, kde-format
+msgctxt "@title:window"
+msgid "Create Note"
+msgstr "Utwórz notatkę"
+
+#: noteeditdialog.cpp:43
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: noteeditdialog.cpp:49
+#, kde-format
+msgctxt "@action:button"
+msgid "Save"
+msgstr "Zapisz"
+
+#: noteeditdialog.cpp:70
+#, kde-format
+msgctxt "@info"
+msgid "Calendar where the new note will be stored."
+msgstr "Kalendarz do zapisania nowej notatki."
+
+#: noteeditdialog.cpp:72
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Calendar where the new note will be stored."
+msgstr "Kalendarz do zapisania nowej notatki."
+
+#: noteeditdialog.cpp:85
+#, kde-format
+msgctxt "@label specify the title for this note"
+msgid "Title:"
+msgstr "Tytuł:"
+
+#: noteeditdialog.cpp:90
+#, kde-format
+msgctxt "@label specify the text for this note"
+msgid "Text:"
+msgstr "Tekst:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: printing/calprintdayconfig_base.ui:17
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Print day options:</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Opcje druku dnia:</span></p></body></html>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
+#: printing/calprintdayconfig_base.ui:24
+#: printing/calprintjournalconfig_base.ui:24
+#: printing/calprintmonthconfig_base.ui:24
+#: printing/calprintweekconfig_base.ui:24
+#, kde-format
+msgid "Date && Time Range"
+msgstr "Przedział dat i czasu"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, mFromDateLabel)
+#. i18n: ectx: property (toolTip), widget (KDateComboBox, mFromDate)
+#: printing/calprintdayconfig_base.ui:30 printing/calprintdayconfig_base.ui:49
+#: printing/calprintjournalconfig_base.ui:71
+#: printing/calprintjournalconfig_base.ui:90
+#: printing/calprinttodoconfig_base.ui:105
+#: printing/calprinttodoconfig_base.ui:127
+#: printing/calprintweekconfig_base.ui:30
+#: printing/calprintweekconfig_base.ui:49
+#, kde-format
+msgid "Starting date for the print"
+msgstr "Data początkowa wydruku"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
+#. i18n: ectx: property (whatsThis), widget (KDateComboBox, mFromDate)
+#: printing/calprintdayconfig_base.ui:33 printing/calprintdayconfig_base.ui:52
+#: printing/calprintjournalconfig_base.ui:74
+#: printing/calprintjournalconfig_base.ui:93
+#: printing/calprinttodoconfig_base.ui:108
+#: printing/calprinttodoconfig_base.ui:130
+#: printing/calprintweekconfig_base.ui:33
+#: printing/calprintweekconfig_base.ui:52
+#, kde-format
+msgid ""
+"If you want to print more days at once, you can define a range of dates with "
+"this option and the <i>End date</i> option. This option is used to define "
+"the start date."
+msgstr ""
+"Jeśli chcesz wydrukować naraz więcej dni, możesz określić zakres dat za "
+"pomocą tej opcji i opcji <i>Data zakończenia</i>. Ta opcja jest używana do "
+"określenia daty rozpoczęcia."
+
+#. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
+#: printing/calprintdayconfig_base.ui:36
+#: printing/calprintjournalconfig_base.ui:77
+#: printing/calprinttodoconfig_base.ui:111
+#: printing/calprintweekconfig_base.ui:36
+#, kde-format
+msgid "&Start date:"
+msgstr "Data &rozpoczęcia:"
+
+#. i18n: ectx: property (text), item, widget (KDateComboBox, mFromDate)
+#. i18n: ectx: property (text), item, widget (KDateComboBox, mToDate)
+#: printing/calprintdayconfig_base.ui:56 printing/calprintdayconfig_base.ui:136
+#: printing/calprinttodoconfig_base.ui:134
+#: printing/calprinttodoconfig_base.ui:171
+#: printing/calprintweekconfig_base.ui:56
+#: printing/calprintweekconfig_base.ui:136
+#, kde-format
+msgid "2009-01-19"
+msgstr "2009-01-19"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, mFromTimeLabel)
+#. i18n: ectx: property (toolTip), widget (QTimeEdit, mFromTime)
+#: printing/calprintdayconfig_base.ui:64 printing/calprintdayconfig_base.ui:80
+#: printing/calprintweekconfig_base.ui:64
+#: printing/calprintweekconfig_base.ui:80
+#, kde-format
+msgid "Starting time for the print"
+msgstr "Czas początkowy wydruku"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
+#. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
+#: printing/calprintdayconfig_base.ui:67 printing/calprintdayconfig_base.ui:83
+#: printing/calprintweekconfig_base.ui:67
+#: printing/calprintweekconfig_base.ui:83
+#, kde-format
+msgid ""
+"It is possible to print only those events which are inside a given time "
+"range. With this time selection box you can define the start of this time "
+"range. The end time should be defined with the <i>End time</i> option. Note "
+"you can automatically modify these settings if you check <i>Extend time "
+"range to include all events</i>."
+msgstr ""
+"Możliwe jest wydrukowanie tylko zdarzeń z określonego zakresu czasu. Za "
+"pomocą tego pola wyboru możesz określić czas rozpoczęcia tego zakresu. Czas "
+"zakończenia można ustawić za pomocą opcji <i>Czas zakończenia</i>. Należy "
+"zwrócić uwagę, że możesz automatycznie zmodyfikować te ustawienia jeśli "
+"zaznaczysz opcję <i>Rozszerz przedział czasowy, by obejmował wszystkie "
+"zdarzenia</i>."
+
+#. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
+#: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
+#, kde-format
+msgid "Start &time:"
+msgstr "&Czas rozpoczęcia:"
+
+#. i18n: ectx: property (displayFormat), widget (QTimeEdit, mFromTime)
+#. i18n: ectx: property (displayFormat), widget (QTimeEdit, mToTime)
+#: printing/calprintdayconfig_base.ui:86 printing/calprintdayconfig_base.ui:166
+#: printing/calprintweekconfig_base.ui:86
+#: printing/calprintweekconfig_base.ui:166
+#, kde-format
+msgid "hh:mm"
+msgstr "hh:mm"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, mToDateLabel)
+#. i18n: ectx: property (toolTip), widget (KDateComboBox, mToDate)
+#: printing/calprintdayconfig_base.ui:110
+#: printing/calprintdayconfig_base.ui:129
+#: printing/calprintjournalconfig_base.ui:100
+#: printing/calprintjournalconfig_base.ui:119
+#: printing/calprinttodoconfig_base.ui:142
+#: printing/calprinttodoconfig_base.ui:164
+#: printing/calprintweekconfig_base.ui:110
+#: printing/calprintweekconfig_base.ui:129
+#, kde-format
+msgid "Ending date for the print"
+msgstr "Data końcowa wydruku"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
+#. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
+#: printing/calprintdayconfig_base.ui:113
+#: printing/calprintdayconfig_base.ui:132
+#: printing/calprintjournalconfig_base.ui:103
+#: printing/calprintjournalconfig_base.ui:122
+#: printing/calprinttodoconfig_base.ui:145
+#: printing/calprinttodoconfig_base.ui:167
+#: printing/calprintweekconfig_base.ui:113
+#: printing/calprintweekconfig_base.ui:132
+#, kde-format
+msgid ""
+"If you want to print more days at once, you can define a range of dates with "
+"this option and the <i>Start date</i> option. This option is used to define "
+"the end date."
+msgstr ""
+"Jeśli chcesz wydrukować naraz więcej dni, możesz określić zakres dat za "
+"pomocą tej opcji i opcji <i>Data rozpoczęcia</i>. Ta opcja jest używana do "
+"określenia daty zakończenia."
+
+#. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
+#: printing/calprintdayconfig_base.ui:116
+#: printing/calprintjournalconfig_base.ui:106
+#: printing/calprinttodoconfig_base.ui:148
+#: printing/calprintweekconfig_base.ui:116
+#, kde-format
+msgid "&End date:"
+msgstr "Data zakończ&enia:"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, mToTimeLabel)
+#. i18n: ectx: property (toolTip), widget (QTimeEdit, mToTime)
+#: printing/calprintdayconfig_base.ui:144
+#: printing/calprintdayconfig_base.ui:160
+#: printing/calprintweekconfig_base.ui:144
+#: printing/calprintweekconfig_base.ui:160
+#, kde-format
+msgid "Ending time for the print"
+msgstr "Czas końcowy wydruku"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
+#. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
+#: printing/calprintdayconfig_base.ui:147
+#: printing/calprintdayconfig_base.ui:163
+#: printing/calprintweekconfig_base.ui:147
+#: printing/calprintweekconfig_base.ui:163
+#, kde-format
+msgid ""
+"It is possible to print only those events which are inside a given time "
+"range. With this time selection box you can define the end of this time "
+"range. The start time should be defined with the <i>Start time</i> option. "
+"Note you can automatically modify these settings if you check <i>Extend time "
+"range to include all events</i>."
+msgstr ""
+"Możliwe jest wydrukowanie tylko zdarzeń z określonego zakresu czasu. Za "
+"pomocą tego pola wyboru możesz określić czas zakończenia tego zakresu. Czas "
+"rozpoczęcia można ustawić za pomocą opcji <i>Czas rozpoczęcia</i>. Należy "
+"zwrócić uwagę, że możesz automatycznie zmodyfikować te ustawienia jeśli "
+"zaznaczysz opcję <i>Rozszerz przedział czasowy, by obejmował wszystkie "
+"zdarzenia</i>."
+
+#. i18n: ectx: property (text), widget (QLabel, mToTimeLabel)
+#: printing/calprintdayconfig_base.ui:150
+#: printing/calprintweekconfig_base.ui:150
+#, kde-format
+msgid "End ti&me:"
+msgstr "C&zas zakończenia:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeAllEvents)
+#: printing/calprintdayconfig_base.ui:190
+#: printing/calprintweekconfig_base.ui:190
+#, kde-format
+msgid ""
+"Check this option to automatically determine the required time range, so all "
+"events will be shown."
+msgstr ""
+"Zaznacz tę opcję, aby samoczynnie tak dobrać zakres czasu, aby wszystkie "
+"wydarzenia były pokazane."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
+#: printing/calprintdayconfig_base.ui:193
+#: printing/calprintweekconfig_base.ui:193
+#, kde-format
+msgid "E&xtend time range to include all events"
+msgstr "Roz&szerz przedział czasowy, by obejmował wszystkie wydarzenia"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
+#: printing/calprintdayconfig_base.ui:203
+#: printing/calprintweekconfig_base.ui:203
+#, kde-format
+msgid "Print Layout"
+msgstr "Drukuj układ"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeFilofax)
+#: printing/calprintdayconfig_base.ui:209
+#: printing/calprintweekconfig_base.ui:209
+#, kde-format
+msgid ""
+"The Filofax format prints the information for the days selected without a "
+"timeline."
+msgstr "Format Filofax drukuje informacje dla wybranych dni bez linii czasu."
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
+#: printing/calprintdayconfig_base.ui:212
+#, kde-format
+msgid "Print date &range as Filofax format, all on one page"
+msgstr ""
+"Wydrukuj przedział czasowy w fo&rmacie Filofax, wszystko na jednej stronie"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
+#: printing/calprintdayconfig_base.ui:219
+#: printing/calprintweekconfig_base.ui:219
+#, kde-format
+msgid "The timetable print view has the times to the left of the page."
+msgstr "Widok wydruku rozkładu czasu ma czasy po lewej stronie."
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
+#: printing/calprintdayconfig_base.ui:222
+#, kde-format
+msgid "Print as timeta&ble view, one page per day"
+msgstr "Drukuj jako grafik, jedna strona na dzień"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSingleTimetable)
+#: printing/calprintdayconfig_base.ui:229
+#, kde-format
+msgid ""
+"The timetable print view has the times to the left of the page. All days are "
+"printed as columns in one big timetable."
+msgstr ""
+"Format grafiku ma godziny po lewej stronie strony. Wszystkie dni są "
+"drukowane jako kolumny w jednym, dużym rozkładzie czasowym."
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSingleTimetable)
+#: printing/calprintdayconfig_base.ui:232
+#, kde-format
+msgid "Print as timetable view, all da&ys on a single page"
+msgstr "Drukuj jako grafik, wsz&ystkie dni na jednej stronie"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mSecurity)
+#: printing/calprintdayconfig_base.ui:242
+#: printing/calprintjournalconfig_base.ui:144
+#: printing/calprintmonthconfig_base.ui:118
+#: printing/calprinttodoconfig_base.ui:194
+#: printing/calprintweekconfig_base.ui:242
+#: printing/calprintyearconfig_base.ui:70
+#, kde-format
+msgid "Security Exclusions"
+msgstr "Pomiń ze względu na bezpieczeństwo"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeConfidential)
+#: printing/calprintdayconfig_base.ui:248
+#: printing/calprintjournalconfig_base.ui:150
+#: printing/calprintmonthconfig_base.ui:124
+#: printing/calprinttodoconfig_base.ui:200
+#: printing/calprintweekconfig_base.ui:248
+#: printing/calprintyearconfig_base.ui:76
+#, kde-format
+msgid ""
+"Check this option to exclude items that have their Access level set to "
+"&#8220;Confidential&#8221;"
+msgstr ""
+"Zaznacz to pole, aby wykluczyć rzeczy, które swój poziom dostępu mają "
+"ustawiony na&#8220;Poufne&#8221;"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
+#: printing/calprintdayconfig_base.ui:251
+#: printing/calprintjournalconfig_base.ui:153
+#: printing/calprintmonthconfig_base.ui:127
+#: printing/calprinttodoconfig_base.ui:203
+#: printing/calprintweekconfig_base.ui:251
+#: printing/calprintyearconfig_base.ui:79
+#, kde-format
+msgid "Exclude c&onfidential"
+msgstr "Wyklucz p&oufne"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludePrivate)
+#: printing/calprintdayconfig_base.ui:258
+#: printing/calprintjournalconfig_base.ui:160
+#: printing/calprintmonthconfig_base.ui:134
+#: printing/calprinttodoconfig_base.ui:210
+#: printing/calprintweekconfig_base.ui:258
+#: printing/calprintyearconfig_base.ui:86
+#, kde-format
+msgid ""
+"Check this option to exclude items that have their Access level set to "
+"&#8220;Private&#8221;"
+msgstr ""
+"Zaznacz to pole, aby wykluczyć rzeczy, które swój poziom dostępu mają "
+"ustawiony na&#8220;Prywatne&#8221;"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mExcludePrivate)
+#: printing/calprintdayconfig_base.ui:261
+#: printing/calprintjournalconfig_base.ui:163
+#: printing/calprintmonthconfig_base.ui:137
+#: printing/calprinttodoconfig_base.ui:213
+#: printing/calprintweekconfig_base.ui:261
+#: printing/calprintyearconfig_base.ui:89
+#, kde-format
+msgid "Exclude pri&vate"
+msgstr "Wyklucz pry&watne"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mIncludeInfoGroup)
+#. i18n: ectx: property (title), widget (QGroupBox, includeInfoBox)
+#: printing/calprintdayconfig_base.ui:271
+#: printing/calprintincidenceconfig_base.ui:24
+#: printing/calprintmonthconfig_base.ui:147
+#: printing/calprinttodoconfig_base.ui:223
+#: printing/calprintweekconfig_base.ui:271
+#, kde-format
+msgid "Include Information"
+msgstr "Dołącz informację"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeDescription)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mDescription)
+#: printing/calprintdayconfig_base.ui:277
+#: printing/calprintmonthconfig_base.ui:153
+#: printing/calprinttodoconfig_base.ui:232
+#: printing/calprintweekconfig_base.ui:277
+#, kde-format
+msgid "Print item descriptions"
+msgstr "Drukuj opisy elementów"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeDescription)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mDescription)
+#: printing/calprintdayconfig_base.ui:280
+#: printing/calprintmonthconfig_base.ui:156
+#: printing/calprinttodoconfig_base.ui:235
+#: printing/calprintweekconfig_base.ui:280
+#, kde-format
+msgid "Check this option if you want to see the item descriptions printed."
+msgstr "Zaznacz tę opcję, jeśli chcesz wydrukować opisy elementów."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
+#. i18n: ectx: property (text), widget (QCheckBox, mDescription)
+#: printing/calprintdayconfig_base.ui:283
+#: printing/calprintmonthconfig_base.ui:159
+#: printing/calprinttodoconfig_base.ui:238
+#: printing/calprintweekconfig_base.ui:283
+#, kde-format
+msgid "&Descriptions"
+msgstr "&Opisy"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
+#: printing/calprintdayconfig_base.ui:290
+#: printing/calprintmonthconfig_base.ui:166
+#: printing/calprinttodoconfig_base.ui:245
+#: printing/calprintweekconfig_base.ui:290
+#, kde-format
+msgid "Print item tags"
+msgstr "Wyświetlaj znaczniki elementów"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
+#: printing/calprintdayconfig_base.ui:293
+#: printing/calprintmonthconfig_base.ui:169
+#: printing/calprinttodoconfig_base.ui:248
+#: printing/calprintweekconfig_base.ui:293
+#, kde-format
+msgid "Check this option if you want to see the item tags printed."
+msgstr "Zaznacz to pole, aby widzieć znaczniki elementów."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mIncludeCategories)
+#. i18n: ectx: property (text), widget (QCheckBox, mCategories)
+#: printing/calprintdayconfig_base.ui:296
+#: printing/calprintmonthconfig_base.ui:172
+#: printing/calprinttodoconfig_base.ui:251
+#: printing/calprintweekconfig_base.ui:296
+#, kde-format
+msgid "Ta&gs"
+msgstr "&Znaczniki"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeTodos)
+#: printing/calprintdayconfig_base.ui:306
+#: printing/calprintmonthconfig_base.ui:182
+#: printing/calprintweekconfig_base.ui:306
+#, kde-format
+msgid "Print to-dos due within the specified date range"
+msgstr "Drukuj terminy zakończenia zadań w określonym przedziale dat"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeTodos)
+#: printing/calprintdayconfig_base.ui:309
+#: printing/calprintmonthconfig_base.ui:185
+#: printing/calprintweekconfig_base.ui:309
+#, kde-format
+msgid ""
+"You should check this option if you want to print to-dos which are due on "
+"one of the dates which are in the supplied date range."
+msgstr ""
+"Należy zaznaczyć tę opcję, jeśli chcesz wydrukować wszystkie zadania, "
+"których data zakończenia przypada w podanym zakresie dat."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mIncludeTodos)
+#: printing/calprintdayconfig_base.ui:312
+#: printing/calprintmonthconfig_base.ui:188
+#: printing/calprintweekconfig_base.ui:312
+#, kde-format
+msgid "Include to-&dos that are due on the printed day(s)"
+msgstr ""
+"Uwzględnij &zadania, których data wykonania upływa w drukowanym dniu/dniach"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeTime)
+#: printing/calprintdayconfig_base.ui:319
+#: printing/calprintweekconfig_base.ui:319
+#, kde-format
+msgid "Check this option to exclude the time in description box"
+msgstr "Zaznacz tę opcję, aby pominąć czas w polu opisu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mExcludeTime)
+#: printing/calprintdayconfig_base.ui:322
+#: printing/calprintweekconfig_base.ui:322
+#, kde-format
+msgid "Exclude t&ime from timetable detail display items"
+msgstr "Nie pokazuj &czasu w szczegółach grafiku"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
+#: printing/calprintdayconfig_base.ui:332
+#: printing/calprintincidenceconfig_base.ui:88
+#: printing/calprintjournalconfig_base.ui:173
+#: printing/calprintmonthconfig_base.ui:224
+#: printing/calprinttodoconfig_base.ui:391
+#: printing/calprintweekconfig_base.ui:332
+#, kde-format
+msgctxt "@title general print settings"
+msgid "General"
+msgstr "Ogólne"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mSingleLineLimit)
+#: printing/calprintdayconfig_base.ui:338
+#: printing/calprintmonthconfig_base.ui:243
+#: printing/calprintweekconfig_base.ui:338
+#, kde-format
+msgid "Print items on one line"
+msgstr "Drukuj elementy w jednym wierszu"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mSingleLineLimit)
+#: printing/calprintdayconfig_base.ui:341
+#: printing/calprintmonthconfig_base.ui:246
+#: printing/calprintweekconfig_base.ui:341
+#, kde-format
+msgid ""
+"Check this option to limit events to a single line, truncating as necessary "
+"to save space."
+msgstr ""
+"Zaznacz tę opcję, aby ograniczyć wydarzenia do pojedynczego wiersza, "
+"obcinając w miarę potrzeby, aby zaoszczędzić miejsca."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mSingleLineLimit)
+#: printing/calprintdayconfig_base.ui:344
+#: printing/calprintmonthconfig_base.ui:249
+#: printing/calprintweekconfig_base.ui:344
+#, kde-format
+msgid "Limit events in each day to a &single line"
+msgstr "Ogranicz wydarzenia każdego dnia do jednego wier&sza"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowNoteLines)
+#: printing/calprintdayconfig_base.ui:351
+#: printing/calprintincidenceconfig_base.ui:94
+#: printing/calprintmonthconfig_base.ui:256
+#: printing/calprintweekconfig_base.ui:351
+#, kde-format
+msgid "Check this option to draw note lines in empty areas."
+msgstr "Zaznacz to pole, aby rysować wiersz uwag w pustych obszarach."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
+#: printing/calprintdayconfig_base.ui:354
+#: printing/calprintweekconfig_base.ui:354
+#, kde-format
+msgid "Show note &lines in Filofax layout"
+msgstr "Pokaż &linie notatek w formacie Filofaksu"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mColors)
+#: printing/calprintdayconfig_base.ui:361
+#: printing/calprintincidenceconfig_base.ui:107
+#: printing/calprintmonthconfig_base.ui:266
+#: printing/calprintweekconfig_base.ui:361
+#, kde-format
+msgid "Print in color"
+msgstr "Drukuj w kolorze"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
+#: printing/calprintdayconfig_base.ui:364
+#: printing/calprintincidenceconfig_base.ui:110
+#: printing/calprintmonthconfig_base.ui:269
+#: printing/calprintweekconfig_base.ui:364
+#, kde-format
+msgid ""
+"If you want to use colors to distinguish certain tags in the printed output, "
+"check this option."
+msgstr ""
+"Jeśli chcesz używać kolorów by rozróżnić poszczególne znaczniki na wydruku, "
+"zaznacz to pole."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mColors)
+#: printing/calprintdayconfig_base.ui:367
+#: printing/calprintincidenceconfig_base.ui:113
+#: printing/calprintmonthconfig_base.ui:272
+#: printing/calprintweekconfig_base.ui:367
+#, kde-format
+msgid "&Use colors"
+msgstr "&Użyj kolorów"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mPrintFooter)
+#: printing/calprintdayconfig_base.ui:374
+#: printing/calprintincidenceconfig_base.ui:120
+#: printing/calprintjournalconfig_base.ui:179
+#: printing/calprintmonthconfig_base.ui:279
+#: printing/calprinttodoconfig_base.ui:417
+#: printing/calprintweekconfig_base.ui:374
+#: printing/calprintyearconfig_base.ui:178
+#, kde-format
+msgid "Print a datetime footer on each page"
+msgstr "Drukuj stopkę daty na każdej stronie"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mPrintFooter)
+#: printing/calprintdayconfig_base.ui:377
+#: printing/calprintincidenceconfig_base.ui:123
+#: printing/calprintjournalconfig_base.ui:182
+#: printing/calprintmonthconfig_base.ui:282
+#: printing/calprinttodoconfig_base.ui:420
+#: printing/calprintweekconfig_base.ui:377
+#: printing/calprintyearconfig_base.ui:181
+#, kde-format
+msgid ""
+"Check this box if you want to print a small footer on each page that "
+"contains the date of the print."
+msgstr ""
+"Zaznacz to pole, jeśli chcesz wydrukować małą stopkę na każdej stronie, "
+"która będzie zawierała datę druku."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mPrintFooter)
+#: printing/calprintdayconfig_base.ui:380
+#: printing/calprintincidenceconfig_base.ui:126
+#: printing/calprintjournalconfig_base.ui:185
+#: printing/calprintmonthconfig_base.ui:285
+#: printing/calprinttodoconfig_base.ui:423
+#: printing/calprintweekconfig_base.ui:380
+#: printing/calprintyearconfig_base.ui:184
+#, kde-format
+msgid "Print &Footer"
+msgstr "Drukuj &stopkę"
+
+#: printing/calprintdefaultplugins.cpp:120
+#: printing/calprintdefaultplugins.cpp:149
+#: printing/calprintdefaultplugins.cpp:168
+#, kde-format
+msgid "Start date: "
+msgstr "Data rozpoczęcia: "
+
+#: printing/calprintdefaultplugins.cpp:123
+#: printing/calprintdefaultplugins.cpp:152
+#, kde-format
+msgid "No start date"
+msgstr "Brak daty rozpoczęcia"
+
+#: printing/calprintdefaultplugins.cpp:128
+#, kde-format
+msgid "End date: "
+msgstr "Data zakończenia: "
+
+#: printing/calprintdefaultplugins.cpp:131
+#, kde-format
+msgid "Duration: "
+msgstr "Czas trwania: "
+
+#: printing/calprintdefaultplugins.cpp:134
+#, kde-format
+msgid "1 hour "
+msgid_plural "%1 hours "
+msgstr[0] "1 godzina "
+msgstr[1] "%1 godziny "
+msgstr[2] "%1 godzin "
+
+#: printing/calprintdefaultplugins.cpp:137
+#, kde-format
+msgid "1 minute "
+msgid_plural "%1 minutes "
+msgstr[0] "1 minuta "
+msgstr[1] "%1 minuty "
+msgstr[2] "%1 minut "
+
+#: printing/calprintdefaultplugins.cpp:140
+#, kde-format
+msgid "No end date"
+msgstr "Bez daty zakończenia"
+
+#: printing/calprintdefaultplugins.cpp:157
+#, kde-format
+msgid "Due date: "
+msgstr "Data zakończenia: "
+
+#: printing/calprintdefaultplugins.cpp:160
+#, kde-format
+msgid "No due date"
+msgstr "Bez daty zakończenia"
+
+#: printing/calprintdefaultplugins.cpp:285
+#, kde-format
+msgctxt "except for listed dates"
+msgid " except"
+msgstr " z wyjątkiem"
+
+#: printing/calprintdefaultplugins.cpp:292
+#, kde-format
+msgid "Repeats: "
+msgstr "Powtórz: "
+
+#: printing/calprintdefaultplugins.cpp:300
+#, kde-format
+msgid "No reminders"
+msgstr "Bez przypomnień"
+
+#: printing/calprintdefaultplugins.cpp:303
+#, kde-format
+msgid "Reminder: "
+msgid_plural "%1 reminders: "
+msgstr[0] "Przypomnienie: "
+msgstr[1] "%1 przypomnienia: "
+msgstr[2] "%1 przypomnień: "
+
+#: printing/calprintdefaultplugins.cpp:317
+#, kde-format
+msgctxt "N days/hours/minutes before/after the start/end"
+msgid "%1 before the start"
+msgstr "%1 przed rozpoczęciem"
+
+#: printing/calprintdefaultplugins.cpp:320
+#, kde-format
+msgctxt "N days/hours/minutes before/after the start/end"
+msgid "%1 after the start"
+msgstr "%1 po rozpoczęciu"
+
+#: printing/calprintdefaultplugins.cpp:325
+#, kde-format
+msgctxt "N days/hours/minutes before/after the start/end"
+msgid "%1 before the end"
+msgstr "%1 przed końcem"
+
+#: printing/calprintdefaultplugins.cpp:328
+#, kde-format
+msgctxt "N days/hours/minutes before/after the start/end"
+msgid "%1 after the end"
+msgstr "%1 po końcu"
+
+#: printing/calprintdefaultplugins.cpp:337
+#, kde-format
+msgid "1 day"
+msgid_plural "%1 days"
+msgstr[0] "1 dzień"
+msgstr[1] "%1 dni"
+msgstr[2] "%1 dni"
+
+#: printing/calprintdefaultplugins.cpp:340
+#, kde-format
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "1 godzina"
+msgstr[1] "%1 godziny"
+msgstr[2] "%1 godzin"
+
+#: printing/calprintdefaultplugins.cpp:343
+#, kde-format
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "1 minuta"
+msgstr[1] "%1 minuty"
+msgstr[2] "%1 minut"
+
+#: printing/calprintdefaultplugins.cpp:347
+#: printing/calprintdefaultplugins.cpp:621
+#, kde-format
+msgctxt "Spacer for the joined list of categories/tags"
+msgid ", "
+msgstr ", "
+
+#: printing/calprintdefaultplugins.cpp:352
+#, kde-format
+msgid "Organizer: "
+msgstr "Organizator: "
+
+#: printing/calprintdefaultplugins.cpp:365
+#, kde-format
+msgid "Location: "
+msgstr "Położenie: "
+
+#: printing/calprintdefaultplugins.cpp:427
+#, kde-format
+msgid "Description:"
+msgstr "Opis:"
+
+#: printing/calprintdefaultplugins.cpp:445
+#, kde-format
+msgid "Notes:"
+msgstr "Uwagi:"
+
+#: printing/calprintdefaultplugins.cpp:457
+#, kde-format
+msgid "No Subitems"
+msgstr "Brak podelementów"
+
+#: printing/calprintdefaultplugins.cpp:460
+#, kde-format
+msgid "1 Subitem:"
+msgid_plural "%1 Subitems:"
+msgstr[0] "%1 podelement:"
+msgstr[1] "%1 podelementy:"
+msgstr[2] "%1 podelementów:"
+
+#: printing/calprintdefaultplugins.cpp:477
+#, kde-format
+msgctxt "no status"
+msgid "none"
+msgstr "brak"
+
+#: printing/calprintdefaultplugins.cpp:479
+#, kde-format
+msgctxt "unknown status"
+msgid "unknown"
+msgstr "nieznany"
+
+#: printing/calprintdefaultplugins.cpp:486
+#, kde-format
+msgctxt "subitem start date"
+msgid "Start Date: %1\n"
+msgstr "Data rozpoczęcia: %1\n"
+
+#: printing/calprintdefaultplugins.cpp:489
+#, kde-format
+msgctxt "subitem start time"
+msgid "Start Time: %1\n"
+msgstr "Czas rozpoczęcia: %1\n"
+
+#: printing/calprintdefaultplugins.cpp:495
+#, kde-format
+msgctxt "subitem due date"
+msgid "Due Date: %1\n"
+msgstr "Data zakończenia: %1\n"
+
+#: printing/calprintdefaultplugins.cpp:501
+#, kde-format
+msgctxt "subitem due time"
+msgid "Due Time: %1\n"
+msgstr "Czas zakończenia: %1\n"
+
+#: printing/calprintdefaultplugins.cpp:505
+#, kde-format
+msgctxt "subitem counter"
+msgid "%1: "
+msgstr "%1: "
+
+#: printing/calprintdefaultplugins.cpp:512
+#, kde-format
+msgctxt "subitem Status: statusString"
+msgid "Status: %1\n"
+msgstr "Stan: %1\n"
+
+#: printing/calprintdefaultplugins.cpp:514
+#, kde-format
+msgctxt "subitem Priority: N"
+msgid "Priority: %1\n"
+msgstr "Priorytet: %1\n"
+
+#: printing/calprintdefaultplugins.cpp:515
+#, kde-format
+msgctxt "subitem Secrecy: secrecyString"
+msgid "Secrecy: %1\n"
+msgstr "Poufność: %1\n"
+
+#: printing/calprintdefaultplugins.cpp:533
+#, kde-format
+msgid "No Attachments"
+msgstr "Brak załączników"
+
+#: printing/calprintdefaultplugins.cpp:536
+#, kde-format
+msgid "1 Attachment:"
+msgid_plural "%1 Attachments:"
+msgstr[0] "1 załącznik:"
+msgstr[1] "%1 załączniki:"
+msgstr[2] "%1 załączników:"
+
+#: printing/calprintdefaultplugins.cpp:542
+#, kde-format
+msgctxt "Spacer for list of attachments"
+msgid "  "
+msgstr "  "
+
+#: printing/calprintdefaultplugins.cpp:559
+#, kde-format
+msgid "No Attendees"
+msgstr "Bez uczestników"
+
+#: printing/calprintdefaultplugins.cpp:561
+#, kde-format
+msgid "1 Attendee:"
+msgid_plural "%1 Attendees:"
+msgstr[0] "1 uczestnik:"
+msgstr[1] "%1 uczestników:"
+msgstr[2] "%1 uczestników:"
+
+#: printing/calprintdefaultplugins.cpp:573
+#, kde-format
+msgctxt ""
+"Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
+"<reinhold@kainhofer.com> (Participant): Awaiting Response'"
+msgid "%1 (%2): %3"
+msgstr "%1 (%2): %3"
+
+#: printing/calprintdefaultplugins.cpp:591
+#, kde-format
+msgid "Status: %1"
+msgstr "Stan: %1"
+
+#: printing/calprintdefaultplugins.cpp:595
+#, kde-format
+msgid "Secrecy: %1"
+msgstr "Poufność: %1"
+
+#: printing/calprintdefaultplugins.cpp:601
+#, kde-format
+msgid "Show as: Busy"
+msgstr "Pokaż jako: zajęty"
+
+#: printing/calprintdefaultplugins.cpp:603
+#, kde-format
+msgid "Show as: Free"
+msgstr "Pokaż jako: wolny"
+
+#: printing/calprintdefaultplugins.cpp:609
+#, kde-format
+msgid "This task is overdue!"
+msgstr "To zadanie jest po terminie!"
+
+#: printing/calprintdefaultplugins.cpp:615
+#, kde-format
+msgid "Settings: "
+msgstr "Ustawienia: "
+
+#: printing/calprintdefaultplugins.cpp:620
+#, kde-format
+msgid "Tags: "
+msgstr "Znaczniki: "
+
+#: printing/calprintdefaultplugins.cpp:713 printing/calprintpluginbase.cpp:916
+#: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
+#, kde-format
+msgctxt "summary, location"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: printing/calprintdefaultplugins.cpp:716 printing/calprintpluginbase.cpp:935
+#: printing/calprintpluginbase.cpp:1059
+#, kde-format
+msgctxt "summary, categories"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: printing/calprintdefaultplugins.cpp:772
+#, kde-format
+msgctxt "label for timetable all-day boxes"
+msgid "All day"
+msgstr "Cały dzień"
+
+#: printing/calprintdefaultplugins.cpp:977
+#: printing/calprintdefaultplugins.cpp:1200 printing/yearprint.cpp:140
+#, kde-format
+msgctxt "date from-to"
+msgid "%1–%2"
+msgstr "%1–%2"
+
+#: printing/calprintdefaultplugins.cpp:1222
+#, kde-format
+msgctxt "date from - to (week number)"
+msgid "%1–%2 (Week %3)"
+msgstr "%1 - %2 (tydzień %3)"
+
+#: printing/calprintdefaultplugins.cpp:1224
+#, kde-format
+msgctxt "date from - to\\n(week number)"
+msgid ""
+"%1–%2\n"
+"(Week %3)"
+msgstr ""
+"%1 - %2\n"
+"(tydzień %3)"
+
+#: printing/calprintdefaultplugins.cpp:1409
+#, kde-format
+msgctxt "monthname year"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: printing/calprintdefaultplugins.cpp:1520
+#, kde-format
+msgctxt "@option sort by summary"
+msgid "Summary"
+msgstr "Podsumowanie"
+
+#: printing/calprintdefaultplugins.cpp:1521
+#, kde-format
+msgctxt "@option sort by start date/time"
+msgid "Start Date"
+msgstr "Data rozpoczęcia"
+
+#: printing/calprintdefaultplugins.cpp:1522
+#, kde-format
+msgctxt "@option sort by due date/time"
+msgid "Due Date"
+msgstr "Data zakończenia"
+
+#: printing/calprintdefaultplugins.cpp:1523
+#, kde-format
+msgctxt "@option sort by priority"
+msgid "Priority"
+msgstr "Priorytet"
+
+#: printing/calprintdefaultplugins.cpp:1524
+#, kde-format
+msgctxt "@option sort by percent completed"
+msgid "Percent Complete"
+msgstr "Procent ukończenia"
+
+#: printing/calprintdefaultplugins.cpp:1525
+#, kde-format
+msgctxt "@option sort by tags"
+msgid "Tags"
+msgstr "Znaczniki"
+
+#: printing/calprintdefaultplugins.cpp:1531
+#, kde-format
+msgctxt "@option sort in increasing order"
+msgid "Ascending"
+msgstr "Rosnąco"
+
+#: printing/calprintdefaultplugins.cpp:1532
+#, kde-format
+msgctxt "@option sort in descreasing order"
+msgid "Descending"
+msgstr "Malejąco"
+
+#: printing/calprintdefaultplugins.cpp:1545
+#, kde-format
+msgid "To-do list"
+msgstr "Lista zadań"
+
+#: printing/calprintdefaultplugins.cpp:1597
+#: printing/calprintpluginbase.cpp:1697
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#: printing/calprintdefaultplugins.cpp:1608
+#, kde-format
+msgid "Priority"
+msgstr "Priorytet"
+
+#: printing/calprintdefaultplugins.cpp:1618
+#, kde-format
+msgctxt "@label to-do due date"
+msgid "Due"
+msgstr "W"
+
+#: printing/calprintdefaultplugins.cpp:1628
+#, kde-format
+msgctxt "@label to-do start date"
+msgid "Start"
+msgstr "Początek"
+
+#: printing/calprintdefaultplugins.cpp:1638
+#, kde-format
+msgctxt "@label to-do percentage complete"
+msgid "Complete"
+msgstr "Ukończone"
+
+#: printing/calprintdefaultplugins.cpp:1648
+#, kde-format
+msgctxt "@label to-do categories"
+msgid "Tags"
+msgstr "Znaczniki"
+
+#: printing/calprintdefaultplugins.h:36
+#, kde-format
+msgid "Print &incidence"
+msgstr "Drukuj wydarzen&ie"
+
+#: printing/calprintdefaultplugins.h:41
+#, kde-format
+msgid "Prints an incidence on one page"
+msgstr "Wydrukuj wydarzenie na jednej stronie"
+
+#: printing/calprintdefaultplugins.h:138
+#, kde-format
+msgid "Print da&y"
+msgstr "Druku&j dzień"
+
+#: printing/calprintdefaultplugins.h:143
+#, kde-format
+msgid "Prints all events of a single day on one page"
+msgstr "Wydrukuj wszystkie wydarzenia z jednego dnia na jednej stronie"
+
+#: printing/calprintdefaultplugins.h:193
+#, kde-format
+msgid "Print &week"
+msgstr "Drukuj &tydzień"
+
+#: printing/calprintdefaultplugins.h:198
+#, kde-format
+msgid "Prints all events of one week on one page"
+msgstr "Wydrukuj wszystkie wydarzenia z jednego tygodnia na jednej stronie"
+
+#: printing/calprintdefaultplugins.h:255
+#, kde-format
+msgid "Print mont&h"
+msgstr "Drukuj &miesiąc"
+
+#: printing/calprintdefaultplugins.h:260
+#, kde-format
+msgid "Prints all events of one month on one page"
+msgstr "Wydrukuj wszystkie wydarzenia z jednego miesiąca na jednej stronie"
+
+#: printing/calprintdefaultplugins.h:310
+#, kde-format
+msgid "Print to-&dos"
+msgstr "Drukuj za&dania"
+
+#: printing/calprintdefaultplugins.h:315
+#, kde-format
+msgid "Prints all to-dos in a (tree-like) list"
+msgstr "Drukuj wszystkie zadania jako listę (na kształt drzewa)"
+
+#: printing/calprinter.cpp:113
+#, kde-format
+msgctxt "@info"
+msgid "Unable to print, an invalid print style was specified."
+msgstr "Nie można drukować, podano nieprawidłowy styl wydruku."
+
+#: printing/calprinter.cpp:113
+#, kde-format
+msgctxt "@title:window"
+msgid "Printing error"
+msgstr "Błąd drukowania"
+
+#: printing/calprinter.cpp:156
+#, kde-format
+msgctxt "@title:window"
+msgid "Print"
+msgstr "Wydruk"
+
+#: printing/calprinter.cpp:175
+#, kde-format
+msgctxt "@title:group"
+msgid "Print Style"
+msgstr "Styl drukowania"
+
+#: printing/calprinter.cpp:187
+#, kde-format
+msgctxt "@label"
+msgid "Page &orientation:"
+msgstr "Kierunek str&ony:"
+
+#: printing/calprinter.cpp:192
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Set the print orientation"
+msgstr "Ustaw kierunek wydruku"
+
+#: printing/calprinter.cpp:194
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose if you want your output to be printed in \"portrait\" or \"landscape"
+"\". You can also default to the orientation best suited to the selected "
+"style or to your printer's default setting."
+msgstr ""
+"Wybierz kierunek (\"pionowy\" lub \"poziomy\") wydruku wyniku. Możesz także "
+"wybrać domyślny kierunek, najlepiej dopasowany do wybranego stylu lub "
+"domyślne ustawienia swojej drukarki."
+
+#: printing/calprinter.cpp:197
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Use Default Orientation of Selected Style"
+msgstr "Użyj domyślnego kierunku wybranego stylu"
+
+#: printing/calprinter.cpp:198
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Use Printer Default"
+msgstr "Użyj ustawień domyślnych drukarki"
+
+#: printing/calprinter.cpp:199
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Portrait"
+msgstr "Pionowy"
+
+#: printing/calprinter.cpp:200
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Landscape"
+msgstr "Poziomy"
+
+#: printing/calprinter.cpp:222
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select the type of print"
+msgstr "Wybierz rodzaj wydruku"
+
+#: printing/calprinter.cpp:224
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Select one of the following types of prints you want to make. You may want "
+"to print an individual item, or all the items for a specific time range "
+"(like a day, week or month), or you may want to print your to-do list."
+msgstr ""
+"Wybierz jeden z następujących typów wydruków. Możesz chcieć wydrukować "
+"indywidualny element, lub wszystkie elementy dla określonego przedziału "
+"czasowego (takiego jak dzień, tydzień czy miesiąc), lub możesz chcieć "
+"wydrukować swoją listę zadań."
+
+#: printing/calprinter.cpp:252
+#, kde-format
+msgctxt "@action:button"
+msgid "&Preview"
+msgstr "&Podgląd"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: printing/calprintincidenceconfig_base.ui:17
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Print incidence options:</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Opcje druku wydarzeń:</span></p></body></html>"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowDetails)
+#: printing/calprintincidenceconfig_base.ui:33
+#, kde-format
+msgid "Print incidence details"
+msgstr "Drukuj szczegóły wydarzenia"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowDetails)
+#: printing/calprintincidenceconfig_base.ui:36
+#, kde-format
+msgid ""
+"Check this box if you want to print more details for the incidence, "
+"including the visibility and secrecy properties."
+msgstr ""
+"Zaznacz to pole, jeśli chcesz wydrukować więcej szczegółów dla wydarzenia, "
+"uwzględniają widoczność i właściwości sekretów."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowDetails)
+#: printing/calprintincidenceconfig_base.ui:39
+#, kde-format
+msgid "Detai&ls (visiblility, secrecy, etc.)"
+msgstr "Szcz&egóły (widoczność, poufność, itd.)"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttendees)
+#: printing/calprintincidenceconfig_base.ui:46
+#, kde-format
+msgid "Print the attendees"
+msgstr "Drukuj uczestników"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttendees)
+#: printing/calprintincidenceconfig_base.ui:49
+#, kde-format
+msgid ""
+"Check this box if you want the attendees list included on the print-out."
+msgstr "Zaznacz to pole, jeśli chcesz dołączyć listę uczestników na wydruku."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowAttendees)
+#: printing/calprintincidenceconfig_base.ui:52
+#, kde-format
+msgid "&Attendees"
+msgstr "&Uczestnicy"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowSubitemsNotes)
+#: printing/calprintincidenceconfig_base.ui:59
+#, kde-format
+msgid "Print the notes"
+msgstr "Drukuj notatki"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowSubitemsNotes)
+#: printing/calprintincidenceconfig_base.ui:62
+#, kde-format
+msgid ""
+"Check this box if you want the incidence notes included on the print-out."
+msgstr "Zaznacz to pole, jeśli chcesz dołączyć notatki wydarzenia na wydruku."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowSubitemsNotes)
+#: printing/calprintincidenceconfig_base.ui:65
+#, kde-format
+msgid "&Notes, subitems"
+msgstr "&Notatki, podelementy"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttachments)
+#: printing/calprintincidenceconfig_base.ui:72
+#, kde-format
+msgid "Print the attachments"
+msgstr "Drukuj załączniki"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
+#: printing/calprintincidenceconfig_base.ui:75
+#, kde-format
+msgid ""
+"Check this box if you want the attachment information included on the print-"
+"out. The attachments themselves are not printed."
+msgstr ""
+"Zaznacz to pole, jeśli chcesz dołączyć informacje załączników na wydruku. "
+"Same załączniki nie będą drukowane."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowAttachments)
+#: printing/calprintincidenceconfig_base.ui:78
+#, kde-format
+msgid "Attach&ments"
+msgstr "&Załączniki"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowNoteLines)
+#: printing/calprintincidenceconfig_base.ui:97
+#, kde-format
+msgid ""
+"Check this box if you want to draw note lines in the empty area of the "
+"print. This is useful if you want to hand-write notes on this print-out."
+msgstr ""
+"Zaznacz to pole, jeśli chcesz narysować wiersze notatek na pustym obszarze "
+"wydruku. Jest to użyteczne, jeśli chcesz sporządzać ręczne notatki na tym "
+"wydruku. "
+
+#. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
+#: printing/calprintincidenceconfig_base.ui:100
+#: printing/calprintmonthconfig_base.ui:259
+#, kde-format
+msgid "Show note &lines"
+msgstr "Pokaż &linie notatek"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: printing/calprintjournalconfig_base.ui:17
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Print journal options:</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Opcje druku dziennika:</span></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mAllJournals)
+#: printing/calprintjournalconfig_base.ui:30
+#, kde-format
+msgid "&All journal entries"
+msgstr "Wszystkie wpisy &dziennika"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mRangeJournals)
+#: printing/calprintjournalconfig_base.ui:43
+#, kde-format
+msgid "Date &range:"
+msgstr "W ok&resie:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: printing/calprintmonthconfig_base.ui:17
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Print month options:</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Opcje druku miesiąca:</span></p></body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
+#. i18n: ectx: property (whatsThis), widget (QComboBox, mFromMonth)
+#: printing/calprintmonthconfig_base.ui:30
+#: printing/calprintmonthconfig_base.ui:46
+#, kde-format
+msgid ""
+"When you want to print more months at once, you can define a month range. "
+"This option defines the first month to be printed. Use the option <i>End "
+"month</i> to define the last month in this range."
+msgstr ""
+"Jeśli chcesz wydrukować naraz więcej miesięcy, możesz określić zakres "
+"miesięcy. Ta opcja określa pierwszy miesiąc, który ma zostać wydrukowany. "
+"Użyj opcji <i>Miesiąc zakończenia</i>, aby określić ostatni miesiąc w "
+"zakresie."
+
+#. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
+#: printing/calprintmonthconfig_base.ui:33
+#, kde-format
+msgid "Sta&rt month:"
+msgstr "Miesiąc &początkowy:"
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, mFromMonth)
+#: printing/calprintmonthconfig_base.ui:43
+#, kde-format
+msgid "Starting month for printing"
+msgstr "Miesiąc początkowy wydruku"
+
+#. i18n: ectx: property (toolTip), widget (QSpinBox, mFromYear)
+#: printing/calprintmonthconfig_base.ui:53
+#, kde-format
+msgid "Starting year for printing"
+msgstr "Rok początkowy wydruku"
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, mFromYear)
+#: printing/calprintmonthconfig_base.ui:56
+#, kde-format
+msgid ""
+"When you want to print more years at once, you can define a year range. This "
+"option defines the first year to be printed. Use the option <i>End year</i> "
+"to define the last year in this range."
+msgstr ""
+"Jeśli chcesz wydrukować naraz więcej lat, możesz określić zakres lat. Ta "
+"opcja określa pierwszy rok, który ma zostać wydrukowany. Użyj opcji <i>Rok "
+"zakończenia</i>, aby określić ostatni rok w zakresie."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
+#. i18n: ectx: property (whatsThis), widget (QComboBox, mToMonth)
+#: printing/calprintmonthconfig_base.ui:69
+#: printing/calprintmonthconfig_base.ui:85
+#, kde-format
+msgid ""
+"When you want to print more months at once, you can define a month range. "
+"This option defines the last month to be printed. Use the option <i>Start "
+"month</i> to define the first month in this range."
+msgstr ""
+"Jeśli chcesz wydrukować więcej niż jeden miesiąc naraz, możesz określić "
+"zakres miesięcy. Ta opcja określa ostatni miesiąc, który ma zostać "
+"wydrukowany. Użyj opcji <i>Miesiąc rozpoczęcia</i>, aby określić pierwszy "
+"miesiąc w zakresie."
+
+#. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
+#: printing/calprintmonthconfig_base.ui:72
+#, kde-format
+msgid "&End month:"
+msgstr "Mi&esiąc końcowy:"
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, mToMonth)
+#: printing/calprintmonthconfig_base.ui:82
+#, kde-format
+msgid "Ending month for the print"
+msgstr "Miesiąc końcowy wydruku"
+
+#. i18n: ectx: property (toolTip), widget (QSpinBox, mToYear)
+#: printing/calprintmonthconfig_base.ui:92
+#, kde-format
+msgid "Ending year for the print"
+msgstr "Rok końcowy wydruku"
+
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, mToYear)
+#: printing/calprintmonthconfig_base.ui:95
+#, kde-format
+msgid ""
+"When you want to print more years at once, you can define a year range. This "
+"option defines the last year to be printed. Use the option <i>Start year</i> "
+"to define the first year in this range."
+msgstr ""
+"Jeśli chcesz wydrukować naraz więcej lat, możesz określić zakres lat. Ta "
+"opcja określa ostatni rok, który ma zostać wydrukowany. Użyj opcji <i>Rok "
+"rozpoczęcia</i>, aby określić pierwszy rok w zakresie."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurDaily)
+#: printing/calprintmonthconfig_base.ui:195
+#, kde-format
+msgid "Print daily recurring items"
+msgstr "Drukuj elementy powtarzające się codziennie"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurDaily)
+#: printing/calprintmonthconfig_base.ui:198
+#, kde-format
+msgid ""
+"With this option it is possible to leave out the daily recurring to-dos and "
+"events in the print. They take a lot of space and make the month view "
+"needlessly complicated."
+msgstr ""
+"Ta opcja pozwala pominąć na wydruku zadania i wydarzenia powtarzające się "
+"codziennie. Zajmują one dużo miejsca i mogą niepotrzebnie zaciemnić widok "
+"miesiąca."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mRecurDaily)
+#: printing/calprintmonthconfig_base.ui:201
+#, kde-format
+msgid "Include daily re&curring to-dos and events"
+msgstr "Dołącz wydarzenia i zadania powtarzające się &codziennie"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurWeekly)
+#: printing/calprintmonthconfig_base.ui:208
+#, kde-format
+msgid "Print weekly recurring items"
+msgstr "Drukuj elementy powtarzające się cotygodniowo"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurWeekly)
+#: printing/calprintmonthconfig_base.ui:211
+#, kde-format
+msgid ""
+"Similar to \"Print daily recurring to-dos and events\". Weekly to-dos and "
+"events will be omitted when making a print of the selected month."
+msgstr ""
+"Podobnie jak w \"Drukuj wydarzenia powtarzające się codziennie\". wydarzenia "
+"i zadania powtarzające się co tydzień zostaną pominięte przy drukowaniu "
+"wybranego miesiąca."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mRecurWeekly)
+#: printing/calprintmonthconfig_base.ui:214
+#, kde-format
+msgid "Include weekl&y recurring to-dos and events"
+msgstr "Dołącz wydarzenia i zadania powtarzające się cot&ygodniowo"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mWeekNumbers)
+#: printing/calprintmonthconfig_base.ui:230
+#, kde-format
+msgid "Print week numbers"
+msgstr "Drukuj numery tygodni"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mWeekNumbers)
+#: printing/calprintmonthconfig_base.ui:233
+#, kde-format
+msgid "Enable this to print week numbers at the left of each row."
+msgstr "Włącz by drukować numer tygodnia po lewej każdego rzędu."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mWeekNumbers)
+#: printing/calprintmonthconfig_base.ui:236
+#, kde-format
+msgid "Print week &numbers"
+msgstr "Drukuj &numery tygodni"
+
+#: printing/calprintpluginbase.cpp:142
+#, kde-format
+msgid "This printing style does not have any configuration options."
+msgstr "Ten styl drukowania nie posiada żadnych opcji."
+
+#: printing/calprintpluginbase.cpp:298
+#, kde-format
+msgctxt "@item:intext delimiter for joining holiday names"
+msgid ","
+msgstr ","
+
+#: printing/calprintpluginbase.cpp:310
+#, kde-format
+msgid "Holiday"
+msgstr "Święto"
+
+#: printing/calprintpluginbase.cpp:612
+#, kde-format
+msgctxt "print date: formatted-datetime"
+msgid "printed: %1"
+msgstr "wydrukowano: %1"
+
+#: printing/calprintpluginbase.cpp:921
+#, kde-format
+msgctxt "starttime - endtime summary"
+msgid "%1-%2 %3"
+msgstr "%1-%2 %3"
+
+#: printing/calprintpluginbase.cpp:927
+#, kde-format
+msgctxt "starttime - endtime summary, location"
+msgid "%1-%2 %3, %4"
+msgstr "%1-%2 %3, %4"
+
+#: printing/calprintpluginbase.cpp:994
+#, kde-format
+msgctxt "weekday, shortmonthname daynumber"
+msgid "%1, %2 %3"
+msgstr "%1, %2 %3"
+
+#: printing/calprintpluginbase.cpp:1120
+#, kde-format
+msgctxt "to-do summary (Due: datetime)"
+msgid "%1 (Due: %2)"
+msgstr "%1 (Termin: %2)"
+
+#: printing/calprintpluginbase.cpp:1125
+#, kde-format
+msgctxt "to-do summary (Due: date)"
+msgid "%1 (Due: %2)"
+msgstr "%1 (Termin: %2)"
+
+#: printing/calprintpluginbase.cpp:1132
+#, kde-format
+msgid "To-do: %1"
+msgstr "Zadanie: %1"
+
+#: printing/calprintpluginbase.cpp:1860
+#, kde-format
+msgctxt "Date range: Month dayStart - dayEnd"
+msgid "%1 %2–%3"
+msgstr "%1 %2–%3"
+
+#: printing/calprintpluginbase.cpp:1866
+#, kde-format
+msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
+msgid "%1 %2–%3 %4"
+msgstr "%1 %2–%3 %4"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: printing/calprinttodoconfig_base.ui:17
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Print to-dos options:</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Opcje druku zadań:</span></p></body></html>"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, mTitleLabel)
+#. i18n: ectx: property (toolTip), widget (QLineEdit, mTitle)
+#: printing/calprinttodoconfig_base.ui:26
+#: printing/calprinttodoconfig_base.ui:42
+#, kde-format
+msgid "Name for this to-do list"
+msgstr "Nazwa tej listy zadań"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, mTitleLabel)
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, mTitle)
+#: printing/calprinttodoconfig_base.ui:29
+#: printing/calprinttodoconfig_base.ui:45
+#, kde-format
+msgid ""
+"Enter a name for this to-do list that will be put at the top of the print-out"
+msgstr ""
+"Podaj nazwę tej listy zadań, która zostanie umieszczona na szczycie wydruku."
+
+#. i18n: ectx: property (text), widget (QLabel, mTitleLabel)
+#: printing/calprinttodoconfig_base.ui:32
+#, kde-format
+msgid "&Title:"
+msgstr "&Tytuł:"
+
+#. i18n: ectx: property (text), widget (QLineEdit, mTitle)
+#: printing/calprinttodoconfig_base.ui:48
+#, kde-format
+msgid "To-do List"
+msgstr "Lista zadań"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
+#: printing/calprinttodoconfig_base.ui:57
+#, kde-format
+msgid "To-dos to Print"
+msgstr "Zadania do wydrukowania"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPrintAll)
+#: printing/calprinttodoconfig_base.ui:63
+#, kde-format
+msgid "Print &all to-dos"
+msgstr "Drukuj &wszystkie zadania"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
+#: printing/calprinttodoconfig_base.ui:73
+#, kde-format
+msgid "Print &uncompleted to-dos only"
+msgstr "Wyświetlaj tylko nie&ukończone zadania"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
+#: printing/calprinttodoconfig_base.ui:80
+#, kde-format
+msgid "Print only to-dos due in the &range:"
+msgstr "Tylko zadania o dacie zakończenia w p&rzedziale:"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
+#: printing/calprinttodoconfig_base.ui:258
+#, kde-format
+msgid "Print item priorities"
+msgstr "Wydrukuj priorytety elementu"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
+#: printing/calprinttodoconfig_base.ui:261
+#, kde-format
+msgid "Check this option if you want to see the item priorities printed."
+msgstr "Zaznacz to pole, aby widzieć priorytety elementów."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mPriority)
+#: printing/calprinttodoconfig_base.ui:264
+#, kde-format
+msgid "&Priority"
+msgstr "&Priorytet"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
+#: printing/calprinttodoconfig_base.ui:274
+#, kde-format
+msgid "Print item start dates"
+msgstr "Wyświetlaj daty rozpoczęcia elementów"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
+#: printing/calprinttodoconfig_base.ui:277
+#, kde-format
+msgid ""
+"Check this option if you want to see the item start dates (when work can "
+"begin) printed."
+msgstr ""
+"Zaznacz to pole, aby widzieć daty rozpoczęcia elementów (wtedy gdy można "
+"rozpocząć pracę)."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
+#: printing/calprinttodoconfig_base.ui:280
+#, kde-format
+msgid "&Start date"
+msgstr "&Data rozpoczęcia"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
+#: printing/calprinttodoconfig_base.ui:287
+#, kde-format
+msgid "Print item due dates"
+msgstr "Wyświetlaj daty zakończenia elementów"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
+#: printing/calprinttodoconfig_base.ui:290
+#, kde-format
+msgid "Check this option if you want to see the item due dates printed."
+msgstr "Zaznacz to pole, aby widzieć daty zakończenia elementów."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
+#: printing/calprinttodoconfig_base.ui:293
+#, kde-format
+msgid "Du&e date"
+msgstr "Data zakończ&enia"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
+#: printing/calprinttodoconfig_base.ui:303
+#, kde-format
+msgid "Print item completion percentage"
+msgstr "Wyświetlaj procent ukończenia elementu"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
+#: printing/calprinttodoconfig_base.ui:306
+#, kde-format
+msgid ""
+"Check this option if you want to see the item completion percentage printed "
+"as a number and bar graph."
+msgstr ""
+"Zaznacz to pole, aby widzieć procent ukończenia elementu wyświetlany jako "
+"liczba i wykres słupkowy."
+
+#. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
+#: printing/calprinttodoconfig_base.ui:309
+#, kde-format
+msgid "Percentage co&mpleted"
+msgstr "Pro&cent ukończenia"
+
+#. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
+#: printing/calprinttodoconfig_base.ui:328
+#, kde-format
+msgid "Sorting Options"
+msgstr "Opcje szeregowania"
+
+#. i18n: ectx: property (text), widget (QLabel, sortFieldLabel)
+#: printing/calprinttodoconfig_base.ui:339
+#, kde-format
+msgid "Sort field:"
+msgstr "Pole szeregowania:"
+
+#. i18n: ectx: property (text), widget (QLabel, sortDirectionLabel)
+#: printing/calprinttodoconfig_base.ui:366
+#, kde-format
+msgid "Sort direction:"
+msgstr "Kolejność szeregowania:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mConnectSubTodos)
+#: printing/calprinttodoconfig_base.ui:397
+#, kde-format
+msgid "Co&nnect sub-to-dos with its parent"
+msgstr "Połącz pod-zada&nia z ich zadaniem głównym"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
+#: printing/calprinttodoconfig_base.ui:407
+#, kde-format
+msgid "Stri&ke out completed to-do summaries"
+msgstr "Prze&kreśl podsumowania ukończonych zadań"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: printing/calprintweekconfig_base.ui:17
+#, kde-format
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Print week options:</span></p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Opcje druku tygodnia:</span></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
+#: printing/calprintweekconfig_base.ui:212
+#, kde-format
+msgid "Print date &range as Filofax format, one week per page"
+msgstr "Wydrukuj przedział daty w fo&rmacie Filofax, jeden tydzień na stronę"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
+#: printing/calprintweekconfig_base.ui:222
+#, kde-format
+msgid "Print as timeta&ble view, one week per page"
+msgstr "&Wydrukuj jako widok rozkładu czasu, jeden tydzień na stronę"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSplitWeek)
+#: printing/calprintweekconfig_base.ui:229
+#, kde-format
+msgid ""
+"The split week view has the times to the left of the page, with two pages "
+"per week."
+msgstr ""
+"Podzielony widok tygodnia ma czasy po lewej stronie, z dwoma stronami na "
+"tydzień."
+
+#. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSplitWeek)
+#: printing/calprintweekconfig_base.ui:232
+#, kde-format
+msgid "Print as split wee&k view"
+msgstr "Drukuj jako podzielony wido&k tygodnia"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: printing/calprintyearconfig_base.ui:14
+#, kde-format
+msgid ""
+"<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">Print "
+"year options:</span></p></body></html>"
+msgstr ""
+"<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">Opcje "
+"drukowania roku:</span></p></body></html>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
+#: printing/calprintyearconfig_base.ui:21
+#, kde-format
+msgid "Date Range"
+msgstr "Zakres dat"
+
+#. i18n: ectx: property (text), widget (QLabel, mYearLabel)
+#: printing/calprintyearconfig_base.ui:32
+#, kde-format
+msgid "&Year:"
+msgstr "&Rok:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
+#: printing/calprintyearconfig_base.ui:99
+#, kde-format
+msgid "General"
+msgstr "Ogólne"
+
+#. i18n: ectx: property (text), widget (QLabel, mPagesLabel)
+#: printing/calprintyearconfig_base.ui:105
+#, kde-format
+msgid "Num&ber of pages:"
+msgstr "Licz&ba stron:"
+
+#. i18n: ectx: property (text), widget (QLabel, mSubDaysLabel)
+#: printing/calprintyearconfig_base.ui:121
+#, kde-format
+msgid "Show &sub-day events as:"
+msgstr "&Pokaż podwydarzenia w dniu jako:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
+#. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
+#: printing/calprintyearconfig_base.ui:138
+#: printing/calprintyearconfig_base.ui:165
+#, kde-format
+msgid "Text"
+msgstr "Tekst"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
+#. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
+#: printing/calprintyearconfig_base.ui:143
+#: printing/calprintyearconfig_base.ui:170
+#, kde-format
+msgid "Time Boxes"
+msgstr "Pola czasowe"
+
+#. i18n: ectx: property (text), widget (QLabel, mHolidaysLabel)
+#: printing/calprintyearconfig_base.ui:151
+#, kde-format
+msgid "Show &holidays as:"
+msgstr "Pokaż ś&więta jako:"
+
+#: printing/journalprint.cpp:104
+#, kde-format
+msgctxt "Description - date"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: printing/journalprint.cpp:126
+#, kde-format
+msgid "Person: %1"
+msgstr "Osoba: %1"
+
+#: printing/journalprint.cpp:156
+#, kde-format
+msgid "Journal entries"
+msgstr "Wpisy dziennika"
+
+#: printing/journalprint.h:32
+#, kde-format
+msgid "Print &journal"
+msgstr "Drukuj &dziennik"
+
+#: printing/journalprint.h:37
+#, kde-format
+msgid "Prints all journals for a given date range"
+msgstr "Wydrukuj wszystkie dzienniki dla podanego okresu"
+
+#: printing/yearprint.h:31
+#, kde-format
+msgid "Print &year"
+msgstr "Drukuj &rok"
+
+#: printing/yearprint.h:36
+#, kde-format
+msgid "Prints a calendar for an entire year"
+msgstr "Drukuj kalendarz dla całego roku"
+
+#: utils.cpp:325
+#, kde-format
+msgctxt "@title:window"
+msgid "Select Calendar"
+msgstr "Wybierz kalendarz"
+
+#: utils.cpp:326
+#, kde-format
+msgid "Select the calendar where this item will be stored."
+msgstr "Wybierz kalendarz, w którym zostanie przechowany ten element."
+
+#: utils.cpp:431
+#, kde-format
+msgctxt "this is the default calendar"
+msgid "%1 (Default Calendar)"
+msgstr "%1 (Domyślny kalendarz)"
+
+#: utils.cpp:442
+#, kde-format
+msgctxt "a virtual folder type"
+msgid "Virtual"
+msgstr "Wirtualny"
+
+#: utils.cpp:444
+#, kde-format
+msgid "Folder type:"
+msgstr "Rodzaj katalogu:"
+
+#: utils.cpp:454
+#, kde-format
+msgctxt "collection has no mimetypes to show the user"
+msgid "none"
+msgstr "brak"
+
+#: utils.cpp:457
+#, kde-format
+msgid "Content type:"
+msgstr "Rodzaj zawartości:"
+
+#: utils.cpp:464
+#, kde-format
+msgid "Rights:"
+msgstr "Uprawnienia:"
+
+#: utils.cpp:467
+#, kde-format
+msgctxt "the calendar is read-only"
+msgid "read-only"
+msgstr "tylko do odczytu"
+
+#: utils.cpp:469
+#, kde-format
+msgctxt "the calendar is read and write"
+msgid "read+write"
+msgstr "odczyt+zapis"
+
+#: utils.cpp:477
+#, kde-format
+msgctxt "blocking all reminders for this calendar"
+msgid "all"
+msgstr "wszystkie"
+
+#: utils.cpp:480
+#, kde-format
+msgctxt "blocking audio reminders for this calendar"
+msgid "audio"
+msgstr "dźwięk"
+
+#: utils.cpp:482
+#, kde-format
+msgctxt "blocking display pop-up dialog reminders for this calendar"
+msgid "display"
+msgstr "wyświetlanie"
+
+#: utils.cpp:484
+#, kde-format
+msgctxt "blocking email reminders for this calendar"
+msgid "email"
+msgstr "e-mail"
+
+#: utils.cpp:486
+#, kde-format
+msgctxt "blocking run a command reminders for this calendar"
+msgid "procedure"
+msgstr "procedura"
+
+#: utils.cpp:488
+#, kde-format
+msgctxt "blocking unknown type reminders for this calendar"
+msgid "other"
+msgstr "inne"
+
+#: utils.cpp:492
+#, kde-format
+msgctxt "not blocking any reminder types for this calendar"
+msgid "none"
+msgstr "brak"
+
+#: utils.cpp:495
+#, kde-format
+msgid "Blocked Reminders:"
+msgstr "Zablokowane przypomnienia:"
+
+#: utils.cpp:560
+#, kde-format
+msgctxt "search pattern for holidayname"
+msgid "^%1"
+msgstr "^%1"
+
+#: utils.cpp:562
+#, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: utils.cpp:567
+#, kde-format
+msgctxt "replace pattern for holidayname (countrycode)"
+msgid "^%1 \\(.*\\)"
+msgstr "^%1 \\(.*\\)"
+
+#~ msgctxt "@option sort by title"
+#~ msgid "Title"
+#~ msgstr "Tytuł"
+
+#~ msgctxt "@option today"
+#~ msgid "&Today"
+#~ msgstr "&Dziś"
+
+#~ msgctxt "@option tomorrow"
+#~ msgid "To&morrow"
+#~ msgstr "&Jutro"
+
+#~ msgctxt "@option next week"
+#~ msgid "Next &Week"
+#~ msgstr "Następny &tydzień"
+
+#~ msgctxt "@option next month"
+#~ msgid "Next M&onth"
+#~ msgstr "Na&stępny miesiąc"
+
+#~ msgctxt "@option do not specify a date"
+#~ msgid "No Date"
+#~ msgstr "Bez daty"
+
+#~ msgid "Calendar"
+#~ msgstr "Kalendarze"
+
+#~ msgid "Tasks"
+#~ msgstr "Zadania"
+
+#~ msgid "Journal"
+#~ msgstr "Dzienniki"
+
+#~ msgid "Notes"
+#~ msgstr "Notatki"
+
+#~ msgctxt "%1 is folder contents"
+#~ msgid "My Kolab %1"
+#~ msgstr "Mój Kolab %1"
+
+#~ msgctxt "%1 is folder name, %2 is folder contents"
+#~ msgid "Shared Kolab %1 %2"
+#~ msgstr "Współdzielony Kolab %1 %2"
+
+#~ msgctxt "%1 is folder owner name, %2 is folder contents"
+#~ msgid "%1's Kolab %2"
+#~ msgstr "Należy do %1 Kolab %2"
+
+#~ msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
+#~ msgid "%1's %2 Kolab %3"
+#~ msgstr "Należy do %1 %2 Kolab %3"
+
+#~ msgctxt "%1 is folder contents"
+#~ msgid "Kolab %1"
+#~ msgstr "Kolab %1"
+
+#~ msgctxt "%1 is the folder name"
+#~ msgid "%1 in %2"
+#~ msgstr "%1 z %2"
+
+#~ msgctxt "%1 is folder owner name, %2 is folder contents"
+#~ msgid "%1's Google %2"
+#~ msgstr "Należy do %1 Google %2"
+
+#~ msgctxt "%1 is folder owner name, %2 is folder name"
+#~ msgid "%1's %2"
+#~ msgstr "Należy do %1 %2"
+
+#~ msgctxt "%1 is folder contents"
+#~ msgid "Google %1"
+#~ msgstr "Google %1"
+
+#~ msgid "My %1"
+#~ msgstr "Moje %1"
+
+#~ msgctxt "unknown resource"
+#~ msgid "Unknown"
+#~ msgstr "Nieznany"
+
+#~ msgctxt "incidence category: appointment"
+#~ msgid "Appointment"
+#~ msgstr "Spotkanie"
+
+#~ msgctxt "incidence category"
+#~ msgid "Business"
+#~ msgstr "Biznes"
+
+#~ msgctxt "incidence category"
+#~ msgid "Meeting"
+#~ msgstr "Spotkanie"
+
+#~ msgctxt "incidence category: phone call"
+#~ msgid "Phone Call"
+#~ msgstr "Telefon"
+
+#~ msgctxt "incidence category"
+#~ msgid "Education"
+#~ msgstr "Edukacja"
+
+#~ msgctxt ""
+#~ "incidence category: official or unofficial observance of religious/"
+#~ "national/cultural/other significance, often accompanied by celebrations "
+#~ "or festivities"
+#~ msgid "Holiday"
+#~ msgstr "Święto"
+
+#~ msgctxt ""
+#~ "incidence category: a lengthy time away from work or school, a trip "
+#~ "abroad, or simply a pleasure trip away from home"
+#~ msgid "Vacation"
+#~ msgstr "Wakacje"
+
+#~ msgctxt ""
+#~ "incidence category: examples: anniversary of historical or personal "
+#~ "event; big date; remembrance, etc"
+#~ msgid "Special Occasion"
+#~ msgstr "Specjalna okazja"
+
+#~ msgctxt "incidence category"
+#~ msgid "Personal"
+#~ msgstr "Osobiste"
+
+#~ msgctxt ""
+#~ "incidence category: typically associated with leaving home for business, "
+#~ "and not pleasure"
+#~ msgid "Travel"
+#~ msgstr "Podróż służbowa"
+
+#~ msgctxt "incidence category"
+#~ msgid "Miscellaneous"
+#~ msgstr "Różne"
+
+#~ msgctxt "incidence category"
+#~ msgid "Birthday"
+#~ msgstr "Urodziny"
+
+#~ msgctxt "@info"
+#~ msgid "Unable to purge to-dos with uncompleted children."
+#~ msgstr ""
+#~ "Nie powiodło się czyszczenie zadań z niezakończonymi elementami potomnymi."
+
+#~ msgctxt "@title:window"
+#~ msgid "Delete To-do"
+#~ msgstr "Usuń zadanie"
+
+#~ msgid "Print Incidences of Type"
+#~ msgstr "Drukuj wydarzenia określonego typu"
+
+#~ msgid "&Events"
+#~ msgstr "Wydarz&enia"
+
+#~ msgid "&To-dos"
+#~ msgstr "Za&dania"
+
+#~ msgid "&Journals"
+#~ msgstr "&Dzienniki"
+
+#~ msgid "Print Item list"
+#~ msgstr "Drukuj listę elementów"
+
+#~ msgid "Prints a list of events and to-dos"
+#~ msgstr "Drukuje listę wydarzeń i zadań"
+
+#~ msgid "Print What's Next"
+#~ msgstr "Drukuje info Co dalej"
+
+#~ msgid "Prints a list of all upcoming events and todos."
+#~ msgstr "Drukuje listę wszystkich nadchodzących zdarzeń i zadań."
+
+#~ msgctxt "date from-to"
+#~ msgid "%1 - %2"
+#~ msgstr "%1 - %2"
+
+#~ msgctxt ""
+#~ "date from-\n"
+#~ "to"
+#~ msgid ""
+#~ "%1 -\n"
+#~ "%2"
+#~ msgstr ""
+#~ "%1 -\n"
+#~ "%2"
+
+#~ msgctxt ""
+#~ "date from -\n"
+#~ "to (week number)"
+#~ msgid ""
+#~ "%1 -\n"
+#~ "%2 (Week %3)"
+#~ msgstr ""
+#~ "%1 -\n"
+#~ "%2 (tydzień %3)"
+
+#~ msgctxt "date from - to"
+#~ msgid "%1 - %2"
+#~ msgstr "%1 - %2"
+
+#~ msgctxt ""
+#~ "date from -\n"
+#~ "to"
+#~ msgid ""
+#~ "%1 -\n"
+#~ "%2"
+#~ msgstr ""
+#~ "%1 -\n"
+#~ "%2"
+
+#~ msgid "Check this option to exclude confidential events."
+#~ msgstr "Zaznacz opcję by pominąć poufne wydarzenia"
+
+#~ msgid "Check this option to exclude private events"
+#~ msgstr "Zaznacz tę opcję, aby pominąć prywatne wydarzenia"
+
+#~ msgid "Draw note lines in empty area"
+#~ msgstr "Rysuj linie notatek w pustych polach"
+
+#~ msgid "Exclude confidential items"
+#~ msgstr "Wyklucz elementy poufne"
+
+#~ msgid "Exclude private items"
+#~ msgstr "Wyklucz elementy prywatne"
+
+#~ msgid ""
+#~ "Check this option if you want to have to-dos on the print, placed by "
+#~ "their due date."
+#~ msgstr ""
+#~ "Zaznacz tę opcję, jeśli chcesz mieć zadania na wydruku, umieszczone wg "
+#~ "daty realizacji."
+
+#~ msgid "Check this option to show note lines."
+#~ msgstr "Zaznacz to pole, aby pokazać linie notatek."
+
+#~ msgid "Exclude &confidential"
+#~ msgstr "Wyklu&cz poufne"
+
+#~ msgid "&Description"
+#~ msgstr "&Opis"
+
+#~ msgid ""
+#~ "Here you can choose which events should be printed based on their date. "
+#~ "This check enables you to enter the start date of the date range. Use the "
+#~ "<i>End date</i> to enter the end date of the daterange."
+#~ msgstr ""
+#~ "Tutaj można podać, które wydarzenia mają być wydrukowane na podstawie ich "
+#~ "daty. To pole pozwala wybrać datę rozpoczęcia zakresu dat. Aby ustawić "
+#~ "datę końcową zakresu należy użyć opcji <i>Data zakończenia</i>."
+
+#~ msgid ""
+#~ "All events which start later than the given time will not be printed."
+#~ msgstr ""
+#~ "Wszystkie zadania, które zaczynają się później niż podano nie zostaną "
+#~ "wydrukowane."
+
+#~ msgid ""
+#~ "All events which start earlier than the given time will not be printed."
+#~ msgstr ""
+#~ "Wszystkie wydarzenia, które zaczynają się wcześniej niż podano nie "
+#~ "zostaną wydrukowane."
+
+#~ msgid ""
+#~ "Here you can choose which events should be printed based on their date. "
+#~ "This check enables you to enter the end date of the date range. Use the "
+#~ "<i>Start date</i> to enter the start date of the daterange."
+#~ msgstr ""
+#~ "Tutaj można podać, które wydarzenia mają być wydrukowane na podstawie ich "
+#~ "daty. To pole pozwala wybrać datę zakończenia zakresu dat. Aby ustawić "
+#~ "datę początkową zakresu należy użyć opcji <i>Data rozpoczęcia</i>."
+
+#~ msgid ""
+#~ "The Filofax view prints one week per page, so all days have a large "
+#~ "surface."
+#~ msgstr ""
+#~ "Widok Filofax powoduje drukowanie jednego tygodnia na stronę, więc na "
+#~ "każdy dzień przypada duża powierzchnia."
+
+#~ msgid "P&rint as Filofax page"
+#~ msgstr "D&rukuj jako stronę Filofax"
+
+#~ msgid ""
+#~ "This view is similar to the weekview. The week is printed in landscape "
+#~ "layout. You can even use the same colors for the items if you check "
+#~ "<i>Use Colors</i>."
+#~ msgstr ""
+#~ "Ten widok jest podobny do widoku tygodnia. Tydzień jest drukowany poziomo "
+#~ "na kartce. Możesz nawet mieć te same kolory zdarzeń, jeśli zaznaczysz "
+#~ "opcję <i>Użyj kolorów</i>."
+
+#~ msgid "Print as timeta&ble view"
+#~ msgstr "Drukuj jako grafik"
+
+#~ msgid ""
+#~ "This view is similar to the week view. The only difference with the "
+#~ "timetable view is the page layout. Timetables are printed in landscape, "
+#~ "the split week view in portrait."
+#~ msgstr ""
+#~ "Ten widok jest podobny do widoku tygodnia. Jedyną różnicą w stosunku do "
+#~ "widoku grafiku jest układ strony. Grafik jest drukowany poziomo, podczas "
+#~ "gdy podzielony widok tygodnia jest drukowany pionowo."
+
+#~ msgid "Check this option to draw note lines."
+#~ msgstr "Zaznacz to pole, aby rysować linie notatek."
+
+#~ msgid "Today's Events"
+#~ msgstr "Dzisiejsze wydarzenia"
+
+#~ msgid "Include &descriptions"
+#~ msgstr "Dołącz &opisy"
+
+#~ msgctxt "@label to-do summary"
+#~ msgid "Title"
+#~ msgstr "Tytuł"
+
+#~ msgid "Categories: "
+#~ msgstr "Kategorie: "
+
+#~ msgid ""
+#~ "If you want to make use of colors you should check this option. The "
+#~ "category colors will be used."
+#~ msgstr ""
+#~ "Jeśli chcesz używać kolorów, zaznacz tę opcję. Użyte zostaną kolory "
+#~ "kategorii."
+
+#~ msgid ""
+#~ "The timetable view supports colors. If you want to make use of colors you "
+#~ "should check this option. The category colors will be used."
+#~ msgstr ""
+#~ "Widok grafiku obsługuje kolory. Jeśli chcesz używać kolorów, zaznacz tę "
+#~ "opcję. Użyte zostaną kolory kategorii."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "This model can only handle event, task, journal or free-busy list "
+#~ "folders. The current collection holds mimetypes: %1"
+#~ msgstr ""
+#~ "Ten model może obsługiwać jedynie zdarzenie, zadanie, dziennik lub "
+#~ "katalogi listy wolny-zajęty. Bieżący zbiór obsługuje typy mime: %1"
+
+#~ msgctxt "@title:column, calendar event start date and time"
+#~ msgid "Start date and time"
+#~ msgstr "Data i czas rozpoczęcia"
+
+#~ msgctxt "@title:column, calendar event end date and time"
+#~ msgid "End date and time"
+#~ msgstr "Data i czas zakończenia"
+
+#~ msgctxt "@title:column, calendar event type"
+#~ msgid "Type"
+#~ msgstr "Rodzaj"
+
+#~ msgctxt "unknown calendar type"
+#~ msgid "unknown"
+#~ msgstr "nieznany"
+
+#~ msgid "No item selected."
+#~ msgstr "Nie wybrano elementów."
+
+#~ msgid "Save Attachments To"
+#~ msgstr "Zapisz załączniki do"
+
+#~ msgctxt "filename for an unnamed attachment"
+#~ msgid "attachment.1"
+#~ msgstr "załącznik.1"
+
+#~ msgid "%1 already exists. Do you want to overwrite it?"
+#~ msgstr "%1 już istnieje. Czy chcesz go nadpisać?"
+
+#~ msgctxt "@title:tab General settings for a folder."
+#~ msgid "General"
+#~ msgstr "Ogólne"
+
+#~ msgctxt "@label:textbox Name of the folder."
+#~ msgid "&Name:"
+#~ msgstr "&Nazwa:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set the folder name"
+#~ msgstr "Ustaw nazwę katalogu"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Enter a name here to set the name of this folder."
+#~ msgstr "Tutaj podaj nazwę, aby ustawić nazwę tego katalogu."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Ignore reminders from this calendar"
+#~ msgstr "Ignoruj przypomnienia z tego kalendarza"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "Check this box if you do not want to receive reminders from items "
+#~ "associated with this calendar."
+#~ msgstr ""
+#~ "Zaznacz to pole, jeśli nie chcesz otrzymywać przypomnień od elementów "
+#~ "skojarzonych z tym kalendarzem."
+
+#~ msgctxt "@option:check"
+#~ msgid "&Use custom icon:"
+#~ msgstr "&Użyj własnej ikony:"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Set a custom icon"
+#~ msgstr "Ustaw własną ikonę"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Check this box if you want to set a custom icon for this folder."
+#~ msgstr ""
+#~ "Zaznacz to pole, jeśli chcesz ustawić własną ikonę dla tego katalogu."
+
+#~ msgctxt "subitem Priority: N"
+#~ msgid "Priority: <numid>%1</numid>\n"
+#~ msgstr "Priorytet: <numid>%1</numid>\n"
+
+#~ msgctxt "monthname year"
+#~ msgid "%1 <numid>%2</numid>"
+#~ msgstr "%1 <numid>%2</numid>"
+
+#~ msgctxt "weekday, shortmonthname daynumber"
+#~ msgid "%1, %2 <numid>%3</numid>"
+#~ msgstr "%1, %2 <numid>%3</numid>"
+
+#~ msgid "Yearly Print Options"
+#~ msgstr "Opcje druku roku"
+
+#~ msgid "Print &year:"
+#~ msgstr "Drukuj &rok:"
+
+#~ msgid "Display Options"
+#~ msgstr "Opcje widoku"
+
+#~ msgctxt "@title:column calendar event summary"
+#~ msgid "Summary"
+#~ msgstr "Podsumowanie"
+
+#~ msgctxt "@title:column calendar event end date and time"
+#~ msgid "End Date and Time"
+#~ msgstr "Data i czas końca"
+
+#~ msgctxt "@title:column calendar event type"
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgctxt "@title:column calendar title"
+#~ msgid "Calendar"
+#~ msgstr "Kalendarz"
+
+#~ msgid "Unknown Name"
+#~ msgstr "Nazwa nieznana"
+
+#~ msgid "unknown@nowhere"
+#~ msgstr "nieznany@nigdzie"
+
+#~ msgid "Unable to delete incidence %1 \"%2\": %3"
+#~ msgstr "Nie można usunąć zdarzenia %1 \"%2\": %3"
+
+#~ msgid ""
+#~ "The item '%1' has no attendees. Therefore no groupware message will be "
+#~ "sent."
+#~ msgstr ""
+#~ "Element '%1' nie ma żadnych uczestników. Zatem nie zostanie wysłana żadna "
+#~ "wiadomość pracy grupowej."
+
+#~ msgid "Message Not Sent"
+#~ msgstr "Nie wysłano wiadomości "
+
+#~ msgid ""
+#~ "The groupware message for item '%1' was successfully sent.\n"
+#~ "Method: %2"
+#~ msgstr ""
+#~ "Wiadomość grupowa dla elementu '%1' została poprawnie wysłana.\n"
+#~ "Metoda: %2"
+
+#~ msgid "Sending Free/Busy"
+#~ msgstr "Wysyłanie wolny/zajęty"
+
+#~ msgctxt ""
+#~ "Groupware message sending failed. %2 is request/reply/add/cancel/counter/"
+#~ "etc."
+#~ msgid ""
+#~ "Unable to send the item '%1'.\n"
+#~ "Method: %2"
+#~ msgstr ""
+#~ "Nie można wysłać elementu '%1'.\n"
+#~ "Metoda: %2"
+
+#~ msgid "Could not create search."
+#~ msgstr "Nie można utworzyć wyszukiwania."
+
+#~ msgid "Could not parse the collection ID"
+#~ msgstr "Przetwarzanie kolekcji ID nie powiodło się"
+
+#~ msgid ""
+#~ "Failed to download free/busy data from: %1\n"
+#~ "Reason: %2"
+#~ msgstr ""
+#~ "Błąd przy pobieraniu informacji wolny/zajęty z: %1\n"
+#~ "Powód: %2"
+
+#~ msgid "Free/busy retrieval error"
+#~ msgstr "Błąd odzyskiwania danych wolny/zajęty"
+
+#~ msgid "Failed to parse free/busy information that was retrieved from: %1"
+#~ msgstr "Błąd przetwarzania informacji wolny/zajęty uzyskiwanej z: %1"
+
+#~ msgid ""
+#~ "<qt><p>The software could not upload your free/busy list to the URL '%1'. "
+#~ "There might be a problem with the access rights, or you specified an "
+#~ "incorrect URL. The system said: <em>%2</em>.</p><p>Please check the URL "
+#~ "or contact your system administrator.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Oprogramowanie nie może wgrać listy wolny/zajęty pod adres URL "
+#~ "'%1'. Może występować problem z prawami dostępu lub wskazany został "
+#~ "nieprawidłowy adres URL <em>%2</em>.</p><p>Proszę sprawdzić adres URL lub "
+#~ "skontaktować się z administratorem systemu.</p></qt>"
+
+#~ msgid ""
+#~ "<qt><p>No URL configured for uploading your free/busy list. Please set it "
+#~ "in KOrganizer's configuration dialog, on the \"Free/Busy\" page.</"
+#~ "p><p>Contact your system administrator for the exact URL and the account "
+#~ "details.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Brak skonfigurowanego adresu URL do wgrania listy wolny/zajęty. "
+#~ "Proszę ustalić go w oknie konfiguracji KOrganizera, na stronie \"Wolny/"
+#~ "zajęty\".</p><p>Skontaktuj się z administratorem systemu w celu uzyskania "
+#~ "dokładnego adresu URL oraz szczegółów konta.</p></qt>"
+
+#~ msgid "No Free/Busy Upload URL"
+#~ msgstr "Brak URL do wgrania wolny/zajęty"
+
+#~ msgid "<qt>The target URL '%1' provided is invalid.</qt>"
+#~ msgstr "<qt>Docelowy adres URL '%1' jest niewłaściwy.</qt>"
+
+#~ msgid "Invalid URL"
+#~ msgstr "Niewłaściwy URL"
+
+#~ msgid "The free/busy information was successfully sent."
+#~ msgstr "Informacja wolny/zajęty została poprawnie wysłana."
+
+#~ msgid "Unable to publish the free/busy data."
+#~ msgstr "Nie można opublikować danych wolny/zajęty."
+
+#~ msgid ""
+#~ "Unable to create the calendar information for this invitation. Therefore "
+#~ "this invitation cannot be handled."
+#~ msgstr ""
+#~ "Nie można utworzyć informacji w kalendarzu dla tego zaproszenia. Przez "
+#~ "to, to zaproszenie nie może zostać obsłużone."
+
+#~ msgid "Invitation Handling Error"
+#~ msgstr "Błąd obsługi zaproszenia"
+
+#~ msgid "Error message: %1"
+#~ msgstr "Komunikat błędu: %1"
+
+#~ msgid "Error while processing an invitation or update."
+#~ msgstr ""
+#~ "Wystąpił błąd podczas przetwarzania zaproszenia lub przeprowadzania "
+#~ "uaktualnienia. "
+
+#~ msgid ""
+#~ "You changed the invitation \"%1\".\n"
+#~ "Do you want to email the attendees an update message?"
+#~ msgstr ""
+#~ "Zmieniono zaproszenie \"%1\".\n"
+#~ "Czy chcesz wysłać e-mail do uczestników z wiadomością aktualizacyjną?"
+
+#~ msgid ""
+#~ "You removed the invitation \"%1\".\n"
+#~ "Do you want to email the attendees that the event is canceled?"
+#~ msgstr ""
+#~ "Usunięto zaproszenie \"%1\".\n"
+#~ "Czy chcesz wysłać e-mail do uczestników z informacją o anulowaniu "
+#~ "zdarzenia?"
+
+#~ msgid ""
+#~ "You removed the invitation \"%1\".\n"
+#~ "Do you want to email the attendees that the todo is canceled?"
+#~ msgstr ""
+#~ "Usunięto zaproszenie \"%1\".\n"
+#~ "Czy chcesz wysłać e-mail do uczestników z informacją o anulowaniu zadania?"
+
+#~ msgid ""
+#~ "You removed the invitation \"%1\".\n"
+#~ "Do you want to email the attendees that the journal is canceled?"
+#~ msgstr ""
+#~ "Usunięto zaproszenie \"%1\".\n"
+#~ "Czy chcesz wysłać e-mail do uczestników z informacją o anulowaniu "
+#~ "dziennika?"
+
+#~ msgid ""
+#~ "The event \"%1\" includes other people.\n"
+#~ "Do you want to email the invitation to the attendees?"
+#~ msgstr ""
+#~ "Zdarzenie \"%1\" dotyczy również innych ludzi. \n"
+#~ "Czy chcesz wysłać do uczestników wiadomość e-mail z zaproszeniem?"
+
+#~ msgid ""
+#~ "The todo \"%1\" includes other people.\n"
+#~ "Do you want to email the invitation to the attendees?"
+#~ msgstr ""
+#~ "Zadanie \"%1\" dotyczy również innych ludzi. \n"
+#~ "Czy chcesz wysłać do uczestników wiadomość e-mail z zaproszeniem?"
+
+#~ msgid ""
+#~ "This incidence includes other people. Should an email be sent to the "
+#~ "attendees?"
+#~ msgstr ""
+#~ "Zdarzenie dotyczy również innych ludzi. Czy powinien zostać wysłany e-"
+#~ "mail do uczestników?"
+
+#~ msgid "Group Scheduling Email"
+#~ msgstr "E-mail harmonogramu grupowego"
+
+#~ msgid "Do Not Send"
+#~ msgstr "Nie wysyłaj"
+
+#~ msgid "Do you want to send a status update to the organizer of this task?"
+#~ msgstr ""
+#~ "Czy chcesz wysłać aktualizację statusu do organizatora tego zadania?"
+
+#~ msgid ""
+#~ "Your status as an attendee of this event changed. Do you want to send a "
+#~ "status update to the event organizer?"
+#~ msgstr ""
+#~ "Twój status jako uczestnika tego zdarzenia zmienił się. Czy chcesz wysłać "
+#~ "aktualizację statusu do organizatora zdarzenia?"
+
+#~ msgid ""
+#~ "You had previously accepted an invitation to this event. Do you want to "
+#~ "send an updated response to the organizer declining the invitation?"
+#~ msgstr ""
+#~ "Wcześniej już zaakceptowałeś(łaś) zaproszenie do tego zdarzenia. Czy "
+#~ "chcesz wysłać zaktualizowaną odpowiedź do jego organizatora odrzucającą "
+#~ "zaproszenie?"
+
+#~ msgid ""
+#~ "You are not the organizer of this event. Editing it will bring your "
+#~ "calendar out of sync with the organizer's calendar. Do you really want to "
+#~ "edit it?"
+#~ msgstr ""
+#~ "Nie jesteś organizatorem tego zdarzenia. Jego edycja spowoduje "
+#~ "desynchronizację Twojego kalendarza z kalendarzem organizatora. Czy "
+#~ "rzeczywiście chcesz go edytować?"
+
+#~ msgid "Sending group scheduling email failed."
+#~ msgstr "Wysyłanie e-maila harmonogramu grupowego nie powiodło się."
+
+#~ msgid "Unable to save changes for incidence %1 \"%2\": %3"
+#~ msgstr "Błąd zapisu zmian dla zdarzenia  %1 \"%2\": %3"
+
+#~ msgid ""
+#~ "Some attendees were removed from the incidence. Shall cancel messages be "
+#~ "sent to these attendees?"
+#~ msgstr ""
+#~ "Niektórzy uczestnicy zostali usunięci ze zdarzenia. Czy powinny do nich "
+#~ "zostać wysłane  wiadomości o ich usunięciu ?"
+
+#~ msgid "Send Messages"
+#~ msgstr "Wyślij wiadomości"
+
+#~ msgid "Unable to save %1 \"%2\": %3"
+#~ msgstr "Nie można zapisać %1 \"%2\": %3"
+
+#~ msgid "Send copy to owner when mailing events"
+#~ msgstr "Wyślij kopię do właściciela podczas wysyłania zdarzeń"
+
+#~ msgid ""
+#~ "Check this box to get a copy of all e-mail messages that KOrganizer sends "
+#~ "at your request to event attendees."
+#~ msgstr ""
+#~ "Oznacz to pole aby otrzymywać kopie wiadomości e-mail wysyłanych przez "
+#~ "KOrganizara na Twoje żądanie do uczestników zdarzenia."
+
+#~ msgid "Free/Busy Publish URL"
+#~ msgstr "URL publikacji wolny/zajęty"
+
+#~ msgid "URL for publishing free/busy information"
+#~ msgstr "URL dla publikacji informacji wolny/zajęty"
+
+#~ msgid "Free/Busy Publish Username"
+#~ msgstr "Nazwa użytkownika publikacji wolny/zajęty"
+
+#~ msgid "Username for publishing free/busy information"
+#~ msgstr "Nazwa użytkownika do publikacji informacji wolny/zajęty"
+
+#~ msgid "Free/Busy Publish Password"
+#~ msgstr "Hasło publikacji wolny/zajęty"
+
+#~ msgid "Password for publishing free/busy information"
+#~ msgstr "Hasło dla publikacji informacji wolny/zajęty"
+
+#~ msgid "Enable Automatic Free/Busy Retrieval"
+#~ msgstr "Włącz automatyczne uzyskiwanie wolny/zajęty"
+
+#~ msgid "Use full email address for retrieval"
+#~ msgstr "Użyj pełnego adresu e-mail do uzyskiwania"
+
+#~ msgid ""
+#~ "With this setting, you can change the filename that will be fetched from "
+#~ "the server. With this checked, it will download a free/busy file called "
+#~ "user@domain.ifb, for example nn@kde.org.ifb. Without this set, it will "
+#~ "download user.ifb, for example nn.ifb."
+#~ msgstr ""
+#~ "Przy użyciu tego ustawienia możesz zmienić nazwę, która będzie pobrana z "
+#~ "serwera. Z tą opcją włączoną, pobrany będzie plik wolny/zajęty nazwany w "
+#~ "stylu: uzytkownik@domena.ifb, np.: nn@kde.org.ifb. Bez tej opcji pobrany "
+#~ "będzie uzytkownik.ifb, na przykład: nn.ifb."
+
+#~ msgid "Free/Busy Retrieval URL"
+#~ msgstr "URL uzyskiwania wolny/zajęty"
+
+#~ msgid "Free/Busy Retrieval Username"
+#~ msgstr "Nazwa użytkownika uzyskiwania wolny/zajęty"
+
+#~ msgid "Free/Busy Retrieval Password"
+#~ msgstr "Hasło uzyskiwania wolny/zajęty"
+
+#~ msgid "Password for retrieving free/busy information"
+#~ msgstr "Hasło dla uzyskiwania informacji wolny/zajęty"
+
+#~ msgid "Send Outlook-like pseudo counter proposals"
+#~ msgstr "Wysyłanie kontrpropozycji w stylu Outlooka"
+
+#~ msgid "Check whether hostname and retrieval email address match"
+#~ msgstr "Sprawdzanie, czy nazwa hosta i adres e-mail uzyskiwania pasują"
+
+#~ msgid ""
+#~ "With this setting you can configure whether the domain part of the free/"
+#~ "busy URL has to match the domain part of the user ID you are looking for. "
+#~ "For example, if this option is set, then looking for the free/busy data "
+#~ "of joe@mydomain.com on the server www.yourdomain.com will fail."
+#~ msgstr ""
+#~ "Przy użyciu tego ustawienia możesz ustalić, czy część domeny adresu URL "
+#~ "wolny/zajęty ma odpowiadać części domeny ID użytkownika, którego szukasz. "
+#~ "Na przykład, jeśli ta opcja jest ustawiona, wyszukiwanie danych wolny/"
+#~ "zajęty użytkownika jan@mojadomena.pl na serwerze www.twojadomena.pl "
+#~ "zakończy się niepowodzeniem."
+
+#~ msgid "Free Busy Object"
+#~ msgstr "Obiekt wolny/zajęty"
+
+#~ msgid "Free Busy Message"
+#~ msgstr "Wiadomość wolny/zajęty"
+
+#~ msgid "Counter proposal: %1"
+#~ msgstr "Kontrpropozycja: %1"
+
+#~ msgid "Select Addresses"
+#~ msgstr "Wybierz adresy"
+
+#~ msgid "Send email to these recipients"
+#~ msgstr "Wyślij e-mail do tych odbiorców"
+
+#~ msgid ""
+#~ "Clicking the <b>Ok</b> button will cause an email to be sent to the "
+#~ "recipients you have entered."
+#~ msgstr ""
+#~ "Naciśnięcie przycisku <b>Ok</b> spowoduje wysłanie e-maila do wpisanych "
+#~ "odbiorców."
+
+#~ msgid "Cancel recipient selection and the email"
+#~ msgstr "Anuluj wybór odbiorców i e-mail"
+
+#~ msgid ""
+#~ "Clicking the <b>Cancel</b> button will cause the email operation to be "
+#~ "terminated."
+#~ msgstr ""
+#~ "Naciśnięcie przycisku <b>Anuluj</b> spowoduje wstrzymanie procesu "
+#~ "wysyłania wiadomości e-mail."
+
+#~ msgid ""
+#~ "Click the <b>Help</b> button to read more information about Group "
+#~ "Scheduling."
+#~ msgstr ""
+#~ "Naciśnij przycisk <b>Pomoc</b>aby przeczytać więcej informacji o "
+#~ "harmonogramie grupowym."
+
+#~ msgid "(EmptyName)"
+#~ msgstr "(PustaNazwa)"
+
+#~ msgid "(EmptyEmail)"
+#~ msgstr "(PustyE-mail)"
+
+#~ msgid "Forwarding"
+#~ msgstr "Przekazywanie"
+
+#~ msgid "The item information was successfully sent."
+#~ msgstr "Informacje o elemencie zostały poprawnie wysłane."
+
+#~ msgid "Unable to forward the item '%1'"
+#~ msgstr "Nie można przekazać elementu '%1'"
+
+#~ msgid "Publishing"
+#~ msgstr "Publikowanie"
+
+#~ msgid "Unable to publish the item '%1'"
+#~ msgstr "Nie można opublikować elementu '%1'"
+
+#~ msgctxt "%1 is folder contents"
+#~ msgid "My Shared %1"
+#~ msgstr "Moje udostępnione %1"
