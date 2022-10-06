@@ -179,7 +179,7 @@ msgstr "Mes/os"
 #, kde-format
 msgctxt "@label"
 msgid "Archive &file:"
-msgstr "&Fitxer d'arxiu:"
+msgstr "Fi&txer d'arxiu:"
 
 #: archivedialog.cpp:144
 #, kde-format
