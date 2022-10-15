@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-25 00:45+0000\n"
-"PO-Revision-Date: 2022-09-21 11:26+0000\n"
+"PO-Revision-Date: 2022-10-14 11:01+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -331,10 +331,9 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 
 #: attachmenthandler.cpp:211
-#, fuzzy, kde-format
-#| msgid "Attach&ments"
+#, kde-format
 msgid "Save Attachment"
-msgstr "Við&hengi"
+msgstr "Vista viðhengi"
 
 #: cellitem.cpp:38
 #, kde-kuit-format
@@ -385,16 +384,14 @@ msgid "Archiving events"
 msgstr "Afrita gamla atburði í safnskrá"
 
 #: freebusymodel/freebusycalendar.cpp:109
-#, fuzzy, kde-format
-#| msgid "Free"
+#, kde-format
 msgid "Free"
-msgstr "Laus"
+msgstr "Laust"
 
 #: freebusymodel/freebusycalendar.cpp:112
-#, fuzzy, kde-format
-#| msgid "Busy"
+#, kde-format
 msgid "Busy"
-msgstr "Upptekin"
+msgstr "Upptekið"
 
 #: freebusymodel/freebusycalendar.cpp:115
 #, kde-format
@@ -407,16 +404,14 @@ msgid "Tentative"
 msgstr "Með fyrirvara"
 
 #: freebusymodel/freebusycalendar.cpp:121
-#, fuzzy, kde-format
-#| msgid "Unknown"
+#, kde-format
 msgid "Unknown"
 msgstr "Óþekkt"
 
 #: freebusymodel/freebusyitemmodel.cpp:211
-#, fuzzy, kde-format
-#| msgid "Atte&ndees"
+#, kde-format
 msgid "Attendee"
-msgstr "Þátttake&ndur"
+msgstr "Þátttakandi"
 
 #: freebusymodel/freeperiodmodel.cpp:124
 #, kde-format
@@ -442,32 +437,28 @@ msgid "%1, %2 %3, %4 to %5"
 msgstr "%1, %2. %3, %4 til %5"
 
 #: freebusymodel/freeperiodmodel.cpp:176
-#, fuzzy, kde-format
-#| msgid "Working Hours"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
-msgstr "Vinnutími"
+msgstr "Laus tími"
 
 #: freebusymodel/freeperiodmodel.cpp:178
-#, fuzzy, kde-format
-#| msgid "&Start:"
+#, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
-msgstr "&Hefst:"
+msgstr "Upphaf:"
 
 #: freebusymodel/freeperiodmodel.cpp:181
-#, fuzzy, kde-format
-#| msgid "&End:"
+#, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
-msgstr "&Endar:"
+msgstr "Endir:"
 
 #: freebusymodel/freeperiodmodel.cpp:184
-#, fuzzy, kde-format
-#| msgid "Duration: "
+#, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
-msgstr "Lengd: "
+msgstr "Tímalengd:"
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:15
@@ -711,7 +702,7 @@ msgstr ""
 #: kcalprefs.kcfg:107
 #, kde-format
 msgid "Send mails without asking."
-msgstr ""
+msgstr "Senda tölvupóst án þess að spyrja."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:110
@@ -830,9 +821,9 @@ msgstr "Nafnlaus"
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
-#, fuzzy, kde-format
+#, kde-format
 msgid "E&mail address"
-msgstr "N&etfang:"
+msgstr "Tölvupóst&fang"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:201
@@ -869,24 +860,22 @@ msgid "Use this color when drawing items without any tags"
 msgstr ""
 
 #: noteeditdialog.cpp:34
-#, fuzzy, kde-format
-#| msgid "Click to add a new to-do"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
-msgstr "Smelltu til að bæta við nýjum verkþætti"
+msgstr "Búa til minnispunkt"
 
 #: noteeditdialog.cpp:43
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr "&Breyta"
+msgstr "Hætta við"
 
 #: noteeditdialog.cpp:49
-#, fuzzy, kde-format
-#| msgid "Travel"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr "Ferðalag"
+msgstr "Vista"
 
 #: noteeditdialog.cpp:70
 #, fuzzy, kde-format
@@ -903,17 +892,16 @@ msgid "Calendar where the new note will be stored."
 msgstr "Setur skiladag þessa verkþáttar."
 
 #: noteeditdialog.cpp:85
-#, fuzzy, kde-format
-#| msgid "&Title:"
+#, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
-msgstr "&Titill:"
+msgstr "Titill:"
 
 #: noteeditdialog.cpp:90
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"
-msgstr "Texti"
+msgstr "Texti:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -1150,9 +1138,9 @@ msgstr "&Teygja tímasvið til að innihalda alla atburði"
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprintdayconfig_base.ui:203
 #: printing/calprintweekconfig_base.ui:203
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print Layout"
-msgstr "Prenta da&g"
+msgstr "Prentuppsetning"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintdayconfig_base.ui:209
@@ -1383,8 +1371,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:224
 #: printing/calprinttodoconfig_base.ui:391
 #: printing/calprintweekconfig_base.ui:332
-#, fuzzy, kde-format
-#| msgid "General"
+#, kde-format
 msgctxt "@title general print settings"
 msgid "General"
 msgstr "Almennt"
@@ -1437,10 +1424,9 @@ msgstr "&Sýna tíma sem:"
 #: printing/calprintincidenceconfig_base.ui:107
 #: printing/calprintmonthconfig_base.ui:266
 #: printing/calprintweekconfig_base.ui:361
-#, fuzzy, kde-format
-#| msgid "Working hours color"
+#, kde-format
 msgid "Print in color"
-msgstr "Litur fyrir vinnutíma"
+msgstr "Prenta í litum"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:364
@@ -1501,27 +1487,27 @@ msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
 #: printing/calprinttodoconfig_base.ui:423
 #: printing/calprintweekconfig_base.ui:380
 #: printing/calprintyearconfig_base.ui:184
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print &Footer"
-msgstr "Prenta &viku"
+msgstr "Prenta síðu&fót"
 
 #: printing/calprintdefaultplugins.cpp:120
 #: printing/calprintdefaultplugins.cpp:149
 #: printing/calprintdefaultplugins.cpp:168
-#, fuzzy, kde-format
+#, kde-format
 msgid "Start date: "
-msgstr "Hefst daginn:"
+msgstr "Upphafsdagur: "
 
 #: printing/calprintdefaultplugins.cpp:123
 #: printing/calprintdefaultplugins.cpp:152
-#, fuzzy, kde-format
+#, kde-format
 msgid "No start date"
-msgstr "Hefst daginn:"
+msgstr "Enginn upphafsdagur"
 
 #: printing/calprintdefaultplugins.cpp:128
-#, fuzzy, kde-format
+#, kde-format
 msgid "End date: "
-msgstr "Lýkur daginn:"
+msgstr "Lokadagur: "
 
 #: printing/calprintdefaultplugins.cpp:131
 #, kde-format
@@ -1529,11 +1515,11 @@ msgid "Duration: "
 msgstr "Lengd: "
 
 #: printing/calprintdefaultplugins.cpp:134
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
-msgstr[0] "1 klukkustund"
-msgstr[1] "%1 klukkustundir"
+msgstr[0] "1 klukkustund "
+msgstr[1] "%1 klukkustundir "
 
 #: printing/calprintdefaultplugins.cpp:137
 #, fuzzy, kde-format
@@ -1543,26 +1529,25 @@ msgstr[0] "Ein mínúta"
 msgstr[1] "%1 mínútur"
 
 #: printing/calprintdefaultplugins.cpp:140
-#, fuzzy, kde-format
+#, kde-format
 msgid "No end date"
-msgstr "E&nginn lokadagur"
+msgstr "Enginn lokadagur"
 
 #: printing/calprintdefaultplugins.cpp:157
-#, fuzzy, kde-format
+#, kde-format
 msgid "Due date: "
-msgstr "Skiladagar"
+msgstr "Skiladagur: "
 
 #: printing/calprintdefaultplugins.cpp:160
-#, fuzzy, kde-format
+#, kde-format
 msgid "No due date"
-msgstr "Skiladagar"
+msgstr "Enginn skiladagur"
 
 #: printing/calprintdefaultplugins.cpp:285
-#, fuzzy, kde-format
-#| msgid "Accept"
+#, kde-format
 msgctxt "except for listed dates"
 msgid " except"
-msgstr "Samþykkja"
+msgstr " nema"
 
 #: printing/calprintdefaultplugins.cpp:292
 #, kde-format
@@ -1606,24 +1591,24 @@ msgid "%1 after the end"
 msgstr "%1 eftir enda"
 
 #: printing/calprintdefaultplugins.cpp:337
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
-msgstr[0] "Einn dagur"
+msgstr[0] "1 dagur"
 msgstr[1] "%1 dagar"
 
 #: printing/calprintdefaultplugins.cpp:340
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
-msgstr[0] "Ein klukkustund"
+msgstr[0] "1 klukkustund"
 msgstr[1] "%1 klukkustundir"
 
 #: printing/calprintdefaultplugins.cpp:343
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
-msgstr[0] "Ein mínúta"
+msgstr[0] "1 mínúta"
 msgstr[1] "%1 mínútur"
 
 #: printing/calprintdefaultplugins.cpp:347
@@ -2006,17 +1991,16 @@ msgid "Print"
 msgstr "Prenta"
 
 #: printing/calprinter.cpp:175
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
-msgstr "Prenta lista"
+msgstr "Prentstíll"
 
 #: printing/calprinter.cpp:187
-#, fuzzy, kde-format
-#| msgid "Page &orientation:"
+#, kde-format
 msgctxt "@label"
 msgid "Page &orientation:"
-msgstr "Blaðsíðu&snið:"
+msgstr "Stefna &blaðsíðu:"
 
 #: printing/calprinter.cpp:192
 #, fuzzy, kde-format
@@ -2059,11 +2043,10 @@ msgid "Landscape"
 msgstr "Lárétt"
 
 #: printing/calprinter.cpp:222
-#, fuzzy, kde-format
-#| msgid "Select Cate&gories..."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the type of print"
-msgstr "Veldu &flokka..."
+msgstr "Veldu tegund útprentunar"
 
 #: printing/calprinter.cpp:224
 #, kde-format
@@ -2116,9 +2099,9 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:46
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print the attendees"
-msgstr "1 mínúta"
+msgstr "Prenta út þátttakendur"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:49
@@ -2129,9 +2112,9 @@ msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:52
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Attendees"
-msgstr "Þátttake&ndur"
+msgstr "Þáttt&akendur"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:59
@@ -2412,11 +2395,10 @@ msgid "Holiday"
 msgstr "Hátíðardagur"
 
 #: printing/calprintpluginbase.cpp:612
-#, fuzzy, kde-format
-#| msgid "Undo (%1)"
+#, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
-msgstr "Afturkalla (%1)"
+msgstr "prentað: %1"
 
 #: printing/calprintpluginbase.cpp:921
 #, kde-format
@@ -2737,15 +2719,15 @@ msgstr "Texti"
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
 #: printing/calprintyearconfig_base.ui:143
 #: printing/calprintyearconfig_base.ui:170
-#, fuzzy, kde-format
+#, kde-format
 msgid "Time Boxes"
-msgstr "Tímabelti:"
+msgstr "Tímareitir"
 
 #. i18n: ectx: property (text), widget (QLabel, mHolidaysLabel)
 #: printing/calprintyearconfig_base.ui:151
-#, fuzzy, kde-format
+#, kde-format
 msgid "Show &holidays as:"
-msgstr "&Sýna tíma sem:"
+msgstr "Sýna &frídaga sem:"
 
 #: printing/journalprint.cpp:104
 #, kde-format
@@ -2764,9 +2746,9 @@ msgid "Journal entries"
 msgstr "Dagbókarfærslur"
 
 #: printing/journalprint.h:32
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print &journal"
-msgstr "Prenta dagbók"
+msgstr "Prenta da&gbók"
 
 #: printing/journalprint.h:37
 #, kde-format
@@ -2774,9 +2756,9 @@ msgid "Prints all journals for a given date range"
 msgstr "Prentar allar dagbækur í uppgefna tímabilinu"
 
 #: printing/yearprint.h:31
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print &year"
-msgstr "Prenta &viku"
+msgstr "Prent&a ár"
 
 #: printing/yearprint.h:36
 #, fuzzy, kde-format
