@@ -139,9 +139,8 @@ msgid ""
 "The age of the events and to-dos to archive. All older items will be saved "
 "and deleted, the newer will be kept."
 msgstr ""
-"L'antiguitat dels esdeveniments i tasques pendents que s'han d'arxivar. Tots "
-"els elements anteriors es guardaran i suprimiran, els posteriors es "
-"conservaran."
+"L'antiguitat dels esdeveniments i tasques pendents que s'arxivaran. Tots els "
+"elements anteriors es guardaran i suprimiran, els posteriors es conservaran."
 
 #: archivedialog.cpp:130
 #, kde-format
