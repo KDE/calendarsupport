@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-25 00:45+0000\n"
-"PO-Revision-Date: 2022-10-14 11:01+0000\n"
+"PO-Revision-Date: 2022-12-11 13:00+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -1522,11 +1522,11 @@ msgstr[0] "1 klukkustund "
 msgstr[1] "%1 klukkustundir "
 
 #: printing/calprintdefaultplugins.cpp:137
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
-msgstr[0] "Ein mínúta"
-msgstr[1] "%1 mínútur"
+msgstr[0] "1 mínúta "
+msgstr[1] "%1 mínútur "
 
 #: printing/calprintdefaultplugins.cpp:140
 #, kde-format
@@ -1639,18 +1639,16 @@ msgid "Notes:"
 msgstr "Athugasemdir:"
 
 #: printing/calprintdefaultplugins.cpp:457
-#, fuzzy, kde-format
-#| msgid "No filter"
+#, kde-format
 msgid "No Subitems"
-msgstr "Engin sía"
+msgstr "Engin undiratriði"
 
 #: printing/calprintdefaultplugins.cpp:460
-#, fuzzy, kde-format
-#| msgid "No filter"
+#, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
-msgstr[0] "Engin sía"
-msgstr[1] "Engin sía"
+msgstr[0] "1 undiratriði:"
+msgstr[1] "%1 undiratriði:"
 
 #: printing/calprintdefaultplugins.cpp:477
 #, kde-format
@@ -2132,16 +2130,15 @@ msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:65
-#, fuzzy, kde-format
-#| msgid "No filter"
+#, kde-format
 msgid "&Notes, subitems"
-msgstr "Engin sía"
+msgstr "Mi&nnisatriði, undiratriði"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:72
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print the attachments"
-msgstr "Bæta við viðhengi"
+msgstr "Prenta viðhengin"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
@@ -2229,8 +2226,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
-#, fuzzy, kde-format
-#| msgid "&Start month:"
+#, kde-format
 msgid "Sta&rt month:"
 msgstr "Upphaf&smánuður:"
 
