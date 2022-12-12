@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-25 00:45+0000\n"
-"PO-Revision-Date: 2022-11-11 10:22+0000\n"
+"PO-Revision-Date: 2022-12-11 13:00+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -1639,10 +1639,9 @@ msgid "Notes:"
 msgstr "Athugasemdir:"
 
 #: printing/calprintdefaultplugins.cpp:457
-#, fuzzy, kde-format
-#| msgid "No filter"
+#, kde-format
 msgid "No Subitems"
-msgstr "Engin sía"
+msgstr "Engin undiratriði"
 
 #: printing/calprintdefaultplugins.cpp:460
 #, kde-format
@@ -2227,8 +2226,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
-#, fuzzy, kde-format
-#| msgid "&Start month:"
+#, kde-format
 msgid "Sta&rt month:"
 msgstr "Upphaf&smánuður:"
 
