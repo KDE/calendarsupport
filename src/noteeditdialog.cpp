@@ -16,15 +16,22 @@
 #include <KLocalizedString>
 #include <KSharedConfig>
 
+#include <KWindowConfig>
 #include <QDialogButtonBox>
 #include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QWindow>
 
 using namespace CalendarSupport;
 
 QAbstractItemModel *NoteEditDialog::_k_noteEditStubModel = nullptr;
+
+namespace
+{
+static const char myNoteEditDialogGroupName[] = "NoteEditDialog";
+}
 
 NoteEditDialog::NoteEditDialog(QWidget *parent)
     : QDialog(parent)
@@ -103,18 +110,17 @@ NoteEditDialog::~NoteEditDialog()
 
 void NoteEditDialog::readConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "NoteEditDialog");
-
-    const QSize size = group.readEntry("Size", QSize(500, 300));
-    if (size.isValid()) {
-        resize(size);
-    }
+    create(); // ensure a window is created
+    windowHandle()->resize(QSize(500, 300));
+    KConfigGroup group(KSharedConfig::openStateConfig(), myNoteEditDialogGroupName);
+    KWindowConfig::restoreWindowSize(windowHandle(), group);
+    resize(windowHandle()->size()); // workaround for QTBUG-40584
 }
 
 void NoteEditDialog::writeConfig()
 {
-    KConfigGroup group(KSharedConfig::openStateConfig(), "NoteEditDialog");
-    group.writeEntry("Size", size());
+    KConfigGroup group(KSharedConfig::openStateConfig(), myNoteEditDialogGroupName);
+    KWindowConfig::saveWindowSize(windowHandle(), group);
     group.sync();
 }
 
