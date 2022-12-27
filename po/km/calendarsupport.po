@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"POT-Creation-Date: 2022-12-27 00:49+0000\n"
 "PO-Revision-Date: 2012-12-25 15:13+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -898,46 +898,46 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr "ប្រើ​ពណ៌​នេះ នៅពេល​គូរ​ធាតុ​ដោយ​មិនមាន​ប្រភេទ"
 
-#: noteeditdialog.cpp:34
+#: noteeditdialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr ""
 
-#: noteeditdialog.cpp:43
+#: noteeditdialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr ""
 
-#: noteeditdialog.cpp:49
+#: noteeditdialog.cpp:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
 msgstr ""
 
-#: noteeditdialog.cpp:70
+#: noteeditdialog.cpp:77
 #, fuzzy, kde-format
 #| msgid "Select the calendar where this item will be stored."
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "ជ្រើស​ប្រតិទិន​ដែល​នឹង​ត្រូវ​រក្សាទុក​ធាតុ​នេះ ។"
 
-#: noteeditdialog.cpp:72
+#: noteeditdialog.cpp:79
 #, fuzzy, kde-format
 #| msgid "Select the calendar where this item will be stored."
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "ជ្រើស​ប្រតិទិន​ដែល​នឹង​ត្រូវ​រក្សាទុក​ធាតុ​នេះ ។"
 
-#: noteeditdialog.cpp:85
+#: noteeditdialog.cpp:92
 #, fuzzy, kde-format
 #| msgid "&Title:"
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "ចំណង​ជើង ៖"
 
-#: noteeditdialog.cpp:90
+#: noteeditdialog.cpp:97
 #, fuzzy, kde-format
 #| msgid "Text"
 msgctxt "@label specify the text for this note"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"POT-Creation-Date: 2022-12-27 00:49+0000\n"
 "PO-Revision-Date: 2022-02-24 09:21+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -872,45 +872,45 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr "A kategória nélküli bejegyzések szegélyének színe"
 
-#: noteeditdialog.cpp:34
+#: noteeditdialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr ""
 
-#: noteeditdialog.cpp:43
+#: noteeditdialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr ""
 
-#: noteeditdialog.cpp:49
+#: noteeditdialog.cpp:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
 msgstr ""
 
-#: noteeditdialog.cpp:70
+#: noteeditdialog.cpp:77
 #, fuzzy, kde-format
 #| msgid "Select the calendar where this item will be stored."
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "Válassza ki a naptárat, ahol ez az elem tárolva lesz."
 
-#: noteeditdialog.cpp:72
+#: noteeditdialog.cpp:79
 #, fuzzy, kde-format
 #| msgid "Select the calendar where this item will be stored."
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "Válassza ki a naptárat, ahol ez az elem tárolva lesz."
 
-#: noteeditdialog.cpp:85
+#: noteeditdialog.cpp:92
 #, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "Cím:"
 
-#: noteeditdialog.cpp:90
+#: noteeditdialog.cpp:97
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"

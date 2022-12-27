@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"POT-Creation-Date: 2022-12-27 00:49+0000\n"
 "PO-Revision-Date: 2022-08-10 08:26+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -871,43 +871,43 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr "Використовувати цей колір для малювання пунктів без міток"
 
-#: noteeditdialog.cpp:34
+#: noteeditdialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr "Створення нотатки"
 
-#: noteeditdialog.cpp:43
+#: noteeditdialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: noteeditdialog.cpp:49
+#: noteeditdialog.cpp:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
 msgstr "Зберегти"
 
-#: noteeditdialog.cpp:70
+#: noteeditdialog.cpp:77
 #, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "Календар, до якого слід зберігати нові нотатки."
 
-#: noteeditdialog.cpp:72
+#: noteeditdialog.cpp:79
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "Календар, до якого слід зберігати нові нотатки."
 
-#: noteeditdialog.cpp:85
+#: noteeditdialog.cpp:92
 #, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "Заголовок:"
 
-#: noteeditdialog.cpp:90
+#: noteeditdialog.cpp:97
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"

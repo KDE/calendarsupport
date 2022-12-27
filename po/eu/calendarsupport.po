@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"POT-Creation-Date: 2022-12-27 00:49+0000\n"
 "PO-Revision-Date: 2022-09-17 06:00+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -871,43 +871,43 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr "Erabili kolore hau etiketarik gabeko elementuak marraztean"
 
-#: noteeditdialog.cpp:34
+#: noteeditdialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr "Sortu ohar bat"
 
-#: noteeditdialog.cpp:43
+#: noteeditdialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Utzi"
 
-#: noteeditdialog.cpp:49
+#: noteeditdialog.cpp:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
 msgstr "Gorde"
 
-#: noteeditdialog.cpp:70
+#: noteeditdialog.cpp:77
 #, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "Ohar berria gordetzeko egutegia."
 
-#: noteeditdialog.cpp:72
+#: noteeditdialog.cpp:79
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "Ohar berria gordetzeko egutegia."
 
-#: noteeditdialog.cpp:85
+#: noteeditdialog.cpp:92
 #, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "Titulua:"
 
-#: noteeditdialog.cpp:90
+#: noteeditdialog.cpp:97
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"

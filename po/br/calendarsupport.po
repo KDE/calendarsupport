@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim/korganizer.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"POT-Creation-Date: 2022-12-27 00:49+0000\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandriva.com>\n"
 "Language-Team: Breton <LL@li.org>\n"
@@ -797,46 +797,46 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr ""
 
-#: noteeditdialog.cpp:34
+#: noteeditdialog.cpp:41
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr "&Diell"
 
-#: noteeditdialog.cpp:43
+#: noteeditdialog.cpp:50
 #, fuzzy, kde-format
 #| msgid "&Cancel"
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "&Nullañ"
 
-#: noteeditdialog.cpp:49
+#: noteeditdialog.cpp:56
 #, fuzzy, kde-format
 #| msgid "&Save"
 msgctxt "@action:button"
 msgid "Save"
 msgstr "&Enrollañ"
 
-#: noteeditdialog.cpp:70
+#: noteeditdialog.cpp:77
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "Lakaat a ra titl an deizlevr-mañ."
 
-#: noteeditdialog.cpp:72
+#: noteeditdialog.cpp:79
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "Lakaat a ra titl an deizlevr-mañ."
 
-#: noteeditdialog.cpp:85
+#: noteeditdialog.cpp:92
 #, fuzzy, kde-format
 #| msgid "&Title:"
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "&Titl :"
 
-#: noteeditdialog.cpp:90
+#: noteeditdialog.cpp:97
 #, fuzzy, kde-format
 #| msgid "Text"
 msgctxt "@label specify the text for this note"

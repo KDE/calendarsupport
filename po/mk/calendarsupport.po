@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"POT-Creation-Date: 2022-12-27 00:49+0000\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -825,48 +825,48 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr ""
 
-#: noteeditdialog.cpp:34
+#: noteeditdialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "Click to add a new to-do"
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr "Кликнете да додадете нова задача"
 
-#: noteeditdialog.cpp:43
+#: noteeditdialog.cpp:50
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "И&змени"
 
-#: noteeditdialog.cpp:49
+#: noteeditdialog.cpp:56
 #, fuzzy, kde-format
 #| msgid "Travel"
 msgctxt "@action:button"
 msgid "Save"
 msgstr "Патување"
 
-#: noteeditdialog.cpp:70
+#: noteeditdialog.cpp:77
 #, fuzzy, kde-format
 #| msgid "Sets the due date for this to-do."
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "Го поставува датумот на краен рок за оваа задача."
 
-#: noteeditdialog.cpp:72
+#: noteeditdialog.cpp:79
 #, fuzzy, kde-format
 #| msgid "Sets the due date for this to-do."
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "Го поставува датумот на краен рок за оваа задача."
 
-#: noteeditdialog.cpp:85
+#: noteeditdialog.cpp:92
 #, fuzzy, kde-format
 #| msgid "&Title:"
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "&Наслов:"
 
-#: noteeditdialog.cpp:90
+#: noteeditdialog.cpp:97
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"

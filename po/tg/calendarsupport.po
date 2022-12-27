@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"POT-Creation-Date: 2022-12-27 00:49+0000\n"
 "PO-Revision-Date: 2019-09-29 12:45+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -844,44 +844,44 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr ""
 
-#: noteeditdialog.cpp:34
+#: noteeditdialog.cpp:41
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr "Барои афзудани масъалаи нав пахш кунед"
 
-#: noteeditdialog.cpp:43
+#: noteeditdialog.cpp:50
 #, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "&Дигаргун кунед"
 
-#: noteeditdialog.cpp:49
+#: noteeditdialog.cpp:56
 #, fuzzy, kde-format
 #| msgid "Travel"
 msgctxt "@action:button"
 msgid "Save"
 msgstr "Саёҳат"
 
-#: noteeditdialog.cpp:70
+#: noteeditdialog.cpp:77
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "Ранги масъалаҳои мӯҳлаташон гузашта"
 
-#: noteeditdialog.cpp:72
+#: noteeditdialog.cpp:79
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "Ранги масъалаҳои мӯҳлаташон гузашта"
 
-#: noteeditdialog.cpp:85
+#: noteeditdialog.cpp:92
 #, fuzzy, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "&Сарлавҳа:"
 
-#: noteeditdialog.cpp:90
+#: noteeditdialog.cpp:97
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"POT-Creation-Date: 2022-12-27 00:49+0000\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -929,49 +929,49 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr ""
 
-#: noteeditdialog.cpp:34
+#: noteeditdialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "Click to add a new to-do"
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr "नयाँ गर्नुपर्ने कार्य थप्न क्लिक गर्नुहोस्"
 
-#: noteeditdialog.cpp:43
+#: noteeditdialog.cpp:50
 #, fuzzy, kde-format
 #| msgid "&Cancel"
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
 
-#: noteeditdialog.cpp:49
+#: noteeditdialog.cpp:56
 #, fuzzy, kde-format
 #| msgid "&Save"
 msgctxt "@action:button"
 msgid "Save"
 msgstr "बचत गर्नुहोस्"
 
-#: noteeditdialog.cpp:70
+#: noteeditdialog.cpp:77
 #, fuzzy, kde-format
 #| msgid "Sets the due date for this to-do."
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "यो गर्नुपर्ने कार्यका लागि म्याद समाप्त हुने मिति सेट गर्छ ।"
 
-#: noteeditdialog.cpp:72
+#: noteeditdialog.cpp:79
 #, fuzzy, kde-format
 #| msgid "Sets the due date for this to-do."
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "यो गर्नुपर्ने कार्यका लागि म्याद समाप्त हुने मिति सेट गर्छ ।"
 
-#: noteeditdialog.cpp:85
+#: noteeditdialog.cpp:92
 #, fuzzy, kde-format
 #| msgid "&Title:"
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "शीर्षक:"
 
-#: noteeditdialog.cpp:90
+#: noteeditdialog.cpp:97
 #, fuzzy, kde-format
 #| msgid "Text"
 msgctxt "@label specify the text for this note"
