@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-25 00:45+0000\n"
-"PO-Revision-Date: 2022-10-01 16:22+0200\n"
+"PO-Revision-Date: 2022-12-29 11:46+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: archivedialog.cpp:43
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive/Delete Past Events and To-dos"
-msgstr ""
+msgstr "გასული მოვლენებისა და გეგმების არქივაცია/წაშლა"
 
 #: archivedialog.cpp:50
 #, kde-format
@@ -52,13 +52,13 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio"
 msgid "Archive now items older than:"
-msgstr ""
+msgstr "მითითებულ თარიღზე ძველი ელემენტების ახლავე დაარქივება:"
 
 #: archivedialog.cpp:83
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr ""
+msgstr "ძველი ჩანაწერების ერთჯერადი არქივირების ან გაწმენდის ჩართვა"
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -88,13 +88,14 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio"
 msgid "Automaticall&y archive items older than:"
-msgstr ""
+msgstr "მითითებულ თარიღზე ძველი ელემენტების ავტომატური დაარქივება:"
 
 #: archivedialog.cpp:108
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable automatic archiving or purging of older items"
 msgstr ""
+"მითითებულ თარიღზე ძველი ელემენტების ავტომატური დაარქივების ან წაშლის ჩართვა"
 
 #: archivedialog.cpp:110
 #, kde-format
@@ -109,7 +110,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the archival age in days, weeks or months"
-msgstr ""
+msgstr "დააყენეთ არქივირების ასაკი დღეებში, კვირებში ან თვეებში"
 
 #: archivedialog.cpp:125
 #, kde-format
@@ -135,25 +136,25 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox expires in daily units"
 msgid "Day(s)"
-msgstr ""
+msgstr "დღე"
 
 #: archivedialog.cpp:134
 #, kde-format
 msgctxt "@item:inlistbox expiration in weekly units"
 msgid "Week(s)"
-msgstr ""
+msgstr "კვირა"
 
 #: archivedialog.cpp:135
 #, kde-format
 msgctxt "@item:inlistbox expiration in monthly units"
 msgid "Month(s)"
-msgstr ""
+msgstr "თვე"
 
 #: archivedialog.cpp:140
 #, kde-format
 msgctxt "@label"
 msgid "Archive &file:"
-msgstr ""
+msgstr "არქივის &ფაილი:"
 
 #: archivedialog.cpp:144
 #, kde-format
@@ -165,7 +166,7 @@ msgstr "*.ics|იCalendar ფაილები"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the location of the archive"
-msgstr ""
+msgstr "არქივის მდებარეობის დაყენება"
 
 #: archivedialog.cpp:147
 #, kde-format
@@ -181,7 +182,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:group"
 msgid "Type of Items to Archive"
-msgstr ""
+msgstr "დასაარქივებელია ელემენტების ტიპი"
 
 #: archivedialog.cpp:158
 #, kde-format
@@ -196,13 +197,13 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive &Events"
-msgstr ""
+msgstr "&მოვლენების არქივი"
 
 #: archivedialog.cpp:167
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge events"
-msgstr ""
+msgstr "მოვლენების დაარქივება ან წაშლა"
 
 #: archivedialog.cpp:168
 #, kde-format
@@ -216,13 +217,13 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
-msgstr ""
+msgstr "დასრულებული განრიგის დაარქივება"
 
 #: archivedialog.cpp:172
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge completed to-dos"
-msgstr ""
+msgstr "დასრულებული განრიგის დაარქივება ან წაშლა"
 
 #: archivedialog.cpp:174
 #, kde-format
@@ -236,13 +237,13 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "&Delete only, do not save"
-msgstr ""
+msgstr "&მხოლოდ წაშლა, დამახსოვრების გარეშე"
 
 #: archivedialog.cpp:179
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Purge the old items without saving them"
-msgstr ""
+msgstr "ძველი ელემენტები შენახვის გარეშე წაიშლება"
 
 #: archivedialog.cpp:181
 #, kde-format
@@ -256,7 +257,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid "The archive file name is not valid."
-msgstr ""
+msgstr "არქივის ფაილის სახელი სწორი არაა."
 
 #: attachmenthandler.cpp:94
 #, kde-format
@@ -279,7 +280,7 @@ msgstr ""
 #: attachmenthandler.cpp:178 attachmenthandler.cpp:232
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
-msgstr ""
+msgstr "მიმაგრებული ფაილისთვის დროებით ფაილის შექმნის შეცდომა."
 
 #: attachmenthandler.cpp:211
 #, kde-format
@@ -289,12 +290,12 @@ msgstr "მიმაგრებული ფაილის შენახვ�
 #: cellitem.cpp:38
 #, kde-kuit-format
 msgid "<placeholder>undefined</placeholder>"
-msgstr ""
+msgstr "<placeholder>აღუწერელი</placeholder>"
 
 #: eventarchiver.cpp:126
 #, kde-format
 msgid "There are no items before %1"
-msgstr ""
+msgstr "%1-მდე ელემენტები არ არსებობს"
 
 #: eventarchiver.cpp:154
 #, kde-format
@@ -302,6 +303,8 @@ msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
+"წავშალო ყველა ჩანაწერი %1-მდე შენახვის გარეშე?\n"
+"წაიშლება შემდეგი ჩანაწერები:"
 
 #: eventarchiver.cpp:158
 #, kde-format
@@ -312,22 +315,22 @@ msgstr "ძველი ჩანაწერების წაშლა"
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
-msgstr ""
+msgstr "უცნობი მიზეზი"
 
 #: eventarchiver.cpp:270
 #, kde-format
 msgid "Cannot write archive file %1. %2"
-msgstr ""
+msgstr "აქტივის ფაილის (%1) ჩაწერის შეცდომა: %2"
 
 #: eventarchiver.cpp:281
 #, kde-format
 msgid "Cannot write archive. %1"
-msgstr ""
+msgstr "არქივის ჩაწერის შეცდომა. %1"
 
 #: eventarchiver.cpp:290
 #, kde-format
 msgid "Archiving events"
-msgstr ""
+msgstr "მოვლენების დაარქივება"
 
 #: freebusymodel/freebusycalendar.cpp:109
 #, kde-format
@@ -386,7 +389,7 @@ msgstr "%1, %2 %3, %4-დან %5-მდე"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
-msgstr ""
+msgstr "თავისუფალი პერიოდი"
 
 #: freebusymodel/freeperiodmodel.cpp:178
 #, kde-format
@@ -410,7 +413,7 @@ msgstr "ხანგრძლივობა:"
 #: kcalprefs.kcfg:15
 #, kde-format
 msgid "Use email settings from System Settings"
-msgstr ""
+msgstr "ელფოსტის პარამეტრების სისტემიდან აღება"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
@@ -425,7 +428,7 @@ msgstr ""
 #: kcalprefs.kcfg:24
 #, kde-format
 msgid "Default appointment time"
-msgstr ""
+msgstr "ნაგულისხმები განაწესის დრო"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:25
@@ -468,7 +471,7 @@ msgstr ""
 #: kcalprefs.kcfg:42
 #, kde-format
 msgid "Default audio file"
-msgstr ""
+msgstr "ნაგულისხმები აუდიო ფაილი"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:43
@@ -483,7 +486,7 @@ msgstr ""
 #: kcalprefs.kcfg:47
 #, kde-format
 msgid "Enable reminders for new Events"
-msgstr ""
+msgstr "ახალი მოვლენების შემხსენებლების ჩართვა"
 
 #. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:48
@@ -503,7 +506,7 @@ msgstr ""
 #: kcalprefs.kcfg:54
 #, kde-format
 msgid "Enable reminders for new To-dos"
-msgstr ""
+msgstr "ახალი განრიგებისთვის შემხსენებლების ჩართვა"
 
 #. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:55
@@ -523,7 +526,7 @@ msgstr ""
 #: kcalprefs.kcfg:62
 #, kde-format
 msgid "Default reminder time"
-msgstr ""
+msgstr "შეხსენებლის ნაგულისხმები დრო"
 
 #. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:63
@@ -537,7 +540,7 @@ msgstr ""
 #: kcalprefs.kcfg:64
 #, kde-format
 msgid "Default time for reminders"
-msgstr ""
+msgstr "ნაგულისხმები დრო შემხსენებლებისთვის"
 
 #. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
 #: kcalprefs.kcfg:69
@@ -551,13 +554,13 @@ msgstr ""
 #: kcalprefs.kcfg:70
 #, kde-format
 msgid "Default time unit for reminders"
-msgstr ""
+msgstr "შემხსენებლების ნაგულისხმები დრის ერთეული"
 
 #. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:78
 #, kde-format
 msgid "Day begins at"
-msgstr ""
+msgstr "დღე იწყება"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:79
@@ -571,7 +574,7 @@ msgstr ""
 #: kcalprefs.kcfg:84
 #, kde-format
 msgid "Exclude holidays"
-msgstr ""
+msgstr "დასვენებს დღეების გამორიცხვა"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:85
@@ -585,7 +588,7 @@ msgstr ""
 #: kcalprefs.kcfg:90
 #, kde-format
 msgid "Use holiday regions:"
-msgstr ""
+msgstr "დასვენების დღის რეგიონი:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:91
@@ -599,7 +602,7 @@ msgstr ""
 #: kcalprefs.kcfg:98
 #, kde-format
 msgid "Use Groupware communication"
-msgstr ""
+msgstr "Groupware communication-ის გამოყენება"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:99
@@ -615,13 +618,13 @@ msgstr ""
 #: kcalprefs.kcfg:104
 #, kde-format
 msgid "Default policy for invitations to other users:"
-msgstr ""
+msgstr "სხვა მომხმარებლების მოსაწვევის ნაგულისხმები პოლიტიკა:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:107
 #, kde-format
 msgid "Send mails without asking."
-msgstr ""
+msgstr "ელფოსტების კითხვის გარეშე გაგზავნა."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:110
@@ -647,7 +650,7 @@ msgstr ""
 #: kcalprefs.kcfg:134
 #, kde-format
 msgid "Regularly archive events"
-msgstr ""
+msgstr "მოვლენების რეგულარული დაარქივება"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:139
@@ -661,25 +664,25 @@ msgstr ""
 #: kcalprefs.kcfg:144
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
-msgstr ""
+msgstr "ერთეული, რომლითაც ვადა გამოიხატება."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:147
 #, kde-format
 msgid "In days"
-msgstr ""
+msgstr "დღეში"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:150
 #, kde-format
 msgid "In weeks"
-msgstr ""
+msgstr "კვირაში"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:153
 #, kde-format
 msgid "In months"
-msgstr ""
+msgstr "თვეში"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:160
@@ -691,31 +694,31 @@ msgstr ""
 #: kcalprefs.kcfg:164
 #, kde-format
 msgid "Archive events"
-msgstr ""
+msgstr "მოვლენების დაარქივება"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:169
 #, kde-format
 msgid "Archive to-dos"
-msgstr ""
+msgstr "განრიგის დაარქივება"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:174
 #, kde-format
 msgid "What to do when archiving"
-msgstr ""
+msgstr "რა ვქნა დაარქივების დროს"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:177
 #, kde-format
 msgid "Delete old events"
-msgstr ""
+msgstr "ძველი მოვლენების წაშლა"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:180
 #, kde-format
 msgid "Archive old events to a separate file"
-msgstr ""
+msgstr "ძველი მოვლენების ცალკე ფაილში არქივირება"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
 #: kcalprefs.kcfg:194
@@ -740,7 +743,7 @@ msgstr "ანონიმურად"
 #: kcalprefs.kcfg:200
 #, kde-format
 msgid "E&mail address"
-msgstr ""
+msgstr "&ელფოსტის მისამართი"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:201
@@ -798,13 +801,13 @@ msgstr "შენახვა"
 #, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
-msgstr ""
+msgstr "კალენდარი, სადაც ახალი შენიშვნა იქნება დამახსოვრებული."
 
 #: noteeditdialog.cpp:72
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
-msgstr ""
+msgstr "კალენდარი, სადაც ახალი შენიშვნა იქნება დამახსოვრებული."
 
 #: noteeditdialog.cpp:85
 #, kde-format
@@ -831,6 +834,14 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print day options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">დღის პარამერების დაბეჭდვა:</span></p></body></html>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
 #: printing/calprintdayconfig_base.ui:24
@@ -839,7 +850,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:24
 #, kde-format
 msgid "Date && Time Range"
-msgstr ""
+msgstr "თარიღისა და დროის დიაპაზონი"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (toolTip), widget (KDateComboBox, mFromDate)
@@ -852,7 +863,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:49
 #, kde-format
 msgid "Starting date for the print"
-msgstr ""
+msgstr "ბეჭდვის დაწყების თარიღი"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mFromDate)
@@ -877,7 +888,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:36
 #, kde-format
 msgid "&Start date:"
-msgstr ""
+msgstr "&დაწყების თარიღი:"
 
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mFromDate)
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mToDate)
@@ -897,7 +908,7 @@ msgstr "2009-01-19"
 #: printing/calprintweekconfig_base.ui:80
 #, kde-format
 msgid "Starting time for the print"
-msgstr ""
+msgstr "ბეჭდვის დაწყების დრო"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
@@ -940,7 +951,7 @@ msgstr "სთ:წთ"
 #: printing/calprintweekconfig_base.ui:129
 #, kde-format
 msgid "Ending date for the print"
-msgstr ""
+msgstr "ბეჭდვის დასრულების დრო"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -976,7 +987,7 @@ msgstr "&დასრულების დრო:"
 #: printing/calprintweekconfig_base.ui:160
 #, kde-format
 msgid "Ending time for the print"
-msgstr ""
+msgstr "ბეჭდვის დასრულების დრო"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1014,7 +1025,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:193
 #, kde-format
 msgid "E&xtend time range to include all events"
-msgstr ""
+msgstr "დროის დიაპაზონის ყველა &მოვლენის მოცმამდე გაფართოება"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprintdayconfig_base.ui:203
@@ -1074,7 +1085,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:70
 #, kde-format
 msgid "Security Exclusions"
-msgstr ""
+msgstr "უსაფრთოების გამონაკლისები"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:248
@@ -1098,7 +1109,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:79
 #, kde-format
 msgid "Exclude c&onfidential"
-msgstr ""
+msgstr "&კონფიდენციალურების ამოღება"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:258
@@ -1122,7 +1133,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:89
 #, kde-format
 msgid "Exclude pri&vate"
-msgstr ""
+msgstr "&პირადის ამოღება"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mIncludeInfoGroup)
 #. i18n: ectx: property (title), widget (QGroupBox, includeInfoBox)
@@ -1133,7 +1144,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:271
 #, kde-format
 msgid "Include Information"
-msgstr ""
+msgstr "ინფორმაციის ჩართვა"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDescription)
@@ -1143,7 +1154,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:277
 #, kde-format
 msgid "Print item descriptions"
-msgstr ""
+msgstr "ჩანაწერების აღწერის დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDescription)
@@ -1163,7 +1174,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:283
 #, kde-format
 msgid "&Descriptions"
-msgstr ""
+msgstr "&აღწერილობა"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1173,7 +1184,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:290
 #, kde-format
 msgid "Print item tags"
-msgstr ""
+msgstr "ელემენტის ჭდეების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -1253,7 +1264,7 @@ msgstr "ზოგადი"
 #: printing/calprintweekconfig_base.ui:338
 #, kde-format
 msgid "Print items on one line"
-msgstr ""
+msgstr "ელემენტების ერთ ხაზზე დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:341
@@ -1296,7 +1307,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:361
 #, kde-format
 msgid "Print in color"
-msgstr ""
+msgstr "ფერადად დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:364
@@ -1316,7 +1327,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:367
 #, kde-format
 msgid "&Use colors"
-msgstr ""
+msgstr "&ფერების გამოყენება"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:374
@@ -1328,7 +1339,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:178
 #, kde-format
 msgid "Print a datetime footer on each page"
-msgstr ""
+msgstr "ბეჭდვისას თითოეულ გვერდზე თარიღისა და დროის ქვესართის დამატება"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:377
@@ -1354,7 +1365,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:184
 #, kde-format
 msgid "Print &Footer"
-msgstr ""
+msgstr "&ქვესართის დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.cpp:120
 #: printing/calprintdefaultplugins.cpp:149
@@ -1401,12 +1412,12 @@ msgstr "დასასრულის თარიღის გარეშე"
 #: printing/calprintdefaultplugins.cpp:157
 #, kde-format
 msgid "Due date: "
-msgstr ""
+msgstr "თარიღამდე: "
 
 #: printing/calprintdefaultplugins.cpp:160
 #, kde-format
 msgid "No due date"
-msgstr ""
+msgstr "არა თარიღამდე"
 
 #: printing/calprintdefaultplugins.cpp:285
 #, kde-format
@@ -1543,13 +1554,13 @@ msgstr "დაწყების დრო: %1\n"
 #, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
-msgstr ""
+msgstr "თარიღამდე: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:501
 #, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
-msgstr ""
+msgstr "დრომდე: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:505
 #, kde-format
@@ -1578,7 +1589,7 @@ msgstr "საიდუმლოობა: %1\n"
 #: printing/calprintdefaultplugins.cpp:533
 #, kde-format
 msgid "No Attachments"
-msgstr ""
+msgstr "მიმაგრებული ფაილების გარეშე"
 
 #: printing/calprintdefaultplugins.cpp:536
 #, kde-format
@@ -1621,22 +1632,22 @@ msgstr "სტატუსი: %1"
 #: printing/calprintdefaultplugins.cpp:595
 #, kde-format
 msgid "Secrecy: %1"
-msgstr ""
+msgstr "საიდუმლოობა: %1"
 
 #: printing/calprintdefaultplugins.cpp:601
 #, kde-format
 msgid "Show as: Busy"
-msgstr ""
+msgstr "ჩვენება როგორც: დაკავებული"
 
 #: printing/calprintdefaultplugins.cpp:603
 #, kde-format
 msgid "Show as: Free"
-msgstr ""
+msgstr "ჩვენება როგორც: თავისუფალი"
 
 #: printing/calprintdefaultplugins.cpp:609
 #, kde-format
 msgid "This task is overdue!"
-msgstr ""
+msgstr "ეს ამოცანა ვადაგადაცილებულია!"
 
 #: printing/calprintdefaultplugins.cpp:615
 #, kde-format
@@ -1725,7 +1736,7 @@ msgstr "პრიორიტეტი"
 #, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
-msgstr ""
+msgstr "პროცენტი დასრულებულია"
 
 #: printing/calprintdefaultplugins.cpp:1525
 #, kde-format
@@ -1748,7 +1759,7 @@ msgstr "დაღმავალი"
 #: printing/calprintdefaultplugins.cpp:1545
 #, kde-format
 msgid "To-do list"
-msgstr ""
+msgstr "განრიგის სია"
 
 #: printing/calprintdefaultplugins.cpp:1597
 #: printing/calprintpluginbase.cpp:1697
@@ -1765,7 +1776,7 @@ msgstr "პრიორიტეტი"
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
-msgstr ""
+msgstr "ვადა"
 
 #: printing/calprintdefaultplugins.cpp:1628
 #, kde-format
@@ -1798,7 +1809,7 @@ msgstr ""
 #: printing/calprintdefaultplugins.h:138
 #, kde-format
 msgid "Print da&y"
-msgstr ""
+msgstr "&დღის დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.h:143
 #, kde-format
@@ -1808,7 +1819,7 @@ msgstr ""
 #: printing/calprintdefaultplugins.h:193
 #, kde-format
 msgid "Print &week"
-msgstr ""
+msgstr "&კვირის დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.h:198
 #, kde-format
@@ -1818,7 +1829,7 @@ msgstr ""
 #: printing/calprintdefaultplugins.h:255
 #, kde-format
 msgid "Print mont&h"
-msgstr ""
+msgstr "&თვის დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.h:260
 #, kde-format
@@ -1828,7 +1839,7 @@ msgstr ""
 #: printing/calprintdefaultplugins.h:310
 #, kde-format
 msgid "Print to-&dos"
-msgstr ""
+msgstr "&განრიგის დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.h:315
 #, kde-format
@@ -1857,19 +1868,19 @@ msgstr "დაბეჭდვა"
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
-msgstr ""
+msgstr "ბეჭდვის სტილი"
 
 #: printing/calprinter.cpp:187
 #, kde-format
 msgctxt "@label"
 msgid "Page &orientation:"
-msgstr ""
+msgstr "გვერდის &ორიენტაცია:"
 
 #: printing/calprinter.cpp:192
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
-msgstr ""
+msgstr "ბეჭდვის ორიენტაციის დაყენება"
 
 #: printing/calprinter.cpp:194
 #, kde-format
@@ -1890,7 +1901,7 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
-msgstr ""
+msgstr "პრინტერის ნაგულისხმების გამოყენება"
 
 #: printing/calprinter.cpp:199
 #, kde-format
@@ -1908,7 +1919,7 @@ msgstr "ლანდშაფტი"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the type of print"
-msgstr ""
+msgstr "აირჩიეთ დაბეჭდვის ტიპი"
 
 #: printing/calprinter.cpp:224
 #, kde-format
@@ -1957,13 +1968,13 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:39
 #, kde-format
 msgid "Detai&ls (visiblility, secrecy, etc.)"
-msgstr ""
+msgstr "&დეტალები(ხილვადობა, საიდუმლოობა და ა.შ.)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:46
 #, kde-format
 msgid "Print the attendees"
-msgstr ""
+msgstr "დამსწრეების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:49
@@ -1982,7 +1993,7 @@ msgstr "&დამსწრეები"
 #: printing/calprintincidenceconfig_base.ui:59
 #, kde-format
 msgid "Print the notes"
-msgstr ""
+msgstr "შენიშვნების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:62
@@ -1995,13 +2006,13 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:65
 #, kde-format
 msgid "&Notes, subitems"
-msgstr ""
+msgstr "&შენიშვნები, ქვეჩანაწერები"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:72
 #, kde-format
 msgid "Print the attachments"
-msgstr ""
+msgstr "მიმაგრებული ფაილების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
@@ -2015,7 +2026,7 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:78
 #, kde-format
 msgid "Attach&ments"
-msgstr ""
+msgstr "&მიმაგრებული ფაილები"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:97
@@ -2030,7 +2041,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:259
 #, kde-format
 msgid "Show note &lines"
-msgstr ""
+msgstr "შენიშვნის ხაზების &ჩვენება"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintjournalconfig_base.ui:17
@@ -2050,13 +2061,13 @@ msgstr ""
 #: printing/calprintjournalconfig_base.ui:30
 #, kde-format
 msgid "&All journal entries"
-msgstr ""
+msgstr "&ჟურნალის ყველა ჩანაწერი"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mRangeJournals)
 #: printing/calprintjournalconfig_base.ui:43
 #, kde-format
 msgid "Date &range:"
-msgstr ""
+msgstr "თარიღის &დიაპაზონი:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintmonthconfig_base.ui:17
@@ -2087,19 +2098,19 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:33
 #, kde-format
 msgid "Sta&rt month:"
-msgstr ""
+msgstr "&საწყისი თვე:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mFromMonth)
 #: printing/calprintmonthconfig_base.ui:43
 #, kde-format
 msgid "Starting month for printing"
-msgstr ""
+msgstr "ბეჭდვის დაწყების თვე"
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:53
 #, kde-format
 msgid "Starting year for printing"
-msgstr ""
+msgstr "ბეჭდვის დაწყების წელი"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:56
@@ -2125,19 +2136,19 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:72
 #, kde-format
 msgid "&End month:"
-msgstr ""
+msgstr "&დასრულების თვე:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mToMonth)
 #: printing/calprintmonthconfig_base.ui:82
 #, kde-format
 msgid "Ending month for the print"
-msgstr ""
+msgstr "ბეჭდვის დასრულების თვე"
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:92
 #, kde-format
 msgid "Ending year for the print"
-msgstr ""
+msgstr "ბეჭდვის დასრულების წელი"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:95
@@ -2152,7 +2163,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:195
 #, kde-format
 msgid "Print daily recurring items"
-msgstr ""
+msgstr "დღიურად განმეორებადი ელემენტების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:198
@@ -2173,7 +2184,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:208
 #, kde-format
 msgid "Print weekly recurring items"
-msgstr ""
+msgstr "კვირეულად განმეორებადი ელემენტების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:211
@@ -2193,7 +2204,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:230
 #, kde-format
 msgid "Print week numbers"
-msgstr ""
+msgstr "კვირის ნომრების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:233
@@ -2205,7 +2216,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:236
 #, kde-format
 msgid "Print week &numbers"
-msgstr ""
+msgstr "კვირის &ნომრების დაბეჭდვა"
 
 #: printing/calprintpluginbase.cpp:142
 #, kde-format
@@ -2227,7 +2238,7 @@ msgstr "დასვენება"
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
-msgstr ""
+msgstr "დაბეჭდილია: %1"
 
 #: printing/calprintpluginbase.cpp:921
 #, kde-format
@@ -2251,18 +2262,18 @@ msgstr "%1, %2 %3"
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
-msgstr ""
+msgstr "%1 (გადაცილებული: %2)"
 
 #: printing/calprintpluginbase.cpp:1125
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
-msgstr ""
+msgstr "%1 (გადაცილებული: %2)"
 
 #: printing/calprintpluginbase.cpp:1132
 #, kde-format
 msgid "To-do: %1"
-msgstr ""
+msgstr "განრიგი: %1"
 
 #: printing/calprintpluginbase.cpp:1860
 #, kde-format
@@ -2296,7 +2307,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:42
 #, kde-format
 msgid "Name for this to-do list"
-msgstr ""
+msgstr "ამ განრიგის სიის სახელი"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mTitleLabel)
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, mTitle)
@@ -2323,31 +2334,31 @@ msgstr "განრიგის სია"
 #: printing/calprinttodoconfig_base.ui:57
 #, kde-format
 msgid "To-dos to Print"
-msgstr ""
+msgstr "დასაბეჭდ განრიგები"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintAll)
 #: printing/calprinttodoconfig_base.ui:63
 #, kde-format
 msgid "Print &all to-dos"
-msgstr ""
+msgstr "&ყველა განრიგის დაბეჭდვა"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
 #: printing/calprinttodoconfig_base.ui:73
 #, kde-format
 msgid "Print &uncompleted to-dos only"
-msgstr ""
+msgstr "მხოლოდ &დაუსრულებელი განრიგების დაბეჭდვა"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
 #: printing/calprinttodoconfig_base.ui:80
 #, kde-format
 msgid "Print only to-dos due in the &range:"
-msgstr ""
+msgstr "მხოლოდ ვადაგადაცილებული განრიგების &დაბეჭდვა:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
 #, kde-format
 msgid "Print item priorities"
-msgstr ""
+msgstr "ელემენტის ბეჭდვის პრიორიტეტები"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:261
@@ -2365,7 +2376,7 @@ msgstr "&პრიორიტეტი"
 #: printing/calprinttodoconfig_base.ui:274
 #, kde-format
 msgid "Print item start dates"
-msgstr ""
+msgstr "ელემენტის დაწყების თარიღების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:277
@@ -2379,13 +2390,13 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:280
 #, kde-format
 msgid "&Start date"
-msgstr ""
+msgstr "&დაწყების თარიღი"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
 #, kde-format
 msgid "Print item due dates"
-msgstr ""
+msgstr "ელემენტის ვადის გადაცილების თარიღების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:290
@@ -2397,13 +2408,13 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:293
 #, kde-format
 msgid "Du&e date"
-msgstr ""
+msgstr "&გადაცილების თარიღი"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
 #, kde-format
 msgid "Print item completion percentage"
-msgstr ""
+msgstr "ელემენტის დასრულების პროცენტულობის დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:306
@@ -2417,25 +2428,25 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:309
 #, kde-format
 msgid "Percentage co&mpleted"
-msgstr ""
+msgstr "&დასრულებული პროცენტი"
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
 #: printing/calprinttodoconfig_base.ui:328
 #, kde-format
 msgid "Sorting Options"
-msgstr ""
+msgstr "დალაგების მორგება"
 
 #. i18n: ectx: property (text), widget (QLabel, sortFieldLabel)
 #: printing/calprinttodoconfig_base.ui:339
 #, kde-format
 msgid "Sort field:"
-msgstr ""
+msgstr "ველის დალაგება:"
 
 #. i18n: ectx: property (text), widget (QLabel, sortDirectionLabel)
 #: printing/calprinttodoconfig_base.ui:366
 #, kde-format
 msgid "Sort direction:"
-msgstr ""
+msgstr "დალაგების მიმართულება:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mConnectSubTodos)
 #: printing/calprinttodoconfig_base.ui:397
@@ -2462,6 +2473,14 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print week options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">კვირის პარამეტრების დაბეჭდვა:</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintweekconfig_base.ui:212
@@ -2496,12 +2515,14 @@ msgid ""
 "<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">Print "
 "year options:</span></p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">წლის "
+"პარამეტრების დაბეჭდვა:</span></p></body></html>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
 #: printing/calprintyearconfig_base.ui:21
 #, kde-format
 msgid "Date Range"
-msgstr ""
+msgstr "თარიღის დიაპაზონი"
 
 #. i18n: ectx: property (text), widget (QLabel, mYearLabel)
 #: printing/calprintyearconfig_base.ui:32
@@ -2519,7 +2540,7 @@ msgstr "ზოგადი"
 #: printing/calprintyearconfig_base.ui:105
 #, kde-format
 msgid "Num&ber of pages:"
-msgstr ""
+msgstr "გვერდების &რაოდენობა:"
 
 #. i18n: ectx: property (text), widget (QLabel, mSubDaysLabel)
 #: printing/calprintyearconfig_base.ui:121
@@ -2541,13 +2562,13 @@ msgstr "ტექსტი"
 #: printing/calprintyearconfig_base.ui:170
 #, kde-format
 msgid "Time Boxes"
-msgstr ""
+msgstr "დროის ყუთები"
 
 #. i18n: ectx: property (text), widget (QLabel, mHolidaysLabel)
 #: printing/calprintyearconfig_base.ui:151
 #, kde-format
 msgid "Show &holidays as:"
-msgstr ""
+msgstr "&დასვენებების ჩვენება, როგორც:"
 
 #: printing/journalprint.cpp:104
 #, kde-format
@@ -2563,27 +2584,27 @@ msgstr "პიროვნება: %1"
 #: printing/journalprint.cpp:156
 #, kde-format
 msgid "Journal entries"
-msgstr ""
+msgstr "ჟურნალის ჩანაწერები"
 
 #: printing/journalprint.h:32
 #, kde-format
 msgid "Print &journal"
-msgstr ""
+msgstr "&ჟურნალის დაბეჭდვა"
 
 #: printing/journalprint.h:37
 #, kde-format
 msgid "Prints all journals for a given date range"
-msgstr ""
+msgstr "მითითებულ დროის დიაპაზონში ყველა ჟურნალის დაბეჭდვა"
 
 #: printing/yearprint.h:31
 #, kde-format
 msgid "Print &year"
-msgstr ""
+msgstr "&წლის დაბეჭდვა"
 
 #: printing/yearprint.h:36
 #, kde-format
 msgid "Prints a calendar for an entire year"
-msgstr ""
+msgstr "მთელი წლის კალენდარის დაბეჭდვა"
 
 #: utils.cpp:325
 #, kde-format
@@ -2600,7 +2621,7 @@ msgstr ""
 #, kde-format
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
-msgstr ""
+msgstr "%1 (ნაგულისხმები კალენდარი)"
 
 #: utils.cpp:442
 #, kde-format
@@ -2627,7 +2648,7 @@ msgstr "შემცველობის ტიპი:"
 #: utils.cpp:464
 #, kde-format
 msgid "Rights:"
-msgstr ""
+msgstr "უფლებები:"
 
 #: utils.cpp:467
 #, kde-format
@@ -2639,7 +2660,7 @@ msgstr "მხოლოდ-წაკითხვადი"
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
-msgstr ""
+msgstr "წაკითხვა+ჩაწერა"
 
 #: utils.cpp:477
 #, kde-format
@@ -2686,7 +2707,7 @@ msgstr "არა"
 #: utils.cpp:495
 #, kde-format
 msgid "Blocked Reminders:"
-msgstr ""
+msgstr "დაბლოკილი შეხსენებები:"
 
 #: utils.cpp:560
 #, kde-format
