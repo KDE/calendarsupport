@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-27 00:49+0000\n"
-"PO-Revision-Date: 2022-12-28 09:02+0100\n"
+"PO-Revision-Date: 2022-12-29 07:42+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -22,7 +22,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive/Delete Past Events and To-dos"
-msgstr ""
+msgstr "გასული მოვლენებისა და გეგმების არქივაცია/წაშლა"
 
 #: archivedialog.cpp:50
 #, kde-format
@@ -58,7 +58,7 @@ msgstr "მითითებულ თარიღზე ძველი ელ
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr ""
+msgstr "ძველი ჩანაწერების ერთჯერადი არქივირების ან გაწმენდის ჩართვა"
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -110,7 +110,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the archival age in days, weeks or months"
-msgstr ""
+msgstr "დააყენეთ არქივირების ასაკი დღეებში, კვირებში ან თვეებში"
 
 #: archivedialog.cpp:125
 #, kde-format
@@ -280,7 +280,7 @@ msgstr ""
 #: attachmenthandler.cpp:178 attachmenthandler.cpp:232
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
-msgstr ""
+msgstr "მიმაგრებული ფაილისთვის დროებით ფაილის შექმნის შეცდომა."
 
 #: attachmenthandler.cpp:211
 #, kde-format
@@ -303,6 +303,8 @@ msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
+"წავშალო ყველა ჩანაწერი %1-მდე შენახვის გარეშე?\n"
+"წაიშლება შემდეგი ჩანაწერები."
 
 #: eventarchiver.cpp:158
 #, kde-format
@@ -662,7 +664,7 @@ msgstr ""
 #: kcalprefs.kcfg:144
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
-msgstr ""
+msgstr "ერთეული, რომლითაც ვადა გამოიხატება."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:147
@@ -1337,7 +1339,7 @@ msgstr "&ფერების გამოყენება"
 #: printing/calprintyearconfig_base.ui:178
 #, kde-format
 msgid "Print a datetime footer on each page"
-msgstr ""
+msgstr "ბეჭდვისას თითოეულ გვერდზე თარიღისა და დროის ქვესართის დამატება"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:377
