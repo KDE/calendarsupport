@@ -4,7 +4,7 @@
 #
 # Toussis Manolis <manolis@koppermind.homelinux.org>, 2009.
 # Giorgos Katsikatsos <giorgos.katsikatsos@gmail.com>, 2010.
-# Stelios <sstavra@gmail.com>, 2012, 2020, 2021.
+# Stelios <sstavra@gmail.com>, 2012, 2020, 2021, 2023.
 # Dimitrios Glentadakis <dglent@gmail.com>, 2012.
 # Dimitris Kardarakos <dimkard@gmail.com>, 2014.
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-27 00:49+0000\n"
-"PO-Revision-Date: 2021-09-09 16:08+0300\n"
+"PO-Revision-Date: 2023-01-04 11:26+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -721,7 +721,7 @@ msgstr "Αποστολή μηνυμάτων αλληλογραφίας χωρί�
 #: kcalprefs.kcfg:110
 #, kde-format
 msgid "Ask for every individual attendee what to do."
-msgstr "Να γίνεται ερώτηση τι πρεπει να γίνει για κάθε συμμετέχοντα."
+msgstr "Να γίνεται ερώτηση τι πρέπει να γίνει για κάθε συμμετέχοντα."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:113
@@ -1865,9 +1865,7 @@ msgid "%1 %2"
 msgstr "%1 %2"
 
 #: printing/calprintdefaultplugins.cpp:1520
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event summary"
-#| msgid "Summary"
+#, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "Περίληψη"
@@ -2010,7 +2008,7 @@ msgstr ""
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
 msgstr ""
-"Αδύνατη η εκτύπωση, το στυλ εκτύπωσης που καθορίστηκε δεν είναι έγκυρο.."
+"Αδύνατη η εκτύπωση, το στιλ εκτύπωσης που καθορίστηκε δεν είναι έγκυρο.."
 
 #: printing/calprinter.cpp:113
 #, kde-format
@@ -2028,7 +2026,7 @@ msgstr "Εκτύπωση"
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
-msgstr "Στυλ εκτύπωσης"
+msgstr "Στιλ εκτύπωσης"
 
 #: printing/calprinter.cpp:187
 #, kde-format
