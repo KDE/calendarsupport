@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-25 00:45+0000\n"
+"POT-Creation-Date: 2022-12-27 00:49+0000\n"
 "PO-Revision-Date: 2006-01-10 20:33+0100\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -784,43 +784,43 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr ""
 
-#: noteeditdialog.cpp:34
+#: noteeditdialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr ""
 
-#: noteeditdialog.cpp:43
+#: noteeditdialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr ""
 
-#: noteeditdialog.cpp:49
+#: noteeditdialog.cpp:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
 msgstr ""
 
-#: noteeditdialog.cpp:70
+#: noteeditdialog.cpp:77
 #, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr ""
 
-#: noteeditdialog.cpp:72
+#: noteeditdialog.cpp:79
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr ""
 
-#: noteeditdialog.cpp:85
+#: noteeditdialog.cpp:92
 #, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr ""
 
-#: noteeditdialog.cpp:90
+#: noteeditdialog.cpp:97
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"
@@ -830,8 +830,8 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:17
 #, kde-format
 msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+"css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
@@ -1877,9 +1877,9 @@ msgstr ""
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
-"Choose if you want your output to be printed in \"portrait\" or \"landscape"
-"\". You can also default to the orientation best suited to the selected "
-"style or to your printer's default setting."
+"Choose if you want your output to be printed in \"portrait\" or "
+"\"landscape\". You can also default to the orientation best suited to the "
+"selected style or to your printer's default setting."
 msgstr ""
 
 #: printing/calprinter.cpp:197
@@ -1931,8 +1931,8 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:17
 #, kde-format
 msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+"css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
@@ -2038,8 +2038,8 @@ msgstr ""
 #: printing/calprintjournalconfig_base.ui:17
 #, kde-format
 msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+"css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
@@ -2064,8 +2064,8 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:17
 #, kde-format
 msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+"css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
@@ -2282,8 +2282,8 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:17
 #, kde-format
 msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+"css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
@@ -2455,8 +2455,8 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:17
 #, kde-format
 msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+"css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
