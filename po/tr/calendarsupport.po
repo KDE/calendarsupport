@@ -6,13 +6,13 @@
 # obsoleteman <tulliana@gmail.com>, 2009,2012.
 # Volkan Gezer <volkangezer@gmail.com>, 2013-2014, 2015, 2017.
 # Kaan Ozdincer <kaanozdincer@gmail.com>, 2014.
-# Emir SARI <emir_sari@icloud.com>, 2022.
+# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-25 00:45+0000\n"
-"PO-Revision-Date: 2022-12-11 19:56+0300\n"
+"PO-Revision-Date: 2023-01-10 21:54+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -650,7 +650,7 @@ msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
 "holidays."
 msgstr ""
-"KOrganizer'in tatillerde çalışma saatlerini işaretlemesini, bu kutucuğa "
+"K Organizatör'ün tatillerde çalışma saatlerini işaretlemesini bu kutucuğa "
 "tıklayarak engelleyebilirsiniz."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
@@ -688,7 +688,7 @@ msgstr ""
 "Bu düğmeye tıklayarak, diğer katılımcıları ilgilendiren olayları (veya "
 "yapılacak işleri) oluştururken, güncellerken veya silerken otomatik olarak "
 "posta oluşturulmasını sağlayabilirsiniz. Grup işlevini kullanmak "
-"istiyorsanız, örneğin, Kontact'ı KDE Kolab istemcisi olarak düzenlemek "
+"istiyorsanız, örneğin, Kontak'ı KDE Kolab istemcisi olarak düzenlemek "
 "istiyorsanız, bu kutucuğu seçmeniz önerilir."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
