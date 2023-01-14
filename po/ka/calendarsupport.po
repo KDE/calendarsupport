@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-25 00:45+0000\n"
-"PO-Revision-Date: 2022-12-29 11:46+0100\n"
+"PO-Revision-Date: 2023-01-14 04:07+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -442,7 +442,7 @@ msgstr ""
 #: kcalprefs.kcfg:30
 #, kde-format
 msgid "Default duration of new appointment (HH:MM)"
-msgstr ""
+msgstr "ახალი შეხვედრის ნაგულისხმები ხანგრძლივობა (სთ:წთ)"
 
 #. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:31
@@ -456,7 +456,7 @@ msgstr ""
 #: kcalprefs.kcfg:36
 #, kde-format
 msgid "Enable a default sound file for audio reminders"
-msgstr ""
+msgstr "აუდიო შეხსენებების ნაგულისხმები ხმის ჩართვა"
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:37
@@ -500,7 +500,7 @@ msgstr ""
 #: kcalprefs.kcfg:49
 #, kde-format
 msgid "By default, enable reminders for new events"
-msgstr ""
+msgstr "ახალი მოვლენებისთვის შემხსენებლების ნაგულისხმევად ჩართვა"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:54
@@ -520,7 +520,7 @@ msgstr ""
 #: kcalprefs.kcfg:56
 #, kde-format
 msgid "By default, enable reminders for new to-dos"
-msgstr ""
+msgstr "ახალი განრიგებისთვის შემხსენებლების ნაგულისხმევად ჩართვა"
 
 #. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62
@@ -630,7 +630,7 @@ msgstr "ელფოსტების კითხვის გარეშე 
 #: kcalprefs.kcfg:110
 #, kde-format
 msgid "Ask for every individual attendee what to do."
-msgstr ""
+msgstr "თითოეული დამსწრისთვის სათითაოდ კითხვა."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:113
@@ -645,6 +645,7 @@ msgstr ""
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
+"მოვლენისა და გეგმის რედაქტორის ფანჯარაში დროის სარტყელის არჩევის ჩვენება."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:134
@@ -688,7 +689,7 @@ msgstr "თვეში"
 #: kcalprefs.kcfg:160
 #, kde-format
 msgid "URL of the file where old events should be archived"
-msgstr ""
+msgstr "ფაილის ბმული, სადაც ძველი მოვლენების არქივი იქნება დამახსოვრებული"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:164
@@ -2506,7 +2507,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:232
 #, kde-format
 msgid "Print as split wee&k view"
-msgstr ""
+msgstr "&დაყოფილ კვირად ნახვა"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintyearconfig_base.ui:14
@@ -2546,7 +2547,7 @@ msgstr "გვერდების &რაოდენობა:"
 #: printing/calprintyearconfig_base.ui:121
 #, kde-format
 msgid "Show &sub-day events as:"
-msgstr ""
+msgstr "დღის &ქვემოვლენების ნახვა, როგორც:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2615,7 +2616,7 @@ msgstr "აირჩიეთ კალენდარი"
 #: utils.cpp:326
 #, kde-format
 msgid "Select the calendar where this item will be stored."
-msgstr ""
+msgstr "აირჩიეთ კალენდარი, სადაც ახალი ჩანაწერი იქნება დამახსოვრებული."
 
 #: utils.cpp:431
 #, kde-format
@@ -2678,7 +2679,7 @@ msgstr "აუდიო"
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
-msgstr ""
+msgstr "ჩვენება"
 
 #: utils.cpp:484
 #, kde-format
