@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-25 00:45+0000\n"
-"PO-Revision-Date: 2023-01-10 21:54+0300\n"
+"PO-Revision-Date: 2023-01-21 14:51+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 "(http: //www.transifex.com/projects/p/kdepim-k-tr/language/tr/)\n"
 "X-POOTLE-MTIME: 1413102218.000000\n"
 
@@ -44,9 +44,9 @@ msgid ""
 "current calendar. If the archive file already exists they will be added. "
 "(<link url=\"#\">How to restore</link>)"
 msgstr ""
-"Arşivlemek eski ögeleri verilen dosyaya kaydeder ve mevcut takvimden "
-"kaldırır. Eğer arşiv dosyası mevcut ise ögeler dosyaya eklenir. (<link url="
-"\"#\">Nasıl geri yüklenir</link>)"
+"Arşivleme, eski ögeleri verilen dosyaya kaydeder ve geçerli takvimden siler. "
+"Eğer arşiv dosyası halihazırda varsa ögeler dosyaya eklenir. (<link url=\"#"
+"\">Nasıl geri yüklenir</link>)"
 
 #: archivedialog.cpp:67
 #, kde-format
@@ -453,7 +453,7 @@ msgstr "Süre:"
 #: kcalprefs.kcfg:15
 #, kde-format
 msgid "Use email settings from System Settings"
-msgstr "Sistem Ayarlarındaki e-posta ayarlarını kullan"
+msgstr "Sistem Ayarları'ndaki e-posta ayarlarını kullan"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16

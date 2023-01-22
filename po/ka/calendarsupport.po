@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-25 00:45+0000\n"
-"PO-Revision-Date: 2023-01-14 04:07+0100\n"
+"PO-Revision-Date: 2023-01-21 19:32+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -1800,12 +1800,12 @@ msgstr "ჭდეები"
 #: printing/calprintdefaultplugins.h:36
 #, kde-format
 msgid "Print &incidence"
-msgstr ""
+msgstr "შემთხვევის &დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.h:41
 #, kde-format
 msgid "Prints an incidence on one page"
-msgstr ""
+msgstr "შემთხვევის ერთ გვერდზე დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.h:138
 #, kde-format
@@ -1815,7 +1815,7 @@ msgstr "&დღის დაბეჭდვა"
 #: printing/calprintdefaultplugins.h:143
 #, kde-format
 msgid "Prints all events of a single day on one page"
-msgstr ""
+msgstr "ერთი დღის ყველა მოვლენის ერთ გვერდზე დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.h:193
 #, kde-format
@@ -1825,7 +1825,7 @@ msgstr "&კვირის დაბეჭდვა"
 #: printing/calprintdefaultplugins.h:198
 #, kde-format
 msgid "Prints all events of one week on one page"
-msgstr ""
+msgstr "ერთი კვირის ყველა მოვლენის ერთ გვერდზე დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.h:255
 #, kde-format
@@ -1835,7 +1835,7 @@ msgstr "&თვის დაბეჭდვა"
 #: printing/calprintdefaultplugins.h:260
 #, kde-format
 msgid "Prints all events of one month on one page"
-msgstr ""
+msgstr "ერთი თვის ყველა მოვლენის ერთ გვერდზე დაბეჭდვა"
 
 #: printing/calprintdefaultplugins.h:310
 #, kde-format
@@ -1955,7 +1955,7 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:33
 #, kde-format
 msgid "Print incidence details"
-msgstr ""
+msgstr "შემთხვევის დეტალების დაბეჭდვა"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:36
