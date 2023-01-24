@@ -94,16 +94,16 @@ PUBLIC
   Qt::PrintSupport
 PRIVATE
   KF5::PimTextEdit
-  KF5::I18n
-  KF5::Completion
-  KF5::KIOWidgets
-  KF5::GuiAddons
+  KF${KF_MAJOR_VERSION}::I18n
+  KF${KF_MAJOR_VERSION}::Completion
+  KF${KF_MAJOR_VERSION}::KIOWidgets
+  KF${KF_MAJOR_VERSION}::GuiAddons
   KF5::AkonadiWidgets
   KF5::AkonadiNotes
-  KF5::Holidays
-  KF5::Codecs
+  KF${KF_MAJOR_VERSION}::Holidays
+  KF${KF_MAJOR_VERSION}::Codecs
   KF5::AkonadiCore
-  KF5::CalendarCore
+  KF${KF_MAJOR_VERSION}::CalendarCore
   KF5::CalendarUtils
 )
 
