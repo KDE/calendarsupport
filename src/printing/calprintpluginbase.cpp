@@ -1771,14 +1771,13 @@ void CalPrintPluginBase::drawTodo(int &count,
         if (subtodo && todoList.contains(subtodo)) {
 #else
         bool subtodoOk = false;
-        if (subtodo) {
-            for (const KCalendarCore::Todo::Ptr &tt : std::as_const(todoList)) {
-                if (tt == subtodo) {
-                    subtodoOk = true;
-                    break;
-                }
+        for (const KCalendarCore::Todo::Ptr &tt : std::as_const(todoList)) {
+            if (tt == subtodo) {
+                subtodoOk = true;
+                break;
             }
         }
+
         if (subtodoOk) {
 #endif
             t.append(subtodo);
