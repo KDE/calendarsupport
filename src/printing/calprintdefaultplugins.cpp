@@ -729,7 +729,6 @@ void CalPrintTimetable::drawTimeTable(QPainter &p, QDate fromDate, QDate toDate,
     QDate curDate(fromDate);
     while (curDate <= toDate) {
         KCalendarCore::Event::List eventList = mCalendar->events(curDate, QTimeZone::systemTimeZone());
-        const auto holidays = holiday(curDate);
         int allDayEvents = holiday(curDate).isEmpty() ? 0 : 1;
         for (const KCalendarCore::Event::Ptr &event : std::as_const(eventList)) {
             Q_ASSERT(event);
