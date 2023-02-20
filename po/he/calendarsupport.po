@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-27 00:49+0000\n"
+"POT-Creation-Date: 2023-02-20 00:58+0000\n"
 "PO-Revision-Date: 2017-05-16 07:04-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: <kde-l10n-he@kde.org>\n"
@@ -1762,20 +1762,20 @@ msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:772
+#: printing/calprintdefaultplugins.cpp:771
 #, fuzzy, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
 msgstr "יום אחד"
 
-#: printing/calprintdefaultplugins.cpp:977
-#: printing/calprintdefaultplugins.cpp:1200 printing/yearprint.cpp:140
+#: printing/calprintdefaultplugins.cpp:976
+#: printing/calprintdefaultplugins.cpp:1199 printing/yearprint.cpp:140
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1222
+#: printing/calprintdefaultplugins.cpp:1221
 #, fuzzy, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
@@ -1783,7 +1783,7 @@ msgstr ""
 "%1 עד %2\n"
 "שבוע מספר %3"
 
-#: printing/calprintdefaultplugins.cpp:1224
+#: printing/calprintdefaultplugins.cpp:1223
 #, fuzzy, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
@@ -1793,95 +1793,95 @@ msgstr ""
 "%1 עד %2\n"
 "שבוע מספר %3"
 
-#: printing/calprintdefaultplugins.cpp:1409
+#: printing/calprintdefaultplugins.cpp:1408
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:1520
+#: printing/calprintdefaultplugins.cpp:1519
 #, fuzzy, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "תקציר"
 
-#: printing/calprintdefaultplugins.cpp:1521
+#: printing/calprintdefaultplugins.cpp:1520
 #, fuzzy, kde-format
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "תאריך התחלה"
 
-#: printing/calprintdefaultplugins.cpp:1522
+#: printing/calprintdefaultplugins.cpp:1521
 #, fuzzy, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "תאריך יעד"
 
-#: printing/calprintdefaultplugins.cpp:1523
+#: printing/calprintdefaultplugins.cpp:1522
 #, fuzzy, kde-format
 msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "עדיפות"
 
-#: printing/calprintdefaultplugins.cpp:1524
+#: printing/calprintdefaultplugins.cpp:1523
 #, fuzzy, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "אחוז הושלם"
 
-#: printing/calprintdefaultplugins.cpp:1525
+#: printing/calprintdefaultplugins.cpp:1524
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1531
+#: printing/calprintdefaultplugins.cpp:1530
 #, fuzzy, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "סדר עולה"
 
-#: printing/calprintdefaultplugins.cpp:1532
+#: printing/calprintdefaultplugins.cpp:1531
 #, fuzzy, kde-format
 msgctxt "@option sort in descreasing order"
 msgid "Descending"
 msgstr "סדר יורד"
 
-#: printing/calprintdefaultplugins.cpp:1545
+#: printing/calprintdefaultplugins.cpp:1544
 #, kde-format
 msgid "To-do list"
 msgstr "רשימת מטלות"
 
-#: printing/calprintdefaultplugins.cpp:1597
+#: printing/calprintdefaultplugins.cpp:1596
 #: printing/calprintpluginbase.cpp:1697
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: printing/calprintdefaultplugins.cpp:1608
+#: printing/calprintdefaultplugins.cpp:1607
 #, kde-format
 msgid "Priority"
 msgstr "עדיפות"
 
-#: printing/calprintdefaultplugins.cpp:1618
+#: printing/calprintdefaultplugins.cpp:1617
 #, fuzzy, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "תאריך יעד"
 
-#: printing/calprintdefaultplugins.cpp:1628
+#: printing/calprintdefaultplugins.cpp:1627
 #, fuzzy, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
 msgstr "&התחלה:"
 
-#: printing/calprintdefaultplugins.cpp:1638
+#: printing/calprintdefaultplugins.cpp:1637
 #, fuzzy, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "השלמה"
 
-#: printing/calprintdefaultplugins.cpp:1648
+#: printing/calprintdefaultplugins.cpp:1647
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
