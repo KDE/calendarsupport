@@ -88,7 +88,7 @@ target_include_directories(KF5CalendarSupport PUBLIC "$<BUILD_INTERFACE:${calend
 target_link_libraries(
   KF5CalendarSupport
 PUBLIC
-  KF5::Mime
+  KPim${KF_MAJOR_VERSION}::Mime
   KF5::IdentityManagement
   KF5::AkonadiCalendar
   Qt::PrintSupport
