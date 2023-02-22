@@ -89,7 +89,7 @@ target_link_libraries(
   KF5CalendarSupport
 PUBLIC
   KPim${KF_MAJOR_VERSION}::Mime
-  KF5::IdentityManagement
+  KPim${KF_MAJOR_VERSION}::IdentityManagement
   KF5::AkonadiCalendar
   Qt::PrintSupport
 PRIVATE
@@ -104,7 +104,7 @@ PRIVATE
   KF${KF_MAJOR_VERSION}::Codecs
   KF5::AkonadiCore
   KF${KF_MAJOR_VERSION}::CalendarCore
-  KF5::CalendarUtils
+  KPim${KF_MAJOR_VERSION}::CalendarUtils
 )
 
 set_target_properties(KF5CalendarSupport PROPERTIES
