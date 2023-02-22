@@ -13,7 +13,7 @@ ecm_mark_as_test(noteeditdialogtest)
 target_link_libraries(noteeditdialogtest
   Qt::Test
   KF5::AkonadiWidgets
-  KF5::AkonadiNotes
+  KPim${KF_MAJOR_VERSION}::AkonadiNotes
   KPim${KF_MAJOR_VERSION}::CalendarSupport
   KF5::PimTextEdit
 )

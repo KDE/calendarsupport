@@ -91,7 +91,7 @@ target_link_libraries(
 PUBLIC
   KPim${KF_MAJOR_VERSION}::Mime
   KPim${KF_MAJOR_VERSION}::IdentityManagement
-  KF5::AkonadiCalendar
+  KPim${KF_MAJOR_VERSION}::AkonadiCalendar
   Qt::PrintSupport
 PRIVATE
   KF5::PimTextEdit
@@ -100,7 +100,7 @@ PRIVATE
   KF${KF_MAJOR_VERSION}::KIOWidgets
   KF${KF_MAJOR_VERSION}::GuiAddons
   KF5::AkonadiWidgets
-  KF5::AkonadiNotes
+  KPim${KF_MAJOR_VERSION}::AkonadiNotes
   KF${KF_MAJOR_VERSION}::Holidays
   KF${KF_MAJOR_VERSION}::Codecs
   KF5::AkonadiCore
