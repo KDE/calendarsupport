@@ -4,7 +4,7 @@ macro(add_freebusymodel_unittest _name)
     ecm_add_test(${_name}.cpp ${_name}.h
         TEST_NAME ${_name}
         NAME_PREFIX "freebusymodel-"
-        LINK_LIBRARIES Qt::Test KF5::AkonadiCore KPim${KF_MAJOR_VERSION}::CalendarUtils KF${KF_MAJOR_VERSION}::CalendarCore KF5::CalendarSupport
+        LINK_LIBRARIES Qt::Test KF5::AkonadiCore KPim${KF_MAJOR_VERSION}::CalendarUtils KF${KF_MAJOR_VERSION}::CalendarCore KPim${KF_MAJOR_VERSION}::CalendarSupport
     )
 endmacro()
 

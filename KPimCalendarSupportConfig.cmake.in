@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: none
+# SPDX-License-Identifier: BSD-3-Clause
+
+@PACKAGE_INIT@
+include(CMakeFindDependencyMacro)
+find_dependency(KPim@KF_MAJOR_VERSION@Mime "@KMIME_LIB_VERSION@")
+find_dependency(KPim@KF_MAJOR_VERSION@IdentityManagement "@IDENTITYMANAGEMENT_LIB_VERSION@")
+find_dependency(KPim@KF_MAJOR_VERSION@AkonadiCalendar "@AKONADICALENDAR_LIB_VERSION@")
+find_dependency(Qt@QT_MAJOR_VERSION@PrintSupport "@QT_REQUIRED_VERSION@")
+
+
+if (@CALENDARSUPPORT_KF5_COMPAT@)
+    message(WARNING "\n"
+                    "************* DEPRECATION WARNING *************\n"
+		    "Using find_package(KF5CalendarSupport) and KF5::CalendarSupport targets is deprecated. "
+                    "Please use find_package(KPim@KF_MAJOR_VERSION@CalendarSupport) and KPim@KF_MAJOR_VERSION@::CalendarSupport instead. This backwards "
+                    "compatibility will be removed in the next major version.\n"
+                    "***********************************************\n")
+endif()
+
+include("${CMAKE_CURRENT_LIST_DIR}/KPim@KF_MAJOR_VERSION@CalendarSupportTargets.cmake")

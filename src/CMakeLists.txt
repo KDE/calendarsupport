@@ -3,9 +3,10 @@
 add_definitions(-DTRANSLATION_DOMAIN=\"calendarsupport\")
 
 ########### next target ###############
-add_library(KF5CalendarSupport)
-add_library(KF5::CalendarSupport ALIAS KF5CalendarSupport)
-target_sources(KF5CalendarSupport PRIVATE
+add_library(KPim${KF_MAJOR_VERSION}CalendarSupport)
+add_library(KPim${KF_MAJOR_VERSION}::CalendarSupport ALIAS KPim${KF_MAJOR_VERSION}CalendarSupport)
+add_library(KF5::CalendarSupport ALIAS KPim${KF_MAJOR_VERSION}CalendarSupport)
+target_sources(KPim${KF_MAJOR_VERSION}CalendarSupport PRIVATE
   archivedialog.cpp
   attachmenthandler.cpp
   calendarsingleton.cpp
@@ -61,7 +62,7 @@ target_sources(KF5CalendarSupport PRIVATE
   messagewidget.h
 )
 
-ki18n_wrap_ui(KF5CalendarSupport
+ki18n_wrap_ui(KPim${KF_MAJOR_VERSION}CalendarSupport
   printing/calprintdayconfig_base.ui
   printing/calprintincidenceconfig_base.ui
   printing/calprintjournalconfig_base.ui
@@ -70,23 +71,23 @@ ki18n_wrap_ui(KF5CalendarSupport
   printing/calprintweekconfig_base.ui
   printing/calprintyearconfig_base.ui
 )
-ecm_qt_declare_logging_category(KF5CalendarSupport HEADER calendarsupport_debug.h IDENTIFIER CALENDARSUPPORT_LOG CATEGORY_NAME org.kde.pim.calendarsupport
+ecm_qt_declare_logging_category(KPim${KF_MAJOR_VERSION}CalendarSupport HEADER calendarsupport_debug.h IDENTIFIER CALENDARSUPPORT_LOG CATEGORY_NAME org.kde.pim.calendarsupport
         OLD_CATEGORY_NAMES log_calendarsupport
         DESCRIPTION "calendarsupport (calendarsupport)" EXPORT CALENDARSUPPORT)
 
-kconfig_add_kcfg_files(KF5CalendarSupport kcalprefs_base.kcfgc)
+kconfig_add_kcfg_files(KPim${KF_MAJOR_VERSION}CalendarSupport kcalprefs_base.kcfgc)
 
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KF5CalendarSupport PROPERTIES UNITY_BUILD ON)
+    set_target_properties(KPim${KF_MAJOR_VERSION}CalendarSupport PROPERTIES UNITY_BUILD ON)
 endif()
-generate_export_header(KF5CalendarSupport BASE_NAME calendarsupport)
+generate_export_header(KPim${KF_MAJOR_VERSION}CalendarSupport BASE_NAME calendarsupport)
 
 
-target_include_directories(KF5CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport/>")
-target_include_directories(KF5CalendarSupport PUBLIC "$<BUILD_INTERFACE:${calendarsupport_SOURCE_DIR}/src;${calendarsupport_BINARY_DIR}/src>")
+target_include_directories(KPim${KF_MAJOR_VERSION}CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/CalendarSupport/>")
+target_include_directories(KPim${KF_MAJOR_VERSION}CalendarSupport PUBLIC "$<BUILD_INTERFACE:${calendarsupport_SOURCE_DIR}/src;${calendarsupport_BINARY_DIR}/src>")
 
 target_link_libraries(
-  KF5CalendarSupport
+  KPim${KF_MAJOR_VERSION}CalendarSupport
 PUBLIC
   KPim${KF_MAJOR_VERSION}::Mime
   KPim${KF_MAJOR_VERSION}::IdentityManagement
@@ -107,15 +108,15 @@ PRIVATE
   KPim${KF_MAJOR_VERSION}::CalendarUtils
 )
 
-set_target_properties(KF5CalendarSupport PROPERTIES
+set_target_properties(KPim${KF_MAJOR_VERSION}CalendarSupport PROPERTIES
     VERSION ${CALENDARSUPPORT_VERSION}
     SOVERSION ${CALENDARSUPPORT_SOVERSION}
     EXPORT_NAME CalendarSupport
 )
 
 install(TARGETS
-    KF5CalendarSupport
-    EXPORT KF5CalendarSupportTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    KPim${KF_MAJOR_VERSION}CalendarSupport
+    EXPORT KPim${KF_MAJOR_VERSION}CalendarSupportTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
 ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
@@ -167,8 +168,8 @@ ecm_generate_headers(CalendarSupport_CamelCasefreebusy_HEADERS
 )
 
 ecm_generate_pri_file(BASE_NAME CalendarSupport
-    LIB_NAME KF5CalendarSupport
-    DEPS "KMime KIdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport
+    LIB_NAME KPim${KF_MAJOR_VERSION}CalendarSupport
+    DEPS "KMime KIdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/CalendarSupport
 )
 
 install(FILES
@@ -176,7 +177,7 @@ install(FILES
     ${CalendarSupport_CamelCaseprinter_HEADERS}
     ${CalendarSupport_CamelCasenext_HEADERS}
     ${CalendarSupport_CamelCasefreebusy_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport/CalendarSupport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/CalendarSupport/CalendarSupport
     COMPONENT Devel
 )
 
@@ -193,7 +194,7 @@ install(FILES
     ${CalendarSupport_printer_HEADERS}
     ${CalendarSupport_next_HEADERS}
     ${CalendarSupport_freebusy_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/CalendarSupport/calendarsupport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/CalendarSupport/calendarsupport
     COMPONENT Devel
 )
 install(FILES
@@ -209,9 +210,9 @@ ecm_qt_install_logging_categories(EXPORT CALENDARSUPPORT FILE calendarsupport.ca
 
 if (BUILD_QCH)
     ecm_add_qch(
-        KF5CalendarSupport_QCH
-        NAME KF5CalendarSupport
-        BASE_NAME KF5CalendarSupport
+        KPim${KF_MAJOR_VERSION}CalendarSupport_QCH
+        NAME KPim${KF_MAJOR_VERSION}CalendarSupport
+        BASE_NAME KPim${KF_MAJOR_VERSION}CalendarSupport
         VERSION ${PIM_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
