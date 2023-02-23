@@ -94,7 +94,7 @@ PUBLIC
   KPim${KF_MAJOR_VERSION}::AkonadiCalendar
   Qt::PrintSupport
 PRIVATE
-  KF5::PimTextEdit
+  KPim${KF_MAJOR_VERSION}::PimTextEdit
   KF${KF_MAJOR_VERSION}::I18n
   KF${KF_MAJOR_VERSION}::Completion
   KF${KF_MAJOR_VERSION}::KIOWidgets
