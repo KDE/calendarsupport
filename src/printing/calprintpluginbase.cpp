@@ -1235,10 +1235,10 @@ public:
     }
 
     MonthEventStruct(const QDateTime &s, const QDateTime &e, const KCalendarCore::Event::Ptr &ev)
+        : start(s)
+        , end(e)
+        , event(ev)
     {
-        event = ev;
-        start = s;
-        end = e;
         if (event->allDay()) {
             start = QDateTime(start.date(), QTime(0, 0, 0));
             end = QDateTime(end.date().addDays(1), QTime(0, 0, 0)).addSecs(-1);
