@@ -99,11 +99,11 @@ PRIVATE
   KF${KF_MAJOR_VERSION}::Completion
   KF${KF_MAJOR_VERSION}::KIOWidgets
   KF${KF_MAJOR_VERSION}::GuiAddons
-  KF5::AkonadiWidgets
+  KPim${KF_MAJOR_VERSION}::AkonadiWidgets
   KPim${KF_MAJOR_VERSION}::AkonadiNotes
   KF${KF_MAJOR_VERSION}::Holidays
   KF${KF_MAJOR_VERSION}::Codecs
-  KF5::AkonadiCore
+  KPim${KF_MAJOR_VERSION}::AkonadiCore
   KF${KF_MAJOR_VERSION}::CalendarCore
   KPim${KF_MAJOR_VERSION}::CalendarUtils
 )
