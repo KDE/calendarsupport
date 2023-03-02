@@ -77,8 +77,8 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     mCollectionCombobox->setAccessibleDescription(i18nc("@info", "Calendar where the new note will be stored."));
 #endif
     mCollectionCombobox->setToolTip(i18nc("@info:tooltip", "Calendar where the new note will be stored."));
-    connect(mCollectionCombobox, qOverload<int>(&Akonadi::CollectionComboBox::currentIndexChanged), this, &NoteEditDialog::slotCollectionChanged);
-    connect(mCollectionCombobox, qOverload<int>(&Akonadi::CollectionComboBox::activated), this, &NoteEditDialog::slotCollectionChanged);
+    connect(mCollectionCombobox, &Akonadi::CollectionComboBox::currentIndexChanged, this, &NoteEditDialog::slotCollectionChanged);
+    connect(mCollectionCombobox, &Akonadi::CollectionComboBox::activated, this, &NoteEditDialog::slotCollectionChanged);
 
     mNoteText = new KPIMTextEdit::RichTextEditorWidget(parent);
     mNoteText->setObjectName(QStringLiteral("notetext"));
