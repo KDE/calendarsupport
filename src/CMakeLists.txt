@@ -5,7 +5,6 @@ add_definitions(-DTRANSLATION_DOMAIN=\"calendarsupport\")
 ########### next target ###############
 add_library(KPim${KF_MAJOR_VERSION}CalendarSupport)
 add_library(KPim${KF_MAJOR_VERSION}::CalendarSupport ALIAS KPim${KF_MAJOR_VERSION}CalendarSupport)
-add_library(KF5::CalendarSupport ALIAS KPim${KF_MAJOR_VERSION}CalendarSupport)
 target_sources(KPim${KF_MAJOR_VERSION}CalendarSupport PRIVATE
   archivedialog.cpp
   attachmenthandler.cpp
