@@ -1,13 +1,14 @@
 # Translation of akonadi-kcal into esperanto.
 # Axel Rousseau <axel@esperanto-jeunes.org>, 2009.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-20 00:58+0000\n"
-"PO-Revision-Date: 2009-11-15 12:06+0100\n"
-"Last-Translator: Axel Rousseau <axel@esperanto-jeunes.org>\n"
+"PO-Revision-Date: 2023-03-20 22:31+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -348,10 +349,9 @@ msgid "Tentative"
 msgstr ""
 
 #: freebusymodel/freebusycalendar.cpp:121
-#, fuzzy, kde-format
-#| msgid "Unknown Name"
+#, kde-format
 msgid "Unknown"
-msgstr "Nekonata nomo"
+msgstr ""
 
 #: freebusymodel/freebusyitemmodel.cpp:211
 #, kde-format
@@ -374,14 +374,12 @@ msgid "%1 %2, %3 to %4"
 msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:162
-#, fuzzy, kde-format
-#| msgctxt "starttime - endtime summary, location"
-#| msgid "%1-%2 %3, %4"
+#, kde-format
 msgctxt ""
 "@label A time period duration. KLocale is used to format the components. "
 "example: Monday, 12 June, 8:00am to 9:30am"
 msgid "%1, %2 %3, %4 to %5"
-msgstr "%1-%2 %3, %4"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:176
 #, kde-format
@@ -402,11 +400,10 @@ msgid "End:"
 msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:184
-#, fuzzy, kde-format
-#| msgid "Description:"
+#, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
-msgstr "Priskribo:"
+msgstr ""
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:15
@@ -753,9 +750,9 @@ msgid ""
 msgstr ""
 
 #: kcalprefs.kcfg:202
-#, fuzzy, kde-format
+#, kde-format
 msgid "nobody@nowhere"
-msgstr "neniu@nenie"
+msgstr ""
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:220
@@ -809,18 +806,16 @@ msgid "Calendar where the new note will be stored."
 msgstr ""
 
 #: noteeditdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "&Title:"
+#, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
-msgstr "&Titolo:"
+msgstr "Titolo:"
 
 #: noteeditdialog.cpp:97
-#, fuzzy, kde-format
-#| msgid "Text"
+#, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"
-msgstr "Teksto"
+msgstr "Teksto:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -1165,10 +1160,9 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:159
 #: printing/calprinttodoconfig_base.ui:238
 #: printing/calprintweekconfig_base.ui:283
-#, fuzzy, kde-format
-#| msgid "Description:"
+#, kde-format
 msgid "&Descriptions"
-msgstr "Priskribo:"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1176,10 +1170,9 @@ msgstr "Priskribo:"
 #: printing/calprintmonthconfig_base.ui:166
 #: printing/calprinttodoconfig_base.ui:245
 #: printing/calprintweekconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid "Print"
+#, kde-format
 msgid "Print item tags"
-msgstr "Presi"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -1484,9 +1477,7 @@ msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:621
-#, fuzzy, kde-format
-#| msgctxt "Spacer for the joined list of categories"
-#| msgid ", "
+#, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr ", "
@@ -1530,11 +1521,10 @@ msgid "none"
 msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:479
-#, fuzzy, kde-format
-#| msgid "Unknown Name"
+#, kde-format
 msgctxt "unknown status"
 msgid "unknown"
-msgstr "Nekonata nomo"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:486
 #, kde-format
@@ -1573,11 +1563,10 @@ msgid "Status: %1\n"
 msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:514
-#, fuzzy, kde-format
-#| msgid "Priority"
+#, kde-format
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
-msgstr "Prioritato"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:515
 #, kde-format
@@ -1667,9 +1656,7 @@ msgstr "%1, %2"
 
 #: printing/calprintdefaultplugins.cpp:716 printing/calprintpluginbase.cpp:935
 #: printing/calprintpluginbase.cpp:1059
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1, %2"
@@ -1720,10 +1707,10 @@ msgid "Start Date"
 msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1521
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
-msgstr "Delegita"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1522
 #, kde-format
@@ -1732,11 +1719,10 @@ msgid "Priority"
 msgstr "Prioritato"
 
 #: printing/calprintdefaultplugins.cpp:1523
-#, fuzzy, kde-format
-#| msgid "Completed"
+#, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
-msgstr "Preta"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1524
 #, kde-format
@@ -1865,11 +1851,10 @@ msgid "Print"
 msgstr "Presi"
 
 #: printing/calprinter.cpp:175
-#, fuzzy, kde-format
-#| msgid "Print"
+#, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
-msgstr "Presi"
+msgstr ""
 
 #: printing/calprinter.cpp:187
 #, kde-format
@@ -1899,11 +1884,10 @@ msgid "Use Default Orientation of Selected Style"
 msgstr ""
 
 #: printing/calprinter.cpp:198
-#, fuzzy, kde-format
-#| msgid "Reset to Defaults"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
-msgstr "Restarigi defaŭltojn"
+msgstr ""
 
 #: printing/calprinter.cpp:199
 #, kde-format
@@ -2261,18 +2245,16 @@ msgid "%1, %2 %3"
 msgstr "%1, %2 %3"
 
 #: printing/calprintpluginbase.cpp:1120
-#, fuzzy, kde-format
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
-msgstr "%1 - %2"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1125
-#, fuzzy, kde-format
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
-msgstr "%1 - %2"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1132
 #, kde-format
@@ -2280,20 +2262,16 @@ msgid "To-do: %1"
 msgstr ""
 
 #: printing/calprintpluginbase.cpp:1860
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
-msgstr "%1 %2 - %3"
+msgstr "%1 %2-%3"
 
 #: printing/calprintpluginbase.cpp:1866
-#, fuzzy, kde-format
-#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
-#| msgid "%1 %2 - %3 %4"
+#, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
-msgstr "%1 %2 - %3 %4"
+msgstr "%1 %2-%3 %4"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprinttodoconfig_base.ui:17
@@ -2364,10 +2342,9 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
-#, fuzzy, kde-format
-#| msgid "Print"
+#, kde-format
 msgid "Print item priorities"
-msgstr "Presi"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:261
@@ -2383,10 +2360,9 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:274
-#, fuzzy, kde-format
-#| msgid "Print"
+#, kde-format
 msgid "Print item start dates"
-msgstr "Presi"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:277
@@ -2404,10 +2380,9 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
-#, fuzzy, kde-format
-#| msgid "Print"
+#, kde-format
 msgid "Print item due dates"
-msgstr "Presi"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:290
@@ -2437,10 +2412,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
-#, fuzzy, kde-format
-#| msgid "Completed"
+#, kde-format
 msgid "Percentage co&mpleted"
-msgstr "Preta"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
 #: printing/calprinttodoconfig_base.ui:328
@@ -2609,11 +2583,10 @@ msgid "Prints a calendar for an entire year"
 msgstr ""
 
 #: utils.cpp:325
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
-msgstr "Kalendaro"
+msgstr ""
 
 #: utils.cpp:326
 #, kde-format
@@ -2621,11 +2594,10 @@ msgid "Select the calendar where this item will be stored."
 msgstr ""
 
 #: utils.cpp:431
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
-msgstr "Kalendaro"
+msgstr ""
 
 #: utils.cpp:442
 #, kde-format
@@ -2634,10 +2606,9 @@ msgid "Virtual"
 msgstr ""
 
 #: utils.cpp:444
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Folder type:"
-msgstr "Kalendaro"
+msgstr ""
 
 #: utils.cpp:454
 #, kde-format
@@ -2646,10 +2617,9 @@ msgid "none"
 msgstr ""
 
 #: utils.cpp:457
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Content type:"
-msgstr "Kalendaro"
+msgstr ""
 
 #: utils.cpp:464
 #, kde-format
@@ -2660,56 +2630,55 @@ msgstr ""
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
-msgstr ""
+msgstr "nur-lega"
 
 #: utils.cpp:469
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
-msgstr ""
+msgstr "legi+skribi"
 
 #: utils.cpp:477
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
-msgstr ""
+msgstr "ĉio"
 
 #: utils.cpp:480
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
-msgstr ""
+msgstr "aŭda"
 
 #: utils.cpp:482
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
-msgstr ""
+msgstr "ekrano"
 
 #: utils.cpp:484
-#, fuzzy, kde-format
-#| msgid "Send Email"
+#, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
-msgstr "Sendi retleteron"
+msgstr "e-poŝto"
 
 #: utils.cpp:486
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
-msgstr ""
+msgstr "proceduro"
 
 #: utils.cpp:488
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
-msgstr ""
+msgstr "alia"
 
 #: utils.cpp:492
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
-msgstr ""
+msgstr "neniu"
 
 #: utils.cpp:495
 #, kde-format
@@ -2717,167 +2686,18 @@ msgid "Blocked Reminders:"
 msgstr ""
 
 #: utils.cpp:560
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
-msgstr "%1%"
+msgstr "^%1"
 
 #: utils.cpp:562
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
-#| "Kainhofer <reinhold@kainhofer.com> (Participant): Awaiting Response'"
-#| msgid "%1 (%2): %3"
+#, kde-format
 msgid "%1 (%2)"
-msgstr "%1 (%2): %3"
+msgstr "%1 (%2)"
 
 #: utils.cpp:567
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
-msgstr ""
-
-#, fuzzy
-#~| msgid "&Title:"
-#~ msgctxt "@option sort by title"
-#~ msgid "Title"
-#~ msgstr "&Titolo:"
-
-#, fuzzy
-#~ msgctxt "@option do not specify a date"
-#~ msgid "No Date"
-#~ msgstr "Delegita"
-
-#~ msgid "Calendar"
-#~ msgstr "Kalendaro"
-
-#, fuzzy
-#~| msgctxt "NAME OF TRANSLATORS"
-#~| msgid "Your names"
-#~ msgid "Journal"
-#~ msgstr "Axel Rousseau"
-
-#, fuzzy
-#~| msgid "Unknown Name"
-#~ msgctxt "unknown resource"
-#~ msgid "Unknown"
-#~ msgstr "Nekonata nomo"
-
-#, fuzzy
-#~| msgid "&Settings"
-#~ msgctxt "incidence category"
-#~ msgid "Meeting"
-#~ msgstr "A&gordo"
-
-#, fuzzy
-#~| msgid "Locations"
-#~ msgctxt "incidence category"
-#~ msgid "Education"
-#~ msgstr "Lokoj"
-
-#, fuzzy
-#~| msgid "Today"
-#~ msgctxt ""
-#~ "incidence category: official or unofficial observance of religious/"
-#~ "national/cultural/other significance, often accompanied by celebrations "
-#~ "or festivities"
-#~ msgid "Holiday"
-#~ msgstr "Hodiaŭ"
-
-#, fuzzy
-#~| msgid "Locations"
-#~ msgctxt ""
-#~ "incidence category: a lengthy time away from work or school, a trip "
-#~ "abroad, or simply a pleasure trip away from home"
-#~ msgid "Vacation"
-#~ msgstr "Lokoj"
-
-#, fuzzy
-#~| msgid "Tzav"
-#~ msgctxt ""
-#~ "incidence category: typically associated with leaving home for business, "
-#~ "and not pleasure"
-#~ msgid "Travel"
-#~ msgstr "Tzav"
-
-#, fuzzy
-#~| msgid "Print"
-#~ msgid "Print Item list"
-#~ msgstr "Presi"
-
-#~ msgctxt "date from-to"
-#~ msgid "%1 - %2"
-#~ msgstr "%1 - %2"
-
-#~ msgctxt ""
-#~ "date from-\n"
-#~ "to"
-#~ msgid ""
-#~ "%1 -\n"
-#~ "%2"
-#~ msgstr ""
-#~ "%1 -\n"
-#~ "%2"
-
-#~ msgctxt "date from - to"
-#~ msgid "%1 - %2"
-#~ msgstr "%1 - %2"
-
-#~ msgctxt ""
-#~ "date from -\n"
-#~ "to"
-#~ msgid ""
-#~ "%1 -\n"
-#~ "%2"
-#~ msgstr ""
-#~ "%1 -\n"
-#~ "%2"
-
-#, fuzzy
-#~| msgid "Description:"
-#~ msgid "&Description"
-#~ msgstr "Priskribo:"
-
-#, fuzzy
-#~ msgid "Today's Events"
-#~ msgstr "Eventoj:"
-
-#, fuzzy
-#~| msgid "&Title:"
-#~ msgctxt "@label to-do summary"
-#~ msgid "Title"
-#~ msgstr "&Titolo:"
-
-#, fuzzy
-#~| msgid "Unknown Name"
-#~ msgctxt "unknown calendar type"
-#~ msgid "unknown"
-#~ msgstr "Nekonata nomo"
-
-#, fuzzy
-#~| msgid "User&name:"
-#~ msgctxt "@label:textbox Name of the folder."
-#~ msgid "&Name:"
-#~ msgstr "Uzant&nomo:"
-
-#~ msgctxt "monthname year"
-#~ msgid "%1 <numid>%2</numid>"
-#~ msgstr "%1 <numid>%2</numid>"
-
-#~ msgctxt "weekday, shortmonthname daynumber"
-#~ msgid "%1, %2 <numid>%3</numid>"
-#~ msgstr "%1, %2 <numid>%3</numid>"
-
-#~ msgid "Display Options"
-#~ msgstr "Prezentad-Opcioj"
-
-#~ msgid "Unknown Name"
-#~ msgstr "Nekonata nomo"
-
-#, fuzzy
-#~ msgid "unknown@nowhere"
-#~ msgstr "neniu@nenie"
-
-#~ msgid "Invalid URL"
-#~ msgstr "Nevalida URL"
+msgstr "^%1 \\(.*\\)"
