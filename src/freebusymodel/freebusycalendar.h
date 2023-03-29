@@ -40,11 +40,11 @@ public:
     KCalendarCore::Calendar::Ptr calendar() const;
 
 private:
-    void onRowsChanged(const QModelIndex &, const QModelIndex &);
-    void onRowsInserted(const QModelIndex &, int, int);
-    void onRowsRemoved(const QModelIndex &, int, int);
-    void onLayoutChanged();
-    void deleteAllEvents();
+    CALENDARSUPPORT_NO_EXPORT void onRowsChanged(const QModelIndex &, const QModelIndex &);
+    CALENDARSUPPORT_NO_EXPORT void onRowsInserted(const QModelIndex &, int, int);
+    CALENDARSUPPORT_NO_EXPORT void onRowsRemoved(const QModelIndex &, int, int);
+    CALENDARSUPPORT_NO_EXPORT void onLayoutChanged();
+    CALENDARSUPPORT_NO_EXPORT void deleteAllEvents();
 
     std::unique_ptr<FreeBusyCalendarPrivate> const d;
 };

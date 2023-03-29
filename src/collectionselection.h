@@ -43,7 +43,7 @@ Q_SIGNALS:
     void collectionSelected(const Akonadi::Collection &);
 
 private:
-    void slotSelectionChanged(const QItemSelection &, const QItemSelection &);
+    CALENDARSUPPORT_NO_EXPORT void slotSelectionChanged(const QItemSelection &, const QItemSelection &);
 
     std::unique_ptr<CollectionSelectionPrivate> const d;
 };

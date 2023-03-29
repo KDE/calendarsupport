@@ -132,13 +132,13 @@ private:
     /**
      * This method is called whenever the displayed incidence @p item has been changed.
      */
-    void itemChanged(const Akonadi::Item &item) override;
+    CALENDARSUPPORT_NO_EXPORT void itemChanged(const Akonadi::Item &item) override;
 
     /**
      * This method is called whenever the displayed incidence has been
      * removed from Akonadi.
      */
-    void itemRemoved() override;
+    CALENDARSUPPORT_NO_EXPORT void itemRemoved() override;
 
 private:
     //@cond PRIVATE

@@ -78,10 +78,10 @@ protected:
 
 private:
     // Only download FB if the auto-download option is set in config
-    void autoReload();
+    CALENDARSUPPORT_NO_EXPORT void autoReload();
 
-    void setFreeBusyPeriods(const QModelIndex &parent, const KCalendarCore::FreeBusyPeriod::List &list);
-    void updateFreeBusyData(const FreeBusyItem::Ptr &);
+    CALENDARSUPPORT_NO_EXPORT void setFreeBusyPeriods(const QModelIndex &parent, const KCalendarCore::FreeBusyPeriod::List &list);
+    CALENDARSUPPORT_NO_EXPORT void updateFreeBusyData(const FreeBusyItem::Ptr &);
 
     std::unique_ptr<FreeBusyItemModelPrivate> const d;
 };

@@ -66,16 +66,18 @@ Q_SIGNALS:
     void eventsDeleted();
 
 private:
-    void run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QDate limitDate, QWidget *widget, bool withGUI, bool errorIfNone);
+    CALENDARSUPPORT_NO_EXPORT void
+    run(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QDate limitDate, QWidget *widget, bool withGUI, bool errorIfNone);
 
-    void deleteIncidences(Akonadi::IncidenceChanger *changer, QDate limitDate, QWidget *widget, const Akonadi::Item::List &items, bool withGUI);
+    CALENDARSUPPORT_NO_EXPORT void
+    deleteIncidences(Akonadi::IncidenceChanger *changer, QDate limitDate, QWidget *widget, const Akonadi::Item::List &items, bool withGUI);
 
-    void archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
-                           Akonadi::IncidenceChanger *changer,
-                           QDate limitDate,
-                           QWidget *widget,
-                           const KCalendarCore::Incidence::List &incidences,
-                           bool withGUI);
+    CALENDARSUPPORT_NO_EXPORT void archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
+                                                     Akonadi::IncidenceChanger *changer,
+                                                     QDate limitDate,
+                                                     QWidget *widget,
+                                                     const KCalendarCore::Incidence::List &incidences,
+                                                     bool withGUI);
 
     /**
      * Checks if all to-dos under @p todo and including @p todo were completed before @p limitDate.
@@ -84,9 +86,9 @@ private:
      * @param limitDate
      * @param checkedUids used internally to prevent infinite recursion due to invalid calendar files
      */
-    bool isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
-                           const KCalendarCore::Todo::Ptr &todo,
-                           QDate limitDate,
-                           QStringList checkedUids = QStringList()) const;
+    CALENDARSUPPORT_NO_EXPORT bool isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
+                                                     const KCalendarCore::Todo::Ptr &todo,
+                                                     QDate limitDate,
+                                                     QStringList checkedUids = QStringList()) const;
 };
 }

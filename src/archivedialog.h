@@ -41,11 +41,11 @@ Q_SIGNALS:
     void autoArchivingSettingsModified();
 
 private:
-    void slotEventsDeleted();
-    void slotUser1();
-    void slotEnableUser1();
-    void slotActionChanged();
-    void showWhatsThis();
+    CALENDARSUPPORT_NO_EXPORT void slotEventsDeleted();
+    CALENDARSUPPORT_NO_EXPORT void slotUser1();
+    CALENDARSUPPORT_NO_EXPORT void slotEnableUser1();
+    CALENDARSUPPORT_NO_EXPORT void slotActionChanged();
+    CALENDARSUPPORT_NO_EXPORT void showWhatsThis();
     KUrlRequester *mArchiveFile = nullptr;
     KDateComboBox *mDateEdit = nullptr;
     QCheckBox *mDeleteCb = nullptr;

@@ -50,16 +50,16 @@ public Q_SLOTS:
     void accept() override;
 
 private Q_SLOTS:
-    void slotCollectionChanged(int);
-    void slotUpdateButtons();
+    CALENDARSUPPORT_NO_EXPORT void slotCollectionChanged(int);
+    CALENDARSUPPORT_NO_EXPORT void slotUpdateButtons();
 
 Q_SIGNALS:
     void createNote(const Akonadi::Item &note, const Akonadi::Collection &collection);
     void collectionChanged(const Akonadi::Collection &col);
 
 private:
-    void readConfig();
-    void writeConfig();
+    CALENDARSUPPORT_NO_EXPORT void readConfig();
+    CALENDARSUPPORT_NO_EXPORT void writeConfig();
     Akonadi::Collection mCollection;
     Akonadi::Item mItem;
     QLineEdit *const mNoteTitle;

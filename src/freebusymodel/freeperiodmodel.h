@@ -36,10 +36,10 @@ private:
     /** Splits period blocks in the provided list, so that each period occurs on one day */
     KCalendarCore::Period::List splitPeriodsByDay(const KCalendarCore::Period::List &freePeriods);
 
-    Q_REQUIRED_RESULT QString day(int index) const;
-    Q_REQUIRED_RESULT QString date(int index) const;
-    Q_REQUIRED_RESULT QString stringify(int index) const;
-    Q_REQUIRED_RESULT QString tooltipify(int index) const;
+    Q_REQUIRED_RESULT CALENDARSUPPORT_NO_EXPORT QString day(int index) const;
+    Q_REQUIRED_RESULT CALENDARSUPPORT_NO_EXPORT QString date(int index) const;
+    Q_REQUIRED_RESULT CALENDARSUPPORT_NO_EXPORT QString stringify(int index) const;
+    Q_REQUIRED_RESULT CALENDARSUPPORT_NO_EXPORT QString tooltipify(int index) const;
 
     KCalendarCore::Period::List mPeriodList;
     friend class FreePeriodModelTest;
