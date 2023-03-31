@@ -113,11 +113,6 @@ CALENDARSUPPORT_EXPORT KCalendarCore::Todo::List todos(const QMimeData *mimeData
 
 CALENDARSUPPORT_EXPORT KCalendarCore::Incidence::List incidences(const QMimeData *mimeData);
 
-/**
- * creates mime data object for dragging akonadi items containing an incidence
- */
-CALENDARSUPPORT_EXPORT QMimeData *createMimeData(const Akonadi::Item::List &items);
-
 #ifndef QT_NO_DRAGANDDROP
 /**
  * creates a drag object for dragging an akonadi item containing an incidence

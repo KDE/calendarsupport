@@ -113,42 +113,6 @@ bool CalendarSupport::hasJournal(const KCalendarCore::Incidence::Ptr &incidence)
     return incidence && incidence->type() == KCalendarCore::Incidence::TypeJournal;
 }
 
-QMimeData *CalendarSupport::createMimeData(const Akonadi::Item::List &items)
-{
-    if (items.isEmpty()) {
-        return nullptr;
-    }
-
-    KCalendarCore::MemoryCalendar::Ptr cal(new KCalendarCore::MemoryCalendar(QTimeZone::systemTimeZone()));
-
-    QList<QUrl> urls;
-    int incidencesFound = 0;
-    for (const Akonadi::Item &item : items) {
-        const KCalendarCore::Incidence::Ptr incidence(Akonadi::CalendarUtils::incidence(item));
-        if (!incidence) {
-            continue;
-        }
-        ++incidencesFound;
-        urls.push_back(item.url());
-        KCalendarCore::Incidence::Ptr i(incidence->clone());
-        cal->addIncidence(i);
-    }
-
-    if (incidencesFound == 0) {
-        return nullptr;
-    }
-
-    std::unique_ptr<QMimeData> mimeData(new QMimeData);
-
-    mimeData->setUrls(urls);
-
-    if (KCalUtils::ICalDrag::populateMimeData(mimeData.get(), cal)) {
-        return mimeData.release();
-    } else {
-        return nullptr;
-    }
-}
-
 #ifndef QT_NO_DRAGANDDROP
 QDrag *CalendarSupport::createDrag(const Akonadi::Item &item, QObject *parent)
 {
@@ -177,7 +141,7 @@ static KCalendarCore::IncidenceBase::IncidenceType findMostCommonType(const Akon
 QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QObject *parent)
 {
     std::unique_ptr<QDrag> drag(new QDrag(parent));
-    drag->setMimeData(CalendarSupport::createMimeData(items));
+    drag->setMimeData(Akonadi::CalendarUtils::createMimeData(items));
 
     const auto common = findMostCommonType(items);
     if (common == KCalendarCore::IncidenceBase::TypeEvent) {
