@@ -91,6 +91,7 @@ PUBLIC
   KPim${KF_MAJOR_VERSION}::Mime
   KPim${KF_MAJOR_VERSION}::IdentityManagement
   KPim${KF_MAJOR_VERSION}::AkonadiCalendar
+  KF${KF_MAJOR_VERSION}::ConfigGui
   Qt::PrintSupport
 PRIVATE
   KPim${KF_MAJOR_VERSION}::PimTextEdit
