@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-20 00:58+0000\n"
+"POT-Creation-Date: 2023-04-03 00:46+0000\n"
 "PO-Revision-Date: 2006-12-17 13:34+0000\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -2690,124 +2690,124 @@ msgstr "Босиб чиқариш услуби"
 msgid "Prints a calendar for an entire year"
 msgstr ""
 
-#: utils.cpp:325
+#: utils.cpp:289
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "Янги календар"
 
-#: utils.cpp:326
+#: utils.cpp:290
 #, fuzzy, kde-format
 #| msgid "Sets the Title of this event or to-do."
 msgid "Select the calendar where this item will be stored."
 msgstr "Ушбу ҳодиса ёки вазифа сарлавҳасини мослаш."
 
-#: utils.cpp:431
+#: utils.cpp:395
 #, fuzzy, kde-format
 #| msgid "Use as &Default Calendar"
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
 msgstr "Андоза &календар сифатида фойдаланиш"
 
-#: utils.cpp:442
+#: utils.cpp:406
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr ""
 
-#: utils.cpp:444
+#: utils.cpp:408
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Folder type:"
 msgstr "Календар"
 
-#: utils.cpp:454
+#: utils.cpp:418
 #, fuzzy, kde-format
 #| msgid "(None)"
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "(Йўқ)"
 
-#: utils.cpp:457
+#: utils.cpp:421
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Content type:"
 msgstr "Календар"
 
-#: utils.cpp:464
+#: utils.cpp:428
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:467
+#: utils.cpp:431
 #, fuzzy, kde-format
 #| msgid "read-only"
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "фақат ўқишга"
 
-#: utils.cpp:469
+#: utils.cpp:433
 #, fuzzy, kde-format
 #| msgid "Overwrite"
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "Алмаштириш"
 
-#: utils.cpp:477
+#: utils.cpp:441
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:480
+#: utils.cpp:444
 #, fuzzy, kde-format
 #| msgid "Audio"
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "Аудио"
 
-#: utils.cpp:482
+#: utils.cpp:446
 #, fuzzy, kde-format
 #| msgid "&Daily"
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "Ҳар &кун"
 
-#: utils.cpp:484
+#: utils.cpp:448
 #, fuzzy, kde-format
 #| msgid "Email"
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "Электрон почта"
 
-#: utils.cpp:486
+#: utils.cpp:450
 #, fuzzy, kde-format
 #| msgid "Proceed"
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "Давом этиш"
 
-#: utils.cpp:488
+#: utils.cpp:452
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:492
+#: utils.cpp:456
 #, fuzzy, kde-format
 #| msgid "(None)"
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "(Йўқ)"
 
-#: utils.cpp:495
+#: utils.cpp:459
 #, fuzzy, kde-format
 #| msgid "Edit Reminders"
 msgid "Blocked Reminders:"
 msgstr "Эсга солишни таҳрирлаш"
 
-#: utils.cpp:560
+#: utils.cpp:524
 #, fuzzy, kde-format
 #| msgctxt "short_weekday date (e.g. Mon 13)"
 #| msgid "%1 %2"
@@ -2815,14 +2815,14 @@ msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1 %2"
 
-#: utils.cpp:562
+#: utils.cpp:526
 #, fuzzy, kde-format
 #| msgctxt "short_weekday date (e.g. Mon 13)"
 #| msgid "%1 %2"
 msgid "%1 (%2)"
 msgstr "%1 %2"
 
-#: utils.cpp:567
+#: utils.cpp:531
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

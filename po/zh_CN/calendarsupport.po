@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-20 00:58+0000\n"
+"POT-Creation-Date: 2023-04-03 00:46+0000\n"
 "PO-Revision-Date: 2023-03-27 11:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -2690,121 +2690,121 @@ msgstr "打印整年(&Y)"
 msgid "Prints a calendar for an entire year"
 msgstr "打印一整年的日历"
 
-#: utils.cpp:325
+#: utils.cpp:289
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "选择日历"
 
-#: utils.cpp:326
+#: utils.cpp:290
 #, kde-format
 msgid "Select the calendar where this item will be stored."
 msgstr "选择存储此项的日历。"
 
-#: utils.cpp:431
+#: utils.cpp:395
 #, kde-format
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
 msgstr "%1 (默认日历)"
 
-#: utils.cpp:442
+#: utils.cpp:406
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr "虚拟"
 
-#: utils.cpp:444
+#: utils.cpp:408
 #, kde-format
 msgid "Folder type:"
 msgstr "文件夹类型："
 
-#: utils.cpp:454
+#: utils.cpp:418
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "无"
 
-#: utils.cpp:457
+#: utils.cpp:421
 #, kde-format
 msgid "Content type:"
 msgstr "内容类型："
 
-#: utils.cpp:464
+#: utils.cpp:428
 #, kde-format
 msgid "Rights:"
 msgstr "权限："
 
-#: utils.cpp:467
+#: utils.cpp:431
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "只读"
 
-#: utils.cpp:469
+#: utils.cpp:433
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "读写"
 
-#: utils.cpp:477
+#: utils.cpp:441
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr "全部"
 
-#: utils.cpp:480
+#: utils.cpp:444
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "音频类"
 
-#: utils.cpp:482
+#: utils.cpp:446
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "弹出类"
 
-#: utils.cpp:484
+#: utils.cpp:448
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "电子邮件"
 
-#: utils.cpp:486
+#: utils.cpp:450
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "命令类"
 
-#: utils.cpp:488
+#: utils.cpp:452
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr "其他"
 
-#: utils.cpp:492
+#: utils.cpp:456
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "无"
 
-#: utils.cpp:495
+#: utils.cpp:459
 #, kde-format
 msgid "Blocked Reminders:"
 msgstr "已屏蔽的提醒："
 
-#: utils.cpp:560
+#: utils.cpp:524
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:562
+#: utils.cpp:526
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:567
+#: utils.cpp:531
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

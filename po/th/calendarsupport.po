@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-20 00:58+0000\n"
+"POT-Creation-Date: 2023-04-03 00:46+0000\n"
 "PO-Revision-Date: 2008-07-21 16:18+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -2937,39 +2937,39 @@ msgstr "พิมพ์ทั้งปี"
 msgid "Prints a calendar for an entire year"
 msgstr "พิมพ์ปฏิทินสำหรับทั้งปี"
 
-#: utils.cpp:325
+#: utils.cpp:289
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "ปฏิทินใหม่"
 
-#: utils.cpp:326
+#: utils.cpp:290
 #, fuzzy, kde-format
 #| msgid "Sets the due date for this to-do."
 msgid "Select the calendar where this item will be stored."
 msgstr "ตั้งค่าวันที่ครบกำหนดสำหรับสิ่งที่จะทำนี้"
 
-#: utils.cpp:431
+#: utils.cpp:395
 #, fuzzy, kde-format
 #| msgid "Use as &Default Calendar"
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
 msgstr "ใช้เป็นปฏิทินปริยาย"
 
-#: utils.cpp:442
+#: utils.cpp:406
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr ""
 
-#: utils.cpp:444
+#: utils.cpp:408
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Folder type:"
 msgstr "ปฏิทิน"
 
-#: utils.cpp:454
+#: utils.cpp:418
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox do not use holidays"
 #| msgid "(None)"
@@ -2977,37 +2977,37 @@ msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "(ไม่มี)"
 
-#: utils.cpp:457
+#: utils.cpp:421
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Content type:"
 msgstr "ปฏิทิน"
 
-#: utils.cpp:464
+#: utils.cpp:428
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:467
+#: utils.cpp:431
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "อ่านได้อย่างเดียว"
 
-#: utils.cpp:469
+#: utils.cpp:433
 #, fuzzy, kde-format
 #| msgid "Overwrite"
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "เขียนทับ"
 
-#: utils.cpp:477
+#: utils.cpp:441
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:480
+#: utils.cpp:444
 #, fuzzy, kde-format
 #| msgctxt "@option play a sound"
 #| msgid "Audio"
@@ -3015,7 +3015,7 @@ msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "เสียง"
 
-#: utils.cpp:482
+#: utils.cpp:446
 #, fuzzy, kde-format
 #| msgctxt "@option:radio recur daily"
 #| msgid "&Daily"
@@ -3023,7 +3023,7 @@ msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "ทุกวัน"
 
-#: utils.cpp:484
+#: utils.cpp:448
 #, fuzzy, kde-format
 #| msgctxt "@title:column attendee email"
 #| msgid "Email"
@@ -3031,20 +3031,20 @@ msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "อีเมล"
 
-#: utils.cpp:486
+#: utils.cpp:450
 #, fuzzy, kde-format
 #| msgid "Proceed"
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "ดำเนินการ"
 
-#: utils.cpp:488
+#: utils.cpp:452
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:492
+#: utils.cpp:456
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox do not use holidays"
 #| msgid "(None)"
@@ -3052,28 +3052,28 @@ msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "(ไม่มี)"
 
-#: utils.cpp:495
+#: utils.cpp:459
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Edit Reminders"
 msgid "Blocked Reminders:"
 msgstr "แก้ไขการเตือนความจำ"
 
-#: utils.cpp:560
+#: utils.cpp:524
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:562
+#: utils.cpp:526
 #, fuzzy, kde-format
 #| msgctxt "weekOfYear (year)"
 #| msgid "%1 (%2)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:567
+#: utils.cpp:531
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
