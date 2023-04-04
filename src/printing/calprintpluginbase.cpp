@@ -1342,7 +1342,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays
         }
     }
 
-    QVector<MonthEventStruct> monthentries;
+    QList<MonthEventStruct> monthentries;
 
     for (const KCalendarCore::Event::Ptr &e : std::as_const(events)) {
         if (!e || (mExcludeConfidential && e->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
@@ -1383,7 +1383,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays
 
     //  qSort( monthentries.begin(), monthentries.end() );
 
-    QVector<MonthEventStruct>::ConstIterator mit = monthentries.constBegin();
+    QList<MonthEventStruct>::ConstIterator mit = monthentries.constBegin();
     QDateTime endofmonth(end, QTime(0, 0, 0));
     endofmonth = endofmonth.addDays(1);
     for (; mit != monthentries.constEnd(); ++mit) {
