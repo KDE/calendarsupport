@@ -3,9 +3,9 @@
 add_definitions(-DTRANSLATION_DOMAIN=\"calendarsupport\")
 
 ########### next target ###############
-add_library(KPim${KF_MAJOR_VERSION}CalendarSupport)
-add_library(KPim${KF_MAJOR_VERSION}::CalendarSupport ALIAS KPim${KF_MAJOR_VERSION}CalendarSupport)
-target_sources(KPim${KF_MAJOR_VERSION}CalendarSupport PRIVATE
+add_library(KPim6CalendarSupport)
+add_library(KPim6::CalendarSupport ALIAS KPim6CalendarSupport)
+target_sources(KPim6CalendarSupport PRIVATE
   archivedialog.cpp
   attachmenthandler.cpp
   calendarsingleton.cpp
@@ -61,7 +61,7 @@ target_sources(KPim${KF_MAJOR_VERSION}CalendarSupport PRIVATE
   messagewidget.h
 )
 
-ki18n_wrap_ui(KPim${KF_MAJOR_VERSION}CalendarSupport
+ki18n_wrap_ui(KPim6CalendarSupport
   printing/calprintdayconfig_base.ui
   printing/calprintincidenceconfig_base.ui
   printing/calprintjournalconfig_base.ui
@@ -70,53 +70,53 @@ ki18n_wrap_ui(KPim${KF_MAJOR_VERSION}CalendarSupport
   printing/calprintweekconfig_base.ui
   printing/calprintyearconfig_base.ui
 )
-ecm_qt_declare_logging_category(KPim${KF_MAJOR_VERSION}CalendarSupport HEADER calendarsupport_debug.h IDENTIFIER CALENDARSUPPORT_LOG CATEGORY_NAME org.kde.pim.calendarsupport
+ecm_qt_declare_logging_category(KPim6CalendarSupport HEADER calendarsupport_debug.h IDENTIFIER CALENDARSUPPORT_LOG CATEGORY_NAME org.kde.pim.calendarsupport
         OLD_CATEGORY_NAMES log_calendarsupport
         DESCRIPTION "calendarsupport (calendarsupport)" EXPORT CALENDARSUPPORT)
 
-kconfig_add_kcfg_files(KPim${KF_MAJOR_VERSION}CalendarSupport kcalprefs_base.kcfgc)
+kconfig_add_kcfg_files(KPim6CalendarSupport kcalprefs_base.kcfgc)
 
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KPim${KF_MAJOR_VERSION}CalendarSupport PROPERTIES UNITY_BUILD ON)
+    set_target_properties(KPim6CalendarSupport PROPERTIES UNITY_BUILD ON)
 endif()
-generate_export_header(KPim${KF_MAJOR_VERSION}CalendarSupport BASE_NAME calendarsupport)
+generate_export_header(KPim6CalendarSupport BASE_NAME calendarsupport)
 
 
-target_include_directories(KPim${KF_MAJOR_VERSION}CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/CalendarSupport/>")
-target_include_directories(KPim${KF_MAJOR_VERSION}CalendarSupport PUBLIC "$<BUILD_INTERFACE:${calendarsupport_SOURCE_DIR}/src;${calendarsupport_BINARY_DIR}/src>")
+target_include_directories(KPim6CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/>")
+target_include_directories(KPim6CalendarSupport PUBLIC "$<BUILD_INTERFACE:${calendarsupport_SOURCE_DIR}/src;${calendarsupport_BINARY_DIR}/src>")
 
 target_link_libraries(
-  KPim${KF_MAJOR_VERSION}CalendarSupport
+  KPim6CalendarSupport
 PUBLIC
-  KPim${KF_MAJOR_VERSION}::Mime
-  KPim${KF_MAJOR_VERSION}::IdentityManagement
-  KPim${KF_MAJOR_VERSION}::AkonadiCalendar
-  KF${KF_MAJOR_VERSION}::ConfigGui
+  KPim6::Mime
+  KPim6::IdentityManagement
+  KPim6::AkonadiCalendar
+  KF6::ConfigGui
   Qt::PrintSupport
 PRIVATE
-  KPim${KF_MAJOR_VERSION}::PimTextEdit
-  KF${KF_MAJOR_VERSION}::I18n
-  KF${KF_MAJOR_VERSION}::Completion
-  KF${KF_MAJOR_VERSION}::KIOWidgets
-  KF${KF_MAJOR_VERSION}::GuiAddons
-  KPim${KF_MAJOR_VERSION}::AkonadiWidgets
-  KPim${KF_MAJOR_VERSION}::AkonadiNotes
-  KF${KF_MAJOR_VERSION}::Holidays
-  KF${KF_MAJOR_VERSION}::Codecs
-  KPim${KF_MAJOR_VERSION}::AkonadiCore
-  KF${KF_MAJOR_VERSION}::CalendarCore
-  KPim${KF_MAJOR_VERSION}::CalendarUtils
+  KPim6::PimTextEdit
+  KF6::I18n
+  KF6::Completion
+  KF6::KIOWidgets
+  KF6::GuiAddons
+  KPim6::AkonadiWidgets
+  KPim6::AkonadiNotes
+  KF6::Holidays
+  KF6::Codecs
+  KPim6::AkonadiCore
+  KF6::CalendarCore
+  KPim6::CalendarUtils
 )
 
-set_target_properties(KPim${KF_MAJOR_VERSION}CalendarSupport PROPERTIES
+set_target_properties(KPim6CalendarSupport PROPERTIES
     VERSION ${CALENDARSUPPORT_VERSION}
     SOVERSION ${CALENDARSUPPORT_SOVERSION}
     EXPORT_NAME CalendarSupport
 )
 
 install(TARGETS
-    KPim${KF_MAJOR_VERSION}CalendarSupport
-    EXPORT KPim${KF_MAJOR_VERSION}CalendarSupportTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
+    KPim6CalendarSupport
+    EXPORT KPim6CalendarSupportTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
 ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
@@ -168,8 +168,8 @@ ecm_generate_headers(CalendarSupport_CamelCasefreebusy_HEADERS
 )
 
 ecm_generate_pri_file(BASE_NAME CalendarSupport
-    LIB_NAME KPim${KF_MAJOR_VERSION}CalendarSupport
-    DEPS "KMime KIdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/CalendarSupport
+    LIB_NAME KPim6CalendarSupport
+    DEPS "KMime KIdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport
 )
 
 install(FILES
@@ -177,7 +177,7 @@ install(FILES
     ${CalendarSupport_CamelCaseprinter_HEADERS}
     ${CalendarSupport_CamelCasenext_HEADERS}
     ${CalendarSupport_CamelCasefreebusy_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/CalendarSupport/CalendarSupport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/CalendarSupport
     COMPONENT Devel
 )
 
@@ -194,7 +194,7 @@ install(FILES
     ${CalendarSupport_printer_HEADERS}
     ${CalendarSupport_next_HEADERS}
     ${CalendarSupport_freebusy_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/CalendarSupport/calendarsupport
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/calendarsupport
     COMPONENT Devel
 )
 install(FILES
@@ -210,9 +210,9 @@ ecm_qt_install_logging_categories(EXPORT CALENDARSUPPORT FILE calendarsupport.ca
 
 if (BUILD_QCH)
     ecm_add_qch(
-        KPim${KF_MAJOR_VERSION}CalendarSupport_QCH
-        NAME KPim${KF_MAJOR_VERSION}CalendarSupport
-        BASE_NAME KPim${KF_MAJOR_VERSION}CalendarSupport
+        KPim6CalendarSupport_QCH
+        NAME KPim6CalendarSupport
+        BASE_NAME KPim6CalendarSupport
         VERSION ${PIM_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
@@ -223,9 +223,9 @@ if (BUILD_QCH)
         MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
         #IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
         LINK_QCHS
-            Qt${QT_MAJOR_VERSION}Core_QCH
-            Qt${QT_MAJOR_VERSION}Gui_QCH
-            Qt${QT_MAJOR_VERSION}Widgets_QCH
+            Qt6Core_QCH
+            Qt6Gui_QCH
+            Qt6Widgets_QCH
         INCLUDE_DIRS
             ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
