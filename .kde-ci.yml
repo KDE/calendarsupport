@@ -16,19 +16,5 @@ Dependencies:
     'pim/kmime' : '@same'
     'pim/akonadi-notes' : '@same'
 
-- 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6', 'macOS/Qt6']
-  'require':
-    'frameworks/extra-cmake-modules': '@latest-kf6'
-    'frameworks/kcalendarcore' : '@latest-kf6'
-    'frameworks/kholidays' : '@latest-kf6'
-    'pim/akonadi' : '@latest-kf6'
-    'pim/akonadi-calendar' : '@latest-kf6'
-    'pim/akonadi-mime' : '@latest-kf6'
-    'pim/kcalutils' : '@latest-kf6'
-    'pim/kidentitymanagement' : '@latest-kf6'
-    'pim/kimap' : '@latest-kf6'
-    'pim/kmime' : '@latest-kf6'
-    'pim/akonadi-notes' : '@latest-kf6'
-
 Options:
   require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
