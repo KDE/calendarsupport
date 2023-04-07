@@ -15,7 +15,7 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 
-include(GenerateExportHeader)
+include(ECMGenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMGeneratePriFile)
@@ -61,7 +61,7 @@ find_package(KPim6AkonadiNotes ${AKONADI_NOTES_VERSION} CONFIG REQUIRED)
 find_package(KPim6TextEdit ${AKONADI_NOTES_VERSION} CONFIG REQUIRED)
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX CALENDARSUPPORT
-                        VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/calendarsupport_version.h"
+                        VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/src/calendarsupport_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6CalendarSupportConfigVersion.cmake"
                         SOVERSION 6
 )
@@ -97,7 +97,7 @@ install(EXPORT KPim6CalendarSupportTargets DESTINATION "${CMAKECONFIG_INSTALL_DI
     FILE KPim6CalendarSupportTargets.cmake NAMESPACE KPim6::)
 
 install(
-  FILES ${CMAKE_CURRENT_BINARY_DIR}/calendarsupport_version.h
+  FILES ${CMAKE_CURRENT_BINARY_DIR}/src/calendarsupport_version.h
   DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/ COMPONENT Devel
 )
 

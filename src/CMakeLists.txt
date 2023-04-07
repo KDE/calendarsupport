@@ -79,7 +79,12 @@ kconfig_add_kcfg_files(KPim6CalendarSupport kcalprefs_base.kcfgc)
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6CalendarSupport PROPERTIES UNITY_BUILD ON)
 endif()
-generate_export_header(KPim6CalendarSupport BASE_NAME calendarsupport)
+ecm_generate_export_header(KPim6CalendarSupport
+    BASE_NAME calendarsupport
+    VERSION ${CALENDARSUPPORT_VERSION}
+    DEPRECATED_BASE_VERSION 0
+    USE_VERSION_HEADER
+)
 
 
 target_include_directories(KPim6CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/>")
