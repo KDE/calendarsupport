@@ -12,7 +12,6 @@ Dependencies:
     'pim/akonadi-mime' : '@same'
     'pim/kcalutils' : '@same'
     'pim/kidentitymanagement' : '@same'
-    'pim/kimap' : '@same'
     'pim/kmime' : '@same'
     'pim/akonadi-notes' : '@same'
 
