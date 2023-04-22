@@ -116,7 +116,7 @@ set_target_properties(KPim${KF_MAJOR_VERSION}CalendarSupport PROPERTIES
 
 install(TARGETS
     KPim${KF_MAJOR_VERSION}CalendarSupport
-    EXPORT KPim${KF_MAJOR_VERSION}CalendarSupportTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    EXPORT KPim${KF_MAJOR_VERSION}CalendarSupportTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
 )
 
 ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
