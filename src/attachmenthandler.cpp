@@ -96,7 +96,7 @@ Attachment AttachmentHandler::find(const QString &attachmentName, const Incidenc
     }
 
     if (a.isUri()) {
-        auto job = KIO::statDetails(QUrl(a.uri()), KIO::StatJob::SourceSide, KIO::StatBasic);
+        auto job = KIO::stat(QUrl(a.uri()), KIO::StatJob::SourceSide, KIO::StatBasic);
 
         KJobWidgets::setWindow(job, d->mParent);
         if (!job->exec()) {

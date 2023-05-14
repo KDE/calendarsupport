@@ -233,7 +233,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     if (archiveURL.isLocalFile()) {
         fileExists = QFile::exists(archiveURL.toLocalFile());
     } else {
-        auto job = KIO::statDetails(archiveURL, KIO::StatJob::SourceSide, KIO::StatBasic);
+        auto job = KIO::stat(archiveURL, KIO::StatJob::SourceSide, KIO::StatBasic);
 
         KJobWidgets::setWindow(job, widget);
         fileExists = job->exec();
