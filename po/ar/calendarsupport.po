@@ -953,7 +953,7 @@ msgstr "تاريخ الب&دء:"
 #: printing/calprintweekconfig_base.ui:136
 #, kde-format
 msgid "2009-01-19"
-msgstr "‏١٩-٠١-٢٠٠٩"
+msgstr "‏19-01-2009"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, mFromTime)
@@ -3124,7 +3124,7 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgctxt "filename for an unnamed attachment"
 #~ msgid "attachment.1"
-#~ msgstr "مرفق.١"
+#~ msgstr "مرفق.1"
 
 #~ msgid "%1 already exists. Do you want to overwrite it?"
 #~ msgstr "%1 موجود بالفعل. أتريد الكتابة فوقه؟"
