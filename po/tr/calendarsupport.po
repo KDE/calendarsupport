@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-03 00:46+0000\n"
-"PO-Revision-Date: 2023-04-20 15:09+0300\n"
+"PO-Revision-Date: 2023-05-15 21:13+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1728,8 +1728,8 @@ msgstr "Ek Yok"
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
-msgstr[0] "1 Eklenti:"
-msgstr[1] "%1 Eklenti:"
+msgstr[0] "1 Ek:"
+msgstr[1] "%1 Ek:"
 
 #: printing/calprintdefaultplugins.cpp:542
 #, kde-format
