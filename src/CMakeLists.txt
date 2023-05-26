@@ -94,7 +94,7 @@ target_link_libraries(
   KPim6CalendarSupport
 PUBLIC
   KPim6::Mime
-  KPim6::IdentityManagement
+  KPim6::IdentityManagementCore
   KPim6::AkonadiCalendar
   KF6::ConfigGui
   Qt::PrintSupport

@@ -7,16 +7,16 @@
 #pragma once
 
 #include "calendarsupport_export.h"
-#include <KIdentityManagement/IdentityManager>
+#include <KIdentityManagementCore/IdentityManager>
 
 namespace CalendarSupport
 {
-class CALENDARSUPPORT_EXPORT IdentityManager : public KIdentityManagement::IdentityManager
+class CALENDARSUPPORT_EXPORT IdentityManager : public KIdentityManagementCore::IdentityManager
 {
     Q_OBJECT
 public:
     explicit IdentityManager(QObject *parent = nullptr, const char *name = nullptr)
-        : KIdentityManagement::IdentityManager(true /*readonly*/, parent, name)
+        : KIdentityManagementCore::IdentityManager(true /*readonly*/, parent, name)
     {
     }
 
@@ -24,5 +24,5 @@ protected:
     void createDefaultIdentity(QString &fullName, QString &emailAddress) override;
 };
 
-KIdentityManagement::IdentityManager *identityManager();
+KIdentityManagementCore::IdentityManager *identityManager();
 }

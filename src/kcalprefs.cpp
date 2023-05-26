@@ -16,7 +16,7 @@
 #include <KMime/HeaderParsing>
 
 #include <KEmailAddress>
-#include <KIdentityManagement/Identity>
+#include <KIdentityManagementCore/Identity>
 
 #include <KEMailSettings>
 
@@ -193,7 +193,7 @@ QStringList KCalPrefs::fullEmails()
     QStringList fullEmails;
 
     // Grab emails from the email identities
-    KIdentityManagement::IdentityManager *idmanager = CalendarSupport::identityManager();
+    KIdentityManagementCore::IdentityManager *idmanager = CalendarSupport::identityManager();
     QStringList lst = idmanager->identities();
 
     fullEmails.reserve(1 + mAdditionalMails.count() + lst.count());
@@ -201,8 +201,8 @@ QStringList KCalPrefs::fullEmails()
     fullEmails << QStringLiteral("%1 <%2>").arg(fullName(), email());
 
     QStringList::Iterator it;
-    KIdentityManagement::IdentityManager::ConstIterator it1;
-    KIdentityManagement::IdentityManager::ConstIterator end1(idmanager->end());
+    KIdentityManagementCore::IdentityManager::ConstIterator it1;
+    KIdentityManagementCore::IdentityManager::ConstIterator end1(idmanager->end());
     for (it1 = idmanager->begin(); it1 != end1; ++it1) {
         fullEmails << (*it1).fullEmailAddr();
     }
