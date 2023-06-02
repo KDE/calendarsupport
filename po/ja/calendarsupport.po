@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
@@ -1501,15 +1501,13 @@ msgstr "継続時間: "
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
-msgstr[0] "1 時間 "
-msgstr[1] "%1 時間 "
+msgstr[0] "%1 時間 "
 
 #: printing/calprintdefaultplugins.cpp:137
 #, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
-msgstr[0] "1 分 "
-msgstr[1] "%1 分 "
+msgstr[0] "%1 分 "
 
 #: printing/calprintdefaultplugins.cpp:140
 #, kde-format
@@ -1546,8 +1544,7 @@ msgstr "リマインダなし"
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
-msgstr[0] "リマインダ: "
-msgstr[1] "%1 個のリマインダ: "
+msgstr[0] "%1 個のリマインダ: "
 
 #: printing/calprintdefaultplugins.cpp:317
 #, kde-format
@@ -1577,22 +1574,19 @@ msgstr "終了後 %1"
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
-msgstr[0] "1 日"
-msgstr[1] "%1 日"
+msgstr[0] "%1 日"
 
 #: printing/calprintdefaultplugins.cpp:340
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
-msgstr[0] "1 時間"
-msgstr[1] "%1 時間"
+msgstr[0] "%1 時間"
 
 #: printing/calprintdefaultplugins.cpp:343
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
-msgstr[0] "1 分"
-msgstr[1] "%1 分"
+msgstr[0] "%1 分"
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:621
@@ -1632,8 +1626,7 @@ msgstr "サブアイテムなし"
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
-msgstr[0] "1 サブアイテム:"
-msgstr[1] "%1 サブアイテム:"
+msgstr[0] "%1 サブアイテム:"
 
 #: printing/calprintdefaultplugins.cpp:477
 #, kde-format
@@ -1705,8 +1698,7 @@ msgstr "添付ファイルなし"
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
-msgstr[0] "添付ファイル 1 個:"
-msgstr[1] "添付ファイル %1 個:"
+msgstr[0] "添付ファイル %1 個:"
 
 #: printing/calprintdefaultplugins.cpp:542
 #, kde-format
@@ -1723,8 +1715,7 @@ msgstr "参加者なし"
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
-msgstr[0] "参加者 1 名:"
-msgstr[1] "参加者 %1 名:"
+msgstr[0] "参加者 %1 名:"
 
 #: printing/calprintdefaultplugins.cpp:573
 #, kde-format
