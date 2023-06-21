@@ -398,3 +398,5 @@ void FreeBusyItemModel::cancelReload()
 {
     d->mReloadTimer.stop();
 }
+
+#include "moc_freebusyitemmodel.cpp"

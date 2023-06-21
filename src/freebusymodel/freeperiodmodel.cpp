@@ -186,3 +186,5 @@ QString FreePeriodModel::tooltipify(int index) const
     toolTip += QLatin1String("</qt>");
     return toolTip;
 }
+
+#include "moc_freeperiodmodel.cpp"

@@ -323,3 +323,5 @@ bool EventArchiver::isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
 
     return true;
 }
+
+#include "moc_eventarchiver.cpp"

@@ -308,3 +308,5 @@ void CalPrintDialog::slotOk()
     }
     accept();
 }
+
+#include "moc_calprinter.cpp"

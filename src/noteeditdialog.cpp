@@ -196,3 +196,5 @@ KMime::Message::Ptr NoteEditDialog::note() const
         return {};
     }
 }
+
+#include "moc_noteeditdialog.cpp"

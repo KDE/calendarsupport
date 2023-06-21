@@ -277,3 +277,5 @@ void ArchiveDialog::showWhatsThis()
         QWhatsThis::showText(QCursor::pos(), widget->whatsThis());
     }
 }
+
+#include "moc_archivedialog.cpp"

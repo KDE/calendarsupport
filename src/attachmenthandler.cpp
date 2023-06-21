@@ -304,3 +304,5 @@ void AttachmentHandler::slotFinishView(KJob *job)
     d->mJobToReceivedInfo.remove(job);
 }
 } // namespace CalendarSupport
+
+#include "moc_attachmenthandler.cpp"

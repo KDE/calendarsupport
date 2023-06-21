@@ -1759,3 +1759,5 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     }
     p.setFont(oldFont);
 }
+
+#include "moc_calprintdefaultplugins.cpp"

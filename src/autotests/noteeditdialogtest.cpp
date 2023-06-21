@@ -325,3 +325,5 @@ void NoteEditDialogTest::shouldShouldEnabledSaveEditorButton()
 }
 
 QTEST_MAIN(NoteEditDialogTest)
+
+#include "moc_noteeditdialogtest.cpp"

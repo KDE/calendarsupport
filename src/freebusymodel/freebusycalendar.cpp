@@ -156,3 +156,5 @@ void FreeBusyCalendar::onRowsChanged(const QModelIndex &topLeft, const QModelInd
         d->mCalendar->endChange(inc);
     }
 }
+
+#include "moc_freebusycalendar.cpp"

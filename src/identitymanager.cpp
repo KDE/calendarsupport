@@ -24,3 +24,5 @@ KIdentityManagementCore::IdentityManager *CalendarSupport::identityManager()
 {
     return globalIdentityManager;
 }
+
+#include "moc_identitymanager.cpp"

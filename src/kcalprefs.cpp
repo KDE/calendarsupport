@@ -268,3 +268,5 @@ QDateTime KCalPrefs::dayBegins() const
 {
     return d->mDayBegins;
 }
+
+#include "moc_kcalprefs.cpp"

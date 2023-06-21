@@ -53,3 +53,5 @@ bool MessageWidget::eventFilter(QObject *, QEvent *event)
 
     return false; // we don't want it
 }
+
+#include "moc_messagewidget.cpp"

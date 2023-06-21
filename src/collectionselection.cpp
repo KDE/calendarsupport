@@ -89,3 +89,5 @@ void CollectionSelection::slotSelectionChanged(const QItemSelection &selectedInd
         Q_EMIT collectionSelected(c);
     }
 }
+
+#include "moc_collectionselection.cpp"
