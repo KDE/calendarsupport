@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: none
 # SPDX-License-Identifier: BSD-3-Clause
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
-set(PIM_VERSION "5.24.40")
+set(PIM_VERSION "5.24.41")
 
 project(calendarsupport VERSION ${PIM_VERSION})
 
@@ -15,7 +15,7 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 
-include(GenerateExportHeader)
+include(ECMGenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMGeneratePriFile)

@@ -16,6 +16,7 @@
 #include <Akonadi/CalendarBase>
 #include <Akonadi/CalendarUtils>
 #include <Akonadi/CollectionFetchJob>
+#include <Akonadi/ETMCalendar>
 #include <Akonadi/ItemFetchScope>
 
 #include <KCalUtils/IncidenceFormatter>
@@ -77,7 +78,7 @@ public:
         QString text;
 
         if (mCurrentItem.isValid()) {
-            text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(Akonadi::CalendarUtils::displayName(mCalendar, mParentCollection),
+            text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(Akonadi::CalendarUtils::displayName(mETM, mParentCollection),
                                                                       Akonadi::CalendarUtils::incidence(mCurrentItem),
                                                                       mDate);
             text.prepend(mHeaderText);
@@ -111,7 +112,7 @@ public:
         mAttachmentHandler->view(attachmentName, Akonadi::CalendarUtils::incidence(mCurrentItem));
     }
 
-    Akonadi::ETMCalendar *mCalendar = nullptr;
+    Akonadi::EntityTreeModel *mETM = nullptr;
     IncidenceViewer *const mParent;
     TextBrowser *mBrowser = nullptr;
     Akonadi::Item mCurrentItem;
@@ -129,7 +130,15 @@ IncidenceViewer::IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent
     : QWidget(parent)
     , d(new IncidenceViewerPrivate(this))
 {
-    d->mCalendar = calendar;
+    d->mETM = calendar->entityTreeModel();
+    init();
+}
+
+IncidenceViewer::IncidenceViewer(Akonadi::EntityTreeModel *etm, QWidget *parent)
+    : QWidget(parent)
+    , d(new IncidenceViewerPrivate(this))
+{
+    d->mETM = etm;
     init();
 }
 
@@ -137,7 +146,6 @@ IncidenceViewer::IncidenceViewer(QWidget *parent)
     : QWidget(parent)
     , d(new IncidenceViewerPrivate(this))
 {
-    d->mCalendar = nullptr;
     init();
 }
 
@@ -162,7 +170,12 @@ IncidenceViewer::~IncidenceViewer() = default;
 
 void IncidenceViewer::setCalendar(Akonadi::ETMCalendar *calendar)
 {
-    d->mCalendar = calendar;
+    d->mETM = calendar->entityTreeModel();
+}
+
+void IncidenceViewer::setModel(Akonadi::EntityTreeModel *model)
+{
+    d->mETM = model;
 }
 
 Akonadi::Item IncidenceViewer::incidence() const

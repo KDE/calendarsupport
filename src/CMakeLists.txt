@@ -79,7 +79,12 @@ kconfig_add_kcfg_files(KPim${KF_MAJOR_VERSION}CalendarSupport kcalprefs_base.kcf
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim${KF_MAJOR_VERSION}CalendarSupport PROPERTIES UNITY_BUILD ON)
 endif()
-generate_export_header(KPim${KF_MAJOR_VERSION}CalendarSupport BASE_NAME calendarsupport)
+ecm_generate_export_header(
+    KPim${KF_MAJOR_VERSION}CalendarSupport
+    BASE_NAME calendarsupport
+    VERSION ${PIM_VERSION}
+    DEPRECATION_VERSIONS "5.24"
+)
 
 
 target_include_directories(KPim${KF_MAJOR_VERSION}CalendarSupport INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/CalendarSupport/>")
