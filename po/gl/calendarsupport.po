@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-03 00:46+0000\n"
-"PO-Revision-Date: 2023-06-11 21:24+0200\n"
+"PO-Revision-Date: 2023-06-23 23:30+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -42,7 +42,7 @@ msgid ""
 msgstr ""
 "Arquivar garda os elementos antigos nun ficheiro dado e despois elimínaos do "
 "calendario actual. Se o ficheiro onde arquivalos xa existe só se engadirán. "
-"(<link url=\"#\">Como restaurar</link>)"
+"(<link url=\"#\">Como restaurar</link>)."
 
 #: archivedialog.cpp:67
 #, kde-format
@@ -52,9 +52,9 @@ msgid ""
 "function. You can view an archive by opening it like you would any other "
 "calendar. It is not saved in a special format, but as vCalendar."
 msgstr ""
-"Para engadir un arquivo ao calendario, empregue a función Fusionar "
-"Calendarios. Pode ver un arquivo abríndoo como abriría calquera calendario. "
-"Non se garda nun formato especial, senón en vCalendar."
+"Para engadir un arquivo ao calendario, use a función Fusionar Calendarios. "
+"Pode ver un arquivo abríndoo como abriría calquera calendario. Non se garda "
+"nun formato especial, senón en vCalendar."
 
 #: archivedialog.cpp:82
 #, kde-format
@@ -66,7 +66,7 @@ msgstr "Arquivar agora os elementos anteriores a:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr "Activar o arquivo ou purgados elementos antigos por unha vez"
+msgstr "Activar o arquivo ou purgados elementos antigos por unha vez."
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -85,7 +85,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the one time archiving cut-off date"
-msgstr "Configurar a data de corte do arquivado dunha vez"
+msgstr "Definir a data de corte do arquivado dunha vez."
 
 #: archivedialog.cpp:95
 #, kde-format
@@ -109,7 +109,7 @@ msgstr "Ar&quivar automaticamente os elementos anteriores a:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable automatic archiving or purging of older items"
-msgstr "Activar o arquivado ou purga automáticos dos elementos vellos"
+msgstr "Activar o arquivado ou purga automáticos dos elementos vellos."
 
 #: archivedialog.cpp:110
 #, kde-format
@@ -121,13 +121,13 @@ msgid ""
 msgstr ""
 "Se se activa esta funcionalidade, a aplicación comproba regularmente se se "
 "teñen que arquivar os eventos e tarefas; isto quere dicir que non precisará "
-"empregar este diálogo máis, excepto para cambiar as opcións."
+"usar este diálogo máis, excepto para cambiar as opcións."
 
 #: archivedialog.cpp:123
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the archival age in days, weeks or months"
-msgstr "Configurar a idade de arquivo en días, semanas ou meses"
+msgstr "Definir a idade de arquivo en días, semanas ou meses."
 
 #: archivedialog.cpp:125
 #, kde-format
@@ -143,7 +143,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the units for the automatic archive age"
-msgstr "Configurar as unidades da idade de arquivado automático"
+msgstr "Definir as unidades da idade de arquivado automático."
 
 #: archivedialog.cpp:131
 #, kde-format
@@ -187,7 +187,7 @@ msgstr "*.ics|Ficheiros iCalendar"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the location of the archive"
-msgstr "Configurar o lugar do arquivo"
+msgstr "Definir a localización do arquivo."
 
 #: archivedialog.cpp:147
 #, kde-format
@@ -201,7 +201,7 @@ msgstr ""
 "A ruta do arquivo. Os eventos e tarefas amécense ao ficheiro indicado, de "
 "xeito que os eventos xa existentes no ficheiro non se modifican ou eliminan. "
 "Posteriormente é posíbel cargar ou combinar o ficheiro como calquera outro "
-"calendario. Non se garda nun formato especial senón que emprega o formato "
+"calendario. Non se garda nun formato especial senón que usa o formato "
 "iCalendar."
 
 #: archivedialog.cpp:156
@@ -226,13 +226,13 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive &Events"
-msgstr "Arquivar os &eventos"
+msgstr "Arquivar os &eventos."
 
 #: archivedialog.cpp:167
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge events"
-msgstr "Arquivar ou purgar os eventos"
+msgstr "Arquivar ou purgar os eventos."
 
 #: archivedialog.cpp:168
 #, kde-format
@@ -248,13 +248,13 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
-msgstr "Arquivar as &tarefas completadas"
+msgstr "Arquivar as &tarefas completadas."
 
 #: archivedialog.cpp:172
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge completed to-dos"
-msgstr "Arquivar ou purgar as tarefas completadas"
+msgstr "Arquivar ou purgar as tarefas completadas."
 
 #: archivedialog.cpp:174
 #, kde-format
@@ -270,13 +270,13 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "&Delete only, do not save"
-msgstr "Só &eliminar, non gardar"
+msgstr "Só &eliminar, non gardar."
 
 #: archivedialog.cpp:179
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Purge the old items without saving them"
-msgstr "Purgar os elementos vellos sen os gardar"
+msgstr "Purgar os elementos vellos sen os gardar."
 
 #: archivedialog.cpp:181
 #, kde-format
@@ -311,7 +311,7 @@ msgid ""
 "The calendar invitation stored in this email message is broken in some way. "
 "Unable to continue."
 msgstr ""
-"O convite de calendario almacenado nesta mensaxe de correo está estragado "
+"A invitación de calendario almacenada nesta mensaxe de correo está estragada "
 "por algunha causa. Non se pode continuar."
 
 #: attachmenthandler.cpp:178 attachmenthandler.cpp:232
@@ -426,7 +426,7 @@ msgstr "%1, %2 de %3, de %4 a %5"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
-msgstr "Período libre"
+msgstr "Período libre."
 
 #: freebusymodel/freeperiodmodel.cpp:178
 #, kde-format
@@ -450,7 +450,7 @@ msgstr "Duración:"
 #: kcalprefs.kcfg:15
 #, kde-format
 msgid "Use email settings from System Settings"
-msgstr "Empregar a configuración de correo da Configuración do Sistema"
+msgstr "Usar a configuración de correo da Configuración do Sistema"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
@@ -510,7 +510,7 @@ msgid ""
 "default sound file for new reminders. You can always specify another file in "
 "the Reminder configuration accessible from the Event or To-do editors."
 msgstr ""
-"Marque esta opción se quere activar que se use o ficheiro especificado como "
+"Marque esta opción se quere activar que se use o ficheiro indicado como "
 "ficheiro de son predeterminado para as lembranzas novas. Tamén pode indicar "
 "outro ficheiro na opción Lembranza, accesíbel desde os editores de Evento e "
 "Tarefa."
@@ -529,9 +529,9 @@ msgid ""
 "always specify another file in the Reminder configuration accessible from "
 "the Event or To-do editors."
 msgstr ""
-"Escolla un ficheiro que desexe empregar como ficheiro de son predeterminado "
-"para as lembranzas novas. Tamén pode indicar outro ficheiro na opción "
-"Lembranza, accesíbel desde os editores de Evento e Tarefa."
+"Escolla un ficheiro que queira usar como ficheiro de son predeterminado para "
+"as lembranzas novas. Tamén pode indicar outro ficheiro na opción Lembranza, "
+"accesíbel desde os editores de Evento e Tarefa."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:47
@@ -660,15 +660,15 @@ msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
 "shown as non-working days in the date navigator, the agenda view, etc."
 msgstr ""
-"Seleccione as rexións que queira empregar para determinar os días festivos. "
-"Os días festivos definidos móstranse como días nos que non se traballa no "
+"Seleccione as rexións que queira usar para determinar os días festivos. Os "
+"días festivos definidos amósanse como días nos que non se traballa no "
 "navegador de datas, na vista da axenda, etc."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:98
 #, kde-format
 msgid "Use Groupware communication"
-msgstr "Empregar a comunicación de traballo en grupo"
+msgstr "Usar a comunicación de traballo en grupo"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:99
@@ -681,9 +681,8 @@ msgid ""
 msgstr ""
 "Marque esta opción para activar a xeración automática de mensaxes de correo "
 "ao crear, actualizar ou eliminar eventos (ou tarefas) que impliquen outras "
-"persoas. Deberíase seleccionar esta opción se se quere empregar a "
-"funcionalidade de traballo en grupo (p.ex. configurar Kontact como cliente "
-"do Kolab de KDE)."
+"persoas. Deberíase seleccionar esta opción se se quere usar a funcionalidade "
+"de traballo en grupo (p.ex. configurar Kontact como cliente do Kolab de KDE)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:104
@@ -718,7 +717,7 @@ msgstr ""
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
-"Mostrar os selectores de fuso horario no diálogo do editor de eventos e "
+"Amosar os selectores de fuso horario no diálogo do editor de eventos e "
 "tarefas."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
@@ -735,7 +734,7 @@ msgid ""
 "archived. The unit of this value is specified in another field."
 msgstr ""
 "Se se activa o arquivado automático, os eventos máis antigos que esta "
-"cantidade han arquivarse. A unidade deste valor especifícase noutro campo."
+"cantidade han arquivarse. A unidade deste valor indícase noutro campo."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:144
@@ -832,7 +831,7 @@ msgid ""
 "the owner of the calendar, and displayed in events and to-dos you create."
 msgstr ""
 "Insira aquí o seu enderezo de correo electrónico. Este enderezo de correo "
-"electrónico emprégase para identificar o dono do calendario e aparece nos "
+"electrónico úsase para identificar o dono do calendario e aparece nos "
 "eventos e tarefas que cree."
 
 #: kcalprefs.kcfg:202
@@ -854,16 +853,16 @@ msgid ""
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
-"Seleccione unha cor para empregar na situación «sen etiqueta» ou «etiqueta "
-"sen configurar», cando un elemento non teña ningunha etiqueta. Esta cor "
-"emprégase cando se mostran elementos nas vistas de axenda ou mensual "
-"empregando o esquema «Só a etiqueta»."
+"Seleccione unha cor para usar na situación «sen etiqueta» ou «etiqueta sen "
+"configurar», cando un elemento non teña ningunha etiqueta. Esta cor úsase "
+"cando se amosan elementos nas vistas de axenda ou mensual usando o esquema "
+"«Só a etiqueta»."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
 #: kcalprefs.kcfg:222
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr "Empregar esta cor cando se mostren elementos sen etiquetas."
+msgstr "Usar esta cor cando se amosen elementos sen etiquetas."
 
 #: noteeditdialog.cpp:41
 #, kde-format
@@ -967,8 +966,8 @@ msgid ""
 "the start date."
 msgstr ""
 "Se quere imprimir máis dun día á vez, pode definir o intervalo de datas con "
-"esta opción e a opción <i>Data de remate</i>. Esta opción emprégase para "
-"definir a data de comezo."
+"esta opción e a opción <i>Data de remate</i>. Esta opción úsase para definir "
+"a data de comezo."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintdayconfig_base.ui:36
@@ -1064,8 +1063,8 @@ msgid ""
 "the end date."
 msgstr ""
 "Se quere imprimir máis dun día á vez, pode definir un intervalo da datas con "
-"esta opción e a opción <i>Data de inicio</i>. Esta opción emprégase para "
-"definir a data de remate."
+"esta opción e a opción <i>Data de inicio</i>. Esta opción úsase para definir "
+"a data de remate."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintdayconfig_base.ui:116
@@ -1122,7 +1121,7 @@ msgid ""
 "events will be shown."
 msgstr ""
 "Marque esta opción para determinar automaticamente o intervalo horario "
-"requirido, de xeito que se mostren todos os eventos."
+"requirido, de xeito que se amosen todos os eventos."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
 #: printing/calprintdayconfig_base.ui:193
@@ -1193,7 +1192,7 @@ msgstr "Imprimir como vista de horario, todos os &días nunha única páxina"
 #: printing/calprintyearconfig_base.ui:70
 #, kde-format
 msgid "Security Exclusions"
-msgstr "Exclusións de seguranza"
+msgstr "Exclusións de seguridade"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:248
@@ -1345,7 +1344,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:312
 #, kde-format
 msgid "Include to-&dos that are due on the printed day(s)"
-msgstr "Incluír as tarefas pen&dentes que vencen nos días mostrados."
+msgstr "Incluír as tarefas pen&dentes que vencen nos días amosados."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:319
@@ -1408,14 +1407,14 @@ msgstr "Limitar o&s eventos de cada día a unha única liña"
 #: printing/calprintweekconfig_base.ui:351
 #, kde-format
 msgid "Check this option to draw note lines in empty areas."
-msgstr "Marque esta opción para mostrar as liñas das notas en zonas baleiras."
+msgstr "Marque esta opción para amosar as liñas das notas en zonas baleiras."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:354
 #: printing/calprintweekconfig_base.ui:354
 #, kde-format
 msgid "Show note &lines in Filofax layout"
-msgstr "Mostrar as &liñas das notas no formato Filofax"
+msgstr "Amosar as &liñas das notas no formato Filofax"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:361
@@ -1446,7 +1445,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:367
 #, kde-format
 msgid "&Use colors"
-msgstr "Empregar &cores"
+msgstr "Usar &cores"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:374
@@ -1758,12 +1757,12 @@ msgstr "Segredismo: %1"
 #: printing/calprintdefaultplugins.cpp:601
 #, kde-format
 msgid "Show as: Busy"
-msgstr "Mostrar como: Ocupado"
+msgstr "Amosar como: Ocupado"
 
 #: printing/calprintdefaultplugins.cpp:603
 #, kde-format
 msgid "Show as: Free"
-msgstr "Mostrar como: Libre"
+msgstr "Amosar como: Libre"
 
 #: printing/calprintdefaultplugins.cpp:609
 #, kde-format
@@ -2002,7 +2001,7 @@ msgstr "&Orientación da páxina:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
-msgstr "Indicar a orientación da páxina"
+msgstr "Definir a orientación da páxina."
 
 #: printing/calprinter.cpp:194
 #, kde-format
@@ -2013,8 +2012,8 @@ msgid ""
 "style or to your printer's default setting."
 msgstr ""
 "Escolla se quere que a impresión se realice como «retrato» ou como "
-"«paisaxe». Tamén pode indicar que se empregue a orientación máis axeitada "
-"para o estilo escollido ou para a configuración predeterminada da impresora."
+"«paisaxe». Tamén pode indicar que se use a orientación máis axeitada para o "
+"estilo escollido ou para a configuración predeterminada da impresora."
 
 #: printing/calprinter.cpp:197
 #, kde-format
@@ -2044,7 +2043,7 @@ msgstr "Paisaxe"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the type of print"
-msgstr "Escolla o tipo de impresión"
+msgstr "Escolla o tipo de impresión."
 
 #: printing/calprinter.cpp:224
 #, kde-format
@@ -2183,7 +2182,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:259
 #, kde-format
 msgid "Show note &lines"
-msgstr "Mostrar as &liñas das notas"
+msgstr "Amosar as &liñas das notas"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintjournalconfig_base.ui:17
@@ -2739,7 +2738,7 @@ msgstr "Número de pá&xinas:"
 #: printing/calprintyearconfig_base.ui:121
 #, kde-format
 msgid "Show &sub-day events as:"
-msgstr "Mo&strar os eventos de menos dun día como:"
+msgstr "Amosar os eventos de menos dun día como:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2761,7 +2760,7 @@ msgstr "Caixas horarias"
 #: printing/calprintyearconfig_base.ui:151
 #, kde-format
 msgid "Show &holidays as:"
-msgstr "Mostrar as &vacacións como:"
+msgstr "Amosar as &vacacións como:"
 
 #: printing/journalprint.cpp:104
 #, kde-format
