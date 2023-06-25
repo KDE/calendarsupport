@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-03 00:46+0000\n"
-"PO-Revision-Date: 2023-06-23 23:30+0200\n"
+"PO-Revision-Date: 2023-06-24 11:04+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -948,7 +948,7 @@ msgstr "Intervalo de data e hora"
 #: printing/calprintweekconfig_base.ui:49
 #, kde-format
 msgid "Starting date for the print"
-msgstr "Data de inicio da impresión"
+msgstr "Data de inicio da impresión."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mFromDate)
@@ -996,7 +996,7 @@ msgstr "19-01-2009"
 #: printing/calprintweekconfig_base.ui:80
 #, kde-format
 msgid "Starting time for the print"
-msgstr "Hora de inicio do impreso"
+msgstr "Hora de inicio do impreso."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
@@ -1044,7 +1044,7 @@ msgstr "hh:mm"
 #: printing/calprintweekconfig_base.ui:129
 #, kde-format
 msgid "Ending date for the print"
-msgstr "Data de inicio para imprimir"
+msgstr "Data de inicio para imprimir."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -1083,7 +1083,7 @@ msgstr "&Data de remate:"
 #: printing/calprintweekconfig_base.ui:160
 #, kde-format
 msgid "Ending time for the print"
-msgstr "Hora de inicio para imprimir"
+msgstr "Hora de inicio para imprimir."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1265,7 +1265,7 @@ msgstr "Incluír a información"
 #: printing/calprintweekconfig_base.ui:277
 #, kde-format
 msgid "Print item descriptions"
-msgstr "Imprimir as descricións dos elementos"
+msgstr "Imprimir as descricións dos elementos."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDescription)
@@ -1324,7 +1324,7 @@ msgstr "&Etiquetas"
 #, kde-format
 msgid "Print to-dos due within the specified date range"
 msgstr ""
-"Imprimir as tarefas que vaian vencer dentro do intervalo de datas indicado"
+"Imprimir as tarefas que vaian vencer dentro do intervalo de datas indicado."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:309
@@ -1351,7 +1351,7 @@ msgstr "Incluír as tarefas pen&dentes que vencen nos días amosados."
 #: printing/calprintweekconfig_base.ui:319
 #, kde-format
 msgid "Check this option to exclude the time in description box"
-msgstr "Marque esta opción para excluír a hora no cadro descritivo"
+msgstr "Marque esta opción para excluír a hora no cadro descritivo."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:322
@@ -1378,7 +1378,7 @@ msgstr "Xeral"
 #: printing/calprintweekconfig_base.ui:338
 #, kde-format
 msgid "Print items on one line"
-msgstr "Imprimir os elementos nunha liña"
+msgstr "Imprimir os elementos nunha liña."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:341
@@ -1423,7 +1423,7 @@ msgstr "Amosar as &liñas das notas no formato Filofax"
 #: printing/calprintweekconfig_base.ui:361
 #, kde-format
 msgid "Print in color"
-msgstr "Imprimir en cor"
+msgstr "Imprimir en cor."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:364
@@ -1457,7 +1457,7 @@ msgstr "Usar &cores"
 #: printing/calprintyearconfig_base.ui:178
 #, kde-format
 msgid "Print a datetime footer on each page"
-msgstr "Imprimir un pé de páxina coa data e a hora en cada páxina"
+msgstr "Imprimir un pé de páxina coa data e a hora en cada páxina."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:377
@@ -2089,7 +2089,7 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:33
 #, kde-format
 msgid "Print incidence details"
-msgstr "Imprimir os detalles da incidencia"
+msgstr "Imprimir os detalles da incidencia."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:36
@@ -2111,7 +2111,7 @@ msgstr "Deta&lles (visibilidade, segredismo, etc.)"
 #: printing/calprintincidenceconfig_base.ui:46
 #, kde-format
 msgid "Print the attendees"
-msgstr "Imprimir os asistentes"
+msgstr "Imprimir os asistentes."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:49
@@ -2130,7 +2130,7 @@ msgstr "&Asistentes"
 #: printing/calprintincidenceconfig_base.ui:59
 #, kde-format
 msgid "Print the notes"
-msgstr "Imprimir as notas"
+msgstr "Imprimir as notas."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:62
@@ -2149,7 +2149,7 @@ msgstr "&Notas, subelementos"
 #: printing/calprintincidenceconfig_base.ui:72
 #, kde-format
 msgid "Print the attachments"
-msgstr "Imprimir os anexos"
+msgstr "Imprimir os anexos."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
@@ -2264,13 +2264,13 @@ msgstr "Mes de come&zo:"
 #: printing/calprintmonthconfig_base.ui:43
 #, kde-format
 msgid "Starting month for printing"
-msgstr "Mes de inicio para imprimir"
+msgstr "Mes de inicio para imprimir."
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:53
 #, kde-format
 msgid "Starting year for printing"
-msgstr "Ano de inicio para imprimir"
+msgstr "Ano de inicio para imprimir."
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:56
@@ -2308,13 +2308,13 @@ msgstr "&Mes de remate:"
 #: printing/calprintmonthconfig_base.ui:82
 #, kde-format
 msgid "Ending month for the print"
-msgstr "Mes de inicio para imprimir"
+msgstr "Mes de inicio para imprimir."
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:92
 #, kde-format
 msgid "Ending year for the print"
-msgstr "Ano de inicio para imprimir"
+msgstr "Ano de inicio para imprimir."
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:95
@@ -2332,7 +2332,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:195
 #, kde-format
 msgid "Print daily recurring items"
-msgstr "Imprimir os elementos de repetición diaria"
+msgstr "Imprimir os elementos de repetición diaria."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:198
@@ -2355,7 +2355,7 @@ msgstr "Incluír as tarefas e eventos de repetición &diaria"
 #: printing/calprintmonthconfig_base.ui:208
 #, kde-format
 msgid "Print weekly recurring items"
-msgstr "Imprimir os elementos de repetición semanal"
+msgstr "Imprimir os elementos de repetición semanal."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:211
@@ -2377,7 +2377,7 @@ msgstr "Imprimir as tarefas e eventos de repetición &semanal"
 #: printing/calprintmonthconfig_base.ui:230
 #, kde-format
 msgid "Print week numbers"
-msgstr "Imprimir os números da semana"
+msgstr "Imprimir os números da semana."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:233
@@ -2489,7 +2489,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:42
 #, kde-format
 msgid "Name for this to-do list"
-msgstr "Nome desta lista de tarefas"
+msgstr "Nome desta lista de tarefas."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mTitleLabel)
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, mTitle)
