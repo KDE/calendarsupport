@@ -12,8 +12,7 @@
 #include "calendarsupport_export.h"
 #include "printplugin.h"
 
-#include <Akonadi/ETMCalendar>
-
+#include <KCalendarCore/Calendar>
 #include <KCalendarCore/Event>
 #include <KCalendarCore/Todo>
 

@@ -1732,9 +1732,7 @@ void CalPrintPluginBase::drawTodo(int &count,
 
     // Make a list of all the sub-to-dos related to this to-do.
     KCalendarCore::Todo::List t;
-    const KCalendarCore::Incidence::List relations = mCalendar->childIncidences(todo->uid());
-
-    for (const KCalendarCore::Incidence::Ptr &incidence : relations) {
+    for (const KCalendarCore::Incidence::Ptr &incidence : mCalendar->incidences()) {
         // In the future, to-dos might also be related to events
         // Manually check if the sub-to-do is in the list of to-dos to print
         // The problem is that relations() does not apply filters, so
@@ -1743,6 +1741,11 @@ void CalPrintPluginBase::drawTodo(int &count,
         if (!subtodo) {
             continue;
         }
+
+        if (subtodo->relatedTo() != todo->uid()) {
+            continue;
+        }
+
 #ifdef AKONADI_PORT_DISABLED
         if (subtodo && todoList.contains(subtodo)) {
 #else
@@ -1766,7 +1769,7 @@ void CalPrintPluginBase::drawTodo(int &count,
     }
 
     // has sub-todos?
-    startpt.mHasLine = (relations.size() > 0);
+    startpt.mHasLine = (t.size() > 0);
     startPoints.append(&startpt);
 
     // Sort the sub-to-dos and print them
