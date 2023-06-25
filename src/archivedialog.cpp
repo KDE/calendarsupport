@@ -141,7 +141,7 @@ ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::Inci
     fileLayout->addWidget(l);
     mArchiveFile = new KUrlRequester(QUrl::fromLocalFile(KCalPrefs::instance()->mArchiveFile), topFrame);
     mArchiveFile->setMode(KFile::File);
-    mArchiveFile->setNameFilters({i18nc("@label filter for KUrlRequester", "*.ics|iCalendar Files")});
+    mArchiveFile->setNameFilter(i18nc("@label filter for KUrlRequester", "iCalendar Files (*.ics)"));
     mArchiveFile->setToolTip(i18nc("@info:tooltip", "Set the location of the archive"));
     mArchiveFile->setWhatsThis(i18nc("@info:whatsthis",
                                      "The path of the archive file. The events and to-dos will be appended "
