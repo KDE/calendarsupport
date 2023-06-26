@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-03 00:46+0000\n"
+"POT-Creation-Date: 2023-06-26 00:51+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -1507,7 +1507,7 @@ msgid_plural "%1 minutes"
 msgstr[0] "%1 مىنۇت"
 
 #: printing/calprintdefaultplugins.cpp:347
-#: printing/calprintdefaultplugins.cpp:621
+#: printing/calprintdefaultplugins.cpp:629
 #, fuzzy, kde-format
 #| msgctxt "Spacer for the joined list of categories"
 #| msgid ", "
@@ -1532,30 +1532,30 @@ msgstr "مائارىپ"
 msgid "Description:"
 msgstr "چۈشەندۈرۈش:"
 
-#: printing/calprintdefaultplugins.cpp:445
+#: printing/calprintdefaultplugins.cpp:454
 #, fuzzy, kde-format
 #| msgid "Notes"
 msgid "Notes:"
 msgstr "ئىزاھ"
 
-#: printing/calprintdefaultplugins.cpp:457
+#: printing/calprintdefaultplugins.cpp:466
 #, kde-format
 msgid "No Subitems"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:460
+#: printing/calprintdefaultplugins.cpp:469
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
 msgstr[0] ""
 
-#: printing/calprintdefaultplugins.cpp:477
+#: printing/calprintdefaultplugins.cpp:485
 #, kde-format
 msgctxt "no status"
 msgid "none"
 msgstr "يوق"
 
-#: printing/calprintdefaultplugins.cpp:479
+#: printing/calprintdefaultplugins.cpp:487
 #, fuzzy, kde-format
 #| msgctxt "unknown resource"
 #| msgid "Unknown"
@@ -1563,7 +1563,7 @@ msgctxt "unknown status"
 msgid "unknown"
 msgstr "نامەلۇم"
 
-#: printing/calprintdefaultplugins.cpp:486
+#: printing/calprintdefaultplugins.cpp:494
 #, fuzzy, kde-format
 #| msgctxt "@title:column calendar event start date and time"
 #| msgid "Start Date and Time"
@@ -1571,37 +1571,37 @@ msgctxt "subitem start date"
 msgid "Start Date: %1\n"
 msgstr "باشلانغان چېسلا ۋە ۋاقىت"
 
-#: printing/calprintdefaultplugins.cpp:489
+#: printing/calprintdefaultplugins.cpp:497
 #, kde-format
 msgctxt "subitem start time"
 msgid "Start Time: %1\n"
 msgstr "باشلىنىش ۋاقتى: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:495
+#: printing/calprintdefaultplugins.cpp:503
 #, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
 msgstr "مۆھلىتى(چېسلا): %1\n"
 
-#: printing/calprintdefaultplugins.cpp:501
+#: printing/calprintdefaultplugins.cpp:509
 #, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
 msgstr "مۆھلىتى(ۋاقىت): %1\n"
 
-#: printing/calprintdefaultplugins.cpp:505
+#: printing/calprintdefaultplugins.cpp:513
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
 msgstr "%1: "
 
-#: printing/calprintdefaultplugins.cpp:512
+#: printing/calprintdefaultplugins.cpp:520
 #, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
 msgstr "ھالىتى: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:514
+#: printing/calprintdefaultplugins.cpp:522
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
@@ -1609,43 +1609,43 @@ msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
 msgstr "مەرتىۋە"
 
-#: printing/calprintdefaultplugins.cpp:515
+#: printing/calprintdefaultplugins.cpp:523
 #, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
 msgstr "مەخپىيلىك: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:533
+#: printing/calprintdefaultplugins.cpp:541
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgid "No Attachments"
 msgstr "قوشۇلمىنى ساقلا"
 
-#: printing/calprintdefaultplugins.cpp:536
+#: printing/calprintdefaultplugins.cpp:544
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
 msgstr[0] "قوشۇلمىنى ساقلا"
 
-#: printing/calprintdefaultplugins.cpp:542
+#: printing/calprintdefaultplugins.cpp:550
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
 msgstr "  "
 
-#: printing/calprintdefaultplugins.cpp:559
+#: printing/calprintdefaultplugins.cpp:567
 #, kde-format
 msgid "No Attendees"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:561
+#: printing/calprintdefaultplugins.cpp:569
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
 msgstr[0] ""
 
-#: printing/calprintdefaultplugins.cpp:573
+#: printing/calprintdefaultplugins.cpp:581
 #, kde-format
 msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
@@ -1653,49 +1653,49 @@ msgctxt ""
 msgid "%1 (%2): %3"
 msgstr "%1 (%2): %3"
 
-#: printing/calprintdefaultplugins.cpp:591
+#: printing/calprintdefaultplugins.cpp:599
 #, kde-format
 msgid "Status: %1"
 msgstr "ھالىتى: %1"
 
-#: printing/calprintdefaultplugins.cpp:595
+#: printing/calprintdefaultplugins.cpp:603
 #, kde-format
 msgid "Secrecy: %1"
 msgstr "مەخپىيلىك: %1"
 
-#: printing/calprintdefaultplugins.cpp:601
+#: printing/calprintdefaultplugins.cpp:609
 #, kde-format
 msgid "Show as: Busy"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:603
+#: printing/calprintdefaultplugins.cpp:611
 #, kde-format
 msgid "Show as: Free"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:609
+#: printing/calprintdefaultplugins.cpp:617
 #, kde-format
 msgid "This task is overdue!"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:615
+#: printing/calprintdefaultplugins.cpp:623
 #, kde-format
 msgid "Settings: "
 msgstr "تەڭشەك: "
 
-#: printing/calprintdefaultplugins.cpp:620
+#: printing/calprintdefaultplugins.cpp:628
 #, kde-format
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:713 printing/calprintpluginbase.cpp:916
+#: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:916
 #: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1، %2"
 
-#: printing/calprintdefaultplugins.cpp:716 printing/calprintpluginbase.cpp:935
+#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:935
 #: printing/calprintpluginbase.cpp:1059
 #, fuzzy, kde-format
 #| msgctxt "summary, location"
@@ -1704,7 +1704,7 @@ msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1، %2"
 
-#: printing/calprintdefaultplugins.cpp:771
+#: printing/calprintdefaultplugins.cpp:779
 #, fuzzy, kde-format
 #| msgid "1 day"
 #| msgid_plural "%1 days"
@@ -1712,20 +1712,20 @@ msgctxt "label for timetable all-day boxes"
 msgid "All day"
 msgstr "%1 كۈن"
 
-#: printing/calprintdefaultplugins.cpp:976
-#: printing/calprintdefaultplugins.cpp:1199 printing/yearprint.cpp:140
+#: printing/calprintdefaultplugins.cpp:984
+#: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:140
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1221
+#: printing/calprintdefaultplugins.cpp:1229
 #, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1223
+#: printing/calprintdefaultplugins.cpp:1231
 #, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
@@ -1733,13 +1733,13 @@ msgid ""
 "(Week %3)"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1408
+#: printing/calprintdefaultplugins.cpp:1416
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1519
+#: printing/calprintdefaultplugins.cpp:1527
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event summary"
 #| msgid "Summary"
@@ -1747,7 +1747,7 @@ msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "ئۈزۈندى"
 
-#: printing/calprintdefaultplugins.cpp:1520
+#: printing/calprintdefaultplugins.cpp:1528
 #, fuzzy, kde-format
 #| msgctxt "@title:column calendar event start date and time"
 #| msgid "Start Date and Time"
@@ -1755,7 +1755,7 @@ msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "باشلانغان چېسلا ۋە ۋاقىت"
 
-#: printing/calprintdefaultplugins.cpp:1521
+#: printing/calprintdefaultplugins.cpp:1529
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item due date and time"
 #| msgid "Due Date and Time"
@@ -1763,7 +1763,7 @@ msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "مۆلچەرلەنگەن چېسلا ۋە ۋاقىت"
 
-#: printing/calprintdefaultplugins.cpp:1522
+#: printing/calprintdefaultplugins.cpp:1530
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
@@ -1771,7 +1771,7 @@ msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "مەرتىۋە"
 
-#: printing/calprintdefaultplugins.cpp:1523
+#: printing/calprintdefaultplugins.cpp:1531
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -1779,51 +1779,51 @@ msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "تولۇق"
 
-#: printing/calprintdefaultplugins.cpp:1524
+#: printing/calprintdefaultplugins.cpp:1532
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1530
+#: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "ئۆسكۈچى"
 
-#: printing/calprintdefaultplugins.cpp:1531
+#: printing/calprintdefaultplugins.cpp:1539
 #, kde-format
 msgctxt "@option sort in descreasing order"
 msgid "Descending"
 msgstr "كېمەيگۈچى"
 
-#: printing/calprintdefaultplugins.cpp:1544
+#: printing/calprintdefaultplugins.cpp:1552
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "&To-dos"
 msgid "To-do list"
 msgstr "قىلىدىغان ئىشلار(&T)"
 
-#: printing/calprintdefaultplugins.cpp:1596
+#: printing/calprintdefaultplugins.cpp:1604
 #: printing/calprintpluginbase.cpp:1697
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: printing/calprintdefaultplugins.cpp:1607
+#: printing/calprintdefaultplugins.cpp:1615
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
 msgid "Priority"
 msgstr "مەرتىۋە"
 
-#: printing/calprintdefaultplugins.cpp:1617
+#: printing/calprintdefaultplugins.cpp:1625
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "مۆھلىتى"
 
-#: printing/calprintdefaultplugins.cpp:1627
+#: printing/calprintdefaultplugins.cpp:1635
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event start date and time"
 #| msgid "Start date and time"
@@ -1831,7 +1831,7 @@ msgctxt "@label to-do start date"
 msgid "Start"
 msgstr "باشلانغان چېسلا ۋە ۋاقىت"
 
-#: printing/calprintdefaultplugins.cpp:1637
+#: printing/calprintdefaultplugins.cpp:1645
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -1839,7 +1839,7 @@ msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "تولۇق"
 
-#: printing/calprintdefaultplugins.cpp:1647
+#: printing/calprintdefaultplugins.cpp:1655
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
@@ -2336,13 +2336,13 @@ msgstr "%1 (قەرەلى: %2)"
 msgid "To-do: %1"
 msgstr "قىلىدىغان ئىشلار(&T)"
 
-#: printing/calprintpluginbase.cpp:1860
+#: printing/calprintpluginbase.cpp:1863
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr ""
 
-#: printing/calprintpluginbase.cpp:1866
+#: printing/calprintpluginbase.cpp:1869
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
