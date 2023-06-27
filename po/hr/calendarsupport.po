@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-03 00:46+0000\n"
+"POT-Creation-Date: 2023-06-26 00:51+0000\n"
 "PO-Revision-Date: 2011-02-27 12:20+0100\n"
 "Last-Translator: Marko Dimjasevic <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -1522,7 +1522,7 @@ msgstr[1] "%1 minuta"
 msgstr[2] "%1 minuta"
 
 #: printing/calprintdefaultplugins.cpp:347
-#: printing/calprintdefaultplugins.cpp:621
+#: printing/calprintdefaultplugins.cpp:629
 #, fuzzy, kde-format
 #| msgid ", "
 msgctxt "Spacer for the joined list of categories/tags"
@@ -1544,17 +1544,17 @@ msgstr "Odmor:"
 msgid "Description:"
 msgstr "Opis:"
 
-#: printing/calprintdefaultplugins.cpp:445
+#: printing/calprintdefaultplugins.cpp:454
 #, kde-format
 msgid "Notes:"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:457
+#: printing/calprintdefaultplugins.cpp:466
 #, fuzzy, kde-format
 msgid "No Subitems"
 msgstr "Pokaži filter"
 
-#: printing/calprintdefaultplugins.cpp:460
+#: printing/calprintdefaultplugins.cpp:469
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
@@ -1562,75 +1562,75 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: printing/calprintdefaultplugins.cpp:477
+#: printing/calprintdefaultplugins.cpp:485
 #, fuzzy, kde-format
 msgctxt "no status"
 msgid "none"
 msgstr "Naso"
 
-#: printing/calprintdefaultplugins.cpp:479
+#: printing/calprintdefaultplugins.cpp:487
 #, fuzzy, kde-format
 #| msgid "Unknown"
 msgctxt "unknown status"
 msgid "unknown"
 msgstr "Napoznato"
 
-#: printing/calprintdefaultplugins.cpp:486
+#: printing/calprintdefaultplugins.cpp:494
 #, fuzzy, kde-format
 msgctxt "subitem start date"
 msgid "Start Date: %1\n"
 msgstr "Početni datum:"
 
-#: printing/calprintdefaultplugins.cpp:489
+#: printing/calprintdefaultplugins.cpp:497
 #, fuzzy, kde-format
 #| msgid "Start Time"
 msgctxt "subitem start time"
 msgid "Start Time: %1\n"
 msgstr "Početno vrijeme"
 
-#: printing/calprintdefaultplugins.cpp:495
+#: printing/calprintdefaultplugins.cpp:503
 #, fuzzy, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
 msgstr "Datumi krajnjih rokova"
 
-#: printing/calprintdefaultplugins.cpp:501
+#: printing/calprintdefaultplugins.cpp:509
 #, fuzzy, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
 msgstr "Vremenska zona:"
 
-#: printing/calprintdefaultplugins.cpp:505
+#: printing/calprintdefaultplugins.cpp:513
 #, fuzzy, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
 msgstr "- %1"
 
-#: printing/calprintdefaultplugins.cpp:512
+#: printing/calprintdefaultplugins.cpp:520
 #, fuzzy, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
 msgstr "Početni datum"
 
-#: printing/calprintdefaultplugins.cpp:514
+#: printing/calprintdefaultplugins.cpp:522
 #, fuzzy, kde-format
 #| msgid "&Priority:"
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
 msgstr "&Prioritet:"
 
-#: printing/calprintdefaultplugins.cpp:515
+#: printing/calprintdefaultplugins.cpp:523
 #, fuzzy, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
 msgstr "Sažetak:"
 
-#: printing/calprintdefaultplugins.cpp:533
+#: printing/calprintdefaultplugins.cpp:541
 #, fuzzy, kde-format
 msgid "No Attachments"
 msgstr "Privici"
 
-#: printing/calprintdefaultplugins.cpp:536
+#: printing/calprintdefaultplugins.cpp:544
 #, fuzzy, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
@@ -1638,18 +1638,18 @@ msgstr[0] "Privici"
 msgstr[1] "Privici"
 msgstr[2] "Privici"
 
-#: printing/calprintdefaultplugins.cpp:542
+#: printing/calprintdefaultplugins.cpp:550
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:559
+#: printing/calprintdefaultplugins.cpp:567
 #, fuzzy, kde-format
 msgid "No Attendees"
 msgstr "&Sudionici"
 
-#: printing/calprintdefaultplugins.cpp:561
+#: printing/calprintdefaultplugins.cpp:569
 #, fuzzy, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
@@ -1657,7 +1657,7 @@ msgstr[0] "%1 minut"
 msgstr[1] "%1 minuta"
 msgstr[2] "%1 minuta"
 
-#: printing/calprintdefaultplugins.cpp:573
+#: printing/calprintdefaultplugins.cpp:581
 #, kde-format
 msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
@@ -1665,75 +1665,75 @@ msgctxt ""
 msgid "%1 (%2): %3"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:591
+#: printing/calprintdefaultplugins.cpp:599
 #, fuzzy, kde-format
 msgid "Status: %1"
 msgstr "Početni datum"
 
-#: printing/calprintdefaultplugins.cpp:595
+#: printing/calprintdefaultplugins.cpp:603
 #, fuzzy, kde-format
 msgid "Secrecy: %1"
 msgstr "Sažetak:"
 
-#: printing/calprintdefaultplugins.cpp:601
+#: printing/calprintdefaultplugins.cpp:609
 #, kde-format
 msgid "Show as: Busy"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:603
+#: printing/calprintdefaultplugins.cpp:611
 #, kde-format
 msgid "Show as: Free"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:609
+#: printing/calprintdefaultplugins.cpp:617
 #, kde-format
 msgid "This task is overdue!"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:615
+#: printing/calprintdefaultplugins.cpp:623
 #, kde-format
 msgid "Settings: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:620
+#: printing/calprintdefaultplugins.cpp:628
 #, kde-format
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:713 printing/calprintpluginbase.cpp:916
+#: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:916
 #: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
 #, fuzzy, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:716 printing/calprintpluginbase.cpp:935
+#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:935
 #: printing/calprintpluginbase.cpp:1059
 #, fuzzy, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:771
+#: printing/calprintdefaultplugins.cpp:779
 #, fuzzy, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
 msgstr "Dan"
 
-#: printing/calprintdefaultplugins.cpp:976
-#: printing/calprintdefaultplugins.cpp:1199 printing/yearprint.cpp:140
+#: printing/calprintdefaultplugins.cpp:984
+#: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:140
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1221
+#: printing/calprintdefaultplugins.cpp:1229
 #, fuzzy, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
 msgstr "%1 - %2"
 
-#: printing/calprintdefaultplugins.cpp:1223
+#: printing/calprintdefaultplugins.cpp:1231
 #, fuzzy, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
@@ -1741,100 +1741,100 @@ msgid ""
 "(Week %3)"
 msgstr "%1 - %2"
 
-#: printing/calprintdefaultplugins.cpp:1408
+#: printing/calprintdefaultplugins.cpp:1416
 #, fuzzy, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:1519
+#: printing/calprintdefaultplugins.cpp:1527
 #, fuzzy, kde-format
 #| msgid "Summary"
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "Sažetak"
 
-#: printing/calprintdefaultplugins.cpp:1520
+#: printing/calprintdefaultplugins.cpp:1528
 #, fuzzy, kde-format
 #| msgid "Start Date"
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "Početni datum"
 
-#: printing/calprintdefaultplugins.cpp:1521
+#: printing/calprintdefaultplugins.cpp:1529
 #, fuzzy, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "Datumi krajnjih rokova"
 
-#: printing/calprintdefaultplugins.cpp:1522
+#: printing/calprintdefaultplugins.cpp:1530
 #, fuzzy, kde-format
 #| msgid "Priority"
 msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "Prioritet"
 
-#: printing/calprintdefaultplugins.cpp:1523
+#: printing/calprintdefaultplugins.cpp:1531
 #, fuzzy, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "Završi"
 
-#: printing/calprintdefaultplugins.cpp:1524
+#: printing/calprintdefaultplugins.cpp:1532
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1530
+#: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1531
+#: printing/calprintdefaultplugins.cpp:1539
 #, kde-format
 msgctxt "@option sort in descreasing order"
 msgid "Descending"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1544
+#: printing/calprintdefaultplugins.cpp:1552
 #, fuzzy, kde-format
 msgid "To-do list"
 msgstr "Lista zadataka"
 
-#: printing/calprintdefaultplugins.cpp:1596
+#: printing/calprintdefaultplugins.cpp:1604
 #: printing/calprintpluginbase.cpp:1697
 #, fuzzy, kde-format
 msgid "%1%"
 msgstr "- %1"
 
-#: printing/calprintdefaultplugins.cpp:1607
+#: printing/calprintdefaultplugins.cpp:1615
 #, kde-format
 msgid "Priority"
 msgstr "Prioritet"
 
-#: printing/calprintdefaultplugins.cpp:1617
+#: printing/calprintdefaultplugins.cpp:1625
 #, fuzzy, kde-format
 #| msgid "Due"
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "Krajnji rok"
 
-#: printing/calprintdefaultplugins.cpp:1627
+#: printing/calprintdefaultplugins.cpp:1635
 #, fuzzy, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
 msgstr "&Započni:"
 
-#: printing/calprintdefaultplugins.cpp:1637
+#: printing/calprintdefaultplugins.cpp:1645
 #, fuzzy, kde-format
 #| msgid "Complete"
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "Završi"
 
-#: printing/calprintdefaultplugins.cpp:1647
+#: printing/calprintdefaultplugins.cpp:1655
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
@@ -2323,13 +2323,13 @@ msgstr "Vrijeme krajnjeg roka"
 msgid "To-do: %1"
 msgstr "Popis poslova: %1"
 
-#: printing/calprintpluginbase.cpp:1860
+#: printing/calprintpluginbase.cpp:1863
 #, fuzzy, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2"
 
-#: printing/calprintpluginbase.cpp:1866
+#: printing/calprintpluginbase.cpp:1869
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"

@@ -27,7 +27,7 @@
 
 using namespace CalendarSupport;
 
-CalPrinter::CalPrinter(QWidget *parent, const Akonadi::ETMCalendar::Ptr &calendar, bool uniqItem)
+CalPrinter::CalPrinter(QWidget *parent, const KCalendarCore::Calendar::Ptr &calendar, bool uniqItem)
     : QObject(parent)
     , mParent(parent)
     , mConfig(new KConfig(QStringLiteral("calendar_printing.rc"), KConfig::SimpleConfig))
@@ -42,7 +42,7 @@ CalPrinter::~CalPrinter()
     delete mConfig;
 }
 
-void CalPrinter::init(const Akonadi::ETMCalendar::Ptr &calendar)
+void CalPrinter::init(const KCalendarCore::Calendar::Ptr &calendar)
 {
     mCalendar = calendar;
 

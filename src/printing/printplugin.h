@@ -6,8 +6,7 @@
 
 #pragma once
 
-#include <Akonadi/ETMCalendar>
-
+#include <KCalendarCore/Calendar>
 #include <KCalendarCore/Incidence>
 #include <KConfig>
 
@@ -35,7 +34,6 @@ class PrintPlugin
 public:
     PrintPlugin()
         : mConfigWidget(nullptr)
-        , mCalendar(nullptr)
     {
     }
 
@@ -48,7 +46,7 @@ public:
         mConfig = cfg;
     }
 
-    virtual void setCalendar(const Akonadi::ETMCalendar::Ptr &cal)
+    virtual void setCalendar(const KCalendarCore::Calendar::Ptr &cal)
     {
         mCalendar = cal;
     }
@@ -176,7 +174,7 @@ protected:
     /** The printer object. This will only be available in the doPrint method
         of the selected plugin */
     QPrinter *mPrinter = nullptr;
-    Akonadi::ETMCalendar::Ptr mCalendar;
+    KCalendarCore::Calendar::Ptr mCalendar;
     KCalendarCore::Incidence::List mSelectedIncidences;
     KConfig *mConfig = nullptr;
 };

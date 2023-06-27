@@ -36,11 +36,11 @@ public:
       provide the option to print an single incidence; else, all possible types
       of print types will be shown
     */
-    CalPrinter(QWidget *par, const Akonadi::ETMCalendar::Ptr &calendar, bool uniqItem = false);
+    CalPrinter(QWidget *par, const KCalendarCore::Calendar::Ptr &calendar, bool uniqItem = false);
 
     ~CalPrinter() override;
 
-    void init(const Akonadi::ETMCalendar::Ptr &calendar);
+    void init(const KCalendarCore::Calendar::Ptr &calendar);
 
     /**
       Set date range to be printed.
@@ -58,14 +58,14 @@ private Q_SLOTS:
 
 public:
     void print(int type, QDate fd, QDate td, const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(), bool preview = false);
-    Akonadi::ETMCalendar::Ptr calendar() const;
+    KCalendarCore::Calendar::Ptr calendar() const;
     KConfig *config() const;
 
 protected:
     PrintPlugin::List mPrintPlugins;
 
 private:
-    Akonadi::ETMCalendar::Ptr mCalendar;
+    KCalendarCore::Calendar::Ptr mCalendar;
     QWidget *const mParent;
     KConfig *const mConfig;
     const bool mUniqItem;

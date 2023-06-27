@@ -435,10 +435,19 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
             drawNoteLines(p, descriptionBox, newBottom);
         }
 
-        Akonadi::Item item = mCalendar->item((*it)->uid());
-        Akonadi::Item::List relations = mCalendar->childItems(item.id());
-
         if (mShowSubitemsNotes && !isJournal) {
+            KCalendarCore::Todo::List relations;
+            for (const auto &incidence : mCalendar->incidences()) {
+                auto todo = incidence.dynamicCast<KCalendarCore::Todo>();
+                if (!todo) {
+                    continue;
+                }
+                if (todo->relatedTo() != (*it)->uid()) {
+                    continue;
+                }
+                relations.push_back(todo);
+            }
+
             if (relations.isEmpty() || (*it)->type() != KCalendarCore::Incidence::TypeTodo) {
                 int notesPosition = drawBoxWithCaption(p,
                                                        notesBox,
@@ -464,8 +473,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 QString statusString;
                 QString datesString;
                 int count = 0;
-                for (const Akonadi::Item &item : std::as_const(relations)) {
-                    KCalendarCore::Todo::Ptr todo = Akonadi::CalendarUtils::todo(item);
+                for (const auto &todo : std::as_const(relations)) {
                     ++count;
                     if (!todo) { // defensive, skip any zero pointers
                         continue;
