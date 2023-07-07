@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.2\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: archivedialog.cpp:43
 #, fuzzy, kde-format
@@ -1613,16 +1613,18 @@ msgid "Duration: "
 msgstr "مدت:"
 
 #: printing/calprintdefaultplugins.cpp:134
-#, kde-format
+#, fuzzy, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
 msgstr[0] "%1 ساعت"
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:137
-#, kde-format
+#, fuzzy, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
 msgstr[0] "%1 دقیقه"
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:140
 #, kde-format
@@ -1657,10 +1659,11 @@ msgid "No reminders"
 msgstr "بدون یادآوری"
 
 #: printing/calprintdefaultplugins.cpp:303
-#, kde-format
+#, fuzzy, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
 msgstr[0] "%1 دقیقه"
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:317
 #, kde-format
@@ -1687,22 +1690,25 @@ msgid "%1 after the end"
 msgstr "%1 پس از پایان"
 
 #: printing/calprintdefaultplugins.cpp:337
-#, kde-format
+#, fuzzy, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] "%1 روز"
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:340
-#, kde-format
+#, fuzzy, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "%1 ساعت"
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:343
-#, kde-format
+#, fuzzy, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] "%1 دقیقه"
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:629
@@ -1744,6 +1750,7 @@ msgstr "&یادداشتها، زیرفقره‌ها‌"
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
 msgstr[0] "زیرفقره‌ها:"
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:485
 #, fuzzy, kde-format
@@ -1828,6 +1835,7 @@ msgstr "&پیوستها‌"
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
 msgstr[0] "پیوستها:"
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:550
 #, kde-format
@@ -1841,10 +1849,11 @@ msgid "No Attendees"
 msgstr "بدون شرکت‌کننده"
 
 #: printing/calprintdefaultplugins.cpp:569
-#, kde-format
+#, fuzzy, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
 msgstr[0] "%1 شرکت‌کننده:"
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:581
 #, fuzzy, kde-format
