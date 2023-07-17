@@ -80,6 +80,22 @@ endif()
 
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6CalendarSupport")
+
+add_subdirectory(src)
+
+kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
+ki18n_install(po)
+
+if (BUILD_QCH)
+    ecm_install_qch_export(
+        TARGETS KPim6CalendarSupport_QCH
+        FILE KPim6CalendarSupportQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6CalendarSupportQchTargets.cmake\")")
+endif()
+
 configure_package_config_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/KPimCalendarSupportConfig.cmake.in"
   "${CMAKE_CURRENT_BINARY_DIR}/KPim6CalendarSupportConfig.cmake"
@@ -100,23 +116,5 @@ install(
   FILES ${CMAKE_CURRENT_BINARY_DIR}/src/calendarsupport_version.h
   DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/ COMPONENT Devel
 )
-
-
-
-add_subdirectory(src)
-
-
-kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
-ki18n_install(po)
-
-if (BUILD_QCH)
-    ecm_install_qch_export(
-        TARGETS KPim6CalendarSupport_QCH
-        FILE KPim6CalendarSupportQchTargets.cmake
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        COMPONENT Devel
-    )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6CalendarSupportQchTargets.cmake\")")
-endif()
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
