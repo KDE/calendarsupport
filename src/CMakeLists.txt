@@ -79,11 +79,11 @@ kconfig_add_kcfg_files(KPim6CalendarSupport kcalprefs_base.kcfgc)
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6CalendarSupport PROPERTIES UNITY_BUILD ON)
 endif()
-ecm_generate_export_header(KPim6CalendarSupport
+ecm_generate_export_header(
+    KPim6CalendarSupport
     BASE_NAME calendarsupport
-    VERSION ${CALENDARSUPPORT_VERSION}
-    DEPRECATED_BASE_VERSION 0
-    USE_VERSION_HEADER
+    VERSION ${PIM_VERSION}
+    DEPRECATION_VERSIONS "5.24"
 )
 
 
