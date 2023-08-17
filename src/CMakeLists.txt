@@ -99,7 +99,8 @@ PUBLIC
   KF6::ConfigGui
   Qt::PrintSupport
 PRIVATE
-  KPim6::PimTextEdit
+  #KPim6::PimTextEdit
+  KF6::TextCustomEditor
   KF6::I18n
   KF6::Completion
   KF6::KIOWidgets

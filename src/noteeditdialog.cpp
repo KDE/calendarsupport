@@ -9,8 +9,8 @@
 #include <Akonadi/CollectionComboBox>
 #include <Akonadi/NoteUtils>
 
-#include <KPIMTextEdit/RichTextEditor>
-#include <KPIMTextEdit/RichTextEditorWidget>
+#include <TextCustomEditor/RichTextEditor>
+#include <TextCustomEditor/RichTextEditorWidget>
 
 #include <KConfigGroup>
 #include <KLocalizedString>
@@ -80,9 +80,9 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     connect(mCollectionCombobox, &Akonadi::CollectionComboBox::currentIndexChanged, this, &NoteEditDialog::slotCollectionChanged);
     connect(mCollectionCombobox, &Akonadi::CollectionComboBox::activated, this, &NoteEditDialog::slotCollectionChanged);
 
-    mNoteText = new KPIMTextEdit::RichTextEditorWidget(parent);
+    mNoteText = new TextCustomEditor::RichTextEditorWidget(parent);
     mNoteText->setObjectName(QStringLiteral("notetext"));
-    connect(mNoteText->editor(), &KPIMTextEdit::RichTextEditor::textChanged, this, &NoteEditDialog::slotUpdateButtons);
+    connect(mNoteText->editor(), &TextCustomEditor::RichTextEditor::textChanged, this, &NoteEditDialog::slotUpdateButtons);
 
     // First line
     hbox->addWidget(mNoteTitle);
@@ -104,7 +104,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
 
 NoteEditDialog::~NoteEditDialog()
 {
-    disconnect(mNoteText->editor(), &KPIMTextEdit::RichTextEditor::textChanged, this, &NoteEditDialog::slotUpdateButtons);
+    disconnect(mNoteText->editor(), &TextCustomEditor::RichTextEditor::textChanged, this, &NoteEditDialog::slotUpdateButtons);
     writeConfig();
 }
 

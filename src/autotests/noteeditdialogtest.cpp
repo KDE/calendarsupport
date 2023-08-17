@@ -11,8 +11,8 @@
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/NoteUtils>
 
-#include <KPIMTextEdit/RichTextEditor>
-#include <KPIMTextEdit/RichTextEditorWidget>
+#include <TextCustomEditor/RichTextEditor>
+#include <TextCustomEditor/RichTextEditorWidget>
 
 #include <QLineEdit>
 #include <QPushButton>
@@ -51,7 +51,7 @@ void NoteEditDialogTest::shouldHaveDefaultValuesOnCreation()
     NoteEditDialog edit;
     QVERIFY(!edit.note());
     auto notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
-    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<TextCustomEditor::RichTextEditorWidget *>(QStringLiteral("notetext"));
     auto ok = edit.findChild<QPushButton *>(QStringLiteral("save-button"));
     QVERIFY(notetitle);
     QCOMPARE(notetitle->text(), QString());
@@ -110,7 +110,7 @@ void NoteEditDialogTest::shouldHaveFilledText()
 
     edit.load(item);
     auto notetitle = edit.findChild<QLineEdit *>(QStringLiteral("notetitle"));
-    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<TextCustomEditor::RichTextEditorWidget *>(QStringLiteral("notetext"));
     QCOMPARE(notetitle->text(), title);
     QCOMPARE(notetext->toPlainText(), text);
 }
@@ -129,7 +129,7 @@ void NoteEditDialogTest::shouldHaveRichText()
     item.setPayload(note.message());
 
     edit.load(item);
-    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<TextCustomEditor::RichTextEditorWidget *>(QStringLiteral("notetext"));
     QCOMPARE(notetext->toPlainText(), text);
     QVERIFY(notetext->editor()->acceptRichText());
 }
@@ -217,7 +217,7 @@ void NoteEditDialogTest::shouldNotEmitNoteWhenTextIsEmpty()
 
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 0);
-    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<TextCustomEditor::RichTextEditorWidget *>(QStringLiteral("notetext"));
     notetext->editor()->setText(QStringLiteral("F"));
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 1);
@@ -241,7 +241,7 @@ void NoteEditDialogTest::shouldNoteHasCorrectText()
     QCOMPARE(spy.count(), 1);
     Akonadi::NoteUtils::NoteMessageWrapper rNote(spy.at(0).at(0).value<Akonadi::Item>().payload<KMime::Message::Ptr>());
     QCOMPARE(rNote.text(), text);
-    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<TextCustomEditor::RichTextEditorWidget *>(QStringLiteral("notetext"));
     QString text2 = QStringLiteral("F");
     notetext->editor()->setText(text2);
     QTest::mouseClick(ok, Qt::LeftButton);
@@ -295,7 +295,7 @@ void NoteEditDialogTest::shouldNoteHasCorrectTextFormat()
     QCOMPARE(spy.count(), 1);
     Akonadi::NoteUtils::NoteMessageWrapper rNote(spy.at(0).at(0).value<Akonadi::Item>().payload<KMime::Message::Ptr>());
     QCOMPARE(rNote.textFormat(), Qt::PlainText);
-    auto notetext = edit.findChild<KPIMTextEdit::RichTextEditorWidget *>(QStringLiteral("notetext"));
+    auto notetext = edit.findChild<TextCustomEditor::RichTextEditorWidget *>(QStringLiteral("notetext"));
     notetext->editor()->setAcceptRichText(true);
     QTest::mouseClick(ok, Qt::LeftButton);
     QCOMPARE(spy.count(), 2);

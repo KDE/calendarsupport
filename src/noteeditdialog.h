@@ -18,7 +18,7 @@
 class QAbstractItemModel;
 class QLineEdit;
 
-namespace KPIMTextEdit
+namespace TextCustomEditor
 {
 class RichTextEditorWidget;
 }
@@ -64,7 +64,7 @@ private:
     Akonadi::Item mItem;
     QLineEdit *const mNoteTitle;
     QPushButton *mOkButton = nullptr;
-    KPIMTextEdit::RichTextEditorWidget *mNoteText = nullptr;
+    TextCustomEditor::RichTextEditorWidget *mNoteText = nullptr;
     Akonadi::CollectionComboBox *mCollectionCombobox = nullptr;
 };
 }
