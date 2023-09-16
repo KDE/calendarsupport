@@ -7,10 +7,5 @@ find_dependency(KPim6Mime "@KMIME_LIB_VERSION@")
 find_dependency(KPim6IdentityManagementCore "@IDENTITYMANAGEMENT_LIB_VERSION@")
 find_dependency(KPim6AkonadiCalendar "@AKONADICALENDAR_LIB_VERSION@")
 find_dependency(Qt6PrintSupport "@QT_REQUIRED_VERSION@")
-find_package(Qt6PrintSupportPrivate "6.5.0" CONFIG)
-set_package_properties(Qt6PrintSupportPrivate PROPERTIES DESCRIPTION
-	"Private Print Support header"
-    TYPE OPTIONAL
-)
 include("${CMAKE_CURRENT_LIST_DIR}/KPim6CalendarSupportTargets.cmake")
 @PACKAGE_INCLUDE_QCHTARGETS@
