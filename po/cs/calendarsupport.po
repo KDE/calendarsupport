@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-26 00:51+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2022-10-10 16:51+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -165,9 +165,11 @@ msgid "Archive &file:"
 msgstr "Soubor s ar&chivem:"
 
 #: archivedialog.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label filter for KUrlRequester"
+#| msgid "*.ics|iCalendar Files"
 msgctxt "@label filter for KUrlRequester"
-msgid "*.ics|iCalendar Files"
+msgid "iCalendar Files (*.ics)"
 msgstr "*.ics|Soubory iCalendar"
 
 #: archivedialog.cpp:145

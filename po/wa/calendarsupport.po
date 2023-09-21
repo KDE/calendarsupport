@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-26 00:51+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2013-03-24 10:49+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -156,9 +156,11 @@ msgid "Archive &file:"
 msgstr "&Fitchî d' årtchive:"
 
 #: archivedialog.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label filter for KUrlRequester"
+#| msgid "*.ics|iCalendar Files"
 msgctxt "@label filter for KUrlRequester"
-msgid "*.ics|iCalendar Files"
+msgid "iCalendar Files (*.ics)"
 msgstr "*.ics|Fitchîs iCalendar"
 
 #: archivedialog.cpp:145

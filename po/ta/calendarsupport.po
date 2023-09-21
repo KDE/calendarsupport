@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-26 00:51+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2022-05-08 15:40+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -194,7 +194,7 @@ msgstr "காப்பகக் கோப்பு"
 #, fuzzy, kde-format
 #| msgid "*.ics|iCalendar Files"
 msgctxt "@label filter for KUrlRequester"
-msgid "*.ics|iCalendar Files"
+msgid "iCalendar Files (*.ics)"
 msgstr "*.ics|iCalendar Files"
 
 #: archivedialog.cpp:145

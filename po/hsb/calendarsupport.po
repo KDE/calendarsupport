@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-26 00:51+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2004-04-16 17:59+0200\n"
 "Last-Translator: Prof. Dr. Eduard Werner <e.werner@rz.uni-leipzig.de>\n"
 "Language-Team: Upper Sorbian\n"
@@ -158,7 +158,7 @@ msgstr "Na:"
 #: archivedialog.cpp:144
 #, fuzzy, kde-format
 msgctxt "@label filter for KUrlRequester"
-msgid "*.ics|iCalendar Files"
+msgid "iCalendar Files (*.ics)"
 msgstr "Konfiguracija &skrótšenkow..."
 
 #: archivedialog.cpp:145

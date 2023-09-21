@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-26 00:51+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2022-08-16 16:30+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -178,9 +178,11 @@ msgid "Archive &file:"
 msgstr "Arxiv &faylı:"
 
 #: archivedialog.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label filter for KUrlRequester"
+#| msgid "*.ics|iCalendar Files"
 msgctxt "@label filter for KUrlRequester"
-msgid "*.ics|iCalendar Files"
+msgid "iCalendar Files (*.ics)"
 msgstr "*.ics|iCalendar faylları"
 
 #: archivedialog.cpp:145

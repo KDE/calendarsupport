@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-26 00:51+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2022-10-01 14:55+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -188,9 +188,11 @@ msgid "Archive &file:"
 msgstr "&Файл архива:"
 
 #: archivedialog.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@label filter for KUrlRequester"
+#| msgid "*.ics|iCalendar Files"
 msgctxt "@label filter for KUrlRequester"
-msgid "*.ics|iCalendar Files"
+msgid "iCalendar Files (*.ics)"
 msgstr "*.ics|Файлы iCalendar"
 
 #: archivedialog.cpp:145
