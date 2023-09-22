@@ -2,7 +2,7 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Eloy Cuadra <ecuadra@eloihr.net>, 2009, 2019, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2009, 2019, 2020, 2021, 2022, 2023 Eloy Cuadra <ecuadra@eloihr.net>
 # Javier Vinal <fjvinalgmail.com>, 2010, 2011, 2012.
 # Javier Viñal <fjvinal@gmail.com>, 2010, 2012, 2013, 2014, 2015, 2016, 2018.
 msgid ""
@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2022-08-10 20:00+0200\n"
+"PO-Revision-Date: 2023-09-21 15:05+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.04.3\n"
+"X-Generator: Lokalize 23.08.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: archivedialog.cpp:43
@@ -40,9 +40,9 @@ msgid ""
 "current calendar. If the archive file already exists they will be added. "
 "(<link url=\"#\">How to restore</link>)"
 msgstr ""
-"El archivado guarda elementos viejos en el archivo proporcionado y, a "
+"El archivado guarda elementos antiguos en el archivo indicado y, a "
 "continuación, los borra del calendario actual. Si el archivo ya existe, se "
-"añadirá. (<link url=\"#\">Cómo restaurar</link>)"
+"añadirán. (<link url=\"#\">Cómo restaurar</link>)"
 
 #: archivedialog.cpp:67
 #, kde-format
@@ -53,7 +53,7 @@ msgid ""
 "calendar. It is not saved in a special format, but as vCalendar."
 msgstr ""
 "Para añadir un archivo a su calendario, use la función de mezclar "
-"calendario. Usted puede ver un archivo comprimido abriéndolo como haría con "
+"calendario. Puede ver un archivo comprimido abriéndolo como haría con "
 "cualquier otro calendario. No se guarda en ningún formato especial, sino "
 "como vCalendar."
 
@@ -67,7 +67,7 @@ msgstr "Archivar ahora elementos más antiguos que:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr "Activar archivado una sola vez o purgar los elementos más viejos"
+msgstr "Activar el archivado único o la purga de los elementos más antiguos"
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -77,8 +77,8 @@ msgid ""
 "be archived or purged. The items will be archived unless the \"Delete only\" "
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
-"Si usted marca esta casilla, los eventos y tareas pendientes más viejos que "
-"la edad especificada se archivarán o purgarán. Los elementos se archivarán, "
+"Si marca esta casilla, los eventos y tareas pendientes anteriores a la "
+"antigüedad indicada se archivarán o purgarán. Los elementos se archivarán, "
 "salvo que la opción «Solo borrar» esté activada; en caso contrario, los "
 "elementos se purgarán y no se guardarán."
 
@@ -86,7 +86,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the one time archiving cut-off date"
-msgstr "Establecer la fecha de corte del archivado de una vez"
+msgstr "Definir la fecha de corte de archivado único"
 
 #: archivedialog.cpp:95
 #, kde-format
@@ -110,7 +110,8 @@ msgstr "Archivar automática&mente los elementos más antiguos que:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable automatic archiving or purging of older items"
-msgstr "Permitir el archivado automático o purgado de los elementos más viejos"
+msgstr ""
+"Activar el archivado automático o la purga de los elementos más antiguos"
 
 #: archivedialog.cpp:110
 #, kde-format
@@ -120,16 +121,16 @@ msgid ""
 "and to-dos have to be archived; this means you will not need to use this "
 "dialog box again, except to change the settings."
 msgstr ""
-"Si esta característica está activada, la aplicación comprobará "
-"periódicamente si los eventos y tareas pendientes se tienen que archivar; "
-"esto significa que usted no necesitará usar este cuadro de diálogo de nuevo, "
-"excepto para cambiar las preferencias."
+"Si esta función está activada, la aplicación comprobará periódicamente si "
+"los eventos y tareas pendientes se tienen que archivar; esto significa que "
+"no tendrá que usar este diálogo de nuevo, excepto para cambiar las "
+"preferencias."
 
 #: archivedialog.cpp:123
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the archival age in days, weeks or months"
-msgstr "Establecer la edad de archivado en días, semanas o meses"
+msgstr "Definir la antigüedad de archivado en días, semanas o meses"
 
 #: archivedialog.cpp:125
 #, kde-format
@@ -145,7 +146,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the units for the automatic archive age"
-msgstr "Establecer las unidades para la edad de archivado automático"
+msgstr "Definir las unidades para la antigüedad de archivado automático"
 
 #: archivedialog.cpp:131
 #, kde-format
@@ -159,19 +160,19 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox expires in daily units"
 msgid "Day(s)"
-msgstr "Día(s)"
+msgstr "Días"
 
 #: archivedialog.cpp:134
 #, kde-format
 msgctxt "@item:inlistbox expiration in weekly units"
 msgid "Week(s)"
-msgstr "Semana(s)"
+msgstr "Semanas"
 
 #: archivedialog.cpp:135
 #, kde-format
 msgctxt "@item:inlistbox expiration in monthly units"
 msgid "Month(s)"
-msgstr "Mes(es)"
+msgstr "Meses"
 
 #: archivedialog.cpp:140
 #, kde-format
@@ -180,18 +181,16 @@ msgid "Archive &file:"
 msgstr "Archivar &archivo:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "archivos *.ics|iCalendar"
+msgstr "Archivos de iCalendar (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the location of the archive"
-msgstr "Establecer la ubicación del archivo"
+msgstr "Definir la ubicación del archivo"
 
 #: archivedialog.cpp:147
 #, kde-format
@@ -203,10 +202,10 @@ msgid ""
 "calendar. It is not saved in a special format, it uses the iCalendar format."
 msgstr ""
 "La ruta del archivo. Los eventos y tareas pendientes se añadirán al archivo "
-"especificado, de modo que cualquier evento que ya esté en el archivo no se "
-"modificará o borrará. Usted puede posteriormente cargar o mezclar el archivo "
-"como otro calendario. No se guarda en un formato especial. Emplea el formato "
-"iCalendar."
+"especificado, de modo que cualquier evento que ya estuviera en dicho archivo "
+"no se modificará ni borrará. Posteriormente podrá cargar o mezclar el "
+"archivo como otro calendario. No se guarda en un formato especial, sino que "
+"se usa el formato iCalendar."
 
 #: archivedialog.cpp:156
 #, kde-format
@@ -222,9 +221,9 @@ msgid ""
 "they ended before the date given above; to-dos are archived if they were "
 "finished before the date."
 msgstr ""
-"Aquí usted puede seleccionar que elementos se deberían archivar. Los eventos "
-"se archivan si terminan antes de la fecha proporcionada arriba; las tareas "
-"pendientes se archivan si se terminaron antes de la fecha."
+"Aquí puede seleccionar los elementos que se deben archivar. Los eventos se "
+"archivan si terminan antes de la fecha indicada arriba; las tareas "
+"pendientes se archivan si se terminaron antes de dicha fecha."
 
 #: archivedialog.cpp:166
 #, kde-format
@@ -280,7 +279,7 @@ msgstr "&Borrar solo, no guardar"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Purge the old items without saving them"
-msgstr "Purgar los elementos viejos sin guardarlos"
+msgstr "Purgar los elementos antiguos sin guardarlos"
 
 #: archivedialog.cpp:181
 #, kde-format
@@ -430,7 +429,7 @@ msgstr "%1, %2 %3, %4 a %5"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
-msgstr "Periodo libre"
+msgstr "Período libre"
 
 #: freebusymodel/freeperiodmodel.cpp:178
 #, kde-format
@@ -515,10 +514,10 @@ msgid ""
 "default sound file for new reminders. You can always specify another file in "
 "the Reminder configuration accessible from the Event or To-do editors."
 msgstr ""
-"Marque esta casilla si usted quiere activar que el archivo especificado se "
-"emplee como el sonido predeterminado para los recordatorios nuevos. Usted "
-"siempre puede especificar otro archivo en la configuración de recordatorio a "
-"la que se accede desde los editores de eventos o tareas pendientes."
+"Marque esta casilla si desea usar el archivo indicado como sonido "
+"predeterminado para los recordatorios nuevos. Siempre puede especificar otro "
+"archivo en la configuración del recordatorio, a la que se accede desde los "
+"editores de eventos o tareas pendientes."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:42
@@ -534,9 +533,9 @@ msgid ""
 "always specify another file in the Reminder configuration accessible from "
 "the Event or To-do editors."
 msgstr ""
-"Establece un archivo para emplear como archivo de sonido predeterminado para "
-"los nuevos recordatorios. Usted puede siempre especificar otro archivo en la "
-"configuración de recordatorio a la que se accede desde los editores de "
+"Define el archivo que se va a usar como sonido predeterminado para los "
+"nuevos recordatorios. Siempre puede especificar otro archivo en la "
+"configuración del recordatorio, a la que se accede desde los editores de "
 "eventos o tareas pendientes."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
@@ -638,8 +637,8 @@ msgid ""
 "Enter the start time for events here. This time should be the earliest time "
 "that you use for events."
 msgstr ""
-"Introduzca aquí la hora de inicio para los eventos. Esta hora debería ser la "
-"hora más temprana que usted use para eventos."
+"Introduzca aquí la hora inicial para los eventos. Esta hora debería ser la "
+"más temprana que use para eventos."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:84
@@ -689,10 +688,10 @@ msgid ""
 "should check this box if you want to use the groupware functionality (e.g. "
 "Configuring Kontact as a KDE Kolab client)."
 msgstr ""
-"Marque esta casilla para activar la generación automática de correos cuando "
-"se crean, actualizan o borran eventos (o tareas pendientes) que involucren a "
-"otros asistentes. Usted debería marcar esta casilla si quiere utilizar la "
-"funcionalidad de trabajo en grupo (p. ej. Configurar Kontact como un cliente "
+"Marque esta casilla para activar la generación automática de mensajes de "
+"correo cuando cree, actualice o borre eventos (o tareas pendientes) que "
+"involucren a otros asistentes. Debería marcar esta casilla si quiere usar la "
+"función de trabajo en grupo (por ejemplo, configurar Kontact como un cliente "
 "KDE de Kolab)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
@@ -751,7 +750,7 @@ msgstr ""
 #: kcalprefs.kcfg:144
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
-msgstr "La unidad en la que se expresa el periodo de expiración."
+msgstr "La unidad en la que se expresa el período de expiración."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:147
@@ -821,7 +820,7 @@ msgid ""
 "to-dos and events you create."
 msgstr ""
 "Introduzca aquí su nombre completo. Este nombre se mostrará como "
-"«Organizador» en las tareas pendientes y eventos que usted cree."
+"«Organizador» en las tareas pendientes y eventos que cree."
 
 #: kcalprefs.kcfg:196
 #, kde-format
@@ -841,9 +840,9 @@ msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
 "the owner of the calendar, and displayed in events and to-dos you create."
 msgstr ""
-"Introduzca aquí su dirección de correo. Esta dirección de correo se "
-"utilizará para identificar al propietario del calendario y se mostrará en "
-"los eventos y tareas pendientes que usted cree."
+"Introduzca aquí su dirección de correo electrónico. Esta dirección se usará "
+"para identificar al propietario del calendario y se mostrará en los eventos "
+"y tareas pendientes que cree."
 
 #: kcalprefs.kcfg:202
 #, kde-format
@@ -1289,9 +1288,7 @@ msgstr "Imprimir descripciones de elementos"
 #: printing/calprintweekconfig_base.ui:280
 #, kde-format
 msgid "Check this option if you want to see the item descriptions printed."
-msgstr ""
-"Marque esta opción si usted quiere ver las descripciones de los elementos "
-"impresas."
+msgstr "Marque esta opción si desea ver las descripciones de los elementos."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (text), widget (QCheckBox, mDescription)
@@ -1490,8 +1487,8 @@ msgid ""
 "Check this box if you want to print a small footer on each page that "
 "contains the date of the print."
 msgstr ""
-"Marque esta casilla si usted quiere imprimir un pequeño pie de página en "
-"cada página, que contenga la fecha de la impresión."
+"Marque esta casilla si desea mostrar un pequeño pie de página en cada página "
+"que contenga la fecha de la impresión."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:380
@@ -2029,9 +2026,9 @@ msgid ""
 "\". You can also default to the orientation best suited to the selected "
 "style or to your printer's default setting."
 msgstr ""
-"Elija si usted quiere que se salida se imprima en «vertical» o «apaisado». "
-"Usted puede también predefinir la orientación que mejor se ajuste al estilo "
-"seleccionado o a las preferencias predeterminadas de su impresora."
+"Elija si quiere que la salida se imprima en modo «vertical» o «apaisado». "
+"También puede predefinir la orientación que mejor se ajuste al estilo "
+"seleccionado o a los ajustes predeterminados de la impresora."
 
 #: printing/calprinter.cpp:197
 #, kde-format
@@ -2071,10 +2068,10 @@ msgid ""
 "to print an individual item, or all the items for a specific time range "
 "(like a day, week or month), or you may want to print your to-do list."
 msgstr ""
-"Seleccione uno de los siguientes tipos de impresión que usted quiera hacer. "
-"Usted puede querer imprimir un elemento individual o todos los elementos de "
-"un periodo determinado (cómo un día, semana o mes) o puede querer imprimir "
-"su lista de tareas pendientes."
+"Seleccione uno de los siguientes tipos de impresión que prefiera. Es posible "
+"que quiera imprimir un elemento individual o todos los elementos de un "
+"período determinado (como un día, una semana o un mes), o que quiera "
+"imprimir una lista de tareas pendientes."
 
 #: printing/calprinter.cpp:252
 #, kde-format
@@ -2117,8 +2114,8 @@ msgid ""
 "Check this box if you want to print more details for the incidence, "
 "including the visibility and secrecy properties."
 msgstr ""
-"Marque esta casilla si usted desea imprimir más detalles de la incidencia, "
-"incluyendo la visibilidad y propiedades de secreto."
+"Marque esta casilla si desea imprimir más detalles de la incidencia, "
+"incluyendo las propiedades de visibilidad y de privacidad."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:39
@@ -2138,8 +2135,8 @@ msgstr "Imprimir los asistentes"
 msgid ""
 "Check this box if you want the attendees list included on the print-out."
 msgstr ""
-"Marque esta casilla si usted quiere que las lista de asistentes se incluya "
-"en la impresión."
+"Marque esta casilla si quiere que la lista de asistentes se incluya en la "
+"impresión."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:52
@@ -2159,8 +2156,8 @@ msgstr "Imprimir las notas"
 msgid ""
 "Check this box if you want the incidence notes included on the print-out."
 msgstr ""
-"Marque esta casilla si usted quiere que las notas de incidencias se incluyan "
-"en la impresión."
+"Marque esta casilla si quiere que las notas de incidencias se incluyan en la "
+"impresión."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:65
@@ -2197,9 +2194,9 @@ msgid ""
 "Check this box if you want to draw note lines in the empty area of the "
 "print. This is useful if you want to hand-write notes on this print-out."
 msgstr ""
-"Marque esta casilla si quiere pintar líneas de notas en el área vacía de la "
-"salida impresa. Esto es útil si usted quiere escribir notas a mano en esta "
-"salida impresa."
+"Marque esta casilla si quiere mostrar líneas de notas en el área vacía de la "
+"salida impresa. Esto resulta de utilidad si necesita escribir notas a mano "
+"en la salida impresa."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:100
