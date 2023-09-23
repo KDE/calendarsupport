@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2023-01-17 07:24+0100\n"
+"PO-Revision-Date: 2023-09-22 10:34+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -157,12 +157,10 @@ msgid "Archive &file:"
 msgstr "არქივის &ფაილი:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|იCalendar ფაილები"
+msgstr "iCalendar-ის ფაილები (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -271,6 +269,8 @@ msgstr ""
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
 msgstr ""
+"მიმაგრებული ფაილი \"%1\" ვებ-ბმულია, რომელიც ამ კომპიუტერიდან ხელმისაწვდომი "
+"არაა. "
 
 #: attachmenthandler.cpp:121
 #, kde-format
@@ -278,6 +278,8 @@ msgid ""
 "The calendar invitation stored in this email message is broken in some way. "
 "Unable to continue."
 msgstr ""
+"კალენდრის მოსაწვევი, რომელიც ამ ელფოსტის შეტყობინებაშია, რაღაცნაირად "
+"გაფუჭდა. გაგრძელება შეუძლებელია."
 
 #: attachmenthandler.cpp:178 attachmenthandler.cpp:232
 #, kde-format
@@ -1853,7 +1855,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
-msgstr ""
+msgstr "დაბეჭდვა შეუძლებელია, ა მითითებული ბეჭდვის სტილი არასწორია."
 
 #: printing/calprinter.cpp:113
 #, kde-format
@@ -1898,7 +1900,7 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Default Orientation of Selected Style"
-msgstr ""
+msgstr "მონიშნული სტილის ნაგულისხმევი ორიენტაციის გამოყენება"
 
 #: printing/calprinter.cpp:198
 #, kde-format
