@@ -156,7 +156,7 @@ void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer, QDate l
                                                                        "The following items will be deleted:",
                                                                        QLocale::system().toString(limitDate, QLocale::ShortFormat)),
                                                                   incidenceStrs,
-                                                                  i18n("Delete Old Items"),
+                                                                  i18nc("@title:window", "Delete Old Items"),
                                                                   KStandardGuiItem::del());
         if (result != KMessageBox::Continue) {
             return;
