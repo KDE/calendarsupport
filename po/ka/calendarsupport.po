@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2023-09-22 10:34+0200\n"
+"PO-Revision-Date: 2023-09-23 08:45+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -1849,7 +1849,7 @@ msgstr "&განრიგის დაბეჭდვა"
 #: printing/calprintdefaultplugins.h:315
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
-msgstr ""
+msgstr "ყველა გასაკეთებლის (ხისმაგვარი) სიის გამოტანა"
 
 #: printing/calprinter.cpp:113
 #, kde-format
@@ -2006,6 +2006,7 @@ msgstr "შენიშვნების დაბეჭდვა"
 msgid ""
 "Check this box if you want the incidence notes included on the print-out."
 msgstr ""
+"ჩართეთ ეს თოლია, თუ გნებავთ, ინციდენტის შენიშვნები გამობეჭდვაში ჩაისვას."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:65
@@ -2457,7 +2458,7 @@ msgstr "დალაგების მიმართულება:"
 #: printing/calprinttodoconfig_base.ui:397
 #, kde-format
 msgid "Co&nnect sub-to-dos with its parent"
-msgstr ""
+msgstr "ქვეგასაკეთებლების &მშობლებზე მიერთება"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
