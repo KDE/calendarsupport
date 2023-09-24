@@ -124,6 +124,7 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
         if (withGUI && errorIfNone) {
             KMessageBox::information(widget,
                                      i18n("There are no items before %1", QLocale::system().toString(limitDate, QLocale::ShortFormat)),
+                                     i18nc("@title:window", "Archive"),
                                      QStringLiteral("ArchiverNoIncidences"));
         }
         return;
