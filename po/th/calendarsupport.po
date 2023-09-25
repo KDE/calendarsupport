@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2008-07-21 16:18+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -362,7 +362,15 @@ msgstr "<placeholder>ยังไม่ระบุ</placeholder>"
 msgid "There are no items before %1"
 msgstr "ไม่มีรายการในช่วงก่อน %1"
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "จัดเก็บลงแฟ้ม"
+
+#: eventarchiver.cpp:155
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -371,30 +379,32 @@ msgstr ""
 "จะลบทุกรายการที่อยู่ก่อน %1 โดยไม่ทำการบันทึกจริงหรือไม่ ?\n"
 "โดยรายการต่อไปนี้จะถูกลบ:"
 
-#: eventarchiver.cpp:158
-#, kde-format
+#: eventarchiver.cpp:159
+#, fuzzy, kde-format
+#| msgid "Delete Old Items"
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "ลบรายการเก่า"
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive file %1. %2"
 msgstr "ไม่สามารถเขียนแฟ้มจัดเก็บ %1 ได้"
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive. %1"
 msgstr "ไม่สามารถเขียนแฟ้มจัดเก็บ %1 ได้"
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, fuzzy, kde-format
 #| msgid "Archive events"
 msgid "Archiving events"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2013-02-13 17:42+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -295,35 +295,44 @@ msgstr ""
 msgid "There are no items before %1"
 msgstr ""
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "संग्रह (&A)"
+
+#: eventarchiver.cpp:155
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
 
-#: eventarchiver.cpp:158
+#: eventarchiver.cpp:159
 #, kde-format
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr ""
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "कारण माहित नाही"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr ""
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr ""
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, kde-format
 msgid "Archiving events"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2023-09-21 13:22+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -339,7 +339,15 @@ msgstr "<placeholder>не визначено</placeholder>"
 msgid "There are no items before %1"
 msgstr "Немає подій перед %1"
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "&Архівувати"
+
+#: eventarchiver.cpp:155
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -348,28 +356,30 @@ msgstr ""
 "Вилучити всі події до %1 без збереження?\n"
 "Наступні події буде вилучено:"
 
-#: eventarchiver.cpp:158
-#, kde-format
+#: eventarchiver.cpp:159
+#, fuzzy, kde-format
+#| msgid "Delete Old Items"
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Вилучити старі події"
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Причина невідома"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Неможливо записати файл архіву %1. %2"
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Неможливо записати файл архіву. %1"
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, kde-format
 msgid "Archiving events"
 msgstr "Архівування подій"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -345,7 +345,14 @@ msgstr ""
 msgid "There are no items before %1"
 msgstr "Tiada kejadian sebelum %1"
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "&Arkibkan"
+
+#: eventarchiver.cpp:155
 #, fuzzy, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -354,30 +361,31 @@ msgstr ""
 "Hapuskan semua kejadian sebelum  %1 tanpa disimpan?\n"
 "Kejadian berikut akan dihapuskan:"
 
-#: eventarchiver.cpp:158
+#: eventarchiver.cpp:159
 #, fuzzy, kde-format
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Hapuskan Kejadian Lama"
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive file %1. %2"
 msgstr "Tidak dapat menulis fail arkib %1."
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive. %1"
 msgstr "Tidak dapat menulis fail arkib %1."
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, fuzzy, kde-format
 #| msgid "Archive events"
 msgid "Archiving events"

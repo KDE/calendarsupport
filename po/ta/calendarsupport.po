@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2022-05-08 15:40+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -348,7 +348,14 @@ msgstr ""
 msgid "There are no items before %1"
 msgstr "%1 க்கு முன்னால் எந்த செயலும் இல்லை"
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "காப்பகம்"
+
+#: eventarchiver.cpp:155
 #, fuzzy, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -357,30 +364,31 @@ msgstr ""
 "சேமிப்பதற்க்கு %1 முன்னால் எல்லா நிகழ்வுகளையும் நீக்கு ?\n"
 "பின்வரும் நிகழ்வுகள் நீக்கப்படும்:"
 
-#: eventarchiver.cpp:158
+#: eventarchiver.cpp:159
 #, fuzzy, kde-format
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "பழைய நிகழ்வுகளை நீக்கு"
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive file %1. %2"
 msgstr "காப்பகக் கோப்பினை எழுத இயலாது%1."
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive. %1"
 msgstr "காப்பகக் கோப்பினை எழுத இயலாது%1."
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, fuzzy, kde-format
 #| msgid "Archive events"
 msgid "Archiving events"

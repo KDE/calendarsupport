@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2006-12-17 13:34+0000\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -307,37 +307,46 @@ msgstr ""
 msgid "There are no items before %1"
 msgstr "%1'дан олдин ҳеч нарса йўқ"
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "&Архивлаш"
+
+#: eventarchiver.cpp:155
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
 
-#: eventarchiver.cpp:158
-#, kde-format
+#: eventarchiver.cpp:159
+#, fuzzy, kde-format
+#| msgid "Delete Old Items"
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Эски нарсаларни олиб ташлаш"
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive file %1. %2"
 msgstr "%1 архив файлини ёзиб бўлмади."
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive. %1"
 msgstr "%1 архив файлини ёзиб бўлмади."
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, fuzzy, kde-format
 #| msgid "Archive events"
 msgid "Archiving events"

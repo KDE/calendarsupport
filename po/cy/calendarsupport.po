@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2004-02-25 13:53+0000\n"
 "Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -332,7 +332,14 @@ msgstr ""
 msgid "There are no items before %1"
 msgstr "Nid oes digwyddiadau cyn %1"
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "&Archifio"
+
+#: eventarchiver.cpp:155
 #, fuzzy, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -341,28 +348,29 @@ msgstr ""
 "Dileu pob digwyddiad cyn %1 heb gadw?\n"
 " Mi fydd y digwyddiadau hyn yn cael eu dileu:"
 
-#: eventarchiver.cpp:158
+#: eventarchiver.cpp:159
 #, fuzzy, kde-format
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Dileu Hen Ddigwyddiadau"
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, fuzzy, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Methu ysgrifennu'r ffeil archif."
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, fuzzy, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Methu ysgrifennu'r ffeil archif."
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, fuzzy, kde-format
 msgid "Archiving events"
 msgstr "Archifio/Dileu Hen Gyfarfodydd"

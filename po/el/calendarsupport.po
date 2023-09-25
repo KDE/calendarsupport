@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2023-01-04 11:26+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -347,7 +347,15 @@ msgstr "<placeholder>μη ορισμένο</placeholder>"
 msgid "There are no items before %1"
 msgstr "Δεν υπάρχουν αντικείμενα πριν το %1"
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "&Αρχειοθέτηση"
+
+#: eventarchiver.cpp:155
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -356,28 +364,30 @@ msgstr ""
 "Να διαγραφούν όλα τα αντικείμενα πριν το %1 χωρίς να αποθηκευτούν;\n"
 "Τα ακόλουθα αντικείμενα θα διαγραφούν:"
 
-#: eventarchiver.cpp:158
-#, kde-format
+#: eventarchiver.cpp:159
+#, fuzzy, kde-format
+#| msgid "Delete Old Items"
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Να διαγραφούν τα παλαιά αντικείμενα"
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Άγνωστη αιτία"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Αδυναμία εγγραφής της αρχειοθήκης %1. %2"
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Αδυναμία εγγραφής της αρχειοθήκης %1"
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, kde-format
 msgid "Archiving events"
 msgstr "Αρχειοθέτηση γεγονότων"

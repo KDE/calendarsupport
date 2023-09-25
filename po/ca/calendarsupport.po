@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2023-09-21 15:11+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -337,7 +337,15 @@ msgstr "<placeholder>no s'ha definit</placeholder>"
 msgid "There are no items before %1"
 msgstr "No hi ha cap element abans de %1"
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "&Arxiva"
+
+#: eventarchiver.cpp:155
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -346,28 +354,30 @@ msgstr ""
 "Voleu suprimir tots els elements anteriors a %1 sense desar?\n"
 "Se suprimiran els elements següents:"
 
-#: eventarchiver.cpp:158
-#, kde-format
+#: eventarchiver.cpp:159
+#, fuzzy, kde-format
+#| msgid "Delete Old Items"
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Suprimeix els elements antics"
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Motiu desconegut"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "No s'ha pogut escriure el fitxer d'arxiu %1. %2"
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "No s'ha pogut escriure l'arxiu. %1"
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, kde-format
 msgid "Archiving events"
 msgstr "Arxiva els esdeveniments"

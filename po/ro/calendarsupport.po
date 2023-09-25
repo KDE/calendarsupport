@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2013-02-16 10:59+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -299,7 +299,15 @@ msgstr "nedefinit"
 msgid "There are no items before %1"
 msgstr "Nu există evenimente înainte de %1"
 
-#: eventarchiver.cpp:154
+#: eventarchiver.cpp:127
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "&Archive"
+msgctxt "@title:window"
+msgid "Archive"
+msgstr "&Arhivează"
+
+#: eventarchiver.cpp:155
 #, fuzzy, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -308,28 +316,30 @@ msgstr ""
 "Șterg toate evenimentele înainte de %1?\n"
 "Vor fi șterse următoarele evenimente:"
 
-#: eventarchiver.cpp:158
-#, kde-format
+#: eventarchiver.cpp:159
+#, fuzzy, kde-format
+#| msgid "Delete Old Items"
+msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Șterge elementele vechi"
 
-#: eventarchiver.cpp:268
+#: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Motiv necunoscut"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:271
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Nu pot scrie fișierul-arhivă %1. %2"
 
-#: eventarchiver.cpp:281
+#: eventarchiver.cpp:282
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Nu pot scrie fișierul-arhivă. %1"
 
-#: eventarchiver.cpp:290
+#: eventarchiver.cpp:291
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "Archive &Events"
