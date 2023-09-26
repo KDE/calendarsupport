@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-09-24 16:33+0200\n"
+"PO-Revision-Date: 2023-09-25 08:26+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -787,7 +787,7 @@ msgstr "nobody@nowhere"
 #: kcalprefs.kcfg:220
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
-msgstr ""
+msgstr "\"ჭდის გარეშე\" ფერი (\"მხოლოდ ჭდე\" დახატვის სქემებისთვის)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:221
@@ -1072,7 +1072,7 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:212
 #, kde-format
 msgid "Print date &range as Filofax format, all on one page"
-msgstr ""
+msgstr "თარიღების &დიაპაზონის Filofax ფორმატში, ყველას ერთ გვერდზე დაბეჭდვა"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
@@ -2399,7 +2399,7 @@ msgstr "ელემენტის ბეჭდვის პრიორიტ�
 #: printing/calprinttodoconfig_base.ui:261
 #, kde-format
 msgid "Check this option if you want to see the item priorities printed."
-msgstr ""
+msgstr "ჩართეთ ეს პარამეტრი, თუ ელემენტს პრიორიტეტებიც გნებავთ, დაბეჭდოთ."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
@@ -2437,7 +2437,7 @@ msgstr "ელემენტის ვადის გადაცილებ�
 #: printing/calprinttodoconfig_base.ui:290
 #, kde-format
 msgid "Check this option if you want to see the item due dates printed."
-msgstr ""
+msgstr "ჩართეთ ეს პარამეტრი, თუ გნებავთ, მათი დაგეგმილი დროებიც დაბეჭდოთ."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293

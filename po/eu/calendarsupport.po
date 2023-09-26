@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-09-21 18:58+0200\n"
+"PO-Revision-Date: 2023-09-25 23:23+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -340,12 +340,10 @@ msgid "There are no items before %1"
 msgstr "Ez dago elementurik %1 baino lehen"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Artxibatu"
+msgstr "Artxiboa"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -357,8 +355,7 @@ msgstr ""
 "Ondoko elementuak ezabatuko dira:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Ezabatu elementu zaharrak"

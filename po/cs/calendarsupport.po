@@ -165,12 +165,10 @@ msgid "Archive &file:"
 msgstr "Soubor s ar&chivem:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|Soubory iCalendar"
+msgstr ""
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -317,12 +315,10 @@ msgid "There are no items before %1"
 msgstr "Neexistují žádné události před %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Archivovat"
+msgstr ""
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -334,11 +330,10 @@ msgstr ""
 "Následující události budou smazány:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
-msgstr "Smazat staré události"
+msgstr ""
 
 #: eventarchiver.cpp:269
 #, kde-format

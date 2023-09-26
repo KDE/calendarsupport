@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-09-24 10:32+0100\n"
+"PO-Revision-Date: 2023-09-25 23:06+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -331,12 +331,10 @@ msgid "There are no items before %1"
 msgstr "Ne estas eroj antaŭ %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Arkivi"
+msgstr "Arkivi"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -348,8 +346,7 @@ msgstr ""
 "La sekvaj eroj estos forigataj:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Forigi Malnovajn Erojn"
@@ -1849,7 +1846,7 @@ msgstr "Komenca dato"
 #, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
-msgstr "Ligdato"
+msgstr "Limdato"
 
 #: printing/calprintdefaultplugins.cpp:1530
 #, kde-format
@@ -2596,7 +2593,7 @@ msgstr "Presi erajn limdatojn"
 #: printing/calprinttodoconfig_base.ui:290
 #, kde-format
 msgid "Check this option if you want to see the item due dates printed."
-msgstr "Marku ĉi tiun opcion se vi volas vidi la ligdatojn presitajn."
+msgstr "Marku ĉi tiun opcion se vi volas vidi la limdatojn presitajn."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293

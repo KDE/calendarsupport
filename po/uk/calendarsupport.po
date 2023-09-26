@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-09-21 13:22+0300\n"
+"PO-Revision-Date: 2023-09-25 08:57+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -340,12 +340,10 @@ msgid "There are no items before %1"
 msgstr "Немає подій перед %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Архівувати"
+msgstr "Архівування"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -357,11 +355,10 @@ msgstr ""
 "Наступні події буде вилучено:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
-msgstr "Вилучити старі події"
+msgstr "Вилучення старих записів"
 
 #: eventarchiver.cpp:269
 #, kde-format
