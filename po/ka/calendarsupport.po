@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-09-25 08:26+0200\n"
+"PO-Revision-Date: 2023-09-26 05:35+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -304,12 +304,10 @@ msgid "There are no items before %1"
 msgstr "%1-მდე ელემენტები არ არსებობს"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&დაარქივება"
+msgstr "არქივი"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -321,8 +319,7 @@ msgstr ""
 "წაიშლება შემდეგი ჩანაწერები:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "ძველი ჩანაწერების წაშლა"
