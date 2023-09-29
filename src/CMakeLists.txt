@@ -172,11 +172,6 @@ ecm_generate_headers(CalendarSupport_CamelCasefreebusy_HEADERS
   RELATIVE freebusymodel
 )
 
-ecm_generate_pri_file(BASE_NAME CalendarSupport
-    LIB_NAME KPim6CalendarSupport
-    DEPS "KMime KIdentityManagement AkonadiCalendar" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport
-)
-
 install(FILES
     ${CalendarSupport_CamelCase_HEADERS}
     ${CalendarSupport_CamelCaseprinter_HEADERS}
@@ -202,10 +197,6 @@ install(FILES
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/calendarsupport
     COMPONENT Devel
 )
-install(FILES
-    ${PRI_FILENAME}
-    DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
-
 if(BUILD_TESTING)
     add_subdirectory(autotests)
     add_subdirectory(freebusymodel/autotests)
