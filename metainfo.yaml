@@ -9,8 +9,7 @@ portingAid: false
 deprecated: false
 release: false
 libraries:
- - qmake: CalendarSupport 
-   cmake: "KPim6::CalendarSupport"
+ - cmake: "KPim6::CalendarSupport"
 cmakename: KPim6CalendarSupport
 
 public_lib: true
