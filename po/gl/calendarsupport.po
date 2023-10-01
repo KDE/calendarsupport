@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-09-24 14:21+0200\n"
+"PO-Revision-Date: 2023-09-30 09:33+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -335,12 +335,10 @@ msgid "There are no items before %1"
 msgstr "Non hai ningún elemento antes de %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Arquivar"
+msgstr "Arquivar"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -352,8 +350,7 @@ msgstr ""
 "Hanse eliminar os elementos seguintes:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Eliminar os elementos antigos"
