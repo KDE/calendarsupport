@@ -33,13 +33,13 @@ public:
     void setFreeBusy(const KCalendarCore::FreeBusy::Ptr &fb);
     KCalendarCore::FreeBusy::Ptr freeBusy() const;
 
-    Q_REQUIRED_RESULT QString email() const;
+    [[nodiscard]] QString email() const;
     void setUpdateTimerID(int id);
-    Q_REQUIRED_RESULT int updateTimerID() const;
+    [[nodiscard]] int updateTimerID() const;
 
     void startDownload(bool forceDownload);
     void setIsDownloading(bool d);
-    Q_REQUIRED_RESULT bool isDownloading() const;
+    [[nodiscard]] bool isDownloading() const;
 
 Q_SIGNALS:
     void attendeeChanged(const KCalendarCore::Attendee &attendee);

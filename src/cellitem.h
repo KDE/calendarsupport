@@ -19,14 +19,14 @@ public:
     virtual ~CellItem() = default;
 
     void setSubCells(int v);
-    Q_REQUIRED_RESULT int subCells() const;
+    [[nodiscard]] int subCells() const;
 
     void setSubCell(int v);
-    Q_REQUIRED_RESULT int subCell() const;
+    [[nodiscard]] int subCell() const;
 
     virtual bool overlaps(CellItem *other) const = 0;
 
-    Q_REQUIRED_RESULT virtual QString label() const;
+    [[nodiscard]] virtual QString label() const;
 
     /**
       Place item @p placeItem into stripe containing items @p cells in a

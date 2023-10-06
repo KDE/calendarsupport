@@ -30,12 +30,12 @@ public:
     ~CollectionSelection() override;
 
     QItemSelectionModel *model() const;
-    Q_REQUIRED_RESULT Akonadi::Collection::List selectedCollections() const;
-    Q_REQUIRED_RESULT QList<Akonadi::Collection::Id> selectedCollectionIds() const;
+    [[nodiscard]] Akonadi::Collection::List selectedCollections() const;
+    [[nodiscard]] QList<Akonadi::Collection::Id> selectedCollectionIds() const;
     bool contains(const Akonadi::Collection &c) const;
     bool contains(Akonadi::Collection::Id id) const;
 
-    Q_REQUIRED_RESULT bool hasSelection() const;
+    [[nodiscard]] bool hasSelection() const;
 
 Q_SIGNALS:
     void selectionChanged(const Akonadi::Collection::List &selected, const Akonadi::Collection::List &deselected);

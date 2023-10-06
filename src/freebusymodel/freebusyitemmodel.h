@@ -51,7 +51,7 @@ public:
     void removeItem(const FreeBusyItem::Ptr &freebusy);
     void removeRow(int row);
 
-    Q_REQUIRED_RESULT bool containsAttendee(const KCalendarCore::Attendee &attendee);
+    [[nodiscard]] bool containsAttendee(const KCalendarCore::Attendee &attendee);
 
     /**
      * Queues a reload of free/busy data.

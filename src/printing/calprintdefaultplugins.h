@@ -26,34 +26,34 @@ class CALENDARSUPPORT_EXPORT CalPrintIncidence : public CalPrintPluginBase
 public:
     CalPrintIncidence();
     ~CalPrintIncidence() override;
-    Q_REQUIRED_RESULT QString groupName() const override
+    [[nodiscard]] QString groupName() const override
     {
         return QStringLiteral("Print incidence");
     }
 
-    Q_REQUIRED_RESULT QString description() const override
+    [[nodiscard]] QString description() const override
     {
         return i18n("Print &incidence");
     }
 
-    Q_REQUIRED_RESULT QString info() const override
+    [[nodiscard]] QString info() const override
     {
         return i18n("Prints an incidence on one page");
     }
 
-    Q_REQUIRED_RESULT int sortID() const override
+    [[nodiscard]] int sortID() const override
     {
         return CalPrinterBase::Incidence;
     }
 
     // Enable the Print Incidence option only if there are selected incidences.
-    Q_REQUIRED_RESULT bool enabled() const override
+    [[nodiscard]] bool enabled() const override
     {
         return !mSelectedIncidences.isEmpty();
     }
 
     QWidget *createConfigWidget(QWidget *) override;
-    Q_REQUIRED_RESULT QPageLayout::Orientation defaultOrientation() const override
+    [[nodiscard]] QPageLayout::Orientation defaultOrientation() const override
     {
         return QPageLayout::Portrait;
     }
@@ -128,27 +128,27 @@ class CalPrintDay : public CalPrintTimetable
 public:
     CalPrintDay();
     ~CalPrintDay() override;
-    Q_REQUIRED_RESULT QString groupName() const override
+    [[nodiscard]] QString groupName() const override
     {
         return QStringLiteral("Print day");
     }
 
-    Q_REQUIRED_RESULT QString description() const override
+    [[nodiscard]] QString description() const override
     {
         return i18n("Print da&y");
     }
 
-    Q_REQUIRED_RESULT QString info() const override
+    [[nodiscard]] QString info() const override
     {
         return i18n("Prints all events of a single day on one page");
     }
 
-    Q_REQUIRED_RESULT int sortID() const override
+    [[nodiscard]] int sortID() const override
     {
         return CalPrinterBase::Day;
     }
 
-    Q_REQUIRED_RESULT bool enabled() const override
+    [[nodiscard]] bool enabled() const override
     {
         return true;
     }

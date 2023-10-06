@@ -52,7 +52,7 @@ struct TestItem : public CellItem {
         return !(other->endBefore <= startAt || other->startAt >= endBefore);
     }
 
-    Q_REQUIRED_RESULT QString label() const override
+    [[nodiscard]] QString label() const override
     {
         return name;
     }

@@ -25,9 +25,9 @@ public:
     ~FreePeriodModel() override;
 
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
-    Q_REQUIRED_RESULT int rowCount(const QModelIndex &parent = QModelIndex()) const override;
-    Q_REQUIRED_RESULT int columnCount(const QModelIndex &parent = QModelIndex()) const override;
-    Q_REQUIRED_RESULT QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
+    [[nodiscard]] int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    [[nodiscard]] int columnCount(const QModelIndex &parent = QModelIndex()) const override;
+    [[nodiscard]] QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
 
 public Q_SLOTS:
     void slotNewFreePeriods(const KCalendarCore::Period::List &freePeriods);
@@ -36,10 +36,10 @@ private:
     /** Splits period blocks in the provided list, so that each period occurs on one day */
     KCalendarCore::Period::List splitPeriodsByDay(const KCalendarCore::Period::List &freePeriods);
 
-    Q_REQUIRED_RESULT CALENDARSUPPORT_NO_EXPORT QString day(int index) const;
-    Q_REQUIRED_RESULT CALENDARSUPPORT_NO_EXPORT QString date(int index) const;
-    Q_REQUIRED_RESULT CALENDARSUPPORT_NO_EXPORT QString stringify(int index) const;
-    Q_REQUIRED_RESULT CALENDARSUPPORT_NO_EXPORT QString tooltipify(int index) const;
+    [[nodiscard]] CALENDARSUPPORT_NO_EXPORT QString day(int index) const;
+    [[nodiscard]] CALENDARSUPPORT_NO_EXPORT QString date(int index) const;
+    [[nodiscard]] CALENDARSUPPORT_NO_EXPORT QString stringify(int index) const;
+    [[nodiscard]] CALENDARSUPPORT_NO_EXPORT QString tooltipify(int index) const;
 
     KCalendarCore::Period::List mPeriodList;
     friend class FreePeriodModelTest;

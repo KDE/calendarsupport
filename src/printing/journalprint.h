@@ -22,28 +22,28 @@ public:
 
     ~CalPrintJournal() override = default;
 
-    Q_REQUIRED_RESULT QString groupName() const override
+    [[nodiscard]] QString groupName() const override
     {
         return QStringLiteral("Print journal");
     }
 
-    Q_REQUIRED_RESULT QString description() const override
+    [[nodiscard]] QString description() const override
     {
         return i18n("Print &journal");
     }
 
-    Q_REQUIRED_RESULT QString info() const override
+    [[nodiscard]] QString info() const override
     {
         return i18n("Prints all journals for a given date range");
     }
 
     QWidget *createConfigWidget(QWidget *) override;
-    Q_REQUIRED_RESULT int sortID() const override
+    [[nodiscard]] int sortID() const override
     {
         return CalPrinterBase::Journallist;
     }
 
-    Q_REQUIRED_RESULT bool enabled() const override
+    [[nodiscard]] bool enabled() const override
     {
         return true;
     }
