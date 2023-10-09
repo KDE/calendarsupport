@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-26 00:51+0000\n"
-"PO-Revision-Date: 2023-10-04 18:40+0200\n"
+"PO-Revision-Date: 2023-10-08 06:01+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -2694,6 +2694,8 @@ msgid ""
 "The split week view has the times to the left of the page, with two pages "
 "per week."
 msgstr ""
+"გაყოფილ კვირის ხედს აქვს დრო გვერდის მარცხენა მხარეს, ორი გვერდით ერთი "
+"კვირისთვის."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:232
