@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-09-16 10:08\n"
+"PO-Revision-Date: 2023-10-10 14:25\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/calendarsupport/calendarsupport.pot\n"
-"X-Crowdin-File-ID: 3841\n"
+"X-Crowdin-File: /kf6-trunk/messages/calendarsupport/calendarsupport.pot\n"
+"X-Crowdin-File-ID: 45431\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -167,12 +167,10 @@ msgid "Archive &file:"
 msgstr "存档文件(&F)："
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|iCalendar 文件"
+msgstr "iCalendar 文件 (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -315,12 +313,10 @@ msgid "There are no items before %1"
 msgstr "在 %1 之前没有项目"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "归档(&A)"
+msgstr "归档"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -332,8 +328,7 @@ msgstr ""
 "下列项目将被删除："
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "删除老项目"
