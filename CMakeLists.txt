@@ -67,6 +67,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX CALENDARSUPPORT
 ########### Targets ###########
 
 
+add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
 ecm_set_disabled_deprecation_versions(QT 6.5  KF 5.240.0)
 
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
