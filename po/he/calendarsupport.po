@@ -25,7 +25,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 3.9.6\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
 
 #: archivedialog.cpp:43
 #, fuzzy, kde-format
@@ -1493,6 +1494,8 @@ msgid "1 hour "
 msgid_plural "%1 hours "
 msgstr[0] "שעה אחת"
 msgstr[1] "%1 שעות"
+msgstr[2] ""
+msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:137
 #, fuzzy, kde-format
@@ -1500,6 +1503,8 @@ msgid "1 minute "
 msgid_plural "%1 minutes "
 msgstr[0] "דקה אחת"
 msgstr[1] "%1 דקות"
+msgstr[2] ""
+msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:140
 #, fuzzy, kde-format
@@ -1538,6 +1543,8 @@ msgid "Reminder: "
 msgid_plural "%1 reminders: "
 msgstr[0] "דקה אחת"
 msgstr[1] "%1 דקות"
+msgstr[2] ""
+msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:317
 #, kde-format
@@ -1569,6 +1576,8 @@ msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] "יום אחד"
 msgstr[1] "%1 ימים"
+msgstr[2] ""
+msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:340
 #, fuzzy, kde-format
@@ -1576,6 +1585,8 @@ msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "שעה אחת"
 msgstr[1] "%1 שעות"
+msgstr[2] ""
+msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:343
 #, fuzzy, kde-format
@@ -1583,6 +1594,8 @@ msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] "דקה אחת"
 msgstr[1] "%1 דקות"
+msgstr[2] ""
+msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:629
@@ -1622,6 +1635,8 @@ msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
 msgstr[0] "ללא מסנן"
 msgstr[1] "ללא מסנן"
+msgstr[2] ""
+msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:485
 #, fuzzy, kde-format
@@ -1694,6 +1709,8 @@ msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
 msgstr[0] "מ&צורפים"
 msgstr[1] "מ&צורפים"
+msgstr[2] ""
+msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:550
 #, kde-format
@@ -1712,6 +1729,8 @@ msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
 msgstr[0] "דקה אחת"
 msgstr[1] "%1 דקות"
+msgstr[2] ""
+msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:581
 #, fuzzy, kde-format
