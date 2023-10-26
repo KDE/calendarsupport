@@ -1,36 +1,33 @@
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2020, 2023 Vít Pelčák <vit@pelcak.org>
-# Lukáš Tinkl <lukas@kde.org>, 2011.
-# Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012, 2013.
-# Vit Pelcak <vit@pelcak.org>, 2021, 2022.
+# Copyright (C) 2023 This file is copyright:
+# This file is distributed under the same license as the calendarsupport package.
 #
+# SPDX-FileCopyrightText: 2023 Enol P. <enolp@softastur.org>
 msgid ""
 msgstr ""
-"Project-Id-Version: akonadi-kcal\n"
+"Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-10-19 14:40+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
-"Language: cs\n"
+"PO-Revision-Date: 2023-10-25 13:07+0200\n"
+"Last-Translator: Enol P. <enolp@softastur.org>\n"
+"Language-Team: \n"
+"Language: ast_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 23.08.2\n"
 
 #: archivedialog.cpp:43
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive/Delete Past Events and To-dos"
-msgstr "Archivovat nebo smazat prošlé schůzky a úlohy"
+msgstr ""
 
 #: archivedialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "&Archive"
-msgstr "&Archivovat"
+msgstr ""
 
 #: archivedialog.cpp:62
 #, kde-kuit-format
@@ -54,7 +51,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio"
 msgid "Archive now items older than:"
-msgstr "Archivovat schůzky starší než:"
+msgstr ""
 
 #: archivedialog.cpp:83
 #, kde-format
@@ -85,14 +82,12 @@ msgid ""
 "will be saved and deleted, the newer (and events exactly on that date) will "
 "be kept."
 msgstr ""
-"Věk schůzek, které si přejete archivovat. Všechny starší schůzky a úlohy "
-"budou uloženy a smazány. Novější budou zachovány."
 
 #: archivedialog.cpp:107
 #, kde-format
 msgctxt "@option:radio"
 msgid "Automaticall&y archive items older than:"
-msgstr "Automatick&y archivovat položky starší než:"
+msgstr ""
 
 #: archivedialog.cpp:108
 #, kde-format
@@ -108,9 +103,6 @@ msgid ""
 "and to-dos have to be archived; this means you will not need to use this "
 "dialog box again, except to change the settings."
 msgstr ""
-"Je-li tato vlastnost povolena, aplikace bude pravidelně kontrolovat, zda "
-"mají být události a úlohy archivovány. To znamená, že nebudete muset "
-"používat toto dialogové okno znovu, dokud nebudete chtít změnit nastavení."
 
 #: archivedialog.cpp:123
 #, kde-format
@@ -125,8 +117,6 @@ msgid ""
 "The age of the events and to-dos to archive. All older items will be saved "
 "and deleted, the newer will be kept."
 msgstr ""
-"Věk schůzek, které si přejete archivovat. Všechny starší schůzky a úlohy "
-"budou uloženy a smazány. Novější budou zachovány."
 
 #: archivedialog.cpp:130
 #, kde-format
@@ -144,31 +134,31 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox expires in daily units"
 msgid "Day(s)"
-msgstr "Dny"
+msgstr ""
 
 #: archivedialog.cpp:134
 #, kde-format
 msgctxt "@item:inlistbox expiration in weekly units"
 msgid "Week(s)"
-msgstr "Měsíce"
+msgstr ""
 
 #: archivedialog.cpp:135
 #, kde-format
 msgctxt "@item:inlistbox expiration in monthly units"
 msgid "Month(s)"
-msgstr "Týdny"
+msgstr ""
 
 #: archivedialog.cpp:140
 #, kde-format
 msgctxt "@label"
 msgid "Archive &file:"
-msgstr "Soubor s ar&chivem:"
+msgstr ""
 
 #: archivedialog.cpp:144
 #, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "Soubory iCalendar (*.ics)"
+msgstr "Ficheros d'iCalendar (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -185,16 +175,12 @@ msgid ""
 "modified or deleted. You can later load or merge the file like any other "
 "calendar. It is not saved in a special format, it uses the iCalendar format."
 msgstr ""
-"Cesta k archivu. Schůzky a úlohy budou přidány do archivního souboru, takže "
-"jakékoliv události, které jsou již v souboru, nebudou změněny nebo smazány. "
-"Později budete moci načíst nebo sloučit soubor jako jakýkoliv jiný kalendář. "
-"Neukládá se do speciálního formátu, ale do formátu iCalendar."
 
 #: archivedialog.cpp:156
 #, kde-format
 msgctxt "@title:group"
 msgid "Type of Items to Archive"
-msgstr "Typ položek k archivaci"
+msgstr ""
 
 #: archivedialog.cpp:158
 #, kde-format
@@ -204,21 +190,18 @@ msgid ""
 "they ended before the date given above; to-dos are archived if they were "
 "finished before the date."
 msgstr ""
-"Zde můžete vybrat, jaké položky mají být archivovány. Události jsou "
-"archivovány, pokud skončily před výše zadaným datem; úlohy jsou archivovány, "
-"pokud byly ukončeny před daným datem."
 
 #: archivedialog.cpp:166
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive &Events"
-msgstr "A&rchivovat události"
+msgstr ""
 
 #: archivedialog.cpp:167
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge events"
-msgstr "Archivovat nebo promazat události"
+msgstr ""
 
 #: archivedialog.cpp:168
 #, kde-format
@@ -232,7 +215,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
-msgstr "Archivova&t dokončené úlohy"
+msgstr ""
 
 #: archivedialog.cpp:172
 #, kde-format
@@ -252,7 +235,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "&Delete only, do not save"
-msgstr "Pouze smazat, neuklá&dat"
+msgstr ""
 
 #: archivedialog.cpp:179
 #, kde-format
@@ -267,14 +250,12 @@ msgid ""
 "Select this option to delete old events and to-dos without saving them. It "
 "is not possible to recover the events later."
 msgstr ""
-"Vyberte tuto volbu pro smazání starých schůzek a úloh bez jejich uložení. "
-"Později již nebude možné schůzky obnovit."
 
 #: archivedialog.cpp:242
 #, kde-format
 msgctxt "@info"
 msgid "The archive file name is not valid."
-msgstr "Název souboru s archivem je neplatný."
+msgstr ""
 
 #: attachmenthandler.cpp:94
 #, kde-format
@@ -297,28 +278,28 @@ msgstr ""
 #: attachmenthandler.cpp:178 attachmenthandler.cpp:232
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
-msgstr "Nelze vytvořit dočasný soubor pro přílohu."
+msgstr ""
 
 #: attachmenthandler.cpp:211
 #, kde-format
 msgid "Save Attachment"
-msgstr "Uložit přílohu"
+msgstr ""
 
 #: cellitem.cpp:38
 #, kde-kuit-format
 msgid "<placeholder>undefined</placeholder>"
-msgstr "<placeholder>nedefinováno</placeholder>"
+msgstr ""
 
 #: eventarchiver.cpp:126
 #, kde-format
 msgid "There are no items before %1"
-msgstr "Neexistují žádné události před %1"
+msgstr ""
 
 #: eventarchiver.cpp:127
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "Archiv"
+msgstr ""
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -326,50 +307,48 @@ msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
-"Smazat všechny události před %1 bez uložení?\n"
-"Následující události budou smazány:"
 
 #: eventarchiver.cpp:159
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
-msgstr "Smazat staré události"
+msgstr ""
 
 #: eventarchiver.cpp:269
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
-msgstr "Neznámý důvod"
+msgstr ""
 
 #: eventarchiver.cpp:271
 #, kde-format
 msgid "Cannot write archive file %1. %2"
-msgstr "Nelze zapsat soubor s archivem %1. %2"
+msgstr ""
 
 #: eventarchiver.cpp:282
 #, kde-format
 msgid "Cannot write archive. %1"
-msgstr "Nelze zapsat soubor s archivem. %1"
+msgstr ""
 
 #: eventarchiver.cpp:291
 #, kde-format
 msgid "Archiving events"
-msgstr "Archivuji události"
+msgstr ""
 
 #: freebusymodel/freebusycalendar.cpp:109
 #, kde-format
 msgid "Free"
-msgstr "Volno"
+msgstr ""
 
 #: freebusymodel/freebusycalendar.cpp:112
 #, kde-format
 msgid "Busy"
-msgstr "Zaneprázdněn"
+msgstr ""
 
 #: freebusymodel/freebusycalendar.cpp:115
 #, kde-format
 msgid "Unavailable"
-msgstr "Nedostupný"
+msgstr ""
 
 #: freebusymodel/freebusycalendar.cpp:118
 #, kde-format
@@ -379,18 +358,18 @@ msgstr ""
 #: freebusymodel/freebusycalendar.cpp:121
 #, kde-format
 msgid "Unknown"
-msgstr "Neznámý"
+msgstr ""
 
 #: freebusymodel/freebusyitemmodel.cpp:211
 #, kde-format
 msgid "Attendee"
-msgstr "Účastník"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:124
 #, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
-msgstr "%1,"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:141
 #, kde-format
@@ -399,7 +378,7 @@ msgctxt ""
 "orientation) by the name of the week, see the message above. example: 12 "
 "June, 8:00am to 9:30am"
 msgid "%1 %2, %3 to %4"
-msgstr "%1 %2, %3 do %4"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:162
 #, kde-format
@@ -407,37 +386,37 @@ msgctxt ""
 "@label A time period duration. KLocale is used to format the components. "
 "example: Monday, 12 June, 8:00am to 9:30am"
 msgid "%1, %2 %3, %4 to %5"
-msgstr "%1, %2 %3, %4 do %5"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:176
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
-msgstr "Volné období"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:178
 #, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
-msgstr "Zahájení:"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:181
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
-msgstr "Ukončení:"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:184
 #, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
-msgstr "Doba trvání:"
+msgstr ""
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:15
 #, kde-format
 msgid "Use email settings from System Settings"
-msgstr "Použít nastavení e-mailu z Nastavení systému"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
@@ -447,15 +426,12 @@ msgid ""
 "the System Settings \"About Me\" Module. Uncheck this box to be able to "
 "specify your full name and e-mail."
 msgstr ""
-"Zaškrtněte pro použití globálního nastavení e-mailu, které je definováno v "
-"Ovládacím centru KDE, sekce &quot;O mně&quot;. Zrušte zaškrtnutí, pokud si "
-"přejete zadat vaše celé jméno a e-mail."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
 #, kde-format
 msgid "Default appointment time"
-msgstr "Výchozí čas schůzky"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:25
@@ -464,14 +440,12 @@ msgid ""
 "Enter the default time for events here. The default is used if you do not "
 "supply a start time."
 msgstr ""
-"Zde zadejte výchozí čas pro události. Tento čas je použit, pokud nezadáte "
-"žádný počáteční čas."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:30
 #, kde-format
 msgid "Default duration of new appointment (HH:MM)"
-msgstr "Výchozí doba trvání nové schůzky (HH:MM)"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:31
@@ -480,8 +454,6 @@ msgid ""
 "Enter default duration for events here. The default is used if you do not "
 "supply an end time."
 msgstr ""
-"Zde zadejte výchozí dobu trvání této události. Tento čas je použit, pokud "
-"nezadáte žádný koncový čas."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:36
@@ -557,7 +529,7 @@ msgstr ""
 #: kcalprefs.kcfg:62
 #, kde-format
 msgid "Default reminder time"
-msgstr "Výchozí čas upomínky"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:63
@@ -571,7 +543,7 @@ msgstr ""
 #: kcalprefs.kcfg:64
 #, kde-format
 msgid "Default time for reminders"
-msgstr "Výchozí čas pro upomínky"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
 #: kcalprefs.kcfg:69
@@ -591,7 +563,7 @@ msgstr ""
 #: kcalprefs.kcfg:78
 #, kde-format
 msgid "Day begins at"
-msgstr "Den začíná v"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:79
@@ -600,14 +572,12 @@ msgid ""
 "Enter the start time for events here. This time should be the earliest time "
 "that you use for events."
 msgstr ""
-"Zde zadejte počáteční čas pro události každého dne. Toto by měl být čas, "
-"který pro události používáte nejdříve."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:84
 #, kde-format
 msgid "Exclude holidays"
-msgstr "Vyřadit svátky"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:85
@@ -616,14 +586,12 @@ msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
 "holidays."
 msgstr ""
-"Zaškrtněte, pokud si přejete, aby KOrganizer neoznačoval pracovní hodiny u "
-"svátků."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:90
 #, kde-format
 msgid "Use holiday regions:"
-msgstr "Použít regiony svátků:"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:91
@@ -632,14 +600,12 @@ msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
 "shown as non-working days in the date navigator, the agenda view, etc."
 msgstr ""
-"Zde zadejte, z jakých regionů si přejete použít svátky. Zadané svátky jsou v "
-"navigátoru, v pohledu na agendu, atd. zobrazeny jako nepracovní dny."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:98
 #, kde-format
 msgid "Use Groupware communication"
-msgstr "Použít Groupware komunikaci"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:99
@@ -650,10 +616,6 @@ msgid ""
 "should check this box if you want to use the groupware functionality (e.g. "
 "Configuring Kontact as a KDE Kolab client)."
 msgstr ""
-"Zaškrtněte pro automatické generování e-mailů při vytváření, změně, či "
-"mazání událostí, popř. úloh, zahrnujících další účastníky. Tato volba by "
-"měla být zaškrtnuta, pokud si přejete využívat groupwarovou funkcionalitu - "
-"např. konfigurace aplikace Kontact jako klient KDE Kolab."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:104
@@ -691,7 +653,7 @@ msgstr ""
 #: kcalprefs.kcfg:134
 #, kde-format
 msgid "Regularly archive events"
-msgstr "Pravidelně archivovat události"
+msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:139
@@ -700,74 +662,72 @@ msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
 "archived. The unit of this value is specified in another field."
 msgstr ""
-"Je-li povolena auto-archivace, události starší než tato hodnota budou "
-"archivovány. Jednotka této hodnoty se určuje v dalším poli."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:144
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
-msgstr "Jednotka, ve které je vyjádřen čas platnosti."
+msgstr ""
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:147
 #, kde-format
 msgid "In days"
-msgstr "V dnech"
+msgstr ""
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:150
 #, kde-format
 msgid "In weeks"
-msgstr "V týdnech"
+msgstr ""
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:153
 #, kde-format
 msgid "In months"
-msgstr "V měsících"
+msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:160
 #, kde-format
 msgid "URL of the file where old events should be archived"
-msgstr "URL souboru, do kterého mají být archivovány staré události."
+msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:164
 #, kde-format
 msgid "Archive events"
-msgstr "Archivovat události"
+msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:169
 #, kde-format
 msgid "Archive to-dos"
-msgstr "Archivovat úlohy"
+msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:174
 #, kde-format
 msgid "What to do when archiving"
-msgstr "Co dělat při archivování"
+msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:177
 #, kde-format
 msgid "Delete old events"
-msgstr "Smazat staré události"
+msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:180
 #, kde-format
 msgid "Archive old events to a separate file"
-msgstr "Archivovat staré události do samostatného souboru"
+msgstr ""
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
 #: kcalprefs.kcfg:194
 #, kde-format
 msgid "Full &name"
-msgstr "Celé jmé&no"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
 #: kcalprefs.kcfg:195
@@ -776,19 +736,17 @@ msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
 "to-dos and events you create."
 msgstr ""
-"Zde zadejte vaše celé jméno. Toto jméno bude zobrazeno jako \"Organizátor\" "
-"v úlohách a událostech, které vytvoříte."
 
 #: kcalprefs.kcfg:196
 #, kde-format
 msgid "Anonymous"
-msgstr "Anonymní"
+msgstr ""
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
 msgid "E&mail address"
-msgstr "E&mailová adresa"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:201
@@ -797,8 +755,6 @@ msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
 "the owner of the calendar, and displayed in events and to-dos you create."
 msgstr ""
-"Zde zadejte vaši e-mailovou adresu. Tato adresa bude použita k identifikaci "
-"vlastníka kalendáře a bude zobrazena v událostech a úlohách, které vytvoříte."
 
 #: kcalprefs.kcfg:202
 #, kde-format
@@ -824,49 +780,49 @@ msgstr ""
 #: kcalprefs.kcfg:222
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr "Používat tuto barvu při kreslení položek bez jakýchkoliv značek"
+msgstr ""
 
 #: noteeditdialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
-msgstr "Vytvořit poznámku"
+msgstr ""
 
 #: noteeditdialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr "Zrušit"
+msgstr ""
 
 #: noteeditdialog.cpp:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr "Uložit"
+msgstr ""
 
 #: noteeditdialog.cpp:77
 #, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
-msgstr "Kalendář, kam bude nová poznámka uložena."
+msgstr ""
 
 #: noteeditdialog.cpp:79
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
-msgstr "Kalendář, kam bude nová poznámka uložena."
+msgstr ""
 
 #: noteeditdialog.cpp:92
 #, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
-msgstr "Název:"
+msgstr ""
 
 #: noteeditdialog.cpp:97
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"
-msgstr "Text:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -881,14 +837,6 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print day options:</span></p></body></html>"
 msgstr ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Možnosti tisku dne:</span></p></body></html>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
 #: printing/calprintdayconfig_base.ui:24
@@ -897,7 +845,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:24
 #, kde-format
 msgid "Date && Time Range"
-msgstr "Časový rozsah"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (toolTip), widget (KDateComboBox, mFromDate)
@@ -927,9 +875,6 @@ msgid ""
 "this option and the <i>End date</i> option. This option is used to define "
 "the start date."
 msgstr ""
-"Přejete-li si vytisknout více dnů najednou, můžete definovat rozsah dnů "
-"touto volbou a volbou <i>Datum ukončení</i>. Tato volba je použita pro "
-"definování data zahájení."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintdayconfig_base.ui:36
@@ -938,7 +883,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:36
 #, kde-format
 msgid "&Start date:"
-msgstr "Datum zahá&jení:"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mFromDate)
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mToDate)
@@ -949,7 +894,7 @@ msgstr "Datum zahá&jení:"
 #: printing/calprintweekconfig_base.ui:136
 #, kde-format
 msgid "2009-01-19"
-msgstr "2009-01-19"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, mFromTime)
@@ -958,7 +903,7 @@ msgstr "2009-01-19"
 #: printing/calprintweekconfig_base.ui:80
 #, kde-format
 msgid "Starting time for the print"
-msgstr "Čas spuštění tisku"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
@@ -973,17 +918,12 @@ msgid ""
 "you can automatically modify these settings if you check <i>Extend time "
 "range to include all events</i>."
 msgstr ""
-"Lze vytisknout pouze ty události, které jsou uvnitř daného časového rozsahu. "
-"Tímto nastavením definujete čas zahájení rozsahu. Čas ukončení je definován "
-"pomocí volby <i>Čas ukončení </i>. Rozsah může být automaticky upraven, "
-"pokud zaškrtnete <i>Rozšířit časový rozsah, aby zahrnoval všechny události</"
-"i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
 #, kde-format
 msgid "Start &time:"
-msgstr "Čas za&hájení"
+msgstr ""
 
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mFromTime)
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mToTime)
@@ -992,7 +932,7 @@ msgstr "Čas za&hájení"
 #: printing/calprintweekconfig_base.ui:166
 #, kde-format
 msgid "hh:mm"
-msgstr "hh:mm"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (toolTip), widget (KDateComboBox, mToDate)
@@ -1006,7 +946,7 @@ msgstr "hh:mm"
 #: printing/calprintweekconfig_base.ui:129
 #, kde-format
 msgid "Ending date for the print"
-msgstr "Konečný datum tisku"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -1024,8 +964,6 @@ msgid ""
 "this option and the <i>Start date</i> option. This option is used to define "
 "the end date."
 msgstr ""
-"Přejete-li si vytisknout více dnů najednou, lze definovat rozsah dnů touto "
-"volbou a volbou <i>Datum zahájení</i> Tato volba definuje datum ukončení."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintdayconfig_base.ui:116
@@ -1034,7 +972,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:116
 #, kde-format
 msgid "&End date:"
-msgstr "Datum ukonč&ení:"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, mToTime)
@@ -1044,7 +982,7 @@ msgstr "Datum ukonč&ení:"
 #: printing/calprintweekconfig_base.ui:160
 #, kde-format
 msgid "Ending time for the print"
-msgstr "Konečný čas tisku"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1060,17 +998,13 @@ msgid ""
 "Note you can automatically modify these settings if you check <i>Extend time "
 "range to include all events</i>."
 msgstr ""
-"Lze vytisknout pouze ty události, které jsou uvnitř daného časového rozsahu. "
-"Tímto nastavením definujete čas ukončení rozsahu. Čas zahájení je definován "
-"pomocí volby <i>Čas zahájení</i>. Rozsah může být automaticky upraven, pokud "
-"zaškrtnete <i>Rozšířit časový rozsah, aby zahrnoval všechny události</i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mToTimeLabel)
 #: printing/calprintdayconfig_base.ui:150
 #: printing/calprintweekconfig_base.ui:150
 #, kde-format
 msgid "End ti&me:"
-msgstr "Č&as ukončení"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeAllEvents)
 #: printing/calprintdayconfig_base.ui:190
@@ -1080,22 +1014,20 @@ msgid ""
 "Check this option to automatically determine the required time range, so all "
 "events will be shown."
 msgstr ""
-"Zaškrtněte tuto volbu pro automatické určení požadovaného časového rozsahu "
-"tak, aby byly zobrazeny všechny události."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
 #: printing/calprintdayconfig_base.ui:193
 #: printing/calprintweekconfig_base.ui:193
 #, kde-format
 msgid "E&xtend time range to include all events"
-msgstr "Rozšíř&it časový rozsah, aby zahrnoval všechny události"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprintdayconfig_base.ui:203
 #: printing/calprintweekconfig_base.ui:203
 #, kde-format
 msgid "Print Layout"
-msgstr "Tisková úprava"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintdayconfig_base.ui:209
@@ -1110,7 +1042,7 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:212
 #, kde-format
 msgid "Print date &range as Filofax format, all on one page"
-msgstr "Vytiskne rozsah dat ve formátu Filoax na jednu stranu"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
@@ -1172,7 +1104,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:79
 #, kde-format
 msgid "Exclude c&onfidential"
-msgstr "V&yřadit důvěrné"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:258
@@ -1196,7 +1128,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:89
 #, kde-format
 msgid "Exclude pri&vate"
-msgstr "&Vyřadit soukromé"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, mIncludeInfoGroup)
 #. i18n: ectx: property (title), widget (QGroupBox, includeInfoBox)
@@ -1207,7 +1139,7 @@ msgstr "&Vyřadit soukromé"
 #: printing/calprintweekconfig_base.ui:271
 #, kde-format
 msgid "Include Information"
-msgstr "Zahrnout informace"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDescription)
@@ -1217,7 +1149,7 @@ msgstr "Zahrnout informace"
 #: printing/calprintweekconfig_base.ui:277
 #, kde-format
 msgid "Print item descriptions"
-msgstr "Vytisknout popisky položek"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDescription)
@@ -1228,7 +1160,6 @@ msgstr "Vytisknout popisky položek"
 #, kde-format
 msgid "Check this option if you want to see the item descriptions printed."
 msgstr ""
-"Zaškrtněte tuto volbu, pokud si přejete, aby byly vytištěny popisy položek."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (text), widget (QCheckBox, mDescription)
@@ -1238,7 +1169,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:283
 #, kde-format
 msgid "&Descriptions"
-msgstr "&Popisy"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1259,7 +1190,6 @@ msgstr ""
 #, kde-format
 msgid "Check this option if you want to see the item tags printed."
 msgstr ""
-"Zaškrtněte tuto volbu, pokud si přejete, aby byly vytištěny značky položek."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (text), widget (QCheckBox, mCategories)
@@ -1269,7 +1199,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:296
 #, kde-format
 msgid "Ta&gs"
-msgstr "&Značky"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:306
@@ -1288,8 +1218,6 @@ msgid ""
 "You should check this option if you want to print to-dos which are due on "
 "one of the dates which are in the supplied date range."
 msgstr ""
-"Měli byste zaškrtnout tuto volbu, pokud si přejete vytisknout úlohy mající "
-"termín nastavený na jeden ze dnů, které jsou v dodaném časovém rozsahu."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:312
@@ -1297,7 +1225,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:312
 #, kde-format
 msgid "Include to-&dos that are due on the printed day(s)"
-msgstr "Zahrnout úlohy, které mají &datum splnění v tištěných dnech"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:319
@@ -1323,7 +1251,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title general print settings"
 msgid "General"
-msgstr "Obecné"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:338
@@ -1374,7 +1302,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:361
 #, kde-format
 msgid "Print in color"
-msgstr "Tisknout barevně"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:364
@@ -1386,8 +1314,6 @@ msgid ""
 "If you want to use colors to distinguish certain tags in the printed output, "
 "check this option."
 msgstr ""
-"Přejete-li si používat barvy pro rozlišení určitých značek výstup tisku, "
-"zaškrtněte tuto volbu."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:367
@@ -1396,7 +1322,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:367
 #, kde-format
 msgid "&Use colors"
-msgstr "Po&užít barvy"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:374
@@ -1408,7 +1334,7 @@ msgstr "Po&užít barvy"
 #: printing/calprintyearconfig_base.ui:178
 #, kde-format
 msgid "Print a datetime footer on each page"
-msgstr "Vytisknout zápatí s datem na každou stránku"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:377
@@ -1434,265 +1360,256 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:184
 #, kde-format
 msgid "Print &Footer"
-msgstr "Vytisknout zá&patí"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:120
 #: printing/calprintdefaultplugins.cpp:149
 #: printing/calprintdefaultplugins.cpp:168
 #, kde-format
 msgid "Start date: "
-msgstr "Datum zahájení: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:123
 #: printing/calprintdefaultplugins.cpp:152
 #, kde-format
 msgid "No start date"
-msgstr "Žádné datum počátku"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:128
 #, kde-format
 msgid "End date: "
-msgstr "Datum ukončení: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:131
 #, kde-format
 msgid "Duration: "
-msgstr "Doba trvání: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:134
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
-msgstr[0] "1 hodina "
-msgstr[1] "%1 hodiny "
-msgstr[2] "%1 hodin "
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:137
 #, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
-msgstr[0] "1 minuta "
-msgstr[1] "%1 minuty "
-msgstr[2] "%1 minut "
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:140
 #, kde-format
 msgid "No end date"
-msgstr "Bez koncového data"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:157
 #, kde-format
 msgid "Due date: "
-msgstr "Datum splnění: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:160
 #, kde-format
 msgid "No due date"
-msgstr "Žádný datum splnění"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:285
 #, kde-format
 msgctxt "except for listed dates"
 msgid " except"
-msgstr " kromě"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:292
 #, kde-format
 msgid "Repeats: "
-msgstr "Opakování: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:300
 #, kde-format
 msgid "No reminders"
-msgstr "Žádné upomínky"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:303
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
-msgstr[0] "Upomínka: "
-msgstr[1] "%1 upomínky: "
-msgstr[2] "%1 upomínek: "
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:317
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the start"
-msgstr "%1 před zahájením"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:320
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the start"
-msgstr "%1 po zahájení"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:325
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the end"
-msgstr "%1 před ukončením"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:328
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
-msgstr "%1 po ukončení"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:337
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
-msgstr[0] "1 den"
-msgstr[1] "%1 dny"
-msgstr[2] "%1 dnů"
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:340
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
-msgstr[0] "1 hodina"
-msgstr[1] "%1 hodiny"
-msgstr[2] "%1 hodin"
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:343
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
-msgstr[0] "1 minuta"
-msgstr[1] "%1 minuty"
-msgstr[2] "%1 minut"
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:629
 #, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
-msgstr ", "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:352
 #, kde-format
 msgid "Organizer: "
-msgstr "Organizátor: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:365
 #, kde-format
 msgid "Location: "
-msgstr "Umístění: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:427
 #, kde-format
 msgid "Description:"
-msgstr "Popis:"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:454
 #, kde-format
 msgid "Notes:"
-msgstr "Poznámky:"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:466
 #, kde-format
 msgid "No Subitems"
-msgstr "Žádné podpoložky"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:469
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
-msgstr[0] "1 podpoložka:"
-msgstr[1] "%1 podpoložky:"
-msgstr[2] "%1 podpoložek:"
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:485
 #, kde-format
 msgctxt "no status"
 msgid "none"
-msgstr "žádný"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:487
 #, kde-format
 msgctxt "unknown status"
 msgid "unknown"
-msgstr "neznámý"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:494
 #, kde-format
 msgctxt "subitem start date"
 msgid "Start Date: %1\n"
-msgstr "Datum zahájení: %1\n"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:497
 #, kde-format
 msgctxt "subitem start time"
 msgid "Start Time: %1\n"
-msgstr "Čas zahájení: %1\n"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:503
 #, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
-msgstr "Datum splnění: %1\n"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:509
 #, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
-msgstr "Čas splnění: %1\n"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:513
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
-msgstr "%1: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:520
 #, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
-msgstr "Stav: %1\n"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:522
 #, kde-format
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
-msgstr "Priorita: %1\n"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:523
 #, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
-msgstr "Soukromí: %1\n"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:541
 #, kde-format
 msgid "No Attachments"
-msgstr "Žádné přílohy"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:544
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
-msgstr[0] "1 příloha:"
-msgstr[1] "%1 přílohy:"
-msgstr[2] "%1 příloh:"
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:550
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
-msgstr "  "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:567
 #, kde-format
 msgid "No Attendees"
-msgstr "Žádní účastníci"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:569
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
-msgstr[0] "1 účastník:"
-msgstr[1] "%1 účastníci:"
-msgstr[2] "%1 účastníků:"
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:581
 #, kde-format
@@ -1700,62 +1617,62 @@ msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
 "<reinhold@kainhofer.com> (Participant): Awaiting Response'"
 msgid "%1 (%2): %3"
-msgstr "%1 (%2): %3"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:599
 #, kde-format
 msgid "Status: %1"
-msgstr "Stav: %1"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:603
 #, kde-format
 msgid "Secrecy: %1"
-msgstr "Soukromí: %1"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:609
 #, kde-format
 msgid "Show as: Busy"
-msgstr "Zobrazit jako: zaneprázdněný"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:611
 #, kde-format
 msgid "Show as: Free"
-msgstr "Zobrazit jako: dostupný"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:617
 #, kde-format
 msgid "This task is overdue!"
-msgstr "Lhůta této úlohy vypršela."
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:623
 #, kde-format
 msgid "Settings: "
-msgstr "Nastavení: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:628
 #, kde-format
 msgid "Tags: "
-msgstr "Značky: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:916
 #: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
-msgstr "%1, %2"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:935
 #: printing/calprintpluginbase.cpp:1059
 #, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
-msgstr "%1, %2"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:779
 #, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
-msgstr "Celý den"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:984
 #: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:140
@@ -1768,7 +1685,7 @@ msgstr ""
 #, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
-msgstr "%1–%2 (Týden %3)"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1231
 #, kde-format
@@ -1777,188 +1694,186 @@ msgid ""
 "%1–%2\n"
 "(Week %3)"
 msgstr ""
-"%1–%2\n"
-"(Týden %3)"
 
 #: printing/calprintdefaultplugins.cpp:1416
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1527
 #, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
-msgstr "Shrnutí"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1528
 #, kde-format
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
-msgstr "Datum zahájení"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1529
 #, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
-msgstr "Datum splnění"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1530
 #, kde-format
 msgctxt "@option sort by priority"
 msgid "Priority"
-msgstr "Priorita"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1531
 #, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
-msgstr "Procent dokončení"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1532
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
-msgstr "Značky"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
-msgstr "Vzestupně"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1539
 #, kde-format
 msgctxt "@option sort in descreasing order"
 msgid "Descending"
-msgstr "Sestupně"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1552
 #, kde-format
 msgid "To-do list"
-msgstr "Seznam úloh"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1604
 #: printing/calprintpluginbase.cpp:1697
 #, kde-format
 msgid "%1%"
-msgstr "%1%"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1615
 #, kde-format
 msgid "Priority"
-msgstr "Priorita"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1625
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
-msgstr "Termín"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1635
 #, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
-msgstr "Spustit"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1645
 #, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
-msgstr "Dokončeno"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1655
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
-msgstr "Značky"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:36
 #, kde-format
 msgid "Print &incidence"
-msgstr "Vytisknout &událost"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:41
 #, kde-format
 msgid "Prints an incidence on one page"
-msgstr "Vytiskne událost na jednu stranu"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:138
 #, kde-format
 msgid "Print da&y"
-msgstr "Vytisknout d&en"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:143
 #, kde-format
 msgid "Prints all events of a single day on one page"
-msgstr "Vytiskne všechny události dne na jednu stranu"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:193
 #, kde-format
 msgid "Print &week"
-msgstr "Vytis&knout týden"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:198
 #, kde-format
 msgid "Prints all events of one week on one page"
-msgstr "Vytiskne všechny události týdne na jednu stranu"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:255
 #, kde-format
 msgid "Print mont&h"
-msgstr "Vytisknout &měsíc"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:260
 #, kde-format
 msgid "Prints all events of one month on one page"
-msgstr "Vytiskne všechny události měsíce na jednu stranu"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:310
 #, kde-format
 msgid "Print to-&dos"
-msgstr "Vytisknout ú&lohy"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:315
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
-msgstr "Vytiskne všechny úlohy ve stromově uspořádaném seznamu"
+msgstr ""
 
 #: printing/calprinter.cpp:113
 #, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
-msgstr "Nelze tisknout, nebyl navrácen platný styl tisku."
+msgstr ""
 
 #: printing/calprinter.cpp:113
 #, kde-format
 msgctxt "@title:window"
 msgid "Printing error"
-msgstr "Chyba tisku"
+msgstr ""
 
 #: printing/calprinter.cpp:156
 #, kde-format
 msgctxt "@title:window"
 msgid "Print"
-msgstr "Vytisknout"
+msgstr ""
 
 #: printing/calprinter.cpp:175
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
-msgstr "Styl tisku"
+msgstr ""
 
 #: printing/calprinter.cpp:187
 #, kde-format
 msgctxt "@label"
 msgid "Page &orientation:"
-msgstr "&Orientace stránky:"
+msgstr ""
 
 #: printing/calprinter.cpp:192
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
-msgstr "Nastavit orientaci stránky:"
+msgstr ""
 
 #: printing/calprinter.cpp:194
 #, kde-format
@@ -1973,25 +1888,25 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Default Orientation of Selected Style"
-msgstr "Použít výchozí orientaci vybraného stylu"
+msgstr ""
 
 #: printing/calprinter.cpp:198
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
-msgstr "Použít výchozí nastavení tiskárny"
+msgstr ""
 
 #: printing/calprinter.cpp:199
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Portrait"
-msgstr "Na výšku"
+msgstr ""
 
 #: printing/calprinter.cpp:200
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
-msgstr "Na šířku"
+msgstr ""
 
 #: printing/calprinter.cpp:222
 #, kde-format
@@ -2012,7 +1927,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "&Preview"
-msgstr "Ná&hled"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintincidenceconfig_base.ui:17
@@ -2027,14 +1942,6 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print incidence options:</span></p></body></html>"
 msgstr ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Možnosti tisku událostí:</span></p></body></html>"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:33
@@ -2054,7 +1961,7 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:39
 #, kde-format
 msgid "Detai&ls (visiblility, secrecy, etc.)"
-msgstr "Podrobnosti (vidite&lnost, utajení, atd.)"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:46
@@ -2073,13 +1980,13 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:52
 #, kde-format
 msgid "&Attendees"
-msgstr "Úč&astníci"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:59
 #, kde-format
 msgid "Print the notes"
-msgstr "Vytisknout poznámky"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:62
@@ -2092,13 +1999,13 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:65
 #, kde-format
 msgid "&Notes, subitems"
-msgstr "Pozná&mky, podpoložky"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:72
 #, kde-format
 msgid "Print the attachments"
-msgstr "Vytisknout přílohy"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
@@ -2112,7 +2019,7 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:78
 #, kde-format
 msgid "Attach&ments"
-msgstr "Přílo&hy"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:97
@@ -2142,26 +2049,18 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print journal options:</span></p></body></html>"
 msgstr ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Možnosti tisku deníku:</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mAllJournals)
 #: printing/calprintjournalconfig_base.ui:30
 #, kde-format
 msgid "&All journal entries"
-msgstr "Všechny zázn&amy deníku"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mRangeJournals)
 #: printing/calprintjournalconfig_base.ui:43
 #, kde-format
 msgid "Date &range:"
-msgstr "Č&asové období:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintmonthconfig_base.ui:17
@@ -2176,14 +2075,6 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print month options:</span></p></body></html>"
 msgstr ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Možnosti tisku měsíce:</span></p></body></html>"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, mFromMonth)
@@ -2195,15 +2086,12 @@ msgid ""
 "This option defines the first month to be printed. Use the option <i>End "
 "month</i> to define the last month in this range."
 msgstr ""
-"Přejete-li si vytisknout více měsíců najednou, můžete zadat rozsah měsíců. "
-"Tato volba udává první měsíc, který bude vytištěn. Použijte volbu <i>Koncový "
-"měsíc</i> pro určení posledního měsíce v rozsahu."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
 #, kde-format
 msgid "Sta&rt month:"
-msgstr "Počáteční mě&síc:"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mFromMonth)
 #: printing/calprintmonthconfig_base.ui:43
@@ -2236,15 +2124,12 @@ msgid ""
 "This option defines the last month to be printed. Use the option <i>Start "
 "month</i> to define the first month in this range."
 msgstr ""
-"Přejete-li si vytisknout více měsíců najednou, můžete zadat rozsah měsíců. "
-"Tato volba udává poslední měsíc, který bude vytištěn. Použijte volbu "
-"<i>Počáteční měsíc</i> pro určení prvního měsíce v rozsahu."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintmonthconfig_base.ui:72
 #, kde-format
 msgid "&End month:"
-msgstr "Kon&cový měsíc:"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mToMonth)
 #: printing/calprintmonthconfig_base.ui:82
@@ -2271,7 +2156,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:195
 #, kde-format
 msgid "Print daily recurring items"
-msgstr "Vytisknout denně se opakující položky"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:198
@@ -2281,21 +2166,18 @@ msgid ""
 "events in the print. They take a lot of space and make the month view "
 "needlessly complicated."
 msgstr ""
-"Touto volbou je možné při tisku vynechat denně se opakující úlohy a "
-"události. Zabírají spoustu místa a dělají měsíční pohled zbytečně "
-"komplikovaným."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:201
 #, kde-format
 msgid "Include daily re&curring to-dos and events"
-msgstr "Zahrnout denně se opakují&cí události a úlohy"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:208
 #, kde-format
 msgid "Print weekly recurring items"
-msgstr "Vytisknout týdně se opakující položky"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:211
@@ -2304,101 +2186,99 @@ msgid ""
 "Similar to \"Print daily recurring to-dos and events\". Weekly to-dos and "
 "events will be omitted when making a print of the selected month."
 msgstr ""
-"Podobné jako \"Vytisknout denně opakující se události a úlohy\". Týdně se "
-"opakující úlohy a události budou při tisku vybraného měsíce vynechány."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:214
 #, kde-format
 msgid "Include weekl&y recurring to-dos and events"
-msgstr "Zahrnout týdně se opaku&jící události a úlohy"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:230
 #, kde-format
 msgid "Print week numbers"
-msgstr "Vytisknout čísla týdnů"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:233
 #, kde-format
 msgid "Enable this to print week numbers at the left of each row."
-msgstr "Povolte pro tisk čísel týdnů nalevo v každém řádku."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:236
 #, kde-format
 msgid "Print week &numbers"
-msgstr "Vytisk&nout čísla týdnů"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:142
 #, kde-format
 msgid "This printing style does not have any configuration options."
-msgstr "Tento styl tisku nemá žádné možnosti nastavení."
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:298
 #, kde-format
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
-msgstr ","
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:310
 #, kde-format
 msgid "Holiday"
-msgstr "Svátek"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:612
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
-msgstr "vytisknuto: %1"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:921
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
-msgstr "%1-%2 %3"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:927
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
-msgstr "%1-%2 %3, %4"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:994
 #, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
-msgstr "%1, %2 %3"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1120
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
-msgstr "%1 (Termín: %2)"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1125
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
-msgstr "%1 (Termín: %2)"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1132
 #, kde-format
 msgid "To-do: %1"
-msgstr "Úloha: %1"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1863
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
-msgstr "%1 %2–%3"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1869
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
-msgstr "%1 %2–%3 %4"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprinttodoconfig_base.ui:17
@@ -2413,14 +2293,6 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print to-dos options:</span></p></body></html>"
 msgstr ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Možnosti tisku úloh:</span></p></body></html>"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mTitleLabel)
 #. i18n: ectx: property (toolTip), widget (QLineEdit, mTitle)
@@ -2428,7 +2300,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:42
 #, kde-format
 msgid "Name for this to-do list"
-msgstr "Název pro tento seznamu úloh"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mTitleLabel)
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, mTitle)
@@ -2443,25 +2315,25 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:32
 #, kde-format
 msgid "&Title:"
-msgstr "&Název:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, mTitle)
 #: printing/calprinttodoconfig_base.ui:48
 #, kde-format
 msgid "To-do List"
-msgstr "Seznam úloh"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprinttodoconfig_base.ui:57
 #, kde-format
 msgid "To-dos to Print"
-msgstr "Úlohy k vytištění"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintAll)
 #: printing/calprinttodoconfig_base.ui:63
 #, kde-format
 msgid "Print &all to-dos"
-msgstr "V&ytisknout všechny úlohy"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
 #: printing/calprinttodoconfig_base.ui:73
@@ -2473,7 +2345,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:80
 #, kde-format
 msgid "Print only to-dos due in the &range:"
-msgstr "Vytis&knout pouze úlohy k dokončení v období:"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
@@ -2486,13 +2358,12 @@ msgstr ""
 #, kde-format
 msgid "Check this option if you want to see the item priorities printed."
 msgstr ""
-"Zaškrtněte tuto volbu, pokud si přejete, aby byly vytištěny priority položek."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
 #, kde-format
 msgid "&Priority"
-msgstr "&Priorita"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:274
@@ -2512,7 +2383,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:280
 #, kde-format
 msgid "&Start date"
-msgstr "&Datum zahájení"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
@@ -2530,7 +2401,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:293
 #, kde-format
 msgid "Du&e date"
-msgstr "D&atum splnění"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
@@ -2550,37 +2421,37 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:309
 #, kde-format
 msgid "Percentage co&mpleted"
-msgstr "Pro&cent dokončeno"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
 #: printing/calprinttodoconfig_base.ui:328
 #, kde-format
 msgid "Sorting Options"
-msgstr "Volby třídění"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, sortFieldLabel)
 #: printing/calprinttodoconfig_base.ui:339
 #, kde-format
 msgid "Sort field:"
-msgstr "Třídící pole:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, sortDirectionLabel)
 #: printing/calprinttodoconfig_base.ui:366
 #, kde-format
 msgid "Sort direction:"
-msgstr "Směr třídění:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mConnectSubTodos)
 #: printing/calprinttodoconfig_base.ui:397
 #, kde-format
 msgid "Co&nnect sub-to-dos with its parent"
-msgstr "Propo&jit podúlohy se svými předky"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
 #, kde-format
 msgid "Stri&ke out completed to-do summaries"
-msgstr "Přeškrtn&out souhrn dokončených úloh"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintweekconfig_base.ui:17
@@ -2595,20 +2466,12 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print week options:</span></p></body></html>"
 msgstr ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Možnosti tisku týdne:</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintweekconfig_base.ui:212
 #, kde-format
 msgid "Print date &range as Filofax format, one week per page"
-msgstr "Vytiskne rozsah dat ve formátu Filofax, jeden týden na stranu"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintweekconfig_base.ui:222
@@ -2628,7 +2491,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:232
 #, kde-format
 msgid "Print as split wee&k view"
-msgstr "Vytis&knout jako rozdělený pohled na týden"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintyearconfig_base.ui:14
@@ -2642,31 +2505,31 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:21
 #, kde-format
 msgid "Date Range"
-msgstr "Rozsah data"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mYearLabel)
 #: printing/calprintyearconfig_base.ui:32
 #, kde-format
 msgid "&Year:"
-msgstr "&Rok:"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
 #: printing/calprintyearconfig_base.ui:99
 #, kde-format
 msgid "General"
-msgstr "Obecné"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mPagesLabel)
 #: printing/calprintyearconfig_base.ui:105
 #, kde-format
 msgid "Num&ber of pages:"
-msgstr "Počet &stránek:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mSubDaysLabel)
 #: printing/calprintyearconfig_base.ui:121
 #, kde-format
 msgid "Show &sub-day events as:"
-msgstr "Zobrazovat událo&sti v rámci dne jako:"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2674,7 +2537,7 @@ msgstr "Zobrazovat událo&sti v rámci dne jako:"
 #: printing/calprintyearconfig_base.ui:165
 #, kde-format
 msgid "Text"
-msgstr "Text"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2682,117 +2545,117 @@ msgstr "Text"
 #: printing/calprintyearconfig_base.ui:170
 #, kde-format
 msgid "Time Boxes"
-msgstr "Časové rámečky"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mHolidaysLabel)
 #: printing/calprintyearconfig_base.ui:151
 #, kde-format
 msgid "Show &holidays as:"
-msgstr "Zobrazovat svátky ja&ko:"
+msgstr ""
 
 #: printing/journalprint.cpp:104
 #, kde-format
 msgctxt "Description - date"
 msgid "%1 - %2"
-msgstr "%1 - %2"
+msgstr ""
 
 #: printing/journalprint.cpp:126
 #, kde-format
 msgid "Person: %1"
-msgstr "Osoba: %1"
+msgstr ""
 
 #: printing/journalprint.cpp:156
 #, kde-format
 msgid "Journal entries"
-msgstr "Položky deníku"
+msgstr ""
 
 #: printing/journalprint.h:32
 #, kde-format
 msgid "Print &journal"
-msgstr "Vytisknout &deník"
+msgstr ""
 
 #: printing/journalprint.h:37
 #, kde-format
 msgid "Prints all journals for a given date range"
-msgstr "Vytisknout všechny deníky z daného období"
+msgstr ""
 
 #: printing/yearprint.h:31
 #, kde-format
 msgid "Print &year"
-msgstr "Vytis&knout rok"
+msgstr ""
 
 #: printing/yearprint.h:36
 #, kde-format
 msgid "Prints a calendar for an entire year"
-msgstr "Vytisknout kalendář pro celý rok"
+msgstr ""
 
 #: utils.cpp:289
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
-msgstr "Vybrat kalendář"
+msgstr ""
 
 #: utils.cpp:290
 #, kde-format
 msgid "Select the calendar where this item will be stored."
-msgstr "Vyberte kalendář, kam bude položka uložena."
+msgstr ""
 
 #: utils.cpp:395
 #, kde-format
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
-msgstr "%1 (Výchozí kalendář)"
+msgstr ""
 
 #: utils.cpp:406
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
-msgstr "Virtuální"
+msgstr ""
 
 #: utils.cpp:408
 #, kde-format
 msgid "Folder type:"
-msgstr "Typ složky:"
+msgstr ""
 
 #: utils.cpp:418
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
-msgstr "žádný"
+msgstr ""
 
 #: utils.cpp:421
 #, kde-format
 msgid "Content type:"
-msgstr "Typ obsahu:"
+msgstr ""
 
 #: utils.cpp:428
 #, kde-format
 msgid "Rights:"
-msgstr "Práva:"
+msgstr ""
 
 #: utils.cpp:431
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
-msgstr "pouze ke čtení"
+msgstr ""
 
 #: utils.cpp:433
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
-msgstr "čtení+zápis"
+msgstr ""
 
 #: utils.cpp:441
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
-msgstr "vše"
+msgstr ""
 
 #: utils.cpp:444
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
-msgstr "audio"
+msgstr ""
 
 #: utils.cpp:446
 #, kde-format
@@ -2804,7 +2667,7 @@ msgstr ""
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
-msgstr "e-mail"
+msgstr ""
 
 #: utils.cpp:450
 #, kde-format
@@ -2816,32 +2679,32 @@ msgstr ""
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
-msgstr "jiný"
+msgstr ""
 
 #: utils.cpp:456
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
-msgstr "žádný"
+msgstr ""
 
 #: utils.cpp:459
 #, kde-format
 msgid "Blocked Reminders:"
-msgstr "Blokované upomínky:"
+msgstr ""
 
 #: utils.cpp:524
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
-msgstr "^%1"
+msgstr ""
 
 #: utils.cpp:526
 #, kde-format
 msgid "%1 (%2)"
-msgstr "%1 (%2)"
+msgstr ""
 
 #: utils.cpp:531
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
-msgstr "^%1 \\(.*\\)"
+msgstr ""
