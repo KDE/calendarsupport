@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-09-26 06:16+0300\n"
+"PO-Revision-Date: 2023-11-02 13:11+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.2\n"
 "(http: //www.transifex.com/projects/p/kdepim-k-tr/language/tr/)\n"
 "X-POOTLE-MTIME: 1413102218.000000\n"
 
@@ -949,7 +949,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:24
 #, kde-format
 msgid "Date && Time Range"
-msgstr "Tarih ve Saat Aralığı"
+msgstr "Tarih ve Saat Erimi"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (toolTip), widget (KDateComboBox, mFromDate)
@@ -979,8 +979,8 @@ msgid ""
 "this option and the <i>End date</i> option. This option is used to define "
 "the start date."
 msgstr ""
-"Bir kerede birden fazla gün yazdırmak istiyorsanız, bu seçenek ve <i>Bitiş "
-"tarihi</i> seçeneği ile bir tarih aralığı tanımlayabilirsiniz. Bu seçenek, "
+"Bir kerede birden fazla gün yazdırmak istiyorsanız bu seçenek ve <i>Bitiş "
+"tarihi</i> seçeneği ile bir tarih erimi tanımlayabilirsiniz. Bu seçenek, "
 "başlangıç tarihini tanımlamak için kullanılır."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
@@ -1076,8 +1076,8 @@ msgid ""
 "this option and the <i>Start date</i> option. This option is used to define "
 "the end date."
 msgstr ""
-"Birden fazla günü bastırmak istiyorsanız, bu seçenekle ve <i>Başlangıç "
-"tarihi</i> seçeneği ile bir tarih aralığı tanımlayabilirsiniz. Bu seçenek "
+"Birden fazla günü bastırmak istiyorsanız bu seçenekle ve <i>Başlangıç "
+"tarihi</i> seçeneği ile bir tarih erimi tanımlayabilirsiniz. Bu seçenek "
 "bitiş tarihini tanımlamak için kullanılır."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
@@ -1227,7 +1227,7 @@ msgid ""
 "&#8220;Confidential&#8221;"
 msgstr ""
 "Erişim düzeyi &#8220;Gizli&#8221; olarak ayarlanan ögeleri dışarıda tutmak "
-"için bu seçeneği imleyin"
+"için bu seçeneği işaretleyin"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:251
@@ -2225,19 +2225,19 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Günlük yazdırma seçenekleri:</span></p></body></html>"
+"weight:600;\">Günce yazdırma seçenekleri:</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mAllJournals)
 #: printing/calprintjournalconfig_base.ui:30
 #, kde-format
 msgid "&All journal entries"
-msgstr "&Tüm günlük girdileri"
+msgstr "&Tüm günce girdileri"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mRangeJournals)
 #: printing/calprintjournalconfig_base.ui:43
 #, kde-format
 msgid "Date &range:"
-msgstr "Tarih ar&alığı:"
+msgstr "Tarih &erimi:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintmonthconfig_base.ui:17
@@ -2795,17 +2795,17 @@ msgstr "Kişi: %1"
 #: printing/journalprint.cpp:156
 #, kde-format
 msgid "Journal entries"
-msgstr "Günlük girdileri"
+msgstr "Günce girdileri"
 
 #: printing/journalprint.h:32
 #, kde-format
 msgid "Print &journal"
-msgstr "Günlükleri girdilerini ya&zdır"
+msgstr "Günceyi ya&zdır"
 
 #: printing/journalprint.h:37
 #, kde-format
 msgid "Prints all journals for a given date range"
-msgstr "Verilen bir tarih aralığı için tüm günlük girdilerini yazdırır"
+msgstr "Verilen bir tarih erimi için tüm günce girdilerini yazdırır"
 
 #: printing/yearprint.h:31
 #, kde-format
