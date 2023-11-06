@@ -64,7 +64,7 @@ void CalPrintYear::doLoadConfig()
 {
     CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
-        KConfigGroup config(mConfig, "Yearprint");
+        KConfigGroup config(mConfig, QLatin1String("Yearprint"));
         mYear = config.readEntry("Year", QDate::currentDate().year());
         mPages = config.readEntry("Pages", 1);
         mSubDaysEvents = config.readEntry("ShowSubDayEventsAs", static_cast<int>(TimeBoxes));
@@ -79,7 +79,7 @@ void CalPrintYear::doSaveConfig()
 
     readSettingsWidget();
     if (mConfig) {
-        KConfigGroup config(mConfig, "Yearprint");
+        KConfigGroup config(mConfig, QLatin1String("Yearprint"));
         config.writeEntry("Year", mYear);
         config.writeEntry("Pages", mPages);
         config.writeEntry("Pages", mPages);

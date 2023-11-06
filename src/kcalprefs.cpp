@@ -108,9 +108,9 @@ void KCalPrefs::fillMailDefaults()
 
 void KCalPrefs::usrRead()
 {
-    KConfigGroup generalConfig(config(), "General");
+    KConfigGroup generalConfig(config(), QLatin1String("General"));
 
-    KConfigGroup defaultCalendarConfig(config(), "Calendar");
+    KConfigGroup defaultCalendarConfig(config(), QLatin1String("Calendar"));
     d->mDefaultCalendarId = defaultCalendarConfig.readEntry("Default Calendar", -1);
 
 #if 0
@@ -127,7 +127,7 @@ void KCalPrefs::usrRead()
 
 bool KCalPrefs::usrSave()
 {
-    KConfigGroup generalConfig(config(), "General");
+    KConfigGroup generalConfig(config(), QLatin1String("General"));
 
 #if 0
     if (mRememberRetrievePw) {
@@ -138,7 +138,7 @@ bool KCalPrefs::usrSave()
     }
 #endif
 
-    KConfigGroup defaultCalendarConfig(config(), "Calendar");
+    KConfigGroup defaultCalendarConfig(config(), QLatin1String("Calendar"));
     defaultCalendarConfig.writeEntry("Default Calendar", defaultCalendarId());
 
     return KConfigSkeleton::usrSave();

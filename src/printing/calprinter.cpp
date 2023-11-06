@@ -86,7 +86,7 @@ void CalPrinter::print(int type, QDate fd, QDate td, const KCalendarCore::Incide
     }
     QPointer<CalPrintDialog> printDialog = new CalPrintDialog(type, mPrintPlugins, mParent, mUniqItem);
 
-    KConfigGroup grp(mConfig, ""); // orientation setting isn't in a group
+    KConfigGroup grp(mConfig, QLatin1String("")); // orientation setting isn't in a group
     printDialog->setOrientation(CalPrinter::ePrintOrientation(grp.readEntry("Orientation", 1)));
     printDialog->setPreview(preview);
     setDateRange(fd, td);
@@ -131,7 +131,7 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientati
 
     if (preview) {
         QPointer<QPrintPreviewDialog> printPreview = new QPrintPreviewDialog(&printer);
-        new KWindowStateSaver(printPreview.data(), "CalendarPrintPreviewDialog");
+        new KWindowStateSaver(printPreview.data(), QLatin1String("CalendarPrintPreviewDialog"));
         connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this, [selectedStyle, &printer]() {
             selectedStyle->doPrint(&printer);
         });
