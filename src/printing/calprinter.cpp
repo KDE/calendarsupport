@@ -86,7 +86,7 @@ void CalPrinter::print(int type, QDate fd, QDate td, const KCalendarCore::Incide
     }
     QPointer<CalPrintDialog> printDialog = new CalPrintDialog(type, mPrintPlugins, mParent, mUniqItem);
 
-    KConfigGroup grp(mConfig, QLatin1String("")); // orientation setting isn't in a group
+    KConfigGroup grp(mConfig, QStringLiteral("")); // orientation setting isn't in a group
     printDialog->setOrientation(CalPrinter::ePrintOrientation(grp.readEntry("Orientation", 1)));
     printDialog->setPreview(preview);
     setDateRange(fd, td);
