@@ -1,6 +1,6 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Tommi Nieminen <translator@legisign.org>, 2010, 2011, 2012, 2013, 2015, 2016, 2018, 2020, 2021, 2022.
+# Tommi Nieminen <translator@legisign.org>, 2010, 2011, 2012, 2013, 2015, 2016, 2018, 2020, 2021, 2022, 2023.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2012, 2013, 2014, 2015, 2016.
 #
 # KDE Finnish translation sprint participants:
@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2022-09-07 17:56+0300\n"
+"PO-Revision-Date: 2023-09-29 09:37+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
-"Language-Team: KDE\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2013-01-13 20:43:22+0000\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -178,12 +178,10 @@ msgid "Archive &file:"
 msgstr "&Arkistotiedosto:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|iCalendar-tiedostot"
+msgstr "iCalendar-tiedostot (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -334,12 +332,10 @@ msgid "There are no items before %1"
 msgstr "Ei ole vanhempia tietueita kuin %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Arkisto"
+msgstr "Arkisto"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -351,8 +347,7 @@ msgstr ""
 "ovat vanhempia kuin %1? Seuraavat poistettaisiin:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Poista vanhat tietueet"
