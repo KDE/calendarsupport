@@ -9,76 +9,71 @@
 # Þröstur Svanbergsson <throstur@bylur.net>, 2004.
 # Arnar Leosson <leosson@frisurf.no>, 2004, 2005.
 # Sveinn í Felli <sveinki@nett.is>, 2009, 2022.
+# SPDX-FileCopyrightText: 2023 Guðmundur Erlingsson <gudmundure@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2022-12-11 13:00+0000\n"
-"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic\n"
+"PO-Revision-Date: 2023-11-07 11:29+0000\n"
+"Last-Translator: Guðmundur Erlingsson <gudmundure@gmail.com>\n"
+"Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.1\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 "\n"
 
 #: archivedialog.cpp:43
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive/Delete Past Events and To-dos"
-msgstr "Vista/eyða gömlum atburðum"
+msgstr "Geyma/eyða liðnum viðburðum og verkefnum"
 
 #: archivedialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "&Archive"
-msgstr "S&afnskrá"
+msgstr "S&afnvista"
 
 #: archivedialog.cpp:62
-#, fuzzy, kde-kuit-format
+#, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Archiving saves old items into the given file and then deletes them in the "
 "current calendar. If the archive file already exists they will be added. "
 "(<link url=\"#\">How to restore</link>)"
 msgstr ""
-"Gamlir atburðir verða vistaðir í uppgefnu skránni og síðan eytt frá "
-"núverandi dagatali. Ef safnskráin finnst þegar fyrir verður atburðunum bætt "
-"við. (<a href=\"whatsthis:Til að bæta safnskrá við dagatalið þitt, notaðu "
-"&quot;Sameina dagbækur&quot; aðgerðina. Þú getur skoðað safnskrá með því að "
-"opna hana í KOrganizer eins og hvert annað dagatal. Hún er ekki vistuð í "
-"sérstöku sniði, heldur sem vCalender,\">Hvernig á að endurheimta</a>)"
+"Safnvistun geymir gömul atriði í tilgreindri skrá og eyðir þeim úr núverandi "
+"dagatali. Ef safnskráin er til nú þegar verður atriðunumbætt við. (<link url="
+"\"#\">Hvernig er hægt að endurheimta</link>)"
 
 #: archivedialog.cpp:67
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "In order to add an archive to your calendar, use the Merge Calendar "
 "function. You can view an archive by opening it like you would any other "
 "calendar. It is not saved in a special format, but as vCalendar."
 msgstr ""
-"Gamlir atburðir verða vistaðir í uppgefnu skránni og síðan eytt frá "
-"núverandi dagatali. Ef safnskráin finnst þegar fyrir verður atburðunum bætt "
-"við. (<a href=\"whatsthis:Til að bæta safnskrá við dagatalið þitt, notaðu "
-"&quot;Sameina dagbækur&quot; aðgerðina. Þú getur skoðað safnskrá með því að "
-"opna hana í KOrganizer eins og hvert annað dagatal. Hún er ekki vistuð í "
-"sérstöku sniði, heldur sem vCalender,\">Hvernig á að endurheimta</a>)"
+"Ef þú vilt bæta safnskrá við dagatalið þitt skaltu nota aðgerðina Sameina "
+"dagatal. Þú getur skoðað safnskrá með því að opna hana rétt eins og hvert "
+"annað dagatal. Hún er ekki vistuð á sérstöku sniði heldur sem vCalendar."
 
 #: archivedialog.cpp:82
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:radio"
 msgid "Archive now items older than:"
-msgstr "Vista atburði eldri en:"
+msgstr "Safnvista atriði eldri en:"
 
 #: archivedialog.cpp:83
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr ""
+msgstr "Leyfa heildarsafnvistun eða -eyðingu eldri atriða "
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -88,77 +83,81 @@ msgid ""
 "be archived or purged. The items will be archived unless the \"Delete only\" "
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
+"Ef hakað er í þennan reit verða viðburðir og verkefni sem eru eldri en "
+"tiltekið aldursviðmið safnvistuð eða þeim eytt. Atriðin verða safnvistuð "
+"nema valkosturinn \"Bara eyða\" sé valinn, þá verður atriðunum eytt og verða "
+"ekki vistuð."
 
 #: archivedialog.cpp:93
-#, fuzzy, kde-format
-#| msgid "Sets the due time for this to-do."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the one time archiving cut-off date"
-msgstr "Setur skilatíma þessa verkþáttar."
+msgstr "Velja dagsetningarmörk fyrir heildarsafnvistun"
 
 #: archivedialog.cpp:95
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "The date before which items should be archived. All older events and to-dos "
 "will be saved and deleted, the newer (and events exactly on that date) will "
 "be kept."
 msgstr ""
-"Dagurinn á undan þeim sem á að vista. Allir eldri atburðir verða vistaðir og "
-"eytt frá dagatalinu. Nýrri atburðir, og þeir á uppgefna deginum, verða "
-"látnir í friði."
+"Dagurinn á undan deginum þegar atriði eru safnvistuð. Allir viðburðir og "
+"verkefni eldri en það verða vistuð og eytt úr dagatalinu, en nýrri viðburðir "
+"(og viðburðir sem lenda akkúrat á þeim degi) fá að halda sér."
 
 #: archivedialog.cpp:107
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:radio"
 msgid "Automaticall&y archive items older than:"
-msgstr "&Sjálfkrafa vista atburði eldri en:"
+msgstr "&Safnvista sjálfkrafa atriði eldri en:"
 
 #: archivedialog.cpp:108
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable automatic archiving or purging of older items"
-msgstr "Virkja sjálfvirka vistun af dagatali"
+msgstr "Leyfa sjálfvirka safnvistun eða eyðingu eldri atriða"
 
 #: archivedialog.cpp:110
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "If this feature is enabled, the application will regularly check if events "
 "and to-dos have to be archived; this means you will not need to use this "
 "dialog box again, except to change the settings."
 msgstr ""
-"Ef þetta er valið, mun KOrganizer reglulega skoða ef á að vista atburði; það "
-"þýðir þá að þú þarft ekki að nota þennan glugga aftur, burtséð frá ef þú "
-"vilt gera breytingar á stillingunum."
+"Ef þetta er valið mun forritið kanna reglulega hvort safnvista þurfi "
+"viðburði og verkefni. Þetta þýðir að þú þarft ekki að nota þennan glugga "
+"aftur, nema til að breyta þessum stillingum."
 
 #: archivedialog.cpp:123
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the archival age in days, weeks or months"
-msgstr ""
+msgstr "Velja safnvistunaraldur í dögum, vikum eða mánuðum"
 
 #: archivedialog.cpp:125
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "The age of the events and to-dos to archive. All older items will be saved "
 "and deleted, the newer will be kept."
 msgstr ""
-"Aldur atburða sem á að vista. Allir eldri atburðir verða vistaðir og eytt "
-"frá dagatali, nýrri atburðir verða látnir í friði."
+"Aldur viðburða og verkefna sem á að safnvista. Öll eldri atriði verða vistuð "
+"og þeim eytt, en nýrri atriði halda sér."
 
 #: archivedialog.cpp:130
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the units for the automatic archive age"
-msgstr ""
+msgstr "Velja einingarnar fyrir sjálfvirkan safnvistunaraldur"
 
 #: archivedialog.cpp:131
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Select the time units (days, weeks or months) for automatic archiving."
 msgstr ""
+"Velja tímaeiningarnar (daga, viku eða mánuði) fyrir sjálfvirka safnvistun."
 
 #: archivedialog.cpp:133
 #, kde-format
@@ -185,22 +184,19 @@ msgid "Archive &file:"
 msgstr "Safns&krá:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|dagatalsskrár"
+msgstr "iCalendar-skrár (*.ics)"
 
 #: archivedialog.cpp:145
-#, fuzzy, kde-format
-#| msgid "Export to HTML with every save"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the location of the archive"
-msgstr "Flytja út í HTML við hverja vistun"
+msgstr "Velja staðsetningu safnskrárinnar"
 
 #: archivedialog.cpp:147
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "The path of the archive file. The events and to-dos will be appended to the "
@@ -208,42 +204,40 @@ msgid ""
 "modified or deleted. You can later load or merge the file like any other "
 "calendar. It is not saved in a special format, it uses the iCalendar format."
 msgstr ""
-"Slóðin að safnskránni. Atburðunum verður bætt við safnskránna, Eldri "
-"atburðum sem finnast fyrir í skránni verður ekki eytt eða breytt. Þú getur "
-"seinna hlaðið inn eða sameinað skránna eins og hvaða annað dagatal. Hún er "
-"ekki vistuð í sérstöku sniði, heldur sem vCalender,"
+"Slóðin á safnskrána. Viðburðunum og verkefnunum verður bætt við safnskrána "
+"og viðburðum sem eru nú þegar í skránni verður hvorki breytt né eytt. Þú "
+"getur hlaðið skránni inn síðar eða sameinað hana eins og hvert annað "
+"dagatal. Hún er ekki vistuð á sérstöku sniði heldur sem iCalender."
 
 #: archivedialog.cpp:156
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:group"
 msgid "Type of Items to Archive"
-msgstr "Tegund viðburða sem á að vista"
+msgstr "Tegund atriða sem á að safnvista"
 
 #: archivedialog.cpp:158
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Here you can select which items should be archived. Events are archived if "
 "they ended before the date given above; to-dos are archived if they were "
 "finished before the date."
 msgstr ""
-"Hér velur þú hvaða viðburði á að vista. Atburðir verða vistaðir ef þeim "
-"líkur áður en uppgefna dagsetning að ofan; verkþættir eru vistaðir ef þeim "
-"er lokið áður en dagsetningin."
+"Hér getur þú valið hvaða atriði á að safnvista. Viðburðir verða vistaðir ef "
+"þeim lauk fyrir dagsetninguna sem er gefin hér fyrir ofan. Verkefni eru "
+"safnvistuð ef þeim lauk fyrir dagsetninguna."
 
 #: archivedialog.cpp:166
-#, fuzzy, kde-format
-#| msgid "Archive events"
+#, kde-format
 msgctxt "@option:check"
 msgid "Archive &Events"
-msgstr "Afrita gamla atburði í safnskrá"
+msgstr "Safnvista við&burði"
 
 #: archivedialog.cpp:167
-#, fuzzy, kde-format
-#| msgid "Archive events"
+#, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge events"
-msgstr "Afrita gamla atburði í safnskrá"
+msgstr "Safnvista eða eyða viðburðum"
 
 #: archivedialog.cpp:168
 #, kde-format
@@ -252,36 +246,33 @@ msgid ""
 "Select this option to archive events if they ended before the date given "
 "above."
 msgstr ""
+"Veldu þennan valkost til að safnvista viðburði ef þeim lauk fyrir "
+"dagsetninguna sem er gefin hér fyrir ofan."
 
 #: archivedialog.cpp:171
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
-msgstr "Eyða kláruðum"
+msgstr "Safnvista loknum &verkefnum"
 
 #: archivedialog.cpp:172
-#, fuzzy, kde-format
-#| msgid "Hide co&mpleted to-dos"
+#, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge completed to-dos"
-msgstr "Fela &kláraða verkþætti"
+msgstr "Safnvista eða eyða loknum verkefnum"
 
 #: archivedialog.cpp:174
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this option if you want to have to-dos on the print, placed by "
-#| "their due date."
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Select this option to archive to-dos if they were completed before the date "
 "given above."
 msgstr ""
-"Hakaðu við þennan valkost ef þú vilt hafa verkþætti með í útprentun, raðað "
-"upp eftir skiladegi þeirra."
+"Veldu þennan valkost til að safnvista verkefni ef þeim var lokið fyrir "
+"dagsetninguna sem gefin er hér fyrir ofan."
 
 #: archivedialog.cpp:178
-#, fuzzy, kde-format
-#| msgid "&Delete only, do not save"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Delete only, do not save"
 msgstr "&Bara eyða, ekki vista"
@@ -290,35 +281,35 @@ msgstr "&Bara eyða, ekki vista"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Purge the old items without saving them"
-msgstr ""
+msgstr "Eyða gömlum atriðum án þess að vista þau"
 
 #: archivedialog.cpp:181
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Select this option to delete old events and to-dos without saving them. It "
 "is not possible to recover the events later."
 msgstr ""
-"Veldu þennan valkost til að eyða gömlum atburðum án þess að vista þá. Það "
-"verður ekki hægt að endurvekja þá seinna."
+"Veldu þennan valkost til að eyða gömlum viðburðum og verkefnum án þess að "
+"vista. Það verður ekki hægt að endurheimta þau síðar."
 
 #: archivedialog.cpp:242
-#, fuzzy, kde-format
-#| msgid "The archive file name is not valid.\n"
+#, kde-format
 msgctxt "@info"
 msgid "The archive file name is not valid."
-msgstr "Nafn safnskráarinnar er ekki heimilt.\n"
+msgstr "Heiti safnskrárinnar er ekki gilt."
 
 #: attachmenthandler.cpp:94
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
-msgstr ""
+msgstr "Ekkert viðhengi sem kallast \"%1\" fannst í uppákomunni."
 
 #: attachmenthandler.cpp:105
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
 msgstr ""
+"Viðhengið \"%1\" er veftengill sem er ekki aðgengilegur úr þessari tölvu. "
 
 #: attachmenthandler.cpp:121
 #, kde-format
@@ -326,11 +317,13 @@ msgid ""
 "The calendar invitation stored in this email message is broken in some way. "
 "Unable to continue."
 msgstr ""
+"Boðið í dagatalið sem er geymt í þessum tölvupósti er gallað á einhvern hátt."
+"Ekki er hægt að halda áfram."
 
 #: attachmenthandler.cpp:178 attachmenthandler.cpp:232
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
-msgstr ""
+msgstr "Get ekki búið til bráðabirgðaskrá fyrir viðhengið."
 
 #: attachmenthandler.cpp:211
 #, kde-format
@@ -340,35 +333,33 @@ msgstr "Vista viðhengi"
 #: cellitem.cpp:38
 #, kde-kuit-format
 msgid "<placeholder>undefined</placeholder>"
-msgstr ""
+msgstr "<placeholder>óskilgreint</placeholder>"
 
 #: eventarchiver.cpp:126
-#, fuzzy, kde-format
+#, kde-format
 msgid "There are no items before %1"
-msgstr "Það eru engir atburðir á undan %1"
+msgstr "Það eru engin atriði fyrir %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "S&afnskrá"
+msgstr "Safnskrá"
 
 #: eventarchiver.cpp:155
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
-"Eyða öllum atburðum á undan %1 án þess að vista?\n"
-"Eftirfarandi atburðum verður eytt:"
+"Eyða öllum atriðum fyrir %1 án þess að vista?\n"
+"Eftirfarandi atriðum verður eytt:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
-msgstr "Eyða gömlum atburðum"
+msgstr "Eyða gömlum atriðum"
 
 #: eventarchiver.cpp:269
 #, kde-format
@@ -377,37 +368,34 @@ msgid "Reason unknown"
 msgstr "Óþekkt ástæða"
 
 #: eventarchiver.cpp:271
-#, fuzzy, kde-format
-#| msgid "Cannot write archive file %1."
+#, kde-format
 msgid "Cannot write archive file %1. %2"
-msgstr "Get ekki skrifað safnskrána %1."
+msgstr "Get ekki skrifað safnskrána %1. %2"
 
 #: eventarchiver.cpp:282
-#, fuzzy, kde-format
-#| msgid "Cannot write archive file %1."
+#, kde-format
 msgid "Cannot write archive. %1"
-msgstr "Get ekki skrifað safnskrána %1."
+msgstr "Get ekki skrifað safnskrána. %1"
 
 #: eventarchiver.cpp:291
-#, fuzzy, kde-format
-#| msgid "Archive events"
+#, kde-format
 msgid "Archiving events"
-msgstr "Afrita gamla atburði í safnskrá"
+msgstr "Safnvista viðburði"
 
 #: freebusymodel/freebusycalendar.cpp:109
 #, kde-format
 msgid "Free"
-msgstr "Laust"
+msgstr "Laus"
 
 #: freebusymodel/freebusycalendar.cpp:112
 #, kde-format
 msgid "Busy"
-msgstr "Upptekið"
+msgstr "Upptekin(n)"
 
 #: freebusymodel/freebusycalendar.cpp:115
 #, kde-format
 msgid "Unavailable"
-msgstr "Ekki tiltækt"
+msgstr "Ekki við"
 
 #: freebusymodel/freebusycalendar.cpp:118
 #, kde-format
@@ -457,13 +445,13 @@ msgstr "Laus tími"
 #, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
-msgstr "Upphaf:"
+msgstr "Hefst:"
 
 #: freebusymodel/freeperiodmodel.cpp:181
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
-msgstr "Endir:"
+msgstr "Lýkur:"
 
 #: freebusymodel/freeperiodmodel.cpp:184
 #, kde-format
@@ -473,10 +461,9 @@ msgstr "Tímalengd:"
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:15
-#, fuzzy, kde-format
-#| msgid "Use email settings from Control Center"
+#, kde-format
 msgid "Use email settings from System Settings"
-msgstr "Nota tölvupóststillingar frá KDE Stjórnborðinu"
+msgstr "Nota tölvupóststillingar úr Kerfisstillingum"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
@@ -486,45 +473,47 @@ msgid ""
 "the System Settings \"About Me\" Module. Uncheck this box to be able to "
 "specify your full name and e-mail."
 msgstr ""
+"Hakaðu hér til að nota tölvupóststillingar fyrir KDE sem eru skilgreindar "
+"með því að nota eininguna \"Um mig\" í Kerfisstillingum. Afhakaðu þennan "
+"reit til að geta sett inn fullt nafn þitt og netfang."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
 #, kde-format
 msgid "Default appointment time"
-msgstr "Sjálfgefinn fundartími"
+msgstr "Sjálfgefinn tími erindis"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:25
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Enter the default time for events here. The default is used if you do not "
 "supply a start time."
 msgstr ""
-"Hér getur þú sett inn sjálfgefinn tíma atburðarins, og er hann þá notaður ef "
-"þú gefur ekki upp upphafstíma."
+"Hér getur þú sett inn sjálfgefinn upphafstíma fyrir viðburði. Sjálfgefinn "
+"upphafstími er notaður ef þú gefur hann ekki upp."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:30
 #, kde-format
 msgid "Default duration of new appointment (HH:MM)"
-msgstr "Sjálfgefinn lengd nýrra funda (HH:MM)"
+msgstr "Sjálfgefin tímalengd fyrir nýtt erindi (HH:MM)"
 
 #. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:31
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Enter default duration for events here. The default is used if you do not "
 "supply an end time."
 msgstr ""
-"Hér getur þú sett inn sjálfgefna lengd atburðarins, og er hún þá notuð ef þú "
-"gefur ekki upp lokatíma."
+"Hér getur þú sett inn sjálfgefna tímalengd fyrir viðburði. Sjálfgefin lengd "
+"er notuð ef þú gefur ekki upp lokatíma."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:36
-#, fuzzy, kde-format
-#| msgid "Default reminder time:"
+#, kde-format
 msgid "Enable a default sound file for audio reminders"
-msgstr "Sjálfgefinn áminningartími:"
+msgstr "Nota sjálfgefna hljóðskrá fyrir hljóðáminningar"
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:37
@@ -534,13 +523,16 @@ msgid ""
 "default sound file for new reminders. You can always specify another file in "
 "the Reminder configuration accessible from the Event or To-do editors."
 msgstr ""
+"Hakaðu hér ef þú vilt leyfa að tilgreinda skráin sé notuð sem sjálfgefin "
+"hljóðskrá fyrir nýjar áminningar. Þú getur alltaf valið aðra skrá í "
+"Grunnstillingu áminninga sem hægt er að nálgast í viðburða- eða "
+"verkefnagluggunum."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:42
-#, fuzzy, kde-format
-#| msgid "Default Calendar"
+#, kde-format
 msgid "Default audio file"
-msgstr "Sjálfgefið dagatal"
+msgstr "Sjálfgefin hljóðskrá"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:43
@@ -550,14 +542,15 @@ msgid ""
 "always specify another file in the Reminder configuration accessible from "
 "the Event or To-do editors."
 msgstr ""
+"Veldu skrá sem á að nota sem sjálfgefna hljóðskrá fyrir nýjar áminningar. Þú "
+"getur alltaf valið aðra skrá í Grunnstillingu áminninga sem hægt er að "
+"nálgast í viðburða- eða verkefnagluggunum."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:47
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Enable Reminders"
+#, kde-format
 msgid "Enable reminders for new Events"
-msgstr "Virkja áminningar"
+msgstr "Leyfa áminningar fyrir nýja viðburði"
 
 #. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:48
@@ -566,22 +559,20 @@ msgid ""
 "Check this box if you want to enable reminders for all newly created Events. "
 "You can always turn-off the reminders in the Event editor dialog."
 msgstr ""
+"Hakaðu hér ef þú vilt fá áminningar fyrir alla nýja viðburði sem þú býrð "
+"til. Þú getur alltaf slökkt á áminningum í viðburðaglugganum."
 
 #. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:49
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Enable Reminders"
+#, kde-format
 msgid "By default, enable reminders for new events"
-msgstr "Virkja áminningar"
+msgstr "Leyfa sjálfgefnar áminningar fyrir nýja viðburði"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:54
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Enable Reminders"
+#, kde-format
 msgid "Enable reminders for new To-dos"
-msgstr "Virkja áminningar"
+msgstr "Leyfa áminningar fyrir ný verkefni"
 
 #. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:55
@@ -590,21 +581,20 @@ msgid ""
 "Check this box if you want to enable reminders for all newly created To-dos. "
 "You can always turn-off the reminders in the To-do editor dialog."
 msgstr ""
+"Hakaðu hér ef þú vilt fá áminningar fyrir öll ný verkefni sem þú býrð til.Þú "
+"getur alltaf slökkt á áminningum í verkefnaglugganum."
 
 #. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:56
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Enable Reminders"
+#, kde-format
 msgid "By default, enable reminders for new to-dos"
-msgstr "Virkja áminningar"
+msgstr "Leyfa sjálfgefið áminningar fyrir ný verkefni"
 
 #. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62
-#, fuzzy, kde-format
-#| msgid "Default reminder time:"
+#, kde-format
 msgid "Default reminder time"
-msgstr "Sjálfgefinn áminningartími:"
+msgstr "Sjálfgefinn áminningartími"
 
 #. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:63
@@ -613,13 +603,14 @@ msgid ""
 "Enter the default reminder time for all newly created items. The time unit "
 "is specified in the adjacent combobox."
 msgstr ""
+"Færðu inn sjálfgefinn áminningartíma fyrir öll ný atriði. Þú tilgreinir "
+"tímaeininguna í listareitnum við hliðina."
 
 #. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:64
-#, fuzzy, kde-format
-#| msgid "Default reminder time:"
+#, kde-format
 msgid "Default time for reminders"
-msgstr "Sjálfgefinn áminningartími:"
+msgstr "Sjálfgefinn áminningartími"
 
 #. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
 #: kcalprefs.kcfg:69
@@ -628,13 +619,14 @@ msgid ""
 "Enter the default reminder time units for all newly created items. The time "
 "is specified in the adjacent spinbox."
 msgstr ""
+"Færðu inn tímaeiningar fyrir sjálfgefna áminningu fyrir öll ný atriði. Þú "
+"tilgreinir tímann í örvareitnum við hliðina."
 
 #. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
 #: kcalprefs.kcfg:70
-#, fuzzy, kde-format
-#| msgid "Default reminder time:"
+#, kde-format
 msgid "Default time unit for reminders"
-msgstr "Sjálfgefinn áminningartími:"
+msgstr "Sjálfgefin tímaeining fyrir áminningar"
 
 #. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:78
@@ -644,19 +636,19 @@ msgstr "Dagurinn byrjar klukkan"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:79
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
 "that you use for events."
 msgstr ""
-"Hér getur þú sett inn sjálfgefinn tíma atburðarins, og er hann þá notaður ef "
-"þú gefur ekki upp upphafstíma."
+"Settu hér inn upphafstíma viðburða. Þessi tími á að vera fyrsta "
+"tímasetningin sem þú notar fyrir viðburð."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:84
 #, kde-format
 msgid "Exclude holidays"
-msgstr "Sleppa frídögum"
+msgstr "Útiloka frídaga"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:85
@@ -665,33 +657,30 @@ msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
 "holidays."
 msgstr ""
+"Hakaðu hér til að koma í veg fyrir að KOrganizer setji inn vinnutíma á "
+"frídögum."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:90
-#, fuzzy, kde-format
-#| msgid "Use holiday region:"
+#, kde-format
 msgid "Use holiday regions:"
-msgstr "Nota hátíðardagasvæði:"
+msgstr "Frídagar í gildi:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:91
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select from which region you want to use the holidays here. Defined "
-#| "holidays are shown as non-working days in the date navigator, the agenda "
-#| "view, etc."
+#, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
 "shown as non-working days in the date navigator, the agenda view, etc."
 msgstr ""
-"Hér getur þú valið frá hvaða svæði á að nota hátíðardaga. Viðeigandi "
-"hátíðardagar verða sýndir sem frídagar í sýnum dagatalsins."
+"Veldu hvaða landsvæði á að nota fyrir frídaga. Skilgreindir frídagar birtast "
+"þá sem slíkir í dagatalsyfirlitinu, dagskráryfirlitinu o.s.frv."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:98
 #, kde-format
 msgid "Use Groupware communication"
-msgstr "Nota hópvinnukerfis samskipti"
+msgstr "Nota samskipti í hópvinnukerfi"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:99
@@ -702,12 +691,16 @@ msgid ""
 "should check this box if you want to use the groupware functionality (e.g. "
 "Configuring Kontact as a KDE Kolab client)."
 msgstr ""
+"Hakaðu hér til að leyfa sjálfvirka sendingu tölvupósts þegar viðburðir eða "
+"verkefni eru búin til, uppfærð eða þeim eytt og sem aðrir þátttakendur eiga "
+"hlut í. Þú ættir að haka við reitinn ef þú vilt nota hópvinnukerfi (t.d. "
+"grunnstilla Kontact sem KDE Kolab-biðlara)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:104
 #, kde-format
 msgid "Default policy for invitations to other users:"
-msgstr ""
+msgstr "Sjálfgefin regla fyrir boð til annarra notenda:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:107
@@ -719,7 +712,7 @@ msgstr "Senda tölvupóst án þess að spyrja."
 #: kcalprefs.kcfg:110
 #, kde-format
 msgid "Ask for every individual attendee what to do."
-msgstr ""
+msgstr "Spyrja hvern þátttakanda fyrir sig hvað eigi að gera."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:113
@@ -728,18 +721,20 @@ msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
 "iTip compliant clients)."
 msgstr ""
+"Ekki senda boð í tölvupósti af neinu tagi (þetta getur haft áhrif á "
+"skipulagningu hópa í iTip-samhæfðum biðlurum)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
 #: kcalprefs.kcfg:126
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
-msgstr ""
+msgstr "Sýna val á tímabelti í viðburða- og verkefnaglugga."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:134
 #, kde-format
 msgid "Regularly archive events"
-msgstr "Afrita reglulega í safnskrár"
+msgstr "Safnvista viðburði reglulega"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:139
@@ -748,14 +743,14 @@ msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
 "archived. The unit of this value is specified in another field."
 msgstr ""
-"Ef sjálfvirk afritun er virk verða atburðir sem eru eldri en þetta settir í "
-"safnskrá. Einingargildið er skilgreint í öðru sviði."
+"Ef sjálfvirk safnvistun er virk verða viðburðir sem eru eldri en þetta "
+"safnvistaðir. Einingin fyrir þetta gildi er skilgreind í öðrum reit."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:144
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
-msgstr "Einingin sem á að nota yfir úreldingartímann."
+msgstr "Einingin sem á að nota fyrir útrunninn tíma."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:147
@@ -779,37 +774,37 @@ msgstr "Í mánuðum"
 #: kcalprefs.kcfg:160
 #, kde-format
 msgid "URL of the file where old events should be archived"
-msgstr "Slóðin að skránni sem á að geyma gamla atburði í"
+msgstr "Slóðin að skránni þar sem gamlir viðburðir eru safnvistaðir"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:164
 #, kde-format
 msgid "Archive events"
-msgstr "Afrita gamla atburði í safnskrá"
+msgstr "Safnvista viðburði"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:169
-#, fuzzy, kde-format
+#, kde-format
 msgid "Archive to-dos"
-msgstr "Afrita gamla verkþætti í safnskrá"
+msgstr "Safnvista verkefni"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:174
 #, kde-format
 msgid "What to do when archiving"
-msgstr "Hvað á að gera þegar afritað er í safnskrá"
+msgstr "Hvað á að gera þegar safnvistað er"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:177
 #, kde-format
 msgid "Delete old events"
-msgstr "Þurrka gamla atburði út"
+msgstr "Eyða gömlum viðburðum"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:180
 #, kde-format
 msgid "Archive old events to a separate file"
-msgstr "Afrita gamla atburði í sér skrá"
+msgstr "Safnvista gamla viðburði í sérskrá"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
 #: kcalprefs.kcfg:194
@@ -824,17 +819,19 @@ msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
 "to-dos and events you create."
 msgstr ""
+"Sláðu inn fullt nafn þitt hér. Þetta nafn birtist sem \"Skipuleggjandi\" í "
+"verkefnum og viðburðum sem þú býrð til."
 
 #: kcalprefs.kcfg:196
 #, kde-format
 msgid "Anonymous"
-msgstr "Nafnlaus"
+msgstr "Nafnlaust"
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
 msgid "E&mail address"
-msgstr "Tölvupóst&fang"
+msgstr "Net&fang"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:201
@@ -843,6 +840,8 @@ msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
 "the owner of the calendar, and displayed in events and to-dos you create."
 msgstr ""
+"Sláðu inn netfangið þitt. Þetta netfang verður notað til að auðkenna eiganda "
+"dagatalsins og er birt í viðburðum og verkefnum sem þú býrð til."
 
 #: kcalprefs.kcfg:202
 #, kde-format
@@ -853,7 +852,7 @@ msgstr "enginn@hvergi"
 #: kcalprefs.kcfg:220
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
-msgstr ""
+msgstr "Litur fyrir \"Ekkert merki\" (fyrir framsetninguna \"Einungis merki\")"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:221
@@ -863,12 +862,16 @@ msgid ""
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
+"Veltu litinn sem á að nota fyrir \"ekkert merki\" eða \"óþekkt merki\", "
+"þegar færsla er ekki með neitt merki. Þessi litur er notaður þegar færslur "
+"eru settar fram í dagskrár- eða mánaðaryfirlitum sem nota skemað \"Einungis "
+"merki\"."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
 #: kcalprefs.kcfg:222
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr ""
+msgstr "Nota þennan lit þegar færslur án merkja eru settar fram"
 
 #: noteeditdialog.cpp:41
 #, kde-format
@@ -889,18 +892,16 @@ msgid "Save"
 msgstr "Vista"
 
 #: noteeditdialog.cpp:77
-#, fuzzy, kde-format
-#| msgid "Sets the due date for this to-do."
+#, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
-msgstr "Setur skiladag þessa verkþáttar."
+msgstr "Dagatal þar sem nýi minnispunkturinn verður geymdur."
 
 #: noteeditdialog.cpp:79
-#, fuzzy, kde-format
-#| msgid "Sets the due date for this to-do."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
-msgstr "Setur skiladag þessa verkþáttar."
+msgstr "Dagatal þar sem nýi minnispunkturinn verður geymdur."
 
 #: noteeditdialog.cpp:92
 #, kde-format
@@ -927,6 +928,14 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print day options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Prentvalkostir fyrir dag:</span></p></body></html>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
 #: printing/calprintdayconfig_base.ui:24
@@ -935,7 +944,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:24
 #, kde-format
 msgid "Date && Time Range"
-msgstr "Dag && tímasvið"
+msgstr "Daga- og tímabil"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (toolTip), widget (KDateComboBox, mFromDate)
@@ -946,10 +955,9 @@ msgstr "Dag && tímasvið"
 #: printing/calprinttodoconfig_base.ui:127
 #: printing/calprintweekconfig_base.ui:30
 #: printing/calprintweekconfig_base.ui:49
-#, fuzzy, kde-format
-#| msgid "Sets the start date for this to-do"
+#, kde-format
 msgid "Starting date for the print"
-msgstr "Setur upphafsdag þessa verkþáttar."
+msgstr "Upphafsdagur fyrir prentunina"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mFromDate)
@@ -966,9 +974,9 @@ msgid ""
 "this option and the <i>End date</i> option. This option is used to define "
 "the start date."
 msgstr ""
-"Ef þú vilt prenta fleiri daga í einu, getur þú skilgreint svið af dögum með "
-"þessum og <i>lokadegi</i> valkostunum. Þessi valkostur er notaður til að "
-"skilgreina upphafsdaginn."
+"Ef þú vilt prenta fleiri daga í einu getur þú tilgreint dagabil með þessum "
+"valkosti og valkostinum <i>Lokadagur</i>. Þessi valkostur er notaður til að "
+"velja upphafsdaginn."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintdayconfig_base.ui:36
@@ -988,30 +996,23 @@ msgstr "&Upphafsdagur:"
 #: printing/calprintweekconfig_base.ui:136
 #, kde-format
 msgid "2009-01-19"
-msgstr "2009-01-19"
+msgstr "19.01.2009"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, mFromTime)
 #: printing/calprintdayconfig_base.ui:64 printing/calprintdayconfig_base.ui:80
 #: printing/calprintweekconfig_base.ui:64
 #: printing/calprintweekconfig_base.ui:80
-#, fuzzy, kde-format
-#| msgid "Sets the start date for this to-do"
+#, kde-format
 msgid "Starting time for the print"
-msgstr "Setur upphafsdag þessa verkþáttar."
+msgstr "Upphafstími fyrir prentunina"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
 #: printing/calprintdayconfig_base.ui:67 printing/calprintdayconfig_base.ui:83
 #: printing/calprintweekconfig_base.ui:67
 #: printing/calprintweekconfig_base.ui:83
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the start of this "
-#| "time range. The end time should be defined with the <i>End time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the start of this time "
@@ -1019,17 +1020,17 @@ msgid ""
 "you can automatically modify these settings if you check <i>Extend time "
 "range to include all events</i>."
 msgstr ""
-"Það er mögulegt að prenta einungis atburði sem eru innan viss tímasviðs. Hér "
-"getur þú skilgreint upphafstíma sviðsins. Endasviðið ætti að skilgreina með "
-"<i>Endar klukkan</i> valkostinum. Athugaðu að þú getur sjálfkrafa breytt "
-"þessum stillingum ef þú hakar við <i>Teygja tímasvið til að innihalda alla "
-"atburði</i>."
+"Það er hægt að prenta aðeins þá viðburði sem falla innan tiltekins tímabils. "
+"Hér getur þú valið upphafstíma tímabilsins. Lokatímann ætti að skilgreina "
+"með valkostinum <i>Lokatími</i>. Athugaðu að þú getur sjálfkrafa breytt "
+"þessum stillingum ef þú hakar við <i>Lengja tímabil svo það innihaldi alla "
+"viðburði</i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
 #, kde-format
 msgid "Start &time:"
-msgstr "&Byrjar klukkan:"
+msgstr "Upphafs&tími:"
 
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mFromTime)
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mToTime)
@@ -1050,10 +1051,9 @@ msgstr "hh:mm"
 #: printing/calprinttodoconfig_base.ui:164
 #: printing/calprintweekconfig_base.ui:110
 #: printing/calprintweekconfig_base.ui:129
-#, fuzzy, kde-format
-#| msgid "Sets the start date for this to-do"
+#, kde-format
 msgid "Ending date for the print"
-msgstr "Setur upphafsdag þessa verkþáttar."
+msgstr "Lokatími fyrir prentunina"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -1071,9 +1071,9 @@ msgid ""
 "this option and the <i>Start date</i> option. This option is used to define "
 "the end date."
 msgstr ""
-"Ef þú vilt prenta fleiri daga í einu, getur þú skilgreint svið af dögum með "
-"þessum og <i>upphafsdegi</i> valkostunum. Þessi valkostur er notaður til að "
-"skilgreina lokadaginn."
+"Ef þú vilt prenta fleiri daga í einu getur þú tilgreint dagabil með þessum "
+"valkosti og valkostinum <i>Upphafsdagur</i>. Þessi valkostur er notaður til "
+"að velja lokadaginn."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintdayconfig_base.ui:116
@@ -1090,10 +1090,9 @@ msgstr "&Lokadagur:"
 #: printing/calprintdayconfig_base.ui:160
 #: printing/calprintweekconfig_base.ui:144
 #: printing/calprintweekconfig_base.ui:160
-#, fuzzy, kde-format
-#| msgid "Sets the start date for this to-do"
+#, kde-format
 msgid "Ending time for the print"
-msgstr "Setur upphafsdag þessa verkþáttar."
+msgstr "Lokatími fyrir prentunina"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1101,13 +1100,7 @@ msgstr "Setur upphafsdag þessa verkþáttar."
 #: printing/calprintdayconfig_base.ui:163
 #: printing/calprintweekconfig_base.ui:147
 #: printing/calprintweekconfig_base.ui:163
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the end of this "
-#| "time range. The start time should be defined with the <i>Start time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the end of this time "
@@ -1115,18 +1108,18 @@ msgid ""
 "Note you can automatically modify these settings if you check <i>Extend time "
 "range to include all events</i>."
 msgstr ""
-"Það er mögulegt að prenta einungis atburði sem eru innan viss tímasviðs. Hér "
-"getur þú skilgreint lokatíma sviðsins. Upphafssviðið ætti að skilgreina með "
-"<i>Byrjar klukkan</i> valkostinum. Athugaðu að þú getur sjálfkrafa breytt "
-"þessum stillingum ef þú hakar við <i>Teygja tímasvið til að innihalda alla "
-"atburði</i>."
+"Það er hægt að prenta aðeins viðburði sem falla innan tiltekins tímabils.Hér "
+"getur þú valið lokatíma tímabilsins. Upphafstímann ætti að skilgreina með "
+"valkostinum <i>Upphafstími</i>. Athugaðu að þú getur sjálfkrafa breytt "
+"þessum stillingum ef þú hakar við <i>Lengja tímabil svo það innihaldi alla "
+"viðburði</i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mToTimeLabel)
 #: printing/calprintdayconfig_base.ui:150
 #: printing/calprintweekconfig_base.ui:150
 #, kde-format
 msgid "End ti&me:"
-msgstr "Endar klukkan:"
+msgstr "Lokatí&mi:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeAllEvents)
 #: printing/calprintdayconfig_base.ui:190
@@ -1136,15 +1129,15 @@ msgid ""
 "Check this option to automatically determine the required time range, so all "
 "events will be shown."
 msgstr ""
-"Hakaðu við þetta til að ákvarða sjálfkrafa nauðsynlegt tímasvið til að allir "
-"atburðir séu sýndir."
+"Hakaðu hér til að ákvarða sjálfkrafa nauðsynlegt tímabil svo að allir "
+"viðburðir séu birtir."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
 #: printing/calprintdayconfig_base.ui:193
 #: printing/calprintweekconfig_base.ui:193
 #, kde-format
 msgid "E&xtend time range to include all events"
-msgstr "&Teygja tímasvið til að innihalda alla atburði"
+msgstr "&Lengja tímabil svo það innihaldi alla viðburði"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprintdayconfig_base.ui:203
@@ -1161,27 +1154,27 @@ msgid ""
 "The Filofax format prints the information for the days selected without a "
 "timeline."
 msgstr ""
+"Filofax-sniðið prentar út upplýsingarnar fyrir dagana sem eru valdir án "
+"tímalínu."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintdayconfig_base.ui:212
-#, fuzzy, kde-format
-#| msgid "Prints all events of one month on one page"
+#, kde-format
 msgid "Print date &range as Filofax format, all on one page"
-msgstr "Prentar alla atburði eins mánaðar á eina síðu"
+msgstr "Prenta daga&bil á Filofax-sniði, allt á einni síðu"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
 #: printing/calprintweekconfig_base.ui:219
 #, kde-format
 msgid "The timetable print view has the times to the left of the page."
-msgstr ""
+msgstr "Tímatöflusniðið prentar tímasetningar vinstra megin á síðunni."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:222
-#, fuzzy, kde-format
-#| msgid "Print as &timetable view"
+#, kde-format
 msgid "Print as timeta&ble view, one page per day"
-msgstr "Prenta sem tímatöflusýn"
+msgstr "Prenta sem tím&atöflu, eina síðu fyrir hvern dag"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:229
@@ -1190,13 +1183,14 @@ msgid ""
 "The timetable print view has the times to the left of the page. All days are "
 "printed as columns in one big timetable."
 msgstr ""
+"Tímatöflusniðið prentar tímasetningarnar vinstra megin á síðunni. Allir "
+"dagarnir eru prentaðir sem dálkur í einni stórri tímatöflu."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:232
-#, fuzzy, kde-format
-#| msgid "Print as &timetable view"
+#, kde-format
 msgid "Print as timetable view, all da&ys on a single page"
-msgstr "Prenta sem tímatöflusýn"
+msgstr "Prenta sem tímatöflu, allir da&garnir á einni síðu"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mSecurity)
 #: printing/calprintdayconfig_base.ui:242
@@ -1207,7 +1201,7 @@ msgstr "Prenta sem tímatöflusýn"
 #: printing/calprintyearconfig_base.ui:70
 #, kde-format
 msgid "Security Exclusions"
-msgstr ""
+msgstr "Útilokanir af öryggisástæðum"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:248
@@ -1221,6 +1215,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Confidential&#8221;"
 msgstr ""
+"Hakaðu hér til að útiloka færslur með aðgangsstig stillt á &#8220;"
+"Trúnaðargögn&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:251
@@ -1229,10 +1225,9 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:203
 #: printing/calprintweekconfig_base.ui:251
 #: printing/calprintyearconfig_base.ui:79
-#, fuzzy, kde-format
-#| msgid "Exclude holidays"
+#, kde-format
 msgid "Exclude c&onfidential"
-msgstr "Sleppa frídögum"
+msgstr "Sleppa trúnaðarg&ögnum"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:258
@@ -1246,6 +1241,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Private&#8221;"
 msgstr ""
+"Hakaðu hér til að sleppa færslum með aðgangsstig stillt á &#8220;"
+"Einkamál&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:261
@@ -1254,10 +1251,9 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:213
 #: printing/calprintweekconfig_base.ui:261
 #: printing/calprintyearconfig_base.ui:89
-#, fuzzy, kde-format
-#| msgid "Exclude holidays"
+#, kde-format
 msgid "Exclude pri&vate"
-msgstr "Sleppa frídögum"
+msgstr "Sleppa einka&gögnum"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mIncludeInfoGroup)
 #. i18n: ectx: property (title), widget (QGroupBox, includeInfoBox)
@@ -1268,7 +1264,7 @@ msgstr "Sleppa frídögum"
 #: printing/calprintweekconfig_base.ui:271
 #, kde-format
 msgid "Include Information"
-msgstr "Hafa með upplýsingar"
+msgstr "Hafa upplýsingar með"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDescription)
@@ -1276,10 +1272,9 @@ msgstr "Hafa með upplýsingar"
 #: printing/calprintmonthconfig_base.ui:153
 #: printing/calprinttodoconfig_base.ui:232
 #: printing/calprintweekconfig_base.ui:277
-#, fuzzy, kde-format
-#| msgid "&Description"
+#, kde-format
 msgid "Print item descriptions"
-msgstr "&Lýsing"
+msgstr "Prenta lýsingar á atriðum"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDescription)
@@ -1287,9 +1282,9 @@ msgstr "&Lýsing"
 #: printing/calprintmonthconfig_base.ui:156
 #: printing/calprinttodoconfig_base.ui:235
 #: printing/calprintweekconfig_base.ui:280
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option if you want to see the item descriptions printed."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr "Hakaðu hér ef þú vilt að lýsing á atriðinu sé prentuð."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (text), widget (QCheckBox, mDescription)
@@ -1307,10 +1302,9 @@ msgstr "&Lýsingar"
 #: printing/calprintmonthconfig_base.ui:166
 #: printing/calprinttodoconfig_base.ui:245
 #: printing/calprintweekconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid "Print list"
+#, kde-format
 msgid "Print item tags"
-msgstr "Prenta lista"
+msgstr "Prenta merki atriðis"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -1318,9 +1312,9 @@ msgstr "Prenta lista"
 #: printing/calprintmonthconfig_base.ui:169
 #: printing/calprinttodoconfig_base.ui:248
 #: printing/calprintweekconfig_base.ui:293
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option if you want to see the item tags printed."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr "Veldu þetta ef þú vilt prenta merkin á atriðinu."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (text), widget (QCheckBox, mCategories)
@@ -1336,10 +1330,9 @@ msgstr "Mer&ki"
 #: printing/calprintdayconfig_base.ui:306
 #: printing/calprintmonthconfig_base.ui:182
 #: printing/calprintweekconfig_base.ui:306
-#, fuzzy, kde-format
-#| msgid "Print only to-dos due in the &range:"
+#, kde-format
 msgid "Print to-dos due within the specified date range"
-msgstr "Einungis p&renta verkþætti með skiladag á sviðinu:"
+msgstr "Prenta verkefni með skiladag innan tilgreinds dagabils"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:309
@@ -1350,30 +1343,30 @@ msgid ""
 "You should check this option if you want to print to-dos which are due on "
 "one of the dates which are in the supplied date range."
 msgstr ""
-"Þú ættir að haka við þennan valkost ef þú vilt prenta verkþætti sem eru með "
-"skiladag á einhverjum af völdu dögunum."
+"Þú ættir að haka við þennan valkost ef þú vilt prenta verkefni sem eru með "
+"skiladag sem fellur innan tilgreinda dagabilsins."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:312
 #: printing/calprintmonthconfig_base.ui:188
 #: printing/calprintweekconfig_base.ui:312
-#, fuzzy, kde-format
+#, kde-format
 msgid "Include to-&dos that are due on the printed day(s)"
-msgstr "Taka með &verkþætti með skiladag á prentuðu dögunum"
+msgstr "Taka með &verkefni með skiladag á prentuðu dögunum"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:319
 #: printing/calprintweekconfig_base.ui:319
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option to exclude the time in description box"
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr "Hakaðu hér ef þú vilt sleppa að sýna tímann í lýsingarreitnum"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:322
 #: printing/calprintweekconfig_base.ui:322
 #, kde-format
 msgid "Exclude t&ime from timetable detail display items"
-msgstr ""
+msgstr "Sleppa tí&ma úr upplýsingum atriðis í tímatöflu"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
 #: printing/calprintdayconfig_base.ui:332
@@ -1391,9 +1384,9 @@ msgstr "Almennt"
 #: printing/calprintdayconfig_base.ui:338
 #: printing/calprintmonthconfig_base.ui:243
 #: printing/calprintweekconfig_base.ui:338
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print items on one line"
-msgstr "Prentar alla atburði einnar viku á eina síðu"
+msgstr "Prenta atriði á eina línu"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:341
@@ -1404,6 +1397,8 @@ msgid ""
 "Check this option to limit events to a single line, truncating as necessary "
 "to save space."
 msgstr ""
+"Hakaðu hér til að takmarka viðburði við staka línu og klippa aftan af ef "
+"þarf til að spara pláss."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:344
@@ -1411,24 +1406,23 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:344
 #, kde-format
 msgid "Limit events in each day to a &single line"
-msgstr ""
+msgstr "Takmarka viðburði hvers dags við &staka línu"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:351
 #: printing/calprintincidenceconfig_base.ui:94
 #: printing/calprintmonthconfig_base.ui:256
 #: printing/calprintweekconfig_base.ui:351
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option to draw note lines in empty areas."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr "Hakaðu hér ef þú vilt láta línustrika auð svæði."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:354
 #: printing/calprintweekconfig_base.ui:354
-#, fuzzy, kde-format
-#| msgid "S&how time as:"
+#, kde-format
 msgid "Show note &lines in Filofax layout"
-msgstr "&Sýna tíma sem:"
+msgstr "Sýna &línustrikun í Filofax-sniði"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:361
@@ -1437,22 +1431,19 @@ msgstr "&Sýna tíma sem:"
 #: printing/calprintweekconfig_base.ui:361
 #, kde-format
 msgid "Print in color"
-msgstr "Prenta í litum"
+msgstr "Prenta í lit"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:364
 #: printing/calprintincidenceconfig_base.ui:110
 #: printing/calprintmonthconfig_base.ui:269
 #: printing/calprintweekconfig_base.ui:364
-#, fuzzy, kde-format
-#| msgid ""
-#| "If you want to use colors to distinguish certain categories on the print, "
-#| "check this option."
+#, kde-format
 msgid ""
 "If you want to use colors to distinguish certain tags in the printed output, "
 "check this option."
 msgstr ""
-"Ef þú vilt nota liti til að aðgreina ákveðna flokka á útprentun, hakaðu þá "
+"Ef þú vilt nota liti til að aðgreina tiltekin merki í útprentun skaltu haka "
 "við þennan valkost."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mColors)
@@ -1472,9 +1463,9 @@ msgstr "&Nota liti"
 #: printing/calprinttodoconfig_base.ui:417
 #: printing/calprintweekconfig_base.ui:374
 #: printing/calprintyearconfig_base.ui:178
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print a datetime footer on each page"
-msgstr "Prentar alla atburði einnar viku á eina síðu"
+msgstr "Prenta dagsetningu á síðufót hverrar síðu"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:377
@@ -1484,11 +1475,13 @@ msgstr "Prentar alla atburði einnar viku á eina síðu"
 #: printing/calprinttodoconfig_base.ui:420
 #: printing/calprintweekconfig_base.ui:377
 #: printing/calprintyearconfig_base.ui:181
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this box if you want to print a small footer on each page that "
 "contains the date of the print."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr ""
+"Hakaðu hér ef þú vilt prenta lítinn síðufót á hverja síðu með dagsetningu "
+"prentunar."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:380
@@ -1523,7 +1516,7 @@ msgstr "Lokadagur: "
 #: printing/calprintdefaultplugins.cpp:131
 #, kde-format
 msgid "Duration: "
-msgstr "Lengd: "
+msgstr "Tímalengd: "
 
 #: printing/calprintdefaultplugins.cpp:134
 #, kde-format
@@ -1593,34 +1586,34 @@ msgstr "%1 eftir upphaf"
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the end"
-msgstr "%1 fyrir enda"
+msgstr "%1 fyrir lok"
 
 #: printing/calprintdefaultplugins.cpp:328
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
-msgstr "%1 eftir enda"
+msgstr "%1 eftir lok"
 
 #: printing/calprintdefaultplugins.cpp:337
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
-msgstr[0] "1 dagur"
-msgstr[1] "%1 dagar"
+msgstr[0] "1 degi"
+msgstr[1] "%1 dögum"
 
 #: printing/calprintdefaultplugins.cpp:340
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "1 klukkustund"
-msgstr[1] "%1 klukkustundir"
+msgstr[1] "%1 klukkustundum"
 
 #: printing/calprintdefaultplugins.cpp:343
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
-msgstr[0] "1 mínúta"
-msgstr[1] "%1 mínútur"
+msgstr[0] "1 mínútu"
+msgstr[1] "%1 mínútum"
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:629
@@ -1689,13 +1682,13 @@ msgstr "Upphafstími: %1\n"
 #, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
-msgstr "Lokadagur: %1\n"
+msgstr "Skiladagur: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:509
 #, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
-msgstr "Lokatími: %1\n"
+msgstr "Skilatími: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:513
 #, kde-format
@@ -1772,17 +1765,17 @@ msgstr "Leynd: %1"
 #: printing/calprintdefaultplugins.cpp:609
 #, kde-format
 msgid "Show as: Busy"
-msgstr "Sýna sem: Upptekið"
+msgstr "Sýna sem: Upptekin(n)"
 
 #: printing/calprintdefaultplugins.cpp:611
 #, kde-format
 msgid "Show as: Free"
-msgstr "Sýna sem: Laust"
+msgstr "Sýna sem: Laus"
 
 #: printing/calprintdefaultplugins.cpp:617
 #, kde-format
 msgid "This task is overdue!"
-msgstr ""
+msgstr "Verkefnið er í vanskilum!"
 
 #: printing/calprintdefaultplugins.cpp:623
 #, kde-format
@@ -1812,7 +1805,7 @@ msgstr "%1, %2"
 #, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
-msgstr "Heilsdags"
+msgstr "Allur dagurinn"
 
 #: printing/calprintdefaultplugins.cpp:984
 #: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:140
@@ -1825,7 +1818,7 @@ msgstr "%1–%2"
 #, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
-msgstr "%1–%2 (vika %3)"
+msgstr "%1–%2 (%3. vika)"
 
 #: printing/calprintdefaultplugins.cpp:1231
 #, kde-format
@@ -1835,7 +1828,7 @@ msgid ""
 "(Week %3)"
 msgstr ""
 "%1–%2\n"
-"(vika %3)"
+"(%3. vika)"
 
 #: printing/calprintdefaultplugins.cpp:1416
 #, kde-format
@@ -1883,7 +1876,7 @@ msgstr "Merki"
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
-msgstr "Rísandi"
+msgstr "Hækkandi"
 
 #: printing/calprintdefaultplugins.cpp:1539
 #, kde-format
@@ -1894,7 +1887,7 @@ msgstr "Lækkandi"
 #: printing/calprintdefaultplugins.cpp:1552
 #, kde-format
 msgid "To-do list"
-msgstr "Verkþáttalisti"
+msgstr "Verkefnalisti"
 
 #: printing/calprintdefaultplugins.cpp:1604
 #: printing/calprintpluginbase.cpp:1697
@@ -1911,7 +1904,7 @@ msgstr "Forgangur"
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
-msgstr "Lokadagur"
+msgstr "Skil"
 
 #: printing/calprintdefaultplugins.cpp:1635
 #, kde-format
@@ -1923,7 +1916,7 @@ msgstr "Upphaf"
 #, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
-msgstr "Fullklárað"
+msgstr "Lokið"
 
 #: printing/calprintdefaultplugins.cpp:1655
 #, kde-format
@@ -1932,14 +1925,14 @@ msgid "Tags"
 msgstr "Merki"
 
 #: printing/calprintdefaultplugins.h:36
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print &incidence"
-msgstr "Prenta atburði af tegundinni"
+msgstr "Prenta &uppákomu"
 
 #: printing/calprintdefaultplugins.h:41
-#, fuzzy, kde-format
+#, kde-format
 msgid "Prints an incidence on one page"
-msgstr "Prentar alla atburði einnar viku á eina síðu"
+msgstr "Prentar allar uppákomur á eina síðu"
 
 #: printing/calprintdefaultplugins.h:138
 #, kde-format
@@ -1949,7 +1942,7 @@ msgstr "Prenta da&g"
 #: printing/calprintdefaultplugins.h:143
 #, kde-format
 msgid "Prints all events of a single day on one page"
-msgstr "Prentar alla atburði eins dags á eina síðu"
+msgstr "Prentar alla viðburði eins dags á eina síðu"
 
 #: printing/calprintdefaultplugins.h:193
 #, kde-format
@@ -1959,7 +1952,7 @@ msgstr "Prenta &viku"
 #: printing/calprintdefaultplugins.h:198
 #, kde-format
 msgid "Prints all events of one week on one page"
-msgstr "Prentar alla atburði einnar viku á eina síðu"
+msgstr "Prentar alla viðburði einnar viku á eina síðu"
 
 #: printing/calprintdefaultplugins.h:255
 #, kde-format
@@ -1969,23 +1962,23 @@ msgstr "Prenta &mánuð"
 #: printing/calprintdefaultplugins.h:260
 #, kde-format
 msgid "Prints all events of one month on one page"
-msgstr "Prentar alla atburði eins mánaðar á eina síðu"
+msgstr "Prentar alla viðburði eins mánaðar á eina síðu"
 
 #: printing/calprintdefaultplugins.h:310
 #, kde-format
 msgid "Print to-&dos"
-msgstr "Prenta &verkþætti"
+msgstr "Prenta &verkefni"
 
 #: printing/calprintdefaultplugins.h:315
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
-msgstr "Prenta alla verkþætti í trélista"
+msgstr "Prentar öll verkefni í lista (tré)"
 
 #: printing/calprinter.cpp:113
 #, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
-msgstr ""
+msgstr "Get ekki prentað, ógildur prentstíll tilgreindur."
 
 #: printing/calprinter.cpp:113
 #, kde-format
@@ -2009,14 +2002,13 @@ msgstr "Prentstíll"
 #, kde-format
 msgctxt "@label"
 msgid "Page &orientation:"
-msgstr "Stefna &blaðsíðu:"
+msgstr "Síð&usnið:"
 
 #: printing/calprinter.cpp:192
-#, fuzzy, kde-format
-#| msgid "Sets the start time for this to-do."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
-msgstr "Setur upphafstíma þessa verkþáttar."
+msgstr "Veldu síðusnið fyrir prentun"
 
 #: printing/calprinter.cpp:194
 #, kde-format
@@ -2026,12 +2018,15 @@ msgid ""
 "\". You can also default to the orientation best suited to the selected "
 "style or to your printer's default setting."
 msgstr ""
+"Veldu hvort þú vilt prenta efnið á skammsniði (\"portrait\") eða langsniði "
+"(\"landscape\"). Þú getur einnig notað sjálfgefið snið sem hentar best fyrir "
+"prentstílinn sem er valinn eða fyrir sjálfgefnar stillingar prentarans."
 
 #: printing/calprinter.cpp:197
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Default Orientation of Selected Style"
-msgstr "Nota sjálfgefið frá völdum stíl"
+msgstr "Nota sjálfgefið snið út frá völdum stíl"
 
 #: printing/calprinter.cpp:198
 #, kde-format
@@ -2043,13 +2038,13 @@ msgstr "Nota sjálfgefnar stillingar prentara"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Portrait"
-msgstr "Lóðrétt"
+msgstr "Skammsnið"
 
 #: printing/calprinter.cpp:200
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
-msgstr "Lárétt"
+msgstr "Langsnið"
 
 #: printing/calprinter.cpp:222
 #, kde-format
@@ -2065,6 +2060,9 @@ msgid ""
 "to print an individual item, or all the items for a specific time range "
 "(like a day, week or month), or you may want to print your to-do list."
 msgstr ""
+"Veldu eina af eftirfarandi tegundum prentunar sem þú vilt nota. Þú gætir "
+"viljað prenta stakt atriði eða öll atriði á tilteknu tímabili (eins og degi, "
+"viku eða mánuði), eða kannski viltu prenta verkefnalistann þinn."
 
 #: printing/calprinter.cpp:252
 #, kde-format
@@ -2085,39 +2083,49 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print incidence options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Prentvalkostir fyrir uppákomu:</span></p></body></html>"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:33
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print incidence details"
-msgstr "Prenta atburði af tegundinni"
+msgstr "Prenta upplýsingar um uppákomu"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:36
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this box if you want to print more details for the incidence, "
 "including the visibility and secrecy properties."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr ""
+"Veldu þetta ef þú vilt prenta meiri upplýsingar um uppákomu, þ.á m. "
+"upplýsingar um sýnileika og leynd."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:39
 #, kde-format
 msgid "Detai&ls (visiblility, secrecy, etc.)"
-msgstr ""
+msgstr "Upp&lýsingar (sýnileiki, leynd o.s.frv.)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:46
 #, kde-format
 msgid "Print the attendees"
-msgstr "Prenta út þátttakendur"
+msgstr "Prenta þátttakendur"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:49
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this box if you want the attendees list included on the print-out."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr "Hakaðu hér ef þú vilt prenta líka þátttakendalistann."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:52
@@ -2127,23 +2135,22 @@ msgstr "Þáttt&akendur"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:59
-#, fuzzy, kde-format
-#| msgid "Print week &numbers"
+#, kde-format
 msgid "Print the notes"
-msgstr "Prenta viku&númer"
+msgstr "Prenta minnispunktana"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:62
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this box if you want the incidence notes included on the print-out."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr "Veldu þetta ef þú vilt prenta líka minnispunktana fyrir uppákomurnar."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:65
 #, kde-format
 msgid "&Notes, subitems"
-msgstr "Mi&nnisatriði, undiratriði"
+msgstr "Mi&nnispunktar, undiratriði"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:72
@@ -2153,11 +2160,13 @@ msgstr "Prenta viðhengin"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this box if you want the attachment information included on the print-"
 "out. The attachments themselves are not printed."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr ""
+"Hakaðu hér ef þú vilt prenta líka upplýsingar um viðhengin. Viðhengin sjálf "
+"verða ekki prentuð."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:78
@@ -2172,14 +2181,15 @@ msgid ""
 "Check this box if you want to draw note lines in the empty area of the "
 "print. This is useful if you want to hand-write notes on this print-out."
 msgstr ""
+"Hakaðu hér ef þú vilt línustrika auð svæði í útprentuninni. Þetta er "
+"gagnlegt ef þú vilt handskrifa minnispunkta á síðurnar."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:100
 #: printing/calprintmonthconfig_base.ui:259
-#, fuzzy, kde-format
-#| msgid "S&how time as:"
+#, kde-format
 msgid "Show note &lines"
-msgstr "&Sýna tíma sem:"
+msgstr "&Línustrikun"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintjournalconfig_base.ui:17
@@ -2194,18 +2204,26 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print journal options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Prentvalkostir fyrir dagbók:</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mAllJournals)
 #: printing/calprintjournalconfig_base.ui:30
 #, kde-format
 msgid "&All journal entries"
-msgstr "&Allar dagbókarfærslur"
+msgstr "Öll dagbókar&atriði"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mRangeJournals)
 #: printing/calprintjournalconfig_base.ui:43
 #, kde-format
 msgid "Date &range:"
-msgstr "&Tímabil:"
+msgstr "&Dagabil:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintmonthconfig_base.ui:17
@@ -2220,6 +2238,14 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print month options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Prentvalkostir fyrir mánuð:</span></p></body></html>"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, mFromMonth)
@@ -2231,9 +2257,9 @@ msgid ""
 "This option defines the first month to be printed. Use the option <i>End "
 "month</i> to define the last month in this range."
 msgstr ""
-"Þegar þú vilt prenta fleiri en einn mánuð í einu, getur þú tilgreint "
-"mánaðarsvið. Þessi valkostur tilgreinir fyrsta mánuðinn sem á að prenta. "
-"Notaðu <i>Endamánuður</i> til að tilgreina seinasta mánuðinn í sviðinu."
+"Þegar þú vilt prenta fleiri en einn mánuð í einu getur þú tilgreint "
+"mánaðarbilið. Þessi valkostur velur fyrsta mánuðinn sem á að prenta. Notaðu "
+"<i>Lokamánuður</i> til að velja síðasta mánuðinn."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
@@ -2243,33 +2269,27 @@ msgstr "Upphaf&smánuður:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mFromMonth)
 #: printing/calprintmonthconfig_base.ui:43
-#, fuzzy, kde-format
-#| msgid "Sets the start date for this to-do"
+#, kde-format
 msgid "Starting month for printing"
-msgstr "Setur upphafsdag þessa verkþáttar."
+msgstr "Upphafsmánuður fyrir prentun"
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:53
-#, fuzzy, kde-format
-#| msgid "Sets the start date for this to-do"
+#, kde-format
 msgid "Starting year for printing"
-msgstr "Setur upphafsdag þessa verkþáttar."
+msgstr "Upphafsár fyrir prentun"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:56
-#, fuzzy, kde-format
-#| msgid ""
-#| "When you want to print more months at once, you can define a month range. "
-#| "This option defines the first month to be printed. Use the option <i>End "
-#| "month</i> to define the last month in this range."
+#, kde-format
 msgid ""
 "When you want to print more years at once, you can define a year range. This "
 "option defines the first year to be printed. Use the option <i>End year</i> "
 "to define the last year in this range."
 msgstr ""
-"Þegar þú vilt prenta fleiri en einn mánuð í einu, getur þú tilgreint "
-"mánaðarsvið. Þessi valkostur tilgreinir fyrsta mánuðinn sem á að prenta. "
-"Notaðu <i>Endamánuður</i> til að tilgreina seinasta mánuðinn í sviðinu."
+"Þegar þú vilt prenta fleiri en eitt ár í einu getur þú tilgreint árabilið. "
+"Þessi valkostur velur fyrsta árið sem á að prenta. Notaðu <i>Lokaár</i> til "
+"að velja síðasta árið í bilinu."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, mToMonth)
@@ -2281,103 +2301,97 @@ msgid ""
 "This option defines the last month to be printed. Use the option <i>Start "
 "month</i> to define the first month in this range."
 msgstr ""
-"Þegar þú vilt prenta fleiri en einn mánuð í einu, getur þú tilgreint "
-"mánaðarsvið. Þessi valkostur tilgreinir seinasta mánuðinn sem á að prenta. "
-"Notaðu <i>Upphafsmánuður</i> til að tilgreina fyrsta mánuðinn í sviðinu."
+"Þegar þú vilt prenta fleiri en einn mánuð í einu getur þú tilgreint "
+"mánaðarbilið. Þessi valkostur velur síðasta mánuðinn sem á að prenta. Notaðu "
+"<i>Upphafsmánuður</i> til að velja fyrsta mánuðinn."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintmonthconfig_base.ui:72
 #, kde-format
 msgid "&End month:"
-msgstr "&Endamánuður:"
+msgstr "&Lokamánuður:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mToMonth)
 #: printing/calprintmonthconfig_base.ui:82
-#, fuzzy, kde-format
-#| msgid "Sets the start date for this to-do"
+#, kde-format
 msgid "Ending month for the print"
-msgstr "Setur upphafsdag þessa verkþáttar."
+msgstr "Lokamánuður fyrir prentun"
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:92
-#, fuzzy, kde-format
-#| msgid "Sets the start date for this to-do"
+#, kde-format
 msgid "Ending year for the print"
-msgstr "Setur upphafsdag þessa verkþáttar."
+msgstr "Lokaár fyrir prentun"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:95
-#, fuzzy, kde-format
-#| msgid ""
-#| "When you want to print more months at once, you can define a month range. "
-#| "This option defines the last month to be printed. Use the option <i>Start "
-#| "month</i> to define the first month in this range."
+#, kde-format
 msgid ""
 "When you want to print more years at once, you can define a year range. This "
 "option defines the last year to be printed. Use the option <i>Start year</i> "
 "to define the first year in this range."
 msgstr ""
-"Þegar þú vilt prenta fleiri en einn mánuð í einu, getur þú tilgreint "
-"mánaðarsvið. Þessi valkostur tilgreinir seinasta mánuðinn sem á að prenta. "
-"Notaðu <i>Upphafsmánuður</i> til að tilgreina fyrsta mánuðinn í sviðinu."
+"Þegar þú vilt prenta fleiri en eitt ár í einu getur þú tilgreint árabilið. "
+"Þessi valkostur velur síðasta árið sem á að prenta. Notaðu <i>Upphafsár</i> "
+"til að velja fyrsta árið í bilinu.<"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:195
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print daily recurring items"
-msgstr "Prenta atburði sem &endurtaka sig daglega"
+msgstr "Prenta daglega endurtekin atriði"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:198
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "With this option it is possible to leave out the daily recurring to-dos and "
 "events in the print. They take a lot of space and make the month view "
 "needlessly complicated."
 msgstr ""
-"Með þessum valkosti er hægt að sleppa verkþáttum sem endurtaka sig daglega "
-"frá prentuninni. Atburðirnir taka mikið pláss og gera mánaðarsýnina "
-"óþarflega flókna."
+"Með þessum valkosti er hægt að sleppa daglega endurteknum verkefnum og "
+"viðburðum úr prentuninni. Þau taka mikið pláss og flækja mánaðaryfirlitið um "
+"of."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:201
-#, fuzzy, kde-format
+#, kde-format
 msgid "Include daily re&curring to-dos and events"
-msgstr "Prenta atburði sem &endurtaka sig daglega"
+msgstr "Taka með &daglega endurtekin verkefni og viðburði"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:208
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print weekly recurring items"
-msgstr "Prenta atburði sem endurtaka sig &vikulega"
+msgstr "Prenta vikulega endurteknar færslur"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:211
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Similar to \"Print daily recurring to-dos and events\". Weekly to-dos and "
 "events will be omitted when making a print of the selected month."
 msgstr ""
-"Svipað og \"Prenta atburði sem endurtaka sig daglega\". Vikulegum atburðum "
-"verður sleppt þegar valinn mánuður er prentaður."
+"Svipað og \"Prenta daglega endurtekin atriði\". Vikulegum verkefnum og "
+"viðburðum verður sleppt þegar valinn mánuður er prentaður."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:214
-#, fuzzy, kde-format
+#, kde-format
 msgid "Include weekl&y recurring to-dos and events"
-msgstr "Prenta atburði sem endurtaka sig &vikulega"
+msgstr "Taka með vikule&g verkefni og viðburði"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:230
 #, kde-format
 msgid "Print week numbers"
-msgstr "Birta vikunúmer"
+msgstr "Prenta vikunúmer"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:233
 #, kde-format
 msgid "Enable this to print week numbers at the left of each row."
-msgstr "Virkjaðu þetta til að prenta vikunúmerið vinstra megin við hverja röð."
+msgstr "Hakaðu hér til að prenta vikunúmerið vinstra megin í hverri röð."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:236
@@ -2399,7 +2413,7 @@ msgstr ","
 #: printing/calprintpluginbase.cpp:310
 #, kde-format
 msgid "Holiday"
-msgstr "Hátíðardagur"
+msgstr "Frídagur"
 
 #: printing/calprintpluginbase.cpp:612
 #, kde-format
@@ -2423,24 +2437,24 @@ msgstr "%1-%2 %3, %4"
 #, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
-msgstr "%1, %2 %3"
+msgstr "%1, %3. %2"
 
 #: printing/calprintpluginbase.cpp:1120
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
-msgstr "%1 (lokadagsetning: %2)"
+msgstr "%1 (skil: %2)"
 
 #: printing/calprintpluginbase.cpp:1125
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
-msgstr "%1 (lokadagsetning: %2)"
+msgstr "%1 (skil: %2)"
 
 #: printing/calprintpluginbase.cpp:1132
 #, kde-format
 msgid "To-do: %1"
-msgstr "Verkþáttur: %1"
+msgstr "Verkefni: %1"
 
 #: printing/calprintpluginbase.cpp:1863
 #, kde-format
@@ -2452,7 +2466,7 @@ msgstr "%2–%3 %1"
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
-msgstr "%2. %1–%4. %3"
+msgstr "%1. %2–%3. %4"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprinttodoconfig_base.ui:17
@@ -2467,6 +2481,14 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print to-dos options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Prentvalkostir fyrir verkefni:</span></p></body></html>"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mTitleLabel)
 #. i18n: ectx: property (toolTip), widget (QLineEdit, mTitle)
@@ -2484,6 +2506,7 @@ msgstr "Heiti á þessum verkefnalista"
 msgid ""
 "Enter a name for this to-do list that will be put at the top of the print-out"
 msgstr ""
+"Veldu heiti fyrir verkefnalistann sem verður efst á prentaða eintakinu."
 
 #. i18n: ectx: property (text), widget (QLabel, mTitleLabel)
 #: printing/calprinttodoconfig_base.ui:32
@@ -2495,45 +2518,43 @@ msgstr "&Titill:"
 #: printing/calprinttodoconfig_base.ui:48
 #, kde-format
 msgid "To-do List"
-msgstr "Verkþáttalisti"
+msgstr "Verkefnalisti"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprinttodoconfig_base.ui:57
 #, kde-format
 msgid "To-dos to Print"
-msgstr "Verkþættir sem á að prenta"
+msgstr "Verkefni sem á að prenta"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintAll)
 #: printing/calprinttodoconfig_base.ui:63
 #, kde-format
 msgid "Print &all to-dos"
-msgstr "Prenta &alla verkþætti"
+msgstr "Prenta &öll verkefni"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
 #: printing/calprinttodoconfig_base.ui:73
-#, fuzzy, kde-format
-#| msgid "Print &unfinished to-dos only"
+#, kde-format
 msgid "Print &uncompleted to-dos only"
-msgstr "&Einungis prenta ókláraða verkþætti"
+msgstr "Prenta bara ól&okin verkefni"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
 #: printing/calprinttodoconfig_base.ui:80
 #, kde-format
 msgid "Print only to-dos due in the &range:"
-msgstr "Einungis p&renta verkþætti með skiladag á sviðinu:"
+msgstr "P&renta bara verkefni með skil á bilinu:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
-#, fuzzy, kde-format
-#| msgid "&Description"
+#, kde-format
 msgid "Print item priorities"
-msgstr "&Lýsing"
+msgstr "Prenta forgang atriða"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:261
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option if you want to see the item priorities printed."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr "Hakaðu hér ef þú vilt prenta forgangsröðun atriðanna."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
@@ -2543,64 +2564,64 @@ msgstr "&Forgangur"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:274
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print item start dates"
-msgstr "Hefst daginn:"
+msgstr "Prenta upphafsdag atriða"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:277
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this option if you want to see the item start dates (when work can "
 "begin) printed."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr ""
+"Hakaðu hér ef þú vilt prenta upphafsdaga atriðanna (þegar vinnan getur "
+"hafist)."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:280
 #, kde-format
 msgid "&Start date"
-msgstr "&Upphafsdagur:"
+msgstr "&Upphafsdagur"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
-#, fuzzy, kde-format
-#| msgid "&Description"
+#, kde-format
 msgid "Print item due dates"
-msgstr "&Lýsing"
+msgstr "Prenta skiladaga atriða"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:290
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option if you want to see the item due dates printed."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr "Hakaðu hér ef þú vilt prenta skiladaga atriðanna."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293
 #, kde-format
 msgid "Du&e date"
-msgstr "&Lokadagur"
+msgstr "S&kiladagur"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
-#, fuzzy, kde-format
-#| msgid "&Description"
+#, kde-format
 msgid "Print item completion percentage"
-msgstr "&Lýsing"
+msgstr "Prenta lokinni prósentu atriða"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:306
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this option if you want to see the item completion percentage printed "
 "as a number and bar graph."
-msgstr "Veldu þetta ef þú vilt sýna sekúndur á Marcus Bains línunni."
+msgstr ""
+"Hakaðu hér ef þú vilt prenta lokna prósentu atriðanna sem tölu eða súlurit."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
-#, fuzzy, kde-format
-#| msgid "Per&centage completed"
+#, kde-format
 msgid "Percentage co&mpleted"
-msgstr "&Prósentu lokið"
+msgstr "Próse&ntu lokið"
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
 #: printing/calprinttodoconfig_base.ui:328
@@ -2612,7 +2633,7 @@ msgstr "Röðunarvalkostir"
 #: printing/calprinttodoconfig_base.ui:339
 #, kde-format
 msgid "Sort field:"
-msgstr "Raða svæði:"
+msgstr "Röðunarsvæði:"
 
 #. i18n: ectx: property (text), widget (QLabel, sortDirectionLabel)
 #: printing/calprinttodoconfig_base.ui:366
@@ -2624,14 +2645,13 @@ msgstr "Röðunarstefna:"
 #: printing/calprinttodoconfig_base.ui:397
 #, kde-format
 msgid "Co&nnect sub-to-dos with its parent"
-msgstr "Te&ngja undirverkþætti við foreldra sína"
+msgstr "Te&ngja undirverkefni við yfirverkefni sín"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
-#, fuzzy, kde-format
-#| msgid "Strike &out completed to-do summaries"
+#, kde-format
 msgid "Stri&ke out completed to-do summaries"
-msgstr "&Yfirstrika lýsingar kláraðra verkþátta"
+msgstr "&Yfirstrika samantektir lokinna verkefna"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintweekconfig_base.ui:17
@@ -2646,20 +2666,26 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print week options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Prentvalkostir fyrir viku:</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintweekconfig_base.ui:212
-#, fuzzy, kde-format
-#| msgid "Prints all events of one month on one page"
+#, kde-format
 msgid "Print date &range as Filofax format, one week per page"
-msgstr "Prentar alla atburði eins mánaðar á eina síðu"
+msgstr "Prenta dagabil á Filofax-sniði, eina viku á hverja síðu"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintweekconfig_base.ui:222
-#, fuzzy, kde-format
-#| msgid "Print as &timetable view"
+#, kde-format
 msgid "Print as timeta&ble view, one week per page"
-msgstr "Prenta sem tímatöflusýn"
+msgstr "Prenta sem tímatöfluyfirlit, eina viku á hverja síðu"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:229
@@ -2668,13 +2694,14 @@ msgid ""
 "The split week view has the times to the left of the page, with two pages "
 "per week."
 msgstr ""
+"Í skiptu vikuyfirliti eru tímasetningarnar vinstra megin á síðunni með tvær "
+"síður fyrir hverja viku."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:232
-#, fuzzy, kde-format
-#| msgid "Print as split week view"
+#, kde-format
 msgid "Print as split wee&k view"
-msgstr "Prenta sem klofin vikusýn"
+msgstr "Prenta sem skipt vikuyfirlit"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintyearconfig_base.ui:14
@@ -2683,12 +2710,14 @@ msgid ""
 "<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">Print "
 "year options:</span></p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;"
+"\">Prentvalkostir fyrir ár:</span></p></body></html>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
 #: printing/calprintyearconfig_base.ui:21
 #, kde-format
 msgid "Date Range"
-msgstr "Tímabil"
+msgstr "Dagabil"
 
 #. i18n: ectx: property (text), widget (QLabel, mYearLabel)
 #: printing/calprintyearconfig_base.ui:32
@@ -2710,9 +2739,9 @@ msgstr "Fjöl&di síðna:"
 
 #. i18n: ectx: property (text), widget (QLabel, mSubDaysLabel)
 #: printing/calprintyearconfig_base.ui:121
-#, fuzzy, kde-format
+#, kde-format
 msgid "Show &sub-day events as:"
-msgstr "&Sýna tíma sem:"
+msgstr "&Sýna undirviðburði daga sem:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2720,7 +2749,7 @@ msgstr "&Sýna tíma sem:"
 #: printing/calprintyearconfig_base.ui:165
 #, kde-format
 msgid "Text"
-msgstr "Texti"
+msgstr "Texta"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2728,7 +2757,7 @@ msgstr "Texti"
 #: printing/calprintyearconfig_base.ui:170
 #, kde-format
 msgid "Time Boxes"
-msgstr "Tímareitir"
+msgstr "Tímareiti"
 
 #. i18n: ectx: property (text), widget (QLabel, mHolidaysLabel)
 #: printing/calprintyearconfig_base.ui:151
@@ -2760,7 +2789,7 @@ msgstr "Prenta da&gbók"
 #: printing/journalprint.h:37
 #, kde-format
 msgid "Prints all journals for a given date range"
-msgstr "Prentar allar dagbækur í uppgefna tímabilinu"
+msgstr "Prentar allar dagbækur á tilteknu dagabili"
 
 #: printing/yearprint.h:31
 #, kde-format
@@ -2768,21 +2797,20 @@ msgid "Print &year"
 msgstr "Prent&a ár"
 
 #: printing/yearprint.h:36
-#, fuzzy, kde-format
+#, kde-format
 msgid "Prints a calendar for an entire year"
-msgstr "Prentar allar dagbækur í uppgefna tímabilinu"
+msgstr "Prentar dagatal fyrir heilt ár"
 
 #: utils.cpp:289
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
-msgstr "Veldu dagatal"
+msgstr "Velja dagatal"
 
 #: utils.cpp:290
-#, fuzzy, kde-format
-#| msgid "Sets the due date for this to-do."
+#, kde-format
 msgid "Select the calendar where this item will be stored."
-msgstr "Setur skiladag þessa verkþáttar."
+msgstr "Veldu dagatalið þar sem á að geyma atriðið."
 
 #: utils.cpp:395
 #, kde-format
@@ -2799,7 +2827,7 @@ msgstr "Sýndar"
 #: utils.cpp:408
 #, kde-format
 msgid "Folder type:"
-msgstr "Tegund möppu"
+msgstr "Tegund möppu:"
 
 #: utils.cpp:418
 #, kde-format
@@ -2815,19 +2843,19 @@ msgstr "Tegund efnis:"
 #: utils.cpp:428
 #, kde-format
 msgid "Rights:"
-msgstr "Réttindi:"
+msgstr "Heimildir:"
 
 #: utils.cpp:431
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
-msgstr "ritvarið"
+msgstr "skrifvarið"
 
 #: utils.cpp:433
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
-msgstr "lesa-skrifa"
+msgstr "les- og skrifréttindi"
 
 #: utils.cpp:441
 #, kde-format
@@ -2874,7 +2902,7 @@ msgstr "ekkert"
 #: utils.cpp:459
 #, kde-format
 msgid "Blocked Reminders:"
-msgstr "Hindraðar áminningar:"
+msgstr "Útilokaðar áminningar:"
 
 #: utils.cpp:524
 #, kde-format
