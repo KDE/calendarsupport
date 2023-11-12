@@ -2,17 +2,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# SPDX-FileCopyrightText: 2022, 2023 Emir SARI <emir_sari@icloud.com>
 # zeugma <sunder67@hotmail.com>, 2013.
 # obsoleteman <tulliana@gmail.com>, 2009,2012.
 # Volkan Gezer <volkangezer@gmail.com>, 2013-2014, 2015, 2017.
 # Kaan Ozdincer <kaanozdincer@gmail.com>, 2014.
-# SPDX-FileCopyrightText: 2022, 2023 Emir SARI <emir_sari@icloud.com>
+# Emir SARI <emir_sari@icloud.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-11-02 13:11+0300\n"
+"PO-Revision-Date: 2023-11-11 23:31+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 23.11.70\n"
 "(http: //www.transifex.com/projects/p/kdepim-k-tr/language/tr/)\n"
 "X-POOTLE-MTIME: 1413102218.000000\n"
 
@@ -693,7 +694,7 @@ msgid ""
 "Configuring Kontact as a KDE Kolab client)."
 msgstr ""
 "Bu düğmeye tıklayarak, diğer katılımcıları ilgilendiren olayları (veya "
-"yapılacak işleri) oluştururken, güncellerken veya silerken otomatik olarak "
+"yapılacak işleri) oluştururken, güncellerken veya silerken kendiliğinden "
 "posta oluşturulmasını sağlayabilirsiniz. Grup işlevini kullanmak "
 "istiyorsanız, örneğin, Kontak'ı KDE Kolab istemcisi olarak düzenlemek "
 "istiyorsanız, bu kutucuğu seçmeniz önerilir."
@@ -1029,7 +1030,7 @@ msgstr ""
 "zaman seçim kutucuğu ile, bu zaman aralığının başlangıcını "
 "tanımlayabliirsiniz. Bitiş süresi <i>Bitiş süresi</i> seçeneğiyle "
 "tanımlanabilir. <i>Bütün olayları dahil etmek için zaman aralığını uzat</i> "
-"seçeneğini işaretlerseniz bu ayarları otomatik olarak değiştirebilirsiniz."
+"seçeneğini işaretlerseniz bu ayarları kendiliğinden değiştirebilirsiniz."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
@@ -1117,7 +1118,7 @@ msgstr ""
 "Bu zaman seçim kutucuğu ile, bu zaman aralığının bitişini "
 "tanımlayabilirsiniz. Başlangıç zamanı <i>Başlangıç zamanı</i> seçeneği ile "
 "tanımlanabilir. <i>Zaman aralığını bütün olayları dahil etmek için uzat</i> "
-"seçeneğini işaretlerseniz bu ayarları otomatik olarak değiştirebilirsiniz."
+"seçeneğini işaretlerseniz bu ayarları kendiliğinden değiştirebilirsiniz."
 
 #. i18n: ectx: property (text), widget (QLabel, mToTimeLabel)
 #: printing/calprintdayconfig_base.ui:150
@@ -1134,7 +1135,7 @@ msgid ""
 "Check this option to automatically determine the required time range, so all "
 "events will be shown."
 msgstr ""
-"Gerekli zaman aralığını otomatik olarak belirlemek için bu seçeneği imleyin. "
+"Gerekli zaman aralığını kendiliğinden belirlemek için bu seçeneği imleyin. "
 "Bu durumda bütün olaylar gösterilecektir."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
