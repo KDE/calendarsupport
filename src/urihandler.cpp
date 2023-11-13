@@ -29,7 +29,7 @@ bool startService(const QString &desktopFileName, const QString &uri)
     }
     auto job = new KIO::ApplicationLauncherJob(service);
     job->setUrls({QUrl{uri}});
-    QObject::connect(job, &KJob::result, [desktopFileName](KJob *job) {
+    QObject::connect(job, &KJob::result, job, [desktopFileName](KJob *job) {
         if (job->error()) {
             qCWarning(CALENDARSUPPORT_LOG) << "Failed to start" << desktopFileName << ":" << job->errorText();
         }
