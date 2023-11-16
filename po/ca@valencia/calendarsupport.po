@@ -78,10 +78,10 @@ msgid ""
 "be archived or purged. The items will be archived unless the \"Delete only\" "
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
-"Si activeu esta casella, els esdeveniments i les tasques pendents anteriors "
-"a la data indicada s'arxivaran o s'eliminaran. Els elements s'arxivaran "
-"excepte que s'active l'opció «Només suprimix»; altrament els elements "
-"s'eliminaran i no es guardaran."
+"Si seleccioneu esta casella, els esdeveniments i les tasques pendents "
+"anteriors a la data indicada s'arxivaran o s'eliminaran. Els elements "
+"s'arxivaran excepte que se seleccione l'opció «Només suprimix»; altrament "
+"els elements s'eliminaran i no es guardaran."
 
 # skip-rule: kct-cut
 #: archivedialog.cpp:93
@@ -463,10 +463,10 @@ msgid ""
 "the System Settings \"About Me\" Module. Uncheck this box to be able to "
 "specify your full name and e-mail."
 msgstr ""
-"Marqueu esta casella per a utilitzar la configuració general de correu de "
-"KDE, que es definix utilitzant el mòdul «Quant a mi» de Configuració del "
-"sistema KDE. Desmarqueu la casella per a poder especificar el vostre nom "
-"complet i l'adreça de correu."
+"Seleccioneu esta casella per a utilitzar la configuració general de correu "
+"de KDE, que es definix utilitzant el mòdul «Quant a mi» de Configuració del "
+"sistema KDE. Desseleccioneu-la per a poder especificar el vostre nom complet "
+"i l'adreça de correu."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
@@ -514,7 +514,7 @@ msgid ""
 "default sound file for new reminders. You can always specify another file in "
 "the Reminder configuration accessible from the Event or To-do editors."
 msgstr ""
-"Marqueu esta casella si voleu habilitar el fitxer especificat per a "
+"Seleccioneu esta casella si voleu habilitar el fitxer especificat per a "
 "utilitzar-se com a fitxer de so predeterminat per als recordatoris nous. "
 "Sempre podreu especificar un altre fitxer en la configuració del "
 "recordatori, accessible des dels editors de tasques pendents o esdeveniments."
@@ -551,7 +551,7 @@ msgid ""
 "Check this box if you want to enable reminders for all newly created Events. "
 "You can always turn-off the reminders in the Event editor dialog."
 msgstr ""
-"Marqueu esta casella si voleu habilitar els recordatoris per a tots els "
+"Seleccioneu esta casella si voleu habilitar els recordatoris per a tots els "
 "esdeveniments de nova creació. Sempre podeu desactivar els recordatoris en "
 "el diàleg de l'editor de l'esdeveniment."
 
@@ -576,7 +576,7 @@ msgid ""
 "Check this box if you want to enable reminders for all newly created To-dos. "
 "You can always turn-off the reminders in the To-do editor dialog."
 msgstr ""
-"Marqueu esta casella si voleu habilitar els recordatoris per a totes les "
+"Seleccioneu esta casella si voleu habilitar els recordatoris per a totes les "
 "tasques pendents de nova creació. Sempre podeu desactivar els recordatoris "
 "en el diàleg de l'editor de tasques pendents."
 
@@ -657,8 +657,8 @@ msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
 "holidays."
 msgstr ""
-"Marqueu esta casella per a evitar que KOrganizer marque les hores laborables "
-"dels dies festius."
+"Seleccioneu esta casella per a evitar que KOrganizer marque les hores "
+"laborables dels dies festius."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:90
@@ -692,9 +692,9 @@ msgid ""
 "should check this box if you want to use the groupware functionality (e.g. "
 "Configuring Kontact as a KDE Kolab client)."
 msgstr ""
-"Marqueu esta casella per a habilitar la generació automàtica de correus en "
-"crear, actualitzar o suprimir esdeveniments (o tasques pendents) amb altres "
-"assistents implicats. Hauríeu de marcar esta casella si voleu utilitzar la "
+"Seleccioneu esta casella per a habilitar la generació automàtica de correus "
+"en crear, actualitzar o suprimir esdeveniments (o tasques pendents) amb "
+"altres assistents implicats. Hauríeu de seleccionar-la si voleu utilitzar la "
 "funcionalitat de treball en grup (p. ex., configurar Kontact com a client "
 "KDE de Kolab)."
 
@@ -1031,8 +1031,8 @@ msgstr ""
 "interval de temps determinat. Amb esta casella de selecció d'hora podeu "
 "definir l'inici d'este interval de temps. L'hora final s'hauria de definir "
 "amb l'opció <i>Hora final</i>. Cal tindre present que podeu modificar estos "
-"valors automàticament si marqueu <i>Amplia l'interval per a incloure tots "
-"els esdeveniments</i>."
+"valors automàticament si seleccioneu <i>Amplia l'interval per a incloure "
+"tots els esdeveniments</i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
@@ -1120,8 +1120,8 @@ msgstr ""
 "interval de temps determinat. Amb esta casella de selecció d'hora podeu "
 "definir el final d'este interval de temps. L'hora d'inici s'hauria de "
 "definir amb l'opció <i>Hora d'inici</i>. Cal tindre present que podeu "
-"modificar estos valors automàticament si marqueu <i>Amplia l'interval per a "
-"incloure tots els esdeveniments</i>."
+"modificar estos valors automàticament si seleccioneu <i>Amplia l'interval "
+"per a incloure tots els esdeveniments</i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mToTimeLabel)
 #: printing/calprintdayconfig_base.ui:150
@@ -1138,7 +1138,7 @@ msgid ""
 "Check this option to automatically determine the required time range, so all "
 "events will be shown."
 msgstr ""
-"Marqueu esta opció per a determinar automàticament l'interval necessari "
+"Seleccioneu esta opció per a determinar automàticament l'interval necessari "
 "perquè es mostren tots els esdeveniments."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
@@ -1227,8 +1227,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Confidential&#8221;"
 msgstr ""
-"Marqueu esta opció per a excloure els elements que tinguen el nivell d'accés "
-"establit a &#8220;Confidencial&#8221;"
+"Seleccioneu esta opció per a excloure els elements que tinguen el nivell "
+"d'accés establit a &#8220;Confidencial&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:251
@@ -1253,8 +1253,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Private&#8221;"
 msgstr ""
-"Marqueu esta opció per a excloure els elements que tinguen el nivell d'accés "
-"establit a &#8220;Privat&#8221;"
+"Seleccioneu esta opció per a excloure els elements que tinguen el nivell "
+"d'accés establit a &#8220;Privat&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:261
@@ -1297,7 +1297,7 @@ msgstr "Imprimix les descripcions de l'element"
 #, kde-format
 msgid "Check this option if you want to see the item descriptions printed."
 msgstr ""
-"Marqueu esta opció si voleu veure impreses les descripcions de l'element."
+"Seleccioneu esta opció si voleu veure impreses les descripcions de l'element."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (text), widget (QCheckBox, mDescription)
@@ -1328,7 +1328,7 @@ msgstr "Imprimix les etiquetes dels elements"
 #, kde-format
 msgid "Check this option if you want to see the item tags printed."
 msgstr ""
-"Marqueu esta opció si voleu veure impreses les etiquetes dels elements."
+"Seleccioneu esta opció si voleu veure impreses les etiquetes dels elements."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (text), widget (QCheckBox, mCategories)
@@ -1359,8 +1359,8 @@ msgid ""
 "You should check this option if you want to print to-dos which are due on "
 "one of the dates which are in the supplied date range."
 msgstr ""
-"Hauríeu de marcar esta opció si voleu imprimir les tasques pendents que "
-"vencen en una de les dates que cauen dins l'interval de dates proporcionat."
+"Hauríeu de seleccionar-la si voleu imprimir les tasques pendents que vencen "
+"en una de les dates que cauen dins l'interval de dates proporcionat."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:312
@@ -1375,7 +1375,8 @@ msgstr "Inclou les t&asques pendents que vencen en els dies imprés/os"
 #: printing/calprintweekconfig_base.ui:319
 #, kde-format
 msgid "Check this option to exclude the time in description box"
-msgstr "Marqueu esta opció per a excloure el temps en el quadro de descripció"
+msgstr ""
+"Seleccioneu esta opció per a excloure el temps en el quadro de descripció"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:322
@@ -1414,7 +1415,7 @@ msgid ""
 "Check this option to limit events to a single line, truncating as necessary "
 "to save space."
 msgstr ""
-"Marqueu esta opció per a limitar els esdeveniments a una única línia, "
+"Seleccioneu esta opció per a limitar els esdeveniments a una única línia, "
 "truncant el que calga per a estalviar espai."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mSingleLineLimit)
@@ -1433,7 +1434,8 @@ msgstr "Limita els esdeveniments de cada dia a una &línia única"
 #, kde-format
 msgid "Check this option to draw note lines in empty areas."
 msgstr ""
-"Marqueu esta opció per a dibuixar les línies de la nota en les àrees buides."
+"Seleccioneu esta opció per a dibuixar les línies de la nota en les àrees "
+"buides."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:354
@@ -1462,7 +1464,7 @@ msgid ""
 "check this option."
 msgstr ""
 "Si voleu utilitzar els colors per a distingir certes etiquetes en l'eixida "
-"impresa, marqueu esta opció."
+"impresa, seleccioneu esta opció."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:367
@@ -1498,7 +1500,7 @@ msgid ""
 "Check this box if you want to print a small footer on each page that "
 "contains the date of the print."
 msgstr ""
-"Marqueu esta casella si voleu imprimir un peu xicotet en cada pàgina que "
+"Seleccioneu esta casella si voleu imprimir un peu xicotet en cada pàgina que "
 "continga la data de la impressió."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPrintFooter)
@@ -2124,7 +2126,7 @@ msgid ""
 "Check this box if you want to print more details for the incidence, "
 "including the visibility and secrecy properties."
 msgstr ""
-"Marqueu esta casella si voleu imprimir més detalls de la incidència, "
+"Seleccioneu esta casella si voleu imprimir més detalls de la incidència, "
 "incloent-hi la visibilitat i les propietats secretes."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowDetails)
@@ -2145,7 +2147,8 @@ msgstr "Imprimix els assistents"
 msgid ""
 "Check this box if you want the attendees list included on the print-out."
 msgstr ""
-"Marqueu esta casella si voleu incloure la llista d'assistents en l'eixida."
+"Seleccioneu esta casella si voleu incloure la llista d'assistents en "
+"l'eixida."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:52
@@ -2165,7 +2168,7 @@ msgstr "Imprimix les notes"
 msgid ""
 "Check this box if you want the incidence notes included on the print-out."
 msgstr ""
-"Marqueu esta casella si voleu incloure les notes de les incidències en "
+"Seleccioneu esta casella si voleu incloure les notes de les incidències en "
 "l'eixida."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowSubitemsNotes)
@@ -2187,7 +2190,7 @@ msgid ""
 "Check this box if you want the attachment information included on the print-"
 "out. The attachments themselves are not printed."
 msgstr ""
-"Marqueu esta casella si voleu incloure la informació dels adjunts en "
+"Seleccioneu esta casella si voleu incloure la informació dels adjunts en "
 "l'eixida. Els mateixos adjunts no s'imprimiran."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttachments)
@@ -2203,7 +2206,7 @@ msgid ""
 "Check this box if you want to draw note lines in the empty area of the "
 "print. This is useful if you want to hand-write notes on this print-out."
 msgstr ""
-"Marqueu esta casella si voleu dibuixar les línies de la nota en una àrea "
+"Seleccioneu esta casella si voleu dibuixar les línies de la nota en una àrea "
 "buida de la impressió. Açò és útil per a escriure notes a mà en esta eixida."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
@@ -2582,7 +2585,7 @@ msgstr "Imprimix les prioritats dels elements"
 #, kde-format
 msgid "Check this option if you want to see the item priorities printed."
 msgstr ""
-"Marqueu esta opció si voleu veure impreses les prioritats de l'element."
+"Seleccioneu esta opció si voleu veure impreses les prioritats de l'element."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
@@ -2603,7 +2606,7 @@ msgid ""
 "Check this option if you want to see the item start dates (when work can "
 "begin) printed."
 msgstr ""
-"Marqueu esta opció si voleu veure impreses les dates d'inici (quan pot "
+"Seleccioneu esta opció si voleu veure impreses les dates d'inici (quan pot "
 "començar la faena) dels elements."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
@@ -2623,7 +2626,7 @@ msgstr "Imprimix les dates de venciment dels elements"
 #, kde-format
 msgid "Check this option if you want to see the item due dates printed."
 msgstr ""
-"Marqueu esta opció si voleu veure impreses les dates de venciment dels "
+"Seleccioneu esta opció si voleu veure impreses les dates de venciment dels "
 "elements."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
@@ -2645,8 +2648,8 @@ msgid ""
 "Check this option if you want to see the item completion percentage printed "
 "as a number and bar graph."
 msgstr ""
-"Marqueu esta opció si voleu veure impresos el percentatge de finalització "
-"dels elements, així com un número i un gràfic de barres."
+"Seleccioneu esta opció si voleu veure impresos el percentatge de "
+"finalització dels elements, així com un número i un gràfic de barres."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
