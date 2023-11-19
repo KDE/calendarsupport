@@ -25,8 +25,8 @@ void FreePeriodModelTest::testModelValidity()
     auto model = new FreePeriodModel(this);
     new QAbstractItemModelTester(model, this);
 
-    const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
-    const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
+    const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), QTimeZone::utc());
+    const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), QTimeZone::utc());
 
     KCalendarCore::Period::List list;
 
@@ -43,8 +43,8 @@ void FreePeriodModelTest::testSplitByDay()
     auto model = new FreePeriodModel(this);
     new QAbstractItemModelTester(model, this);
 
-    const QDateTime startDt(QDate(2010, 7, 24), QTime(8, 0, 0), Qt::UTC);
-    const QDateTime endDt(QDate(2010, 7, 25), QTime(8, 0, 0), Qt::UTC);
+    const QDateTime startDt(QDate(2010, 7, 24), QTime(8, 0, 0), QTimeZone::utc());
+    const QDateTime endDt(QDate(2010, 7, 25), QTime(8, 0, 0), QTimeZone::utc());
 
     KCalendarCore::Period::List list;
 
@@ -58,8 +58,8 @@ void FreePeriodModelTest::testSplitByDay()
     // one from 8am-12 on the 24th, and the second from 00-08 on the 25th
     model->slotNewFreePeriods(list);
 
-    const QDateTime endPeriod1(QDate(2010, 7, 24), QTime(23, 59, 59, 999), Qt::UTC);
-    const QDateTime startPeriod2(QDate(2010, 7, 25), QTime(0, 0, 0, 0), Qt::UTC);
+    const QDateTime endPeriod1(QDate(2010, 7, 24), QTime(23, 59, 59, 999), QTimeZone::utc());
+    const QDateTime startPeriod2(QDate(2010, 7, 25), QTime(0, 0, 0, 0), QTimeZone::utc());
 
     QModelIndex index = model->index(0, 0);
     auto period1 = model->data(index, FreePeriodModel::PeriodRole).value<KCalendarCore::Period>();

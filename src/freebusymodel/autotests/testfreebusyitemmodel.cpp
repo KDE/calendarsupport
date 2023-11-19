@@ -27,8 +27,8 @@ void FreeBusyItemModelTest::testModelValidity()
 
     QVERIFY(model->rowCount() == 0);
 
-    const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
-    const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
+    const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), QTimeZone::utc());
+    const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), QTimeZone::utc());
     KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral("fred@example.com"));
     KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
 
@@ -76,10 +76,10 @@ void FreeBusyItemModelTest::testModelValidity2()
     auto model = new FreeBusyItemModel(this);
     new QAbstractItemModelTester(model, this);
 
-    const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
-    const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
-    const QDateTime dt3(QDate(2010, 7, 24), QTime(12, 0, 0), Qt::UTC);
-    const QDateTime dt4(QDate(2010, 7, 24), QTime(14, 0, 0), Qt::UTC);
+    const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), QTimeZone::utc());
+    const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), QTimeZone::utc());
+    const QDateTime dt3(QDate(2010, 7, 24), QTime(12, 0, 0), QTimeZone::utc());
+    const QDateTime dt4(QDate(2010, 7, 24), QTime(14, 0, 0), QTimeZone::utc());
 
     KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral("fred@example.com"));
     KCalendarCore::Attendee a2(QStringLiteral("joe"), QStringLiteral("joe@example.com"));
@@ -174,15 +174,15 @@ void FreeBusyItemModelTest::testInsertFreeBusy()
     auto model = new FreeBusyItemModel(this);
     new QAbstractItemModelTester(model, this);
 
-    const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), Qt::UTC);
-    const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), Qt::UTC);
+    const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), QTimeZone::utc());
+    const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), QTimeZone::utc());
     KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral("fred@example.com"));
     KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
     fb1->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
     fb1->addPeriod(dt2, KCalendarCore::Duration(60 * 60));
 
-    const QDateTime dt3(QDate(2010, 7, 24), QTime(12, 0, 0), Qt::UTC);
-    const QDateTime dt4(QDate(2010, 7, 24), QTime(14, 0, 0), Qt::UTC);
+    const QDateTime dt3(QDate(2010, 7, 24), QTime(12, 0, 0), QTimeZone::utc());
+    const QDateTime dt4(QDate(2010, 7, 24), QTime(14, 0, 0), QTimeZone::utc());
     KCalendarCore::FreeBusy::Ptr fb2(new KCalendarCore::FreeBusy());
     fb2->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
     fb2->addPeriod(dt2, KCalendarCore::Duration(60 * 60));
