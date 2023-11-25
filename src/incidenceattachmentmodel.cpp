@@ -56,7 +56,7 @@ class IncidenceAttachmentModelPrivate
         }
 
         m_monitor = new Akonadi::Monitor(q_ptr);
-        m_monitor->setObjectName(QStringLiteral("IncidenceAttachmentModelMonitor"));
+        m_monitor->setObjectName(QLatin1StringView("IncidenceAttachmentModelMonitor"));
         m_monitor->setItemMonitored(m_item);
         m_monitor->itemFetchScope().fetchFullPayload(true);
         QObject::connect(m_monitor, SIGNAL(itemChanged(Akonadi::Item, QSet<QByteArray>)), q_ptr, SLOT(resetModel()));
