@@ -309,7 +309,7 @@ KCalendarCore::Event::Ptr CalPrintPluginBase::holidayEvent(QDate date) const
     holiday->setSummary(hstring);
     holiday->setCategories(i18n("Holiday"));
 
-    QDateTime kdt(date, QTime(0, 0), Qt::LocalTime);
+    QDateTime kdt(date, QTime(0, 0), QTimeZone::LocalTime);
     holiday->setDtStart(kdt);
     holiday->setDtEnd(kdt);
     holiday->setAllDay(true);
@@ -1368,7 +1368,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays
                 if (recur->recursOn(d1, QTimeZone::systemTimeZone())) {
                     KCalendarCore::TimeList times(recur->recurTimesOn(d1, QTimeZone::systemTimeZone()));
                     for (KCalendarCore::TimeList::ConstIterator it = times.constBegin(); it != times.constEnd(); ++it) {
-                        QDateTime d1start(d1, *it, Qt::LocalTime);
+                        QDateTime d1start(d1, *it, QTimeZone::LocalTime);
                         monthentries.append(MonthEventStruct(d1start, e->endDateForStart(d1start).toLocalTime(), e));
                     }
                 }
