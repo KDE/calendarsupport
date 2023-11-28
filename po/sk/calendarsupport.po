@@ -2,19 +2,20 @@
 # Richard Fric <Richard.Fric@kdemail.net>, 2009.
 # Roman Paholík <wizzardsk@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2022.
 # Matej Mrenica <matejm98mthw@gmail.com>, 2019, 2021.
+# Ferdinand Galko <galko.ferdinand@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2022-04-09 20:14+0200\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
-"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"PO-Revision-Date: 2023-11-25 19:02+0100\n"
+"Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
+"Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: archivedialog.cpp:43
@@ -174,12 +175,10 @@ msgid "Archive &file:"
 msgstr "Súbor archívu:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|Súbory iCalendar"
+msgstr "Súbory iCalendar (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -334,9 +333,7 @@ msgid "There are no items before %1"
 msgstr "Nie sú položky pred %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
 msgstr "Archív"
@@ -351,11 +348,10 @@ msgstr ""
 "Nasledujúce položky budú vymazané:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
-msgstr "Vymazať staré prvky"
+msgstr "Vymazať staré položky"
 
 #: eventarchiver.cpp:269
 #, kde-format
@@ -1841,9 +1837,7 @@ msgid "%1 %2"
 msgstr "%1 %2"
 
 #: printing/calprintdefaultplugins.cpp:1527
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event summary"
-#| msgid "Summary"
+#, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "Súhrn"
