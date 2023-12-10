@@ -1,22 +1,23 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
+#
 # Franklin Weng <franklin@goodhorse.idv.tw>, 2010, 2011, 2012, 2013, 2014, 2015.
 # pan93412 <pan93412@gmail.com>, 2018.
-#
 # Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2009, 2010.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2018-12-21 19:35+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2023-12-09 18:49+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 18.12.0\n"
+"X-Generator: Lokalize 24.01.80\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: archivedialog.cpp:43
@@ -166,12 +167,10 @@ msgid "Archive &file:"
 msgstr "歸檔檔名(&F)："
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|iCalendar 檔案"
+msgstr "iCalendar 檔案 (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -314,12 +313,10 @@ msgid "There are no items before %1"
 msgstr "在 %1 之前沒有任何項目"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "歸檔(&A)"
+msgstr "歸檔"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -331,8 +328,7 @@ msgstr ""
 "以下的項目將會被刪除："
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "刪除舊項目"
@@ -803,10 +799,9 @@ msgstr "nobody@nowhere"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:220
-#, fuzzy, kde-format
-#| msgid "\"No category\" color (for \"Only category\" drawing schemes)"
+#, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
-msgstr "「沒有類別」顏色（用於「只有類別」繪製機制時使用）"
+msgstr "「無標籤」顏色（用於「僅標籤」繪製機制時使用）"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:221
@@ -841,13 +836,13 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: noteeditdialog.cpp:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr ""
+msgstr "儲存"
 
 #: noteeditdialog.cpp:77
 #, fuzzy, kde-format
@@ -864,18 +859,16 @@ msgid "Calendar where the new note will be stored."
 msgstr "選擇此項目要儲存在哪個行事曆。"
 
 #: noteeditdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "&Title:"
+#, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
-msgstr "標題(&T)："
+msgstr "標題："
 
 #: noteeditdialog.cpp:97
-#, fuzzy, kde-format
-#| msgid "Text"
+#, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"
-msgstr "文字"
+msgstr "文字："
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -1256,10 +1249,9 @@ msgstr "若您要印出項目描述，請勾選此選項。"
 #: printing/calprintmonthconfig_base.ui:159
 #: printing/calprinttodoconfig_base.ui:238
 #: printing/calprintweekconfig_base.ui:283
-#, fuzzy, kde-format
-#| msgid "Description:"
+#, kde-format
 msgid "&Descriptions"
-msgstr "說明："
+msgstr "說明(&D)："
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1267,10 +1259,9 @@ msgstr "說明："
 #: printing/calprintmonthconfig_base.ui:166
 #: printing/calprinttodoconfig_base.ui:245
 #: printing/calprintweekconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid "Print Item list"
+#, kde-format
 msgid "Print item tags"
-msgstr "列印項目清單"
+msgstr "列印項目標籤"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -1291,7 +1282,7 @@ msgstr "若您要印出項目描述，請勾選此選項。"
 #: printing/calprintweekconfig_base.ui:296
 #, kde-format
 msgid "Ta&gs"
-msgstr ""
+msgstr "標籤(&G)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:306
@@ -1574,9 +1565,7 @@ msgstr[0] "%1 分鐘"
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:629
-#, fuzzy, kde-format
-#| msgctxt "Spacer for the joined list of categories"
-#| msgid ", "
+#, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr "，"
@@ -1741,7 +1730,7 @@ msgstr "設定："
 #: printing/calprintdefaultplugins.cpp:628
 #, kde-format
 msgid "Tags: "
-msgstr ""
+msgstr "標籤:："
 
 #: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:916
 #: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
@@ -1752,45 +1741,39 @@ msgstr "%1，%2"
 
 #: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:935
 #: printing/calprintpluginbase.cpp:1059
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1，%2"
 
 #: printing/calprintdefaultplugins.cpp:779
-#, fuzzy, kde-format
-#| msgid "1 day"
-#| msgid_plural "%1 days"
+#, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
-msgstr "%1 天"
+msgstr "整天"
 
 #: printing/calprintdefaultplugins.cpp:984
 #: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:140
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
-msgstr ""
+msgstr "%1–%2"
 
 #: printing/calprintdefaultplugins.cpp:1229
-#, fuzzy, kde-format
-#| msgctxt "date from - to (week number)"
-#| msgid "%1 - %2 (Week %3)"
+#, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
-msgstr "%1 - %2（第 %3 週）"
+msgstr "%1–%2（第 %3 週）"
 
 #: printing/calprintdefaultplugins.cpp:1231
-#, fuzzy, kde-format
-#| msgctxt "date from - to (week number)"
-#| msgid "%1 - %2 (Week %3)"
+#, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
 "%1–%2\n"
 "(Week %3)"
-msgstr "%1 - %2（第 %3 週）"
+msgstr ""
+"%1–%2\n"
+"（第 %3 週）"
 
 #: printing/calprintdefaultplugins.cpp:1416
 #, kde-format
@@ -1799,9 +1782,7 @@ msgid "%1 %2"
 msgstr "%2 年 %1"
 
 #: printing/calprintdefaultplugins.cpp:1527
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event summary"
-#| msgid "Summary"
+#, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "摘要"
@@ -1834,7 +1815,7 @@ msgstr "完成百分比"
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
-msgstr ""
+msgstr "標籤"
 
 #: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
@@ -1871,12 +1852,10 @@ msgid "Due"
 msgstr "到期"
 
 #: printing/calprintdefaultplugins.cpp:1635
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip period start time"
-#| msgid "Start:"
+#, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
-msgstr "開始："
+msgstr "開始"
 
 #: printing/calprintdefaultplugins.cpp:1645
 #, kde-format
@@ -1888,7 +1867,7 @@ msgstr "完成"
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
-msgstr ""
+msgstr "標籤"
 
 #: printing/calprintdefaultplugins.h:36
 #, kde-format
@@ -2410,20 +2389,16 @@ msgid "To-do: %1"
 msgstr "待辦事項：%1"
 
 #: printing/calprintpluginbase.cpp:1863
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
-msgstr "%1 %2 到 %3"
+msgstr "%1 %2–%3"
 
 #: printing/calprintpluginbase.cpp:1869
-#, fuzzy, kde-format
-#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
-#| msgid "%1 %2 - %3 %4"
+#, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
-msgstr "%1 %2 到 %3 %4"
+msgstr "%1 %2–%3 %4"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprinttodoconfig_base.ui:17
@@ -2490,10 +2465,9 @@ msgstr "列印全部的待辦事項(&A)"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
 #: printing/calprinttodoconfig_base.ui:73
-#, fuzzy, kde-format
-#| msgid "Print unfinished to-dos onl&y"
+#, kde-format
 msgid "Print &uncompleted to-dos only"
-msgstr "列印未完成的待辦事項(&Y)"
+msgstr "只列印未完成的待辦事項(&U)"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
 #: printing/calprinttodoconfig_base.ui:80
@@ -2503,17 +2477,15 @@ msgstr "列印在此時間範圍內到期的待辦事項(&R)："
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
-#, fuzzy, kde-format
-#| msgid "Print item descriptions"
+#, kde-format
 msgid "Print item priorities"
-msgstr "印出項目描述"
+msgstr "印出項目優先值"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:261
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid "Check this option if you want to see the item priorities printed."
-msgstr "若您要印出項目描述，請勾選此選項。"
+msgstr "若您要印出項目優先值，請勾選此選項。"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
@@ -2709,7 +2681,7 @@ msgstr "頁數(&B)："
 #, fuzzy, kde-format
 #| msgid "Show sub-day events as:"
 msgid "Show &sub-day events as:"
-msgstr "顯示每日事件方式："
+msgstr "顯示每日事件方式(&S)："
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2729,10 +2701,9 @@ msgstr "時間盒"
 
 #. i18n: ectx: property (text), widget (QLabel, mHolidaysLabel)
 #: printing/calprintyearconfig_base.ui:151
-#, fuzzy, kde-format
-#| msgid "Show holidays as:"
+#, kde-format
 msgid "Show &holidays as:"
-msgstr "顯示假日方式："
+msgstr "顯示假日方式(&H)："
 
 #: printing/journalprint.cpp:104
 #, kde-format
@@ -2771,8 +2742,7 @@ msgid "Prints a calendar for an entire year"
 msgstr "列印整年的行事曆"
 
 #: utils.cpp:289
-#, fuzzy, kde-format
-#| msgid "Select Calendar"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "選擇行事曆"
@@ -2783,37 +2753,32 @@ msgid "Select the calendar where this item will be stored."
 msgstr "選擇此項目要儲存在哪個行事曆。"
 
 #: utils.cpp:395
-#, fuzzy, kde-format
-#| msgid "Select Calendar"
+#, kde-format
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
-msgstr "選擇行事曆"
+msgstr "%1（預設行事曆）"
 
 #: utils.cpp:406
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
-msgstr ""
+msgstr "虛擬"
 
 #: utils.cpp:408
-#, fuzzy, kde-format
-#| msgid "Calendar type:"
+#, kde-format
 msgid "Folder type:"
-msgstr "行事曆類型："
+msgstr "資料夾類型："
 
 #: utils.cpp:418
-#, fuzzy, kde-format
-#| msgctxt "no status"
-#| msgid "none"
+#, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
-msgstr "沒有"
+msgstr "無"
 
 #: utils.cpp:421
-#, fuzzy, kde-format
-#| msgid "Calendar type:"
+#, kde-format
 msgid "Content type:"
-msgstr "行事曆類型："
+msgstr "內容類型："
 
 #: utils.cpp:428
 #, kde-format
@@ -2836,51 +2801,48 @@ msgstr "讀寫"
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
-msgstr ""
+msgstr "全部"
 
 #: utils.cpp:444
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
-msgstr ""
+msgstr "音效"
 
 #: utils.cpp:446
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
-msgstr ""
+msgstr "對話框"
 
 #: utils.cpp:448
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
-msgstr ""
+msgstr "電子郵件"
 
 #: utils.cpp:450
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
-msgstr ""
+msgstr "指令"
 
 #: utils.cpp:452
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
-msgstr ""
+msgstr "其他"
 
 #: utils.cpp:456
-#, fuzzy, kde-format
-#| msgctxt "no status"
-#| msgid "none"
+#, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
-msgstr "沒有"
+msgstr "無"
 
 #: utils.cpp:459
-#, fuzzy, kde-format
-#| msgid "No reminders"
+#, kde-format
 msgid "Blocked Reminders:"
-msgstr "無提醒"
+msgstr "被阻擋的提醒："
 
 #: utils.cpp:524
 #, kde-format
