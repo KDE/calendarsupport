@@ -4,20 +4,20 @@
 # Franklin Weng <franklin@goodhorse.idv.tw>, 2010, 2011, 2012, 2013, 2014, 2015.
 # pan93412 <pan93412@gmail.com>, 2018.
 # Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2009, 2010.
-# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
+# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2023-12-09 18:49+0900\n"
+"PO-Revision-Date: 2023-12-17 19:09+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.01.80\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: archivedialog.cpp:43
@@ -342,12 +342,12 @@ msgstr "理由未知"
 #: eventarchiver.cpp:271
 #, kde-format
 msgid "Cannot write archive file %1. %2"
-msgstr "無法寫入歸建檔案 %1。%2"
+msgstr "無法寫入歸檔 %1。%2"
 
 #: eventarchiver.cpp:282
 #, kde-format
 msgid "Cannot write archive. %1"
-msgstr "無法寫入歸建檔案。 %1"
+msgstr "無法寫入歸檔。 %1"
 
 #: eventarchiver.cpp:291
 #, kde-format
@@ -805,32 +805,26 @@ msgstr "「無標籤」顏色（用於「僅標籤」繪製機制時使用）"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:221
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a color to use for the \"no category\" or \"unset category\" "
-#| "situation, when an item does not belong to any category. This color is "
-#| "used when drawing items in the agenda or month views using the \"Only "
-#| "category\" scheme."
+#, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
-"選擇當項目屬於「沒有類別」或「未設定類別」時的顏色。主要用於使用「只有類別」"
+"選擇當項目屬於「沒有標籤」或「未設定標籤」時的顏色。主要用於使用「只有標籤」"
 "機制時繪製行程表或月檢視時。"
 
 #. i18n: ectx: tooltip, entry, group (Colors)
 #: kcalprefs.kcfg:222
-#, fuzzy, kde-format
-#| msgid "Use this color when drawing items without a category"
+#, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr "此顏色用於當項目不屬於任何類別時"
+msgstr "此顏色用於當項目沒有任何標籤時"
 
 #: noteeditdialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
-msgstr ""
+msgstr "建立新備忘"
 
 #: noteeditdialog.cpp:50
 #, kde-format
@@ -845,18 +839,16 @@ msgid "Save"
 msgstr "儲存"
 
 #: noteeditdialog.cpp:77
-#, fuzzy, kde-format
-#| msgid "Select the calendar where this item will be stored."
+#, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
-msgstr "選擇此項目要儲存在哪個行事曆。"
+msgstr "選擇新備忘要儲存在哪個行事曆。"
 
 #: noteeditdialog.cpp:79
-#, fuzzy, kde-format
-#| msgid "Select the calendar where this item will be stored."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
-msgstr "選擇此項目要儲存在哪個行事曆。"
+msgstr "選擇新備忘要儲存在哪個行事曆。"
 
 #: noteeditdialog.cpp:92
 #, kde-format
@@ -957,23 +949,16 @@ msgstr "2009-01-19"
 #: printing/calprintdayconfig_base.ui:64 printing/calprintdayconfig_base.ui:80
 #: printing/calprintweekconfig_base.ui:64
 #: printing/calprintweekconfig_base.ui:80
-#, fuzzy, kde-format
-#| msgid "Starting date for the print"
+#, kde-format
 msgid "Starting time for the print"
-msgstr "要列印的開始日期"
+msgstr "要列印的開始時間"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
 #: printing/calprintdayconfig_base.ui:67 printing/calprintdayconfig_base.ui:83
 #: printing/calprintweekconfig_base.ui:67
 #: printing/calprintweekconfig_base.ui:83
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the start of this "
-#| "time range. The end time should be defined with the <i>End time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the start of this time "
@@ -1009,10 +994,9 @@ msgstr "hh:mm"
 #: printing/calprinttodoconfig_base.ui:164
 #: printing/calprintweekconfig_base.ui:110
 #: printing/calprintweekconfig_base.ui:129
-#, fuzzy, kde-format
-#| msgid "Ending year for the print"
+#, kde-format
 msgid "Ending date for the print"
-msgstr "要列印的結束年份"
+msgstr "要列印的結束日期"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -1048,10 +1032,9 @@ msgstr "結束日期(&E)："
 #: printing/calprintdayconfig_base.ui:160
 #: printing/calprintweekconfig_base.ui:144
 #: printing/calprintweekconfig_base.ui:160
-#, fuzzy, kde-format
-#| msgid "Ending year for the print"
+#, kde-format
 msgid "Ending time for the print"
-msgstr "要列印的結束年份"
+msgstr "要列印的結束時間"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1059,13 +1042,7 @@ msgstr "要列印的結束年份"
 #: printing/calprintdayconfig_base.ui:163
 #: printing/calprintweekconfig_base.ui:147
 #: printing/calprintweekconfig_base.ui:163
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the end of this "
-#| "time range. The start time should be defined with the <i>Start time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the end of this time "
@@ -1124,8 +1101,7 @@ msgstr "以 Filofax 格式列印日期範圍，全部在一頁內(&R)"
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
 #: printing/calprintweekconfig_base.ui:219
-#, fuzzy, kde-format
-#| msgid "The timetable print view has the times to the left of the page"
+#, kde-format
 msgid "The timetable print view has the times to the left of the page."
 msgstr "時間表列印檢視在頁面左方會有時間。"
 
@@ -1137,15 +1113,12 @@ msgstr "列印為時間表，一天一頁(&B)"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:229
-#, fuzzy, kde-format
-#| msgid ""
-#| "The timetable print view has the times to the left of the page, all days "
-#| "are printed as columns in one big timetable."
+#, kde-format
 msgid ""
 "The timetable print view has the times to the left of the page. All days are "
 "printed as columns in one big timetable."
 msgstr ""
-"時間表列印檢視在頁面左方會有時間，一整天會列印在一個大的時間表中的一個欄位。"
+"時間表列印檢視在頁面左方會有時間。一整天會列印在一個大的時間表中的一個欄位。"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:232
@@ -1175,7 +1148,7 @@ msgstr "安全性排除"
 msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Confidential&#8221;"
-msgstr ""
+msgstr "勾選此選項來排除存取層級為 &#8220;機密&#8221; 的項目"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:251
@@ -1199,7 +1172,7 @@ msgstr "排除機密(&O)"
 msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Private&#8221;"
-msgstr ""
+msgstr "勾選此選項來排除存取層級為 &#8220;私人&#8221; 的項目"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:261
@@ -1269,10 +1242,9 @@ msgstr "列印項目標籤"
 #: printing/calprintmonthconfig_base.ui:169
 #: printing/calprinttodoconfig_base.ui:248
 #: printing/calprintweekconfig_base.ui:293
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid "Check this option if you want to see the item tags printed."
-msgstr "若您要印出項目描述，請勾選此選項。"
+msgstr "若您要印出項目標籤，請勾選此選項。"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (text), widget (QCheckBox, mCategories)
@@ -1367,10 +1339,9 @@ msgstr "將每天的事件限於單一行(&S)"
 #: printing/calprintincidenceconfig_base.ui:94
 #: printing/calprintmonthconfig_base.ui:256
 #: printing/calprintweekconfig_base.ui:351
-#, fuzzy, kde-format
-#| msgid "Check this option to draw note lines "
+#, kde-format
 msgid "Check this option to draw note lines in empty areas."
-msgstr "勾選此選項來繪製備忘線"
+msgstr "勾選此選項來在空白區域繪製備忘線。"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:354
@@ -1393,14 +1364,11 @@ msgstr "彩色列印"
 #: printing/calprintincidenceconfig_base.ui:110
 #: printing/calprintmonthconfig_base.ui:269
 #: printing/calprintweekconfig_base.ui:364
-#, fuzzy, kde-format
-#| msgid ""
-#| "If you want to use colors to distinguish certain categories on the print, "
-#| "check this option."
+#, kde-format
 msgid ""
 "If you want to use colors to distinguish certain tags in the printed output, "
 "check this option."
-msgstr "勾選此選項，可以使用顏色，以便在印出時區分不同類別。"
+msgstr "勾選此選項，可以使用顏色，以便在印出時區分不同分類。"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:367
@@ -2495,70 +2463,61 @@ msgstr "優先等級(&P)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:274
-#, fuzzy, kde-format
-#| msgid "Print the attendees"
+#, kde-format
 msgid "Print item start dates"
-msgstr "印出參加者"
+msgstr "印出項目開始日"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:277
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid ""
 "Check this option if you want to see the item start dates (when work can "
 "begin) printed."
-msgstr "若您要印出項目描述，請勾選此選項。"
+msgstr "若您要印出項目開始日（工作可以開始的時候），請勾選此選項。"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:280
-#, fuzzy, kde-format
-#| msgid "&Start date:"
+#, kde-format
 msgid "&Start date"
-msgstr "開始日期(&S)："
+msgstr "開始日期(&S)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
-#, fuzzy, kde-format
-#| msgid "Print item descriptions"
+#, kde-format
 msgid "Print item due dates"
-msgstr "印出項目描述"
+msgstr "印出項目到期日"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid "Check this option if you want to see the item due dates printed."
-msgstr "若您要印出項目描述，請勾選此選項。"
+msgstr "若您要印出項目開始日，請勾選此選項。"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293
-#, fuzzy, kde-format
-#| msgid "Due date"
+#, kde-format
 msgid "Du&e date"
-msgstr "到期日"
+msgstr "到期日(&E)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
-#, fuzzy, kde-format
-#| msgid "Print item descriptions"
+#, kde-format
 msgid "Print item completion percentage"
-msgstr "印出項目描述"
+msgstr "印出項目完成度百分比"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:306
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid ""
 "Check this option if you want to see the item completion percentage printed "
 "as a number and bar graph."
-msgstr "若您要印出項目描述，請勾選此選項。"
+msgstr "若您要印出項目完成度百分比，請勾選此選項。完成度會以數字和長條圖列印。"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
-#, fuzzy, kde-format
-#| msgid "Per&centage completed"
+#, kde-format
 msgid "Percentage co&mpleted"
-msgstr "完成百分比(&C)"
+msgstr "完成度百分比(&M)"
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
 #: printing/calprinttodoconfig_base.ui:328
@@ -2586,10 +2545,9 @@ msgstr "將子待辦事項與父項目連接"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
-#, fuzzy, kde-format
-#| msgid "Strike &out completed to-do summaries"
+#, kde-format
 msgid "Stri&ke out completed to-do summaries"
-msgstr "刪去已完成的待辦事項摘要(&O)"
+msgstr "用刪除線標記已完成的待辦事項摘要(&K)"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintweekconfig_base.ui:17
@@ -2615,32 +2573,29 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintweekconfig_base.ui:212
-#, fuzzy, kde-format
-#| msgid "Print date &range as Filofax format, all on one page"
+#, kde-format
 msgid "Print date &range as Filofax format, one week per page"
-msgstr "以 Filofax 格式列印日期範圍，全部在一頁內(&R)"
+msgstr "以 Filofax 格式列印日期範圍，一頁一週(&R)"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintweekconfig_base.ui:222
-#, fuzzy, kde-format
-#| msgid "Print as timeta&ble view, one page per day"
+#, kde-format
 msgid "Print as timeta&ble view, one week per page"
-msgstr "列印為時間表，一天一頁(&B)"
+msgstr "列印為時間表，一週一頁(&B)"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:229
-#, fuzzy, kde-format
-#| msgid "The timetable print view has the times to the left of the page"
+#, kde-format
 msgid ""
 "The split week view has the times to the left of the page, with two pages "
 "per week."
-msgstr "時間表列印檢視在頁面左方會有時間。"
+msgstr "分割每週檢視在頁面左方會有時間，每週各有兩頁。"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:232
 #, kde-format
 msgid "Print as split wee&k view"
-msgstr "將每週檢視分離列印(&K)"
+msgstr "列印為分割每週檢視(&K)"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintyearconfig_base.ui:14
@@ -2678,8 +2633,7 @@ msgstr "頁數(&B)："
 
 #. i18n: ectx: property (text), widget (QLabel, mSubDaysLabel)
 #: printing/calprintyearconfig_base.ui:121
-#, fuzzy, kde-format
-#| msgid "Show sub-day events as:"
+#, kde-format
 msgid "Show &sub-day events as:"
 msgstr "顯示每日事件方式(&S)："
 

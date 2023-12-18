@@ -12,13 +12,13 @@
 #
 # Ambalam <tamilpc@ambalam.com>, 2004.
 # root <root@localhost.localdomain>, 2004.
-# Kishore G <kishore96@gmail.com>, 2022.
+# SPDX-FileCopyrightText: 2022, 2023 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2022-05-08 15:40+0530\n"
+"PO-Revision-Date: 2023-12-17 16:42+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.04.0\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -1356,11 +1356,10 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:224
 #: printing/calprinttodoconfig_base.ui:391
 #: printing/calprintweekconfig_base.ui:332
-#, fuzzy, kde-format
-#| msgid "General"
+#, kde-format
 msgctxt "@title general print settings"
 msgid "General"
-msgstr "பொது"
+msgstr "பொதுவானவை"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:338
@@ -2712,23 +2711,21 @@ msgstr "நாட்கள் வீச்சு"
 
 #. i18n: ectx: property (text), widget (QLabel, mYearLabel)
 #: printing/calprintyearconfig_base.ui:32
-#, fuzzy, kde-format
-#| msgid "&Yearly"
+#, kde-format
 msgid "&Year:"
-msgstr "&வருடாந்திர"
+msgstr "&ஆண்டு:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
 #: printing/calprintyearconfig_base.ui:99
-#, fuzzy, kde-format
-#| msgid "General"
+#, kde-format
 msgid "General"
-msgstr "பொது"
+msgstr "பொதுவானவை"
 
 #. i18n: ectx: property (text), widget (QLabel, mPagesLabel)
 #: printing/calprintyearconfig_base.ui:105
 #, kde-format
 msgid "Num&ber of pages:"
-msgstr ""
+msgstr "&பக்கங்களின் எண்ணிக்கை:"
 
 #. i18n: ectx: property (text), widget (QLabel, mSubDaysLabel)
 #: printing/calprintyearconfig_base.ui:121
@@ -2742,7 +2739,7 @@ msgstr "& நேரத்தைக் காட்டு"
 #: printing/calprintyearconfig_base.ui:165
 #, kde-format
 msgid "Text"
-msgstr ""
+msgstr "உரை"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
