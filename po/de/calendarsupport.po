@@ -7,20 +7,21 @@
 # Alois Spitzbart <spitz234@hotmail.com>, 2022.
 # Frank Steinmetzger <dev-kde@felsenfleischer.de>, 2022.
 # Intevation GmbH, 2010.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-25 01:40+0000\n"
-"PO-Revision-Date: 2022-11-10 20:23+0100\n"
-"Last-Translator: Frank Steinmetzger <dev-kde@felsenfleischer.de>\n"
+"PO-Revision-Date: 2023-12-18 15:26+0100\n"
+"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -185,12 +186,10 @@ msgid "Archive &file:"
 msgstr "Archiv&datei:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|iCalendar-Dateien"
+msgstr "iCalendar-Dateien (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -349,12 +348,10 @@ msgid "There are no items before %1"
 msgstr "Es gibt keine Einträge vor %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Archivieren"
+msgstr "Archivieren"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -366,8 +363,7 @@ msgstr ""
 "Das betrifft folgende Einträge:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Alte Einträge löschen"
