@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: none
 # SPDX-License-Identifier: BSD-3-Clause
-add_definitions(-DTRANSLATION_DOMAIN=\"calendarsupport\")
+add_definitions(-DTRANSLATION_DOMAIN=\"calendarsupport6\")
 
 ########### next target ###############
 add_library(KPim6CalendarSupport)
