@@ -1612,7 +1612,26 @@ void CalPrintPluginBase::drawTodo(int &count,
         startPoints.clear();
     }
 
+    // Don't print confidential or private items if so configured (sub-items are also ignored!)
+    if ((mExcludeConfidential && todo->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
+        || (mExcludePrivate && todo->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
+        return;
+    }
+
+    QFontMetrics fm = p.fontMetrics();
     y += 10;
+    // Start a new page if the item does not fit on the page any more (only
+    // first line is checked! Word-wrapped summaries might still overflow!)
+    if (y + fm.height() >= pageHeight) {
+        y = 0;
+        mPrinter->newPage();
+        // reset the parent start points to indicate not on same page
+        for (int i = 0; i < startPoints.size(); ++i) {
+            TodoParentStart *rct;
+            rct = startPoints.at(i);
+            rct->mSamePage = false;
+        }
+    }
 
     int left = posSummary + (level * 10);
 
@@ -1760,10 +1779,6 @@ void CalPrintPluginBase::drawTodo(int &count,
         }
         if (subtodoOk) {
 #endif
-            if ((mExcludeConfidential && subtodo->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
-                || (mExcludePrivate && subtodo->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
-                continue;
-            }
             t.append(subtodo);
         }
     }

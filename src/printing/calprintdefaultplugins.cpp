@@ -1731,10 +1731,6 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     // Print to-dos
     int count = 0;
     for (const KCalendarCore::Todo::Ptr &todo : std::as_const(todoList)) {
-        if ((mExcludeConfidential && todo->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
-            || (mExcludePrivate && todo->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
-            continue;
-        }
         // Skip sub-to-dos. They will be printed recursively in drawTodo()
         if (todo->relatedTo().isEmpty()) { // review(AKONADI_PORT)
             count++;
