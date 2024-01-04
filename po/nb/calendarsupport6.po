@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:40+0000\n"
+"POT-Creation-Date: 2024-01-04 01:34+0000\n"
 "PO-Revision-Date: 2015-02-07 19:03+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -1859,7 +1859,7 @@ msgid "To-do list"
 msgstr "Gjøremålsliste"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1697
+#: printing/calprintpluginbase.cpp:1716
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2425,13 +2425,13 @@ msgstr "%1 (Forfall: %2)"
 msgid "To-do: %1"
 msgstr "Gjøremål: %1"
 
-#: printing/calprintpluginbase.cpp:1863
+#: printing/calprintpluginbase.cpp:1878
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr ""
 
-#: printing/calprintpluginbase.cpp:1869
+#: printing/calprintpluginbase.cpp:1884
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"

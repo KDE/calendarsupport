@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:40+0000\n"
+"POT-Creation-Date: 2024-01-04 01:34+0000\n"
 "PO-Revision-Date: 2023-09-25 08:57+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -1916,7 +1916,7 @@ msgid "To-do list"
 msgstr "Список завдань"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1697
+#: printing/calprintpluginbase.cpp:1716
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2487,13 +2487,13 @@ msgstr "%1 (Завершення: %2)"
 msgid "To-do: %1"
 msgstr "Завдання: %1"
 
-#: printing/calprintpluginbase.cpp:1863
+#: printing/calprintpluginbase.cpp:1878
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%2–%3 %1"
 
-#: printing/calprintpluginbase.cpp:1869
+#: printing/calprintpluginbase.cpp:1884
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"

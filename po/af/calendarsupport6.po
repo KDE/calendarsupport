@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:40+0000\n"
+"POT-Creation-Date: 2024-01-04 01:34+0000\n"
 "PO-Revision-Date: 2002-11-07 11:37+0200\n"
 "Last-Translator: WEB-Translator <http://kde.af.org.za>\n"
 "Language-Team: AFRIKAANS <AF@lia.org.za>\n"
@@ -1777,7 +1777,7 @@ msgid "To-do list"
 msgstr "To-do lys"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1697
+#: printing/calprintpluginbase.cpp:1716
 #, fuzzy, kde-format
 msgid "%1%"
 msgstr "%1 %"
@@ -2295,13 +2295,13 @@ msgstr "As gevolg:"
 msgid "To-do: %1"
 msgstr "To-Do: %1"
 
-#: printing/calprintpluginbase.cpp:1863
+#: printing/calprintpluginbase.cpp:1878
 #, fuzzy, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2"
 
-#: printing/calprintpluginbase.cpp:1869
+#: printing/calprintpluginbase.cpp:1884
 #, fuzzy, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"

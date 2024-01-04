@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:40+0000\n"
+"POT-Creation-Date: 2024-01-04 01:34+0000\n"
 "PO-Revision-Date: 2023-10-05 18:26-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -1898,7 +1898,7 @@ msgid "To-do list"
 msgstr "Lista de tarefas"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1697
+#: printing/calprintpluginbase.cpp:1716
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2472,13 +2472,13 @@ msgstr "%1 (vencimento: %2)"
 msgid "To-do: %1"
 msgstr "Tarefa: %1"
 
-#: printing/calprintpluginbase.cpp:1863
+#: printing/calprintpluginbase.cpp:1878
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2–%3"
 
-#: printing/calprintpluginbase.cpp:1869
+#: printing/calprintpluginbase.cpp:1884
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"

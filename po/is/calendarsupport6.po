@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:40+0000\n"
+"POT-Creation-Date: 2024-01-04 01:34+0000\n"
 "PO-Revision-Date: 2023-11-07 11:29+0000\n"
 "Last-Translator: Guðmundur Erlingsson <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -1890,7 +1890,7 @@ msgid "To-do list"
 msgstr "Verkefnalisti"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1697
+#: printing/calprintpluginbase.cpp:1716
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2456,13 +2456,13 @@ msgstr "%1 (skil: %2)"
 msgid "To-do: %1"
 msgstr "Verkefni: %1"
 
-#: printing/calprintpluginbase.cpp:1863
+#: printing/calprintpluginbase.cpp:1878
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%2–%3 %1"
 
-#: printing/calprintpluginbase.cpp:1869
+#: printing/calprintpluginbase.cpp:1884
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"

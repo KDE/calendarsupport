@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim/korganizer.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:40+0000\n"
+"POT-Creation-Date: 2024-01-04 01:34+0000\n"
 "PO-Revision-Date: 2004-09-20 15:44+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud@mandriva.com>\n"
 "Language-Team: Breton <LL@li.org>\n"
@@ -1830,7 +1830,7 @@ msgid "To-do list"
 msgstr "Roll an traoù d'ober"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1697
+#: printing/calprintpluginbase.cpp:1716
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2379,7 +2379,7 @@ msgstr "%1 %2"
 msgid "To-do: %1"
 msgstr "Traoù d'ober : %1"
 
-#: printing/calprintpluginbase.cpp:1863
+#: printing/calprintpluginbase.cpp:1878
 #, fuzzy, kde-format
 #| msgctxt "Date range: Month dayStart - dayEnd"
 #| msgid "%1 %2 - %3"
@@ -2387,7 +2387,7 @@ msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1869
+#: printing/calprintpluginbase.cpp:1884
 #, fuzzy, kde-format
 #| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #| msgid "%1 %2 - %3 %4"

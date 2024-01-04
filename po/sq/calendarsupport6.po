@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:40+0000\n"
+"POT-Creation-Date: 2024-01-04 01:34+0000\n"
 "PO-Revision-Date: 2009-06-08 01:08+0000\n"
 "Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -1830,7 +1830,7 @@ msgid "To-do list"
 msgstr "Sot"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1697
+#: printing/calprintpluginbase.cpp:1716
 #, fuzzy, kde-format
 #| msgid "%1"
 msgid "%1%"
@@ -2360,7 +2360,7 @@ msgstr "%1/%2"
 msgid "To-do: %1"
 msgstr "Sot"
 
-#: printing/calprintpluginbase.cpp:1863
+#: printing/calprintpluginbase.cpp:1878
 #, fuzzy, kde-format
 #| msgctxt "start/end week number of line in date picker"
 #| msgid "%1/%2"
@@ -2368,7 +2368,7 @@ msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1/%2"
 
-#: printing/calprintpluginbase.cpp:1869
+#: printing/calprintpluginbase.cpp:1884
 #, fuzzy, kde-format
 #| msgctxt "start/end week number of line in date picker"
 #| msgid "%1/%2"
