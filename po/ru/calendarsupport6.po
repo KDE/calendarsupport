@@ -7,14 +7,14 @@
 # Alexander Potashev <aspotashev@gmail.com>, 2011, 2014, 2015, 2016, 2017.
 # Julia Dronova <juliette.tux@gmail.com>, 2012.
 # Alexander Lakhin <exclusion@gmail.com>, 2013.
-# Alexander Yavorsky <kekcuha@gmail.com>, 2018, 2020, 2021, 2022.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2018, 2020, 2021, 2022, 2024.
 # Мария Шикунова <translation-team@basealt.ru>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2022-10-01 14:55+0300\n"
+"PO-Revision-Date: 2024-01-11 10:24+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -188,12 +188,10 @@ msgid "Archive &file:"
 msgstr "&Файл архива:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|Файлы iCalendar"
+msgstr "Файлы iCalendar (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -344,12 +342,10 @@ msgid "There are no items before %1"
 msgstr "Записей раньше %1 не существует"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Архивировать"
+msgstr "Архивация"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -361,11 +357,10 @@ msgstr ""
 "Будут удалены следующие записи:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
-msgstr "Удалить старые записи"
+msgstr "Удаление старых записей"
 
 #: eventarchiver.cpp:269
 #, kde-format
