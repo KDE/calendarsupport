@@ -1,21 +1,21 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Kristóf Kiszel <ulysses@fsf.hu>, 2011, 2014, 2017, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2011, 2014, 2017, 2020, 2021, 2022, 2024 Kristóf Kiszel <ulysses@fsf.hu>
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2022-02-24 09:21+0100\n"
+"PO-Revision-Date: 2024-01-23 22:08+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.07.70\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: archivedialog.cpp:43
@@ -182,12 +182,10 @@ msgid "Archive &file:"
 msgstr "Archívum&fájl:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|iCalendar-fájlok"
+msgstr "iCalendar-fájlok (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -342,12 +340,10 @@ msgid "There are no items before %1"
 msgstr "Nincsenek elemek %1 előtt"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Archiválás"
+msgstr "Archiválás"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -359,8 +355,7 @@ msgstr ""
 "A következő elemek lesznek törölve:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Régi elemek törlése"
@@ -443,7 +438,7 @@ msgstr "%3 %2., %1, %4 - %5"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
-msgstr ""
+msgstr "Szabadidő"
 
 #: freebusymodel/freeperiodmodel.cpp:178
 #, kde-format
@@ -455,7 +450,7 @@ msgstr "Kezdés:"
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
-msgstr ""
+msgstr "Befejezés:"
 
 #: freebusymodel/freeperiodmodel.cpp:184
 #, kde-format
@@ -706,19 +701,19 @@ msgstr ""
 #: kcalprefs.kcfg:104
 #, kde-format
 msgid "Default policy for invitations to other users:"
-msgstr ""
+msgstr "Alapértelmezett házirend más felhasználók meghívására:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:107
 #, kde-format
 msgid "Send mails without asking."
-msgstr ""
+msgstr "Levelek küldése kérés nélkül."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:110
 #, kde-format
 msgid "Ask for every individual attendee what to do."
-msgstr ""
+msgstr "Minden egyes résztvevő megkérdezése, mi legyen."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:113
@@ -727,6 +722,8 @@ msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
 "iTip compliant clients)."
 msgstr ""
+"Egyáltalán ne küldjön meghívó e-maileket (ez eltörheti az iTip-kompatibilis "
+"kliensek csoportütemezését)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
 #: kcalprefs.kcfg:126
@@ -861,60 +858,52 @@ msgstr "„Nincs címke” szín (a „Csak címke” színsémáknál)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:221
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a color to use for the \"no category\" or \"unset category\" "
-#| "situation, when an item does not belong to any category. This color is "
-#| "used when drawing items in the agenda or month views using the \"Only "
-#| "category\" scheme."
+#, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
-"Válassza ki, milyen színűek legyenek az olyan bejegyzések, amelyeknél nincs "
-"megadva kategória. Ezt a színt a program a bejegyzések megjelenítéséhez "
-"használja áttekintő vagy havi nézetben, „Csak kategória” színséma "
-"használatakor."
+"Válasszon ki egy színt a „nincs címke„ vagy a „címkelevétel” helyzethez, "
+"amikor egy elem nem rendelkezik címkékkel. Ezt a színt a program a "
+"bejegyzések megjelenítéséhez használja áttekintő vagy havi nézetben, „Csak "
+"címke” színséma használatakor."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
 #: kcalprefs.kcfg:222
-#, fuzzy, kde-format
-#| msgid "Use this color when drawing items without a category"
+#, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr "A kategória nélküli bejegyzések szegélyének színe"
+msgstr "A címkék nélküli bejegyzések szegélyének színe"
 
 #: noteeditdialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
-msgstr ""
+msgstr "Jegyzet létrehozása"
 
 #: noteeditdialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "Mégse"
 
 #: noteeditdialog.cpp:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr ""
+msgstr "Mentés"
 
 #: noteeditdialog.cpp:77
-#, fuzzy, kde-format
-#| msgid "Select the calendar where this item will be stored."
+#, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
-msgstr "Válassza ki a naptárat, ahol ez az elem tárolva lesz."
+msgstr "A naptár, ahol az új jegyzet tárolva lesz."
 
 #: noteeditdialog.cpp:79
-#, fuzzy, kde-format
-#| msgid "Select the calendar where this item will be stored."
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
-msgstr "Válassza ki a naptárat, ahol ez az elem tárolva lesz."
+msgstr "A naptár, ahol az új jegyzet tárolva lesz."
 
 #: noteeditdialog.cpp:92
 #, kde-format
@@ -1024,13 +1013,7 @@ msgstr "Kezdőidő a nyomtatáshoz"
 #: printing/calprintdayconfig_base.ui:67 printing/calprintdayconfig_base.ui:83
 #: printing/calprintweekconfig_base.ui:67
 #: printing/calprintweekconfig_base.ui:83
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the start of this "
-#| "time range. The end time should be defined with the <i>End time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the start of this time "
@@ -1117,13 +1100,7 @@ msgstr "Záróidő a nyomtatáshoz"
 #: printing/calprintdayconfig_base.ui:163
 #: printing/calprintweekconfig_base.ui:147
 #: printing/calprintweekconfig_base.ui:163
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the end of this "
-#| "time range. The start time should be defined with the <i>Start time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the end of this time "
@@ -1181,46 +1158,39 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintdayconfig_base.ui:212
-#, fuzzy, kde-format
-#| msgid "Print date range as &Filofax format, all on one page"
+#, kde-format
 msgid "Print date &range as Filofax format, all on one page"
-msgstr "Kinyomtatja a megadott dátumtartomány összes &elemét egy lapra"
+msgstr "Kinyomtatja a megadott dátumta&rtomány összes elemét egy lapra"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
 #: printing/calprintweekconfig_base.ui:219
-#, fuzzy, kde-format
-#| msgid "The timetable print view has the times to the left of the page"
+#, kde-format
 msgid "The timetable print view has the times to the left of the page."
 msgstr ""
-"Időbeosztási nézetben a bejegyzések időpontjai a bal szélen jelennek meg"
+"Időbeosztási nézetben a bejegyzések időpontjai a bal szélen jelennek meg."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:222
-#, fuzzy, kde-format
-#| msgid "Print as &timetable view, one page per day"
+#, kde-format
 msgid "Print as timeta&ble view, one page per day"
-msgstr "Kinyomtatás &időbeosztási nézetben (minden nap külön oldalra)"
+msgstr "Kinyomtatás idő&beosztási nézetben (minden nap külön oldalra)"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:229
-#, fuzzy, kde-format
-#| msgid ""
-#| "The timetable print view has the times to the left of the page, all days "
-#| "are printed as columns in one big timetable."
+#, kde-format
 msgid ""
 "The timetable print view has the times to the left of the page. All days are "
 "printed as columns in one big timetable."
 msgstr ""
-"Az időbeosztás nyomtatási nézetében az idők a bal oldalon vannak, minden nap "
+"Az időbeosztás nyomtatási nézetében az idők a bal oldalon vannak. Minden nap "
 "oszlopként van kinyomtatva egy nagy időbeosztásban."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:232
-#, fuzzy, kde-format
-#| msgid "Print as timetable view, all days on a single page"
+#, kde-format
 msgid "Print as timetable view, all da&ys on a single page"
-msgstr "Nyomtatás időbeosztás nézetben, minden napot külön oldalra"
+msgstr "Nyomtatás időbeosztás nézetben, minden nap&ot külön oldalra"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mSecurity)
 #: printing/calprintdayconfig_base.ui:242
@@ -1245,6 +1215,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Confidential&#8221;"
 msgstr ""
+"Jelölje be ezt az opciót, hogy kizárja azokat az elemeket, amelyek "
+"Hozzáférési szintje &#8220;Bizalmas&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:251
@@ -1356,7 +1328,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:296
 #, kde-format
 msgid "Ta&gs"
-msgstr ""
+msgstr "Cí&mkék"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:306
@@ -1653,9 +1625,7 @@ msgstr[1] "%1 perc"
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:629
-#, fuzzy, kde-format
-#| msgctxt "Spacer for the joined list of categories"
-#| msgid ", "
+#, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr ", "
@@ -1823,7 +1793,7 @@ msgstr "Beállítások: "
 #: printing/calprintdefaultplugins.cpp:628
 #, kde-format
 msgid "Tags: "
-msgstr ""
+msgstr "Címkék: "
 
 #: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:916
 #: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
@@ -1854,7 +1824,7 @@ msgstr "1 nap"
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
-msgstr ""
+msgstr "%1–%2"
 
 #: printing/calprintdefaultplugins.cpp:1229
 #, fuzzy, kde-format
@@ -1881,9 +1851,7 @@ msgid "%1 %2"
 msgstr "%2 %1"
 
 #: printing/calprintdefaultplugins.cpp:1527
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event summary"
-#| msgid "Summary"
+#, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "Összegzés"
@@ -1916,7 +1884,7 @@ msgstr "Befejezettség"
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
-msgstr ""
+msgstr "Címkék"
 
 #: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
@@ -1969,7 +1937,7 @@ msgstr "Kész"
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
-msgstr ""
+msgstr "Címkék"
 
 #: printing/calprintdefaultplugins.h:36
 #, kde-format
@@ -2902,7 +2870,7 @@ msgstr "%1 (alapértelmezett naptár)"
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
-msgstr ""
+msgstr "Virtuális"
 
 #: utils.cpp:408
 #, kde-format
@@ -2947,13 +2915,13 @@ msgstr "mind"
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
-msgstr ""
+msgstr "hang"
 
 #: utils.cpp:446
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
-msgstr ""
+msgstr "megjelenítés"
 
 #: utils.cpp:448
 #, kde-format
@@ -2965,7 +2933,7 @@ msgstr "e-mail"
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
-msgstr ""
+msgstr "eljárás"
 
 #: utils.cpp:452
 #, kde-format
