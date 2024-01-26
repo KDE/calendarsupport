@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-01-23 22:08+0100\n"
+"PO-Revision-Date: 2024-01-25 11:05+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.01.90\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: archivedialog.cpp:43
@@ -1241,6 +1241,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Private&#8221;"
 msgstr ""
+"Jelölje be ezt az opciót, hogy kizárja azokat az elemeket, amelyek "
+"Hozzáférési szintje &#8220;Privát&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:261
@@ -1302,10 +1304,9 @@ msgstr "&Leírások"
 #: printing/calprintmonthconfig_base.ui:166
 #: printing/calprinttodoconfig_base.ui:245
 #: printing/calprintweekconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid "Print Item list"
+#, kde-format
 msgid "Print item tags"
-msgstr "Elemlista nyomtatása"
+msgstr "Elemcímkék nyomtatása"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -1313,11 +1314,10 @@ msgstr "Elemlista nyomtatása"
 #: printing/calprintmonthconfig_base.ui:169
 #: printing/calprinttodoconfig_base.ui:248
 #: printing/calprintweekconfig_base.ui:293
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid "Check this option if you want to see the item tags printed."
 msgstr ""
-"Jelölje be ezt a lehetőséget, ha az elemleírásokat a nyomtatásban is látni "
+"Jelölje be ezt a lehetőséget, ha az elemek címkéit a nyomtatásban is látni "
 "szeretné."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeCategories)
@@ -1417,10 +1417,9 @@ msgstr "Minden esemény csak &egy sort foglalhat el"
 #: printing/calprintincidenceconfig_base.ui:94
 #: printing/calprintmonthconfig_base.ui:256
 #: printing/calprintweekconfig_base.ui:351
-#, fuzzy, kde-format
-#| msgid "Check this option to draw note lines "
+#, kde-format
 msgid "Check this option to draw note lines in empty areas."
-msgstr "Ha ez be van jelölve, lesznek megjegyzésvonalak "
+msgstr "Ha ez be van jelölve, lesznek megjegyzésvonalak az üres területeken. "
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:354
@@ -1443,16 +1442,13 @@ msgstr "Színes nyomtatás"
 #: printing/calprintincidenceconfig_base.ui:110
 #: printing/calprintmonthconfig_base.ui:269
 #: printing/calprintweekconfig_base.ui:364
-#, fuzzy, kde-format
-#| msgid ""
-#| "If you want to use colors to distinguish certain categories on the print, "
-#| "check this option."
+#, kde-format
 msgid ""
 "If you want to use colors to distinguish certain tags in the printed output, "
 "check this option."
 msgstr ""
-"Ha a kategóriák megkülönböztetésének érdekében színeket szeretne használni "
-"nyomtatáskor, jelölje be ezt az opciót."
+"Ha a címkék megkülönböztetésének érdekében színeket szeretne használni "
+"nyomtatott kimenetben, jelölje be ezt az opciót."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:367
@@ -1804,20 +1800,16 @@ msgstr "%1, %2"
 
 #: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:935
 #: printing/calprintpluginbase.cpp:1059
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1, %2"
 
 #: printing/calprintdefaultplugins.cpp:779
-#, fuzzy, kde-format
-#| msgid "1 day"
-#| msgid_plural "%1 days"
+#, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
-msgstr "1 nap"
+msgstr "Egész napos"
 
 #: printing/calprintdefaultplugins.cpp:984
 #: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:140
@@ -1827,22 +1819,20 @@ msgid "%1–%2"
 msgstr "%1–%2"
 
 #: printing/calprintdefaultplugins.cpp:1229
-#, fuzzy, kde-format
-#| msgctxt "date from - to (week number)"
-#| msgid "%1 - %2 (Week %3)"
+#, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
-msgstr "%1 - %2 (%3. hét)"
+msgstr "%1 – %2 (%3. hét)"
 
 #: printing/calprintdefaultplugins.cpp:1231
-#, fuzzy, kde-format
-#| msgctxt "date from - to (week number)"
-#| msgid "%1 - %2 (Week %3)"
+#, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
 "%1–%2\n"
 "(Week %3)"
-msgstr "%1 - %2 (%3. hét)"
+msgstr ""
+"%1 – %2\n"
+"(%3. hét)"
 
 #: printing/calprintdefaultplugins.cpp:1416
 #, kde-format
@@ -1921,11 +1911,10 @@ msgid "Due"
 msgstr "Határidő"
 
 #: printing/calprintdefaultplugins.cpp:1635
-#, fuzzy, kde-format
-#| msgid "&Start date:"
+#, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
-msgstr "&Kezdő dátum:"
+msgstr "Kezdés"
 
 #: printing/calprintdefaultplugins.cpp:1645
 #, kde-format
@@ -2284,8 +2273,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
-#, fuzzy, kde-format
-#| msgid "&Start month:"
+#, kde-format
 msgid "Sta&rt month:"
 msgstr "Kez&dő hónap:"
 
@@ -2480,20 +2468,16 @@ msgid "To-do: %1"
 msgstr "Feladat: %1"
 
 #: printing/calprintpluginbase.cpp:1878
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
-msgstr "%1 %2 - %3."
+msgstr "%1 %2 – %3."
 
 #: printing/calprintpluginbase.cpp:1884
-#, fuzzy, kde-format
-#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
-#| msgid "%1 %2 - %3 %4"
+#, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
-msgstr "%1 %2. - %3 %4."
+msgstr "%1 %2. – %3 %4."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprinttodoconfig_base.ui:17
@@ -2562,8 +2546,7 @@ msgstr "Az összes fe&ladat kinyomtatása"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
 #: printing/calprinttodoconfig_base.ui:73
-#, fuzzy, kde-format
-#| msgid "Print &unfinished to-dos only"
+#, kde-format
 msgid "Print &uncompleted to-dos only"
 msgstr "&Csak a befejezetlen feladatok kinyomtatása"
 
@@ -2575,18 +2558,16 @@ msgstr "Cs&ak az alábbi tartományba eső feladatokat kell kinyomtatni:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
-#, fuzzy, kde-format
-#| msgid "Print item descriptions"
+#, kde-format
 msgid "Print item priorities"
-msgstr "Elemleírások nyomtatása"
+msgstr "Elemprioritások nyomtatása"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:261
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid "Check this option if you want to see the item priorities printed."
 msgstr ""
-"Jelölje be ezt a lehetőséget, ha az elemleírásokat a nyomtatásban is látni "
+"Jelölje be ezt a lehetőséget, ha a prioritásokat a nyomtatásban is látni "
 "szeretné."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
@@ -2597,76 +2578,67 @@ msgstr "&Prioritás"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:274
-#, fuzzy, kde-format
-#| msgid "Print the attendees"
+#, kde-format
 msgid "Print item start dates"
-msgstr "Résztvevők nyomtatása"
+msgstr "Kezdő dátumainak nyomtatása"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:277
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid ""
 "Check this option if you want to see the item start dates (when work can "
 "begin) printed."
 msgstr ""
-"Jelölje be ezt a lehetőséget, ha az elemleírásokat a nyomtatásban is látni "
-"szeretné."
+"Jelölje be ezt a lehetőséget, ha a kezdő dátumokat (mikor kezdődhet a munka) "
+"a nyomtatásban is látni szeretné."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:280
-#, fuzzy, kde-format
-#| msgid "&Start date:"
+#, kde-format
 msgid "&Start date"
-msgstr "&Kezdő dátum:"
+msgstr "&Kezdő dátum"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
-#, fuzzy, kde-format
-#| msgid "Print item descriptions"
+#, kde-format
 msgid "Print item due dates"
-msgstr "Elemleírások nyomtatása"
+msgstr "Határidők nyomtatása"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid "Check this option if you want to see the item due dates printed."
 msgstr ""
-"Jelölje be ezt a lehetőséget, ha az elemleírásokat a nyomtatásban is látni "
+"Jelölje be ezt a lehetőséget, ha a határidőket a nyomtatásban is látni "
 "szeretné."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293
-#, fuzzy, kde-format
-#| msgid "Due date"
+#, kde-format
 msgid "Du&e date"
-msgstr "Határidő"
+msgstr "Határ&idő"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
-#, fuzzy, kde-format
-#| msgid "Print item descriptions"
+#, kde-format
 msgid "Print item completion percentage"
-msgstr "Elemleírások nyomtatása"
+msgstr "Befejezettségi százalék nyomtatása"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:306
-#, fuzzy, kde-format
-#| msgid "Check this option if you want to see the item descriptions printed."
+#, kde-format
 msgid ""
 "Check this option if you want to see the item completion percentage printed "
 "as a number and bar graph."
 msgstr ""
-"Jelölje be ezt a lehetőséget, ha az elemleírásokat a nyomtatásban is látni "
-"szeretné."
+"Jelölje be ezt a lehetőséget, ha a befejezettség százalékos arányát a "
+"nyomtatásban is látni szeretné szám- és vonaldiagramként."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
-#, fuzzy, kde-format
-#| msgid "Per&centage completed"
+#, kde-format
 msgid "Percentage co&mpleted"
-msgstr "&Elkészültség (%)"
+msgstr "&Elkészültség"
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
 #: printing/calprinttodoconfig_base.ui:328
@@ -2694,8 +2666,7 @@ msgstr "Rész&feladatok összekapcsolása a főfeladattal"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
-#, fuzzy, kde-format
-#| msgid "Strike &out completed to-do summaries"
+#, kde-format
 msgid "Stri&ke out completed to-do summaries"
 msgstr "A befejezett feladatok leírásának &áthúzása"
 
@@ -2723,27 +2694,27 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintweekconfig_base.ui:212
-#, fuzzy, kde-format
-#| msgid "Print date range as &Filofax format, all on one page"
+#, kde-format
 msgid "Print date &range as Filofax format, one week per page"
-msgstr "Kinyomtatja a megadott dátumtartomány összes &elemét egy lapra"
+msgstr ""
+"Kinyomtatja a megadott dátumtartomány összes &elemét (minden hét külön "
+"oldalra)"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintweekconfig_base.ui:222
-#, fuzzy, kde-format
-#| msgid "Print as &timetable view, one page per day"
+#, kde-format
 msgid "Print as timeta&ble view, one week per page"
-msgstr "Kinyomtatás &időbeosztási nézetben (minden nap külön oldalra)"
+msgstr "Kinyomtatás &időbeosztási nézetben (minden hét külön oldalra)"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:229
-#, fuzzy, kde-format
-#| msgid "The timetable print view has the times to the left of the page"
+#, kde-format
 msgid ""
 "The split week view has the times to the left of the page, with two pages "
 "per week."
 msgstr ""
-"Időbeosztási nézetben a bejegyzések időpontjai a bal szélen jelennek meg"
+"Az osztott hetii nézetben a bejegyzések időpontjai a bal szélen jelennek "
+"meg, egy hét két oldalon."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:232
