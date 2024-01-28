@@ -222,7 +222,7 @@ void FreeBusyItemModel::addItem(const FreeBusyItem::Ptr &freebusy)
     d->mRootData->appendChild(data);
     endInsertRows();
 
-    if (freebusy->freeBusy() && freebusy->freeBusy()->fullBusyPeriods().size() > 0) {
+    if (freebusy->freeBusy() && !freebusy->freeBusy()->fullBusyPeriods().isEmpty()) {
         QModelIndex parent = index(row, 0);
         setFreeBusyPeriods(parent, freebusy->freeBusy()->fullBusyPeriods());
     }
