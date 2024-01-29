@@ -41,13 +41,13 @@ void TextBrowser::doSetSource(const QUrl &name, QTextDocument::ResourceType type
     QString uri = name.toString();
     // QTextBrowser for some reason insists on putting // or / in links,
     // this is a crude workaround
-    if (uri.startsWith(QLatin1String("uid:")) || uri.startsWith(QLatin1String("kmail:"))
-        || uri.startsWith(QStringLiteral("urn:x-ical").section(QLatin1Char(':'), 0, 0)) || uri.startsWith(QLatin1String("news:"))
-        || uri.startsWith(QLatin1String("mailto:"))) {
-        uri.replace(QRegularExpression(QLatin1String("^([^:]+:)/+")), QStringLiteral("\\1"));
+    if (uri.startsWith(QLatin1StringView("uid:")) || uri.startsWith(QLatin1String("kmail:"))
+        || uri.startsWith(QStringLiteral("urn:x-ical").section(QLatin1Char(':'), 0, 0)) || uri.startsWith(QLatin1StringView("news:"))
+        || uri.startsWith(QLatin1StringView("mailto:"))) {
+        uri.replace(QRegularExpression(QLatin1StringView("^([^:]+:)/+")), QStringLiteral("\\1"));
     }
 
-    if (uri.startsWith(QLatin1String("ATTACH:"))) {
+    if (uri.startsWith(QLatin1StringView("ATTACH:"))) {
         Q_EMIT attachmentUrlClicked(uri);
     } else {
         UriHandler::process(uri);

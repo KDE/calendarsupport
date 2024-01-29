@@ -59,27 +59,27 @@ bool UriHandler::process(const QString &uri)
 {
     qCDebug(CALENDARSUPPORT_LOG) << uri;
 
-    if (uri.startsWith(QLatin1String("kmail:"))) {
+    if (uri.startsWith(QLatin1StringView("kmail:"))) {
         // extract 'number' from 'kmail:<number>/<id>'
         const int start = uri.indexOf(QLatin1Char(':')) + 1;
         const int end = uri.indexOf(QLatin1Char('/'), start);
         const QString serialNumberStr = uri.mid(start, start - end);
         return startKMail(QStringLiteral("akonadi://?item=%1").arg(serialNumberStr));
-    } else if (uri.startsWith(QLatin1String("mailto:"))) {
+    } else if (uri.startsWith(QLatin1StringView("mailto:"))) {
         return QDesktopServices::openUrl(QUrl(uri));
-    } else if (uri.startsWith(QLatin1String("uid:"))) {
+    } else if (uri.startsWith(QLatin1StringView("uid:"))) {
         const QString uid = uri.mid(4);
         return startKAddressbook(QStringLiteral("akonadi://?item=%1").arg(uid));
-    } else if (uri.startsWith(QLatin1String("urn:x-ical"))) {
+    } else if (uri.startsWith(QLatin1StringView("urn:x-ical"))) {
         const QString uid = QUrl::fromPercentEncoding(uri.toLatin1()).mid(11);
         return startKOrganizer(QStringLiteral("akonadi://?item=%1").arg(uid));
-    } else if (uri.startsWith(QLatin1String("akonadi:"))) {
+    } else if (uri.startsWith(QLatin1StringView("akonadi:"))) {
         const QString mimeType = QUrlQuery(QUrl(uri)).queryItemValue(QStringLiteral("type")).toLower();
-        if (mimeType == QLatin1String("message/rfc822")) {
+        if (mimeType == QLatin1StringView("message/rfc822")) {
             return startKMail(uri);
-        } else if (mimeType == QLatin1String("text/calendar")) {
+        } else if (mimeType == QLatin1StringView("text/calendar")) {
             return startKOrganizer(uri);
-        } else if (mimeType == QLatin1String("text/directory")) {
+        } else if (mimeType == QLatin1StringView("text/directory")) {
             return startKAddressbook(uri);
         }
     } else { // no special URI, let KDE handle it

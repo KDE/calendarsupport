@@ -184,7 +184,7 @@ bool CalendarSupport::isValidIncidenceItemUrl(const QUrl &url, const QStringList
         return false;
     }
 
-    if (url.scheme() != QLatin1String("akonadi")) {
+    if (url.scheme() != QLatin1StringView("akonadi")) {
         return false;
     }
 
@@ -394,8 +394,8 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     if (coll.id() == CalendarSupport::KCalPrefs::instance()->defaultCalendarId()) {
         displayName = i18nc("this is the default calendar", "%1 (Default Calendar)", displayName);
     }
-    str += QLatin1String("<b>") + displayName + QLatin1String("</b>");
-    str += QLatin1String("<hr>");
+    str += QLatin1StringView("<b>") + displayName + QLatin1String("</b>");
+    str += QLatin1StringView("<hr>");
 
     // Calendar Type
     QString calendarType;
@@ -405,8 +405,8 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     } else {
         calendarType = i18nc("a virtual folder type", "Virtual");
     }
-    str += QLatin1String("<i>") + i18n("Folder type:") + QLatin1String("</i>");
-    str += QLatin1String("&nbsp;") + calendarType;
+    str += QLatin1StringView("<i>") + i18n("Folder type:") + QLatin1String("</i>");
+    str += QLatin1StringView("&nbsp;") + calendarType;
 
     // Content Type
     QStringList mimeTypes = coll.contentMimeTypes();
@@ -417,22 +417,22 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     } else {
         mimeTypeStr = i18nc("collection has no mimetypes to show the user", "none");
     }
-    str += QLatin1String("<br>");
-    str += QLatin1String("<i>") + i18n("Content type:") + QLatin1String("</i>");
-    str += QLatin1String("&nbsp;") + mimeTypeStr;
-    str += QLatin1String("</br>");
+    str += QLatin1StringView("<br>");
+    str += QLatin1StringView("<i>") + i18n("Content type:") + QLatin1String("</i>");
+    str += QLatin1StringView("&nbsp;") + mimeTypeStr;
+    str += QLatin1StringView("</br>");
 
     // Read only?
     bool isReadOnly = !(coll.rights() & Akonadi::Collection::CanChangeItem);
-    str += QLatin1String("<br>");
-    str += QLatin1String("<i>") + i18n("Rights:") + QLatin1String("</i>");
-    str += QLatin1String("&nbsp;");
+    str += QLatin1StringView("<br>");
+    str += QLatin1StringView("<i>") + i18n("Rights:") + QLatin1String("</i>");
+    str += QLatin1StringView("&nbsp;");
     if (isReadOnly) {
         str += i18nc("the calendar is read-only", "read-only");
     } else {
         str += i18nc("the calendar is read and write", "read+write");
     }
-    str += QLatin1String("</br>");
+    str += QLatin1StringView("</br>");
 
     // Blocking reminders?
     QStringList blockList;
@@ -455,13 +455,13 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     } else {
         blockList << i18nc("not blocking any reminder types for this calendar", "none");
     }
-    str += QLatin1String("<br>");
-    str += QLatin1String("<i>") + i18n("Blocked Reminders:") + QLatin1String("</i>");
-    str += QLatin1String("&nbsp;");
+    str += QLatin1StringView("<br>");
+    str += QLatin1StringView("<i>") + i18n("Blocked Reminders:") + QLatin1String("</i>");
+    str += QLatin1StringView("&nbsp;");
     str += QLocale().createSeparatedList(blockList);
-    str += QLatin1String("</br>");
+    str += QLatin1StringView("</br>");
 
-    str += QLatin1String("</qt>");
+    str += QLatin1StringView("</qt>");
     return str;
 }
 

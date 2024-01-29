@@ -12,12 +12,12 @@ using namespace CalendarSupport;
 
 namespace CategoryConfig
 {
-static const QLatin1String categorySeparator(":");
+static const QLatin1StringView categorySeparator(":");
 }
 
 inline QString &quote(QString &string)
 {
-    Q_ASSERT(CategoryConfig::categorySeparator != QLatin1String("@"));
+    Q_ASSERT(CategoryConfig::categorySeparator != QLatin1StringView("@"));
     return string.replace(QLatin1Char('@'), QStringLiteral("@0")).replace(QLatin1Char('\\') + CategoryConfig::categorySeparator, QStringLiteral("@1"));
 }
 

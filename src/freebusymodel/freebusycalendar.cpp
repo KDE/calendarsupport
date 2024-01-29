@@ -99,7 +99,7 @@ void FreeBusyCalendar::onRowsInserted(const QModelIndex &parent, int first, int 
         KCalendarCore::Event::Ptr inc = KCalendarCore::Event::Ptr(new KCalendarCore::Event());
         inc->setDtStart(period.start());
         inc->setDtEnd(period.end());
-        inc->setUid(QLatin1String("fb-") + fb->uid() + QLatin1String("-") + QString::number(i));
+        inc->setUid(QLatin1StringView("fb-") + fb->uid() + QLatin1String("-") + QString::number(i));
 
         inc->setCustomProperty("FREEBUSY", "STATUS", QString::number(period.type()));
         QString summary = period.summary();

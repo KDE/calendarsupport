@@ -131,7 +131,7 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientati
 
     if (preview) {
         QPointer<QPrintPreviewDialog> printPreview = new QPrintPreviewDialog(&printer);
-        new KWindowStateSaver(printPreview.data(), QLatin1String("CalendarPrintPreviewDialog"));
+        new KWindowStateSaver(printPreview.data(), QLatin1StringView("CalendarPrintPreviewDialog"));
         connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this, [selectedStyle, &printer]() {
             selectedStyle->doPrint(&printer);
         });
