@@ -244,7 +244,7 @@ void ArchiveDialog::slotUser1()
         }
         // Force filename to be ending with vCalendar extension
         QString filename = destUrl.fileName();
-        if (!filename.endsWith(QLatin1StringView(".vcs")) && !filename.endsWith(QLatin1String(".ics"))) {
+        if (!filename.endsWith(QLatin1StringView(".vcs")) && !filename.endsWith(QLatin1StringView(".ics"))) {
             filename.append(QLatin1StringView(".ics"));
             destUrl = destUrl.adjusted(QUrl::RemoveFilename);
             destUrl.setPath(destUrl.path() + filename);

@@ -394,7 +394,7 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     if (coll.id() == CalendarSupport::KCalPrefs::instance()->defaultCalendarId()) {
         displayName = i18nc("this is the default calendar", "%1 (Default Calendar)", displayName);
     }
-    str += QLatin1StringView("<b>") + displayName + QLatin1String("</b>");
+    str += QLatin1StringView("<b>") + displayName + QLatin1StringView("</b>");
     str += QLatin1StringView("<hr>");
 
     // Calendar Type
@@ -405,7 +405,7 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     } else {
         calendarType = i18nc("a virtual folder type", "Virtual");
     }
-    str += QLatin1StringView("<i>") + i18n("Folder type:") + QLatin1String("</i>");
+    str += QLatin1StringView("<i>") + i18n("Folder type:") + QLatin1StringView("</i>");
     str += QLatin1StringView("&nbsp;") + calendarType;
 
     // Content Type
@@ -418,14 +418,14 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
         mimeTypeStr = i18nc("collection has no mimetypes to show the user", "none");
     }
     str += QLatin1StringView("<br>");
-    str += QLatin1StringView("<i>") + i18n("Content type:") + QLatin1String("</i>");
+    str += QLatin1StringView("<i>") + i18n("Content type:") + QLatin1StringView("</i>");
     str += QLatin1StringView("&nbsp;") + mimeTypeStr;
     str += QLatin1StringView("</br>");
 
     // Read only?
     bool isReadOnly = !(coll.rights() & Akonadi::Collection::CanChangeItem);
     str += QLatin1StringView("<br>");
-    str += QLatin1StringView("<i>") + i18n("Rights:") + QLatin1String("</i>");
+    str += QLatin1StringView("<i>") + i18n("Rights:") + QLatin1StringView("</i>");
     str += QLatin1StringView("&nbsp;");
     if (isReadOnly) {
         str += i18nc("the calendar is read-only", "read-only");
@@ -456,7 +456,7 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
         blockList << i18nc("not blocking any reminder types for this calendar", "none");
     }
     str += QLatin1StringView("<br>");
-    str += QLatin1StringView("<i>") + i18n("Blocked Reminders:") + QLatin1String("</i>");
+    str += QLatin1StringView("<i>") + i18n("Blocked Reminders:") + QLatin1StringView("</i>");
     str += QLatin1StringView("&nbsp;");
     str += QLocale().createSeparatedList(blockList);
     str += QLatin1StringView("</br>");
