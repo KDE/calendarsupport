@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-02-02 08:39+0200\n"
+"PO-Revision-Date: 2024-02-11 08:21+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -333,7 +333,7 @@ msgstr ""
 #: eventarchiver.cpp:126
 #, kde-format
 msgid "There are no items before %1"
-msgstr "אין פרטים לפני %1"
+msgstr "אין פריטים לפני %1"
 
 #: eventarchiver.cpp:127
 #, fuzzy, kde-format
@@ -347,7 +347,7 @@ msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
-"האם למחוק את כל האירועים שלפני %1 ללא שמירה?\n"
+"למחוק את כל האירועים שלפני %1 בלי לשמור?\n"
 "האירועים הבאים יימחקו:"
 
 #: eventarchiver.cpp:159
@@ -810,7 +810,7 @@ msgstr ""
 #: kcalprefs.kcfg:200
 #, kde-format
 msgid "E&mail address"
-msgstr "&כתובת דוא\"ל"
+msgstr "&כתובת דוא״ל"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:201
@@ -1324,7 +1324,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:312
 #, kde-format
 msgid "Include to-&dos that are due on the printed day(s)"
-msgstr "כלול &מטלות שתאריך היעד שלהן הוא ביום או בימים המודפסים."
+msgstr "לכלול &מטלות שתאריך היעד שלהן הוא ביום או בימים המודפסים"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:319
@@ -1426,7 +1426,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:367
 #, kde-format
 msgid "&Use colors"
-msgstr "השתמש ב&צבעים"
+msgstr "להשתמש ב&צבעים"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:374
@@ -1928,7 +1928,7 @@ msgstr "מדפיס את כל האירועים של שבוע אחד על עמוד
 #: printing/calprintdefaultplugins.h:138
 #, kde-format
 msgid "Print da&y"
-msgstr "הדפס &יום"
+msgstr "הדפסת &יום"
 
 #: printing/calprintdefaultplugins.h:143
 #, kde-format
@@ -2583,7 +2583,7 @@ msgstr "אפשרויות מיון"
 #: printing/calprinttodoconfig_base.ui:339
 #, kde-format
 msgid "Sort field:"
-msgstr "מיין שדה:"
+msgstr "שדה מיון:"
 
 #. i18n: ectx: property (text), widget (QLabel, sortDirectionLabel)
 #: printing/calprinttodoconfig_base.ui:366
@@ -2764,22 +2764,20 @@ msgid "Virtual"
 msgstr ""
 
 #: utils.cpp:408
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Folder type:"
-msgstr "לוח־שנה"
+msgstr "סוג תיקייה:"
 
 #: utils.cpp:418
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
-msgstr "(אין)"
+msgstr "אין"
 
 #: utils.cpp:421
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Content type:"
-msgstr "לוח־שנה"
+msgstr "סוג תוכן:"
 
 #: utils.cpp:428
 #, kde-format
@@ -2835,27 +2833,26 @@ msgid "other"
 msgstr ""
 
 #: utils.cpp:456
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
-msgstr "(אין)"
+msgstr "אין"
 
 #: utils.cpp:459
-#, fuzzy, kde-format
+#, kde-format
 msgid "Blocked Reminders:"
-msgstr "תזכורת"
+msgstr "תזכורות חסומות:"
 
 #: utils.cpp:524
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
-msgstr "%1%"
+msgstr "^%1"
 
 #: utils.cpp:526
-#, fuzzy, kde-format
+#, kde-format
 msgid "%1 (%2)"
-msgstr "%1 %2"
+msgstr "%1 (%2)"
 
 #: utils.cpp:531
 #, kde-format
