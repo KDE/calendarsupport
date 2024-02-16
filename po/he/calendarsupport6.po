@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-02-12 22:49+0200\n"
+"PO-Revision-Date: 2024-02-15 23:12+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -879,11 +879,10 @@ msgid "Calendar where the new note will be stored."
 msgstr "קובע את תאריך היעד עבור מטלה זו."
 
 #: noteeditdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "&Title:"
+#, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
-msgstr "&כותרת:"
+msgstr "כותרת:"
 
 #: noteeditdialog.cpp:97
 #, kde-format
@@ -923,9 +922,9 @@ msgstr "תווך של תאריך ושעה"
 #: printing/calprinttodoconfig_base.ui:127
 #: printing/calprintweekconfig_base.ui:30
 #: printing/calprintweekconfig_base.ui:49
-#, fuzzy, kde-format
+#, kde-format
 msgid "Starting date for the print"
-msgstr "קובע את תאריך ההתחלה של מטלה זו"
+msgstr "תאריך התחלה להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mFromDate)
@@ -971,9 +970,9 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:64 printing/calprintdayconfig_base.ui:80
 #: printing/calprintweekconfig_base.ui:64
 #: printing/calprintweekconfig_base.ui:80
-#, fuzzy, kde-format
+#, kde-format
 msgid "Starting time for the print"
-msgstr "קובע את תאריך ההתחלה של מטלה זו"
+msgstr "שעת התחלה להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
@@ -1025,9 +1024,9 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:164
 #: printing/calprintweekconfig_base.ui:110
 #: printing/calprintweekconfig_base.ui:129
-#, fuzzy, kde-format
+#, kde-format
 msgid "Ending date for the print"
-msgstr "קובע את תאריך ההתחלה של מטלה זו"
+msgstr "תאריך הסוף להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -1064,9 +1063,9 @@ msgstr "תאריך &סיום:"
 #: printing/calprintdayconfig_base.ui:160
 #: printing/calprintweekconfig_base.ui:144
 #: printing/calprintweekconfig_base.ui:160
-#, fuzzy, kde-format
+#, kde-format
 msgid "Ending time for the print"
-msgstr "קובע את תאריך ההתחלה של מטלה זו"
+msgstr "שעת הסוף להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1244,9 +1243,9 @@ msgstr "כלול מידע"
 #: printing/calprintmonthconfig_base.ui:153
 #: printing/calprinttodoconfig_base.ui:232
 #: printing/calprintweekconfig_base.ui:277
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print item descriptions"
-msgstr "&תיאור"
+msgstr "הדפסת תיאורי פריטים"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDescription)
@@ -1264,9 +1263,9 @@ msgstr "בחר באפשרות זו אם ברצונך להציג שניות בק�
 #: printing/calprintmonthconfig_base.ui:159
 #: printing/calprinttodoconfig_base.ui:238
 #: printing/calprintweekconfig_base.ui:283
-#, fuzzy, kde-format
+#, kde-format
 msgid "&Descriptions"
-msgstr "&תיאור"
+msgstr "&תיאורים"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1356,9 +1355,9 @@ msgstr "כללי"
 #: printing/calprintdayconfig_base.ui:338
 #: printing/calprintmonthconfig_base.ui:243
 #: printing/calprintweekconfig_base.ui:338
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print items on one line"
-msgstr "מדפיס את כל האירועים של שבוע אחד על עמוד אחד"
+msgstr "הדפסת פריטים בשורה אחת"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:341
