@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-02-15 23:12+0200\n"
+"PO-Revision-Date: 2024-02-17 22:27+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -477,7 +477,7 @@ msgstr ""
 #: kcalprefs.kcfg:24
 #, kde-format
 msgid "Default appointment time"
-msgstr "שעת הפגישה המשמשת כברירת מחדל"
+msgstr "שעת הפגישה כברירת מחדל"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:25
@@ -485,8 +485,7 @@ msgstr "שעת הפגישה המשמשת כברירת מחדל"
 msgid ""
 "Enter the default time for events here. The default is used if you do not "
 "supply a start time."
-msgstr ""
-"הזן כאן זמן ברירת־מחדל עבור אירועים. ברירת־המחדל תשמש אם לא תספק שעת התחלה."
+msgstr "שעת ברירת־מחדל לאירועים. ברירת־המחדל תיקח פיקוד אם לא תסופק שעת התחלה."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:30
@@ -501,7 +500,8 @@ msgid ""
 "Enter default duration for events here. The default is used if you do not "
 "supply an end time."
 msgstr ""
-"הזן כאן משך ברירת־מחדל עבור אירועים. ברירת־המחדל תשמש אם לא תספק מועד סיום."
+"נא למלא משך ברירת־מחדל לאירועים. ברירת־המחדל תיקח פיקוד אם לא יסופק מועד "
+"סיום."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:36
@@ -627,7 +627,7 @@ msgstr ""
 #: kcalprefs.kcfg:84
 #, kde-format
 msgid "Exclude holidays"
-msgstr "אל תכלול חגים"
+msgstr "לא לכלול חגים"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:85
@@ -635,7 +635,7 @@ msgstr "אל תכלול חגים"
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
 "holidays."
-msgstr "סמן תיבה זו על־מנת למנוע מ־ KOrganizer מלסמן את שעות העבודה בימי חג."
+msgstr "סימון תיבה זו ימנע מ־KOrganizer לסמן את שעות העבודה בימי חג."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:90
@@ -662,7 +662,7 @@ msgstr ""
 #: kcalprefs.kcfg:98
 #, kde-format
 msgid "Use Groupware communication"
-msgstr "השתמש בתקשורת Groupware "
+msgstr "להשתמש בתקשורת Groupware"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:99
@@ -713,7 +713,7 @@ msgstr ""
 #: kcalprefs.kcfg:134
 #, kde-format
 msgid "Regularly archive events"
-msgstr "שמור אירועים בארכיבים לפרקים"
+msgstr "שמירת אירועים בארכיונים לפרקים"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:139
