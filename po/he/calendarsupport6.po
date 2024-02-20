@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-02-17 22:27+0200\n"
+"PO-Revision-Date: 2024-02-18 08:40+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -1273,9 +1273,9 @@ msgstr "&תיאורים"
 #: printing/calprintmonthconfig_base.ui:166
 #: printing/calprinttodoconfig_base.ui:245
 #: printing/calprintweekconfig_base.ui:290
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print item tags"
-msgstr "הדפס רשימה"
+msgstr "הדפסת תגיות הפריטים"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -2622,9 +2622,9 @@ msgstr "מדפיס את כל האירועים של חודש אחד על עמוד
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintweekconfig_base.ui:222
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print as timeta&ble view, one week per page"
-msgstr "הדפס כתצוגת &לוח־זמנים"
+msgstr "הדפסה כתצוגת &לוח־זמנים, שבוע בכל עמוד"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:229
@@ -2636,9 +2636,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:232
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print as split wee&k view"
-msgstr "הדפס כמו תצוגת שבועית מפוצלת"
+msgstr "הדפסה כתצוגת שבועית מ&פוצלת"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintyearconfig_base.ui:14
