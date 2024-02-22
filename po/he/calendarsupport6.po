@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-02-18 08:40+0200\n"
+"PO-Revision-Date: 2024-02-20 22:41+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -2217,21 +2217,21 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
-#, fuzzy, kde-format
+#, kde-format
 msgid "Sta&rt month:"
-msgstr "חודש &התחלה:"
+msgstr "&חודש התחלה:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mFromMonth)
 #: printing/calprintmonthconfig_base.ui:43
-#, fuzzy, kde-format
+#, kde-format
 msgid "Starting month for printing"
-msgstr "קובע את תאריך ההתחלה של מטלה זו"
+msgstr "חודש התחלה להדפסה"
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:53
-#, fuzzy, kde-format
+#, kde-format
 msgid "Starting year for printing"
-msgstr "קובע את תאריך ההתחלה של מטלה זו"
+msgstr "שנת התחלה להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:56
@@ -2267,15 +2267,15 @@ msgstr "חודש &סיום:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mToMonth)
 #: printing/calprintmonthconfig_base.ui:82
-#, fuzzy, kde-format
+#, kde-format
 msgid "Ending month for the print"
-msgstr "קובע את תאריך ההתחלה של מטלה זו"
+msgstr "חודש הסוף להדפסה"
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:92
-#, fuzzy, kde-format
+#, kde-format
 msgid "Ending year for the print"
-msgstr "קובע את תאריך ההתחלה של מטלה זו"
+msgstr "שנת הסוף להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:95
@@ -2376,22 +2376,22 @@ msgid "printed: %1"
 msgstr "הודפס: %1"
 
 #: printing/calprintpluginbase.cpp:921
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
-msgstr "%1 %2 %3"
+msgstr "%1-%2 %3"
 
 #: printing/calprintpluginbase.cpp:927
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
-msgstr "%1 %2 עד %3 %4"
+msgstr "%1-%2 %3, %4"
 
 #: printing/calprintpluginbase.cpp:994
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
-msgstr "%1, %2 עד %3"
+msgstr "%1, %2 %3"
 
 #: printing/calprintpluginbase.cpp:1120
 #, kde-format
@@ -2411,20 +2411,16 @@ msgid "To-do: %1"
 msgstr "מטלה: %1"
 
 #: printing/calprintpluginbase.cpp:1878
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
-msgstr "%1 %2 עד %3"
+msgstr "%1 %2–%3"
 
 #: printing/calprintpluginbase.cpp:1884
-#, fuzzy, kde-format
-#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
-#| msgid "%1 %2 - %3 %4"
+#, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
-msgstr "%1 %2 עד %3 %4"
+msgstr "%1 %2–%3 %4"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprinttodoconfig_base.ui:17
@@ -2444,9 +2440,9 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QLineEdit, mTitle)
 #: printing/calprinttodoconfig_base.ui:26
 #: printing/calprinttodoconfig_base.ui:42
-#, fuzzy, kde-format
+#, kde-format
 msgid "Name for this to-do list"
-msgstr "%1 לאחר ההתחלה"
+msgstr "שם רשימת המטלות הזו"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mTitleLabel)
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, mTitle)
@@ -2483,9 +2479,9 @@ msgstr "הדפסת &כל המטלות"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
 #: printing/calprinttodoconfig_base.ui:73
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print &uncompleted to-dos only"
-msgstr "הדפס מטלות ש&לא הושלמו בלבד"
+msgstr "הדפסת מטלות ש&לא הושלמו בלבד"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
 #: printing/calprinttodoconfig_base.ui:80
@@ -2501,9 +2497,9 @@ msgstr "הדפסת עדיפויות פרטים"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:261
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option if you want to see the item priorities printed."
-msgstr "בחר באפשרות זו אם ברצונך להציג שניות בקו־הזמן הנוכחי."
+msgstr "יש לסמן את האפשרות הזאת כדי לכלול בהדפסה גם את עדיפויות הפריטים."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
@@ -2519,11 +2515,13 @@ msgstr "הדפסת תאריכי התחלת פריטים"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:277
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this option if you want to see the item start dates (when work can "
 "begin) printed."
-msgstr "בחר באפשרות זו אם ברצונך להציג שניות בקו־הזמן הנוכחי."
+msgstr ""
+"יש לסמן את האפשרות הזאת כדי לכלול בהדפסה את תאריכי ההתחלה של הפריטים (מתי "
+"עבודה יכולה להתחיל)."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:280
@@ -2539,9 +2537,9 @@ msgstr "הדפסת תאריכי היעד של הפריטים"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:290
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option if you want to see the item due dates printed."
-msgstr "בחר באפשרות זו אם ברצונך להציג שניות בקו־הזמן הנוכחי."
+msgstr "יש לסמן את האפשרות הזאת כדי לכלול בהדפסה גם את תאריכי היעד."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293
@@ -2595,10 +2593,9 @@ msgstr "&קשר מטלת־משנה זו עם מטלת האם שלה"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
-#, fuzzy, kde-format
-#| msgid "Strike &out completed to-do summaries"
+#, kde-format
 msgid "Stri&ke out completed to-do summaries"
-msgstr "העבר &קו על תקציר המטלות שהושלמו"
+msgstr "לחצות ב&קו תקצירים של מטלות שהושלמו"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintweekconfig_base.ui:17
