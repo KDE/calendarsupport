@@ -20,7 +20,7 @@ public:
     void read(const QStringList &categories);
     virtual ~CategoryHierarchyReader() = default;
 
-    static QStringList path(QString string);
+    [[nodiscard]] static QStringList path(QString string);
 
 protected:
     CategoryHierarchyReader() = default;

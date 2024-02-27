@@ -34,7 +34,7 @@ public Q_SLOTS:
 
 private:
     /** Splits period blocks in the provided list, so that each period occurs on one day */
-    KCalendarCore::Period::List splitPeriodsByDay(const KCalendarCore::Period::List &freePeriods);
+    [[nodiscard]] KCalendarCore::Period::List splitPeriodsByDay(const KCalendarCore::Period::List &freePeriods);
 
     [[nodiscard]] CALENDARSUPPORT_NO_EXPORT QString day(int index) const;
     [[nodiscard]] CALENDARSUPPORT_NO_EXPORT QString date(int index) const;

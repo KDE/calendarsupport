@@ -29,9 +29,9 @@ public:
     FreeBusyItem(const KCalendarCore::Attendee &attendee, QWidget *parentWidget);
     ~FreeBusyItem() = default;
 
-    KCalendarCore::Attendee attendee() const;
+    [[nodiscard]] KCalendarCore::Attendee attendee() const;
     void setFreeBusy(const KCalendarCore::FreeBusy::Ptr &fb);
-    KCalendarCore::FreeBusy::Ptr freeBusy() const;
+    [[nodiscard]] KCalendarCore::FreeBusy::Ptr freeBusy() const;
 
     [[nodiscard]] QString email() const;
     void setUpdateTimerID(int id);

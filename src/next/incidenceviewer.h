@@ -150,7 +150,6 @@ private:
      */
     CALENDARSUPPORT_NO_EXPORT void itemRemoved() override;
 
-private:
     //@cond PRIVATE
     std::unique_ptr<IncidenceViewerPrivate> const d;
 

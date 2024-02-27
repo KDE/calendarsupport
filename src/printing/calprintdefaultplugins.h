@@ -183,27 +183,27 @@ public:
     CalPrintWeek();
     ~CalPrintWeek() override;
 
-    QString groupName() const override
+    [[nodiscard]] QString groupName() const override
     {
         return QStringLiteral("Print week");
     }
 
-    QString description() const override
+    [[nodiscard]] QString description() const override
     {
         return i18n("Print &week");
     }
 
-    QString info() const override
+    [[nodiscard]] QString info() const override
     {
         return i18n("Prints all events of one week on one page");
     }
 
-    int sortID() const override
+    [[nodiscard]] int sortID() const override
     {
         return CalPrinterBase::Week;
     }
 
-    bool enabled() const override
+    [[nodiscard]] bool enabled() const override
     {
         return true;
     }

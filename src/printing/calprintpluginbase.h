@@ -77,10 +77,10 @@ public:
 
     /** HELPER FUNCTIONS */
 public:
-    bool useColors() const;
+    [[nodiscard]] bool useColors() const;
     void setUseColors(bool useColors);
 
-    bool printFooter() const;
+    [[nodiscard]] bool printFooter() const;
     void setPrintFooter(bool printFooter);
 
     /**
@@ -97,7 +97,7 @@ public:
         default value based on the printer orientation.
         @return height of the page header of the printout
     */
-    int headerHeight() const;
+    [[nodiscard]] int headerHeight() const;
     void setHeaderHeight(const int height);
 
     int subHeaderHeight() const;
@@ -107,16 +107,16 @@ public:
         default value based on the printer orientation.
         @return height of the page footer of the printout
     */
-    int footerHeight() const;
+    [[nodiscard]] int footerHeight() const;
     void setFooterHeight(const int height);
 
-    int margin() const;
+    [[nodiscard]] int margin() const;
     void setMargin(const int margin);
 
-    int padding() const;
+    [[nodiscard]] int padding() const;
     void setPadding(const int margin);
 
-    int borderWidth() const;
+    [[nodiscard]] int borderWidth() const;
     void setBorderWidth(const int border);
 
     /*****************************************************************
