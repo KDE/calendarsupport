@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-02-23 14:40+0200\n"
+"PO-Revision-Date: 2024-02-27 23:51+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -270,10 +270,10 @@ msgid ""
 msgstr "סמן אפשרות זאת אם ברצונך להדפיס מטלות, ממוקמות לפי תאריך היעד שלהן."
 
 #: archivedialog.cpp:178
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:check"
 msgid "&Delete only, do not save"
-msgstr "&מחק בלבד, ללא שמירה"
+msgstr "למ&חוק בלבד, לא לשמור"
 
 #: archivedialog.cpp:179
 #, kde-format
@@ -292,10 +292,10 @@ msgstr ""
 "יהיה לשחזר את האירועים מאוחר יותר."
 
 #: archivedialog.cpp:242
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info"
 msgid "The archive file name is not valid."
-msgstr "שם הקובץ של הארכיון אינו תקף.\n"
+msgstr "שם קובץ הארכיון אינו תקף."
 
 #: attachmenthandler.cpp:94
 #, kde-format
@@ -321,9 +321,9 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 
 #: attachmenthandler.cpp:211
-#, fuzzy, kde-format
+#, kde-format
 msgid "Save Attachment"
-msgstr "מ&צורפים"
+msgstr "שמירת קובץ מצורף"
 
 #: cellitem.cpp:38
 #, kde-kuit-format
@@ -336,10 +336,10 @@ msgid "There are no items before %1"
 msgstr "אין פריטים לפני %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "העבר ל&ארכיון"
+msgstr "ארכיון"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -351,40 +351,39 @@ msgstr ""
 "האירועים הבאים יימחקו:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
-msgstr "מחק אירועים ישנים"
+msgstr "מחיקת פריטים ישנים"
 
 #: eventarchiver.cpp:269
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
-msgstr "לא ידוע"
+msgstr "הסיבה לא ידועה"
 
 #: eventarchiver.cpp:271
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot write archive file %1. %2"
-msgstr "אין אפשרות לכתוב את קובץ הארכיון %1."
+msgstr "לא ניתן לכתוב לקובץ הארכיון %1. %2"
 
 #: eventarchiver.cpp:282
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot write archive. %1"
-msgstr "אין אפשרות לכתוב את קובץ הארכיון %1."
+msgstr "לא ניתן לכתוב לארכיון. %1"
 
 #: eventarchiver.cpp:291
-#, fuzzy, kde-format
+#, kde-format
 msgid "Archiving events"
-msgstr "שמור אירועים בארכיבים"
+msgstr "האירועים מועברים לארכיון"
 
 #: freebusymodel/freebusycalendar.cpp:109
-#, fuzzy, kde-format
+#, kde-format
 msgid "Free"
 msgstr "פנוי"
 
 #: freebusymodel/freebusycalendar.cpp:112
-#, fuzzy, kde-format
+#, kde-format
 msgid "Busy"
 msgstr "עסוק"
 
@@ -399,7 +398,7 @@ msgid "Tentative"
 msgstr ""
 
 #: freebusymodel/freebusycalendar.cpp:121
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unknown"
 msgstr "לא ידוע"
 
@@ -409,51 +408,51 @@ msgid "Attendee"
 msgstr "נוכח"
 
 #: freebusymodel/freeperiodmodel.cpp:124
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
-msgstr "%1"
+msgstr "%1,"
 
 #: freebusymodel/freeperiodmodel.cpp:141
-#, fuzzy, kde-format
+#, kde-format
 msgctxt ""
 "@label A time period duration. It is preceded/followed (based on the "
 "orientation) by the name of the week, see the message above. example: 12 "
 "June, 8:00am to 9:30am"
 msgid "%1 %2, %3 to %4"
-msgstr "%1 %2 עד %3 %4"
+msgstr "%1 %2, %3 עד %4"
 
 #: freebusymodel/freeperiodmodel.cpp:162
-#, fuzzy, kde-format
+#, kde-format
 msgctxt ""
 "@label A time period duration. KLocale is used to format the components. "
 "example: Monday, 12 June, 8:00am to 9:30am"
 msgid "%1, %2 %3, %4 to %5"
-msgstr "%1 %2 עד %3 %4"
+msgstr "%1, %2 %3, %4 עד %5"
 
 #: freebusymodel/freeperiodmodel.cpp:176
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
-msgstr "שעות עבודה"
+msgstr "משך פנאי"
 
 #: freebusymodel/freeperiodmodel.cpp:178
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
-msgstr "&התחלה:"
+msgstr "התחלה:"
 
 #: freebusymodel/freeperiodmodel.cpp:181
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
-msgstr "&סיום:"
+msgstr "סיום:"
 
 #: freebusymodel/freeperiodmodel.cpp:184
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
-msgstr "משך: "
+msgstr "משך:"
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:15
@@ -477,7 +476,7 @@ msgstr ""
 #: kcalprefs.kcfg:24
 #, kde-format
 msgid "Default appointment time"
-msgstr "שעת הפגישה כברירת מחדל"
+msgstr "זמן פגישות כברירת־מחדל"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:25
@@ -485,7 +484,8 @@ msgstr "שעת הפגישה כברירת מחדל"
 msgid ""
 "Enter the default time for events here. The default is used if you do not "
 "supply a start time."
-msgstr "שעת ברירת־מחדל לאירועים. ברירת־המחדל תיקח פיקוד אם לא תסופק שעת התחלה."
+msgstr ""
+"זמן ברירת־מחדל לאירועים. ברירת־המחדל תיכנס לתוקף אם לא תסופק שעת התחלה."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:30
@@ -500,7 +500,7 @@ msgid ""
 "Enter default duration for events here. The default is used if you do not "
 "supply an end time."
 msgstr ""
-"נא למלא משך ברירת־מחדל לאירועים. ברירת־המחדל תיקח פיקוד אם לא יסופק מועד "
+"נא למלא משך ברירת־מחדל לאירועים. ברירת־המחדל תיכנס לתוקף אם לא יסופק מועד "
 "סיום."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
@@ -520,9 +520,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:42
-#, fuzzy, kde-format
+#, kde-format
 msgid "Default audio file"
-msgstr "לוח שנה ברירת מחדל"
+msgstr "קובץ שמע כברירת מחדל"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:43
@@ -627,7 +627,7 @@ msgstr ""
 #: kcalprefs.kcfg:84
 #, kde-format
 msgid "Exclude holidays"
-msgstr "לא לכלול חגים"
+msgstr "להחריג חגים"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:85
@@ -635,7 +635,7 @@ msgstr "לא לכלול חגים"
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
 "holidays."
-msgstr "סימון תיבה זו ימנע מ־KOrganizer לסמן את שעות העבודה בימי חג."
+msgstr "סימון תיבה זו ימנע מ־KOrganizer לסמן שעות עבודה בימי חג."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:90
@@ -687,7 +687,7 @@ msgstr ""
 #: kcalprefs.kcfg:107
 #, kde-format
 msgid "Send mails without asking."
-msgstr "לשלוח הודעות מבלי לבקש אישור"
+msgstr "לשלוח הודעות מבלי לבקש אישור."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:110
@@ -713,7 +713,7 @@ msgstr ""
 #: kcalprefs.kcfg:134
 #, kde-format
 msgid "Regularly archive events"
-msgstr "שמירת אירועים בארכיונים לפרקים"
+msgstr "שמירת אירועים בארכיון לפרקים"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:139
@@ -722,14 +722,14 @@ msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
 "archived. The unit of this value is specified in another field."
 msgstr ""
-"אם אירכוב אוטומטי פעיל, אירועים ישנים יותר ממספר מסוים יעברו לארכיון. יחידת "
-"המידה המשויכת למספר הנ\"ל נקבעת בשדה נוסף."
+"אם העברה אוטומטית לארכיון פעילה, אירועים ישנים יותר ממספר מסוים יועברו "
+"לארכיון. יחידת המידה המשויכת למספר הנ״ל נקבעת בשדה נוסף."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:144
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
-msgstr "יחידת הזמן שבה התפוגה מוגדרת."
+msgstr "יחידת הזמן לביטוי זמן התפוגה."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:147
@@ -753,37 +753,37 @@ msgstr "בחודשים"
 #: kcalprefs.kcfg:160
 #, kde-format
 msgid "URL of the file where old events should be archived"
-msgstr "הכתובת של הקובץ עליה האירועים הישנים ישמרו"
+msgstr "כתובת הקובץ בה יישמרו אירועים ישנים לארכיון"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:164
 #, kde-format
 msgid "Archive events"
-msgstr "שמור אירועים בארכיבים"
+msgstr "העברת אירועים לארכיון"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:169
 #, kde-format
 msgid "Archive to-dos"
-msgstr "שמור מטלות בארכיבים"
+msgstr "העברת מטלות לארכיון"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:174
 #, kde-format
 msgid "What to do when archiving"
-msgstr "מה לעשות בעת השמירה בארכיב"
+msgstr "מה לעשות בעת שמירה בארכיון"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:177
 #, kde-format
 msgid "Delete old events"
-msgstr "מחק אירועים ישנים"
+msgstr "מחיקת אירועים ישנים"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:180
 #, kde-format
 msgid "Archive old events to a separate file"
-msgstr "שמור אירועים אל קובץ נפרד"
+msgstr "לשמור אירועים לארכיון בקובץ נפרד"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
 #: kcalprefs.kcfg:194
@@ -798,8 +798,8 @@ msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
 "to-dos and events you create."
 msgstr ""
-"הכנס כאן את השם המלא שלך. השם שלך יוצג בתור \"מארגן\" במשימות ואירועים "
-"שתיצור."
+"נא למלא כאן את השם המלא שלך. השם שלך יוצג תחת „ארגון” במשימות ואירועים "
+"שייוצרו."
 
 #: kcalprefs.kcfg:196
 #, kde-format
@@ -810,7 +810,7 @@ msgstr ""
 #: kcalprefs.kcfg:200
 #, kde-format
 msgid "E&mail address"
-msgstr "&כתובת דוא״ל"
+msgstr "כתובת &דוא״ל"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:201
@@ -819,8 +819,8 @@ msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
 "the owner of the calendar, and displayed in events and to-dos you create."
 msgstr ""
-"הכנס כאן את כתובת הדוא\"ל שלך. הכתובת הזאת תשמש לזיהוי הבעלים של היומן, "
-"ותוצג באירועים ומשימות שתיצור."
+"נא למלא כאן את כתובת הדוא״ל שלך. הכתובת הזאת תשמש לזיהוי הבעלות על היומן, "
+"ותוצג באירועים ומשימות שייווצרו."
 
 #: kcalprefs.kcfg:202
 #, kde-format
@@ -911,7 +911,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:24
 #, kde-format
 msgid "Date && Time Range"
-msgstr "תווך של תאריך ושעה"
+msgstr "טווח תאריך ושעה"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (toolTip), widget (KDateComboBox, mFromDate)
@@ -1026,7 +1026,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:129
 #, kde-format
 msgid "Ending date for the print"
-msgstr "תאריך הסוף להדפסה"
+msgstr "תאריך הסיום להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -1044,9 +1044,8 @@ msgid ""
 "this option and the <i>Start date</i> option. This option is used to define "
 "the end date."
 msgstr ""
-"אם ברצונך להדפיס ימים נוספים בבת־אחת, ביכולתך להגדיר טווח תאריכים בעזרת "
-"אפשרות זאת ובעזרת האפשרות <i>תאריך התחלה</i>. אפשרות זאת משמשת להגדרת תאריך "
-"הסיום."
+"כדי להדפיס ימים נוספים בבת־אחת, יש להגדיר טווח תאריכים בעזרת האפשרות הזאת "
+"ובעזרת האפשרות <i>תאריך התחלה</i>. אפשרות זאת משמשת להגדרת תאריך הסיום."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintdayconfig_base.ui:116
@@ -1065,7 +1064,7 @@ msgstr "תאריך &סיום:"
 #: printing/calprintweekconfig_base.ui:160
 #, kde-format
 msgid "Ending time for the print"
-msgstr "שעת הסוף להדפסה"
+msgstr "שעת הסיום להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1108,22 +1107,22 @@ msgid ""
 "Check this option to automatically determine the required time range, so all "
 "events will be shown."
 msgstr ""
-"סמן אפשרות זאת על־מנת לקבוע באופן אוטומטי את טווח הזמן המבוקש, כך שכל "
-"האירועים יראו."
+"יש לסמן אפשרות זאת כדי לקבוע באופן אוטומטי את טווח הזמן המבוקש, כך שכל "
+"האירועים יופיעו."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
 #: printing/calprintdayconfig_base.ui:193
 #: printing/calprintweekconfig_base.ui:193
 #, kde-format
 msgid "E&xtend time range to include all events"
-msgstr "&הרחב את טווח הזמנים כדי לכלול את כל האירועים"
+msgstr "ה&רחבת טווח הזמנים כדי לכלול את כל האירועים"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprintdayconfig_base.ui:203
 #: printing/calprintweekconfig_base.ui:203
 #, kde-format
 msgid "Print Layout"
-msgstr "סידור הדפסה"
+msgstr "פריסת הדפסה"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintdayconfig_base.ui:209
@@ -1235,7 +1234,7 @@ msgstr "אל תכלול חגים"
 #: printing/calprintweekconfig_base.ui:271
 #, kde-format
 msgid "Include Information"
-msgstr "כלול מידע"
+msgstr "לכלול מידע"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDescription)
@@ -1314,7 +1313,7 @@ msgid ""
 "You should check this option if you want to print to-dos which are due on "
 "one of the dates which are in the supplied date range."
 msgstr ""
-"עליך לסמן אפשרות זאת אם ברצונך להדפיס את המטלות שתאריך היעד שלהן נופל באחד "
+"יש לסמן את האפשרות הזאת כדי להדפיס את המטלות שתאריך היעד שלהן הוא אחד "
 "התאריכים שנמצאים בטווח שסופק."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeTodos)
@@ -1693,10 +1692,10 @@ msgid "Priority: %1\n"
 msgstr "עדיפות: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:523
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
-msgstr "התחלה: %1"
+msgstr "חשאיות: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:541
 #, kde-format
@@ -1733,12 +1732,12 @@ msgstr[2] ""
 msgstr[3] ""
 
 #: printing/calprintdefaultplugins.cpp:581
-#, fuzzy, kde-format
+#, kde-format
 msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
 "<reinhold@kainhofer.com> (Participant): Awaiting Response'"
 msgid "%1 (%2): %3"
-msgstr "%1 %2"
+msgstr "%1 (%2): %3"
 
 #: printing/calprintdefaultplugins.cpp:599
 #, kde-format
@@ -1746,24 +1745,24 @@ msgid "Status: %1"
 msgstr "מצב: %1"
 
 #: printing/calprintdefaultplugins.cpp:603
-#, fuzzy, kde-format
+#, kde-format
 msgid "Secrecy: %1"
-msgstr "התחלה: %1"
+msgstr "חשאיות: %1"
 
 #: printing/calprintdefaultplugins.cpp:609
-#, fuzzy, kde-format
+#, kde-format
 msgid "Show as: Busy"
-msgstr "ה&צג משך בתור:"
+msgstr "הצגה בתור: עסוק"
 
 #: printing/calprintdefaultplugins.cpp:611
 #, kde-format
 msgid "Show as: Free"
-msgstr ""
+msgstr "הצגה בתור: פנאי"
 
 #: printing/calprintdefaultplugins.cpp:617
 #, kde-format
 msgid "This task is overdue!"
-msgstr ""
+msgstr "המשימה הזאת חלפה!"
 
 #: printing/calprintdefaultplugins.cpp:623
 #, kde-format
@@ -1773,21 +1772,21 @@ msgstr "הגדרות:"
 #: printing/calprintdefaultplugins.cpp:628
 #, kde-format
 msgid "Tags: "
-msgstr ""
+msgstr "תגיות:"
 
 #: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:916
 #: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
-msgstr "%1 %2"
+msgstr "%1, %2"
 
 #: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:935
 #: printing/calprintpluginbase.cpp:1059
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
-msgstr "%1 %2"
+msgstr "%1, %2"
 
 #: printing/calprintdefaultplugins.cpp:779
 #, kde-format
@@ -1800,25 +1799,23 @@ msgstr "כל היום"
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
-msgstr ""
+msgstr "%1‏–%2"
 
 #: printing/calprintdefaultplugins.cpp:1229
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
-msgstr ""
-"%1 עד %2\n"
-"שבוע מספר %3"
+msgstr "%1–%2 (שבוע %3)"
 
 #: printing/calprintdefaultplugins.cpp:1231
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
 "%1–%2\n"
 "(Week %3)"
 msgstr ""
-"%1 עד %2\n"
-"שבוע מספר %3"
+"%1–%2\n"
+"(שבוע %3)"
 
 #: printing/calprintdefaultplugins.cpp:1416
 #, kde-format
@@ -1860,7 +1857,7 @@ msgstr "אחוז השלמה"
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
-msgstr ""
+msgstr "תגיות"
 
 #: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
@@ -1912,7 +1909,7 @@ msgstr "השלמה"
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
-msgstr ""
+msgstr "תגיות"
 
 #: printing/calprintdefaultplugins.h:36
 #, fuzzy, kde-format
@@ -1968,7 +1965,7 @@ msgstr "מדפיס את כל המטלות ברשימה (דמוית עץ)"
 #, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
-msgstr ""
+msgstr "לא ניתן להדפיס, צוין סגנון הדפסה שגוי."
 
 #: printing/calprinter.cpp:113
 #, kde-format
@@ -2031,7 +2028,7 @@ msgstr "עדיפות"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
-msgstr ""
+msgstr "לרוחב"
 
 #: printing/calprinter.cpp:222
 #, kde-format
@@ -2067,6 +2064,14 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print incidence options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">הדפסת אפשרויות שכיחות:</span></p></body></html>"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:33
@@ -2086,7 +2091,7 @@ msgstr "בחר באפשרות זו אם ברצונך להציג שניות בק�
 #: printing/calprintincidenceconfig_base.ui:39
 #, kde-format
 msgid "Detai&ls (visiblility, secrecy, etc.)"
-msgstr ""
+msgstr "&פרטים (חשיפה, חשאיות ועוד)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:46
@@ -2200,6 +2205,14 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print month options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">הדפסת אפשרויות חודשים:</span></p></body></html>"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, mFromMonth)
@@ -2291,9 +2304,9 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:195
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print daily recurring items"
-msgstr "הדפס מטלות ואירועים ה&חוזרים על עצמם מדי יום"
+msgstr "הדפסת פריטים במחזוריות יומית"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:198
@@ -2314,9 +2327,9 @@ msgstr "הדפס מטלות ואירועים ה&חוזרים על עצמם מד�
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:208
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print weekly recurring items"
-msgstr "הדפסת מטלות ואירועים החוזרים על עצמם מדי &שבוע."
+msgstr "הדפסת פריטים במחזוריות שבועית"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:211
@@ -2435,6 +2448,14 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print to-dos options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">הדפסת אפשרויות מטלות:</span></p></body></html>"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mTitleLabel)
 #. i18n: ectx: property (toolTip), widget (QLineEdit, mTitle)
@@ -2555,11 +2576,13 @@ msgstr "הדפסת אחוזי השלמת פריטים"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:306
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this option if you want to see the item completion percentage printed "
 "as a number and bar graph."
-msgstr "בחר באפשרות זו אם ברצונך להציג שניות בקו־הזמן הנוכחי."
+msgstr ""
+"יש לסמן את האפשרות הזאת כדי לראות את אחוזי השלמת הפריט מודפסים כמספר ותרשים "
+"עמודות."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
@@ -2610,6 +2633,14 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">Print week options:</span></p></body></html>"
 msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">הדפסת אפשרויות שבועיות:</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintweekconfig_base.ui:212
@@ -2644,6 +2675,8 @@ msgid ""
 "<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">Print "
 "year options:</span></p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">הדפסת "
+"אפשרויות שנתיות:</span></p></body></html>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
 #: printing/calprintyearconfig_base.ui:21
@@ -2667,7 +2700,7 @@ msgstr "כללי"
 #: printing/calprintyearconfig_base.ui:105
 #, kde-format
 msgid "Num&ber of pages:"
-msgstr ""
+msgstr "מ&ספר הדפים:"
 
 #. i18n: ectx: property (text), widget (QLabel, mSubDaysLabel)
 #: printing/calprintyearconfig_base.ui:121
@@ -2681,7 +2714,7 @@ msgstr "הצגת אירועים &תת־יומיים בתור:"
 #: printing/calprintyearconfig_base.ui:165
 #, kde-format
 msgid "Text"
-msgstr ""
+msgstr "טקסט"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2754,7 +2787,7 @@ msgstr "%1 (לוח שנה כברירת מחדל)"
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
-msgstr ""
+msgstr "וירטואלי"
 
 #: utils.cpp:408
 #, kde-format
@@ -2775,43 +2808,43 @@ msgstr "סוג תוכן:"
 #: utils.cpp:428
 #, kde-format
 msgid "Rights:"
-msgstr ""
+msgstr "הרשאות:"
 
 #: utils.cpp:431
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
-msgstr ""
+msgstr "קריאה בלבד"
 
 #: utils.cpp:433
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
-msgstr ""
+msgstr "קריאה+כתיבה"
 
 #: utils.cpp:441
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
-msgstr ""
+msgstr "הכול"
 
 #: utils.cpp:444
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
-msgstr ""
+msgstr "שמע"
 
 #: utils.cpp:446
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
-msgstr ""
+msgstr "תצוגה"
 
 #: utils.cpp:448
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
-msgstr ""
+msgstr "דוא״ל"
 
 #: utils.cpp:450
 #, kde-format
@@ -2823,7 +2856,7 @@ msgstr ""
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
-msgstr ""
+msgstr "אחר"
 
 #: utils.cpp:456
 #, kde-format
