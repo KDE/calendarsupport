@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-02-27 23:51+0200\n"
+"PO-Revision-Date: 2024-02-28 09:52+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -395,7 +395,7 @@ msgstr "לא זמין"
 #: freebusymodel/freebusycalendar.cpp:118
 #, kde-format
 msgid "Tentative"
-msgstr ""
+msgstr "על תנאי"
 
 #: freebusymodel/freebusycalendar.cpp:121
 #, kde-format
@@ -804,7 +804,7 @@ msgstr ""
 #: kcalprefs.kcfg:196
 #, kde-format
 msgid "Anonymous"
-msgstr ""
+msgstr "אלמוני"
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
@@ -825,7 +825,7 @@ msgstr ""
 #: kcalprefs.kcfg:202
 #, kde-format
 msgid "nobody@nowhere"
-msgstr ""
+msgstr "אף־אחד@שום־מקום"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:220
@@ -846,25 +846,25 @@ msgstr ""
 #: kcalprefs.kcfg:222
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr ""
+msgstr "להשתמש בצבע הזה בעת ציוד פריטים בלי תגיות כלשהן"
 
 #: noteeditdialog.cpp:41
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
-msgstr ""
+msgstr "יצירת פתקית"
 
 #: noteeditdialog.cpp:50
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr ""
+msgstr "ביטול"
 
 #: noteeditdialog.cpp:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr ""
+msgstr "שמירה"
 
 #: noteeditdialog.cpp:77
 #, fuzzy, kde-format
@@ -888,7 +888,7 @@ msgstr "כותרת:"
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"
-msgstr ""
+msgstr "טקסט:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -963,7 +963,7 @@ msgstr "&תאריך התחלה:"
 #: printing/calprintweekconfig_base.ui:136
 #, kde-format
 msgid "2009-01-19"
-msgstr ""
+msgstr "2025-01-19"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, mFromTime)
@@ -1175,7 +1175,7 @@ msgstr "הדפס כתצוגת &לוח־זמנים"
 #: printing/calprintyearconfig_base.ui:70
 #, kde-format
 msgid "Security Exclusions"
-msgstr ""
+msgstr "החרגות אבטחה"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:248
@@ -1189,6 +1189,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Confidential&#8221;"
 msgstr ""
+"יש לסמן את האפשרות הזאת כדי להחריג פריטים שרמת הגישה אליהם מוגדרת בתור "
+"&#8222;סודי&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:251
@@ -1213,6 +1215,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Private&#8221;"
 msgstr ""
+"יש לסמן את האפשרות הזאת כדי להחריג פריטים שרמת הגישה אליהם מוגדרת בתור "
+"&#8222;פרטי&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:261
@@ -1294,7 +1298,7 @@ msgstr "בחר באפשרות זו אם ברצונך להציג שניות בק�
 #: printing/calprintweekconfig_base.ui:296
 #, kde-format
 msgid "Ta&gs"
-msgstr ""
+msgstr "&תגיות"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:306
@@ -1367,6 +1371,8 @@ msgid ""
 "Check this option to limit events to a single line, truncating as necessary "
 "to save space."
 msgstr ""
+"יש לסמן את האפשרות הזאת כדי להגביל אירועים לשורה אחת, תוך חיתוך לפי הצורך "
+"כדי לחסוך במקום."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:344
@@ -1374,7 +1380,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:344
 #, kde-format
 msgid "Limit events in each day to a &single line"
-msgstr ""
+msgstr "להגביל אירועים ביום לשורה &אחת"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:351
@@ -1488,22 +1494,22 @@ msgid "Duration: "
 msgstr "משך: "
 
 #: printing/calprintdefaultplugins.cpp:134
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
-msgstr[0] "שעה אחת"
-msgstr[1] "%1 שעות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "שעה "
+msgstr[1] "שעתיים "
+msgstr[2] "%1 שעות "
+msgstr[3] "%1 שעות "
 
 #: printing/calprintdefaultplugins.cpp:137
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
-msgstr[0] "דקה אחת"
-msgstr[1] "%1 דקות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "דקה "
+msgstr[1] "שתי דקות "
+msgstr[2] "%1 דקות "
+msgstr[3] "%1 דקות"
 
 #: printing/calprintdefaultplugins.cpp:140
 #, kde-format
@@ -1537,13 +1543,13 @@ msgid "No reminders"
 msgstr "אין תזכורות"
 
 #: printing/calprintdefaultplugins.cpp:303
-#, fuzzy, kde-format
+#, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
-msgstr[0] "דקה אחת"
-msgstr[1] "%1 דקות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "תזכורת: "
+msgstr[1] "שתי תזכורות: "
+msgstr[2] "%1 תזכורות: "
+msgstr[3] "%1 תזכורות: "
 
 #: printing/calprintdefaultplugins.cpp:317
 #, kde-format
@@ -1570,31 +1576,31 @@ msgid "%1 after the end"
 msgstr "%1 לאחר הסיום"
 
 #: printing/calprintdefaultplugins.cpp:337
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
-msgstr[0] "יום אחד"
-msgstr[1] "%1 ימים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "יום"
+msgstr[1] "יומיים"
+msgstr[2] "%1 ימים"
+msgstr[3] "%1 ימים"
 
 #: printing/calprintdefaultplugins.cpp:340
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
-msgstr[0] "שעה אחת"
-msgstr[1] "%1 שעות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "שעה"
+msgstr[1] "שעתיים"
+msgstr[2] "%1 שעות"
+msgstr[3] "%1 שעות"
 
 #: printing/calprintdefaultplugins.cpp:343
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
-msgstr[0] "דקה אחת"
-msgstr[1] "%1 דקות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "דקה"
+msgstr[1] "שתי דקות"
+msgstr[2] "%1 דקות"
+msgstr[3] "%1 דקות"
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:629
@@ -1621,7 +1627,7 @@ msgstr "תיאור:"
 #: printing/calprintdefaultplugins.cpp:454
 #, kde-format
 msgid "Notes:"
-msgstr ""
+msgstr "פתקיות:"
 
 #: printing/calprintdefaultplugins.cpp:466
 #, kde-format
@@ -1629,13 +1635,13 @@ msgid "No Subitems"
 msgstr "אין תת־פריטים"
 
 #: printing/calprintdefaultplugins.cpp:469
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
-msgstr[0] "ללא מסנן"
-msgstr[1] "ללא מסנן"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "תת־פריט אחד:"
+msgstr[1] "שני תת־פריטים:"
+msgstr[2] "%1 תת־פריטים:"
+msgstr[3] "%1 תת־פריטים:"
 
 #: printing/calprintdefaultplugins.cpp:485
 #, kde-format
@@ -1715,7 +1721,7 @@ msgstr[3] ""
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
-msgstr ""
+msgstr "  "
 
 #: printing/calprintdefaultplugins.cpp:567
 #, kde-format
@@ -2660,7 +2666,7 @@ msgstr "הדפסה כתצוגת &לוח־זמנים, שבוע בכל עמוד"
 msgid ""
 "The split week view has the times to the left of the page, with two pages "
 "per week."
-msgstr ""
+msgstr "בתצוגת השבוע המפוצלת יש את השעות בימין העמוד עם שני עמודים לשבוע."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:232
