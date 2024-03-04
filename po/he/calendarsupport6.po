@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-03-02 21:12+0200\n"
+"PO-Revision-Date: 2024-03-03 13:14+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -81,7 +81,7 @@ msgstr "העבר כעת לארכיון פגישות ישנות יותר מאשר
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr ""
+msgstr "לאפשר העברה חד־פעמית לארכיון או ניפוי מוחלט של פריטים ישנים יותר"
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -91,6 +91,9 @@ msgid ""
 "be archived or purged. The items will be archived unless the \"Delete only\" "
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
+"סימון התיבה הזאת יוביל לכך שאירועים ומטלות מעבר לגיל הזה יועברו לארכיון או "
+"ינופו לחלוטין. הפריטים יישמרו בארכיון אלא אם כן האפשרות „למחוק בלבד” פעילה, "
+"אחרת הפריטים ינופו לחלוטין ולא יישמרו."
 
 #: archivedialog.cpp:93
 #, fuzzy, kde-format
@@ -137,7 +140,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the archival age in days, weeks or months"
-msgstr ""
+msgstr "יש להגדיר את גיל ההעברה לארכיון בימים, שבועות או חודשים"
 
 #: archivedialog.cpp:125
 #, fuzzy, kde-format
@@ -153,7 +156,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the units for the automatic archive age"
-msgstr ""
+msgstr "יש להגדיר את יחידות גיל ההעברה האוטומטית לארכיון"
 
 #: archivedialog.cpp:131
 #, kde-format
@@ -282,7 +285,7 @@ msgstr "למ&חוק בלבד, לא לשמור"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Purge the old items without saving them"
-msgstr ""
+msgstr "לנפות לחלוטין פריטים ישנים מבלי לשמור אותם"
 
 #: archivedialog.cpp:181
 #, fuzzy, kde-format
@@ -309,7 +312,7 @@ msgstr "לא נמצאה צרופה בשם „%1” במופע."
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
-msgstr ""
+msgstr "הקובץ המצורף „%1” הוא קישור לאתר שאינו נגיש מהמחשב הזה."
 
 #: attachmenthandler.cpp:121
 #, kde-format
@@ -522,6 +525,9 @@ msgid ""
 "default sound file for new reminders. You can always specify another file in "
 "the Reminder configuration accessible from the Event or To-do editors."
 msgstr ""
+"יש לסמן את התיבה הזאת כדי להפעיל את הקובץ שצוין כך שישמש כקובץ שמע ברירת "
+"המחדל לתזכורות חדשות. אפשר תמיד לציין קובץ אחר בהגדרות התזכורת דרך עורכי "
+"האירועים או המטלות."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:42
@@ -537,6 +543,8 @@ msgid ""
 "always specify another file in the Reminder configuration accessible from "
 "the Event or To-do editors."
 msgstr ""
+"יש לבחור קובץ שישמש כקובץ השמע כברירת המחדל לתזכורות חדשות. אפשר תמיד לציין "
+"קובץ אחר בהגדרות התזכורת דרך עורכי האירועים או המטלות."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:47
@@ -1913,13 +1921,13 @@ msgid "Due"
 msgstr "יעד"
 
 #: printing/calprintdefaultplugins.cpp:1635
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
-msgstr "&התחלה:"
+msgstr "התחלה"
 
 #: printing/calprintdefaultplugins.cpp:1645
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "השלמה"
