@@ -210,9 +210,6 @@
 
     <entry type="StringList" name="JournalTemplates">
     </entry>
-
-    <entry type="StringList" name="ActiveDesignerFields">
-    </entry>
   </group>
 
   <group name="Colors">
