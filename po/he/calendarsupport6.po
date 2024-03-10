@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-03-07 22:02+0200\n"
+"PO-Revision-Date: 2024-03-09 23:16+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -54,19 +54,16 @@ msgstr ""
 "לשחזר</link>)"
 
 #: archivedialog.cpp:67
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "In order to add an archive to your calendar, use the Merge Calendar "
 "function. You can view an archive by opening it like you would any other "
 "calendar. It is not saved in a special format, but as vCalendar."
 msgstr ""
-"פעולת ההעברה לארכיון שומרת פריטים ישנים לתוך קובץ נתון ואחר־כך מוחקת אותם "
-"מלוח־השנה הנוכחי. אם קובץ ארכיון כבר קיים, הם יתווספו. (<a href=\"whatsthis:"
-"In order to add an archive to your calendar, use the &quot;Merge "
-"Calendar&quot; function. You can view an archive by opening it in KOrganizer "
-"like any other calendar. It is not saved in a special format, but as "
-"vCalendar.\">כיצד לשחזר</a>)"
+"כדי להוסיף ארכיון ללוח השנה שלך, יש להשתמש בפונקציית מיזוג לוחות שונות. אפשר "
+"לצפות בארכיון על ידי פתיחתו כפי כמו כל לוח שנה אחרת. הוא לא נשמר בתצורת קובץ "
+"מיוחדת, אלא בתור vCalendar."
 
 #: archivedialog.cpp:82
 #, kde-format
@@ -253,10 +250,10 @@ msgstr ""
 "התאריך שצוין להלן."
 
 #: archivedialog.cpp:171
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
-msgstr "&מחק משימות שהושלמו"
+msgstr "העברת מטלות שהושלמו ל&ארכיון"
 
 #: archivedialog.cpp:172
 #, fuzzy, kde-format
