@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-04 01:34+0000\n"
+"POT-Creation-Date: 2024-03-11 00:38+0000\n"
 "PO-Revision-Date: 2022-08-16 16:30+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -853,13 +853,13 @@ msgid "nobody@nowhere"
 msgstr "heç_kim@heç_yerdə"
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:220
+#: kcalprefs.kcfg:217
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "\"Yarlıqsız\" rəngi (\"Yalnız yarlıq\" rəsm sxemləri üçün)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:221
+#: kcalprefs.kcfg:218
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -872,7 +872,7 @@ msgstr ""
 "göstərərkən istifadə olunur."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:222
+#: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Bu rəngi elementləri yarlıqlarsız təsvir edərkən istifadə etmək"

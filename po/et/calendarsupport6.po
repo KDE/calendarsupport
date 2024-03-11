@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-04 01:34+0000\n"
+"POT-Creation-Date: 2024-03-11 00:38+0000\n"
 "PO-Revision-Date: 2020-09-28 02:36+0200\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -839,14 +839,14 @@ msgid "nobody@nowhere"
 msgstr "eikeegi@eikuskil"
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:220
+#: kcalprefs.kcfg:217
 #, fuzzy, kde-format
 #| msgid "\"No category\" color (for \"Only category\" drawing schemes)"
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "\"Kategooria puudumise\" värv (\"Ainult kategooria\" skeemide puhul)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:221
+#: kcalprefs.kcfg:218
 #, fuzzy, kde-format
 #| msgid ""
 #| "Select a color to use for the \"no category\" or \"unset category\" "
@@ -863,7 +863,7 @@ msgstr ""
 "elementide puhul skeemi \"Ainult kategooria\" rakendamisel."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:222
+#: kcalprefs.kcfg:219
 #, fuzzy, kde-format
 #| msgid "Use this color when drawing items without a category"
 msgid "Use this color when drawing items without any tags"

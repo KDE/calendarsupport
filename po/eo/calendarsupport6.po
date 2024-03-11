@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-04 01:34+0000\n"
+"POT-Creation-Date: 2024-03-11 00:38+0000\n"
 "PO-Revision-Date: 2023-09-25 23:06+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
@@ -843,13 +843,13 @@ msgid "nobody@nowhere"
 msgstr "neniu@nenie"
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:220
+#: kcalprefs.kcfg:217
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "Koloro de \"Nur etikedo\" (por desegnaj skemoj de \"Nur etikedo\")"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:221
+#: kcalprefs.kcfg:218
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -862,7 +862,7 @@ msgstr ""
 "etikedo\"."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:222
+#: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Uzi ĉi tiun koloron kiam desegnante erojn sen etikedoj"

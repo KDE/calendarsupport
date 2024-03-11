@@ -17,15 +17,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2024-03-09 23:16+0200\n"
+"POT-Creation-Date: 2024-03-11 00:38+0000\n"
+"PO-Revision-Date: 2024-03-10 16:27+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -75,7 +75,7 @@ msgstr "להעביר כעת לארכיון פריטים ישנים מאשר:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr "לאפשר העברה חד־פעמית לארכיון או ניפוי מוחלט של פריטים ישנים יותר"
+msgstr "הפעלת העברה חד־פעמית לארכיון או ניפוי מוחלט של פריטים ישנים יותר"
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -107,28 +107,28 @@ msgstr ""
 "יותר ישמרו וימחקו, החדשים יותר (ואלו שזהו תאריכם המדויק) יוותרו על כנם."
 
 #: archivedialog.cpp:107
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:radio"
 msgid "Automaticall&y archive items older than:"
-msgstr "העבר לארכיון באופן &אוטומטי פריטים ישנים יותר מאשר:"
+msgstr "להעביר &אוטומטית לארכיון פריטים מלפני:"
 
 #: archivedialog.cpp:108
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable automatic archiving or purging of older items"
-msgstr "אפשר שמירה אוטומטית של לוחות שנה שנפתחו ידנית"
+msgstr "הפעלת העברה אוטומטית לארכיון או ניפוי מוחלט של פריטים ישנים יותר"
 
 #: archivedialog.cpp:110
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "If this feature is enabled, the application will regularly check if events "
 "and to-dos have to be archived; this means you will not need to use this "
 "dialog box again, except to change the settings."
 msgstr ""
-"אם תכונה זאת מופעלת, KOrganizer בדוק באופן קבוע אם מטלות ואירועים צריכים "
-"להיות מועברים לארכיון; משמעות הדבר שלא יהיה עליך להשתמש בתיבת שיחה זאת שוב, "
-"אלא כדי לשנות את ההגדרות."
+"אם היכולת הזאת מופעלת, היישום יבדוק מדי פעם בפעם אם האירועים והמטלות הועברו "
+"לארכיון, המשמעות היא שאין לך צורך להשתמש בחלונית הזאת שוב, למעט כדי לשנות את "
+"ההגדרות."
 
 #: archivedialog.cpp:123
 #, kde-format
@@ -178,7 +178,7 @@ msgid "Month(s)"
 msgstr "חודש/ים"
 
 #: archivedialog.cpp:140
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label"
 msgid "Archive &file:"
 msgstr "קובץ &ארכיון:"
@@ -196,7 +196,7 @@ msgid "Set the location of the archive"
 msgstr "הגדרת מקום הארכיון"
 
 #: archivedialog.cpp:147
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "The path of the archive file. The events and to-dos will be appended to the "
@@ -204,10 +204,10 @@ msgid ""
 "modified or deleted. You can later load or merge the file like any other "
 "calendar. It is not saved in a special format, it uses the iCalendar format."
 msgstr ""
-"נתיב הקובץ עבור הארכיון. המטלות והאירועים יתווספו לקובץ הארכיון, כך כל "
-"האירועים שכבר נמצאים בקובץ לא ישונו ולא ימחקו. תוכל מאוח יותר לטעון או לשלב "
-"את הקובץ כמו כל לוח־שנה אחר. השמירה אינה מתבצע בפורמט מיוחד, אלא עושה שימוש "
-"בפורמט iCalendar."
+"נתיב קובץ הארכיון. האירועים והמטלות יתווספו לקובץ שצוין, לכן אירועים כלשהם "
+"שכבר מופיעים בקובץ לא יישתנו או יימחקו. לאחר מכן ניתן להוסיף או למזג את "
+"הקובץ כמו כל לוח שנה אחר. הוא לא נשמר בתצורה מיוחדת, הוא משתמש בתבנית "
+"iCalendar."
 
 #: archivedialog.cpp:156
 #, kde-format
@@ -216,16 +216,16 @@ msgid "Type of Items to Archive"
 msgstr "סוג הפריטים להעברה לארכיון"
 
 #: archivedialog.cpp:158
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Here you can select which items should be archived. Events are archived if "
 "they ended before the date given above; to-dos are archived if they were "
 "finished before the date."
 msgstr ""
-"כאן ביכולתך לבחור אלו פריטים יש להעביר לארכיון. אירועים מעברים לארכיון אם הם "
-"הסתיימו לפני התאריך שצוין למעלה; מטלות יעברו לארכיון אם הם הושלמו לפני "
-"התאריך הנ\"ל."
+"כאן אפשר לבחור אילו פריטים להעביר לארכיון. פריטים מועברים לארכיון אם הם "
+"הסתיימו לפני התאריך שסופק לעיל, מטלות מועברות לארכיון אם הן הסתיימו לפני "
+"התאריך."
 
 #: archivedialog.cpp:166
 #, kde-format
@@ -237,7 +237,7 @@ msgstr "העברת &אירועים לארכיון"
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge events"
-msgstr ""
+msgstr "העברה לארכיון או ניפוי של אירועים"
 
 #: archivedialog.cpp:168
 #, kde-format
@@ -256,18 +256,20 @@ msgid "Archive Completed &To-dos"
 msgstr "העברת מטלות שהושלמו ל&ארכיון"
 
 #: archivedialog.cpp:172
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge completed to-dos"
-msgstr "הסתר משימות &שהושלמו"
+msgstr "העברה לארכיון או ניפוי של מטלות שהושלמו"
 
 #: archivedialog.cpp:174
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Select this option to archive to-dos if they were completed before the date "
 "given above."
-msgstr "סמן אפשרות זאת אם ברצונך להדפיס מטלות, ממוקמות לפי תאריך היעד שלהן."
+msgstr ""
+"יש לסמן את האפשרות הזאת כדי להעביר מטלות לארכיון אם הן הושלמו לפני התאריך "
+"שצוין לעיל."
 
 #: archivedialog.cpp:178
 #, kde-format
@@ -660,17 +662,13 @@ msgstr "להשתמש באזור חגים:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:91
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select from which region you want to use the holidays here. Defined "
-#| "holidays are shown as non-working days in the date navigator, the agenda "
-#| "view, etc."
+#, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
 "shown as non-working days in the date navigator, the agenda view, etc."
 msgstr ""
-"בחר כאן את האזור הגאוגרפי לפיו יקבעו ימי־החג. ימי־חג יוצגו כימים שאינם ימי־"
-"עבודה תאריכון, בתצוגת סדר־היום, וכדו'."
+"נא לבחור כאן באילו אזורים להשתמש להחלת חגים. החגים המוגדרים מופיעים כימי "
+"חופש מעבודה במנווט התאריכים, תצוגת סדר היום ועוד."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:98
@@ -844,13 +842,13 @@ msgid "nobody@nowhere"
 msgstr "אף־אחד@שום־מקום"
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:220
+#: kcalprefs.kcfg:217
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "צבע „ללא תגית” (לסכמות ציור „תגיות בלבד”)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:221
+#: kcalprefs.kcfg:218
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -862,7 +860,7 @@ msgstr ""
 "סכמת „תגיות בלבד”."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:222
+#: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "להשתמש בצבע הזה בעת ציוד פריטים בלי תגיות כלשהן"
@@ -1158,13 +1156,13 @@ msgstr "פריסת הדפסה"
 msgid ""
 "The Filofax format prints the information for the days selected without a "
 "timeline."
-msgstr ""
+msgstr "תבנית Filofax מדפיסה את המידע לימים שנבחרו ללא ציר זמן."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintdayconfig_base.ui:212
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print date &range as Filofax format, all on one page"
-msgstr "מדפיס את כל האירועים של חודש אחד על עמוד אחד"
+msgstr "הדפסת טווח &תאריכים בתבנית Filofax, הכול בעמוד אחד"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
@@ -1175,9 +1173,9 @@ msgstr "בתצוגת הדפסת לוח זמנים הזמנים מופיעים מ
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:222
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print as timeta&ble view, one page per day"
-msgstr "הדפס כתצוגת &לוח־זמנים"
+msgstr "הדפסה כתצוגת &לוח זמנים, יום בעמוד"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:229
@@ -1191,9 +1189,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:232
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print as timetable view, all da&ys on a single page"
-msgstr "הדפס כתצוגת &לוח־זמנים"
+msgstr "הדפסה כתצוגת &לוח זמנים, כל הימים בעמוד אחד"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mSecurity)
 #: printing/calprintdayconfig_base.ui:242
@@ -1315,9 +1313,9 @@ msgstr "הדפסת תגיות הפריטים"
 #: printing/calprintmonthconfig_base.ui:169
 #: printing/calprinttodoconfig_base.ui:248
 #: printing/calprintweekconfig_base.ui:293
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option if you want to see the item tags printed."
-msgstr "בחר באפשרות זו אם ברצונך להציג שניות בקו־הזמן הנוכחי."
+msgstr "יש לסמן את האפשרות הזאת כדי לכלול בהדפסה גם את תגיות הפריטים."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (text), widget (QCheckBox, mCategories)
@@ -1333,9 +1331,9 @@ msgstr "&תגיות"
 #: printing/calprintdayconfig_base.ui:306
 #: printing/calprintmonthconfig_base.ui:182
 #: printing/calprintweekconfig_base.ui:306
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print to-dos due within the specified date range"
-msgstr "הדפס רק מטלות שתאריך היעד שלהן נמצא ב&טווח:"
+msgstr "הדפסת מטלות שיעדן הוא בטווח התאריך שצוין"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:309
@@ -1360,9 +1358,9 @@ msgstr "לכלול &מטלות שתאריך היעד שלהן הוא ביום א
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:319
 #: printing/calprintweekconfig_base.ui:319
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option to exclude the time in description box"
-msgstr "בחר באפשרות זו אם ברצונך להציג שניות בקו־הזמן הנוכחי."
+msgstr "יש לסמן את האפשרות הזאת כדי להחריג פריטים בתיבת התיאור"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:322
@@ -1416,16 +1414,16 @@ msgstr "להגביל אירועים ביום לשורה &אחת"
 #: printing/calprintincidenceconfig_base.ui:94
 #: printing/calprintmonthconfig_base.ui:256
 #: printing/calprintweekconfig_base.ui:351
-#, fuzzy, kde-format
+#, kde-format
 msgid "Check this option to draw note lines in empty areas."
-msgstr "בחר באפשרות זו אם ברצונך להציג שניות בקו־הזמן הנוכחי."
+msgstr "יש לסמן את האפשרות הזאת כדי לצייר שורות להערות באזורים הריקים."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:354
 #: printing/calprintweekconfig_base.ui:354
-#, fuzzy, kde-format
+#, kde-format
 msgid "Show note &lines in Filofax layout"
-msgstr "ה&צג משך בתור:"
+msgstr "הצגת קווי הערות ב&פריסת Filofax"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:361
@@ -1441,16 +1439,13 @@ msgstr "הדפסה בצבע"
 #: printing/calprintincidenceconfig_base.ui:110
 #: printing/calprintmonthconfig_base.ui:269
 #: printing/calprintweekconfig_base.ui:364
-#, fuzzy, kde-format
-#| msgid ""
-#| "If you want to use colors to distinguish certain categories on the print, "
-#| "check this option."
+#, kde-format
 msgid ""
 "If you want to use colors to distinguish certain tags in the printed output, "
 "check this option."
 msgstr ""
-"אם ברצונך להשתמש בצבעים על־מנת להבחין בין הקטגוריות השונות בהדפסה, סמן "
-"אפשרות זאת."
+"כדי להשתמש בצבעים כדי לבדל תגיות מסוימות בפלט המודפס, יש לסמן את האפשרות "
+"הזאת."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:367
@@ -1469,9 +1464,9 @@ msgstr "להשתמש ב&צבעים"
 #: printing/calprinttodoconfig_base.ui:417
 #: printing/calprintweekconfig_base.ui:374
 #: printing/calprintyearconfig_base.ui:178
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print a datetime footer on each page"
-msgstr "מדפיס את כל האירועים של שבוע אחד על עמוד אחד"
+msgstr "הדפסת כותרת תאריך/שעה תחתונה בכל עמוד"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:377
@@ -1481,11 +1476,13 @@ msgstr "מדפיס את כל האירועים של שבוע אחד על עמוד
 #: printing/calprinttodoconfig_base.ui:420
 #: printing/calprintweekconfig_base.ui:377
 #: printing/calprintyearconfig_base.ui:181
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this box if you want to print a small footer on each page that "
 "contains the date of the print."
-msgstr "בחר באפשרות זו אם ברצונך להציג שניות בקו־הזמן הנוכחי."
+msgstr ""
+"יש לסמן את התיבה הזאת כדי להדפיס כותרת תחתונה קטנה בכל עמוד שמכיל את תאריך "
+"ההדפסה."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:380
@@ -2181,11 +2178,13 @@ msgstr "הדפסת הצרופות"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this box if you want the attachment information included on the print-"
 "out. The attachments themselves are not printed."
-msgstr "בחר באפשרות זו אם ברצונך להציג שניות בקו־הזמן הנוכחי."
+msgstr ""
+"יש לסמן את התיבה הזאת כדי שפרטי הקבצים המצורפים יופיעו בתדפיס. הקבצים "
+"המצורפים עצמם לא יודפסו."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:78
@@ -2696,9 +2695,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintweekconfig_base.ui:212
-#, fuzzy, kde-format
+#, kde-format
 msgid "Print date &range as Filofax format, one week per page"
-msgstr "מדפיס את כל האירועים של חודש אחד על עמוד אחד"
+msgstr "הדפסת טווח תאריכים בתבנית Filofax, עמוד לשבוע"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintweekconfig_base.ui:222

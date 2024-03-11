@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-04 01:34+0000\n"
+"POT-Creation-Date: 2024-03-11 00:38+0000\n"
 "PO-Revision-Date: 2021-07-06 22:20+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -798,13 +798,13 @@ msgid "nobody@nowhere"
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:220
+#: kcalprefs.kcfg:217
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:221
+#: kcalprefs.kcfg:218
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -813,7 +813,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:222
+#: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr ""

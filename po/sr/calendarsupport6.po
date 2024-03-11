@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-04 01:34+0000\n"
+"POT-Creation-Date: 2024-03-11 00:38+0000\n"
 "PO-Revision-Date: 2016-03-20 14:17+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -864,7 +864,7 @@ msgid "nobody@nowhere"
 msgstr "niko@nigde"
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:220
+#: kcalprefs.kcfg:217
 #, fuzzy, kde-format
 #| msgid "\"No category\" color (for \"Only category\" drawing schemes)"
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
@@ -872,7 +872,7 @@ msgstr ""
 "Боја при недостатку категорије (за шеме исцртавања само са категоријом)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:221
+#: kcalprefs.kcfg:218
 #, fuzzy, kde-format
 #| msgid ""
 #| "Select a color to use for the \"no category\" or \"unset category\" "
@@ -890,7 +890,7 @@ msgstr ""
 "шема само са категоријом."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:222
+#: kcalprefs.kcfg:219
 #, fuzzy, kde-format
 #| msgid "Use this color when drawing items without a category"
 msgid "Use this color when drawing items without any tags"
