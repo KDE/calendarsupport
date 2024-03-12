@@ -18,14 +18,14 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-11 00:38+0000\n"
-"PO-Revision-Date: 2024-03-10 16:27+0200\n"
+"PO-Revision-Date: 2024-03-11 06:40+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -90,21 +90,21 @@ msgstr ""
 "אחרת הפריטים ינופו לחלוטין ולא יישמרו."
 
 #: archivedialog.cpp:93
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the one time archiving cut-off date"
-msgstr "קובע את שעת היעד עבור מטלה זו."
+msgstr "הגדרת המועד החד־פעמי לחיתוך האירועים שיועברו לארכיון"
 
 #: archivedialog.cpp:95
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
 "The date before which items should be archived. All older events and to-dos "
 "will be saved and deleted, the newer (and events exactly on that date) will "
 "be kept."
 msgstr ""
-"התאריך לפניו פריטים אמורים להיות מועברים לארכיון. כל מטלות ואירועים ישנים "
-"יותר ישמרו וימחקו, החדשים יותר (ואלו שזהו תאריכם המדויק) יוותרו על כנם."
+"התאריך שלפניו יש להעביר פריטים לארכיון. כל האירועים והמטלות הישנים יותר "
+"יישמרו ויימחקו, החדשים יותר (ואירועים שבתאריך הזה בדיוק) יישמרו."
 
 #: archivedialog.cpp:107
 #, kde-format
@@ -678,16 +678,16 @@ msgstr "להשתמש בתקשורת Groupware"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:99
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
 "updating or deleting events (or to-dos) involving other attendees. You "
 "should check this box if you want to use the groupware functionality (e.g. "
 "Configuring Kontact as a KDE Kolab client)."
 msgstr ""
-"סמן תיבה זו על־מנת לאפשר יצירה אוטומטית של דואר בעת יצירת, עדכון או מחיקת "
-"אירועים (או מטלות) הכוללים נוכחים נוספים. עליך לסמן תיבה זו אם ברצונך להשתמש "
-"ביכולות קובצה (groupware) למשל הגדרת Kontact כלקחו KDE של Kolab."
+"יש לסמן את התיבה הזאת כדי להפעיל יצירת הודעות אוטומטית בעת יצירת, עדכון או "
+"מחיקת אירועים (או מטלות) בהם מעורבים משתתפים נוספים. יש לסמן את התיבה הזאת "
+"כדי להשתמש ביכולות groupware (כלומר הגדרת Kontact כלקוח KDE Kolab)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:104
@@ -1004,13 +1004,7 @@ msgstr "שעת התחלה להדפסה"
 #: printing/calprintdayconfig_base.ui:67 printing/calprintdayconfig_base.ui:83
 #: printing/calprintweekconfig_base.ui:67
 #: printing/calprintweekconfig_base.ui:83
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the start of this "
-#| "time range. The end time should be defined with the <i>End time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the start of this time "
@@ -1018,11 +1012,10 @@ msgid ""
 "you can automatically modify these settings if you check <i>Extend time "
 "range to include all events</i>."
 msgstr ""
-"אפשר להדפיס רק את האירועים שנמצאים בטווח שעות נתון. בעזרת תיבת בחירת הזמן "
-"הזאת, ביכולתך להגדיר את שעת ההתחלה של טווח זה. שעת הסיום צריכה להיות מגדרת "
-"בעזרת האפשרות <i>שעת סיום</i>. שים־לב שאפשר לעדכן באופן אוטומטי את ההגדרות "
-"הללו כאשר מסמנים את האפשרות <i>הרחב את טווח הזמנים כדי לכלול את כל האירועים</"
-"i>."
+"אפשר להדפיס רק את האירועים האלה כחלק מטווח זמן נתון. עם תיבת בחירת הזמנים "
+"הזאת אפשר להגדיר את זמן ההתחלה של טווח הזמן הזה. את זמן הסיום יש להגדיר עם "
+"האפשרות <i>זמן סיום</i>. נא לשים לב שאפשר לשנות את הערכים האלה אוטומטית עם "
+"סימון האפשרות <i>הרחבת טווח הזמנים כדי לכלול את כל האירועים</i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
@@ -1097,13 +1090,7 @@ msgstr "שעת הסיום להדפסה"
 #: printing/calprintdayconfig_base.ui:163
 #: printing/calprintweekconfig_base.ui:147
 #: printing/calprintweekconfig_base.ui:163
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the end of this "
-#| "time range. The start time should be defined with the <i>Start time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the end of this time "
@@ -1111,11 +1098,10 @@ msgid ""
 "Note you can automatically modify these settings if you check <i>Extend time "
 "range to include all events</i>."
 msgstr ""
-"אפשר להדפיס רק את האירועים שנמצאים בטווח שעות נתון. בעזרת תיבת בחירת הזמן "
-"הזאת, ביכולתך להגדיר את שעת הסיום של טווח זה. שעת ההתחלה צריכה להיות מגדרת "
-"בעזרת האפשרות <i>שעת התחלה</i>. שים־לב שאפשר לעדכן באופן אוטומטי את ההגדרות "
-"הללו כאשר מסמנים את האפשרות <i>הרחב את טווח הזמנים כדי לכלול את כל האירועים</"
-"i>."
+"אפשר להדפיס רק את האירועים האלה כחלק מטווח זמן נתון. עם תיבת בחירת הזמנים "
+"הזאת אפשר להגדיר את זמן הסיום של טווח הזמן הזה. את זמן ההתחלה יש להגדיר עם "
+"האפשרות <i>זמן התחלה</i>. נא לשים לב שאפשר לשנות את הערכים האלה אוטומטית עם "
+"סימון האפשרות <i>הרחבת טווח הזמנים כדי לכלול את כל האירועים</i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mToTimeLabel)
 #: printing/calprintdayconfig_base.ui:150
@@ -2275,9 +2261,9 @@ msgid ""
 "This option defines the first month to be printed. Use the option <i>End "
 "month</i> to define the last month in this range."
 msgstr ""
-"כאשר ברצונך להדפיס מספר חודשים בבת־אחת, ניתן להגדיר טווח חודשים. אפשרות זאת "
-"מגדירה את החודש הראשון להדפסה. השתמש באפשרות <i>חודש סיום</i> על־מנת להגדיר "
-"את החודש הראשון בתחום."
+"כדי להדפיס מספר חודשים בבת אחת, ניתן להגדיר טווח חודשים. אפשרות זאת מגדירה "
+"את החודש הראשון להדפסה. ניתן להשתמש באפשרות <i>חודש סיום</i> כדי להגדיר את "
+"החודש האחרון בטווח."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
@@ -2299,15 +2285,15 @@ msgstr "שנת התחלה להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:56
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "When you want to print more years at once, you can define a year range. This "
 "option defines the first year to be printed. Use the option <i>End year</i> "
 "to define the last year in this range."
 msgstr ""
-"כאשר ברצונך להדפיס מספר חודשים בבת־אחת, ניתן להגדיר טווח חודשים. אפשרות זאת "
-"מגדירה את החודש הראשון להדפסה. השתמש באפשרות <i>חודש סיום</i> על־מנת להגדיר "
-"את החודש הראשון בתחום."
+"כדי להדפיס שנים נוספות בבת אחת, אפשר להגדיר טווח שנים. האפשרות הזאת מגדירה "
+"את השנה הראשונה להדפסה. יש להשתמש באפשרות <i>שנת הסוף</i> כדי להגדיר את השנה "
+"הסופית בטווח הזה."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, mToMonth)
@@ -2319,9 +2305,9 @@ msgid ""
 "This option defines the last month to be printed. Use the option <i>Start "
 "month</i> to define the first month in this range."
 msgstr ""
-"כאשר ברצונך להדפיס מספר חודשים בבת־אחת, ניתן להגדיר טווח חודשים. אפשרות זאת "
-"מגדירה את החודש האחרון להדפסה. השתמש באפשרות <i>חודש התחלה</i> על־מנת להגדיר "
-"את החודש הראשון בתחום."
+"כדי להדפיס מספר חודשים בבת אחת, ניתן להגדיר טווח חודשים. אפשרות זאת מגדירה "
+"את החודש האחרון להדפסה. ניתן להשתמש באפשרות <i>חודש התחלה</i> כדי להגדיר את "
+"החודש הראשון בטווח."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintmonthconfig_base.ui:72
@@ -2343,15 +2329,15 @@ msgstr "שנת הסוף להדפסה"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:95
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "When you want to print more years at once, you can define a year range. This "
 "option defines the last year to be printed. Use the option <i>Start year</i> "
 "to define the first year in this range."
 msgstr ""
-"כאשר ברצונך להדפיס מספר חודשים בבת־אחת, ניתן להגדיר טווח חודשים. אפשרות זאת "
-"מגדירה את החודש האחרון להדפסה. השתמש באפשרות <i>חודש התחלה</i> על־מנת להגדיר "
-"את החודש הראשון בתחום."
+"כדי להדפיס שנים נוספות בבת אחת, אפשר להגדיר טווח שנים. האפשרות הזאת מגדירה "
+"את השנה האחרונה להדפסה. יש להשתמש באפשרות <i>שנת ההתחלה</i> כדי להגדיר את "
+"השנה הראשונה בטווח הזה."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:195
