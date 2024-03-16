@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Andrej Vernekar <andrej.vernekar@moj.net>, 2011.
-# Jure Repinc <jlp@holodeck1.com>, 2012, 2013.
+# SPDX-FileCopyrightText: 2012, 2013, 2024 Jure Repinc <jlp@holodeck1.com>
 # Andrej Mernik <andrejm@ubuntu.si>, 2014, 2015, 2016.
 # Grega Fajdiga <gregor.fajdiga@guest.arnes.si>, 2014.
 # Matjaž Jeran <matjaz.jeran@amis.net>, 2019, 2020, 2021, 2022.
@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-04 01:34+0000\n"
-"PO-Revision-Date: 2023-09-25 10:56+0200\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"PO-Revision-Date: 2024-03-15 17:54+0100\n"
+"Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Lokalize 24.04.70\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -81,7 +81,7 @@ msgid ""
 msgstr ""
 "Če označite to polje, bodo dogodki in opravila, ki so starejši od navedene "
 "starosti, arhivirani ali počiščeni. Predmeti bodo arhivirani, razen če je "
-"omogočena možnost \"Samo izbriši\". V tem primeru bodo predmeti počiščeni in "
+"omogočena možnost »Samo izbriši«. V tem primeru bodo predmeti počiščeni in "
 "ne bodo shranjeni."
 
 #: archivedialog.cpp:93
@@ -106,7 +106,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio"
 msgid "Automaticall&y archive items older than:"
-msgstr "Samodejno arhiviraj predmete, starejše od:"
+msgstr "Sa&modejno arhiviraj predmete, starejše od:"
 
 #: archivedialog.cpp:108
 #, kde-format
@@ -177,7 +177,7 @@ msgstr "Meseci"
 #, kde-format
 msgctxt "@label"
 msgid "Archive &file:"
-msgstr "Arhivska datoteka:"
+msgstr "Arhivska &datoteka:"
 
 #: archivedialog.cpp:144
 #, kde-format
@@ -249,7 +249,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
-msgstr "Arhiviraj zaključena opravila"
+msgstr "Arhiviraj zaključena &opravila"
 
 #: archivedialog.cpp:172
 #, kde-format
@@ -271,7 +271,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "&Delete only, do not save"
-msgstr "Samo izbriši, ne shrani"
+msgstr "Samo &izbriši, ne shrani"
 
 #: archivedialog.cpp:179
 #, kde-format
@@ -298,14 +298,14 @@ msgstr "Ime arhivske datoteke ni veljavno."
 #: attachmenthandler.cpp:94
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
-msgstr "V pojavitvi ni priloge z imenom \"%1\"."
+msgstr "V pojavitvi ni priloge z imenom »%1«."
 
 #: attachmenthandler.cpp:105
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
 msgstr ""
-"Priloga \"%1\" je spletna povezava, ki s tega računalnika ni dosegljiva. "
+"Priloga »%1« je spletna povezava, ki s tega računalnika ni dosegljiva. "
 
 #: attachmenthandler.cpp:121
 #, kde-format
@@ -470,9 +470,9 @@ msgid ""
 "specify your full name and e-mail."
 msgstr ""
 "Označite to polje, da uporabite e-poštne nastavitve, ki veljajo za vse KDE-"
-"jeve programe in so določene v modulu \"Podrobnosti računa\" v Sistemskih "
-"nastavitvah. Odstranite oznako, če želite ročno nastaviti svoje polno ime in "
-"e-poštni naslov."
+"jeve programe in so določene v modulu »Uporabniki« v Sistemskih nastavitvah. "
+"Odstranite oznako, če želite ročno nastaviti svoje polno ime in e-poštni "
+"naslov."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
@@ -806,7 +806,7 @@ msgstr "Arhiviraj stare dogodke v ločeno datoteko"
 #: kcalprefs.kcfg:194
 #, kde-format
 msgid "Full &name"
-msgstr "Polno ime"
+msgstr "Pol&no ime"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
 #: kcalprefs.kcfg:195
@@ -816,7 +816,7 @@ msgid ""
 "to-dos and events you create."
 msgstr ""
 "Sem vnesite svoje ime in priimek. To ime bo v dogodkih in opravilih, ki jih "
-"boste ustvarili, prikazano kot \"Organizator\"."
+"boste ustvarili, prikazano kot »Organizator«."
 
 #: kcalprefs.kcfg:196
 #, kde-format
@@ -827,7 +827,7 @@ msgstr "Anonimnež"
 #: kcalprefs.kcfg:200
 #, kde-format
 msgid "E&mail address"
-msgstr "E-poštni naslov"
+msgstr "&E-poštni naslov"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:201
@@ -849,7 +849,7 @@ msgstr "nihče@nikjer"
 #: kcalprefs.kcfg:220
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
-msgstr "Barva \"Brez oznake\" (za sheme risanja \"Samo oznaka\")"
+msgstr "Barva »Brez oznake« (za sheme risanja »Samo oznaka«)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:221
@@ -859,10 +859,10 @@ msgid ""
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
-"Izberite barvo, ki jo želite uporabiti v primeru \"brez oznake\" ali "
-"\"nenastavljene oznake\", ko element nima nobenih oznak. Ta barva se "
-"uporablja pri risanju elementov v dnevni red ali mesečni pogled s pomočjo "
-"sheme \"Samo oznaka\"."
+"Izberite barvo, ki jo želite uporabiti v primeru »brez oznake« ali "
+"»nenastavljene oznake«, ko element nima nobenih oznak. Ta barva se uporablja "
+"pri risanju elementov v dnevni red ali mesečni pogled s pomočjo sheme »Samo "
+"oznaka«."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
 #: kcalprefs.kcfg:222
@@ -982,7 +982,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:36
 #, kde-format
 msgid "&Start date:"
-msgstr "Datum začetka:"
+msgstr "Datum &začetka:"
 
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mFromDate)
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mToDate)
@@ -1079,7 +1079,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:116
 #, kde-format
 msgid "&End date:"
-msgstr "Končni datum:"
+msgstr "&Končni datum:"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, mToTime)
@@ -1116,7 +1116,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:150
 #, kde-format
 msgid "End ti&me:"
-msgstr "Končni čas:"
+msgstr "Končni č&as:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeAllEvents)
 #: printing/calprintdayconfig_base.ui:190
@@ -1134,7 +1134,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:193
 #, kde-format
 msgid "E&xtend time range to include all events"
-msgstr "Razširi časovno obdobje, da se vključijo vsi dogodki"
+msgstr "&Razširi časovno obdobje, da se vključijo vsi dogodki"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprintdayconfig_base.ui:203
@@ -1156,7 +1156,7 @@ msgstr "V obliki filofaks se podatki za izbrane dni natisnejo brez časovnice."
 #: printing/calprintdayconfig_base.ui:212
 #, kde-format
 msgid "Print date &range as Filofax format, all on one page"
-msgstr "Natisni datumsko obdobje v obliki Filofaksa, vse na eni strani"
+msgstr "Natisni datumsko &obdobje v obliki Filofaksa, vse na eni strani"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
@@ -1169,7 +1169,7 @@ msgstr "Prikaz tiska urnika ima časovne oznake na levem delu strani."
 #: printing/calprintdayconfig_base.ui:222
 #, kde-format
 msgid "Print as timeta&ble view, one page per day"
-msgstr "Natisni kot prikaz urnika, eno stran za vsak dan"
+msgstr "Natisni kot prikaz &urnika, eno stran za vsak dan"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:229
@@ -1185,7 +1185,7 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:232
 #, kde-format
 msgid "Print as timetable view, all da&ys on a single page"
-msgstr "Natisni kot prikaz urnika, z vsemi dnevi na eni strani"
+msgstr "Natisni kot prikaz urnika, z &vsemi dnevi na eni strani"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mSecurity)
 #: printing/calprintdayconfig_base.ui:242
@@ -1222,7 +1222,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:79
 #, kde-format
 msgid "Exclude c&onfidential"
-msgstr "Izloči zaupne"
+msgstr "Izloči &zaupne"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:258
@@ -1248,7 +1248,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:89
 #, kde-format
 msgid "Exclude pri&vate"
-msgstr "Izloči zasebne"
+msgstr "Izloči z&asebne"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mIncludeInfoGroup)
 #. i18n: ectx: property (title), widget (QGroupBox, includeInfoBox)
@@ -1289,7 +1289,7 @@ msgstr "Označite to možnost, če želite natisniti opise predmetov."
 #: printing/calprintweekconfig_base.ui:283
 #, kde-format
 msgid "&Descriptions"
-msgstr "Opisi"
+msgstr "O&pisi"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1319,7 +1319,7 @@ msgstr "Označite to možnost, če želite natisniti oznake predmetov."
 #: printing/calprintweekconfig_base.ui:296
 #, kde-format
 msgid "Ta&gs"
-msgstr "Oznake"
+msgstr "Oz&nake"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:306
@@ -1347,7 +1347,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:312
 #, kde-format
 msgid "Include to-&dos that are due on the printed day(s)"
-msgstr "Vključi opravila, ki zapadejo na natisnjene dni"
+msgstr "&Vključi opravila, ki zapadejo na natisnjene dni"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:319
@@ -1488,7 +1488,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:184
 #, kde-format
 msgid "Print &Footer"
-msgstr "Natisni nogo"
+msgstr "Natisni &nogo"
 
 #: printing/calprintdefaultplugins.cpp:120
 #: printing/calprintdefaultplugins.cpp:149
@@ -1517,19 +1517,19 @@ msgstr "Trajanje: "
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
-msgstr[0] "%1 ura "
-msgstr[1] "%1 uri "
-msgstr[2] "%1 ure "
-msgstr[3] "%1 ur "
+msgstr[0] "%1 ur "
+msgstr[1] "%1 ura "
+msgstr[2] "%1 uri "
+msgstr[3] "%1 ure "
 
 #: printing/calprintdefaultplugins.cpp:137
 #, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
-msgstr[0] "%1 minuta "
-msgstr[1] "%1 minuti "
-msgstr[2] "%1 minute "
-msgstr[3] "%1 minut "
+msgstr[0] "%1 minut "
+msgstr[1] "%1 minuta "
+msgstr[2] "%1 minuti "
+msgstr[3] "%1 minute "
 
 #: printing/calprintdefaultplugins.cpp:140
 #, kde-format
@@ -1566,10 +1566,10 @@ msgstr "Brez opomnikov"
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
-msgstr[0] "%1 opomnik: "
-msgstr[1] "%1 opomnika: "
-msgstr[2] "%1 opomniki: "
-msgstr[3] "%1 opomnikov: "
+msgstr[0] "%1 opomnikov: "
+msgstr[1] "%1 opomnik: "
+msgstr[2] "%1 opomnika: "
+msgstr[3] "%1 opomniki: "
 
 #: printing/calprintdefaultplugins.cpp:317
 #, kde-format
@@ -1599,28 +1599,28 @@ msgstr "%1 po koncu"
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
-msgstr[0] "%1 dan"
-msgstr[1] "%1 dneva"
-msgstr[2] "%1 dni"
+msgstr[0] "%1 dni"
+msgstr[1] "%1 dan"
+msgstr[2] "%1 dneva"
 msgstr[3] "%1 dni"
 
 #: printing/calprintdefaultplugins.cpp:340
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
-msgstr[0] "%1 ura"
-msgstr[1] "%1 uri"
-msgstr[2] "%1 ure"
-msgstr[3] "%1 ur"
+msgstr[0] "%1 ur"
+msgstr[1] "%1 ura"
+msgstr[2] "%1 uri"
+msgstr[3] "%1 ure"
 
 #: printing/calprintdefaultplugins.cpp:343
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
-msgstr[0] "%1 minuta"
-msgstr[1] "%1 minuti"
-msgstr[2] "%1 minute"
-msgstr[3] "%1 minut"
+msgstr[0] "%1 minut"
+msgstr[1] "%1 minuta"
+msgstr[2] "%1 minuti"
+msgstr[3] "%1 minute"
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:629
@@ -1658,10 +1658,10 @@ msgstr "Brez podpredmetov"
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
-msgstr[0] "%1 podpredmet:"
-msgstr[1] "%1 podpredmeta:"
-msgstr[2] "%1 podpredmeti:"
-msgstr[3] "%1 podpredmetov:"
+msgstr[0] "%1 podpredmetov:"
+msgstr[1] "%1 podpredmet:"
+msgstr[2] "%1 podpredmeta:"
+msgstr[3] "%1 podpredmeti:"
 
 #: printing/calprintdefaultplugins.cpp:485
 #, kde-format
@@ -1732,10 +1732,10 @@ msgstr "Brez prilog"
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
-msgstr[0] "%1 priloga:"
-msgstr[1] "%1 prilogi:"
-msgstr[2] "%1 priloge:"
-msgstr[3] "%1 prilog:"
+msgstr[0] "%1 prilog:"
+msgstr[1] "%1 priloga:"
+msgstr[2] "%1 prilogi:"
+msgstr[3] "%1 priloge:"
 
 #: printing/calprintdefaultplugins.cpp:550
 #, kde-format
@@ -1752,10 +1752,10 @@ msgstr "Brez udeležencev"
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
-msgstr[0] "%1 udeleženec:"
-msgstr[1] "%1 udeleženeca:"
-msgstr[2] "%1 udeleženci:"
-msgstr[3] "%1 udeležencev:"
+msgstr[0] "%1 udeležencev:"
+msgstr[1] "%1 udeleženec:"
+msgstr[2] "%1 udeleženca:"
+msgstr[3] "%1 udeleženci:"
 
 #: printing/calprintdefaultplugins.cpp:581
 #, kde-format
@@ -1831,7 +1831,7 @@ msgstr "%1–%2"
 #, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
-msgstr "%1-%2 (teden %3)"
+msgstr "%1–%2 (%3. teden)"
 
 #: printing/calprintdefaultplugins.cpp:1231
 #, kde-format
@@ -1841,7 +1841,7 @@ msgid ""
 "(Week %3)"
 msgstr ""
 "%1–%2\n"
-"(Teden %3)"
+"(%3. teden)"
 
 #: printing/calprintdefaultplugins.cpp:1416
 #, kde-format
@@ -1940,7 +1940,7 @@ msgstr "Oznake"
 #: printing/calprintdefaultplugins.h:36
 #, kde-format
 msgid "Print &incidence"
-msgstr "Natisni pojavitev"
+msgstr "Natisni &pojavitev"
 
 #: printing/calprintdefaultplugins.h:41
 #, kde-format
@@ -1950,7 +1950,7 @@ msgstr "Natisne pojavitev na eni strani"
 #: printing/calprintdefaultplugins.h:138
 #, kde-format
 msgid "Print da&y"
-msgstr "Natisni dan"
+msgstr "Natisni &dan"
 
 #: printing/calprintdefaultplugins.h:143
 #, kde-format
@@ -1960,7 +1960,7 @@ msgstr "Natisne vse dogodke enega dne na eni strani"
 #: printing/calprintdefaultplugins.h:193
 #, kde-format
 msgid "Print &week"
-msgstr "Natisni teden"
+msgstr "Natisni &teden"
 
 #: printing/calprintdefaultplugins.h:198
 #, kde-format
@@ -1970,7 +1970,7 @@ msgstr "Natisne vse dogodke enega tedna na eni strani"
 #: printing/calprintdefaultplugins.h:255
 #, kde-format
 msgid "Print mont&h"
-msgstr "Natisni mesec"
+msgstr "Natisni &mesec"
 
 #: printing/calprintdefaultplugins.h:260
 #, kde-format
@@ -1980,7 +1980,7 @@ msgstr "Natisne vse dogodke enega meseca na eni strani"
 #: printing/calprintdefaultplugins.h:310
 #, kde-format
 msgid "Print to-&dos"
-msgstr "Natisni opravila"
+msgstr "Natisni &opravila"
 
 #: printing/calprintdefaultplugins.h:315
 #, kde-format
@@ -2125,7 +2125,7 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:39
 #, kde-format
 msgid "Detai&ls (visiblility, secrecy, etc.)"
-msgstr "Podrobnosti (vidnost, tajnost, itd.)"
+msgstr "Podro&bnosti (vidnost, tajnost, itd.)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:46
@@ -2144,7 +2144,7 @@ msgstr "Označite to polje, če želite natisniti tudi seznam udeležencev."
 #: printing/calprintincidenceconfig_base.ui:52
 #, kde-format
 msgid "&Attendees"
-msgstr "Udeleženci"
+msgstr "&Udeleženci"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:59
@@ -2163,7 +2163,7 @@ msgstr "Označite to polje, če želite natisniti tudi opombe pojavitve."
 #: printing/calprintincidenceconfig_base.ui:65
 #, kde-format
 msgid "&Notes, subitems"
-msgstr "Opombe, podpredmeti"
+msgstr "&Opombe, podpredmeti"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:72
@@ -2185,7 +2185,7 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:78
 #, kde-format
 msgid "Attach&ments"
-msgstr "Priloge"
+msgstr "&Priloge"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:97
@@ -2202,7 +2202,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:259
 #, kde-format
 msgid "Show note &lines"
-msgstr "Pokaži črte za opombe"
+msgstr "Pokaži &črte za opombe"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintjournalconfig_base.ui:17
@@ -2230,13 +2230,13 @@ msgstr ""
 #: printing/calprintjournalconfig_base.ui:30
 #, kde-format
 msgid "&All journal entries"
-msgstr "Vsi vnosi v dnevniku"
+msgstr "&Vsi vnosi v dnevniku"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mRangeJournals)
 #: printing/calprintjournalconfig_base.ui:43
 #, kde-format
 msgid "Date &range:"
-msgstr "Datumsko obdobje:"
+msgstr "&Datumsko obdobje:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintmonthconfig_base.ui:17
@@ -2277,7 +2277,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:33
 #, kde-format
 msgid "Sta&rt month:"
-msgstr "Začetni mesec:"
+msgstr "&Začetni mesec:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mFromMonth)
 #: printing/calprintmonthconfig_base.ui:43
@@ -2367,7 +2367,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:201
 #, kde-format
 msgid "Include daily re&curring to-dos and events"
-msgstr "Vključi dnevno ponavljajoče se dogodke in opravila"
+msgstr "Vključi dnevno ponav&ljajoče se dogodke in opravila"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:208
@@ -2382,14 +2382,14 @@ msgid ""
 "Similar to \"Print daily recurring to-dos and events\". Weekly to-dos and "
 "events will be omitted when making a print of the selected month."
 msgstr ""
-"Podobno \"Vključi dnevno ponavljajoče se dogodke in opravila\". Tedenski "
+"Podobno »Natisni dnevno ponavljajoče se dogodke in opravila«. Tedenski "
 "dogodki in opravila bodo izvzeti iz tiskanja predmetov izbranega meseca."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:214
 #, kde-format
 msgid "Include weekl&y recurring to-dos and events"
-msgstr "Vključi tedensko ponavljajoče se dogodke in opravila"
+msgstr "Vključi &tedensko ponavljajoče se dogodke in opravila"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:230
@@ -2408,7 +2408,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:236
 #, kde-format
 msgid "Print week &numbers"
-msgstr "Natisni številke ted&nov"
+msgstr "Natisni &številke tednov"
 
 #: printing/calprintpluginbase.cpp:142
 #, kde-format
@@ -2436,13 +2436,13 @@ msgstr "natisnjeno: %1"
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
-msgstr "%1-%2 %3"
+msgstr "%1–%2 %3"
 
 #: printing/calprintpluginbase.cpp:927
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
-msgstr "%1-%2 %3, %4"
+msgstr "%1–%2 %3, %4"
 
 #: printing/calprintpluginbase.cpp:994
 #, kde-format
@@ -2522,7 +2522,7 @@ msgstr "Vnesite ime tega seznama opravil. Ime bo natisnjeno na vrhu strani"
 #: printing/calprinttodoconfig_base.ui:32
 #, kde-format
 msgid "&Title:"
-msgstr "Naslov:"
+msgstr "&Naslov:"
 
 #. i18n: ectx: property (text), widget (QLineEdit, mTitle)
 #: printing/calprinttodoconfig_base.ui:48
@@ -2546,13 +2546,13 @@ msgstr "Natisni vs&a opravila"
 #: printing/calprinttodoconfig_base.ui:73
 #, kde-format
 msgid "Print &uncompleted to-dos only"
-msgstr "Natisni samo nedokončana opravila"
+msgstr "Natisni &samo nedokončana opravila"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
 #: printing/calprinttodoconfig_base.ui:80
 #, kde-format
 msgid "Print only to-dos due in the &range:"
-msgstr "Natisni samo opravila v obsegu zapadlosti:"
+msgstr "Natisni sa&mo opravila v obsegu zapadlosti:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
@@ -2592,7 +2592,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:280
 #, kde-format
 msgid "&Start date"
-msgstr "Datum začetka"
+msgstr "Datum &začetka"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
@@ -2611,7 +2611,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:293
 #, kde-format
 msgid "Du&e date"
-msgstr "Datum roka dokončanja"
+msgstr "Datum z&apadlosti"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
@@ -2633,7 +2633,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:309
 #, kde-format
 msgid "Percentage co&mpleted"
-msgstr "Odstotek dokončanja"
+msgstr "Odstotek &dokončanja"
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
 #: printing/calprinttodoconfig_base.ui:328
@@ -2657,7 +2657,7 @@ msgstr "Smer razvrščanja:"
 #: printing/calprinttodoconfig_base.ui:397
 #, kde-format
 msgid "Co&nnect sub-to-dos with its parent"
-msgstr "Poveži podopravila z nadrejenimi"
+msgstr "Pove&ži podopravila z nadrejenimi"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
@@ -2691,13 +2691,13 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:212
 #, kde-format
 msgid "Print date &range as Filofax format, one week per page"
-msgstr "Natisni datumsko obdobje v obliki Filofaxa, po en teden na stran"
+msgstr "Natisni datumsko &obdobje v obliki Filofaxa, po en teden na stran"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintweekconfig_base.ui:222
 #, kde-format
 msgid "Print as timeta&ble view, one week per page"
-msgstr "Natisni kot prikaz urnika, po en teden na stran"
+msgstr "Natisni kot prikaz &urnika, po en teden na stran"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:229
@@ -2735,7 +2735,7 @@ msgstr "Datumsko obdobje"
 #: printing/calprintyearconfig_base.ui:32
 #, kde-format
 msgid "&Year:"
-msgstr "Leto:"
+msgstr "&Leto:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
 #: printing/calprintyearconfig_base.ui:99
@@ -2747,13 +2747,13 @@ msgstr "Splošno"
 #: printing/calprintyearconfig_base.ui:105
 #, kde-format
 msgid "Num&ber of pages:"
-msgstr "Število strani:"
+msgstr "&Število strani:"
 
 #. i18n: ectx: property (text), widget (QLabel, mSubDaysLabel)
 #: printing/calprintyearconfig_base.ui:121
 #, kde-format
 msgid "Show &sub-day events as:"
-msgstr "Pokaži dogodke dneva kot:"
+msgstr "Pokaži &dogodke dneva kot:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2775,13 +2775,13 @@ msgstr "Časovne okvirje"
 #: printing/calprintyearconfig_base.ui:151
 #, kde-format
 msgid "Show &holidays as:"
-msgstr "Pokaži praznike kot:"
+msgstr "Pokaži &praznike kot:"
 
 #: printing/journalprint.cpp:104
 #, kde-format
 msgctxt "Description - date"
 msgid "%1 - %2"
-msgstr "%1 - %2"
+msgstr "%1 – %2"
 
 #: printing/journalprint.cpp:126
 #, kde-format
@@ -2796,7 +2796,7 @@ msgstr "Dnevniški vnosi"
 #: printing/journalprint.h:32
 #, kde-format
 msgid "Print &journal"
-msgstr "Natisni dnevnik"
+msgstr "Natisni d&nevnik"
 
 #: printing/journalprint.h:37
 #, kde-format
@@ -2806,7 +2806,7 @@ msgstr "Natisne vse dogodke podanega datumskega območja"
 #: printing/yearprint.h:31
 #, kde-format
 msgid "Print &year"
-msgstr "Natisni leto"
+msgstr "Natisni &leto"
 
 #: printing/yearprint.h:36
 #, kde-format
@@ -2879,7 +2879,7 @@ msgstr "vse"
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
-msgstr "avdio"
+msgstr "zvok"
 
 #: utils.cpp:446
 #, kde-format
@@ -2903,7 +2903,7 @@ msgstr "procedura"
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
-msgstr "ostalo"
+msgstr "drugo"
 
 #: utils.cpp:456
 #, kde-format
