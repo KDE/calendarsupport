@@ -6,6 +6,8 @@
 */
 
 #include "calprinter.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "calprintdefaultplugins.h"
 #include "journalprint.h"
 #include "yearprint.h"
@@ -131,7 +133,7 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientati
 
     if (preview) {
         QPointer<QPrintPreviewDialog> printPreview = new QPrintPreviewDialog(&printer);
-        new KWindowStateSaver(printPreview.data(), QLatin1StringView("CalendarPrintPreviewDialog"));
+        new KWindowStateSaver(printPreview.data(), "CalendarPrintPreviewDialog"_L1);
         connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this, [selectedStyle, &printer]() {
             selectedStyle->doPrint(&printer);
         });

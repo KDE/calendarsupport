@@ -35,7 +35,7 @@
 #include <QWhatsThis>
 
 using namespace CalendarSupport;
-
+using namespace Qt::Literals::StringLiterals;
 ArchiveDialog::ArchiveDialog(const Akonadi::ETMCalendar::Ptr &cal, Akonadi::IncidenceChanger *changer, QWidget *parent)
     : QDialog(parent)
     , mUser1Button(new QPushButton(this))
@@ -244,8 +244,8 @@ void ArchiveDialog::slotUser1()
         }
         // Force filename to be ending with vCalendar extension
         QString filename = destUrl.fileName();
-        if (!filename.endsWith(QLatin1StringView(".vcs")) && !filename.endsWith(QLatin1StringView(".ics"))) {
-            filename.append(QLatin1StringView(".ics"));
+        if (!filename.endsWith(".vcs"_L1) && !filename.endsWith(".ics"_L1)) {
+            filename.append(".ics"_L1);
             destUrl = destUrl.adjusted(QUrl::RemoveFilename);
             destUrl.setPath(destUrl.path() + filename);
         }

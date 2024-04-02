@@ -8,6 +8,8 @@
 */
 
 #include "calprintpluginbase.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "cellitem.h"
 #include "kcalprefs.h"
 #include "utils.h"
@@ -726,7 +728,7 @@ void CalPrintPluginBase::drawTimeLine(QPainter &p, QTime fromTime, QTime toTime,
         if (newY < box.bottom()) {
             QFont oldFont(p.font());
             // draw the time:
-            if (!QLocale().timeFormat().contains(QLatin1StringView("AP"))) { // 12h clock
+            if (!QLocale().timeFormat().contains("AP"_L1)) { // 12h clock
                 p.drawLine(xcenter, (int)newY, box.right(), (int)newY);
                 numStr.setNum(curTime.hour());
                 if (cellHeight > 30) {
@@ -1440,7 +1442,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays
     // space of the day's cell
     for (int d = 0; d < daysinmonth; ++d) {
         QStringList dayEvents(textEvents[d + 1]);
-        QString txt = dayEvents.join(QLatin1StringView(", "));
+        QString txt = dayEvents.join(", "_L1);
         QRect dayBox(xstartcont, daysBox.top() + qRound(dayheight * d), 0, 0);
         dayBox.setRight(box.right());
         dayBox.setBottom(daysBox.top() + qRound(dayheight * (d + 1)));

@@ -5,6 +5,7 @@
 */
 
 #include "categoryhierarchyreader.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <QComboBox>
 
@@ -17,7 +18,7 @@ static const QLatin1StringView categorySeparator(":");
 
 inline QString &quote(QString &string)
 {
-    Q_ASSERT(CategoryConfig::categorySeparator != QLatin1StringView("@"));
+    Q_ASSERT(CategoryConfig::categorySeparator != "@"_L1);
     return string.replace(QLatin1Char('@'), QStringLiteral("@0")).replace(QLatin1Char('\\') + CategoryConfig::categorySeparator, QStringLiteral("@1"));
 }
 

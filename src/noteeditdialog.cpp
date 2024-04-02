@@ -5,6 +5,7 @@
  */
 
 #include "noteeditdialog.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <Akonadi/CollectionComboBox>
 #include <Akonadi/NoteUtils>
@@ -50,7 +51,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     buttonBox->button(QDialogButtonBox::Cancel)->setText(i18nc("@action:button", "Cancel"));
 
     mOkButton = buttonBox->button(QDialogButtonBox::Ok);
-    mOkButton->setObjectName(QLatin1StringView("save-button"));
+    mOkButton->setObjectName("save-button"_L1);
     mOkButton->setDefault(true);
     mOkButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     mOkButton->setText(i18nc("@action:button", "Save"));
@@ -64,7 +65,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     hbox->setSpacing(2);
 
     mNoteTitle->setClearButtonEnabled(true);
-    mNoteTitle->setObjectName(QLatin1StringView("notetitle"));
+    mNoteTitle->setObjectName("notetitle"_L1);
     mNoteTitle->setFocus();
     connect(mNoteTitle, &QLineEdit::textChanged, this, &NoteEditDialog::slotUpdateButtons);
 
@@ -72,7 +73,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     mCollectionCombobox->setAccessRightsFilter(Akonadi::Collection::CanCreateItem);
     mCollectionCombobox->setMinimumWidth(250);
     mCollectionCombobox->setMimeTypeFilter(QStringList() << Akonadi::NoteUtils::noteMimeType());
-    mCollectionCombobox->setObjectName(QLatin1StringView("akonadicombobox"));
+    mCollectionCombobox->setObjectName("akonadicombobox"_L1);
 #ifndef QT_NO_ACCESSIBILITY
     mCollectionCombobox->setAccessibleDescription(i18nc("@info", "Calendar where the new note will be stored."));
 #endif
@@ -81,7 +82,7 @@ NoteEditDialog::NoteEditDialog(QWidget *parent)
     connect(mCollectionCombobox, &Akonadi::CollectionComboBox::activated, this, &NoteEditDialog::slotCollectionChanged);
 
     mNoteText = new TextCustomEditor::RichTextEditorWidget(parent);
-    mNoteText->setObjectName(QLatin1StringView("notetext"));
+    mNoteText->setObjectName("notetext"_L1);
     connect(mNoteText->editor(), &TextCustomEditor::RichTextEditor::textChanged, this, &NoteEditDialog::slotUpdateButtons);
 
     // First line

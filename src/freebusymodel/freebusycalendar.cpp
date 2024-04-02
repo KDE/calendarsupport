@@ -16,7 +16,7 @@
 #include <QTimeZone>
 
 using namespace CalendarSupport;
-
+using namespace Qt::Literals::StringLiterals;
 class CalendarSupport::FreeBusyCalendarPrivate
 {
 public:
@@ -99,7 +99,7 @@ void FreeBusyCalendar::onRowsInserted(const QModelIndex &parent, int first, int 
         KCalendarCore::Event::Ptr inc = KCalendarCore::Event::Ptr(new KCalendarCore::Event());
         inc->setDtStart(period.start());
         inc->setDtEnd(period.end());
-        inc->setUid(QLatin1StringView("fb-") + fb->uid() + QLatin1StringView("-") + QString::number(i));
+        inc->setUid("fb-"_L1 + fb->uid() + "-"_L1 + QString::number(i));
 
         inc->setCustomProperty("FREEBUSY", "STATUS", QString::number(period.type()));
         QString summary = period.summary();
