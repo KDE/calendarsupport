@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-11 00:38+0000\n"
+"POT-Creation-Date: 2024-04-03 00:38+0000\n"
 "PO-Revision-Date: 2023-09-25 23:23+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -299,18 +299,18 @@ msgctxt "@info"
 msgid "The archive file name is not valid."
 msgstr "Artxiboaren fitxategi-izena ez da onargarria."
 
-#: attachmenthandler.cpp:94
+#: attachmenthandler.cpp:96
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
 msgstr "Intzidentzian ez da aurkitu «%1» izeneko eranskinik."
 
-#: attachmenthandler.cpp:105
+#: attachmenthandler.cpp:107
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
 msgstr "«%1» eranskina ordenagailu honetatik atzi ezin den web esteka bat da."
 
-#: attachmenthandler.cpp:121
+#: attachmenthandler.cpp:123
 #, kde-format
 msgid ""
 "The calendar invitation stored in this email message is broken in some way. "
@@ -319,12 +319,12 @@ msgstr ""
 "E-posta honetan gordetako egutegiko gonbidapena nolabait hautsita dago. Ezin "
 "du aurrera egin."
 
-#: attachmenthandler.cpp:178 attachmenthandler.cpp:232
+#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Ezin da eranskinarentzako aldi baterako fitxategi bat sortu."
 
-#: attachmenthandler.cpp:211
+#: attachmenthandler.cpp:213
 #, kde-format
 msgid "Save Attachment"
 msgstr "Gorde eranskina"
@@ -877,43 +877,43 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr "Erabili kolore hau etiketarik gabeko elementuak marraztean"
 
-#: noteeditdialog.cpp:41
+#: noteeditdialog.cpp:42
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr "Sortu ohar bat"
 
-#: noteeditdialog.cpp:50
+#: noteeditdialog.cpp:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Utzi"
 
-#: noteeditdialog.cpp:56
+#: noteeditdialog.cpp:57
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
 msgstr "Gorde"
 
-#: noteeditdialog.cpp:77
+#: noteeditdialog.cpp:78
 #, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "Ohar berria gordetzeko egutegia."
 
-#: noteeditdialog.cpp:79
+#: noteeditdialog.cpp:80
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "Ohar berria gordetzeko egutegia."
 
-#: noteeditdialog.cpp:92
+#: noteeditdialog.cpp:93
 #, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "Titulua:"
 
-#: noteeditdialog.cpp:97
+#: noteeditdialog.cpp:98
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"
@@ -1791,15 +1791,15 @@ msgstr "Ezarpenak: "
 msgid "Tags: "
 msgstr "Etiketak:"
 
-#: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:916
-#: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
+#: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:918
+#: printing/calprintpluginbase.cpp:1058 printing/calprintpluginbase.cpp:1115
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:935
-#: printing/calprintpluginbase.cpp:1059
+#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:937
+#: printing/calprintpluginbase.cpp:1061
 #, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
@@ -1894,7 +1894,7 @@ msgid "To-do list"
 msgstr "Egitekoen zerrenda"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1716
+#: printing/calprintpluginbase.cpp:1718
 #, kde-format
 msgid "%1%"
 msgstr "% %1"
@@ -1978,43 +1978,43 @@ msgstr "Inprimatu e&gitekoak"
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Egiteko guztiak (zuhaitz itxurako) zerrenda batean inprimatzen ditu"
 
-#: printing/calprinter.cpp:113
+#: printing/calprinter.cpp:115
 #, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
 msgstr "Ezin inprimatu, inprimatzeko estilo baliogabe bat zehaztu da."
 
-#: printing/calprinter.cpp:113
+#: printing/calprinter.cpp:115
 #, kde-format
 msgctxt "@title:window"
 msgid "Printing error"
 msgstr "Inprimatze errorea"
 
-#: printing/calprinter.cpp:156
+#: printing/calprinter.cpp:158
 #, kde-format
 msgctxt "@title:window"
 msgid "Print"
 msgstr "Inprimatzea"
 
-#: printing/calprinter.cpp:175
+#: printing/calprinter.cpp:177
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "Inprimatze estiloa"
 
-#: printing/calprinter.cpp:187
+#: printing/calprinter.cpp:189
 #, kde-format
 msgctxt "@label"
 msgid "Page &orientation:"
 msgstr "Orriaren &orientazioa:"
 
-#: printing/calprinter.cpp:192
+#: printing/calprinter.cpp:194
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
 msgstr "Ezarri inprimatzeko orientazioa"
 
-#: printing/calprinter.cpp:194
+#: printing/calprinter.cpp:196
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2027,37 +2027,37 @@ msgstr ""
 "inprimagailuaren ezarpen lehenetsiari hobekien egokitzen zaion orientaziora "
 "lehenetsi dezakezu."
 
-#: printing/calprinter.cpp:197
+#: printing/calprinter.cpp:199
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Default Orientation of Selected Style"
 msgstr "Erabili hautatutako estiloaren orientazio lehenetsia"
 
-#: printing/calprinter.cpp:198
+#: printing/calprinter.cpp:200
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
 msgstr "Erabili inprimagailuaren lehenespena"
 
-#: printing/calprinter.cpp:199
+#: printing/calprinter.cpp:201
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Portrait"
 msgstr "Erretratua (bertikala)"
 
-#: printing/calprinter.cpp:200
+#: printing/calprinter.cpp:202
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
 msgstr "Paisaia (horizontala)"
 
-#: printing/calprinter.cpp:222
+#: printing/calprinter.cpp:224
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the type of print"
 msgstr "Hautatu inprimatze mota"
 
-#: printing/calprinter.cpp:224
+#: printing/calprinter.cpp:226
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2070,7 +2070,7 @@ msgstr ""
 "guztiak (egun bat, astebete edo hilabete esaterako), edo agian zure "
 "zereginen zerrenda inprimatu nahi duzu."
 
-#: printing/calprinter.cpp:252
+#: printing/calprinter.cpp:254
 #, kde-format
 msgctxt "@action:button"
 msgid "&Preview"
@@ -2409,70 +2409,70 @@ msgstr ""
 msgid "Print week &numbers"
 msgstr "Inprimatu asteen &zenbakiak"
 
-#: printing/calprintpluginbase.cpp:142
+#: printing/calprintpluginbase.cpp:144
 #, kde-format
 msgid "This printing style does not have any configuration options."
 msgstr "Inprimatze estilo honek ez duzu konfigurazio aukerarik."
 
-#: printing/calprintpluginbase.cpp:298
+#: printing/calprintpluginbase.cpp:300
 #, kde-format
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
 msgstr ","
 
-#: printing/calprintpluginbase.cpp:310
+#: printing/calprintpluginbase.cpp:312
 #, kde-format
 msgid "Holiday"
 msgstr "Jaieguna"
 
-#: printing/calprintpluginbase.cpp:612
+#: printing/calprintpluginbase.cpp:614
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "inprimatuta: %1"
 
-#: printing/calprintpluginbase.cpp:921
+#: printing/calprintpluginbase.cpp:923
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1-%2 %3"
 
-#: printing/calprintpluginbase.cpp:927
+#: printing/calprintpluginbase.cpp:929
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:994
+#: printing/calprintpluginbase.cpp:996
 #, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1, %2 %3"
 
-#: printing/calprintpluginbase.cpp:1120
+#: printing/calprintpluginbase.cpp:1122
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (epe-muga: %2)"
 
-#: printing/calprintpluginbase.cpp:1125
+#: printing/calprintpluginbase.cpp:1127
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (epe-muga: %2)"
 
-#: printing/calprintpluginbase.cpp:1132
+#: printing/calprintpluginbase.cpp:1134
 #, kde-format
 msgid "To-do: %1"
 msgstr "Egitekoa %1"
 
-#: printing/calprintpluginbase.cpp:1878
+#: printing/calprintpluginbase.cpp:1880
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2–%3"
 
-#: printing/calprintpluginbase.cpp:1884
+#: printing/calprintpluginbase.cpp:1886
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"

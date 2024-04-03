@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-11 00:38+0000\n"
+"POT-Creation-Date: 2024-04-03 00:38+0000\n"
 "PO-Revision-Date: 2024-01-05 04:49+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -274,30 +274,30 @@ msgctxt "@info"
 msgid "The archive file name is not valid."
 msgstr "歸檔檔名不正確。"
 
-#: attachmenthandler.cpp:94
+#: attachmenthandler.cpp:96
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
 msgstr "在事件中找不到名為 %1 的附加檔。"
 
-#: attachmenthandler.cpp:105
+#: attachmenthandler.cpp:107
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
 msgstr "附加檔 %1 是個網頁連結，在此電腦中無法存取。"
 
-#: attachmenthandler.cpp:121
+#: attachmenthandler.cpp:123
 #, kde-format
 msgid ""
 "The calendar invitation stored in this email message is broken in some way. "
 "Unable to continue."
 msgstr "儲存在此電子郵件中的行事曆邀請因某種原因而損毀。無法繼續。"
 
-#: attachmenthandler.cpp:178 attachmenthandler.cpp:232
+#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "無法建立附加檔之暫存檔。"
 
-#: attachmenthandler.cpp:211
+#: attachmenthandler.cpp:213
 #, kde-format
 msgid "Save Attachment"
 msgstr "儲存附件"
@@ -820,43 +820,43 @@ msgstr ""
 msgid "Use this color when drawing items without any tags"
 msgstr "此顏色用於當項目沒有任何標籤時"
 
-#: noteeditdialog.cpp:41
+#: noteeditdialog.cpp:42
 #, kde-format
 msgctxt "@title:window"
 msgid "Create Note"
 msgstr "建立新備忘"
 
-#: noteeditdialog.cpp:50
+#: noteeditdialog.cpp:51
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
 msgstr "取消"
 
-#: noteeditdialog.cpp:56
+#: noteeditdialog.cpp:57
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
 msgstr "儲存"
 
-#: noteeditdialog.cpp:77
+#: noteeditdialog.cpp:78
 #, kde-format
 msgctxt "@info"
 msgid "Calendar where the new note will be stored."
 msgstr "選擇新備忘要儲存在哪個行事曆。"
 
-#: noteeditdialog.cpp:79
+#: noteeditdialog.cpp:80
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Calendar where the new note will be stored."
 msgstr "選擇新備忘要儲存在哪個行事曆。"
 
-#: noteeditdialog.cpp:92
+#: noteeditdialog.cpp:93
 #, kde-format
 msgctxt "@label specify the title for this note"
 msgid "Title:"
 msgstr "標題："
 
-#: noteeditdialog.cpp:97
+#: noteeditdialog.cpp:98
 #, kde-format
 msgctxt "@label specify the text for this note"
 msgid "Text:"
@@ -1700,15 +1700,15 @@ msgstr "設定："
 msgid "Tags: "
 msgstr "標籤:："
 
-#: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:916
-#: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
+#: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:918
+#: printing/calprintpluginbase.cpp:1058 printing/calprintpluginbase.cpp:1115
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1，%2"
 
-#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:935
-#: printing/calprintpluginbase.cpp:1059
+#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:937
+#: printing/calprintpluginbase.cpp:1061
 #, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
@@ -1803,7 +1803,7 @@ msgid "To-do list"
 msgstr "待辦清單"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1716
+#: printing/calprintpluginbase.cpp:1718
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -1887,43 +1887,43 @@ msgstr "列印待辦事項(&D)"
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "列印所有的待辦事項清單（樹狀圖）"
 
-#: printing/calprinter.cpp:113
+#: printing/calprinter.cpp:115
 #, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
 msgstr "無法列印，因為沒有指定正確的列印樣式。"
 
-#: printing/calprinter.cpp:113
+#: printing/calprinter.cpp:115
 #, kde-format
 msgctxt "@title:window"
 msgid "Printing error"
 msgstr "列印錯誤"
 
-#: printing/calprinter.cpp:156
+#: printing/calprinter.cpp:158
 #, kde-format
 msgctxt "@title:window"
 msgid "Print"
 msgstr "列印"
 
-#: printing/calprinter.cpp:175
+#: printing/calprinter.cpp:177
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "列印樣式"
 
-#: printing/calprinter.cpp:187
+#: printing/calprinter.cpp:189
 #, kde-format
 msgctxt "@label"
 msgid "Page &orientation:"
 msgstr "列印方向(&O)："
 
-#: printing/calprinter.cpp:192
+#: printing/calprinter.cpp:194
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
 msgstr "設定列印方向"
 
-#: printing/calprinter.cpp:194
+#: printing/calprinter.cpp:196
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1934,37 +1934,37 @@ msgstr ""
 "選擇要用直向還是橫向列印。您也可以預設使用最適合於選取的樣式的方向，或是使用"
 "您印表機的預設值。"
 
-#: printing/calprinter.cpp:197
+#: printing/calprinter.cpp:199
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Default Orientation of Selected Style"
 msgstr "使用所選取的樣式預設的方向"
 
-#: printing/calprinter.cpp:198
+#: printing/calprinter.cpp:200
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
 msgstr "使用印表機預設"
 
-#: printing/calprinter.cpp:199
+#: printing/calprinter.cpp:201
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Portrait"
 msgstr "直向"
 
-#: printing/calprinter.cpp:200
+#: printing/calprinter.cpp:202
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
 msgstr "橫向"
 
-#: printing/calprinter.cpp:222
+#: printing/calprinter.cpp:224
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the type of print"
 msgstr "選擇列印型態"
 
-#: printing/calprinter.cpp:224
+#: printing/calprinter.cpp:226
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1975,7 +1975,7 @@ msgstr ""
 "在以下的列印型態中選取您要使用的型態。您可以列印每個單一的項目，或是指定時間"
 "範圍內（如一天、一週或一個月）的所有項目，或是列印您的待辦事項清單。"
 
-#: printing/calprinter.cpp:252
+#: printing/calprinter.cpp:254
 #, kde-format
 msgctxt "@action:button"
 msgid "&Preview"
@@ -2299,70 +2299,70 @@ msgstr "開啟此選項以在左方印出第幾週。"
 msgid "Print week &numbers"
 msgstr "列印週編號(&N)"
 
-#: printing/calprintpluginbase.cpp:142
+#: printing/calprintpluginbase.cpp:144
 #, kde-format
 msgid "This printing style does not have any configuration options."
 msgstr "這個列印樣式沒有任何設定選項。"
 
-#: printing/calprintpluginbase.cpp:298
+#: printing/calprintpluginbase.cpp:300
 #, kde-format
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
 msgstr ","
 
-#: printing/calprintpluginbase.cpp:310
+#: printing/calprintpluginbase.cpp:312
 #, kde-format
 msgid "Holiday"
 msgstr "假日"
 
-#: printing/calprintpluginbase.cpp:612
+#: printing/calprintpluginbase.cpp:614
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "已列印：%1"
 
-#: printing/calprintpluginbase.cpp:921
+#: printing/calprintpluginbase.cpp:923
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1─%2 %3"
 
-#: printing/calprintpluginbase.cpp:927
+#: printing/calprintpluginbase.cpp:929
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3，%4"
 
-#: printing/calprintpluginbase.cpp:994
+#: printing/calprintpluginbase.cpp:996
 #, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%2/%3 %1"
 
-#: printing/calprintpluginbase.cpp:1120
+#: printing/calprintpluginbase.cpp:1122
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1（期限：%2）"
 
-#: printing/calprintpluginbase.cpp:1125
+#: printing/calprintpluginbase.cpp:1127
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1（期限：%2）"
 
-#: printing/calprintpluginbase.cpp:1132
+#: printing/calprintpluginbase.cpp:1134
 #, kde-format
 msgid "To-do: %1"
 msgstr "待辦事項：%1"
 
-#: printing/calprintpluginbase.cpp:1878
+#: printing/calprintpluginbase.cpp:1880
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2–%3"
 
-#: printing/calprintpluginbase.cpp:1884
+#: printing/calprintpluginbase.cpp:1886
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
