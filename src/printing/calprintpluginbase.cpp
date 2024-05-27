@@ -141,7 +141,7 @@ QWidget *CalPrintPluginBase::createConfigWidget(QWidget *w)
     layout->addWidget(title);
     layout->addWidget(new QLabel(info(), wdg));
     layout->addSpacing(20);
-    layout->addWidget(new QLabel(i18n("This printing style does not have any configuration options."), wdg));
+    layout->addWidget(new QLabel(i18nc("@label:textbox", "This printing style does not have any configuration options."), wdg));
     layout->addStretch();
     return wdg;
 }
