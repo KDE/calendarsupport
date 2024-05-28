@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-28 00:38+0000\n"
 "PO-Revision-Date: 2023-09-25 10:13+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -2421,7 +2421,9 @@ msgid "Print week &numbers"
 msgstr "Imprime &numeros de septimana"
 
 #: printing/calprintpluginbase.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "This printing style does not have any configuration options."
+msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Iste stilo de imprimer non ha alcun optiones de configuration."
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-28 00:38+0000\n"
 "PO-Revision-Date: 2020-09-28 02:36+0200\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -2424,7 +2424,9 @@ msgid "Print week &numbers"
 msgstr "Nädalanum&brite trükkimine"
 
 #: printing/calprintpluginbase.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "This printing style does not have any configuration options."
+msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Sellel trükkimisstiilil ei anna midagi seadistada."
 

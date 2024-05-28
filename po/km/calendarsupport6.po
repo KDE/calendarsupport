@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-28 00:38+0000\n"
 "PO-Revision-Date: 2012-12-25 15:13+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -2522,7 +2522,9 @@ msgid "Print week &numbers"
 msgstr "បោះពុម្ព​លេខ​សប្ដាហ៍"
 
 #: printing/calprintpluginbase.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "This printing style does not have any configuration options."
+msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "រចនាប័ទ្ម​បោះពុម្ព​នេះ​មិនមាន​ជម្រើស​កំណត់​រចនាសម្ព័ន្ធ​ណា​មួយ​ឡើយ ។"
 
