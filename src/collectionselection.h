@@ -32,8 +32,8 @@ public:
     QItemSelectionModel *model() const;
     [[nodiscard]] Akonadi::Collection::List selectedCollections() const;
     [[nodiscard]] QList<Akonadi::Collection::Id> selectedCollectionIds() const;
-    bool contains(const Akonadi::Collection &c) const;
-    bool contains(Akonadi::Collection::Id id) const;
+    [[nodiscard]] bool contains(const Akonadi::Collection &c) const;
+    [[nodiscard]] bool contains(Akonadi::Collection::Id id) const;
 
     [[nodiscard]] bool hasSelection() const;
 

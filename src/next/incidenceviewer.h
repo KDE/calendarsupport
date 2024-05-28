@@ -105,7 +105,7 @@ public:
     /**
      * Returns the attachment model for the currently displayed incidence.
      */
-    QAbstractItemModel *attachmentModel() const;
+    [[nodiscard]] QAbstractItemModel *attachmentModel() const;
 
     /**
      * Sets whether the view shall be cleared as soon as an empty incidence is

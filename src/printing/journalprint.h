@@ -6,7 +6,6 @@
 
 #pragma once
 
-#include "calendarsupport_export.h"
 #include "calprintpluginbase.h"
 #include "ui_calprintjournalconfig_base.h"
 

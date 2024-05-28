@@ -56,7 +56,7 @@ public:
         mSelectedIncidences = inc;
     }
 
-    virtual KCalendarCore::Incidence::List selectedIncidences() const
+    [[nodiscard]] virtual KCalendarCore::Incidence::List selectedIncidences() const
     {
         return mSelectedIncidences;
     }
@@ -64,15 +64,15 @@ public:
     /**
      Returns KConfig group name where store settings
     */
-    virtual QString groupName() const = 0;
+    [[nodiscard]] virtual QString groupName() const = 0;
     /**
       Returns short description of print format.
     */
-    virtual QString description() const = 0;
+    [[nodiscard]] virtual QString description() const = 0;
     /**
       Returns long description of print format.
     */
-    virtual QString info() const = 0;
+    [[nodiscard]] virtual QString info() const = 0;
 
     /**
       Returns the sort ID of the plugin. This value will be used to identify
@@ -90,7 +90,7 @@ public:
     /**
       Returns true if the plugin should be enabled; false otherwise.
     */
-    virtual bool enabled() const
+    [[nodiscard]] virtual bool enabled() const
     {
         return false;
     }
