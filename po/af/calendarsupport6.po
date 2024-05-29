@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2002-11-07 11:37+0200\n"
 "Last-Translator: WEB-Translator <http://kde.af.org.za>\n"
 "Language-Team: AFRIKAANS <AF@lia.org.za>\n"
@@ -2602,12 +2602,12 @@ msgstr "Herhaal: %1"
 msgid "Journal entries"
 msgstr "Joernaal"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, fuzzy, kde-format
 msgid "Print &journal"
 msgstr "Joernaal"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr ""

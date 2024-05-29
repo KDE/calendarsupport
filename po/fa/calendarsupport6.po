@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2012-01-13 10:32+0330\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@ubuntu.ir>\n"
 "Language-Team: Farsi (Persian) <>\n"
@@ -2958,12 +2958,12 @@ msgstr "شخص: %1"
 msgid "Journal entries"
 msgstr "مدخلهای نشریه"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "چاپ &نشریه‌"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "همه نشریه‌ها را برای گستره داده‌های معین چاپ می‌کند"

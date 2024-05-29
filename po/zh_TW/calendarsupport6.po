@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2024-01-05 04:49+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -2677,12 +2677,12 @@ msgstr "人：%1"
 msgid "Journal entries"
 msgstr "日誌項目"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "列印日誌(&J)"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "列印指定日期範圍內所有的日誌"

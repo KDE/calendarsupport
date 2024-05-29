@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2023-12-18 15:26+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -2826,12 +2826,12 @@ msgstr "Person: %1"
 msgid "Journal entries"
 msgstr "Journaleinträge"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "&Journal drucken"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "Druckt alle Journaleinträge des angegebenen Zeitraums"

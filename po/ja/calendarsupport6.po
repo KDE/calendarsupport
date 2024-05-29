@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2011-08-14 14:07-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -2785,12 +2785,12 @@ msgstr "人: %1"
 msgid "Journal entries"
 msgstr "日記のエントリ"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "日記印刷(&J)"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "指定された日付範囲のすべての日記を印刷します"

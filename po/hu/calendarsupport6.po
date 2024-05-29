@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2024-01-25 11:05+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -2802,12 +2802,12 @@ msgstr "Személy: %1"
 msgid "Journal entries"
 msgstr "Naplóbejegyzések"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "Napló nyomt&atása"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "Minden napló kinyomtatása a megadott dátumtartományban"

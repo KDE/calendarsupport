@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2023-09-25 23:23+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -2794,12 +2794,12 @@ msgstr "Pertsona: %1"
 msgid "Journal entries"
 msgstr "Eguneroko sarrerak"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "Inprimatu &egunerakoa"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "Adierazitako data barruti bateko eguneroko guztiak inprimatzen ditu"

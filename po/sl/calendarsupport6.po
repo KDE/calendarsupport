@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
-"PO-Revision-Date: 2024-03-15 17:54+0100\n"
-"Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
+"PO-Revision-Date: 2024-05-28 07:05+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Lokalize 24.04.70\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -2411,11 +2411,10 @@ msgid "Print week &numbers"
 msgstr "Natisni &številke tednov"
 
 #: printing/calprintpluginbase.cpp:144
-#, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
-msgstr "Ta slog tiskanja nima nobenih nastavljivih možnosti."
+msgstr "Ta slog tiskanja nima nobenih možnosti konfiguracije."
 
 #: printing/calprintpluginbase.cpp:300
 #, kde-format
@@ -2795,12 +2794,12 @@ msgstr "Oseba: %1"
 msgid "Journal entries"
 msgstr "Dnevniški vnosi"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "Natisni d&nevnik"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "Natisne vse dogodke podanega datumskega območja"

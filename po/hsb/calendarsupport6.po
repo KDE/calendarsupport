@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2004-04-16 17:59+0200\n"
 "Last-Translator: Prof. Dr. Eduard Werner <e.werner@rz.uni-leipzig.de>\n"
 "Language-Team: Upper Sorbian\n"
@@ -2591,13 +2591,13 @@ msgstr "Wersija:"
 msgid "Journal entries"
 msgstr "Konfiguracija resursow"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, fuzzy, kde-format
 #| msgid "Status"
 msgid "Print &journal"
 msgstr "Staw:"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr ""

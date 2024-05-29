@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2024-01-17 17:23+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -2723,12 +2723,12 @@ msgstr "الشّخص: %1"
 msgid "Journal entries"
 msgstr "مدخلات اليوميّة"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "اطبع اليو&ميّة"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "يطبع كلّ اليوميّات في مدى التّاريخ المعطى"

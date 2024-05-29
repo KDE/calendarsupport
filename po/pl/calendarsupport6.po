@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-03 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2023-09-30 11:06+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.04.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -2416,7 +2415,9 @@ msgid "Print week &numbers"
 msgstr "Drukuj &numery tygodni"
 
 #: printing/calprintpluginbase.cpp:144
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "This printing style does not have any configuration options."
+msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Ten styl drukowania nie posiada żadnych opcji."
 
@@ -2798,12 +2799,12 @@ msgstr "Osoba: %1"
 msgid "Journal entries"
 msgstr "Wpisy dziennika"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "Drukuj &dziennik"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "Wydrukuj wszystkie dzienniki dla podanego okresu"

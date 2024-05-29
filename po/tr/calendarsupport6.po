@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
-"PO-Revision-Date: 2024-05-20 00:21+0300\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
+"PO-Revision-Date: 2024-05-28 16:54+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -82,7 +82,7 @@ msgid ""
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
 "Bu kutuyu işaretlediğinizde belirlenen yaştan eski olaylar ve yapılacaklar "
-"arşivlenir veya temizlenir. \"Yalnızca sil\" seçeneği etkin olduğunda ögeler "
+"arşivlenir veya temizlenir. “Yalnızca sil” seçeneği etkin olduğunda ögeler "
 "arşivlenecek, aksi halde kaydedilmeden temizleneceklerdir."
 
 #: archivedialog.cpp:93
@@ -301,13 +301,13 @@ msgstr "Arşiv dosyasının adı geçerli değil."
 #: attachmenthandler.cpp:96
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
-msgstr "Örnekte \"%1\" adlı bir ek bulunamadı."
+msgstr "Olayda “%1” adlı bir ek bulunamadı."
 
 #: attachmenthandler.cpp:107
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
-msgstr "\"%1\" eki bu bilgisayardan erişilemeyen bir web bağlantısıdır. "
+msgstr "“%1” eki bu bilgisayardan erişilemeyen bir web bağlantısıdır. "
 
 #: attachmenthandler.cpp:123
 #, kde-format
@@ -471,7 +471,7 @@ msgid ""
 "the System Settings \"About Me\" Module. Uncheck this box to be able to "
 "specify your full name and e-mail."
 msgstr ""
-"Bu kutucuyu tıklayarak Sistem Ayarları \"Hakkımda\" Birimi kullanılarak "
+"Bu kutucuyu tıklayarak Sistem Ayarları “Hakkımda” Birimi kullanılarak "
 "tanımlanan, KDE ile ilgili e-posta ayarlarını kullanabilirsiniz. Tam adınızı "
 "ve e-posta adresinizi belirtmek istiyorsanız bu kutucuğun imini kaldırın."
 
@@ -658,7 +658,7 @@ msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
 "holidays."
 msgstr ""
-"K Organizatör'ün tatillerde çalışma saatlerini işaretlemesini bu kutucuğa "
+"K Organizatör’ün tatillerde çalışma saatlerini işaretlemesini bu kutuya "
 "tıklayarak engelleyebilirsiniz."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
@@ -825,7 +825,7 @@ msgid ""
 "to-dos and events you create."
 msgstr ""
 "Buraya tam adınızı girin. Bu ad, oluşturduğunuz yapılacak işlerde ve "
-"olaylarda \"Düzenleyici\" olarak gösterilecek."
+"olaylarda “Düzenleyici” olarak gösterilecek."
 
 #: kcalprefs.kcfg:196
 #, kde-format
@@ -858,7 +858,7 @@ msgstr "hiçkimse@hiçbiryer"
 #: kcalprefs.kcfg:217
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
-msgstr "\"Etiket yok\" rengi (\"Yalnızca etiket\" çizim şemaları için)"
+msgstr "“Etiket yok” rengi (“Yalnızca etiket\" çizim şemaları için)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:218
@@ -868,8 +868,8 @@ msgid ""
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
-"Bir unsur, hiçbir etikete ait değil ise, \"etiket yok\" veya \"ayarlanmamış "
-"etiket\" durumu için kullanılacak rengi seçin. Bu renk, \"Yalnızca etiket\" "
+"Bir unsur, hiçbir etikete ait değil ise, “etiket yok” veya “ayarlanmamış "
+"etiket” durumu için kullanılacak rengi seçin. Bu renk, “Yalnızca etiket” "
 "şeması kullanılarak ajanda veya aylık görünümde ögelerin çizilmesinde "
 "kullanılacaktır."
 
@@ -2030,9 +2030,9 @@ msgid ""
 "\". You can also default to the orientation best suited to the selected "
 "style or to your printer's default setting."
 msgstr ""
-"Çıktınızın \"dikey\" veya \"yatay\" olarak yazdırılmasını seçin. Ayrıca "
-"seçilen biçeme en iyi uyan yönelimi veya yazıcının öntanımlı ayarlarını "
-"kullanmayı da seçebilirsiniz."
+"Çıktınızın “dikey” veya “yatay” olarak yazdırılmasını seçin. Ayrıca seçilen "
+"biçeme en iyi uyan yönelimi veya yazıcının öntanımlı ayarlarını kullanmayı "
+"da seçebilirsiniz."
 
 #: printing/calprinter.cpp:199
 #, kde-format
@@ -2386,7 +2386,7 @@ msgid ""
 "Similar to \"Print daily recurring to-dos and events\". Weekly to-dos and "
 "events will be omitted when making a print of the selected month."
 msgstr ""
-"\"Günlük olarak yinelenen yapılacak işleri ve olayları yazdır\" seçeneğine "
+"“Günlük olarak yinelenen yapılacak işleri ve olayları yazdır” seçeneğine "
 "benzer şekilde, seçilmiş aydan çıktı alırken haftalık olarak yapılacak işler "
 "ve olaylar yok sayılacaktır."
 
@@ -2415,11 +2415,10 @@ msgid "Print week &numbers"
 msgstr "Hafta &numaralarını yazdır"
 
 #: printing/calprintpluginbase.cpp:144
-#, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
-msgstr "Yazdırma biçiminin hiç yapılandırma seçeneği yok."
+msgstr "Yazdırma biçiminde yapılandırma seçeneği yok."
 
 #: printing/calprintpluginbase.cpp:300
 #, kde-format
@@ -2442,13 +2441,13 @@ msgstr "yazdırıldı: %1"
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
-msgstr "%1-%2 %3"
+msgstr "%1–%2 %3"
 
 #: printing/calprintpluginbase.cpp:929
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
-msgstr "%1-%2 %3, %4"
+msgstr "%1–%2 %3, %4"
 
 #: printing/calprintpluginbase.cpp:996
 #, kde-format
@@ -2787,7 +2786,7 @@ msgstr "Tatilleri şöyle gö&ster:"
 #, kde-format
 msgctxt "Description - date"
 msgid "%1 - %2"
-msgstr "%1 - %2"
+msgstr "%1 — %2"
 
 #: printing/journalprint.cpp:126
 #, kde-format
@@ -2799,12 +2798,12 @@ msgstr "Kişi: %1"
 msgid "Journal entries"
 msgstr "Günce girdileri"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "Günceyi ya&zdır"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "Verilen bir tarih erimi için tüm günce girdilerini yazdırır"
@@ -2920,7 +2919,7 @@ msgstr "hiçbiri"
 #: utils.cpp:459
 #, kde-format
 msgid "Blocked Reminders:"
-msgstr "Engellenen Anımsatıcılar:"
+msgstr "Engellenen anımsatıcılar:"
 
 #: utils.cpp:524
 #, kde-format

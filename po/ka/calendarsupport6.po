@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
-"PO-Revision-Date: 2023-09-28 12:14+0200\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
+"PO-Revision-Date: 2024-05-28 05:53+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -2406,8 +2406,7 @@ msgid "Print week &numbers"
 msgstr "კვირის &ნომრების დაბეჭდვა"
 
 #: printing/calprintpluginbase.cpp:144
-#, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "ამ ბეჭდვის სტილს მოსარგები პარამეტრები არ გააჩნია."
@@ -2790,12 +2789,12 @@ msgstr "პიროვნება: %1"
 msgid "Journal entries"
 msgstr "ჟურნალის ჩანაწერები"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "&ჟურნალის დაბეჭდვა"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "მითითებულ დროის დიაპაზონში ყველა ჟურნალის დაბეჭდვა"

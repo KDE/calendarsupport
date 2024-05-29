@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -2806,12 +2806,12 @@ msgstr "Orang: %1"
 msgid "Journal entries"
 msgstr "Entri jurnal"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, fuzzy, kde-format
 msgid "Print &journal"
 msgstr "Cetak jurnal"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "Mencetak semua jurnal untuk julat tarikh tertentu"

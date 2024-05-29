@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-28 00:38+0000\n"
+"POT-Creation-Date: 2024-05-29 00:39+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -2302,11 +2302,10 @@ msgid "Print week &numbers"
 msgstr "打印周序号(&N)"
 
 #: printing/calprintpluginbase.cpp:144
-#, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
-msgstr "此打印样式无任何可配置的选项。"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:300
 #, kde-format
@@ -2679,12 +2678,12 @@ msgstr "个人：%1"
 msgid "Journal entries"
 msgstr "日记项"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:31
 #, kde-format
 msgid "Print &journal"
 msgstr "打印日记(&J)"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:36
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "打印给定日期范围中的全部日记"
