@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-29 00:39+0000\n"
-"PO-Revision-Date: 2024-05-28 09:23+0300\n"
+"PO-Revision-Date: 2024-06-07 13:49+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -863,7 +863,7 @@ msgstr ""
 #: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr "להשתמש בצבע הזה בעת ציוד פריטים בלי תגיות כלשהן"
+msgstr "להשתמש בצבע הזה בעת ציור פריטים בלי תגיות כלשהן"
 
 #: noteeditdialog.cpp:42
 #, kde-format
