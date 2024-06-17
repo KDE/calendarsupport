@@ -2,7 +2,7 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Stefan Asserhäll <stefan.asserhall@gmail.com>, 2009, 2010.
+# SPDX-FileCopyrightText: 2009, 2010, 2024 Stefan Asserhäll <stefan.asserhall@gmail.com>
 # Stefan Asserhall <stefan.asserhall@gmail.com>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022.
 # Arve Eriksson <031299870@telia.com>, 2011.
 msgid ""
@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-29 00:39+0000\n"
-"PO-Revision-Date: 2022-09-24 14:58+0200\n"
-"Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
+"PO-Revision-Date: 2024-06-16 19:42+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: archivedialog.cpp:43
@@ -176,12 +176,10 @@ msgid "Archive &file:"
 msgstr "Arkiv&fil:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|iCalendar-filer"
+msgstr "iCalendar-filer (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -337,12 +335,10 @@ msgid "There are no items before %1"
 msgstr "Det finns inga objekt före %1"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Arkivera"
+msgstr "Arkivera"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -354,8 +350,7 @@ msgstr ""
 "Följande objekt kommer att tas bort:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Ta bort gamla objekt"
@@ -2402,8 +2397,7 @@ msgid "Print week &numbers"
 msgstr "Skriv ut vecko&nummer"
 
 #: printing/calprintpluginbase.cpp:144
-#, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Utskriftsstilen har inga inställningsalternativ."
