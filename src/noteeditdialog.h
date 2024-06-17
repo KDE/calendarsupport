@@ -8,7 +8,7 @@
 
 #include "calendarsupport_export.h"
 
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 #include <Akonadi/Collection>
 #include <Akonadi/Item>
