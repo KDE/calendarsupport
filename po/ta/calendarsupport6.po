@@ -12,13 +12,13 @@
 #
 # Ambalam <tamilpc@ambalam.com>, 2004.
 # root <root@localhost.localdomain>, 2004.
-# SPDX-FileCopyrightText: 2022, 2023 Kishore G <kishore96@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-03 00:38+0000\n"
-"PO-Revision-Date: 2023-12-17 16:42+0530\n"
+"PO-Revision-Date: 2024-06-16 19:59+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.05.1\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -35,11 +35,10 @@ msgid "Archive/Delete Past Events and To-dos"
 msgstr "பழைய நிகழ்வுகளையும் செய்யவேண்டியவற்றையும் காப்பகப்படுத்தல்/நீக்கல்"
 
 #: archivedialog.cpp:50
-#, fuzzy, kde-format
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Archive"
-msgstr "காப்பகம்"
+msgstr "&காப்பகப்படுத்து"
 
 #: archivedialog.cpp:62
 #, fuzzy, kde-kuit-format
