@@ -5,7 +5,7 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR})
 ########### next target ###############
 
 add_executable(noteeditdialogtest noteeditdialogtest.cpp noteeditdialogtest.h)
-if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(noteeditdialogtest PROPERTIES UNITY_BUILD ON)
 endif()
 add_test(NAME noteeditdialogtest COMMAND noteeditdialogtest)

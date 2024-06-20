@@ -76,7 +76,7 @@ ecm_qt_declare_logging_category(KPim6CalendarSupport HEADER calendarsupport_debu
 
 kconfig_add_kcfg_files(KPim6CalendarSupport kcalprefs_base.kcfgc)
 
-if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6CalendarSupport PROPERTIES UNITY_BUILD ON)
 endif()
 ecm_generate_export_header(
@@ -204,7 +204,7 @@ endif()
 
 ecm_qt_install_logging_categories(EXPORT CALENDARSUPPORT FILE calendarsupport.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 
-if (BUILD_QCH)
+if(BUILD_QCH)
     ecm_add_qch(
         KPim6CalendarSupport_QCH
         NAME KPim6CalendarSupport
@@ -229,5 +229,5 @@ if (BUILD_QCH)
         TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         COMPONENT Devel
-    )
+   )
 endif()
