@@ -2305,7 +2305,7 @@ msgstr "打印周序号(&N)"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
-msgstr ""
+msgstr "此打印样式没有可配置的选项。"
 
 #: printing/calprintpluginbase.cpp:300
 #, kde-format
