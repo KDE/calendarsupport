@@ -210,7 +210,7 @@ bool AttachmentHandler::view(const QString &attachmentName, const ScheduleMessag
 bool AttachmentHandler::saveAs(const Attachment &attachment)
 {
     // get the saveas file name
-    const QString saveAsFile = QFileDialog::getSaveFileName(d->mParent, i18n("Save Attachment"), attachment.label());
+    const QString saveAsFile = QFileDialog::getSaveFileName(d->mParent, i18nc("@title:window", "Save Attachment"), attachment.label());
     if (saveAsFile.isEmpty()) {
         return false;
     }
