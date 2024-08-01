@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-29 00:39+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2012-12-25 15:13+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -339,7 +339,9 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr "មិន​អាច​បង្កើត​ឯកសារ​បណ្ដោះអាសន្ន​ សម្រាប់​ឯកសារ​ភ្ជាប់​បាន​ឡើយ​ ។"
 
 #: attachmenthandler.cpp:213
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Attachment"
+msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "រក្សាទុក​ឯកសារ​ភ្ជាប់​"
 

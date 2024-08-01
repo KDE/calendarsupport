@@ -4,21 +4,21 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Manuel Tortosa Moreno <manutortosa@chakra-project.org>, 2009, 2010, 2011.
-# Josep M. Ferrer <txemaq@gmail.com>, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-29 00:39+0000\n"
-"PO-Revision-Date: 2024-05-28 13:03+0200\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"PO-Revision-Date: 2024-07-31 11:36+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.05.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
@@ -26,7 +26,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive/Delete Past Events and To-dos"
-msgstr "Arxiva/elimina els esdeveniments i tasques pendents antigues"
+msgstr "Arxiva/suprimeix els esdeveniments i tasques pendents antigues"
 
 #: archivedialog.cpp:50
 #, kde-format
@@ -79,7 +79,7 @@ msgid ""
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
 "Si activeu aquesta casella, els esdeveniments i les tasques pendents "
-"anteriors a la data indicada s'arxivaran o s'eliminaran. Els elements "
+"anteriors a la data indicada s'arxivaran o se suprimiran. Els elements "
 "s'arxivaran excepte que s'activi l'opció «Només suprimeix»; altrament els "
 "elements s'eliminaran i no es desaran."
 
@@ -323,7 +323,9 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr "No s'ha pogut crear el fitxer temporal per a l'adjunt."
 
 #: attachmenthandler.cpp:213
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Attachment"
+msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "Desa l'adjunt"
 

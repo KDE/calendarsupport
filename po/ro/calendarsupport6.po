@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-29 00:39+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2013-02-16 10:59+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -285,7 +285,9 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr "Fișierul temporar pentru atașament nu poate fi creat."
 
 #: attachmenthandler.cpp:213
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Attachment"
+msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "Salvează atașamentul"
 

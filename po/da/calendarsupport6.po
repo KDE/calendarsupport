@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-29 00:39+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2020-07-27 17:32+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -317,7 +317,9 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr "Kan ikke oprette midlertidig fil til bilaget."
 
 #: attachmenthandler.cpp:213
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Attachment"
+msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "Gem bilag"
 

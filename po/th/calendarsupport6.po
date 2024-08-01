@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-29 00:39+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2008-07-21 16:18+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -349,6 +349,7 @@ msgstr ""
 #: attachmenthandler.cpp:213
 #, fuzzy, kde-format
 #| msgid "Remove Attachments"
+msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "เอาสิ่งที่แนบมาด้วยออก"
 

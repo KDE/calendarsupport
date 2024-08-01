@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-29 00:39+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2011-08-14 14:07-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -295,9 +295,12 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 
 #: attachmenthandler.cpp:213
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "1 Attachment:"
+#| msgid_plural "%1 Attachments:"
+msgctxt "@title:window"
 msgid "Save Attachment"
-msgstr ""
+msgstr "添付ファイル %1 個:"
 
 #: cellitem.cpp:38
 #, kde-kuit-format

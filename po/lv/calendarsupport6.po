@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-29 00:39+0000\n"
+"POT-Creation-Date: 2024-08-01 00:41+0000\n"
 "PO-Revision-Date: 2010-01-01 20:40+0200\n"
 "Last-Translator: Viesturs Zarins <viesturs.zarins@mii.lu.lv>\n"
 "Language-Team: American English <locale@laka.lv>\n"
@@ -295,9 +295,11 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 
 #: attachmenthandler.cpp:213
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "No Attachments"
+msgctxt "@title:window"
 msgid "Save Attachment"
-msgstr ""
+msgstr "Nav pielikumu"
 
 #: cellitem.cpp:38
 #, kde-kuit-format
