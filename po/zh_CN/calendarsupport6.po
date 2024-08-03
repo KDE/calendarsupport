@@ -298,11 +298,10 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr "无法为附件创建临时文件。"
 
 #: attachmenthandler.cpp:213
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
-msgstr "保存附件"
+msgstr ""
 
 #: cellitem.cpp:38
 #, kde-kuit-format
