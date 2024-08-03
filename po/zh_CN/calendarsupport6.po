@@ -300,7 +300,7 @@ msgstr "无法为附件创建临时文件。"
 #: attachmenthandler.cpp:213
 #, kde-format
 msgid "Save Attachment"
-msgstr "保存附件"
+msgstr ""
 
 #: cellitem.cpp:38
 #, kde-kuit-format
