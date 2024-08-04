@@ -301,7 +301,7 @@ msgstr "无法为附件创建临时文件。"
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
-msgstr ""
+msgstr "保存附件"
 
 #: cellitem.cpp:38
 #, kde-kuit-format

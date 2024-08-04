@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-01 00:41+0000\n"
-"PO-Revision-Date: 2024-05-30 03:02+0900\n"
+"PO-Revision-Date: 2024-08-03 14:15+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -298,8 +298,7 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr "無法建立附加檔之暫存檔。"
 
 #: attachmenthandler.cpp:213
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "儲存附件"
