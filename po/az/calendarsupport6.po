@@ -1,22 +1,22 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the calendarsupport package.
 #
-# Kheyyam Gojayev <xxmn77@gmail.com>, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024 Kheyyam Gojayev <xxmn77@gmail.com>
 # SPDX-FileCopyrightText: 2024 Kheyyam Godjayev <xxmn77gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-01 00:41+0000\n"
-"PO-Revision-Date: 2024-06-25 14:24+0400\n"
-"Last-Translator: Kheyyam Godjayev <xxmn77gmail.com>\n"
+"PO-Revision-Date: 2024-08-09 15:51+0400\n"
+"Last-Translator: Khayyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -322,11 +322,10 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr "Bu əlavə üçün müvəqqəti fayl yaratmaq mümkün deyil."
 
 #: attachmenthandler.cpp:213
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
-msgstr "Əlavəni saxlamaq"
+msgstr "Qoşmanı saxlamaq"
 
 #: cellitem.cpp:38
 #, kde-kuit-format
