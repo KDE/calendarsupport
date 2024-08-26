@@ -285,8 +285,6 @@ msgstr ""
 
 #: attachmenthandler.cpp:213
 #, fuzzy, kde-format
-#| msgid "1 Attachment:"
-#| msgid_plural "%1 Attachments:"
 msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "1 vedlegg:"
@@ -2288,7 +2286,6 @@ msgstr "Skriv ut veke&nummer"
 
 #: printing/calprintpluginbase.cpp:144
 #, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Denne utskriftsstilen har ingen oppsettsval."

@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 # Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012, 2013, 2014, 2015, 2017, 2018, 2020, 2021.
 # Jannick Kuhr <opensource@kuhr.org>, 2009.
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2009.
@@ -12,7 +13,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-01 00:41+0000\n"
-"PO-Revision-Date: 2023-12-18 15:26+0100\n"
+"PO-Revision-Date: 2024-08-19 23:23+0200\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -332,8 +333,7 @@ msgstr ""
 "Es war nicht möglich eine temporäre Datei für diesen Anhang zu erstellen."
 
 #: attachmenthandler.cpp:213
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "Anhang speichern"
@@ -2439,8 +2439,7 @@ msgid "Print week &numbers"
 msgstr "Kale&nderwoche drucken"
 
 #: printing/calprintpluginbase.cpp:144
-#, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Für diesen Druckstil gibt es keine Einstellmöglichkeiten."
