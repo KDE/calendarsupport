@@ -17,7 +17,6 @@ target_sources(KPim6CalendarSupport PRIVATE
   incidenceattachmentmodel.cpp
   kcalprefs.cpp
   messagewidget.cpp
-  noteeditdialog.cpp
   utils.cpp
   urihandler.cpp
 
@@ -41,7 +40,6 @@ target_sources(KPim6CalendarSupport PRIVATE
   archivedialog.h
   cellitem.h
   identitymanager.h
-  noteeditdialog.h
   attachmenthandler.h
   eventarchiver.h
   printing/printplugin.h
@@ -105,7 +103,6 @@ PRIVATE
   KF6::KIOWidgets
   KF6::GuiAddons
   KPim6::AkonadiWidgets
-  KPim6::AkonadiNotes
   KF6::Holidays
   KF6::Codecs
   KPim6::AkonadiCore
@@ -136,7 +133,6 @@ ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
   CalendarSingleton
   MessageWidget
   ArchiveDialog
-  NoteEditDialog
   UriHandler
   REQUIRED_HEADERS CalendarSupport_HEADERS
   PREFIX CalendarSupport
@@ -198,7 +194,6 @@ install(FILES
     COMPONENT Devel
 )
 if(BUILD_TESTING)
-    add_subdirectory(autotests)
     add_subdirectory(freebusymodel/autotests)
 endif()
 
