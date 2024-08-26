@@ -306,8 +306,6 @@ msgstr ""
 # unreviewed-context
 #: eventarchiver.cpp:127
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
 msgctxt "@title:window"
 msgid "Archive"
 msgstr "&Vurke"
@@ -321,7 +319,6 @@ msgstr ""
 
 #: eventarchiver.cpp:159
 #, fuzzy, kde-format
-#| msgid "Delete old events"
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Sihko boares dhphusaid"
@@ -2222,7 +2219,6 @@ msgstr "Čálit &vahkkonummiriid"
 
 #: printing/calprintpluginbase.cpp:144
 #, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Dán čálihánstiillas eai leat heivehaneavttut."

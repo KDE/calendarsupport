@@ -176,8 +176,6 @@ msgstr "Arkiv&fil:"
 
 #: archivedialog.cpp:144
 #, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
 msgstr "*.ics|Kalenderfiler"
@@ -337,8 +335,6 @@ msgstr "Det er ingen elementer før %1"
 
 #: eventarchiver.cpp:127
 #, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
 msgctxt "@title:window"
 msgid "Archive"
 msgstr "&Arkiver"
@@ -354,7 +350,6 @@ msgstr ""
 
 #: eventarchiver.cpp:159
 #, fuzzy, kde-format
-#| msgid "Delete Old Items"
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Slett gamle elementer"
@@ -2370,7 +2365,6 @@ msgstr "Skriv ut uke&nummer"
 
 #: printing/calprintpluginbase.cpp:144
 #, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Denne utskriftsstilen har ingen innstillinger."
