@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2024-08-05 11:29+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -826,48 +826,6 @@ msgstr ""
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Používat tuto barvu při kreslení položek bez jakýchkoliv značek"
-
-#: noteeditdialog.cpp:42
-#, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr "Vytvořit poznámku"
-
-#: noteeditdialog.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: noteeditdialog.cpp:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Save"
-msgstr "Uložit"
-
-#: noteeditdialog.cpp:78
-#, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "Kalendář, kam bude nová poznámka uložena."
-
-#: noteeditdialog.cpp:80
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "Kalendář, kam bude nová poznámka uložena."
-
-#: noteeditdialog.cpp:93
-#, kde-format
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "Název:"
-
-#: noteeditdialog.cpp:98
-#, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
-msgstr "Text:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -2847,3 +2805,31 @@ msgstr "%1 (%2)"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr "^%1 \\(.*\\)"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "Vytvořit poznámku"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Zrušit"
+
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "Uložit"
+
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Kalendář, kam bude nová poznámka uložena."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Kalendář, kam bude nová poznámka uložena."
+
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "Název:"
+
+#~ msgctxt "@label specify the text for this note"
+#~ msgid "Text:"
+#~ msgstr "Text:"

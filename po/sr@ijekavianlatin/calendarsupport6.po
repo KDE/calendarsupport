@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2016-03-20 14:17+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -897,54 +897,6 @@ msgstr ""
 #| msgid "Use this color when drawing items without a category"
 msgid "Use this color when drawing items without any tags"
 msgstr "Boja za iscrtavanje stavki bez kategorije"
-
-#: noteeditdialog.cpp:42
-#, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr ""
-
-#: noteeditdialog.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr ""
-
-#: noteeditdialog.cpp:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Save"
-msgstr ""
-
-#: noteeditdialog.cpp:78
-#, fuzzy, kde-format
-#| msgid "Select the calendar where this item will be stored."
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "Izaberite kalendar za skladištenje ove stavke."
-
-#: noteeditdialog.cpp:80
-#, fuzzy, kde-format
-#| msgid "Select the calendar where this item will be stored."
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "Izaberite kalendar za skladištenje ove stavke."
-
-#: noteeditdialog.cpp:93
-#, fuzzy, kde-format
-#| msgid "&Title:"
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "&Naslov:"
-
-# >> @item:inlistbox Show sub-day events as:
-# >> @item:inlistbox Show holidays as:
-#: noteeditdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "Text"
-msgctxt "@label specify the text for this note"
-msgid "Text:"
-msgstr "tekst"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -3004,6 +2956,32 @@ msgstr "%1 (%2): %3"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Select the calendar where this item will be stored."
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Izaberite kalendar za skladištenje ove stavke."
+
+#, fuzzy
+#~| msgid "Select the calendar where this item will be stored."
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Izaberite kalendar za skladištenje ove stavke."
+
+#, fuzzy
+#~| msgid "&Title:"
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "&Naslov:"
+
+# >> @item:inlistbox Show sub-day events as:
+# >> @item:inlistbox Show holidays as:
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "@label specify the text for this note"
+#~ msgid "Text:"
+#~ msgstr "tekst"
 
 #~ msgctxt "@info"
 #~ msgid "Unable to purge to-dos with uncompleted children."

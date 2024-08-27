@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2011-02-27 12:20+0100\n"
 "Last-Translator: Marko Dimjasevic <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -818,49 +818,6 @@ msgstr ""
 #: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr ""
-
-#: noteeditdialog.cpp:42
-#, fuzzy, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr "Kliknite da biste dodali novi zadatak"
-
-#: noteeditdialog.cpp:51
-#, fuzzy, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "&Promjeni"
-
-#: noteeditdialog.cpp:57
-#, fuzzy, kde-format
-#| msgid "Travel"
-msgctxt "@action:button"
-msgid "Save"
-msgstr "Putovanje"
-
-#: noteeditdialog.cpp:78
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "Boja zadataka koji su probili krajnji rok:"
-
-#: noteeditdialog.cpp:80
-#, fuzzy, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "Boja zadataka koji su probili krajnji rok:"
-
-#: noteeditdialog.cpp:93
-#, fuzzy, kde-format
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "&Naslov:"
-
-#: noteeditdialog.cpp:98
-#, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -2785,6 +2742,37 @@ msgstr "%1 %2"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "Kliknite da biste dodali novi zadatak"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "&Promjeni"
+
+#, fuzzy
+#~| msgid "Travel"
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "Putovanje"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Boja zadataka koji su probili krajnji rok:"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Boja zadataka koji su probili krajnji rok:"
+
+#, fuzzy
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "&Naslov:"
 
 #, fuzzy
 #~ msgctxt "@option sort by title"

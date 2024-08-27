@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2002-11-07 11:37+0200\n"
 "Last-Translator: WEB-Translator <http://kde.af.org.za>\n"
 "Language-Team: AFRIKAANS <AF@lia.org.za>\n"
@@ -789,49 +789,6 @@ msgstr ""
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr ""
-
-#: noteeditdialog.cpp:42
-#, fuzzy, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr "Uitvee To-Do"
-
-#: noteeditdialog.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr ""
-
-#: noteeditdialog.cpp:57
-#, fuzzy, kde-format
-#| msgid "Travel"
-msgctxt "@action:button"
-msgid "Save"
-msgstr "Reis"
-
-#: noteeditdialog.cpp:78
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "Te-doen as gevolg vandag kleur:"
-
-#: noteeditdialog.cpp:80
-#, fuzzy, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "Te-doen as gevolg vandag kleur:"
-
-#: noteeditdialog.cpp:93
-#, fuzzy, kde-format
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "Titel"
-
-#: noteeditdialog.cpp:98
-#, fuzzy, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
-msgstr "Moet nooit"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -2748,6 +2705,37 @@ msgstr "%1 %2"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "Uitvee To-Do"
+
+#, fuzzy
+#~| msgid "Travel"
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "Reis"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Te-doen as gevolg vandag kleur:"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Te-doen as gevolg vandag kleur:"
+
+#, fuzzy
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "Titel"
+
+#, fuzzy
+#~ msgctxt "@label specify the text for this note"
+#~ msgid "Text:"
+#~ msgstr "Moet nooit"
 
 #, fuzzy
 #~ msgctxt "@option sort by title"

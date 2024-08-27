@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2024-08-02 09:43+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -897,48 +897,6 @@ msgstr ""
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Utilisez cette couleur pour représenter des éléments sans étiquette"
-
-#: noteeditdialog.cpp:42
-#, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr "Créer une note"
-
-#: noteeditdialog.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Annuler"
-
-#: noteeditdialog.cpp:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Save"
-msgstr "Enregistrer"
-
-#: noteeditdialog.cpp:78
-#, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "Agenda où la nouvelle note sera enregistrée."
-
-#: noteeditdialog.cpp:80
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "Agenda où la nouvelle note sera enregistrée."
-
-#: noteeditdialog.cpp:93
-#, kde-format
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "Titre :"
-
-#: noteeditdialog.cpp:98
-#, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
-msgstr "Texte :"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -3037,6 +2995,34 @@ msgstr "%1 (%2)"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr "^%1 \\(.*\\)"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "Créer une note"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Annuler"
+
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "Enregistrer"
+
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Agenda où la nouvelle note sera enregistrée."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Agenda où la nouvelle note sera enregistrée."
+
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "Titre :"
+
+#~ msgctxt "@label specify the text for this note"
+#~ msgid "Text:"
+#~ msgstr "Texte :"
 
 #~ msgctxt "@option sort by title"
 #~ msgid "Title"

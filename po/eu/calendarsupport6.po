@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2024-08-02 23:31+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -877,48 +877,6 @@ msgstr ""
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Erabili kolore hau etiketarik gabeko elementuak marraztean"
-
-#: noteeditdialog.cpp:42
-#, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr "Sortu ohar bat"
-
-#: noteeditdialog.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Utzi"
-
-#: noteeditdialog.cpp:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Save"
-msgstr "Gorde"
-
-#: noteeditdialog.cpp:78
-#, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "Ohar berria gordetzeko egutegia."
-
-#: noteeditdialog.cpp:80
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "Ohar berria gordetzeko egutegia."
-
-#: noteeditdialog.cpp:93
-#, kde-format
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "Titulua:"
-
-#: noteeditdialog.cpp:98
-#, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
-msgstr "Testua:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -2933,6 +2891,34 @@ msgstr "%1 (%2)"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr "^%1 \\(.*\\)"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "Sortu ohar bat"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Utzi"
+
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "Gorde"
+
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Ohar berria gordetzeko egutegia."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Ohar berria gordetzeko egutegia."
+
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "Titulua:"
+
+#~ msgctxt "@label specify the text for this note"
+#~ msgid "Text:"
+#~ msgstr "Testua:"
 
 #~ msgctxt "@option sort by title"
 #~ msgid "Title"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2019-09-29 12:45+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -851,49 +851,6 @@ msgstr ""
 #: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr ""
-
-#: noteeditdialog.cpp:42
-#, fuzzy, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr "Барои афзудани масъалаи нав пахш кунед"
-
-#: noteeditdialog.cpp:51
-#, fuzzy, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "&Дигаргун кунед"
-
-#: noteeditdialog.cpp:57
-#, fuzzy, kde-format
-#| msgid "Travel"
-msgctxt "@action:button"
-msgid "Save"
-msgstr "Саёҳат"
-
-#: noteeditdialog.cpp:78
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "Ранги масъалаҳои мӯҳлаташон гузашта"
-
-#: noteeditdialog.cpp:80
-#, fuzzy, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "Ранги масъалаҳои мӯҳлаташон гузашта"
-
-#: noteeditdialog.cpp:93
-#, fuzzy, kde-format
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "&Сарлавҳа:"
-
-#: noteeditdialog.cpp:98
-#, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -2853,6 +2810,37 @@ msgstr "%1 %2"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "Барои афзудани масъалаи нав пахш кунед"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "&Дигаргун кунед"
+
+#, fuzzy
+#~| msgid "Travel"
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "Саёҳат"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Ранги масъалаҳои мӯҳлаташон гузашта"
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Ранги масъалаҳои мӯҳлаташон гузашта"
+
+#, fuzzy
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "&Сарлавҳа:"
 
 #, fuzzy
 #~ msgctxt "@option sort by title"

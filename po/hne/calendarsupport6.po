@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2009-02-28 20:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -828,54 +828,6 @@ msgstr ""
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr ""
-
-#: noteeditdialog.cpp:42
-#, fuzzy, kde-format
-#| msgid "Create a new To-do"
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr "नवा कामसूची बनाव"
-
-#: noteeditdialog.cpp:51
-#, fuzzy, kde-format
-#| msgid "&Cancel"
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "खारिज करव (&C)"
-
-#: noteeditdialog.cpp:57
-#, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Save"
-msgctxt "@action:button"
-msgid "Save"
-msgstr "सहेजव"
-
-#: noteeditdialog.cpp:78
-#, fuzzy, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "ये काम बर सेट तारीक सेट करथे."
-
-#: noteeditdialog.cpp:80
-#, fuzzy, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "ये काम बर सेट तारीक सेट करथे."
-
-#: noteeditdialog.cpp:93
-#, fuzzy, kde-format
-#| msgid "&Title:"
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "सीर्सकः (&T)"
-
-#: noteeditdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "Text"
-msgctxt "@label specify the text for this note"
-msgid "Text:"
-msgstr "पाठ"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -2857,6 +2809,47 @@ msgstr "%1 (%2)"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Create a new To-do"
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "नवा कामसूची बनाव"
+
+#, fuzzy
+#~| msgid "&Cancel"
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "खारिज करव (&C)"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "Save"
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "सहेजव"
+
+#, fuzzy
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "ये काम बर सेट तारीक सेट करथे."
+
+#, fuzzy
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "ये काम बर सेट तारीक सेट करथे."
+
+#, fuzzy
+#~| msgid "&Title:"
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "सीर्सकः (&T)"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "@label specify the text for this note"
+#~ msgid "Text:"
+#~ msgstr "पाठ"
 
 #, fuzzy
 #~ msgctxt "@option sort by title"

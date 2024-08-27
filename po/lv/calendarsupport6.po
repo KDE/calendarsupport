@@ -3,19 +3,20 @@
 #
 # Nauris <mreloads@yahoo.co.uk>, 2009.
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2010.
+# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
-"PO-Revision-Date: 2010-01-01 20:40+0200\n"
-"Last-Translator: Viesturs Zarins <viesturs.zarins@mii.lu.lv>\n"
-"Language-Team: American English <locale@laka.lv>\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
+"PO-Revision-Date: 2024-08-23 14:49+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 24.05.2\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
@@ -39,6 +40,9 @@ msgid ""
 "current calendar. If the archive file already exists they will be added. "
 "(<link url=\"#\">How to restore</link>)"
 msgstr ""
+"Arhivēšana saglabā senākus vienumus dotā datnē un pēc tam dzēš tos "
+"pašreizējā kalendārā. Ja arhīva datne jau pastāv, vienumi tiks pievienoti "
+"tajā esošajiem. (<link url=\"#\">Kā atjaunot</link>)"
 
 #: archivedialog.cpp:67
 #, kde-format
@@ -48,18 +52,22 @@ msgid ""
 "function. You can view an archive by opening it like you would any other "
 "calendar. It is not saved in a special format, but as vCalendar."
 msgstr ""
+"Lai pievienotu arhīvu kalendāram, izmantojiet Kalendāra sapludināšanas "
+"funkciju. Varat aplūkot arhīvu, to atverot tādā veidā, ka atverat jebkuru "
+"citu kalendāru. Arhīvs netiek saglabāts nekādā īpašā formātā bet kā "
+"„vCalendar“."
 
 #: archivedialog.cpp:82
 #, kde-format
 msgctxt "@option:radio"
 msgid "Archive now items older than:"
-msgstr "Athivēt ierakstus, kas vecāki par:"
+msgstr "Arhivēt ierakstus, kas ir vecāki par:"
 
 #: archivedialog.cpp:83
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr ""
+msgstr "Ieslēgt vienreizēju arhivēšanu vai veco vienumu dzēšanu"
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -69,12 +77,16 @@ msgid ""
 "be archived or purged. The items will be archived unless the \"Delete only\" "
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
+"Atzīmējot lauciņu, notikumi un darāmie darbi, kas ir vecāki par noteiktu "
+"laiku, tiks arhivēti vai dzēsti. Vienumi tiks arhivēti, izņemot, ja ir "
+"ieslēgta opcija „Tikai dzēst“, jo tādā gadījumā tie tiks dzēsti un netiks "
+"saglabāti."
 
 #: archivedialog.cpp:93
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the one time archiving cut-off date"
-msgstr ""
+msgstr "Iestatīt vienreizējas arhivēšanas ieslēgšanas datumu"
 
 #: archivedialog.cpp:95
 #, kde-format
@@ -99,6 +111,7 @@ msgstr "Automātisk&i arhivēt ierakstus, kas vecāki par:"
 msgctxt "@info:tooltip"
 msgid "Enable automatic archiving or purging of older items"
 msgstr ""
+"Ieslēgt automātiski arhivēšanu vai veco vienumu neatgriezenisku dzēšanu"
 
 #: archivedialog.cpp:110
 #, kde-format
@@ -108,12 +121,15 @@ msgid ""
 "and to-dos have to be archived; this means you will not need to use this "
 "dialog box again, except to change the settings."
 msgstr ""
+"Ja šī iespēja ir ieslēgta, programma regulāri pārbaudīs, vai notikumi un "
+"darāmo darbu saraksti ir jāarhivē. Tas nozīmē, ka šo lodziņu jums vairs "
+"nebūs jākonfigurē, izņemot, ja vēlēsities citus iestatījumus."
 
 #: archivedialog.cpp:123
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the archival age in days, weeks or months"
-msgstr ""
+msgstr "Norādiet arhivācijas vecumu dienās, nedēļās vai mēnešos"
 
 #: archivedialog.cpp:125
 #, kde-format
@@ -122,58 +138,58 @@ msgid ""
 "The age of the events and to-dos to archive. All older items will be saved "
 "and deleted, the newer will be kept."
 msgstr ""
-"Vecums, pēc kura arhivēt notikumus un darbus. Visi ieraksti, kas vecāki par "
-"šo tiks saglabāti arhīvā un izdzēsti."
+"Vecums, pēc kura arhivēt notikumus un darāmos darbus. Visi ieraksti, kas "
+"vecāki par šo tiks saglabāti arhīvā un izdzēsti."
 
 #: archivedialog.cpp:130
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the units for the automatic archive age"
-msgstr ""
+msgstr "Norādiet vienības automātiskā arhīva vecumam"
 
 #: archivedialog.cpp:131
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Select the time units (days, weeks or months) for automatic archiving."
 msgstr ""
+"Norādiet laika vienības (dienas, nedēļas vai mēnešus) automātiskai "
+"arhivēšanai."
 
 #: archivedialog.cpp:133
 #, kde-format
 msgctxt "@item:inlistbox expires in daily units"
 msgid "Day(s)"
-msgstr "dienām"
+msgstr "Diena(-as)"
 
 #: archivedialog.cpp:134
 #, kde-format
 msgctxt "@item:inlistbox expiration in weekly units"
 msgid "Week(s)"
-msgstr "nedēļām"
+msgstr "Nedēļa(-as)"
 
 #: archivedialog.cpp:135
 #, kde-format
 msgctxt "@item:inlistbox expiration in monthly units"
 msgid "Month(s)"
-msgstr "mēnešiem"
+msgstr "Mēnesis(-i)"
 
 #: archivedialog.cpp:140
 #, kde-format
 msgctxt "@label"
 msgid "Archive &file:"
-msgstr "Arhīva &fails:"
+msgstr "Arhīva &datne:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|iCalendar faili"
+msgstr "„iCalendar“ datnes (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the location of the archive"
-msgstr ""
+msgstr "Norādiet arhīva atrašanās vietu"
 
 #: archivedialog.cpp:147
 #, kde-format
@@ -184,12 +200,17 @@ msgid ""
 "modified or deleted. You can later load or merge the file like any other "
 "calendar. It is not saved in a special format, it uses the iCalendar format."
 msgstr ""
+"Arhīva datnes ceļš. Notikums un darāmie tiks pievienoti noteiktajai datnei, "
+"tāpēc jebkādi notikumi, kas datnē jau ir, netiks mainīti vai dzēsti. Vēlāk "
+"varat ielādēt vai sapludināt datni līdzīgi kā jebkura cita kalendāra "
+"gadījumā. Programma to nesaglabā kādā īpašā formātā, bet gan „iCalendar“ "
+"formātā."
 
 #: archivedialog.cpp:156
 #, kde-format
 msgctxt "@title:group"
 msgid "Type of Items to Archive"
-msgstr "Kurus ierakstus arhivēt"
+msgstr "Kādus ierakstus arhivēt"
 
 #: archivedialog.cpp:158
 #, kde-format
@@ -200,20 +221,20 @@ msgid ""
 "finished before the date."
 msgstr ""
 "Šeit varat izvēlēties kurus ierakstus arhivēt. Notikumi tiek arhivēti, ja to "
-"beigšanās laiks ir pirms norādītā laika. Darbi tiek arhivēti, ja ir pabeigti "
-"pirm norādītā laika."
+"beigšanās laiks ir pirms norādītā laika. Darāmie darbi tiek arhivēti, ja ir "
+"pabeigti pirms norādītā laika."
 
 #: archivedialog.cpp:166
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive &Events"
-msgstr ""
+msgstr "Arhivēt &notikumus"
 
 #: archivedialog.cpp:167
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge events"
-msgstr ""
+msgstr "Arhivēt vai neatgriezeniski dzēst notikumus"
 
 #: archivedialog.cpp:168
 #, kde-format
@@ -222,18 +243,20 @@ msgid ""
 "Select this option to archive events if they ended before the date given "
 "above."
 msgstr ""
+"Atlasiet šo opciju, lai arhivētu notikumus, ja tie ir beigušies pirms "
+"augstāk norādītā datuma."
 
 #: archivedialog.cpp:171
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
-msgstr ""
+msgstr "Arhivēt pabeigtos &darāmos darbus"
 
 #: archivedialog.cpp:172
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge completed to-dos"
-msgstr ""
+msgstr "Arhivēt vai pilnībā dzēst pabeigtos darbus"
 
 #: archivedialog.cpp:174
 #, kde-format
@@ -242,6 +265,8 @@ msgid ""
 "Select this option to archive to-dos if they were completed before the date "
 "given above."
 msgstr ""
+"Atlasiet šo opciju, lai arhivētu darāmos darbus, kas ir pabeigti pirms "
+"augstāk norādītā datuma."
 
 #: archivedialog.cpp:178
 #, kde-format
@@ -253,7 +278,7 @@ msgstr "Nesaglabāt, tikai &dzēst"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Purge the old items without saving them"
-msgstr ""
+msgstr "Pilnībā izdzēst vecos vienumus, tos nesaglabājot"
 
 #: archivedialog.cpp:181
 #, kde-format
@@ -262,25 +287,25 @@ msgid ""
 "Select this option to delete old events and to-dos without saving them. It "
 "is not possible to recover the events later."
 msgstr ""
-"Izvēlieties šo, lai izdzēstu vecos notikumus un darbus bez to saglabāšanas. "
-"Tos vairs nebūs iespējams atgūt."
+"Izvēlieties šo, lai izdzēstu vecos notikumus un darāmos darbus bez to "
+"saglabāšanas. Tos vairs nebūs iespējams atgūt."
 
 #: archivedialog.cpp:242
 #, kde-format
 msgctxt "@info"
 msgid "The archive file name is not valid."
-msgstr "Arhīva faila nosaukums nav derīgs."
+msgstr "Arhīva datnes nosaukums nav derīgs."
 
 #: attachmenthandler.cpp:96
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
-msgstr ""
+msgstr "Notikumā nav atrasts pielikums ar nosaukumu „%1“."
 
 #: attachmenthandler.cpp:107
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
-msgstr ""
+msgstr "Pielikums „%1“ ir tīmekļa saite, kas no šī datora nav pieejama. "
 
 #: attachmenthandler.cpp:123
 #, kde-format
@@ -288,18 +313,19 @@ msgid ""
 "The calendar invitation stored in this email message is broken in some way. "
 "Unable to continue."
 msgstr ""
+"Šajā e-pasta ziņojumā saglabātais kalendāra uzaicinājums kaut kāda iemesla "
+"dēļ nestrādā. Nav iespējams turpināt."
 
 #: attachmenthandler.cpp:180 attachmenthandler.cpp:234
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
-msgstr ""
+msgstr "Nav iespējams šim pielikumam izveidot pagaidu datni."
 
 #: attachmenthandler.cpp:213
-#, fuzzy, kde-format
-#| msgid "No Attachments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
-msgstr "Nav pielikumu"
+msgstr "Saglabāt pielikumu"
 
 #: cellitem.cpp:38
 #, kde-kuit-format
@@ -312,12 +338,10 @@ msgid "There are no items before %1"
 msgstr "Pirms %1 nav neviena ieraksta"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Arhivēt"
+msgstr "Arhivēt"
 
 #: eventarchiver.cpp:155
 #, kde-format
@@ -325,12 +349,11 @@ msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
-"Dzēst visus ierakstus pirms %1 bez saglabāšanas?\n"
+"Vai dzēst visus ierakstus pirms %1 bez saglabāšanas?\n"
 "Tiks dzēsti šādi ieraksti:"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Dzēst vecos ierakstus"
@@ -344,102 +367,91 @@ msgstr "Nezināms iemesls"
 #: eventarchiver.cpp:271
 #, kde-format
 msgid "Cannot write archive file %1. %2"
-msgstr "Neizdevās ierakstīt arhīva failā %1. %2"
+msgstr "Neizdevās ierakstīt arhīva datnē „%1“. %2"
 
 #: eventarchiver.cpp:282
 #, kde-format
 msgid "Cannot write archive. %1"
-msgstr "Neizdevās ierakstīt arhīva failā. %1"
+msgstr "Neizdevās ierakstīt arhīva datnē. %1"
 
 #: eventarchiver.cpp:291
 #, kde-format
 msgid "Archiving events"
-msgstr ""
+msgstr "Arhivē notikumus"
 
 #: freebusymodel/freebusycalendar.cpp:109
 #, kde-format
 msgid "Free"
-msgstr ""
+msgstr "Brīvs"
 
 #: freebusymodel/freebusycalendar.cpp:112
 #, kde-format
 msgid "Busy"
-msgstr ""
+msgstr "Aizņemts"
 
 #: freebusymodel/freebusycalendar.cpp:115
 #, kde-format
 msgid "Unavailable"
-msgstr ""
+msgstr "Nav pieejams"
 
 #: freebusymodel/freebusycalendar.cpp:118
 #, kde-format
 msgid "Tentative"
-msgstr ""
+msgstr "Pagaidu"
 
 #: freebusymodel/freebusycalendar.cpp:121
-#, fuzzy, kde-format
-#| msgctxt "unknown status"
-#| msgid "unknown"
+#, kde-format
 msgid "Unknown"
-msgstr "nezināms"
+msgstr "Nezināms"
 
 #: freebusymodel/freebusyitemmodel.cpp:211
-#, fuzzy, kde-format
-#| msgid "&Attendees"
+#, kde-format
 msgid "Attendee"
-msgstr "&Dalībnieki"
+msgstr "Apmeklētājs"
 
 #: freebusymodel/freeperiodmodel.cpp:124
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
-msgstr "%1%"
+msgstr "%1,"
 
 #: freebusymodel/freeperiodmodel.cpp:141
-#, fuzzy, kde-format
-#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
-#| msgid "%1 %2 - %3 %4"
+#, kde-format
 msgctxt ""
 "@label A time period duration. It is preceded/followed (based on the "
 "orientation) by the name of the week, see the message above. example: 12 "
 "June, 8:00am to 9:30am"
 msgid "%1 %2, %3 to %4"
-msgstr "%2. %1 - %4. %3"
+msgstr "%1 %2, %3 līdz %4"
 
 #: freebusymodel/freeperiodmodel.cpp:162
-#, fuzzy, kde-format
-#| msgctxt "starttime - endtime summary, location"
-#| msgid "%1-%2 %3, %4"
+#, kde-format
 msgctxt ""
 "@label A time period duration. KLocale is used to format the components. "
 "example: Monday, 12 June, 8:00am to 9:30am"
 msgid "%1, %2 %3, %4 to %5"
-msgstr "%1-%2 %3, %4"
+msgstr "%1, %2 %3, %4 uz %5"
 
 #: freebusymodel/freeperiodmodel.cpp:176
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
-msgstr ""
+msgstr "Brīvs periods"
 
 #: freebusymodel/freeperiodmodel.cpp:178
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
-msgstr "Sākuma datums un laiks"
+msgstr "Sākums:"
 
 #: freebusymodel/freeperiodmodel.cpp:181
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
-msgstr ""
+msgstr "Beigas:"
 
 #: freebusymodel/freeperiodmodel.cpp:184
-#, fuzzy, kde-format
-#| msgid "Duration: "
+#, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
 msgstr "Ilgums:"
@@ -448,7 +460,7 @@ msgstr "Ilgums:"
 #: kcalprefs.kcfg:15
 #, kde-format
 msgid "Use email settings from System Settings"
-msgstr "Izmantot Sistēmas iestatījumu e-pasta iestatījumus"
+msgstr "Izmantot e-pasta iestatījumus no sistēmas iestatījumiem"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
@@ -458,15 +470,15 @@ msgid ""
 "the System Settings \"About Me\" Module. Uncheck this box to be able to "
 "specify your full name and e-mail."
 msgstr ""
-"Ieslēdziet šo, lai izmantotu KDE galvenos e-pasta iestatījumus, ko konfigurē "
-"KDE Sistēmas iestatījumu modulī \"Parole un lietotāja konts\". Izslēdziet "
-"šo, lai varētu šeit norādīt citu vārdu un e-pastu."
+"Atzīmējiet lauciņu, lai izmantotu KDE pamata e-pasta iestatījumus, ko "
+"konfigurē KDE sistēmas iestatījumu modulī „Par mani“. Noņemiet atzīmi, lai "
+"varētu šeit norādīt citu vārdu un e-pastu."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
 #, kde-format
 msgid "Default appointment time"
-msgstr "Default appointment timeNoklusētais tikšanās laiks"
+msgstr "Noklusētais tikšanās laiks"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:25
@@ -498,7 +510,7 @@ msgstr ""
 #: kcalprefs.kcfg:36
 #, kde-format
 msgid "Enable a default sound file for audio reminders"
-msgstr ""
+msgstr "Ieslēgt noklusējuma skaņas datni audio atgādinājumiem"
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:37
@@ -508,12 +520,16 @@ msgid ""
 "default sound file for new reminders. You can always specify another file in "
 "the Reminder configuration accessible from the Event or To-do editors."
 msgstr ""
+"Atzīmējiet lauciņu, ja vēlaties, lai sistēma atskaņo noteiktu skaņas datni "
+"kā noklusējuma skaņu jauniem atgādinājumiem. Ikreiz Atgādinātāja "
+"konfigurācijā, kas ir pieejama no Notikumu vai Darāmo darbu redaktora, varat "
+"norādīt citu datni."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:42
 #, kde-format
 msgid "Default audio file"
-msgstr ""
+msgstr "Noklusējuma audio datne"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:43
@@ -523,14 +539,15 @@ msgid ""
 "always specify another file in the Reminder configuration accessible from "
 "the Event or To-do editors."
 msgstr ""
+"Norādiet datni, kas izmantojama kā skaņas datne jauniem atgādinājumiem. "
+"Varat katru reizi norādīt citu datni Atgādinājuma konfigurācijā, kas ir "
+"pieejama no notikuma vai darāmo darbu redaktora."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:47
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Enable Reminders"
+#, kde-format
 msgid "Enable reminders for new Events"
-msgstr "Ieslēgt atgādinājumus"
+msgstr "Ieslēgt atgādinājumus jauniem notikumiem"
 
 #. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:48
@@ -539,38 +556,38 @@ msgid ""
 "Check this box if you want to enable reminders for all newly created Events. "
 "You can always turn-off the reminders in the Event editor dialog."
 msgstr ""
+"Atzīmējiet lauciņu, ja vēlaties ieslēgt atgādinājumus visiem no jauna "
+"izveidotajiem notikumiem. Jebkurā brīdī varat izslēgt atgādinājumus notikuma "
+"redaktora lodziņā."
 
 #. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:49
 #, kde-format
 msgid "By default, enable reminders for new events"
-msgstr ""
+msgstr "Pēc noklusējuma ieslēgt atgādinājumus jauniem notikumiem"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:54
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Enable Reminders"
+#, kde-format
 msgid "Enable reminders for new To-dos"
-msgstr "Ieslēgt atgādinājumus"
+msgstr "Ieslēgt atgādinājumus jauniem darāmajiem darbiem"
 
 #. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:55
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box if you want all completed to-dos to be always grouped at "
-#| "the bottom of the to-do list."
+#, kde-format
 msgid ""
 "Check this box if you want to enable reminders for all newly created To-dos. "
 "You can always turn-off the reminders in the To-do editor dialog."
 msgstr ""
-"Atzīmējiet šo, ja vēlaties ka pabeigtie darbi tiek grupēti saraksta beigās."
+"Atzīmējiet lauciņu, ja vēlaties ieslēgt atgādinājumus visiem no jauna "
+"izveidotajiem darāmajiem darbiem. Jebkurā brīdī varat izslēgt atgādinājumus "
+"darāmo darbu redaktora lodziņā."
 
 #. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:56
 #, kde-format
 msgid "By default, enable reminders for new to-dos"
-msgstr ""
+msgstr "Pēc noklusējuma ieslēgt atgādinājumus jauniem darāmajiem darbiem"
 
 #. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62
@@ -585,7 +602,7 @@ msgid ""
 "Enter the default reminder time for all newly created items. The time unit "
 "is specified in the adjacent combobox."
 msgstr ""
-"Ievadiet noklusēto atgādinājuma laiku jauniem ierakstiem. Laika vienība ir "
+"Ievadiet noklusēto atgādināšanas laiku jauniem ierakstiem. Laika vienība ir "
 "norādīta blakus laukā."
 
 #. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
@@ -601,8 +618,8 @@ msgid ""
 "Enter the default reminder time units for all newly created items. The time "
 "is specified in the adjacent spinbox."
 msgstr ""
-"Ievadiet noklusēto atgādinājuma laika vienību jauniem ierakstiem. Laika "
-"daudzums ir norādīts blakus laukā."
+"Ievadiet noklusēto atgādinājuma laika vienību jauniem ierakstiem. Laiks ir "
+"norādīts blakus laukā."
 
 #. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
 #: kcalprefs.kcfg:70
@@ -614,20 +631,17 @@ msgstr "Noklusētā atgādināšanas laika vienība"
 #: kcalprefs.kcfg:78
 #, kde-format
 msgid "Day begins at"
-msgstr ""
+msgstr "Diena sākas plkst."
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:79
-#, fuzzy, kde-format
-#| msgid ""
-#| "Enter the default time for events here. The default is used if you do not "
-#| "supply a start time."
+#, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
 "that you use for events."
 msgstr ""
-"Šeit ievadiet noklusēto tikšanās laiku. Tas tiek lietots, ja nenorādiet "
-"sākšanās laiku."
+"Šeit ievadiet noklusēto notikumu laiku. Tam jābūt agrākajam laikam, ko "
+"izmantosiet notikumiem."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:84
@@ -641,34 +655,30 @@ msgstr "Nestrādāju svētku dienās"
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
 "holidays."
-msgstr "Atzīmējiet šo, lai KOrganizer svētku dienās neizceltu darba laiku."
+msgstr ""
+"Atzīmējiet lauciņu, lai „KOrganizer“ svētku dienās neizceltu darba laiku."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:90
-#, fuzzy, kde-format
-#| msgid "Use holiday region:"
+#, kde-format
 msgid "Use holiday regions:"
 msgstr "Izmantot svētku dienu reģionu:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:91
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select from which region you want to use the holidays here. Defined "
-#| "holidays are shown as non-working days in the date navigator, the agenda "
-#| "view, etc."
+#, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
 "shown as non-working days in the date navigator, the agenda view, etc."
 msgstr ""
 "Šeit izvēlieties reģionu, no kura rādīt svētku dienas. Svētku dienas tiks "
-"atzīmētas kā brīvdienas datuma navigatorā, dienaskārtībā, un citur."
+"atzīmētas kā brīvdienas datumu navigatorā, dienaskārtībā, un citur."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:98
 #, kde-format
 msgid "Use Groupware communication"
-msgstr "Izmantot grupdarba komunikāciju"
+msgstr "Izmantot grupprogrammatūras komunikāciju"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:99
@@ -679,28 +689,28 @@ msgid ""
 "should check this box if you want to use the groupware functionality (e.g. "
 "Configuring Kontact as a KDE Kolab client)."
 msgstr ""
-"Atzīmējiet šo, lai izveidojot, rediģējot vai dzēšot notikumus automātiski "
-"sūtītu e-pasta vēstules notikuma dalībniekiem. Jums vajadzētu šo ieslēgt, ja "
-"izmantojiet grupdarba finkcionalitāti (piemēram, Kontact strādā kā KDE Kolab "
-"klients)."
+"Atzīmējiet lauciņu, lai izveidojot, rediģējot vai dzēšot notikumus "
+"automātiski sūtītu e-pasta vēstules notikuma dalībniekiem. Jums vajadzētu šo "
+"ieslēgt, ja izmantojiet grupprogrammatūras funkcionalitāti (piemēram, "
+"„Kontact“ strādā kā KDE „Kolab“ klients)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:104
 #, kde-format
 msgid "Default policy for invitations to other users:"
-msgstr ""
+msgstr "Noklusējuma politika uzaicinājumiem citiem lietotājiem:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:107
 #, kde-format
 msgid "Send mails without asking."
-msgstr ""
+msgstr "Sūtīt pastu bez jautāšanas."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:110
 #, kde-format
 msgid "Ask for every individual attendee what to do."
-msgstr ""
+msgstr "Lūgt katram apmeklētājam, ko darīt."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:113
@@ -709,12 +719,14 @@ msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
 "iTip compliant clients)."
 msgstr ""
+"Nesūtīt uzaicinājuma e-pastus (tas var sabojāt grupu plānošanu ar „iTip“ "
+"saderīgiem klientiem)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
 #: kcalprefs.kcfg:126
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
-msgstr "Rādīt laika joslu izvēlētājus notikumu un darbu rediģēšanas logā."
+msgstr "Rādīt laika joslu atlasītājus notikumu un darbu rediģēšanas logā."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:134
@@ -736,7 +748,7 @@ msgstr ""
 #: kcalprefs.kcfg:144
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
-msgstr "Athivēšanas termiņa vienības."
+msgstr "Arhivēšanas termiņa vienības."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:147
@@ -760,7 +772,7 @@ msgstr "Mēneši"
 #: kcalprefs.kcfg:160
 #, kde-format
 msgid "URL of the file where old events should be archived"
-msgstr "Faila URL, kurā saglabāt arhivētos notikumus"
+msgstr "Datnes URL, kurā saglabāt arhivētos notikumus"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:164
@@ -772,13 +784,13 @@ msgstr "Arhivēt notikumus"
 #: kcalprefs.kcfg:169
 #, kde-format
 msgid "Archive to-dos"
-msgstr "Arhiivērt darbus"
+msgstr "Arhivēt darāmos darbus"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:174
 #, kde-format
 msgid "What to do when archiving"
-msgstr "Ko darīt ar arhivētajiem"
+msgstr "Ko darīt arhivējot"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:177
@@ -790,7 +802,7 @@ msgstr "Dzēst vecos notikumus"
 #: kcalprefs.kcfg:180
 #, kde-format
 msgid "Archive old events to a separate file"
-msgstr "Arhivērt vecos notikumus atsevišķā failā"
+msgstr "Arhivēt vecos notikumus atsevišķā datnē"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
 #: kcalprefs.kcfg:194
@@ -805,13 +817,13 @@ msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
 "to-dos and events you create."
 msgstr ""
-"Šeit ievadiet jūsu pilnu vārdu. Tas tiks lietots jūsu veidoto notikumu un "
-"darbu \"Organizators\" laukā."
+"Šeit ierakstiet jūsu pilno vārdu. Tas tiks lietots jūsu veidoto notikumu un "
+"darbu „Organizatora“ laukā."
 
 #: kcalprefs.kcfg:196
 #, kde-format
 msgid "Anonymous"
-msgstr ""
+msgstr "Anonīms"
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
@@ -826,90 +838,38 @@ msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
 "the owner of the calendar, and displayed in events and to-dos you create."
 msgstr ""
-"Šeit ievadiet savu e-pasta adresi. Šī adrese tiks izmantota, lai "
-"identificētu kalendāra īpašnieku un tiks rādīta jūsu izveidotajos darbos un "
-"notikumos."
+"Šeit ierakstiet savu e-pasta adresi. Šī adrese tiks izmantota, lai "
+"identificētu kalendāra īpašnieku un būs redzama jūsu izveidotajos darāmajos "
+"darbos un notikumos."
 
 #: kcalprefs.kcfg:202
 #, kde-format
 msgid "nobody@nowhere"
-msgstr ""
+msgstr "neviens@nekur"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217
-#, fuzzy, kde-format
-#| msgid "\"No category\" color (for \"Only category\" drawing schemes)"
+#, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
-msgstr "\"Bez kategorijas\" krāsa (\"Tikai kategorija\" attēlošanas shēmām)"
+msgstr "„Bez birkas“ krāsa („Tikai birka“ attēlošanas shēmām)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:218
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a color to use for the \"no category\" or \"unset category\" "
-#| "situation, when an item does not belong to any category. This color is "
-#| "used when drawing items in the agenda or month views using the \"Only "
-#| "category\" scheme."
+#, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
-"Izvēlieties krāsu, kādā attēlot \"nav kategorijas\" vai \"noņemta kategorija"
-"\" situācijas - kad ieraksts nepieder nevienai kategorijai. Šī krāsa tiek "
-"lietota attēlojot ierakstus dienaskārtības un mēneša skatos, izmantojot "
-"\"Tikai kategorija\" shēmu."
+"Izvēlieties krāsu, kādā attēlot „nav birkas“ vai „noņemta birka“ situāciju, "
+"kad ieraksts nepieder nevienai kategorijai. Šī krāsa tiek lietota attēlojot "
+"ierakstus dienaskārtības un mēneša skatos, izmantojot „Tikai birka“ shēmu."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
 #: kcalprefs.kcfg:219
-#, fuzzy, kde-format
-#| msgid "Use this color when drawing items without a category"
+#, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr "Lietot šo krāsu, zīmējot ierakstus bez kategorijas"
-
-#: noteeditdialog.cpp:42
-#, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr ""
-
-#: noteeditdialog.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr ""
-
-#: noteeditdialog.cpp:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Save"
-msgstr ""
-
-#: noteeditdialog.cpp:78
-#, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr ""
-
-#: noteeditdialog.cpp:80
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr ""
-
-#: noteeditdialog.cpp:93
-#, fuzzy, kde-format
-#| msgid "&Title:"
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "&Virsraksts:"
-
-#: noteeditdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "Text"
-msgctxt "@label specify the text for this note"
-msgid "Text:"
-msgstr "Tekstu"
+msgstr "Lietot šo krāsu, zīmējot ierakstus bez birkām"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -951,11 +911,9 @@ msgstr "Datuma un laika diapazons"
 #: printing/calprinttodoconfig_base.ui:127
 #: printing/calprintweekconfig_base.ui:30
 #: printing/calprintweekconfig_base.ui:49
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Starting date for the print"
-msgstr "Sākuma datums un laiks"
+msgstr "Sākuma datums drukāšanai"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mFromDate)
@@ -972,20 +930,18 @@ msgid ""
 "this option and the <i>End date</i> option. This option is used to define "
 "the start date."
 msgstr ""
-"Ja vēlaties drukāt uzreiz vairākas dienas, jūs varat nodefinēt datumu "
-"diapazonu, izmantojot <i>Sākuma datums</i> un <i>Beigu datums</i>. Šis "
-"iestatījums norāda sākuma datumu."
+"Ja vēlaties drukāt uzreiz vairākas dienas, varat nodefinēt datumu diapazonu, "
+"izmantojot <i>Sākuma datums</i> un <i>Beigu datums</i>. Šis iestatījums "
+"norāda sākuma datumu."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintdayconfig_base.ui:36
 #: printing/calprintjournalconfig_base.ui:77
 #: printing/calprinttodoconfig_base.ui:111
 #: printing/calprintweekconfig_base.ui:36
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "&Start date:"
-msgstr "Sākuma datums un laiks"
+msgstr "&Sākuma datums:"
 
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mFromDate)
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mToDate)
@@ -1003,24 +959,16 @@ msgstr "2009-01-19"
 #: printing/calprintdayconfig_base.ui:64 printing/calprintdayconfig_base.ui:80
 #: printing/calprintweekconfig_base.ui:64
 #: printing/calprintweekconfig_base.ui:80
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Starting time for the print"
-msgstr "Sākuma datums un laiks"
+msgstr "Sākuma datums izdrukai"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
 #: printing/calprintdayconfig_base.ui:67 printing/calprintdayconfig_base.ui:83
 #: printing/calprintweekconfig_base.ui:67
 #: printing/calprintweekconfig_base.ui:83
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the start of this "
-#| "time range. The end time should be defined with the <i>End time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the start of this time "
@@ -1029,18 +977,16 @@ msgid ""
 "range to include all events</i>."
 msgstr ""
 "Drukāt ir iespējams tikai tos notikumus, kas ir dotā laika diapazonā. Šajā "
-"laika izvēles laukā var norādīt šī diapazona sākumu. Beigas ir norādītas "
-"laukā <i>Beigu laiks</i>. Ņemiet vērā ka šīs vērtības var aizpildīt "
-"automātiski, atzīmējot <i>Paplašināt laika diapazonu, lai iekļautu visus "
-"notikumus</i>."
+"laika izvēles laukā varat norādīt šī diapazona sākumu. Beigu laiks ir "
+"norādītas laukā <i>Beigu laiks</i>. Ņemiet vērā ka šīs vērtības var "
+"aizpildīt automātiski, atzīmējot <i>Paplašināt laika diapazonu, lai iekļautu "
+"visus notikumus</i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Start &time:"
-msgstr "Sākuma datums un laiks"
+msgstr "Sākuma &laiks:"
 
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mFromTime)
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mToTime)
@@ -1061,11 +1007,9 @@ msgstr "ss:mm"
 #: printing/calprinttodoconfig_base.ui:164
 #: printing/calprintweekconfig_base.ui:110
 #: printing/calprintweekconfig_base.ui:129
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Ending date for the print"
-msgstr "Sākuma datums un laiks"
+msgstr "Beigu datums izdrukai"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -1083,9 +1027,9 @@ msgid ""
 "this option and the <i>Start date</i> option. This option is used to define "
 "the end date."
 msgstr ""
-"Ja vēlaties drukāt uzreiz vairākas dienas, jūs varat nodefinēt datumu "
-"diapazonu, izmantojot <i>Sākuma datums</i> un <i>Beigu datums</i>. Šis "
-"iestatījums norāda beigu datumu."
+"Ja vēlaties drukāt uzreiz vairākas dienas, varat definēt datumu diapazonu, "
+"izmantojot <i>Sākuma datums</i> un <i>Beigu datums</i>. Šis iestatījums "
+"norāda beigu datumu."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintdayconfig_base.ui:116
@@ -1102,11 +1046,9 @@ msgstr "&Beigu datums:"
 #: printing/calprintdayconfig_base.ui:160
 #: printing/calprintweekconfig_base.ui:144
 #: printing/calprintweekconfig_base.ui:160
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Ending time for the print"
-msgstr "Sākuma datums un laiks"
+msgstr "Beigu laiks izdrukai"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1114,13 +1056,7 @@ msgstr "Sākuma datums un laiks"
 #: printing/calprintdayconfig_base.ui:163
 #: printing/calprintweekconfig_base.ui:147
 #: printing/calprintweekconfig_base.ui:163
-#, fuzzy, kde-format
-#| msgid ""
-#| "It is possible to print only those events which are inside a given "
-#| "timerange. With this time selection box you can define the end of this "
-#| "time range. The start time should be defined with the <i>Start time</i> "
-#| "option. Note you can automatically modify these settings if you check "
-#| "<i>Extend time range to include all events</i>."
+#, kde-format
 msgid ""
 "It is possible to print only those events which are inside a given time "
 "range. With this time selection box you can define the end of this time "
@@ -1129,10 +1065,10 @@ msgid ""
 "range to include all events</i>."
 msgstr ""
 "Drukāt ir iespējams tikai tos notikumus, kas ir dotā laika diapazonā. Šajā "
-"laika izvēles laukā var norādīt šī diapazona beigas. Sākums ir norādīts "
-"laukā <i>Sākuma laiks</i>. Ņemiet vērā ka šīs vērtības var aizpildīt "
-"automātiski, atzīmējot <i>Paplašināt laika diapazonu, lai iekļautu visus "
-"notikumus</i>."
+"laika izvēles laukā var norādīt šī diapazona beigas. Sākuma laiks ir "
+"norādīts laukā <i>Sākuma laiks</i>. Ņemiet vērā ka šīs vērtības var "
+"aizpildīt automātiski, atzīmējot <i>Paplašināt laika diapazonu, lai iekļautu "
+"visus notikumus</i>."
 
 #. i18n: ectx: property (text), widget (QLabel, mToTimeLabel)
 #: printing/calprintdayconfig_base.ui:150
@@ -1149,7 +1085,7 @@ msgid ""
 "Check this option to automatically determine the required time range, so all "
 "events will be shown."
 msgstr ""
-"Atzīmējiet šo, lai automātiski noteiktu nepieciešamu laika diapazonu, lai "
+"Atzīmējiet šo, lai automātiski noteiktu nepieciešamu laika diapazonu un "
 "parādītu visus notikumus."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
@@ -1164,7 +1100,7 @@ msgstr "&Paplašināt laika diapazonu, lai iekļautu visus notikumus"
 #: printing/calprintweekconfig_base.ui:203
 #, kde-format
 msgid "Print Layout"
-msgstr "Drukāšanas izkārtojums"
+msgstr "Izdrukas izkārtojums"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintdayconfig_base.ui:209
@@ -1174,46 +1110,43 @@ msgid ""
 "The Filofax format prints the information for the days selected without a "
 "timeline."
 msgstr ""
-"Filofax formāts izdrukā informāciju par izvēlētajām dienām, bez laika "
-"līnijas."
+"„Filofax“ formāts izdrukā informāciju par izvēlētajām dienām, bez laika "
+"joslas."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintdayconfig_base.ui:212
-#, fuzzy, kde-format
-#| msgid "Print date range as &Filofax format, all on one page"
+#, kde-format
 msgid "Print date &range as Filofax format, all on one page"
-msgstr "Izdrukāt datumu diapazonu &Filofax formātā, visu vienā lapā"
+msgstr "Izdrukāt datumu diapazonu „&Filofax“ formātā, visu vienā lapā"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
 #: printing/calprintweekconfig_base.ui:219
-#, fuzzy, kde-format
-#| msgid "The timetable print view has the times to the left of the page"
+#, kde-format
 msgid "The timetable print view has the times to the left of the page."
-msgstr "Laika tabulas drukāšanas skatā laiks ir lapas kreisajā pusē"
+msgstr "Grafika drukāšanas skatā laiks ir lapas kreisajā pusē."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:222
-#, fuzzy, kde-format
-#| msgid "Print as &timetable view, one page per day"
+#, kde-format
 msgid "Print as timeta&ble view, one page per day"
-msgstr "Drukāt laika &tabulas skatu, viena lapa katrai dienai"
+msgstr "Drukāt &grafika skatu, viena lapa katrai dienai"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:229
-#, fuzzy, kde-format
-#| msgid "The timetable print view has the times to the left of the page"
+#, kde-format
 msgid ""
 "The timetable print view has the times to the left of the page. All days are "
 "printed as columns in one big timetable."
-msgstr "Laika tabulas drukāšanas skatā laiks ir lapas kreisajā pusē"
+msgstr ""
+"Grafika drukāšanas skatā laiks ir lapas kreisajā pusē. Visas dienas tiks "
+"izdrukātas kolonnās vienā lielā laika tabulā."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:232
-#, fuzzy, kde-format
-#| msgid "Print as &timetable view, one page per day"
+#, kde-format
 msgid "Print as timetable view, all da&ys on a single page"
-msgstr "Drukāt laika &tabulas skatu, viena lapa katrai dienai"
+msgstr "Drukāt &grafika skatu, visas dienas uz vienas lapas"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mSecurity)
 #: printing/calprintdayconfig_base.ui:242
@@ -1238,6 +1171,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Confidential&#8221;"
 msgstr ""
+"Atzīmējiet šo opciju, lai neņemtu vērā vienumus, kuru piekļuves līmenis ir "
+"norādīts kā &#8220;Konfidenciāls&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:251
@@ -1262,6 +1197,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Private&#8221;"
 msgstr ""
+"Atzīmējiet šo opciju, lai neņemtu vērā vienumus, kuru piekļuves līmenis ir "
+"norādīts kā &#8220;Privāts&#8221;"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:261
@@ -1291,10 +1228,9 @@ msgstr "Iekļaut informāciju"
 #: printing/calprintmonthconfig_base.ui:153
 #: printing/calprinttodoconfig_base.ui:232
 #: printing/calprintweekconfig_base.ui:277
-#, fuzzy, kde-format
-#| msgid "Include &descriptions"
+#, kde-format
 msgid "Print item descriptions"
-msgstr "Iekļaut &aprakstus"
+msgstr "Izdrukāt vienuma aprakstus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDescription)
@@ -1302,12 +1238,9 @@ msgstr "Iekļaut &aprakstus"
 #: printing/calprintmonthconfig_base.ui:156
 #: printing/calprinttodoconfig_base.ui:235
 #: printing/calprintweekconfig_base.ui:280
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box if you want to match item descriptions against your search "
-#| "pattern."
+#, kde-format
 msgid "Check this option if you want to see the item descriptions printed."
-msgstr "Atzīmējiet šo, ja vēlaties meklēt arī ierakstu aprakstos."
+msgstr "Atzīmējiet šo opciju, ja vēlaties redzēt izdrukā vienumu aprakstus."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (text), widget (QCheckBox, mDescription)
@@ -1315,10 +1248,9 @@ msgstr "Atzīmējiet šo, ja vēlaties meklēt arī ierakstu aprakstos."
 #: printing/calprintmonthconfig_base.ui:159
 #: printing/calprinttodoconfig_base.ui:238
 #: printing/calprintweekconfig_base.ui:283
-#, fuzzy, kde-format
-#| msgid "Description:"
+#, kde-format
 msgid "&Descriptions"
-msgstr "Apraksts:"
+msgstr "&Apraksti"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1326,10 +1258,9 @@ msgstr "Apraksts:"
 #: printing/calprintmonthconfig_base.ui:166
 #: printing/calprinttodoconfig_base.ui:245
 #: printing/calprintweekconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid "Print list"
+#, kde-format
 msgid "Print item tags"
-msgstr "Izdrukāt sarakstu"
+msgstr "Drukāt vienumu birkas"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -1337,12 +1268,9 @@ msgstr "Izdrukāt sarakstu"
 #: printing/calprintmonthconfig_base.ui:169
 #: printing/calprinttodoconfig_base.ui:248
 #: printing/calprintweekconfig_base.ui:293
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box if you want to match item descriptions against your search "
-#| "pattern."
+#, kde-format
 msgid "Check this option if you want to see the item tags printed."
-msgstr "Atzīmējiet šo, ja vēlaties meklēt arī ierakstu aprakstos."
+msgstr "Atzīmējiet šo opciju, ja vēlaties izdrukā redzēt vienumu birkas."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (text), widget (QCheckBox, mCategories)
@@ -1352,16 +1280,15 @@ msgstr "Atzīmējiet šo, ja vēlaties meklēt arī ierakstu aprakstos."
 #: printing/calprintweekconfig_base.ui:296
 #, kde-format
 msgid "Ta&gs"
-msgstr ""
+msgstr "&Birkas"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:306
 #: printing/calprintmonthconfig_base.ui:182
 #: printing/calprintweekconfig_base.ui:306
-#, fuzzy, kde-format
-#| msgid "Print only to-dos due in the &range:"
+#, kde-format
 msgid "Print to-dos due within the specified date range"
-msgstr "Drukāt tikai darbus &diapazonā"
+msgstr "Drukāt darāmos darbos noteiktā laika diapazonā"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:309
@@ -1381,21 +1308,21 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:312
 #, kde-format
 msgid "Include to-&dos that are due on the printed day(s)"
-msgstr "Iekļaut &darbus, kas ir jāpabeidz drukātajās dienās"
+msgstr "Iekļaut &darbus, kas ir jāpabeidz izdrukātajās dienās"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:319
 #: printing/calprintweekconfig_base.ui:319
 #, kde-format
 msgid "Check this option to exclude the time in description box"
-msgstr "Adzīmējiet šo, lai nedrukātu laiku aprakstā"
+msgstr "Atzīmējiet šo, lai aprakstā nedrukātu laiku"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:322
 #: printing/calprintweekconfig_base.ui:322
 #, kde-format
 msgid "Exclude t&ime from timetable detail display items"
-msgstr "Nedrukāt &laiku laika dabulas detaļu attēlošanā"
+msgstr "Nedrukāt &laiku starp grafika elementiem"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
 #: printing/calprintdayconfig_base.ui:332
@@ -1404,9 +1331,7 @@ msgstr "Nedrukāt &laiku laika dabulas detaļu attēlošanā"
 #: printing/calprintmonthconfig_base.ui:224
 #: printing/calprinttodoconfig_base.ui:391
 #: printing/calprintweekconfig_base.ui:332
-#, fuzzy, kde-format
-#| msgctxt "general settings for html export"
-#| msgid "General"
+#, kde-format
 msgctxt "@title general print settings"
 msgid "General"
 msgstr "Pamata"
@@ -1415,21 +1340,21 @@ msgstr "Pamata"
 #: printing/calprintdayconfig_base.ui:338
 #: printing/calprintmonthconfig_base.ui:243
 #: printing/calprintweekconfig_base.ui:338
-#, fuzzy, kde-format
-#| msgid "Prints an incidence on one page"
+#, kde-format
 msgid "Print items on one line"
-msgstr "Izdrukā ierakstu vienā lapā"
+msgstr "Drukāt vienumus vienā rindā"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:341
 #: printing/calprintmonthconfig_base.ui:246
 #: printing/calprintweekconfig_base.ui:341
-#, fuzzy, kde-format
-#| msgid "Check this option to limit events to a single line."
+#, kde-format
 msgid ""
 "Check this option to limit events to a single line, truncating as necessary "
 "to save space."
-msgstr "Atzīmējiet šo, lai ierobežotu notikumus vienā rindā."
+msgstr ""
+"Atzīmējiet šo opciju, lai saīsinātu vienumus līdz vienai rindai, "
+"nepieciešamības gadījumā tos apgriežot."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:344
@@ -1444,37 +1369,32 @@ msgstr "Ie&spiest vienas dienas notikumus vienā rindā"
 #: printing/calprintincidenceconfig_base.ui:94
 #: printing/calprintmonthconfig_base.ui:256
 #: printing/calprintweekconfig_base.ui:351
-#, fuzzy, kde-format
-#| msgid "Check this option to draw note lines "
+#, kde-format
 msgid "Check this option to draw note lines in empty areas."
-msgstr "Atzīmējiet šo, lai zīmētu piezīmju līnijas "
+msgstr "Atzīmējiet šo iespēju, lai piezīmes zīmētu tukšajās vietās."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:354
 #: printing/calprintweekconfig_base.ui:354
 #, kde-format
 msgid "Show note &lines in Filofax layout"
-msgstr "Rādīt piezīmju &rindas Filoax izkārtojumā"
+msgstr "Rādīt piezīmju &rindas „Filoax“ izkārtojumā"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:361
 #: printing/calprintincidenceconfig_base.ui:107
 #: printing/calprintmonthconfig_base.ui:266
 #: printing/calprintweekconfig_base.ui:361
-#, fuzzy, kde-format
-#| msgid "Printing error"
+#, kde-format
 msgid "Print in color"
-msgstr "Drukāšanas kļūda"
+msgstr "Drukāt krāsainu"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:364
 #: printing/calprintincidenceconfig_base.ui:110
 #: printing/calprintmonthconfig_base.ui:269
 #: printing/calprintweekconfig_base.ui:364
-#, fuzzy, kde-format
-#| msgid ""
-#| "If you want to use colors to distinguish certain categories on the print, "
-#| "check this option."
+#, kde-format
 msgid ""
 "If you want to use colors to distinguish certain tags in the printed output, "
 "check this option."
@@ -1499,10 +1419,9 @@ msgstr "&Lietot krāsas"
 #: printing/calprinttodoconfig_base.ui:417
 #: printing/calprintweekconfig_base.ui:374
 #: printing/calprintyearconfig_base.ui:178
-#, fuzzy, kde-format
-#| msgid "Prints an incidence on one page"
+#, kde-format
 msgid "Print a datetime footer on each page"
-msgstr "Izdrukā ierakstu vienā lapā"
+msgstr "Katra lapas kājenē drukāt datumu un laiku"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:377
@@ -1512,16 +1431,13 @@ msgstr "Izdrukā ierakstu vienā lapā"
 #: printing/calprinttodoconfig_base.ui:420
 #: printing/calprintweekconfig_base.ui:377
 #: printing/calprintyearconfig_base.ui:181
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box if you want to search for Journal items that match the "
-#| "search criteria."
+#, kde-format
 msgid ""
 "Check this box if you want to print a small footer on each page that "
 "contains the date of the print."
 msgstr ""
-"Atzīmējiet šo, ja vēlaties, lai meklētu Dienasgrāmatas, kas atbilst "
-"meklēšanas kritērijiem."
+"Atzīmējiet, ja vēlaties katras lapas apakšā izdrukāt nelielu kājeni ar "
+"drukāšanas datumu."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:380
@@ -1531,19 +1447,16 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:423
 #: printing/calprintweekconfig_base.ui:380
 #: printing/calprintyearconfig_base.ui:184
-#, fuzzy, kde-format
-#| msgid "Print &year"
+#, kde-format
 msgid "Print &Footer"
-msgstr "Drukāt &gadu"
+msgstr "Drukāt &kājeni"
 
 #: printing/calprintdefaultplugins.cpp:120
 #: printing/calprintdefaultplugins.cpp:149
 #: printing/calprintdefaultplugins.cpp:168
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Start date: "
-msgstr "Sākuma datums un laiks"
+msgstr "Sākuma datums: "
 
 #: printing/calprintdefaultplugins.cpp:123
 #: printing/calprintdefaultplugins.cpp:152
@@ -1552,11 +1465,9 @@ msgid "No start date"
 msgstr "Nav sākuma datuma"
 
 #: printing/calprintdefaultplugins.cpp:128
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event end date and time"
-#| msgid "End date and time"
+#, kde-format
 msgid "End date: "
-msgstr "Beigu datums un laiks"
+msgstr "Beigu datums:"
 
 #: printing/calprintdefaultplugins.cpp:131
 #, kde-format
@@ -1567,17 +1478,17 @@ msgstr "Ilgums:"
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 stunda "
+msgstr[1] "%1 stundas "
+msgstr[2] "%1 stundu "
 
 #: printing/calprintdefaultplugins.cpp:137
 #, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 minūte "
+msgstr[1] "%1 minūtes "
+msgstr[2] "%1 minūšu "
 
 #: printing/calprintdefaultplugins.cpp:140
 #, kde-format
@@ -1587,7 +1498,7 @@ msgstr "Nav beigu datuma"
 #: printing/calprintdefaultplugins.cpp:157
 #, kde-format
 msgid "Due date: "
-msgstr "Termiņš:"
+msgstr "Termiņš: "
 
 #: printing/calprintdefaultplugins.cpp:160
 #, kde-format
@@ -1603,7 +1514,7 @@ msgstr " izņemot"
 #: printing/calprintdefaultplugins.cpp:292
 #, kde-format
 msgid "Repeats: "
-msgstr "Atkārtojas:"
+msgstr "Atkārtojas: "
 
 #: printing/calprintdefaultplugins.cpp:300
 #, kde-format
@@ -1614,9 +1525,9 @@ msgstr "Nav atgādinājumu"
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 atgādinājums: "
+msgstr[1] "%1 atgādinājumi: "
+msgstr[2] "%1 atgādinājumu: "
 
 #: printing/calprintdefaultplugins.cpp:317
 #, kde-format
@@ -1646,31 +1557,29 @@ msgstr "%1 pēc beigām"
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 diena"
+msgstr[1] "%1 dienas"
+msgstr[2] "%1 dienu"
 
 #: printing/calprintdefaultplugins.cpp:340
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 stunda"
+msgstr[1] "%1 stundas"
+msgstr[2] "%1 stundu"
 
 #: printing/calprintdefaultplugins.cpp:343
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 minūte"
+msgstr[1] "%1 minūtes"
+msgstr[2] "%1 minūtes"
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:629
-#, fuzzy, kde-format
-#| msgctxt "Spacer for the joined list of categories"
-#| msgid ", "
+#, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr ", "
@@ -1678,12 +1587,12 @@ msgstr ", "
 #: printing/calprintdefaultplugins.cpp:352
 #, kde-format
 msgid "Organizer: "
-msgstr "Organiztors:"
+msgstr "Organizators: "
 
 #: printing/calprintdefaultplugins.cpp:365
 #, kde-format
 msgid "Location: "
-msgstr "Vieta:"
+msgstr "Vieta: "
 
 #: printing/calprintdefaultplugins.cpp:427
 #, kde-format
@@ -1704,9 +1613,9 @@ msgstr "Nav apakšvienību"
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 apakšvienība"
+msgstr[1] "%1 apakšvienības:"
+msgstr[2] "%1 apakšvienību:"
 
 #: printing/calprintdefaultplugins.cpp:485
 #, kde-format
@@ -1721,12 +1630,10 @@ msgid "unknown"
 msgstr "nezināms"
 
 #: printing/calprintdefaultplugins.cpp:494
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgctxt "subitem start date"
 msgid "Start Date: %1\n"
-msgstr "Sākuma datums un laiks"
+msgstr "Sākuma datums: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:497
 #, kde-format
@@ -1759,11 +1666,10 @@ msgid "Status: %1\n"
 msgstr "Statuss: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:522
-#, fuzzy, kde-format
-#| msgid "Priority"
+#, kde-format
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
-msgstr "Prioritāte"
+msgstr "Prioritāte: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:523
 #, kde-format
@@ -1780,9 +1686,9 @@ msgstr "Nav pielikumu"
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 pielikums:"
+msgstr[1] "%1 pielikumi:"
+msgstr[2] "%1 pielikumu:"
 
 #: printing/calprintdefaultplugins.cpp:550
 #, kde-format
@@ -1799,9 +1705,9 @@ msgstr "Nav dalībnieku"
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 dalībnieks:"
+msgstr[1] "%1 dalībnieki:"
+msgstr[2] "%1 dalībnieku:"
 
 #: printing/calprintdefaultplugins.cpp:581
 #, kde-format
@@ -1839,12 +1745,12 @@ msgstr "Šis darbs ir iekavēts!"
 #: printing/calprintdefaultplugins.cpp:623
 #, kde-format
 msgid "Settings: "
-msgstr "Iestatījumi:"
+msgstr "Iestatījumi: "
 
 #: printing/calprintdefaultplugins.cpp:628
 #, kde-format
 msgid "Tags: "
-msgstr ""
+msgstr "Birkas: "
 
 #: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:918
 #: printing/calprintpluginbase.cpp:1058 printing/calprintpluginbase.cpp:1115
@@ -1855,9 +1761,7 @@ msgstr "%1, %2"
 
 #: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:937
 #: printing/calprintpluginbase.cpp:1061
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1, %2"
@@ -1866,75 +1770,63 @@ msgstr "%1, %2"
 #, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
-msgstr ""
+msgstr "Visu dienu"
 
 #: printing/calprintdefaultplugins.cpp:984
 #: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:140
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
-msgstr ""
+msgstr "%1—%2"
 
 #: printing/calprintdefaultplugins.cpp:1229
-#, fuzzy, kde-format
-#| msgctxt "date from - to (week number)"
-#| msgid "%1 - %2 (Week %3)"
+#, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
-msgstr "%1 - %2 (%3. nedēļa)"
+msgstr "%1—%2 (%3. nedēļa)"
 
 #: printing/calprintdefaultplugins.cpp:1231
-#, fuzzy, kde-format
-#| msgctxt "date from - to (week number)"
-#| msgid "%1 - %2 (Week %3)"
+#, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
 "%1–%2\n"
 "(Week %3)"
-msgstr "%1 - %2 (%3. nedēļa)"
+msgstr ""
+"%1—%2\n"
+"(%3. nedēļa)"
 
 #: printing/calprintdefaultplugins.cpp:1416
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
-msgstr "%2. - %3. %1"
+msgstr "%1 %2"
 
 #: printing/calprintdefaultplugins.cpp:1527
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event summary"
-#| msgid "Summary"
+#, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "Kopsavilkums"
 
 #: printing/calprintdefaultplugins.cpp:1528
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
-msgstr "Sākuma datums un laiks"
+msgstr "Sākuma datums"
 
 #: printing/calprintdefaultplugins.cpp:1529
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event end date and time"
-#| msgid "End date and time"
+#, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
-msgstr "Beigu datums un laiks"
+msgstr "Beigu datums"
 
 #: printing/calprintdefaultplugins.cpp:1530
-#, fuzzy, kde-format
-#| msgid "Priority"
+#, kde-format
 msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "Prioritāte"
 
 #: printing/calprintdefaultplugins.cpp:1531
-#, fuzzy, kde-format
-#| msgid "Percent Complete"
+#, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "Procentu paveikts"
@@ -1943,7 +1835,7 @@ msgstr "Procentu paveikts"
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
-msgstr ""
+msgstr "Birkas"
 
 #: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
@@ -1955,18 +1847,18 @@ msgstr "Augoši"
 #, kde-format
 msgctxt "@option sort in descreasing order"
 msgid "Descending"
-msgstr "Dilstoši "
+msgstr "Dilstoši"
 
 #: printing/calprintdefaultplugins.cpp:1552
 #, kde-format
 msgid "To-do list"
-msgstr "Darbu saraksts"
+msgstr "Darāmo darbu saraksts"
 
 #: printing/calprintdefaultplugins.cpp:1604
 #: printing/calprintpluginbase.cpp:1718
 #, kde-format
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: printing/calprintdefaultplugins.cpp:1615
 #, kde-format
@@ -1980,12 +1872,10 @@ msgid "Due"
 msgstr "Termiņš"
 
 #: printing/calprintdefaultplugins.cpp:1635
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
-msgstr "Sākuma datums un laiks"
+msgstr "Sākums"
 
 #: printing/calprintdefaultplugins.cpp:1645
 #, kde-format
@@ -1997,7 +1887,7 @@ msgstr "Pabeigts"
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
-msgstr ""
+msgstr "Birkas"
 
 #: printing/calprintdefaultplugins.h:36
 #, kde-format
@@ -2042,7 +1932,7 @@ msgstr "Vienā lapā drukā visus viena mēneša notikumus"
 #: printing/calprintdefaultplugins.h:310
 #, kde-format
 msgid "Print to-&dos"
-msgstr "Drukāt &darbus"
+msgstr "Drukāt &darāmos darbus"
 
 #: printing/calprintdefaultplugins.h:315
 #, kde-format
@@ -2050,44 +1940,37 @@ msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Drukāt (kokveida) sarakstu ar visiem darbiem"
 
 #: printing/calprinter.cpp:115
-#, fuzzy, kde-format
-#| msgid "Unable to print, no valid print style was returned."
+#, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
-msgstr "Neizdevās drukāt, netika atgriezts derīgs drukāšanas stils."
+msgstr "Neizdevās izdrukāt, atgriezts nederīgs drukāšanas stils."
 
 #: printing/calprinter.cpp:115
-#, fuzzy, kde-format
-#| msgid "Printing error"
+#, kde-format
 msgctxt "@title:window"
 msgid "Printing error"
 msgstr "Drukāšanas kļūda"
 
 #: printing/calprinter.cpp:158
-#, fuzzy, kde-format
-#| msgid "Print"
+#, kde-format
 msgctxt "@title:window"
 msgid "Print"
 msgstr "Drukāt"
 
 #: printing/calprinter.cpp:177
-#, fuzzy, kde-format
-#| msgid "Print Style"
+#, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "Drukāšanas stils"
 
 #: printing/calprinter.cpp:189
-#, fuzzy, kde-format
-#| msgid "Page &orientation:"
+#, kde-format
 msgctxt "@label"
 msgid "Page &orientation:"
 msgstr "Lapas &orientācija:"
 
 #: printing/calprinter.cpp:194
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Accept the invitation"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
 msgstr "Pieņemt ielūgumu"
@@ -2100,42 +1983,39 @@ msgid ""
 "\". You can also default to the orientation best suited to the selected "
 "style or to your printer's default setting."
 msgstr ""
+"Izvēlieties, vai vēlaties izvadi dukāt „portreta“ vai „ainavas“ orientācijā. "
+"Varat arī izmantot noklusējuma orientāciju, kas ir piemērotākā atlasītajam "
+"stilam vai printera noklusējuma iestatījumu."
 
 #: printing/calprinter.cpp:199
-#, fuzzy, kde-format
-#| msgid "Use Default Orientation of Selected Style"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Default Orientation of Selected Style"
-msgstr "Lietot izvēlētā stila noklusēto orientāciju"
+msgstr "Izmantot atlasītā stila noklusējuma orientāciju"
 
 #: printing/calprinter.cpp:200
-#, fuzzy, kde-format
-#| msgid "Use Printer Default"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
-msgstr "Lietot noklusēto drukas ierīci"
+msgstr "Lietot printera noklusējumu"
 
 #: printing/calprinter.cpp:201
-#, fuzzy, kde-format
-#| msgid "Portrait"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Portrait"
 msgstr "Portrets"
 
 #: printing/calprinter.cpp:202
-#, fuzzy, kde-format
-#| msgid "Landscape"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
 msgstr "Ainava"
 
 #: printing/calprinter.cpp:224
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Select the organizer"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the type of print"
-msgstr "Izvēlēties organizatoru"
+msgstr "Izvēlieties izdrukas tipu"
 
 #: printing/calprinter.cpp:226
 #, kde-format
@@ -2145,13 +2025,15 @@ msgid ""
 "to print an individual item, or all the items for a specific time range "
 "(like a day, week or month), or you may want to print your to-do list."
 msgstr ""
+"Izvēlieties kādu no šiem izdrukas tipiem. Varat drukāt atsevišķu ierakstu "
+"vai visus ierakstus noteiktā laika diapazonā (piemēram, dienā, nedēļā vai "
+"mēnesī), vai arī varat izdrukāt savu darāmo darbu sarakstu."
 
 #: printing/calprinter.cpp:254
-#, fuzzy, kde-format
-#| msgid "&Preview"
+#, kde-format
 msgctxt "@action:button"
 msgid "&Preview"
-msgstr "&Priekšapskate"
+msgstr "&Priekšskatījums"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintincidenceconfig_base.ui:17
@@ -2177,10 +2059,9 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:33
-#, fuzzy, kde-format
-#| msgid "Print &incidence"
+#, kde-format
 msgid "Print incidence details"
-msgstr "Drukāt &ierakstu"
+msgstr "Drukāt ieraksta informāciju"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:36
@@ -2189,30 +2070,28 @@ msgid ""
 "Check this box if you want to print more details for the incidence, "
 "including the visibility and secrecy properties."
 msgstr ""
+"Atzīmējiet lauciņu, ja vēlaties izdrukāt vairāk informācijas par ierakstu, "
+"tostarp tā redzamības un slepenības īpašības."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:39
 #, kde-format
 msgid "Detai&ls (visiblility, secrecy, etc.)"
-msgstr "De&taļas (rezdamība, slepenība, utt.)"
+msgstr "In&formācija (redzamība, slepenība utt.)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:46
-#, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "One attendee"
-#| msgid_plural "%1 attendees"
+#, kde-format
 msgid "Print the attendees"
-msgstr "%1 dalībnieks"
+msgstr "Drukāt dalībniekus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:49
-#, fuzzy, kde-format
-#| msgid "Check this box if you want to show seconds on the current-time line."
+#, kde-format
 msgid ""
 "Check this box if you want the attendees list included on the print-out."
 msgstr ""
-"Atzīmējiet šo, ja vēlaties, lai pie pašreizējā laika līnijas rādītu sekundes."
+"Atzīmējiet lauciņu, ja vēlaties, lai izdruka satur dalībnieku sarakstu."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:52
@@ -2222,19 +2101,17 @@ msgstr "&Dalībnieki"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:59
-#, fuzzy, kde-format
-#| msgid "Print week &numbers"
+#, kde-format
 msgid "Print the notes"
-msgstr "Drukāt nedēļu &numurus"
+msgstr "Drukāt piezīmes"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:62
-#, fuzzy, kde-format
-#| msgid "Check this box if you want to show seconds on the current-time line."
+#, kde-format
 msgid ""
 "Check this box if you want the incidence notes included on the print-out."
 msgstr ""
-"Atzīmējiet šo, ja vēlaties, lai pie pašreizējā laika līnijas rādītu sekundes."
+"Atzīmējiet lauciņu, ja vēlaties, lai izdruka saturētu ieraksta piezīmes."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:65
@@ -2244,24 +2121,19 @@ msgstr "&Piezīmes, apakšieraksti"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:72
-#, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "New attachment"
+#, kde-format
 msgid "Print the attachments"
-msgstr "Jauns pielikums"
+msgstr "Drukāt pielikumus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box if you want to search for Event items that match the "
-#| "search criteria."
+#, kde-format
 msgid ""
 "Check this box if you want the attachment information included on the print-"
 "out. The attachments themselves are not printed."
 msgstr ""
-"Atzīmējiet šo, ja vēlaties, lai meklētu Notikumus, kas atbilst meklēšanas "
-"kritērijiem."
+"Atzīmējiet lauciņu, ja vēlaties, lai izdruka saturētu pielikumu informāciju. "
+"Paši pielikumi netiks izdrukāti."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:78
@@ -2276,6 +2148,9 @@ msgid ""
 "Check this box if you want to draw note lines in the empty area of the "
 "print. This is useful if you want to hand-write notes on this print-out."
 msgstr ""
+"Atzīmējiet lauciņu, ja vēlaties, lai izdrukas brīvajās vietās programma "
+"iezīmētu līnijas piezīmēm. Tas ir noderīgi, ja vēlaties pēc tam veikt "
+"piezīmes ar roku."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:100
@@ -2356,8 +2231,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
-#, fuzzy, kde-format
-#| msgid "&Start month:"
+#, kde-format
 msgid "Sta&rt month:"
 msgstr "&Sākuma mēnesis:"
 
@@ -2365,29 +2239,25 @@ msgstr "&Sākuma mēnesis:"
 #: printing/calprintmonthconfig_base.ui:43
 #, kde-format
 msgid "Starting month for printing"
-msgstr ""
+msgstr "Izdrukas sākuma mēnesis"
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:53
 #, kde-format
 msgid "Starting year for printing"
-msgstr ""
+msgstr "Izdrukas sākuma gads"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mFromYear)
 #: printing/calprintmonthconfig_base.ui:56
-#, fuzzy, kde-format
-#| msgid ""
-#| "When you want to print more months at once, you can define a month range. "
-#| "This option defines the first month to be printed. Use the option <i>End "
-#| "month</i> to define the last month in this range."
+#, kde-format
 msgid ""
 "When you want to print more years at once, you can define a year range. This "
 "option defines the first year to be printed. Use the option <i>End year</i> "
 "to define the last year in this range."
 msgstr ""
-"Ja vēlaties izdrukāt uzreiz vairākus mēnešus, varat norādīt mēnešu "
-"diapazonu. Šis iestatījums norāda pirmo izdrukāto mēnesi. Iestatījums "
-"<i>Beigu mēnesis</i> norāda pēdējo izdrukāto mēnesi."
+"Ja vēlaties izdrukāt uzreiz vairākus gadus, varat norādīt gadu diapazonu. "
+"Šis iestatījums norāda pirmo izdrukāto gadu. Iestatījums <i>Beigu gads</i> "
+"norāda pēdējo izdrukāto mēnesi."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, mToMonth)
@@ -2413,36 +2283,31 @@ msgstr "&Beigu mēnesis"
 #: printing/calprintmonthconfig_base.ui:82
 #, kde-format
 msgid "Ending month for the print"
-msgstr ""
+msgstr "Izdrukas beigu mēnesis"
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:92
 #, kde-format
 msgid "Ending year for the print"
-msgstr ""
+msgstr "Izdrukas beigu gads"
 
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, mToYear)
 #: printing/calprintmonthconfig_base.ui:95
-#, fuzzy, kde-format
-#| msgid ""
-#| "When you want to print more months at once, you can define a month range. "
-#| "This option defines the last month to be printed. Use the option <i>Start "
-#| "month</i> to define the first month in this range."
+#, kde-format
 msgid ""
 "When you want to print more years at once, you can define a year range. This "
 "option defines the last year to be printed. Use the option <i>Start year</i> "
 "to define the first year in this range."
 msgstr ""
-"Ja vēlaties izdrukāt uzreiz vairākus mēnešus, varat norādīt mēnešu "
-"diapazonu. Šis iestatījums norāda pēdējo izdrukāto mēnesi. Iestatījums "
-"<i>Sākuma mēnesis</i> norāda pirmo izdrukāto mēnesi."
+"Ja vēlaties izdrukāt uzreiz vairākus gadus, varat norādīt gadu diapazonu. "
+"Šis iestatījums norāda pēdējo izdrukāto gadu. Iestatījums <i>Sākuma mēnesis</"
+"i> norāda pirmo izdrukāto gadu."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:195
-#, fuzzy, kde-format
-#| msgid "Print daily re&curring to-dos and events"
+#, kde-format
 msgid "Print daily recurring items"
-msgstr "Drukāt ikdien&u atkārtojošos darbus un notikumus"
+msgstr "Drukāt ik dien&u atkārtojošos ierakstus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:198
@@ -2452,22 +2317,21 @@ msgid ""
 "events in the print. They take a lot of space and make the month view "
 "needlessly complicated."
 msgstr ""
-"Šis iestatījums ļauj nedrukāt ikdienu atkārtojošos darbus un notikumus. Tie "
-"aizņem daudz vietas un padara mēneša skatu nevajadzīgi piebāztu."
+"Šis iestatījums ļauj nedrukāt katru dienu atkārtojošos darāmos darbus un "
+"notikumus. Tie aizņem daudz vietas un padara mēneša skatu nevajadzīgi "
+"piebāztu."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:201
-#, fuzzy, kde-format
-#| msgid "Print daily re&curring to-dos and events"
+#, kde-format
 msgid "Include daily re&curring to-dos and events"
-msgstr "Drukāt ikdien&u atkārtojošos darbus un notikumus"
+msgstr "Drukāt ik dien&u atkārtojošos darāmos darbus un notikumus"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:208
-#, fuzzy, kde-format
-#| msgid "Print weekl&y recurring to-dos and events"
+#, kde-format
 msgid "Print weekly recurring items"
-msgstr "Drukāt ik&nedēļu atkārtojošos darbus un notikumus"
+msgstr "Drukāt ik &nedēļu atkārtojošos ierakstus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:211
@@ -2476,28 +2340,26 @@ msgid ""
 "Similar to \"Print daily recurring to-dos and events\". Weekly to-dos and "
 "events will be omitted when making a print of the selected month."
 msgstr ""
-"Līdzīgi kā \"Drukāt ikdienu atkārtojošos darbus un notikumus\". Drukājot "
-"mēnesi, tiks izlaisti iknedēļas darbi un notikumi."
+"Līdzīgi kā „Drukāt ik dienu atkārtojošos darāmos darbus un notikumus“. Katru "
+"nedēļu atkārtojošies darāmie darbi un uzdevumi tiks izlaisti."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:214
-#, fuzzy, kde-format
-#| msgid "Print weekl&y recurring to-dos and events"
+#, kde-format
 msgid "Include weekl&y recurring to-dos and events"
-msgstr "Drukāt ik&nedēļu atkārtojošos darbus un notikumus"
+msgstr "Drukāt ik &nedēļu atkārtojošos darāmos darbus un notikumus"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:230
-#, fuzzy, kde-format
-#| msgid "Print week &numbers"
+#, kde-format
 msgid "Print week numbers"
-msgstr "Drukāt nedēļu &numurus"
+msgstr "Drukāt nedēļu numurus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:233
 #, kde-format
 msgid "Enable this to print week numbers at the left of each row."
-msgstr "Atzīmējiet šo, lai katras rindas beigās izdrukātu nedēļas numuru."
+msgstr "Atzīmējiet, lai katras rindas beigās izdrukātu nedēļas numuru."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:236
@@ -2506,11 +2368,10 @@ msgid "Print week &numbers"
 msgstr "Drukāt nedēļu &numurus"
 
 #: printing/calprintpluginbase.cpp:144
-#, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
-msgstr "Šim drukāšanas stilam nav konfigurācijas."
+msgstr "Šim drukāšanas stilam nav pielāgošanas opciju."
 
 #: printing/calprintpluginbase.cpp:300
 #, kde-format
@@ -2533,58 +2394,48 @@ msgstr "izdrukāts: %1"
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
-msgstr "%1-%2 %3"
+msgstr "%1—%2 %3"
 
 #: printing/calprintpluginbase.cpp:929
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
-msgstr "%1-%2 %3, %4"
+msgstr "%1—%2 %3, %4"
 
 #: printing/calprintpluginbase.cpp:996
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
-msgstr "%2. - %3. %1"
+msgstr "%1, %2 %3"
 
 #: printing/calprintpluginbase.cpp:1122
-#, fuzzy, kde-format
-#| msgctxt "to-do due date"
-#| msgid "  (Due: %1)"
+#, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
-msgstr " (Termiņš: %1)"
+msgstr "%1 (termiņš: %2)"
 
 #: printing/calprintpluginbase.cpp:1127
-#, fuzzy, kde-format
-#| msgctxt "to-do due date"
-#| msgid "  (Due: %1)"
+#, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
-msgstr " (Termiņš: %1)"
+msgstr "%1 (termiņš: %2)"
 
 #: printing/calprintpluginbase.cpp:1134
 #, kde-format
 msgid "To-do: %1"
-msgstr "Darbs: %1"
+msgstr "Darāmais darbs: %1"
 
 #: printing/calprintpluginbase.cpp:1880
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
-msgstr "%2. - %3. %1"
+msgstr "%1 %2—%3"
 
 #: printing/calprintpluginbase.cpp:1886
-#, fuzzy, kde-format
-#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
-#| msgid "%1 %2 - %3 %4"
+#, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
-msgstr "%2. %1 - %4. %3"
+msgstr "%1 %2—%3 %4"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprinttodoconfig_base.ui:17
@@ -2606,17 +2457,15 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Darbu drukāšanas:</span></p></body></html>"
+"weight:600;\">Darāmo darbu drukāšanas opcijas:</span></p></body></html>"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mTitleLabel)
 #. i18n: ectx: property (toolTip), widget (QLineEdit, mTitle)
 #: printing/calprinttodoconfig_base.ui:26
 #: printing/calprinttodoconfig_base.ui:42
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "after the to-do starts"
+#, kde-format
 msgid "Name for this to-do list"
-msgstr "pēc darba sākuma"
+msgstr "Šī darāmo darbu saraksta nosaukums"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mTitleLabel)
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, mTitle)
@@ -2626,6 +2475,7 @@ msgstr "pēc darba sākuma"
 msgid ""
 "Enter a name for this to-do list that will be put at the top of the print-out"
 msgstr ""
+"Ierakstiet šo darāmo darbu saraksta nosaukumu, ko redzēsiet izdrukas augšdaļā"
 
 #. i18n: ectx: property (text), widget (QLabel, mTitleLabel)
 #: printing/calprinttodoconfig_base.ui:32
@@ -2637,48 +2487,43 @@ msgstr "&Virsraksts:"
 #: printing/calprinttodoconfig_base.ui:48
 #, kde-format
 msgid "To-do List"
-msgstr "Darbu saraksts"
+msgstr "Darāmo darbu saraksts"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprinttodoconfig_base.ui:57
 #, kde-format
 msgid "To-dos to Print"
-msgstr "Drukājamie darbi"
+msgstr "Drukājamie darāmie darbi"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintAll)
 #: printing/calprinttodoconfig_base.ui:63
 #, kde-format
 msgid "Print &all to-dos"
-msgstr "Drukāt &visus darbus"
+msgstr "Drukāt &visus darāmos darbus"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
 #: printing/calprinttodoconfig_base.ui:73
-#, fuzzy, kde-format
-#| msgid "Print &unfinished to-dos only"
+#, kde-format
 msgid "Print &uncompleted to-dos only"
-msgstr "Drukāt tikai &nepabeigtos darbus"
+msgstr "Drukāt tikai &nepabeigtos darāmos darbus"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
 #: printing/calprinttodoconfig_base.ui:80
 #, kde-format
 msgid "Print only to-dos due in the &range:"
-msgstr "Drukāt tikai darbus &diapazonā"
+msgstr "Drukāt tikai darāmos darbus &diapazonā:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
-#, fuzzy, kde-format
-#| msgid "Include &descriptions"
+#, kde-format
 msgid "Print item priorities"
-msgstr "Iekļaut &aprakstus"
+msgstr "Izdrukāt vienuma prioritātes"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:261
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box if you want to match item descriptions against your search "
-#| "pattern."
+#, kde-format
 msgid "Check this option if you want to see the item priorities printed."
-msgstr "Atzīmējiet šo, ja vēlaties meklēt arī ierakstu aprakstos."
+msgstr "Atzīmējiet, ja vēlaties izdrukāt ierakstu prioritāti."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
@@ -2688,77 +2533,63 @@ msgstr "&Prioritāte"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:274
-#, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "One attendee"
-#| msgid_plural "%1 attendees"
+#, kde-format
 msgid "Print item start dates"
-msgstr "%1 dalībnieks"
+msgstr "Drukāt ierakstu sākuma datumus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:277
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box if you want to match item descriptions against your search "
-#| "pattern."
+#, kde-format
 msgid ""
 "Check this option if you want to see the item start dates (when work can "
 "begin) printed."
-msgstr "Atzīmējiet šo, ja vēlaties meklēt arī ierakstu aprakstos."
+msgstr ""
+"Atzīmējiet opciju, ja vēlaties redzēt izdrukātus ierakstu sākuma datumus "
+"(kad var sākties darbs)."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:280
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "&Start date"
-msgstr "Sākuma datums un laiks"
+msgstr "&Sākuma datums"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
-#, fuzzy, kde-format
-#| msgid "Include &descriptions"
+#, kde-format
 msgid "Print item due dates"
-msgstr "Iekļaut &aprakstus"
+msgstr "Iekļaut ierakstu termiņa datumus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box if you want to match item descriptions against your search "
-#| "pattern."
+#, kde-format
 msgid "Check this option if you want to see the item due dates printed."
-msgstr "Atzīmējiet šo, ja vēlaties meklēt arī ierakstu aprakstos."
+msgstr "Atzīmējiet, ja vēlaties izdrukā redzēt ierakstu termiņus."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293
-#, fuzzy, kde-format
-#| msgid "Due date"
+#, kde-format
 msgid "Du&e date"
-msgstr "Termiņš"
+msgstr "T&ermiņa datums"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
-#, fuzzy, kde-format
-#| msgid "Include &descriptions"
+#, kde-format
 msgid "Print item completion percentage"
-msgstr "Iekļaut &aprakstus"
+msgstr "Izdrukāt ieraksta pabeigšanas procentus"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:306
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box if you want to match item descriptions against your search "
-#| "pattern."
+#, kde-format
 msgid ""
 "Check this option if you want to see the item completion percentage printed "
 "as a number and bar graph."
-msgstr "Atzīmējiet šo, ja vēlaties meklēt arī ierakstu aprakstos."
+msgstr ""
+"Atzīmējiet, ja vēlaties izdrukā redzēt ieraksta uzdevuma pabeigtības "
+"procentuālo izteiksmi kā grafiku un skaitli."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
-#, fuzzy, kde-format
-#| msgid "Per&centage completed"
+#, kde-format
 msgid "Percentage co&mpleted"
 msgstr "Pro&centu paveikts"
 
@@ -2788,8 +2619,7 @@ msgstr "Savie&not apakšdarbus ar to vecākiem"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
-#, fuzzy, kde-format
-#| msgid "Strike &out completed to-do summaries"
+#, kde-format
 msgid "Stri&ke out completed to-do summaries"
 msgstr "Pārsvītr&ot pabeigto darbu kopsavilkumus"
 
@@ -2817,33 +2647,30 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintweekconfig_base.ui:212
-#, fuzzy, kde-format
-#| msgid "Print date range as &Filofax format, all on one page"
+#, kde-format
 msgid "Print date &range as Filofax format, one week per page"
-msgstr "Izdrukāt datumu diapazonu &Filofax formātā, visu vienā lapā"
+msgstr "Izdrukāt datumu diapazonu „&Filofax“ formātā, viena nedēļa lapā"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintweekconfig_base.ui:222
-#, fuzzy, kde-format
-#| msgid "Print as &timetable view, one page per day"
+#, kde-format
 msgid "Print as timeta&ble view, one week per page"
-msgstr "Drukāt laika &tabulas skatu, viena lapa katrai dienai"
+msgstr "Drukāt &grafika skatu, viena lapa katrai dienai"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:229
-#, fuzzy, kde-format
-#| msgid "The timetable print view has the times to the left of the page"
+#, kde-format
 msgid ""
 "The split week view has the times to the left of the page, with two pages "
 "per week."
-msgstr "Laika tabulas drukāšanas skatā laiks ir lapas kreisajā pusē"
+msgstr ""
+"Sadalītas nedēļas skats satur laiku lapas kreisajā pusē, divas lapas nedēļai."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSplitWeek)
 #: printing/calprintweekconfig_base.ui:232
-#, fuzzy, kde-format
-#| msgid "Print as split week view"
+#, kde-format
 msgid "Print as split wee&k view"
-msgstr "Drukāt sadalītas nedēļas skatu"
+msgstr "Dru&kāt sadalītas nedēļas skatu"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintyearconfig_base.ui:14
@@ -2852,39 +2679,36 @@ msgid ""
 "<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">Print "
 "year options:</span></p></body></html>"
 msgstr ""
+"<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">Gada "
+"drukāšanas opcijas:</span></p></body></html>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
 #: printing/calprintyearconfig_base.ui:21
-#, fuzzy, kde-format
-#| msgid "Date &range:"
+#, kde-format
 msgid "Date Range"
-msgstr "Datumu &diapazons:"
+msgstr "Datumu diapazons"
 
 #. i18n: ectx: property (text), widget (QLabel, mYearLabel)
 #: printing/calprintyearconfig_base.ui:32
 #, kde-format
 msgid "&Year:"
-msgstr ""
+msgstr "&Gads:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
 #: printing/calprintyearconfig_base.ui:99
-#, fuzzy, kde-format
-#| msgctxt "@title:tab general to-do settings"
-#| msgid "General"
+#, kde-format
 msgid "General"
 msgstr "Pamata"
 
 #. i18n: ectx: property (text), widget (QLabel, mPagesLabel)
 #: printing/calprintyearconfig_base.ui:105
-#, fuzzy, kde-format
-#| msgid "Number of &pages:"
+#, kde-format
 msgid "Num&ber of pages:"
 msgstr "La&pu skaits:"
 
 #. i18n: ectx: property (text), widget (QLabel, mSubDaysLabel)
 #: printing/calprintyearconfig_base.ui:121
-#, fuzzy, kde-format
-#| msgid "Show sub-day events as:"
+#, kde-format
 msgid "Show &sub-day events as:"
 msgstr "Attēlot par dienu īsākus notikumus kā:"
 
@@ -2906,16 +2730,15 @@ msgstr "Laika stabiņus"
 
 #. i18n: ectx: property (text), widget (QLabel, mHolidaysLabel)
 #: printing/calprintyearconfig_base.ui:151
-#, fuzzy, kde-format
-#| msgid "Show holidays as:"
+#, kde-format
 msgid "Show &holidays as:"
-msgstr "Attēlot svētku dienas kā:"
+msgstr "Attēlot &brīvdienas kā:"
 
 #: printing/journalprint.cpp:104
 #, kde-format
 msgctxt "Description - date"
 msgid "%1 - %2"
-msgstr "%1 - %2"
+msgstr "%1 — %2"
 
 #: printing/journalprint.cpp:126
 #, kde-format
@@ -2948,138 +2771,154 @@ msgid "Prints a calendar for an entire year"
 msgstr "Izdrukā visa gada kalendāru"
 
 #: utils.cpp:289
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
-msgstr "Kalendārs"
+msgstr "Atlasīt kalendāru"
 
 #: utils.cpp:290
 #, kde-format
 msgid "Select the calendar where this item will be stored."
-msgstr ""
+msgstr "Atlasīt kalendāru, kurā vēlaties uzglabāt šo vienumu."
 
 #: utils.cpp:395
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
-msgstr "Kalendārs"
+msgstr "%1 (noklusējuma kalendārs)"
 
 #: utils.cpp:406
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
-msgstr ""
+msgstr "Virtuāls"
 
 #: utils.cpp:408
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Folder type:"
-msgstr "Kalendārs"
+msgstr "Mapes tips:"
 
 #: utils.cpp:418
-#, fuzzy, kde-format
-#| msgctxt "no status"
-#| msgid "none"
+#, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "nav"
 
 #: utils.cpp:421
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Content type:"
-msgstr "Kalendārs"
+msgstr "Satura tips:"
 
 #: utils.cpp:428
 #, kde-format
 msgid "Rights:"
-msgstr ""
+msgstr "Tiesības:"
 
 #: utils.cpp:431
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
-msgstr ""
+msgstr "tikai lasāms"
 
 #: utils.cpp:433
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
-msgstr ""
+msgstr "lasāms+rakstāms"
 
 #: utils.cpp:441
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
-msgstr ""
+msgstr "visas"
 
 #: utils.cpp:444
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
-msgstr ""
+msgstr "audio"
 
 #: utils.cpp:446
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
-msgstr ""
+msgstr "vizuāli"
 
 #: utils.cpp:448
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
-msgstr ""
+msgstr "e-pasta"
 
 #: utils.cpp:450
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
-msgstr ""
+msgstr "procedūra"
 
 #: utils.cpp:452
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
-msgstr ""
+msgstr "citi"
 
 #: utils.cpp:456
-#, fuzzy, kde-format
-#| msgctxt "no status"
-#| msgid "none"
+#, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "nav"
 
 #: utils.cpp:459
-#, fuzzy, kde-format
-#| msgid "No reminders"
+#, kde-format
 msgid "Blocked Reminders:"
-msgstr "Nav atgādinājumu"
+msgstr "Bloķētie atgādinājumi:"
 
 #: utils.cpp:524
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
-msgstr "%1%"
+msgstr "^%1"
 
 #: utils.cpp:526
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
-#| "Kainhofer <reinhold@kainhofer.com> (Participant): Awaiting Response'"
-#| msgid "%1 (%2): %3"
+#, kde-format
 msgid "%1 (%2)"
-msgstr "%1 (%2): %3"
+msgstr "%1 (%2)"
 
 #: utils.cpp:531
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
-msgstr ""
+msgstr "^%1 \\(.*\\)"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "Izveidot piezīmi"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Atcelt"
+
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "Saglabāt"
+
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Kalendārs, kurā būs saglabāta jaunā piezīme."
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Kalendārs, kurā saglabāt jauno piezīmi."
+
+#~| msgid "&Title:"
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "Virsraksts:"
+
+#~| msgid "Text"
+#~ msgctxt "@label specify the text for this note"
+#~ msgid "Text:"
+#~ msgstr "Teksts:"
 
 #, fuzzy
 #~| msgctxt "@title:column reminder title"

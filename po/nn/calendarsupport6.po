@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2020-11-03 17:31+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -798,48 +798,6 @@ msgstr ""
 #: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr ""
-
-#: noteeditdialog.cpp:42
-#, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr ""
-
-#: noteeditdialog.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr ""
-
-#: noteeditdialog.cpp:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Save"
-msgstr ""
-
-#: noteeditdialog.cpp:78
-#, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr ""
-
-#: noteeditdialog.cpp:80
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr ""
-
-#: noteeditdialog.cpp:93
-#, kde-format
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr ""
-
-#: noteeditdialog.cpp:98
-#, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)

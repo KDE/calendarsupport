@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2006-12-17 13:34+0000\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -819,53 +819,6 @@ msgstr ""
 #: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr ""
-
-#: noteeditdialog.cpp:42
-#, fuzzy, kde-format
-#| msgid "Click to add a new to-do"
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr "Янги вазифа қўшиш учун босинг"
-
-#: noteeditdialog.cpp:51
-#, fuzzy, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Ўз&гартириш"
-
-#: noteeditdialog.cpp:57
-#, fuzzy, kde-format
-#| msgid "Travel"
-msgctxt "@action:button"
-msgid "Save"
-msgstr "Саёҳат"
-
-#: noteeditdialog.cpp:78
-#, fuzzy, kde-format
-#| msgid "Sets the Title of this event or to-do."
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "Ушбу ҳодиса ёки вазифа сарлавҳасини мослаш."
-
-#: noteeditdialog.cpp:80
-#, fuzzy, kde-format
-#| msgid "Sets the Title of this event or to-do."
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "Ушбу ҳодиса ёки вазифа сарлавҳасини мослаш."
-
-#: noteeditdialog.cpp:93
-#, fuzzy, kde-format
-#| msgid "&Title:"
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "Са&рлавҳа:"
-
-#: noteeditdialog.cpp:98
-#, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -2838,6 +2791,41 @@ msgstr "%1 %2"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Click to add a new to-do"
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "Янги вазифа қўшиш учун босинг"
+
+#, fuzzy
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Ўз&гартириш"
+
+#, fuzzy
+#~| msgid "Travel"
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "Саёҳат"
+
+#, fuzzy
+#~| msgid "Sets the Title of this event or to-do."
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Ушбу ҳодиса ёки вазифа сарлавҳасини мослаш."
+
+#, fuzzy
+#~| msgid "Sets the Title of this event or to-do."
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Ушбу ҳодиса ёки вазифа сарлавҳасини мослаш."
+
+#, fuzzy
+#~| msgid "&Title:"
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "Са&рлавҳа:"
 
 #, fuzzy
 #~| msgid "&Title:"

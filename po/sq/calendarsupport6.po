@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2009-06-08 01:08+0000\n"
 "Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -807,51 +807,6 @@ msgstr ""
 #: kcalprefs.kcfg:219
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr ""
-
-#: noteeditdialog.cpp:42
-#, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr ""
-
-#: noteeditdialog.cpp:51
-#, fuzzy, kde-format
-#| msgid "C&ancel"
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "A&nullo"
-
-#: noteeditdialog.cpp:57
-#, fuzzy, kde-format
-#| msgctxt "@title:tab"
-#| msgid "Save"
-msgctxt "@action:button"
-msgid "Save"
-msgstr "Ruaje"
-
-#: noteeditdialog.cpp:78
-#, kde-format
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr ""
-
-#: noteeditdialog.cpp:80
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr ""
-
-#: noteeditdialog.cpp:93
-#, kde-format
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr ""
-
-#: noteeditdialog.cpp:98
-#, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -2829,6 +2784,19 @@ msgstr "%1/%2"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "C&ancel"
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "A&nullo"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "Save"
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "Ruaje"
 
 #, fuzzy
 #~| msgid "Today"

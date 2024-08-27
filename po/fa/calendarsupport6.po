@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2012-01-13 10:32+0330\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@ubuntu.ir>\n"
 "Language-Team: Farsi (Persian) <>\n"
@@ -945,55 +945,6 @@ msgstr ""
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr ""
-
-#: noteeditdialog.cpp:42
-#, fuzzy, kde-format
-#| msgid "Click to add a new to-do"
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr "فشار دادن برای افزودن کار انجامی جدید"
-
-#: noteeditdialog.cpp:51
-#, fuzzy, kde-format
-#| msgid "&Cancel"
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "&لغو‌"
-
-#: noteeditdialog.cpp:57
-#, fuzzy, kde-format
-#| msgid "Save"
-msgctxt "@action:button"
-msgid "Save"
-msgstr "ذخیره"
-
-#: noteeditdialog.cpp:78
-#, fuzzy, kde-format
-#| msgid "Sets the due date for this to-do."
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "تاریخ مقرر را برای این کار انجامی تنظیم می‌کند."
-
-#: noteeditdialog.cpp:80
-#, fuzzy, kde-format
-#| msgid "Sets the due date for this to-do."
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "تاریخ مقرر را برای این کار انجامی تنظیم می‌کند."
-
-#: noteeditdialog.cpp:93
-#, fuzzy, kde-format
-#| msgid "&Title:"
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "&عنوان:‌"
-
-#: noteeditdialog.cpp:98
-#, fuzzy, kde-format
-#| msgid "Text"
-msgctxt "@label specify the text for this note"
-msgid "Text:"
-msgstr "متن"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -3116,6 +3067,48 @@ msgstr "%1 ٪"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Click to add a new to-do"
+#~ msgctxt "@title:window"
+#~ msgid "Create Note"
+#~ msgstr "فشار دادن برای افزودن کار انجامی جدید"
+
+#, fuzzy
+#~| msgid "&Cancel"
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "&لغو‌"
+
+#, fuzzy
+#~| msgid "Save"
+#~ msgctxt "@action:button"
+#~ msgid "Save"
+#~ msgstr "ذخیره"
+
+#, fuzzy
+#~| msgid "Sets the due date for this to-do."
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "تاریخ مقرر را برای این کار انجامی تنظیم می‌کند."
+
+#, fuzzy
+#~| msgid "Sets the due date for this to-do."
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "تاریخ مقرر را برای این کار انجامی تنظیم می‌کند."
+
+#, fuzzy
+#~| msgid "&Title:"
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "&عنوان:‌"
+
+#, fuzzy
+#~| msgid "Text"
+#~ msgctxt "@label specify the text for this note"
+#~ msgid "Text:"
+#~ msgstr "متن"
 
 #, fuzzy
 #~| msgid "&Title:"

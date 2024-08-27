@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-01 00:41+0000\n"
+"POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2014-01-31 19:02+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -892,51 +892,6 @@ msgstr ""
 #| msgid "Use this color when drawing items without a category"
 msgid "Use this color when drawing items without any tags"
 msgstr "Korisititi ovu boju prilikom crtanja stavki bez kategorije"
-
-#: noteeditdialog.cpp:42
-#, kde-format
-msgctxt "@title:window"
-msgid "Create Note"
-msgstr ""
-
-#: noteeditdialog.cpp:51
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr ""
-
-#: noteeditdialog.cpp:57
-#, kde-format
-msgctxt "@action:button"
-msgid "Save"
-msgstr ""
-
-#: noteeditdialog.cpp:78
-#, fuzzy, kde-format
-#| msgid "Select the calendar where this item will be stored."
-msgctxt "@info"
-msgid "Calendar where the new note will be stored."
-msgstr "Izaberite kalendar gdje će se ova stavka smjestiti."
-
-#: noteeditdialog.cpp:80
-#, fuzzy, kde-format
-#| msgid "Select the calendar where this item will be stored."
-msgctxt "@info:tooltip"
-msgid "Calendar where the new note will be stored."
-msgstr "Izaberite kalendar gdje će se ova stavka smjestiti."
-
-#: noteeditdialog.cpp:93
-#, fuzzy, kde-format
-#| msgid "&Title:"
-msgctxt "@label specify the title for this note"
-msgid "Title:"
-msgstr "&Naslov:"
-
-#: noteeditdialog.cpp:98
-#, kde-format
-msgctxt "@label specify the text for this note"
-msgid "Text:"
-msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -2877,6 +2832,24 @@ msgstr "%1 (%2): %3"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Select the calendar where this item will be stored."
+#~ msgctxt "@info"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Izaberite kalendar gdje će se ova stavka smjestiti."
+
+#, fuzzy
+#~| msgid "Select the calendar where this item will be stored."
+#~ msgctxt "@info:tooltip"
+#~ msgid "Calendar where the new note will be stored."
+#~ msgstr "Izaberite kalendar gdje će se ova stavka smjestiti."
+
+#, fuzzy
+#~| msgid "&Title:"
+#~ msgctxt "@label specify the title for this note"
+#~ msgid "Title:"
+#~ msgstr "&Naslov:"
 
 #, fuzzy
 #~| msgctxt "@option sort by due date/time"
