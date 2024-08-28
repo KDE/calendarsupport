@@ -2776,31 +2776,3 @@ msgstr "%1 (%2)"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr "^%1 \\(.*\\)"
-
-#~ msgctxt "@title:window"
-#~ msgid "Create Note"
-#~ msgstr "创建便笺"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "取消"
-
-#~ msgctxt "@action:button"
-#~ msgid "Save"
-#~ msgstr "保存"
-
-#~ msgctxt "@info"
-#~ msgid "Calendar where the new note will be stored."
-#~ msgstr "新便笺将保存到的日历。"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Calendar where the new note will be stored."
-#~ msgstr "新便笺将保存到的日历。"
-
-#~ msgctxt "@label specify the title for this note"
-#~ msgid "Title:"
-#~ msgstr "标题："
-
-#~ msgctxt "@label specify the text for this note"
-#~ msgid "Text:"
-#~ msgstr "文本："

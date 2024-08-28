@@ -2805,31 +2805,3 @@ msgstr "%1 (%2)"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr "^%1 \\(.*\\)"
-
-#~ msgctxt "@title:window"
-#~ msgid "Create Note"
-#~ msgstr "Vytvořit poznámku"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "Zrušit"
-
-#~ msgctxt "@action:button"
-#~ msgid "Save"
-#~ msgstr "Uložit"
-
-#~ msgctxt "@info"
-#~ msgid "Calendar where the new note will be stored."
-#~ msgstr "Kalendář, kam bude nová poznámka uložena."
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Calendar where the new note will be stored."
-#~ msgstr "Kalendář, kam bude nová poznámka uložena."
-
-#~ msgctxt "@label specify the title for this note"
-#~ msgid "Title:"
-#~ msgstr "Název:"
-
-#~ msgctxt "@label specify the text for this note"
-#~ msgid "Text:"
-#~ msgstr "Text:"
