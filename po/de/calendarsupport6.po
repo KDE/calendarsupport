@@ -10,7 +10,7 @@
 # Intevation GmbH, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: calendarsupport\n"
+"Project-Id-Version: calendarsupport6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-27 00:39+0000\n"
 "PO-Revision-Date: 2024-08-19 23:23+0200\n"
