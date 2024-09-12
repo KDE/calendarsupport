@@ -1,0 +1,10 @@
+version = 1
+SPDX-PackageName = "calendarsupport"
+SPDX-PackageSupplier = "Montel Laurent <montel@kde.org>"
+SPDX-PackageDownloadLocation = "https://invent.kde.org/pim/calendarsupport"
+
+[[annotations]]
+path = ["src/next/README", ".krazy"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "none"
+SPDX-License-Identifier = "CC0-1.0"
