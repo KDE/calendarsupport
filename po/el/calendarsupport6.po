@@ -8,26 +8,27 @@
 # Dimitrios Glentadakis <dglent@gmail.com>, 2012.
 # Dimitris Kardarakos <dimkard@gmail.com>, 2014.
 # SPDX-FileCopyrightText: 2024 George Stefanakis <george.stefanakis@gmail.com>
+# Antonis Geralis <capoiosct@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-27 00:39+0000\n"
-"PO-Revision-Date: 2024-02-05 22:13+0200\n"
-"Last-Translator: George Stefanakis <george.stefanakis@gmail.com>\n"
+"PO-Revision-Date: 2024-08-28 16:29+0300\n"
+"Last-Translator: Αντώνης Γέραλης <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: archivedialog.cpp:43
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive/Delete Past Events and To-dos"
-msgstr "Αρχειοθέτηση/Διαγραφή περασμένων γεγονότων και υπενθυμίσεων"
+msgstr "Αρχειοθέτηση/Διαγραφή περασμένων γεγονότων και εργασίων"
 
 #: archivedialog.cpp:50
 #, kde-format
@@ -258,7 +259,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
-msgstr "Αρχειοθέτηση ολοκληρωμένων εργασιών προς υλοποίηση"
+msgstr "Αρχειοθέτηση ολοκληρωμένων εργασιών"
 
 #: archivedialog.cpp:172
 #, kde-format
@@ -332,8 +333,7 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr "Αδυναμία δημιουργίας προσωρινού αρχείου για το συνημμένο."
 
 #: attachmenthandler.cpp:213
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "Αποθήκευση συνημμένου"
@@ -2416,11 +2416,10 @@ msgid "Print week &numbers"
 msgstr "Εκτύπωση &αριθμών εβδομάδων"
 
 #: printing/calprintpluginbase.cpp:144
-#, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
-msgstr "Αυτό το στιλ εκτύπωσης δεν έχει καμία επιλογή διαμόρφωσης."
+msgstr "Αυτό το στυλ εκτύπωσης δεν έχει καμία επιλογή διαμόρφωσης."
 
 #: printing/calprintpluginbase.cpp:300
 #, kde-format
