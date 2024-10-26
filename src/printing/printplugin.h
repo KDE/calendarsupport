@@ -22,7 +22,17 @@ namespace CalendarSupport
 class CalPrinterBase
 {
 public:
-    enum PrintType { Incidence = 100, Day = 200, Week = 300, Month = 400, Year = 900, Todolist = 1000, Journallist = 2000, WhatsNext = 2100, ItemList = 2200 };
+    enum PrintType {
+        Incidence = 100,
+        Day = 200,
+        Week = 300,
+        Month = 400,
+        Year = 900,
+        Todolist = 1000,
+        Journallist = 2000,
+        WhatsNext = 2100,
+        ItemList = 2200
+    };
 };
 
 /**

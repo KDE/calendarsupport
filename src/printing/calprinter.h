@@ -26,7 +26,12 @@ class CALENDARSUPPORT_EXPORT CalPrinter : public QObject, public CalPrinterBase
 {
     Q_OBJECT
 public:
-    enum ePrintOrientation { eOrientPlugin = 0, eOrientPrinter, eOrientPortrait, eOrientLandscape };
+    enum ePrintOrientation {
+        eOrientPlugin = 0,
+        eOrientPrinter,
+        eOrientPortrait,
+        eOrientLandscape
+    };
 
 public:
     /**

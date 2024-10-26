@@ -163,7 +163,11 @@ public:
     void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
-    enum eDayPrintType { Filofax = 0, Timetable, SingleTimetable } mDayPrintType;
+    enum eDayPrintType {
+        Filofax = 0,
+        Timetable,
+        SingleTimetable
+    } mDayPrintType;
 
     /**
       Draw the (filofax) table for a bunch of days, using drawDayBox.
@@ -223,7 +227,11 @@ public:
     void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
-    enum eWeekPrintType { Filofax = 0, Timetable, SplitWeek } mWeekPrintType;
+    enum eWeekPrintType {
+        Filofax = 0,
+        Timetable,
+        SplitWeek
+    } mWeekPrintType;
 
     /**
       Draw the week (filofax) table of the week containing the date qd. The first
@@ -337,7 +345,11 @@ public:
 protected:
     QString mPageTitle;
 
-    enum eTodoPrintType { TodosAll = 0, TodosUnfinished, TodosDueRange } mTodoPrintType;
+    enum eTodoPrintType {
+        TodosAll = 0,
+        TodosUnfinished,
+        TodosDueRange
+    } mTodoPrintType;
 
     enum eTodoSortField {
         TodoFieldSummary = 0,
@@ -349,7 +361,11 @@ protected:
         TodoFieldUnset
     } mTodoSortField;
 
-    enum eTodoSortDirection { TodoDirectionAscending = 0, TodoDirectionDescending, TodoDirectionUnset } mTodoSortDirection;
+    enum eTodoSortDirection {
+        TodoDirectionAscending = 0,
+        TodoDirectionDescending,
+        TodoDirectionUnset
+    } mTodoSortDirection;
 
     bool mIncludeDescription;
     bool mIncludePriority;

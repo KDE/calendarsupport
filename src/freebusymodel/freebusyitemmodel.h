@@ -32,7 +32,11 @@ class CALENDARSUPPORT_EXPORT FreeBusyItemModel : public QAbstractItemModel
 {
     Q_OBJECT
 public:
-    enum Roles { AttendeeRole = Qt::UserRole, FreeBusyRole, FreeBusyPeriodRole };
+    enum Roles {
+        AttendeeRole = Qt::UserRole,
+        FreeBusyRole,
+        FreeBusyPeriodRole
+    };
 
     explicit FreeBusyItemModel(QObject *parent = nullptr);
     ~FreeBusyItemModel() override;

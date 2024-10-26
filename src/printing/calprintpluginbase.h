@@ -43,7 +43,10 @@ namespace CalendarSupport
 class CalPrintPluginBase : public PrintPlugin
 {
 public:
-    enum DisplayFlags { Text = 0x0001, TimeBoxes = 0x0002 };
+    enum DisplayFlags {
+        Text = 0x0001,
+        TimeBoxes = 0x0002
+    };
 
 public:
     /**
