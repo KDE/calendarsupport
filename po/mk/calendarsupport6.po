@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-27 00:39+0000\n"
+"POT-Creation-Date: 2024-10-27 00:40+0000\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1875,33 +1875,33 @@ msgstr "Испечати &ден"
 msgid "Prints all events of a single day on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:193
+#: printing/calprintdefaultplugins.h:197
 #, kde-format
 msgid "Print &week"
 msgstr "Испечати &седмица"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:202
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:255
+#: printing/calprintdefaultplugins.h:263
 #, kde-format
 msgid "Print mont&h"
 msgstr "Испечати &месец"
 
-#: printing/calprintdefaultplugins.h:260
+#: printing/calprintdefaultplugins.h:268
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:310
+#: printing/calprintdefaultplugins.h:318
 #, fuzzy, kde-format
 #| msgid "Print &week"
 msgid "Print to-&dos"
 msgstr "Испечати &седмица"
 
-#: printing/calprintdefaultplugins.h:315
+#: printing/calprintdefaultplugins.h:323
 #, fuzzy, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Прикажи ги само избраните"

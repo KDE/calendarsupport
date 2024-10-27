@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-27 00:39+0000\n"
+"POT-Creation-Date: 2024-10-27 00:40+0000\n"
 "PO-Revision-Date: 2024-08-15 10:29+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -1892,32 +1892,32 @@ msgstr "ا&طبع اليوم"
 msgid "Prints all events of a single day on one page"
 msgstr "يطبع كلّ أحداث يوم معيّن في صفحة واحدة"
 
-#: printing/calprintdefaultplugins.h:193
+#: printing/calprintdefaultplugins.h:197
 #, kde-format
 msgid "Print &week"
 msgstr "اطبع الأ&سبوع"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:202
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "يطبع كلّ أحداث أسبوع معيّن في صفحة واحدة"
 
-#: printing/calprintdefaultplugins.h:255
+#: printing/calprintdefaultplugins.h:263
 #, kde-format
 msgid "Print mont&h"
 msgstr "اطبع ال&شّهر"
 
-#: printing/calprintdefaultplugins.h:260
+#: printing/calprintdefaultplugins.h:268
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "يطبع كلّ أحداث شهر معيّن في صفحة واحدة"
 
-#: printing/calprintdefaultplugins.h:310
+#: printing/calprintdefaultplugins.h:318
 #, kde-format
 msgid "Print to-&dos"
 msgstr "اطبع الم&هامّ"
 
-#: printing/calprintdefaultplugins.h:315
+#: printing/calprintdefaultplugins.h:323
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "يطبع كلّ المهامّ بقائمة شبيهة بالشّجرة"

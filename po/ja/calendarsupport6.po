@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-27 00:39+0000\n"
+"POT-Creation-Date: 2024-10-27 00:40+0000\n"
 "PO-Revision-Date: 2011-08-14 14:07-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -1898,32 +1898,32 @@ msgstr "日単位印刷(&N)"
 msgid "Prints all events of a single day on one page"
 msgstr "1 ページに 1 日のすべてのイベントを印刷します"
 
-#: printing/calprintdefaultplugins.h:193
+#: printing/calprintdefaultplugins.h:197
 #, kde-format
 msgid "Print &week"
 msgstr "週単位印刷(&W)"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:202
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "1 ページに 1 週間のすべてのイベントを印刷します"
 
-#: printing/calprintdefaultplugins.h:255
+#: printing/calprintdefaultplugins.h:263
 #, kde-format
 msgid "Print mont&h"
 msgstr "月単位印刷(&H)"
 
-#: printing/calprintdefaultplugins.h:260
+#: printing/calprintdefaultplugins.h:268
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "1 ページに 1 カ月のすべてのイベントを印刷します"
 
-#: printing/calprintdefaultplugins.h:310
+#: printing/calprintdefaultplugins.h:318
 #, kde-format
 msgid "Print to-&dos"
 msgstr "To-Do 印刷(&D)"
 
-#: printing/calprintdefaultplugins.h:315
+#: printing/calprintdefaultplugins.h:323
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "すべての To-Do をツリー形式のリストに印刷します"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-27 00:39+0000\n"
+"POT-Creation-Date: 2024-10-27 00:40+0000\n"
 "PO-Revision-Date: 2020-07-27 17:32+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -1942,32 +1942,32 @@ msgstr "Udskriv &dag"
 msgid "Prints all events of a single day on one page"
 msgstr "Udskriver alle begivenheder for en enkelt dag på en side"
 
-#: printing/calprintdefaultplugins.h:193
+#: printing/calprintdefaultplugins.h:197
 #, kde-format
 msgid "Print &week"
 msgstr "Udskriv &uge"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:202
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Udskriver ud alle begivenheder i en uge på en side"
 
-#: printing/calprintdefaultplugins.h:255
+#: printing/calprintdefaultplugins.h:263
 #, kde-format
 msgid "Print mont&h"
 msgstr "Udskriv &måned"
 
-#: printing/calprintdefaultplugins.h:260
+#: printing/calprintdefaultplugins.h:268
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Udskriver alle begivenheder i en måned på en side"
 
-#: printing/calprintdefaultplugins.h:310
+#: printing/calprintdefaultplugins.h:318
 #, kde-format
 msgid "Print to-&dos"
 msgstr "Udskriv &gøremål"
 
-#: printing/calprintdefaultplugins.h:315
+#: printing/calprintdefaultplugins.h:323
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Udskriver alle gøremål i en (trælignende) liste"

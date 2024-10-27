@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-27 00:39+0000\n"
+"POT-Creation-Date: 2024-10-27 00:40+0000\n"
 "PO-Revision-Date: 2014-01-31 19:02+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -1904,32 +1904,32 @@ msgstr ""
 msgid "Prints all events of a single day on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:193
+#: printing/calprintdefaultplugins.h:197
 #, fuzzy, kde-format
 msgid "Print &week"
 msgstr "U sedmicama"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:202
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:255
+#: printing/calprintdefaultplugins.h:263
 #, fuzzy, kde-format
 msgid "Print mont&h"
 msgstr "U mjesecima"
 
-#: printing/calprintdefaultplugins.h:260
+#: printing/calprintdefaultplugins.h:268
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:310
+#: printing/calprintdefaultplugins.h:318
 #, fuzzy, kde-format
 msgid "Print to-&dos"
 msgstr "Arhiviraj zadatke"
 
-#: printing/calprintdefaultplugins.h:315
+#: printing/calprintdefaultplugins.h:323
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr ""

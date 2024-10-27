@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-27 00:39+0000\n"
+"POT-Creation-Date: 2024-10-27 00:40+0000\n"
 "PO-Revision-Date: 2012-01-13 10:32+0330\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@ubuntu.ir>\n"
 "Language-Team: Farsi (Persian) <>\n"
@@ -2037,32 +2037,32 @@ msgstr "چاپ &روز‌"
 msgid "Prints all events of a single day on one page"
 msgstr "همه رویدادهای روز را روی یک صفحه چاپ می‌کند"
 
-#: printing/calprintdefaultplugins.h:193
+#: printing/calprintdefaultplugins.h:197
 #, kde-format
 msgid "Print &week"
 msgstr "چاپ &هفته‌"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:202
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "همه رویدادهای یک هفته را روی یک صفحه چاپ می‌کند"
 
-#: printing/calprintdefaultplugins.h:255
+#: printing/calprintdefaultplugins.h:263
 #, kde-format
 msgid "Print mont&h"
 msgstr "چاپ &ماه‌"
 
-#: printing/calprintdefaultplugins.h:260
+#: printing/calprintdefaultplugins.h:268
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "همه رویدادهای یک ماه را روی یک صفحه چاپ می‌کند"
 
-#: printing/calprintdefaultplugins.h:310
+#: printing/calprintdefaultplugins.h:318
 #, kde-format
 msgid "Print to-&dos"
 msgstr "چاپ &کارهای انجامی‌"
 
-#: printing/calprintdefaultplugins.h:315
+#: printing/calprintdefaultplugins.h:323
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "همه کارهای انجامی را در فهرستی )شبیه درخت( چاپ می‌کند"

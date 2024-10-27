@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-27 00:39+0000\n"
+"POT-Creation-Date: 2024-10-27 00:40+0000\n"
 "PO-Revision-Date: 2013-03-24 10:49+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1928,33 +1928,33 @@ msgstr "Rexhe li &djoû"
 msgid "Prints all events of a single day on one page"
 msgstr "Rexhe tos les djournås pos ene fortchete dinêye di dates"
 
-#: printing/calprintdefaultplugins.h:193
+#: printing/calprintdefaultplugins.h:197
 #, kde-format
 msgid "Print &week"
 msgstr "Rexhe li &samwinne"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:202
 #, fuzzy, kde-format
 #| msgid "Prints all journals for a given date range"
 msgid "Prints all events of one week on one page"
 msgstr "Rexhe tos les djournås pos ene fortchete dinêye di dates"
 
-#: printing/calprintdefaultplugins.h:255
+#: printing/calprintdefaultplugins.h:263
 #, kde-format
 msgid "Print mont&h"
 msgstr "Rexhe li &moes"
 
-#: printing/calprintdefaultplugins.h:260
+#: printing/calprintdefaultplugins.h:268
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:310
+#: printing/calprintdefaultplugins.h:318
 #, kde-format
 msgid "Print to-&dos"
 msgstr "Rexhe les &afés"
 
-#: printing/calprintdefaultplugins.h:315
+#: printing/calprintdefaultplugins.h:323
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "Show in the month view"
