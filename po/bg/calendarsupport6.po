@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:40+0000\n"
-"PO-Revision-Date: 2024-09-29 14:39+0200\n"
+"PO-Revision-Date: 2024-11-09 20:06+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -296,14 +296,14 @@ msgstr "Името на архивния файл не е валидно."
 #: attachmenthandler.cpp:96
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
-msgstr "В събитието не е намерен прикачен файл с име \"%1\"."
+msgstr "В събитието не е намерен прикачен файл с име „%1“."
 
 #: attachmenthandler.cpp:107
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
 msgstr ""
-"Прикаченият файл \"%1 \"е уеб връзка, която е недостъпна от този компютър. "
+"Прикаченият файл „%1“ е уеб връзка, която е недостъпна от този компютър. "
 
 #: attachmenthandler.cpp:123
 #, kde-format
