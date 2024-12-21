@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:40+0000\n"
-"PO-Revision-Date: 2024-12-19 21:41+0530\n"
+"PO-Revision-Date: 2024-12-20 22:01+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
@@ -41,7 +41,7 @@ msgid ""
 msgstr ""
 "संग्रहणं दत्तसञ्चिकायां पुरातनवस्तूनि रक्षति ततः वर्तमानपञ्चाङ्गे तानि विलोपयति । यदि "
 "संग्रहसञ्चिका पूर्वमेव अस्ति तर्हि ते योजिताः भविष्यन्ति । (<link url=\"#\"> कथं "
-"पुनर्स्थापनीयम्</link> ) ९."
+"पुनर्स्थापनीयम्</link> )"
 
 #: archivedialog.cpp:67
 #, kde-format
@@ -152,19 +152,19 @@ msgstr "स्वचालितसंग्रहणार्थं समय-�
 #, kde-format
 msgctxt "@item:inlistbox expires in daily units"
 msgid "Day(s)"
-msgstr "दिवस(दिनम्) ९."
+msgstr "दिवस(दिनम्)"
 
 #: archivedialog.cpp:134
 #, kde-format
 msgctxt "@item:inlistbox expiration in weekly units"
 msgid "Week(s)"
-msgstr "सप्ताहः (सप्ताहः) २."
+msgstr "सप्ताहः (सप्ताहः)"
 
 #: archivedialog.cpp:135
 #, kde-format
 msgctxt "@item:inlistbox expiration in monthly units"
 msgid "Month(s)"
-msgstr "मास(मास) २."
+msgstr "मास(मास)"
 
 #: archivedialog.cpp:140
 #, kde-format
@@ -403,7 +403,7 @@ msgstr "उपस्थित"
 #, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
-msgstr "%1, ९."
+msgstr "%1,"
 
 #: freebusymodel/freeperiodmodel.cpp:141
 #, kde-format
@@ -648,7 +648,7 @@ msgstr ""
 #: kcalprefs.kcfg:90
 #, kde-format
 msgid "Use holiday regions:"
-msgstr "अवकाशप्रदेशानां उपयोगं कुर्वन्तु : १."
+msgstr "अवकाशप्रदेशानां उपयोगं कुर्वन्तु :"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:91
@@ -684,7 +684,7 @@ msgstr ""
 #: kcalprefs.kcfg:104
 #, kde-format
 msgid "Default policy for invitations to other users:"
-msgstr "अन्येभ्यः उपयोक्तृभ्यः आमन्त्रणानां पूर्वनिर्धारितनीतिः : १."
+msgstr "अन्येभ्यः उपयोक्तृभ्यः आमन्त्रणानां पूर्वनिर्धारितनीतिः :"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:107
@@ -925,7 +925,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:36
 #, kde-format
 msgid "&Start date:"
-msgstr "&प्रारम्भतिथिः : १."
+msgstr "&प्रारम्भतिथिः :"
 
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mFromDate)
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mToDate)
@@ -969,7 +969,7 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
 #, kde-format
 msgid "Start &time:"
-msgstr "आरम्भ &समय : १."
+msgstr "आरम्भ &समय :"
 
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mFromTime)
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mToTime)
@@ -1020,7 +1020,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:116
 #, kde-format
 msgid "&End date:"
-msgstr "&समाप्ततिथिः : १."
+msgstr "&समाप्ततिथिः :"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, mToTime)
@@ -1569,7 +1569,7 @@ msgstr "वर्णनम्‌:"
 #: printing/calprintdefaultplugins.cpp:454
 #, kde-format
 msgid "Notes:"
-msgstr "टिप्पणी : १."
+msgstr "टिप्पणी :"
 
 #: printing/calprintdefaultplugins.cpp:466
 #, kde-format
@@ -1580,7 +1580,7 @@ msgstr "उपविषयेषु"
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
-msgstr[0] "१ उपवस्तुः १."
+msgstr[0] "१ उपवस्तुः"
 msgstr[1] "%1 उपवस्तु: ."
 
 #: printing/calprintdefaultplugins.cpp:485
@@ -1652,8 +1652,8 @@ msgstr "न आसक्तयः"
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
-msgstr[0] "१ आसक्तिः : १."
-msgstr[1] "%1 संलग्नकाः : १."
+msgstr[0] "१ आसक्तिः :"
+msgstr[1] "%1 संलग्नकाः :"
 
 #: printing/calprintdefaultplugins.cpp:550
 #, kde-format
@@ -1670,8 +1670,8 @@ msgstr "न उपस्थिताः"
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
-msgstr[0] "१ उपस्थितः : १."
-msgstr[1] "%1 उपस्थिताः : १."
+msgstr[0] "१ उपस्थितः :"
+msgstr[1] "%1 उपस्थिताः :"
 
 #: printing/calprintdefaultplugins.cpp:581
 #, kde-format
@@ -1747,7 +1747,7 @@ msgstr "%1–%2"
 #, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
-msgstr "%1–%2 (सप्ताह %3) २."
+msgstr "%1–%2 (सप्ताह %3)"
 
 #: printing/calprintdefaultplugins.cpp:1231
 #, kde-format
@@ -1757,7 +1757,7 @@ msgid ""
 "(Week %3)"
 msgstr ""
 "%1–%2\n"
-"(सप्ताह %3) २."
+"(सप्ताह %3)"
 
 #: printing/calprintdefaultplugins.cpp:1416
 #, kde-format
@@ -2041,7 +2041,7 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:39
 #, kde-format
 msgid "Detai&ls (visiblility, secrecy, etc.)"
-msgstr "Detai&ls (दृश्यता, गोपनीयता इत्यादि) २."
+msgstr "Detai&ls (दृश्यता, गोपनीयता इत्यादि)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:46
@@ -2197,7 +2197,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:33
 #, kde-format
 msgid "Sta&rt month:"
-msgstr "Sta&rt मासः : १."
+msgstr "Sta&rt मासः :"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mFromMonth)
 #: printing/calprintmonthconfig_base.ui:43
@@ -2241,7 +2241,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:72
 #, kde-format
 msgid "&End month:"
-msgstr "&समाप्तिमासः : १."
+msgstr "&समाप्तिमासः :"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mToMonth)
 #: printing/calprintmonthconfig_base.ui:82
@@ -2340,7 +2340,7 @@ msgstr "अस्मिन् मुद्रणशैल्याः विन�
 #, kde-format
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
-msgstr ", ९."
+msgstr ","
 
 #: printing/calprintpluginbase.cpp:312
 #, kde-format
@@ -2565,13 +2565,13 @@ msgstr "क्रमाङ्कनविकल्पाः"
 #: printing/calprinttodoconfig_base.ui:339
 #, kde-format
 msgid "Sort field:"
-msgstr "क्रमाङ्कनक्षेत्रम् : १."
+msgstr "क्रमाङ्कनक्षेत्रम् :"
 
 #. i18n: ectx: property (text), widget (QLabel, sortDirectionLabel)
 #: printing/calprinttodoconfig_base.ui:366
 #, kde-format
 msgid "Sort direction:"
-msgstr "क्रमाङ्कदिशा : १."
+msgstr "क्रमाङ्कदिशा :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mConnectSubTodos)
 #: printing/calprinttodoconfig_base.ui:397
@@ -2757,7 +2757,7 @@ msgstr "आभास"
 #: utils.cpp:408
 #, kde-format
 msgid "Folder type:"
-msgstr "पुटस्य प्रकारः : १."
+msgstr "पुटस्य प्रकारः :"
 
 #: utils.cpp:418
 #, kde-format
@@ -2768,12 +2768,12 @@ msgstr "न कश्चित्"
 #: utils.cpp:421
 #, kde-format
 msgid "Content type:"
-msgstr "सामग्रीप्रकारः : १."
+msgstr "सामग्रीप्रकारः :"
 
 #: utils.cpp:428
 #, kde-format
 msgid "Rights:"
-msgstr "अधिकारः : १."
+msgstr "अधिकारः :"
 
 #: utils.cpp:431
 #, kde-format
@@ -2832,7 +2832,7 @@ msgstr "न कश्चित्"
 #: utils.cpp:459
 #, kde-format
 msgid "Blocked Reminders:"
-msgstr "अवरुद्धाः स्मरणाः : १."
+msgstr "अवरुद्धाः स्मरणाः :"
 
 #: utils.cpp:524
 #, kde-format
@@ -2849,4 +2849,4 @@ msgstr "%1 (%2)"
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
-msgstr "^%1 \\(.*\\) २."
+msgstr "^%1 \\(.*\\)"
