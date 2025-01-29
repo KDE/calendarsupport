@@ -3,20 +3,20 @@
 #
 # Nauris <mreloads@yahoo.co.uk>, 2009.
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2010.
-# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-10-27 00:40+0000\n"
-"PO-Revision-Date: 2024-08-23 14:49+0300\n"
+"PO-Revision-Date: 2025-01-27 16:55+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.12.1\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
@@ -299,13 +299,13 @@ msgstr "Arhīva datnes nosaukums nav derīgs."
 #: attachmenthandler.cpp:96
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
-msgstr "Notikumā nav atrasts pielikums ar nosaukumu „%1“."
+msgstr "Notikumā nav atrasta piesaistne ar nosaukumu „%1“."
 
 #: attachmenthandler.cpp:107
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
-msgstr "Pielikums „%1“ ir tīmekļa saite, kas no šī datora nav pieejama. "
+msgstr "Piesaistne „%1“ ir tīmekļa saite, kas no šī datora nav pieejama. "
 
 #: attachmenthandler.cpp:123
 #, kde-format
@@ -319,13 +319,13 @@ msgstr ""
 #: attachmenthandler.cpp:180 attachmenthandler.cpp:234
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
-msgstr "Nav iespējams šim pielikumam izveidot pagaidu datni."
+msgstr "Nav iespējams šai piesaistnei izveidot pagaidu datni."
 
 #: attachmenthandler.cpp:213
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
-msgstr "Saglabāt pielikumu"
+msgstr "Saglabāt piesaistni"
 
 #: cellitem.cpp:38
 #, kde-kuit-format
@@ -1680,15 +1680,15 @@ msgstr "Slepenība: %1\n"
 #: printing/calprintdefaultplugins.cpp:541
 #, kde-format
 msgid "No Attachments"
-msgstr "Nav pielikumu"
+msgstr "Nav piesaistņu"
 
 #: printing/calprintdefaultplugins.cpp:544
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
-msgstr[0] "%1 pielikums:"
-msgstr[1] "%1 pielikumi:"
-msgstr[2] "%1 pielikumu:"
+msgstr[0] "%1 piesaistne:"
+msgstr[1] "%1 piesaistnes:"
+msgstr[2] "%1 piesaistņu:"
 
 #: printing/calprintdefaultplugins.cpp:550
 #, kde-format
@@ -2123,7 +2123,7 @@ msgstr "&Piezīmes, apakšieraksti"
 #: printing/calprintincidenceconfig_base.ui:72
 #, kde-format
 msgid "Print the attachments"
-msgstr "Drukāt pielikumus"
+msgstr "Drukāt piesaistnes"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
@@ -2132,14 +2132,14 @@ msgid ""
 "Check this box if you want the attachment information included on the print-"
 "out. The attachments themselves are not printed."
 msgstr ""
-"Atzīmējiet lauciņu, ja vēlaties, lai izdruka saturētu pielikumu informāciju. "
-"Paši pielikumi netiks izdrukāti."
+"Atzīmējiet lauciņu, ja vēlaties, lai izdruka saturētu piesaistnes "
+"informāciju. Pašas piesaistnes netiks izdrukātas."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:78
 #, kde-format
 msgid "Attach&ments"
-msgstr "Pieliku&mi"
+msgstr "Piesaist&nes"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:97
