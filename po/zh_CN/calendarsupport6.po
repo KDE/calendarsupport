@@ -283,7 +283,7 @@ msgstr "在事件中找不到名为“%1”的附件。"
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
-msgstr "附件%1是 一个无法从这台计算机访问的Web 链接。 "
+msgstr "附件%1是一个无法从这台计算机访问的 Web 链接。 "
 
 #: attachmenthandler.cpp:123
 #, kde-format
@@ -358,7 +358,7 @@ msgstr "正在归档事件"
 #: freebusymodel/freebusycalendar.cpp:109
 #, kde-format
 msgid "Free"
-msgstr "自由"
+msgstr "空闲"
 
 #: freebusymodel/freebusycalendar.cpp:112
 #, kde-format
