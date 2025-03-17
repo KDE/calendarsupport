@@ -10,5 +10,5 @@ GlobalEnums=true
 ItemAccessors=true
 SetUserTexts=true
 NameSpace=CalendarSupport
-TranslationDomain=calendarsupport
+TranslationDomain=calendarsupport6
 TranslationSystem=kde
