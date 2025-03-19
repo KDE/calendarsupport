@@ -1536,7 +1536,7 @@ void CalPrintTodos::setSettingsWidget()
         if (mTodoSortDirection != TodoDirectionUnset) {
             // do not insert if already done so.
             cfg->mSortDirection->addItem(i18nc("@option sort in increasing order", "Ascending"));
-            cfg->mSortDirection->addItem(i18nc("@option sort in descreasing order", "Descending"));
+            cfg->mSortDirection->addItem(i18nc("@option sort in decreasing order", "Descending"));
             cfg->mSortDirection->setCurrentIndex(mTodoSortDirection);
         }
 

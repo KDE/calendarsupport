@@ -127,7 +127,7 @@ CALENDARSUPPORT_EXPORT QDrag *createDrag(const Akonadi::Item::List &items, QObje
 /**
   Applies a filter to a list of items containing incidences.
   Items not containing incidences or not matching the filter are removed.
-  Helper method anologous to KCalendarCore::CalFilter::apply()
+  Helper method analogous to KCalendarCore::CalFilter::apply()
   @see KCalendarCore::CalFilter::apply()
   @param items the list of items to filter
   @param filter the filter to apply to the list of items
