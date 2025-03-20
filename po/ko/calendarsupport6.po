@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-20 00:42+0000\n"
 "PO-Revision-Date: 2024-08-19 22:10+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -1797,8 +1797,10 @@ msgid "Ascending"
 msgstr "오름차순"
 
 #: printing/calprintdefaultplugins.cpp:1539
-#, kde-format
-msgctxt "@option sort in descreasing order"
+#, fuzzy, kde-format
+#| msgctxt "@option sort in descreasing order"
+#| msgid "Descending"
+msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "내림차순"
 

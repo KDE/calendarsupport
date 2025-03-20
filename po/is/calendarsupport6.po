@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-20 00:42+0000\n"
 "PO-Revision-Date: 2023-11-07 11:29+0000\n"
 "Last-Translator: Guðmundur Erlingsson <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -1839,8 +1839,10 @@ msgid "Ascending"
 msgstr "Hækkandi"
 
 #: printing/calprintdefaultplugins.cpp:1539
-#, kde-format
-msgctxt "@option sort in descreasing order"
+#, fuzzy, kde-format
+#| msgctxt "@option sort in descreasing order"
+#| msgid "Descending"
+msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Lækkandi"
 

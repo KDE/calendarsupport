@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-20 00:42+0000\n"
 "PO-Revision-Date: 2019-09-29 12:45+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -1805,7 +1805,7 @@ msgstr "Даъв&ат карда шудаҳо"
 #: printing/calprintdefaultplugins.cpp:1539
 #, fuzzy, kde-format
 #| msgid "Atte&ndees"
-msgctxt "@option sort in descreasing order"
+msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Даъв&ат карда шудаҳо"
 

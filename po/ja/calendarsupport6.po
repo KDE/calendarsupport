@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-20 00:42+0000\n"
 "PO-Revision-Date: 2011-08-14 14:07-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -1831,8 +1831,10 @@ msgid "Ascending"
 msgstr "昇順"
 
 #: printing/calprintdefaultplugins.cpp:1539
-#, kde-format
-msgctxt "@option sort in descreasing order"
+#, fuzzy, kde-format
+#| msgctxt "@option sort in descreasing order"
+#| msgid "Descending"
+msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "降順"
 

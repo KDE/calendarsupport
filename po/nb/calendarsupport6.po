@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-20 00:42+0000\n"
 "PO-Revision-Date: 2015-02-07 19:03+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -1802,8 +1802,10 @@ msgid "Ascending"
 msgstr "Stigende"
 
 #: printing/calprintdefaultplugins.cpp:1539
-#, kde-format
-msgctxt "@option sort in descreasing order"
+#, fuzzy, kde-format
+#| msgctxt "@option sort in descreasing order"
+#| msgid "Descending"
+msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Synkende"
 

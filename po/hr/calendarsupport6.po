@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-20 00:42+0000\n"
 "PO-Revision-Date: 2011-02-27 12:20+0100\n"
 "Last-Translator: Marko Dimjasevic <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -1759,10 +1759,11 @@ msgid "Ascending"
 msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1539
-#, kde-format
-msgctxt "@option sort in descreasing order"
+#, fuzzy, kde-format
+#| msgid "Atte&ndees"
+msgctxt "@option sort in decreasing order"
 msgid "Descending"
-msgstr ""
+msgstr "&Sudionici"
 
 #: printing/calprintdefaultplugins.cpp:1552
 #, fuzzy, kde-format
@@ -5861,11 +5862,6 @@ msgstr ""
 #~| msgid "read-only"
 #~ msgid "Read Only"
 #~ msgstr "samo za čitanje"
-
-#, fuzzy
-#~| msgid "Atte&ndees"
-#~ msgid "Attending"
-#~ msgstr "&Sudionici"
 
 #, fuzzy
 #~| msgid "KOrganizer"

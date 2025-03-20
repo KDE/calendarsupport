@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-20 00:42+0000\n"
 "PO-Revision-Date: 2007-02-28 14:24+0100\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -1807,7 +1807,7 @@ msgstr "Растечки"
 #: printing/calprintdefaultplugins.cpp:1539
 #, fuzzy, kde-format
 #| msgid "Descending"
-msgctxt "@option sort in descreasing order"
+msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Опаѓачки"
 

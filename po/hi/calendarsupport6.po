@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-19 00:42+0000\n"
+"POT-Creation-Date: 2025-03-20 00:42+0000\n"
 "PO-Revision-Date: 2021-07-06 22:20+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -1793,7 +1793,7 @@ msgstr "बढ़ते क्रम में"
 
 #: printing/calprintdefaultplugins.cpp:1539
 #, fuzzy, kde-format
-msgctxt "@option sort in descreasing order"
+msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "घटते क्रम में"
 
