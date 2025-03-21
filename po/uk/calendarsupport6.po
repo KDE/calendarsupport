@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:42+0000\n"
-"PO-Revision-Date: 2024-08-01 20:19+0300\n"
+"PO-Revision-Date: 2025-03-20 09:56+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -1861,15 +1861,13 @@ msgstr "Мітки"
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
-msgstr "Зростання"
+msgstr "За зростанням"
 
 #: printing/calprintdefaultplugins.cpp:1539
-#, fuzzy, kde-format
-#| msgctxt "@option sort in descreasing order"
-#| msgid "Descending"
+#, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
-msgstr "Спадання"
+msgstr "За спаданням"
 
 #: printing/calprintdefaultplugins.cpp:1552
 #, kde-format

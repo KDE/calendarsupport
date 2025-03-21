@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-20 00:42+0000\n"
-"PO-Revision-Date: 2024-08-01 05:55+0200\n"
+"PO-Revision-Date: 2025-03-20 03:31+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -1839,9 +1839,7 @@ msgid "Ascending"
 msgstr "ზრდის მიხედვით"
 
 #: printing/calprintdefaultplugins.cpp:1539
-#, fuzzy, kde-format
-#| msgctxt "@option sort in descreasing order"
-#| msgid "Descending"
+#, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "დაღმავალი"
