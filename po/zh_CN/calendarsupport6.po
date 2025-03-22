@@ -1756,7 +1756,7 @@ msgstr "升序"
 #, kde-format
 msgctxt "@option sort in descreasing order"
 msgid "Descending"
-msgstr "降序"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1552
 #, kde-format
