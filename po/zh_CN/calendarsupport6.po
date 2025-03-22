@@ -1753,12 +1753,10 @@ msgid "Ascending"
 msgstr "升序"
 
 #: printing/calprintdefaultplugins.cpp:1539
-#, fuzzy, kde-format
-#| msgctxt "@option sort in descreasing order"
-#| msgid "Descending"
+#, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
-msgstr "降序"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1552
 #, kde-format
