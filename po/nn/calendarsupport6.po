@@ -1738,8 +1738,6 @@ msgstr "Stigande"
 # unreviewed-context
 #: printing/calprintdefaultplugins.cpp:1539
 #, fuzzy, kde-format
-#| msgctxt "@option sort in descreasing order"
-#| msgid "Descending"
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Synkande"
