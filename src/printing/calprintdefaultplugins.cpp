@@ -34,7 +34,7 @@ using namespace CalendarSupport;
  **************************************************************/
 
 CalPrintIncidence::CalPrintIncidence()
-    : CalPrintPluginBase()
+
 {
 }
 
@@ -644,7 +644,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
  **************************************************************/
 
 CalPrintTimetable::CalPrintTimetable()
-    : CalPrintPluginBase()
+
 {
 }
 
@@ -829,7 +829,7 @@ void CalPrintTimetable::drawTimeTable(QPainter &p, QDate fromDate, QDate toDate,
  **************************************************************/
 
 CalPrintDay::CalPrintDay()
-    : CalPrintTimetable()
+
 {
 }
 
@@ -1027,7 +1027,7 @@ void CalPrintDay::print(QPainter &p, int width, int height)
  **************************************************************/
 
 CalPrintWeek::CalPrintWeek()
-    : CalPrintTimetable()
+
 {
 }
 
@@ -1285,7 +1285,7 @@ void CalPrintWeek::print(QPainter &p, int width, int height)
  **************************************************************/
 
 CalPrintMonth::CalPrintMonth()
-    : CalPrintPluginBase()
+
 {
 }
 
@@ -1447,7 +1447,7 @@ void CalPrintMonth::print(QPainter &p, int width, int height)
  **************************************************************/
 
 CalPrintTodos::CalPrintTodos()
-    : CalPrintPluginBase()
+
 {
     mTodoSortField = TodoFieldUnset;
     mTodoSortDirection = TodoDirectionUnset;

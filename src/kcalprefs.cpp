@@ -28,22 +28,20 @@ class CalendarSupport::KCalPrefsPrivate
 {
 public:
     KCalPrefsPrivate()
-        : mDefaultCalendarId(-1)
-        , mDefaultCategoryColor(QColor(151, 235, 121))
+        : mDefaultCategoryColor(QColor(151, 235, 121))
     {
     }
 
     ~KCalPrefsPrivate() = default;
 
-    Akonadi::Collection::Id mDefaultCalendarId;
+    Akonadi::Collection::Id mDefaultCalendarId{-1};
 
     const QColor mDefaultCategoryColor;
     QDateTime mDayBegins;
 };
 
 KCalPrefs::KCalPrefs()
-    : KCalPrefsBase()
-    , d(new KCalPrefsPrivate())
+    : d(new KCalPrefsPrivate())
 {
     Akonadi::TagCache::instance();
 }

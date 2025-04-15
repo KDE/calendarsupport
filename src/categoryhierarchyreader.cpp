@@ -16,13 +16,13 @@ namespace CategoryConfig
 static const QLatin1StringView categorySeparator(":");
 }
 
-inline QString &quote(QString &string)
+static inline QString &quote(QString &string)
 {
     Q_ASSERT(CategoryConfig::categorySeparator != "@"_L1);
     return string.replace(QLatin1Char('@'), QStringLiteral("@0")).replace(QLatin1Char('\\') + CategoryConfig::categorySeparator, QStringLiteral("@1"));
 }
 
-inline QStringList &unquote(QStringList &strings)
+static inline QStringList &unquote(QStringList &strings)
 {
     return strings.replaceInStrings(QStringLiteral("@1"), CategoryConfig::categorySeparator).replaceInStrings(QStringLiteral("@0"), QStringLiteral("@"));
 }

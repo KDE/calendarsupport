@@ -114,8 +114,7 @@ private:
  ******************************************************************/
 
 CalPrintPluginBase::CalPrintPluginBase()
-    : PrintPlugin()
-    , mUseColors(true)
+    : mUseColors(true)
     , mPrintFooter(true)
     , mHeaderHeight(-1)
     , mSubHeaderHeight(SUBHEADER_HEIGHT)
