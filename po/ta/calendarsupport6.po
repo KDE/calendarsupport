@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-20 00:42+0000\n"
+"POT-Creation-Date: 2025-04-16 00:42+0000\n"
 "PO-Revision-Date: 2024-06-16 19:59+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -1730,8 +1730,8 @@ msgstr "திட்டக்கூட்டம்"
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:918
-#: printing/calprintpluginbase.cpp:1058 printing/calprintpluginbase.cpp:1115
+#: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:917
+#: printing/calprintpluginbase.cpp:1057 printing/calprintpluginbase.cpp:1114
 #, fuzzy, kde-format
 #| msgctxt "monthname year"
 #| msgid "%1 %2"
@@ -1741,8 +1741,8 @@ msgstr ""
 "மாதப்பெயர் வருடம்\n"
 " %1 %2"
 
-#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:937
-#: printing/calprintpluginbase.cpp:1061
+#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:936
+#: printing/calprintpluginbase.cpp:1060
 #, fuzzy, kde-format
 #| msgctxt "monthname year"
 #| msgid "%1 %2"
@@ -1853,7 +1853,7 @@ msgid "To-do list"
 msgstr "செய்ய வேண்டிய பட்டியல்"
 
 #: printing/calprintdefaultplugins.cpp:1604
-#: printing/calprintpluginbase.cpp:1718
+#: printing/calprintpluginbase.cpp:1717
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2345,38 +2345,38 @@ msgstr ""
 msgid "Print week &numbers"
 msgstr "வாரத்தையும் &எண்களையும் அச்சிடு"
 
-#: printing/calprintpluginbase.cpp:144
+#: printing/calprintpluginbase.cpp:143
 #, fuzzy, kde-format
 #| msgid "This printing style does not have any configuration options."
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "இந்த அச்சிடும் பாணியில் எந்த கட்டமைப்பு விருப்பங்களும் இல்லை."
 
-#: printing/calprintpluginbase.cpp:300
+#: printing/calprintpluginbase.cpp:299
 #, fuzzy, kde-format
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
 msgstr ", "
 
-#: printing/calprintpluginbase.cpp:312
+#: printing/calprintpluginbase.cpp:311
 #, kde-format
 msgid "Holiday"
 msgstr "விடுமுறை"
 
-#: printing/calprintpluginbase.cpp:614
+#: printing/calprintpluginbase.cpp:613
 #, fuzzy, kde-format
 #| msgid "Undo (%1)"
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "செய்ததை நீக்கு (%1)"
 
-#: printing/calprintpluginbase.cpp:923
+#: printing/calprintpluginbase.cpp:922
 #, fuzzy, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "வாரநாள் மாதம் தேதி"
 
-#: printing/calprintpluginbase.cpp:929
+#: printing/calprintpluginbase.cpp:928
 #, fuzzy, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
@@ -2384,32 +2384,32 @@ msgstr ""
 "_: Date range: monthStart dayStart - monthEnd dayEnd\n"
 "%1 %2 - %3 %4"
 
-#: printing/calprintpluginbase.cpp:996
+#: printing/calprintpluginbase.cpp:995
 #, fuzzy, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1 - %2"
 
-#: printing/calprintpluginbase.cpp:1122
+#: printing/calprintpluginbase.cpp:1121
 #, fuzzy, kde-format
 #| msgid "  (Due: %1)"
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "(இடைவெளி: %1)"
 
-#: printing/calprintpluginbase.cpp:1127
+#: printing/calprintpluginbase.cpp:1126
 #, fuzzy, kde-format
 #| msgid "  (Due: %1)"
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "(இடைவெளி: %1)"
 
-#: printing/calprintpluginbase.cpp:1134
+#: printing/calprintpluginbase.cpp:1133
 #, kde-format
 msgid "To-do: %1"
 msgstr "செய்யவேண்டியது: %1"
 
-#: printing/calprintpluginbase.cpp:1879
+#: printing/calprintpluginbase.cpp:1878
 #, fuzzy, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
@@ -2417,7 +2417,7 @@ msgstr ""
 "_: Date range: Month dayStart - dayEnd\n"
 "%1 %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1885
+#: printing/calprintpluginbase.cpp:1884
 #, fuzzy, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
