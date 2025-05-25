@@ -222,8 +222,8 @@ msgid ""
 "finished before the date."
 msgstr ""
 "Ací podeu seleccionar quins elements s'han d'arxivar. Els esdeveniments "
-"s'arxiven si varen finalitzar abans de la data superior, les tasques "
-"pendents s'arxiven si varen finalitzar abans de la data."
+"s'arxiven si van finalitzar abans de la data superior, les tasques pendents "
+"s'arxiven si van finalitzar abans de la data."
 
 #: archivedialog.cpp:166
 #, kde-format
