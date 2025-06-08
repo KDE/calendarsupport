@@ -5,7 +5,7 @@ macro(add_freebusymodel_unittest _name)
         TEST_NAME ${_name}
         NAME_PREFIX "freebusymodel-"
         LINK_LIBRARIES Qt::Test KPim6::AkonadiCore KPim6::CalendarUtils KF6::CalendarCore KPim6::CalendarSupport
-   )
+    )
 endmacro()
 
 add_freebusymodel_unittest(testfreeperiodmodel)
