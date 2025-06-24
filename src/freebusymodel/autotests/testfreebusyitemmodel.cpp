@@ -6,6 +6,8 @@
 */
 
 #include "testfreebusyitemmodel.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "../freebusyitem.h"
 #include "../freebusyitemmodel.h"
 
@@ -29,7 +31,7 @@ void FreeBusyItemModelTest::testModelValidity()
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), QTimeZone::utc());
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), QTimeZone::utc());
-    KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral("fred@example.com"));
+    KCalendarCore::Attendee a1(u"fred"_s, u"fred@example.com"_s);
     KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
 
     fb1->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
@@ -81,9 +83,9 @@ void FreeBusyItemModelTest::testModelValidity2()
     const QDateTime dt3(QDate(2010, 7, 24), QTime(12, 0, 0), QTimeZone::utc());
     const QDateTime dt4(QDate(2010, 7, 24), QTime(14, 0, 0), QTimeZone::utc());
 
-    KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral("fred@example.com"));
-    KCalendarCore::Attendee a2(QStringLiteral("joe"), QStringLiteral("joe@example.com"));
-    KCalendarCore::Attendee a3(QStringLiteral("max"), QStringLiteral("max@example.com"));
+    KCalendarCore::Attendee a1(u"fred"_s, u"fred@example.com"_s);
+    KCalendarCore::Attendee a2(u"joe"_s, u"joe@example.com"_s);
+    KCalendarCore::Attendee a3(u"max"_s, u"max@example.com"_s);
     KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
     KCalendarCore::FreeBusy::Ptr fb2(new KCalendarCore::FreeBusy());
     KCalendarCore::FreeBusy::Ptr fb3(new KCalendarCore::FreeBusy());
@@ -131,7 +133,7 @@ void FreeBusyItemModelTest::testModelValidity2()
     QVERIFY(model->rowCount(i3) == 0);
     QVERIFY(model->data(i3, FreeBusyItemModel::FreeBusyRole).isValid() == false);
 
-    model->slotInsertFreeBusy(fb2, QStringLiteral("joe@example.com"));
+    model->slotInsertFreeBusy(fb2, u"joe@example.com"_s);
     QCOMPARE(item2->freeBusy(), model->data(i2, FreeBusyItemModel::FreeBusyRole).value<KCalendarCore::FreeBusy::Ptr>());
     QVERIFY(model->rowCount(i2) == fb2->fullBusyPeriods().size());
 
@@ -142,7 +144,7 @@ void FreeBusyItemModelTest::testModelValidity2()
     QModelIndex i2_2 = model->index(2, 0, i2);
     QCOMPARE(fb2->fullBusyPeriods().last(), model->data(i2_2, FreeBusyItemModel::FreeBusyPeriodRole).value<KCalendarCore::FreeBusyPeriod>());
 
-    model->slotInsertFreeBusy(fb3, QStringLiteral("max@example.com"));
+    model->slotInsertFreeBusy(fb3, u"max@example.com"_s);
     QCOMPARE(item3->freeBusy(), model->data(i3, FreeBusyItemModel::FreeBusyRole).value<KCalendarCore::FreeBusy::Ptr>());
     QVERIFY(model->rowCount(i3) == fb3->fullBusyPeriods().size());
 
@@ -176,7 +178,7 @@ void FreeBusyItemModelTest::testInsertFreeBusy()
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), QTimeZone::utc());
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), QTimeZone::utc());
-    KCalendarCore::Attendee a1(QStringLiteral("fred"), QStringLiteral("fred@example.com"));
+    KCalendarCore::Attendee a1(u"fred"_s, u"fred@example.com"_s);
     KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
     fb1->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
     fb1->addPeriod(dt2, KCalendarCore::Duration(60 * 60));
@@ -197,7 +199,7 @@ void FreeBusyItemModelTest::testInsertFreeBusy()
     QModelIndex i = model->index(0, 0);
     QCOMPARE(model->rowCount(i), 2);
 
-    model->slotInsertFreeBusy(fb2, QStringLiteral("fred@example.com"));
+    model->slotInsertFreeBusy(fb2, u"fred@example.com"_s);
 
     QCOMPARE(model->rowCount(i), 4);
 }

@@ -7,6 +7,7 @@
 */
 
 #include "eventarchiver.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "kcalprefs.h"
 
@@ -125,7 +126,7 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
             KMessageBox::information(widget,
                                      i18n("There are no items before %1", QLocale::system().toString(limitDate, QLocale::ShortFormat)),
                                      i18nc("@title:window", "Archive"),
-                                     QStringLiteral("ArchiverNoIncidences"));
+                                     u"ArchiverNoIncidences"_s);
         }
         return;
     }

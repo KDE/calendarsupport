@@ -9,6 +9,7 @@
 #pragma once
 
 #include "calendarsupport_export.h"
+
 #include "calprintpluginbase.h"
 
 #include "ui_calprintdayconfig_base.h"
@@ -18,7 +19,7 @@
 #include "ui_calprintweekconfig_base.h"
 
 #include <KLocalizedString>
-
+using namespace Qt::Literals::StringLiterals;
 namespace CalendarSupport
 {
 class CALENDARSUPPORT_EXPORT CalPrintIncidence : public CalPrintPluginBase
@@ -28,7 +29,7 @@ public:
     ~CalPrintIncidence() override;
     [[nodiscard]] QString groupName() const override
     {
-        return QStringLiteral("Print incidence");
+        return u"Print incidence"_s;
     }
 
     [[nodiscard]] QString description() const override
@@ -130,7 +131,7 @@ public:
     ~CalPrintDay() override;
     [[nodiscard]] QString groupName() const override
     {
-        return QStringLiteral("Print day");
+        return u"Print day"_s;
     }
 
     [[nodiscard]] QString description() const override
@@ -189,7 +190,7 @@ public:
 
     [[nodiscard]] QString groupName() const override
     {
-        return QStringLiteral("Print week");
+        return u"Print week"_s;
     }
 
     [[nodiscard]] QString description() const override
@@ -255,7 +256,7 @@ public:
     ~CalPrintMonth() override;
     QString groupName() const override
     {
-        return QStringLiteral("Print month");
+        return u"Print month"_s;
     }
 
     QString description() const override
@@ -310,7 +311,7 @@ public:
 
     QString groupName() const override
     {
-        return QStringLiteral("Print to-dos");
+        return u"Print to-dos"_s;
     }
 
     QString description() const override

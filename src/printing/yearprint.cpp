@@ -5,6 +5,7 @@
 */
 
 #include "yearprint.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "calendarsupport_debug.h"
 #include <KConfigGroup>
@@ -64,7 +65,7 @@ void CalPrintYear::doLoadConfig()
 {
     CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
-        KConfigGroup config(mConfig, QStringLiteral("Yearprint"));
+        KConfigGroup config(mConfig, u"Yearprint"_s);
         mYear = config.readEntry("Year", QDate::currentDate().year());
         mPages = config.readEntry("Pages", 1);
         mSubDaysEvents = config.readEntry("ShowSubDayEventsAs", static_cast<int>(TimeBoxes));
@@ -79,7 +80,7 @@ void CalPrintYear::doSaveConfig()
 
     readSettingsWidget();
     if (mConfig) {
-        KConfigGroup config(mConfig, QStringLiteral("Yearprint"));
+        KConfigGroup config(mConfig, u"Yearprint"_s);
         config.writeEntry("Year", mYear);
         config.writeEntry("Pages", mPages);
         config.writeEntry("Pages", mPages);

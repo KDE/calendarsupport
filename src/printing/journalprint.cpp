@@ -5,6 +5,8 @@
 */
 
 #include "journalprint.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "calendarsupport_debug.h"
 #include "utils.h"
 #include <KConfigGroup>
@@ -63,7 +65,7 @@ void CalPrintJournal::doLoadConfig()
 {
     CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
-        KConfigGroup config(mConfig, QStringLiteral("Journalprint"));
+        KConfigGroup config(mConfig, u"Journalprint"_s);
         mUseDateRange = config.readEntry("JournalsInRange", false);
     }
     setSettingsWidget();
@@ -75,7 +77,7 @@ void CalPrintJournal::doSaveConfig()
 
     readSettingsWidget();
     if (mConfig) {
-        KConfigGroup config(mConfig, QStringLiteral("Journalprint"));
+        KConfigGroup config(mConfig, u"Journalprint"_s);
         config.writeEntry("JournalsInRange", mUseDateRange);
     }
     CalPrintPluginBase::doSaveConfig();
@@ -94,7 +96,7 @@ void CalPrintJournal::setDateRange(const QDate &from, const QDate &to)
 void CalPrintJournal::drawJournal(const KCalendarCore::Journal::Ptr &journal, QPainter &p, int x, int &y, int width, int pageHeight)
 {
     QFont oldFont(p.font());
-    p.setFont(QFont(QStringLiteral("sans-serif"), 15));
+    p.setFont(QFont(u"sans-serif"_s, 15));
     QString headerText;
     QString dateText(QLocale::system().toString(journal->dtStart().toLocalTime().date(), QLocale::LongFormat));
 

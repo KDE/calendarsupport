@@ -32,7 +32,7 @@ using namespace CalendarSupport;
 CalPrinter::CalPrinter(QWidget *parent, const KCalendarCore::Calendar::Ptr &calendar, bool uniqItem)
     : QObject(parent)
     , mParent(parent)
-    , mConfig(new KConfig(QStringLiteral("calendar_printing.rc"), KConfig::SimpleConfig))
+    , mConfig(new KConfig(u"calendar_printing.rc"_s, KConfig::SimpleConfig))
     , mUniqItem(uniqItem)
 {
     init(calendar);
@@ -88,7 +88,7 @@ void CalPrinter::print(int type, QDate fd, QDate td, const KCalendarCore::Incide
     }
     QPointer<CalPrintDialog> printDialog = new CalPrintDialog(type, mPrintPlugins, mParent, mUniqItem);
 
-    KConfigGroup grp(mConfig, QStringLiteral("")); // orientation setting isn't in a group
+    KConfigGroup grp(mConfig, u""_s); // orientation setting isn't in a group
     printDialog->setOrientation(CalPrinter::ePrintOrientation(grp.readEntry("Orientation", 1)));
     printDialog->setPreview(preview);
     setDateRange(fd, td);

@@ -6,6 +6,8 @@
 */
 
 #include "incidenceviewer.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "attachmenthandler.h"
 #include "incidenceviewer_p.h"
 #include "urihandler.h"
@@ -41,10 +43,9 @@ void TextBrowser::doSetSource(const QUrl &name, QTextDocument::ResourceType type
     QString uri = name.toString();
     // QTextBrowser for some reason insists on putting // or / in links,
     // this is a crude workaround
-    if (uri.startsWith(QLatin1StringView("uid:")) || uri.startsWith(QLatin1StringView("kmail:"))
-        || uri.startsWith(QStringLiteral("urn:x-ical").section(QLatin1Char(':'), 0, 0)) || uri.startsWith(QLatin1StringView("news:"))
-        || uri.startsWith(QLatin1StringView("mailto:"))) {
-        uri.replace(QRegularExpression(QLatin1StringView("^([^:]+:)/+")), QStringLiteral("\\1"));
+    if (uri.startsWith(QLatin1StringView("uid:")) || uri.startsWith(QLatin1StringView("kmail:")) || uri.startsWith(u"urn:x-ical"_s.section(u':', 0, 0))
+        || uri.startsWith(QLatin1StringView("news:")) || uri.startsWith(QLatin1StringView("mailto:"))) {
+        uri.replace(QRegularExpression(QLatin1StringView("^([^:]+:)/+")), u"\\1"_s);
     }
 
     if (uri.startsWith(QLatin1StringView("ATTACH:"))) {

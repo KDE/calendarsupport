@@ -137,7 +137,7 @@ static QUrl tempFileForAttachment(const Attachment &attachment)
     QMimeDatabase db;
     QStringList patterns = db.mimeTypeForName(attachment.mimeType()).globPatterns();
     if (!patterns.empty()) {
-        s_tempFile = new QTemporaryFile(QDir::tempPath() + "/attachementview_XXXXXX"_L1 + patterns.first().remove(QLatin1Char('*')));
+        s_tempFile = new QTemporaryFile(QDir::tempPath() + "/attachementview_XXXXXX"_L1 + patterns.first().remove(u'*'));
     } else {
         s_tempFile = new QTemporaryFile();
     }

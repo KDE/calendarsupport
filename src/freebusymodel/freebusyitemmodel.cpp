@@ -6,6 +6,7 @@
 */
 
 #include "freebusyitemmodel.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <Akonadi/FreeBusyManager>
 
@@ -138,8 +139,8 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
     KCalendarCore::FreeBusyPeriod period = fbitem->freeBusy()->fullBusyPeriods().at(index.row());
     switch (role) {
     case Qt::DisplayRole: // return something to make modeltest happy
-        return QStringLiteral("%1 - %2").arg(QLocale().toString(period.start().toLocalTime(), QLocale::ShortFormat),
-                                             QLocale().toString(period.end().toLocalTime(), QLocale::ShortFormat));
+        return u"%1 - %2"_s.arg(QLocale().toString(period.start().toLocalTime(), QLocale::ShortFormat),
+                                QLocale().toString(period.end().toLocalTime(), QLocale::ShortFormat));
     case FreeBusyItemModel::FreeBusyPeriodRole:
         return QVariant::fromValue(period);
     default:

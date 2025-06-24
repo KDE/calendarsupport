@@ -6,6 +6,7 @@
 */
 
 #include "freeperiodmodel.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include <KFormat>
 #include <KLocalizedString>
@@ -172,7 +173,7 @@ QString FreePeriodModel::tooltipify(int index) const
 {
     KCalendarCore::Period period = mPeriodList.at(index);
     unsigned long duration = period.duration().asSeconds() * 1000; // we want milliseconds
-    QString toolTip = QStringLiteral("<qt>");
+    QString toolTip = u"<qt>"_s;
     toolTip += QLatin1StringView("<b>") + i18nc("@info:tooltip", "Free Period") + QLatin1StringView("</b>");
     toolTip += QLatin1StringView("<hr>");
     toolTip += QLatin1StringView("<i>") + i18nc("@info:tooltip period start time", "Start:") + QLatin1StringView("</i>&nbsp;");

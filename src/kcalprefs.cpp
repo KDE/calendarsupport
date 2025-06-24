@@ -6,6 +6,8 @@
 */
 
 #include "kcalprefs.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "calendarsupport_debug.h"
 #include "identitymanager.h"
 
@@ -106,9 +108,9 @@ void KCalPrefs::fillMailDefaults()
 
 void KCalPrefs::usrRead()
 {
-    KConfigGroup generalConfig(config(), QStringLiteral("General"));
+    KConfigGroup generalConfig(config(), u"General"_s);
 
-    KConfigGroup defaultCalendarConfig(config(), QStringLiteral("Calendar"));
+    KConfigGroup defaultCalendarConfig(config(), u"Calendar"_s);
     d->mDefaultCalendarId = defaultCalendarConfig.readEntry("Default Calendar", -1);
 
 #if 0
@@ -125,7 +127,7 @@ void KCalPrefs::usrRead()
 
 bool KCalPrefs::usrSave()
 {
-    KConfigGroup generalConfig(config(), QStringLiteral("General"));
+    KConfigGroup generalConfig(config(), u"General"_s);
 
 #if 0
     if (mRememberRetrievePw) {
@@ -136,7 +138,7 @@ bool KCalPrefs::usrSave()
     }
 #endif
 
-    KConfigGroup defaultCalendarConfig(config(), QStringLiteral("Calendar"));
+    KConfigGroup defaultCalendarConfig(config(), u"Calendar"_s);
     defaultCalendarConfig.writeEntry("Default Calendar", defaultCalendarId());
 
     return KConfigSkeleton::usrSave();
@@ -196,7 +198,7 @@ QStringList KCalPrefs::fullEmails()
 
     fullEmails.reserve(1 + mAdditionalMails.count() + lst.count());
     // The user name and email from the config dialog:
-    fullEmails << QStringLiteral("%1 <%2>").arg(fullName(), email());
+    fullEmails << u"%1 <%2>"_s.arg(fullName(), email());
 
     QStringList::Iterator it;
     KIdentityManagementCore::IdentityManager::ConstIterator it1;
@@ -207,7 +209,7 @@ QStringList KCalPrefs::fullEmails()
     // Add emails configured in korganizer
     lst = mAdditionalMails;
     for (it = lst.begin(); it != lst.end(); ++it) {
-        fullEmails << QStringLiteral("%1 <%2>").arg(fullName(), *it);
+        fullEmails << u"%1 <%2>"_s.arg(fullName(), *it);
     }
 
     // Warning, this list could contain duplicates.

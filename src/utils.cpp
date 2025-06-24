@@ -7,6 +7,8 @@
 */
 
 #include "utils.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "calendarsupport_debug.h"
 #include "kcalprefs.h"
 
@@ -145,9 +147,9 @@ QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QObject *pa
 
     const auto common = findMostCommonType(items);
     if (common == KCalendarCore::IncidenceBase::TypeEvent) {
-        drag->setPixmap(QIcon::fromTheme(QStringLiteral("view-calendar-day")).pixmap(qApp->style()->pixelMetric(QStyle::PM_ToolBarIconSize)));
+        drag->setPixmap(QIcon::fromTheme(u"view-calendar-day"_s).pixmap(qApp->style()->pixelMetric(QStyle::PM_ToolBarIconSize)));
     } else if (common == KCalendarCore::IncidenceBase::TypeTodo) {
-        drag->setPixmap(QIcon::fromTheme(QStringLiteral("view-calendar-tasks")).pixmap(qApp->style()->pixelMetric(QStyle::PM_ToolBarIconSize)));
+        drag->setPixmap(QIcon::fromTheme(u"view-calendar-tasks"_s).pixmap(qApp->style()->pixelMetric(QStyle::PM_ToolBarIconSize)));
     }
 
     return drag.release();
@@ -188,7 +190,7 @@ bool CalendarSupport::isValidIncidenceItemUrl(const QUrl &url, const QStringList
         return false;
     }
 
-    return supportedMimeTypes.contains(QUrlQuery(url).queryItemValue(QStringLiteral("type")));
+    return supportedMimeTypes.contains(QUrlQuery(url).queryItemValue(u"type"_s));
 }
 
 bool CalendarSupport::isValidIncidenceItemUrl(const QUrl &url)
@@ -380,7 +382,7 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
 {
     Q_UNUSED(richText)
 
-    QString str = QStringLiteral("<qt>");
+    QString str = u"<qt>"_s;
 
     // Display Name
     QString displayName;
@@ -410,10 +412,10 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
 
     // Content Type
     QStringList mimeTypes = coll.contentMimeTypes();
-    mimeTypes.removeAll(QStringLiteral("inode/directory"));
+    mimeTypes.removeAll(u"inode/directory"_s);
     QString mimeTypeStr;
     if (!mimeTypes.isEmpty()) {
-        mimeTypeStr = QLocale().createSeparatedList(mimeTypes.replaceInStrings(QStringLiteral("application/x-vnd.akonadi.calendar."), QString()));
+        mimeTypeStr = QLocale().createSeparatedList(mimeTypes.replaceInStrings(u"application/x-vnd.akonadi.calendar."_s, QString()));
     } else {
         mimeTypeStr = i18nc("collection has no mimetypes to show the user", "none");
     }

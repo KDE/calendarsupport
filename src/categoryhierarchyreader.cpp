@@ -19,12 +19,12 @@ static const QLatin1StringView categorySeparator(":");
 static inline QString &quote(QString &string)
 {
     Q_ASSERT(CategoryConfig::categorySeparator != "@"_L1);
-    return string.replace(QLatin1Char('@'), QStringLiteral("@0")).replace(QLatin1Char('\\') + CategoryConfig::categorySeparator, QStringLiteral("@1"));
+    return string.replace(u'@', u"@0"_s).replace(u'\\' + CategoryConfig::categorySeparator, u"@1"_s);
 }
 
 static inline QStringList &unquote(QStringList &strings)
 {
-    return strings.replaceInStrings(QStringLiteral("@1"), CategoryConfig::categorySeparator).replaceInStrings(QStringLiteral("@0"), QStringLiteral("@"));
+    return strings.replaceInStrings(u"@1"_s, CategoryConfig::categorySeparator).replaceInStrings(u"@0"_s, QStringLiteral("@"));
 }
 
 QStringList CategoryHierarchyReader::path(QString string)
@@ -98,7 +98,7 @@ void CategoryHierarchyReaderQComboBox::goUp()
 void CategoryHierarchyReaderQComboBox::addChild(const QString &label, const QVariant &userData)
 {
     QString spaces;
-    spaces.fill(QLatin1Char(' '), 2 * mCurrentDepth);
+    spaces.fill(u' ', 2 * mCurrentDepth);
     mBox->addItem(spaces + label, userData);
     mCurrentDepth++;
 }
