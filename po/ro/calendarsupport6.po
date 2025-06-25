@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-16 00:42+0000\n"
+"POT-Creation-Date: 2025-06-25 00:43+0000\n"
 "PO-Revision-Date: 2013-02-16 10:59+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -296,12 +296,12 @@ msgstr "Salvează atașamentul"
 msgid "<placeholder>undefined</placeholder>"
 msgstr "nedefinit"
 
-#: eventarchiver.cpp:126
+#: eventarchiver.cpp:127
 #, fuzzy, kde-format
 msgid "There are no items before %1"
 msgstr "Nu există evenimente înainte de %1"
 
-#: eventarchiver.cpp:127
+#: eventarchiver.cpp:128
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "&Archive"
@@ -309,7 +309,7 @@ msgctxt "@title:window"
 msgid "Archive"
 msgstr "&Arhivează"
 
-#: eventarchiver.cpp:155
+#: eventarchiver.cpp:156
 #, fuzzy, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -318,30 +318,30 @@ msgstr ""
 "Șterg toate evenimentele înainte de %1?\n"
 "Vor fi șterse următoarele evenimente:"
 
-#: eventarchiver.cpp:159
+#: eventarchiver.cpp:160
 #, fuzzy, kde-format
 #| msgid "Delete Old Items"
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Șterge elementele vechi"
 
-#: eventarchiver.cpp:269
+#: eventarchiver.cpp:270
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Motiv necunoscut"
 
-#: eventarchiver.cpp:271
+#: eventarchiver.cpp:272
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Nu pot scrie fișierul-arhivă %1. %2"
 
-#: eventarchiver.cpp:282
+#: eventarchiver.cpp:283
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Nu pot scrie fișierul-arhivă. %1"
 
-#: eventarchiver.cpp:291
+#: eventarchiver.cpp:292
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "Archive &Events"
@@ -374,18 +374,18 @@ msgstr ""
 msgid "Unknown"
 msgstr "Nume necunoscut"
 
-#: freebusymodel/freebusyitemmodel.cpp:211
+#: freebusymodel/freebusyitemmodel.cpp:212
 #, fuzzy, kde-format
 msgid "Attendee"
 msgstr "Însoțitori"
 
-#: freebusymodel/freeperiodmodel.cpp:124
+#: freebusymodel/freeperiodmodel.cpp:125
 #, fuzzy, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
 msgstr "%1 %2"
 
-#: freebusymodel/freeperiodmodel.cpp:141
+#: freebusymodel/freeperiodmodel.cpp:142
 #, kde-format
 msgctxt ""
 "@label A time period duration. It is preceded/followed (based on the "
@@ -394,7 +394,7 @@ msgctxt ""
 msgid "%1 %2, %3 to %4"
 msgstr ""
 
-#: freebusymodel/freeperiodmodel.cpp:162
+#: freebusymodel/freeperiodmodel.cpp:163
 #, fuzzy, kde-format
 msgctxt ""
 "@label A time period duration. KLocale is used to format the components. "
@@ -402,13 +402,13 @@ msgctxt ""
 msgid "%1, %2 %3, %4 to %5"
 msgstr "%1 %2"
 
-#: freebusymodel/freeperiodmodel.cpp:176
+#: freebusymodel/freeperiodmodel.cpp:177
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
 msgstr ""
 
-#: freebusymodel/freeperiodmodel.cpp:178
+#: freebusymodel/freeperiodmodel.cpp:179
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event start date and time"
 #| msgid "Start date and time"
@@ -416,13 +416,13 @@ msgctxt "@info:tooltip period start time"
 msgid "Start:"
 msgstr "Data și ora de început"
 
-#: freebusymodel/freeperiodmodel.cpp:181
+#: freebusymodel/freeperiodmodel.cpp:182
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
 msgstr ""
 
-#: freebusymodel/freeperiodmodel.cpp:184
+#: freebusymodel/freeperiodmodel.cpp:185
 #, fuzzy, kde-format
 #| msgctxt "incidence category"
 #| msgid "Education"
@@ -1361,35 +1361,35 @@ msgstr ""
 msgid "Print &Footer"
 msgstr "&Tipărește..."
 
-#: printing/calprintdefaultplugins.cpp:120
-#: printing/calprintdefaultplugins.cpp:149
-#: printing/calprintdefaultplugins.cpp:168
+#: printing/calprintdefaultplugins.cpp:122
+#: printing/calprintdefaultplugins.cpp:151
+#: printing/calprintdefaultplugins.cpp:170
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event start date and time"
 #| msgid "Start date and time"
 msgid "Start date: "
 msgstr "Data și ora de început"
 
-#: printing/calprintdefaultplugins.cpp:123
-#: printing/calprintdefaultplugins.cpp:152
+#: printing/calprintdefaultplugins.cpp:125
+#: printing/calprintdefaultplugins.cpp:154
 #, fuzzy, kde-format
 msgid "No start date"
 msgstr "Dată de început"
 
-#: printing/calprintdefaultplugins.cpp:128
+#: printing/calprintdefaultplugins.cpp:130
 #, fuzzy, kde-format
 #| msgid "Send Update"
 msgid "End date: "
 msgstr "Trimite actualizare"
 
-#: printing/calprintdefaultplugins.cpp:131
+#: printing/calprintdefaultplugins.cpp:133
 #, fuzzy, kde-format
 #| msgctxt "incidence category"
 #| msgid "Education"
 msgid "Duration: "
 msgstr "Educație"
 
-#: printing/calprintdefaultplugins.cpp:134
+#: printing/calprintdefaultplugins.cpp:136
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
@@ -1397,7 +1397,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: printing/calprintdefaultplugins.cpp:137
+#: printing/calprintdefaultplugins.cpp:139
 #, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
@@ -1405,41 +1405,41 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: printing/calprintdefaultplugins.cpp:140
+#: printing/calprintdefaultplugins.cpp:142
 #, fuzzy, kde-format
 #| msgid "Send Update"
 msgid "No end date"
 msgstr "Trimite actualizare"
 
-#: printing/calprintdefaultplugins.cpp:157
+#: printing/calprintdefaultplugins.cpp:159
 #, fuzzy, kde-format
 msgid "Due date: "
 msgstr "Dăți execuție"
 
-#: printing/calprintdefaultplugins.cpp:160
+#: printing/calprintdefaultplugins.cpp:162
 #, kde-format
 msgid "No due date"
 msgstr "Fără dată de execuție"
 
-#: printing/calprintdefaultplugins.cpp:285
+#: printing/calprintdefaultplugins.cpp:287
 #, fuzzy, kde-format
 #| msgid "Accept"
 msgctxt "except for listed dates"
 msgid " except"
 msgstr "Acceptă"
 
-#: printing/calprintdefaultplugins.cpp:292
+#: printing/calprintdefaultplugins.cpp:294
 #, fuzzy, kde-format
 msgid "Repeats: "
 msgstr "Destinatari"
 
-#: printing/calprintdefaultplugins.cpp:300
+#: printing/calprintdefaultplugins.cpp:302
 #, fuzzy, kde-format
 #| msgid "Block alarms locally"
 msgid "No reminders"
 msgstr "Blochează alarmele local"
 
-#: printing/calprintdefaultplugins.cpp:303
+#: printing/calprintdefaultplugins.cpp:305
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
@@ -1447,31 +1447,31 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: printing/calprintdefaultplugins.cpp:317
+#: printing/calprintdefaultplugins.cpp:319
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the start"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:320
+#: printing/calprintdefaultplugins.cpp:322
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the start"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:325
+#: printing/calprintdefaultplugins.cpp:327
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the end"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:328
+#: printing/calprintdefaultplugins.cpp:330
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:337
+#: printing/calprintdefaultplugins.cpp:339
 #, fuzzy, kde-format
 #| msgid "In days"
 msgid "1 day"
@@ -1480,7 +1480,7 @@ msgstr[0] "În zile"
 msgstr[1] "În zile"
 msgstr[2] "În zile"
 
-#: printing/calprintdefaultplugins.cpp:340
+#: printing/calprintdefaultplugins.cpp:342
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
@@ -1488,7 +1488,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: printing/calprintdefaultplugins.cpp:343
+#: printing/calprintdefaultplugins.cpp:345
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
@@ -1496,8 +1496,8 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: printing/calprintdefaultplugins.cpp:347
-#: printing/calprintdefaultplugins.cpp:629
+#: printing/calprintdefaultplugins.cpp:349
+#: printing/calprintdefaultplugins.cpp:631
 #, fuzzy, kde-format
 #| msgctxt "Spacer for the joined list of categories"
 #| msgid ", "
@@ -1505,12 +1505,12 @@ msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr ", "
 
-#: printing/calprintdefaultplugins.cpp:352
+#: printing/calprintdefaultplugins.cpp:354
 #, kde-format
 msgid "Organizer: "
 msgstr "Organizator: "
 
-#: printing/calprintdefaultplugins.cpp:365
+#: printing/calprintdefaultplugins.cpp:367
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "incidence category: a lengthy time away from work or school, a trip "
@@ -1519,23 +1519,23 @@ msgstr "Organizator: "
 msgid "Location: "
 msgstr "Vacanță"
 
-#: printing/calprintdefaultplugins.cpp:427
+#: printing/calprintdefaultplugins.cpp:429
 #, kde-format
 msgid "Description:"
 msgstr "Descriere:"
 
-#: printing/calprintdefaultplugins.cpp:454
+#: printing/calprintdefaultplugins.cpp:456
 #, fuzzy, kde-format
 #| msgid "Notes"
 msgid "Notes:"
 msgstr "Note"
 
-#: printing/calprintdefaultplugins.cpp:466
+#: printing/calprintdefaultplugins.cpp:468
 #, fuzzy, kde-format
 msgid "No Subitems"
 msgstr "Afișează filtru"
 
-#: printing/calprintdefaultplugins.cpp:469
+#: printing/calprintdefaultplugins.cpp:471
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
@@ -1543,20 +1543,20 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: printing/calprintdefaultplugins.cpp:485
+#: printing/calprintdefaultplugins.cpp:487
 #, kde-format
 msgctxt "no status"
 msgid "none"
 msgstr "nimic"
 
-#: printing/calprintdefaultplugins.cpp:487
+#: printing/calprintdefaultplugins.cpp:489
 #, fuzzy, kde-format
 #| msgid "Unknown Name"
 msgctxt "unknown status"
 msgid "unknown"
 msgstr "Nume necunoscut"
 
-#: printing/calprintdefaultplugins.cpp:494
+#: printing/calprintdefaultplugins.cpp:496
 #, fuzzy, kde-format
 #| msgctxt "@title:column calendar event start date and time"
 #| msgid "Start Date and Time"
@@ -1564,38 +1564,38 @@ msgctxt "subitem start date"
 msgid "Start Date: %1\n"
 msgstr "Data și ora de început"
 
-#: printing/calprintdefaultplugins.cpp:497
+#: printing/calprintdefaultplugins.cpp:499
 #, fuzzy, kde-format
 #| msgid "Start Time"
 msgctxt "subitem start time"
 msgid "Start Time: %1\n"
 msgstr "Timp de început"
 
-#: printing/calprintdefaultplugins.cpp:503
+#: printing/calprintdefaultplugins.cpp:505
 #, fuzzy, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
 msgstr "Dăți execuție"
 
-#: printing/calprintdefaultplugins.cpp:509
+#: printing/calprintdefaultplugins.cpp:511
 #, fuzzy, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
 msgstr "Zona de timp:"
 
-#: printing/calprintdefaultplugins.cpp:513
+#: printing/calprintdefaultplugins.cpp:515
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
 msgstr "%1: "
 
-#: printing/calprintdefaultplugins.cpp:520
+#: printing/calprintdefaultplugins.cpp:522
 #, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
 msgstr "Stare: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:522
+#: printing/calprintdefaultplugins.cpp:524
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
@@ -1603,19 +1603,19 @@ msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
 msgstr "Prioritate"
 
-#: printing/calprintdefaultplugins.cpp:523
+#: printing/calprintdefaultplugins.cpp:525
 #, fuzzy, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
 msgstr "Sumar: %1"
 
-#: printing/calprintdefaultplugins.cpp:541
+#: printing/calprintdefaultplugins.cpp:543
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgid "No Attachments"
 msgstr "Salvează atașamentul"
 
-#: printing/calprintdefaultplugins.cpp:544
+#: printing/calprintdefaultplugins.cpp:546
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgid "1 Attachment:"
@@ -1624,18 +1624,18 @@ msgstr[0] "Salvează atașamentul"
 msgstr[1] "Salvează atașamentul"
 msgstr[2] "Salvează atașamentul"
 
-#: printing/calprintdefaultplugins.cpp:550
+#: printing/calprintdefaultplugins.cpp:552
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
 msgstr "  "
 
-#: printing/calprintdefaultplugins.cpp:567
+#: printing/calprintdefaultplugins.cpp:569
 #, kde-format
 msgid "No Attendees"
 msgstr "Niciun participant"
 
-#: printing/calprintdefaultplugins.cpp:569
+#: printing/calprintdefaultplugins.cpp:571
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
@@ -1643,7 +1643,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: printing/calprintdefaultplugins.cpp:581
+#: printing/calprintdefaultplugins.cpp:583
 #, kde-format
 msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
@@ -1651,70 +1651,70 @@ msgctxt ""
 msgid "%1 (%2): %3"
 msgstr "%1 (%2): %3"
 
-#: printing/calprintdefaultplugins.cpp:599
+#: printing/calprintdefaultplugins.cpp:601
 #, kde-format
 msgid "Status: %1"
 msgstr "Stare: %1"
 
-#: printing/calprintdefaultplugins.cpp:603
+#: printing/calprintdefaultplugins.cpp:605
 #, kde-format
 msgid "Secrecy: %1"
 msgstr "Secretism: %1"
 
-#: printing/calprintdefaultplugins.cpp:609
+#: printing/calprintdefaultplugins.cpp:611
 #, kde-format
 msgid "Show as: Busy"
 msgstr "Arată ca: Ocupat"
 
-#: printing/calprintdefaultplugins.cpp:611
+#: printing/calprintdefaultplugins.cpp:613
 #, kde-format
 msgid "Show as: Free"
 msgstr "Arată ca: Liber"
 
-#: printing/calprintdefaultplugins.cpp:617
+#: printing/calprintdefaultplugins.cpp:619
 #, kde-format
 msgid "This task is overdue!"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:623
+#: printing/calprintdefaultplugins.cpp:625
 #, kde-format
 msgid "Settings: "
 msgstr "Configurări: "
 
-#: printing/calprintdefaultplugins.cpp:628
+#: printing/calprintdefaultplugins.cpp:630
 #, kde-format
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:721 printing/calprintpluginbase.cpp:917
+#: printing/calprintdefaultplugins.cpp:723 printing/calprintpluginbase.cpp:917
 #: printing/calprintpluginbase.cpp:1057 printing/calprintpluginbase.cpp:1114
 #, fuzzy, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:936
+#: printing/calprintdefaultplugins.cpp:726 printing/calprintpluginbase.cpp:936
 #: printing/calprintpluginbase.cpp:1060
 #, fuzzy, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:779
+#: printing/calprintdefaultplugins.cpp:781
 #, fuzzy, kde-format
 #| msgid "In days"
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
 msgstr "În zile"
 
-#: printing/calprintdefaultplugins.cpp:984
-#: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:140
+#: printing/calprintdefaultplugins.cpp:986
+#: printing/calprintdefaultplugins.cpp:1209 printing/yearprint.cpp:141
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1229
+#: printing/calprintdefaultplugins.cpp:1231
 #, fuzzy, kde-format
 #| msgctxt "date from - to (week number)"
 #| msgid "%1 - %2 (Week %3)"
@@ -1722,7 +1722,7 @@ msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
 msgstr "%1 - %2 (săptămâna %3)"
 
-#: printing/calprintdefaultplugins.cpp:1231
+#: printing/calprintdefaultplugins.cpp:1233
 #, fuzzy, kde-format
 #| msgctxt "date from - to (week number)"
 #| msgid "%1 - %2 (Week %3)"
@@ -1732,13 +1732,13 @@ msgid ""
 "(Week %3)"
 msgstr "%1 - %2 (săptămâna %3)"
 
-#: printing/calprintdefaultplugins.cpp:1416
+#: printing/calprintdefaultplugins.cpp:1418
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1527
+#: printing/calprintdefaultplugins.cpp:1529
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event summary"
 #| msgid "Summary"
@@ -1746,7 +1746,7 @@ msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "Sumar"
 
-#: printing/calprintdefaultplugins.cpp:1528
+#: printing/calprintdefaultplugins.cpp:1530
 #, fuzzy, kde-format
 #| msgctxt "@title:column calendar event start date and time"
 #| msgid "Start Date and Time"
@@ -1754,7 +1754,7 @@ msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "Data și ora de început"
 
-#: printing/calprintdefaultplugins.cpp:1529
+#: printing/calprintdefaultplugins.cpp:1531
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item due date and time"
 #| msgid "Due Date and Time"
@@ -1762,7 +1762,7 @@ msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "Data și ora de sfârșit"
 
-#: printing/calprintdefaultplugins.cpp:1530
+#: printing/calprintdefaultplugins.cpp:1532
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
@@ -1770,7 +1770,7 @@ msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "Prioritate"
 
-#: printing/calprintdefaultplugins.cpp:1531
+#: printing/calprintdefaultplugins.cpp:1533
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -1778,19 +1778,19 @@ msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "Îndeplinit"
 
-#: printing/calprintdefaultplugins.cpp:1532
+#: printing/calprintdefaultplugins.cpp:1534
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1538
+#: printing/calprintdefaultplugins.cpp:1540
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "Crescător"
 
-#: printing/calprintdefaultplugins.cpp:1539
+#: printing/calprintdefaultplugins.cpp:1541
 #, fuzzy, kde-format
 #| msgctxt "@option sort in descreasing order"
 #| msgid "Descending"
@@ -1798,32 +1798,32 @@ msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Descrescător"
 
-#: printing/calprintdefaultplugins.cpp:1552
+#: printing/calprintdefaultplugins.cpp:1554
 #, kde-format
 msgid "To-do list"
 msgstr "Lista de sarcini"
 
-#: printing/calprintdefaultplugins.cpp:1604
+#: printing/calprintdefaultplugins.cpp:1606
 #: printing/calprintpluginbase.cpp:1717
 #, kde-format
 msgid "%1%"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1615
+#: printing/calprintdefaultplugins.cpp:1617
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
 msgid "Priority"
 msgstr "Prioritate"
 
-#: printing/calprintdefaultplugins.cpp:1625
+#: printing/calprintdefaultplugins.cpp:1627
 #, fuzzy, kde-format
 #| msgid "Due"
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "Făcut"
 
-#: printing/calprintdefaultplugins.cpp:1635
+#: printing/calprintdefaultplugins.cpp:1637
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event start date and time"
 #| msgid "Start date and time"
@@ -1831,7 +1831,7 @@ msgctxt "@label to-do start date"
 msgid "Start"
 msgstr "Data și ora de început"
 
-#: printing/calprintdefaultplugins.cpp:1645
+#: printing/calprintdefaultplugins.cpp:1647
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -1839,62 +1839,62 @@ msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "Îndeplinit"
 
-#: printing/calprintdefaultplugins.cpp:1655
+#: printing/calprintdefaultplugins.cpp:1657
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:36
+#: printing/calprintdefaultplugins.h:37
 #, fuzzy, kde-format
 msgid "Print &incidence"
 msgstr "&Tipărește..."
 
-#: printing/calprintdefaultplugins.h:41
+#: printing/calprintdefaultplugins.h:42
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:138
+#: printing/calprintdefaultplugins.h:139
 #, fuzzy, kde-format
 msgid "Print da&y"
 msgstr "iCalendar"
 
-#: printing/calprintdefaultplugins.h:143
+#: printing/calprintdefaultplugins.h:144
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:197
+#: printing/calprintdefaultplugins.h:198
 #, fuzzy, kde-format
 #| msgid "In weeks"
 msgid "Print &week"
 msgstr "În săptămâni"
 
-#: printing/calprintdefaultplugins.h:202
+#: printing/calprintdefaultplugins.h:203
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:263
+#: printing/calprintdefaultplugins.h:264
 #, fuzzy, kde-format
 #| msgid "In months"
 msgid "Print mont&h"
 msgstr "În luni"
 
-#: printing/calprintdefaultplugins.h:268
+#: printing/calprintdefaultplugins.h:269
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:318
+#: printing/calprintdefaultplugins.h:319
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "Archive &Events"
 msgid "Print to-&dos"
 msgstr "Arhivează &evenimente"
 
-#: printing/calprintdefaultplugins.h:323
+#: printing/calprintdefaultplugins.h:324
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr ""
@@ -2649,7 +2649,7 @@ msgstr ""
 msgid "Show &holidays as:"
 msgstr "Arată sărbătorile ca:"
 
-#: printing/journalprint.cpp:104
+#: printing/journalprint.cpp:106
 #, fuzzy, kde-format
 #| msgctxt "Date from - to"
 #| msgid "%1 - %2"
@@ -2657,52 +2657,52 @@ msgctxt "Description - date"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: printing/journalprint.cpp:126
+#: printing/journalprint.cpp:128
 #, fuzzy, kde-format
 #| msgctxt "incidence category"
 #| msgid "Personal"
 msgid "Person: %1"
 msgstr "Personal"
 
-#: printing/journalprint.cpp:156
+#: printing/journalprint.cpp:158
 #, fuzzy, kde-format
 #| msgid "Journal"
 msgid "Journal entries"
 msgstr "Jurnal"
 
-#: printing/journalprint.h:31
+#: printing/journalprint.h:33
 #, fuzzy, kde-format
 msgid "Print &journal"
 msgstr "&Jurnal"
 
-#: printing/journalprint.h:36
+#: printing/journalprint.h:38
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr ""
 
-#: printing/yearprint.h:31
+#: printing/yearprint.h:33
 #, fuzzy, kde-format
 msgid "Print &year"
 msgstr "&Tipărește..."
 
-#: printing/yearprint.h:36
+#: printing/yearprint.h:38
 #, kde-format
 msgid "Prints a calendar for an entire year"
 msgstr ""
 
-#: utils.cpp:289
+#: utils.cpp:291
 #, fuzzy, kde-format
 #| msgid "Select Calendar"
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "Alegeți calendarul"
 
-#: utils.cpp:290
+#: utils.cpp:292
 #, kde-format
 msgid "Select the calendar where this item will be stored."
 msgstr ""
 
-#: utils.cpp:395
+#: utils.cpp:397
 #, fuzzy, kde-format
 #| msgctxt "@title:column calendar title"
 #| msgid "Calendar"
@@ -2710,19 +2710,19 @@ msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
 msgstr "Calendar"
 
-#: utils.cpp:406
+#: utils.cpp:408
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr ""
 
-#: utils.cpp:408
+#: utils.cpp:410
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Folder type:"
 msgstr "Calendar"
 
-#: utils.cpp:418
+#: utils.cpp:420
 #, fuzzy, kde-format
 #| msgctxt "no status"
 #| msgid "none"
@@ -2730,67 +2730,67 @@ msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "nimic"
 
-#: utils.cpp:421
+#: utils.cpp:423
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Content type:"
 msgstr "Calendar"
 
-#: utils.cpp:428
+#: utils.cpp:430
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:431
+#: utils.cpp:433
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr ""
 
-#: utils.cpp:433
+#: utils.cpp:435
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr ""
 
-#: utils.cpp:441
+#: utils.cpp:443
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:444
+#: utils.cpp:446
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr ""
 
-#: utils.cpp:446
+#: utils.cpp:448
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr ""
 
-#: utils.cpp:448
+#: utils.cpp:450
 #, fuzzy, kde-format
 #| msgid "Send Email"
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "Trimite scrisoare"
 
-#: utils.cpp:450
+#: utils.cpp:452
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr ""
 
-#: utils.cpp:452
+#: utils.cpp:454
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:456
+#: utils.cpp:458
 #, fuzzy, kde-format
 #| msgctxt "no status"
 #| msgid "none"
@@ -2798,19 +2798,19 @@ msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "nimic"
 
-#: utils.cpp:459
+#: utils.cpp:461
 #, fuzzy, kde-format
 #| msgid "Block alarms locally"
 msgid "Blocked Reminders:"
 msgstr "Blochează alarmele local"
 
-#: utils.cpp:524
+#: utils.cpp:526
 #, fuzzy, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1 %2"
 
-#: utils.cpp:526
+#: utils.cpp:528
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -2819,7 +2819,7 @@ msgstr "%1 %2"
 msgid "%1 (%2)"
 msgstr "%1 (%2): %3"
 
-#: utils.cpp:531
+#: utils.cpp:533
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
