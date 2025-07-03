@@ -25,7 +25,7 @@ bool startService(const QString &desktopFileName, const QString &uri)
 {
     const auto service = KService::serviceByDesktopName(desktopFileName);
     if (!service) {
-        qWarning() << "Desktop file not found:" << desktopFileName << ".desktop  -- please check your installation";
+        qCWarning(CALENDARSUPPORT_LOG) << "Desktop file not found:" << desktopFileName << ".desktop  -- please check your installation";
         return false;
     }
     auto job = new KIO::ApplicationLauncherJob(service);

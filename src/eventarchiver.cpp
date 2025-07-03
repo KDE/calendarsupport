@@ -227,7 +227,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     }
 
     // Get or create the archive file
-    QUrl archiveURL(KCalPrefs::instance()->mArchiveFile);
+    const QUrl archiveURL(KCalPrefs::instance()->mArchiveFile);
     QString archiveFile;
     QTemporaryFile downloadTempFile;
 
@@ -275,7 +275,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     }
 
     // Upload if necessary
-    QUrl srcUrl = QUrl::fromLocalFile(archiveFile);
+    const QUrl srcUrl = QUrl::fromLocalFile(archiveFile);
     if (srcUrl != archiveURL) {
         auto job = KIO::file_copy(QUrl::fromLocalFile(archiveFile), archiveURL);
         KJobWidgets::setWindow(job, widget);
