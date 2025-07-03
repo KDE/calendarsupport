@@ -20,7 +20,12 @@ include(ECMGenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 
-file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h *.c)
+file(
+    GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES
+    *.cpp
+    *.h
+    *.c
+)
 set(PRE_COMMIT_INSTALLED FALSE)
 if(${CMAKE_SOURCE_DIR} STREQUAL ${PROJECT_SOURCE_DIR})
     if(EXISTS "${PROJECT_SOURCE_DIR}/.git/hooks/pre-commit")
@@ -43,16 +48,16 @@ include(ECMFeatureSummary)
 include(ECMAddTests)
 
 include(ECMCheckOutboundLicense)
-file(GLOB_RECURSE ALL_SOURCE_FILES src/*.cpp src/*.h)
+file(
+    GLOB_RECURSE ALL_SOURCE_FILES
+    src/*.cpp
+    src/*.h
+)
 ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})
 
 include(ECMAddQch)
 
-option(
-    BUILD_QCH
-    "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)"
-    OFF
-)
+option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(
     QCH
     ${BUILD_QCH}
@@ -71,7 +76,10 @@ find_package(
     Qt6
     ${QT_REQUIRED_VERSION}
     CONFIG
-    REQUIRED Widgets Test PrintSupport
+    REQUIRED
+        Widgets
+        Test
+        PrintSupport
 )
 find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6GuiAddons ${KF_MIN_VERSION} CONFIG REQUIRED)
@@ -80,19 +88,9 @@ find_package(KPim6Mime ${KMIME_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF6Codecs ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KPim6CalendarUtils ${CALENDARUTILS_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF6CalendarCore ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(
-    KPim6IdentityManagementCore
-    ${IDENTITYMANAGEMENT_LIB_VERSION}
-    CONFIG
-    REQUIRED
-)
+find_package(KPim6IdentityManagementCore ${IDENTITYMANAGEMENT_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF6Holidays ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(
-    KPim6AkonadiCalendar
-    ${AKONADICALENDAR_LIB_VERSION}
-    CONFIG
-    REQUIRED
-)
+find_package(KPim6AkonadiCalendar ${AKONADICALENDAR_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF6TextCustomEditor ${KTEXTADDONS_MIN_VERSION} CONFIG REQUIRED)
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX CALENDARSUPPORT
@@ -106,11 +104,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX CALENDARSUPPORT
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
 ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.15.0)
 
-option(
-    USE_UNITY_CMAKE_SUPPORT
-    "Use UNITY cmake support (speedup compile time)"
-    OFF
-)
+option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
 if(USE_UNITY_CMAKE_SUPPORT)
@@ -118,9 +112,7 @@ if(USE_UNITY_CMAKE_SUPPORT)
 endif()
 
 ########### CMake Config Files ###########
-set(CMAKECONFIG_INSTALL_DIR
-    "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6CalendarSupport"
-)
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6CalendarSupport")
 
 add_subdirectory(src)
 
@@ -136,9 +128,7 @@ if(BUILD_QCH)
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS
-        "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6CalendarSupportQchTargets.cmake\")"
-    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6CalendarSupportQchTargets.cmake\")")
 endif()
 
 configure_package_config_file(
@@ -163,7 +153,8 @@ install(
 )
 
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/src/calendarsupport_version.h
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/src/calendarsupport_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/
     COMPONENT Devel
 )
