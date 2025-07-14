@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-25 00:43+0000\n"
-"PO-Revision-Date: 2025-03-25 21:24+0100\n"
+"PO-Revision-Date: 2025-07-13 15:20+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.04.3\n"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -1839,13 +1839,13 @@ msgstr "Etiketak"
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
-msgstr "Gorakorra"
+msgstr "Goranzkoa"
 
 #: printing/calprintdefaultplugins.cpp:1541
 #, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
-msgstr "Beherakorra"
+msgstr "Beheranzkoa"
 
 #: printing/calprintdefaultplugins.cpp:1554
 #, kde-format

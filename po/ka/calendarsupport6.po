@@ -476,7 +476,7 @@ msgstr ""
 #: kcalprefs.kcfg:24
 #, kde-format
 msgid "Default appointment time"
-msgstr "ნაგულისხმები განაწესის დრო"
+msgstr "ნაგულისხმევი განაწესის დრო"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:25
@@ -492,7 +492,7 @@ msgstr ""
 #: kcalprefs.kcfg:30
 #, kde-format
 msgid "Default duration of new appointment (HH:MM)"
-msgstr "ახალი შეხვედრის ნაგულისხმები ხანგრძლივობა (სთ:წთ)"
+msgstr "ახალი შეხვედრის ნაგულისხმევი ხანგრძლივობა (სთ:წთ)"
 
 #. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:31
@@ -508,7 +508,7 @@ msgstr ""
 #: kcalprefs.kcfg:36
 #, kde-format
 msgid "Enable a default sound file for audio reminders"
-msgstr "აუდიო შეხსენებების ნაგულისხმები ხმის ჩართვა"
+msgstr "აუდიო შეხსენებების ნაგულისხმევი ხმის ჩართვა"
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:37
@@ -527,7 +527,7 @@ msgstr ""
 #: kcalprefs.kcfg:42
 #, kde-format
 msgid "Default audio file"
-msgstr "ნაგულისხმები აუდიო ფაილი"
+msgstr "ნაგულისხმევი აუდიო ფაილი"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:43
@@ -591,7 +591,7 @@ msgstr "ახალი განრიგებისთვის შემხ�
 #: kcalprefs.kcfg:62
 #, kde-format
 msgid "Default reminder time"
-msgstr "შეხსენებლის ნაგულისხმები დრო"
+msgstr "შეხსენებლის ნაგულისხმევი დრო"
 
 #. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:63
@@ -607,7 +607,7 @@ msgstr ""
 #: kcalprefs.kcfg:64
 #, kde-format
 msgid "Default time for reminders"
-msgstr "ნაგულისხმები დრო შემხსენებლებისთვის"
+msgstr "ნაგულისხმევი დრო შემხსენებლებისთვის"
 
 #. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
 #: kcalprefs.kcfg:69
@@ -623,7 +623,7 @@ msgstr ""
 #: kcalprefs.kcfg:70
 #, kde-format
 msgid "Default time unit for reminders"
-msgstr "შემხსენებლების ნაგულისხმები დრის ერთეული"
+msgstr "შემხსენებლების ნაგულისხმევი დრის ერთეული"
 
 #. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:78
@@ -698,7 +698,7 @@ msgstr ""
 #: kcalprefs.kcfg:104
 #, kde-format
 msgid "Default policy for invitations to other users:"
-msgstr "სხვა მომხმარებლების მოსაწვევის ნაგულისხმები პოლიტიკა:"
+msgstr "სხვა მომხმარებლების მოსაწვევის ნაგულისხმევი პოლიტიკა:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:107
@@ -1991,7 +1991,7 @@ msgstr "მონიშნული სტილის ნაგულისხ�
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
-msgstr "პრინტერის ნაგულისხმების გამოყენება"
+msgstr "პრინტერის ნაგულისხმევის გამოყენება"
 
 #: printing/calprinter.cpp:201
 #, kde-format
@@ -2783,7 +2783,7 @@ msgstr "აირჩიეთ კალენდარი, სადაც ა�
 #, kde-format
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
-msgstr "%1 (ნაგულისხმები კალენდარი)"
+msgstr "%1 (ნაგულისხმევი კალენდარი)"
 
 #: utils.cpp:408
 #, kde-format
