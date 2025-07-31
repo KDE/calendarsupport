@@ -43,7 +43,6 @@ public:
 
 Q_SIGNALS:
     void attendeeChanged(const KCalendarCore::Attendee &attendee);
-    void freebusyChanged(const KCalendarCore::FreeBusy::Ptr fb);
 
 private:
     const KCalendarCore::Attendee mAttendee;
