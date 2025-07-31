@@ -78,7 +78,6 @@ QList<CellItem *> CellItem::placeItem(const QList<CellItem *> &cells, CellItem *
             }
         }
         placeItem->setSubCells(maxSubCells);
-        qCDebug(CALENDARSUPPORT_LOG) << "use subcell" << i << "of" << maxSubCells;
     } else {
         // Nothing overlapped placeItem, so:
         overlappingItems.clear();
