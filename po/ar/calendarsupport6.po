@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-25 00:43+0000\n"
-"PO-Revision-Date: 2025-03-23 09:53+0400\n"
+"PO-Revision-Date: 2025-07-31 18:36+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -826,7 +826,7 @@ msgstr "nobody@nowhere"
 #: kcalprefs.kcfg:217
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
-msgstr "لون ”بدون وسم“ (لمخطّطات رسم ”وسم فقط“)"
+msgstr "لون ”دون وسم“ (لمخطّطات رسم ”وسم فقط“)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:218
@@ -836,7 +836,7 @@ msgid ""
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
-"حدد لونًا لاستخدامه في حالات  \"بدون وسم\" أو \"علامة إلغاء الوسم\" ، عندما "
+"حدد لونًا لاستخدامه في حالات  \"دون وسم\" أو \"علامة إلغاء الوسم\" ، عندما "
 "يكون العنصر ليس لديه أي وسم. سيستخدم هذا اللون عند رسم العناصر في جدول أعمال "
 "أو عرض الشهر باستخدام مخطط \"الوسم فقط\"."
 
