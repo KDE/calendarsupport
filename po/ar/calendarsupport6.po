@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-25 00:43+0000\n"
-"PO-Revision-Date: 2025-07-31 18:36+0400\n"
+"PO-Revision-Date: 2025-08-04 20:16+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -63,7 +63,7 @@ msgstr "أرشف الآن العناصر الأقدم من:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr "فعّل الأرشفة أو التّخلّص لمرّة واحدة من العناصر القديمة"
+msgstr "مكّن الأرشفة أو التّخلّص لمرّة واحدة من العناصر القديمة"
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -74,7 +74,7 @@ msgid ""
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
 "إن أشّرت على هذا المربّع، فستُؤرشف/يُتخلّص من الأحداث والمهامّ الأقدم من التّاريخ "
-"المحدّد. ستجري أرشفة هذه العناصر  ما لم يكن خيار ”احذف فقط“ مفعّلًا، وإلّا "
+"المحدّد. ستجري أرشفة هذه العناصر  ما لم يكن خيار ”احذف فقط“ ممكّنًا، وإلّا "
 "فسيُتخلّص من العناصر دون حفظها."
 
 #: archivedialog.cpp:93
@@ -105,7 +105,7 @@ msgstr "أر&شف آليًّا العناصر الأقدم من:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable automatic archiving or purging of older items"
-msgstr "فعّل الأرشفة أو التّخلّص الآليّ من العناصر القديمة"
+msgstr "مكّن الأرشفة أو التّخلّص الآليّ من العناصر القديمة"
 
 #: archivedialog.cpp:110
 #, kde-format
@@ -491,7 +491,7 @@ msgstr "أدخِل المدّة المبدئيّة للأحداث هنا. يُس
 #: kcalprefs.kcfg:36
 #, kde-format
 msgid "Enable a default sound file for audio reminders"
-msgstr "فعّل ملفّ صوت مبدئيّ للتّذكيرات الصّوتيّة."
+msgstr "مكّن ملفّ صوت مبدئيّ للتّذكيرات الصّوتيّة."
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:37
@@ -527,7 +527,7 @@ msgstr ""
 #: kcalprefs.kcfg:47
 #, kde-format
 msgid "Enable reminders for new Events"
-msgstr "فعّل تذكيرات الأحداث الجديدة"
+msgstr "مكّن تذكيرات الأحداث الجديدة"
 
 #. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:48
@@ -543,13 +543,13 @@ msgstr ""
 #: kcalprefs.kcfg:49
 #, kde-format
 msgid "By default, enable reminders for new events"
-msgstr "فعّل التّذكيرات للأحداث الجديدة مبدئيًّا"
+msgstr "مكّن التّذكيرات للأحداث الجديدة مبدئيًّا"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:54
 #, kde-format
 msgid "Enable reminders for new To-dos"
-msgstr "فعّل تذكيرات المهامّ الجديدة"
+msgstr "مكّن تذكيرات المهامّ الجديدة"
 
 #. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:55
@@ -565,7 +565,7 @@ msgstr ""
 #: kcalprefs.kcfg:56
 #, kde-format
 msgid "By default, enable reminders for new to-dos"
-msgstr "فعّل التّذكيرات للمهامّ الجديدة مبدئيًّا"
+msgstr "مكّن التّذكيرات للمهامّ الجديدة مبدئيًّا"
 
 #. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62
@@ -665,8 +665,8 @@ msgid ""
 "should check this box if you want to use the groupware functionality (e.g. "
 "Configuring Kontact as a KDE Kolab client)."
 msgstr ""
-"حدد هذا المربع لتمكين الإنشاء التلقائي للرسائل الإلكترونية عند إنشاء أو "
-"تحديث أو حذف الأحداث (أو المهام) التي تتضمن حاضرين آخرين. يجب عليك تحديد هذا "
+"حدد هذا المربع لتمكين الإنشاء الآليّ للرسائل الإلكترونية عند إنشاء أو تحديث "
+"أو حذف الأحداث (أو المهام) التي تتضمن حاضرين آخرين. يجب عليك تحديد هذا "
 "المربع إذا كنت تريد استخدام وظيفة البرامج الجماعية (على سبيل المثال، تكوين "
 "متراسلك كعميل KDE Kolab)."
 
@@ -718,7 +718,7 @@ msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
 "archived. The unit of this value is specified in another field."
 msgstr ""
-"إن كانت الأرشفة الآليّة مفعّلة، فستُؤرشف الأحداث الأقدم من هذا الحدّ. وحدة هذه "
+"إن كانت الأرشفة الآليّة ممكّنة، فستُؤرشف الأحداث الأقدم من هذا الحدّ. وحدة هذه "
 "القيمة محدّدة في حقل آخر."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
@@ -2313,7 +2313,7 @@ msgstr "اطبع أرقام الأسابيع"
 #: printing/calprintmonthconfig_base.ui:233
 #, kde-format
 msgid "Enable this to print week numbers at the left of each row."
-msgstr "فعّل هذا لطباعة أرقام الأسابيع يمين كلّ صفّ."
+msgstr "مكّن هذا لطباعة أرقام الأسابيع يمين كلّ صفّ."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:236
