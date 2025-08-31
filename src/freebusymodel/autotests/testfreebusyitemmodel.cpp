@@ -27,7 +27,7 @@ void FreeBusyItemModelTest::testModelValidity()
     auto model = new FreeBusyItemModel(this);
     new QAbstractItemModelTester(model, this);
 
-    QVERIFY(model->rowCount() == 0);
+    QCOMPARE(model->rowCount(), 0);
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), QTimeZone::utc());
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), QTimeZone::utc());
@@ -41,7 +41,7 @@ void FreeBusyItemModelTest::testModelValidity()
     item1->setFreeBusy(fb1);
 
     model->addItem(item1);
-    QVERIFY(model->rowCount() == 1);
+    QCOMPARE(model->rowCount(), 1);
     QVERIFY(model->containsAttendee(a1));
 
     QModelIndex i = model->index(0, 0);
@@ -52,25 +52,25 @@ void FreeBusyItemModelTest::testModelValidity()
     QCOMPARE(model->rowCount(i), 2);
 
     model->removeRow(0);
-    QVERIFY(model->rowCount() == 0);
+    QCOMPARE(model->rowCount(), 0);
 
     model->addItem(item1);
-    QVERIFY(model->rowCount() == 1);
+    QCOMPARE(model->rowCount(), 1);
 
     model->removeAttendee(a1);
-    QVERIFY(model->rowCount() == 0);
+    QCOMPARE(model->rowCount(), 0);
 
     model->addItem(item1);
-    QVERIFY(model->rowCount() == 1);
+    QCOMPARE(model->rowCount(), 1);
 
     model->removeItem(item1);
-    QVERIFY(model->rowCount() == 0);
+    QCOMPARE(model->rowCount(), 0);
 
     model->addItem(item1);
-    QVERIFY(model->rowCount() == 1);
+    QCOMPARE(model->rowCount(), 1);
 
     model->clear();
-    QVERIFY(model->rowCount() == 0);
+    QCOMPARE(model->rowCount(), 0);
 }
 
 void FreeBusyItemModelTest::testModelValidity2()
@@ -124,18 +124,18 @@ void FreeBusyItemModelTest::testModelValidity2()
     QModelIndex i2 = model->index(1, 0);
     QCOMPARE(a2.fullName(), model->data(i2, Qt::DisplayRole).toString());
     QCOMPARE(a2, model->data(i2, FreeBusyItemModel::AttendeeRole).value<KCalendarCore::Attendee>());
-    QVERIFY(model->rowCount(i2) == 0);
-    QVERIFY(model->data(i2, FreeBusyItemModel::FreeBusyRole).isValid() == false);
+    QCOMPARE(model->rowCount(i2), 0);
+    QCOMPARE(model->data(i2, FreeBusyItemModel::FreeBusyRole).isValid(), false);
 
     QModelIndex i3 = model->index(2, 0);
     QCOMPARE(a3.fullName(), model->data(i3, Qt::DisplayRole).toString());
     QCOMPARE(a3, model->data(i3, FreeBusyItemModel::AttendeeRole).value<KCalendarCore::Attendee>());
-    QVERIFY(model->rowCount(i3) == 0);
-    QVERIFY(model->data(i3, FreeBusyItemModel::FreeBusyRole).isValid() == false);
+    QCOMPARE(model->rowCount(i3), 0);
+    QCOMPARE(model->data(i3, FreeBusyItemModel::FreeBusyRole).isValid(), false);
 
     model->slotInsertFreeBusy(fb2, u"joe@example.com"_s);
     QCOMPARE(item2->freeBusy(), model->data(i2, FreeBusyItemModel::FreeBusyRole).value<KCalendarCore::FreeBusy::Ptr>());
-    QVERIFY(model->rowCount(i2) == fb2->fullBusyPeriods().size());
+    QCOMPARE(model->rowCount(i2), fb2->fullBusyPeriods().size());
 
     QModelIndex i2_0 = model->index(0, 0, i2);
     QCOMPARE(fb2->fullBusyPeriods().first(), model->data(i2_0, FreeBusyItemModel::FreeBusyPeriodRole).value<KCalendarCore::FreeBusyPeriod>());
@@ -146,7 +146,7 @@ void FreeBusyItemModelTest::testModelValidity2()
 
     model->slotInsertFreeBusy(fb3, u"max@example.com"_s);
     QCOMPARE(item3->freeBusy(), model->data(i3, FreeBusyItemModel::FreeBusyRole).value<KCalendarCore::FreeBusy::Ptr>());
-    QVERIFY(model->rowCount(i3) == fb3->fullBusyPeriods().size());
+    QCOMPARE(model->rowCount(i3), fb3->fullBusyPeriods().size());
 
     QModelIndex i3_0 = model->index(0, 0, i3);
     QCOMPARE(fb3->fullBusyPeriods().first(), model->data(i3_0, FreeBusyItemModel::FreeBusyPeriodRole).value<KCalendarCore::FreeBusyPeriod>());
@@ -159,9 +159,9 @@ void FreeBusyItemModelTest::testModelValidity2()
 
     QCOMPARE(2, model->rowCount());
 
-    QVERIFY(model->containsAttendee(a1) == true);
-    QVERIFY(model->containsAttendee(a2) == false);
-    QVERIFY(model->containsAttendee(a3) == true);
+    QCOMPARE(model->containsAttendee(a1), true);
+    QCOMPARE(model->containsAttendee(a2), false);
+    QCOMPARE(model->containsAttendee(a3), true);
 
     i3_0 = model->index(0, 0, i3);
     QCOMPARE(fb3->fullBusyPeriods().first(), model->data(i3_0, FreeBusyItemModel::FreeBusyPeriodRole).value<KCalendarCore::FreeBusyPeriod>());
