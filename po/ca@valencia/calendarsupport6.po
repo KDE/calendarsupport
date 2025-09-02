@@ -153,7 +153,7 @@ msgstr "Establix les unitats d'antiguitat de l'arxivament automàtic"
 msgctxt "@info:whatsthis"
 msgid "Select the time units (days, weeks or months) for automatic archiving."
 msgstr ""
-"Seleccioneu les unitats de temps (dies, setmanes o mesos) per a l'arxivat "
+"Trieu les unitats de temps (dies, setmanes o mesos) per a l'arxivat "
 "automàtic."
 
 #: archivedialog.cpp:133
@@ -244,8 +244,8 @@ msgid ""
 "Select this option to archive events if they ended before the date given "
 "above."
 msgstr ""
-"Seleccioneu esta per a arxivar els esdeveniments si estos han acabat abans "
-"de la data indicada més amunt."
+"Trieu esta per a arxivar els esdeveniments si estos han acabat abans de la "
+"data indicada més amunt."
 
 #: archivedialog.cpp:171
 #, kde-format
@@ -266,8 +266,8 @@ msgid ""
 "Select this option to archive to-dos if they were completed before the date "
 "given above."
 msgstr ""
-"Seleccioneu esta per a arxivar les tasques pendents si estes han finalitzat "
-"abans de la data indicada més amunt."
+"Trieu esta per a arxivar les tasques pendents si estes han finalitzat abans "
+"de la data indicada més amunt."
 
 #: archivedialog.cpp:178
 #, kde-format
@@ -288,7 +288,7 @@ msgid ""
 "Select this option to delete old events and to-dos without saving them. It "
 "is not possible to recover the events later."
 msgstr ""
-"Seleccioneu esta opció per a suprimir els esdeveniments i tasques pendents "
+"Trieu esta opció per a suprimir els esdeveniments i tasques pendents "
 "antigues sense guardar-les. Després no serà possible recuperar-les."
 
 #: archivedialog.cpp:242
@@ -681,9 +681,9 @@ msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
 "shown as non-working days in the date navigator, the agenda view, etc."
 msgstr ""
-"Seleccioneu de quines regions voleu utilitzar els festius. Els festius "
-"definits es mostren com a dies no laborables en el navegador de dates, la "
-"vista d'agenda, etc."
+"Trieu de quines regions voleu utilitzar els festius. Els festius definits es "
+"mostren com a dies no laborables en el navegador de dates, la vista "
+"d'agenda, etc."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:98
@@ -877,7 +877,7 @@ msgid ""
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
-"Seleccioneu un color que s'utilitzarà per a la situació «sense etiqueta» o "
+"Trieu un color que s'utilitzarà per a la situació «sense etiqueta» o "
 "«etiqueta no establida», quan un element no pertany a cap etiqueta. Este "
 "color s'utilitzarà en dibuixar elements en la vista d'agenda o mensual "
 "utilitzant l'esquema «Només l'etiqueta»."
@@ -2002,9 +2002,9 @@ msgid ""
 "\". You can also default to the orientation best suited to the selected "
 "style or to your printer's default setting."
 msgstr ""
-"Seleccioneu si voleu que l'eixida s'imprimisca en «vertical» o «apaïsada». "
-"També es pot predeterminar a l'orientació més adequada a l'estil seleccionat "
-"o a la configuració predeterminada de la impressora."
+"Trieu si voleu que l'eixida s'imprimisca en «vertical» o «apaïsada». També "
+"es pot predeterminar a l'orientació més adequada a l'estil seleccionat o a "
+"la configuració predeterminada de la impressora."
 
 #: printing/calprinter.cpp:199
 #, kde-format
@@ -2034,7 +2034,7 @@ msgstr "Apaïsada"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the type of print"
-msgstr "Seleccioneu el tipus d'impressió"
+msgstr "Trieu el tipus d'impressió"
 
 #: printing/calprinter.cpp:226
 #, kde-format
@@ -2044,10 +2044,9 @@ msgid ""
 "to print an individual item, or all the items for a specific time range "
 "(like a day, week or month), or you may want to print your to-do list."
 msgstr ""
-"Seleccioneu un dels tipus d'impressió següents que vulgueu fer. Podeu "
-"imprimir un element individual, o tots els elements amb un interval de temps "
-"específic (com un dia, setmana o mes), o imprimir la llista de tasques "
-"pendents."
+"Trieu un dels tipus d'impressió següents que vulgueu fer. Podeu imprimir un "
+"element individual, o tots els elements amb un interval de temps específic "
+"(com un dia, setmana o mes), o imprimir la llista de tasques pendents."
 
 #: printing/calprinter.cpp:254
 #, kde-format
@@ -2804,12 +2803,12 @@ msgstr "Imprimix un calendari de tot un any"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
-msgstr "Seleccioneu un calendari"
+msgstr "Trieu un calendari"
 
 #: utils.cpp:292
 #, kde-format
 msgid "Select the calendar where this item will be stored."
-msgstr "Seleccioneu el calendari en el qual s'emmagatzemarà este element."
+msgstr "Trieu el calendari en el qual s'emmagatzemarà este element."
 
 #: utils.cpp:397
 #, kde-format
