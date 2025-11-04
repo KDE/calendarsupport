@@ -128,7 +128,7 @@ msgid ""
 msgstr ""
 "Si cette fonctionnalité est activée, KOrganizer vérifiera régulièrement si "
 "des évènements et des tâches doivent être archivés. Cela signifie que vous "
-"ne devez pas utiliser cette boîte de dialogue à nouveau, sauf pour changer "
+"ne devez pas utiliser cette boite de dialogue à nouveau, sauf pour changer "
 "les paramètres."
 
 #: archivedialog.cpp:123
@@ -538,7 +538,7 @@ msgid ""
 msgstr ""
 "Cochez cette case si vous voulez activer l'utilisation du fichier indiqué "
 "comme fichier son par défaut pour les nouveaux rappels. Vous pouvez toujours "
-"spécifier un autre fichier dans la boîte de dialogue Rappel depuis l'éditeur "
+"spécifier un autre fichier dans la boite de dialogue Rappel depuis l'éditeur "
 "d'évènements ou de tâches."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
@@ -557,7 +557,7 @@ msgid ""
 msgstr ""
 "Définissez un fichier à utiliser comme fichier son par défaut pour les "
 "nouveaux rappels. Vous pouvez toujours spécifier un autre fichier dans la "
-"boîte de dialogue Rappel depuis l'éditeur d'évènements ou de tâches."
+"boite de dialogue Rappel depuis l'éditeur d'évènements ou de tâches."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:47
@@ -574,7 +574,7 @@ msgid ""
 msgstr ""
 "Cochez cette case si vous voulez activer des rappels pour tous les "
 "évènements récemment créés. Vous pouvez toujours désactiver les rappels dans "
-"la boîte de dialogue de l'éditeur d'évènements."
+"la boite de dialogue de l'éditeur d'évènements."
 
 #. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:49
@@ -596,7 +596,7 @@ msgid ""
 "You can always turn-off the reminders in the To-do editor dialog."
 msgstr ""
 "Cochez cette case si vous voulez activer des rappels pour toutes les tâches "
-"récemment créées. Vous pouvez toujours désactiver les rappels dans la boîte "
+"récemment créées. Vous pouvez toujours désactiver les rappels dans la boite "
 "de dialogue de l'éditeur de tâches."
 
 #. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
@@ -747,7 +747,7 @@ msgstr ""
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
-"Afficher les sélecteurs de fuseaux horaires dans la boîte de dialogue de "
+"Afficher les sélecteurs de fuseaux horaires dans la boite de dialogue de "
 "l'éditeur d'évènements et de tâches."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
@@ -1004,7 +1004,7 @@ msgid ""
 "range to include all events</i>."
 msgstr ""
 "Il est possible de n'imprimer que les évènements inclus dans une plage "
-"horaire donnée. Cette boîte de sélection d'heure vous permet de définir "
+"horaire donnée. Cette boite de sélection d'heure vous permet de définir "
 "l'heure de début de cette plage. L'heure de fin peut être définie avec "
 "l'option <i>heure de fin</i>. Remarque :vous pouvez modifier automatiquement "
 "ces paramètres si vous cochez l'option <i>Étendre l'intervalle de temps pour "
@@ -1093,7 +1093,7 @@ msgid ""
 "range to include all events</i>."
 msgstr ""
 "Il est possible de n'imprimer que les évènements inclus dans une plage "
-"horaire donnée. Cette boîte de sélection d'heure vous permet de définir "
+"horaire donnée. Cette boite de sélection d'heure vous permet de définir "
 "l'heure de fin de cette plage. L'heure de début peut être définie avec "
 "l'option <i>heure de début</i>. Remarque :vous pouvez modifier "
 "automatiquement ces paramètres si vous cochez l'option <i>Étendre "
