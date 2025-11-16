@@ -13,15 +13,15 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-25 00:43+0000\n"
-"PO-Revision-Date: 2025-03-20 15:26+0300\n"
-"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"PO-Revision-Date: 2025-11-15 20:46+0300\n"
+"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.07.70\n"
+"X-Generator: Lokalize 25.08.2\n"
 "(http: //www.transifex.com/projects/p/kdepim-k-tr/language/tr/)\n"
 "X-POOTLE-MTIME: 1413102218.000000\n"
 
@@ -29,7 +29,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive/Delete Past Events and To-dos"
-msgstr "Geçmiş Olayları ve Yapılacakları Arşivle/Sil"
+msgstr "Geçmiş Etkinlikleri ve Yapılacakları Arşivle/Sil"
 
 #: archivedialog.cpp:50
 #, kde-format
@@ -46,8 +46,8 @@ msgid ""
 "(<link url=\"#\">How to restore</link>)"
 msgstr ""
 "Arşivleme, eski ögeleri verilen dosyaya kaydeder ve geçerli takvimden siler. "
-"Eğer arşiv dosyası halihazırda varsa ögeler dosyaya eklenir. (<link url=\"#"
-"\">Nasıl geri yüklenir</link>)"
+"Eğer arşiv dosyası halihazırda varsa ögeler dosyaya eklenir (<link url=\"#"
+"\">Nasıl geri yüklenir?</link>)."
 
 #: archivedialog.cpp:67
 #, kde-format
@@ -65,7 +65,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio"
 msgid "Archive now items older than:"
-msgstr "Bu tarihten daha eski olayları şimdi arşivle:"
+msgstr "Şundan daha eski ögeleri şimdi arşivle"
 
 #: archivedialog.cpp:83
 #, kde-format
@@ -81,9 +81,9 @@ msgid ""
 "be archived or purged. The items will be archived unless the \"Delete only\" "
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
-"Bu kutuyu işaretlediğinizde belirlenen yaştan eski olaylar ve yapılacaklar "
-"arşivlenir veya temizlenir. “Yalnızca sil” seçeneği etkin olduğunda ögeler "
-"arşivlenecek, aksi halde kaydedilmeden temizleneceklerdir."
+"Bu kutuyu işaretlediğinizde belirlenen yaştan eski etkinlikler ve "
+"yapılacaklar arşivlenir veya temizlenir. “Yalnızca sil” seçeneği etkin "
+"olduğunda ögeler arşivlenecek, aksi halde kaydedilmeden temizleneceklerdir."
 
 #: archivedialog.cpp:93
 #, kde-format
@@ -99,15 +99,15 @@ msgid ""
 "will be saved and deleted, the newer (and events exactly on that date) will "
 "be kept."
 msgstr ""
-"Hangi tarihten önceki olayların arşivleneceği. Bu tarihten eski olayların ve "
-"yapılacakların hepsi kaydedilecek ve silinecek, daha yeni (ve tam o "
-"tarihteki) olaylar korunacak."
+"Hangi tarihten önceki ögelerin arşivleneceği. Bu tarihten eski etkinliklerin "
+"ve yapılacakların hepsi kaydedilir ve silinir, daha yeni (ve tam o "
+"tarihteki) olaylar korunur."
 
 #: archivedialog.cpp:107
 #, kde-format
 msgctxt "@option:radio"
 msgid "Automaticall&y archive items older than:"
-msgstr "&Bu tarihten daha eski olan ögeleri otomatik arşivle:"
+msgstr "Ş&undan daha eski ögeleri kendiliğinden arşivle:"
 
 #: archivedialog.cpp:108
 #, kde-format
@@ -123,9 +123,9 @@ msgid ""
 "and to-dos have to be archived; this means you will not need to use this "
 "dialog box again, except to change the settings."
 msgstr ""
-"Bu özellik etkin olduğunda uygulama olayların ve yapılacakların "
-"arşivlenmesini düzenli olarak kontrol eder, yani ayarları değiştirmek "
-"dışında bir daha bu iletişim penceresini kullanmanız gerekmez."
+"Bu özellik etkin olduğunda uygulama etkinliklerin ve yapılacakların "
+"arşivlenmesini düzenli olarak denetler; yani ayarları değiştirmek dışında "
+"bir daha bu iletişim penceresini kullanmanız gerekmez."
 
 #: archivedialog.cpp:123
 #, kde-format
@@ -140,21 +140,21 @@ msgid ""
 "The age of the events and to-dos to archive. All older items will be saved "
 "and deleted, the newer will be kept."
 msgstr ""
-"Arşivlenecek olayların ve yapılacakların eskiliği. Daha eski olan tüm ögeler "
-"kaydedilecek ve silinecek, daha yeniler ise korunacak."
+"Arşivlenecek etkinliklerin ve yapılacakların eskiliği. Daha eski olan tüm "
+"ögeler kaydedilir ve silinir, daha yeniler ise korunur."
 
 #: archivedialog.cpp:130
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the units for the automatic archive age"
-msgstr "otomatik arşiv zamanı için birimleri ayarla"
+msgstr "Kendiliğinden arşiv zamanı için birimleri ayarla"
 
 #: archivedialog.cpp:131
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Select the time units (days, weeks or months) for automatic archiving."
 msgstr ""
-"Otomatik arşivleme için zaman birimlerini seçin (günler, haftalar ya da "
+"Kendiliğinden arşivleme için zaman birimlerini seçin (günler, haftalar veya "
 "aylar)."
 
 #: archivedialog.cpp:133
@@ -185,7 +185,7 @@ msgstr "Arşiv &dosyası:"
 #, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "iCalendar Dosyaları (*.ics)"
+msgstr "iCalendar dosyaları (*.ics)"
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -222,21 +222,21 @@ msgid ""
 "they ended before the date given above; to-dos are archived if they were "
 "finished before the date."
 msgstr ""
-"Burada hangi unsurların arşivleneceğini seçebilirsiniz. Olaylar, yukarıda "
+"Burada hangi ögelerin arşivleneceğini seçebilirsiniz. Etkinlikler, yukarıda "
 "verilen tarihten önce sona ererse arşivlenecektir; yapılacak işler ise "
-"tarihten önce tamamlanırsa arşive alınacaktır."
+"tarihten önce tamamlanırsa arşivlenecektir."
 
 #: archivedialog.cpp:166
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive &Events"
-msgstr "&Olayları Arşivle"
+msgstr "&Etkinlikleri arşivle"
 
 #: archivedialog.cpp:167
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge events"
-msgstr "Olayları arşivle ya da temizle"
+msgstr "Etkinlikleri arşivle veya temizle"
 
 #: archivedialog.cpp:168
 #, kde-format
@@ -245,7 +245,7 @@ msgid ""
 "Select this option to archive events if they ended before the date given "
 "above."
 msgstr ""
-"Olaylar yukarıda verilen tarihten önce biterlerse, arşivlemek için bu "
+"Etkinlikler yukarıda verilen tarihten önce biterlerse arşivlemek için bu "
 "seçeneği seçin."
 
 #: archivedialog.cpp:171
@@ -289,8 +289,8 @@ msgid ""
 "Select this option to delete old events and to-dos without saving them. It "
 "is not possible to recover the events later."
 msgstr ""
-"Eski olayları ve yapılacakları kaydetmeden kapatmak için bunu imleyin. Daha "
-"sonra bu olayları geri getirmek olanaklı değildir."
+"Eski etkinlikleri ve yapılacakları kaydetmeden kapatmak için bunu seçin. "
+"Daha sonra bu etkinlikleri geri getirmek olanaklı değildir."
 
 #: archivedialog.cpp:242
 #, kde-format
@@ -379,7 +379,7 @@ msgstr "Arşive yazılamıyor. %1"
 #: eventarchiver.cpp:292
 #, kde-format
 msgid "Archiving events"
-msgstr "Olaylar arşivleniyor"
+msgstr "Etkinlikler arşivleniyor"
 
 #: freebusymodel/freebusycalendar.cpp:109
 #, kde-format
@@ -489,7 +489,7 @@ msgid ""
 "Enter the default time for events here. The default is used if you do not "
 "supply a start time."
 msgstr ""
-"Olaylar için öntanımlı zamanı buraya girin. Bir başlangıç zamanı "
+"Etkinlikler için öntanımlı zamanı buraya girin. Bir başlangıç zamanı "
 "belirtmediğinizde öntanımlı değer kullanılacaktır."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
@@ -505,8 +505,8 @@ msgid ""
 "Enter default duration for events here. The default is used if you do not "
 "supply an end time."
 msgstr ""
-"Olaylar için öntanımlı süreyi buraya girin. Bir bitiş süresi belirmemişseniz "
-"öntanımlı değerler kullanılacaktır."
+"Etkinlikler için öntanımlı süreyi buraya girin. Bir bitiş süresi "
+"belirmemişseniz öntanımlı değerler kullanılacaktır."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:36
@@ -524,7 +524,7 @@ msgid ""
 msgstr ""
 "Belirtilen dosyanın yeni anımsatıcılar için öntanımlı ses dosyası olarak "
 "kullanılmasını etkinleştirmek istiyorsanız bu kutuyu imleyin. Her zaman, "
-"Olay ya da Yapılacak Listesi düzenleyicilerinden erişilebilien Anımsatıcı "
+"Etkinlik veya Yapılacak Listesi düzenleyicilerinden erişilebilen Anımsatıcı "
 "yapılandırmasını kullanarak başka bir dosyayı belirtebilirsiniz."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
@@ -542,15 +542,15 @@ msgid ""
 "the Event or To-do editors."
 msgstr ""
 "Yeni anımsatıcılar için öntanımlı ses dosyası olarak kullanılacak bir dosya "
-"ayarlayın. Her zaman, Olay ya da Yapılacak Listesi düzenleyicilerinden "
-"erişilebilien Anımsatıcı yapılandırmasını kullanarak başka bir dosyayı "
-"belirtebilirsin."
+"ayarlayın. Her zaman, Etkinlik veya Yapılacak Listesi düzenleyicilerinden "
+"erişilebilen Anımsatıcı yapılandırmasını kullanarak başka bir dosyayı "
+"belirtebilirsiniz."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:47
 #, kde-format
 msgid "Enable reminders for new Events"
-msgstr "Yeni olaylar için anımsatıcıları etkinleştir"
+msgstr "Yeni etkinlikler için anımsatıcıları etkinleştir"
 
 #. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:48
@@ -559,15 +559,15 @@ msgid ""
 "Check this box if you want to enable reminders for all newly created Events. "
 "You can always turn-off the reminders in the Event editor dialog."
 msgstr ""
-"Yeni oluşturulan bütün olaylar için anımsatıcıları kullanmak istiyorsanız bu "
-"kutucuğu imleyin. Olay düzenleme penceresini kullanarak her zaman "
-"anımsatıcıları kapatabilirsiniz."
+"Yeni oluşturulan bütün etkinlikler için anımsatıcıları kullanmak "
+"istiyorsanız bu kutucuğu işaretleyin. Etkinlik düzenleme penceresini "
+"kullanarak her zaman anımsatıcıları kapatabilirsiniz."
 
 #. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:49
 #, kde-format
 msgid "By default, enable reminders for new events"
-msgstr "Yeni olaylar için anımsatıcılara öntanımlı olarak izin ver"
+msgstr "Yeni etkinlikler için anımsatıcılara öntanımlı olarak izin ver"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:54
@@ -643,8 +643,8 @@ msgid ""
 "Enter the start time for events here. This time should be the earliest time "
 "that you use for events."
 msgstr ""
-"Olaylar için başlangıç zamanını buraya girin. Bu zaman, olaylarda kullanman "
-"için en yakın zaman olmalı."
+"Etkinlikler için başlangıç zamanını buraya girin. Bu zaman, etkinliklerde "
+"kullanmanız için en yakın zaman olmalı."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:84
@@ -694,11 +694,11 @@ msgid ""
 "should check this box if you want to use the groupware functionality (e.g. "
 "Configuring Kontact as a KDE Kolab client)."
 msgstr ""
-"Bu düğmeye tıklayarak, diğer katılımcıları ilgilendiren olayları (veya "
+"Bu düğmeye tıklayarak, diğer katılımcıları ilgilendiren etkinlikleri (veya "
 "yapılacak işleri) oluştururken, güncellerken veya silerken kendiliğinden "
 "posta üretilmesini sağlayabilirsiniz. Grup yazılımı işlevini kullanmak "
 "istiyorsanız; örneğin, Kontak’ı KDE Kolab istemcisi olarak düzenlemek "
-"istiyorsanız, bu kutucuğu seçmeniz önerilir."
+"istiyorsanız bu kutucuğu işaretlemeniz önerilir."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:104
@@ -733,14 +733,14 @@ msgstr ""
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
-"Olay ve yapılacak iş düzenleyici iletişim kutusunda zaman bölge seçicilerini "
-"göster."
+"Etkinlik ve yapılacak iş düzenleyici iletişim kutusunda zaman bölge "
+"seçicilerini gösterin."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:134
 #, kde-format
 msgid "Regularly archive events"
-msgstr "Olayları düzenli olarak arşivle"
+msgstr "Etkinlikleri düzenli olarak arşivle"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:139
@@ -749,8 +749,8 @@ msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
 "archived. The unit of this value is specified in another field."
 msgstr ""
-"Eğer kendiliğinden-arşivleme açıksa, bu değerden büyük olaylar arşivlenir. "
-"Bu değerin birimi başka bir alanda belirtilmiştir."
+"Eğer kendiliğinden-arşivleme açıksa bu değerden büyük etkinlikler "
+"arşivlenir. Bu değerin birimi başka bir alanda belirtilmiştir."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:144
@@ -780,13 +780,13 @@ msgstr "Ay olarak"
 #: kcalprefs.kcfg:160
 #, kde-format
 msgid "URL of the file where old events should be archived"
-msgstr "Eski olayların arşivleneceği dosyanın URL’si"
+msgstr "Eski etkinliklerin arşivleneceği dosyanın URL’si"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:164
 #, kde-format
 msgid "Archive events"
-msgstr "Olayları arşivle"
+msgstr "Etkinlikleri arşivle"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:169
@@ -804,13 +804,13 @@ msgstr "Arşivlerken yapılması istenenler"
 #: kcalprefs.kcfg:177
 #, kde-format
 msgid "Delete old events"
-msgstr "Eski olayları sil"
+msgstr "Eski etkinlikleri sil"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:180
 #, kde-format
 msgid "Archive old events to a separate file"
-msgstr "Eski olayları ayrı bir dosyaya arşivle"
+msgstr "Eski etkinlikleri ayrı bir dosyaya arşivle"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
 #: kcalprefs.kcfg:194
@@ -826,7 +826,7 @@ msgid ""
 "to-dos and events you create."
 msgstr ""
 "Buraya tam adınızı girin. Bu ad, oluşturduğunuz yapılacak işlerde ve "
-"olaylarda “Düzenleyici” olarak gösterilecek."
+"etkinliklerde “Organizatör” olarak gösterilecektir."
 
 #: kcalprefs.kcfg:196
 #, kde-format
@@ -848,7 +848,7 @@ msgid ""
 msgstr ""
 "Buraya e-posta adresinizi girin. Bu e-posta adresi, takvimin sahibini "
 "tanımlamak için kullanılacak ve oluşturduğunuz yapılacak işlerde ve "
-"olaylarda gösterilecek."
+"olaylarda gösterilecektir."
 
 #: kcalprefs.kcfg:202
 #, kde-format
@@ -985,11 +985,11 @@ msgid ""
 "you can automatically modify these settings if you check <i>Extend time "
 "range to include all events</i>."
 msgstr ""
-"Belirli bir zaman aralığı içinde olan olayların yazdırılması mümkündür. Bu "
-"zaman seçim kutucuğu ile, bu zaman aralığının başlangıcını "
-"tanımlayabliirsiniz. Bitiş süresi <i>Bitiş süresi</i> seçeneğiyle "
-"tanımlanabilir. <i>Bütün olayları dahil etmek için zaman aralığını uzat</i> "
-"seçeneğini işaretlerseniz bu ayarları kendiliğinden değiştirebilirsiniz."
+"Belirli bir zaman erimi içinde olan olayların yazdırılması olanaklıdır. Bu "
+"zaman seçim kutucuğu ile, bu zaman eriminin başlangıcını "
+"tanımlayabilirsiniz. Bitiş süresi <i>Bitiş süresi</i> seçeneğiyle "
+"tanımlanabilir. <i>Zaman erimini tüm olayları kapsayacak şekilde genişlet</"
+"i> seçeneğini işaretlerseniz bu ayarları kendiliğinden değiştirebilirsiniz."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
@@ -1073,11 +1073,11 @@ msgid ""
 "Note you can automatically modify these settings if you check <i>Extend time "
 "range to include all events</i>."
 msgstr ""
-"Yalnızca belirli bir zaman aralığı içindeki olayları yazdırmak olanaklıdır. "
-"Bu zaman seçim kutucuğu ile, bu zaman aralığının bitişini "
-"tanımlayabilirsiniz. Başlangıç zamanı <i>Başlangıç zamanı</i> seçeneği ile "
-"tanımlanabilir. <i>Zaman aralığını bütün olayları dahil etmek için uzat</i> "
-"seçeneğini işaretlerseniz bu ayarları kendiliğinden değiştirebilirsiniz."
+"Yalnızca belirli bir zaman erimi içindeki olayları yazdırmak olanaklıdır. Bu "
+"zaman seçim kutucuğu ile, bu zaman eriminin bitişini tanımlayabilirsiniz. "
+"Başlangıç zamanı, <i>Başlangıç zamanı</i> seçeneği ile tanımlanabilir. "
+"<i>Zaman erimini tüm olayları kapsayacak şekilde genişlet</i> seçeneğini "
+"işaretlerseniz bu ayarları kendiliğinden değiştirebilirsiniz."
 
 #. i18n: ectx: property (text), widget (QLabel, mToTimeLabel)
 #: printing/calprintdayconfig_base.ui:150
@@ -1094,15 +1094,15 @@ msgid ""
 "Check this option to automatically determine the required time range, so all "
 "events will be shown."
 msgstr ""
-"Gerekli zaman aralığını kendiliğinden belirlemek için bu seçeneği imleyin. "
-"Bu durumda bütün olaylar gösterilecektir."
+"Gerekli zaman erimini kendiliğinden belirlemek için bu seçeneği işaretleyin. "
+"Bu durumda bütün etkinlikler gösterilecektir."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
 #: printing/calprintdayconfig_base.ui:193
 #: printing/calprintweekconfig_base.ui:193
 #, kde-format
 msgid "E&xtend time range to include all events"
-msgstr "Zaman ara&lığını tüm olayları kapsayacak şekilde genişlet"
+msgstr "Zaman &erimini tüm olayları kapsayacak şekilde genişlet"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprintdayconfig_base.ui:203
@@ -1127,7 +1127,7 @@ msgstr ""
 #, kde-format
 msgid "Print date &range as Filofax format, all on one page"
 msgstr ""
-"Hepsi bir sayfada olacak şekilde, tarih &aralığını Filofax biçiminde yazdır"
+"Hepsi bir sayfada olacak şekilde, tarih &erimini Filofax biçiminde yazdır"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
@@ -1303,7 +1303,7 @@ msgstr "&Etiketler"
 #: printing/calprintweekconfig_base.ui:306
 #, kde-format
 msgid "Print to-dos due within the specified date range"
-msgstr "Belirtilen tarih aralığı içinde yapılacakları yazdır"
+msgstr "Belirtilen tarih erimi içinde yapılacakları yazdır"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:309
@@ -1314,7 +1314,7 @@ msgid ""
 "You should check this option if you want to print to-dos which are due on "
 "one of the dates which are in the supplied date range."
 msgstr ""
-"Desteklenen tarih aralığı içinde olan tarihlerden birinde bitmesi gereken "
+"Desteklenen tarih erimi içinde olan tarihlerden birinde bitmesi gereken "
 "yapılacak işleri yazdırmak istiyorsanız bu seçeneği işaretlemeniz gerekir."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeTodos)
@@ -1368,8 +1368,8 @@ msgid ""
 "Check this option to limit events to a single line, truncating as necessary "
 "to save space."
 msgstr ""
-"Olayları tek bir çizgi haline sınırlamak ve boşluk kazanmak için "
-"gerektiğinde kesilmesi için bu seçeneği imleyin."
+"Etkinlikleri tek bir çizgiye sınırlamak ve boşluk kazanmak için gerektiğinde "
+"kesilmesi için bu seçeneği işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:344
@@ -1377,7 +1377,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:344
 #, kde-format
 msgid "Limit events in each day to a &single line"
-msgstr "Her gün içindeki olayları tek bir &çizgi haline getir"
+msgstr "Her gün içindeki etkinlikleri tek bir &çizgi haline getir"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:351
@@ -1913,7 +1913,7 @@ msgstr "&Günü yazdır"
 #: printing/calprintdefaultplugins.h:144
 #, kde-format
 msgid "Prints all events of a single day on one page"
-msgstr "Bir sayfaya tek bir güne ait tüm olayları yazdırır"
+msgstr "Bir sayfaya tek bir güne ait tüm etkinlikleri yazdırır"
 
 #: printing/calprintdefaultplugins.h:198
 #, kde-format
@@ -1923,7 +1923,7 @@ msgstr "&Haftayı yazdır"
 #: printing/calprintdefaultplugins.h:203
 #, kde-format
 msgid "Prints all events of one week on one page"
-msgstr "Bir sayfaya tek bir haftaya ait tüm olayları yazdırır"
+msgstr "Bir sayfaya tek bir haftaya ait tüm etkinlikleri yazdırır"
 
 #: printing/calprintdefaultplugins.h:264
 #, kde-format
@@ -1933,7 +1933,7 @@ msgstr "Ay&ı yazdır"
 #: printing/calprintdefaultplugins.h:269
 #, kde-format
 msgid "Prints all events of one month on one page"
-msgstr "Bir sayfaya tek bir aya ait tüm olayları yazdırır"
+msgstr "Bir sayfaya tek bir aya ait tüm etkinlikleri yazdırır"
 
 #: printing/calprintdefaultplugins.h:319
 #, kde-format
@@ -2032,8 +2032,8 @@ msgid ""
 "(like a day, week or month), or you may want to print your to-do list."
 msgstr ""
 "Aşağıdaki yazdırma türlerinden yapmak istediğiniz birini seçin. Tek bir öge "
-"veya belirli zaman aralığındaki (bir gün, hafta veya ay gibi) tüm ögeleri "
-"veya yapılacak listenizi yazdırmayı isteyebilirsiniz."
+"veya belirli zaman erimindeki (bir gün, hafta veya ay gibi) tüm ögeleri veya "
+"yapılacak listenizi yazdırmayı isteyebilirsiniz."
 
 #: printing/calprinter.cpp:254
 #, kde-format
@@ -2230,9 +2230,9 @@ msgid ""
 "This option defines the first month to be printed. Use the option <i>End "
 "month</i> to define the last month in this range."
 msgstr ""
-"Birden fazla ayı bir kerede yazdırmak istiyorsanız, bir ay aralığı "
+"Birden fazla ayı bir kerede yazdırmak istiyorsanız bir ay erimi "
 "tanımlayabilirsiniz. Bu seçenek, yazdırılacak ilk ayı tanımlar. <i>Bitiş "
-"ayı</i> seçeneğini kullanarak aralığın son ayını tanımlayın."
+"ayı</i> seçeneğini kullanarak erimin son ayını tanımlayabilirsiniz."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
@@ -2260,9 +2260,9 @@ msgid ""
 "option defines the first year to be printed. Use the option <i>End year</i> "
 "to define the last year in this range."
 msgstr ""
-"Birden fazla ayı bir kerede yazdırmak istiyorsanız, bir yıl aralığı "
+"Birden fazla ayı bir kerede yazdırmak istiyorsanız bir yıl erimi "
 "tanımlayabilirsiniz. Bu seçenek, yazdırılacak ilk yılı tanımlar. <i>Bitiş "
-"yılı</i> seçeneğini kullanarak aralığın son yılını tanımlayın."
+"yılı</i> seçeneğini kullanarak erimin son yılını tanımlayabilirsiniz."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, mToMonth)
@@ -2274,9 +2274,9 @@ msgid ""
 "This option defines the last month to be printed. Use the option <i>Start "
 "month</i> to define the first month in this range."
 msgstr ""
-"Birden fazla ayı bir kerede yazdırmak istiyorsanız, bir ay aralığı "
+"Birden fazla ayı bir kerede yazdırmak istiyorsanız bir ay erimi "
 "tanımlayabilirsiniz. Bu seçenek, yazdırılacak son ayı tanımlar. <i>Başlangıç "
-"ayı</i> seçeneğini kullanarak aralığın ilk ayını tanımlayabilirsiniz."
+"ayı</i> seçeneğini kullanarak erimin ilk ayını tanımlayabilirsiniz."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintmonthconfig_base.ui:72
@@ -2304,15 +2304,16 @@ msgid ""
 "option defines the last year to be printed. Use the option <i>Start year</i> "
 "to define the first year in this range."
 msgstr ""
-"Birden fazla ayı bir kerede yazdırmak istiyorsanız, bir yıl aralığı "
+"Birden fazla ayı bir kerede yazdırmak istiyorsanız bir yıl erimi "
 "tanımlayabilirsiniz. Bu seçenek, yazdırılacak son yılı tanımlar. "
-"<i>Başlangıç yılı</i> seçeneğini kullanarak aralığın ilk yılını tanımlayın."
+"<i>Başlangıç yılı</i> seçeneğini kullanarak erimin ilk yılını "
+"tanımlayabilirsiniz."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:195
 #, kde-format
 msgid "Print daily recurring items"
-msgstr "Günlük yinelenen ögeleri yazdır"
+msgstr "Günlük olarak yinelenen ögeleri yazdır"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:198
@@ -2322,15 +2323,15 @@ msgid ""
 "events in the print. They take a lot of space and make the month view "
 "needlessly complicated."
 msgstr ""
-"Bu seçenek ile, günlük olarak dönüşüm gösteren yapılacak işleri ve olayları "
-"çıktıda devre dışı bırakabilirsiniz. Bunlar çok alan harcar ve ay görünümünü "
-"gereksiz bir şekilde karmaşık hale getirir."
+"Bu seçenek ile, günlük olarak dönüşüm gösteren yapılacak işleri ve "
+"etkinlikleri çıktıda devre dışı bırakabilirsiniz. Bunlar çok alan harcar ve "
+"ay görünümünü gereksiz bir şekilde karmaşık hale getirir."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:201
 #, kde-format
 msgid "Include daily re&curring to-dos and events"
-msgstr "Her gün yinelenen olayları ve yapıla&cakları içer"
+msgstr "Her gün yinelenen etkinlikleri ve yapıla&cakları içer"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:208
@@ -2345,15 +2346,15 @@ msgid ""
 "Similar to \"Print daily recurring to-dos and events\". Weekly to-dos and "
 "events will be omitted when making a print of the selected month."
 msgstr ""
-"“Günlük olarak yinelenen yapılacak işleri ve olayları yazdır” seçeneğine "
-"benzer şekilde, seçilmiş aydan çıktı alırken haftalık olarak yapılacak işler "
-"ve olaylar yok sayılacaktır."
+"“Günlük olarak yinelenen ögeleri yazdır” seçeneğine benzer şekilde, seçilmiş "
+"aydan çıktı alırken haftalık olarak yapılacak işler ve olaylar yok "
+"sayılacaktır."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:214
 #, kde-format
 msgid "Include weekl&y recurring to-dos and events"
-msgstr "Her &hafta yinelenen olayları ve yapılacakları içer"
+msgstr "&Haftalık yinelenen olayları ve yapılacakları içer"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:230
@@ -2516,7 +2517,7 @@ msgstr "Yalnızca tamamlanmamış yapılacakları &yazdır"
 #: printing/calprinttodoconfig_base.ui:80
 #, kde-format
 msgid "Print only to-dos due in the &range:"
-msgstr "Yalnızca bu a&ralıkta tamamlanacak yapılacakları yazdır:"
+msgstr "Yalnızca bu e&rimde tamamlanacak yapılacakları yazdır:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
@@ -2654,7 +2655,7 @@ msgstr ""
 #, kde-format
 msgid "Print date &range as Filofax format, one week per page"
 msgstr ""
-"Tarih a&ralığını Filofax biçiminde, sayfa başına bir hafta olacak biçimde "
+"Tarih e&rimini Filofax biçiminde, sayfa başına bir hafta olacak biçimde "
 "yazdır"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
@@ -2693,7 +2694,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:21
 #, kde-format
 msgid "Date Range"
-msgstr "Tarih Aralığı"
+msgstr "Tarih Erimi"
 
 #. i18n: ectx: property (text), widget (QLabel, mYearLabel)
 #: printing/calprintyearconfig_base.ui:32
