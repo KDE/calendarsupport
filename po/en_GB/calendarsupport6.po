@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2024-08-03 13:10+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 24.05.2\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anonymous"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "nobody@nowhere"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -811,11 +819,6 @@ msgstr ""
 "Enter your full name here. This name will be displayed as \"Organiser\" in "
 "to-dos and events you create."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anonymous"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -831,11 +834,6 @@ msgid ""
 msgstr ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
 "the owner of the calendar, and displayed in events and to-dos you create."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "nobody@nowhere"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

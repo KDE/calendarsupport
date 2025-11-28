@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2008-07-21 16:18+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -16,6 +16,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 0.2\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr ""
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr ""
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -873,11 +881,6 @@ msgstr ""
 "ป้อนชื่อเต็มของคุณที่นี่ ชื่อนี้จะถูกใช้แสดงเป็น \"ผู้จัด\" "
 "ในรายการสิ่งที่จะทำและเหตุการณ์ที่คุณเป็นคนสร้าง"
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr ""
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -893,11 +896,6 @@ msgid ""
 msgstr ""
 "ป้อนที่อยู่อีเมลของคุณที่นี่ ที่อยู่อีเมลนี้จะถูกใช้ในการแสดงตัวเป็นเจ้าของปฏิทิน "
 "และถูกแสดงไว้ในเหตุการณ์และสิ่งที่จะทำที่คุณเป็นคนสร้าง"
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr ""
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

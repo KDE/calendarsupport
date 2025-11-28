@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 "\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr ""
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr ""
 
 #: archivedialog.cpp:43
 #, fuzzy, kde-format
@@ -892,11 +900,6 @@ msgstr ""
 "तपाईँको पूरा नाम यहाँ प्रविष्ट गर्नुहोस् । यो नाम तपाईँले सिर्जना गरेका गर्नुपर्ने कार्यमा र "
 "घटनामा \"आयोजक\" का रूपमा प्रदर्शित हुन्छ ।"
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr ""
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -912,11 +915,6 @@ msgid ""
 msgstr ""
 "यहाँ तपाईँको इमेल ठेगाना प्रविष्ट गर्नुहोस् । यो इमेल ठेगाना क्यालेन्डरको मालिक पहिचान गर्न "
 "प्रयोग गरिन्छ, र तपाईँले सिर्जना गरेका घटना र गर्नुपर्ने  कार्यमा प्रदर्शित गरिन्छ ।"
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr ""
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2014-01-31 19:02+0100\n"
 "Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
 "Language-Team: bs <bs@kde.org>\n"
@@ -19,6 +19,14 @@ msgstr ""
 "X-Generator: Launchpad (build 16869)\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anonimno"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "niko@nigdje"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -834,11 +842,6 @@ msgstr ""
 "Ovdje unesite vaše puno ime. Ovo ime će biti prikazano pod „Organizator“ u "
 "obavezama i događajima koje vi napravite."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anonimno"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -855,11 +858,6 @@ msgstr ""
 "Ovdje unesite vašu e-mailadresu. Ova e-mail adresa će se koristiti da se "
 "identifikuje vlasnik kalendara, i prikazuje u događajima i obavezama koje "
 "napravite."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "niko@nigdje"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

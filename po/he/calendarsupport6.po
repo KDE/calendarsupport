@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-03-20 20:28+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -28,6 +28,14 @@ msgstr ""
 "X-Generator: Lokalize 24.12.2\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "אלמוני"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "אף־אחד@שום־מקום"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -816,11 +824,6 @@ msgstr ""
 "נא למלא כאן את השם המלא שלך. השם שלך יוצג תחת „ארגון” במשימות ואירועים "
 "שייוצרו."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "אלמוני"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -836,11 +839,6 @@ msgid ""
 msgstr ""
 "נא למלא כאן את כתובת הדוא״ל שלך. הכתובת הזאת תשמש לזיהוי הבעלות על היומן, "
 "ותוצג באירועים ומשימות שייווצרו."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "אף־אחד@שום־מקום"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

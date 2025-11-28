@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-03-20 03:31+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.5\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "ანონიმურად"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "nobody@nowhere"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -821,11 +829,6 @@ msgstr ""
 "შეიყვანეთ აქ თქვენი სრული სახელი. ეს სახელი გამოჩნდება, როგორც \"ორგანიზატორი"
 "\", იმ გასაკეთებლებში და მოვლენებში, რომლებსაც თქვენ შექმნით."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "ანონიმურად"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -842,11 +845,6 @@ msgstr ""
 "შეიყვანეთ თქვენი ელფოსტის მისმართი. ეს ელფოსტის მისამართი გამოყენებული "
 "იქნება კალენდრის მფლობლის იდენტიფიკაციისთვის და გამოჩნდება მოვლენებსა და "
 "გასაკეთებლებში, რომლებსაც თქვენ შექმნით."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "nobody@nowhere"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

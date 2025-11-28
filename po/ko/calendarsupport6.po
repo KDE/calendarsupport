@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-04-06 21:45+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -18,6 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "익명"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "nobody@nowhere"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -802,11 +810,6 @@ msgstr ""
 "성을 포함한 이름을 입력하십시오. 생성한 할 일과 이벤트의 \"주최자\"에 표시할 "
 "이름입니다."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "익명"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -822,11 +825,6 @@ msgid ""
 msgstr ""
 "이메일 주소를 입력하십시오. 이메일 주소를 사용하여 캘린더 소유자를 식별하고 "
 "생성한 이벤트와 할 일에 표시합니다."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "nobody@nowhere"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

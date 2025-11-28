@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-04-03 22:31+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -19,6 +19,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 24.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anonym"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "okänd@ingenstans"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -816,11 +824,6 @@ msgstr ""
 "Skriv in ditt fullständiga namn här. Namnet visas som \"Organisatör\" i "
 "uppgifter och händelser du skapar."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anonym"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -836,11 +839,6 @@ msgid ""
 msgstr ""
 "Skriv in din e-postadress här. E-postadressen används för att identifiera "
 "kalenderns ägare, och visas i händelser och uppgifter du skapar."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "okänd@ingenstans"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

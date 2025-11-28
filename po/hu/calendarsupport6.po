@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-04-26 22:20+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 25.04.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Névtelen"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "senki@sehol"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -825,11 +833,6 @@ msgstr ""
 "Itt adhatja meg a teljes nevét. Ez a név fog megjelenni a „Szervező” mezőben "
 "a létrehozott feladatokban és eseményekben."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Névtelen"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -845,11 +848,6 @@ msgid ""
 msgstr ""
 "Itt adja meg az e-mail címét. Ez az e-mail cím azonosítja a naptár "
 "tulajdonosát, és megjelenik a létrehozott eseményekben és feladatokban."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "senki@sehol"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

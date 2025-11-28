@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2011-02-27 12:20+0100\n"
 "Last-Translator: Marko Dimjasevic <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -19,6 +19,14 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr ""
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr ""
 
 #: archivedialog.cpp:43
 #, fuzzy, kde-format
@@ -775,11 +783,6 @@ msgid ""
 "to-dos and events you create."
 msgstr ""
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr ""
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, fuzzy, kde-format
@@ -792,11 +795,6 @@ msgstr "E-mail &adresa:"
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
 "the owner of the calendar, and displayed in events and to-dos you create."
-msgstr ""
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Colors)

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2013-09-16 03:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Атаусыз"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "nobody@nowhere"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -836,11 +844,6 @@ msgstr ""
 "Мұнда толық атңызды келтіріңіз. Бұл, Сіздің оқиға мен жоспарлардың "
 "\"Ұйымдастрырушысы\" ретінде келтірілетіні."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Атаусыз"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -856,11 +859,6 @@ msgid ""
 msgstr ""
 "Мұнда эл.пошта адресіңізді келтіріңіз. Бұл Сіз бастаған жоспар мен "
 "оқиғаларда Сіз құрған күнтізбеде көрсетіледі."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "nobody@nowhere"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

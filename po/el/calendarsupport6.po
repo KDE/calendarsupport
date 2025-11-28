@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2024-09-19 14:03+0300\n"
 "Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -23,6 +23,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 24.08.1\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Ανώνυμα"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "nobody@nowhere"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -843,11 +851,6 @@ msgstr ""
 "Εισάγετε εδώ το πλήρες όνομά σας. Αυτό το όνομα θα εμφανίζεται ως \"Οργανωτής"
 "\" στις προς υλοποίηση εργασίες και στα γεγονότα που δημιουργείτε."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Ανώνυμα"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -865,11 +868,6 @@ msgstr ""
 "αλληλογραφίας θα χρησιμοποιηθεί για την αναγνώριση του κατόχου του "
 "ημερολογίου, και εμφανίζεται σε γεγονότα και εργασίες προς υλοποίηση που "
 "δημιουργείτε."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "nobody@nowhere"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

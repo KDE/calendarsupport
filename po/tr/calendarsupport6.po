@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-11-15 20:46+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -24,6 +24,14 @@ msgstr ""
 "X-Generator: Lokalize 25.08.2\n"
 "(http: //www.transifex.com/projects/p/kdepim-k-tr/language/tr/)\n"
 "X-POOTLE-MTIME: 1413102218.000000\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anonim"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "hiçkimse@hiçbiryer"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -828,11 +836,6 @@ msgstr ""
 "Buraya tam adınızı girin. Bu ad, oluşturduğunuz yapılacak işlerde ve "
 "etkinliklerde “Organizatör” olarak gösterilecektir."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anonim"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -849,11 +852,6 @@ msgstr ""
 "Buraya e-posta adresinizi girin. Bu e-posta adresi, takvimin sahibini "
 "tanımlamak için kullanılacak ve oluşturduğunuz yapılacak işlerde ve "
 "olaylarda gösterilecektir."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "hiçkimse@hiçbiryer"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

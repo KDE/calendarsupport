@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2024-12-20 22:01+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -18,6 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
 "X-Generator: Lokalize 24.08.2\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "अनामक"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "न कश्चित्@कुत्रापि"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -806,11 +814,6 @@ msgstr ""
 "अत्र स्वस्य पूर्णं नाम प्रविशतु। भवता निर्मितेषु कार्येषु तथा च इवेण्ट्-मध्ये एतत् नाम "
 "\"Organizer\" इति रूपेण प्रदर्शितं भविष्यति ।"
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "अनामक"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -826,11 +829,6 @@ msgid ""
 msgstr ""
 "अत्र स्वस्य ई-मेल-सङ्केतं प्रविशतु । एतत् ई-मेल-सङ्केतं पञ्चाङ्गस्य स्वामिनः परिचयार्थं उपयुज्यते, "
 "भवता निर्मितेषु घटनासु कार्येषु च प्रदर्शितं भविष्यति ।"
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "न कश्चित्@कुत्रापि"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

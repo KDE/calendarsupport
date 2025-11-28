@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-03-20 09:56+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -19,6 +19,14 @@ msgstr ""
 "X-Generator: Lokalize 23.04.3\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Невідоме"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "невідомий@ніде"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -827,11 +835,6 @@ msgstr ""
 "Введіть ваше повне ім'я. Це ім'я буде показано в надписі «Організатор» в "
 "завданнях і подіях, які ви створите."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Невідоме"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -848,11 +851,6 @@ msgstr ""
 "Сюди введіть вашу адресу електронної пошти. Ця адреса електронної пошти буде "
 "використовуватись для ідентифікації власника календаря і буде показана в "
 "подіях і завданнях, які ви створюватимете."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "невідомий@ніде"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

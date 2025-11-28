@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-10-24 22:17+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -16,6 +16,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 25.07.70\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Анонимен"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "никой@никъде"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -824,11 +832,6 @@ msgstr ""
 "Въведете пълното си име тук. Това име ще се покаже като „Организатор“ в "
 "задачите и събитията, които създавате."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Анонимен"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -845,11 +848,6 @@ msgstr ""
 "Тук въведете своя имейл адрес. Този имейл адрес ще се използва за "
 "идентифициране на собственика на календара и ще се показва в събития и "
 "задачи, които създавате."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "никой@никъде"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

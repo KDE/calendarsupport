@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2012-12-25 15:13+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -19,6 +19,14 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: WordForge 0.8 RC1\n"
 "X-Language: km-KH\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "អនាមិក"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "nobody@nowhere"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -855,11 +863,6 @@ msgstr ""
 "បញ្ចូល​ឈ្មោះ​ពេញ​របស់​អ្នក​នៅ​ទីនេះ ។ ឈ្មោះ​នេះ​នឹង​ត្រូវ​បានបង្ហាញ​ជា \"អ្នក​រៀបចំ\" នៅ​ក្នុង​ការងារ​ត្រូវ​"
 "ធ្វើ និង​ព្រឹត្តិការណ៍​ដែល​អ្នក​បង្កើត ។"
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "អនាមិក"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -875,11 +878,6 @@ msgid ""
 msgstr ""
 "បញ្ចូល​អាសយដ្ឋាន​អ៊ីមែល​របស់​អ្នក​នៅ​ទីនេះ ។ អាសយដ្ឋាន​អ៊ីមែល​នេះ​នឹង​ត្រូវ​បាន​ប្រើ ដើម្បី​កំណត់​អត្តសញ្ញាណ​​ម្ចាស់​​"
 "ប្រតិទិន ហើយ​ត្រូវ​បាន​បង្ហាញ​នៅ​ក្នុង​ព្រឹត្តិការណ៍ និង​កិច្ចការ​​ត្រូវ​ធ្វើ​ដែល​អ្នក​បង្កើត ។"
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "nobody@nowhere"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

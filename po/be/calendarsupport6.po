@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2008-01-01 23:20+0200\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian (Official spelling) <i18n@mova.org>\n"
@@ -23,6 +23,14 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr ""
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr ""
 
 #: archivedialog.cpp:43
 #, fuzzy, kde-format
@@ -817,11 +825,6 @@ msgstr ""
 "Пакажыце ваша поўнае імя. Яно будзе паказана як імя арганізатара ствараемых "
 "вамі падзей і задач."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr ""
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, fuzzy, kde-format
@@ -837,11 +840,6 @@ msgid ""
 msgstr ""
 "Пакажыце ваш адрас электроннай пошты. Ён будзе скарыстаны для сувязі з вамі, "
 "як арганізатарам падзей і задач, якія вы створыце."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr ""
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

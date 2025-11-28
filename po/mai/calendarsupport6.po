@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2010-09-24 16:26+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Maithili <bhashaghar@googlegroups.com>\n"
@@ -18,6 +18,15 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr ""
+
+#, fuzzy, kde-format
+#| msgid "unknown@nowhere"
+msgid "nobody@nowhere"
+msgstr "unknown@nowhere"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -748,11 +757,6 @@ msgid ""
 "to-dos and events you create."
 msgstr ""
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr ""
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -766,12 +770,6 @@ msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
 "the owner of the calendar, and displayed in events and to-dos you create."
 msgstr ""
-
-#: kcalprefs.kcfg:202
-#, fuzzy, kde-format
-#| msgid "unknown@nowhere"
-msgid "nobody@nowhere"
-msgstr "unknown@nowhere"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

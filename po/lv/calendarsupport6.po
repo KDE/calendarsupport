@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-04-06 17:48+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -19,6 +19,14 @@ msgstr ""
 "X-Generator: Lokalize 24.12.3\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anonīms"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "neviens@nekur"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -820,11 +828,6 @@ msgstr ""
 "Šeit ierakstiet jūsu pilno vārdu. Tas tiks lietots jūsu veidoto notikumu un "
 "darbu „Organizatora“ laukā."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anonīms"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -841,11 +844,6 @@ msgstr ""
 "Šeit ierakstiet savu e-pasta adresi. Šī adrese tiks izmantota, lai "
 "identificētu kalendāra īpašnieku un būs redzama jūsu izveidotajos darāmajos "
 "darbos un notikumos."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "neviens@nekur"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

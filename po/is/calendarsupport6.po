@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-05-28 16:55+0000\n"
 "Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -16,6 +16,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 24.12.3\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Nafnlaust"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "enginn@hvergi"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -813,11 +821,6 @@ msgstr ""
 "Sláðu inn fullt nafn þitt hér. Þetta nafn birtist sem \"Skipuleggjandi\" í "
 "verkefnum og viðburðum sem þú býrð til."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Nafnlaust"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -833,11 +836,6 @@ msgid ""
 msgstr ""
 "Sláðu inn netfangið þitt. Þetta netfang verður notað til að auðkenna eiganda "
 "dagatalsins og er birt í viðburðum og verkefnum sem þú býrð til."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "enginn@hvergi"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

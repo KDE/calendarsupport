@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2022-08-13 17:34+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -16,6 +16,14 @@ msgstr ""
 "X-POFile-SpellExtra: HH iCal MensagemVazia NomeVazio ics CalDAV pre space\n"
 "X-POFile-IgnoreConsistency: Publishing\n"
 "X-POFile-SpellExtra: hh wrap white Filofax iTip mails\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anónimo"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "ninguem@nenhures"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -833,11 +841,6 @@ msgstr ""
 "Indique aqui o seu nome completo. Este nome será apresentado como "
 "\"Organizador\" nos itens por-fazer e eventos que criar."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anónimo"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -854,11 +857,6 @@ msgstr ""
 "Indique aqui o seu endereço de e-mail. Este endereço será usado para "
 "identificar o dono do calendário e é apresentado nos eventos e itens por-"
 "fazer que criar."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "ninguem@nenhures"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

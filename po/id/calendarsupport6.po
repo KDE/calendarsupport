@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2022-07-07 08:05+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -16,6 +16,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 21.12.3\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Awanama"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "tidak_ada_siapa2@sekarang_di_sini"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -828,11 +836,6 @@ msgstr ""
 "Masukkan nama lengkapmu di sini. Nama ini akan ditampilkan sebagai "
 "\"Organisasi\" di dalam rencana dan acara yang kamu buat."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Awanama"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -849,11 +852,6 @@ msgstr ""
 "Masukkan alamat email-mu di sini. Alamat email ini akan digunakan untuk "
 "mengenali si pengguna kalender, dan ditampilkan dalam acara dan rencana yang "
 "kamu buat."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "tidak_ada_siapa2@sekarang_di_sini"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

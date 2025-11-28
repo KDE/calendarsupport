@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-05-03 06:55+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -19,6 +19,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 25.04.0\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anónimo"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "descoñecido@nengures"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -820,11 +828,6 @@ msgstr ""
 "Insira aquí o seu nome completo. O nome aparece como «Organización» nas "
 "tarefas e eventos que cree."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anónimo"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -841,11 +844,6 @@ msgstr ""
 "Insira aquí o seu enderezo de correo electrónico. Este enderezo de correo "
 "electrónico úsase para identificar o dono do calendario e aparece nos "
 "eventos e tarefas que cree."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "descoñecido@nengures"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

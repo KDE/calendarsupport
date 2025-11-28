@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2024-08-05 11:29+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -19,6 +19,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 24.05.2\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anonymní"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr ""
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -780,11 +788,6 @@ msgstr ""
 "Zde zadejte vaše celé jméno. Toto jméno bude zobrazeno jako \"Organizátor\" "
 "v úlohách a událostech, které vytvoříte."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anonymní"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -800,11 +803,6 @@ msgid ""
 msgstr ""
 "Zde zadejte vaši e-mailovou adresu. Tato adresa bude použita k identifikaci "
 "vlastníka kalendáře a bude zobrazena v událostech a úlohách, které vytvoříte."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr ""
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

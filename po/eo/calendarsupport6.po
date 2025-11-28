@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-03-22 22:36+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
@@ -16,6 +16,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: pology\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anonima"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "neniu@nenie"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -817,11 +825,6 @@ msgstr ""
 "Enigu vian plenan nomon ĉi tie. Ĉi tiu nomo estos montrata kiel \"Organizinto"
 "\" en faro kaj eventoj, kiujn vi kreas."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anonima"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -837,11 +840,6 @@ msgid ""
 msgstr ""
 "Enigu ĉi tie vian retadreson. Ĉi tiu retadreso estos uzata por identigi la "
 "posedanton de la kalendaro, kaj montrata en eventoj kaj faroj kiujn vi kreas."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "neniu@nenie"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

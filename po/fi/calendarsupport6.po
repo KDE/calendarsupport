@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-04-20 10:04+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -20,6 +20,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Nimetön"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "eikukaan@eimissaan"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -814,11 +822,6 @@ msgstr ""
 "Kirjoita koko nimesi tähän. Nimi näytetään ”järjestäjänä” luomissasi "
 "tehtävissä ja tapahtumissa."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Nimetön"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -834,11 +837,6 @@ msgid ""
 msgstr ""
 "Kirjoita tähän sähköpostiosoitteesi, jota käytetään tunnistamaan kalenterin "
 "omistaja ja joka näytetään luomissasi tapahtumissa ja tehtävissä."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "eikukaan@eimissaan"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

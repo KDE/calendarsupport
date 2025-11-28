@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-03-20 09:05+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -21,6 +21,14 @@ msgstr ""
 "X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anònim"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "desconegut@algun_lloc"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -835,11 +843,6 @@ msgstr ""
 "Introduïu ací el vostre nom complet. Este nom es mostrarà com a "
 "«Organitzador» en les tasques pendents i esdeveniments que creeu."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anònim"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -856,11 +859,6 @@ msgstr ""
 "Introduïu ací la vostra adreça electrònica. Esta adreça de correu "
 "s'utilitzarà per a identificar el propietari del calendari i es mostrarà en "
 "els esdeveniments i tasques pendents que creeu."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "desconegut@algun_lloc"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-11-28 00:43+0000\n"
 "PO-Revision-Date: 2025-10-06 01:19+0400\n"
 "Last-Translator: linux <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 25.08.1\n"
+
+#, kde-format
+msgid "Anonymous"
+msgstr "Anonim"
+
+#, kde-format
+msgid "nobody@nowhere"
+msgstr "heç_kim@heç_yerdə"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -822,11 +830,6 @@ msgstr ""
 "Tam adınız buraya daxil edin. Bu ad yaratdığınız Tapşırıq və Tədbirlərdə "
 "\"Təşkilatçı\" kimi görünəcək."
 
-#: kcalprefs.kcfg:196
-#, kde-format
-msgid "Anonymous"
-msgstr "Anonim"
-
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:200
 #, kde-format
@@ -843,11 +846,6 @@ msgstr ""
 "Buraya e-poçt ünvanınızı daxil edin. Bu e-poçt ünvanı təqvimin sahibinin "
 "kimliyini təyin doğrulamaq üçün istifadə oluncaq və Tədbirlərdə və "
 "Tapşırıqlarda görünəcəkdir."
-
-#: kcalprefs.kcfg:202
-#, kde-format
-msgid "nobody@nowhere"
-msgstr "heç_kim@heç_yerdə"
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:217
