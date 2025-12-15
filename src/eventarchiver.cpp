@@ -189,7 +189,10 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     // here.
     {
         QTemporaryFile tmpFile;
-        tmpFile.open();
+        if (!tmpFile.open()) {
+            qCWarning(CALENDARSUPPORT_LOG) << "Impossible to open file";
+            return;
+        }
         tmpFileName = tmpFile.fileName();
     }
     // Save current calendar to disk

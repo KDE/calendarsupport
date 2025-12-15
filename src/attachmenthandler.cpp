@@ -142,7 +142,12 @@ static QUrl tempFileForAttachment(const Attachment &attachment)
         s_tempFile = new QTemporaryFile();
     }
     s_tempFile->setAutoRemove(false);
-    s_tempFile->open();
+    if (!s_tempFile->open()) {
+        qCWarning(CALENDARSUPPORT_LOG) << "Impossible to open file";
+        delete s_tempFile;
+        s_tempFile = nullptr;
+        return {};
+    }
     s_tempFile->setPermissions(QFile::ReadUser);
     s_tempFile->write(QByteArray::fromBase64(attachment.data()));
     s_tempFile->close();
