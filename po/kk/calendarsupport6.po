@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2013-09-16 03:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -314,12 +314,12 @@ msgid ""
 msgstr ""
 "Бұл эл.пошта хатындағы күнтізбе шақыруы бүлінген. Жалғастыруға мұрша жоқ."
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Тіркеменің уақытша файлы құрылмады."
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgctxt "@title:window"
@@ -361,25 +361,25 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Ескіргендерді өшіру"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Себебі беймәлім"
 
 # msgid "Cannot write archive file %1."
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "%1 архив файлы жазылмады: %2"
 
 # msgid "Cannot write archive file %1."
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Архив файлы жазылмады. %1"
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, kde-format
 msgid "Archiving events"
 msgstr "Оқиғаларды архивтеу"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2022-07-07 08:05+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -325,12 +325,12 @@ msgstr ""
 "Undangan kalender yang disimpan dalam pesan email ini rusak dalam beberapa "
 "hal. Tidak bisa melanjutkan."
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Tidak bisa membuat sebuah file temporer untuk pelampiran."
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgctxt "@title:window"
@@ -371,23 +371,23 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Hapus Item-item Lama"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Alasan tak diketahui"
 
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Tidak bisa menulis file arsip %1. %2"
 
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Tidak bisa menulis arsip. %1"
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, kde-format
 msgid "Archiving events"
 msgstr "Mengarsipkan acara"

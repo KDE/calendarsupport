@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2011-08-14 14:07-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -297,12 +297,12 @@ msgid ""
 "Unable to continue."
 msgstr ""
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, fuzzy, kde-format
 #| msgid "1 Attachment:"
 #| msgid_plural "%1 Attachments:"
@@ -344,25 +344,25 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "古いアイテムを削除"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "原因不明"
 
 # %2=error message
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "アーカイブファイル ‘%1’ に書き込めません: %2"
 
 # %1=error message
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "アーカイブに書き込めません: %1"
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, kde-format
 msgid "Archiving events"
 msgstr ""

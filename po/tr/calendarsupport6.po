@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2025-11-15 20:46+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -326,12 +326,12 @@ msgstr ""
 "Bu e-posta iletisinde depolanmış takvim daveti bir şekilde bozulmuş. "
 "Sürdürülemiyor."
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Ek için geçici dosya oluşturulamıyor."
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
@@ -368,23 +368,23 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Eski Ögeleri Sil"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Nedeni bilinmiyor"
 
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "%1 arşiv dosyasına yazılamıyor. %2"
 
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Arşive yazılamıyor. %1"
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, kde-format
 msgid "Archiving events"
 msgstr "Etkinlikler arşivleniyor"

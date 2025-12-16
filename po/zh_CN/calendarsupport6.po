@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -300,12 +300,12 @@ msgid ""
 "Unable to continue."
 msgstr "储存在此电子邮件消息中的日历邀请项目在某种程度上损坏了。无法继续。"
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "无法为附件创建临时文件。"
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
@@ -342,23 +342,23 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "删除老项目"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "原因未知"
 
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "无法写入归档文件 %1。%2"
 
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "无法写入归档。%1"
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, kde-format
 msgid "Archiving events"
 msgstr "正在归档事件"

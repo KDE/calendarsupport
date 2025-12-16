@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2025-04-26 22:20+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -327,12 +327,12 @@ msgstr ""
 "Ebben az e-mailben tárolt naptármeghívások valamilyen módon megsérültek. Nem "
 "lehetséges a folytatás."
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Nem hozható létre átmeneti fájl a melléklethez."
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
@@ -369,23 +369,23 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Régi elemek törlése"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Ismeretlen okból"
 
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Nem sikerült írni a következő archívumfájlba: %1. %2"
 
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Nem sikerült írni a következő archívumba: %1."
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, kde-format
 msgid "Archiving events"
 msgstr "Események archiválása"

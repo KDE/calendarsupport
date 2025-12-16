@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2025-03-21 01:13+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -324,12 +324,12 @@ msgstr ""
 "La invitación de calendario almacenada en este mensaje de correo está rota "
 "de algún modo. No es posible continuar."
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "No se puede crear un archivo temporal para el adjunto."
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
@@ -366,23 +366,23 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Borrar elementos antiguos"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Motivo desconocido"
 
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "No se puede grabar al archivo comprimido %1. %2"
 
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "No se puede grabar el archivo comprimido. %1"
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, kde-format
 msgid "Archiving events"
 msgstr "Archivado de eventos"

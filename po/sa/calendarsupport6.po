@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2024-12-20 22:01+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -314,12 +314,12 @@ msgid ""
 msgstr ""
 "अस्मिन् ईमेल-सन्देशे संगृहीतं पञ्चाङ्ग-आमन्त्रणं केनचित् प्रकारेण भग्नम् अस्ति । अग्रे गन्तुं असमर्थः।"
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "संलग्नकस्य कृते अस्थायीसञ्चिकां निर्मातुं असमर्थः ।"
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
@@ -356,23 +356,23 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "पुरातनवस्तूनि विलोपयन्तु"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "कारणम् अज्ञातम्"
 
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "संग्रहसञ्चिका %1 लिखितुं न शक्यते । %2"
 
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "आर्काइव लिखितुं न शक्यते। %1"
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, kde-format
 msgid "Archiving events"
 msgstr "घटनानां संग्रहणम्"

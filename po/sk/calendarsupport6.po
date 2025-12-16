@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2023-11-25 19:02+0100\n"
 "Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
 "Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
@@ -320,12 +320,12 @@ msgstr ""
 "Kalendár pozvánky uložený v tejto e-mailovej správe je nejako poškodený. "
 "Nemôžem pokračovať."
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Nemožno vytvoriť dočasný súbor pre prílohu."
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgctxt "@title:window"
@@ -363,23 +363,23 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Vymazať staré položky"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Neznámy dôvod"
 
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Nemožno zapísať archívny súbor %1. %2 "
 
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Nemožno zapísať archív. %1"
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, kde-format
 msgid "Archiving events"
 msgstr "Archivujem udalosti"

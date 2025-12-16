@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-28 00:43+0000\n"
+"POT-Creation-Date: 2025-12-16 06:51+0000\n"
 "PO-Revision-Date: 2002-11-09 12:52+0200\n"
 "Last-Translator: Thelma Lungcuzo <thelma@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -296,12 +296,12 @@ msgid ""
 "Unable to continue."
 msgstr ""
 
-#: attachmenthandler.cpp:180 attachmenthandler.cpp:234
+#: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 
-#: attachmenthandler.cpp:213
+#: attachmenthandler.cpp:218
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
@@ -338,23 +338,23 @@ msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Cima iziganeko ezindala"
 
-#: eventarchiver.cpp:270
+#: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
 
-#: eventarchiver.cpp:272
+#: eventarchiver.cpp:275
 #, fuzzy, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Ayinakubhala ifayile yendawo yokugcina efihlakeleyo."
 
-#: eventarchiver.cpp:283
+#: eventarchiver.cpp:286
 #, fuzzy, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Ayinakubhala ifayile yendawo yokugcina efihlakeleyo."
 
-#: eventarchiver.cpp:292
+#: eventarchiver.cpp:295
 #, fuzzy, kde-format
 msgid "Archiving events"
 msgstr "Isiganeko esiphinde senzeka"
