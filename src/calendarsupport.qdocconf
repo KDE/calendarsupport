@@ -1,0 +1,33 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = CalendarSupport
+description = Calendar Support library.
+
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += .
+
+outputformats = HTML
+
+depends += \
+    qtcore
+
+navigation.landingpage = "CalendarSupport"
+
+qhp.projects            = CalendarSupport
+
+qhp.CalendarSupport.file                = calendarsupport.qhp
+qhp.CalendarSupport.namespace           = org.kde.calendarsupport.$QT_VERSION_TAG
+qhp.CalendarSupport.virtualFolder       = calendarsupport
+qhp.CalendarSupport.indexTitle          = CalendarSupport
+qhp.CalendarSupport.indexRoot           =
+
+qhp.CalendarSupport.subprojects         = classes
+qhp.CalendarSupport.subprojects.classes.title = C++ Classes
+qhp.CalendarSupport.subprojects.classes.indexTitle = CalendarSupport C++ Classes
+qhp.CalendarSupport.subprojects.classes.selectors = class fake:headerfile
+qhp.CalendarSupport.subprojects.classes.sortPages = true
+
+tagfile = calendarsupport.tags
