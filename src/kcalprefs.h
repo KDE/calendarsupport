@@ -20,25 +20,25 @@ class CALENDARSUPPORT_EXPORT KCalPrefs : public KCalPrefsBase
 {
     Q_OBJECT
 public:
-    /** Constructor disabled for public. Use instance() to create a KCalPrefs
+    /*! Constructor disabled for public. Use instance() to create a KCalPrefs
     object. */
     KCalPrefs();
     ~KCalPrefs() override;
 
-    /** Get instance of KCalPrefs. It is made sure that there is only one
+    /*! Get instance of KCalPrefs. It is made sure that there is only one
     instance. */
     static KCalPrefs *instance();
 
-    /** Set preferences to default values */
+    /*! Set preferences to default values */
     void usrSetDefaults() override;
 
-    /** Read preferences from config file */
+    /*! Read preferences from config file */
     void usrRead() override;
 
-    /** Write preferences to config file */
+    /*! Write preferences to config file */
     bool usrSave() override;
 
-    /** Fill empty mail fields with default values. */
+    /*! Fill empty mail fields with default values. */
     void fillMailDefaults();
 
 public:

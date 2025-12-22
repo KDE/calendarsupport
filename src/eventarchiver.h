@@ -26,7 +26,7 @@ class IncidenceChanger;
 
 namespace CalendarSupport
 {
-/**
+/*!
  * This class handles expiring and archiving of events.
  * It is used directly by the archivedialog, and it is also
  * triggered by actionmanager's timer for auto-archiving.
@@ -42,21 +42,21 @@ public:
     explicit EventArchiver(QObject *parent = nullptr);
     ~EventArchiver() override;
 
-    /**
+    /*!
      * Delete or archive events once
-     * @param calendar the calendar to archive
-     * @param limitDate all events *before* the limitDate (not included) will be deleted/archived.
-     * @param widget parent widget for message boxes
+     * \a calendar the calendar to archive
+     * \a limitDate all events *before* the limitDate (not included) will be deleted/archived.
+     * \a widget parent widget for message boxes
      * Confirmation and "no events to process" dialogs will be shown
      */
     void runOnce(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QDate limitDate, QWidget *widget);
 
-    /**
+    /*!
      * Delete or archive events. This is called regularly, when auto-archiving
      * is enabled
-     * @param calendar the calendar to archive
-     * @param widget parent widget for message boxes
-     * @param withGUI whether this is called from the dialog, so message boxes should be shown.
+     * \a calendar the calendar to archive
+     * \a widget parent widget for message boxes
+     * \a withGUI whether this is called from the dialog, so message boxes should be shown.
      * Note that error dialogs like "cannot save" are shown even if from this method, so widget
      * should be set in all cases.
      */
@@ -79,12 +79,12 @@ private:
                                                      const KCalendarCore::Incidence::List &incidences,
                                                      bool withGUI);
 
-    /**
-     * Checks if all to-dos under @p todo and including @p todo were completed before @p limitDate.
+    /*!
+     * Checks if all to-dos under \a todo and including \a todo were completed before \a limitDate.
      * If not, we can't archive this to-do.
-     * @param todo root of the sub-tree we are checking
-     * @param limitDate
-     * @param checkedUids used internally to prevent infinite recursion due to invalid calendar files
+     * \a todo root of the sub-tree we are checking
+     * \a limitDate
+     * \a checkedUids used internally to prevent infinite recursion due to invalid calendar files
      */
     CALENDARSUPPORT_NO_EXPORT bool isSubTreeComplete(const Akonadi::ETMCalendar::Ptr &calendar,
                                                      const KCalendarCore::Todo::Ptr &todo,

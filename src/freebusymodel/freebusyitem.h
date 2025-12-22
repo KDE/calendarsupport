@@ -15,7 +15,7 @@
 
 namespace CalendarSupport
 {
-/**
+/*!
  * The FreeBusyItem is the whole line for a given attendee..
  */
 class CALENDARSUPPORT_EXPORT FreeBusyItem
@@ -23,8 +23,8 @@ class CALENDARSUPPORT_EXPORT FreeBusyItem
 public:
     using Ptr = QSharedPointer<FreeBusyItem>;
 
-    /**
-     * @param parentWidget is passed to Akonadi when fetching free/busy data.
+    /*!
+     * \a parentWidget is passed to Akonadi when fetching free/busy data.
      */
     FreeBusyItem(const KCalendarCore::Attendee &attendee, QWidget *parentWidget);
     ~FreeBusyItem() = default;

@@ -17,7 +17,7 @@ class QStackedWidget;
 
 namespace CalendarSupport
 {
-/**
+/*!
   CalPrinter is a class for printing Calendars.  It can print in several
   different formats (day, week, month).  It also provides a way for setting
   up the printer and remembering these preferences.
@@ -34,7 +34,7 @@ public:
     };
 
 public:
-    /**
+    /*!
       \param par parent widget for dialogs
       \param cal calendar to be printed
       \param uniqItem if true, indicates the calendar print dialog will only
@@ -47,7 +47,7 @@ public:
 
     void init(const KCalendarCore::Calendar::Ptr &calendar);
 
-    /**
+    /*!
       Set date range to be printed.
 
       \param start Start date

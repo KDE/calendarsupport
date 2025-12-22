@@ -20,7 +20,7 @@ class ItemPrivateData;
 
 namespace CalendarSupport
 {
-/**
+/*!
  * The FreeBusyItemModel is a 2-level tree structure.
  *
  * The top level parent nodes represent the freebusy items, and
@@ -57,19 +57,19 @@ public:
 
     [[nodiscard]] bool containsAttendee(const KCalendarCore::Attendee &attendee);
 
-    /**
+    /*!
      * Queues a reload of free/busy data.
      * All current attendees will have their free/busy data
      * redownloaded from Akonadi.
      */
     void triggerReload();
 
-    /**
+    /*!
      * cancel reloading
      */
     void cancelReload();
 
-    /**
+    /*!
      * Reload FB items
      */
     void reload();

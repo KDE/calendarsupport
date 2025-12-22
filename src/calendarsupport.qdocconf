@@ -18,16 +18,16 @@ navigation.landingpage = "CalendarSupport"
 
 qhp.projects            = CalendarSupport
 
-qhp.CalendarSupport.file                = calendarsupport.qhp
-qhp.CalendarSupport.namespace           = org.kde.calendarsupport.$QT_VERSION_TAG
-qhp.CalendarSupport.virtualFolder       = calendarsupport
-qhp.CalendarSupport.indexTitle          = CalendarSupport
-qhp.CalendarSupport.indexRoot           =
+qhp.calendarsupport.file                = calendarsupport.qhp
+qhp.calendarsupport.namespace           = org.kde.calendarsupport.$QT_VERSION_TAG
+qhp.calendarsupport.virtualFolder       = calendarsupport
+qhp.calendarsupport.indexTitle          = CalendarSupport
+qhp.calendarsupport.indexRoot           =
 
-qhp.CalendarSupport.subprojects         = classes
-qhp.CalendarSupport.subprojects.classes.title = C++ Classes
-qhp.CalendarSupport.subprojects.classes.indexTitle = CalendarSupport C++ Classes
-qhp.CalendarSupport.subprojects.classes.selectors = class fake:headerfile
-qhp.CalendarSupport.subprojects.classes.sortPages = true
+qhp.calendarsupport.subprojects         = classes
+qhp.calendarsupport.subprojects.classes.title = C++ Classes
+qhp.calendarsupport.subprojects.classes.indexTitle = CalendarSupport C++ Classes
+qhp.calendarsupport.subprojects.classes.selectors = class fake:headerfile
+qhp.calendarsupport.subprojects.classes.sortPages = true
 
 tagfile = calendarsupport.tags

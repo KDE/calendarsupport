@@ -28,13 +28,13 @@ public:
 
     [[nodiscard]] virtual QString label() const;
 
-    /**
-      Place item @p placeItem into stripe containing items @p cells in a
+    /*!
+      Place item \a placeItem into stripe containing items \a cells in a
       way that items don't overlap.
-      @param cells The list of other cell items to be laid out parallel to the placeItem.
-      @param placeItem The item to be laid out.
+      \a cells The list of other cell items to be laid out parallel to the placeItem.
+      \a placeItem The item to be laid out.
 
-      @return Placed items
+      Returns Placed items
     */
     static QList<CellItem *> placeItem(const QList<CellItem *> &cells, CellItem *placeItem);
 

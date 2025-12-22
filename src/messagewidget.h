@@ -14,7 +14,7 @@
 
 namespace CalendarSupport
 {
-/**
+/*!
  * Even less instrusive message dialog.
  * This one goes away when you click somewhere, doesn't need a close button.
  */
