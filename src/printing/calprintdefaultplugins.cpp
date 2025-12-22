@@ -439,7 +439,8 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
 
         if (mShowSubitemsNotes && !isJournal) {
             KCalendarCore::Todo::List relations;
-            for (const auto &incidence : mCalendar->incidences()) {
+            const auto incidences = mCalendar->incidences();
+            for (const auto &incidence : incidences) {
                 auto todo = incidence.dynamicCast<KCalendarCore::Todo>();
                 if (!todo) {
                     continue;

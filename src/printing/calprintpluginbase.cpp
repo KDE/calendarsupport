@@ -1752,7 +1752,8 @@ void CalPrintPluginBase::drawTodo(int &count,
 
     // Make a list of all the sub-to-dos related to this to-do.
     KCalendarCore::Todo::List t;
-    for (const KCalendarCore::Incidence::Ptr &incidence : mCalendar->incidences()) {
+    const auto incidences = mCalendar->incidences();
+    for (const KCalendarCore::Incidence::Ptr &incidence : incidences) {
         // In the future, to-dos might also be related to events
         // Manually check if the sub-to-do is in the list of to-dos to print
         // The problem is that relations() does not apply filters, so
