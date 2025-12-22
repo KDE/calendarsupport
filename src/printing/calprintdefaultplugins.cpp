@@ -1734,7 +1734,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
     int count = 0;
     for (const KCalendarCore::Todo::Ptr &todo : std::as_const(todoList)) {
         // Skip sub-to-dos. They will be printed recursively in drawTodo()
-        if (todo->relatedTo().isEmpty()) { // review(AKONADI_PORT)
+        if (todo->relatedTo().isEmpty()) {
             count++;
             drawTodo(count,
                      todo,

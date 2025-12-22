@@ -1766,9 +1766,6 @@ void CalPrintPluginBase::drawTodo(int &count,
             continue;
         }
 
-#ifdef AKONADI_PORT_DISABLED
-        if (subtodo && todoList.contains(subtodo)) {
-#else
         bool subtodoOk = false;
         for (const KCalendarCore::Todo::Ptr &tt : std::as_const(todoList)) {
             if (tt == subtodo) {
@@ -1778,7 +1775,6 @@ void CalPrintPluginBase::drawTodo(int &count,
         }
 
         if (subtodoOk) {
-#endif
             t.append(subtodo);
         }
     }
@@ -1788,16 +1784,12 @@ void CalPrintPluginBase::drawTodo(int &count,
     startPoints.append(&startpt);
 
     // Sort the sub-to-dos and print them
-#ifdef AKONADI_PORT_DISABLED
-    KCalendarCore::Todo::List sl = mCalendar->sortTodos(&t, sortField, sortDir);
-#else
     KCalendarCore::Todo::List tl;
     tl.reserve(t.count());
     for (const KCalendarCore::Todo::Ptr &todo : std::as_const(t)) {
         tl.append(todo);
     }
     KCalendarCore::Todo::List sl = mCalendar->sortTodos(std::move(tl), sortField, sortDir);
-#endif
 
     int subcount = 0;
     for (const KCalendarCore::Todo::Ptr &isl : std::as_const(sl)) {
