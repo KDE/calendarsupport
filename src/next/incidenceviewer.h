@@ -36,7 +36,7 @@ class IncidenceViewerPrivate;
  *
  * Example:
  *
- * \de
+ * \code
  *
  * using namespace CalendarSupport;
  *
