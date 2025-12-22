@@ -16,7 +16,7 @@ depends += \
 
 navigation.landingpage = "CalendarSupport"
 
-qhp.projects            = CalendarSupport
+qhp.projects            = calendarsupport
 
 qhp.calendarsupport.file                = calendarsupport.qhp
 qhp.calendarsupport.namespace           = org.kde.calendarsupport.$QT_VERSION_TAG
