@@ -47,14 +47,14 @@
       <label>Enable reminders for new Events</label>
       <whatsthis>Check this box if you want to enable reminders for all newly created Events. You can always turn-off the reminders in the Event editor dialog.</whatsthis>
       <tooltip>By default, enable reminders for new events</tooltip>
-      <default>false</default>
+      <default>true</default>
     </entry>
 
     <entry type="Bool" key="Enable To-do Reminders" name="defaultTodoReminders">
       <label>Enable reminders for new To-dos</label>
       <whatsthis>Check this box if you want to enable reminders for all newly created To-dos. You can always turn-off the reminders in the To-do editor dialog.</whatsthis>
       <tooltip>By default, enable reminders for new to-dos</tooltip>
-      <default>false</default>
+      <default>true</default>
     </entry>
 
 
