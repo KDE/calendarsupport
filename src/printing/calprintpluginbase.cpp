@@ -723,8 +723,8 @@ void CalPrintPluginBase::drawTimeLine(QPainter &p, QTime fromTime, QTime toTime,
     while (curTime < endTime) {
         p.drawLine(box.left(), (int)currY, box.right(), (int)currY);
         int newY = (int)(currY + cellHeight / 2.);
-        QString numStr;
         if (newY < box.bottom()) {
+            QString numStr;
             QFont oldFont(p.font());
             // draw the time:
             if (!QLocale().timeFormat().contains("AP"_L1)) { // 12h clock
@@ -1561,12 +1561,11 @@ void CalPrintPluginBase::drawTodoLines(QPainter &p,
                         rct = startPoints.at(i);
                         int start = rct->mRect.bottom() + 1;
                         int center = rct->mRect.left() + (rct->mRect.width() / 2);
-                        int to = y;
                         if (!rct->mSamePage) {
                             start = 0;
                         }
                         if (rct->mHasLine) {
-                            p.drawLine(center, start, center, to);
+                            p.drawLine(center, start, center, y);
                         }
                         rct->mSamePage = false;
                     }
