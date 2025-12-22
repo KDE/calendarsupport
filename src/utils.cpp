@@ -55,13 +55,13 @@ KCalendarCore::Event::Ptr CalendarSupport::event(const KCalendarCore::Incidence:
 
 KCalendarCore::Incidence::List CalendarSupport::incidencesFromItems(const Akonadi::Item::List &items)
 {
-    KCalendarCore::Incidence::List incidences;
+    KCalendarCore::Incidence::List incidenceList;
     for (const Akonadi::Item &item : items) {
         if (const KCalendarCore::Incidence::Ptr e = Akonadi::CalendarUtils::incidence(item)) {
-            incidences.push_back(e);
+            incidenceList.push_back(e);
         }
     }
-    return incidences;
+    return incidenceList;
 }
 
 KCalendarCore::Todo::Ptr CalendarSupport::todo(const KCalendarCore::Incidence::Ptr &incidence)

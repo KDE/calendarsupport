@@ -305,10 +305,10 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 cap = i18np("Reminder: ", "%1 reminders: ", alarms.count());
 
                 QStringList alarmStrings;
-                KCalendarCore::Alarm::List::ConstIterator it;
+                KCalendarCore::Alarm::List::ConstIterator ait;
                 alarmStrings.reserve(alarms.count());
-                for (it = alarms.constBegin(); it != alarms.constEnd(); ++it) {
-                    KCalendarCore::Alarm::Ptr alarm = *it;
+                for (ait = alarms.constBegin(); ait != alarms.constEnd(); ++ait) {
+                    KCalendarCore::Alarm::Ptr alarm = *ait;
 
                     // Alarm offset, copied from koeditoralarms.cpp:
                     KLocalizedString offsetstr;

@@ -517,7 +517,6 @@ int CalPrintPluginBase::drawBoxWithCaption(QPainter &p,
             p.drawText(textBox, Qt::AlignLeft | Qt::AlignTop | Qt::TextSingleLine, contentText);
         } else {
             QTextDocument rtb;
-            int borderWidth = 2 * BOX_BORDER_WIDTH;
             if (richContents) {
                 rtb.setHtml(contents);
             } else {
@@ -530,7 +529,7 @@ int CalPrintPluginBase::drawBoxWithCaption(QPainter &p,
             rtb.setPageSize(QSize(textBox.width(), boxHeight));
             rtb.setDefaultFont(textFont);
             p.save();
-            p.translate(textBox.x() - borderWidth, textBox.y());
+            p.translate(textBox.x() - (2 * BOX_BORDER_WIDTH), textBox.y());
             QRect clipBox(0, 0, box.width(), boxHeight);
             QAbstractTextDocumentLayout::PaintContext ctx;
             ctx.palette.setColor(QPalette::Text, p.pen().color());
@@ -1155,7 +1154,6 @@ void CalPrintPluginBase::drawIncidence(QPainter &p,
 
     int flags = Qt::AlignLeft | Qt::OpaqueMode;
     QFontMetrics fm = p.fontMetrics();
-    const int borderWidth = p.pen().width() + 1;
 
     QString firstLine{time};
     if (!firstLine.isEmpty()) {
@@ -1168,7 +1166,7 @@ void CalPrintPluginBase::drawIncidence(QPainter &p,
             firstLine += u". "_s + toPlainText(description);
         }
 
-        int totalHeight = fm.height() + borderWidth;
+        int totalHeight = fm.height() + p.pen().width() + 1;
         int textBoxHeight = (totalHeight > (dayBox.height() - textY)) ? dayBox.height() - textY : totalHeight;
         QRect boxRect(dayBox.x() + p.pen().width(), dayBox.y() + textY, dayBox.width(), textBoxHeight);
         drawBox(p, 1, boxRect);
@@ -1786,8 +1784,8 @@ void CalPrintPluginBase::drawTodo(int &count,
     // Sort the sub-to-dos and print them
     KCalendarCore::Todo::List tl;
     tl.reserve(t.count());
-    for (const KCalendarCore::Todo::Ptr &todo : std::as_const(t)) {
-        tl.append(todo);
+    for (const KCalendarCore::Todo::Ptr &subtodo : std::as_const(t)) {
+        tl.append(subtodo);
     }
     KCalendarCore::Todo::List sl = mCalendar->sortTodos(std::move(tl), sortField, sortDir);
 

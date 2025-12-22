@@ -219,13 +219,13 @@ void FreeBusyItemModel::addItem(const FreeBusyItem::Ptr &freebusy)
     int row = d->mFreeBusyItems.size();
     beginInsertRows(QModelIndex(), row, row);
     d->mFreeBusyItems.append(freebusy);
-    auto data = new ItemPrivateData(d->mRootData);
-    d->mRootData->appendChild(data);
+    auto itemData = new ItemPrivateData(d->mRootData);
+    d->mRootData->appendChild(itemData);
     endInsertRows();
 
     if (freebusy->freeBusy() && !freebusy->freeBusy()->fullBusyPeriods().isEmpty()) {
-        QModelIndex parent = index(row, 0);
-        setFreeBusyPeriods(parent, freebusy->freeBusy()->fullBusyPeriods());
+        QModelIndex itemParent = index(row, 0);
+        setFreeBusyPeriods(itemParent, freebusy->freeBusy()->fullBusyPeriods());
     }
     updateFreeBusyData(freebusy);
 }
@@ -281,8 +281,8 @@ void FreeBusyItemModel::removeRow(int row)
 {
     beginRemoveRows(QModelIndex(), row, row);
     d->mFreeBusyItems.removeAt(row);
-    ItemPrivateData *data = d->mRootData->removeChild(row);
-    delete data;
+    ItemPrivateData *itemData = d->mRootData->removeChild(row);
+    delete itemData;
     endRemoveRows();
 }
 
@@ -366,9 +366,9 @@ void FreeBusyItemModel::slotInsertFreeBusy(const KCalendarCore::FreeBusy::Ptr &f
         if (item->email() == email) {
             item->setFreeBusy(fb);
             const int row = d->mFreeBusyItems.indexOf(item);
-            const QModelIndex parent = index(row, 0);
-            Q_EMIT dataChanged(parent, parent);
-            setFreeBusyPeriods(parent, fb->fullBusyPeriods());
+            const QModelIndex itemParent = index(row, 0);
+            Q_EMIT dataChanged(itemParent, itemParent);
+            setFreeBusyPeriods(itemParent, fb->fullBusyPeriods());
         }
     }
 }

@@ -238,21 +238,20 @@ bool KCalPrefs::thatIsMe(const QString &_email)
     const char *end = tmp.data() + tmp.length();
     KMime::Types::Mailbox mbox;
     KMime::HeaderParsing::parseMailbox(cursor, end, mbox);
-    const QString email = mbox.addrSpec().asString();
-
-    if (this->email() == email) {
+    const QString mboxEmail = mbox.addrSpec().asString();
+    if (this->email() == mboxEmail) {
         return true;
     }
 
     CalendarSupport::IdentityManager::ConstIterator it;
     CalendarSupport::IdentityManager::ConstIterator endId(CalendarSupport::identityManager()->end());
     for (it = CalendarSupport::identityManager()->begin(); it != endId; ++it) {
-        if ((*it).matchesEmailAddress(email)) {
+        if ((*it).matchesEmailAddress(mboxEmail)) {
             return true;
         }
     }
 
-    if (mAdditionalMails.contains(email)) {
+    if (mAdditionalMails.contains(mboxEmail)) {
         return true;
     }
 
