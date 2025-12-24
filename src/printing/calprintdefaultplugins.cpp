@@ -1147,6 +1147,7 @@ void CalPrintWeek::setDateRange(const QDate &from, const QDate &to)
 
 void CalPrintWeek::drawWeek(QPainter &p, QDate qd, QRect box)
 {
+    QDate weekDate = qd;
     const bool portrait = (box.height() > box.width());
     int cellWidth;
     int vcells;
@@ -1161,7 +1162,7 @@ void CalPrintWeek::drawWeek(QPainter &p, QDate qd, QRect box)
 
     // correct begin of week
     int weekdayCol = weekdayColumn(qd.dayOfWeek());
-    QDate weekDate = qd.addDays(-weekdayCol);
+    weekDate = qd.addDays(-weekdayCol);
 
     for (int i = 0; i < 7; ++i, weekDate = weekDate.addDays(1)) {
         // Saturday and sunday share a cell, so we have to special-case sunday
