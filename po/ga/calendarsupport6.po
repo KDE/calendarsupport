@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-23 00:41+0000\n"
+"POT-Creation-Date: 2025-12-24 00:44+0000\n"
 "PO-Revision-Date: 2009-01-28 10:19-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -1718,13 +1718,13 @@ msgid "All day"
 msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:987
-#: printing/calprintdefaultplugins.cpp:1210 printing/yearprint.cpp:141
+#: printing/calprintdefaultplugins.cpp:1209 printing/yearprint.cpp:141
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1232
+#: printing/calprintdefaultplugins.cpp:1231
 #, fuzzy, kde-format
 #| msgctxt "date from - to (week number)"
 #| msgid "%1 - %2 (Week %3)"
@@ -1732,7 +1732,7 @@ msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
 msgstr "%1 - %2 (Seachtain %3)"
 
-#: printing/calprintdefaultplugins.cpp:1234
+#: printing/calprintdefaultplugins.cpp:1233
 #, fuzzy, kde-format
 #| msgctxt "date from - to (week number)"
 #| msgid "%1 - %2 (Week %3)"
@@ -1742,7 +1742,7 @@ msgid ""
 "(Week %3)"
 msgstr "%1 - %2 (Seachtain %3)"
 
-#: printing/calprintdefaultplugins.cpp:1419
+#: printing/calprintdefaultplugins.cpp:1418
 #, fuzzy, kde-format
 #| msgctxt "Date range: Month dayStart - dayEnd"
 #| msgid "%1 %2 - %3"
@@ -1750,7 +1750,7 @@ msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2 - %3"
 
-#: printing/calprintdefaultplugins.cpp:1530
+#: printing/calprintdefaultplugins.cpp:1529
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event summary"
 #| msgid "Summary"
@@ -1758,7 +1758,7 @@ msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "Achoimre"
 
-#: printing/calprintdefaultplugins.cpp:1531
+#: printing/calprintdefaultplugins.cpp:1530
 #, fuzzy, kde-format
 #| msgctxt "@title:column calendar event start date and time"
 #| msgid "Start Date and Time"
@@ -1766,7 +1766,7 @@ msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "Dáta agus Am Tosaigh"
 
-#: printing/calprintdefaultplugins.cpp:1532
+#: printing/calprintdefaultplugins.cpp:1531
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item due date and time"
 #| msgid "Due Date and Time"
@@ -1774,7 +1774,7 @@ msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "Dáta agus Am Dlite"
 
-#: printing/calprintdefaultplugins.cpp:1533
+#: printing/calprintdefaultplugins.cpp:1532
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
@@ -1782,7 +1782,7 @@ msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "Tosaíocht"
 
-#: printing/calprintdefaultplugins.cpp:1534
+#: printing/calprintdefaultplugins.cpp:1533
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -1790,19 +1790,19 @@ msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "Críochnaithe"
 
-#: printing/calprintdefaultplugins.cpp:1535
+#: printing/calprintdefaultplugins.cpp:1534
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1541
+#: printing/calprintdefaultplugins.cpp:1540
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "Ag dul suas"
 
-#: printing/calprintdefaultplugins.cpp:1542
+#: printing/calprintdefaultplugins.cpp:1541
 #, fuzzy, kde-format
 #| msgctxt "@option sort in descreasing order"
 #| msgid "Descending"
@@ -1810,33 +1810,33 @@ msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Ag dul síos"
 
-#: printing/calprintdefaultplugins.cpp:1555
+#: printing/calprintdefaultplugins.cpp:1554
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "&To-dos"
 msgid "To-do list"
 msgstr "&Tascanna"
 
-#: printing/calprintdefaultplugins.cpp:1607
-#: printing/calprintpluginbase.cpp:1717
+#: printing/calprintdefaultplugins.cpp:1606
+#: printing/calprintpluginbase.cpp:1716
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: printing/calprintdefaultplugins.cpp:1618
+#: printing/calprintdefaultplugins.cpp:1617
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
 msgid "Priority"
 msgstr "Tosaíocht"
 
-#: printing/calprintdefaultplugins.cpp:1628
+#: printing/calprintdefaultplugins.cpp:1627
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "Spriocdháta"
 
-#: printing/calprintdefaultplugins.cpp:1638
+#: printing/calprintdefaultplugins.cpp:1637
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event start date and time"
 #| msgid "Start date and time"
@@ -1844,7 +1844,7 @@ msgctxt "@label to-do start date"
 msgid "Start"
 msgstr "Dáta agus am tosaigh"
 
-#: printing/calprintdefaultplugins.cpp:1648
+#: printing/calprintdefaultplugins.cpp:1647
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -1852,7 +1852,7 @@ msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "Críochnaithe"
 
-#: printing/calprintdefaultplugins.cpp:1658
+#: printing/calprintdefaultplugins.cpp:1657
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
@@ -2365,7 +2365,7 @@ msgstr "%1 (Dlite: %2)"
 msgid "To-do: %1"
 msgstr "&Tascanna"
 
-#: printing/calprintpluginbase.cpp:1871
+#: printing/calprintpluginbase.cpp:1870
 #, fuzzy, kde-format
 #| msgctxt "Date range: Month dayStart - dayEnd"
 #| msgid "%1 %2 - %3"
@@ -2373,7 +2373,7 @@ msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1877
+#: printing/calprintpluginbase.cpp:1876
 #, fuzzy, kde-format
 #| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #| msgid "%1 %2 - %3 %4"
