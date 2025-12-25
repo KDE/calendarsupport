@@ -3,29 +3,30 @@
 # This file is distributed under the same license as the kdepim package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
+# SPDX-FileCopyrightText: 2025 Agron Selimaj <as9902613@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdepim\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-24 00:44+0000\n"
-"PO-Revision-Date: 2009-06-08 01:08+0000\n"
-"Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
-"Language-Team: Albanian <sq@li.org>\n"
+"PO-Revision-Date: 2025-12-24 18:04-0500\n"
+"Last-Translator: Agron Selimaj <as9902613@gmail.com>\n"
+"Language-Team: sq\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2011-04-22 06:36+0000\n"
-"X-Generator: Launchpad (build 12883)\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #, kde-format
 msgid "Anonymous"
-msgstr ""
+msgstr "Anonim"
 
 #, kde-format
 msgid "nobody@nowhere"
-msgstr ""
+msgstr "nobody@nowhere"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -312,12 +313,10 @@ msgid "There are no items before %1"
 msgstr ""
 
 #: eventarchiver.cpp:128
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Arkivi"
+msgstr "Arkivi"
 
 #: eventarchiver.cpp:156
 #, kde-format
@@ -357,12 +356,12 @@ msgstr ""
 #: freebusymodel/freebusycalendar.cpp:109
 #, kde-format
 msgid "Free"
-msgstr ""
+msgstr "i/e lirë"
 
 #: freebusymodel/freebusycalendar.cpp:112
 #, kde-format
 msgid "Busy"
-msgstr ""
+msgstr "i/e zënë"
 
 #: freebusymodel/freebusycalendar.cpp:115
 #, kde-format
@@ -375,9 +374,7 @@ msgid "Tentative"
 msgstr ""
 
 #: freebusymodel/freebusycalendar.cpp:121
-#, fuzzy, kde-format
-#| msgctxt "@option unknown alarm type"
-#| msgid "Unknown"
+#, kde-format
 msgid "Unknown"
 msgstr "I Panjohur"
 
@@ -387,11 +384,10 @@ msgid "Attendee"
 msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:125
-#, fuzzy, kde-format
-#| msgid "%1"
+#, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
-msgstr "%1"
+msgstr "%1,"
 
 #: freebusymodel/freeperiodmodel.cpp:142
 #, fuzzy, kde-format
@@ -424,13 +420,13 @@ msgstr ""
 #, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
-msgstr ""
+msgstr "Nisja:"
 
 #: freebusymodel/freeperiodmodel.cpp:182
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
-msgstr ""
+msgstr "Përfundon:"
 
 #: freebusymodel/freeperiodmodel.cpp:185
 #, fuzzy, kde-format
@@ -699,11 +695,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:147
-#, fuzzy, kde-format
-#| msgctxt "@label suffix in the N days spin box"
-#| msgid " days"
+#, kde-format
 msgid "In days"
-msgstr " ditë"
+msgstr "Në ditët"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
 #: kcalprefs.kcfg:150
@@ -915,7 +909,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:166
 #, kde-format
 msgid "hh:mm"
-msgstr ""
+msgstr "hh:mm"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (toolTip), widget (KDateComboBox, mToDate)
@@ -1183,7 +1177,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:296
 #, kde-format
 msgid "Ta&gs"
-msgstr ""
+msgstr "Eti&ketat"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:306
@@ -1232,9 +1226,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:224
 #: printing/calprinttodoconfig_base.ui:391
 #: printing/calprintweekconfig_base.ui:332
-#, fuzzy, kde-format
-#| msgctxt "@title:tab general settings"
-#| msgid "General"
+#, kde-format
 msgctxt "@title general print settings"
 msgid "General"
 msgstr "Të Përgjithshme"
@@ -1407,7 +1399,7 @@ msgstr ""
 #, kde-format
 msgctxt "except for listed dates"
 msgid " except"
-msgstr ""
+msgstr " përveç"
 
 #: printing/calprintdefaultplugins.cpp:294
 #, kde-format
@@ -1514,7 +1506,7 @@ msgstr ""
 #: printing/calprintdefaultplugins.cpp:457
 #, kde-format
 msgid "Notes:"
-msgstr ""
+msgstr "Shënimet:"
 
 #: printing/calprintdefaultplugins.cpp:469
 #, kde-format
@@ -1535,15 +1527,13 @@ msgstr[1] "%1 minuta"
 #, kde-format
 msgctxt "no status"
 msgid "none"
-msgstr ""
+msgstr "asnjë"
 
 #: printing/calprintdefaultplugins.cpp:490
-#, fuzzy, kde-format
-#| msgctxt "@option unknown alarm type"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown status"
 msgid "unknown"
-msgstr "I Panjohur"
+msgstr "i panjohur"
 
 #: printing/calprintdefaultplugins.cpp:497
 #, kde-format
@@ -1573,7 +1563,7 @@ msgstr ""
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
-msgstr ""
+msgstr "%1: "
 
 #: printing/calprintdefaultplugins.cpp:523
 #, kde-format
@@ -1612,7 +1602,7 @@ msgstr[1] "Hiqi të Bashkangjiturit"
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
-msgstr ""
+msgstr "  "
 
 #: printing/calprintdefaultplugins.cpp:570
 #, kde-format
@@ -1671,41 +1661,34 @@ msgstr "Parametrat e Email"
 #: printing/calprintdefaultplugins.cpp:631
 #, kde-format
 msgid "Tags: "
-msgstr ""
+msgstr "Etiketat: "
 
 #: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:917
 #: printing/calprintpluginbase.cpp:1057 printing/calprintpluginbase.cpp:1114
-#, fuzzy, kde-format
-#| msgctxt "start/end week number of line in date picker"
-#| msgid "%1/%2"
+#, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
-msgstr "%1/%2"
+msgstr "%1, %2"
 
 #: printing/calprintdefaultplugins.cpp:727 printing/calprintpluginbase.cpp:936
 #: printing/calprintpluginbase.cpp:1060
-#, fuzzy, kde-format
-#| msgctxt "start/end week number of line in date picker"
-#| msgid "%1/%2"
+#, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
-msgstr "%1/%2"
+msgstr "%1, %2"
 
 #: printing/calprintdefaultplugins.cpp:782
-#, fuzzy, kde-format
-#| msgctxt "@item@intable alarm offset specified in days"
-#| msgid "1 day"
-#| msgid_plural "%1 days"
+#, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
-msgstr "1 ditë"
+msgstr "Tërë ditën"
 
 #: printing/calprintdefaultplugins.cpp:987
 #: printing/calprintdefaultplugins.cpp:1209 printing/yearprint.cpp:141
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
-msgstr ""
+msgstr "%1–%2"
 
 #: printing/calprintdefaultplugins.cpp:1231
 #, kde-format
@@ -1722,12 +1705,10 @@ msgid ""
 msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1418
-#, fuzzy, kde-format
-#| msgctxt "start/end week number of line in date picker"
-#| msgid "%1/%2"
+#, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
-msgstr "%1/%2"
+msgstr "%1 %2"
 
 #: printing/calprintdefaultplugins.cpp:1529
 #, kde-format
@@ -1763,7 +1744,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
-msgstr ""
+msgstr "Etiketat"
 
 #: printing/calprintdefaultplugins.cpp:1540
 #, kde-format
@@ -1785,10 +1766,9 @@ msgstr "Sot"
 
 #: printing/calprintdefaultplugins.cpp:1606
 #: printing/calprintpluginbase.cpp:1716
-#, fuzzy, kde-format
-#| msgid "%1"
+#, kde-format
 msgid "%1%"
-msgstr "%1"
+msgstr "%1%"
 
 #: printing/calprintdefaultplugins.cpp:1617
 #, kde-format
@@ -1799,13 +1779,13 @@ msgstr ""
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
-msgstr ""
+msgstr "Afati i Fundit"
 
 #: printing/calprintdefaultplugins.cpp:1637
 #, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
-msgstr ""
+msgstr "Nisja"
 
 #: printing/calprintdefaultplugins.cpp:1647
 #, kde-format
@@ -1817,7 +1797,7 @@ msgstr ""
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
-msgstr ""
+msgstr "Etiketat"
 
 #: printing/calprintdefaultplugins.h:37
 #, kde-format
@@ -1882,11 +1862,10 @@ msgid "Printing error"
 msgstr ""
 
 #: printing/calprinter.cpp:158
-#, fuzzy, kde-format
-#| msgid "&Edit..."
+#, kde-format
 msgctxt "@title:window"
 msgid "Print"
-msgstr "&Modifiko..."
+msgstr "Shtyp"
 
 #: printing/calprinter.cpp:177
 #, kde-format
@@ -2566,7 +2545,7 @@ msgstr "Mos e Dërgo"
 #: printing/calprintyearconfig_base.ui:32
 #, kde-format
 msgid "&Year:"
-msgstr ""
+msgstr "&Viti:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
 #: printing/calprintyearconfig_base.ui:99
@@ -2594,7 +2573,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:165
 #, kde-format
 msgid "Text"
-msgstr ""
+msgstr "Teksti"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2684,7 +2663,7 @@ msgstr "Kalendari i Parazgjedhur"
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
-msgstr ""
+msgstr "asnjë"
 
 #: utils.cpp:423
 #, fuzzy, kde-format
@@ -2714,15 +2693,13 @@ msgstr "Mbishkruaje"
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
-msgstr ""
+msgstr "të gjitha"
 
 #: utils.cpp:446
-#, fuzzy, kde-format
-#| msgctxt "@option play a sound"
-#| msgid "Audio"
+#, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
-msgstr "Audio"
+msgstr "audio"
 
 #: utils.cpp:448
 #, kde-format
@@ -2731,12 +2708,10 @@ msgid "display"
 msgstr ""
 
 #: utils.cpp:450
-#, fuzzy, kde-format
-#| msgctxt "@option send email reminder"
-#| msgid "Email"
+#, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
-msgstr "Email"
+msgstr "email"
 
 #: utils.cpp:452
 #, fuzzy, kde-format
@@ -2749,13 +2724,13 @@ msgstr "Proçedo"
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
-msgstr ""
+msgstr "tjetër"
 
 #: utils.cpp:458
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
-msgstr ""
+msgstr "asnjë"
 
 #: utils.cpp:461
 #, fuzzy, kde-format
@@ -2764,11 +2739,10 @@ msgid "Blocked Reminders:"
 msgstr "Don Sanders"
 
 #: utils.cpp:527
-#, fuzzy, kde-format
-#| msgid "%1"
+#, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
-msgstr "%1"
+msgstr "^%1"
 
 #: utils.cpp:529
 #, fuzzy, kde-format
