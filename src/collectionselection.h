@@ -26,20 +26,41 @@ class CALENDARSUPPORT_EXPORT CollectionSelection : public QObject
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit CollectionSelection(QItemSelectionModel *selectionModel, QObject *parent = nullptr);
+    /*!
+     */
     ~CollectionSelection() override;
 
+    /*!
+     */
     QItemSelectionModel *model() const;
+    /*!
+     */
     [[nodiscard]] Akonadi::Collection::List selectedCollections() const;
+    /*!
+     */
     [[nodiscard]] QList<Akonadi::Collection::Id> selectedCollectionIds() const;
+    /*!
+     */
     [[nodiscard]] bool contains(const Akonadi::Collection &c) const;
+    /*!
+     */
     [[nodiscard]] bool contains(Akonadi::Collection::Id id) const;
-
+    /*!
+     */
     [[nodiscard]] bool hasSelection() const;
 
 Q_SIGNALS:
+    /*!
+     */
     void selectionChanged(const Akonadi::Collection::List &selected, const Akonadi::Collection::List &deselected);
+    /*!
+     */
     void collectionDeselected(const Akonadi::Collection &);
+    /*!
+     */
     void collectionSelected(const Akonadi::Collection &);
 
 private:

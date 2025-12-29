@@ -16,6 +16,10 @@
 namespace CalendarSupport
 {
 /*!
+ * \class CalendarSupport::FreeBusyItem
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/FreeBusyItem
+ *
  * The FreeBusyItem is the whole line for a given attendee..
  */
 class CALENDARSUPPORT_EXPORT FreeBusyItem
@@ -27,21 +31,43 @@ public:
      * \a parentWidget is passed to Akonadi when fetching free/busy data.
      */
     FreeBusyItem(const KCalendarCore::Attendee &attendee, QWidget *parentWidget);
+    /*!
+     */
     ~FreeBusyItem() = default;
 
+    /*!
+     */
     [[nodiscard]] KCalendarCore::Attendee attendee() const;
+    /*!
+     */
     void setFreeBusy(const KCalendarCore::FreeBusy::Ptr &fb);
+    /*!
+     */
     [[nodiscard]] KCalendarCore::FreeBusy::Ptr freeBusy() const;
 
+    /*!
+     */
     [[nodiscard]] QString email() const;
+    /*!
+     */
     void setUpdateTimerID(int id);
+    /*!
+     */
     [[nodiscard]] int updateTimerID() const;
 
+    /*!
+     */
     void startDownload(bool forceDownload);
+    /*!
+     */
     void setIsDownloading(bool d);
+    /*!
+     */
     [[nodiscard]] bool isDownloading() const;
 
 Q_SIGNALS:
+    /*!
+     */
     void attendeeChanged(const KCalendarCore::Attendee &attendee);
 
 private:

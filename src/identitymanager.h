@@ -11,10 +11,18 @@
 
 namespace CalendarSupport
 {
+/*!
+ * \class CalendarSupport::IdentityManager
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/IdentityManager
+ */
 class CALENDARSUPPORT_EXPORT IdentityManager : public KIdentityManagementCore::IdentityManager
 {
     Q_OBJECT
 public:
+    /*!
+     * \brief IdentityManager
+     */
     explicit IdentityManager(QObject *parent = nullptr, const char *name = nullptr)
         : KIdentityManagementCore::IdentityManager(true /*readonly*/, parent, name)
     {

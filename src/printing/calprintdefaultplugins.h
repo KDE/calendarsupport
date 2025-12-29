@@ -25,45 +25,73 @@ namespace CalendarSupport
 class CALENDARSUPPORT_EXPORT CalPrintIncidence : public CalPrintPluginBase
 {
 public:
+    /*!
+     */
     CalPrintIncidence();
+    /*!
+     */
     ~CalPrintIncidence() override;
+    /*!
+     */
     [[nodiscard]] QString groupName() const override
     {
         return u"Print incidence"_s;
     }
 
+    /*!
+     */
     [[nodiscard]] QString description() const override
     {
         return i18n("Print &incidence");
     }
 
+    /*!
+     */
     [[nodiscard]] QString info() const override
     {
         return i18n("Prints an incidence on one page");
     }
 
+    /*!
+     */
     [[nodiscard]] int sortID() const override
     {
         return CalPrinterBase::Incidence;
     }
 
     // Enable the Print Incidence option only if there are selected incidences.
+    /*!
+     */
     [[nodiscard]] bool enabled() const override
     {
         return !mSelectedIncidences.isEmpty();
     }
 
+    /*!
+     */
     QWidget *createConfigWidget(QWidget *) override;
+    /*!
+     */
     [[nodiscard]] QPageLayout::Orientation defaultOrientation() const override
     {
         return QPageLayout::Portrait;
     }
 
 public:
+    /*!
+     */
     void print(QPainter &p, int width, int height) override;
+    /*!
+     */
     void readSettingsWidget() override;
+    /*!
+     */
     void setSettingsWidget() override;
+    /*!
+     */
     void doLoadConfig() override;
+    /*!
+     */
     void doSaveConfig() override;
 
 protected:

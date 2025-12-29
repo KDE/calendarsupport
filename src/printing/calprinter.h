@@ -45,6 +45,8 @@ public:
 
     ~CalPrinter() override;
 
+    /*!
+     */
     void init(const KCalendarCore::Calendar::Ptr &calendar);
 
     /*!
@@ -56,6 +58,8 @@ public:
     void setDateRange(QDate start, QDate end);
 
 public Q_SLOTS:
+    /*!
+     */
     void updateConfig();
 
 private Q_SLOTS:

@@ -17,9 +17,15 @@ namespace CalendarSupport
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReader
 {
 public:
+    /*!
+     */
     void read(const QStringList &categories);
+    /*!
+     */
     virtual ~CategoryHierarchyReader() = default;
 
+    /*!
+     */
     [[nodiscard]] static QStringList path(QString string);
 
 protected:
@@ -34,17 +40,29 @@ protected:
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQComboBox : public CategoryHierarchyReader
 {
 public:
+    /*!
+     */
     explicit CategoryHierarchyReaderQComboBox(QComboBox *box)
         : mBox(box)
     {
     }
 
+    /*!
+     */
     ~CategoryHierarchyReaderQComboBox() override = default;
 
 protected:
+    /*!
+     */
     void clear() override;
+    /*!
+     */
     void goUp() override;
+    /*!
+     */
     void addChild(const QString &label, const QVariant &userData = QVariant()) override;
+    /*!
+     */
     int depth() const override;
 
 private:

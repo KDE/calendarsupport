@@ -15,6 +15,10 @@
 namespace CalendarSupport
 {
 /*!
+ * \class CalendarSupport::MessageWidget
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/MessageWidget
+ *
  * Even less instrusive message dialog.
  * This one goes away when you click somewhere, doesn't need a close button.
  */
@@ -22,10 +26,20 @@ class CALENDARSUPPORT_EXPORT MessageWidget : public KMessageWidget
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit MessageWidget(QWidget *parent = nullptr);
+    /*!
+     */
     ~MessageWidget() override;
+    /*!
+     */
     [[nodiscard]] bool eventFilter(QObject *watched, QEvent *event) override;
+    /*!
+     */
     void showEvent(QShowEvent *event) override;
+    /*!
+     */
     void hideEvent(QHideEvent *event) override;
 };
 }

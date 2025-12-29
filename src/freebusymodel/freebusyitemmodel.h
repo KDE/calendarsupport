@@ -37,24 +37,51 @@ public:
         FreeBusyRole,
         FreeBusyPeriodRole
     };
-
+    /*!
+     */
     explicit FreeBusyItemModel(QObject *parent = nullptr);
+    /*!
+     */
     ~FreeBusyItemModel() override;
 
+    /*!
+     */
     [[nodiscard]] QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    /*!
+     */
     [[nodiscard]] int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    /*!
+     */
     [[nodiscard]] int columnCount(const QModelIndex &parent = QModelIndex()) const override;
+    /*!
+     */
     [[nodiscard]] QModelIndex index(int row, int column = 0, const QModelIndex &parent = QModelIndex()) const override;
+    /*!
+     */
     [[nodiscard]] QModelIndex parent(const QModelIndex &child) const override;
+    /*!
+     */
     [[nodiscard]] QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
 
+    /*!
+     */
     void addItem(const FreeBusyItem::Ptr &freebusy);
 
+    /*!
+     */
     void clear();
+    /*!
+     */
     void removeAttendee(const KCalendarCore::Attendee &attendee);
+    /*!
+     */
     void removeItem(const FreeBusyItem::Ptr &freebusy);
+    /*!
+     */
     void removeRow(int row);
 
+    /*!
+     */
     [[nodiscard]] bool containsAttendee(const KCalendarCore::Attendee &attendee);
 
     /*!
@@ -75,9 +102,13 @@ public:
     void reload();
 
 public Q_SLOTS:
+    /*!
+     */
     void slotInsertFreeBusy(const KCalendarCore::FreeBusy::Ptr &fb, const QString &email);
 
 protected:
+    /*!
+     */
     void timerEvent(QTimerEvent *) override;
 
 private:

@@ -27,6 +27,10 @@ class IncidenceChanger;
 namespace CalendarSupport
 {
 /*!
+ * \class CalendarSupport::EventArchiver
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/EventArchiver
+ *
  * This class handles expiring and archiving of events.
  * It is used directly by the archivedialog, and it is also
  * triggered by actionmanager's timer for auto-archiving.
@@ -63,6 +67,8 @@ public:
     void runAuto(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QWidget *widget, bool withGUI);
 
 Q_SIGNALS:
+    /*!
+     */
     void eventsDeleted();
 
 private:

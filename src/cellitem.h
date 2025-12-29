@@ -11,21 +11,40 @@
 
 namespace CalendarSupport
 {
+/*!
+ * \class CalendarSupport::CellItem
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/CellItem
+ */
 class CALENDARSUPPORT_EXPORT CellItem
 {
 public:
+    /*!
+     */
     CellItem() = default;
 
     virtual ~CellItem() = default;
 
+    /*!
+     */
     void setSubCells(int v);
+    /*!
+     */
     [[nodiscard]] int subCells() const;
 
+    /*!
+     */
     void setSubCell(int v);
+    /*!
+     */
     [[nodiscard]] int subCell() const;
 
+    /*!
+     */
     virtual bool overlaps(CellItem *other) const = 0;
 
+    /*!
+     */
     [[nodiscard]] virtual QString label() const;
 
     /*!

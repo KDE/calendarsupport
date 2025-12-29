@@ -64,6 +64,8 @@ public:
      */
     CALENDARSUPPORT_DEPRECATED_VERSION(5, 24, "Use constructor with ETM")
     explicit IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent = nullptr);
+    /*!
+     */
     explicit IncidenceViewer(Akonadi::EntityTreeModel *etm, QWidget *parent = nullptr);
 
     /*!

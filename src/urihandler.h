@@ -11,7 +11,13 @@ class QString;
 
 namespace CalendarSupport
 {
-/*! URI handler. */
+/*!
+ * \class CalendarSupport::UriHandler
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/UriHandler
+ *
+ *  URI handler.
+ */
 class CALENDARSUPPORT_EXPORT UriHandler
 {
 public:
