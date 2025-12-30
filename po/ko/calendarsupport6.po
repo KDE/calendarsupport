@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-27 00:43+0000\n"
+"POT-Creation-Date: 2025-12-30 00:41+0000\n"
 "PO-Revision-Date: 2025-04-06 21:45+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -1840,52 +1840,52 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr "태그"
 
-#: printing/calprintdefaultplugins.h:37
+#: printing/calprintdefaultplugins.h:45
 #, kde-format
 msgid "Print &incidence"
 msgstr "일정 항목 인쇄(&I)"
 
-#: printing/calprintdefaultplugins.h:42
+#: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr "일정 항목을 한 쪽으로 인쇄"
 
-#: printing/calprintdefaultplugins.h:139
+#: printing/calprintdefaultplugins.h:167
 #, kde-format
 msgid "Print da&y"
 msgstr "일간 인쇄(&Y)"
 
-#: printing/calprintdefaultplugins.h:144
+#: printing/calprintdefaultplugins.h:172
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "하루에 예정된 이벤트를 한 쪽으로 인쇄"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:226
 #, kde-format
 msgid "Print &week"
 msgstr "주간 인쇄(&W)"
 
-#: printing/calprintdefaultplugins.h:203
+#: printing/calprintdefaultplugins.h:231
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "한 주간의 이벤트를 한 쪽으로 인쇄"
 
-#: printing/calprintdefaultplugins.h:264
+#: printing/calprintdefaultplugins.h:292
 #, kde-format
 msgid "Print mont&h"
 msgstr "달 출력(&H)"
 
-#: printing/calprintdefaultplugins.h:269
+#: printing/calprintdefaultplugins.h:297
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "한 달간의 이벤트를 한 쪽으로 인쇄"
 
-#: printing/calprintdefaultplugins.h:319
+#: printing/calprintdefaultplugins.h:347
 #, kde-format
 msgid "Print to-&dos"
 msgstr "할 일 인쇄(&D)"
 
-#: printing/calprintdefaultplugins.h:324
+#: printing/calprintdefaultplugins.h:352
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "모든 할 일을 트리 형태의 목록으로 인쇄"

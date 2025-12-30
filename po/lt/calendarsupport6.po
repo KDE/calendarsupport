@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-27 00:43+0000\n"
+"POT-Creation-Date: 2025-12-30 00:41+0000\n"
 "PO-Revision-Date: 2015-12-29 21:04+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -1939,55 +1939,55 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:37
+#: printing/calprintdefaultplugins.h:45
 #, kde-format
 msgid "Print &incidence"
 msgstr "Spausdinti &atvejį"
 
-#: printing/calprintdefaultplugins.h:42
+#: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr "Spausdins atvejį viename lape"
 
-#: printing/calprintdefaultplugins.h:139
+#: printing/calprintdefaultplugins.h:167
 #, kde-format
 msgid "Print da&y"
 msgstr "Spausdinti d&ieną"
 
-#: printing/calprintdefaultplugins.h:144
+#: printing/calprintdefaultplugins.h:172
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "Spausdins visus vienos dienos įvykius viename lape"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:226
 #, fuzzy, kde-format
 #| msgid "In weeks"
 msgid "Print &week"
 msgstr "Savaitėmis"
 
-#: printing/calprintdefaultplugins.h:203
+#: printing/calprintdefaultplugins.h:231
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Spausdins visus vienos savaitės įvykius viename lape"
 
-#: printing/calprintdefaultplugins.h:264
+#: printing/calprintdefaultplugins.h:292
 #, fuzzy, kde-format
 #| msgid "In months"
 msgid "Print mont&h"
 msgstr "Mėnesiais"
 
-#: printing/calprintdefaultplugins.h:269
+#: printing/calprintdefaultplugins.h:297
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Spausdins visus vieno mėnesio įvykius viename lape"
 
-#: printing/calprintdefaultplugins.h:319
+#: printing/calprintdefaultplugins.h:347
 #, fuzzy, kde-format
 #| msgid "Archive to-dos"
 msgid "Print to-&dos"
 msgstr "Archyvuoti darbus"
 
-#: printing/calprintdefaultplugins.h:324
+#: printing/calprintdefaultplugins.h:352
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Spausdins visus darbus medžio pavidalo sąraše"

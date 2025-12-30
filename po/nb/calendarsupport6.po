@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-27 00:43+0000\n"
+"POT-Creation-Date: 2025-12-30 00:41+0000\n"
 "PO-Revision-Date: 2015-02-07 19:03+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -1845,52 +1845,52 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:37
+#: printing/calprintdefaultplugins.h:45
 #, kde-format
 msgid "Print &incidence"
 msgstr "Skriv ut &hendelse"
 
-#: printing/calprintdefaultplugins.h:42
+#: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr "Skriver en hendelser på én side"
 
-#: printing/calprintdefaultplugins.h:139
+#: printing/calprintdefaultplugins.h:167
 #, kde-format
 msgid "Print da&y"
 msgstr "Skriv ut &dag"
 
-#: printing/calprintdefaultplugins.h:144
+#: printing/calprintdefaultplugins.h:172
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "Skriver ut alle hendelser for én dag på en side"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:226
 #, kde-format
 msgid "Print &week"
 msgstr "Skriv ut &uke"
 
-#: printing/calprintdefaultplugins.h:203
+#: printing/calprintdefaultplugins.h:231
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Skriver alle hendelser for en uke på en side"
 
-#: printing/calprintdefaultplugins.h:264
+#: printing/calprintdefaultplugins.h:292
 #, kde-format
 msgid "Print mont&h"
 msgstr "Skriv ut &måned"
 
-#: printing/calprintdefaultplugins.h:269
+#: printing/calprintdefaultplugins.h:297
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Skriver alle hendelser for en måned på en side"
 
-#: printing/calprintdefaultplugins.h:319
+#: printing/calprintdefaultplugins.h:347
 #, kde-format
 msgid "Print to-&dos"
 msgstr "Skri&v ut gjøremål"
 
-#: printing/calprintdefaultplugins.h:324
+#: printing/calprintdefaultplugins.h:352
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Skriver ut alle gjøremålene i en (tre-liknende) liste"

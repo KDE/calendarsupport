@@ -2,14 +2,15 @@
 # Copyright (C) 2009 This_file_is_part_of_KDE
 # This file is distributed under the same license as the akonadi-kcal package.
 # Kevin Scannell <kscanne@gmail.com>, 2009.
+# SPDX-FileCopyrightText: 2025 Charlotte <altronic25@protonmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal.po\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-27 00:43+0000\n"
-"PO-Revision-Date: 2009-01-28 10:19-0500\n"
-"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
-"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2025-12-30 00:41+0000\n"
+"PO-Revision-Date: 2025-12-25 19:18+0000\n"
+"Last-Translator: Charlotte <altronic25@protonmail.com>\n"
+"Language-Team: Irish\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1858,53 +1859,53 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:37
+#: printing/calprintdefaultplugins.h:45
 #, kde-format
 msgid "Print &incidence"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:42
+#: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:139
+#: printing/calprintdefaultplugins.h:167
 #, kde-format
 msgid "Print da&y"
 msgstr "Priontáil &la"
 
-#: printing/calprintdefaultplugins.h:144
+#: printing/calprintdefaultplugins.h:172
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:226
 #, kde-format
 msgid "Print &week"
 msgstr "Priontáil &seachtain"
 
-#: printing/calprintdefaultplugins.h:203
+#: printing/calprintdefaultplugins.h:231
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:264
+#: printing/calprintdefaultplugins.h:292
 #, kde-format
 msgid "Print mont&h"
 msgstr "Priontáil &mí"
 
-#: printing/calprintdefaultplugins.h:269
+#: printing/calprintdefaultplugins.h:297
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:319
+#: printing/calprintdefaultplugins.h:347
 #, fuzzy, kde-format
 #| msgid "Archive to-dos"
 msgid "Print to-&dos"
 msgstr "Cuir tascanna i gcartlann"
 
-#: printing/calprintdefaultplugins.h:324
+#: printing/calprintdefaultplugins.h:352
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr ""
@@ -2799,11 +2800,10 @@ msgid "display"
 msgstr ""
 
 #: utils.cpp:450
-#, fuzzy, kde-format
-#| msgid "Send Email"
+#, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
-msgstr "Seol Ríomhphost"
+msgstr "ríomhphost"
 
 #: utils.cpp:452
 #, kde-format
@@ -2831,20 +2831,15 @@ msgid "Blocked Reminders:"
 msgstr ""
 
 #: utils.cpp:527
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
-msgstr "%1%"
+msgstr "^%1"
 
 #: utils.cpp:529
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
-#| "Kainhofer <reinhold@kainhofer.com> (Participant): Awaiting Response'"
-#| msgid "%1 (%2): %3"
+#, kde-format
 msgid "%1 (%2)"
-msgstr "%1 (%2): %3"
+msgstr "%1 (%2)"
 
 #: utils.cpp:534
 #, kde-format

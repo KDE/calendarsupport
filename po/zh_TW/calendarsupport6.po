@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-27 00:43+0000\n"
+"POT-Creation-Date: 2025-12-30 00:41+0000\n"
 "PO-Revision-Date: 2025-03-26 18:06+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -1794,52 +1794,52 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr "標籤"
 
-#: printing/calprintdefaultplugins.h:37
+#: printing/calprintdefaultplugins.h:45
 #, kde-format
 msgid "Print &incidence"
 msgstr "列印事件(&I)"
 
-#: printing/calprintdefaultplugins.h:42
+#: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr "將事件列印在一頁上"
 
-#: printing/calprintdefaultplugins.h:139
+#: printing/calprintdefaultplugins.h:167
 #, kde-format
 msgid "Print da&y"
 msgstr "列印天(&Y)"
 
-#: printing/calprintdefaultplugins.h:144
+#: printing/calprintdefaultplugins.h:172
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "將每一天的事件列印在單獨一頁上"
 
-#: printing/calprintdefaultplugins.h:198
+#: printing/calprintdefaultplugins.h:226
 #, kde-format
 msgid "Print &week"
 msgstr "列印週(&W)"
 
-#: printing/calprintdefaultplugins.h:203
+#: printing/calprintdefaultplugins.h:231
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "將每一週的事件列印在單獨一頁上"
 
-#: printing/calprintdefaultplugins.h:264
+#: printing/calprintdefaultplugins.h:292
 #, kde-format
 msgid "Print mont&h"
 msgstr "列印月(&H)"
 
-#: printing/calprintdefaultplugins.h:269
+#: printing/calprintdefaultplugins.h:297
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "將每一個月的事件列印在單獨一頁上"
 
-#: printing/calprintdefaultplugins.h:319
+#: printing/calprintdefaultplugins.h:347
 #, kde-format
 msgid "Print to-&dos"
 msgstr "列印待辦事項(&D)"
 
-#: printing/calprintdefaultplugins.h:324
+#: printing/calprintdefaultplugins.h:352
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "列印所有的待辦事項清單（樹狀圖）"
