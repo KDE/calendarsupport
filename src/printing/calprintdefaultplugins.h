@@ -4,7 +4,7 @@
   SPDX-FileCopyrightText: 2008 Ron Goodheart <rong.dev@gmail.com>
   SPDX-FileCopyrightText: 2012-2013 Allen Winter <winter@kde.org>
 
-  SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
+  SPDX-License-Identifier: GPL-2.0-or-later WITH LicenseRef-Qt-Commercial-exception-1.0
 */
 #pragma once
 

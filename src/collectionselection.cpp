@@ -2,7 +2,7 @@
   SPDX-FileCopyrightText: 2009 KDAB
   SPDX-FileContributor: Frank Osterfeld <frank@kdab.net>
 
-  SPDX-License-Identifier: GPL-2.0-or-later WITH Qt-Commercial-exception-1.0
+  SPDX-License-Identifier: GPL-2.0-or-later WITH LicenseRef-Qt-Commercial-exception-1.0
 */
 
 #include "collectionselection.h"
