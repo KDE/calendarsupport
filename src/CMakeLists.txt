@@ -156,8 +156,6 @@ ecm_generate_headers(CalendarSupport_CamelCaseprinter_HEADERS
   HEADER_NAMES
   PrintPlugin
   CalPrinter
-  CalPrintDefaultPlugins
-  CalPrintPluginBase
   REQUIRED_HEADERS CalendarSupport_printer_HEADERS
   PREFIX CalendarSupport
   RELATIVE printing
