@@ -18,6 +18,10 @@ class QStackedWidget;
 namespace CalendarSupport
 {
 /*!
+  \class CalendarSupport::CalPrinter
+  \inmodule CalendarSupport
+  \inheaderfile CalendarSupport/CalPrinter
+
   CalPrinter is a class for printing Calendars.  It can print in several
   different formats (day, week, month).  It also provides a way for setting
   up the printer and remembering these preferences.

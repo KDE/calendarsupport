@@ -14,6 +14,11 @@ class QComboBox;
 
 namespace CalendarSupport
 {
+/*!
+ * \class CalendarSupport::CategoryHierarchyReader
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/CategoryHierarchyReader
+ */
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReader
 {
 public:
@@ -37,6 +42,11 @@ protected:
     virtual int depth() const = 0;
 };
 
+/*!
+ * \class CalendarSupport::CategoryHierarchyReaderQComboBox
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/CategoryHierarchyReader
+ */
 class CALENDARSUPPORT_EXPORT CategoryHierarchyReaderQComboBox : public CategoryHierarchyReader
 {
 public:

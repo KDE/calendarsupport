@@ -29,6 +29,11 @@ public:
     }
 
 protected:
+    /*!
+     * \brief createDefaultIdentity
+     * \param fullName
+     * \param emailAddress
+     */
     void createDefaultIdentity(QString &fullName, QString &emailAddress) override;
 };
 

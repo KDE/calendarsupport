@@ -21,7 +21,11 @@ class QItemSelectionModel;
 namespace CalendarSupport
 {
 class CollectionSelectionPrivate;
-
+/*!
+ * \class CalendarSupport::CollectionSelection
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/CollectionSelection
+ */
 class CALENDARSUPPORT_EXPORT CollectionSelection : public QObject
 {
     Q_OBJECT

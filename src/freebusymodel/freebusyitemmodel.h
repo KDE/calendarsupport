@@ -21,6 +21,10 @@ class ItemPrivateData;
 namespace CalendarSupport
 {
 /*!
+ * \class CalendarSupport::FreeBusyItemModel
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/FreeBusyItemModel
+ *
  * The FreeBusyItemModel is a 2-level tree structure.
  *
  * The top level parent nodes represent the freebusy items, and

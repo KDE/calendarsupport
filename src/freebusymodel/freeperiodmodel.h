@@ -15,7 +15,13 @@
 
 namespace CalendarSupport
 {
-/// Model representing the free-busy periods
+/*!
+ * \class CalendarSupport::FreePeriodModel
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/FreePeriodModel
+ *
+ * Model representing the free-busy periods
+ */
 class CALENDARSUPPORT_EXPORT FreePeriodModel : public QAbstractTableModel
 {
     Q_OBJECT
@@ -23,15 +29,31 @@ public:
     enum Roles {
         PeriodRole = Qt::UserRole
     };
+    /*!
+     * \brief FreePeriodModel
+     * \param parent
+     */
     explicit FreePeriodModel(QObject *parent = nullptr);
+    /*!
+     */
     ~FreePeriodModel() override;
 
+    /*!
+     */
     [[nodiscard]] QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    /*!
+     */
     [[nodiscard]] int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    /*!
+     */
     [[nodiscard]] int columnCount(const QModelIndex &parent = QModelIndex()) const override;
+    /*!
+     */
     [[nodiscard]] QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
 
 public Q_SLOTS:
+    /*!
+     */
     void slotNewFreePeriods(const KCalendarCore::Period::List &freePeriods);
 
 private:

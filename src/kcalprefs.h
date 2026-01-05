@@ -15,7 +15,11 @@
 namespace CalendarSupport
 {
 class KCalPrefsPrivate;
-
+/*!
+ * \class CalendarSupport::KCalPrefs
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/KCalPrefs
+ */
 class CALENDARSUPPORT_EXPORT KCalPrefs : public KCalPrefsBase
 {
     Q_OBJECT
@@ -43,19 +47,41 @@ public:
 
 public:
     // preferences data
+    /*!
+     * \brief fullName
+     * \return
+     */
     QString fullName();
+    /*!
+     */
     QString email();
     /// Returns all email addresses for the user.
+    /*!
+     * \return all email addresses for the user.
+     */
     QStringList allEmails();
-    /// Returns all email addresses together with the full username for the user.
+    /*!
+     * \return all email addresses together with the full username for the user.
+     */
     QStringList fullEmails();
-    /// Return true if the given email belongs to the user
+    /*!
+     * \brief fullName
+     * \return true if the given email belongs to the user
+     */
     bool thatIsMe(const QString &email);
 
+    /*!
+     */
     Akonadi::Collection::Id defaultCalendarId() const;
+    /*!
+     */
     void setDefaultCalendarId(Akonadi::Collection::Id);
 
+    /*!
+     */
     void setDayBegins(const QDateTime &dateTime);
+    /*!
+     */
     QDateTime dayBegins() const;
 
 private:

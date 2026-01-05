@@ -47,7 +47,7 @@ class IncidenceViewerPrivate;
  *
  * \endcode
  *
- * @author Tobias Koenig <tokoe@kde.org>
+ * \author Tobias Koenig <tokoe@kde.org>
  * \since 4.5
  */
 class CALENDARSUPPORT_EXPORT IncidenceViewer : public QWidget, public Akonadi::ItemMonitor
@@ -56,6 +56,10 @@ class CALENDARSUPPORT_EXPORT IncidenceViewer : public QWidget, public Akonadi::I
 
 public:
     /*!
+     * \class CalendarSupport::IncidenceViewer
+     * \inmodule CalendarSupport
+     * \inheaderfile CalendarSupport/IncidenceViewer
+     *
      * Creates a new incidence viewer.
      *
      * *param
