@@ -25,6 +25,8 @@ class CollectionSelectionPrivate;
  * \class CalendarSupport::CollectionSelection
  * \inmodule CalendarSupport
  * \inheaderfile CalendarSupport/CollectionSelection
+ *
+ * \brief The CollectionSelection class
  */
 class CALENDARSUPPORT_EXPORT CollectionSelection : public QObject
 {

@@ -22,6 +22,13 @@
 using namespace Qt::Literals::StringLiterals;
 namespace CalendarSupport
 {
+/*!
+ * \class CalendarSupport::CalPrintIncidence
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/CalPrintIncidence
+ *
+ * \brief The CalPrintIncidence class
+ */
 class CALENDARSUPPORT_EXPORT CalPrintIncidence : public CalPrintPluginBase
 {
 public:

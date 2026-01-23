@@ -15,6 +15,8 @@ namespace CalendarSupport
  * \class CalendarSupport::IdentityManager
  * \inmodule CalendarSupport
  * \inheaderfile CalendarSupport/IdentityManager
+ *
+ * \brief The IdentityManager class
  */
 class CALENDARSUPPORT_EXPORT IdentityManager : public KIdentityManagementCore::IdentityManager
 {

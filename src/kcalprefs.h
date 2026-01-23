@@ -15,10 +15,13 @@
 namespace CalendarSupport
 {
 class KCalPrefsPrivate;
+
 /*!
  * \class CalendarSupport::KCalPrefs
  * \inmodule CalendarSupport
  * \inheaderfile CalendarSupport/KCalPrefs
+ *
+ * \brief The KCalPrefs class
  */
 class CALENDARSUPPORT_EXPORT KCalPrefs : public KCalPrefsBase
 {

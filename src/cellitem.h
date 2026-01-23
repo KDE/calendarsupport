@@ -15,6 +15,8 @@ namespace CalendarSupport
  * \class CalendarSupport::CellItem
  * \inmodule CalendarSupport
  * \inheaderfile CalendarSupport/CellItem
+ *
+ * \brief The CellItem class
  */
 class CALENDARSUPPORT_EXPORT CellItem
 {

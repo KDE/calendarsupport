@@ -29,6 +29,10 @@ namespace CalendarSupport
 class IncidenceViewerPrivate;
 
 /*!
+ * \class CalendarSupport::IncidenceViewer
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/IncidenceViewer
+ *
  * \brief A viewer component for incidences in Akonadi.
  *
  * This widgets provides a way to show an incidence from the
