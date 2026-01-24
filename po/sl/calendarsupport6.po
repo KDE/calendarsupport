@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:41+0000\n"
+"POT-Creation-Date: 2026-01-24 00:43+0000\n"
 "PO-Revision-Date: 2025-03-20 07:25+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -1894,52 +1894,52 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr "Oznake"
 
-#: printing/calprintdefaultplugins.h:45
+#: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Print &incidence"
 msgstr "Natisni &pojavitev"
 
-#: printing/calprintdefaultplugins.h:52
+#: printing/calprintdefaultplugins.h:59
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr "Natisne pojavitev na eni strani"
 
-#: printing/calprintdefaultplugins.h:167
+#: printing/calprintdefaultplugins.h:174
 #, kde-format
 msgid "Print da&y"
 msgstr "Natisni &dan"
 
-#: printing/calprintdefaultplugins.h:172
+#: printing/calprintdefaultplugins.h:179
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "Natisne vse dogodke enega dne na eni strani"
 
-#: printing/calprintdefaultplugins.h:226
+#: printing/calprintdefaultplugins.h:233
 #, kde-format
 msgid "Print &week"
 msgstr "Natisni &teden"
 
-#: printing/calprintdefaultplugins.h:231
+#: printing/calprintdefaultplugins.h:238
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Natisne vse dogodke enega tedna na eni strani"
 
-#: printing/calprintdefaultplugins.h:292
+#: printing/calprintdefaultplugins.h:299
 #, kde-format
 msgid "Print mont&h"
 msgstr "Natisni &mesec"
 
-#: printing/calprintdefaultplugins.h:297
+#: printing/calprintdefaultplugins.h:304
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Natisne vse dogodke enega meseca na eni strani"
 
-#: printing/calprintdefaultplugins.h:347
+#: printing/calprintdefaultplugins.h:354
 #, kde-format
 msgid "Print to-&dos"
 msgstr "Natisni &opravila"
 
-#: printing/calprintdefaultplugins.h:352
+#: printing/calprintdefaultplugins.h:359
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Natisne vsa opravila v (drevesnem) seznamu"

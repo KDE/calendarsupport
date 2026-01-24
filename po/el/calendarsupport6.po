@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:41+0000\n"
+"POT-Creation-Date: 2026-01-24 00:43+0000\n"
 "PO-Revision-Date: 2024-09-19 14:03+0300\n"
 "Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -1920,52 +1920,52 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr "Ετικέτες"
 
-#: printing/calprintdefaultplugins.h:45
+#: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Print &incidence"
 msgstr "Εκτύπωση &συμβάντος"
 
-#: printing/calprintdefaultplugins.h:52
+#: printing/calprintdefaultplugins.h:59
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr "Εκτυπώνει του συμβάντος σε μία σελίδα"
 
-#: printing/calprintdefaultplugins.h:167
+#: printing/calprintdefaultplugins.h:174
 #, kde-format
 msgid "Print da&y"
 msgstr "Εκτύπωση &ημέρας"
 
-#: printing/calprintdefaultplugins.h:172
+#: printing/calprintdefaultplugins.h:179
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "Εκτυπώνει όλα τα γεγονότα μίας ημέρας σε μία σελίδα"
 
-#: printing/calprintdefaultplugins.h:226
+#: printing/calprintdefaultplugins.h:233
 #, kde-format
 msgid "Print &week"
 msgstr "Εκτύπωση ε&βδομάδας"
 
-#: printing/calprintdefaultplugins.h:231
+#: printing/calprintdefaultplugins.h:238
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Εκτυπώνει όλα τα γεγονότα μίας εβδομάδας σε μία σελίδα"
 
-#: printing/calprintdefaultplugins.h:292
+#: printing/calprintdefaultplugins.h:299
 #, kde-format
 msgid "Print mont&h"
 msgstr "Εκτύπωση &μήνα"
 
-#: printing/calprintdefaultplugins.h:297
+#: printing/calprintdefaultplugins.h:304
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Εκτυπώνει όλα τα γεγονότα ενός μήνα σε μία σελίδα"
 
-#: printing/calprintdefaultplugins.h:347
+#: printing/calprintdefaultplugins.h:354
 #, kde-format
 msgid "Print to-&dos"
 msgstr "Εκτύπωση των ε&ργασιών προς υλοποίηση"
 
-#: printing/calprintdefaultplugins.h:352
+#: printing/calprintdefaultplugins.h:359
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr ""

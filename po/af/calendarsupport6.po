@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:41+0000\n"
+"POT-Creation-Date: 2026-01-24 00:43+0000\n"
 "PO-Revision-Date: 2002-11-07 11:37+0200\n"
 "Last-Translator: WEB-Translator <http://kde.af.org.za>\n"
 "Language-Team: AFRIKAANS <AF@lia.org.za>\n"
@@ -1769,52 +1769,52 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:45
+#: printing/calprintdefaultplugins.h:52
 #, fuzzy, kde-format
 msgid "Print &incidence"
 msgstr "Besig om te druk"
 
-#: printing/calprintdefaultplugins.h:52
+#: printing/calprintdefaultplugins.h:59
 #, fuzzy, kde-format
 msgid "Prints an incidence on one page"
 msgstr "Besig om te druk"
 
-#: printing/calprintdefaultplugins.h:167
+#: printing/calprintdefaultplugins.h:174
 #, fuzzy, kde-format
 msgid "Print da&y"
 msgstr "Ikalender"
 
-#: printing/calprintdefaultplugins.h:172
+#: printing/calprintdefaultplugins.h:179
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:226
+#: printing/calprintdefaultplugins.h:233
 #, fuzzy, kde-format
 msgid "Print &week"
 msgstr "Besig om te druk"
 
-#: printing/calprintdefaultplugins.h:231
+#: printing/calprintdefaultplugins.h:238
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:292
+#: printing/calprintdefaultplugins.h:299
 #, fuzzy, kde-format
 msgid "Print mont&h"
 msgstr "Vorige Maand"
 
-#: printing/calprintdefaultplugins.h:297
+#: printing/calprintdefaultplugins.h:304
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:347
+#: printing/calprintdefaultplugins.h:354
 #, fuzzy, kde-format
 msgid "Print to-&dos"
 msgstr "(nee tedoenne)\n"
 
-#: printing/calprintdefaultplugins.h:352
+#: printing/calprintdefaultplugins.h:359
 #, fuzzy, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "(nee tedoenne)\n"

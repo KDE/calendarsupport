@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:41+0000\n"
+"POT-Creation-Date: 2026-01-24 00:43+0000\n"
 "PO-Revision-Date: 2011-08-14 14:07-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -1877,53 +1877,53 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.h:45
+#: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Print &incidence"
 msgstr "イベント印刷(&I)"
 
-#: printing/calprintdefaultplugins.h:52
+#: printing/calprintdefaultplugins.h:59
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr "1 ページに 1 つのイベントを印刷します"
 
 # ACCELERATOR changed by translator
-#: printing/calprintdefaultplugins.h:167
+#: printing/calprintdefaultplugins.h:174
 #, kde-format
 msgid "Print da&y"
 msgstr "日単位印刷(&N)"
 
-#: printing/calprintdefaultplugins.h:172
+#: printing/calprintdefaultplugins.h:179
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "1 ページに 1 日のすべてのイベントを印刷します"
 
-#: printing/calprintdefaultplugins.h:226
+#: printing/calprintdefaultplugins.h:233
 #, kde-format
 msgid "Print &week"
 msgstr "週単位印刷(&W)"
 
-#: printing/calprintdefaultplugins.h:231
+#: printing/calprintdefaultplugins.h:238
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "1 ページに 1 週間のすべてのイベントを印刷します"
 
-#: printing/calprintdefaultplugins.h:292
+#: printing/calprintdefaultplugins.h:299
 #, kde-format
 msgid "Print mont&h"
 msgstr "月単位印刷(&H)"
 
-#: printing/calprintdefaultplugins.h:297
+#: printing/calprintdefaultplugins.h:304
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "1 ページに 1 カ月のすべてのイベントを印刷します"
 
-#: printing/calprintdefaultplugins.h:347
+#: printing/calprintdefaultplugins.h:354
 #, kde-format
 msgid "Print to-&dos"
 msgstr "To-Do 印刷(&D)"
 
-#: printing/calprintdefaultplugins.h:352
+#: printing/calprintdefaultplugins.h:359
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "すべての To-Do をツリー形式のリストに印刷します"

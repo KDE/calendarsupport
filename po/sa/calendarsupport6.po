@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:41+0000\n"
+"POT-Creation-Date: 2026-01-24 00:43+0000\n"
 "PO-Revision-Date: 2024-12-20 22:01+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -1853,52 +1853,52 @@ msgctxt "@label to-do categories"
 msgid "Tags"
 msgstr "टैग्स"
 
-#: printing/calprintdefaultplugins.h:45
+#: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Print &incidence"
 msgstr "मुद्रण & घटना"
 
-#: printing/calprintdefaultplugins.h:52
+#: printing/calprintdefaultplugins.h:59
 #, kde-format
 msgid "Prints an incidence on one page"
 msgstr "एकस्मिन् पृष्ठे एकं घटनां मुद्रयति"
 
-#: printing/calprintdefaultplugins.h:167
+#: printing/calprintdefaultplugins.h:174
 #, kde-format
 msgid "Print da&y"
 msgstr "प्रिंट da&y"
 
-#: printing/calprintdefaultplugins.h:172
+#: printing/calprintdefaultplugins.h:179
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "एकस्य दिवसस्य सर्वाणि घटनानि एकस्मिन् पृष्ठे मुद्रयति"
 
-#: printing/calprintdefaultplugins.h:226
+#: printing/calprintdefaultplugins.h:233
 #, kde-format
 msgid "Print &week"
 msgstr "मुद्रण &सप्ताह"
 
-#: printing/calprintdefaultplugins.h:231
+#: printing/calprintdefaultplugins.h:238
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "एकसप्ताहस्य सर्वाणि घटनानि एकस्मिन् पृष्ठे मुद्रयति"
 
-#: printing/calprintdefaultplugins.h:292
+#: printing/calprintdefaultplugins.h:299
 #, kde-format
 msgid "Print mont&h"
 msgstr "मुद्रण मास&ह"
 
-#: printing/calprintdefaultplugins.h:297
+#: printing/calprintdefaultplugins.h:304
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "एकमासस्य सर्वाणि घटनानि एकस्मिन् पृष्ठे मुद्रयति"
 
-#: printing/calprintdefaultplugins.h:347
+#: printing/calprintdefaultplugins.h:354
 #, kde-format
 msgid "Print to-&dos"
 msgstr "मुद्रणं to-&dos"
 
-#: printing/calprintdefaultplugins.h:352
+#: printing/calprintdefaultplugins.h:359
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "सर्वाणि कार्याणि (वृक्षसदृशे) सूचीयां मुद्रयति"
