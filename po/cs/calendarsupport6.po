@@ -375,7 +375,7 @@ msgstr "Nedostupný"
 #: freebusymodel/freebusycalendar.cpp:118
 #, kde-format
 msgid "Tentative"
-msgstr ""
+msgstr "Předběžné"
 
 #: freebusymodel/freebusycalendar.cpp:121
 #, kde-format
