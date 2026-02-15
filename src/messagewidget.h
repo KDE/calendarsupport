@@ -27,18 +27,29 @@ class CALENDARSUPPORT_EXPORT MessageWidget : public KMessageWidget
     Q_OBJECT
 public:
     /*!
+     * Constructs a MessageWidget.
+     * \param parent The parent widget.
      */
     explicit MessageWidget(QWidget *parent = nullptr);
     /*!
+     * Destroys the MessageWidget.
      */
     ~MessageWidget() override;
     /*!
+     * Handles events for watched objects.
+     * \param watched The object being watched.
+     * \param event The event to handle.
+     * \return true if the event was handled, false otherwise.
      */
     [[nodiscard]] bool eventFilter(QObject *watched, QEvent *event) override;
     /*!
+     * Handles the show event for the message widget.
+     * \param event The show event.
      */
     void showEvent(QShowEvent *event) override;
     /*!
+     * Handles the hide event for the message widget.
+     * \param event The hide event.
      */
     void hideEvent(QHideEvent *event) override;
 };

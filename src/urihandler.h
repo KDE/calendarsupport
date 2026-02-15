@@ -22,10 +22,10 @@ class CALENDARSUPPORT_EXPORT UriHandler
 {
 public:
     /*!
-      Process URI (e.g. open mailer, open browser, open incidence viewer etc.).
-        Returns true if handler handled the URI, otherwise false.
-        \a uri The URI of the link that should be handled.
-    */
+     * Processes a URI (e.g., opens mailer, browser, incidence viewer, etc.).
+     * \param uri The URI of the link that should be handled.
+     * \return true if the handler handled the URI, false otherwise.
+     */
     static bool process(const QString &uri);
 };
 

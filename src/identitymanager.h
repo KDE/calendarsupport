@@ -23,7 +23,9 @@ class CALENDARSUPPORT_EXPORT IdentityManager : public KIdentityManagementCore::I
     Q_OBJECT
 public:
     /*!
-     * \brief IdentityManager
+     * Constructs an IdentityManager.
+     * \param parent The parent QObject.
+     * \param name The name of the manager.
      */
     explicit IdentityManager(QObject *parent = nullptr, const char *name = nullptr)
         : KIdentityManagementCore::IdentityManager(true /*readonly*/, parent, name)
@@ -32,9 +34,9 @@ public:
 
 protected:
     /*!
-     * \brief createDefaultIdentity
-     * \param fullName
-     * \param emailAddress
+     * Creates a default identity with the given full name and email address.
+     * \param fullName The full name for the default identity.
+     * \param emailAddress The email address for the default identity.
      */
     void createDefaultIdentity(QString &fullName, QString &emailAddress) override;
 };

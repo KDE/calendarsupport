@@ -38,18 +38,25 @@ class CALENDARSUPPORT_EXPORT ArchiveDialog : public QDialog
     Q_OBJECT
 public:
     /*!
+     * Constructs an ArchiveDialog.
+     * \param calendar The ETM calendar to archive from.
+     * \param changer The incidence changer used to delete events.
+     * \param parent The parent widget.
      */
     ArchiveDialog(const Akonadi::ETMCalendar::Ptr &calendar, Akonadi::IncidenceChanger *changer, QWidget *parent = nullptr);
     /*!
+     * Destroys the ArchiveDialog.
      */
     ~ArchiveDialog() override;
 
 Q_SIGNALS:
     // connected by KODialogManager to CalendarView
     /*!
+     * Emitted when events have been deleted during archival.
      */
     void eventsDeleted();
     /*!
+     * Emitted when the auto-archiving settings have been modified.
      */
     void autoArchivingSettingsModified();
 

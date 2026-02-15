@@ -27,35 +27,53 @@ class CALENDARSUPPORT_EXPORT KCalPrefs : public KCalPrefsBase
 {
     Q_OBJECT
 public:
-    /*! Constructor disabled for public. Use instance() to create a KCalPrefs
-    object. */
+    /*!
+     * Constructs a KCalPrefs object.
+     * Note: Constructor is disabled for public use. Use instance() to create a KCalPrefs object.
+     */
     KCalPrefs();
+    /*!
+     * Destroys the KCalPrefs object.
+     */
     ~KCalPrefs() override;
 
-    /*! Get instance of KCalPrefs. It is made sure that there is only one
-    instance. */
+    /*!
+     * Gets the singleton instance of KCalPrefs.
+     * \return The singleton instance of KCalPrefs.
+     */
     static KCalPrefs *instance();
 
-    /*! Set preferences to default values */
+    /*!
+     * Sets preferences to their default values.
+     */
     void usrSetDefaults() override;
 
-    /*! Read preferences from config file */
+    /*!
+     * Reads preferences from the configuration file.
+     */
     void usrRead() override;
 
-    /*! Write preferences to config file */
+    /*!
+     * Writes preferences to the configuration file.
+     * \return true if successful, false otherwise.
+     */
     bool usrSave() override;
 
-    /*! Fill empty mail fields with default values. */
+    /*!
+     * Fills empty mail fields with default values.
+     */
     void fillMailDefaults();
 
 public:
     // preferences data
     /*!
-     * \brief fullName
-     * \return
+     * Gets the full name from preferences.
+     * \return The full name.
      */
     QString fullName();
     /*!
+     * Gets the email address from preferences.
+     * \return The email address.
      */
     QString email();
     /// Returns all email addresses for the user.
