@@ -164,12 +164,10 @@ msgid "Archive &file:"
 msgstr "Comhad &cartlainne:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label filter for KUrlRequester"
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|Comhaid iCalendar"
+msgstr ""
 
 #: archivedialog.cpp:145
 #, kde-format
@@ -292,11 +290,10 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 
 #: attachmenthandler.cpp:218
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
-msgstr "Sábháil Iatán"
+msgstr ""
 
 #: cellitem.cpp:38
 #, kde-kuit-format
@@ -309,12 +306,10 @@ msgid "There are no items before %1"
 msgstr ""
 
 #: eventarchiver.cpp:128
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "&Cartlannaigh"
+msgstr ""
 
 #: eventarchiver.cpp:156
 #, kde-format
@@ -324,11 +319,10 @@ msgid ""
 msgstr ""
 
 #: eventarchiver.cpp:160
-#, fuzzy, kde-format
-#| msgid "Delete Old Items"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
-msgstr "Scrios Seanmhíreanna"
+msgstr ""
 
 #: eventarchiver.cpp:273
 #, kde-format
@@ -347,10 +341,9 @@ msgid "Cannot write archive. %1"
 msgstr ""
 
 #: eventarchiver.cpp:295
-#, fuzzy, kde-format
-#| msgid "Archive events"
+#, kde-format
 msgid "Archiving events"
-msgstr "Cuir imeachtaí i gcartlann"
+msgstr ""
 
 #: freebusymodel/freebusycalendar.cpp:109
 #, kde-format
@@ -373,45 +366,37 @@ msgid "Tentative"
 msgstr ""
 
 #: freebusymodel/freebusycalendar.cpp:121
-#, fuzzy, kde-format
-#| msgctxt "unknown resource"
-#| msgid "Unknown"
+#, kde-format
 msgid "Unknown"
-msgstr "Anaithnid"
+msgstr ""
 
 #: freebusymodel/freebusyitemmodel.cpp:212
-#, fuzzy, kde-format
-#| msgid "&Attendees"
+#, kde-format
 msgid "Attendee"
-msgstr "R&annpháirtithe"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:125
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
-msgstr "%1%"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:142
-#, fuzzy, kde-format
-#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
-#| msgid "%1 %2 - %3 %4"
+#, kde-format
 msgctxt ""
 "@label A time period duration. It is preceded/followed (based on the "
 "orientation) by the name of the week, see the message above. example: 12 "
 "June, 8:00am to 9:30am"
 msgid "%1 %2, %3 to %4"
-msgstr "%1 %2 - %3 %4"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:163
-#, fuzzy, kde-format
-#| msgctxt "starttime - endtime summary, location"
-#| msgid "%1-%2 %3, %4"
+#, kde-format
 msgctxt ""
 "@label A time period duration. KLocale is used to format the components. "
 "example: Monday, 12 June, 8:00am to 9:30am"
 msgid "%1, %2 %3, %4 to %5"
-msgstr "%1-%2 %3, %4"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:177
 #, kde-format
@@ -420,12 +405,10 @@ msgid "Free Period"
 msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:179
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:182
 #, kde-format
@@ -434,12 +417,10 @@ msgid "End:"
 msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:185
-#, fuzzy, kde-format
-#| msgctxt "incidence category"
-#| msgid "Education"
+#, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
-msgstr "Oideachas"
+msgstr ""
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:15
@@ -618,10 +599,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:90
-#, fuzzy, kde-format
-#| msgid "Use holiday region:"
+#, kde-format
 msgid "Use holiday regions:"
-msgstr "Úsáid réigiún laethanta saoire:"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:91
@@ -834,11 +814,9 @@ msgstr "Raon Dáta agus Ama"
 #: printing/calprinttodoconfig_base.ui:127
 #: printing/calprintweekconfig_base.ui:30
 #: printing/calprintweekconfig_base.ui:49
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Starting date for the print"
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mFromDate)
@@ -861,11 +839,9 @@ msgstr ""
 #: printing/calprintjournalconfig_base.ui:77
 #: printing/calprinttodoconfig_base.ui:111
 #: printing/calprintweekconfig_base.ui:36
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "&Start date:"
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mFromDate)
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mToDate)
@@ -883,11 +859,9 @@ msgstr "2009-01-19"
 #: printing/calprintdayconfig_base.ui:64 printing/calprintdayconfig_base.ui:80
 #: printing/calprintweekconfig_base.ui:64
 #: printing/calprintweekconfig_base.ui:80
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Starting time for the print"
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
@@ -905,11 +879,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Start &time:"
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mFromTime)
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mToTime)
@@ -930,11 +902,9 @@ msgstr "hh:mm"
 #: printing/calprinttodoconfig_base.ui:164
 #: printing/calprintweekconfig_base.ui:110
 #: printing/calprintweekconfig_base.ui:129
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Ending date for the print"
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -968,11 +938,9 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:160
 #: printing/calprintweekconfig_base.ui:144
 #: printing/calprintweekconfig_base.ui:160
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Ending time for the print"
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1157,10 +1125,9 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:159
 #: printing/calprinttodoconfig_base.ui:238
 #: printing/calprintweekconfig_base.ui:283
-#, fuzzy, kde-format
-#| msgid "Description:"
+#, kde-format
 msgid "&Descriptions"
-msgstr "Cur Síos:"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1168,10 +1135,9 @@ msgstr "Cur Síos:"
 #: printing/calprintmonthconfig_base.ui:166
 #: printing/calprinttodoconfig_base.ui:245
 #: printing/calprintweekconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid "Print Item list"
+#, kde-format
 msgid "Print item tags"
-msgstr "Priontáil liosta de mhíreanna"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -1240,12 +1206,10 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:224
 #: printing/calprinttodoconfig_base.ui:391
 #: printing/calprintweekconfig_base.ui:332
-#, fuzzy, kde-format
-#| msgctxt "@title:tab General settings for a folder."
-#| msgid "General"
+#, kde-format
 msgctxt "@title general print settings"
 msgid "General"
-msgstr "Ginearálta"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:338
@@ -1359,11 +1323,9 @@ msgstr "Priontáil &Buntásc"
 #: printing/calprintdefaultplugins.cpp:122
 #: printing/calprintdefaultplugins.cpp:151
 #: printing/calprintdefaultplugins.cpp:170
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Start date: "
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:125
 #: printing/calprintdefaultplugins.cpp:154
@@ -1372,18 +1334,14 @@ msgid "No start date"
 msgstr "Gan dáta tosaigh"
 
 #: printing/calprintdefaultplugins.cpp:130
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event end date and time"
-#| msgid "End date and time"
+#, kde-format
 msgid "End date: "
-msgstr "Dáta agus am deiridh"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:133
-#, fuzzy, kde-format
-#| msgctxt "incidence category"
-#| msgid "Education"
+#, kde-format
 msgid "Duration: "
-msgstr "Oideachas"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:136
 #, kde-format
@@ -1391,9 +1349,6 @@ msgid "1 hour "
 msgid_plural "%1 hours "
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
 
 #: printing/calprintdefaultplugins.cpp:139
 #, kde-format
@@ -1401,9 +1356,6 @@ msgid "1 minute "
 msgid_plural "%1 minutes "
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
 
 #: printing/calprintdefaultplugins.cpp:142
 #, kde-format
@@ -1442,9 +1394,6 @@ msgid "Reminder: "
 msgid_plural "%1 reminders: "
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
 
 #: printing/calprintdefaultplugins.cpp:319
 #, kde-format
@@ -1476,9 +1425,6 @@ msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
 
 #: printing/calprintdefaultplugins.cpp:342
 #, kde-format
@@ -1486,9 +1432,6 @@ msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
 
 #: printing/calprintdefaultplugins.cpp:345
 #, kde-format
@@ -1496,18 +1439,13 @@ msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
 
 #: printing/calprintdefaultplugins.cpp:349
 #: printing/calprintdefaultplugins.cpp:632
-#, fuzzy, kde-format
-#| msgctxt "Spacer for the joined list of categories"
-#| msgid ", "
+#, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
-msgstr ", "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:354
 #, kde-format
@@ -1515,13 +1453,9 @@ msgid "Organizer: "
 msgstr "Eagraí: "
 
 #: printing/calprintdefaultplugins.cpp:367
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "incidence category: a lengthy time away from work or school, a trip "
-#| "abroad, or simply a pleasure trip away from home"
-#| msgid "Vacation"
+#, kde-format
 msgid "Location: "
-msgstr "Saoire"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:429
 #, kde-format
@@ -1529,10 +1463,9 @@ msgid "Description:"
 msgstr "Cur Síos:"
 
 #: printing/calprintdefaultplugins.cpp:457
-#, fuzzy, kde-format
-#| msgid "Notes"
+#, kde-format
 msgid "Notes:"
-msgstr "Nótaí"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:469
 #, kde-format
@@ -1545,9 +1478,6 @@ msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
 
 #: printing/calprintdefaultplugins.cpp:488
 #, kde-format
@@ -1556,20 +1486,16 @@ msgid "none"
 msgstr "gan stádas"
 
 #: printing/calprintdefaultplugins.cpp:490
-#, fuzzy, kde-format
-#| msgctxt "unknown resource"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown status"
 msgid "unknown"
-msgstr "Anaithnid"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:497
-#, fuzzy, kde-format
-#| msgctxt "@title:column calendar event start date and time"
-#| msgid "Start Date and Time"
+#, kde-format
 msgctxt "subitem start date"
 msgid "Start Date: %1\n"
-msgstr "Dáta agus Am Tosaigh"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:500
 #, kde-format
@@ -1602,12 +1528,10 @@ msgid "Status: %1\n"
 msgstr "Stádas: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:525
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item priority"
-#| msgid "Priority"
+#, kde-format
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
-msgstr "Tosaíocht"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:526
 #, kde-format
@@ -1616,21 +1540,16 @@ msgid "Secrecy: %1\n"
 msgstr "Rúndacht: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:544
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgid "No Attachments"
-msgstr "Sábháil Iatán"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:547
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
-msgstr[0] "Sábháil Iatán"
-msgstr[1] "Sábháil Iatán"
-msgstr[2] "Sábháil Iatán"
-msgstr[3] "Sábháil Iatán"
-msgstr[4] "Sábháil Iatán"
+msgstr[0] ""
+msgstr[1] ""
 
 #: printing/calprintdefaultplugins.cpp:553
 #, kde-format
@@ -1649,9 +1568,6 @@ msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
 
 #: printing/calprintdefaultplugins.cpp:584
 #, kde-format
@@ -1705,12 +1621,10 @@ msgstr "%1, %2"
 
 #: printing/calprintdefaultplugins.cpp:727 printing/calprintpluginbase.cpp:935
 #: printing/calprintpluginbase.cpp:1059
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
-msgstr "%1, %2"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:782
 #, kde-format
@@ -1726,70 +1640,54 @@ msgid "%1–%2"
 msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1231
-#, fuzzy, kde-format
-#| msgctxt "date from - to (week number)"
-#| msgid "%1 - %2 (Week %3)"
+#, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
-msgstr "%1 - %2 (Seachtain %3)"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1233
-#, fuzzy, kde-format
-#| msgctxt "date from - to (week number)"
-#| msgid "%1 - %2 (Week %3)"
+#, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
 "%1–%2\n"
 "(Week %3)"
-msgstr "%1 - %2 (Seachtain %3)"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1418
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
-msgstr "%1 %2 - %3"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1529
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event summary"
-#| msgid "Summary"
+#, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
-msgstr "Achoimre"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1530
-#, fuzzy, kde-format
-#| msgctxt "@title:column calendar event start date and time"
-#| msgid "Start Date and Time"
+#, kde-format
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
-msgstr "Dáta agus Am Tosaigh"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1531
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item due date and time"
-#| msgid "Due Date and Time"
+#, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
-msgstr "Dáta agus Am Dlite"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1532
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item priority"
-#| msgid "Priority"
+#, kde-format
 msgctxt "@option sort by priority"
 msgid "Priority"
-msgstr "Tosaíocht"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1533
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item completion in percent"
-#| msgid "Complete"
+#, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
-msgstr "Críochnaithe"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1534
 #, kde-format
@@ -1804,19 +1702,15 @@ msgid "Ascending"
 msgstr "Ag dul suas"
 
 #: printing/calprintdefaultplugins.cpp:1541
-#, fuzzy, kde-format
-#| msgctxt "@option sort in descreasing order"
-#| msgid "Descending"
+#, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
-msgstr "Ag dul síos"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1554
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "&To-dos"
+#, kde-format
 msgid "To-do list"
-msgstr "&Tascanna"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1606
 #: printing/calprintpluginbase.cpp:1714
@@ -1825,11 +1719,9 @@ msgid "%1%"
 msgstr "%1%"
 
 #: printing/calprintdefaultplugins.cpp:1617
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item priority"
-#| msgid "Priority"
+#, kde-format
 msgid "Priority"
-msgstr "Tosaíocht"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1627
 #, kde-format
@@ -1838,20 +1730,16 @@ msgid "Due"
 msgstr "Spriocdháta"
 
 #: printing/calprintdefaultplugins.cpp:1637
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1647
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item completion in percent"
-#| msgid "Complete"
+#, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
-msgstr "Críochnaithe"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1657
 #, kde-format
@@ -1900,10 +1788,9 @@ msgid "Prints all events of one month on one page"
 msgstr ""
 
 #: printing/calprintdefaultplugins.h:354
-#, fuzzy, kde-format
-#| msgid "Archive to-dos"
+#, kde-format
 msgid "Print to-&dos"
-msgstr "Cuir tascanna i gcartlann"
+msgstr ""
 
 #: printing/calprintdefaultplugins.h:359
 #, kde-format
@@ -2078,10 +1965,9 @@ msgstr "&Nótaí, fomhíreanna"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:72
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgid "Print the attachments"
-msgstr "Sábháil Iatán"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
@@ -2093,11 +1979,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:78
-#, fuzzy, kde-format
-#| msgctxt "filename for an unnamed attachment"
-#| msgid "attachment.1"
+#, kde-format
 msgid "Attach&ments"
-msgstr "iatán.1"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:97
@@ -2175,10 +2059,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintmonthconfig_base.ui:33
-#, fuzzy, kde-format
-#| msgid "Print mont&h"
+#, kde-format
 msgid "Sta&rt month:"
-msgstr "Priontáil &mí"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, mFromMonth)
 #: printing/calprintmonthconfig_base.ui:43
@@ -2299,11 +2182,10 @@ msgid "Print week &numbers"
 msgstr ""
 
 #: printing/calprintpluginbase.cpp:143
-#, fuzzy, kde-format
-#| msgid "This printing style does not have any configuration options."
+#, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
-msgstr "Níl aon roghanna cumraíochta ag an stíl phriontála seo."
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:299
 #, kde-format
@@ -2312,14 +2194,9 @@ msgid ","
 msgstr ","
 
 #: printing/calprintpluginbase.cpp:311
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "incidence category: official or unofficial observance of religious/"
-#| "national/cultural/other significance, often accompanied by celebrations "
-#| "or festivities"
-#| msgid "Holiday"
+#, kde-format
 msgid "Holiday"
-msgstr "Lá Saoire"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:612
 #, kde-format
@@ -2340,12 +2217,10 @@ msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
 #: printing/calprintpluginbase.cpp:994
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
-msgstr "%1 %2 - %3"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1120
 #, kde-format
@@ -2360,27 +2235,21 @@ msgid "%1 (Due: %2)"
 msgstr "%1 (Dlite: %2)"
 
 #: printing/calprintpluginbase.cpp:1132
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "&To-dos"
+#, kde-format
 msgid "To-do: %1"
-msgstr "&Tascanna"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1868
-#, fuzzy, kde-format
-#| msgctxt "Date range: Month dayStart - dayEnd"
-#| msgid "%1 %2 - %3"
+#, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
-msgstr "%1 %2 - %3"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1874
-#, fuzzy, kde-format
-#| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
-#| msgid "%1 %2 - %3 %4"
+#, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
-msgstr "%1 %2 - %3 %4"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprinttodoconfig_base.ui:17
@@ -2429,11 +2298,9 @@ msgstr "&Teideal:"
 
 #. i18n: ectx: property (text), widget (QLineEdit, mTitle)
 #: printing/calprinttodoconfig_base.ui:48
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "&To-dos"
+#, kde-format
 msgid "To-do List"
-msgstr "&Tascanna"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprinttodoconfig_base.ui:57
@@ -2449,10 +2316,9 @@ msgstr "Priontáil g&ach tasc"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintUnfinished)
 #: printing/calprinttodoconfig_base.ui:73
-#, fuzzy, kde-format
-#| msgid "Print &unfinished to-dos only"
+#, kde-format
 msgid "Print &uncompleted to-dos only"
-msgstr "Priontáil tascanna &gan chríochnú amháin"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintDueRange)
 #: printing/calprinttodoconfig_base.ui:80
@@ -2462,10 +2328,9 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:258
-#, fuzzy, kde-format
-#| msgid "Print item descriptions"
+#, kde-format
 msgid "Print item priorities"
-msgstr "Priontáil cur síos ar mhíreanna"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:261
@@ -2475,18 +2340,15 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item priority"
-#| msgid "Priority"
+#, kde-format
 msgid "&Priority"
-msgstr "Tosaíocht"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:274
-#, fuzzy, kde-format
-#| msgid "Print the attendees"
+#, kde-format
 msgid "Print item start dates"
-msgstr "Priontáil na rannpháirtithe"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:277
@@ -2498,18 +2360,15 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:280
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "&Start date"
-msgstr "Dáta agus am tosaigh"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
-#, fuzzy, kde-format
-#| msgid "Print item descriptions"
+#, kde-format
 msgid "Print item due dates"
-msgstr "Priontáil cur síos ar mhíreanna"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:290
@@ -2519,17 +2378,15 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293
-#, fuzzy, kde-format
-#| msgid "Due date"
+#, kde-format
 msgid "Du&e date"
-msgstr "Spriocdháta"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
-#, fuzzy, kde-format
-#| msgid "Print item descriptions"
+#, kde-format
 msgid "Print item completion percentage"
-msgstr "Priontáil cur síos ar mhíreanna"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:306
@@ -2541,10 +2398,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
-#, fuzzy, kde-format
-#| msgid "Per&centage completed"
+#, kde-format
 msgid "Percentage co&mpleted"
-msgstr "&Céatadán críochnaithe"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
 #: printing/calprinttodoconfig_base.ui:328
@@ -2626,10 +2482,9 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
 #: printing/calprintyearconfig_base.ui:21
-#, fuzzy, kde-format
-#| msgid "Date && Time Range"
+#, kde-format
 msgid "Date Range"
-msgstr "Raon Dáta agus Ama"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mYearLabel)
 #: printing/calprintyearconfig_base.ui:32
@@ -2639,11 +2494,9 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
 #: printing/calprintyearconfig_base.ui:99
-#, fuzzy, kde-format
-#| msgctxt "@title:tab General settings for a folder."
-#| msgid "General"
+#, kde-format
 msgid "General"
-msgstr "Ginearálta"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mPagesLabel)
 #: printing/calprintyearconfig_base.ui:105
@@ -2686,17 +2539,14 @@ msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: printing/journalprint.cpp:128
-#, fuzzy, kde-format
-#| msgctxt "incidence category"
-#| msgid "Personal"
+#, kde-format
 msgid "Person: %1"
-msgstr "Pearsanta"
+msgstr ""
 
 #: printing/journalprint.cpp:158
-#, fuzzy, kde-format
-#| msgid "Journal"
+#, kde-format
 msgid "Journal entries"
-msgstr "Dialann"
+msgstr ""
 
 #: printing/journalprint.h:33
 #, kde-format
@@ -2719,11 +2569,10 @@ msgid "Prints a calendar for an entire year"
 msgstr ""
 
 #: utils.cpp:291
-#, fuzzy, kde-format
-#| msgid "Select Calendar"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
-msgstr "Roghnaigh Féilire"
+msgstr ""
 
 #: utils.cpp:292
 #, kde-format
@@ -2731,12 +2580,10 @@ msgid "Select the calendar where this item will be stored."
 msgstr ""
 
 #: utils.cpp:397
-#, fuzzy, kde-format
-#| msgctxt "%1 is the folder name"
-#| msgid "%1 CalDav Calendar"
+#, kde-format
 msgctxt "this is the default calendar"
 msgid "%1 (Default Calendar)"
-msgstr "Féilire CalDav %1"
+msgstr ""
 
 #: utils.cpp:408
 #, kde-format
@@ -2745,24 +2592,20 @@ msgid "Virtual"
 msgstr ""
 
 #: utils.cpp:410
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Folder type:"
-msgstr "Féilire"
+msgstr ""
 
 #: utils.cpp:420
-#, fuzzy, kde-format
-#| msgctxt "no status"
-#| msgid "none"
+#, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
-msgstr "gan stádas"
+msgstr ""
 
 #: utils.cpp:423
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Content type:"
-msgstr "Féilire"
+msgstr ""
 
 #: utils.cpp:430
 #, kde-format
@@ -2818,12 +2661,10 @@ msgid "other"
 msgstr ""
 
 #: utils.cpp:458
-#, fuzzy, kde-format
-#| msgctxt "no status"
-#| msgid "none"
+#, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
-msgstr "gan stádas"
+msgstr ""
 
 #: utils.cpp:461
 #, kde-format
@@ -2846,312 +2687,3 @@ msgstr "%1 (%2)"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
-
-#, fuzzy
-#~| msgid "&Title:"
-#~ msgctxt "@label specify the title for this note"
-#~ msgid "Title:"
-#~ msgstr "&Teideal:"
-
-#, fuzzy
-#~| msgid "Text"
-#~ msgctxt "@label specify the text for this note"
-#~ msgid "Text:"
-#~ msgstr "Téacs"
-
-#~ msgctxt "@option sort by title"
-#~ msgid "Title"
-#~ msgstr "Teideal"
-
-#, fuzzy
-#~| msgctxt "@title:column todo item due date and time"
-#~| msgid "Due Date and Time"
-#~ msgctxt "@option do not specify a date"
-#~ msgid "No Date"
-#~ msgstr "Dáta agus Am Dlite"
-
-#~ msgid "Calendar"
-#~ msgstr "Féilire"
-
-#~ msgid "Tasks"
-#~ msgstr "Tascanna"
-
-#~ msgid "Journal"
-#~ msgstr "Dialann"
-
-#~ msgid "Notes"
-#~ msgstr "Nótaí"
-
-#~ msgctxt "%1 is folder contents"
-#~ msgid "My Kolab %1"
-#~ msgstr "Mo Kolab %1"
-
-#~ msgctxt "%1 is folder name, %2 is folder contents"
-#~ msgid "Shared Kolab %1 %2"
-#~ msgstr "Kolab Roinnte %1 %2"
-
-#~ msgctxt "%1 is folder owner name, %2 is folder contents"
-#~ msgid "%1's Kolab %2"
-#~ msgstr "Kolab de chuid %1 %2"
-
-#~ msgctxt "%1 is folder contents"
-#~ msgid "Kolab %1"
-#~ msgstr "Kolab %1"
-
-#~ msgctxt "%1 is folder owner name, %2 is folder name"
-#~ msgid "%1's %2"
-#~ msgstr "%2 ag %1"
-
-#~ msgctxt "%1 is folder contents"
-#~ msgid "Google %1"
-#~ msgstr "Google %1"
-
-#~ msgid "My %1"
-#~ msgstr "Mo %1"
-
-#~ msgctxt "unknown resource"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgctxt "incidence category: appointment"
-#~ msgid "Appointment"
-#~ msgstr "Coinne"
-
-#~ msgctxt "incidence category"
-#~ msgid "Meeting"
-#~ msgstr "Cruinniú"
-
-#~ msgctxt "incidence category: phone call"
-#~ msgid "Phone Call"
-#~ msgstr "Glao Fóin"
-
-#~ msgctxt "incidence category"
-#~ msgid "Education"
-#~ msgstr "Oideachas"
-
-#~ msgctxt ""
-#~ "incidence category: official or unofficial observance of religious/"
-#~ "national/cultural/other significance, often accompanied by celebrations "
-#~ "or festivities"
-#~ msgid "Holiday"
-#~ msgstr "Lá Saoire"
-
-#~ msgctxt ""
-#~ "incidence category: a lengthy time away from work or school, a trip "
-#~ "abroad, or simply a pleasure trip away from home"
-#~ msgid "Vacation"
-#~ msgstr "Saoire"
-
-#~ msgctxt ""
-#~ "incidence category: examples: anniversary of historical or personal "
-#~ "event; big date; remembrance, etc"
-#~ msgid "Special Occasion"
-#~ msgstr "Ócáid Speisialta"
-
-#~ msgctxt "incidence category"
-#~ msgid "Personal"
-#~ msgstr "Pearsanta"
-
-#~ msgctxt ""
-#~ "incidence category: typically associated with leaving home for business, "
-#~ "and not pleasure"
-#~ msgid "Travel"
-#~ msgstr "Taisteal"
-
-#~ msgctxt "incidence category"
-#~ msgid "Miscellaneous"
-#~ msgstr "Rudaí éagsúla"
-
-#~ msgctxt "incidence category"
-#~ msgid "Birthday"
-#~ msgstr "Lá Breithe"
-
-#, fuzzy
-#~| msgctxt "@option:check"
-#~| msgid "&Events"
-#~ msgid "&Events"
-#~ msgstr "&Imeachtaí"
-
-#, fuzzy
-#~| msgctxt "@option:check"
-#~| msgid "&To-dos"
-#~ msgid "&To-dos"
-#~ msgstr "&Tascanna"
-
-#, fuzzy
-#~| msgid "Journal"
-#~ msgid "&Journals"
-#~ msgstr "Dialann"
-
-#~ msgid "Print Item list"
-#~ msgstr "Priontáil liosta de mhíreanna"
-
-#~ msgctxt "date from-to"
-#~ msgid "%1 - %2"
-#~ msgstr "%1 - %2"
-
-#~ msgctxt ""
-#~ "date from-\n"
-#~ "to"
-#~ msgid ""
-#~ "%1 -\n"
-#~ "%2"
-#~ msgstr ""
-#~ "%1 -\n"
-#~ "%2"
-
-#~ msgctxt ""
-#~ "date from -\n"
-#~ "to (week number)"
-#~ msgid ""
-#~ "%1 -\n"
-#~ "%2 (Week %3)"
-#~ msgstr ""
-#~ "%1 -\n"
-#~ "%2 (Seachtain %3)"
-
-#~ msgctxt "date from - to"
-#~ msgid "%1 - %2"
-#~ msgstr "%1 - %2"
-
-#~ msgctxt ""
-#~ "date from -\n"
-#~ "to"
-#~ msgid ""
-#~ "%1 -\n"
-#~ "%2"
-#~ msgstr ""
-#~ "%1 -\n"
-#~ "%2"
-
-#~ msgid "Exclude confidential items"
-#~ msgstr "Ná cuir imeachtaí faoi rún san áireamh"
-
-#~ msgid "Exclude private items"
-#~ msgstr "Ná cuir imeachtaí príobháideacha san áireamh"
-
-#, fuzzy
-#~| msgid "Exclude confidential items"
-#~ msgid "Exclude &confidential"
-#~ msgstr "Ná cuir imeachtaí faoi rún san áireamh"
-
-#, fuzzy
-#~| msgid "Description:"
-#~ msgid "&Description"
-#~ msgstr "Cur Síos:"
-
-#~ msgid "Today's Events"
-#~ msgstr "Imeachtaí an Lae Inniu"
-
-#~ msgid "Include &descriptions"
-#~ msgstr "Cuir &cur síos san áireamh"
-
-#~ msgctxt "@label to-do summary"
-#~ msgid "Title"
-#~ msgstr "Teideal"
-
-#~ msgid "Categories: "
-#~ msgstr "Catagóirí: "
-
-#~ msgctxt "@title:column, calendar event start date and time"
-#~ msgid "Start date and time"
-#~ msgstr "Dáta agus am tosaigh"
-
-#~ msgctxt "@title:column, calendar event end date and time"
-#~ msgid "End date and time"
-#~ msgstr "Dáta agus am deiridh"
-
-#~ msgctxt "@title:column, calendar event type"
-#~ msgid "Type"
-#~ msgstr "Cineál"
-
-#, fuzzy
-#~| msgctxt "unknown resource"
-#~| msgid "Unknown"
-#~ msgctxt "unknown calendar type"
-#~ msgid "unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgid "No item selected."
-#~ msgstr "Níl aon rud roghnaithe."
-
-#~ msgctxt "filename for an unnamed attachment"
-#~ msgid "attachment.1"
-#~ msgstr "iatán.1"
-
-#~ msgid "%1 already exists. Do you want to overwrite it?"
-#~ msgstr "Tá %1 ann cheana. An bhfuil fonn ort scríobh air?"
-
-#~ msgctxt "@title:tab General settings for a folder."
-#~ msgid "General"
-#~ msgstr "Ginearálta"
-
-#~ msgctxt "@label:textbox Name of the folder."
-#~ msgid "&Name:"
-#~ msgstr "Ai&nm:"
-
-#~ msgctxt "subitem Priority: N"
-#~ msgid "Priority: <numid>%1</numid>\n"
-#~ msgstr "Tosaíocht: <numid>%1</numid>\n"
-
-#~ msgctxt "weekday, shortmonthname daynumber"
-#~ msgid "%1, %2 <numid>%3</numid>"
-#~ msgstr "%1, %2 <numid>%3</numid>"
-
-#~ msgid "Display Options"
-#~ msgstr "Roghanna Taispeána:"
-
-#~ msgctxt "@title:column calendar event summary"
-#~ msgid "Summary"
-#~ msgstr "Achoimre"
-
-#~ msgctxt "@title:column calendar event end date and time"
-#~ msgid "End Date and Time"
-#~ msgstr "Dáta agus Am Deiridh"
-
-#~ msgctxt "@title:column calendar event type"
-#~ msgid "Type"
-#~ msgstr "Cineál"
-
-#~ msgctxt "@title:column calendar title"
-#~ msgid "Calendar"
-#~ msgstr "Féilire"
-
-#~ msgid "Unknown Name"
-#~ msgstr "Ainm Anaithnid"
-
-#~ msgid "unknown@nowhere"
-#~ msgstr "duineéigin@áitarbith"
-
-#~ msgid "Invalid URL"
-#~ msgstr "URL neamhbhailí"
-
-#~ msgid "Error message: %1"
-#~ msgstr "Teachtaireacht earráide: %1"
-
-#~ msgid "Do Not Send"
-#~ msgstr "Ná Seol"
-
-#~ msgid "Send Messages"
-#~ msgstr "Seol Teachtaireachtaí"
-
-#~ msgid "Select Addresses"
-#~ msgstr "Roghnaigh Seoltaí"
-
-#~ msgid "(EmptyName)"
-#~ msgstr "(AinmFolamh)"
-
-#~ msgid "(EmptyEmail)"
-#~ msgstr "(SeoladhFolamh)"
-
-#~ msgid "Forwarding"
-#~ msgstr "Cur Ar Aghaidh"
-
-#~ msgid "Unable to forward the item '%1'"
-#~ msgstr "Níorbh fhéidir mír '%1' a chur ar aghaidh"
-
-#~ msgid "Publishing"
-#~ msgstr "Foilsiú"
-
-#~ msgid "Unable to publish the item '%1'"
-#~ msgstr "Níorbh fhéidir mír '%1' a fhoilsiú"
