@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Seif Abaza <abazuos@gmail.com	>, 2009.
-# SPDX-FileCopyrightText: 2009, 2021, 2022, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2009, 2021, 2022, 2024, 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:41+0000\n"
-"PO-Revision-Date: 2025-08-09 22:53+0400\n"
+"PO-Revision-Date: 2026-02-24 22:49+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -1966,8 +1966,8 @@ msgid ""
 "\". You can also default to the orientation best suited to the selected "
 "style or to your printer's default setting."
 msgstr ""
-"اختر فيما إذا أردت طباعة النّسخة ”بالطّول“ أو ”بالعرض“. يمكنك أيضًا أن تستخدم "
-"الخيار المبدئيّ الذي يناسب النّمط المحدّد أو أخذ الإعداد المبدئيّ من الطّابعة."
+"اختر فيما إذا أردت طباعة  ”طولي“ أو ”عرضي“. يمكنك أيضًا أن تستخدم الخيار "
+"المبدئيّ الذي يناسب النّمط المحدّد أو أخذ الإعداد المبدئيّ من الطّابعة."
 
 #: printing/calprinter.cpp:199
 #, kde-format
@@ -1985,13 +1985,13 @@ msgstr "استخدم مبدئيّات الطّابعة"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Portrait"
-msgstr "بالطّول"
+msgstr "طولي"
 
 #: printing/calprinter.cpp:202
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
-msgstr "بالعرض"
+msgstr "عرضي"
 
 #: printing/calprinter.cpp:224
 #, kde-format
