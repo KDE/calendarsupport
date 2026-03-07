@@ -393,8 +393,10 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     if (displayName.isEmpty()) {
         displayName = coll.name();
     }
-    if (coll.id() == CalendarSupport::KCalPrefs::instance()->defaultCalendarId()) {
-        displayName = i18nc("this is the default calendar", "%1 (Default Calendar)", displayName);
+    if (coll.id() == CalendarSupport::KCalPrefs::instance()->defaultEventCalendarId()) {
+        displayName = i18nc("this is the default event calendar", "%1 (Default Event Calendar)", displayName);
+    } else if (coll.id() == CalendarSupport::KCalPrefs::instance()->defaultTodoCalendarId()) {
+        displayName = i18nc("this is the default todo calendar", "%1 (Default Todo Calendar)", displayName);
     }
     str += QLatin1StringView("<b>") + displayName + QLatin1StringView("</b>");
     str += QLatin1StringView("<hr>");

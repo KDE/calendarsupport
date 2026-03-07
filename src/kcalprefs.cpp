@@ -36,7 +36,8 @@ public:
 
     ~KCalPrefsPrivate() = default;
 
-    Akonadi::Collection::Id mDefaultCalendarId{-1};
+    Akonadi::Collection::Id mDefaultEventCalendarId{-1};
+    Akonadi::Collection::Id mDefaultTodoCalendarId{-1};
 
     const QColor mDefaultCategoryColor;
     QDateTime mDayBegins;
@@ -81,16 +82,25 @@ void KCalPrefs::usrSetDefaults()
     KConfigSkeleton::usrSetDefaults();
 }
 
-Akonadi::Collection::Id KCalPrefs::defaultCalendarId() const
+Akonadi::Collection::Id KCalPrefs::defaultEventCalendarId() const
 {
-    return d->mDefaultCalendarId;
+    return d->mDefaultEventCalendarId;
 }
 
-void KCalPrefs::setDefaultCalendarId(Akonadi::Collection::Id id)
+void KCalPrefs::setDefaultEventCalendarId(Akonadi::Collection::Id id)
 {
-    d->mDefaultCalendarId = id;
+    d->mDefaultEventCalendarId = id;
 }
 
+Akonadi::Collection::Id KCalPrefs::defaultTodoCalendarId() const
+{
+    return d->mDefaultTodoCalendarId;
+}
+
+void KCalPrefs::setDefaultTodoCalendarId(Akonadi::Collection::Id id)
+{
+    d->mDefaultTodoCalendarId = id;
+}
 void KCalPrefs::fillMailDefaults()
 {
     userEmailItem()->swapDefault();
@@ -111,8 +121,12 @@ void KCalPrefs::usrRead()
     KConfigGroup generalConfig(config(), u"General"_s);
 
     KConfigGroup defaultCalendarConfig(config(), u"Calendar"_s);
-    d->mDefaultCalendarId = defaultCalendarConfig.readEntry("Default Calendar", -1);
-
+    d->mDefaultEventCalendarId = defaultCalendarConfig.readEntry("Default Event Calendar", -1);
+    // fallback to the old setting
+    if (d->mDefaultEventCalendarId == -1) {
+        d->mDefaultEventCalendarId = defaultCalendarConfig.readEntry("Default Calendar", -1);
+    }
+    d->mDefaultTodoCalendarId = defaultCalendarConfig.readEntry("Default Todo Calendar", -1);
 #if 0
     config()->setGroup("FreeBusy");
     if (mRememberRetrievePw) {
@@ -139,7 +153,8 @@ bool KCalPrefs::usrSave()
 #endif
 
     KConfigGroup defaultCalendarConfig(config(), u"Calendar"_s);
-    defaultCalendarConfig.writeEntry("Default Calendar", defaultCalendarId());
+    defaultCalendarConfig.writeEntry("Default Event Calendar", defaultEventCalendarId());
+    defaultCalendarConfig.writeEntry("Default Todo Calendar", defaultTodoCalendarId());
 
     return KConfigSkeleton::usrSave();
 }

@@ -92,11 +92,24 @@ public:
     bool thatIsMe(const QString &email);
 
     /*!
+     * Gets the collection Id for the default events calendar.
      */
-    Akonadi::Collection::Id defaultCalendarId() const;
+    Akonadi::Collection::Id defaultEventCalendarId() const;
+
     /*!
+     * Sets the collection Id for the events calendar.
      */
-    void setDefaultCalendarId(Akonadi::Collection::Id);
+    void setDefaultEventCalendarId(Akonadi::Collection::Id);
+
+    /*!
+     * Gets the collection Id for the default todo calendar.
+     */
+    Akonadi::Collection::Id defaultTodoCalendarId() const;
+
+    /*!
+     * Sets the collection Id for the todo calendar.
+     */
+    void setDefaultTodoCalendarId(Akonadi::Collection::Id);
 
     /*!
      */
