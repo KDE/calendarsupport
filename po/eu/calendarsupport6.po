@@ -1,7 +1,7 @@
 # Translation for calendarsupport.po to Euskara/Basque (eu).
 # Copyright (C) 2003-2025 This file is copyright:
 # This file is distributed under the same license as the calendarsupport package.
-# SPDX-FileCopyrightText: 2023, 2024, 2025 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Marcos  <marcos@euskalgnu.org>, 2003, 2005.
@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-24 00:43+0000\n"
-"PO-Revision-Date: 2025-07-13 15:20+0200\n"
+"POT-Creation-Date: 2026-03-08 00:46+0000\n"
+"PO-Revision-Date: 2026-03-07 20:41+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.04.3\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -2609,7 +2609,7 @@ msgstr "Ordenatzeko-eremua:"
 #: printing/calprinttodoconfig_base.ui:366
 #, kde-format
 msgid "Sort direction:"
-msgstr "Ordenatzeko-norantza:"
+msgstr "Ordenaren norabidea:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mConnectSubTodos)
 #: printing/calprinttodoconfig_base.ui:397
@@ -2782,109 +2782,119 @@ msgid "Select the calendar where this item will be stored."
 msgstr "Hautatu elementu hau gorde behar duen egutegia."
 
 #: utils.cpp:397
-#, kde-format
-msgctxt "this is the default calendar"
-msgid "%1 (Default Calendar)"
+#, fuzzy, kde-format
+#| msgctxt "this is the default calendar"
+#| msgid "%1 (Default Calendar)"
+msgctxt "this is the default event calendar"
+msgid "%1 (Default Event Calendar)"
 msgstr "%1 (egutegi lehenetsia)"
 
-#: utils.cpp:408
+#: utils.cpp:399
+#, fuzzy, kde-format
+#| msgctxt "this is the default calendar"
+#| msgid "%1 (Default Calendar)"
+msgctxt "this is the default todo calendar"
+msgid "%1 (Default Todo Calendar)"
+msgstr "%1 (egutegi lehenetsia)"
+
+#: utils.cpp:410
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr "alegiazkoa"
 
-#: utils.cpp:410
+#: utils.cpp:412
 #, kde-format
 msgid "Folder type:"
 msgstr "Karpeta mota:"
 
-#: utils.cpp:420
+#: utils.cpp:422
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "bat ere ez"
 
-#: utils.cpp:423
+#: utils.cpp:425
 #, kde-format
 msgid "Content type:"
 msgstr "Eduki mota:"
 
-#: utils.cpp:430
+#: utils.cpp:432
 #, kde-format
 msgid "Rights:"
 msgstr "Eskubideak:"
 
-#: utils.cpp:433
+#: utils.cpp:435
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "soilik irakurtzea"
 
-#: utils.cpp:435
+#: utils.cpp:437
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "irakurtzea+idaztea"
 
-#: utils.cpp:443
+#: utils.cpp:445
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr "denak"
 
-#: utils.cpp:446
+#: utils.cpp:448
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "audioa"
 
-#: utils.cpp:448
+#: utils.cpp:450
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "azaltzea"
 
-#: utils.cpp:450
+#: utils.cpp:452
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "e-posta"
 
-#: utils.cpp:452
+#: utils.cpp:454
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "prozedura"
 
-#: utils.cpp:454
+#: utils.cpp:456
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr "bestelakoa"
 
-#: utils.cpp:458
+#: utils.cpp:460
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "bat ere ez"
 
-#: utils.cpp:461
+#: utils.cpp:463
 #, kde-format
 msgid "Blocked Reminders:"
 msgstr "Blokeatutako oroigarriak:"
 
-#: utils.cpp:527
+#: utils.cpp:529
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:529
+#: utils.cpp:531
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:534
+#: utils.cpp:536
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

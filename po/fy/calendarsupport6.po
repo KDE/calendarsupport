@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-24 00:43+0000\n"
+"POT-Creation-Date: 2026-03-08 00:46+0000\n"
 "PO-Revision-Date: 2007-03-28 20:53+0200\n"
 "Last-Translator: Rinse de Vries <rinsedevries@kde.nl>\n"
 "Language-Team: Frysk <kde-i18n-fry@kde.org>\n"
@@ -2956,122 +2956,129 @@ msgstr "Stelt de eindatum yn foar dizze taak."
 #: utils.cpp:397
 #, fuzzy, kde-format
 #| msgid "Use as &Default Calendar"
-msgctxt "this is the default calendar"
-msgid "%1 (Default Calendar)"
+msgctxt "this is the default event calendar"
+msgid "%1 (Default Event Calendar)"
 msgstr "As stan&dert aginda brûke"
 
-#: utils.cpp:408
+#: utils.cpp:399
+#, fuzzy, kde-format
+#| msgid "Use as &Default Calendar"
+msgctxt "this is the default todo calendar"
+msgid "%1 (Default Todo Calendar)"
+msgstr "As stan&dert aginda brûke"
+
+#: utils.cpp:410
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr ""
 
-#: utils.cpp:410
+#: utils.cpp:412
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Folder type:"
 msgstr "Kalinder"
 
-#: utils.cpp:420
+#: utils.cpp:422
 #, fuzzy, kde-format
 #| msgid "(None)"
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "(Gjin)"
 
-#: utils.cpp:423
+#: utils.cpp:425
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Content type:"
 msgstr "Kalinder"
 
-#: utils.cpp:430
+#: utils.cpp:432
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:433
+#: utils.cpp:435
 #, fuzzy, kde-format
 #| msgid "read-only"
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "allinnich-lêze"
 
-#: utils.cpp:435
+#: utils.cpp:437
 #, fuzzy, kde-format
 #| msgid "Overwrite"
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "Oerskriuwe"
 
-#: utils.cpp:443
+#: utils.cpp:445
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:446
+#: utils.cpp:448
 #, fuzzy, kde-format
 #| msgid "Audio"
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "Lûd"
 
-#: utils.cpp:448
+#: utils.cpp:450
 #, fuzzy, kde-format
 #| msgid "&Daily"
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "&Alle dagen"
 
-#: utils.cpp:450
+#: utils.cpp:452
 #, fuzzy, kde-format
 #| msgid "Email"
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "E-post"
 
-#: utils.cpp:452
+#: utils.cpp:454
 #, fuzzy, kde-format
 #| msgid "Proceed"
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "Trochgean"
 
-#: utils.cpp:454
+#: utils.cpp:456
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:458
+#: utils.cpp:460
 #, fuzzy, kde-format
 #| msgid "(None)"
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "(Gjin)"
 
-#: utils.cpp:461
+#: utils.cpp:463
 #, fuzzy, kde-format
 #| msgid "Edit Reminders"
 msgid "Blocked Reminders:"
 msgstr "Tebektinken bewurkje"
 
-#: utils.cpp:527
+#: utils.cpp:529
 #, fuzzy, kde-format
 #| msgid "%1"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1"
 
-#: utils.cpp:529
+#: utils.cpp:531
 #, fuzzy, kde-format
 #| msgctxt "short_weekday date (e.g. Mon 13)"
 #| msgid "%1 %2"
 msgid "%1 (%2)"
 msgstr "%1 %2"
 
-#: utils.cpp:534
+#: utils.cpp:536
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
