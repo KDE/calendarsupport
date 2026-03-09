@@ -2555,7 +2555,7 @@ msgstr "اتّجاه الفرز:"
 #: printing/calprinttodoconfig_base.ui:397
 #, kde-format
 msgid "Co&nnect sub-to-dos with its parent"
-msgstr "&صِل المهامّ الفرعيّة بأبّهاتها"
+msgstr "&صِل المهامّ الفرعيّة بأبهاتها"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
