@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-08 00:46+0000\n"
-"PO-Revision-Date: 2026-02-24 22:49+0400\n"
+"PO-Revision-Date: 2026-03-09 21:08+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -2711,20 +2711,16 @@ msgid "Select the calendar where this item will be stored."
 msgstr "اختر التّقويم التي سيُخزّن فيه هذا العنصر."
 
 #: utils.cpp:397
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
-msgstr "%1 (التّقويم المبدئيّ)"
+msgstr "%1 ( تقويم الأحداث المبدئي)"
 
 #: utils.cpp:399
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
-msgstr "%1 (التّقويم المبدئيّ)"
+msgstr "%1 ( تقويم المهام المبدئي)"
 
 #: utils.cpp:410
 #, kde-format

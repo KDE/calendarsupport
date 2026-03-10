@@ -2667,20 +2667,16 @@ msgid "Select the calendar where this item will be stored."
 msgstr "选择存储此项的日历。"
 
 #: utils.cpp:397
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
-msgstr "%1 (默认日历)"
+msgstr ""
 
 #: utils.cpp:399
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
-msgstr "%1 (默认日历)"
+msgstr ""
 
 #: utils.cpp:410
 #, kde-format
