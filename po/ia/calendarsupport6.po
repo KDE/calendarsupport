@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-08 00:46+0000\n"
-"PO-Revision-Date: 2026-03-08 18:30+0100\n"
+"PO-Revision-Date: 2026-03-11 18:41+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -326,7 +326,7 @@ msgstr ""
 #: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
-msgstr "Incapace de crear un file temporari per le attachamento."
+msgstr "Incapace de crear un file temporanee per le attachamento."
 
 #: attachmenthandler.cpp:218
 #, kde-format

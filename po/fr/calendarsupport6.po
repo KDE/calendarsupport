@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-08 00:46+0000\n"
-"PO-Revision-Date: 2026-01-18 10:14+0100\n"
+"PO-Revision-Date: 2026-03-09 09:06+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -2883,20 +2883,16 @@ msgid "Select the calendar where this item will be stored."
 msgstr "Sélectionnez un agenda où ces éléments seront enregistrés."
 
 #: utils.cpp:397
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
-msgstr " %1 (Calendrier par défaut)"
+msgstr " %1 (Calendrier par défaut d'évènements)"
 
 #: utils.cpp:399
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
-msgstr " %1 (Calendrier par défaut)"
+msgstr "%1 (Calendrier par défaut des tâches à faire)"
 
 #: utils.cpp:410
 #, kde-format
