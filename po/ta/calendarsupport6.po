@@ -12,13 +12,13 @@
 #
 # Ambalam <tamilpc@ambalam.com>, 2004.
 # root <root@localhost.localdomain>, 2004.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Kishore G <kishore96@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2026 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-24 00:43+0000\n"
-"PO-Revision-Date: 2024-06-16 19:59+0530\n"
+"PO-Revision-Date: 2026-03-12 21:04+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -26,15 +26,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgid "Anonymous"
-msgstr ""
+msgstr "பெயரற்றவர்"
 
 #, kde-format
 msgid "nobody@nowhere"
-msgstr ""
+msgstr "யாரோ@எங்கேயோ"
 
 #: archivedialog.cpp:43
 #, kde-format
@@ -79,10 +79,10 @@ msgstr ""
 "vCalendar.\">எப்படி மீள்சேமிப்பது</a>)"
 
 #: archivedialog.cpp:82
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:radio"
 msgid "Archive now items older than:"
-msgstr "&அதனினும் பழைய நிகழ்வெனில் சேமி:"
+msgstr "இதைவிட பழையவற்றை காப்பகப்படுத்து:"
 
 #: archivedialog.cpp:83
 #, kde-format
@@ -118,10 +118,10 @@ msgstr ""
 "saved and deleted, the newer (and events exactly on that date) will be kept."
 
 #: archivedialog.cpp:107
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:radio"
 msgid "Automaticall&y archive items older than:"
-msgstr "காப்பக நிகழ்வு தானாகவே பழையது: "
+msgstr "இதைவிட பழையவற்றை தானாக காப்பகப்படுத்து:"
 
 #: archivedialog.cpp:108
 #, fuzzy, kde-format
@@ -170,39 +170,34 @@ msgid "Select the time units (days, weeks or months) for automatic archiving."
 msgstr ""
 
 #: archivedialog.cpp:133
-#, fuzzy, kde-format
-#| msgid "Day(s)"
+#, kde-format
 msgctxt "@item:inlistbox expires in daily units"
 msgid "Day(s)"
-msgstr "நாள்(கள்)"
+msgstr "நாள்"
 
 #: archivedialog.cpp:134
-#, fuzzy, kde-format
-#| msgid "Week(s)"
+#, kde-format
 msgctxt "@item:inlistbox expiration in weekly units"
 msgid "Week(s)"
-msgstr "வாரம்(கள்) "
+msgstr "வாரம்"
 
 #: archivedialog.cpp:135
-#, fuzzy, kde-format
-#| msgid "Month(s)"
+#, kde-format
 msgctxt "@item:inlistbox expiration in monthly units"
 msgid "Month(s)"
-msgstr "மாதம்(கள்)"
+msgstr "மாதம்"
 
 #: archivedialog.cpp:140
-#, fuzzy, kde-format
-#| msgid "Archive &file:"
+#, kde-format
 msgctxt "@label"
 msgid "Archive &file:"
-msgstr "காப்பகக் கோப்பு"
+msgstr "காப்பகக் கோப்பு:"
 
 #: archivedialog.cpp:144
-#, fuzzy, kde-format
-#| msgid "*.ics|iCalendar Files"
+#, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr "*.ics|iCalendar Files"
+msgstr ""
 
 #: archivedialog.cpp:145
 #, fuzzy, kde-format
@@ -229,7 +224,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:group"
 msgid "Type of Items to Archive"
-msgstr ""
+msgstr "காப்பகப்படுத்தவேண்டியவை"
 
 #: archivedialog.cpp:158
 #, kde-format
@@ -241,11 +236,10 @@ msgid ""
 msgstr ""
 
 #: archivedialog.cpp:166
-#, fuzzy, kde-format
-#| msgid "Archive events"
+#, kde-format
 msgctxt "@option:check"
 msgid "Archive &Events"
-msgstr "காப்பு செய்திகள்"
+msgstr "நிகழ்வுகளை காப்பகப்படுத்து"
 
 #: archivedialog.cpp:167
 #, fuzzy, kde-format
@@ -263,10 +257,10 @@ msgid ""
 msgstr ""
 
 #: archivedialog.cpp:171
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
-msgstr "முடித்தவற்றை முற்றிலும் நீக்கு"
+msgstr "முடிந்த செய்யவேண்டியவற்றை காப்பகப்படுத்து"
 
 #: archivedialog.cpp:172
 #, fuzzy, kde-format
@@ -287,11 +281,10 @@ msgid ""
 msgstr "முடிவு தேதிகளுடன் செய்யவேண்டியவைகளை அச்சடிக்க இந்த தேர்வை தேர்ந்தெடுக்கவும்."
 
 #: archivedialog.cpp:178
-#, fuzzy, kde-format
-#| msgid "&Delete only, do not save"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Delete only, do not save"
-msgstr "நீக்கு சேமிக்காதே"
+msgstr "சேமிக்காமல் நீக்கு"
 
 #: archivedialog.cpp:179
 #, kde-format
@@ -310,22 +303,21 @@ msgstr ""
 "முன்பதிவை திரும்ப பெற முடியாது."
 
 #: archivedialog.cpp:242
-#, fuzzy, kde-format
-#| msgid "The archive file name is not valid.\n"
+#, kde-format
 msgctxt "@info"
 msgid "The archive file name is not valid."
-msgstr "இந்த காப்பகக் கோப்பு பெயர் செல்லாது.\n"
+msgstr "காப்பகக்கோப்பின் பெயர் செல்லுபடியாகாதது."
 
 #: attachmenthandler.cpp:96
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
-msgstr ""
+msgstr "'%1' எனும் உடனிணைப்பு இல்லை."
 
 #: attachmenthandler.cpp:107
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
-msgstr ""
+msgstr "'%1' எனும் உடனிணைப்பு, இக்கணினியால் அணுக முடியாத இணைய இணைப்பாகும். "
 
 #: attachmenthandler.cpp:123
 #, kde-format
