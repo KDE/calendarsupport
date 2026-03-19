@@ -306,7 +306,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 KCalendarCore::Alarm::List::ConstIterator ait;
                 alarmStrings.reserve(alarms.count());
                 for (ait = alarms.constBegin(); ait != alarms.constEnd(); ++ait) {
-                    KCalendarCore::Alarm::Ptr alarm = *ait;
+                    const KCalendarCore::Alarm::Ptr &alarm = *ait;
 
                     // Alarm offset, copied from koeditoralarms.cpp:
                     KLocalizedString offsetstr;
