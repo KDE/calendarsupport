@@ -301,6 +301,7 @@ Akonadi::Collection CalendarSupport::selectCollection(QWidget *parent, int &dial
     Akonadi::Collection collection;
 
     // FIXME: don't use exec.
+    /* cppcheck-suppress nullPointerRedundantCheck */
     dialogCode = dlg->exec();
     if (dlg && dialogCode == QDialog::Accepted) {
         collection = dlg->selectedCollection();
