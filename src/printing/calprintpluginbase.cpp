@@ -1635,8 +1635,6 @@ void CalPrintPluginBase::drawTodo(int &count,
         }
     }
 
-    int left = posSummary + (level * 10);
-
     // If this is a sub-to-do, r will not be 0, and we want the LH side
     // of the priority line up to the RH side of the parent to-do's priority
     int lhs = posPriority;
@@ -1748,6 +1746,7 @@ void CalPrintPluginBase::drawTodo(int &count,
 
     // description
     if (desc && !todo->description().isEmpty()) {
+        const int left = posSummary + (level * 10);
         drawTodoLines(p, todo->description(), left, y, width - (left + 10 - x), pageHeight, todo->descriptionIsRich(), startPoints, connectSubTodos);
     }
 
