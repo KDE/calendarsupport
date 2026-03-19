@@ -24,7 +24,7 @@ QWidget *CalPrintJournal::createConfigWidget(QWidget *w)
 
 void CalPrintJournal::readSettingsWidget()
 {
-    auto cfg = dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
+    auto cfg = dynamic_cast<CalPrintJournalConfig *>(static_cast<QWidget *>(mConfigWidget));
     if (cfg) {
         mPrintFooter = cfg->mPrintFooter->isChecked();
         mFromDate = cfg->mFromDate->date();
@@ -37,7 +37,7 @@ void CalPrintJournal::readSettingsWidget()
 
 void CalPrintJournal::setSettingsWidget()
 {
-    auto cfg = dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
+    auto cfg = dynamic_cast<CalPrintJournalConfig *>(static_cast<QWidget *>(mConfigWidget));
     if (cfg) {
         cfg->mPrintFooter->setChecked(mPrintFooter);
         cfg->mFromDate->setDate(mFromDate);
@@ -86,7 +86,7 @@ void CalPrintJournal::doSaveConfig()
 void CalPrintJournal::setDateRange(const QDate &from, const QDate &to)
 {
     CalPrintPluginBase::setDateRange(from, to);
-    auto cfg = dynamic_cast<CalPrintJournalConfig *>((QWidget *)mConfigWidget);
+    auto cfg = dynamic_cast<CalPrintJournalConfig *>(static_cast<QWidget *>(mConfigWidget));
     if (cfg) {
         cfg->mFromDate->setDate(from);
         cfg->mToDate->setDate(to);
