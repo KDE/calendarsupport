@@ -20,7 +20,7 @@ using namespace CalendarSupport;
 class ItemPrivateData
 {
 public:
-    ItemPrivateData(ItemPrivateData *parent)
+    explicit ItemPrivateData(ItemPrivateData *parent)
         : parentItem(parent)
     {
     }

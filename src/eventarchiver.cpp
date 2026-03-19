@@ -38,7 +38,7 @@ using namespace CalendarSupport;
 class GroupwareScoppedDisabler
 {
 public:
-    GroupwareScoppedDisabler(Akonadi::IncidenceChanger *changer)
+    explicit GroupwareScoppedDisabler(Akonadi::IncidenceChanger *changer)
         : m_changer(changer)
     {
         m_wasEnabled = m_changer->groupwareCommunication();

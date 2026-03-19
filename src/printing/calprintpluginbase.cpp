@@ -50,7 +50,7 @@ const QColor CalPrintPluginBase::sHolidayBackground = QColor(244, 244, 244);
 class CalPrintPluginBase::TodoParentStart
 {
 public:
-    TodoParentStart(QRect pt = QRect(), bool hasLine = false, bool page = true)
+    explicit TodoParentStart(QRect pt = QRect(), bool hasLine = false, bool page = true)
         : mRect(pt)
         , mHasLine(hasLine)
         , mSamePage(page)
