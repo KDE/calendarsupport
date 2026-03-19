@@ -1781,7 +1781,7 @@ void CalPrintPluginBase::drawTodo(int &count,
     }
 
     // has sub-todos?
-    startpt.mHasLine = (t.size() > 0);
+    startpt.mHasLine = (!t.isEmpty());
     startPoints.append(&startpt);
 
     // Sort the sub-to-dos and print them
