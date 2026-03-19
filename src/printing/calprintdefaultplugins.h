@@ -104,10 +104,10 @@ public:
 protected:
     int printCaptionAndText(QPainter &p, QRect box, const QString &caption, const QString &text, const QFont &captionFont, const QFont &textFont);
 
-    bool mShowOptions;
-    bool mShowSubitemsNotes;
-    bool mShowAttendees;
-    bool mShowAttachments;
+    bool mShowOptions = false;
+    bool mShowSubitemsNotes = false;
+    bool mShowAttendees = false;
+    bool mShowAttachments = false;
 };
 
 class CalPrintTimetable : public CalPrintPluginBase
@@ -151,12 +151,12 @@ protected:
     void drawTimeTable(QPainter &p, QDate fromDate, QDate toDate, QRect box);
 
     QTime mStartTime, mEndTime; /*!< Earliest and latest times of day to print. */
-    bool mSingleLineLimit; /*!< Should all fields be printed on the same line? */
-    bool mIncludeTodos; /*!< Should to-dos be printed? */
-    bool mIncludeDescription; /*!< Should incidence descriptions be printed? */
-    bool mIncludeCategories; /*!< Should incidence tags be printed? */
-    bool mIncludeAllEvents; /*!< If events occur outside the start/end times, should the times be adjusted? */
-    bool mExcludeTime; /*!< Should incidence times of day be printed? */
+    bool mSingleLineLimit = false; /*!< Should all fields be printed on the same line? */
+    bool mIncludeTodos = false; /*!< Should to-dos be printed? */
+    bool mIncludeDescription = false; /*!< Should incidence descriptions be printed? */
+    bool mIncludeCategories = false; /*!< Should incidence tags be printed? */
+    bool mIncludeAllEvents = false; /*!< If events occur outside the start/end times, should the times be adjusted? */
+    bool mExcludeTime = false; /*!< Should incidence times of day be printed? */
 };
 
 class CalPrintDay : public CalPrintTimetable
@@ -329,13 +329,13 @@ public:
     void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
-    bool mWeekNumbers;
-    bool mRecurDaily;
-    bool mRecurWeekly;
-    bool mIncludeTodos;
-    bool mSingleLineLimit;
-    bool mIncludeDescription;
-    bool mIncludeCategories;
+    bool mWeekNumbers = false;
+    bool mRecurDaily = false;
+    bool mRecurWeekly = false;
+    bool mIncludeTodos = false;
+    bool mSingleLineLimit = false;
+    bool mIncludeDescription = false;
+    bool mIncludeCategories = false;
 };
 
 class CalPrintTodos : public CalPrintPluginBase
@@ -403,16 +403,16 @@ protected:
         TodoDirectionUnset
     } mTodoSortDirection;
 
-    bool mIncludeDescription;
-    bool mIncludePriority;
-    bool mIncludeCategories;
-    bool mIncludeStartDate;
-    bool mIncludeDueDate;
-    bool mIncludePercentComplete;
-    bool mConnectSubTodos;
-    bool mStrikeOutCompleted;
-    bool mSortField;
-    bool mSortDirection;
+    bool mIncludeDescription = false;
+    bool mIncludePriority = false;
+    bool mIncludeCategories = false;
+    bool mIncludeStartDate = false;
+    bool mIncludeDueDate = false;
+    bool mIncludePercentComplete = false;
+    bool mConnectSubTodos = false;
+    bool mStrikeOutCompleted = false;
+    bool mSortField = false;
+    bool mSortDirection = false;
 };
 
 class CalPrintIncidenceConfig : public QWidget, public Ui::CalPrintIncidenceConfig_Base

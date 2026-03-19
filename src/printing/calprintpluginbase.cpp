@@ -116,11 +116,15 @@ private:
 CalPrintPluginBase::CalPrintPluginBase()
     : mUseColors(true)
     , mPrintFooter(true)
+    , mShowNoteLines(false)
+    , mExcludeConfidential(false)
+    , mExcludePrivate(false)
     , mHeaderHeight(-1)
     , mSubHeaderHeight(SUBHEADER_HEIGHT)
     , mFooterHeight(-1)
     , mMargin(MARGIN_SIZE)
     , mPadding(PADDING_SIZE)
+    , mBorder(0)
 {
 }
 

@@ -36,7 +36,6 @@ using namespace CalendarSupport;
  **************************************************************/
 
 CalPrintIncidence::CalPrintIncidence()
-
 {
 }
 
@@ -832,8 +831,8 @@ void CalPrintTimetable::drawTimeTable(QPainter &p, QDate fromDate, QDate toDate,
  **************************************************************/
 
 CalPrintDay::CalPrintDay()
-
 {
+    mDayPrintType = Filofax;
 }
 
 CalPrintDay::~CalPrintDay() = default;
@@ -1030,8 +1029,8 @@ void CalPrintDay::print(QPainter &p, int width, int height)
  **************************************************************/
 
 CalPrintWeek::CalPrintWeek()
-
 {
+    mWeekPrintType = Filofax;
 }
 
 CalPrintWeek::~CalPrintWeek() = default;
@@ -1449,8 +1448,8 @@ void CalPrintMonth::print(QPainter &p, int width, int height)
  **************************************************************/
 
 CalPrintTodos::CalPrintTodos()
-
 {
+    mTodoPrintType = TodosAll;
     mTodoSortField = TodoFieldUnset;
     mTodoSortDirection = TodoDirectionUnset;
 }
