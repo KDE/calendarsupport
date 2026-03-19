@@ -112,7 +112,6 @@ public:
 
     QString mStartCaption, mStartString;
     QString mEndCaption, mEndString;
-    QString mDurationCaption, mDurationString;
 
 protected:
     bool visit(const KCalendarCore::Event::Ptr &event) override
