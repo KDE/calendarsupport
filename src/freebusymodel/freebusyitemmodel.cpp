@@ -150,7 +150,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
 
 int FreeBusyItemModel::rowCount(const QModelIndex &parent) const
 {
-    ItemPrivateData *parentData = nullptr;
+    const ItemPrivateData *parentData = nullptr;
     if (parent.column() > 0) {
         return 0;
     }

@@ -218,7 +218,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     bool firstButton = true;
     int id = 0;
     for (mapit = mPluginIDs.constBegin(); mapit != mPluginIDs.constEnd(); ++mapit) {
-        PrintPlugin *p = mapit.value();
+        const PrintPlugin *p = mapit.value();
         auto radioButton = new QRadioButton(p->description());
         radioButton->setEnabled(p->enabled());
         radioButton->setToolTip(i18nc("@info:tooltip", "Select the type of print"));

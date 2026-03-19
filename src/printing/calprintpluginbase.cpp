@@ -100,7 +100,7 @@ public:
         happens on the given day */
     bool overlaps(CellItem *o) const override
     {
-        auto other = static_cast<PrintCellItem *>(o);
+        const PrintCellItem *other = static_cast<PrintCellItem *>(o);
         return !(other->start() >= end() || other->end() <= start());
     }
 
