@@ -105,7 +105,7 @@ class TimePrintStringsVisitor : public KCalendarCore::Visitor
 public:
     TimePrintStringsVisitor() = default;
 
-    bool act(KCalendarCore::IncidenceBase::Ptr incidence)
+    bool act(const KCalendarCore::IncidenceBase::Ptr &incidence)
     {
         return incidence->accept(*this, incidence);
     }
