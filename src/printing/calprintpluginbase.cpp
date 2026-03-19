@@ -899,7 +899,7 @@ void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item,
     // start/end of print area for event
     QDateTime startTime = item->start();
     QDateTime endTime = item->end();
-    if ((startTime < endPrintDate && endTime > startPrintDate) || (endTime > startPrintDate && startTime < endPrintDate)) {
+    if ((startTime < endPrintDate) && (endTime > startPrintDate)) {
         if (startTime < startPrintDate) {
             startTime = startPrintDate;
         }
