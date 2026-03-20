@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-08 00:46+0000\n"
+"POT-Creation-Date: 2026-03-20 00:44+0000\n"
 "PO-Revision-Date: 2026-03-08 08:36+0200\n"
 "Last-Translator: Alexander Yavorskiy <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -1452,30 +1452,30 @@ msgstr ""
 msgid "Print &Footer"
 msgstr "Печать нижнего &колонтитула"
 
-#: printing/calprintdefaultplugins.cpp:122
-#: printing/calprintdefaultplugins.cpp:151
-#: printing/calprintdefaultplugins.cpp:170
+#: printing/calprintdefaultplugins.cpp:120
+#: printing/calprintdefaultplugins.cpp:149
+#: printing/calprintdefaultplugins.cpp:168
 #, kde-format
 msgid "Start date: "
 msgstr "Дата начала: "
 
-#: printing/calprintdefaultplugins.cpp:125
-#: printing/calprintdefaultplugins.cpp:154
+#: printing/calprintdefaultplugins.cpp:123
+#: printing/calprintdefaultplugins.cpp:152
 #, kde-format
 msgid "No start date"
 msgstr "дата начала не указана"
 
-#: printing/calprintdefaultplugins.cpp:130
+#: printing/calprintdefaultplugins.cpp:128
 #, kde-format
 msgid "End date: "
 msgstr "Дата окончания: "
 
-#: printing/calprintdefaultplugins.cpp:133
+#: printing/calprintdefaultplugins.cpp:131
 #, kde-format
 msgid "Duration: "
 msgstr "Продолжительность: "
 
-#: printing/calprintdefaultplugins.cpp:136
+#: printing/calprintdefaultplugins.cpp:134
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
@@ -1484,7 +1484,7 @@ msgstr[1] "%1 часа "
 msgstr[2] "%1 часов "
 msgstr[3] "%1 час "
 
-#: printing/calprintdefaultplugins.cpp:139
+#: printing/calprintdefaultplugins.cpp:137
 #, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
@@ -1493,38 +1493,38 @@ msgstr[1] "%1 минуты "
 msgstr[2] "%1 минут "
 msgstr[3] "%1 минута "
 
-#: printing/calprintdefaultplugins.cpp:142
+#: printing/calprintdefaultplugins.cpp:140
 #, kde-format
 msgid "No end date"
 msgstr "дата окончания не указана"
 
-#: printing/calprintdefaultplugins.cpp:159
+#: printing/calprintdefaultplugins.cpp:157
 #, kde-format
 msgid "Due date: "
 msgstr "Срок:"
 
-#: printing/calprintdefaultplugins.cpp:162
+#: printing/calprintdefaultplugins.cpp:160
 #, kde-format
 msgid "No due date"
 msgstr "срок не указан"
 
-#: printing/calprintdefaultplugins.cpp:287
+#: printing/calprintdefaultplugins.cpp:285
 #, kde-format
 msgctxt "except for listed dates"
 msgid " except"
 msgstr " кроме"
 
-#: printing/calprintdefaultplugins.cpp:294
+#: printing/calprintdefaultplugins.cpp:292
 #, kde-format
 msgid "Repeats: "
 msgstr "Повторение: "
 
-#: printing/calprintdefaultplugins.cpp:302
+#: printing/calprintdefaultplugins.cpp:300
 #, kde-format
 msgid "No reminders"
 msgstr "Нет напоминаний"
 
-#: printing/calprintdefaultplugins.cpp:305
+#: printing/calprintdefaultplugins.cpp:303
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
@@ -1534,31 +1534,31 @@ msgstr[2] "%1 напоминаний: "
 msgstr[3] "Напоминание: "
 
 # BUGME: add "за" in front to make "за 10 минут до начала" and so on --aspotashev
-#: printing/calprintdefaultplugins.cpp:319
+#: printing/calprintdefaultplugins.cpp:317
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the start"
 msgstr "за %1 до начала"
 
-#: printing/calprintdefaultplugins.cpp:322
+#: printing/calprintdefaultplugins.cpp:320
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the start"
 msgstr "через %1 после начала"
 
-#: printing/calprintdefaultplugins.cpp:327
+#: printing/calprintdefaultplugins.cpp:325
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the end"
 msgstr "за %1 до завершения"
 
-#: printing/calprintdefaultplugins.cpp:330
+#: printing/calprintdefaultplugins.cpp:328
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
 msgstr "через %1 после завершения"
 
-#: printing/calprintdefaultplugins.cpp:339
+#: printing/calprintdefaultplugins.cpp:337
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
@@ -1567,7 +1567,7 @@ msgstr[1] "%1 дня"
 msgstr[2] "%1 дней"
 msgstr[3] "%1 день"
 
-#: printing/calprintdefaultplugins.cpp:342
+#: printing/calprintdefaultplugins.cpp:340
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
@@ -1577,7 +1577,7 @@ msgstr[2] "%1 часов"
 msgstr[3] "%1 час"
 
 # follows "за ...", "через ..." --aspotashev
-#: printing/calprintdefaultplugins.cpp:345
+#: printing/calprintdefaultplugins.cpp:343
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
@@ -1586,40 +1586,40 @@ msgstr[1] "%1 минуты"
 msgstr[2] "%1 минут"
 msgstr[3] "%1 минуту"
 
-#: printing/calprintdefaultplugins.cpp:349
-#: printing/calprintdefaultplugins.cpp:632
+#: printing/calprintdefaultplugins.cpp:347
+#: printing/calprintdefaultplugins.cpp:630
 #, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr ", "
 
-#: printing/calprintdefaultplugins.cpp:354
+#: printing/calprintdefaultplugins.cpp:352
 #, kde-format
 msgid "Organizer: "
 msgstr "Организатор: "
 
 # BUGME: change "Расположение" to "Местоположение" --aspotashev
-#: printing/calprintdefaultplugins.cpp:367
+#: printing/calprintdefaultplugins.cpp:365
 #, kde-format
 msgid "Location: "
 msgstr "Расположение: "
 
-#: printing/calprintdefaultplugins.cpp:429
+#: printing/calprintdefaultplugins.cpp:427
 #, kde-format
 msgid "Description:"
 msgstr "Описание:"
 
-#: printing/calprintdefaultplugins.cpp:457
+#: printing/calprintdefaultplugins.cpp:455
 #, kde-format
 msgid "Notes:"
 msgstr "Примечания:"
 
-#: printing/calprintdefaultplugins.cpp:469
+#: printing/calprintdefaultplugins.cpp:467
 #, kde-format
 msgid "No Subitems"
 msgstr "Подэлементов нет"
 
-#: printing/calprintdefaultplugins.cpp:472
+#: printing/calprintdefaultplugins.cpp:470
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
@@ -1628,72 +1628,72 @@ msgstr[1] "%1 подэлемента:"
 msgstr[2] "%1 подэлементов:"
 msgstr[3] "%1 подэлемент:"
 
-#: printing/calprintdefaultplugins.cpp:488
+#: printing/calprintdefaultplugins.cpp:486
 #, kde-format
 msgctxt "no status"
 msgid "none"
 msgstr "нет"
 
-#: printing/calprintdefaultplugins.cpp:490
+#: printing/calprintdefaultplugins.cpp:488
 #, kde-format
 msgctxt "unknown status"
 msgid "unknown"
 msgstr "неизвестно"
 
-#: printing/calprintdefaultplugins.cpp:497
+#: printing/calprintdefaultplugins.cpp:495
 #, kde-format
 msgctxt "subitem start date"
 msgid "Start Date: %1\n"
 msgstr "Дата начала: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:500
+#: printing/calprintdefaultplugins.cpp:498
 #, kde-format
 msgctxt "subitem start time"
 msgid "Start Time: %1\n"
 msgstr "Время начала: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:506
+#: printing/calprintdefaultplugins.cpp:504
 #, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
 msgstr "Дата окончания: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:512
+#: printing/calprintdefaultplugins.cpp:510
 #, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
 msgstr "Время окончания: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:516
+#: printing/calprintdefaultplugins.cpp:514
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
 msgstr "%1: "
 
-#: printing/calprintdefaultplugins.cpp:523
+#: printing/calprintdefaultplugins.cpp:521
 #, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
 msgstr "Статус: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:525
+#: printing/calprintdefaultplugins.cpp:523
 #, kde-format
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
 msgstr "Приоритет: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:526
+#: printing/calprintdefaultplugins.cpp:524
 #, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
 msgstr "Секретность: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:544
+#: printing/calprintdefaultplugins.cpp:542
 #, kde-format
 msgid "No Attachments"
 msgstr "Нет вложений"
 
-#: printing/calprintdefaultplugins.cpp:547
+#: printing/calprintdefaultplugins.cpp:545
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
@@ -1702,18 +1702,18 @@ msgstr[1] "%1 вложения:"
 msgstr[2] "%1 вложений:"
 msgstr[3] "%1 вложение:"
 
-#: printing/calprintdefaultplugins.cpp:553
+#: printing/calprintdefaultplugins.cpp:551
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
 msgstr "  "
 
-#: printing/calprintdefaultplugins.cpp:570
+#: printing/calprintdefaultplugins.cpp:568
 #, kde-format
 msgid "No Attendees"
 msgstr "Нет участников"
 
-#: printing/calprintdefaultplugins.cpp:572
+#: printing/calprintdefaultplugins.cpp:570
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
@@ -1722,7 +1722,7 @@ msgstr[1] "%1 участника:"
 msgstr[2] "%1 участников:"
 msgstr[3] "%1 участник:"
 
-#: printing/calprintdefaultplugins.cpp:584
+#: printing/calprintdefaultplugins.cpp:582
 #, kde-format
 msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
@@ -1730,75 +1730,75 @@ msgctxt ""
 msgid "%1 (%2): %3"
 msgstr "%1 (%2): %3"
 
-#: printing/calprintdefaultplugins.cpp:602
+#: printing/calprintdefaultplugins.cpp:600
 #, kde-format
 msgid "Status: %1"
 msgstr "Статус: %1"
 
-#: printing/calprintdefaultplugins.cpp:606
+#: printing/calprintdefaultplugins.cpp:604
 #, kde-format
 msgid "Secrecy: %1"
 msgstr "Секретность: %1"
 
-#: printing/calprintdefaultplugins.cpp:612
+#: printing/calprintdefaultplugins.cpp:610
 #, kde-format
 msgid "Show as: Busy"
 msgstr "Показывать как занятое"
 
-#: printing/calprintdefaultplugins.cpp:614
+#: printing/calprintdefaultplugins.cpp:612
 #, kde-format
 msgid "Show as: Free"
 msgstr "Показывать как свободное"
 
-#: printing/calprintdefaultplugins.cpp:620
+#: printing/calprintdefaultplugins.cpp:618
 #, kde-format
 msgid "This task is overdue!"
 msgstr "Задача просрочена!"
 
-#: printing/calprintdefaultplugins.cpp:626
+#: printing/calprintdefaultplugins.cpp:624
 #, kde-format
 msgid "Settings: "
 msgstr "Параметры: "
 
-#: printing/calprintdefaultplugins.cpp:631
+#: printing/calprintdefaultplugins.cpp:629
 #, kde-format
 msgid "Tags: "
 msgstr "Метки: "
 
-#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:916
-#: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
+#: printing/calprintdefaultplugins.cpp:722 printing/calprintpluginbase.cpp:920
+#: printing/calprintpluginbase.cpp:1060 printing/calprintpluginbase.cpp:1117
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:727 printing/calprintpluginbase.cpp:935
-#: printing/calprintpluginbase.cpp:1059
+#: printing/calprintdefaultplugins.cpp:725 printing/calprintpluginbase.cpp:939
+#: printing/calprintpluginbase.cpp:1063
 #, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:782
+#: printing/calprintdefaultplugins.cpp:780
 #, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
 msgstr "Весь день"
 
-#: printing/calprintdefaultplugins.cpp:987
-#: printing/calprintdefaultplugins.cpp:1209 printing/yearprint.cpp:141
+#: printing/calprintdefaultplugins.cpp:985
+#: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:141
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr "%1 – %2"
 
-#: printing/calprintdefaultplugins.cpp:1231
+#: printing/calprintdefaultplugins.cpp:1229
 #, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
 msgstr "%1 – %2 (%3 неделя)"
 
-#: printing/calprintdefaultplugins.cpp:1233
+#: printing/calprintdefaultplugins.cpp:1231
 #, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
@@ -1808,95 +1808,95 @@ msgstr ""
 "%1 – %2\n"
 "(%3 неделя)"
 
-#: printing/calprintdefaultplugins.cpp:1418
+#: printing/calprintdefaultplugins.cpp:1416
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2 года"
 
-#: printing/calprintdefaultplugins.cpp:1529
+#: printing/calprintdefaultplugins.cpp:1527
 #, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "По выполнению"
 
-#: printing/calprintdefaultplugins.cpp:1530
+#: printing/calprintdefaultplugins.cpp:1528
 #, kde-format
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "По дате начала"
 
-#: printing/calprintdefaultplugins.cpp:1531
+#: printing/calprintdefaultplugins.cpp:1529
 #, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "По дате завершения"
 
-#: printing/calprintdefaultplugins.cpp:1532
+#: printing/calprintdefaultplugins.cpp:1530
 #, kde-format
 msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "По приоритету"
 
-#: printing/calprintdefaultplugins.cpp:1533
+#: printing/calprintdefaultplugins.cpp:1531
 #, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "По проценту выполнения"
 
-#: printing/calprintdefaultplugins.cpp:1534
+#: printing/calprintdefaultplugins.cpp:1532
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr "Метки"
 
-#: printing/calprintdefaultplugins.cpp:1540
+#: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "По возрастанию"
 
-#: printing/calprintdefaultplugins.cpp:1541
+#: printing/calprintdefaultplugins.cpp:1539
 #, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "По убыванию"
 
-#: printing/calprintdefaultplugins.cpp:1554
+#: printing/calprintdefaultplugins.cpp:1552
 #, kde-format
 msgid "To-do list"
 msgstr "Список задач"
 
-#: printing/calprintdefaultplugins.cpp:1606
-#: printing/calprintpluginbase.cpp:1714
+#: printing/calprintdefaultplugins.cpp:1604
+#: printing/calprintpluginbase.cpp:1716
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: printing/calprintdefaultplugins.cpp:1617
+#: printing/calprintdefaultplugins.cpp:1615
 #, kde-format
 msgid "Priority"
 msgstr "Приоритет"
 
-#: printing/calprintdefaultplugins.cpp:1627
+#: printing/calprintdefaultplugins.cpp:1625
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "Срок"
 
-#: printing/calprintdefaultplugins.cpp:1637
+#: printing/calprintdefaultplugins.cpp:1635
 #, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
 msgstr "Начало"
 
-#: printing/calprintdefaultplugins.cpp:1647
+#: printing/calprintdefaultplugins.cpp:1645
 #, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "Завершено"
 
-#: printing/calprintdefaultplugins.cpp:1657
+#: printing/calprintdefaultplugins.cpp:1655
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
@@ -2384,71 +2384,71 @@ msgstr "Показывать номера недель слева каждой �
 msgid "Print week &numbers"
 msgstr "Печатать номера н&едель"
 
-#: printing/calprintpluginbase.cpp:143
+#: printing/calprintpluginbase.cpp:147
 #, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Этот шаблон печати не имеет никаких параметров."
 
-#: printing/calprintpluginbase.cpp:299
+#: printing/calprintpluginbase.cpp:303
 #, kde-format
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
 msgstr ","
 
-#: printing/calprintpluginbase.cpp:311
+#: printing/calprintpluginbase.cpp:315
 #, kde-format
 msgid "Holiday"
 msgstr "Праздник"
 
-#: printing/calprintpluginbase.cpp:612
+#: printing/calprintpluginbase.cpp:616
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "Напечатано: %1"
 
-#: printing/calprintpluginbase.cpp:921
+#: printing/calprintpluginbase.cpp:925
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1-%2 %3"
 
-#: printing/calprintpluginbase.cpp:927
+#: printing/calprintpluginbase.cpp:931
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:994
+#: printing/calprintpluginbase.cpp:998
 #, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1, %3 %2"
 
-#: printing/calprintpluginbase.cpp:1120
+#: printing/calprintpluginbase.cpp:1124
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (срок: %2)"
 
-#: printing/calprintpluginbase.cpp:1125
+#: printing/calprintpluginbase.cpp:1129
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (срок: %2)"
 
-#: printing/calprintpluginbase.cpp:1132
+#: printing/calprintpluginbase.cpp:1136
 #, kde-format
 msgid "To-do: %1"
 msgstr "Задача: %1"
 
-#: printing/calprintpluginbase.cpp:1868
+#: printing/calprintpluginbase.cpp:1871
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2–%3"
 
-#: printing/calprintpluginbase.cpp:1874
+#: printing/calprintpluginbase.cpp:1877
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
@@ -2803,116 +2803,116 @@ msgstr "Выбор календаря"
 msgid "Select the calendar where this item will be stored."
 msgstr "Календарь, в котором будет сохранён этот элемент."
 
-#: utils.cpp:397
+#: utils.cpp:398
 #, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "%1 (календарь событий по умолчанию)"
 
-#: utils.cpp:399
+#: utils.cpp:400
 #, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "%1 (календарь задач по умолчанию)"
 
-#: utils.cpp:410
+#: utils.cpp:411
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr "Виртуальная"
 
-#: utils.cpp:412
+#: utils.cpp:413
 #, kde-format
 msgid "Folder type:"
 msgstr "Тип папки:"
 
-#: utils.cpp:422
+#: utils.cpp:423
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "отсутствует"
 
-#: utils.cpp:425
+#: utils.cpp:426
 #, kde-format
 msgid "Content type:"
 msgstr "Тип содержимого:"
 
-#: utils.cpp:432
+#: utils.cpp:433
 #, kde-format
 msgid "Rights:"
 msgstr "Права доступа:"
 
-#: utils.cpp:435
+#: utils.cpp:436
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "только для чтения"
 
-#: utils.cpp:437
+#: utils.cpp:438
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "для чтения и записи"
 
-#: utils.cpp:445
+#: utils.cpp:446
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr "все"
 
-#: utils.cpp:448
+#: utils.cpp:449
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "звук"
 
-#: utils.cpp:450
+#: utils.cpp:451
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "отображение"
 
-#: utils.cpp:452
+#: utils.cpp:453
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "электронное письмо"
 
-#: utils.cpp:454
+#: utils.cpp:455
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "процедура"
 
-#: utils.cpp:456
+#: utils.cpp:457
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr "другое"
 
-#: utils.cpp:460
+#: utils.cpp:461
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "нет"
 
-#: utils.cpp:463
+#: utils.cpp:464
 #, kde-format
 msgid "Blocked Reminders:"
 msgstr "Заблокированные напоминания:"
 
-#: utils.cpp:529
+#: utils.cpp:530
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:531
+#: utils.cpp:532
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:536
+#: utils.cpp:537
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

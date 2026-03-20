@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-08 00:46+0000\n"
+"POT-Creation-Date: 2026-03-20 00:44+0000\n"
 "PO-Revision-Date: 2013-02-13 17:42+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -1415,134 +1415,134 @@ msgstr ""
 msgid "Print &Footer"
 msgstr "अधोशिर्षक छापा (&F)"
 
-#: printing/calprintdefaultplugins.cpp:122
-#: printing/calprintdefaultplugins.cpp:151
-#: printing/calprintdefaultplugins.cpp:170
+#: printing/calprintdefaultplugins.cpp:120
+#: printing/calprintdefaultplugins.cpp:149
+#: printing/calprintdefaultplugins.cpp:168
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event start date and time"
 #| msgid "Start date and time"
 msgid "Start date: "
 msgstr "सुरुवातीचा दिनांक व वेळ"
 
-#: printing/calprintdefaultplugins.cpp:125
-#: printing/calprintdefaultplugins.cpp:154
+#: printing/calprintdefaultplugins.cpp:123
+#: printing/calprintdefaultplugins.cpp:152
 #, kde-format
 msgid "No start date"
 msgstr "सुरुवातीचा दिनांक नाही"
 
-#: printing/calprintdefaultplugins.cpp:130
+#: printing/calprintdefaultplugins.cpp:128
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event end date and time"
 #| msgid "End date and time"
 msgid "End date: "
 msgstr "शेवटचा दिनांक व वेळ"
 
-#: printing/calprintdefaultplugins.cpp:133
+#: printing/calprintdefaultplugins.cpp:131
 #, fuzzy, kde-format
 #| msgctxt "incidence category"
 #| msgid "Education"
 msgid "Duration: "
 msgstr "शिक्षण"
 
-#: printing/calprintdefaultplugins.cpp:136
+#: printing/calprintdefaultplugins.cpp:134
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
 msgstr[0] ""
 msgstr[1] ""
 
-#: printing/calprintdefaultplugins.cpp:139
+#: printing/calprintdefaultplugins.cpp:137
 #, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
 msgstr[0] ""
 msgstr[1] ""
 
-#: printing/calprintdefaultplugins.cpp:142
+#: printing/calprintdefaultplugins.cpp:140
 #, kde-format
 msgid "No end date"
 msgstr "शेवटचा दिनांक नाही"
 
-#: printing/calprintdefaultplugins.cpp:159
+#: printing/calprintdefaultplugins.cpp:157
 #, kde-format
 msgid "Due date: "
 msgstr "ठरलेला दिनांक : "
 
-#: printing/calprintdefaultplugins.cpp:162
+#: printing/calprintdefaultplugins.cpp:160
 #, kde-format
 msgid "No due date"
 msgstr "ठरलेला दिनांक नाही"
 
-#: printing/calprintdefaultplugins.cpp:287
+#: printing/calprintdefaultplugins.cpp:285
 #, kde-format
 msgctxt "except for listed dates"
 msgid " except"
 msgstr "शिवाय/खेरीज/वगळून"
 
-#: printing/calprintdefaultplugins.cpp:294
+#: printing/calprintdefaultplugins.cpp:292
 #, kde-format
 msgid "Repeats: "
 msgstr "पुनरावृत्ती : "
 
-#: printing/calprintdefaultplugins.cpp:302
+#: printing/calprintdefaultplugins.cpp:300
 #, kde-format
 msgid "No reminders"
 msgstr "आठवण देणारे नाहीत"
 
-#: printing/calprintdefaultplugins.cpp:305
+#: printing/calprintdefaultplugins.cpp:303
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
 msgstr[0] ""
 msgstr[1] ""
 
-#: printing/calprintdefaultplugins.cpp:319
+#: printing/calprintdefaultplugins.cpp:317
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the start"
 msgstr "%1 सुरवात करण्याआधी"
 
-#: printing/calprintdefaultplugins.cpp:322
+#: printing/calprintdefaultplugins.cpp:320
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the start"
 msgstr "%1 सुरवात केल्यानंतर"
 
-#: printing/calprintdefaultplugins.cpp:327
+#: printing/calprintdefaultplugins.cpp:325
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the end"
 msgstr "%1 संपण्याआधी"
 
-#: printing/calprintdefaultplugins.cpp:330
+#: printing/calprintdefaultplugins.cpp:328
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
 msgstr "%1 संपल्यानंतर "
 
-#: printing/calprintdefaultplugins.cpp:339
+#: printing/calprintdefaultplugins.cpp:337
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: printing/calprintdefaultplugins.cpp:342
+#: printing/calprintdefaultplugins.cpp:340
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: printing/calprintdefaultplugins.cpp:345
+#: printing/calprintdefaultplugins.cpp:343
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: printing/calprintdefaultplugins.cpp:349
-#: printing/calprintdefaultplugins.cpp:632
+#: printing/calprintdefaultplugins.cpp:347
+#: printing/calprintdefaultplugins.cpp:630
 #, fuzzy, kde-format
 #| msgctxt "Spacer for the joined list of categories"
 #| msgid ", "
@@ -1550,48 +1550,48 @@ msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr ", "
 
-#: printing/calprintdefaultplugins.cpp:354
+#: printing/calprintdefaultplugins.cpp:352
 #, kde-format
 msgid "Organizer: "
 msgstr "आयोजक : "
 
-#: printing/calprintdefaultplugins.cpp:367
+#: printing/calprintdefaultplugins.cpp:365
 #, fuzzy, kde-format
 #| msgctxt "incidence category"
 #| msgid "Education"
 msgid "Location: "
 msgstr "शिक्षण"
 
-#: printing/calprintdefaultplugins.cpp:429
+#: printing/calprintdefaultplugins.cpp:427
 #, kde-format
 msgid "Description:"
 msgstr "वर्णन :"
 
-#: printing/calprintdefaultplugins.cpp:457
+#: printing/calprintdefaultplugins.cpp:455
 #, fuzzy, kde-format
 #| msgid "Notes"
 msgid "Notes:"
 msgstr "नोंदी"
 
-#: printing/calprintdefaultplugins.cpp:469
+#: printing/calprintdefaultplugins.cpp:467
 #, kde-format
 msgid "No Subitems"
 msgstr "उपघटक नाहीत"
 
-#: printing/calprintdefaultplugins.cpp:472
+#: printing/calprintdefaultplugins.cpp:470
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: printing/calprintdefaultplugins.cpp:488
+#: printing/calprintdefaultplugins.cpp:486
 #, kde-format
 msgctxt "no status"
 msgid "none"
 msgstr "काही नाही"
 
-#: printing/calprintdefaultplugins.cpp:490
+#: printing/calprintdefaultplugins.cpp:488
 #, fuzzy, kde-format
 #| msgctxt "unknown resource"
 #| msgid "Unknown"
@@ -1599,7 +1599,7 @@ msgctxt "unknown status"
 msgid "unknown"
 msgstr "अपरिचीत"
 
-#: printing/calprintdefaultplugins.cpp:497
+#: printing/calprintdefaultplugins.cpp:495
 #, fuzzy, kde-format
 #| msgctxt "@title:column calendar event start date and time"
 #| msgid "Start Date and Time"
@@ -1607,37 +1607,37 @@ msgctxt "subitem start date"
 msgid "Start Date: %1\n"
 msgstr "सुरुवातीचा दिनांक व वेळ"
 
-#: printing/calprintdefaultplugins.cpp:500
+#: printing/calprintdefaultplugins.cpp:498
 #, kde-format
 msgctxt "subitem start time"
 msgid "Start Time: %1\n"
 msgstr "सुरु करण्याची वेळ: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:506
+#: printing/calprintdefaultplugins.cpp:504
 #, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
 msgstr "नियत तारीख: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:512
+#: printing/calprintdefaultplugins.cpp:510
 #, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
 msgstr "नियत वेळ: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:516
+#: printing/calprintdefaultplugins.cpp:514
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
 msgstr "%1: "
 
-#: printing/calprintdefaultplugins.cpp:523
+#: printing/calprintdefaultplugins.cpp:521
 #, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
 msgstr "दर्जा/अवस्था/स्थिती: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:525
+#: printing/calprintdefaultplugins.cpp:523
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
@@ -1645,43 +1645,43 @@ msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
 msgstr "प्राधान्यता"
 
-#: printing/calprintdefaultplugins.cpp:526
+#: printing/calprintdefaultplugins.cpp:524
 #, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
 msgstr "गोपनीयता: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:544
+#: printing/calprintdefaultplugins.cpp:542
 #, kde-format
 msgid "No Attachments"
 msgstr "जोडपत्रे/पुरवण्या नाहीत"
 
-#: printing/calprintdefaultplugins.cpp:547
+#: printing/calprintdefaultplugins.cpp:545
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: printing/calprintdefaultplugins.cpp:553
+#: printing/calprintdefaultplugins.cpp:551
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
 msgstr "  "
 
-#: printing/calprintdefaultplugins.cpp:570
+#: printing/calprintdefaultplugins.cpp:568
 #, kde-format
 msgid "No Attendees"
 msgstr "उपस्थिती/उपस्थित राहणारे नाहीत"
 
-#: printing/calprintdefaultplugins.cpp:572
+#: printing/calprintdefaultplugins.cpp:570
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: printing/calprintdefaultplugins.cpp:584
+#: printing/calprintdefaultplugins.cpp:582
 #, kde-format
 msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
@@ -1689,50 +1689,50 @@ msgctxt ""
 msgid "%1 (%2): %3"
 msgstr "%1 (%2): %3"
 
-#: printing/calprintdefaultplugins.cpp:602
+#: printing/calprintdefaultplugins.cpp:600
 #, kde-format
 msgid "Status: %1"
 msgstr "स्थिती: %1"
 
-#: printing/calprintdefaultplugins.cpp:606
+#: printing/calprintdefaultplugins.cpp:604
 #, kde-format
 msgid "Secrecy: %1"
 msgstr "गुप्तता : %1"
 
-#: printing/calprintdefaultplugins.cpp:612
+#: printing/calprintdefaultplugins.cpp:610
 #, kde-format
 msgid "Show as: Busy"
 msgstr "व्यस्त म्हणून दाखवा"
 
-#: printing/calprintdefaultplugins.cpp:614
+#: printing/calprintdefaultplugins.cpp:612
 #, kde-format
 msgid "Show as: Free"
 msgstr "असे दाखवा: मुक्त/स्वतंत्र"
 
-#: printing/calprintdefaultplugins.cpp:620
+#: printing/calprintdefaultplugins.cpp:618
 #, kde-format
 msgid "This task is overdue!"
 msgstr "हे काम विलंबित/थकीत आहे!"
 
-#: printing/calprintdefaultplugins.cpp:626
+#: printing/calprintdefaultplugins.cpp:624
 #, kde-format
 msgid "Settings: "
 msgstr "संयोजना : "
 
-#: printing/calprintdefaultplugins.cpp:631
+#: printing/calprintdefaultplugins.cpp:629
 #, kde-format
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:724 printing/calprintpluginbase.cpp:916
-#: printing/calprintpluginbase.cpp:1056 printing/calprintpluginbase.cpp:1113
+#: printing/calprintdefaultplugins.cpp:722 printing/calprintpluginbase.cpp:920
+#: printing/calprintpluginbase.cpp:1060 printing/calprintpluginbase.cpp:1117
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:727 printing/calprintpluginbase.cpp:935
-#: printing/calprintpluginbase.cpp:1059
+#: printing/calprintdefaultplugins.cpp:725 printing/calprintpluginbase.cpp:939
+#: printing/calprintpluginbase.cpp:1063
 #, fuzzy, kde-format
 #| msgctxt "summary, location"
 #| msgid "%1, %2"
@@ -1740,20 +1740,20 @@ msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:782
+#: printing/calprintdefaultplugins.cpp:780
 #, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:987
-#: printing/calprintdefaultplugins.cpp:1209 printing/yearprint.cpp:141
+#: printing/calprintdefaultplugins.cpp:985
+#: printing/calprintdefaultplugins.cpp:1207 printing/yearprint.cpp:141
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1231
+#: printing/calprintdefaultplugins.cpp:1229
 #, fuzzy, kde-format
 #| msgctxt "date from - to (week number)"
 #| msgid "%1 - %2 (Week %3)"
@@ -1761,7 +1761,7 @@ msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
 msgstr "%1 - %2 (आठवडा %3)"
 
-#: printing/calprintdefaultplugins.cpp:1233
+#: printing/calprintdefaultplugins.cpp:1231
 #, fuzzy, kde-format
 #| msgctxt "date from - to (week number)"
 #| msgid "%1 - %2 (Week %3)"
@@ -1771,7 +1771,7 @@ msgid ""
 "(Week %3)"
 msgstr "%1 - %2 (आठवडा %3)"
 
-#: printing/calprintdefaultplugins.cpp:1418
+#: printing/calprintdefaultplugins.cpp:1416
 #, fuzzy, kde-format
 #| msgctxt "Date range: Month dayStart - dayEnd"
 #| msgid "%1 %2 - %3"
@@ -1779,7 +1779,7 @@ msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2 - %3"
 
-#: printing/calprintdefaultplugins.cpp:1529
+#: printing/calprintdefaultplugins.cpp:1527
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event summary"
 #| msgid "Summary"
@@ -1787,7 +1787,7 @@ msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "सारांश"
 
-#: printing/calprintdefaultplugins.cpp:1530
+#: printing/calprintdefaultplugins.cpp:1528
 #, fuzzy, kde-format
 #| msgctxt "@title:column calendar event start date and time"
 #| msgid "Start Date and Time"
@@ -1795,7 +1795,7 @@ msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "सुरुवातीचा दिनांक व वेळ"
 
-#: printing/calprintdefaultplugins.cpp:1531
+#: printing/calprintdefaultplugins.cpp:1529
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item due date and time"
 #| msgid "Due Date and Time"
@@ -1803,7 +1803,7 @@ msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "ठरलेला दिनांक व वेळ"
 
-#: printing/calprintdefaultplugins.cpp:1532
+#: printing/calprintdefaultplugins.cpp:1530
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
@@ -1811,7 +1811,7 @@ msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "प्राधान्यता"
 
-#: printing/calprintdefaultplugins.cpp:1533
+#: printing/calprintdefaultplugins.cpp:1531
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -1819,19 +1819,19 @@ msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "पूर्ण"
 
-#: printing/calprintdefaultplugins.cpp:1534
+#: printing/calprintdefaultplugins.cpp:1532
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1540
+#: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "चढत्या क्रमाने"
 
-#: printing/calprintdefaultplugins.cpp:1541
+#: printing/calprintdefaultplugins.cpp:1539
 #, fuzzy, kde-format
 #| msgctxt "@option sort in descreasing order"
 #| msgid "Descending"
@@ -1839,31 +1839,31 @@ msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "उतरत्या क्रमाने"
 
-#: printing/calprintdefaultplugins.cpp:1554
+#: printing/calprintdefaultplugins.cpp:1552
 #, kde-format
 msgid "To-do list"
 msgstr "कार्य यादी"
 
-#: printing/calprintdefaultplugins.cpp:1606
-#: printing/calprintpluginbase.cpp:1714
+#: printing/calprintdefaultplugins.cpp:1604
+#: printing/calprintpluginbase.cpp:1716
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: printing/calprintdefaultplugins.cpp:1617
+#: printing/calprintdefaultplugins.cpp:1615
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
 msgid "Priority"
 msgstr "प्राधान्यता"
 
-#: printing/calprintdefaultplugins.cpp:1627
+#: printing/calprintdefaultplugins.cpp:1625
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "अपेक्षित"
 
-#: printing/calprintdefaultplugins.cpp:1637
+#: printing/calprintdefaultplugins.cpp:1635
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event start date and time"
 #| msgid "Start date and time"
@@ -1871,7 +1871,7 @@ msgctxt "@label to-do start date"
 msgid "Start"
 msgstr "सुरुवातीचा दिनांक व वेळ"
 
-#: printing/calprintdefaultplugins.cpp:1647
+#: printing/calprintdefaultplugins.cpp:1645
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -1879,7 +1879,7 @@ msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "पूर्ण"
 
-#: printing/calprintdefaultplugins.cpp:1657
+#: printing/calprintdefaultplugins.cpp:1655
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
@@ -2362,43 +2362,43 @@ msgstr "प्रत्येक ओळीच्या डाव्या बा
 msgid "Print week &numbers"
 msgstr "आठवड्याचे क्रमांक छापा (&N)"
 
-#: printing/calprintpluginbase.cpp:143
+#: printing/calprintpluginbase.cpp:147
 #, fuzzy, kde-format
 #| msgid "This printing style does not have any configuration options."
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "छपाईच्या ह्या शैलीला मांडणीचे/रचनेचे पर्याय नाहीत."
 
-#: printing/calprintpluginbase.cpp:299
+#: printing/calprintpluginbase.cpp:303
 #, kde-format
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
 msgstr ","
 
-#: printing/calprintpluginbase.cpp:311
+#: printing/calprintpluginbase.cpp:315
 #, kde-format
 msgid "Holiday"
 msgstr "सुट्टी"
 
-#: printing/calprintpluginbase.cpp:612
+#: printing/calprintpluginbase.cpp:616
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "छापले: %1"
 
-#: printing/calprintpluginbase.cpp:921
+#: printing/calprintpluginbase.cpp:925
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1-%2 %3"
 
-#: printing/calprintpluginbase.cpp:927
+#: printing/calprintpluginbase.cpp:931
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:994
+#: printing/calprintpluginbase.cpp:998
 #, fuzzy, kde-format
 #| msgctxt "Date range: Month dayStart - dayEnd"
 #| msgid "%1 %2 - %3"
@@ -2406,24 +2406,24 @@ msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1 %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1120
+#: printing/calprintpluginbase.cpp:1124
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (अपेक्षित : %2)"
 
-#: printing/calprintpluginbase.cpp:1125
+#: printing/calprintpluginbase.cpp:1129
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (अपेक्षित : %2)"
 
-#: printing/calprintpluginbase.cpp:1132
+#: printing/calprintpluginbase.cpp:1136
 #, kde-format
 msgid "To-do: %1"
 msgstr "कार्य : %1"
 
-#: printing/calprintpluginbase.cpp:1868
+#: printing/calprintpluginbase.cpp:1871
 #, fuzzy, kde-format
 #| msgctxt "Date range: Month dayStart - dayEnd"
 #| msgid "%1 %2 - %3"
@@ -2431,7 +2431,7 @@ msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1874
+#: printing/calprintpluginbase.cpp:1877
 #, fuzzy, kde-format
 #| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #| msgid "%1 %2 - %3 %4"
@@ -2805,33 +2805,33 @@ msgstr "दिनदर्शिका"
 msgid "Select the calendar where this item will be stored."
 msgstr ""
 
-#: utils.cpp:397
+#: utils.cpp:398
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "दिनदर्शिका"
 
-#: utils.cpp:399
+#: utils.cpp:400
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "दिनदर्शिका"
 
-#: utils.cpp:410
+#: utils.cpp:411
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr ""
 
-#: utils.cpp:412
+#: utils.cpp:413
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Folder type:"
 msgstr "दिनदर्शिका"
 
-#: utils.cpp:422
+#: utils.cpp:423
 #, fuzzy, kde-format
 #| msgctxt "no status"
 #| msgid "none"
@@ -2839,67 +2839,67 @@ msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "काही नाही"
 
-#: utils.cpp:425
+#: utils.cpp:426
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Content type:"
 msgstr "दिनदर्शिका"
 
-#: utils.cpp:432
+#: utils.cpp:433
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:435
+#: utils.cpp:436
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr ""
 
-#: utils.cpp:437
+#: utils.cpp:438
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr ""
 
-#: utils.cpp:445
+#: utils.cpp:446
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:448
+#: utils.cpp:449
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr ""
 
-#: utils.cpp:450
+#: utils.cpp:451
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr ""
 
-#: utils.cpp:452
+#: utils.cpp:453
 #, fuzzy, kde-format
 #| msgid "Send Email"
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "इमेल पाठवा"
 
-#: utils.cpp:454
+#: utils.cpp:455
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr ""
 
-#: utils.cpp:456
+#: utils.cpp:457
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:460
+#: utils.cpp:461
 #, fuzzy, kde-format
 #| msgctxt "no status"
 #| msgid "none"
@@ -2907,20 +2907,20 @@ msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "काही नाही"
 
-#: utils.cpp:463
+#: utils.cpp:464
 #, fuzzy, kde-format
 #| msgid "No reminders"
 msgid "Blocked Reminders:"
 msgstr "आठवण देणारे नाहीत"
 
-#: utils.cpp:529
+#: utils.cpp:530
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:531
+#: utils.cpp:532
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -2929,7 +2929,7 @@ msgstr "%1%"
 msgid "%1 (%2)"
 msgstr "%1 (%2): %3"
 
-#: utils.cpp:536
+#: utils.cpp:537
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
