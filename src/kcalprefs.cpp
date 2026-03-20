@@ -127,13 +127,6 @@ void KCalPrefs::usrRead()
         d->mDefaultEventCalendarId = defaultCalendarConfig.readEntry("Default Calendar", -1);
     }
     d->mDefaultTodoCalendarId = defaultCalendarConfig.readEntry("Default Todo Calendar", -1);
-#if 0
-    config()->setGroup("FreeBusy");
-    if (mRememberRetrievePw) {
-        d->mRetrievePassword
-            = KStringHandler::obscure(config()->readEntry("Retrieve Server Password"));
-    }
-#endif
 
     KConfigSkeleton::usrRead();
     fillMailDefaults();
@@ -142,15 +135,6 @@ void KCalPrefs::usrRead()
 bool KCalPrefs::usrSave()
 {
     KConfigGroup generalConfig(config(), u"General"_s);
-
-#if 0
-    if (mRememberRetrievePw) {
-        config()->writeEntry("Retrieve Server Password",
-                             KStringHandler::obscure(d->mRetrievePassword));
-    } else {
-        config()->deleteEntry("Retrieve Server Password");
-    }
-#endif
 
     KConfigGroup defaultCalendarConfig(config(), u"Calendar"_s);
     defaultCalendarConfig.writeEntry("Default Event Calendar", defaultEventCalendarId());
