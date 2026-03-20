@@ -632,7 +632,7 @@ void CalPrintPluginBase::drawSmallMonth(QPainter &p, QDate qd, QRect box)
     double cellWidth = double(box.width()) / double(7);
     int rownr = 3 + (qd.daysInMonth() + weekdayCol - 1) / 7;
     // 3 Pixel after month name, 2 after day names, 1 after the calendar
-    double cellHeight = (box.height() - 5) / rownr;
+    double cellHeight = (box.height() - 5) / static_cast<double>(rownr);
     QFont oldFont(p.font());
     auto newFont = QFont(u"sans-serif"_s);
     newFont.setPixelSize(cellHeight);
