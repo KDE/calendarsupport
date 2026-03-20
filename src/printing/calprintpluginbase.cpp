@@ -36,6 +36,8 @@ using namespace Qt::Literals::StringLiterals;
 
 using namespace CalendarSupport;
 
+#include <cmath>
+
 static QString cleanStr(const QString &instr)
 {
     QString ret = instr;
@@ -1703,7 +1705,7 @@ void CalPrintPluginBase::drawTodo(int &count,
         int lwidth = 24;
         int lheight = p.fontMetrics().ascent();
         // first, draw the progress bar
-        int progress = static_cast<int>(((lwidth * todo->percentComplete()) / 100.0 + 0.5));
+        int progress = std::lround(((lwidth * todo->percentComplete()) / 100.0 + 0.5));
 
         p.setBrush(QBrush(Qt::NoBrush));
         p.drawRect(posPercentComplete, top, lwidth, lheight);

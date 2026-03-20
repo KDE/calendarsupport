@@ -12,6 +12,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <KLocalizedString>
 using namespace CalendarSupport;
 
+#include <cmath>
+
 /**************************************************************
  *           Print Year
  **************************************************************/
@@ -152,8 +154,8 @@ void CalPrintYear::print(QPainter &p, int width, int height)
             if (++thismonth > months) {
                 break;
             }
-            int xstart = static_cast<int>(j * monthwidth + 0.5);
-            int xend = static_cast<int>((j + 1) * monthwidth + 0.5);
+            int xstart = std::lround(j * monthwidth + 0.5);
+            int xend = std::lround((j + 1) * monthwidth + 0.5);
             QRect monthBox(xstart, monthesBox.top(), xend - xstart, monthesBox.height());
             drawMonth(p, temp, monthBox, maxdays, mSubDaysEvents, mHolidaysEvents);
 
