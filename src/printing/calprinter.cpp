@@ -72,10 +72,10 @@ void CalPrinter::init(const KCalendarCore::Calendar::Ptr &calendar)
     }
 }
 
-void CalPrinter::setDateRange(QDate fd, QDate td)
+void CalPrinter::setDateRange(QDate start, QDate end)
 {
     for (const auto plugin : std::as_const(mPrintPlugins)) {
-        plugin->setDateRange(fd, td);
+        plugin->setDateRange(start, end);
     }
 }
 

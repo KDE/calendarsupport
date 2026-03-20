@@ -117,7 +117,7 @@ public:
     void setMargin(const int margin);
 
     [[nodiscard]] int padding() const;
-    void setPadding(const int margin);
+    void setPadding(const int padding);
 
     [[nodiscard]] int borderWidth() const;
     void setBorderWidth(const int border);

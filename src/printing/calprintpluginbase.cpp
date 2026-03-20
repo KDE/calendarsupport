@@ -764,12 +764,12 @@ void CalPrintPluginBase::drawTimeLine(QPainter &p, QTime fromTime, QTime toTime,
 }
 
 void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
-                                          const KCalendarCore::Event::List &events,
+                                          const KCalendarCore::Event::List &eventList,
                                           QDate qd,
                                           bool expandable,
                                           QTime fromTime,
                                           QTime toTime,
-                                          QRect oldbox,
+                                          QRect box,
                                           bool includeDescription,
                                           bool includeCategories,
                                           bool excludeTime,
@@ -789,17 +789,17 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
     }
 
     if (!workDays.contains(qd)) {
-        drawShadedBox(p, BOX_BORDER_WIDTH, sHolidayBackground, oldbox);
+        drawShadedBox(p, BOX_BORDER_WIDTH, sHolidayBackground, box);
     } else {
-        drawBox(p, BOX_BORDER_WIDTH, oldbox);
+        drawBox(p, BOX_BORDER_WIDTH, box);
     }
-    QRect box(oldbox);
+    QRect newbox(box);
     // Account for the border with and cut away that margin from the interior
-    //   box.setRight( box.right()-BOX_BORDER_WIDTH );
+    //   newbox.setRight( newbox.right()-BOX_BORDER_WIDTH );
 
     if (expandable) {
         // Adapt start/end times to include complete events
-        for (const KCalendarCore::Event::Ptr &event : std::as_const(events)) {
+        for (const KCalendarCore::Event::Ptr &event : std::as_const(eventList)) {
             Q_ASSERT(event);
             if (!event || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
                 || (mExcludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
@@ -820,24 +820,24 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
 
     // calculate the height of a cell and of a minute
     int totalsecs = myFromTime.secsTo(myToTime);
-    float minlen = box.height() * 60. / totalsecs;
+    float minlen = newbox.height() * 60. / totalsecs;
     float cellHeight = 60. * minlen;
-    float currY = box.top();
+    float currY = newbox.top();
 
     // print grid:
     QTime curTime(QTime(myFromTime.hour(), 0, 0));
     currY += myFromTime.secsTo(curTime) * minlen / 60;
 
     while (curTime < myToTime && curTime.isValid()) {
-        if (currY > box.top()) {
-            p.drawLine(box.left(), int(currY), box.right(), int(currY));
+        if (currY > newbox.top()) {
+            p.drawLine(newbox.left(), int(currY), newbox.right(), int(currY));
         }
         currY += cellHeight / 2;
-        if ((currY > box.top()) && (currY < box.bottom())) {
+        if ((currY > newbox.top()) && (currY < newbox.bottom())) {
             // enough space for half-hour line
             QPen oldPen(p.pen());
             p.setPen(QColor(192, 192, 192));
-            p.drawLine(box.left(), int(currY), box.right(), int(currY));
+            p.drawLine(newbox.left(), int(currY), newbox.right(), int(currY));
             p.setPen(oldPen);
         }
         if (curTime.secsTo(myToTime) > 3600) {
@@ -856,7 +856,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
 
     QList<CellItem *> cells;
 
-    for (const KCalendarCore::Event::Ptr &event : std::as_const(events)) {
+    for (const KCalendarCore::Event::Ptr &event : std::as_const(eventList)) {
         if (!event || (mExcludeConfidential && event->secrecy() == KCalendarCore::Incidence::SecrecyConfidential)
             || (mExcludePrivate && event->secrecy() == KCalendarCore::Incidence::SecrecyPrivate)) {
             continue;
@@ -880,7 +880,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
     QListIterator<CellItem *> it2(cells);
     while (it2.hasNext()) {
         auto placeItem = static_cast<PrintCellItem *>(it2.next());
-        drawAgendaItem(placeItem, p, startPrintDate, endPrintDate, minlen, box, includeDescription, includeCategories, excludeTime);
+        drawAgendaItem(placeItem, p, startPrintDate, endPrintDate, minlen, newbox, includeDescription, includeCategories, excludeTime);
     }
 }
 

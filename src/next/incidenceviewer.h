@@ -98,9 +98,9 @@ public:
 
     /*!
      * Sets the model for this viewer.
-     * \a etm is a pointer to an ETM instance.
+     * \a model is a pointer to an ETM instance.
      */
-    void setModel(Akonadi::EntityTreeModel *etm);
+    void setModel(Akonadi::EntityTreeModel *model);
 
     /*!
      * Returns the incidence that is currently displayed.
