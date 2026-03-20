@@ -1046,6 +1046,7 @@ void CalPrintWeek::readSettingsWidget()
         mFromDate = cfg->mFromDate->date();
         mToDate = cfg->mToDate->date();
 
+        // NOLINTBEGIN(bugprone-branch-clone)
         if (cfg->mPrintTypeFilofax->isChecked()) {
             mWeekPrintType = Filofax;
         } else if (cfg->mPrintTypeTimetable->isChecked()) {
@@ -1055,6 +1056,7 @@ void CalPrintWeek::readSettingsWidget()
         } else {
             mWeekPrintType = Timetable;
         }
+        // NOLINTEND(bugprone-branch-clone)
 
         mStartTime = cfg->mFromTime->time();
         mEndTime = cfg->mToTime->time();
@@ -1124,6 +1126,7 @@ void CalPrintWeek::doSaveConfig()
 
 QPageLayout::Orientation CalPrintWeek::defaultOrientation() const
 {
+    // NOLINTBEGIN(bugprone-branch-clone)
     if (mWeekPrintType == Filofax) {
         return QPageLayout::Portrait;
     } else if (mWeekPrintType == SplitWeek) {
@@ -1131,6 +1134,7 @@ QPageLayout::Orientation CalPrintWeek::defaultOrientation() const
     } else {
         return QPageLayout::Landscape;
     }
+    // NOLINTEND(bugprone-branch-clone)
 }
 
 void CalPrintWeek::setDateRange(const QDate &from, const QDate &to)
@@ -1467,6 +1471,7 @@ void CalPrintTodos::readSettingsWidget()
     if (cfg) {
         mPageTitle = cfg->mTitle->text();
 
+        // NOLINTBEGIN(bugprone-branch-clone)
         if (cfg->mPrintAll->isChecked()) {
             mTodoPrintType = TodosAll;
         } else if (cfg->mPrintUnfinished->isChecked()) {
@@ -1476,6 +1481,7 @@ void CalPrintTodos::readSettingsWidget()
         } else {
             mTodoPrintType = TodosAll;
         }
+        // NOLINTEND(bugprone-branch-clone)
 
         mFromDate = cfg->mFromDate->date();
         mToDate = cfg->mToDate->date();
