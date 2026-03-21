@@ -82,7 +82,7 @@ Attachment AttachmentHandler::find(const QString &attachmentName, const Incidenc
     Attachment a;
     if (!as.isEmpty()) {
         Attachment::List::ConstIterator it;
-        Attachment::List::ConstIterator end(as.constEnd());
+        Attachment::List::ConstIterator const end(as.constEnd());
 
         for (it = as.constBegin(); it != end; ++it) {
             if ((*it).label() == attachmentName) {
@@ -117,7 +117,7 @@ Attachment AttachmentHandler::find(const QString &attachmentName, const Schedule
         return Attachment();
     }
 
-    Incidence::Ptr incidence = message->event().dynamicCast<Incidence>();
+    Incidence::Ptr const incidence = message->event().dynamicCast<Incidence>();
     if (!incidence) {
         KMessageBox::error(d->mParent,
                            i18n("The calendar invitation stored in this email message is broken in some way. "
@@ -134,7 +134,7 @@ static QUrl tempFileForAttachment(const Attachment &attachment)
 {
     QUrl url;
 
-    QMimeDatabase db;
+    QMimeDatabase const db;
     QStringList patterns = db.mimeTypeForName(attachment.mimeType()).globPatterns();
     if (!patterns.empty()) {
         s_tempFile = new QTemporaryFile(QDir::tempPath() + "/attachementview_XXXXXX"_L1 + patterns.first().remove(u'*'));
@@ -151,7 +151,7 @@ static QUrl tempFileForAttachment(const Attachment &attachment)
     s_tempFile->setPermissions(QFile::ReadUser);
     s_tempFile->write(QByteArray::fromBase64(attachment.data()));
     s_tempFile->close();
-    QFile tf(s_tempFile->fileName());
+    QFile const tf(s_tempFile->fileName());
     if (tf.size() != attachment.size()) {
         // whoops. failed to write the entire attachment. return an invalid URL.
         delete s_tempFile;
@@ -174,7 +174,7 @@ bool AttachmentHandler::view(const Attachment &attachment)
         QDesktopServices::openUrl(QUrl(attachment.uri()));
     } else {
         // put the attachment in a temporary file and launch it
-        QUrl tempUrl = tempFileForAttachment(attachment);
+        QUrl const tempUrl = tempFileForAttachment(attachment);
         if (tempUrl.isValid()) {
             auto job = new KIO::OpenUrlJob(tempUrl, attachment.mimeType());
             job->setDeleteTemporaryFile(true);
@@ -227,7 +227,7 @@ bool AttachmentHandler::saveAs(const Attachment &attachment)
         stat = job->exec();
     } else {
         // put the attachment in a temporary file and save it
-        QUrl tempUrl = tempFileForAttachment(attachment);
+        QUrl const tempUrl = tempFileForAttachment(attachment);
         if (tempUrl.isValid()) {
             auto job = KIO::file_copy(tempUrl, QUrl::fromLocalFile(saveAsFile));
             stat = job->exec();
@@ -269,14 +269,14 @@ bool AttachmentHandler::saveAs(const QString &attachmentName, const ScheduleMess
 
 void AttachmentHandler::slotFinishSaveAs(KJob *job)
 {
-    ReceivedInfo info = d->mJobToReceivedInfo[job];
+    ReceivedInfo const info = d->mJobToReceivedInfo[job];
     bool success = false;
 
     if (job->error() != 0) {
         auto fetchJob = qobject_cast<ItemFetchJob *>(job);
         const Item::List items = fetchJob->items();
         if (!items.isEmpty()) {
-            Incidence::Ptr incidence = Akonadi::CalendarUtils::incidence(items.first());
+            Incidence::Ptr const incidence = Akonadi::CalendarUtils::incidence(items.first());
             success = incidence && saveAs(info.attachmentName, incidence);
         } else {
             qCWarning(CALENDARSUPPORT_LOG) << Q_FUNC_INFO << "No item found";
@@ -291,14 +291,14 @@ void AttachmentHandler::slotFinishSaveAs(KJob *job)
 
 void AttachmentHandler::slotFinishView(KJob *job)
 {
-    ReceivedInfo info = d->mJobToReceivedInfo[job];
+    ReceivedInfo const info = d->mJobToReceivedInfo[job];
     bool success = false;
 
     if (job->error()) {
         auto fetchJob = qobject_cast<ItemFetchJob *>(job);
         const Item::List items = fetchJob->items();
         if (!items.isEmpty()) {
-            Incidence::Ptr incidence = Akonadi::CalendarUtils::incidence(items.first());
+            Incidence::Ptr const incidence = Akonadi::CalendarUtils::incidence(items.first());
             success = incidence && view(info.attachmentName, incidence);
         } else {
             qCWarning(CALENDARSUPPORT_LOG) << Q_FUNC_INFO << "No item found";

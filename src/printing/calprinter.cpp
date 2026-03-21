@@ -62,7 +62,7 @@ void CalPrinter::init(const KCalendarCore::Calendar::Ptr &calendar)
     mPrintPlugins.prepend(new CalPrintIncidence());
 
     PrintPlugin::List::Iterator it = mPrintPlugins.begin();
-    PrintPlugin::List::Iterator end = mPrintPlugins.end();
+    PrintPlugin::List::Iterator end = mPrintPlugins.end(); // NOLINT(misc-const-correctness)
     for (; it != end; ++it) {
         if (*it) {
             (*it)->setConfig(mConfig);
@@ -82,11 +82,11 @@ void CalPrinter::setDateRange(QDate start, QDate end)
 void CalPrinter::print(int type, QDate fd, QDate td, const KCalendarCore::Incidence::List &selectedIncidences, bool preview)
 {
     PrintPlugin::List::Iterator it = mPrintPlugins.begin();
-    PrintPlugin::List::Iterator end = mPrintPlugins.end();
+    PrintPlugin::List::Iterator end = mPrintPlugins.end(); // NOLINT(misc-const-correctness)
     for (; it != end; ++it) {
         (*it)->setSelectedIncidences(selectedIncidences);
     }
-    QPointer<CalPrintDialog> printDialog = new CalPrintDialog(type, mPrintPlugins, mParent, mUniqItem);
+    QPointer<CalPrintDialog> const printDialog = new CalPrintDialog(type, mPrintPlugins, mParent, mUniqItem);
 
     KConfigGroup grp(mConfig, u""_s); // orientation setting isn't in a group
     printDialog->setOrientation(CalPrinter::ePrintOrientation(grp.readEntry("Orientation", 1)));
@@ -132,7 +132,7 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientati
     }
 
     if (preview) {
-        QPointer<QPrintPreviewDialog> printPreview = new QPrintPreviewDialog(&printer);
+        QPointer<QPrintPreviewDialog> const printPreview = new QPrintPreviewDialog(&printer);
         new KWindowStateSaver(printPreview.data(), "CalendarPrintPreviewDialog"_L1);
         connect(printPreview.data(), &QPrintPreviewDialog::paintRequested, this, [selectedStyle, &printer]() {
             selectedStyle->doPrint(&printer);
@@ -140,7 +140,7 @@ void CalPrinter::doPrint(PrintPlugin *selectedStyle, CalPrinter::ePrintOrientati
         printPreview->exec();
         delete printPreview;
     } else {
-        QPointer<QPrintDialog> printDialog = new QPrintDialog(&printer, mParent);
+        QPointer<QPrintDialog> const printDialog = new QPrintDialog(&printer, mParent);
         if (printDialog->exec() == QDialog::Accepted) {
             selectedStyle->doPrint(&printer);
         }
@@ -210,7 +210,7 @@ CalPrintDialog::CalPrintDialog(int initialPrintType, const PrintPlugin::List &pl
     // proper ids (when two plugins have the same sortID), so store them in a map
     // and use these new IDs to later sort the plugins for the type selection.
     for (PrintPlugin::List::ConstIterator it = plugins.constBegin(), total = plugins.constEnd(); it != total; ++it) {
-        int newid = mConfigArea->insertWidget((*it)->sortID(), (*it)->configWidget(mConfigArea));
+        int const newid = mConfigArea->insertWidget((*it)->sortID(), (*it)->configWidget(mConfigArea));
         mPluginIDs[newid] = (*it);
     }
     // Insert all plugins in sorted order; plugins with clashing IDs will be first
@@ -290,7 +290,7 @@ CalPrinter::ePrintOrientation CalPrintDialog::orientation() const
 
 PrintPlugin *CalPrintDialog::selectedPlugin()
 {
-    int id = mConfigArea->currentIndex();
+    int const id = mConfigArea->currentIndex();
     if (mPluginIDs.contains(id)) {
         return mPluginIDs[id];
     } else {

@@ -41,7 +41,7 @@ void CalPrintYear::setSettingsWidget()
 {
     auto cfg = dynamic_cast<CalPrintYearConfig *>(static_cast<QWidget *>(mConfigWidget));
     if (cfg) {
-        QDate start(mYear, 1, 1);
+        QDate const start(mYear, 1, 1);
         const int months = 12;
         int prevPages = 0;
         for (int i = 1; i <= months; ++i) {
@@ -67,7 +67,7 @@ void CalPrintYear::doLoadConfig()
 {
     CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
-        KConfigGroup config(mConfig, u"Yearprint"_s);
+        KConfigGroup const config(mConfig, u"Yearprint"_s);
         mYear = config.readEntry("Year", QDate::currentDate().year());
         mPages = config.readEntry("Pages", 1);
         mSubDaysEvents = config.readEntry("ShowSubDayEventsAs", static_cast<int>(TimeBoxes));
@@ -110,8 +110,8 @@ void CalPrintYear::print(QPainter &p, int width, int height)
 {
     auto locale = QLocale::system();
 
-    QRect headerBox(0, 0, width, headerHeight());
-    QRect footerBox(0, height - footerHeight(), width, footerHeight());
+    QRect const headerBox(0, 0, width, headerHeight());
+    QRect const footerBox(0, height - footerHeight(), width, footerHeight());
     height -= footerHeight();
 
     QDate start(mYear, 1, 1);
@@ -128,8 +128,8 @@ void CalPrintYear::print(QPainter &p, int width, int height)
 
     // Now determine the months per page so that the printout fits on
     // exactly mPages pages
-    int monthsPerPage = (months - 1) / mPages + 1;
-    int pages = (months - 1) / monthsPerPage + 1;
+    int const monthsPerPage = (months - 1) / mPages + 1;
+    int const pages = (months - 1) / monthsPerPage + 1;
     int thismonth = 0;
     temp = start;
     for (int page = 0; page < pages; ++page) {
@@ -138,9 +138,9 @@ void CalPrintYear::print(QPainter &p, int width, int height)
         }
         QDate end = start.addMonths(monthsPerPage);
         end = end.addDays(-1);
-        QString stdate = locale.toString(start, QLocale::ShortFormat);
-        QString endate = locale.toString(end, QLocale::ShortFormat);
-        QString title = i18nc("date from-to", "%1\u2013%2", stdate, endate);
+        QString const stdate = locale.toString(start, QLocale::ShortFormat);
+        QString const endate = locale.toString(end, QLocale::ShortFormat);
+        QString const title = i18nc("date from-to", "%1\u2013%2", stdate, endate);
         drawHeader(p, title, start.addMonths(-1), start.addMonths(monthsPerPage), headerBox);
 
         QRect monthesBox(headerBox);
@@ -148,15 +148,15 @@ void CalPrintYear::print(QPainter &p, int width, int height)
         monthesBox.setBottom(height);
 
         drawBox(p, BOX_BORDER_WIDTH, monthesBox);
-        float monthwidth = float(monthesBox.width()) / float(monthsPerPage);
+        float const monthwidth = float(monthesBox.width()) / float(monthsPerPage);
 
         for (int j = 0; j < monthsPerPage; ++j) {
             if (++thismonth > months) {
                 break;
             }
-            int xstart = std::lround(j * monthwidth + 0.5);
-            int xend = std::lround((j + 1) * monthwidth + 0.5);
-            QRect monthBox(xstart, monthesBox.top(), xend - xstart, monthesBox.height());
+            int const xstart = std::lround(j * monthwidth + 0.5);
+            int const xend = std::lround((j + 1) * monthwidth + 0.5);
+            QRect const monthBox(xstart, monthesBox.top(), xend - xstart, monthesBox.height());
             drawMonth(p, temp, monthBox, maxdays, mSubDaysEvents, mHolidaysEvents);
 
             temp = temp.addMonths(1);

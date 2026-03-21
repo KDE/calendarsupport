@@ -65,7 +65,7 @@ void CalPrintJournal::doLoadConfig()
 {
     CalPrintPluginBase::doLoadConfig();
     if (mConfig) {
-        KConfigGroup config(mConfig, u"Journalprint"_s);
+        KConfigGroup const config(mConfig, u"Journalprint"_s);
         mUseDateRange = config.readEntry("JournalsInRange", false);
     }
     setSettingsWidget();
@@ -95,10 +95,10 @@ void CalPrintJournal::setDateRange(const QDate &from, const QDate &to)
 
 void CalPrintJournal::drawJournal(const KCalendarCore::Journal::Ptr &journal, QPainter &p, int x, int &y, int width, int pageHeight)
 {
-    QFont oldFont(p.font());
+    QFont const oldFont(p.font());
     p.setFont(QFont(u"sans-serif"_s, 15));
     QString headerText;
-    QString dateText(QLocale::system().toString(journal->dtStart().toLocalTime().date(), QLocale::LongFormat));
+    QString const dateText(QLocale::system().toString(journal->dtStart().toLocalTime().date(), QLocale::LongFormat));
 
     if (journal->summary().isEmpty()) {
         headerText = dateText;
@@ -137,7 +137,7 @@ void CalPrintJournal::drawJournal(const KCalendarCore::Journal::Ptr &journal, QP
 
 void CalPrintJournal::print(QPainter &p, int width, int height)
 {
-    int x = 0;
+    int const x = 0;
     int y = 0;
     KCalendarCore::Journal::List journals(mCalendar->journals(KCalendarCore::JournalSortDate, KCalendarCore::SortDirectionAscending));
     if (mUseDateRange) {
@@ -151,8 +151,8 @@ void CalPrintJournal::print(QPainter &p, int width, int height)
         }
     }
 
-    QRect headerBox(0, 0, width, headerHeight());
-    QRect footerBox(0, height - footerHeight(), width, footerHeight());
+    QRect const headerBox(0, 0, width, headerHeight());
+    QRect const footerBox(0, height - footerHeight(), width, footerHeight());
     height -= footerHeight();
 
     drawHeader(p, i18n("Journal entries"), QDate(), QDate(), headerBox);

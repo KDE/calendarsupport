@@ -90,7 +90,7 @@ FreeBusyItemModel::FreeBusyItemModel(QObject *parent)
     qRegisterMetaType<KCalendarCore::FreeBusy::Ptr>("KCalendarCore::FreeBusy::Ptr");
     qRegisterMetaType<KCalendarCore::Period>("KCalendarCore::Period");
 
-    Akonadi::FreeBusyManager *m = Akonadi::FreeBusyManager::self();
+    Akonadi::FreeBusyManager const *m = Akonadi::FreeBusyManager::self();
     connect(m, &Akonadi::FreeBusyManager::freeBusyRetrieved, this, &FreeBusyItemModel::slotInsertFreeBusy);
 
     connect(&d->mReloadTimer, &QTimer::timeout, this, &FreeBusyItemModel::autoReload);
@@ -110,7 +110,7 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
     auto data = static_cast<ItemPrivateData *>(index.internalPointer());
 
     if (data->parent() == d->mRootData) {
-        int row = index.row();
+        int const row = index.row();
         if (row >= d->mFreeBusyItems.size()) {
             return {};
         }
@@ -131,12 +131,12 @@ QVariant FreeBusyItemModel::data(const QModelIndex &index, int role) const
         }
     }
 
-    FreeBusyItem::Ptr fbitem = d->mFreeBusyItems.at(data->parent()->row());
+    FreeBusyItem::Ptr const fbitem = d->mFreeBusyItems.at(data->parent()->row());
     if (!fbitem->freeBusy() || index.row() >= fbitem->freeBusy()->busyPeriods().size()) {
         return {};
     }
 
-    KCalendarCore::FreeBusyPeriod period = fbitem->freeBusy()->fullBusyPeriods().at(index.row());
+    KCalendarCore::FreeBusyPeriod const period = fbitem->freeBusy()->fullBusyPeriods().at(index.row());
     switch (role) {
     case Qt::DisplayRole: // return something to make modeltest happy
         return u"%1 - %2"_s.arg(QLocale().toString(period.start().toLocalTime(), QLocale::ShortFormat),
@@ -183,7 +183,7 @@ QModelIndex FreeBusyItemModel::index(int row, int column, const QModelIndex &par
         parentData = static_cast<ItemPrivateData *>(parent.internalPointer());
     }
 
-    ItemPrivateData *childData = parentData->child(row);
+    ItemPrivateData const *childData = parentData->child(row);
     if (childData) {
         return createIndex(row, column, childData);
     } else {
@@ -198,7 +198,7 @@ QModelIndex FreeBusyItemModel::parent(const QModelIndex &child) const
     }
 
     auto childData = static_cast<ItemPrivateData *>(child.internalPointer());
-    ItemPrivateData *parentData = childData->parent();
+    ItemPrivateData const *parentData = childData->parent();
     if (parentData == d->mRootData) {
         return {};
     }
@@ -216,7 +216,7 @@ QVariant FreeBusyItemModel::headerData(int section, Qt::Orientation orientation,
 
 void FreeBusyItemModel::addItem(const FreeBusyItem::Ptr &freebusy)
 {
-    int row = d->mFreeBusyItems.size();
+    int const row = d->mFreeBusyItems.size();
     beginInsertRows(QModelIndex(), row, row);
     d->mFreeBusyItems.append(freebusy);
     auto itemData = new ItemPrivateData(d->mRootData);
@@ -224,7 +224,7 @@ void FreeBusyItemModel::addItem(const FreeBusyItem::Ptr &freebusy)
     endInsertRows();
 
     if (freebusy->freeBusy() && !freebusy->freeBusy()->fullBusyPeriods().isEmpty()) {
-        QModelIndex itemParent = index(row, 0);
+        QModelIndex const itemParent = index(row, 0);
         setFreeBusyPeriods(itemParent, freebusy->freeBusy()->fullBusyPeriods());
     }
     updateFreeBusyData(freebusy);
@@ -237,9 +237,9 @@ void FreeBusyItemModel::setFreeBusyPeriods(const QModelIndex &parent, const KCal
     }
 
     auto parentData = static_cast<ItemPrivateData *>(parent.internalPointer());
-    int fb_count = list.size();
-    int childCount = parentData->childCount();
-    QModelIndex first = index(0, 0, parent);
+    int const fb_count = list.size();
+    int const childCount = parentData->childCount();
+    QModelIndex const first = index(0, 0, parent);
     QModelIndex last = index(childCount - 1, 0, parent);
 
     if (childCount > 0 && fb_count < childCount) {
@@ -281,14 +281,14 @@ void FreeBusyItemModel::removeRow(int row)
 {
     beginRemoveRows(QModelIndex(), row, row);
     d->mFreeBusyItems.removeAt(row);
-    ItemPrivateData *itemData = d->mRootData->removeChild(row);
+    ItemPrivateData const *itemData = d->mRootData->removeChild(row);
     delete itemData;
     endRemoveRows();
 }
 
 void FreeBusyItemModel::removeItem(const FreeBusyItem::Ptr &freebusy)
 {
-    int row = d->mFreeBusyItems.indexOf(freebusy);
+    int const row = d->mFreeBusyItems.indexOf(freebusy);
     if (row >= 0) {
         removeRow(row);
     }

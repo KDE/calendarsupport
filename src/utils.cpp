@@ -160,7 +160,7 @@ QDrag *CalendarSupport::createDrag(const Akonadi::Item::List &items, QObject *pa
 static bool itemMatches(const Akonadi::Item &item, const KCalendarCore::CalFilter *filter)
 {
     assert(filter);
-    KCalendarCore::Incidence::Ptr inc = Akonadi::CalendarUtils::incidence(item);
+    KCalendarCore::Incidence::Ptr const inc = Akonadi::CalendarUtils::incidence(item);
     if (!inc) {
         return false;
     }
@@ -254,7 +254,7 @@ KCalendarCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData)
     KCalendarCore::Todo::List todos;
 
 #ifndef QT_NO_DRAGANDDROP
-    KCalendarCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
+    KCalendarCore::Calendar::Ptr const cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
     if (cal) {
         const KCalendarCore::Todo::List calTodos = cal->todos();
         todos.reserve(calTodos.count());
@@ -272,7 +272,7 @@ KCalendarCore::Incidence::List CalendarSupport::incidences(const QMimeData *mime
     KCalendarCore::Incidence::List incidences;
 
 #ifndef QT_NO_DRAGANDDROP
-    KCalendarCore::Calendar::Ptr cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
+    KCalendarCore::Calendar::Ptr const cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
     if (cal) {
         const KCalendarCore::Incidence::List calIncidences = cal->incidences();
         incidences.reserve(calIncidences.count());
@@ -287,7 +287,7 @@ KCalendarCore::Incidence::List CalendarSupport::incidences(const QMimeData *mime
 
 Akonadi::Collection CalendarSupport::selectCollection(QWidget *parent, int &dialogCode, const QStringList &mimeTypes, const Akonadi::Collection &defCollection)
 {
-    QPointer<Akonadi::CollectionDialog> dlg(new Akonadi::CollectionDialog(parent));
+    QPointer<Akonadi::CollectionDialog> const dlg(new Akonadi::CollectionDialog(parent));
     dlg->setWindowTitle(i18nc("@title:window", "Select Calendar"));
     dlg->setDescription(i18n("Select the calendar where this item will be stored."));
     dlg->changeCollectionDialogOptions(Akonadi::CollectionDialog::KeepTreeExpanded);
@@ -331,7 +331,7 @@ Akonadi::Collection::List CalendarSupport::collectionsFromModel(const QAbstractI
         const Akonadi::Collection collection = Akonadi::CollectionUtils::fromIndex(i);
         if (collection.isValid()) {
             collections << collection;
-            QModelIndex childIndex = model->index(0, 0, i);
+            QModelIndex const childIndex = model->index(0, 0, i);
             if (childIndex.isValid()) {
                 collections << collectionsFromModel(model, i);
             }
@@ -353,7 +353,7 @@ Akonadi::Item::List CalendarSupport::itemsFromModel(const QAbstractItemModel *mo
         if (CalendarSupport::hasIncidence(item)) {
             items << item;
         } else {
-            QModelIndex childIndex = model->index(0, 0, i);
+            QModelIndex const childIndex = model->index(0, 0, i);
             if (childIndex.isValid()) {
                 items << itemsFromModel(model, i);
             }
@@ -428,7 +428,7 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     str += QLatin1StringView("</br>");
 
     // Read only?
-    bool isReadOnly = !(coll.rights() & Akonadi::Collection::CanChangeItem);
+    bool const isReadOnly = !(coll.rights() & Akonadi::Collection::CanChangeItem);
     str += QLatin1StringView("<br>");
     str += QLatin1StringView("<i>") + i18n("Rights:") + QLatin1StringView("</i>");
     str += QLatin1StringView("&nbsp;");
@@ -492,7 +492,7 @@ QList<QDate> CalendarSupport::workDays(QDate startDate, QDate endDate)
     if (KCalPrefs::instance()->mExcludeHolidays) {
         const QStringList holidays = KCalPrefs::instance()->mHolidays;
         for (const QString &regionStr : holidays) {
-            KHolidays::HolidayRegion region(regionStr);
+            KHolidays::HolidayRegion const region(regionStr);
             if (region.isValid()) {
                 const auto list = region.rawHolidaysWithAstroSeasons(startDate, endDate);
                 for (auto const &h : list) {
@@ -513,10 +513,10 @@ QStringList CalendarSupport::holiday(QDate date)
 {
     QStringList hdays;
 
-    bool showCountryCode = (KCalPrefs::instance()->mHolidays.count() > 1);
+    bool const showCountryCode = (KCalPrefs::instance()->mHolidays.count() > 1);
     const QStringList holidays = KCalPrefs::instance()->mHolidays;
     for (const QString &regionStr : holidays) {
-        KHolidays::HolidayRegion region(regionStr);
+        KHolidays::HolidayRegion const region(regionStr);
         if (region.isValid()) {
             const KHolidays::Holiday::List list = region.rawHolidaysWithAstroSeasons(date);
             const int listCount = list.count();
@@ -583,7 +583,7 @@ bool CalendarSupport::mergeCalendar(const QString &srcFilename, const KCalendarC
     destCalendar->startBatchAdding();
     KCalendarCore::FileStorage storage(destCalendar);
     storage.setFileName(srcFilename);
-    bool loadedSuccesfully = storage.load();
+    bool const loadedSuccesfully = storage.load();
     destCalendar->endBatchAdding();
 
     return loadedSuccesfully;

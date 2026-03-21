@@ -40,7 +40,7 @@ TextBrowser::TextBrowser(QWidget *parent)
 void TextBrowser::doSetSource(const QUrl &name, QTextDocument::ResourceType type)
 {
     Q_UNUSED(type);
-    static QRegularExpression re(QLatin1StringView("^([^:]+:)/+"));
+    static QRegularExpression const re(QLatin1StringView("^([^:]+:)/+"));
     QString uri = name.toString();
     // QTextBrowser for some reason insists on putting // or / in links,
     // this is a crude workaround

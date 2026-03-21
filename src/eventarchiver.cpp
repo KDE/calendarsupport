@@ -93,12 +93,12 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
                         bool withGUI,
                         bool errorIfNone)
 {
-    GroupwareScoppedDisabler disabler(changer); // Disables groupware communication temporarily
+    GroupwareScoppedDisabler const disabler(changer); // Disables groupware communication temporarily
 
     // We need to use rawEvents, otherwise events hidden by filters will not be archived.
     KCalendarCore::Event::List events;
     KCalendarCore::Todo::List todos;
-    KCalendarCore::Journal::List journals;
+    KCalendarCore::Journal::List const journals;
 
     if (KCalPrefs::instance()->mArchiveEvents) {
         events = calendar->rawEvents(QDate(1769, 12, 1),
@@ -147,7 +147,7 @@ void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer, QDate l
 {
     QStringList incidenceStrs;
     Akonadi::Item::List::ConstIterator it;
-    Akonadi::Item::List::ConstIterator end(items.constEnd());
+    Akonadi::Item::List::ConstIterator const end(items.constEnd());
     incidenceStrs.reserve(items.count());
     for (it = items.constBegin(); it != end; ++it) {
         incidenceStrs.append(Akonadi::CalendarUtils::incidence(*it)->summary());
@@ -205,7 +205,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     }
 
     // Duplicate current calendar by loading in new calendar object
-    MemoryCalendar::Ptr archiveCalendar(new MemoryCalendar(QTimeZone::systemTimeZone()));
+    MemoryCalendar::Ptr const archiveCalendar(new MemoryCalendar(QTimeZone::systemTimeZone()));
 
     FileStorage archiveStore(archiveCalendar);
     archiveStore.setFileName(tmpFileName);
@@ -234,7 +234,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     // Get or create the archive file
     const QUrl archiveURL(KCalPrefs::instance()->mArchiveFile);
     QString archiveFile;
-    QTemporaryFile downloadTempFile;
+    QTemporaryFile const downloadTempFile;
 
     bool fileExists = false;
     if (archiveURL.isLocalFile()) {

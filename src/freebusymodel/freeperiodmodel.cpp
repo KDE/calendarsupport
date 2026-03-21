@@ -100,8 +100,8 @@ KCalendarCore::Period::List FreePeriodModel::splitPeriodsByDay(const KCalendarCo
         KCalendarCore::Period tmpPeriod = period;
         while (tmpPeriod.start().date() != tmpPeriod.end().date()) {
             const QDateTime midnight(tmpPeriod.start().date(), QTime(23, 59, 59, 999), tmpPeriod.start().timeZone());
-            KCalendarCore::Period firstPeriod(tmpPeriod.start(), midnight);
-            KCalendarCore::Period secondPeriod(midnight.addMSecs(1), tmpPeriod.end());
+            KCalendarCore::Period const firstPeriod(tmpPeriod.start(), midnight);
+            KCalendarCore::Period const secondPeriod(midnight.addMSecs(1), tmpPeriod.end());
             if (firstPeriod.duration().asSeconds() >= validPeriodSecs) {
                 splitList << firstPeriod;
             }
@@ -120,7 +120,7 @@ KCalendarCore::Period::List FreePeriodModel::splitPeriodsByDay(const KCalendarCo
 
 QString FreePeriodModel::day(int index) const
 {
-    KCalendarCore::Period period = mPeriodList.at(index);
+    KCalendarCore::Period const period = mPeriodList.at(index);
     const QDate startDate = period.start().date();
     return ki18nc("@label Day of the week name, example: Monday,", "%1,")
         .subs(QLocale::system().dayName(startDate.dayOfWeek(), QLocale::LongFormat))
@@ -129,7 +129,7 @@ QString FreePeriodModel::day(int index) const
 
 QString FreePeriodModel::date(int index) const
 {
-    KCalendarCore::Period period = mPeriodList.at(index);
+    KCalendarCore::Period const period = mPeriodList.at(index);
 
     const QDate startDate = period.start().date();
     const QString startTime = QLocale::system().toString(period.start().time(), QLocale::ShortFormat);
@@ -149,7 +149,7 @@ QString FreePeriodModel::date(int index) const
 
 QString FreePeriodModel::stringify(int index) const
 {
-    KCalendarCore::Period period = mPeriodList.at(index);
+    KCalendarCore::Period const period = mPeriodList.at(index);
 
     const QDate startDate = period.start().date();
     const QString startTime = QLocale().toString(period.start().time(), QLocale::ShortFormat);
@@ -171,8 +171,8 @@ QString FreePeriodModel::stringify(int index) const
 
 QString FreePeriodModel::tooltipify(int index) const
 {
-    KCalendarCore::Period period = mPeriodList.at(index);
-    unsigned long duration = period.duration().asSeconds() * 1000; // we want milliseconds
+    KCalendarCore::Period const period = mPeriodList.at(index);
+    unsigned long const duration = period.duration().asSeconds() * 1000; // we want milliseconds
     QString toolTip = u"<qt>"_s;
     toolTip += QLatin1StringView("<b>") + i18nc("@info:tooltip", "Free Period") + QLatin1StringView("</b>");
     toolTip += QLatin1StringView("<hr>");

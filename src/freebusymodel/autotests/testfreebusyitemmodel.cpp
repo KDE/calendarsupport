@@ -31,20 +31,20 @@ void FreeBusyItemModelTest::testModelValidity()
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), QTimeZone::utc());
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), QTimeZone::utc());
-    KCalendarCore::Attendee a1(u"fred"_s, u"fred@example.com"_s);
-    KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
+    KCalendarCore::Attendee const a1(u"fred"_s, u"fred@example.com"_s);
+    KCalendarCore::FreeBusy::Ptr const fb1(new KCalendarCore::FreeBusy());
 
     fb1->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
     fb1->addPeriod(dt2, KCalendarCore::Duration(60 * 60));
 
-    FreeBusyItem::Ptr item1(new FreeBusyItem(a1, nullptr));
+    FreeBusyItem::Ptr const item1(new FreeBusyItem(a1, nullptr));
     item1->setFreeBusy(fb1);
 
     model->addItem(item1);
     QCOMPARE(model->rowCount(), 1);
     QVERIFY(model->containsAttendee(a1));
 
-    QModelIndex i = model->index(0, 0);
+    QModelIndex const i = model->index(0, 0);
     QCOMPARE(a1.fullName(), model->data(i, Qt::DisplayRole).toString());
     QCOMPARE(a1, model->data(i, FreeBusyItemModel::AttendeeRole).value<KCalendarCore::Attendee>());
     QCOMPARE(item1->freeBusy(), model->data(i, FreeBusyItemModel::FreeBusyRole).value<KCalendarCore::FreeBusy::Ptr>());
@@ -83,12 +83,12 @@ void FreeBusyItemModelTest::testModelValidity2()
     const QDateTime dt3(QDate(2010, 7, 24), QTime(12, 0, 0), QTimeZone::utc());
     const QDateTime dt4(QDate(2010, 7, 24), QTime(14, 0, 0), QTimeZone::utc());
 
-    KCalendarCore::Attendee a1(u"fred"_s, u"fred@example.com"_s);
-    KCalendarCore::Attendee a2(u"joe"_s, u"joe@example.com"_s);
-    KCalendarCore::Attendee a3(u"max"_s, u"max@example.com"_s);
-    KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
-    KCalendarCore::FreeBusy::Ptr fb2(new KCalendarCore::FreeBusy());
-    KCalendarCore::FreeBusy::Ptr fb3(new KCalendarCore::FreeBusy());
+    KCalendarCore::Attendee const a1(u"fred"_s, u"fred@example.com"_s);
+    KCalendarCore::Attendee const a2(u"joe"_s, u"joe@example.com"_s);
+    KCalendarCore::Attendee const a3(u"max"_s, u"max@example.com"_s);
+    KCalendarCore::FreeBusy::Ptr const fb1(new KCalendarCore::FreeBusy());
+    KCalendarCore::FreeBusy::Ptr const fb2(new KCalendarCore::FreeBusy());
+    KCalendarCore::FreeBusy::Ptr const fb3(new KCalendarCore::FreeBusy());
 
     fb1->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
     fb1->addPeriod(dt2, KCalendarCore::Duration(60 * 60));
@@ -101,10 +101,10 @@ void FreeBusyItemModelTest::testModelValidity2()
     fb3->addPeriod(dt2, KCalendarCore::Duration(60 * 60));
     fb3->addPeriod(dt4, KCalendarCore::Duration(60 * 60 * 2));
 
-    FreeBusyItem::Ptr item1(new FreeBusyItem(a1, nullptr));
+    FreeBusyItem::Ptr const item1(new FreeBusyItem(a1, nullptr));
     item1->setFreeBusy(fb1);
-    FreeBusyItem::Ptr item2(new FreeBusyItem(a2, nullptr));
-    FreeBusyItem::Ptr item3(new FreeBusyItem(a3, nullptr));
+    FreeBusyItem::Ptr const item2(new FreeBusyItem(a2, nullptr));
+    FreeBusyItem::Ptr const item3(new FreeBusyItem(a3, nullptr));
 
     model->addItem(item1);
     model->addItem(item2);
@@ -116,18 +116,18 @@ void FreeBusyItemModelTest::testModelValidity2()
     QVERIFY(model->containsAttendee(a2));
     QVERIFY(model->containsAttendee(a3));
 
-    QModelIndex i1 = model->index(0, 0);
+    QModelIndex const i1 = model->index(0, 0);
     QCOMPARE(a1.fullName(), model->data(i1, Qt::DisplayRole).toString());
     QCOMPARE(a1, model->data(i1, FreeBusyItemModel::AttendeeRole).value<KCalendarCore::Attendee>());
     QCOMPARE(item1->freeBusy(), model->data(i1, FreeBusyItemModel::FreeBusyRole).value<KCalendarCore::FreeBusy::Ptr>());
 
-    QModelIndex i2 = model->index(1, 0);
+    QModelIndex const i2 = model->index(1, 0);
     QCOMPARE(a2.fullName(), model->data(i2, Qt::DisplayRole).toString());
     QCOMPARE(a2, model->data(i2, FreeBusyItemModel::AttendeeRole).value<KCalendarCore::Attendee>());
     QCOMPARE(model->rowCount(i2), 0);
     QCOMPARE(model->data(i2, FreeBusyItemModel::FreeBusyRole).isValid(), false);
 
-    QModelIndex i3 = model->index(2, 0);
+    QModelIndex const i3 = model->index(2, 0);
     QCOMPARE(a3.fullName(), model->data(i3, Qt::DisplayRole).toString());
     QCOMPARE(a3, model->data(i3, FreeBusyItemModel::AttendeeRole).value<KCalendarCore::Attendee>());
     QCOMPARE(model->rowCount(i3), 0);
@@ -137,12 +137,12 @@ void FreeBusyItemModelTest::testModelValidity2()
     QCOMPARE(item2->freeBusy(), model->data(i2, FreeBusyItemModel::FreeBusyRole).value<KCalendarCore::FreeBusy::Ptr>());
     QCOMPARE(model->rowCount(i2), fb2->fullBusyPeriods().size());
 
-    QModelIndex i2_0 = model->index(0, 0, i2);
+    QModelIndex const i2_0 = model->index(0, 0, i2);
     const auto fb2Periods = fb2->fullBusyPeriods();
     QCOMPARE(fb2Periods.first(), model->data(i2_0, FreeBusyItemModel::FreeBusyPeriodRole).value<KCalendarCore::FreeBusyPeriod>());
-    QModelIndex i2_1 = model->index(1, 0, i2);
+    QModelIndex const i2_1 = model->index(1, 0, i2);
     QCOMPARE(fb2Periods.at(1), model->data(i2_1, FreeBusyItemModel::FreeBusyPeriodRole).value<KCalendarCore::FreeBusyPeriod>());
-    QModelIndex i2_2 = model->index(2, 0, i2);
+    QModelIndex const i2_2 = model->index(2, 0, i2);
     QCOMPARE(fb2Periods.last(), model->data(i2_2, FreeBusyItemModel::FreeBusyPeriodRole).value<KCalendarCore::FreeBusyPeriod>());
 
     model->slotInsertFreeBusy(fb3, u"max@example.com"_s);
@@ -180,25 +180,25 @@ void FreeBusyItemModelTest::testInsertFreeBusy()
 
     const QDateTime dt1(QDate(2010, 7, 24), QTime(7, 0, 0), QTimeZone::utc());
     const QDateTime dt2(QDate(2010, 7, 24), QTime(10, 0, 0), QTimeZone::utc());
-    KCalendarCore::Attendee a1(u"fred"_s, u"fred@example.com"_s);
-    KCalendarCore::FreeBusy::Ptr fb1(new KCalendarCore::FreeBusy());
+    KCalendarCore::Attendee const a1(u"fred"_s, u"fred@example.com"_s);
+    KCalendarCore::FreeBusy::Ptr const fb1(new KCalendarCore::FreeBusy());
     fb1->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
     fb1->addPeriod(dt2, KCalendarCore::Duration(60 * 60));
 
     const QDateTime dt3(QDate(2010, 7, 24), QTime(12, 0, 0), QTimeZone::utc());
     const QDateTime dt4(QDate(2010, 7, 24), QTime(14, 0, 0), QTimeZone::utc());
-    KCalendarCore::FreeBusy::Ptr fb2(new KCalendarCore::FreeBusy());
+    KCalendarCore::FreeBusy::Ptr const fb2(new KCalendarCore::FreeBusy());
     fb2->addPeriod(dt1, KCalendarCore::Duration(60 * 60));
     fb2->addPeriod(dt2, KCalendarCore::Duration(60 * 60));
     fb2->addPeriod(dt3, KCalendarCore::Duration(60 * 60));
     fb2->addPeriod(dt4, KCalendarCore::Duration(60 * 60 * 2));
 
-    FreeBusyItem::Ptr item1(new FreeBusyItem(a1, nullptr));
+    FreeBusyItem::Ptr const item1(new FreeBusyItem(a1, nullptr));
     item1->setFreeBusy(fb1);
 
     model->addItem(item1);
 
-    QModelIndex i = model->index(0, 0);
+    QModelIndex const i = model->index(0, 0);
     QCOMPARE(model->rowCount(i), 2);
 
     model->slotInsertFreeBusy(fb2, u"fred@example.com"_s);

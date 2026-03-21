@@ -68,7 +68,7 @@ void KCalPrefs::usrSetDefaults()
     // Default should be set a bit smarter, respecting username and locale
     // settings for example.
 
-    KEMailSettings settings;
+    KEMailSettings const settings;
     QString tmp = settings.getSetting(KEMailSettings::RealName);
     if (!tmp.isEmpty()) {
         setUserName(tmp);
@@ -104,12 +104,12 @@ void KCalPrefs::setDefaultTodoCalendarId(Akonadi::Collection::Id id)
 void KCalPrefs::fillMailDefaults()
 {
     userEmailItem()->swapDefault();
-    QString defEmail = userEmailItem()->value();
+    QString const defEmail = userEmailItem()->value();
     userEmailItem()->swapDefault();
 
     if (userEmail() == defEmail) {
         // No korg settings - but maybe there's a kcontrol[/kmail] setting available
-        KEMailSettings settings;
+        KEMailSettings const settings;
         if (!settings.getSetting(KEMailSettings::EmailAddress).isEmpty()) {
             mEmailControlCenter = true;
         }
@@ -118,9 +118,9 @@ void KCalPrefs::fillMailDefaults()
 
 void KCalPrefs::usrRead()
 {
-    KConfigGroup generalConfig(config(), u"General"_s);
+    KConfigGroup const generalConfig(config(), u"General"_s);
 
-    KConfigGroup defaultCalendarConfig(config(), u"Calendar"_s);
+    KConfigGroup const defaultCalendarConfig(config(), u"Calendar"_s);
     d->mDefaultEventCalendarId = defaultCalendarConfig.readEntry("Default Event Calendar", -1);
     // fallback to the old setting
     if (d->mDefaultEventCalendarId == -1) {
@@ -134,7 +134,7 @@ void KCalPrefs::usrRead()
 
 bool KCalPrefs::usrSave()
 {
-    KConfigGroup generalConfig(config(), u"General"_s);
+    KConfigGroup const generalConfig(config(), u"General"_s);
 
     KConfigGroup defaultCalendarConfig(config(), u"Calendar"_s);
     defaultCalendarConfig.writeEntry("Default Event Calendar", defaultEventCalendarId());
@@ -147,7 +147,7 @@ QString KCalPrefs::fullName()
 {
     QString tusername;
     if (mEmailControlCenter) {
-        KEMailSettings settings;
+        KEMailSettings const settings;
         tusername = settings.getSetting(KEMailSettings::RealName);
     } else {
         tusername = userName();
@@ -167,7 +167,7 @@ QString KCalPrefs::fullName()
 QString KCalPrefs::email()
 {
     if (mEmailControlCenter) {
-        KEMailSettings settings;
+        KEMailSettings const settings;
         return settings.getSetting(KEMailSettings::EmailAddress);
     } else {
         return userEmail();
@@ -192,7 +192,7 @@ QStringList KCalPrefs::fullEmails()
     QStringList fullEmails;
 
     // Grab emails from the email identities
-    KIdentityManagementCore::IdentityManager *idmanager = CalendarSupport::identityManager();
+    KIdentityManagementCore::IdentityManager const *idmanager = CalendarSupport::identityManager();
     QStringList lst = idmanager->identities();
 
     fullEmails.reserve(1 + mAdditionalMails.count() + lst.count());
@@ -201,7 +201,7 @@ QStringList KCalPrefs::fullEmails()
 
     QStringList::Iterator it;
     KIdentityManagementCore::IdentityManager::ConstIterator it1;
-    KIdentityManagementCore::IdentityManager::ConstIterator end1(idmanager->end());
+    KIdentityManagementCore::IdentityManager::ConstIterator const end1(idmanager->end());
     for (it1 = idmanager->begin(); it1 != end1; ++it1) {
         fullEmails << (*it1).fullEmailAddr();
     }
@@ -243,7 +243,7 @@ bool KCalPrefs::thatIsMe(const QString &_email)
     }
 
     CalendarSupport::IdentityManager::ConstIterator it;
-    CalendarSupport::IdentityManager::ConstIterator endId(CalendarSupport::identityManager()->end());
+    CalendarSupport::IdentityManager::ConstIterator const endId(CalendarSupport::identityManager()->end());
     for (it = CalendarSupport::identityManager()->begin(); it != endId; ++it) {
         if ((*it).matchesEmailAddress(mboxEmail)) {
             return true;

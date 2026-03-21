@@ -272,7 +272,7 @@ void ArchiveDialog::slotEventsDeleted()
 
 void ArchiveDialog::showWhatsThis()
 {
-    QWidget *widget = qobject_cast<QWidget *>(sender());
+    QWidget const *widget = qobject_cast<QWidget *>(sender());
     if (widget && !widget->whatsThis().isEmpty()) {
         QWhatsThis::showText(QCursor::pos(), widget->whatsThis());
     }
