@@ -651,7 +651,12 @@ void CalPrintPluginBase::drawSmallMonth(QPainter &p, QDate qd, QRect box)
     wdayBox.setHeight(int(2 * cellHeight) - int(cellHeight));
 
     for (int col = 0; col < 7; ++col) {
-        const auto dayLetter = locale.standaloneDayName(monthDate2.dayOfWeek(), QLocale::ShortFormat)[0].toUpper();
+        const auto dayName = locale.standaloneDayName(monthDate2.dayOfWeek(), QLocale::ShortFormat);
+        QChar dayLetter = u' ';
+        ;
+        if (!dayName.isEmpty()) {
+            dayLetter = dayName[0].toUpper();
+        }
         wdayBox.setLeft(int(box.left() + col * cellWidth));
         wdayBox.setRight(int(box.left() + (col + 1) * cellWidth));
         p.drawText(wdayBox, Qt::AlignCenter, dayLetter);
