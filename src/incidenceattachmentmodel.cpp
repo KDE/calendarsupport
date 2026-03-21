@@ -26,7 +26,9 @@ class IncidenceAttachmentModelPrivate
         , m_item(item)
     {
         if (modelIndex.isValid()) {
-            QObject::connect(modelIndex.model(), SIGNAL(dataChanged(QModelIndex, QModelIndex)), qq, SLOT(resetModel()));
+            // clang-format off
+            QObject::connect(modelIndex.model(), SIGNAL(dataChanged(QModelIndex,QModelIndex)), qq, SLOT(resetModel()));
+            // clang-format on
         } else if (item.isValid()) {
             createMonitor();
             resetInternalData();
@@ -60,7 +62,9 @@ class IncidenceAttachmentModelPrivate
         m_monitor->setObjectName("IncidenceAttachmentModelMonitor"_L1);
         m_monitor->setItemMonitored(m_item);
         m_monitor->itemFetchScope().fetchFullPayload(true);
-        QObject::connect(m_monitor, SIGNAL(itemChanged(Akonadi::Item, QSet<QByteArray>)), q_ptr, SLOT(resetModel()));
+        // clang-format off
+        QObject::connect(m_monitor, SIGNAL(itemChanged(Akonadi::Item,QSet<QByteArray>)), q_ptr, SLOT(resetModel()));
+        // clang-format on
         QObject::connect(m_monitor, SIGNAL(itemRemoved(Akonadi::Item)), q_ptr, SLOT(resetModel()));
     }
 

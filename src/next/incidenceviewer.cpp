@@ -235,7 +235,9 @@ void IncidenceViewer::itemChanged(const Akonadi::Item &item)
 
     d->mParentCollectionFetchJob = new Akonadi::CollectionFetchJob(d->mCurrentItem.parentCollection(), Akonadi::CollectionFetchJob::Base, this);
 
-    connect(d->mParentCollectionFetchJob, SIGNAL(result(KJob *)), this, SLOT(slotParentCollectionFetched(KJob *)));
+    // clang-format off
+    connect(d->mParentCollectionFetchJob, SIGNAL(result(KJob*)), this, SLOT(slotParentCollectionFetched(KJob*)));
+    // clang-format on
 }
 
 void IncidenceViewer::itemRemoved()
