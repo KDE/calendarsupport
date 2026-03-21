@@ -40,12 +40,13 @@ TextBrowser::TextBrowser(QWidget *parent)
 void TextBrowser::doSetSource(const QUrl &name, QTextDocument::ResourceType type)
 {
     Q_UNUSED(type);
+    static QRegularExpression re(QLatin1StringView("^([^:]+:)/+"));
     QString uri = name.toString();
     // QTextBrowser for some reason insists on putting // or / in links,
     // this is a crude workaround
     if (uri.startsWith(QLatin1StringView("uid:")) || uri.startsWith(QLatin1StringView("kmail:")) || uri.startsWith(u"urn:x-ical"_s.section(u':', 0, 0))
         || uri.startsWith(QLatin1StringView("news:")) || uri.startsWith(QLatin1StringView("mailto:"))) {
-        uri.replace(QRegularExpression(QLatin1StringView("^([^:]+:)/+")), u"\\1"_s);
+        uri.replace(re, u"\\1"_s);
     }
 
     if (uri.startsWith(QLatin1StringView("ATTACH:"))) {
