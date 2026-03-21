@@ -174,6 +174,8 @@ QVariant IncidenceAttachmentModel::data(const QModelIndex &index, int role) cons
         return attachment.decodedData();
     case MimeTypeRole:
         return attachment.mimeType();
+    default:
+        break;
     }
     return {};
 }

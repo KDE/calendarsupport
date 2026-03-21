@@ -138,6 +138,8 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
     case KCalPrefs::actionArchive:
         archiveIncidences(calendar, changer, limitDate, widget, incidences, withGUI);
         break;
+    default:
+        break;
     }
 }
 
