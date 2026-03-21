@@ -1274,7 +1274,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays
     borderBox.setTop(subheaderBox.bottom() + 1);
     drawSubHeaderBox(p, QLocale().standaloneMonthName(dt.month()), subheaderBox);
     // correct for half the border width
-    int correction = (BOX_BORDER_WIDTH /*-1*/) / 2;
+    const int correction = (BOX_BORDER_WIDTH) / 2; // NOLINT(misc-redundant-expression)
     QRect daysBox(borderBox);
     daysBox.adjust(correction, correction, -correction, -correction);
 
