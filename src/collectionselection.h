@@ -1,5 +1,5 @@
 /*
-  SPDX-FileCopyrightText: 2009 KDAB
+  SPDX-FileCopyrightText: 2009 Klaralvdalens Datakonsult AB, a KDAB Group company <info@kdab.net>
   SPDX-FileContributor: Frank Osterfeld <frank@kdab.net>
 
   SPDX-License-Identifier: GPL-2.0-or-later WITH LicenseRef-Qt-Commercial-exception-1.0
