@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-21 00:45+0000\n"
+"POT-Creation-Date: 2026-03-22 00:44+0000\n"
 "PO-Revision-Date: 2025-04-20 10:04+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -345,7 +345,7 @@ msgctxt "@title:window"
 msgid "Archive"
 msgstr "Arkisto"
 
-#: eventarchiver.cpp:156
+#: eventarchiver.cpp:158
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -354,30 +354,30 @@ msgstr ""
 "Poistetaanko tallentamatta kaikki tietueet, jotka\n"
 "ovat vanhempia kuin %1? Seuraavat poistettaisiin:"
 
-#: eventarchiver.cpp:160
+#: eventarchiver.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Poista vanhat tietueet"
 
-#: eventarchiver.cpp:273
+#: eventarchiver.cpp:275
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Tuntematon syy"
 
-#: eventarchiver.cpp:275
+#: eventarchiver.cpp:277
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Arkistotiedostoa %1 ei voi kirjoittaa. %2"
 
-#: eventarchiver.cpp:286
+#: eventarchiver.cpp:288
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Arkistoa ei voi kirjoittaa. %1"
 
 # *** TARKISTA: Vai ”Arkistoidaan tapahtumia”? Ei kontekstia
-#: eventarchiver.cpp:295
+#: eventarchiver.cpp:297
 #, kde-format
 msgid "Archiving events"
 msgstr "Tapahtumien arkistointi"
@@ -1732,15 +1732,15 @@ msgstr "Asetukset:"
 msgid "Tags: "
 msgstr "Luokitukset:"
 
-#: printing/calprintdefaultplugins.cpp:722 printing/calprintpluginbase.cpp:922
-#: printing/calprintpluginbase.cpp:1062 printing/calprintpluginbase.cpp:1119
+#: printing/calprintdefaultplugins.cpp:722 printing/calprintpluginbase.cpp:927
+#: printing/calprintpluginbase.cpp:1067 printing/calprintpluginbase.cpp:1124
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:725 printing/calprintpluginbase.cpp:941
-#: printing/calprintpluginbase.cpp:1065
+#: printing/calprintdefaultplugins.cpp:725 printing/calprintpluginbase.cpp:946
+#: printing/calprintpluginbase.cpp:1070
 #, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
@@ -1835,7 +1835,7 @@ msgid "To-do list"
 msgstr "Tehtäväluettelo"
 
 #: printing/calprintdefaultplugins.cpp:1610
-#: printing/calprintpluginbase.cpp:1718
+#: printing/calprintpluginbase.cpp:1723
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2372,48 +2372,48 @@ msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "tulostettu: %1"
 
-#: printing/calprintpluginbase.cpp:927
+#: printing/calprintpluginbase.cpp:932
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1-%2 %3"
 
-#: printing/calprintpluginbase.cpp:933
+#: printing/calprintpluginbase.cpp:938
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:1000
+#: printing/calprintpluginbase.cpp:1005
 #, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1, %3. %2"
 
-#: printing/calprintpluginbase.cpp:1126
+#: printing/calprintpluginbase.cpp:1131
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (määräaika: %2)"
 
-#: printing/calprintpluginbase.cpp:1131
+#: printing/calprintpluginbase.cpp:1136
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (määräaika: %2)"
 
-#: printing/calprintpluginbase.cpp:1138
+#: printing/calprintpluginbase.cpp:1143
 #, kde-format
 msgid "To-do: %1"
 msgstr "Tehtäväluettelo: %1"
 
-#: printing/calprintpluginbase.cpp:1873
+#: printing/calprintpluginbase.cpp:1878
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2–%3"
 
-#: printing/calprintpluginbase.cpp:1879
+#: printing/calprintpluginbase.cpp:1884
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"

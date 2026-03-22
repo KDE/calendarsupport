@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-21 00:45+0000\n"
+"POT-Creation-Date: 2026-03-22 00:44+0000\n"
 "PO-Revision-Date: 2026-03-12 21:04+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-l10n-ta@kde.org>\n"
@@ -355,7 +355,7 @@ msgctxt "@title:window"
 msgid "Archive"
 msgstr "காப்பகம்"
 
-#: eventarchiver.cpp:156
+#: eventarchiver.cpp:158
 #, fuzzy, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -364,31 +364,31 @@ msgstr ""
 "சேமிப்பதற்க்கு %1 முன்னால் எல்லா நிகழ்வுகளையும் நீக்கு ?\n"
 "பின்வரும் நிகழ்வுகள் நீக்கப்படும்:"
 
-#: eventarchiver.cpp:160
+#: eventarchiver.cpp:162
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "பழைய நிகழ்வுகளை நீக்கு"
 
-#: eventarchiver.cpp:273
+#: eventarchiver.cpp:275
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr ""
 
-#: eventarchiver.cpp:275
+#: eventarchiver.cpp:277
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive file %1. %2"
 msgstr "காப்பகக் கோப்பினை எழுத இயலாது%1."
 
-#: eventarchiver.cpp:286
+#: eventarchiver.cpp:288
 #, fuzzy, kde-format
 #| msgid "Cannot write archive file %1."
 msgid "Cannot write archive. %1"
 msgstr "காப்பகக் கோப்பினை எழுத இயலாது%1."
 
-#: eventarchiver.cpp:295
+#: eventarchiver.cpp:297
 #, fuzzy, kde-format
 #| msgid "Archive events"
 msgid "Archiving events"
@@ -1720,8 +1720,8 @@ msgstr "திட்டக்கூட்டம்"
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:722 printing/calprintpluginbase.cpp:922
-#: printing/calprintpluginbase.cpp:1062 printing/calprintpluginbase.cpp:1119
+#: printing/calprintdefaultplugins.cpp:722 printing/calprintpluginbase.cpp:927
+#: printing/calprintpluginbase.cpp:1067 printing/calprintpluginbase.cpp:1124
 #, fuzzy, kde-format
 #| msgctxt "monthname year"
 #| msgid "%1 %2"
@@ -1731,8 +1731,8 @@ msgstr ""
 "மாதப்பெயர் வருடம்\n"
 " %1 %2"
 
-#: printing/calprintdefaultplugins.cpp:725 printing/calprintpluginbase.cpp:941
-#: printing/calprintpluginbase.cpp:1065
+#: printing/calprintdefaultplugins.cpp:725 printing/calprintpluginbase.cpp:946
+#: printing/calprintpluginbase.cpp:1070
 #, fuzzy, kde-format
 #| msgctxt "monthname year"
 #| msgid "%1 %2"
@@ -1843,7 +1843,7 @@ msgid "To-do list"
 msgstr "செய்ய வேண்டிய பட்டியல்"
 
 #: printing/calprintdefaultplugins.cpp:1610
-#: printing/calprintpluginbase.cpp:1718
+#: printing/calprintpluginbase.cpp:1723
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2360,13 +2360,13 @@ msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "செய்ததை நீக்கு (%1)"
 
-#: printing/calprintpluginbase.cpp:927
+#: printing/calprintpluginbase.cpp:932
 #, fuzzy, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "வாரநாள் மாதம் தேதி"
 
-#: printing/calprintpluginbase.cpp:933
+#: printing/calprintpluginbase.cpp:938
 #, fuzzy, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
@@ -2374,32 +2374,32 @@ msgstr ""
 "_: Date range: monthStart dayStart - monthEnd dayEnd\n"
 "%1 %2 - %3 %4"
 
-#: printing/calprintpluginbase.cpp:1000
+#: printing/calprintpluginbase.cpp:1005
 #, fuzzy, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1 - %2"
 
-#: printing/calprintpluginbase.cpp:1126
+#: printing/calprintpluginbase.cpp:1131
 #, fuzzy, kde-format
 #| msgid "  (Due: %1)"
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "(இடைவெளி: %1)"
 
-#: printing/calprintpluginbase.cpp:1131
+#: printing/calprintpluginbase.cpp:1136
 #, fuzzy, kde-format
 #| msgid "  (Due: %1)"
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "(இடைவெளி: %1)"
 
-#: printing/calprintpluginbase.cpp:1138
+#: printing/calprintpluginbase.cpp:1143
 #, kde-format
 msgid "To-do: %1"
 msgstr "செய்யவேண்டியது: %1"
 
-#: printing/calprintpluginbase.cpp:1873
+#: printing/calprintpluginbase.cpp:1878
 #, fuzzy, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
@@ -2407,7 +2407,7 @@ msgstr ""
 "_: Date range: Month dayStart - dayEnd\n"
 "%1 %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1879
+#: printing/calprintpluginbase.cpp:1884
 #, fuzzy, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
