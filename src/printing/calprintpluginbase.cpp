@@ -32,7 +32,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QTextDocumentFragment>
 #include <QTimeZone>
 #include <QVBoxLayout>
-#include <qmath.h> // qCeil krazy:exclude=camelcase since no QMath
+#include <qmath.h>
 
 using namespace CalendarSupport;
 
