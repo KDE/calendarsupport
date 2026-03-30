@@ -1,24 +1,24 @@
 # Translation of calendarsupport6.po to Catalan
-# Copyright (C) 2009-2025 This_file_is_part_of_KDE
+# Copyright (C) 2009-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # SPDX-FileCopyrightText: 2009, 2010, 2011 Manuel Tortosa Moreno <manutortosa@chakra-project.org>
 # SPDX-FileCopyrightText: 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021 Antoni Bella Pérez <antonibella5@yahoo.com>
-# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-24 00:43+0000\n"
-"PO-Revision-Date: 2025-03-20 09:05+0100\n"
+"PO-Revision-Date: 2026-03-29 13:56+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
@@ -747,7 +747,7 @@ msgstr ""
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
-"Mostra els selectors de zona horària als diàlegs de l'editor de tasques "
+"Mostra els selectors de fus horari als diàlegs de l'editor de tasques "
 "pendents i d'esdeveniments."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
