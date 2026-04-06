@@ -90,7 +90,12 @@
       <label>Use holiday regions:</label>
       <whatsthis>Select which regions you want to use the holidays here. Defined holidays are shown as non-working days in the date navigator, the agenda view, etc.</whatsthis>
     </entry>
-  </group>
+  <entry type="StringList" name="HolidayCategories">
+    <label>Select holiday categories:</label>
+    <tooltip>Select which holiday categories to display</tooltip>
+    <whatsthis>Select which holiday categories to display (public, cultural, religious, financial).</whatsthis>
+  </entry>
+</group>
 
 <!-- Group Scheduling Page -->
   <group name="Group Scheduling">

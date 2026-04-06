@@ -509,15 +509,16 @@ QList<QDate> CalendarSupport::workDays(QDate startDate, QDate endDate)
     return result;
 }
 
-QStringList CalendarSupport::holiday(QDate date)
+QStringList CalendarSupport::holiday(QDate date, const QStringList &categories)
 {
     QStringList hdays;
 
     bool const showCountryCode = (KCalPrefs::instance()->mHolidays.count() > 1);
     const QStringList holidays = KCalPrefs::instance()->mHolidays;
     for (const QString &regionStr : holidays) {
-        KHolidays::HolidayRegion const region(regionStr);
+        KHolidays::HolidayRegion region(regionStr);
         if (region.isValid()) {
+            region.setCategories(categories);
             const KHolidays::Holiday::List list = region.rawHolidaysWithAstroSeasons(date);
             const int listCount = list.count();
             for (int i = 0; i < listCount; ++i) {

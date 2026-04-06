@@ -180,8 +180,9 @@ CALENDARSUPPORT_EXPORT QString toolTipString(const Akonadi::Collection &coll, bo
 
 /*!
  * Returns a list of holidays that occur at \a date.
+ * A list of categories can be used to filter the types of holidays that are returned.
  */
-CALENDARSUPPORT_EXPORT QStringList holiday(QDate date);
+CALENDARSUPPORT_EXPORT QStringList holiday(QDate date, const QStringList &categories = QStringList());
 
 CALENDARSUPPORT_EXPORT QStringList categories(const KCalendarCore::Incidence::List &incidences);
 
