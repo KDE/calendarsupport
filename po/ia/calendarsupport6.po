@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-22 00:44+0000\n"
+"POT-Creation-Date: 2026-04-11 00:47+0000\n"
 "PO-Revision-Date: 2026-03-11 18:41+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -684,14 +684,35 @@ msgstr ""
 "definite es monstrate como dies non de travalio in le navigator de data, le "
 "vista de agenda, etc."
 
+#. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
+#: kcalprefs.kcfg:94
+#, fuzzy, kde-format
+#| msgid "Use holiday regions:"
+msgid "Select holiday categories:"
+msgstr "Usa regiones de die feriate:"
+
+#. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
+#: kcalprefs.kcfg:95
+#, kde-format
+msgid "Select which holiday categories to display"
+msgstr ""
+
+#. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
+#: kcalprefs.kcfg:96
+#, kde-format
+msgid ""
+"Select which holiday categories to display (public, cultural, religious, "
+"financial)."
+msgstr ""
+
 #. i18n: ectx: label, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:98
+#: kcalprefs.kcfg:103
 #, kde-format
 msgid "Use Groupware communication"
 msgstr "Usa communication de Groupware"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:99
+#: kcalprefs.kcfg:104
 #, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
@@ -706,25 +727,25 @@ msgstr ""
 "de KDE)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:104
+#: kcalprefs.kcfg:109
 #, kde-format
 msgid "Default policy for invitations to other users:"
 msgstr "Politica predefinite per invitationes a altere usatores:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:107
+#: kcalprefs.kcfg:112
 #, kde-format
 msgid "Send mails without asking."
 msgstr "Invia messages de eposta sin demandar."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:110
+#: kcalprefs.kcfg:115
 #, kde-format
 msgid "Ask for every individual attendee what to do."
 msgstr "Demanda a cata partecipoante individual que facer."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:113
+#: kcalprefs.kcfg:118
 #, kde-format
 msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
@@ -734,7 +755,7 @@ msgstr ""
 "horario de gruppo per clientes conforme con iTip)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: kcalprefs.kcfg:126
+#: kcalprefs.kcfg:131
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
@@ -742,13 +763,13 @@ msgstr ""
 "cosa de facer."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:134
+#: kcalprefs.kcfg:139
 #, kde-format
 msgid "Regularly archive events"
 msgstr "Archiva con regularitate eventos"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:139
+#: kcalprefs.kcfg:144
 #, kde-format
 msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
@@ -759,73 +780,73 @@ msgstr ""
 "altere campo."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:144
+#: kcalprefs.kcfg:149
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
 msgstr "Le unitate con le qual es exprimite le tempore de expiration."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:147
+#: kcalprefs.kcfg:152
 #, kde-format
 msgid "In days"
 msgstr "In dies"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:150
+#: kcalprefs.kcfg:155
 #, kde-format
 msgid "In weeks"
 msgstr "In septimanas"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:153
+#: kcalprefs.kcfg:158
 #, kde-format
 msgid "In months"
 msgstr "In menses"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:160
+#: kcalprefs.kcfg:165
 #, kde-format
 msgid "URL of the file where old events should be archived"
 msgstr "URL del file ubi vetule eventos deberea esser archivate"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:164
+#: kcalprefs.kcfg:169
 #, kde-format
 msgid "Archive events"
 msgstr "Archiva eventos"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:169
+#: kcalprefs.kcfg:174
 #, kde-format
 msgid "Archive to-dos"
 msgstr "Archiva cosas de facer"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:174
+#: kcalprefs.kcfg:179
 #, kde-format
 msgid "What to do when archiving"
 msgstr "Cosa facer quando on archiva"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:177
+#: kcalprefs.kcfg:182
 #, kde-format
 msgid "Delete old events"
 msgstr "Dele vetere eventos"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:180
+#: kcalprefs.kcfg:185
 #, kde-format
 msgid "Archive old events to a separate file"
 msgstr "Archiva vetere eventos in un file separate"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:194
+#: kcalprefs.kcfg:199
 #, kde-format
 msgid "Full &name"
 msgstr "Nomi&ne complete"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:195
+#: kcalprefs.kcfg:200
 #, kde-format
 msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
@@ -835,13 +856,13 @@ msgstr ""
 "\"Organisator\" in eventos e cosas de facer que tu crea."
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:200
+#: kcalprefs.kcfg:205
 #, kde-format
 msgid "E&mail address"
 msgstr "Adresse de &E-Posta"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:201
+#: kcalprefs.kcfg:206
 #, kde-format
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
@@ -852,14 +873,14 @@ msgstr ""
 "facer que tu crea."
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:217
+#: kcalprefs.kcfg:222
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr ""
 "Color de \"nulle etiquetta\" (per schemas de designo de \"Sol Etiquetta\")"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:218
+#: kcalprefs.kcfg:223
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -872,7 +893,7 @@ msgstr ""
 "mense usante le schema de \"Sol Etiquetta\"."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:219
+#: kcalprefs.kcfg:224
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Usa iste color quando designa elementos sin un etiquetta"
@@ -2897,18 +2918,18 @@ msgstr "nulle"
 msgid "Blocked Reminders:"
 msgstr "Mementos blocate:"
 
-#: utils.cpp:530
+#: utils.cpp:531
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:532
+#: utils.cpp:533
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:537
+#: utils.cpp:538
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
