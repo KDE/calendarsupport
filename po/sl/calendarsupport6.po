@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-11 00:47+0000\n"
-"PO-Revision-Date: 2026-03-08 07:12+0100\n"
+"PO-Revision-Date: 2026-04-11 07:04+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -683,16 +683,15 @@ msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:94
-#, fuzzy, kde-format
-#| msgid "Use holiday regions:"
+#, kde-format
 msgid "Select holiday categories:"
-msgstr "Uporabi regijo praznikov:"
+msgstr "Uporabi kategorije praznikov:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:95
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr ""
+msgstr "Izberite, katere kategorije praznikov želite prikazati"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:96
@@ -701,6 +700,8 @@ msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
 msgstr ""
+"Izberite, katere kategorije praznikov želite prikazati (javne, kulturne, "
+"verske, finančne)."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:103

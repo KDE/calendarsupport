@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-11 00:47+0000\n"
-"PO-Revision-Date: 2026-03-08 15:58+0200\n"
+"PO-Revision-Date: 2026-04-11 08:47+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -689,16 +689,15 @@ msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:94
-#, fuzzy, kde-format
-#| msgid "Use holiday regions:"
+#, kde-format
 msgid "Select holiday categories:"
-msgstr "Використовувати свята регіонів:"
+msgstr "Виберіть регіони свят:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:95
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr ""
+msgstr "Виберіть, свята з яких категорій слід показати"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:96
@@ -707,6 +706,8 @@ msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
 msgstr ""
+"Виберіть, свята з яких категорій слід показати (державні, культурні, "
+"релігійні, банківські)."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:103

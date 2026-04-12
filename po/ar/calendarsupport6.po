@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-11 00:47+0000\n"
-"PO-Revision-Date: 2026-03-09 21:08+0400\n"
+"PO-Revision-Date: 2026-04-11 18:12+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -660,16 +660,15 @@ msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:94
-#, fuzzy, kde-format
-#| msgid "Use holiday regions:"
+#, kde-format
 msgid "Select holiday categories:"
-msgstr "استخدم مناطق العُطل:"
+msgstr "حدد فئات العُطل:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:95
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr ""
+msgstr "حدد أي فئة من العطل لعرضها"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:96
@@ -677,7 +676,7 @@ msgstr ""
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
-msgstr ""
+msgstr "حدد أي فئة من العطل لعرضها (عامة، ثقافية، دينية، مالية)."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:103
