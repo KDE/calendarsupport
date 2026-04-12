@@ -1,22 +1,22 @@
 # Spanish translations for calendarsupport6.po package.
-# Copyright (C) 2009-2025 This_file_is_part_of_KDE
+# Copyright (C) 2009-2026 This file is copyright:
 # This file is distributed under the same license as the calendarsupport package.
 #
-# SPDX-FileCopyrightText: 2009, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2009, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Eloy Cuadra <ecuadra@eloihr.net>
 # SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018 Javier Viñal <fjvinal@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-24 00:43+0000\n"
-"PO-Revision-Date: 2025-03-21 01:13+0100\n"
+"PO-Revision-Date: 2026-04-11 11:44+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -659,7 +659,7 @@ msgstr ""
 #: kcalprefs.kcfg:84
 #, kde-format
 msgid "Exclude holidays"
-msgstr "Excluir vacaciones"
+msgstr "Excluir días festivos"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:85
@@ -669,13 +669,13 @@ msgid ""
 "holidays."
 msgstr ""
 "Marque esta casilla para evitar que KOrganizer marque el horario laboral en "
-"las vacaciones."
+"días festivos."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:90
 #, kde-format
 msgid "Use holiday regions:"
-msgstr "Usar regiones para vacaciones:"
+msgstr "Usar regiones de días festivos:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:91
@@ -684,9 +684,9 @@ msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
 "shown as non-working days in the date navigator, the agenda view, etc."
 msgstr ""
-"Seleccione qué regiones quiere usar para las vacaciones. Las vacaciones "
-"definidas se muestran como días no laborables en el navegador de fechas, la "
-"vista de agenda, etc."
+"Seleccione qué regiones quiere usar para los días festivos. Los días "
+"festivos definidos se muestran como días no laborables en el navegador de "
+"fechas, la vista de agenda, etc."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:98
@@ -2393,7 +2393,7 @@ msgstr ","
 #: printing/calprintpluginbase.cpp:311
 #, kde-format
 msgid "Holiday"
-msgstr "Vacación"
+msgstr "Días festivos"
 
 #: printing/calprintpluginbase.cpp:612
 #, kde-format
@@ -2750,7 +2750,7 @@ msgstr "Cajas de tiempo"
 #: printing/calprintyearconfig_base.ui:151
 #, kde-format
 msgid "Show &holidays as:"
-msgstr "Mostrar &vacaciones como:"
+msgstr "Mostrar días &festivos como:"
 
 #: printing/journalprint.cpp:106
 #, kde-format
