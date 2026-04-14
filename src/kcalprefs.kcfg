@@ -13,7 +13,7 @@
   <group name="Personal Settings">
     <entry type="Bool" key="Use Control Center Email" name="EmailControlCenter">
       <label>Use email settings from System Settings</label>
-      <whatsthis>Check this box to use the KDE-wide e-mail settings, which are defined using the System Settings &quot;About Me&quot; Module. Uncheck this box to be able to specify your full name and e-mail.</whatsthis>
+      <whatsthis>Check this box to use the KDE-wide e-mail settings, which are defined in the “Users” module in System Settings. Uncheck this box to be able to specify your full name and e-mail.</whatsthis>
       <default>true</default>
     </entry>
   </group>
