@@ -79,6 +79,7 @@ public:
     QWidget *createConfigWidget(QWidget *) override;
     /*!
      */
+    /* cppcheck-suppress uselessOverride */
     [[nodiscard]] QPageLayout::Orientation defaultOrientation() const override
     {
         return QPageLayout::Portrait;
