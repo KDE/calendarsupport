@@ -71,7 +71,7 @@ protected:
                    would be below that line, a new page is started.
     */
     void drawJournal(const KCalendarCore::Journal::Ptr &journal, QPainter &p, int x, int &y, int width, int pageHeight);
-    bool mUseDateRange;
+    bool mUseDateRange = false;
 };
 
 class CalPrintJournalConfig : public QWidget, public Ui::CalPrintJournalConfig_Base

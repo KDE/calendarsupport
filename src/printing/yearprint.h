@@ -60,10 +60,10 @@ public:
     void setDateRange(const QDate &from, const QDate &to) override;
 
 protected:
-    int mYear;
-    int mPages;
-    int mSubDaysEvents;
-    int mHolidaysEvents;
+    int mYear = 0;
+    int mPages = 0;
+    int mSubDaysEvents = 0;
+    int mHolidaysEvents = 0;
 };
 
 class CalPrintYearConfig : public QWidget, public Ui::CalPrintYearConfig_Base
