@@ -120,6 +120,9 @@ public:
     AttachmentHandler *mAttachmentHandler = nullptr;
     QDate mDate;
     bool mDelayedClear = false;
+
+private:
+    Q_DISABLE_COPY_MOVE(IncidenceViewerPrivate);
 };
 
 IncidenceViewer::IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent)
