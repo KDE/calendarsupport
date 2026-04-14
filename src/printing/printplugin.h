@@ -111,6 +111,7 @@ public:
             mConfigWidget = createConfigWidget(w);
             setSettingsWidget();
         }
+        /* cppcheck-suppress CastIntegerToAddressAtReturn */
         return mConfigWidget;
     }
 
