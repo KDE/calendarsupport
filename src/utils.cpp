@@ -518,7 +518,9 @@ QStringList CalendarSupport::holiday(QDate date, const QStringList &categories)
     for (const QString &regionStr : holidays) {
         KHolidays::HolidayRegion region(regionStr);
         if (region.isValid()) {
+#if KHOLIDAYS_VERSION >= QT_VERSION_CHECK(6, 26, 0)
             region.setCategories(categories);
+#endif
             const KHolidays::Holiday::List list = region.rawHolidaysWithAstroSeasons(date);
             const int listCount = list.count();
             for (int i = 0; i < listCount; ++i) {
