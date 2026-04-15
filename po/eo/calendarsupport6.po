@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-11 00:47+0000\n"
+"POT-Creation-Date: 2026-04-15 00:46+0000\n"
 "PO-Revision-Date: 2025-03-22 22:36+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
@@ -466,11 +466,15 @@ msgstr "Uzi retpoŝtajn agordojn el Sistemagordoj"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Check this box to use the KDE-wide e-mail settings, which are defined "
+#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
+#| "able to specify your full name and e-mail."
 msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
+"Check this box to use the KDE-wide e-mail settings, which are defined in the "
+"“Users” module in System Settings. Uncheck this box to be able to specify "
+"your full name and e-mail."
 msgstr ""
 "Marku ĉi tiun skatolon por uzi la retpoŝtajn agordojn en la tuta KDE, kiuj "
 "estas difinitaj per la Modulo \"Pri Mi\" de Sistemaj Agordoj. Malmarku ĉi "
@@ -1906,42 +1910,42 @@ msgstr "Presi &okazaĵon"
 msgid "Prints an incidence on one page"
 msgstr "Presas okazaĵon sur unu paĝo"
 
-#: printing/calprintdefaultplugins.h:174
+#: printing/calprintdefaultplugins.h:175
 #, kde-format
 msgid "Print da&y"
 msgstr "Presi ta&gon"
 
-#: printing/calprintdefaultplugins.h:179
+#: printing/calprintdefaultplugins.h:180
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "Presas ĉiujn eventojn de unu tago sur unu paĝo"
 
-#: printing/calprintdefaultplugins.h:233
+#: printing/calprintdefaultplugins.h:234
 #, kde-format
 msgid "Print &week"
 msgstr "Presi &semajnon"
 
-#: printing/calprintdefaultplugins.h:238
+#: printing/calprintdefaultplugins.h:239
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Presas ĉiujn eventojn de unu semajno sur unu paĝo"
 
-#: printing/calprintdefaultplugins.h:299
+#: printing/calprintdefaultplugins.h:300
 #, kde-format
 msgid "Print mont&h"
 msgstr "Presi monato&n"
 
-#: printing/calprintdefaultplugins.h:304
+#: printing/calprintdefaultplugins.h:305
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Presas ĉiujn eventojn de unu monato sur unu paĝo"
 
-#: printing/calprintdefaultplugins.h:354
+#: printing/calprintdefaultplugins.h:355
 #, kde-format
 msgid "Print to-&dos"
 msgstr "Presi faren&dojn"
 
-#: printing/calprintdefaultplugins.h:359
+#: printing/calprintdefaultplugins.h:360
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Presas ĉiujn farojn en (arbosimila) listo"

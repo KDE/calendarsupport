@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-11 00:47+0000\n"
+"POT-Creation-Date: 2026-04-15 00:46+0000\n"
 "PO-Revision-Date: 2025-10-06 01:19+0400\n"
 "Last-Translator: linux <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -472,11 +472,15 @@ msgstr "Sistem ayarlarından e-poçt ayarlarını itifadə edin"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Check this box to use the KDE-wide e-mail settings, which are defined "
+#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
+#| "able to specify your full name and e-mail."
 msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
+"Check this box to use the KDE-wide e-mail settings, which are defined in the "
+"“Users” module in System Settings. Uncheck this box to be able to specify "
+"your full name and e-mail."
 msgstr ""
 "Sistem ayarlarındakı \"Mənim Haqqımda\"bölməsində təyin edilən ümumi KDE e-"
 "poçt ayarlarından istifadə etmək üçün bu xananı işarələyin. Bu xanadan "
@@ -1913,42 +1917,42 @@ msgstr "Had&sələrin çapı"
 msgid "Prints an incidence on one page"
 msgstr "Hadisəni bir səhifədə çap edir"
 
-#: printing/calprintdefaultplugins.h:174
+#: printing/calprintdefaultplugins.h:175
 #, kde-format
 msgid "Print da&y"
 msgstr "Günün ça&pı"
 
-#: printing/calprintdefaultplugins.h:179
+#: printing/calprintdefaultplugins.h:180
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "Bir günün bütün tədbirlərinin bir səhifədə çapı"
 
-#: printing/calprintdefaultplugins.h:233
+#: printing/calprintdefaultplugins.h:234
 #, kde-format
 msgid "Print &week"
 msgstr "&Həftənin çapı"
 
-#: printing/calprintdefaultplugins.h:238
+#: printing/calprintdefaultplugins.h:239
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Bi həftənin bütün tədbirlərinin bir səhifədə çapı"
 
-#: printing/calprintdefaultplugins.h:299
+#: printing/calprintdefaultplugins.h:300
 #, kde-format
 msgid "Print mont&h"
 msgstr "A&yın çapı"
 
-#: printing/calprintdefaultplugins.h:304
+#: printing/calprintdefaultplugins.h:305
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Bi ayın bütün tədbirlərinin bir səhifədə çapı"
 
-#: printing/calprintdefaultplugins.h:354
+#: printing/calprintdefaultplugins.h:355
 #, kde-format
 msgid "Print to-&dos"
 msgstr "Tap&şırıqların çapı"
 
-#: printing/calprintdefaultplugins.h:359
+#: printing/calprintdefaultplugins.h:360
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Bütün tapşırıqların budaqlanan siyahıda çapı"

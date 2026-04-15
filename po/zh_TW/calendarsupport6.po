@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-11 00:47+0000\n"
+"POT-Creation-Date: 2026-04-15 00:46+0000\n"
 "PO-Revision-Date: 2026-03-16 16:29+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -448,11 +448,15 @@ msgstr "使用系統設定的電子郵件設定"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Check this box to use the KDE-wide e-mail settings, which are defined "
+#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
+#| "able to specify your full name and e-mail."
 msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
+"Check this box to use the KDE-wide e-mail settings, which are defined in the "
+"“Users” module in System Settings. Uncheck this box to be able to specify "
+"your full name and e-mail."
 msgstr ""
 "勾選此選項的話，則使用系統設定裡「密碼與帳號資訊」模組中設定的電子郵件設定，"
 "否則您也可以指定您的全名與電子郵件地址。"
@@ -1825,42 +1829,42 @@ msgstr "列印事件(&I)"
 msgid "Prints an incidence on one page"
 msgstr "將事件列印在一頁上"
 
-#: printing/calprintdefaultplugins.h:174
+#: printing/calprintdefaultplugins.h:175
 #, kde-format
 msgid "Print da&y"
 msgstr "列印天(&Y)"
 
-#: printing/calprintdefaultplugins.h:179
+#: printing/calprintdefaultplugins.h:180
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "將每一天的事件列印在單獨一頁上"
 
-#: printing/calprintdefaultplugins.h:233
+#: printing/calprintdefaultplugins.h:234
 #, kde-format
 msgid "Print &week"
 msgstr "列印週(&W)"
 
-#: printing/calprintdefaultplugins.h:238
+#: printing/calprintdefaultplugins.h:239
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "將每一週的事件列印在單獨一頁上"
 
-#: printing/calprintdefaultplugins.h:299
+#: printing/calprintdefaultplugins.h:300
 #, kde-format
 msgid "Print mont&h"
 msgstr "列印月(&H)"
 
-#: printing/calprintdefaultplugins.h:304
+#: printing/calprintdefaultplugins.h:305
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "將每一個月的事件列印在單獨一頁上"
 
-#: printing/calprintdefaultplugins.h:354
+#: printing/calprintdefaultplugins.h:355
 #, kde-format
 msgid "Print to-&dos"
 msgstr "列印待辦事項(&D)"
 
-#: printing/calprintdefaultplugins.h:359
+#: printing/calprintdefaultplugins.h:360
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "列印所有的待辦事項清單（樹狀圖）"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-11 00:47+0000\n"
+"POT-Creation-Date: 2026-04-15 00:46+0000\n"
 "PO-Revision-Date: 2026-04-11 12:22+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -477,11 +477,15 @@ msgstr "E-mailinstellingen uit de systeeminstellingen gebruiken"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Check this box to use the KDE-wide e-mail settings, which are defined "
+#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
+#| "able to specify your full name and e-mail."
 msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
+"Check this box to use the KDE-wide e-mail settings, which are defined in the "
+"“Users” module in System Settings. Uncheck this box to be able to specify "
+"your full name and e-mail."
 msgstr ""
 "Selecteer dit keuzevakje om de e-mailinstellingen voor heel KDE te "
 "gebruiken. Deze kunt u instellen in de systeeminstellingen van KDE, in de "
@@ -1924,42 +1928,42 @@ msgstr "&Voorval afdrukken"
 msgid "Prints an incidence on one page"
 msgstr "Drukt een voorval af op één pagina"
 
-#: printing/calprintdefaultplugins.h:174
+#: printing/calprintdefaultplugins.h:175
 #, kde-format
 msgid "Print da&y"
 msgstr "Da&g afdrukken"
 
-#: printing/calprintdefaultplugins.h:179
+#: printing/calprintdefaultplugins.h:180
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "Drukt alle afspraken van een dag op één pagina af"
 
-#: printing/calprintdefaultplugins.h:233
+#: printing/calprintdefaultplugins.h:234
 #, kde-format
 msgid "Print &week"
 msgstr "&Week afdrukken"
 
-#: printing/calprintdefaultplugins.h:238
+#: printing/calprintdefaultplugins.h:239
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Drukt alle afspraken van een week op één pagina af"
 
-#: printing/calprintdefaultplugins.h:299
+#: printing/calprintdefaultplugins.h:300
 #, kde-format
 msgid "Print mont&h"
 msgstr "Maand afdru&kken"
 
-#: printing/calprintdefaultplugins.h:304
+#: printing/calprintdefaultplugins.h:305
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Drukt alle afspraken van een maand op één pagina af"
 
-#: printing/calprintdefaultplugins.h:354
+#: printing/calprintdefaultplugins.h:355
 #, kde-format
 msgid "Print to-&dos"
 msgstr "Taken af&drukken"
 
-#: printing/calprintdefaultplugins.h:359
+#: printing/calprintdefaultplugins.h:360
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Drukt alle taken af in een (boomstructuur)lijst"

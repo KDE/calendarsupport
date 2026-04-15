@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-11 00:47+0000\n"
+"POT-Creation-Date: 2026-04-15 00:46+0000\n"
 "PO-Revision-Date: 2019-09-29 12:45+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -488,9 +488,9 @@ msgstr "Истифодабарии танзимоти почтаи электр�
 #: kcalprefs.kcfg:16
 #, kde-format
 msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
+"Check this box to use the KDE-wide e-mail settings, which are defined in the "
+"“Users” module in System Settings. Uncheck this box to be able to specify "
+"your full name and e-mail."
 msgstr ""
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
@@ -1880,42 +1880,42 @@ msgstr "Чопи ҳафта"
 msgid "Prints an incidence on one page"
 msgstr "Чопи тамоми воқеъоти як ҳафта дар як саҳифа"
 
-#: printing/calprintdefaultplugins.h:174
+#: printing/calprintdefaultplugins.h:175
 #, fuzzy, kde-format
 msgid "Print da&y"
 msgstr "Чопи рӯз"
 
-#: printing/calprintdefaultplugins.h:179
+#: printing/calprintdefaultplugins.h:180
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "Чопи тамоми воқеъоти якрӯза дар як саҳифа"
 
-#: printing/calprintdefaultplugins.h:233
+#: printing/calprintdefaultplugins.h:234
 #, fuzzy, kde-format
 msgid "Print &week"
 msgstr "Чопи ҳафта"
 
-#: printing/calprintdefaultplugins.h:238
+#: printing/calprintdefaultplugins.h:239
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Чопи тамоми воқеъоти як ҳафта дар як саҳифа"
 
-#: printing/calprintdefaultplugins.h:299
+#: printing/calprintdefaultplugins.h:300
 #, fuzzy, kde-format
 msgid "Print mont&h"
 msgstr "Чопи моҳ"
 
-#: printing/calprintdefaultplugins.h:304
+#: printing/calprintdefaultplugins.h:305
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Чопи тамоми воқеъоти як моҳ дар як саҳифа"
 
-#: printing/calprintdefaultplugins.h:354
+#: printing/calprintdefaultplugins.h:355
 #, fuzzy, kde-format
 msgid "Print to-&dos"
 msgstr "Чопи масъала"
 
-#: printing/calprintdefaultplugins.h:359
+#: printing/calprintdefaultplugins.h:360
 #, fuzzy, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Чопи тамоми масълаҳо дар намуди рӯйхати иерархӣ"

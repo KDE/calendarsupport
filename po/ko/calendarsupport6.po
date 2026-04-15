@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-11 00:47+0000\n"
+"POT-Creation-Date: 2026-04-15 00:46+0000\n"
 "PO-Revision-Date: 2025-04-06 21:45+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -460,11 +460,15 @@ msgstr "시스템 설정의 이메일 설정 사용"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Check this box to use the KDE-wide e-mail settings, which are defined "
+#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
+#| "able to specify your full name and e-mail."
 msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
+"Check this box to use the KDE-wide e-mail settings, which are defined in the "
+"“Users” module in System Settings. Uncheck this box to be able to specify "
+"your full name and e-mail."
 msgstr ""
 "이 옵션을 사용하면 KDE 전역 이메일 설정을 사용합니다. 해당 설정은 시스템 설정"
 "의 \"내 정보\" 모듈에서 편집할 수 있습니다. 이 상자를 선택하지 않으면 이름과 "
@@ -1872,42 +1876,42 @@ msgstr "일정 항목 인쇄(&I)"
 msgid "Prints an incidence on one page"
 msgstr "일정 항목을 한 쪽으로 인쇄"
 
-#: printing/calprintdefaultplugins.h:174
+#: printing/calprintdefaultplugins.h:175
 #, kde-format
 msgid "Print da&y"
 msgstr "일간 인쇄(&Y)"
 
-#: printing/calprintdefaultplugins.h:179
+#: printing/calprintdefaultplugins.h:180
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "하루에 예정된 이벤트를 한 쪽으로 인쇄"
 
-#: printing/calprintdefaultplugins.h:233
+#: printing/calprintdefaultplugins.h:234
 #, kde-format
 msgid "Print &week"
 msgstr "주간 인쇄(&W)"
 
-#: printing/calprintdefaultplugins.h:238
+#: printing/calprintdefaultplugins.h:239
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "한 주간의 이벤트를 한 쪽으로 인쇄"
 
-#: printing/calprintdefaultplugins.h:299
+#: printing/calprintdefaultplugins.h:300
 #, kde-format
 msgid "Print mont&h"
 msgstr "달 출력(&H)"
 
-#: printing/calprintdefaultplugins.h:304
+#: printing/calprintdefaultplugins.h:305
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "한 달간의 이벤트를 한 쪽으로 인쇄"
 
-#: printing/calprintdefaultplugins.h:354
+#: printing/calprintdefaultplugins.h:355
 #, kde-format
 msgid "Print to-&dos"
 msgstr "할 일 인쇄(&D)"
 
-#: printing/calprintdefaultplugins.h:359
+#: printing/calprintdefaultplugins.h:360
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "모든 할 일을 트리 형태의 목록으로 인쇄"

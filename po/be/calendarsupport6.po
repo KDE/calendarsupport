@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-11 00:47+0000\n"
+"POT-Creation-Date: 2026-04-15 00:46+0000\n"
 "PO-Revision-Date: 2008-01-01 23:20+0200\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian (Official spelling) <i18n@mova.org>\n"
@@ -491,9 +491,9 @@ msgstr "Выкарыстоўваць настраўленні электронн
 #: kcalprefs.kcfg:16
 #, fuzzy, kde-format
 msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
+"Check this box to use the KDE-wide e-mail settings, which are defined in the "
+"“Users” module in System Settings. Uncheck this box to be able to specify "
+"your full name and e-mail."
 msgstr ""
 "Выкарыстаць параметры электроннай пошты, паказаныя ў падзеле Цэнтра "
 "кіравання KDE quot;Профіль пользователяquot;. Выключыце гэты сцяжок, каб "
@@ -1917,42 +1917,42 @@ msgstr "Друк запісаў тыпу"
 msgid "Prints an incidence on one page"
 msgstr "Друк усіх падзей аднаго тыдні на адной старонцы"
 
-#: printing/calprintdefaultplugins.h:174
+#: printing/calprintdefaultplugins.h:175
 #, fuzzy, kde-format
 msgid "Print da&y"
 msgstr "Друкаваць каляндар"
 
-#: printing/calprintdefaultplugins.h:179
+#: printing/calprintdefaultplugins.h:180
 #, fuzzy, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "Друк усіх падзей аднаго дня на адной старонцы"
 
-#: printing/calprintdefaultplugins.h:233
+#: printing/calprintdefaultplugins.h:234
 #, fuzzy, kde-format
 msgid "Print &week"
 msgstr "У тыднях"
 
-#: printing/calprintdefaultplugins.h:238
+#: printing/calprintdefaultplugins.h:239
 #, fuzzy, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "Друк усіх падзей аднаго тыдні на адной старонцы"
 
-#: printing/calprintdefaultplugins.h:299
+#: printing/calprintdefaultplugins.h:300
 #, fuzzy, kde-format
 msgid "Print mont&h"
 msgstr "Папярэдні месяц"
 
-#: printing/calprintdefaultplugins.h:304
+#: printing/calprintdefaultplugins.h:305
 #, fuzzy, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "Друк усіх падзей аднаго месяца на адной старонцы"
 
-#: printing/calprintdefaultplugins.h:354
+#: printing/calprintdefaultplugins.h:355
 #, fuzzy, kde-format
 msgid "Print to-&dos"
 msgstr "Ачыстка выкананых заданьняў"
 
-#: printing/calprintdefaultplugins.h:359
+#: printing/calprintdefaultplugins.h:360
 #, fuzzy, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Друк усіх задач у выглядзе іерархічнага спісу"

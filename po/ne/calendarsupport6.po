@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-11 00:47+0000\n"
+"POT-Creation-Date: 2026-04-15 00:46+0000\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -549,9 +549,9 @@ msgstr "नियन्त्रण केन्द्रबाट इमेल 
 #| "using the KDE Control Center \"Password & User Account\" Module. Uncheck "
 #| "this box to be able to specify your full name and e-mail."
 msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
+"Check this box to use the KDE-wide e-mail settings, which are defined in the "
+"“Users” module in System Settings. Uncheck this box to be able to specify "
+"your full name and e-mail."
 msgstr ""
 "प्रत्येक केडीईमा इमेल सेटिङ प्रयोग गर्न यस बाकसलाई जाँच गर्नुहोस्, जसलाई केडीई नियन्त्रण "
 "केन्द्र \"पासवर्ड र प्रयोगकर्ता खाता\" मोड्युल प्रयोग गरेर परिभाषित गरिएका छन् । तपाईँको "
@@ -2029,42 +2029,42 @@ msgstr "घटना मुद्रण गर्नुहोस्"
 msgid "Prints an incidence on one page"
 msgstr "एउटा पृष्ठमा घटना मुद्रण गर्छ"
 
-#: printing/calprintdefaultplugins.h:174
+#: printing/calprintdefaultplugins.h:175
 #, kde-format
 msgid "Print da&y"
 msgstr "दिन मुद्रण गर्नुहोस्"
 
-#: printing/calprintdefaultplugins.h:179
+#: printing/calprintdefaultplugins.h:180
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "एक पृष्ठमा एक दिनका सबै घटना मुद्रण गर्छ"
 
-#: printing/calprintdefaultplugins.h:233
+#: printing/calprintdefaultplugins.h:234
 #, kde-format
 msgid "Print &week"
 msgstr "हप्ता मुद्रण गर्नुहोस्"
 
-#: printing/calprintdefaultplugins.h:238
+#: printing/calprintdefaultplugins.h:239
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "एक पृष्ठमा एक हप्ताका सबै घटना मुद्रण गर्छ"
 
-#: printing/calprintdefaultplugins.h:299
+#: printing/calprintdefaultplugins.h:300
 #, kde-format
 msgid "Print mont&h"
 msgstr "महिना मुद्रण गर्नुहोस्"
 
-#: printing/calprintdefaultplugins.h:304
+#: printing/calprintdefaultplugins.h:305
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "एक पृष्ठमा एक महिनाका सबै घटना मुद्रण गर्छ"
 
-#: printing/calprintdefaultplugins.h:354
+#: printing/calprintdefaultplugins.h:355
 #, kde-format
 msgid "Print to-&dos"
 msgstr "गर्नुपर्ने कार्य मुद्रण गर्नुहोस्"
 
-#: printing/calprintdefaultplugins.h:359
+#: printing/calprintdefaultplugins.h:360
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "(ट्री जस्तो) सूचीमा गर्नुपर्ने सबै कार्य मुद्रण गर्छ"

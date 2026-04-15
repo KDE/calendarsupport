@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-11 00:47+0000\n"
+"POT-Creation-Date: 2026-04-15 00:46+0000\n"
 "PO-Revision-Date: 2012-12-25 15:13+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -507,11 +507,15 @@ msgstr "ប្រើ​ការ​កំណត់​អ៊ីមែល​​ព
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Check this box to use the KDE-wide e-mail settings, which are defined "
+#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
+#| "able to specify your full name and e-mail."
 msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
+"Check this box to use the KDE-wide e-mail settings, which are defined in the "
+"“Users” module in System Settings. Uncheck this box to be able to specify "
+"your full name and e-mail."
 msgstr ""
 "គូស​ធីកប្រអប់​នេះ ដើម្បីប្រើការ​កំណត់ KDE-wide e-mail ដែល​ត្រូវ​បាន​កំណត់​ដោយ​ប្រើ​​ម៉ូឌុល​​​កំណត់​​​ប្រព័ន្ធ \"អំពី​"
 "ខ្ញុំ\"  ។ មិនគូស​ធីក​ប្រអប់​នេះ អាច​បញ្ជាក់​ឈ្មោះ​ពេញ និង​អ៊ីមែល ។"
@@ -2024,45 +2028,45 @@ msgstr "បោះពុម្ព​ឧប្បត្តិហេតុ"
 msgid "Prints an incidence on one page"
 msgstr "បោះពុម្ព​ឧប្បត្តិហេតុ​នៅ​លើ​ទំព័រ​មួយ"
 
-#: printing/calprintdefaultplugins.h:174
+#: printing/calprintdefaultplugins.h:175
 #, kde-format
 msgid "Print da&y"
 msgstr "បោះពុម្ព​ថ្ងៃ"
 
-#: printing/calprintdefaultplugins.h:179
+#: printing/calprintdefaultplugins.h:180
 #, kde-format
 msgid "Prints all events of a single day on one page"
 msgstr "បោះពុម្ព​ព្រឹត្តិការណ៍​ទាំង​អស់ក្នុង​មួយថ្ងៃ លើ​មួយ​ទំព័រ"
 
-#: printing/calprintdefaultplugins.h:233
+#: printing/calprintdefaultplugins.h:234
 #, fuzzy, kde-format
 #| msgid "In weeks"
 msgid "Print &week"
 msgstr "នៅ​​សប្ដាហ៍​"
 
-#: printing/calprintdefaultplugins.h:238
+#: printing/calprintdefaultplugins.h:239
 #, kde-format
 msgid "Prints all events of one week on one page"
 msgstr "បោះពុម្ព​ព្រឹត្តិការណ៍​ទាំង​អស់ក្នុង​មួយសប្ដាហ៍ លើ​មួយ​ទំព័រ"
 
-#: printing/calprintdefaultplugins.h:299
+#: printing/calprintdefaultplugins.h:300
 #, fuzzy, kde-format
 #| msgid "In months"
 msgid "Print mont&h"
 msgstr "នៅ​ខែ​"
 
-#: printing/calprintdefaultplugins.h:304
+#: printing/calprintdefaultplugins.h:305
 #, kde-format
 msgid "Prints all events of one month on one page"
 msgstr "បោះពុម្ព​ព្រឹត្តិការណ៍​ទាំង​អស់ក្នុង​មួយខែ លើ​មួយ​ទំព័រ"
 
-#: printing/calprintdefaultplugins.h:354
+#: printing/calprintdefaultplugins.h:355
 #, fuzzy, kde-format
 #| msgid "Archive to-dos"
 msgid "Print to-&dos"
 msgstr "កិច្ចការ​ត្រូវ​ធ្វើ​ទុក​ក្នុង​ប័ណ្ណ​សារ​"
 
-#: printing/calprintdefaultplugins.h:359
+#: printing/calprintdefaultplugins.h:360
 #, kde-format
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "បោះពុម្ព​ការងារ​ត្រូវ​ធ្វើ​ទាំង​អស់​ក្នុង​បញ្ជី​មួយ (ដូច​មែកធាង)"
