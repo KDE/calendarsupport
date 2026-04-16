@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-15 00:46+0000\n"
-"PO-Revision-Date: 2026-04-11 04:37+0200\n"
+"PO-Revision-Date: 2026-04-15 05:08+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -470,18 +470,14 @@ msgstr "ელფოსტის პარამეტრების სის�
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
 "დასვით ეს თოლია, თუ გნებავთ, ელფოსტის KDE-ის ის პარამეტრები გამოიყენოთ, "
-"რომელიც სისტემის მორგების \"ჩემს შესახებ\" მოდულში მიუთითეთ. გამორთეთ, თუ "
+"რომელიც სისტემის მორგების \"მომხმარებლების\" მოდულში მიუთითეთ. გამორთეთ, თუ "
 "გნებავთ, სრული სახელი და ელფოსტა ხელით მიუთითოთ."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)

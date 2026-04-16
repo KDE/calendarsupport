@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-15 00:46+0000\n"
-"PO-Revision-Date: 2026-04-11 08:47+0300\n"
+"PO-Revision-Date: 2026-04-15 08:14+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -475,19 +475,16 @@ msgstr "Використовувати параметри пошти з «Сис
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
 "Позначте, щоб використовувати загальні параметри KDE для електронної пошти, "
-"які вказано у Системних параметрах KDE, модулі «Про мене». Зніміть позначку, "
-"щоб мати змогу напряму вказати ваше повне ім'я і адресу електронної пошти."
+"які вказано у Системних параметрах KDE, модулі «Користувачі». Зніміть "
+"позначку, щоб мати змогу напряму вказати ваше повне ім'я і адресу "
+"електронної пошти."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24

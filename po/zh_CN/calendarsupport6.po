@@ -448,18 +448,12 @@ msgstr "使用系统设置中的电子邮件设定"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
-"选中此项可使用系统设置的“关于我”模块中的 KDE 全局电子邮件设定。取消此项可另行"
-"指定您的全名和邮件配置。"
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
@@ -649,13 +643,13 @@ msgstr ""
 #: kcalprefs.kcfg:94
 #, kde-format
 msgid "Select holiday categories:"
-msgstr ""
+msgstr "选择节假日类别："
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:95
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr ""
+msgstr "选择要显示的节假日类别"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:96
@@ -663,7 +657,7 @@ msgstr ""
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
-msgstr ""
+msgstr "选择要显示的节假日类别 (公共、文化、宗教、金融等)。"
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:103

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-15 00:46+0000\n"
-"PO-Revision-Date: 2026-04-11 08:06-0300\n"
+"PO-Revision-Date: 2026-04-15 08:39-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -478,20 +478,15 @@ msgstr "Usar as configurações de e-mail das Configurações do Sistema"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
-"Marque esta opção para usar a configuração de e-mail padrão do KDE, a qual "
-"pode ser definida no módulo \"Sobre mim\"das Configurações do Sistema. "
-"Desmarque esta opção, para ser capaz de especificar o seu nome completo e e-"
-"mail."
+"Marque esta opção para usar a configuração de e-mail padrão do KDE, que é "
+"definida no módulo \"Usuários\"das Configurações do Sistema. Desmarque esta "
+"opção, para ser capaz de especificar o seu nome completo e e-mail."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24

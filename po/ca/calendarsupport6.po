@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-15 00:46+0000\n"
-"PO-Revision-Date: 2026-04-11 09:44+0200\n"
+"PO-Revision-Date: 2026-04-15 10:54+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -473,20 +473,16 @@ msgstr "Usa l'arranjament de correu de l'Arranjament del sistema"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
-"Activeu aquesta casella per a usar la configuració general de correu del "
-"KDE, que es defineix usant el mòdul «Quant a mi» de l'Arranjament del "
-"sistema del KDE. Desmarqueu la casella per a poder especificar el vostre nom "
-"complet i l'adreça de correu."
+"Activeu aquesta casella per a usar la configuració general de correu de KDE, "
+"que es defineix al mòdul «Usuaris» de l'Arranjament del sistema. Desmarqueu "
+"aquesta casella per a poder especificar el vostre nom complet i l'adreça de "
+"correu."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24

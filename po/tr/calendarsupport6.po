@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-15 00:46+0000\n"
-"PO-Revision-Date: 2026-04-11 20:51+0300\n"
+"PO-Revision-Date: 2026-04-15 12:08+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -474,17 +474,13 @@ msgstr "Sistem Ayarları’ndaki e-posta ayarlarını kullan"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
-"Bu kutucuyu tıklayarak Sistem Ayarları “Hakkımda” Birimi kullanılarak "
+"Bu kutuya tıklayarak, Sistem Ayarları’nın “Kullanıcılar” modülü kullanılarak "
 "tanımlanan, KDE ile ilgili e-posta ayarlarını kullanabilirsiniz. Tam adınızı "
 "ve e-posta adresinizi belirtmek istiyorsanız bu kutucuğun imini kaldırın."
 
