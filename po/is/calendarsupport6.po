@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-15 00:46+0000\n"
-"PO-Revision-Date: 2026-04-13 18:09+0000\n"
+"POT-Creation-Date: 2026-04-17 00:44+0000\n"
+"PO-Revision-Date: 2026-04-16 08:54+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -467,19 +467,15 @@ msgstr "Nota tölvupóststillingar úr Kerfisstillingum"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
 "Hakaðu hér til að nota tölvupóststillingar fyrir KDE sem eru skilgreindar "
-"með því að nota eininguna \"Um mig\" í Kerfisstillingum. Afhakaðu þennan "
-"reit til að geta sett inn fullt nafn þitt og netfang."
+"með því að nota eininguna \"Notendur\" í Kerfisstillingum. Taktu merkið úr "
+"þessum reit til að geta sett inn fullt nafn þitt og netfang."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
@@ -2885,18 +2881,18 @@ msgstr "ekkert"
 msgid "Blocked Reminders:"
 msgstr "Útilokaðar áminningar:"
 
-#: utils.cpp:531
+#: utils.cpp:533
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:533
+#: utils.cpp:535
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:538
+#: utils.cpp:540
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

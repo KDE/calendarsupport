@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-15 00:46+0000\n"
+"POT-Creation-Date: 2026-04-17 00:44+0000\n"
 "PO-Revision-Date: 2010-09-24 16:26+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Maithili <bhashaghar@googlegroups.com>\n"
@@ -2747,19 +2747,19 @@ msgstr "किछु नहि"
 msgid "Blocked Reminders:"
 msgstr ""
 
-#: utils.cpp:531
+#: utils.cpp:533
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:533
+#: utils.cpp:535
 #, kde-format
 msgid "%1 (%2)"
 msgstr ""
 
-#: utils.cpp:538
+#: utils.cpp:540
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

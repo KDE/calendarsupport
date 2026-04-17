@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-15 00:46+0000\n"
+"POT-Creation-Date: 2026-04-17 00:44+0000\n"
 "PO-Revision-Date: 2008-07-21 16:18+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -3052,21 +3052,21 @@ msgstr "(ไม่มี)"
 msgid "Blocked Reminders:"
 msgstr "แก้ไขการเตือนความจำ"
 
-#: utils.cpp:531
+#: utils.cpp:533
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:533
+#: utils.cpp:535
 #, fuzzy, kde-format
 #| msgctxt "weekOfYear (year)"
 #| msgid "%1 (%2)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:538
+#: utils.cpp:540
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

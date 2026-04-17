@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-15 00:46+0000\n"
-"PO-Revision-Date: 2026-04-11 12:22+0200\n"
+"POT-Creation-Date: 2026-04-17 00:44+0000\n"
+"PO-Revision-Date: 2026-04-16 10:25+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -477,20 +477,15 @@ msgstr "E-mailinstellingen uit de systeeminstellingen gebruiken"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
-"Selecteer dit keuzevakje om de e-mailinstellingen voor heel KDE te "
-"gebruiken. Deze kunt u instellen in de systeeminstellingen van KDE, in de "
-"module \"Over mij\". Schakel deze optie uit als u hier uw volledige naam en "
-"e-mailadres wilt invullen."
+"Activeer dit keuzevakje om de e-mailinstellingen die zijn gedefinieerd in de "
+"module 'Gebruikers' in Systeeminstellingen. Deactiveer dit vakje om in staat "
+"te zijn uw volledige naam en e-mailadres te specificeren."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
@@ -2918,18 +2913,18 @@ msgstr "geen"
 msgid "Blocked Reminders:"
 msgstr "Geblokkeerde herinneringen:"
 
-#: utils.cpp:531
+#: utils.cpp:533
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:533
+#: utils.cpp:535
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:538
+#: utils.cpp:540
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

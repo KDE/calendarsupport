@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-15 00:46+0000\n"
-"PO-Revision-Date: 2026-04-11 21:42+0200\n"
+"POT-Creation-Date: 2026-04-17 00:44+0000\n"
+"PO-Revision-Date: 2026-04-15 21:25+0200\n"
 "Last-Translator: Libor Filípek <filipek.libor@protonmail.com>\n"
 "Language-Team: \n"
 "Language: cs\n"
@@ -469,19 +469,16 @@ msgstr "Použít nastavení e-mailu z Nastavení systému"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
-"Zaškrtněte pro použití globálního nastavení e-mailu, které je definováno v "
-"Ovládacím centru KDE, sekce &quot;O mně&quot;. Zrušte zaškrtnutí, pokud si "
-"přejete zadat vaše celé jméno a e-mail."
+"Zaškrtněte toto políčko, chcete-li použít nastavení e-mailu platná pro celé "
+"prostředí KDE, která jsou definována v modulu \"Uživatelé\" v Nastavení "
+"systému. Zrušte zaškrtnutí, chcete-li zadat své celé jméno a e-mailovou "
+"adresu."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
@@ -2908,18 +2905,18 @@ msgstr "žádný"
 msgid "Blocked Reminders:"
 msgstr "Blokované upomínky:"
 
-#: utils.cpp:531
+#: utils.cpp:533
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:533
+#: utils.cpp:535
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:538
+#: utils.cpp:540
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

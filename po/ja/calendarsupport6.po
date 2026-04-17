@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-15 00:46+0000\n"
+"POT-Creation-Date: 2026-04-17 00:44+0000\n"
 "PO-Revision-Date: 2011-08-14 14:07-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -2913,14 +2913,14 @@ msgstr "なし"
 msgid "Blocked Reminders:"
 msgstr "リマインダなし"
 
-#: utils.cpp:531
+#: utils.cpp:533
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:533
+#: utils.cpp:535
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -2929,7 +2929,7 @@ msgstr "%1%"
 msgid "%1 (%2)"
 msgstr "%1 (%2): %3"
 
-#: utils.cpp:538
+#: utils.cpp:540
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
