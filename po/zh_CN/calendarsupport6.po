@@ -454,6 +454,8 @@ msgid ""
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
+"选中此项以使用 KDE 全局电子邮件设置，它在系统设置的“用户”模块中进行配置。取消"
+"此项可另行指定您的全名和邮件配置。"
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
