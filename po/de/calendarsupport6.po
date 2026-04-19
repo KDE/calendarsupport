@@ -1,27 +1,28 @@
-# SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
-# SPDX-FileCopyrightText: 2009, 2011, 2012, 2013, 2014, 2015, 2017, 2018, 2020, 2021 Burkhard Lück <lueck@hube-lueck.de>
 # SPDX-FileCopyrightText: 2009 Jannick Kuhr <opensource@kuhr.org>
 # SPDX-FileCopyrightText: 2009 Thomas Reitelbach <tr@erdfunkstelle.de>
-# SPDX-FileCopyrightText: 2010, 2011, 2012, 2016, 2022 Frederik Schwarzer <schwarzer@kde.org>
+# SPDX-FileCopyrightText: 2009, 2011-2015, 2017-2018, 2020-2021 Burkhard Lück <lueck@hube-lueck.de>
 # SPDX-FileCopyrightText: 2010 Björn Ricks <bjoern.ricks@intevation.de>
+# SPDX-FileCopyrightText: 2010-2012, 2016, 2022 Frederik Schwarzer <schwarzer@kde.org>
 # SPDX-FileCopyrightText: 2011 Torbjörn Klatt <torbjoern@torbjoern-klatt.de>
 # SPDX-FileCopyrightText: 2022 Alois Spitzbart <spitz234@hotmail.com>
 # SPDX-FileCopyrightText: 2022, 2025 Frank Steinmetzger <dev-kde@felsenfleischer.de>
+# SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
+# SPDX-FileCopyrightText: 2026 Alexander Becker <alex-at-kde-l10n-de@freenet.de>
 # Intevation GmbH, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-17 00:44+0000\n"
-"PO-Revision-Date: 2025-07-22 11:33+0200\n"
-"Last-Translator: Frank Steinmetzger <dev-kde@felsenfleischer.de>\n"
+"PO-Revision-Date: 2026-04-14 23:04+0200\n"
+"Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.04.2\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -64,11 +65,10 @@ msgid ""
 "function. You can view an archive by opening it like you would any other "
 "calendar. It is not saved in a special format, but as vCalendar."
 msgstr ""
-"Um ein Archiv wieder Ihrem Kalender hinzuzufügen, benutzen Sie die Funktion "
-"„Kalender zusammenführen“. Sie können sich den Inhalt einer Archivdatei "
-"ansehen, indem Sie sie wie jeden anderen Kalender auch öffnen. Die "
-"Archivdatei hat kein spezielles Format, sondern ist eine normale vCalendar-"
-"Datei."
+"Verwenden Sie die Funktion „Kalender zusammenführen“, um ein Archiv Ihrem "
+"Kalender hinzuzufügen. Sie können sich den Inhalt einer Archivdatei ansehen, "
+"indem Sie sie wie jeden anderen Kalender auch öffnen. Die Archivdatei hat "
+"kein spezielles Format, sondern ist eine normale vCalendar-Datei."
 
 #: archivedialog.cpp:82
 #, kde-format
@@ -701,16 +701,15 @@ msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:94
-#, fuzzy, kde-format
-#| msgid "Use holiday regions:"
+#, kde-format
 msgid "Select holiday categories:"
-msgstr "Feiertagsregionen verwenden:"
+msgstr "Feiertagskategorien auswählen:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:95
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr ""
+msgstr "Wählen Sie Feiertagskategorien aus, die angezeigt werden sollen"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:96
@@ -719,6 +718,8 @@ msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
 msgstr ""
+"Wählen Sie Feiertagskategorien aus, die angezeigt werden sollen. Dies sind "
+"z. B. gesetzliche, kulturelle, religiöse Feiertage."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:103
@@ -972,7 +973,7 @@ msgid ""
 msgstr ""
 "Wenn Sie mehrere Tage auf einmal drucken möchten, können Sie mit dieser "
 "Option und mit <i>Enddatum</i> eine Zeitspanne angeben. Diese Option wird "
-"benutzt, um das Startdatum festzulegen."
+"verwendet, um das Startdatum festzulegen."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
 #: printing/calprintdayconfig_base.ui:36
@@ -1070,7 +1071,7 @@ msgid ""
 msgstr ""
 "Wenn Sie mehrere Tage auf einmal drucken möchten, können Sie mit dieser "
 "Option und mit <i>Startdatum</i> eine Zeitspanne angeben. Diese Option wird "
-"benutzt, um das Enddatum festzulegen."
+"verwendet, um das Enddatum festzulegen."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintdayconfig_base.ui:116
@@ -1347,8 +1348,8 @@ msgid ""
 "You should check this option if you want to print to-dos which are due on "
 "one of the dates which are in the supplied date range."
 msgstr ""
-"Sie sollten diese Option benutzen, wenn Sie Aufgaben drucken möchten, deren "
-"Fälligkeit in der eingestellten Zeitspanne liegt."
+"Sie sollten diese Option aktivieren, wenn Sie Aufgaben drucken möchten, "
+"deren Fälligkeit in der eingestellten Zeitspanne liegt."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:312
@@ -1461,7 +1462,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:367
 #, kde-format
 msgid "&Use colors"
-msgstr "&Farben benutzen"
+msgstr "&Farben verwenden"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:374
@@ -2040,7 +2041,7 @@ msgstr "Standardseitenformat des gewählten Stils verwenden"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
-msgstr "Standardeinstellung des Druckers benutzen"
+msgstr "Standardeinstellung des Druckers verwenden"
 
 #: printing/calprinter.cpp:201
 #, kde-format
@@ -2271,8 +2272,8 @@ msgid ""
 "month</i> to define the last month in this range."
 msgstr ""
 "Wenn Sie mehrere Monate auf einmal drucken möchten, können Sie eine "
-"Zeitspanne angeben. Diese Option wird benutzt, um den ersten zu druckenden "
-"Monat anzugeben. Benutzen Sie die Option <i>Endmonat</i>, um den letzten zu "
+"Zeitspanne angeben. Diese Option wird verwendet, um den ersten zu druckenden "
+"Monat anzugeben. Verwenden Sie die Option <i>Endmonat</i>, um den letzten zu "
 "druckenden Monat anzugeben."
 
 #. i18n: ectx: property (text), widget (QLabel, mFromDateLabel)
@@ -2302,8 +2303,8 @@ msgid ""
 "to define the last year in this range."
 msgstr ""
 "Wenn Sie mehrere Jahre auf einmal drucken möchten, können Sie eine "
-"Zeitspanne angeben. Diese Option wird benutzt, um das erste zu druckende "
-"Jahr anzugeben. Benutzen Sie die Option <i>Endjahr</i>, um das letzte zu "
+"Zeitspanne angeben. Diese Option wird verwendet, um das erste zu druckende "
+"Jahr anzugeben. Verwenden Sie die Option <i>Endjahr</i>, um das letzte zu "
 "druckende Jahr anzugeben."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
@@ -2317,9 +2318,9 @@ msgid ""
 "month</i> to define the first month in this range."
 msgstr ""
 "Wenn Sie mehrere Monate auf einmal drucken möchten, können Sie eine "
-"Zeitspanne angeben. Diese Option wird benutzt, um den letzten zu druckenden "
-"Monat anzugeben. Benutzen Sie die Option <i>Startmonat</i>, um den ersten zu "
-"druckenden Monat anzugeben."
+"Zeitspanne angeben. Diese Option wird verwendet, um den letzten zu "
+"druckenden Monat anzugeben. Verwenden Sie die Option <i>Startmonat</i>, um "
+"den ersten zu druckenden Monat anzugeben."
 
 #. i18n: ectx: property (text), widget (QLabel, mToDateLabel)
 #: printing/calprintmonthconfig_base.ui:72
@@ -2348,8 +2349,8 @@ msgid ""
 "to define the first year in this range."
 msgstr ""
 "Wenn Sie mehrere Jahre auf einmal drucken möchten, können Sie eine "
-"Zeitspanne angeben. Diese Option wird benutzt, um das letzte zu druckende "
-"Jahr anzugeben. Benutzen Sie die Option <i>Anfangsjahr</i>, um das erste zu "
+"Zeitspanne angeben. Diese Option wird verwendet, um das letzte zu druckende "
+"Jahr anzugeben. Verwenden Sie die Option <i>Anfangsjahr</i>, um das erste zu "
 "druckende Jahr anzugeben."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mRecurDaily)
@@ -2367,8 +2368,8 @@ msgid ""
 "needlessly complicated."
 msgstr ""
 "Mit dieser Option können Sie den Ausdruck von täglich wiederkehrenden "
-"Aufgaben und Terminen ausschalten. Diese Aufgaben und Termine brauchen viel "
-"Platz und lassen die Monatsansicht komplizierter aussehen als nötig."
+"Aufgaben und Terminen deaktivieren. Diese Aufgaben und Termine benötigen "
+"viel Platz und lassen die Monatsansicht komplizierter aussehen als nötig."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:201
@@ -2841,20 +2842,16 @@ msgstr ""
 "Wählen Sie den Kalender, in dem der neue Eintrag gespeichert werden soll."
 
 #: utils.cpp:398
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
-msgstr "%1 (Standardkalender)"
+msgstr "%1 (Standard-Terminkalender)"
 
 #: utils.cpp:400
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
-msgstr "%1 (Standardkalender)"
+msgstr "%1 (Standard-Aufgabenkalender)"
 
 #: utils.cpp:411
 #, kde-format

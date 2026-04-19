@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-17 00:44+0000\n"
-"PO-Revision-Date: 2026-04-11 07:24+0200\n"
+"PO-Revision-Date: 2026-04-18 14:24+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: pl\n"
 "Language: pl\n"
@@ -471,20 +471,15 @@ msgstr "Pobierz ustawienia poczty z ustawień systemowych"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
-"Zaznacz to pole, aby użyć ustawień adresu poczty elektronicznej "
-"wykorzystywanych w KDE, które zostały podana przy użyciu modułu \"Informacje "
-"osobiste\" ustawień systemowych. Odznacz to pole, aby móc podać swoje imię, "
-"nazwisko i e-mail."
+"Zaznacz to pole, aby użyć ustawień adresu poczty elektronicznej z KDE, które "
+"znajdują się w Ustawieniach Systemowych na stronie \"Użytkownicy\". Odznacz "
+"to pole, aby móc podać swoje imię, nazwisko i e-mail."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
@@ -687,16 +682,15 @@ msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:94
-#, fuzzy, kde-format
-#| msgid "Use holiday regions:"
+#, kde-format
 msgid "Select holiday categories:"
-msgstr "Użyj regionu świąt:"
+msgstr "Wybierz kategorie świąt:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:95
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr ""
+msgstr "Wybierz kategorie świąt do wyświetlania"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:96
@@ -705,6 +699,8 @@ msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
 msgstr ""
+"Wybierz kategorie świąt do wyświetlania (publiczne, kulturowe, religijne, "
+"finansowe)."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:103
