@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-17 00:44+0000\n"
-"PO-Revision-Date: 2026-03-16 16:29+0900\n"
+"PO-Revision-Date: 2026-04-20 01:16+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 26.03.70\n"
+"X-Generator: Lokalize 25.11.70\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #, kde-format
@@ -448,18 +448,14 @@ msgstr "使用系統設定的電子郵件設定"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
-"勾選此選項的話，則使用系統設定裡「密碼與帳號資訊」模組中設定的電子郵件設定，"
-"否則您也可以指定您的全名與電子郵件地址。"
+"勾選此選項來使用系統設定的「使用者」模組裡指定的電子郵件設定值。不勾選則可在"
+"此指定您的全名與電子郵件地址。"
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
@@ -647,16 +643,15 @@ msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:94
-#, fuzzy, kde-format
-#| msgid "Use holiday regions:"
+#, kde-format
 msgid "Select holiday categories:"
-msgstr "使用假日區域設定："
+msgstr "選取假日類別："
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:95
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr ""
+msgstr "選取要顯示哪些假日類別"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:96
@@ -664,7 +659,7 @@ msgstr ""
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
-msgstr ""
+msgstr "選取要顯示哪些假日類別（公衆、文化、信仰、金融）。"
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:103
