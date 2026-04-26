@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-17 00:44+0000\n"
-"PO-Revision-Date: 2026-04-14 23:04+0200\n"
+"PO-Revision-Date: 2026-04-24 22:33+0200\n"
 "Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -483,21 +483,16 @@ msgstr "E-Mail-Einstellungen aus den Systemeinstellungen verwenden"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
 "Kreuzen Sie dieses Feld an, wenn die KDE-weiten Einstellungen für E-Mail "
-"benutzt werden sollen. Diese können in den KDE-Systemeinstellungen unter "
-"Passwort && Benutzerzugang im Modul „Persönliche Informationen“ eingestellt "
-"werden. Wenn Sie dieses Feld nicht ankreuzen, können Sie hier Ihren vollen "
-"Namen und Ihre E-Mail-Adresse eingeben."
+"verwendet werden sollen. Diese können in den KDE-Systemeinstellungen im "
+"Modul „Benutzer“ festgelegt werden. Wenn Sie dieses Feld nicht ankreuzen, "
+"können Sie hier Ihren vollen Namen und Ihre E-Mail-Adresse eingeben."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:24
