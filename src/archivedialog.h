@@ -23,7 +23,6 @@ class QPushButton;
 namespace Akonadi
 {
 class IncidenceChanger;
-class ETMCalendar;
 }
 
 namespace CalendarSupport

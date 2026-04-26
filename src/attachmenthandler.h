@@ -14,8 +14,6 @@
 #pragma once
 
 #include <KCalendarCore/Attachment>
-using namespace Qt::Literals::StringLiterals;
-
 #include <KCalendarCore/Incidence>
 #include <KCalendarCore/ScheduleMessage>
 
