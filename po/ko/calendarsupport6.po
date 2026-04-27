@@ -2,14 +2,14 @@
 # Copyright (C) 2008 This_file_is_part_of_KDE
 # This file is distributed under the same license as the kdepim package.
 # Myong-sung Kim <xfuncrushx@gmail.com>, 2008.
-# SPDX-FileCopyrightText: 2009, 2014, 2015, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Shinjo Park <kde@peremen.name>
+# SPDX-FileCopyrightText: 2009, 2014, 2015, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-17 00:44+0000\n"
-"PO-Revision-Date: 2025-04-06 21:45+0200\n"
+"PO-Revision-Date: 2026-04-26 23:00+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -460,18 +460,14 @@ msgstr "시스템 설정의 이메일 설정 사용"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
 "이 옵션을 사용하면 KDE 전역 이메일 설정을 사용합니다. 해당 설정은 시스템 설정"
-"의 \"내 정보\" 모듈에서 편집할 수 있습니다. 이 상자를 선택하지 않으면 이름과 "
+"의 \"사용자\" 모듈에서 편집할 수 있습니다. 이 상자를 선택하지 않으면 이름과 "
 "이메일을 직접 입력할 수 있습니다."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
@@ -671,17 +667,15 @@ msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:94
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Select Categories"
+#, kde-format
 msgid "Select holiday categories:"
-msgstr "분류 선택"
+msgstr "공휴일 분류 선택:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:95
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr ""
+msgstr "표시할 공휴일 분류 선택"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:96
@@ -689,7 +683,7 @@ msgstr ""
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
-msgstr ""
+msgstr "표시할 공휴일 종류(공공, 문화, 종교, 금융)를 선택하십시오."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:103
@@ -2747,20 +2741,16 @@ msgid "Select the calendar where this item will be stored."
 msgstr "이 항목을 저장할 캘린더를 선택합니다."
 
 #: utils.cpp:398
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
-msgstr "%1(기본 캘린더)"
+msgstr "%1(기본 이벤트 캘린더)"
 
 #: utils.cpp:400
-#, fuzzy, kde-format
-#| msgctxt "this is the default calendar"
-#| msgid "%1 (Default Calendar)"
+#, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
-msgstr "%1(기본 캘린더)"
+msgstr "%1(기본 할 일 캘린더)"
 
 #: utils.cpp:411
 #, kde-format
