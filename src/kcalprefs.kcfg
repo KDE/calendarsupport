@@ -10,6 +10,51 @@
       <whatsthis>Check this box to use the KDE-wide e-mail settings, which are defined in the “Users” module in System Settings. Uncheck this box to be able to specify your full name and e-mail.</whatsthis>
       <default>true</default>
     </entry>
+    <entry type="Enum" key="Event Secrecy Policy" name="EventSecrecyPolicy">
+      <label>Events:</label>
+      <choices>
+        <choice name="EventSecrecyPublic">
+          <label>Public (accessible to everyone)</label>
+        </choice>
+        <choice name="EventSecrecyConfidential">
+          <label>Confidential (accessible to you and others)</label>
+        </choice>
+        <choice name="EventSecrecyPrivate">
+          <label>Private (accessible to you only)</label>
+        </choice>
+      </choices>
+      <default>EventSecrecyPublic</default>
+    </entry>
+    <entry type="Enum" key="Todo Secrecy Policy" name="TodoSecrecyPolicy">
+      <label>To-dos:</label>
+      <choices>
+        <choice name="TodoSecrecyPublic">
+          <label>Public (accessible to everyone)</label>
+        </choice>
+        <choice name="TodoSecrecyConfidential">
+          <label>Confidential (accessible to you and some others)</label>
+        </choice>
+        <choice name="TodoSecrecyPrivate">
+          <label>Private (accessible to you only)</label>
+        </choice>
+      </choices>
+      <default>TodoSecrecyPublic</default>
+    </entry>
+    <entry type="Enum" key="Journal Secrecy Policy" name="JournalSecrecyPolicy">
+      <label>Journals:</label>
+      <choices>
+        <choice name="JournalSecrecyPublic">
+          <label>Public (accessible to everyone)</label>
+        </choice>
+        <choice name="JournalSecrecyConfidential">
+          <label>Confidential (accessible to you and some others)</label>
+        </choice>
+        <choice name="JournalSecrecyPrivate">
+          <label>Private (accessible to you only)</label>
+        </choice>
+      </choices>
+      <default>JournalSecrecyPrivate</default>
+    </entry>
   </group>
   <!-- Time&Date Page: Default Values Tab -->
   <group name="Default Datetimes">
