@@ -25,11 +25,11 @@ repos:
    rev: v22.1.1
    hooks:
     - id: clang-format
-    # force using this project's configuration rather
-    # than the one provided by CI
+      # force using this project's configuration rather
+      # than the one provided by CI
       args: ["--style=file:.clang-format-pre-commit"]
  - repo: https://github.com/astral-sh/ruff-pre-commit
-  # Ruff version.
+   # Ruff version.
    rev: v0.15.6
    hooks:
     # Run the linter.
@@ -58,3 +58,11 @@ repos:
    rev: v0.11.0.1
    hooks:
     - id: shellcheck
+ - repo: https://github.com/efrecon/pre-commit-hook-lxml
+   rev: v0.1.4
+   hooks:
+   - id: format-xml
+     args: [--declaration=double-quotes,--self-closing=nospace,--indent=2,--write]
+     files: \.(xml|kcfg)$
+     types: []
+     exclude: \.(svg)$
