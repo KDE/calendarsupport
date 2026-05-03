@@ -103,7 +103,7 @@ target_include_directories(
 target_link_libraries(
     KPim6CalendarSupport
     PUBLIC
-        KPim6::Mime
+        KF6::Mime
         KPim6::IdentityManagementCore
         KPim6::AkonadiCalendar
         KF6::ConfigGui
