@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-17 00:44+0000\n"
+"POT-Creation-Date: 2026-05-04 00:44+0000\n"
 "PO-Revision-Date: 2024-08-03 13:10+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -458,13 +458,13 @@ msgid "Duration:"
 msgstr "Duration:"
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
-#: kcalprefs.kcfg:15
+#: kcalprefs.kcfg:9
 #, kde-format
 msgid "Use email settings from System Settings"
 msgstr "Use email settings from System Settings"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
-#: kcalprefs.kcfg:16
+#: kcalprefs.kcfg:10
 #, fuzzy, kde-format
 #| msgid ""
 #| "Check this box to use the KDE-wide e-mail settings, which are defined "
@@ -480,13 +480,13 @@ msgstr ""
 "specify your full name and e-mail."
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
-#: kcalprefs.kcfg:24
+#: kcalprefs.kcfg:17
 #, kde-format
 msgid "Default appointment time"
 msgstr "Default appointment time"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
-#: kcalprefs.kcfg:25
+#: kcalprefs.kcfg:18
 #, kde-format
 msgid ""
 "Enter the default time for events here. The default is used if you do not "
@@ -496,13 +496,13 @@ msgstr ""
 "supply a start time."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
-#: kcalprefs.kcfg:30
+#: kcalprefs.kcfg:22
 #, kde-format
 msgid "Default duration of new appointment (HH:MM)"
 msgstr "Default duration of new appointment (HH:MM)"
 
 #. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
-#: kcalprefs.kcfg:31
+#: kcalprefs.kcfg:23
 #, kde-format
 msgid ""
 "Enter default duration for events here. The default is used if you do not "
@@ -512,13 +512,13 @@ msgstr ""
 "supply an end time."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:36
+#: kcalprefs.kcfg:27
 #, kde-format
 msgid "Enable a default sound file for audio reminders"
 msgstr "Enable a default sound file for audio reminders"
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:37
+#: kcalprefs.kcfg:28
 #, kde-format
 msgid ""
 "Check this box if you want to enable the specified file to be used as the "
@@ -530,13 +530,13 @@ msgstr ""
 "the Reminder configuration accessible from the Event or To-do editors."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
-#: kcalprefs.kcfg:42
+#: kcalprefs.kcfg:32
 #, kde-format
 msgid "Default audio file"
 msgstr "Default audio file"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
-#: kcalprefs.kcfg:43
+#: kcalprefs.kcfg:33
 #, kde-format
 msgid ""
 "Set a file to be used as the default sound file for new reminders. You can "
@@ -548,13 +548,13 @@ msgstr ""
 "the Event or To-do editors."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:47
+#: kcalprefs.kcfg:36
 #, kde-format
 msgid "Enable reminders for new Events"
 msgstr "Enable reminders for new Events"
 
 #. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:48
+#: kcalprefs.kcfg:37
 #, kde-format
 msgid ""
 "Check this box if you want to enable reminders for all newly created Events. "
@@ -564,19 +564,19 @@ msgstr ""
 "You can always turn-off the reminders in the Event editor dialogue."
 
 #. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:49
+#: kcalprefs.kcfg:38
 #, kde-format
 msgid "By default, enable reminders for new events"
 msgstr "By default, enable reminders for new events"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:54
+#: kcalprefs.kcfg:42
 #, kde-format
 msgid "Enable reminders for new To-dos"
 msgstr "Enable reminders for new To-dos"
 
 #. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:55
+#: kcalprefs.kcfg:43
 #, kde-format
 msgid ""
 "Check this box if you want to enable reminders for all newly created To-dos. "
@@ -586,19 +586,19 @@ msgstr ""
 "You can always turn-off the reminders in the To-do editor dialogue."
 
 #. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:56
+#: kcalprefs.kcfg:44
 #, kde-format
 msgid "By default, enable reminders for new to-dos"
 msgstr "By default, enable reminders for new to-dos"
 
 #. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:62
+#: kcalprefs.kcfg:48
 #, kde-format
 msgid "Default reminder time"
 msgstr "Default reminder time"
 
 #. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:63
+#: kcalprefs.kcfg:49
 #, kde-format
 msgid ""
 "Enter the default reminder time for all newly created items. The time unit "
@@ -608,13 +608,13 @@ msgstr ""
 "is specified in the adjacent combobox."
 
 #. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:64
+#: kcalprefs.kcfg:50
 #, kde-format
 msgid "Default time for reminders"
 msgstr "Default time for reminders"
 
 #. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
-#: kcalprefs.kcfg:69
+#: kcalprefs.kcfg:54
 #, kde-format
 msgid ""
 "Enter the default reminder time units for all newly created items. The time "
@@ -624,19 +624,19 @@ msgstr ""
 "is specified in the adjacent spinbox."
 
 #. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
-#: kcalprefs.kcfg:70
+#: kcalprefs.kcfg:55
 #, kde-format
 msgid "Default time unit for reminders"
 msgstr "Default time unit for reminders"
 
 #. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
-#: kcalprefs.kcfg:78
+#: kcalprefs.kcfg:62
 #, kde-format
 msgid "Day begins at"
 msgstr "Day begins at"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
-#: kcalprefs.kcfg:79
+#: kcalprefs.kcfg:63
 #, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
@@ -646,13 +646,13 @@ msgstr ""
 "that you use for events."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:84
+#: kcalprefs.kcfg:67
 #, kde-format
 msgid "Exclude holidays"
 msgstr "Exclude holidays"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:85
+#: kcalprefs.kcfg:68
 #, kde-format
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
@@ -662,13 +662,13 @@ msgstr ""
 "holidays."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:90
+#: kcalprefs.kcfg:72
 #, kde-format
 msgid "Use holiday regions:"
 msgstr "Use holiday regions:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:91
+#: kcalprefs.kcfg:73
 #, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
@@ -678,20 +678,20 @@ msgstr ""
 "shown as non-working days in the date navigator, the agenda view, etc."
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:94
+#: kcalprefs.kcfg:76
 #, fuzzy, kde-format
 #| msgid "Use holiday regions:"
 msgid "Select holiday categories:"
 msgstr "Use holiday regions:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:95
+#: kcalprefs.kcfg:77
 #, kde-format
 msgid "Select which holiday categories to display"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:96
+#: kcalprefs.kcfg:78
 #, kde-format
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
@@ -699,13 +699,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:103
+#: kcalprefs.kcfg:84
 #, kde-format
 msgid "Use Groupware communication"
 msgstr "Use Groupware communication"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:104
+#: kcalprefs.kcfg:85
 #, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
@@ -719,25 +719,25 @@ msgstr ""
 "Configuring Kontact as a KDE Kolab client)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:109
+#: kcalprefs.kcfg:89
 #, kde-format
 msgid "Default policy for invitations to other users:"
 msgstr "Default policy for invitations to other users:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:112
+#: kcalprefs.kcfg:92
 #, kde-format
 msgid "Send mails without asking."
 msgstr "Send mails without asking."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:115
+#: kcalprefs.kcfg:95
 #, kde-format
 msgid "Ask for every individual attendee what to do."
 msgstr "Ask for every individual attendee what to do."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:118
+#: kcalprefs.kcfg:98
 #, kde-format
 msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
@@ -747,19 +747,19 @@ msgstr ""
 "iTip compliant clients)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: kcalprefs.kcfg:131
+#: kcalprefs.kcfg:109
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr "Show timezone selectors in the event and todo editor dialogue."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:139
+#: kcalprefs.kcfg:116
 #, kde-format
 msgid "Regularly archive events"
 msgstr "Regularly archive events"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:144
+#: kcalprefs.kcfg:120
 #, kde-format
 msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
@@ -769,73 +769,73 @@ msgstr ""
 "archived. The unit of this value is specified in another field."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:149
+#: kcalprefs.kcfg:124
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
 msgstr "The unit in which the expiry time is expressed."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:152
+#: kcalprefs.kcfg:127
 #, kde-format
 msgid "In days"
 msgstr "In days"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:155
+#: kcalprefs.kcfg:130
 #, kde-format
 msgid "In weeks"
 msgstr "In weeks"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:158
+#: kcalprefs.kcfg:133
 #, kde-format
 msgid "In months"
 msgstr "In months"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:165
+#: kcalprefs.kcfg:139
 #, kde-format
 msgid "URL of the file where old events should be archived"
 msgstr "URL of the file where old events should be archived"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:169
+#: kcalprefs.kcfg:142
 #, kde-format
 msgid "Archive events"
 msgstr "Archive events"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:174
+#: kcalprefs.kcfg:146
 #, kde-format
 msgid "Archive to-dos"
 msgstr "Archive to-dos"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:179
+#: kcalprefs.kcfg:150
 #, kde-format
 msgid "What to do when archiving"
 msgstr "What to do when archiving"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:182
+#: kcalprefs.kcfg:153
 #, kde-format
 msgid "Delete old events"
 msgstr "Delete old events"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:185
+#: kcalprefs.kcfg:156
 #, kde-format
 msgid "Archive old events to a separate file"
 msgstr "Archive old events to a separate file"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:199
+#: kcalprefs.kcfg:168
 #, kde-format
 msgid "Full &name"
 msgstr "Full &name"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:200
+#: kcalprefs.kcfg:169
 #, kde-format
 msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
@@ -845,13 +845,13 @@ msgstr ""
 "to-dos and events you create."
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:205
+#: kcalprefs.kcfg:173
 #, kde-format
 msgid "E&mail address"
 msgstr "E&mail address"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:206
+#: kcalprefs.kcfg:174
 #, kde-format
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
@@ -861,13 +861,13 @@ msgstr ""
 "the owner of the calendar, and displayed in events and to-dos you create."
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:222
+#: kcalprefs.kcfg:186
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "\"No tag\" colour (for \"Only tag\" drawing schemes)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:223
+#: kcalprefs.kcfg:187
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -879,7 +879,7 @@ msgstr ""
 "the agenda or month views using the \"Only tag\" scheme."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:224
+#: kcalprefs.kcfg:188
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Use this colour when drawing items without any tags"
