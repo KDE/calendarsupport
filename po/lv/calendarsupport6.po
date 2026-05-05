@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-04 00:44+0000\n"
+"POT-Creation-Date: 2026-05-05 00:45+0000\n"
 "PO-Revision-Date: 2025-04-06 17:48+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -486,14 +486,64 @@ msgstr ""
 "konfigurē KDE sistēmas iestatījumu modulī „Par mani“. Noņemiet atzīmi, lai "
 "varētu šeit norādīt citu vārdu un e-pastu."
 
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:14
+#, fuzzy, kde-format
+#| msgid "&Events"
+msgid "Events:"
+msgstr "&Notikumi"
+
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:17 kcalprefs.kcfg:32 kcalprefs.kcfg:47
+#, kde-format
+msgid "Public (accessible to everyone)"
+msgstr ""
+
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:20
+#, kde-format
+msgid "Confidential (accessible to you and others)"
+msgstr ""
+
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:23 kcalprefs.kcfg:38 kcalprefs.kcfg:53
+#, kde-format
+msgid "Private (accessible to you only)"
+msgstr ""
+
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:29
+#, fuzzy, kde-format
+#| msgid "&To-dos"
+msgid "To-dos:"
+msgstr "&Darbus"
+
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:35 kcalprefs.kcfg:50
+#, kde-format
+msgid "Confidential (accessible to you and some others)"
+msgstr ""
+
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:44
+#, fuzzy, kde-format
+#| msgid "&Journals"
+msgid "Journals:"
+msgstr "&Dienasgrāmatas"
+
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
-#: kcalprefs.kcfg:17
+#: kcalprefs.kcfg:62
 #, kde-format
 msgid "Default appointment time"
 msgstr "Noklusētais tikšanās laiks"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
-#: kcalprefs.kcfg:18
+#: kcalprefs.kcfg:63
 #, kde-format
 msgid ""
 "Enter the default time for events here. The default is used if you do not "
@@ -503,13 +553,13 @@ msgstr ""
 "sākšanās laiku."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
-#: kcalprefs.kcfg:22
+#: kcalprefs.kcfg:67
 #, kde-format
 msgid "Default duration of new appointment (HH:MM)"
 msgstr "Noklusētais jaunas tikšanās ilgums (SS:MM)"
 
 #. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
-#: kcalprefs.kcfg:23
+#: kcalprefs.kcfg:68
 #, kde-format
 msgid ""
 "Enter default duration for events here. The default is used if you do not "
@@ -519,13 +569,13 @@ msgstr ""
 "beigu laiku."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:27
+#: kcalprefs.kcfg:72
 #, kde-format
 msgid "Enable a default sound file for audio reminders"
 msgstr "Ieslēgt noklusējuma skaņas datni audio atgādinājumiem"
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:28
+#: kcalprefs.kcfg:73
 #, kde-format
 msgid ""
 "Check this box if you want to enable the specified file to be used as the "
@@ -538,13 +588,13 @@ msgstr ""
 "norādīt citu datni."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
-#: kcalprefs.kcfg:32
+#: kcalprefs.kcfg:77
 #, kde-format
 msgid "Default audio file"
 msgstr "Noklusējuma audio datne"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
-#: kcalprefs.kcfg:33
+#: kcalprefs.kcfg:78
 #, kde-format
 msgid ""
 "Set a file to be used as the default sound file for new reminders. You can "
@@ -556,13 +606,13 @@ msgstr ""
 "pieejama no notikuma vai darāmo darbu redaktora."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:36
+#: kcalprefs.kcfg:81
 #, kde-format
 msgid "Enable reminders for new Events"
 msgstr "Ieslēgt atgādinājumus jauniem notikumiem"
 
 #. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:37
+#: kcalprefs.kcfg:82
 #, kde-format
 msgid ""
 "Check this box if you want to enable reminders for all newly created Events. "
@@ -573,19 +623,19 @@ msgstr ""
 "redaktora lodziņā."
 
 #. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:38
+#: kcalprefs.kcfg:83
 #, kde-format
 msgid "By default, enable reminders for new events"
 msgstr "Pēc noklusējuma ieslēgt atgādinājumus jauniem notikumiem"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:42
+#: kcalprefs.kcfg:87
 #, kde-format
 msgid "Enable reminders for new To-dos"
 msgstr "Ieslēgt atgādinājumus jauniem darāmajiem darbiem"
 
 #. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:43
+#: kcalprefs.kcfg:88
 #, kde-format
 msgid ""
 "Check this box if you want to enable reminders for all newly created To-dos. "
@@ -596,19 +646,19 @@ msgstr ""
 "darāmo darbu redaktora lodziņā."
 
 #. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:44
+#: kcalprefs.kcfg:89
 #, kde-format
 msgid "By default, enable reminders for new to-dos"
 msgstr "Pēc noklusējuma ieslēgt atgādinājumus jauniem darāmajiem darbiem"
 
 #. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:48
+#: kcalprefs.kcfg:93
 #, kde-format
 msgid "Default reminder time"
 msgstr "Noklusētais atgādināšanas laiks"
 
 #. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:49
+#: kcalprefs.kcfg:94
 #, kde-format
 msgid ""
 "Enter the default reminder time for all newly created items. The time unit "
@@ -618,13 +668,13 @@ msgstr ""
 "norādīta blakus laukā."
 
 #. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:50
+#: kcalprefs.kcfg:95
 #, kde-format
 msgid "Default time for reminders"
 msgstr "Noklusētais atgādināšanas laiks"
 
 #. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
-#: kcalprefs.kcfg:54
+#: kcalprefs.kcfg:99
 #, kde-format
 msgid ""
 "Enter the default reminder time units for all newly created items. The time "
@@ -634,19 +684,19 @@ msgstr ""
 "norādīts blakus laukā."
 
 #. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
-#: kcalprefs.kcfg:55
+#: kcalprefs.kcfg:100
 #, kde-format
 msgid "Default time unit for reminders"
 msgstr "Noklusētā atgādināšanas laika vienība"
 
 #. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
-#: kcalprefs.kcfg:62
+#: kcalprefs.kcfg:107
 #, kde-format
 msgid "Day begins at"
 msgstr "Diena sākas plkst."
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
-#: kcalprefs.kcfg:63
+#: kcalprefs.kcfg:108
 #, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
@@ -656,13 +706,13 @@ msgstr ""
 "izmantosiet notikumiem."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:67
+#: kcalprefs.kcfg:112
 #, kde-format
 msgid "Exclude holidays"
 msgstr "Nestrādāju svētku dienās"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:68
+#: kcalprefs.kcfg:113
 #, kde-format
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
@@ -671,13 +721,13 @@ msgstr ""
 "Atzīmējiet lauciņu, lai „KOrganizer“ svētku dienās neizceltu darba laiku."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:72
+#: kcalprefs.kcfg:117
 #, kde-format
 msgid "Use holiday regions:"
 msgstr "Izmantot svētku dienu reģionu:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:73
+#: kcalprefs.kcfg:118
 #, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
@@ -687,20 +737,20 @@ msgstr ""
 "atzīmētas kā brīvdienas datumu navigatorā, dienaskārtībā, un citur."
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:76
+#: kcalprefs.kcfg:121
 #, fuzzy, kde-format
 #| msgid "Use holiday regions:"
 msgid "Select holiday categories:"
 msgstr "Izmantot svētku dienu reģionu:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:77
+#: kcalprefs.kcfg:122
 #, kde-format
 msgid "Select which holiday categories to display"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:78
+#: kcalprefs.kcfg:123
 #, kde-format
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
@@ -708,13 +758,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:84
+#: kcalprefs.kcfg:129
 #, kde-format
 msgid "Use Groupware communication"
 msgstr "Izmantot grupprogrammatūras komunikāciju"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:85
+#: kcalprefs.kcfg:130
 #, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
@@ -728,25 +778,25 @@ msgstr ""
 "„Kontact“ strādā kā KDE „Kolab“ klients)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:89
+#: kcalprefs.kcfg:134
 #, kde-format
 msgid "Default policy for invitations to other users:"
 msgstr "Noklusējuma politika uzaicinājumiem citiem lietotājiem:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:92
+#: kcalprefs.kcfg:137
 #, kde-format
 msgid "Send mails without asking."
 msgstr "Sūtīt pastu bez jautāšanas."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:95
+#: kcalprefs.kcfg:140
 #, kde-format
 msgid "Ask for every individual attendee what to do."
 msgstr "Lūgt katram apmeklētājam, ko darīt."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:98
+#: kcalprefs.kcfg:143
 #, kde-format
 msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
@@ -756,19 +806,19 @@ msgstr ""
 "saderīgiem klientiem)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: kcalprefs.kcfg:109
+#: kcalprefs.kcfg:154
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr "Rādīt laika joslu atlasītājus notikumu un darbu rediģēšanas logā."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:116
+#: kcalprefs.kcfg:161
 #, kde-format
 msgid "Regularly archive events"
 msgstr "Regulāri arhivēt notikumus"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:120
+#: kcalprefs.kcfg:165
 #, kde-format
 msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
@@ -778,73 +828,73 @@ msgstr ""
 "par šo. Šīs vērtības vienības ir norādītas blakus laukā."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:124
+#: kcalprefs.kcfg:169
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
 msgstr "Arhivēšanas termiņa vienības."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:127
+#: kcalprefs.kcfg:172
 #, kde-format
 msgid "In days"
 msgstr "Dienas"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:130
+#: kcalprefs.kcfg:175
 #, kde-format
 msgid "In weeks"
 msgstr "Nedēļas"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:133
+#: kcalprefs.kcfg:178
 #, kde-format
 msgid "In months"
 msgstr "Mēneši"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:139
+#: kcalprefs.kcfg:184
 #, kde-format
 msgid "URL of the file where old events should be archived"
 msgstr "Datnes URL, kurā saglabāt arhivētos notikumus"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:142
+#: kcalprefs.kcfg:187
 #, kde-format
 msgid "Archive events"
 msgstr "Arhivēt notikumus"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:146
+#: kcalprefs.kcfg:191
 #, kde-format
 msgid "Archive to-dos"
 msgstr "Arhivēt darāmos darbus"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:150
+#: kcalprefs.kcfg:195
 #, kde-format
 msgid "What to do when archiving"
 msgstr "Ko darīt arhivējot"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:153
+#: kcalprefs.kcfg:198
 #, kde-format
 msgid "Delete old events"
 msgstr "Dzēst vecos notikumus"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:156
+#: kcalprefs.kcfg:201
 #, kde-format
 msgid "Archive old events to a separate file"
 msgstr "Arhivēt vecos notikumus atsevišķā datnē"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:168
+#: kcalprefs.kcfg:213
 #, kde-format
 msgid "Full &name"
 msgstr "Pilns &vārds"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:169
+#: kcalprefs.kcfg:214
 #, kde-format
 msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
@@ -854,13 +904,13 @@ msgstr ""
 "darbu „Organizatora“ laukā."
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:173
+#: kcalprefs.kcfg:218
 #, kde-format
 msgid "E&mail address"
 msgstr "E-&pasta adrese:"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:174
+#: kcalprefs.kcfg:219
 #, kde-format
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
@@ -871,13 +921,13 @@ msgstr ""
 "darbos un notikumos."
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:186
+#: kcalprefs.kcfg:231
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "„Bez birkas“ krāsa („Tikai birka“ attēlošanas shēmām)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:187
+#: kcalprefs.kcfg:232
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -889,7 +939,7 @@ msgstr ""
 "ierakstus dienaskārtības un mēneša skatos, izmantojot „Tikai birka“ shēmu."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:188
+#: kcalprefs.kcfg:233
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Lietot šo krāsu, zīmējot ierakstus bez birkām"
@@ -3036,15 +3086,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "Print Incidences of Type"
 #~ msgstr "Drukāt šos ierakstus"
-
-#~ msgid "&Events"
-#~ msgstr "&Notikumi"
-
-#~ msgid "&To-dos"
-#~ msgstr "&Darbus"
-
-#~ msgid "&Journals"
-#~ msgstr "&Dienasgrāmatas"
 
 #, fuzzy
 #~| msgid "Print list"

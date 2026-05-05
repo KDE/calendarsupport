@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-04 00:44+0000\n"
+"POT-Creation-Date: 2026-05-05 00:45+0000\n"
 "PO-Revision-Date: 2026-04-15 05:08+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -480,14 +480,63 @@ msgstr ""
 "რომელიც სისტემის მორგების \"მომხმარებლების\" მოდულში მიუთითეთ. გამორთეთ, თუ "
 "გნებავთ, სრული სახელი და ელფოსტა ხელით მიუთითოთ."
 
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:14
+#, kde-format
+msgid "Events:"
+msgstr ""
+
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:17 kcalprefs.kcfg:32 kcalprefs.kcfg:47
+#, kde-format
+msgid "Public (accessible to everyone)"
+msgstr ""
+
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:20
+#, kde-format
+msgid "Confidential (accessible to you and others)"
+msgstr ""
+
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:23 kcalprefs.kcfg:38 kcalprefs.kcfg:53
+#, kde-format
+msgid "Private (accessible to you only)"
+msgstr ""
+
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:29
+#, fuzzy, kde-format
+#| msgid "To-do: %1"
+msgid "To-dos:"
+msgstr "განრიგი: %1"
+
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:35 kcalprefs.kcfg:50
+#, kde-format
+msgid "Confidential (accessible to you and some others)"
+msgstr ""
+
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:44
+#, fuzzy, kde-format
+#| msgid "Journal entries"
+msgid "Journals:"
+msgstr "ჟურნალის ჩანაწერები"
+
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
-#: kcalprefs.kcfg:17
+#: kcalprefs.kcfg:62
 #, kde-format
 msgid "Default appointment time"
 msgstr "ნაგულისხმევი განაწესის დრო"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
-#: kcalprefs.kcfg:18
+#: kcalprefs.kcfg:63
 #, kde-format
 msgid ""
 "Enter the default time for events here. The default is used if you do not "
@@ -497,13 +546,13 @@ msgstr ""
 "გამოიყენება, როცა დაწყების დროს არ მიუთითებთ."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
-#: kcalprefs.kcfg:22
+#: kcalprefs.kcfg:67
 #, kde-format
 msgid "Default duration of new appointment (HH:MM)"
 msgstr "ახალი შეხვედრის ნაგულისხმევი ხანგრძლივობა (სთ:წთ)"
 
 #. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
-#: kcalprefs.kcfg:23
+#: kcalprefs.kcfg:68
 #, kde-format
 msgid ""
 "Enter default duration for events here. The default is used if you do not "
@@ -513,13 +562,13 @@ msgstr ""
 "გამოიყენება, როცა დასრულების დროს არ მიუთითებთ."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:27
+#: kcalprefs.kcfg:72
 #, kde-format
 msgid "Enable a default sound file for audio reminders"
 msgstr "აუდიო შეხსენებების ნაგულისხმევი ხმის ჩართვა"
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:28
+#: kcalprefs.kcfg:73
 #, kde-format
 msgid ""
 "Check this box if you want to enable the specified file to be used as the "
@@ -532,13 +581,13 @@ msgstr ""
 "რედაქტორიდან შეგიძლიათ, გამოიძახოთ."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
-#: kcalprefs.kcfg:32
+#: kcalprefs.kcfg:77
 #, kde-format
 msgid "Default audio file"
 msgstr "ნაგულისხმევი აუდიო ფაილი"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
-#: kcalprefs.kcfg:33
+#: kcalprefs.kcfg:78
 #, kde-format
 msgid ""
 "Set a file to be used as the default sound file for new reminders. You can "
@@ -551,13 +600,13 @@ msgstr ""
 "გამოიძახოთ."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:36
+#: kcalprefs.kcfg:81
 #, kde-format
 msgid "Enable reminders for new Events"
 msgstr "ახალი მოვლენების შემხსენებლების ჩართვა"
 
 #. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:37
+#: kcalprefs.kcfg:82
 #, kde-format
 msgid ""
 "Check this box if you want to enable reminders for all newly created Events. "
@@ -567,19 +616,19 @@ msgstr ""
 "შეიქმნას. ამ პარამეტრის გამორთვა მოვლენის რედაქტორის ფანჯრიდან შეგიძლიათ."
 
 #. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:38
+#: kcalprefs.kcfg:83
 #, kde-format
 msgid "By default, enable reminders for new events"
 msgstr "ახალი მოვლენებისთვის შემხსენებლების ნაგულისხმევად ჩართვა"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:42
+#: kcalprefs.kcfg:87
 #, kde-format
 msgid "Enable reminders for new To-dos"
 msgstr "ახალი განრიგებისთვის შემხსენებლების ჩართვა"
 
 #. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:43
+#: kcalprefs.kcfg:88
 #, kde-format
 msgid ""
 "Check this box if you want to enable reminders for all newly created To-dos. "
@@ -590,19 +639,19 @@ msgstr ""
 "შეგიძლიათ."
 
 #. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:44
+#: kcalprefs.kcfg:89
 #, kde-format
 msgid "By default, enable reminders for new to-dos"
 msgstr "ახალი განრიგებისთვის შემხსენებლების ნაგულისხმევად ჩართვა"
 
 #. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:48
+#: kcalprefs.kcfg:93
 #, kde-format
 msgid "Default reminder time"
 msgstr "შეხსენებლის ნაგულისხმევი დრო"
 
 #. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:49
+#: kcalprefs.kcfg:94
 #, kde-format
 msgid ""
 "Enter the default reminder time for all newly created items. The time unit "
@@ -612,13 +661,13 @@ msgstr ""
 "დროის ერთეული იქვე მდებარე ჩამოსაშლელ მენიუშია."
 
 #. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:50
+#: kcalprefs.kcfg:95
 #, kde-format
 msgid "Default time for reminders"
 msgstr "ნაგულისხმევი დრო შემხსენებლებისთვის"
 
 #. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
-#: kcalprefs.kcfg:54
+#: kcalprefs.kcfg:99
 #, kde-format
 msgid ""
 "Enter the default reminder time units for all newly created items. The time "
@@ -628,19 +677,19 @@ msgstr ""
 "დროის ერთეული იქვე მდებარე ჩამოსაშლელ მენიუშია."
 
 #. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
-#: kcalprefs.kcfg:55
+#: kcalprefs.kcfg:100
 #, kde-format
 msgid "Default time unit for reminders"
 msgstr "შემხსენებლების ნაგულისხმევი დრის ერთეული"
 
 #. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
-#: kcalprefs.kcfg:62
+#: kcalprefs.kcfg:107
 #, kde-format
 msgid "Day begins at"
 msgstr "დღე იწყება"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
-#: kcalprefs.kcfg:63
+#: kcalprefs.kcfg:108
 #, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
@@ -650,13 +699,13 @@ msgstr ""
 "თარიღამდე, რომლებსაც მოვლენებისთვის იყენებთ."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:67
+#: kcalprefs.kcfg:112
 #, kde-format
 msgid "Exclude holidays"
 msgstr "დასვენებს დღეების გამორიცხვა"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:68
+#: kcalprefs.kcfg:113
 #, kde-format
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
@@ -666,13 +715,13 @@ msgstr ""
 "ჩვენება აუკრძალოთ."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:72
+#: kcalprefs.kcfg:117
 #, kde-format
 msgid "Use holiday regions:"
 msgstr "დასვენების დღის რეგიონი:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:73
+#: kcalprefs.kcfg:118
 #, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
@@ -683,19 +732,19 @@ msgstr ""
 "შ. როგორც არასამუშაო, ისე გამოჩნდება."
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:76
+#: kcalprefs.kcfg:121
 #, kde-format
 msgid "Select holiday categories:"
 msgstr "აირჩიეთ დასვენების კატეგორიები:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:77
+#: kcalprefs.kcfg:122
 #, kde-format
 msgid "Select which holiday categories to display"
 msgstr "აირჩიეთ, რომელი დღესასწაულის კატეგორიებია ნაჩვენები"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:78
+#: kcalprefs.kcfg:123
 #, kde-format
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
@@ -705,13 +754,13 @@ msgstr ""
 "რელიგიური, ფინანსური)."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:84
+#: kcalprefs.kcfg:129
 #, kde-format
 msgid "Use Groupware communication"
 msgstr "Groupware communication-ის გამოყენება"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:85
+#: kcalprefs.kcfg:130
 #, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
@@ -725,25 +774,25 @@ msgstr ""
 "ცდილობთ, მოირგოთ Kontact, როგორც KDE-ის Kolab კლიენტი)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:89
+#: kcalprefs.kcfg:134
 #, kde-format
 msgid "Default policy for invitations to other users:"
 msgstr "სხვა მომხმარებლების მოსაწვევის ნაგულისხმევი პოლიტიკა:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:92
+#: kcalprefs.kcfg:137
 #, kde-format
 msgid "Send mails without asking."
 msgstr "ელფოსტების კითხვის გარეშე გაგზავნა."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:95
+#: kcalprefs.kcfg:140
 #, kde-format
 msgid "Ask for every individual attendee what to do."
 msgstr "თითოეული დამსწრისთვის სათითაოდ კითხვა."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:98
+#: kcalprefs.kcfg:143
 #, kde-format
 msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
@@ -753,20 +802,20 @@ msgstr ""
 "დაგეგმვა iTip-თან თავსებად კლიენტებთან)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: kcalprefs.kcfg:109
+#: kcalprefs.kcfg:154
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
 "მოვლენისა და გეგმის რედაქტორის ფანჯარაში დროის სარტყელის არჩევის ჩვენება."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:116
+#: kcalprefs.kcfg:161
 #, kde-format
 msgid "Regularly archive events"
 msgstr "მოვლენების რეგულარული დაარქივება"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:120
+#: kcalprefs.kcfg:165
 #, kde-format
 msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
@@ -776,73 +825,73 @@ msgstr ""
 "დაარქივდება. ამ მნიშვნელობის ერთეული გვერდით ველშია მითითებული."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:124
+#: kcalprefs.kcfg:169
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
 msgstr "ერთეული, რომლითაც ვადა გამოიხატება."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:127
+#: kcalprefs.kcfg:172
 #, kde-format
 msgid "In days"
 msgstr "დღეში"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:130
+#: kcalprefs.kcfg:175
 #, kde-format
 msgid "In weeks"
 msgstr "კვირაში"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:133
+#: kcalprefs.kcfg:178
 #, kde-format
 msgid "In months"
 msgstr "თვეში"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:139
+#: kcalprefs.kcfg:184
 #, kde-format
 msgid "URL of the file where old events should be archived"
 msgstr "ფაილის ბმული, სადაც ძველი მოვლენების არქივი იქნება დამახსოვრებული"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:142
+#: kcalprefs.kcfg:187
 #, kde-format
 msgid "Archive events"
 msgstr "მოვლენების დაარქივება"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:146
+#: kcalprefs.kcfg:191
 #, kde-format
 msgid "Archive to-dos"
 msgstr "განრიგის დაარქივება"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:150
+#: kcalprefs.kcfg:195
 #, kde-format
 msgid "What to do when archiving"
 msgstr "რა ვქნა დაარქივების დროს"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:153
+#: kcalprefs.kcfg:198
 #, kde-format
 msgid "Delete old events"
 msgstr "ძველი მოვლენების წაშლა"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:156
+#: kcalprefs.kcfg:201
 #, kde-format
 msgid "Archive old events to a separate file"
 msgstr "ძველი მოვლენების ცალკე ფაილში არქივირება"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:168
+#: kcalprefs.kcfg:213
 #, kde-format
 msgid "Full &name"
 msgstr "სრული &სახელი"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:169
+#: kcalprefs.kcfg:214
 #, kde-format
 msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
@@ -852,13 +901,13 @@ msgstr ""
 "\", იმ გასაკეთებლებში და მოვლენებში, რომლებსაც თქვენ შექმნით."
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:173
+#: kcalprefs.kcfg:218
 #, kde-format
 msgid "E&mail address"
 msgstr "&ელფოსტის მისამართი"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:174
+#: kcalprefs.kcfg:219
 #, kde-format
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
@@ -869,13 +918,13 @@ msgstr ""
 "გასაკეთებლებში, რომლებსაც თქვენ შექმნით."
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:186
+#: kcalprefs.kcfg:231
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "\"ჭდის გარეშე\" ფერი (\"მხოლოდ ჭდე\" დახატვის სქემებისთვის)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:187
+#: kcalprefs.kcfg:232
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -888,7 +937,7 @@ msgstr ""
 "გამოყენებით."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:188
+#: kcalprefs.kcfg:233
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "ამ ფერის გამოყენება ჭდეების გარეშე არსებული ელემენტების დახატვისას"

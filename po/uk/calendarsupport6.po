@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-04 00:44+0000\n"
+"POT-Creation-Date: 2026-05-05 00:45+0000\n"
 "PO-Revision-Date: 2026-04-15 08:14+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -486,14 +486,64 @@ msgstr ""
 "позначку, щоб мати змогу напряму вказати ваше повне ім'я і адресу "
 "електронної пошти."
 
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:14
+#, fuzzy, kde-format
+#| msgid "&Events"
+msgid "Events:"
+msgstr "&Події"
+
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:17 kcalprefs.kcfg:32 kcalprefs.kcfg:47
+#, kde-format
+msgid "Public (accessible to everyone)"
+msgstr ""
+
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:20
+#, kde-format
+msgid "Confidential (accessible to you and others)"
+msgstr ""
+
+#. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:23 kcalprefs.kcfg:38 kcalprefs.kcfg:53
+#, kde-format
+msgid "Private (accessible to you only)"
+msgstr ""
+
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:29
+#, fuzzy, kde-format
+#| msgid "&To-dos"
+msgid "To-dos:"
+msgstr "&Завдання"
+
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:35 kcalprefs.kcfg:50
+#, kde-format
+msgid "Confidential (accessible to you and some others)"
+msgstr ""
+
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:44
+#, fuzzy, kde-format
+#| msgid "&Journals"
+msgid "Journals:"
+msgstr "&Журнали"
+
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
-#: kcalprefs.kcfg:17
+#: kcalprefs.kcfg:62
 #, kde-format
 msgid "Default appointment time"
 msgstr "Типовий час зустрічі"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
-#: kcalprefs.kcfg:18
+#: kcalprefs.kcfg:63
 #, kde-format
 msgid ""
 "Enter the default time for events here. The default is used if you do not "
@@ -503,13 +553,13 @@ msgstr ""
 "вкажете дату початку."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
-#: kcalprefs.kcfg:22
+#: kcalprefs.kcfg:67
 #, kde-format
 msgid "Default duration of new appointment (HH:MM)"
 msgstr "Типова тривалість нової зустрічі (гг:хх)"
 
 #. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
-#: kcalprefs.kcfg:23
+#: kcalprefs.kcfg:68
 #, kde-format
 msgid ""
 "Enter default duration for events here. The default is used if you do not "
@@ -519,13 +569,13 @@ msgstr ""
 "ви не вкажете дату закінчення."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:27
+#: kcalprefs.kcfg:72
 #, kde-format
 msgid "Enable a default sound file for audio reminders"
 msgstr "Увімкнути використання типового файла для звукових нагадувань"
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:28
+#: kcalprefs.kcfg:73
 #, kde-format
 msgid ""
 "Check this box if you want to enable the specified file to be used as the "
@@ -538,13 +588,13 @@ msgstr ""
 "записів подій або завдань."
 
 #. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
-#: kcalprefs.kcfg:32
+#: kcalprefs.kcfg:77
 #, kde-format
 msgid "Default audio file"
 msgstr "Типовий звуковий файл"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
-#: kcalprefs.kcfg:33
+#: kcalprefs.kcfg:78
 #, kde-format
 msgid ""
 "Set a file to be used as the default sound file for new reminders. You can "
@@ -556,13 +606,13 @@ msgstr ""
 "налаштувань завчасних нагадувань у редакторах записів подій або завдань."
 
 #. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:36
+#: kcalprefs.kcfg:81
 #, kde-format
 msgid "Enable reminders for new Events"
 msgstr "Увімкнути нагадування для нових подій"
 
 #. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:37
+#: kcalprefs.kcfg:82
 #, kde-format
 msgid ""
 "Check this box if you want to enable reminders for all newly created Events. "
@@ -573,19 +623,19 @@ msgstr ""
 "за допомогою діалогового вікна редактора подій."
 
 #. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:38
+#: kcalprefs.kcfg:83
 #, kde-format
 msgid "By default, enable reminders for new events"
 msgstr "Типово, увімкнути нагадування для нових подій"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:42
+#: kcalprefs.kcfg:87
 #, kde-format
 msgid "Enable reminders for new To-dos"
 msgstr "Увімкнути нагадування для нових завдань"
 
 #. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:43
+#: kcalprefs.kcfg:88
 #, kde-format
 msgid ""
 "Check this box if you want to enable reminders for all newly created To-dos. "
@@ -596,19 +646,19 @@ msgstr ""
 "нагадування за допомогою діалогового вікна редактора завдань."
 
 #. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
-#: kcalprefs.kcfg:44
+#: kcalprefs.kcfg:89
 #, kde-format
 msgid "By default, enable reminders for new to-dos"
 msgstr "Типово, увімкнути нагадування для нових завдань"
 
 #. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:48
+#: kcalprefs.kcfg:93
 #, kde-format
 msgid "Default reminder time"
 msgstr "Типовий час нагадування"
 
 #. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:49
+#: kcalprefs.kcfg:94
 #, kde-format
 msgid ""
 "Enter the default reminder time for all newly created items. The time unit "
@@ -619,13 +669,13 @@ msgstr ""
 "списку."
 
 #. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
-#: kcalprefs.kcfg:50
+#: kcalprefs.kcfg:95
 #, kde-format
 msgid "Default time for reminders"
 msgstr "Типовий час для нагадувань:"
 
 #. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
-#: kcalprefs.kcfg:54
+#: kcalprefs.kcfg:99
 #, kde-format
 msgid ""
 "Enter the default reminder time units for all newly created items. The time "
@@ -635,19 +685,19 @@ msgstr ""
 "ви створюватимете надалі. Час можна вказати у сусідньому полі лічильника."
 
 #. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
-#: kcalprefs.kcfg:55
+#: kcalprefs.kcfg:100
 #, kde-format
 msgid "Default time unit for reminders"
 msgstr "Типові одиниці часу для нагадувань"
 
 #. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
-#: kcalprefs.kcfg:62
+#: kcalprefs.kcfg:107
 #, kde-format
 msgid "Day begins at"
 msgstr "День починається о"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
-#: kcalprefs.kcfg:63
+#: kcalprefs.kcfg:108
 #, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
@@ -657,13 +707,13 @@ msgstr ""
 "бути використано для записів подій протягом дня."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:67
+#: kcalprefs.kcfg:112
 #, kde-format
 msgid "Exclude holidays"
 msgstr "Виключити свята"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:68
+#: kcalprefs.kcfg:113
 #, kde-format
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
@@ -673,13 +723,13 @@ msgstr ""
 "вихідні."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:72
+#: kcalprefs.kcfg:117
 #, kde-format
 msgid "Use holiday regions:"
 msgstr "Використовувати свята регіонів:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:73
+#: kcalprefs.kcfg:118
 #, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
@@ -689,19 +739,19 @@ msgstr ""
 "в навігаторі датами, перегляді порядку денного тощо як неробочі дні."
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:76
+#: kcalprefs.kcfg:121
 #, kde-format
 msgid "Select holiday categories:"
 msgstr "Виберіть регіони свят:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:77
+#: kcalprefs.kcfg:122
 #, kde-format
 msgid "Select which holiday categories to display"
 msgstr "Виберіть, свята з яких категорій слід показати"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:78
+#: kcalprefs.kcfg:123
 #, kde-format
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
@@ -711,13 +761,13 @@ msgstr ""
 "релігійні, банківські)."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:84
+#: kcalprefs.kcfg:129
 #, kde-format
 msgid "Use Groupware communication"
 msgstr "Використовувати зв'язок групової роботи"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:85
+#: kcalprefs.kcfg:130
 #, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
@@ -731,25 +781,25 @@ msgstr ""
 "роботи (наприклад, Kontact, який налаштовано, як клієнт сервера KDE Kolab)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:89
+#: kcalprefs.kcfg:134
 #, kde-format
 msgid "Default policy for invitations to other users:"
 msgstr "Типові правила для запрошень до інших користувачів:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:92
+#: kcalprefs.kcfg:137
 #, kde-format
 msgid "Send mails without asking."
 msgstr "Надсилати повідомлення без підтвердження."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:95
+#: kcalprefs.kcfg:140
 #, kde-format
 msgid "Ask for every individual attendee what to do."
 msgstr "Запитувати у кожного учасника про подальші дії."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:98
+#: kcalprefs.kcfg:143
 #, kde-format
 msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
@@ -759,7 +809,7 @@ msgstr ""
 "у клієнтах, сумісних із iTip)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: kcalprefs.kcfg:109
+#: kcalprefs.kcfg:154
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
@@ -767,13 +817,13 @@ msgstr ""
 "завдань."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:116
+#: kcalprefs.kcfg:161
 #, kde-format
 msgid "Regularly archive events"
 msgstr "Регулярно архівувати події"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:120
+#: kcalprefs.kcfg:165
 #, kde-format
 msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
@@ -783,73 +833,73 @@ msgstr ""
 "архівовані. Одиниця виміру цього значення вказується в іншому полі."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:124
+#: kcalprefs.kcfg:169
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
 msgstr "Одиниця часу, у якій вказується термін давності."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:127
+#: kcalprefs.kcfg:172
 #, kde-format
 msgid "In days"
 msgstr "За днями"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:130
+#: kcalprefs.kcfg:175
 #, kde-format
 msgid "In weeks"
 msgstr "За тижнями"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:133
+#: kcalprefs.kcfg:178
 #, kde-format
 msgid "In months"
 msgstr "За місяцями"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:139
+#: kcalprefs.kcfg:184
 #, kde-format
 msgid "URL of the file where old events should be archived"
 msgstr "Адреса URL файла, де давні події мають бути архівовані"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:142
+#: kcalprefs.kcfg:187
 #, kde-format
 msgid "Archive events"
 msgstr "Архівувати події"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:146
+#: kcalprefs.kcfg:191
 #, kde-format
 msgid "Archive to-dos"
 msgstr "Архівувати завдання"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:150
+#: kcalprefs.kcfg:195
 #, kde-format
 msgid "What to do when archiving"
 msgstr "Що робити при архівуванні"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:153
+#: kcalprefs.kcfg:198
 #, kde-format
 msgid "Delete old events"
 msgstr "Вилучити старі події"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:156
+#: kcalprefs.kcfg:201
 #, kde-format
 msgid "Archive old events to a separate file"
 msgstr "Архівувати старі події в окремий файл"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:168
+#: kcalprefs.kcfg:213
 #, kde-format
 msgid "Full &name"
 msgstr "Повне &ім'я"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:169
+#: kcalprefs.kcfg:214
 #, kde-format
 msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
@@ -859,13 +909,13 @@ msgstr ""
 "завданнях і подіях, які ви створите."
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:173
+#: kcalprefs.kcfg:218
 #, kde-format
 msgid "E&mail address"
 msgstr "Адреса е&л. пошти"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:174
+#: kcalprefs.kcfg:219
 #, kde-format
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
@@ -876,13 +926,13 @@ msgstr ""
 "подіях і завданнях, які ви створюватимете."
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:186
+#: kcalprefs.kcfg:231
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "Колір «Без міток» (для схем «Лише мітка»)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:187
+#: kcalprefs.kcfg:232
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -895,7 +945,7 @@ msgstr ""
 "місяця у разі використання схеми «Лише мітка»."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:188
+#: kcalprefs.kcfg:233
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Використовувати цей колір для малювання пунктів без міток"
@@ -3116,15 +3166,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "Print Incidences of Type"
 #~ msgstr "Друкувати події типу"
-
-#~ msgid "&Events"
-#~ msgstr "&Події"
-
-#~ msgid "&To-dos"
-#~ msgstr "&Завдання"
-
-#~ msgid "&Journals"
-#~ msgstr "&Журнали"
 
 #~ msgid "Print Item list"
 #~ msgstr "Друкувати список пунктів"
