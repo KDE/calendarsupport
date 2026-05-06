@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022-2026 Emir SARI <emir_sari@icloud.com>
 # zeugma <sunder67@hotmail.com>, 2013.
 # obsoleteman <tulliana@gmail.com>, 2009,2012.
 # Volkan Gezer <volkangezer@gmail.com>, 2013-2014, 2015, 2017.
@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-05 00:45+0000\n"
-"PO-Revision-Date: 2026-05-02 18:52+0300\n"
+"PO-Revision-Date: 2026-05-05 11:24+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 "(http: //www.transifex.com/projects/p/kdepim-k-tr/language/tr/)\n"
 "X-POOTLE-MTIME: 1413102218.000000\n"
 
@@ -488,7 +488,7 @@ msgstr ""
 #: kcalprefs.kcfg:14
 #, kde-format
 msgid "Events:"
-msgstr ""
+msgstr "Etkinlikler:"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -496,13 +496,13 @@ msgstr ""
 #: kcalprefs.kcfg:17 kcalprefs.kcfg:32 kcalprefs.kcfg:47
 #, kde-format
 msgid "Public (accessible to everyone)"
-msgstr ""
+msgstr "Herkese açık (herkes görebilir)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20
 #, kde-format
 msgid "Confidential (accessible to you and others)"
-msgstr ""
+msgstr "Kişiye mahsus (size ve bazı birkaç kişiye açık)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -510,28 +510,26 @@ msgstr ""
 #: kcalprefs.kcfg:23 kcalprefs.kcfg:38 kcalprefs.kcfg:53
 #, kde-format
 msgid "Private (accessible to you only)"
-msgstr ""
+msgstr "Gizli (yalnızca size açık)"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:29
-#, fuzzy, kde-format
-#| msgid "To-do: %1"
+#, kde-format
 msgid "To-dos:"
-msgstr "Yapılacak: %1"
+msgstr "Yapılacaklar:"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:35 kcalprefs.kcfg:50
 #, kde-format
 msgid "Confidential (accessible to you and some others)"
-msgstr ""
+msgstr "Kişiye mahsus (size ve bazı birkaç kişiye açık)"
 
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:44
-#, fuzzy, kde-format
-#| msgid "Journal entries"
+#, kde-format
 msgid "Journals:"
-msgstr "Günce girdileri"
+msgstr "Günce girdileri:"
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62

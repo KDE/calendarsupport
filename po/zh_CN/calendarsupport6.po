@@ -487,10 +487,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:29
-#, fuzzy, kde-format
-#| msgid "To-do: %1"
+#, kde-format
 msgid "To-dos:"
-msgstr "待办事项：%1"
+msgstr ""
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
@@ -501,10 +500,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:44
-#, fuzzy, kde-format
-#| msgid "Journal entries"
+#, kde-format
 msgid "Journals:"
-msgstr "日记项"
+msgstr ""
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62

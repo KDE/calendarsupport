@@ -449,7 +449,7 @@ msgstr ""
 #: kcalprefs.kcfg:14
 #, kde-format
 msgid "Events:"
-msgstr ""
+msgstr "Dáhpáhusat:"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)

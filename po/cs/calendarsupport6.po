@@ -484,7 +484,7 @@ msgstr ""
 #: kcalprefs.kcfg:14
 #, kde-format
 msgid "Events:"
-msgstr ""
+msgstr "Události:"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -510,10 +510,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:29
-#, fuzzy, kde-format
-#| msgid "To-do: %1"
+#, kde-format
 msgid "To-dos:"
-msgstr "Úloha: %1"
+msgstr "Úlohy:"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
