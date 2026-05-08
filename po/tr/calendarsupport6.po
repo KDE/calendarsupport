@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-05 00:45+0000\n"
-"PO-Revision-Date: 2026-05-05 11:24+0300\n"
+"PO-Revision-Date: 2026-05-07 14:28+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -496,13 +496,13 @@ msgstr "Etkinlikler:"
 #: kcalprefs.kcfg:17 kcalprefs.kcfg:32 kcalprefs.kcfg:47
 #, kde-format
 msgid "Public (accessible to everyone)"
-msgstr "Herkese açık (herkes görebilir)"
+msgstr "Genel (herkes görebilir)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20
 #, kde-format
 msgid "Confidential (accessible to you and others)"
-msgstr "Kişiye mahsus (size ve bazı birkaç kişiye açık)"
+msgstr "Gizli (size ve bazı birkaç kişiye açık)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -510,7 +510,7 @@ msgstr "Kişiye mahsus (size ve bazı birkaç kişiye açık)"
 #: kcalprefs.kcfg:23 kcalprefs.kcfg:38 kcalprefs.kcfg:53
 #, kde-format
 msgid "Private (accessible to you only)"
-msgstr "Gizli (yalnızca size açık)"
+msgstr "Özel (yalnızca size açık)"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:29
@@ -523,7 +523,7 @@ msgstr "Yapılacaklar:"
 #: kcalprefs.kcfg:35 kcalprefs.kcfg:50
 #, kde-format
 msgid "Confidential (accessible to you and some others)"
-msgstr "Kişiye mahsus (size ve bazı birkaç kişiye açık)"
+msgstr "Gizli (size ve bazı birkaç kişiye açık)"
 
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:44
@@ -578,7 +578,7 @@ msgid ""
 "the Reminder configuration accessible from the Event or To-do editors."
 msgstr ""
 "Belirtilen dosyanın yeni anımsatıcılar için öntanımlı ses dosyası olarak "
-"kullanılmasını etkinleştirmek istiyorsanız bu kutuyu imleyin. Her zaman, "
+"kullanılmasını etkinleştirmek istiyorsanız bu kutuyu işaretleyin. Her zaman, "
 "Etkinlik veya Yapılacak Listesi düzenleyicilerinden erişilebilen Anımsatıcı "
 "yapılandırmasını kullanarak başka bir dosyayı belirtebilirsiniz."
 
@@ -926,7 +926,7 @@ msgstr ""
 #: kcalprefs.kcfg:231
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
-msgstr "“Etiket yok” rengi (“Yalnızca etiket\" çizim şemaları için)"
+msgstr "“Künye yok” rengi (“Yalnızca künye\" çizim şemaları için)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
 #: kcalprefs.kcfg:232
@@ -936,16 +936,16 @@ msgid ""
 "item does not have any tags.  This color is used when drawing items in the "
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
-"Bir unsur, hiçbir etikete ait değil ise, “etiket yok” veya “ayarlanmamış "
-"etiket” durumu için kullanılacak rengi seçin. Bu renk, “Yalnızca etiket” "
-"şeması kullanılarak ajanda veya aylık görünümde ögelerin çizilmesinde "
+"Bir öge, hiçbir künyeye ait değil ise, “künye yok” veya “ayarlanmamış künye” "
+"durumu için kullanılacak rengi seçin. Bu renk, “Yalnızca künye” şeması "
+"kullanılarak ajanda veya aylık görünümde ögelerin çizilmesinde "
 "kullanılacaktır."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
 #: kcalprefs.kcfg:233
 #, kde-format
 msgid "Use this color when drawing items without any tags"
-msgstr "Etiketsiz ögeleri çizerken bu rengi kullan"
+msgstr "Künyesiz ögeleri çizerken bu rengi kullan"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintdayconfig_base.ui:17
@@ -1202,7 +1202,7 @@ msgstr ""
 #, kde-format
 msgid "The timetable print view has the times to the left of the page."
 msgstr ""
-"Zaman çizgisi yazdırma görünümü, sayfanın solunda zaman bilgisini içerir."
+"Zaman çizelgesi yazdırma görünümü, sayfanın solunda zaman bilgisini içerir."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:222
@@ -1219,8 +1219,8 @@ msgid ""
 "The timetable print view has the times to the left of the page. All days are "
 "printed as columns in one big timetable."
 msgstr ""
-"Zaman çizgisi yazdırma görünümü, sayfanın solunda tüm günlerin sütun olarak "
-"büyük bir zaman tablosunda olduğu zaman bilgisini içerir."
+"Zaman çizelgesi yazdırma görünümü, sayfanın solunda tüm günlerin sütun "
+"olarak büyük bir zaman tablosunda olduğu zaman bilgisini içerir."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeSingleTimetable)
 #: printing/calprintdayconfig_base.ui:232
@@ -1239,7 +1239,7 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:70
 #, kde-format
 msgid "Security Exclusions"
-msgstr "Güvenlik Nedenli Hariç Tutmalar"
+msgstr "Güvenlik Nedenli Dışlamalar"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:248
@@ -1253,8 +1253,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Confidential&#8221;"
 msgstr ""
-"Erişim düzeyi &#8220;Gizli&#8221; olarak ayarlanan ögeleri dışlamak için bu "
-"seçeneği işaretleyin"
+"Erişim düzeyi “Gizli” olarak ayarlanan ögeleri dışlamak için bu seçeneği "
+"işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:251
@@ -1279,8 +1279,8 @@ msgid ""
 "Check this option to exclude items that have their Access level set to "
 "&#8220;Private&#8221;"
 msgstr ""
-"Erişim düzeyi &#8220;Özel&#8221; olarak ayarlanan ögeleri dışlamak için bu "
-"seçeneği imleyin"
+"Erişim düzeyi “Özel” olarak ayarlanan ögeleri dışlamak için bu seçeneği "
+"işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:261
@@ -1322,7 +1322,7 @@ msgstr "Öge açıklamalarını yazdır"
 #: printing/calprintweekconfig_base.ui:280
 #, kde-format
 msgid "Check this option if you want to see the item descriptions printed."
-msgstr "Öge açıklamalarının yazdırılmasını istiyorsanız bu kutuyu imleyin."
+msgstr "Öge açıklamalarının yazdırılmasını istiyorsanız bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
 #. i18n: ectx: property (text), widget (QCheckBox, mDescription)
@@ -1342,7 +1342,7 @@ msgstr "&Açıklamalar"
 #: printing/calprintweekconfig_base.ui:290
 #, kde-format
 msgid "Print item tags"
-msgstr "Öge etiketlerini yazdır"
+msgstr "Öge künyelerini yazdır"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -1352,7 +1352,7 @@ msgstr "Öge etiketlerini yazdır"
 #: printing/calprintweekconfig_base.ui:293
 #, kde-format
 msgid "Check this option if you want to see the item tags printed."
-msgstr "Öge etiketlerinin yazdırılmasını istiyorsanız bu kutuyu imleyin."
+msgstr "Öge künyelerinin yazdırılmasını istiyorsanız bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (text), widget (QCheckBox, mCategories)
@@ -1362,7 +1362,7 @@ msgstr "Öge etiketlerinin yazdırılmasını istiyorsanız bu kutuyu imleyin."
 #: printing/calprintweekconfig_base.ui:296
 #, kde-format
 msgid "Ta&gs"
-msgstr "&Etiketler"
+msgstr "&Künyeler"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:306
@@ -1397,7 +1397,7 @@ msgstr "Yazdırılmış günler&de biten yapılacakları içer"
 #: printing/calprintweekconfig_base.ui:319
 #, kde-format
 msgid "Check this option to exclude the time in description box"
-msgstr "Tanımlama kutucuğundan zamanı dışlamak için bu seçeneği imleyin"
+msgstr "Tanımlama kutucuğundan zamanı dışlamak için bu seçeneği işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:322
@@ -1453,7 +1453,7 @@ msgstr "Her gün içindeki etkinlikleri tek bir &çizgi haline getir"
 #: printing/calprintweekconfig_base.ui:351
 #, kde-format
 msgid "Check this option to draw note lines in empty areas."
-msgstr "Not satırlarını boş alanlarda göstermek için bu seçeneği imleyin."
+msgstr "Not satırlarını boş alanlarda göstermek için bu seçeneği işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:354
@@ -1481,8 +1481,8 @@ msgid ""
 "If you want to use colors to distinguish certain tags in the printed output, "
 "check this option."
 msgstr ""
-"Yazdırılan çıktıda belirli etiketleri ayırt etmek için renkler kullanmak "
-"istiyorsanız bu seçeneği imleyin."
+"Yazdırılan çıktıda belirli künyeleri ayırt etmek için renkler kullanmak "
+"istiyorsanız bu seçeneği işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:367
@@ -1519,7 +1519,7 @@ msgid ""
 "contains the date of the print."
 msgstr ""
 "Her sayfada yazdırma tarihini içeren küçük bir altbilgi yazdırmak "
-"istiyorsanız bu kutuyu imleyin."
+"istiyorsanız bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:380
@@ -1823,7 +1823,7 @@ msgstr "Ayarlar: "
 #: printing/calprintdefaultplugins.cpp:629
 #, kde-format
 msgid "Tags: "
-msgstr "Etiketler:"
+msgstr "Künyeler:"
 
 #: printing/calprintdefaultplugins.cpp:722 printing/calprintpluginbase.cpp:927
 #: printing/calprintpluginbase.cpp:1067 printing/calprintpluginbase.cpp:1124
@@ -1908,7 +1908,7 @@ msgstr "Tamamlanma Yüzdesi"
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
-msgstr "Etiketler"
+msgstr "Künyeler"
 
 #: printing/calprintdefaultplugins.cpp:1544
 #, kde-format
@@ -1960,7 +1960,7 @@ msgstr "Tamamla"
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
-msgstr "Etiketler"
+msgstr "Künyeler"
 
 #: printing/calprintdefaultplugins.h:52
 #, kde-format
@@ -2144,7 +2144,7 @@ msgid ""
 "including the visibility and secrecy properties."
 msgstr ""
 "Görünürlük ve gizlilik özellikleri de dahil olay hakkında daha fazla ayrıntı "
-"yazdırmak isterseniz bu kutuyu imleyin."
+"yazdırmak isterseniz bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:39
@@ -2164,7 +2164,8 @@ msgstr "Katılımcıları yazdır"
 msgid ""
 "Check this box if you want the attendees list included on the print-out."
 msgstr ""
-"Çıktıda katılımcı listesinin dahil edilmesini istiyorsanız bu kutuyu imleyin."
+"Çıktıda katılımcı listesinin dahil edilmesini istiyorsanız bu kutuyu "
+"işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttendees)
 #: printing/calprintincidenceconfig_base.ui:52
@@ -2184,7 +2185,7 @@ msgstr "Notları yazdır"
 msgid ""
 "Check this box if you want the incidence notes included on the print-out."
 msgstr ""
-"Çıktıda olay notlarının dahil edilmesini istiyorsanız bu kutuyu imleyin."
+"Çıktıda olay notlarının dahil edilmesini istiyorsanız bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowSubitemsNotes)
 #: printing/calprintincidenceconfig_base.ui:65
@@ -2205,8 +2206,8 @@ msgid ""
 "Check this box if you want the attachment information included on the print-"
 "out. The attachments themselves are not printed."
 msgstr ""
-"Çıktıda eklerin bilgisinin dahil edilmesini istiyorsanız bu kutuyu imleyin. "
-"Eklerin kendileri yazdırılmaz."
+"Çıktıda eklerin bilgisinin dahil edilmesini istiyorsanız bu kutuyu "
+"işaretleyin. Eklerin kendileri yazdırılmaz."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:78
@@ -2221,8 +2222,8 @@ msgid ""
 "Check this box if you want to draw note lines in the empty area of the "
 "print. This is useful if you want to hand-write notes on this print-out."
 msgstr ""
-"Çıktının boş alanında not çizgileri çizmek isterseniz bu kutuyu imleyin. Bu "
-"çıktıda el yazımı notlar almak için kullanışlıdır."
+"Çıktının boş alanında not çizgileri çizmek isterseniz bu kutuyu işaretleyin. "
+"Bu çıktıda el yazımı notlar almak için kullanışlıdır."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:100
@@ -2596,7 +2597,7 @@ msgstr "Öge önceliklerini yazdır"
 #: printing/calprinttodoconfig_base.ui:261
 #, kde-format
 msgid "Check this option if you want to see the item priorities printed."
-msgstr "Öge önceliklerinin yazdırılmasını istiyorsanız bu kutuyu imleyin."
+msgstr "Öge önceliklerinin yazdırılmasını istiyorsanız bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
@@ -2617,7 +2618,7 @@ msgid ""
 "Check this option if you want to see the item start dates (when work can "
 "begin) printed."
 msgstr ""
-"Öge başlangıç tarihlerinin yazdırılmasını istiyorsanız bu kutuyu imleyin."
+"Öge başlangıç tarihlerinin yazdırılmasını istiyorsanız bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:280
@@ -2635,7 +2636,8 @@ msgstr "Öge bitiş tarihlerini yazdır"
 #: printing/calprinttodoconfig_base.ui:290
 #, kde-format
 msgid "Check this option if you want to see the item due dates printed."
-msgstr "Öge bitiş tarihlerinin yazdırılmasını istiyorsanız bu kutuyu imleyin."
+msgstr ""
+"Öge bitiş tarihlerinin yazdırılmasını istiyorsanız bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293
@@ -2657,7 +2659,7 @@ msgid ""
 "as a number and bar graph."
 msgstr ""
 "Öge tamamlanma yüzdelerinin sayı ve çubuk grafiği olarak yazdırılmasını "
-"istiyorsanız bu kutuyu imleyin."
+"istiyorsanız bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
