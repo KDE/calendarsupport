@@ -8,14 +8,14 @@
 # Pino Toscano <toscano.pino@tiscali.it>, 2007.
 # Dario Panico <Dareus_Persarumrex@fastwebnet.it>, 2008, 2009.
 # Leonardo Finetti <finex@finex.org>, 2008.
-# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Luigi Toscano <luigi.toscano@tiscali.it>
+# SPDX-FileCopyrightText: 2010-2016, 2018-2026 Luigi Toscano <luigi.toscano@tiscali.it>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-05 00:45+0000\n"
-"PO-Revision-Date: 2026-04-17 23:29+0200\n"
+"PO-Revision-Date: 2026-05-05 16:04+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -505,13 +505,13 @@ msgstr "Eventi:"
 #: kcalprefs.kcfg:17 kcalprefs.kcfg:32 kcalprefs.kcfg:47
 #, kde-format
 msgid "Public (accessible to everyone)"
-msgstr ""
+msgstr "Pubblico (accessibile a chiunque)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20
 #, kde-format
 msgid "Confidential (accessible to you and others)"
-msgstr ""
+msgstr "Confidenziale (accessibile per te e altri)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -519,28 +519,26 @@ msgstr ""
 #: kcalprefs.kcfg:23 kcalprefs.kcfg:38 kcalprefs.kcfg:53
 #, kde-format
 msgid "Private (accessible to you only)"
-msgstr ""
+msgstr "Privato (accessibile solo da te)"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:29
-#, fuzzy, kde-format
-#| msgid "To-dos"
+#, kde-format
 msgid "To-dos:"
-msgstr "Cose da fare"
+msgstr "Cose da fare:"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:35 kcalprefs.kcfg:50
 #, kde-format
 msgid "Confidential (accessible to you and some others)"
-msgstr ""
+msgstr "Confidenziale (accessibile per te e altri)"
 
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:44
-#, fuzzy, kde-format
-#| msgid "Journals"
+#, kde-format
 msgid "Journals:"
-msgstr "Diari"
+msgstr "Diari:"
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62
