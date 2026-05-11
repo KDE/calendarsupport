@@ -12,13 +12,13 @@
 #
 # Ambalam <tamilpc@ambalam.com>, 2004.
 # root <root@localhost.localdomain>, 2004.
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2026 Kishore G <kishore96@gmail.com>
+# SPDX-FileCopyrightText: 2022-2024, 2026 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-24 00:43+0000\n"
-"PO-Revision-Date: 2026-03-12 21:04+0530\n"
+"PO-Revision-Date: 2026-05-10 16:15+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -49,19 +49,16 @@ msgid "&Archive"
 msgstr "&காப்பகப்படுத்து"
 
 #: archivedialog.cpp:62
-#, fuzzy, kde-kuit-format
+#, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
 "Archiving saves old items into the given file and then deletes them in the "
 "current calendar. If the archive file already exists they will be added. "
 "(<link url=\"#\">How to restore</link>)"
 msgstr ""
-"காப்புநகல் பழைய நிகழ்வை கொடுக்கப்பட்ட கோப்பில் சேமிக்கும் மற்றும் பிறகு தற்போதைய "
-"நாள்காட்டியை நீக்கும்.காப்புநகல் கோப்பு ஏற்கனவே இருந்தால் அவை சேர்க்கப்படும். (<a href="
-"\"whatsthis:In order to add an archive to your calendar, use the &quot;Merge "
-"Calendar&quot; function. You can view an archive by opening it in KOrganizer "
-"like any other calendar. It is not saved in a special format, but as "
-"vCalendar.\">எப்படி மீள்சேமிப்பது</a>)"
+"காப்பகப்படுத்தவது என்பது, பழைய உருப்படிகளை தற்போதைய நாள்காட்டியிலிருந்து நீக்கி "
+"தேர்ந்தெடுத்துள்ள கோப்பினுள் சேமிக்கும். காப்பகக் கோப்பு ஏற்கனவே இருந்தால் புதிய உருப்படிகள் "
+"அதில் சேர்க்கப்படும். (<link url=\"#\">மீட்டெடுப்பது எப்படி</link>"
 
 #: archivedialog.cpp:67
 #, fuzzy, kde-format
@@ -197,14 +194,13 @@ msgstr "காப்பகக் கோப்பு:"
 #, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
-msgstr ""
+msgstr "iCalendar கோப்புகள் (*.ics)"
 
 #: archivedialog.cpp:145
-#, fuzzy, kde-format
-#| msgid "Export to HTML with every save"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the location of the archive"
-msgstr "ஒவ்வொரு சேமித்தலுக்கு பின்னர் HTMLக்கு ஏற்றுமதி செய். "
+msgstr "காப்பக்ககோப்பின் இருப்பிடத்தை அமைக்கலாம்"
 
 #: archivedialog.cpp:147
 #, fuzzy, kde-format
@@ -290,7 +286,7 @@ msgstr "சேமிக்காமல் நீக்கு"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Purge the old items without saving them"
-msgstr ""
+msgstr "பழையவற்றை சேமிக்காமல் நீக்கு"
 
 #: archivedialog.cpp:181
 #, fuzzy, kde-format
@@ -329,14 +325,13 @@ msgstr ""
 #: attachmenthandler.cpp:185 attachmenthandler.cpp:239
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
-msgstr ""
+msgstr "உடனிணைப்பிற்கான தற்காலிக கோப்பை உருவாக்க முடியவில்லை."
 
 #: attachmenthandler.cpp:218
-#, fuzzy, kde-format
-#| msgid "Attach&ments"
+#, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
-msgstr "இணைப்புகள்"
+msgstr "உடனிணைப்பை சேமிப்பது"
 
 #: cellitem.cpp:38
 #, kde-kuit-format
@@ -344,16 +339,15 @@ msgid "<placeholder>undefined</placeholder>"
 msgstr ""
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
+#, kde-format
 msgid "There are no items before %1"
-msgstr "%1 க்கு முன்னால் எந்த செயலும் இல்லை"
+msgstr "%1 க்கு முன்னதாக ஏதுமில்லை"
 
 #: eventarchiver.cpp:128
-#, fuzzy, kde-format
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "காப்பகம்"
+msgstr "காப்பகப்படுத்துவது"
 
 #: eventarchiver.cpp:156
 #, fuzzy, kde-format
@@ -365,16 +359,16 @@ msgstr ""
 "பின்வரும் நிகழ்வுகள் நீக்கப்படும்:"
 
 #: eventarchiver.cpp:160
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
-msgstr "பழைய நிகழ்வுகளை நீக்கு"
+msgstr "பழைய நிகழ்வுகளை நீக்குவது"
 
 #: eventarchiver.cpp:273
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
-msgstr ""
+msgstr "தெரியாத காரணம்"
 
 #: eventarchiver.cpp:275
 #, fuzzy, kde-format
@@ -464,32 +458,28 @@ msgid "Free Period"
 msgstr "வேலை நேரம்"
 
 #: freebusymodel/freeperiodmodel.cpp:179
-#, fuzzy, kde-format
-#| msgid "&Start:"
+#, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
-msgstr "&துவங்கு"
+msgstr "துவக்கம்:"
 
 #: freebusymodel/freeperiodmodel.cpp:182
-#, fuzzy, kde-format
-#| msgid "&End:"
+#, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
-msgstr "&முடிவு"
+msgstr "முடிவு:"
 
 #: freebusymodel/freeperiodmodel.cpp:185
-#, fuzzy, kde-format
-#| msgid "Duration: "
+#, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
-msgstr "நேர அளவு"
+msgstr "நீடிக்கும் காலம்:"
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:15
-#, fuzzy, kde-format
-#| msgid "Use email settings from Control Center"
+#, kde-format
 msgid "Use email settings from System Settings"
-msgstr "கட்டுப்பாட்டு மையத்திலிருந்து மின்னஞ்சல்களின் அமைவுகளைப் பெற்றுக்கொள்"
+msgstr "கணினி அமைப்புகளிலுள்ள மின்னஞ்சல் அமைப்புகளைப் பயன்படுத்து"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:16
