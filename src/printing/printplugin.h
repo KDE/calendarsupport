@@ -13,6 +13,7 @@
 #include <QDate>
 #include <QPointer>
 #include <QPrinter>
+#include <QWidget>
 
 namespace CalendarSupport
 {
