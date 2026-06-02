@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-05 00:45+0000\n"
-"PO-Revision-Date: 2013-09-08 07:05+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-05-29 17:04-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -142,19 +143,19 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox expires in daily units"
 msgid "Day(s)"
-msgstr "كۈندە يېڭىلا"
+msgstr "كۈن"
 
 #: archivedialog.cpp:134
 #, kde-format
 msgctxt "@item:inlistbox expiration in weekly units"
 msgid "Week(s)"
-msgstr ""
+msgstr "ھەپتە"
 
 #: archivedialog.cpp:135
 #, kde-format
 msgctxt "@item:inlistbox expiration in monthly units"
 msgid "Month(s)"
-msgstr ""
+msgstr "ئاي"
 
 #: archivedialog.cpp:140
 #, kde-format
@@ -289,8 +290,7 @@ msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 
 #: attachmenthandler.cpp:218
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
 msgstr "قوشۇلمىنى ساقلا"
@@ -306,12 +306,10 @@ msgid "There are no items before %1"
 msgstr ""
 
 #: eventarchiver.cpp:128
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "&Archive"
+#, kde-format
 msgctxt "@title:window"
 msgid "Archive"
-msgstr "ئارخىپ(&A)"
+msgstr "ئارخىپ"
 
 #: eventarchiver.cpp:158
 #, kde-format
@@ -350,42 +348,38 @@ msgstr ""
 #: freebusymodel/freebusycalendar.cpp:109
 #, kde-format
 msgid "Free"
-msgstr ""
+msgstr "بوش"
 
 #: freebusymodel/freebusycalendar.cpp:112
 #, kde-format
 msgid "Busy"
-msgstr ""
+msgstr "ئالدىراش"
 
 #: freebusymodel/freebusycalendar.cpp:115
 #, kde-format
 msgid "Unavailable"
-msgstr ""
+msgstr "ئىشلەتكىلى بولمايدۇ"
 
 #: freebusymodel/freebusycalendar.cpp:118
 #, kde-format
 msgid "Tentative"
-msgstr ""
+msgstr "سىناق"
 
 #: freebusymodel/freebusycalendar.cpp:121
-#, fuzzy, kde-format
-#| msgctxt "unknown resource"
-#| msgid "Unknown"
+#, kde-format
 msgid "Unknown"
-msgstr "نامەلۇم"
+msgstr "يوچۇن"
 
 #: freebusymodel/freebusyitemmodel.cpp:212
-#, fuzzy, kde-format
-#| msgid "&Attendees"
+#, kde-format
 msgid "Attendee"
-msgstr "قاتناشقۇچىلار(&A)"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:125
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
-msgstr "%1%"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:142
 #, kde-format
@@ -397,14 +391,12 @@ msgid "%1 %2, %3 to %4"
 msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:163
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt ""
 "@label A time period duration. KLocale is used to format the components. "
 "example: Monday, 12 June, 8:00am to 9:30am"
 msgid "%1, %2 %3, %4 to %5"
-msgstr "%1، %2"
+msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:177
 #, kde-format
@@ -413,26 +405,22 @@ msgid "Free Period"
 msgstr ""
 
 #: freebusymodel/freeperiodmodel.cpp:179
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr "باشلاش:"
 
 #: freebusymodel/freeperiodmodel.cpp:182
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
-msgstr ""
+msgstr "ئاخىرى:"
 
 #: freebusymodel/freeperiodmodel.cpp:185
-#, fuzzy, kde-format
-#| msgctxt "incidence category"
-#| msgid "Education"
+#, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
-msgstr "مائارىپ"
+msgstr "داۋاملىشىش ۋاقتى:"
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:9
@@ -451,11 +439,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:14
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "&Events"
+#, kde-format
 msgid "Events:"
-msgstr "ھادىسىلەر(&E)"
+msgstr "ھادىسە:"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -481,11 +467,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:29
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "&To-dos"
+#, kde-format
 msgid "To-dos:"
-msgstr "قىلىدىغان ئىشلار(&T)"
+msgstr ""
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
@@ -496,10 +480,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:44
-#, fuzzy, kde-format
-#| msgid "Journal"
+#, kde-format
 msgid "Journals:"
-msgstr "ژۇرنال"
+msgstr ""
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62
@@ -637,7 +620,7 @@ msgstr ""
 #: kcalprefs.kcfg:107
 #, kde-format
 msgid "Day begins at"
-msgstr ""
+msgstr "كۈن بېشى"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
@@ -663,10 +646,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:117
-#, fuzzy, kde-format
-#| msgid "Use holiday region:"
+#, kde-format
 msgid "Use holiday regions:"
-msgstr "تۆۋەندىكى رايونلارنىڭ تەتىلىنى ئىشلەت:"
+msgstr ""
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
 #: kcalprefs.kcfg:118
@@ -678,10 +660,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:121
-#, fuzzy, kde-format
-#| msgid "Use holiday region:"
+#, kde-format
 msgid "Select holiday categories:"
-msgstr "تۆۋەندىكى رايونلارنىڭ تەتىلىنى ئىشلەت:"
+msgstr ""
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:122
@@ -900,11 +881,9 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:127
 #: printing/calprintweekconfig_base.ui:30
 #: printing/calprintweekconfig_base.ui:49
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Starting date for the print"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mFromDate)
@@ -927,11 +906,9 @@ msgstr ""
 #: printing/calprintjournalconfig_base.ui:77
 #: printing/calprinttodoconfig_base.ui:111
 #: printing/calprintweekconfig_base.ui:36
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "&Start date:"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mFromDate)
 #. i18n: ectx: property (text), item, widget (KDateComboBox, mToDate)
@@ -949,11 +926,9 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:64 printing/calprintdayconfig_base.ui:80
 #: printing/calprintweekconfig_base.ui:64
 #: printing/calprintweekconfig_base.ui:80
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Starting time for the print"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mFromTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mFromTime)
@@ -971,11 +946,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, mFromTimeLabel)
 #: printing/calprintdayconfig_base.ui:70 printing/calprintweekconfig_base.ui:70
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Start &time:"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr ""
 
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mFromTime)
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, mToTime)
@@ -984,7 +957,7 @@ msgstr "باشلانغان چېسلا ۋە ۋاقىت"
 #: printing/calprintweekconfig_base.ui:166
 #, kde-format
 msgid "hh:mm"
-msgstr "hh:mm"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (toolTip), widget (KDateComboBox, mToDate)
@@ -996,11 +969,9 @@ msgstr "hh:mm"
 #: printing/calprinttodoconfig_base.ui:164
 #: printing/calprintweekconfig_base.ui:110
 #: printing/calprintweekconfig_base.ui:129
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Ending date for the print"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToDateLabel)
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, mToDate)
@@ -1034,11 +1005,9 @@ msgstr ""
 #: printing/calprintdayconfig_base.ui:160
 #: printing/calprintweekconfig_base.ui:144
 #: printing/calprintweekconfig_base.ui:160
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Ending time for the print"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, mToTimeLabel)
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, mToTime)
@@ -1158,10 +1127,9 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:203
 #: printing/calprintweekconfig_base.ui:251
 #: printing/calprintyearconfig_base.ui:79
-#, fuzzy, kde-format
-#| msgid "Exclude holidays"
+#, kde-format
 msgid "Exclude c&onfidential"
-msgstr "تەتىللەرنى چىقىرىۋەت"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:258
@@ -1183,10 +1151,9 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:213
 #: printing/calprintweekconfig_base.ui:261
 #: printing/calprintyearconfig_base.ui:89
-#, fuzzy, kde-format
-#| msgid "Exclude holidays"
+#, kde-format
 msgid "Exclude pri&vate"
-msgstr "تەتىللەرنى چىقىرىۋەت"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, mIncludeInfoGroup)
 #. i18n: ectx: property (title), widget (QGroupBox, includeInfoBox)
@@ -1225,10 +1192,9 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:159
 #: printing/calprinttodoconfig_base.ui:238
 #: printing/calprintweekconfig_base.ui:283
-#, fuzzy, kde-format
-#| msgid "Description:"
+#, kde-format
 msgid "&Descriptions"
-msgstr "چۈشەندۈرۈش:"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1236,10 +1202,9 @@ msgstr "چۈشەندۈرۈش:"
 #: printing/calprintmonthconfig_base.ui:166
 #: printing/calprinttodoconfig_base.ui:245
 #: printing/calprintweekconfig_base.ui:290
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgid "Print item tags"
-msgstr "قوشۇلمىنى ساقلا"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mCategories)
@@ -1308,9 +1273,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:224
 #: printing/calprinttodoconfig_base.ui:391
 #: printing/calprintweekconfig_base.ui:332
-#, fuzzy, kde-format
-#| msgctxt "@title:tab General settings for a folder."
-#| msgid "General"
+#, kde-format
 msgctxt "@title general print settings"
 msgid "General"
 msgstr "ئادەتتىكى"
@@ -1427,11 +1390,9 @@ msgstr ""
 #: printing/calprintdefaultplugins.cpp:120
 #: printing/calprintdefaultplugins.cpp:149
 #: printing/calprintdefaultplugins.cpp:168
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "Start date: "
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr "باشلاش چېسلاسى: "
 
 #: printing/calprintdefaultplugins.cpp:123
 #: printing/calprintdefaultplugins.cpp:152
@@ -1440,24 +1401,20 @@ msgid "No start date"
 msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:128
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event end date and time"
-#| msgid "End date and time"
+#, kde-format
 msgid "End date: "
-msgstr "ئاخىرلاشقان چېسلا ۋە ۋاقىت"
+msgstr "ئاخىرلاشتۇرۇش چېسلاسى: "
 
 #: printing/calprintdefaultplugins.cpp:131
-#, fuzzy, kde-format
-#| msgctxt "incidence category"
-#| msgid "Education"
+#, kde-format
 msgid "Duration: "
-msgstr "مائارىپ"
+msgstr "داۋاملىشىش ۋاقتى: "
 
 #: printing/calprintdefaultplugins.cpp:134
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
-msgstr[0] "%1 سائەت "
+msgstr[0] "‏%1‎‏ سائەت "
 
 #: printing/calprintdefaultplugins.cpp:137
 #, kde-format
@@ -1500,7 +1457,7 @@ msgstr ""
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
-msgstr[0] ""
+msgstr[0] "%1 ئەسكەرتكۈچى: "
 
 #: printing/calprintdefaultplugins.cpp:317
 #, kde-format
@@ -1536,7 +1493,7 @@ msgstr[0] "%1 كۈن"
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
-msgstr[0] "%1 سائەت"
+msgstr[0] "‏%1‎‏ سائەت"
 
 #: printing/calprintdefaultplugins.cpp:343
 #, kde-format
@@ -1546,9 +1503,7 @@ msgstr[0] "%1 مىنۇت"
 
 #: printing/calprintdefaultplugins.cpp:347
 #: printing/calprintdefaultplugins.cpp:630
-#, fuzzy, kde-format
-#| msgctxt "Spacer for the joined list of categories"
-#| msgid ", "
+#, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr "، "
@@ -1559,11 +1514,9 @@ msgid "Organizer: "
 msgstr "تەشكىللىگۈچى: "
 
 #: printing/calprintdefaultplugins.cpp:365
-#, fuzzy, kde-format
-#| msgctxt "incidence category"
-#| msgid "Education"
+#, kde-format
 msgid "Location: "
-msgstr "مائارىپ"
+msgstr "ئورنى: "
 
 #: printing/calprintdefaultplugins.cpp:427
 #, kde-format
@@ -1571,10 +1524,9 @@ msgid "Description:"
 msgstr "چۈشەندۈرۈش:"
 
 #: printing/calprintdefaultplugins.cpp:455
-#, fuzzy, kde-format
-#| msgid "Notes"
+#, kde-format
 msgid "Notes:"
-msgstr "ئىزاھ"
+msgstr "ئىزاھ:"
 
 #: printing/calprintdefaultplugins.cpp:467
 #, kde-format
@@ -1594,20 +1546,16 @@ msgid "none"
 msgstr "يوق"
 
 #: printing/calprintdefaultplugins.cpp:488
-#, fuzzy, kde-format
-#| msgctxt "unknown resource"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown status"
 msgid "unknown"
-msgstr "نامەلۇم"
+msgstr "يوچۇن"
 
 #: printing/calprintdefaultplugins.cpp:495
-#, fuzzy, kde-format
-#| msgctxt "@title:column calendar event start date and time"
-#| msgid "Start Date and Time"
+#, kde-format
 msgctxt "subitem start date"
 msgid "Start Date: %1\n"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr "باشلاش چېسلاسى: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:498
 #, kde-format
@@ -1640,12 +1588,10 @@ msgid "Status: %1\n"
 msgstr "ھالىتى: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:523
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item priority"
-#| msgid "Priority"
+#, kde-format
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
-msgstr "مەرتىۋە"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:524
 #, kde-format
@@ -1654,17 +1600,15 @@ msgid "Secrecy: %1\n"
 msgstr "مەخپىيلىك: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:542
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgid "No Attachments"
-msgstr "قوشۇلمىنى ساقلا"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:545
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
-msgstr[0] "قوشۇلمىنى ساقلا"
+msgstr[0] ""
 
 #: printing/calprintdefaultplugins.cpp:551
 #, kde-format
@@ -1689,7 +1633,7 @@ msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
 "<reinhold@kainhofer.com> (Participant): Awaiting Response'"
 msgid "%1 (%2): %3"
-msgstr "%1 (%2): %3"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:600
 #, kde-format
@@ -1724,7 +1668,7 @@ msgstr "تەڭشەك: "
 #: printing/calprintdefaultplugins.cpp:629
 #, kde-format
 msgid "Tags: "
-msgstr ""
+msgstr "بەلگە: "
 
 #: printing/calprintdefaultplugins.cpp:722 printing/calprintpluginbase.cpp:927
 #: printing/calprintpluginbase.cpp:1067 printing/calprintpluginbase.cpp:1124
@@ -1735,20 +1679,16 @@ msgstr "%1، %2"
 
 #: printing/calprintdefaultplugins.cpp:725 printing/calprintpluginbase.cpp:946
 #: printing/calprintpluginbase.cpp:1070
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1، %2"
 
 #: printing/calprintdefaultplugins.cpp:780
-#, fuzzy, kde-format
-#| msgid "1 day"
-#| msgid_plural "%1 days"
+#, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
-msgstr "%1 كۈن"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:985
 #: printing/calprintdefaultplugins.cpp:1211 printing/yearprint.cpp:143
@@ -1775,53 +1715,43 @@ msgstr ""
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: printing/calprintdefaultplugins.cpp:1533
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event summary"
-#| msgid "Summary"
+#, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
-msgstr "ئۈزۈندى"
+msgstr "ئۈزۈندە"
 
 #: printing/calprintdefaultplugins.cpp:1534
-#, fuzzy, kde-format
-#| msgctxt "@title:column calendar event start date and time"
-#| msgid "Start Date and Time"
+#, kde-format
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr "باشلاش چېسلاسى"
 
 #: printing/calprintdefaultplugins.cpp:1535
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item due date and time"
-#| msgid "Due Date and Time"
+#, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
-msgstr "مۆلچەرلەنگەن چېسلا ۋە ۋاقىت"
+msgstr "مۆھلىتى(چېسلا)"
 
 #: printing/calprintdefaultplugins.cpp:1536
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item priority"
-#| msgid "Priority"
+#, kde-format
 msgctxt "@option sort by priority"
 msgid "Priority"
-msgstr "مەرتىۋە"
+msgstr "ئالدىنلىق"
 
 #: printing/calprintdefaultplugins.cpp:1537
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item completion in percent"
-#| msgid "Complete"
+#, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
-msgstr "تولۇق"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1538
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
-msgstr ""
+msgstr "بەلگە"
 
 #: printing/calprintdefaultplugins.cpp:1544
 #, kde-format
@@ -1830,19 +1760,15 @@ msgid "Ascending"
 msgstr "ئۆسكۈچى"
 
 #: printing/calprintdefaultplugins.cpp:1545
-#, fuzzy, kde-format
-#| msgctxt "@option sort in descreasing order"
-#| msgid "Descending"
+#, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "كېمەيگۈچى"
 
 #: printing/calprintdefaultplugins.cpp:1558
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "&To-dos"
+#, kde-format
 msgid "To-do list"
-msgstr "قىلىدىغان ئىشلار(&T)"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1610
 #: printing/calprintpluginbase.cpp:1723
@@ -1851,11 +1777,9 @@ msgid "%1%"
 msgstr "%1%"
 
 #: printing/calprintdefaultplugins.cpp:1621
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item priority"
-#| msgid "Priority"
+#, kde-format
 msgid "Priority"
-msgstr "مەرتىۋە"
+msgstr "ئالدىنلىق"
 
 #: printing/calprintdefaultplugins.cpp:1631
 #, kde-format
@@ -1864,17 +1788,13 @@ msgid "Due"
 msgstr "مۆھلىتى"
 
 #: printing/calprintdefaultplugins.cpp:1641
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr "باشلا"
 
 #: printing/calprintdefaultplugins.cpp:1651
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item completion in percent"
-#| msgid "Complete"
+#, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "تولۇق"
@@ -1883,7 +1803,7 @@ msgstr "تولۇق"
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
-msgstr ""
+msgstr "بەلگە"
 
 #: printing/calprintdefaultplugins.h:52
 #, kde-format
@@ -1951,7 +1871,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Print"
-msgstr "بېسىپ چىقار"
+msgstr "باس"
 
 #: printing/calprinter.cpp:177
 #, kde-format
@@ -1996,13 +1916,13 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Portrait"
-msgstr "بوي يۆنىلىش"
+msgstr "بويىغا"
 
 #: printing/calprinter.cpp:202
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
-msgstr "توغرا يۆنىلىش"
+msgstr "توغرىسىغا"
 
 #: printing/calprinter.cpp:224
 #, kde-format
@@ -2099,10 +2019,9 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:72
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgid "Print the attachments"
-msgstr "قوشۇلمىنى ساقلا"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:75
@@ -2114,11 +2033,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowAttachments)
 #: printing/calprintincidenceconfig_base.ui:78
-#, fuzzy, kde-format
-#| msgctxt "filename for an unnamed attachment"
-#| msgid "attachment.1"
+#, kde-format
 msgid "Attach&ments"
-msgstr "قوشۇلما.1"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:97
@@ -2323,12 +2240,7 @@ msgid ","
 msgstr "،"
 
 #: printing/calprintpluginbase.cpp:317
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "incidence category: official or unofficial observance of religious/"
-#| "national/cultural/other significance, often accompanied by celebrations "
-#| "or festivities"
-#| msgid "Holiday"
+#, kde-format
 msgid "Holiday"
 msgstr "دەم ئېلىش كۈنى"
 
@@ -2351,12 +2263,10 @@ msgid "%1-%2 %3, %4"
 msgstr ""
 
 #: printing/calprintpluginbase.cpp:1005
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
-msgstr "%1، %2"
+msgstr "%1، %2 %3"
 
 #: printing/calprintpluginbase.cpp:1131
 #, kde-format
@@ -2371,11 +2281,9 @@ msgid "%1 (Due: %2)"
 msgstr "%1 (قەرەلى: %2)"
 
 #: printing/calprintpluginbase.cpp:1143
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "&To-dos"
+#, kde-format
 msgid "To-do: %1"
-msgstr "قىلىدىغان ئىشلار(&T)"
+msgstr ""
 
 #: printing/calprintpluginbase.cpp:1878
 #, kde-format
@@ -2428,11 +2336,9 @@ msgstr "ماۋزۇ(&T):"
 
 #. i18n: ectx: property (text), widget (QLineEdit, mTitle)
 #: printing/calprinttodoconfig_base.ui:48
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "&To-dos"
+#, kde-format
 msgid "To-do List"
-msgstr "قىلىدىغان ئىشلار(&T)"
+msgstr "بېجىرىدىغان تىزىم"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mPrintType)
 #: printing/calprinttodoconfig_base.ui:57
@@ -2472,18 +2378,15 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:264
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item priority"
-#| msgid "Priority"
+#, kde-format
 msgid "&Priority"
-msgstr "مەرتىۋە"
+msgstr "مەرتىۋىسى(&P)"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:274
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgid "Print item start dates"
-msgstr "قوشۇلمىنى ساقلا"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:277
@@ -2495,18 +2398,15 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStartDate)
 #: printing/calprinttodoconfig_base.ui:280
-#, fuzzy, kde-format
-#| msgctxt "@title:column, calendar event start date and time"
-#| msgid "Start date and time"
+#, kde-format
 msgid "&Start date"
-msgstr "باشلانغان چېسلا ۋە ۋاقىت"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:287
-#, fuzzy, kde-format
-#| msgid "Save Attachment"
+#, kde-format
 msgid "Print item due dates"
-msgstr "قوشۇلمىنى ساقلا"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:290
@@ -2516,10 +2416,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDueDate)
 #: printing/calprinttodoconfig_base.ui:293
-#, fuzzy, kde-format
-#| msgid "Due date"
+#, kde-format
 msgid "Du&e date"
-msgstr "مۆھلىتى"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
@@ -2537,11 +2436,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:309
-#, fuzzy, kde-format
-#| msgctxt "@title:column todo item completion in percent"
-#| msgid "Complete"
+#, kde-format
 msgid "Percentage co&mpleted"
-msgstr "تولۇق"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, sortingOptionsBox)
 #: printing/calprinttodoconfig_base.ui:328
@@ -2625,19 +2522,17 @@ msgstr ""
 #: printing/calprintyearconfig_base.ui:21
 #, kde-format
 msgid "Date Range"
-msgstr ""
+msgstr "چېسلا دائىرىسى"
 
 #. i18n: ectx: property (text), widget (QLabel, mYearLabel)
 #: printing/calprintyearconfig_base.ui:32
 #, kde-format
 msgid "&Year:"
-msgstr ""
+msgstr "يىل(&Y):"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mGeneralGroup)
 #: printing/calprintyearconfig_base.ui:99
-#, fuzzy, kde-format
-#| msgctxt "@title:tab General settings for a folder."
-#| msgid "General"
+#, kde-format
 msgid "General"
 msgstr "ئادەتتىكى"
 
@@ -2682,17 +2577,14 @@ msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: printing/journalprint.cpp:128
-#, fuzzy, kde-format
-#| msgctxt "incidence category"
-#| msgid "Personal"
+#, kde-format
 msgid "Person: %1"
-msgstr "شەخسىي"
+msgstr ""
 
 #: printing/journalprint.cpp:158
-#, fuzzy, kde-format
-#| msgid "Journal"
+#, kde-format
 msgid "Journal entries"
-msgstr "ژۇرنال"
+msgstr ""
 
 #: printing/journalprint.h:33
 #, kde-format
@@ -2715,11 +2607,10 @@ msgid "Prints a calendar for an entire year"
 msgstr ""
 
 #: utils.cpp:291
-#, fuzzy, kde-format
-#| msgid "Select Calendar"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
-msgstr "يىلنامە تاللاش"
+msgstr ""
 
 #: utils.cpp:292
 #, kde-format
@@ -2727,18 +2618,16 @@ msgid "Select the calendar where this item will be stored."
 msgstr ""
 
 #: utils.cpp:398
-#, fuzzy, kde-format
-#| msgid "Select Calendar"
+#, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
-msgstr "يىلنامە تاللاش"
+msgstr ""
 
 #: utils.cpp:400
-#, fuzzy, kde-format
-#| msgid "Select Calendar"
+#, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
-msgstr "يىلنامە تاللاش"
+msgstr ""
 
 #: utils.cpp:411
 #, kde-format
@@ -2747,24 +2636,20 @@ msgid "Virtual"
 msgstr ""
 
 #: utils.cpp:413
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Folder type:"
-msgstr "يىلنامە"
+msgstr ""
 
 #: utils.cpp:423
-#, fuzzy, kde-format
-#| msgctxt "no status"
-#| msgid "none"
+#, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "يوق"
 
 #: utils.cpp:426
-#, fuzzy, kde-format
-#| msgid "Calendar"
+#, kde-format
 msgid "Content type:"
-msgstr "يىلنامە"
+msgstr ""
 
 #: utils.cpp:433
 #, kde-format
@@ -2775,7 +2660,7 @@ msgstr ""
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
-msgstr ""
+msgstr "ئوقۇشقىلا بولىدۇ"
 
 #: utils.cpp:438
 #, kde-format
@@ -2787,7 +2672,7 @@ msgstr ""
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
-msgstr ""
+msgstr "ھەممىسى"
 
 #: utils.cpp:449
 #, kde-format
@@ -2811,7 +2696,7 @@ msgstr ""
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
-msgstr ""
+msgstr "جەريان"
 
 #: utils.cpp:457
 #, kde-format
@@ -2820,9 +2705,7 @@ msgid "other"
 msgstr ""
 
 #: utils.cpp:461
-#, fuzzy, kde-format
-#| msgctxt "no status"
-#| msgid "none"
+#, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "يوق"
@@ -2833,20 +2716,15 @@ msgid "Blocked Reminders:"
 msgstr ""
 
 #: utils.cpp:533
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
-msgstr "%1%"
+msgstr ""
 
 #: utils.cpp:535
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
-#| "Kainhofer <reinhold@kainhofer.com> (Participant): Awaiting Response'"
-#| msgid "%1 (%2): %3"
+#, kde-format
 msgid "%1 (%2)"
-msgstr "%1 (%2): %3"
+msgstr "%1 (%2)"
 
 #: utils.cpp:540
 #, kde-format
@@ -2854,13 +2732,11 @@ msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
 
-#, fuzzy
 #~| msgid "&Title:"
 #~ msgctxt "@label specify the title for this note"
 #~ msgid "Title:"
 #~ msgstr "ماۋزۇ(&T):"
 
-#, fuzzy
 #~| msgid "Text"
 #~ msgctxt "@label specify the text for this note"
 #~ msgid "Text:"
@@ -2870,7 +2746,6 @@ msgstr ""
 #~ msgid "Title"
 #~ msgstr "ماۋزۇ"
 
-#, fuzzy
 #~| msgctxt "@title:column todo item due date and time"
 #~| msgid "Due Date and Time"
 #~ msgctxt "@option do not specify a date"
@@ -2972,17 +2847,14 @@ msgstr ""
 #~ "%1 -\n"
 #~ "%2"
 
-#, fuzzy
 #~| msgid "Exclude holidays"
 #~ msgid "Exclude confidential items"
 #~ msgstr "تەتىللەرنى چىقىرىۋەت"
 
-#, fuzzy
 #~| msgid "Exclude holidays"
 #~ msgid "Exclude &confidential"
 #~ msgstr "تەتىللەرنى چىقىرىۋەت"
 
-#, fuzzy
 #~| msgid "Description:"
 #~ msgid "&Description"
 #~ msgstr "چۈشەندۈرۈش:"
@@ -3006,7 +2878,6 @@ msgstr ""
 #~ msgid "Type"
 #~ msgstr "تىپى"
 
-#, fuzzy
 #~| msgctxt "unknown resource"
 #~| msgid "Unknown"
 #~ msgctxt "unknown calendar type"
