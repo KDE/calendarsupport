@@ -61,7 +61,7 @@ public:
 Q_SIGNALS:
     /*!
      */
-    void selectionChanged(const Akonadi::Collection::List &selected, const Akonadi::Collection::List &deselected);
+    void selectionChanged(const Akonadi::Collection::List &, const Akonadi::Collection::List &);
     /*!
      */
     void collectionDeselected(const Akonadi::Collection &);

@@ -21,6 +21,6 @@ public:
     void doSetSource(const QUrl &name, QTextDocument::ResourceType type = QTextDocument::UnknownResource) override;
 
 Q_SIGNALS:
-    void attachmentUrlClicked(const QString &uri);
+    void attachmentUrlClicked(const QString &);
 };
 }

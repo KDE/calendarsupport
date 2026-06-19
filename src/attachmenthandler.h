@@ -149,8 +149,8 @@ public:
     bool saveAs(const QString &attachmentName, const KCalendarCore::ScheduleMessage::Ptr &message);
 
 Q_SIGNALS:
-    void viewFinished(const QString &uid, const QString &attachmentName, bool success);
-    void saveAsFinished(const QString &uid, const QString &attachmentName, bool success);
+    void viewFinished(const QString &, const QString &, bool);
+    void saveAsFinished(const QString &, const QString &, bool);
 
 private:
     void slotFinishView(KJob *job);
