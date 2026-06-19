@@ -100,6 +100,8 @@ void CalPrintIncidence::doSaveConfig()
     CalPrintPluginBase::doSaveConfig();
 }
 
+namespace
+{
 class TimePrintStringsVisitor : public KCalendarCore::Visitor
 {
 public:
@@ -178,6 +180,7 @@ protected:
         return true;
     }
 };
+}
 
 int CalPrintIncidence::printCaptionAndText(QPainter &p, QRect box, const QString &caption, const QString &text, const QFont &captionFont, const QFont &textFont)
 {

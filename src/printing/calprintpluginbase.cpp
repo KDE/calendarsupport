@@ -1236,6 +1236,8 @@ void CalPrintPluginBase::drawIncidence(QPainter &p,
     }
 }
 
+namespace
+{
 class MonthEventStruct
 {
 public:
@@ -1264,6 +1266,7 @@ public:
     QDateTime end;
     KCalendarCore::Event::Ptr event;
 };
+}
 
 void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays, int subDailyFlags, int holidaysFlags)
 {

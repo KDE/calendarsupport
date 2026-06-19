@@ -35,6 +35,8 @@ using namespace KCalendarCore;
 using namespace KCalUtils;
 using namespace CalendarSupport;
 
+namespace
+{
 class GroupwareScoppedDisabler
 {
 public:
@@ -53,6 +55,7 @@ public:
     bool m_wasEnabled = false;
     Akonadi::IncidenceChanger *const m_changer;
 };
+}
 
 EventArchiver::EventArchiver(QObject *parent)
     : QObject(parent)

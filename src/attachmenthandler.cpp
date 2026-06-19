@@ -46,10 +46,13 @@ using namespace Akonadi;
 
 namespace CalendarSupport
 {
+namespace
+{
 struct ReceivedInfo {
     QString uid;
     QString attachmentName;
 };
+}
 
 class AttachmentHandlerPrivate
 {
