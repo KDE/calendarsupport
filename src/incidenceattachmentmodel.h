@@ -30,6 +30,7 @@ class IncidenceAttachmentModel : public QAbstractListModel
     Q_PROPERTY(int attachmentCount READ rowCount NOTIFY rowCountChanged)
 
 public:
+    // NOLINTBEGIN(readability-enum-initial-value)
     enum Roles {
         AttachmentDataRole = Qt::UserRole,
         MimeTypeRole,
@@ -37,6 +38,7 @@ public:
 
         UserRole = Qt::UserRole + 100
     };
+    // NOLINTEND(readability-enum-initial-value)
 
     explicit IncidenceAttachmentModel(const QPersistentModelIndex &modelIndex, QObject *parent = nullptr);
 
