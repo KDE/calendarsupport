@@ -1172,7 +1172,7 @@ void CalPrintWeek::drawWeek(QPainter &p, QDate qd, QRect box)
         QRect const dayBox(box.left() + cellWidth * hpos,
                            box.top() + cellHeight * vpos + ((i == 6) ? (cellHeight / 2) : 0),
                            cellWidth,
-                           (i < 5) ? (cellHeight) : (cellHeight / 2));
+                           (i < 5) ? cellHeight : (cellHeight / 2));
         drawDayBox(p, weekDate, mStartTime, mEndTime, dayBox, true, true, true, mSingleLineLimit, mIncludeDescription, mIncludeCategories);
     } // for i through all weekdays
 }

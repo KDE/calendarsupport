@@ -1549,7 +1549,7 @@ void CalPrintPluginBase::drawTodoLines(QPainter &p,
                                        QList<TodoParentStart *> &startPoints,
                                        bool connectSubTodos)
 {
-    QString const plainEntry = (richTextEntry) ? toPlainText(entry) : entry;
+    QString const plainEntry = richTextEntry ? toPlainText(entry) : entry;
 
     QRect const textrect(0, 0, width, -1);
     int const flags = Qt::AlignLeft;
@@ -1838,7 +1838,7 @@ int CalPrintPluginBase::weekdayColumn(int weekday)
 
 void CalPrintPluginBase::drawTextLines(QPainter &p, const QString &entry, int x, int &y, int width, int pageHeight, bool richTextEntry)
 {
-    QString const plainEntry = (richTextEntry) ? toPlainText(entry) : entry;
+    QString const plainEntry = richTextEntry ? toPlainText(entry) : entry;
 
     QRect const textrect(0, 0, width, -1);
     int const flags = Qt::AlignLeft;
