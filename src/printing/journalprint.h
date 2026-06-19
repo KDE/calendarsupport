@@ -17,7 +17,6 @@ class CalPrintJournal : public CalPrintPluginBase
 {
 public:
     CalPrintJournal()
-        : CalPrintPluginBase()
     {
     }
 

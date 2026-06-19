@@ -17,7 +17,6 @@ class CalPrintYear : public CalPrintPluginBase
 {
 public:
     CalPrintYear()
-        : CalPrintPluginBase()
     {
     }
 
