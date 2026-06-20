@@ -111,13 +111,6 @@ public:
      */
     void setDefaultTodoCalendarId(Akonadi::Collection::Id);
 
-    /*!
-     */
-    void setDayBegins(const QDateTime &dateTime);
-    /*!
-     */
-    QDateTime dayBegins() const;
-
 private:
     std::unique_ptr<KCalPrefsPrivate> const d;
 };

@@ -257,14 +257,4 @@ bool KCalPrefs::thatIsMe(const QString &_email)
     return false;
 }
 
-void KCalPrefs::setDayBegins(const QDateTime &dateTime)
-{
-    d->mDayBegins = dateTime;
-}
-
-QDateTime KCalPrefs::dayBegins() const
-{
-    return d->mDayBegins;
-}
-
 #include "moc_kcalprefs.cpp"
