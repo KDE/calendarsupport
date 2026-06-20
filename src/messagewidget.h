@@ -41,6 +41,8 @@ public:
      * \param event The event to handle.
      * \return true if the event was handled, false otherwise.
      */
+
+protected:
     [[nodiscard]] bool eventFilter(QObject *watched, QEvent *event) override;
     /*!
      * Handles the show event for the message widget.

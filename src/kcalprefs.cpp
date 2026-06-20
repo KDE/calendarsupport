@@ -63,6 +63,11 @@ KCalPrefs *KCalPrefs::instance()
     return globalPrefs;
 }
 
+void KCalPrefs::setPrefsDefaults()
+{
+    KCalPrefs::usrSetDefaults();
+}
+
 void KCalPrefs::usrSetDefaults()
 {
     // Default should be set a bit smarter, respecting username and locale
@@ -116,6 +121,11 @@ void KCalPrefs::fillMailDefaults()
     }
 }
 
+void KCalPrefs::readPrefs()
+{
+    usrRead();
+}
+
 void KCalPrefs::usrRead()
 {
     KConfigGroup const generalConfig(config(), u"General"_s);
@@ -130,6 +140,11 @@ void KCalPrefs::usrRead()
 
     KConfigSkeleton::usrRead();
     fillMailDefaults();
+}
+
+bool KCalPrefs::savePrefs()
+{
+    return usrSave();
 }
 
 bool KCalPrefs::usrSave()

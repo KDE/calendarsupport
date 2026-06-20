@@ -18,6 +18,7 @@ class TextBrowser : public QTextBrowser
 public:
     explicit TextBrowser(QWidget *parent = nullptr);
 
+protected:
     void doSetSource(const QUrl &name, QTextDocument::ResourceType type = QTextDocument::UnknownResource) override;
 
 Q_SIGNALS:

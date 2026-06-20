@@ -45,24 +45,32 @@ public:
 
     /*!
      * Sets preferences to their default values.
+     * \since 6.8.0
      */
-    void usrSetDefaults() override;
+    void setPrefsDefaults();
 
     /*!
      * Reads preferences from the configuration file.
+     * \since 6.8.0
      */
-    void usrRead() override;
+    void readPrefs();
 
     /*!
      * Writes preferences to the configuration file.
      * \return true if successful, false otherwise.
+     * \since 6.8.0
      */
-    bool usrSave() override;
+    bool savePrefs();
 
     /*!
      * Fills empty mail fields with default values.
      */
     void fillMailDefaults();
+
+protected:
+    void usrSetDefaults() override;
+    void usrRead() override;
+    bool usrSave() override;
 
 public:
     // preferences data
