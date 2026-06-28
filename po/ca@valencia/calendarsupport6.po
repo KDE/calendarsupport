@@ -747,7 +747,7 @@ msgstr ""
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
-"Mostra els selectors de fus horari als diàlegs de l'editor de tasques "
+"Mostra els selectors de fus horari en els diàlegs de l'editor de tasques "
 "pendents i d'esdeveniments."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
