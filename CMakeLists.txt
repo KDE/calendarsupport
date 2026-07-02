@@ -8,8 +8,10 @@ project(calendarsupport VERSION ${PIM_VERSION})
 set(KF_MIN_VERSION "6.25.0")
 set(QT_REQUIRED_VERSION "6.9.0")
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
-
-set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
+set(CMAKE_MODULE_PATH
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/ecmcopy
+    ${ECM_MODULE_PATH}
+)
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
@@ -18,6 +20,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMGenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
+include(ECMInstalledLibraryCheck)
 
 file(
     GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES

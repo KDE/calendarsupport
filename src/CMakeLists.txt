@@ -212,3 +212,34 @@ endif()
 
 ecm_qt_install_logging_categories(EXPORT CALENDARSUPPORT FILE calendarsupport.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 ecm_generate_qdoc(KPim6CalendarSupport calendarsupport.qdocconf)
+
+ecm_add_installed_library_check(KPim6CalendarSupport
+    PACKAGE_NAME "KPim6CalendarSupport"
+    PACKAGE_VERSION ${TEXTAUTOGENERATETEXT_VERSION}
+    PACKAGE_TARGET_NAMESPACE "KPim6::"
+)
+
+ecm_installed_library_check_include_strings(KPim6CalendarSupport
+    HEADERS
+    ${CMAKE_CURRENT_BINARY_DIR}/calendarsupport_export.h
+    ${CMAKE_CURRENT_BINARY_DIR}/ui_calprintincidenceconfig_base.h
+    ${CMAKE_CURRENT_BINARY_DIR}/ui_calprintdayconfig_base.h
+    ${CMAKE_CURRENT_BINARY_DIR}/ui_calprintweekconfig_base.h
+    ${CMAKE_CURRENT_BINARY_DIR}/ui_calprintmonthconfig_base.h
+    ${CMAKE_CURRENT_BINARY_DIR}/ui_calprinttodoconfig_base.h
+    ${CMAKE_CURRENT_BINARY_DIR}/kcalprefs_base.h
+    ${CalendarSupport_HEADERS}
+    ${CalendarSupport_printer_HEADERS}
+    ${CalendarSupport_next_HEADERS}
+    ${CalendarSupport_freebusy_HEADERS}
+    PREFIX calendarsupport
+)
+
+ecm_installed_library_check_include_strings(KPim6CalendarSupport
+    HEADERS
+    ${CalendarSupport_CamelCase_HEADERS}
+    ${CalendarSupport_CamelCaseprinter_HEADERS}
+    ${CalendarSupport_CamelCasenext_HEADERS}
+    ${CalendarSupport_CamelCasefreebusy_HEADERS}
+    PREFIX CalendarSupport
+)
