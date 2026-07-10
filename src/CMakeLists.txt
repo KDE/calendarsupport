@@ -215,7 +215,7 @@ ecm_generate_qdoc(KPim6CalendarSupport calendarsupport.qdocconf)
 
 ecm_add_installed_library_check(KPim6CalendarSupport
     PACKAGE_NAME "KPim6CalendarSupport"
-    PACKAGE_VERSION ${TEXTAUTOGENERATETEXT_VERSION}
+    PACKAGE_VERSION ${CALENDARSUPPORT_VERSION}
     PACKAGE_TARGET_NAMESPACE "KPim6::"
 )
 
