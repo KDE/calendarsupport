@@ -3,20 +3,10 @@
 
 @PACKAGE_INIT@
 include(CMakeFindDependencyMacro)
-if(@KF6Mime_FOUND@)
-    find_dependency(
-        KF6Mime
-        "@KF_MIN_VERSION@"
-    )
-else()
-    find_dependency(
-        KPim6Mime
-        "@KPIM_MIME_VERSION@"
-    )
-    if(NOT TARGET KF6::Mime)
-        add_library(KF6::Mime ALIAS KPim6::Mime)
-    endif()
-endif()
+find_dependency(
+    KF6Mime
+    "@KF_MIN_VERSION@"
+)
 find_dependency(
     KPim6IdentityManagementCore
     "@IDENTITYMANAGEMENT_LIB_VERSION@"
