@@ -105,11 +105,7 @@ CALENDARSUPPORT_EXPORT bool canDecode(const QMimeData *mimeData);
 
 CALENDARSUPPORT_EXPORT QList<QUrl> incidenceItemUrls(const QMimeData *mimeData);
 
-CALENDARSUPPORT_EXPORT QList<QUrl> todoItemUrls(const QMimeData *mimeData);
-
 CALENDARSUPPORT_EXPORT bool mimeDataHasIncidence(const QMimeData *mimeData);
-
-CALENDARSUPPORT_EXPORT KCalendarCore::Todo::List todos(const QMimeData *mimeData);
 
 CALENDARSUPPORT_EXPORT KCalendarCore::Incidence::List incidences(const QMimeData *mimeData);
 

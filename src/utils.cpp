@@ -231,40 +231,9 @@ QList<QUrl> CalendarSupport::incidenceItemUrls(const QMimeData *mimeData)
     return urls;
 }
 
-QList<QUrl> CalendarSupport::todoItemUrls(const QMimeData *mimeData)
-{
-    QList<QUrl> urls;
-
-    const QList<QUrl> urlList = mimeData->urls();
-    for (const QUrl &i : urlList) {
-        if (isValidIncidenceItemUrl(i, QStringList() << KCalendarCore::Todo::todoMimeType())) {
-            urls.push_back(i);
-        }
-    }
-    return urls;
-}
-
 bool CalendarSupport::mimeDataHasIncidence(const QMimeData *mimeData)
 {
     return !incidenceItemUrls(mimeData).isEmpty() || !incidences(mimeData).isEmpty();
-}
-
-KCalendarCore::Todo::List CalendarSupport::todos(const QMimeData *mimeData)
-{
-    KCalendarCore::Todo::List todos;
-
-#ifndef QT_NO_DRAGANDDROP
-    KCalendarCore::Calendar::Ptr const cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
-    if (cal) {
-        const KCalendarCore::Todo::List calTodos = cal->todos();
-        todos.reserve(calTodos.count());
-        for (const KCalendarCore::Todo::Ptr &i : calTodos) {
-            todos.push_back(KCalendarCore::Todo::Ptr(i->clone()));
-        }
-    }
-#endif
-
-    return todos;
 }
 
 KCalendarCore::Incidence::List CalendarSupport::incidences(const QMimeData *mimeData)
