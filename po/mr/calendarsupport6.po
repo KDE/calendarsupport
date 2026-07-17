@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-21 00:45+0000\n"
+"POT-Creation-Date: 2026-07-17 00:44+0000\n"
 "PO-Revision-Date: 2013-02-13 17:42+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -2984,14 +2984,14 @@ msgstr "काही नाही"
 msgid "Blocked Reminders:"
 msgstr "आठवण देणारे नाहीत"
 
-#: utils.cpp:533
+#: utils.cpp:531
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:535
+#: utils.cpp:533
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -3000,7 +3000,7 @@ msgstr "%1%"
 msgid "%1 (%2)"
 msgstr "%1 (%2): %3"
 
-#: utils.cpp:540
+#: utils.cpp:538
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

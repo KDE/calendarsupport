@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-21 00:45+0000\n"
+"POT-Creation-Date: 2026-07-17 00:44+0000\n"
 "PO-Revision-Date: 2004-04-16 17:59+0200\n"
 "Last-Translator: Prof. Dr. Eduard Werner <e.werner@rz.uni-leipzig.de>\n"
 "Language-Team: Upper Sorbian\n"
@@ -2748,18 +2748,18 @@ msgstr ""
 msgid "Blocked Reminders:"
 msgstr "Titl"
 
-#: utils.cpp:533
+#: utils.cpp:531
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr ""
 
-#: utils.cpp:535
+#: utils.cpp:533
 #, fuzzy, kde-format
 msgid "%1 (%2)"
 msgstr "&Tydźeń"
 
-#: utils.cpp:540
+#: utils.cpp:538
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

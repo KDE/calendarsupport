@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-21 00:45+0000\n"
+"POT-Creation-Date: 2026-07-17 00:44+0000\n"
 "PO-Revision-Date: 2013-02-16 10:59+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -2880,13 +2880,13 @@ msgstr "nimic"
 msgid "Blocked Reminders:"
 msgstr "Blochează alarmele local"
 
-#: utils.cpp:533
+#: utils.cpp:531
 #, fuzzy, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1 %2"
 
-#: utils.cpp:535
+#: utils.cpp:533
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -2895,7 +2895,7 @@ msgstr "%1 %2"
 msgid "%1 (%2)"
 msgstr "%1 (%2): %3"
 
-#: utils.cpp:540
+#: utils.cpp:538
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
