@@ -107,7 +107,9 @@ CALENDARSUPPORT_EXPORT QList<QUrl> incidenceItemUrls(const QMimeData *mimeData);
 
 CALENDARSUPPORT_EXPORT bool mimeDataHasIncidence(const QMimeData *mimeData);
 
+#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 29, 0)
 CALENDARSUPPORT_EXPORT KCalendarCore::Incidence::List incidences(const QMimeData *mimeData);
+#endif
 
 #ifndef QT_NO_DRAGANDDROP
 /*!
