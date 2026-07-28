@@ -1,7 +1,7 @@
 # Translation for calendarsupport.po to Euskara/Basque (eu).
 # Copyright (C) 2003-2026 This file is copyright:
 # This file is distributed under the same license as the calendarsupport package.
-# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023-2026 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Marcos  <marcos@euskalgnu.org>, 2003, 2005.
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-21 00:45+0000\n"
-"PO-Revision-Date: 2026-03-08 16:07+0100\n"
+"PO-Revision-Date: 2026-07-27 03:34+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -475,19 +475,15 @@ msgstr "Erabili «Sistema-ezarpenetako» e-posta ezarpenak"
 
 #. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:10
-#, fuzzy, kde-format
-#| msgid ""
-#| "Check this box to use the KDE-wide e-mail settings, which are defined "
-#| "using the System Settings \"About Me\" Module. Uncheck this box to be "
-#| "able to specify your full name and e-mail."
+#, kde-format
 msgid ""
 "Check this box to use the KDE-wide e-mail settings, which are defined in the "
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
 "Markatu lauki hau KDE-ko e-posta ezarpen orokorrak erabiltzeko, Sistema-"
-"ezarpenetako «Niri buruz» modulua erabiliz definitzen dena. Kendu marka "
-"lauki honi zure izen osoa eta e-posta zehaztu ahal izateko."
+"ezarpenetako «Erabiltzaileak» moduluan definitzen dena. Kendu marka lauki "
+"honi zure izen osoa eta e-posta zehaztu ahal izateko."
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:14
@@ -501,13 +497,13 @@ msgstr "Gertaerak:"
 #: kcalprefs.kcfg:17 kcalprefs.kcfg:32 kcalprefs.kcfg:47
 #, kde-format
 msgid "Public (accessible to everyone)"
-msgstr ""
+msgstr "Publikoa (denentzat eskuragarri)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20
 #, kde-format
 msgid "Confidential (accessible to you and others)"
-msgstr ""
+msgstr "Isilpekoa (zuretzat eta beste batzuentzat eskuragarri)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -515,28 +511,26 @@ msgstr ""
 #: kcalprefs.kcfg:23 kcalprefs.kcfg:38 kcalprefs.kcfg:53
 #, kde-format
 msgid "Private (accessible to you only)"
-msgstr ""
+msgstr "Pribatua (zuretzat bakarri eskuragarri)"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:29
-#, fuzzy, kde-format
-#| msgid "To-dos"
+#, kde-format
 msgid "To-dos:"
-msgstr "Egitekoak"
+msgstr "Zereginak:"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:35 kcalprefs.kcfg:50
 #, kde-format
 msgid "Confidential (accessible to you and some others)"
-msgstr ""
+msgstr "Isilpekoa (zuretzat eta beste batzuentzat eskuragarri)"
 
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:44
-#, fuzzy, kde-format
-#| msgid "&Journals"
+#, kde-format
 msgid "Journals:"
-msgstr "&Egunkariak"
+msgstr "Egunkariak:"
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62
@@ -740,16 +734,15 @@ msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:121
-#, fuzzy, kde-format
-#| msgid "Select Cate&gories..."
+#, kde-format
 msgid "Select holiday categories:"
-msgstr "Hautatu &kategoriak..."
+msgstr "Opor-kategoriak hautatu:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:122
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr ""
+msgstr "Aukeratu zein opor kategoria erakutsi."
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:123
@@ -758,6 +751,8 @@ msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
 msgstr ""
+"Aukeratu zein opor kategoria erakutsi (publikoak, kulturalak, erlijiosoak, "
+"finantzarioak)."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
 #: kcalprefs.kcfg:129
