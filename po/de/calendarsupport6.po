@@ -784,8 +784,8 @@ msgstr ""
 "Aktivieren Sie diese Option, wenn Sie möchten, dass automatisch E-Mails "
 "versendet werden, wenn Sie Termine (oder Aufgaben) anlegen, bearbeiten oder "
 "löschen, an denen andere Teilnehmer beteiligt sind. Sie sollten diese Option "
-"aktivieren, wenn Sie die Groupware-Funktionalität verwenden möchten (um z. "
-"B. Kontact als KDE Kolab-Client zu verwenden)."
+"aktivieren, wenn Sie die Groupware-Funktionalität verwenden möchten (um "
+"z. B. Kontact als KDE Kolab-Client zu verwenden)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:134
