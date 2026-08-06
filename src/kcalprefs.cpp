@@ -11,11 +11,15 @@ using namespace Qt::Literals::StringLiterals;
 #include "calendarsupport_debug.h"
 #include "identitymanager.h"
 
+#include <Akonadi/EntityTreeModel>
 #include <Akonadi/TagAttribute>
 #include <Akonadi/TagCache>
 #include <Akonadi/TagModifyJob>
 
 #include <KMime/HeaderParsing>
+
+#include <QAbstractItemModel>
+#include <QPointer>
 
 #include <KEmailAddress>
 #include <KIdentityManagementCore/Identity>
@@ -36,8 +40,13 @@ public:
 
     ~KCalPrefsPrivate() = default;
 
+    // The default calendars are persisted by stable remote path; these ids are the in-memory
+    // result of resolving the paths against mCollectionModel (or a legacy id awaiting migration).
+    QString mDefaultEventCalendarPath;
+    QString mDefaultTodoCalendarPath;
     Akonadi::Collection::Id mDefaultEventCalendarId{-1};
     Akonadi::Collection::Id mDefaultTodoCalendarId{-1};
+    QPointer<QAbstractItemModel> mCollectionModel;
 
     const QColor mDefaultCategoryColor;
     QDateTime mDayBegins;
@@ -87,24 +96,125 @@ void KCalPrefs::usrSetDefaults()
     KConfigSkeleton::usrSetDefaults();
 }
 
+// Resolves a stored stable path to a live collection id in `model`, or -1 if not (yet) present.
+static Akonadi::Collection::Id resolveStableKeyToId(const QAbstractItemModel *model, const QString &path)
+{
+    if (!model || path.isEmpty()) {
+        return -1;
+    }
+    const QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForStableKey(model, path);
+    if (!idx.isValid()) {
+        return -1;
+    }
+    return idx.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>().id();
+}
+
+// Computes the stable path of the collection with id `id` in `model`, or an empty string.
+static QString computeStableKeyForId(const QAbstractItemModel *model, Akonadi::Collection::Id id)
+{
+    if (!model || id < 0) {
+        return QString();
+    }
+    const QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(model, Akonadi::Collection(id));
+    if (!idx.isValid()) {
+        return QString();
+    }
+    return Akonadi::EntityTreeModel::stableKeyForCollectionIndex(idx);
+}
+
 Akonadi::Collection::Id KCalPrefs::defaultEventCalendarId() const
 {
+    if (d->mDefaultEventCalendarId < 0 && d->mCollectionModel) {
+        d->mDefaultEventCalendarId = resolveStableKeyToId(d->mCollectionModel, d->mDefaultEventCalendarPath);
+    }
     return d->mDefaultEventCalendarId;
 }
 
 void KCalPrefs::setDefaultEventCalendarId(Akonadi::Collection::Id id)
 {
     d->mDefaultEventCalendarId = id;
+    d->mDefaultEventCalendarPath = computeStableKeyForId(d->mCollectionModel, id);
 }
 
 Akonadi::Collection::Id KCalPrefs::defaultTodoCalendarId() const
 {
+    if (d->mDefaultTodoCalendarId < 0 && d->mCollectionModel) {
+        d->mDefaultTodoCalendarId = resolveStableKeyToId(d->mCollectionModel, d->mDefaultTodoCalendarPath);
+    }
     return d->mDefaultTodoCalendarId;
 }
 
 void KCalPrefs::setDefaultTodoCalendarId(Akonadi::Collection::Id id)
 {
     d->mDefaultTodoCalendarId = id;
+    d->mDefaultTodoCalendarPath = computeStableKeyForId(d->mCollectionModel, id);
+}
+
+QString KCalPrefs::defaultEventCalendarPath() const
+{
+    return d->mDefaultEventCalendarPath;
+}
+
+QString KCalPrefs::defaultTodoCalendarPath() const
+{
+    return d->mDefaultTodoCalendarPath;
+}
+
+void KCalPrefs::setCollectionModel(QAbstractItemModel *model)
+{
+    if (d->mCollectionModel == model) {
+        return;
+    }
+    if (d->mCollectionModel) {
+        disconnect(d->mCollectionModel, &QAbstractItemModel::rowsInserted, this, nullptr);
+    }
+    d->mCollectionModel = model;
+    if (model) {
+        connect(model, &QAbstractItemModel::rowsInserted, this, [this]() {
+            resolveDefaultCalendars();
+        });
+        resolveDefaultCalendars(); // the model may already be populated
+    }
+}
+
+void KCalPrefs::resolveDefaultCalendars()
+{
+    if (!d->mCollectionModel) {
+        return;
+    }
+
+    bool migrated = false;
+    const auto resolveOne = [&](QString &path, Akonadi::Collection::Id &id) {
+        if (!path.isEmpty()) {
+            // The path is authoritative; (re)resolve it to the current id.
+            const Akonadi::Collection::Id resolvedId = resolveStableKeyToId(d->mCollectionModel, path);
+            if (resolvedId >= 0) {
+                id = resolvedId;
+            }
+        } else if (id >= 0) {
+            // Migration: a legacy numeric id but no path yet. Capture the path while the id is
+            // still valid (usrSave() then drops the legacy id key).
+            const QString newPath = computeStableKeyForId(d->mCollectionModel, id);
+            if (!newPath.isEmpty()) {
+                path = newPath;
+                migrated = true;
+            }
+        }
+    };
+    resolveOne(d->mDefaultEventCalendarPath, d->mDefaultEventCalendarId);
+    resolveOne(d->mDefaultTodoCalendarPath, d->mDefaultTodoCalendarId);
+
+    if (migrated) {
+        savePrefs();
+    }
+
+    // Once both defaults have settled, stop reacting to further model changes.
+    const auto settled = [](const QString &path, Akonadi::Collection::Id id) {
+        return path.isEmpty() ? (id < 0) : (id >= 0);
+    };
+    if (settled(d->mDefaultEventCalendarPath, d->mDefaultEventCalendarId) && settled(d->mDefaultTodoCalendarPath, d->mDefaultTodoCalendarId)) {
+        disconnect(d->mCollectionModel, &QAbstractItemModel::rowsInserted, this, nullptr);
+    }
 }
 void KCalPrefs::fillMailDefaults()
 {
@@ -131,12 +241,25 @@ void KCalPrefs::usrRead()
     KConfigGroup const generalConfig(config(), u"General"_s);
 
     KConfigGroup const defaultCalendarConfig(config(), u"Calendar"_s);
-    d->mDefaultEventCalendarId = defaultCalendarConfig.readEntry("Default Event Calendar", -1);
-    // fallback to the old setting
-    if (d->mDefaultEventCalendarId == -1) {
-        d->mDefaultEventCalendarId = defaultCalendarConfig.readEntry("Default Calendar", -1);
+    // The default calendars are stored by stable remote path. When a path is present it is
+    // authoritative and the id is left invalid until resolved from it (a bare id can silently
+    // point at a different collection after a resource re-list or a database move). A leftover
+    // numeric id is only read when no path exists yet, as input for the one-time migration.
+    d->mDefaultEventCalendarPath = defaultCalendarConfig.readEntry("Default Event Calendar Path", QString());
+    if (d->mDefaultEventCalendarPath.isEmpty()) {
+        d->mDefaultEventCalendarId = defaultCalendarConfig.readEntry("Default Event Calendar", -1);
+        if (d->mDefaultEventCalendarId == -1) {
+            d->mDefaultEventCalendarId = defaultCalendarConfig.readEntry("Default Calendar", -1); // oldest key
+        }
+    } else {
+        d->mDefaultEventCalendarId = -1;
     }
-    d->mDefaultTodoCalendarId = defaultCalendarConfig.readEntry("Default Todo Calendar", -1);
+    d->mDefaultTodoCalendarPath = defaultCalendarConfig.readEntry("Default Todo Calendar Path", QString());
+    if (d->mDefaultTodoCalendarPath.isEmpty()) {
+        d->mDefaultTodoCalendarId = defaultCalendarConfig.readEntry("Default Todo Calendar", -1);
+    } else {
+        d->mDefaultTodoCalendarId = -1;
+    }
 
     KConfigSkeleton::usrRead();
     fillMailDefaults();
@@ -152,8 +275,26 @@ bool KCalPrefs::usrSave()
     KConfigGroup const generalConfig(config(), u"General"_s);
 
     KConfigGroup defaultCalendarConfig(config(), u"Calendar"_s);
-    defaultCalendarConfig.writeEntry("Default Event Calendar", defaultEventCalendarId());
-    defaultCalendarConfig.writeEntry("Default Todo Calendar", defaultTodoCalendarId());
+    // Persist the stable path and drop the legacy numeric id once we have one. If no path could be
+    // determined yet (no model was set this run), keep the legacy id rather than lose the setting.
+    const auto saveOne = [&](const char *pathKey, const char *idKey, const QString &path, Akonadi::Collection::Id id) {
+        if (!path.isEmpty()) {
+            defaultCalendarConfig.writeEntry(pathKey, path);
+            defaultCalendarConfig.deleteEntry(idKey);
+        } else {
+            defaultCalendarConfig.deleteEntry(pathKey);
+            if (id >= 0) {
+                defaultCalendarConfig.writeEntry(idKey, id);
+            } else {
+                defaultCalendarConfig.deleteEntry(idKey);
+            }
+        }
+    };
+    saveOne("Default Event Calendar Path", "Default Event Calendar", d->mDefaultEventCalendarPath, d->mDefaultEventCalendarId);
+    saveOne("Default Todo Calendar Path", "Default Todo Calendar", d->mDefaultTodoCalendarPath, d->mDefaultTodoCalendarId);
+    if (!d->mDefaultEventCalendarPath.isEmpty()) {
+        defaultCalendarConfig.deleteEntry("Default Calendar"); // oldest legacy alias
+    }
 
     return KConfigSkeleton::usrSave();
 }

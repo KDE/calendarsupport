@@ -12,6 +12,8 @@
 
 #include <memory>
 
+class QAbstractItemModel;
+
 namespace CalendarSupport
 {
 class KCalPrefsPrivate;
@@ -119,7 +121,35 @@ public:
      */
     void setDefaultTodoCalendarId(Akonadi::Collection::Id);
 
+    /*!
+     * Sets the collection model (an EntityTreeModel or a proxy on top of one) used to resolve the
+     * default calendars, which are persisted by stable remote path rather than by numeric id.
+     *
+     * Each application that reads the default calendars must call this once, when its calendar is
+     * available. The default-calendar ids are then resolved from the stored paths against \a model
+     * (and a legacy numeric id is migrated to a path). Without a model the ids resolve to -1, just
+     * as they did before the calendar was loaded.
+     * \since 6.9.0
+     */
+    void setCollectionModel(QAbstractItemModel *model);
+
+    /*!
+     * Returns the stable remote path persisted for the default events calendar (empty if none).
+     * \since 6.9.0
+     */
+    [[nodiscard]] QString defaultEventCalendarPath() const;
+
+    /*!
+     * Returns the stable remote path persisted for the default todo calendar (empty if none).
+     * \since 6.9.0
+     */
+    [[nodiscard]] QString defaultTodoCalendarPath() const;
+
 private:
+    // Resolves the default calendars from their stored paths against the collection model, and
+    // migrates a legacy numeric id to a path. Runs as the model gets populated.
+    void resolveDefaultCalendars();
+
     std::unique_ptr<KCalPrefsPrivate> const d;
 };
 }
