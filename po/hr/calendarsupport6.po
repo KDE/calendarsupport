@@ -475,7 +475,8 @@ msgstr ""
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:14
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Events:"
 msgid "Events:"
 msgstr "Nova obveza"
 
