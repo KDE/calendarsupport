@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-26 00:44+0000\n"
+"POT-Creation-Date: 2026-08-10 00:46+0000\n"
 "PO-Revision-Date: 2026-05-05 04:40+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -338,18 +338,18 @@ msgstr "მიმაგრებული ფაილის შენახვ�
 msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>აღუწერელი</placeholder>"
 
-#: eventarchiver.cpp:130
+#: eventarchiver.cpp:132
 #, kde-format
 msgid "There are no items before %1"
 msgstr "%1-მდე ელემენტები არ არსებობს"
 
-#: eventarchiver.cpp:131
+#: eventarchiver.cpp:133
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive"
 msgstr "არქივი"
 
-#: eventarchiver.cpp:161
+#: eventarchiver.cpp:163
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -358,29 +358,29 @@ msgstr ""
 "წავშალო ყველა ჩანაწერი %1-მდე შენახვის გარეშე?\n"
 "წაიშლება შემდეგი ჩანაწერები:"
 
-#: eventarchiver.cpp:165
+#: eventarchiver.cpp:167
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "ძველი ჩანაწერების წაშლა"
 
-#: eventarchiver.cpp:278
+#: eventarchiver.cpp:284
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "უცნობი მიზეზი"
 
-#: eventarchiver.cpp:280
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "აქტივის ფაილის (%1) ჩაწერის შეცდომა: %2"
 
-#: eventarchiver.cpp:291
+#: eventarchiver.cpp:297
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "არქივის ჩაწერის შეცდომა. %1"
 
-#: eventarchiver.cpp:300
+#: eventarchiver.cpp:306
 #, kde-format
 msgid "Archiving events"
 msgstr "მოვლენების დაარქივება"

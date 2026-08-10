@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-26 00:44+0000\n"
+"POT-Creation-Date: 2026-08-10 00:46+0000\n"
 "PO-Revision-Date: 2016-03-20 14:17+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -343,12 +343,12 @@ msgstr "Upisivanje priloga"
 msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>neodređeno</placeholder>"
 
-#: eventarchiver.cpp:130
+#: eventarchiver.cpp:132
 #, kde-format
 msgid "There are no items before %1"
 msgstr "Nema stavki pre %1|/|Nema stavki pre $[na-reč %1 gen]"
 
-#: eventarchiver.cpp:131
+#: eventarchiver.cpp:133
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "&Archive"
@@ -356,7 +356,7 @@ msgctxt "@title:window"
 msgid "Archive"
 msgstr "&Arhiviraj"
 
-#: eventarchiver.cpp:161
+#: eventarchiver.cpp:163
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -368,31 +368,31 @@ msgstr ""
 "Sledeće stavke će biti obrisane:"
 
 # >> @title:window
-#: eventarchiver.cpp:165
+#: eventarchiver.cpp:167
 #, fuzzy, kde-format
 #| msgid "Delete Old Items"
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Brisanje starih stavki"
 
-#: eventarchiver.cpp:278
+#: eventarchiver.cpp:284
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Razlog nepoznat."
 
-#: eventarchiver.cpp:280
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Ne mogu da upišem arhivski fajl %1. %2"
 
-#: eventarchiver.cpp:291
+#: eventarchiver.cpp:297
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Ne mogu da upišem arhivu. %1"
 
 # >> @info:progress
-#: eventarchiver.cpp:300
+#: eventarchiver.cpp:306
 #, kde-format
 msgid "Archiving events"
 msgstr "Arhiviram događaje..."

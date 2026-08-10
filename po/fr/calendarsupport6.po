@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-26 00:44+0000\n"
+"POT-Creation-Date: 2026-08-10 00:46+0000\n"
 "PO-Revision-Date: 2026-05-07 18:25+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
@@ -348,18 +348,18 @@ msgstr "Enregistrer une pièce jointe"
 msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>indéfini</placeholder>"
 
-#: eventarchiver.cpp:130
+#: eventarchiver.cpp:132
 #, kde-format
 msgid "There are no items before %1"
 msgstr "Il n'existe pas d'éléments avant %1"
 
-#: eventarchiver.cpp:131
+#: eventarchiver.cpp:133
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive"
 msgstr "Archiver"
 
-#: eventarchiver.cpp:161
+#: eventarchiver.cpp:163
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -368,29 +368,29 @@ msgstr ""
 "Supprimer tous les éléments avant %1 sans enregistrer ?\n"
 "Les éléments suivants seront supprimés :"
 
-#: eventarchiver.cpp:165
+#: eventarchiver.cpp:167
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Supprimer les anciens éléments"
 
-#: eventarchiver.cpp:278
+#: eventarchiver.cpp:284
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Raison inconnue"
 
-#: eventarchiver.cpp:280
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Impossible d'écrire le fichier d'archive %1. %2"
 
-#: eventarchiver.cpp:291
+#: eventarchiver.cpp:297
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Impossible d'écrire l'archive. %1"
 
-#: eventarchiver.cpp:300
+#: eventarchiver.cpp:306
 #, kde-format
 msgid "Archiving events"
 msgstr "Archiver des évènements"

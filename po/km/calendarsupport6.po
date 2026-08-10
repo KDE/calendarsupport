@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-26 00:44+0000\n"
+"POT-Creation-Date: 2026-08-10 00:46+0000\n"
 "PO-Revision-Date: 2012-12-25 15:13+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -359,12 +359,12 @@ msgstr "រក្សាទុក​ឯកសារ​ភ្ជាប់​"
 msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>គ្មាន​សេចក្ដី​សង្ខេប​បានផ្ដល់​ទេ</placeholder>"
 
-#: eventarchiver.cpp:130
+#: eventarchiver.cpp:132
 #, kde-format
 msgid "There are no items before %1"
 msgstr "គ្មាន​ធាតុ​មុន​​ %1"
 
-#: eventarchiver.cpp:131
+#: eventarchiver.cpp:133
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "&Archive"
@@ -372,7 +372,7 @@ msgctxt "@title:window"
 msgid "Archive"
 msgstr "ប័ណ្ណសារ​"
 
-#: eventarchiver.cpp:161
+#: eventarchiver.cpp:163
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -381,30 +381,30 @@ msgstr ""
 "លុប​​ធាតុ​ទាំងអស់​​មុន​ពេល​​ %1 ដោយ​មិន​ចាំ​បាច់​រក្សាទុក​ឬ​ ?​\n"
 "​ធាតុ​ខាង​ក្រោម​នឹង​ត្រូវ​បាន​លុប​ ៖​​"
 
-#: eventarchiver.cpp:165
+#: eventarchiver.cpp:167
 #, fuzzy, kde-format
 #| msgid "Delete Old Items"
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "លុប​ធាតុ​ចាស់​​​ៗ"
 
-#: eventarchiver.cpp:278
+#: eventarchiver.cpp:284
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "មិន​ស្គាល់​មូលហេតុ"
 
-#: eventarchiver.cpp:280
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "មិន​អាច​សរសេរ​ឯកសារ​ប័ណ្ណសារ​ %1. %2"
 
-#: eventarchiver.cpp:291
+#: eventarchiver.cpp:297
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "មិន​អាច​សរសេរ​ប័ណ្ណសារ​ ។​ %1"
 
-#: eventarchiver.cpp:300
+#: eventarchiver.cpp:306
 #, fuzzy, kde-format
 #| msgid "Archive events"
 msgid "Archiving events"

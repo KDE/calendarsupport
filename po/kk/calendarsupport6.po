@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-26 00:44+0000\n"
+"POT-Creation-Date: 2026-08-10 00:46+0000\n"
 "PO-Revision-Date: 2013-09-16 03:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -332,12 +332,12 @@ msgstr "Тіркемені сақтау"
 msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>Тұжырымы жоқ</placeholder>"
 
-#: eventarchiver.cpp:130
+#: eventarchiver.cpp:132
 #, kde-format
 msgid "There are no items before %1"
 msgstr "%1 алдында ештеңе жоқ"
 
-#: eventarchiver.cpp:131
+#: eventarchiver.cpp:133
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "&Archive"
@@ -345,7 +345,7 @@ msgctxt "@title:window"
 msgid "Archive"
 msgstr "&Архивтеу"
 
-#: eventarchiver.cpp:161
+#: eventarchiver.cpp:163
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -354,32 +354,32 @@ msgstr ""
 "%1 алдындағыларын бәрі де сақтамай өшірілсін бе?\n"
 "Өшірілетіндер мынау:"
 
-#: eventarchiver.cpp:165
+#: eventarchiver.cpp:167
 #, fuzzy, kde-format
 #| msgid "Delete Old Items"
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Ескіргендерді өшіру"
 
-#: eventarchiver.cpp:278
+#: eventarchiver.cpp:284
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Себебі беймәлім"
 
 # msgid "Cannot write archive file %1."
-#: eventarchiver.cpp:280
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "%1 архив файлы жазылмады: %2"
 
 # msgid "Cannot write archive file %1."
-#: eventarchiver.cpp:291
+#: eventarchiver.cpp:297
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Архив файлы жазылмады. %1"
 
-#: eventarchiver.cpp:300
+#: eventarchiver.cpp:306
 #, kde-format
 msgid "Archiving events"
 msgstr "Оқиғаларды архивтеу"

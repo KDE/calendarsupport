@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-26 00:44+0000\n"
+"POT-Creation-Date: 2026-08-10 00:46+0000\n"
 "PO-Revision-Date: 2024-12-20 22:01+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -330,18 +330,18 @@ msgstr "आसक्तिं रक्षतु"
 msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>अनिर्धारितः</placeholder>"
 
-#: eventarchiver.cpp:130
+#: eventarchiver.cpp:132
 #, kde-format
 msgid "There are no items before %1"
 msgstr "%1 इत्यस्मात् पूर्वं कोऽपि द्रव्यः नास्ति"
 
-#: eventarchiver.cpp:131
+#: eventarchiver.cpp:133
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive"
 msgstr "लेखागार"
 
-#: eventarchiver.cpp:161
+#: eventarchiver.cpp:163
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -350,29 +350,29 @@ msgstr ""
 "%1 इत्यस्मात् पूर्वं सर्वाणि वस्तूनि रक्षितुं विना विलोपयन्तु?\n"
 "निम्नलिखितवस्तूनि विलोपिताः भविष्यन्ति।"
 
-#: eventarchiver.cpp:165
+#: eventarchiver.cpp:167
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "पुरातनवस्तूनि विलोपयन्तु"
 
-#: eventarchiver.cpp:278
+#: eventarchiver.cpp:284
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "कारणम् अज्ञातम्"
 
-#: eventarchiver.cpp:280
+#: eventarchiver.cpp:286
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "संग्रहसञ्चिका %1 लिखितुं न शक्यते । %2"
 
-#: eventarchiver.cpp:291
+#: eventarchiver.cpp:297
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "आर्काइव लिखितुं न शक्यते। %1"
 
-#: eventarchiver.cpp:300
+#: eventarchiver.cpp:306
 #, kde-format
 msgid "Archiving events"
 msgstr "घटनानां संग्रहणम्"
