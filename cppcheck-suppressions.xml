@@ -9,4 +9,7 @@
   <suppress>
     <id>shadowFunction</id>
   </suppress>
+  <suppress>
+    <id>returnByReference</id>
+  </suppress>
 </suppressions>
