@@ -283,7 +283,11 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
         if ((*it)->recurs()) {
             QRect const recurBox(timesBox.left() + padding(), h + padding(), timesBox.right() - padding(), lineHeight);
             KCalendarCore::Recurrence const *recurs = (*it)->recurrence();
+#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
             QString displayString = KCalUtils::IncidenceFormatter::recurrenceString((*it));
+#else
+            QString displayString = (*it)->recurrenceDescription();
+#endif
             // exception dates
             QString exceptString;
             if (!recurs->exDates().isEmpty()) {
@@ -528,7 +532,11 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                         subitemString += u'\n';
                     }
                     subitemString += i18nc("subitem Status: statusString", "Status: %1\n", statusString);
+#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
                     subitemString += KCalUtils::IncidenceFormatter::recurrenceString(todo) + u'\n';
+#else
+                    subitemString += todo->recurrenceDescription() + u'\n';
+#endif
                     subitemString += i18nc("subitem Priority: N", "Priority: %1\n", QString::number(todo->priority()));
 #if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
                     subitemString += i18nc("subitem Secrecy: secrecyString", "Secrecy: %1\n", KCalUtils::Stringify::incidenceSecrecy(todo->secrecy()));
