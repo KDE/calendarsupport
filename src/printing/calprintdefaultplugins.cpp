@@ -1425,7 +1425,7 @@ void CalPrintMonth::setDateRange(const QDate &from, const QDate &to)
             cfg->mToMonth->addItem(monthName);
         }
         cfg->mFromMonth->setCurrentIndex(from.month() - 1);
-        cfg->mFromYear->setValue(to.year());
+        cfg->mFromYear->setValue(from.year());
         cfg->mToMonth->setCurrentIndex(mToDate.month() - 1);
         cfg->mToYear->setValue(mToDate.year());
     }
