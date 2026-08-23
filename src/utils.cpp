@@ -561,6 +561,7 @@ bool CalendarSupport::mergeCalendar(const QString &srcFilename, const KCalendarC
 
     if (!QFile::exists(srcFilename)) {
         qCCritical(CALENDARSUPPORT_LOG) << "File'" << srcFilename << "' doesn't exist.";
+        return false;
     }
 
     // merge in a file
