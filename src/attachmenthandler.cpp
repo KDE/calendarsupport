@@ -275,7 +275,7 @@ void AttachmentHandler::slotFinishSaveAs(KJob *job)
     ReceivedInfo const info = d->mJobToReceivedInfo[job];
     bool success = false;
 
-    if (job->error() != 0) {
+    if (job->error() == 0) {
         auto fetchJob = qobject_cast<ItemFetchJob *>(job);
         const Item::List items = fetchJob->items();
         if (!items.isEmpty()) {
@@ -297,7 +297,7 @@ void AttachmentHandler::slotFinishView(KJob *job)
     ReceivedInfo const info = d->mJobToReceivedInfo[job];
     bool success = false;
 
-    if (job->error()) {
+    if (job->error() == 0) {
         auto fetchJob = qobject_cast<ItemFetchJob *>(job);
         const Item::List items = fetchJob->items();
         if (!items.isEmpty()) {
