@@ -41,7 +41,7 @@ using namespace CalendarSupport;
 static QString cleanStr(const QString &instr)
 {
     QString ret = instr;
-    return ret.replace(u'\n', u' ');
+    return std::move(ret.replace(u'\n', u' '));
 }
 
 const QColor CalPrintPluginBase::sHolidayBackground = QColor(244, 244, 244);
@@ -1138,7 +1138,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
                                 QLocale().toString(todo->dtDue().toLocalTime().date(), QLocale::ShortFormat));
                 }
             } else {
-                str = summaryStr;
+                str = std::move(summaryStr);
             }
             drawIncidence(p, box, timeText, i18n("To-do: %1", str), todo->description(), textY, singleLineLimit, includeDescription, todo->descriptionIsRich());
             p.restore();
@@ -1795,12 +1795,7 @@ void CalPrintPluginBase::drawTodo(int &count,
     startPoints.append(&startpt);
 
     // Sort the sub-to-dos and print them
-    KCalendarCore::Todo::List tl;
-    tl.reserve(t.count());
-    for (const KCalendarCore::Todo::Ptr &subtodo : std::as_const(t)) {
-        tl.append(subtodo);
-    }
-    KCalendarCore::Todo::List sl = mCalendar->sortTodos(std::move(tl), sortField, sortDir);
+    KCalendarCore::Todo::List sl = mCalendar->sortTodos(std::move(t), sortField, sortDir);
 
     int subcount = 0;
     for (const KCalendarCore::Todo::Ptr &isl : std::as_const(sl)) {

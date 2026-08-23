@@ -727,7 +727,7 @@ void CalPrintTimetable::doSaveConfig()
 static QString cleanString(const QString &instr)
 {
     QString ret = instr;
-    return ret.replace(u'\n', u' ');
+    return std::move(ret.replace(u'\n', u' '));
 }
 
 void CalPrintTimetable::drawAllDayBox(QPainter &p, const KCalendarCore::Event::List &eventList, QDate qd, QRect box, const QList<QDate> &workDays)
@@ -1751,7 +1751,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
                 tempList.append(todo);
             }
         }
-        todoList = tempList;
+        todoList = std::move(tempList);
         break;
     case TodosDueRange:
         for (const KCalendarCore::Todo::Ptr &todo : std::as_const(todoList)) {
@@ -1764,7 +1764,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
                 tempList.append(todo);
             }
         }
-        todoList = tempList;
+        todoList = std::move(tempList);
         break;
     }
 

@@ -207,7 +207,7 @@ void AttachmentHandler::view(const QString &attachmentName, const QString &uid)
     ReceivedInfo info;
     info.attachmentName = attachmentName;
     info.uid = uid;
-    d->mJobToReceivedInfo[job] = info;
+    d->mJobToReceivedInfo[job] = std::move(info);
 }
 
 bool AttachmentHandler::view(const QString &attachmentName, const ScheduleMessage::Ptr &message)
@@ -262,7 +262,7 @@ void AttachmentHandler::saveAs(const QString &attachmentName, const QString &uid
     ReceivedInfo info;
     info.attachmentName = attachmentName;
     info.uid = uid;
-    d->mJobToReceivedInfo[job] = info;
+    d->mJobToReceivedInfo[job] = std::move(info);
 }
 
 bool AttachmentHandler::saveAs(const QString &attachmentName, const ScheduleMessage::Ptr &message)

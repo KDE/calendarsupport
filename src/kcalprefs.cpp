@@ -194,9 +194,9 @@ void KCalPrefs::resolveDefaultCalendars()
         } else if (id >= 0) {
             // Migration: a legacy numeric id but no path yet. Capture the path while the id is
             // still valid (usrSave() then drops the legacy id key).
-            const QString newPath = computeStableKeyForId(d->mCollectionModel, id);
+            QString newPath = computeStableKeyForId(d->mCollectionModel, id);
             if (!newPath.isEmpty()) {
-                path = newPath;
+                path = std::move(newPath);
                 migrated = true;
             }
         }

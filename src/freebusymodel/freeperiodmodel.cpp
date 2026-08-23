@@ -101,11 +101,11 @@ KCalendarCore::Period::List FreePeriodModel::splitPeriodsByDay(const KCalendarCo
         while (tmpPeriod.start().date() != tmpPeriod.end().date()) {
             const QDateTime midnight(tmpPeriod.start().date(), QTime(23, 59, 59, 999), tmpPeriod.start().timeZone());
             KCalendarCore::Period const firstPeriod(tmpPeriod.start(), midnight);
-            KCalendarCore::Period const secondPeriod(midnight.addMSecs(1), tmpPeriod.end());
+            KCalendarCore::Period secondPeriod(midnight.addMSecs(1), tmpPeriod.end());
             if (firstPeriod.duration().asSeconds() >= validPeriodSecs) {
                 splitList << firstPeriod;
             }
-            tmpPeriod = secondPeriod;
+            tmpPeriod = std::move(secondPeriod);
         }
         if (tmpPeriod.duration().asSeconds() >= validPeriodSecs) {
             splitList << tmpPeriod;

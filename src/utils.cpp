@@ -513,8 +513,8 @@ QStringList CalendarSupport::holiday(QDate date, const QStringList &categories)
                     // display name to help the user identify which region it belongs to.
                     const QRegularExpression holidaySE(i18nc("search pattern for holidayname", "^%1", name));
                     if (hdays.filter(holidaySE).isEmpty()) {
-                        const QString pholiday = i18n("%1 (%2)", name, region.countryCode());
-                        hdays.append(pholiday);
+                        QString pholiday = i18n("%1 (%2)", name, region.countryCode());
+                        hdays.append(std::move(pholiday));
                     } else {
                         // More than 1 region has the same holiday => remove the country code
                         // i.e don't show "Holiday (US)" and "Holiday(FR)"; just show "Holiday".

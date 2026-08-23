@@ -30,7 +30,7 @@ static inline QStringList &unquote(QStringList &strings)
 QStringList CategoryHierarchyReader::path(QString string)
 {
     QStringList _path = quote(string).split(CategoryConfig::categorySeparator, Qt::SkipEmptyParts);
-    return unquote(_path);
+    return std::move(unquote(_path));
 }
 
 void CategoryHierarchyReader::read(const QStringList &categories)
@@ -51,7 +51,7 @@ void CategoryHierarchyReader::read(const QStringList &categories)
         QStringList::Iterator jt;
         QStringList::Iterator kt;
         int split_level = 0;
-        QStringList const new_path = _path; // save it for later
+        QStringList new_path = _path; // save it for later
         for (jt = _path.begin(), kt = last_path.begin(); jt != _path.end() && kt != last_path.end(); ++jt, ++kt) {
             if (*jt == *kt) {
                 split_level++;
@@ -64,7 +64,7 @@ void CategoryHierarchyReader::read(const QStringList &categories)
         if (jt != _path.begin()) {
             _path.erase(_path.begin(), jt);
         }
-        last_path = new_path;
+        last_path = std::move(new_path);
 
         if (_path.isEmpty()) {
             // something is wrong, we already have this node
