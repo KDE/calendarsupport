@@ -257,7 +257,7 @@ void AttachmentHandler::saveAs(const QString &attachmentName, const QString &uid
     Item item;
     item.setGid(uid);
     auto job = new ItemFetchJob(item);
-    connect(job, &ItemFetchJob::result, this, &AttachmentHandler::slotFinishView);
+    connect(job, &ItemFetchJob::result, this, &AttachmentHandler::slotFinishSaveAs);
 
     ReceivedInfo info;
     info.attachmentName = attachmentName;
