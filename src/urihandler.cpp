@@ -64,7 +64,7 @@ bool UriHandler::process(const QString &uri)
         // extract 'number' from 'kmail:<number>/<id>'
         const int start = uri.indexOf(u':') + 1;
         const int end = uri.indexOf(u'/', start);
-        const QString serialNumberStr = uri.mid(start, start - end);
+        const QString serialNumberStr = uri.mid(start, end - start);
         return startKMail(u"akonadi://?item=%1"_s.arg(serialNumberStr));
     } else if (uri.startsWith("mailto:"_L1)) {
         return QDesktopServices::openUrl(QUrl(uri));
