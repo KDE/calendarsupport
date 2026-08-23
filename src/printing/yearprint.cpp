@@ -161,8 +161,9 @@ void CalPrintYear::print(QPainter &p, int width, int height)
 
             temp = temp.addMonths(1);
         }
-
-        drawFooter(p, footerBox);
+        if (mPrintFooter) {
+            drawFooter(p, footerBox);
+        }
         start = start.addMonths(monthsPerPage);
     }
 }
