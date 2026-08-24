@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-17 00:46+0000\n"
+"POT-Creation-Date: 2026-08-24 00:45+0000\n"
 "PO-Revision-Date: 2015-02-07 19:03+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@nuug.no>\n"
@@ -1612,7 +1612,7 @@ msgstr[0] "1 minutt"
 msgstr[1] "%1 minutter"
 
 #: printing/calprintdefaultplugins.cpp:352
-#: printing/calprintdefaultplugins.cpp:664
+#: printing/calprintdefaultplugins.cpp:658
 #, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
@@ -1638,111 +1638,106 @@ msgstr "Beskrivelse:"
 msgid "Notes:"
 msgstr "Merknader:"
 
-#: printing/calprintdefaultplugins.cpp:472
-#, kde-format
-msgid "No Subitems"
-msgstr "Ingen underposter"
-
-#: printing/calprintdefaultplugins.cpp:475
+#: printing/calprintdefaultplugins.cpp:470
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
 msgstr[0] "1 underpost:"
 msgstr[1] "%1 underposter:"
 
-#: printing/calprintdefaultplugins.cpp:495
+#: printing/calprintdefaultplugins.cpp:489
 #, kde-format
 msgctxt "no status"
 msgid "none"
 msgstr "ingen"
 
-#: printing/calprintdefaultplugins.cpp:497
+#: printing/calprintdefaultplugins.cpp:491
 #, kde-format
 msgctxt "unknown status"
 msgid "unknown"
 msgstr "ukjent"
 
-#: printing/calprintdefaultplugins.cpp:504
+#: printing/calprintdefaultplugins.cpp:498
 #, kde-format
 msgctxt "subitem start date"
 msgid "Start Date: %1\n"
 msgstr "Startdato: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:507
+#: printing/calprintdefaultplugins.cpp:501
 #, kde-format
 msgctxt "subitem start time"
 msgid "Start Time: %1\n"
 msgstr "Starttid: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:513
+#: printing/calprintdefaultplugins.cpp:507
 #, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
 msgstr "Forfallsdato: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:519
+#: printing/calprintdefaultplugins.cpp:513
 #, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
 msgstr "Forfallstid: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:523
+#: printing/calprintdefaultplugins.cpp:517
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
 msgstr "%1: "
 
-#: printing/calprintdefaultplugins.cpp:530
+#: printing/calprintdefaultplugins.cpp:524
 #, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
 msgstr "Status: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:532
+#: printing/calprintdefaultplugins.cpp:526
 #, kde-format
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
 msgstr "Prioritet: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:534
-#: printing/calprintdefaultplugins.cpp:536
+#: printing/calprintdefaultplugins.cpp:528
+#: printing/calprintdefaultplugins.cpp:530
 #, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
 msgstr "Konfidensialitet: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:555
+#: printing/calprintdefaultplugins.cpp:549
 #, kde-format
 msgid "No Attachments"
 msgstr "Ingen vedlegg"
 
-#: printing/calprintdefaultplugins.cpp:558
+#: printing/calprintdefaultplugins.cpp:552
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
 msgstr[0] "1 vedlegg:"
 msgstr[1] "%1 vedlegg:"
 
-#: printing/calprintdefaultplugins.cpp:564
+#: printing/calprintdefaultplugins.cpp:558
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
 msgstr "‥"
 
-#: printing/calprintdefaultplugins.cpp:581
+#: printing/calprintdefaultplugins.cpp:575
 #, kde-format
 msgid "No Attendees"
 msgstr "Ingen deltakere"
 
-#: printing/calprintdefaultplugins.cpp:583
+#: printing/calprintdefaultplugins.cpp:577
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
 msgstr[0] "En deltaker:"
 msgstr[1] "%1 deltakere:"
 
-#: printing/calprintdefaultplugins.cpp:596
-#: printing/calprintdefaultplugins.cpp:605
+#: printing/calprintdefaultplugins.cpp:590
+#: printing/calprintdefaultplugins.cpp:599
 #, kde-format
 msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
@@ -1750,77 +1745,77 @@ msgctxt ""
 msgid "%1 (%2): %3"
 msgstr "%1 (%2): %3"
 
-#: printing/calprintdefaultplugins.cpp:625
-#: printing/calprintdefaultplugins.cpp:628
+#: printing/calprintdefaultplugins.cpp:619
+#: printing/calprintdefaultplugins.cpp:622
 #, kde-format
 msgid "Status: %1"
 msgstr "Status: %1"
 
-#: printing/calprintdefaultplugins.cpp:634
-#: printing/calprintdefaultplugins.cpp:637
+#: printing/calprintdefaultplugins.cpp:628
+#: printing/calprintdefaultplugins.cpp:631
 #, kde-format
 msgid "Secrecy: %1"
 msgstr "Konfidensialitet: %1"
 
-#: printing/calprintdefaultplugins.cpp:644
+#: printing/calprintdefaultplugins.cpp:638
 #, kde-format
 msgid "Show as: Busy"
 msgstr "Vis som: Opptatt"
 
-#: printing/calprintdefaultplugins.cpp:646
+#: printing/calprintdefaultplugins.cpp:640
 #, kde-format
 msgid "Show as: Free"
 msgstr "Vis som: Ledig"
 
-#: printing/calprintdefaultplugins.cpp:652
+#: printing/calprintdefaultplugins.cpp:646
 #, kde-format
 msgid "This task is overdue!"
 msgstr "Denne oppgaven har forfalt!"
 
-#: printing/calprintdefaultplugins.cpp:658
+#: printing/calprintdefaultplugins.cpp:652
 #, kde-format
 msgid "Settings: "
 msgstr "Innstillinger: "
 
-#: printing/calprintdefaultplugins.cpp:663
+#: printing/calprintdefaultplugins.cpp:657
 #, kde-format
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:756 printing/calprintpluginbase.cpp:927
+#: printing/calprintdefaultplugins.cpp:750 printing/calprintpluginbase.cpp:927
 #: printing/calprintpluginbase.cpp:1067 printing/calprintpluginbase.cpp:1124
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:759 printing/calprintpluginbase.cpp:946
+#: printing/calprintdefaultplugins.cpp:753 printing/calprintpluginbase.cpp:946
 #: printing/calprintpluginbase.cpp:1070
 #, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:814
+#: printing/calprintdefaultplugins.cpp:808
 #, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1019
-#: printing/calprintdefaultplugins.cpp:1245 printing/yearprint.cpp:143
+#: printing/calprintdefaultplugins.cpp:1013
+#: printing/calprintdefaultplugins.cpp:1239 printing/yearprint.cpp:143
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1267
+#: printing/calprintdefaultplugins.cpp:1261
 #, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1269
+#: printing/calprintdefaultplugins.cpp:1263
 #, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
@@ -1828,95 +1823,95 @@ msgid ""
 "(Week %3)"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1454
+#: printing/calprintdefaultplugins.cpp:1448
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:1567
+#: printing/calprintdefaultplugins.cpp:1561
 #, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1568
+#: printing/calprintdefaultplugins.cpp:1562
 #, kde-format
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "Startdato"
 
-#: printing/calprintdefaultplugins.cpp:1569
+#: printing/calprintdefaultplugins.cpp:1563
 #, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "Forfallsdato"
 
-#: printing/calprintdefaultplugins.cpp:1570
+#: printing/calprintdefaultplugins.cpp:1564
 #, kde-format
 msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "Prioritet"
 
-#: printing/calprintdefaultplugins.cpp:1571
+#: printing/calprintdefaultplugins.cpp:1565
 #, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "Prosent fullført"
 
-#: printing/calprintdefaultplugins.cpp:1572
+#: printing/calprintdefaultplugins.cpp:1566
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1578
+#: printing/calprintdefaultplugins.cpp:1572
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "Stigende"
 
-#: printing/calprintdefaultplugins.cpp:1579
+#: printing/calprintdefaultplugins.cpp:1573
 #, fuzzy, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Synkende"
 
-#: printing/calprintdefaultplugins.cpp:1592
+#: printing/calprintdefaultplugins.cpp:1586
 #, kde-format
 msgid "To-do list"
 msgstr "Gjøremålsliste"
 
-#: printing/calprintdefaultplugins.cpp:1644
+#: printing/calprintdefaultplugins.cpp:1638
 #: printing/calprintpluginbase.cpp:1726
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: printing/calprintdefaultplugins.cpp:1655
+#: printing/calprintdefaultplugins.cpp:1649
 #, kde-format
 msgid "Priority"
 msgstr "Prioritet"
 
-#: printing/calprintdefaultplugins.cpp:1665
+#: printing/calprintdefaultplugins.cpp:1659
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "Innen"
 
-#: printing/calprintdefaultplugins.cpp:1675
+#: printing/calprintdefaultplugins.cpp:1669
 #, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:1685
+#: printing/calprintdefaultplugins.cpp:1679
 #, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "Ferdig"
 
-#: printing/calprintdefaultplugins.cpp:1695
+#: printing/calprintdefaultplugins.cpp:1689
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
@@ -2455,13 +2450,13 @@ msgstr "%1 (Forfall: %2)"
 msgid "To-do: %1"
 msgstr "Gjøremål: %1"
 
-#: printing/calprintpluginbase.cpp:1881
+#: printing/calprintpluginbase.cpp:1876
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr ""
 
-#: printing/calprintpluginbase.cpp:1887
+#: printing/calprintpluginbase.cpp:1882
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
@@ -2921,3 +2916,6 @@ msgstr "%1 (%2)"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr ""
+
+#~ msgid "No Subitems"
+#~ msgstr "Ingen underposter"
