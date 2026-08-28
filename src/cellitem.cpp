@@ -4,12 +4,12 @@
   SPDX-License-Identifier: GPL-2.0-or-later WITH LicenseRef-Qt-Commercial-exception-1.0
 */
 
-#include <QSet>
-
 #include "cellitem.h"
-
 #include "calendarsupport_debug.h"
+
 #include <KLocalizedString>
+
+#include <QSet>
 
 using namespace CalendarSupport;
 

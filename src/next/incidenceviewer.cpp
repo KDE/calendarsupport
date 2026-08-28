@@ -7,9 +7,9 @@
 
 #include "incidenceviewer.h"
 using namespace Qt::Literals::StringLiterals;
+#include "incidenceviewer_p.h"
 
 #include "attachmenthandler.h"
-#include "incidenceviewer_p.h"
 #include "urihandler.h"
 #include "utils.h"
 
