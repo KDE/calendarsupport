@@ -1,2 +1,1 @@
-#skip donated files
-SKIP /modeltest.cpp
+EXTRA tipsandthis
