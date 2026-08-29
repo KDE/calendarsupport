@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-25 00:46+0000\n"
+"POT-Creation-Date: 2026-08-29 00:46+0000\n"
 "PO-Revision-Date: 2025-10-06 01:19+0400\n"
 "Last-Translator: linux <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -694,8 +694,15 @@ msgstr "Xatırlatmalar üçün standart vaxt ölçü vahidi"
 msgid "Day begins at"
 msgstr "Gün başlayır"
 
-#. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
+#. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
+#, fuzzy, kde-format
+#| msgid "By default, enable reminders for new events"
+msgid "Set the default starting time for new events"
+msgstr "Standart olaraq, yeni tədbirlər üçün xatırlatmaları aktiv etmək"
+
+#. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
+#: kcalprefs.kcfg:109
 #, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
@@ -705,13 +712,13 @@ msgstr ""
 "istifadə etdiyiniz vaxtdan gec olmamalıdır."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:112
+#: kcalprefs.kcfg:113
 #, kde-format
 msgid "Exclude holidays"
 msgstr "Bayram günləri istisna olmaqla"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:113
+#: kcalprefs.kcfg:114
 #, kde-format
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
@@ -721,13 +728,13 @@ msgstr ""
 "işarələyin."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:117
+#: kcalprefs.kcfg:118
 #, kde-format
 msgid "Use holiday regions:"
 msgstr "Bayram günləri, bölgələr üzrə:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:118
+#: kcalprefs.kcfg:119
 #, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
@@ -738,20 +745,20 @@ msgstr ""
 "qeyri-iş günləri kimi göstərilir."
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:121
+#: kcalprefs.kcfg:122
 #, fuzzy, kde-format
 #| msgid "Use holiday regions:"
 msgid "Select holiday categories:"
 msgstr "Bayram günləri, bölgələr üzrə:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:122
+#: kcalprefs.kcfg:123
 #, kde-format
 msgid "Select which holiday categories to display"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:123
+#: kcalprefs.kcfg:124
 #, kde-format
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
@@ -759,13 +766,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:129
+#: kcalprefs.kcfg:130
 #, kde-format
 msgid "Use Groupware communication"
 msgstr "Birgə işlər serverini istifadə etmək"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:130
+#: kcalprefs.kcfg:131
 #, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
@@ -780,25 +787,25 @@ msgstr ""
 "kimi ayarlanması)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:134
+#: kcalprefs.kcfg:135
 #, kde-format
 msgid "Default policy for invitations to other users:"
 msgstr "Digər iştirakçılara dəvətnamələr üçün əsas qaydalar:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:137
+#: kcalprefs.kcfg:138
 #, kde-format
 msgid "Send mails without asking."
 msgstr "E-poçtu soruşmadan göndərmək."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:140
+#: kcalprefs.kcfg:141
 #, kde-format
 msgid "Ask for every individual attendee what to do."
 msgstr "Hər bir iştirakçıdan nə edəcəyini soruşmaq."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:143
+#: kcalprefs.kcfg:144
 #, kde-format
 msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
@@ -808,19 +815,19 @@ msgstr ""
 "qrup şəklində planlaşdırmanı poza bilər)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: kcalprefs.kcfg:154
+#: kcalprefs.kcfg:155
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr "Tədbir və Tapşırıq düzəliş dialoqunda saat qurşağı seçimini göstərmək."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:161
+#: kcalprefs.kcfg:162
 #, kde-format
 msgid "Regularly archive events"
 msgstr "Tədbirləri müntəzəmz arxivləmək"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:165
+#: kcalprefs.kcfg:166
 #, kde-format
 msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
@@ -830,73 +837,73 @@ msgstr ""
 "arxivləşdiriləcəkdir. Bu dəyərin vahidi başqa bir sahədə göstərilmişdir."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:169
+#: kcalprefs.kcfg:170
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
 msgstr "Son istifadə müddətinin vahidi."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:172
+#: kcalprefs.kcfg:173
 #, kde-format
 msgid "In days"
 msgstr "Günlərdə"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:175
+#: kcalprefs.kcfg:176
 #, kde-format
 msgid "In weeks"
 msgstr "Həftələrdə"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:178
+#: kcalprefs.kcfg:179
 #, kde-format
 msgid "In months"
 msgstr "Aylarda"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:184
+#: kcalprefs.kcfg:185
 #, kde-format
 msgid "URL of the file where old events should be archived"
 msgstr "Köhnə tədbirlər arxivləşəcək faylın ünvanı"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:187
+#: kcalprefs.kcfg:188
 #, kde-format
 msgid "Archive events"
 msgstr "Hadisələri arxivləmək"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:191
+#: kcalprefs.kcfg:192
 #, kde-format
 msgid "Archive to-dos"
 msgstr "Tapşırıqları arxivləmək"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:195
+#: kcalprefs.kcfg:196
 #, kde-format
 msgid "What to do when archiving"
 msgstr "Arxivlənmə zamanı nə etməli"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:198
+#: kcalprefs.kcfg:199
 #, kde-format
 msgid "Delete old events"
 msgstr "Köhnə tədbirləri silmək"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:201
+#: kcalprefs.kcfg:202
 #, kde-format
 msgid "Archive old events to a separate file"
 msgstr "Köhnə tədbirləri ayrıca fayla arxivləmək"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:213
+#: kcalprefs.kcfg:214
 #, kde-format
 msgid "Full &name"
 msgstr "Tam &adı"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:214
+#: kcalprefs.kcfg:215
 #, kde-format
 msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
@@ -906,13 +913,13 @@ msgstr ""
 "\"Təşkilatçı\" kimi görünəcək."
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:218
+#: kcalprefs.kcfg:219
 #, kde-format
 msgid "E&mail address"
 msgstr "E-poçet ü&nvanı"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:219
+#: kcalprefs.kcfg:220
 #, kde-format
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
@@ -923,13 +930,13 @@ msgstr ""
 "Tapşırıqlarda görünəcəkdir."
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:231
+#: kcalprefs.kcfg:232
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "\"Yarlıqsız\" rəngi (\"Yalnız yarlıq\" rəsm sxemləri üçün)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:232
+#: kcalprefs.kcfg:233
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -942,7 +949,7 @@ msgstr ""
 "göstərərkən istifadə olunur."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:233
+#: kcalprefs.kcfg:234
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr "Bu rəngi elementləri yarlıqlarsız təsvir edərkən istifadə etmək"

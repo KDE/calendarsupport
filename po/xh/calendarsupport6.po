@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-25 00:46+0000\n"
+"POT-Creation-Date: 2026-08-29 00:46+0000\n"
 "PO-Revision-Date: 2002-11-09 12:52+0200\n"
 "Last-Translator: Thelma Lungcuzo <thelma@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -645,8 +645,14 @@ msgstr "Ixesha le alarm engagqibekanga:"
 msgid "Day begins at"
 msgstr "Imini iqala ngo:"
 
-#. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
+#. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
+#, fuzzy, kde-format
+msgid "Set the default starting time for new events"
+msgstr "Cima iziganeko ezindala"
+
+#. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
+#: kcalprefs.kcfg:109
 #, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
@@ -654,13 +660,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:112
+#: kcalprefs.kcfg:113
 #, kde-format
 msgid "Exclude holidays"
 msgstr "Beka ecaleni iiholide"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:113
+#: kcalprefs.kcfg:114
 #, kde-format
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
@@ -668,13 +674,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:117
+#: kcalprefs.kcfg:118
 #, fuzzy, kde-format
 msgid "Use holiday regions:"
 msgstr "Nceda khetha iqela leholide:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:118
+#: kcalprefs.kcfg:119
 #, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
@@ -682,19 +688,19 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:121
+#: kcalprefs.kcfg:122
 #, fuzzy, kde-format
 msgid "Select holiday categories:"
 msgstr "Khetha iintlobo"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:122
+#: kcalprefs.kcfg:123
 #, kde-format
 msgid "Select which holiday categories to display"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:123
+#: kcalprefs.kcfg:124
 #, kde-format
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
@@ -702,13 +708,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:129
+#: kcalprefs.kcfg:130
 #, kde-format
 msgid "Use Groupware communication"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:130
+#: kcalprefs.kcfg:131
 #, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
@@ -718,25 +724,25 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:134
+#: kcalprefs.kcfg:135
 #, kde-format
 msgid "Default policy for invitations to other users:"
 msgstr ""
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:137
+#: kcalprefs.kcfg:138
 #, kde-format
 msgid "Send mails without asking."
 msgstr ""
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:140
+#: kcalprefs.kcfg:141
 #, kde-format
 msgid "Ask for every individual attendee what to do."
 msgstr ""
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:143
+#: kcalprefs.kcfg:144
 #, kde-format
 msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
@@ -744,19 +750,19 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: kcalprefs.kcfg:154
+#: kcalprefs.kcfg:155
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:161
+#: kcalprefs.kcfg:162
 #, fuzzy, kde-format
 msgid "Regularly archive events"
 msgstr "Isiganeko esiphinde senzeka"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:165
+#: kcalprefs.kcfg:166
 #, kde-format
 msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
@@ -764,73 +770,73 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:169
+#: kcalprefs.kcfg:170
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
 msgstr ""
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:172
+#: kcalprefs.kcfg:173
 #, fuzzy, kde-format
 msgid "In days"
 msgstr "i Khalenda"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:175
+#: kcalprefs.kcfg:176
 #, fuzzy, kde-format
 msgid "In weeks"
 msgstr "iveki(ii) kwi:"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:178
+#: kcalprefs.kcfg:179
 #, fuzzy, kde-format
 msgid "In months"
 msgstr "inyanga(ii)"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:184
+#: kcalprefs.kcfg:185
 #, kde-format
 msgid "URL of the file where old events should be archived"
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:187
+#: kcalprefs.kcfg:188
 #, fuzzy, kde-format
 msgid "Archive events"
 msgstr "Isiganeko esiphinde senzeka"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:191
+#: kcalprefs.kcfg:192
 #, fuzzy, kde-format
 msgid "Archive to-dos"
 msgstr "(akukho zinto ezizakwenziwa)\n"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:195
+#: kcalprefs.kcfg:196
 #, kde-format
 msgid "What to do when archiving"
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:198
+#: kcalprefs.kcfg:199
 #, kde-format
 msgid "Delete old events"
 msgstr "Cima iziganeko ezindala"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:201
+#: kcalprefs.kcfg:202
 #, kde-format
 msgid "Archive old events to a separate file"
 msgstr ""
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:213
+#: kcalprefs.kcfg:214
 #, fuzzy, kde-format
 msgid "Full &name"
 msgstr "Igama &elipheleleyo:"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:214
+#: kcalprefs.kcfg:215
 #, kde-format
 msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
@@ -838,13 +844,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:218
+#: kcalprefs.kcfg:219
 #, fuzzy, kde-format
 msgid "E&mail address"
 msgstr "I&dilesi ye email:"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:219
+#: kcalprefs.kcfg:220
 #, kde-format
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
@@ -852,13 +858,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:231
+#: kcalprefs.kcfg:232
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:232
+#: kcalprefs.kcfg:233
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -867,7 +873,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:233
+#: kcalprefs.kcfg:234
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr ""
@@ -7360,11 +7366,6 @@ msgstr ""
 #~ msgctxt "@info:tooltip"
 #~ msgid "Set the start time"
 #~ msgstr "Ixesha Lokuqala"
-
-#, fuzzy
-#~ msgctxt "@info:whatsthis"
-#~ msgid "Select the starting time for this event."
-#~ msgstr "Cima iziganeko ezindala"
 
 #, fuzzy
 #~ msgctxt "@option:check"

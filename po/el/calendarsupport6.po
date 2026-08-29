@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-25 00:46+0000\n"
+"POT-Creation-Date: 2026-08-29 00:46+0000\n"
 "PO-Revision-Date: 2024-09-19 14:03+0300\n"
 "Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -712,8 +712,15 @@ msgstr "Προκαθορισμένη χρονική μονάδα για υπεν
 msgid "Day begins at"
 msgstr "Η ημέρα αρχίζει στις"
 
-#. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
+#. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
+#, fuzzy, kde-format
+#| msgid "By default, enable reminders for new events"
+msgid "Set the default starting time for new events"
+msgstr "Εξ ορισμού, να ενεργοποιηθούν οι υπενθυμίσεις για νέα γεγονότα"
+
+#. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
+#: kcalprefs.kcfg:109
 #, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
@@ -723,13 +730,13 @@ msgstr ""
 "νωρίτερα από όλες τις άλλες ώρες που χρησιμοποιείτε για γεγονότα."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:112
+#: kcalprefs.kcfg:113
 #, kde-format
 msgid "Exclude holidays"
 msgstr "Εξαιρούνται οι αργίες"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:113
+#: kcalprefs.kcfg:114
 #, kde-format
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
@@ -739,13 +746,13 @@ msgstr ""
 "εργάσιμες ώρες στις αργίες."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:117
+#: kcalprefs.kcfg:118
 #, kde-format
 msgid "Use holiday regions:"
 msgstr "Χρήση περιοχών αργιών:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:118
+#: kcalprefs.kcfg:119
 #, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
@@ -756,20 +763,20 @@ msgstr ""
 "ημερομηνιών, στην προβολή ατζέντας, κτλ."
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:121
+#: kcalprefs.kcfg:122
 #, fuzzy, kde-format
 #| msgid "Use holiday regions:"
 msgid "Select holiday categories:"
 msgstr "Χρήση περιοχών αργιών:"
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:122
+#: kcalprefs.kcfg:123
 #, kde-format
 msgid "Select which holiday categories to display"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:123
+#: kcalprefs.kcfg:124
 #, kde-format
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
@@ -777,13 +784,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:129
+#: kcalprefs.kcfg:130
 #, kde-format
 msgid "Use Groupware communication"
 msgstr "Χρήση επικοινωνίας groupware"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:130
+#: kcalprefs.kcfg:131
 #, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
@@ -799,25 +806,25 @@ msgstr ""
 "ως πελάτη Kolab του KDE)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:134
+#: kcalprefs.kcfg:135
 #, kde-format
 msgid "Default policy for invitations to other users:"
 msgstr "Προκαθορισμένη πολιτική προσκλήσεων σε άλλους χρήστες:"
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:137
+#: kcalprefs.kcfg:138
 #, kde-format
 msgid "Send mails without asking."
 msgstr "Αποστολή μηνυμάτων αλληλογραφίας χωρίς ερώτηση."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:140
+#: kcalprefs.kcfg:141
 #, kde-format
 msgid "Ask for every individual attendee what to do."
 msgstr "Να γίνεται ερώτηση τι πρέπει να γίνει για κάθε συμμετέχοντα."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:143
+#: kcalprefs.kcfg:144
 #, kde-format
 msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
@@ -827,7 +834,7 @@ msgstr ""
 "ματαιώσει τον χρονοπρογραμματισμό ομάδων για πελάτες με iTip συμμόρφωση)."
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: kcalprefs.kcfg:154
+#: kcalprefs.kcfg:155
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
@@ -835,13 +842,13 @@ msgstr ""
 "γεγονότος και των προς υλοποίηση εργασιών."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:161
+#: kcalprefs.kcfg:162
 #, kde-format
 msgid "Regularly archive events"
 msgstr "Τακτική αρχειοθέτηση γεγονότων"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:165
+#: kcalprefs.kcfg:166
 #, kde-format
 msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
@@ -851,73 +858,73 @@ msgstr ""
 "ποσό θα αρχειοθετηθούν. Η μονάδα της τιμής αυτής ορίζεται σε άλλο πεδίο."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:169
+#: kcalprefs.kcfg:170
 #, kde-format
 msgid "The unit in which the expiry time is expressed."
 msgstr "Η μονάδα στην οποία εκφράζεται ο χρόνος λήξης."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:172
+#: kcalprefs.kcfg:173
 #, kde-format
 msgid "In days"
 msgstr "Σε ημέρες"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:175
+#: kcalprefs.kcfg:176
 #, kde-format
 msgid "In weeks"
 msgstr "Σε εβδομάδες"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:178
+#: kcalprefs.kcfg:179
 #, kde-format
 msgid "In months"
 msgstr "Σε μήνες"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:184
+#: kcalprefs.kcfg:185
 #, kde-format
 msgid "URL of the file where old events should be archived"
 msgstr "Το URL του αρχείου στο οποίο θα γίνει αρχειοθέτηση παλαιών γεγονότων"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:187
+#: kcalprefs.kcfg:188
 #, kde-format
 msgid "Archive events"
 msgstr "Αρχειοθέτηση γεγονότων"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:191
+#: kcalprefs.kcfg:192
 #, kde-format
 msgid "Archive to-dos"
 msgstr "Αρχειοθέτηση εργασιών προς υλοποίηση"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:195
+#: kcalprefs.kcfg:196
 #, kde-format
 msgid "What to do when archiving"
 msgstr "Ενέργειες κατά την αρχειοθέτηση"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:198
+#: kcalprefs.kcfg:199
 #, kde-format
 msgid "Delete old events"
 msgstr "Διαγραφή παλαιών γεγονότων"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:201
+#: kcalprefs.kcfg:202
 #, kde-format
 msgid "Archive old events to a separate file"
 msgstr "Αρχειοθέτηση παλαιών γεγονότων σε ξεχωριστό αρχείο"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:213
+#: kcalprefs.kcfg:214
 #, kde-format
 msgid "Full &name"
 msgstr "Πλήρες ό&νομα"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:214
+#: kcalprefs.kcfg:215
 #, kde-format
 msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
@@ -927,13 +934,13 @@ msgstr ""
 "\" στις προς υλοποίηση εργασίες και στα γεγονότα που δημιουργείτε."
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:218
+#: kcalprefs.kcfg:219
 #, kde-format
 msgid "E&mail address"
 msgstr "Διεύθυνση ηλ. α&λληλογραφίας"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:219
+#: kcalprefs.kcfg:220
 #, kde-format
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
@@ -945,13 +952,13 @@ msgstr ""
 "δημιουργείτε."
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:231
+#: kcalprefs.kcfg:232
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr "«Χωρίς ετικέτα» χρώμα (για σχήματα σχεδίων «Μοναδική ετικέτα»)"
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:232
+#: kcalprefs.kcfg:233
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -964,7 +971,7 @@ msgstr ""
 "ατζέντας ή του μήνα με χρήση του σχήματος «Μοναδική ετικέτα»."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:233
+#: kcalprefs.kcfg:234
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr ""

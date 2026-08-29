@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-25 00:46+0000\n"
+"POT-Creation-Date: 2026-08-29 00:46+0000\n"
 "PO-Revision-Date: 2008-01-01 23:20+0200\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian (Official spelling) <i18n@mova.org>\n"
@@ -690,8 +690,14 @@ msgstr "Час сустрэчы па ўмаўчаньні"
 msgid "Day begins at"
 msgstr "Дзень пачынаецца ў"
 
-#. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
+#. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
+#, fuzzy, kde-format
+msgid "Set the default starting time for new events"
+msgstr "Час пачатку задачы."
+
+#. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
+#: kcalprefs.kcfg:109
 #, fuzzy, kde-format
 msgid ""
 "Enter the start time for events here. This time should be the earliest time "
@@ -699,13 +705,13 @@ msgid ""
 msgstr "Пакажыце самы ранні час пачатку новых падзей."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:112
+#: kcalprefs.kcfg:113
 #, kde-format
 msgid "Exclude holidays"
 msgstr "Выключыць сьвяты"
 
 #. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
-#: kcalprefs.kcfg:113
+#: kcalprefs.kcfg:114
 #, fuzzy, kde-format
 msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
@@ -713,13 +719,13 @@ msgid ""
 msgstr "Не паказваць працоўныя гадзіны ў святы."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:117
+#: kcalprefs.kcfg:118
 #, fuzzy, kde-format
 msgid "Use holiday regions:"
 msgstr "Паказваць святы:"
 
 #. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
-#: kcalprefs.kcfg:118
+#: kcalprefs.kcfg:119
 #, fuzzy, kde-format
 msgid ""
 "Select which regions you want to use the holidays here. Defined holidays are "
@@ -729,20 +735,20 @@ msgstr ""
 "будуць паказаныя ў каляндары як непрацоўныя."
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:121
+#: kcalprefs.kcfg:122
 #, fuzzy, kde-format
 #| msgid "Select Cate&gories..."
 msgid "Select holiday categories:"
 msgstr "Выбраць катэ&горыі..."
 
 #. i18n: ectx: tooltip, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:122
+#: kcalprefs.kcfg:123
 #, kde-format
 msgid "Select which holiday categories to display"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
-#: kcalprefs.kcfg:123
+#: kcalprefs.kcfg:124
 #, kde-format
 msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
@@ -750,13 +756,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:129
+#: kcalprefs.kcfg:130
 #, fuzzy, kde-format
 msgid "Use Groupware communication"
 msgstr "Выкарыстаць сервер сумеснай працы"
 
 #. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: kcalprefs.kcfg:130
+#: kcalprefs.kcfg:131
 #, fuzzy, kde-format
 msgid ""
 "Check this box to enable automatic generation of mails when creating, "
@@ -769,25 +775,25 @@ msgstr ""
 "(напрыклад, выкарыстаеце Kontact як кліент KDE Kolab)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:134
+#: kcalprefs.kcfg:135
 #, kde-format
 msgid "Default policy for invitations to other users:"
 msgstr ""
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:137
+#: kcalprefs.kcfg:138
 #, kde-format
 msgid "Send mails without asking."
 msgstr ""
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:140
+#: kcalprefs.kcfg:141
 #, kde-format
 msgid "Ask for every individual attendee what to do."
 msgstr ""
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
-#: kcalprefs.kcfg:143
+#: kcalprefs.kcfg:144
 #, kde-format
 msgid ""
 "Do not send invitation emails at all (this can break group scheduling for "
@@ -795,19 +801,19 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: kcalprefs.kcfg:154
+#: kcalprefs.kcfg:155
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
 msgstr ""
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:161
+#: kcalprefs.kcfg:162
 #, fuzzy, kde-format
 msgid "Regularly archive events"
 msgstr "Рэгулярна архіваваць падзеі"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:165
+#: kcalprefs.kcfg:166
 #, fuzzy, kde-format
 msgid ""
 "If auto-archiving is enabled, events older than this amount will be "
@@ -818,74 +824,74 @@ msgstr ""
 "ў іншым полі."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:169
+#: kcalprefs.kcfg:170
 #, fuzzy, kde-format
 msgid "The unit in which the expiry time is expressed."
 msgstr "Адзінка часу азначэння перыяду састарэння."
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:172
+#: kcalprefs.kcfg:173
 #, kde-format
 msgid "In days"
 msgstr "У днях"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:175
+#: kcalprefs.kcfg:176
 #, kde-format
 msgid "In weeks"
 msgstr "У тыднях"
 
 #. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: kcalprefs.kcfg:178
+#: kcalprefs.kcfg:179
 #, kde-format
 msgid "In months"
 msgstr "У месяцах"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:184
+#: kcalprefs.kcfg:185
 #, fuzzy, kde-format
 msgid "URL of the file where old events should be archived"
 msgstr ""
 "Спасылка або імя лакальнага файла, у які будуць архівавацца састарэлыя падзеі"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:187
+#: kcalprefs.kcfg:188
 #, fuzzy, kde-format
 msgid "Archive events"
 msgstr "Архіваваць падзеі"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:191
+#: kcalprefs.kcfg:192
 #, fuzzy, kde-format
 msgid "Archive to-dos"
 msgstr "Ачыстка выкананых заданьняў"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:195
+#: kcalprefs.kcfg:196
 #, fuzzy, kde-format
 msgid "What to do when archiving"
 msgstr "Як архіваваць"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:198
+#: kcalprefs.kcfg:199
 #, kde-format
 msgid "Delete old events"
 msgstr "Выдаліць старыя падзеі"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
-#: kcalprefs.kcfg:201
+#: kcalprefs.kcfg:202
 #, fuzzy, kde-format
 msgid "Archive old events to a separate file"
 msgstr "Архіваваць састарэлыя падзеі ў асобны файл"
 
 #. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:213
+#: kcalprefs.kcfg:214
 #, fuzzy, kde-format
 msgid "Full &name"
 msgstr "Поўнае &імя:"
 
 #. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: kcalprefs.kcfg:214
+#: kcalprefs.kcfg:215
 #, fuzzy, kde-format
 msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
@@ -895,13 +901,13 @@ msgstr ""
 "вамі падзей і задач."
 
 #. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:218
+#: kcalprefs.kcfg:219
 #, fuzzy, kde-format
 msgid "E&mail address"
 msgstr "Адрас электроннай &пошты:"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: kcalprefs.kcfg:219
+#: kcalprefs.kcfg:220
 #, fuzzy, kde-format
 msgid ""
 "Enter here your e-mail address. This e-mail address will be used to identify "
@@ -911,13 +917,13 @@ msgstr ""
 "як арганізатарам падзей і задач, якія вы створыце."
 
 #. i18n: ectx: label, entry, group (Colors)
-#: kcalprefs.kcfg:231
+#: kcalprefs.kcfg:232
 #, kde-format
 msgid "\"No tag\" color (for \"Only tag\" drawing schemes)"
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry, group (Colors)
-#: kcalprefs.kcfg:232
+#: kcalprefs.kcfg:233
 #, kde-format
 msgid ""
 "Select a color to use for the \"no tag\" or \"unset tag\" situation, when an "
@@ -926,7 +932,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: tooltip, entry, group (Colors)
-#: kcalprefs.kcfg:233
+#: kcalprefs.kcfg:234
 #, kde-format
 msgid "Use this color when drawing items without any tags"
 msgstr ""
@@ -9769,11 +9775,6 @@ msgstr ""
 #, fuzzy
 #~ msgctxt "@info:tooltip"
 #~ msgid "Set the start time"
-#~ msgstr "Час пачатку задачы."
-
-#, fuzzy
-#~ msgctxt "@info:whatsthis"
-#~ msgid "Select the starting time for this event."
 #~ msgstr "Час пачатку задачы."
 
 #, fuzzy
