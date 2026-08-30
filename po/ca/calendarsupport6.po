@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-29 00:46+0000\n"
-"PO-Revision-Date: 2026-05-05 09:05+0200\n"
+"PO-Revision-Date: 2026-08-29 08:45+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -699,12 +699,9 @@ msgstr "El dia comença a les"
 
 #. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
-#, fuzzy, kde-format
-#| msgid "By default, enable reminders for new events"
+#, kde-format
 msgid "Set the default starting time for new events"
-msgstr ""
-"De manera predeterminada, habilita els recordatoris per als esdeveniments "
-"nous"
+msgstr "Defineix l'hora d'inici predeterminada per als esdeveniments nous"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:109
@@ -2069,7 +2066,7 @@ msgstr "&Orientació de la pàgina:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
-msgstr "Estableix l'orientació de la impressió"
+msgstr "Defineix l'orientació de la impressió"
 
 #: printing/calprinter.cpp:196
 #, kde-format
