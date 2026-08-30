@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-21 00:45+0000\n"
-"PO-Revision-Date: 2026-05-07 13:12+0400\n"
+"PO-Revision-Date: 2026-08-29 11:04+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -2804,7 +2804,7 @@ msgstr "نوع المجلد:"
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
-msgstr "بلا"
+msgstr "لا شيء"
 
 #: utils.cpp:426
 #, kde-format
