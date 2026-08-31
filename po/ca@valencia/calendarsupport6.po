@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-21 00:45+0000\n"
-"PO-Revision-Date: 2026-05-05 09:05+0200\n"
+"PO-Revision-Date: 2026-08-29 08:45+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -2059,7 +2059,7 @@ msgstr "&Orientació de la pàgina:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
-msgstr "Establix l'orientació de la impressió"
+msgstr "Definix l'orientació de la impressió"
 
 #: printing/calprinter.cpp:196
 #, kde-format
