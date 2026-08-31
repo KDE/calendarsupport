@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-29 00:46+0000\n"
-"PO-Revision-Date: 2026-05-05 16:04+0200\n"
+"PO-Revision-Date: 2026-08-30 16:38+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -701,11 +701,9 @@ msgstr "Il giorno comincia alle"
 
 #. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
-#, fuzzy, kde-format
-#| msgctxt "@info:whatsthis"
-#| msgid "Select the starting time for this event."
+#, kde-format
 msgid "Set the default starting time for new events"
-msgstr "Imposta l'orario di inizio per questo evento."
+msgstr "Imposta l'ora predefinita di inizio per i nuovi eventi"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:109
