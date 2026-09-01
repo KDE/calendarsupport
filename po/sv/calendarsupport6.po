@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-29 00:46+0000\n"
-"PO-Revision-Date: 2026-07-05 17:24+0200\n"
+"PO-Revision-Date: 2026-08-31 18:25+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 26.04.2\n"
+"X-Generator: Lokalize 26.08.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -676,7 +676,7 @@ msgstr ""
 #: kcalprefs.kcfg:100
 #, kde-format
 msgid "Default time unit for reminders"
-msgstr "Standardtid för påminnelser"
+msgstr "Standardtidsenhet för påminnelser"
 
 #. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:107
@@ -686,10 +686,9 @@ msgstr "Dagen börjar"
 
 #. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
-#, fuzzy, kde-format
-#| msgid "By default, enable reminders for new events"
+#, kde-format
 msgid "Set the default starting time for new events"
-msgstr "Aktivera normalt påminnelser för nya händelser"
+msgstr "Ställ in normal starttid för nya händelser"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:109
@@ -698,8 +697,8 @@ msgid ""
 "Enter the start time for events here. This time should be the earliest time "
 "that you use for events."
 msgstr ""
-"Skriv in händelsens standardtid här. Standardtiden används om du inte anger "
-"en starttid."
+"Skriv in starttid för händelser här. Tiden ska vara den tidigaste tiden som "
+"används för händelser."
 
 #. i18n: ectx: label, entry, group (Time &amp; Date)
 #: kcalprefs.kcfg:113

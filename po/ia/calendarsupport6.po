@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-29 00:46+0000\n"
-"PO-Revision-Date: 2026-05-06 11:06+0200\n"
+"PO-Revision-Date: 2026-08-31 12:22+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -689,10 +689,9 @@ msgstr "Die initia a"
 
 #. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
-#, fuzzy, kde-format
-#| msgid "By default, enable reminders for new events"
+#, kde-format
 msgid "Set the default starting time for new events"
-msgstr "Per definition, habilita mementos per nove eventos"
+msgstr "Assigna le tempore de initiar predefinite  per nove eventos"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:109
