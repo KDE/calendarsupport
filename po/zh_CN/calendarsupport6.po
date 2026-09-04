@@ -652,10 +652,9 @@ msgstr "一天开始于"
 
 #. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
-#, fuzzy, kde-format
-#| msgid "By default, enable reminders for new events"
+#, kde-format
 msgid "Set the default starting time for new events"
-msgstr "对新建事件默认启用提醒"
+msgstr "设置新事件的默认开始时间"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:109
