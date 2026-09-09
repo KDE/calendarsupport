@@ -121,7 +121,7 @@ void CalPrintYear::print(QPainter &p, int width, int height)
     QDate temp(start);
     const int months = 12;
     int maxdays = 1;
-    for (int i = 1; i < months; ++i) {
+    for (int i = 1; i <= months; ++i) {
         maxdays = qMax(maxdays, temp.daysInMonth());
         temp = temp.addMonths(1);
     }
