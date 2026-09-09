@@ -889,6 +889,7 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
         auto placeItem = static_cast<PrintCellItem *>(it2.next());
         drawAgendaItem(placeItem, p, startPrintDate, endPrintDate, minlen, newbox, includeDescription, includeCategories, excludeTime);
     }
+    qDeleteAll(cells);
 }
 
 void CalPrintPluginBase::drawAgendaItem(PrintCellItem *item,
@@ -1462,6 +1463,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays
     p.setFont(oldfont);
     drawBox(p, BOX_BORDER_WIDTH, borderBox);
     p.restore();
+    qDeleteAll(timeboxItems);
 }
 
 void CalPrintPluginBase::drawMonthTable(QPainter &p,
