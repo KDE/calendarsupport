@@ -408,7 +408,6 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     str += QLatin1StringView("<br>");
     str += QLatin1StringView("<i>") + i18n("Content type:") + QLatin1StringView("</i>");
     str += QLatin1StringView("&nbsp;") + mimeTypeStr;
-    str += QLatin1StringView("</br>");
 
     // Read only?
     bool const isReadOnly = !(coll.rights() & Akonadi::Collection::CanChangeItem);
@@ -420,7 +419,6 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     } else {
         str += i18nc("the calendar is read and write", "read+write");
     }
-    str += QLatin1StringView("</br>");
 
     // Blocking reminders?
     QStringList blockList;
@@ -447,7 +445,6 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool ric
     str += QLatin1StringView("<i>") + i18n("Blocked Reminders:") + QLatin1StringView("</i>");
     str += QLatin1StringView("&nbsp;");
     str += QLocale().createSeparatedList(blockList);
-    str += QLatin1StringView("</br>");
 
     str += QLatin1StringView("</qt>");
     return str;
