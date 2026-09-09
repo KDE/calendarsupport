@@ -238,8 +238,6 @@ void KCalPrefs::readPrefs()
 
 void KCalPrefs::usrRead()
 {
-    KConfigGroup const generalConfig(config(), u"General"_s);
-
     KConfigGroup const defaultCalendarConfig(config(), u"Calendar"_s);
     // The default calendars are stored by stable remote path. When a path is present it is
     // authoritative and the id is left invalid until resolved from it (a bare id can silently
@@ -272,8 +270,6 @@ bool KCalPrefs::savePrefs()
 
 bool KCalPrefs::usrSave()
 {
-    KConfigGroup const generalConfig(config(), u"General"_s);
-
     KConfigGroup defaultCalendarConfig(config(), u"Calendar"_s);
     // Persist the stable path and drop the legacy numeric id once we have one. If no path could be
     // determined yet (no model was set this run), keep the legacy id rather than lose the setting.
