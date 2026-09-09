@@ -81,7 +81,6 @@ QVariant FreePeriodModel::headerData(int section, Qt::Orientation orientation, i
 void FreePeriodModel::slotNewFreePeriods(const KCalendarCore::Period::List &freePeriods)
 {
     beginResetModel();
-    mPeriodList.clear();
     mPeriodList = splitPeriodsByDay(freePeriods);
     std::sort(mPeriodList.begin(), mPeriodList.end());
     endResetModel();
