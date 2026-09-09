@@ -237,6 +237,7 @@ bool AttachmentHandler::saveAs(const Attachment &attachment)
             if (!stat && job->error()) {
                 KMessageBox::error(d->mParent, job->errorString());
             }
+            s_tempFile->setAutoRemove(true);
         } else {
             stat = false;
             KMessageBox::error(d->mParent, i18n("Unable to create a temporary file for the attachment."));
