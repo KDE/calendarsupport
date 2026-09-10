@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-29 00:46+0000\n"
+"POT-Creation-Date: 2026-09-10 00:47+0000\n"
 "PO-Revision-Date: 2012-12-25 15:13+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -341,7 +341,7 @@ msgid ""
 msgstr ""
 "ការ​អញ្ជើញ​ប្រតិទិន​ដែល​រក្សាទុក​ក្នុង​សារ​អ៊ីមែល​​ត្រូវ​បានខូច​ក្នុង​មធ្យោបាយ​មួយ​ចំនួន​ ។​ មិន​​អាច​បន្ត​បាន​ឡើយ​ ។"
 
-#: attachmenthandler.cpp:188 attachmenthandler.cpp:242
+#: attachmenthandler.cpp:188 attachmenthandler.cpp:243
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "មិន​អាច​បង្កើត​ឯកសារ​បណ្ដោះអាសន្ន​ សម្រាប់​ឯកសារ​ភ្ជាប់​បាន​ឡើយ​ ។"
@@ -443,14 +443,14 @@ msgstr "មិន​ស្គាល់​ឈ្មោះ"
 msgid "Attendee"
 msgstr "បាន​យក​អ្នក​ចូលរួម​ចេញ"
 
-#: freebusymodel/freeperiodmodel.cpp:125
+#: freebusymodel/freeperiodmodel.cpp:124
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
 msgstr "%1%"
 
-#: freebusymodel/freeperiodmodel.cpp:142
+#: freebusymodel/freeperiodmodel.cpp:141
 #, fuzzy, kde-format
 #| msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
 #| msgid "%1's %2 Kolab %3"
@@ -461,7 +461,7 @@ msgctxt ""
 msgid "%1 %2, %3 to %4"
 msgstr "%2 Kolab %3 របស់ %1"
 
-#: freebusymodel/freeperiodmodel.cpp:163
+#: freebusymodel/freeperiodmodel.cpp:162
 #, fuzzy, kde-format
 #| msgctxt "starttime - endtime summary, location"
 #| msgid "%1-%2 %3, %4"
@@ -471,13 +471,13 @@ msgctxt ""
 msgid "%1, %2 %3, %4 to %5"
 msgstr "%1-%2 %3, %4"
 
-#: freebusymodel/freeperiodmodel.cpp:177
+#: freebusymodel/freeperiodmodel.cpp:176
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
 msgstr ""
 
-#: freebusymodel/freeperiodmodel.cpp:179
+#: freebusymodel/freeperiodmodel.cpp:178
 #, fuzzy, kde-format
 #| msgctxt "@title:column, calendar event start date and time"
 #| msgid "Start date and time"
@@ -485,13 +485,13 @@ msgctxt "@info:tooltip period start time"
 msgid "Start:"
 msgstr "កាលបរិច្ឆេទ និង​ពេលវេលា​ចាប់ផ្ដើម"
 
-#: freebusymodel/freeperiodmodel.cpp:182
+#: freebusymodel/freeperiodmodel.cpp:181
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
 msgstr ""
 
-#: freebusymodel/freeperiodmodel.cpp:185
+#: freebusymodel/freeperiodmodel.cpp:184
 #, fuzzy, kde-format
 #| msgctxt "incidence category"
 #| msgid "Education"
@@ -1912,15 +1912,15 @@ msgstr "ការ​កំណត់ ៖"
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:927
-#: printing/calprintpluginbase.cpp:1067 printing/calprintpluginbase.cpp:1124
+#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:928
+#: printing/calprintpluginbase.cpp:1068 printing/calprintpluginbase.cpp:1125
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:946
-#: printing/calprintpluginbase.cpp:1070
+#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:947
+#: printing/calprintpluginbase.cpp:1071
 #, fuzzy, kde-format
 #| msgctxt "summary, location"
 #| msgid "%1, %2"
@@ -2036,7 +2036,7 @@ msgid "To-do list"
 msgstr "ត្រូវ​ធ្វើ​"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1726
+#: printing/calprintpluginbase.cpp:1728
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2589,19 +2589,19 @@ msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "បាន​បោះពុម្ព ៖ %1"
 
-#: printing/calprintpluginbase.cpp:932
+#: printing/calprintpluginbase.cpp:933
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1-%2 %3"
 
-#: printing/calprintpluginbase.cpp:938
+#: printing/calprintpluginbase.cpp:939
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:1005
+#: printing/calprintpluginbase.cpp:1006
 #, fuzzy, kde-format
 #| msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
 #| msgid "%1's %2 Kolab %3"
@@ -2609,26 +2609,26 @@ msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%2 Kolab %3 របស់ %1"
 
-#: printing/calprintpluginbase.cpp:1131
+#: printing/calprintpluginbase.cpp:1132
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (ដល់​កំណត់​ ៖​ %2)​"
 
-#: printing/calprintpluginbase.cpp:1136
+#: printing/calprintpluginbase.cpp:1137
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (ដល់​កំណត់​ ៖​ %2)​"
 
-#: printing/calprintpluginbase.cpp:1143
+#: printing/calprintpluginbase.cpp:1144
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "&To-dos"
 msgid "To-do: %1"
 msgstr "ត្រូវ​ធ្វើ​"
 
-#: printing/calprintpluginbase.cpp:1876
+#: printing/calprintpluginbase.cpp:1878
 #, fuzzy, kde-format
 #| msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
 #| msgid "%1's %2 Kolab %3"
@@ -2636,7 +2636,7 @@ msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%2 Kolab %3 របស់ %1"
 
-#: printing/calprintpluginbase.cpp:1882
+#: printing/calprintpluginbase.cpp:1884
 #, fuzzy, kde-format
 #| msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
 #| msgid "%1's %2 Kolab %3"
@@ -3059,61 +3059,61 @@ msgstr "គ្មាន"
 msgid "Content type:"
 msgstr "ប្រតិទិន"
 
-#: utils.cpp:416
+#: utils.cpp:415
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:419
+#: utils.cpp:418
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr ""
 
-#: utils.cpp:421
+#: utils.cpp:420
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr ""
 
-#: utils.cpp:429
+#: utils.cpp:427
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:432
+#: utils.cpp:430
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr ""
 
-#: utils.cpp:434
+#: utils.cpp:432
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr ""
 
-#: utils.cpp:436
+#: utils.cpp:434
 #, fuzzy, kde-format
 #| msgid "Send Email"
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "ផ្ញើ​អ៊ីមែល"
 
-#: utils.cpp:438
+#: utils.cpp:436
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr ""
 
-#: utils.cpp:440
+#: utils.cpp:438
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:444
+#: utils.cpp:442
 #, fuzzy, kde-format
 #| msgctxt "no status"
 #| msgid "none"
@@ -3121,21 +3121,21 @@ msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "គ្មាន"
 
-#: utils.cpp:447
+#: utils.cpp:445
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "Block reminders locally"
 msgid "Blocked Reminders:"
 msgstr "ទប់ស្កាត់​ការ​រំលឹកមូលដ្ឋាន"
 
-#: utils.cpp:514
+#: utils.cpp:511
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:516
+#: utils.cpp:513
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -3144,7 +3144,7 @@ msgstr "%1%"
 msgid "%1 (%2)"
 msgstr "%1 (%2) ៖ %3"
 
-#: utils.cpp:521
+#: utils.cpp:518
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

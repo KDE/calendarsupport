@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-29 00:46+0000\n"
+"POT-Creation-Date: 2026-09-10 00:47+0000\n"
 "PO-Revision-Date: 2016-03-20 14:17+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -325,7 +325,7 @@ msgstr ""
 "Календарска позивница складиштена у овој поруци е‑поште некако је искварена. "
 "Не могу да наставим."
 
-#: attachmenthandler.cpp:188 attachmenthandler.cpp:242
+#: attachmenthandler.cpp:188 attachmenthandler.cpp:243
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Не могу да направим привремени фајл за прилог."
@@ -427,13 +427,13 @@ msgstr "непознато"
 msgid "Attendee"
 msgstr "присутни"
 
-#: freebusymodel/freeperiodmodel.cpp:125
+#: freebusymodel/freeperiodmodel.cpp:124
 #, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
 msgstr "%1,"
 
-#: freebusymodel/freeperiodmodel.cpp:142
+#: freebusymodel/freeperiodmodel.cpp:141
 #, kde-format
 msgctxt ""
 "@label A time period duration. It is preceded/followed (based on the "
@@ -442,7 +442,7 @@ msgctxt ""
 msgid "%1 %2, %3 to %4"
 msgstr "%1 %2, %3 до %4"
 
-#: freebusymodel/freeperiodmodel.cpp:163
+#: freebusymodel/freeperiodmodel.cpp:162
 #, kde-format
 msgctxt ""
 "@label A time period duration. KLocale is used to format the components. "
@@ -450,25 +450,25 @@ msgctxt ""
 msgid "%1, %2 %3, %4 to %5"
 msgstr "%1, %2 %3, %4 до %5"
 
-#: freebusymodel/freeperiodmodel.cpp:177
+#: freebusymodel/freeperiodmodel.cpp:176
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
 msgstr "Слободан период."
 
-#: freebusymodel/freeperiodmodel.cpp:179
+#: freebusymodel/freeperiodmodel.cpp:178
 #, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
 msgstr "Почетак:"
 
-#: freebusymodel/freeperiodmodel.cpp:182
+#: freebusymodel/freeperiodmodel.cpp:181
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
 msgstr "Завршетак:"
 
-#: freebusymodel/freeperiodmodel.cpp:185
+#: freebusymodel/freeperiodmodel.cpp:184
 #, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
@@ -1884,15 +1884,15 @@ msgstr "Поставке: "
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:927
-#: printing/calprintpluginbase.cpp:1067 printing/calprintpluginbase.cpp:1124
+#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:928
+#: printing/calprintpluginbase.cpp:1068 printing/calprintpluginbase.cpp:1125
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:946
-#: printing/calprintpluginbase.cpp:1070
+#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:947
+#: printing/calprintpluginbase.cpp:1071
 #, fuzzy, kde-format
 #| msgctxt "summary, location"
 #| msgid "%1, %2"
@@ -2001,7 +2001,7 @@ msgid "To-do list"
 msgstr "Списак обавеза"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1726
+#: printing/calprintpluginbase.cpp:1728
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2517,42 +2517,42 @@ msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "штампано: %1"
 
-#: printing/calprintpluginbase.cpp:932
+#: printing/calprintpluginbase.cpp:933
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1–%2 %3"
 
-#: printing/calprintpluginbase.cpp:938
+#: printing/calprintpluginbase.cpp:939
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1–%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:1005
+#: printing/calprintpluginbase.cpp:1006
 #, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1, %2 %3"
 
-#: printing/calprintpluginbase.cpp:1131
+#: printing/calprintpluginbase.cpp:1132
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (рок: %2)"
 
-#: printing/calprintpluginbase.cpp:1136
+#: printing/calprintpluginbase.cpp:1137
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (рок: %2)"
 
-#: printing/calprintpluginbase.cpp:1143
+#: printing/calprintpluginbase.cpp:1144
 #, kde-format
 msgid "To-do: %1"
 msgstr "Обавеза: %1"
 
-#: printing/calprintpluginbase.cpp:1876
+#: printing/calprintpluginbase.cpp:1878
 #, fuzzy, kde-format
 #| msgctxt "Date range: Month dayStart - dayEnd"
 #| msgid "%1 %2 - %3"
@@ -2560,7 +2560,7 @@ msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2 — %3"
 
-#: printing/calprintpluginbase.cpp:1882
+#: printing/calprintpluginbase.cpp:1884
 #, fuzzy, kde-format
 #| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #| msgid "%1 %2 - %3 %4"
@@ -2957,60 +2957,60 @@ msgstr "нема"
 msgid "Content type:"
 msgstr "календар|/|$[својства _род м _број ј]"
 
-#: utils.cpp:416
+#: utils.cpp:415
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:419
+#: utils.cpp:418
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr ""
 
-#: utils.cpp:421
+#: utils.cpp:420
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr ""
 
-#: utils.cpp:429
+#: utils.cpp:427
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:432
+#: utils.cpp:430
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr ""
 
-#: utils.cpp:434
+#: utils.cpp:432
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr ""
 
-#: utils.cpp:436
+#: utils.cpp:434
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr ""
 
-#: utils.cpp:438
+#: utils.cpp:436
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr ""
 
-#: utils.cpp:440
+#: utils.cpp:438
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:444
+#: utils.cpp:442
 #, fuzzy, kde-format
 #| msgctxt "no status"
 #| msgid "none"
@@ -3018,20 +3018,20 @@ msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "нема"
 
-#: utils.cpp:447
+#: utils.cpp:445
 #, fuzzy, kde-format
 #| msgid "No reminders"
 msgid "Blocked Reminders:"
 msgstr "Нема подсетника."
 
-#: utils.cpp:514
+#: utils.cpp:511
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:516
+#: utils.cpp:513
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -3040,7 +3040,7 @@ msgstr "%1%"
 msgid "%1 (%2)"
 msgstr "%1 (%2): %3"
 
-#: utils.cpp:521
+#: utils.cpp:518
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-29 00:46+0000\n"
+"POT-Creation-Date: 2026-09-10 00:47+0000\n"
 "PO-Revision-Date: 2007-09-17 14:45+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -375,7 +375,7 @@ msgid ""
 "Unable to continue."
 msgstr ""
 
-#: attachmenthandler.cpp:188 attachmenthandler.cpp:242
+#: attachmenthandler.cpp:188 attachmenthandler.cpp:243
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr ""
@@ -478,14 +478,14 @@ msgstr "अज्ञात"
 msgid "Attendee"
 msgstr "सहभागी"
 
-#: freebusymodel/freeperiodmodel.cpp:125
+#: freebusymodel/freeperiodmodel.cpp:124
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
 msgstr "%1%"
 
-#: freebusymodel/freeperiodmodel.cpp:142
+#: freebusymodel/freeperiodmodel.cpp:141
 #, fuzzy, kde-format
 #| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #| msgid "%1 %2 - %3 %4"
@@ -496,7 +496,7 @@ msgctxt ""
 msgid "%1 %2, %3 to %4"
 msgstr "%1 %2 - %3 %4"
 
-#: freebusymodel/freeperiodmodel.cpp:163
+#: freebusymodel/freeperiodmodel.cpp:162
 #, fuzzy, kde-format
 #| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #| msgid "%1 %2 - %3 %4"
@@ -506,28 +506,28 @@ msgctxt ""
 msgid "%1, %2 %3, %4 to %5"
 msgstr "%1 %2 - %3 %4"
 
-#: freebusymodel/freeperiodmodel.cpp:177
+#: freebusymodel/freeperiodmodel.cpp:176
 #, fuzzy, kde-format
 #| msgid "Working Hours"
 msgctxt "@info:tooltip"
 msgid "Free Period"
 msgstr "कार्य घण्टा"
 
-#: freebusymodel/freeperiodmodel.cpp:179
+#: freebusymodel/freeperiodmodel.cpp:178
 #, fuzzy, kde-format
 #| msgid "&Start:"
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
 msgstr "सुरुआत:"
 
-#: freebusymodel/freeperiodmodel.cpp:182
+#: freebusymodel/freeperiodmodel.cpp:181
 #, fuzzy, kde-format
 #| msgid "&End:"
 msgctxt "@info:tooltip period end time"
 msgid "End:"
 msgstr "अन्त्य:"
 
-#: freebusymodel/freeperiodmodel.cpp:185
+#: freebusymodel/freeperiodmodel.cpp:184
 #, fuzzy, kde-format
 #| msgid "Duration: "
 msgctxt "@info:tooltip period duration"
@@ -1919,8 +1919,8 @@ msgstr "सेटिङ: "
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:927
-#: printing/calprintpluginbase.cpp:1067 printing/calprintpluginbase.cpp:1124
+#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:928
+#: printing/calprintpluginbase.cpp:1068 printing/calprintpluginbase.cpp:1125
 #, fuzzy, kde-format
 #| msgctxt "monthname year"
 #| msgid "%1 %2"
@@ -1928,8 +1928,8 @@ msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:946
-#: printing/calprintpluginbase.cpp:1070
+#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:947
+#: printing/calprintpluginbase.cpp:1071
 #, fuzzy, kde-format
 #| msgctxt "monthname year"
 #| msgid "%1 %2"
@@ -2036,7 +2036,7 @@ msgid "To-do list"
 msgstr "गर्नुपर्ने कार्यको सूची"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1726
+#: printing/calprintpluginbase.cpp:1728
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2579,7 +2579,7 @@ msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "पूर्वस्थितिमा फर्काउनुहोस् (%1)"
 
-#: printing/calprintpluginbase.cpp:932
+#: printing/calprintpluginbase.cpp:933
 #, fuzzy, kde-format
 #| msgctxt "weekday month date"
 #| msgid "%1 %2 %3"
@@ -2587,7 +2587,7 @@ msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1 %2 %3"
 
-#: printing/calprintpluginbase.cpp:938
+#: printing/calprintpluginbase.cpp:939
 #, fuzzy, kde-format
 #| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #| msgid "%1 %2 - %3 %4"
@@ -2595,7 +2595,7 @@ msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1 %2 - %3 %4"
 
-#: printing/calprintpluginbase.cpp:1005
+#: printing/calprintpluginbase.cpp:1006
 #, fuzzy, kde-format
 #| msgctxt "date, from - to"
 #| msgid "%1, %2 - %3"
@@ -2603,26 +2603,26 @@ msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1, %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1131
+#: printing/calprintpluginbase.cpp:1132
 #, fuzzy, kde-format
 #| msgid "  (Due: %1)"
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "  (म्याद समाप्त: %1)"
 
-#: printing/calprintpluginbase.cpp:1136
+#: printing/calprintpluginbase.cpp:1137
 #, fuzzy, kde-format
 #| msgid "  (Due: %1)"
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "  (म्याद समाप्त: %1)"
 
-#: printing/calprintpluginbase.cpp:1143
+#: printing/calprintpluginbase.cpp:1144
 #, kde-format
 msgid "To-do: %1"
 msgstr "गर्नुपर्ने कार्य: %1"
 
-#: printing/calprintpluginbase.cpp:1876
+#: printing/calprintpluginbase.cpp:1878
 #, fuzzy, kde-format
 #| msgctxt "Date range: Month dayStart - dayEnd"
 #| msgid "%1 %2 - %3"
@@ -2630,7 +2630,7 @@ msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1882
+#: printing/calprintpluginbase.cpp:1884
 #, fuzzy, kde-format
 #| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #| msgid "%1 %2 - %3 %4"
@@ -3023,93 +3023,93 @@ msgstr "(कुनै पनि होइन)"
 msgid "Content type:"
 msgstr "क्यालेन्डर"
 
-#: utils.cpp:416
+#: utils.cpp:415
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:419
+#: utils.cpp:418
 #, fuzzy, kde-format
 #| msgid "read-only"
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "पढ्ने मात्र"
 
-#: utils.cpp:421
+#: utils.cpp:420
 #, fuzzy, kde-format
 #| msgid "Overwrite"
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "अधिलेखन गर्नुहोस्"
 
-#: utils.cpp:429
+#: utils.cpp:427
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:432
+#: utils.cpp:430
 #, fuzzy, kde-format
 #| msgid "Audio"
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "अडियो"
 
-#: utils.cpp:434
+#: utils.cpp:432
 #, fuzzy, kde-format
 #| msgid "&Daily"
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "दैनिक"
 
-#: utils.cpp:436
+#: utils.cpp:434
 #, fuzzy, kde-format
 #| msgid "Email"
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "इमेल"
 
-#: utils.cpp:438
+#: utils.cpp:436
 #, fuzzy, kde-format
 #| msgid "Proceed"
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "बढाउनुहोस्"
 
-#: utils.cpp:440
+#: utils.cpp:438
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:444
+#: utils.cpp:442
 #, fuzzy, kde-format
 #| msgid "(None)"
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "(कुनै पनि होइन)"
 
-#: utils.cpp:447
+#: utils.cpp:445
 #, fuzzy, kde-format
 #| msgid "Edit Reminders"
 msgid "Blocked Reminders:"
 msgstr "स्मरणकर्ता सम्पादन गर्नुहोस्"
 
-#: utils.cpp:514
+#: utils.cpp:511
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:516
+#: utils.cpp:513
 #, fuzzy, kde-format
 #| msgctxt "short_weekday date (e.g. Mon 13)"
 #| msgid "%1 %2"
 msgid "%1 (%2)"
 msgstr "%1 %2"
 
-#: utils.cpp:521
+#: utils.cpp:518
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
