@@ -362,10 +362,8 @@ Akonadi::Collection::List CalendarSupport::collectionsFromIndexes(const QModelIn
     return l;
 }
 
-QString CalendarSupport::toolTipString(const Akonadi::Collection &coll, bool richText)
+QString CalendarSupport::toolTipString(const Akonadi::Collection &coll)
 {
-    Q_UNUSED(richText)
-
     QString str = u"<qt>"_s;
 
     // Display Name

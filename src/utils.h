@@ -169,12 +169,11 @@ CALENDARSUPPORT_EXPORT QList<QDate> workDays(QDate start, QDate end);
  * useful information to the user.
  *
  * \a coll is the Akonadi collection representing the calendar.
- * \a richText switches off richText (on by default) [CURRENTLY UNIMPLEMENTED]
  *
  * Returns a QString containing the calendar info suitable for a toolTip.
  * \since 5.9
  */
-CALENDARSUPPORT_EXPORT QString toolTipString(const Akonadi::Collection &coll, bool richText = true);
+CALENDARSUPPORT_EXPORT QString toolTipString(const Akonadi::Collection &coll);
 
 /*!
  * Returns a list of holidays that occur at \a date.
