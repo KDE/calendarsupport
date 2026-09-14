@@ -26,6 +26,8 @@ using namespace Qt::Literals::StringLiterals;
 
 #include <KHolidays/HolidayRegion>
 
+#include <KCalUtils/IncidenceFormatter>
+
 #include <KCalendarCore/CalFilter>
 #include <KCalendarCore/FileStorage>
 #include <KCalendarCore/FreeBusy>
@@ -446,6 +448,16 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll)
 
     str += QLatin1StringView("</qt>");
     return str;
+}
+
+QString CalendarSupport::toolTipString(const QString &sourceName, const KCalendarCore::IncidenceBase::Ptr &incidence, QDate date)
+{
+    return KCalUtils::IncidenceFormatter::toolTipStr(sourceName, incidence, date);
+}
+
+QString CalendarSupport::extensiveDisplayString(const QString &sourceName, const KCalendarCore::IncidenceBase::Ptr &incidence, QDate date)
+{
+    return KCalUtils::IncidenceFormatter::extensiveDisplayStr(sourceName, incidence, date);
 }
 
 QString CalendarSupport::subMimeTypeForIncidence(const KCalendarCore::Incidence::Ptr &incidence)

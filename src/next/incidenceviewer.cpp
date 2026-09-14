@@ -21,8 +21,6 @@ using namespace Qt::Literals::StringLiterals;
 #include <Akonadi/ETMCalendar>
 #include <Akonadi/ItemFetchScope>
 
-#include <KCalUtils/IncidenceFormatter>
-
 #include <KJob>
 #include <QRegularExpression>
 #include <QTextBrowser>
@@ -74,9 +72,9 @@ public:
         QString text;
 
         if (mCurrentItem.isValid()) {
-            text = KCalUtils::IncidenceFormatter::extensiveDisplayStr(Akonadi::CalendarUtils::displayName(mETM, mParentCollection),
-                                                                      Akonadi::CalendarUtils::incidence(mCurrentItem),
-                                                                      mDate);
+            text = CalendarSupport::extensiveDisplayString(Akonadi::CalendarUtils::displayName(mETM, mParentCollection),
+                                                           Akonadi::CalendarUtils::incidence(mCurrentItem),
+                                                           mDate);
             text.prepend(mHeaderText);
             mBrowser->setHtml(text);
         } else {

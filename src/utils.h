@@ -176,6 +176,33 @@ CALENDARSUPPORT_EXPORT QList<QDate> workDays(QDate start, QDate end);
 CALENDARSUPPORT_EXPORT QString toolTipString(const Akonadi::Collection &coll);
 
 /*!
+  Create a QString representation of an Incidence in a nice format
+  suitable for using in a tooltip.
+  All dates and times are converted to local time for display.
+  \a sourceName where the incidence is from (e.g. resource name)
+  \a incidence is a pointer to the Incidence to be formatted.
+  \a date is the QDate for which the toolTip should be computed; used
+  mainly for recurring incidences. Note For to-dos, this a date between the
+  start date and the due date (inclusive) of the occurrence.
+
+  \since 6.9.0 (previously in kcalutils)
+*/
+CALENDARSUPPORT_EXPORT QString toolTipString(const QString &sourceName, const KCalendarCore::IncidenceBase::Ptr &incidence, QDate date = QDate());
+
+/*!
+  Create a RichText QString representation of an Incidence in a nice format
+  suitable for using in a viewer widget.
+  All dates and times are converted to local time for display.
+  \a sourceName where the incidence is from (e.g. resource name)
+  \a incidence is a pointer to the Incidence to be formatted.
+  \a date is the QDate for which the string representation should be computed;
+  used mainly for recurring incidences.
+
+  \since 6.9.0 (previously in kcalutils)
+*/
+CALENDARSUPPORT_EXPORT QString extensiveDisplayString(const QString &sourceName, const KCalendarCore::IncidenceBase::Ptr &incidence, QDate date = QDate());
+
+/*!
  * Returns a list of holidays that occur at \a date.
  * A list of categories can be used to filter the types of holidays that are returned.
  */
