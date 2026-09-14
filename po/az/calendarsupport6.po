@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-10 00:47+0000\n"
+"POT-Creation-Date: 2026-09-14 00:43+0000\n"
 "PO-Revision-Date: 2025-10-06 01:19+0400\n"
 "Last-Translator: linux <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -2852,7 +2852,7 @@ msgstr "Təqvim seçimi"
 msgid "Select the calendar where this item will be stored."
 msgstr "Bu element saxlanılacaq təqvimi seçmək."
 
-#: utils.cpp:381
+#: utils.cpp:379
 #, fuzzy, kde-format
 #| msgctxt "this is the default calendar"
 #| msgid "%1 (Default Calendar)"
@@ -2860,7 +2860,7 @@ msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "%1 (Standart Təqvim)"
 
-#: utils.cpp:383
+#: utils.cpp:381
 #, fuzzy, kde-format
 #| msgctxt "this is the default calendar"
 #| msgid "%1 (Default Calendar)"
@@ -2868,104 +2868,104 @@ msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "%1 (Standart Təqvim)"
 
-#: utils.cpp:394
+#: utils.cpp:392
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr "Virtual"
 
-#: utils.cpp:396
+#: utils.cpp:394
 #, kde-format
 msgid "Folder type:"
 msgstr "Qovluq növü:"
 
-#: utils.cpp:406
+#: utils.cpp:404
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "heç biri"
 
-#: utils.cpp:409
+#: utils.cpp:407
 #, kde-format
 msgid "Content type:"
 msgstr "Tərkibinin növü:"
 
-#: utils.cpp:415
+#: utils.cpp:413
 #, kde-format
 msgid "Rights:"
 msgstr "İmtiyazlar:"
 
-#: utils.cpp:418
+#: utils.cpp:416
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "yalnız oxumaq"
 
-#: utils.cpp:420
+#: utils.cpp:418
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "oxumaq+yazmaq"
 
-#: utils.cpp:427
+#: utils.cpp:425
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr "hamısı"
 
-#: utils.cpp:430
+#: utils.cpp:428
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "səs"
 
-#: utils.cpp:432
+#: utils.cpp:430
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "görüntü"
 
-#: utils.cpp:434
+#: utils.cpp:432
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "e-poçt"
 
-#: utils.cpp:436
+#: utils.cpp:434
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "prosedur"
 
-#: utils.cpp:438
+#: utils.cpp:436
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr "digər"
 
-#: utils.cpp:442
+#: utils.cpp:440
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "heç biri"
 
-#: utils.cpp:445
+#: utils.cpp:443
 #, kde-format
 msgid "Blocked Reminders:"
 msgstr "Kilidlənmiş Xatırlatmalar:"
 
-#: utils.cpp:511
+#: utils.cpp:509
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:513
+#: utils.cpp:511
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:518
+#: utils.cpp:516
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
