@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-14 00:43+0000\n"
-"PO-Revision-Date: 2026-04-12 12:00+0200\n"
-"Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
+"PO-Revision-Date: 2026-09-14 20:10+0200\n"
+"Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -683,10 +683,9 @@ msgstr "Deň začať o"
 
 #. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
-#, fuzzy, kde-format
-#| msgid "By default, enable reminders for new events"
+#, kde-format
 msgid "Set the default starting time for new events"
-msgstr "V predvolenom nastavení povoliť pripomienky pre nové udalosti"
+msgstr "Nastaviť predvolený čas začiatku pre nové udalosti"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:109
