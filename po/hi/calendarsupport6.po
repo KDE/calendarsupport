@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-14 00:43+0000\n"
+"POT-Creation-Date: 2026-09-17 00:44+0000\n"
 "PO-Revision-Date: 2021-07-06 22:20+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -2772,139 +2772,139 @@ msgstr "वर्ष छापें (&Y)"
 msgid "Prints a calendar for an entire year"
 msgstr "संपूर्ण वर्ष के लिए एक कैलेण्डर छापें"
 
-#: utils.cpp:274
+#: utils.cpp:276
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "नया कैलेन्डर"
 
-#: utils.cpp:275
+#: utils.cpp:277
 #, fuzzy, kde-format
 #| msgid "Sets the due date for this to-do."
 msgid "Select the calendar where this item will be stored."
 msgstr "इस कार्य के लिए नियत तिथि सेट करता है."
 
-#: utils.cpp:379
+#: utils.cpp:381
 #, fuzzy, kde-format
 #| msgid "Use as &Default Calendar"
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "डिफ़ॉल्ट कैलेण्डर के रूप में इस्तेमाल करें (&D)"
 
-#: utils.cpp:381
+#: utils.cpp:383
 #, fuzzy, kde-format
 #| msgid "Use as &Default Calendar"
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "डिफ़ॉल्ट कैलेण्डर के रूप में इस्तेमाल करें (&D)"
 
-#: utils.cpp:392
+#: utils.cpp:394
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr ""
 
-#: utils.cpp:394
+#: utils.cpp:396
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Folder type:"
 msgstr "कैलेन्डर"
 
-#: utils.cpp:404
+#: utils.cpp:406
 #, fuzzy, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "(कुछ नहीं)"
 
-#: utils.cpp:407
+#: utils.cpp:409
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Content type:"
 msgstr "कैलेन्डर"
 
-#: utils.cpp:413
+#: utils.cpp:415
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:416
+#: utils.cpp:418
 #, fuzzy, kde-format
 #| msgid "read-only"
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "सिर्फ पढ़ने योग्य"
 
-#: utils.cpp:418
+#: utils.cpp:420
 #, fuzzy, kde-format
 #| msgid "Overwrite"
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "मिटाकर लिखें"
 
-#: utils.cpp:425
+#: utils.cpp:427
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:428
+#: utils.cpp:430
 #, fuzzy, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "ऑडियो"
 
-#: utils.cpp:430
+#: utils.cpp:432
 #, fuzzy, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "प्रतिदिन (&D)"
 
-#: utils.cpp:432
+#: utils.cpp:434
 #, fuzzy, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "ईमेल"
 
-#: utils.cpp:434
+#: utils.cpp:436
 #, fuzzy, kde-format
 #| msgid "Proceed"
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "आगे बढ़ें"
 
-#: utils.cpp:436
+#: utils.cpp:438
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:440
+#: utils.cpp:442
 #, fuzzy, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "(कुछ नहीं)"
 
-#: utils.cpp:443
+#: utils.cpp:445
 #, fuzzy, kde-format
 msgid "Blocked Reminders:"
 msgstr "स्मरण संपादित करें"
 
-#: utils.cpp:509
+#: utils.cpp:521
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:511
+#: utils.cpp:523
 #, fuzzy, kde-format
 #| msgctxt "weekOfYear (year)"
 #| msgid "%1 (%2)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:516
+#: utils.cpp:528
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

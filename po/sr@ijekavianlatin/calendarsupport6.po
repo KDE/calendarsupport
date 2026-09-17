@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-14 00:43+0000\n"
+"POT-Creation-Date: 2026-09-17 00:44+0000\n"
 "PO-Revision-Date: 2016-03-20 14:17+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -2901,20 +2901,20 @@ msgid "Prints a calendar for an entire year"
 msgstr "Štampa kalendar za celu godinu."
 
 # >> @title:window
-#: utils.cpp:274
+#: utils.cpp:276
 #, fuzzy, kde-format
 #| msgid "Select Calendar"
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "Izbor kalendara"
 
-#: utils.cpp:275
+#: utils.cpp:277
 #, kde-format
 msgid "Select the calendar where this item will be stored."
 msgstr "Izaberite kalendar za skladištenje ove stavke."
 
 # >> @title:window
-#: utils.cpp:379
+#: utils.cpp:381
 #, fuzzy, kde-format
 #| msgid "Select Calendar"
 msgctxt "this is the default event calendar"
@@ -2922,27 +2922,27 @@ msgid "%1 (Default Event Calendar)"
 msgstr "Izbor kalendara"
 
 # >> @title:window
-#: utils.cpp:381
+#: utils.cpp:383
 #, fuzzy, kde-format
 #| msgid "Select Calendar"
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "Izbor kalendara"
 
-#: utils.cpp:392
+#: utils.cpp:394
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr ""
 
 # >> @item
-#: utils.cpp:394
+#: utils.cpp:396
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Folder type:"
 msgstr "kalendar|/|$[svojstva _rod m _broj j]"
 
-#: utils.cpp:404
+#: utils.cpp:406
 #, fuzzy, kde-format
 #| msgctxt "no status"
 #| msgid "none"
@@ -2951,66 +2951,66 @@ msgid "none"
 msgstr "nema"
 
 # >> @item
-#: utils.cpp:407
+#: utils.cpp:409
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Content type:"
 msgstr "kalendar|/|$[svojstva _rod m _broj j]"
 
-#: utils.cpp:413
+#: utils.cpp:415
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:416
+#: utils.cpp:418
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr ""
 
-#: utils.cpp:418
+#: utils.cpp:420
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr ""
 
-#: utils.cpp:425
+#: utils.cpp:427
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:428
+#: utils.cpp:430
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr ""
 
-#: utils.cpp:430
+#: utils.cpp:432
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr ""
 
-#: utils.cpp:432
+#: utils.cpp:434
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr ""
 
-#: utils.cpp:434
+#: utils.cpp:436
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr ""
 
-#: utils.cpp:436
+#: utils.cpp:438
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:440
+#: utils.cpp:442
 #, fuzzy, kde-format
 #| msgctxt "no status"
 #| msgid "none"
@@ -3018,20 +3018,20 @@ msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "nema"
 
-#: utils.cpp:443
+#: utils.cpp:445
 #, fuzzy, kde-format
 #| msgid "No reminders"
 msgid "Blocked Reminders:"
 msgstr "Nema podsetnika."
 
-#: utils.cpp:509
+#: utils.cpp:521
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:511
+#: utils.cpp:523
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -3040,7 +3040,7 @@ msgstr "%1%"
 msgid "%1 (%2)"
 msgstr "%1 (%2): %3"
 
-#: utils.cpp:516
+#: utils.cpp:528
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
