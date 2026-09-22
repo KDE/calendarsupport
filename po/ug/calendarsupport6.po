@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-17 00:44+0000\n"
-"PO-Revision-Date: 2026-05-29 17:04-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
-"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1420,7 +1420,7 @@ msgstr "داۋاملىشىش ۋاقتى: "
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
-msgstr[0] "‏%1‎‏ سائەت "
+msgstr[0] "%1 سائەت "
 
 #: printing/calprintdefaultplugins.cpp:141
 #, kde-format
@@ -1499,7 +1499,7 @@ msgstr[0] "%1 كۈن"
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
-msgstr[0] "‏%1‎‏ سائەت"
+msgstr[0] "%1 سائەت"
 
 #: printing/calprintdefaultplugins.cpp:352
 #, kde-format
@@ -1580,7 +1580,7 @@ msgstr "مۆھلىتى(ۋاقىت): %1\n"
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
-msgstr "%1: "
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:528
 #, kde-format
@@ -1720,7 +1720,7 @@ msgstr ""
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1569
 #, kde-format
@@ -1779,7 +1779,7 @@ msgstr ""
 #: printing/calprintpluginbase.cpp:1728
 #, kde-format
 msgid "%1%"
-msgstr "%1%"
+msgstr ""
 
 #: printing/calprintdefaultplugins.cpp:1657
 #, kde-format
@@ -2579,7 +2579,7 @@ msgstr ""
 #, kde-format
 msgctxt "Description - date"
 msgid "%1 - %2"
-msgstr "%1 - %2"
+msgstr ""
 
 #: printing/journalprint.cpp:128
 #, kde-format
@@ -2638,7 +2638,7 @@ msgstr ""
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
-msgstr ""
+msgstr "مەۋھۇم"
 
 #: utils.cpp:396
 #, kde-format
@@ -2729,7 +2729,7 @@ msgstr ""
 #: utils.cpp:523
 #, kde-format
 msgid "%1 (%2)"
-msgstr "%1 (%2)"
+msgstr ""
 
 #: utils.cpp:528
 #, kde-format
