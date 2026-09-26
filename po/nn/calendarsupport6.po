@@ -1,7 +1,7 @@
 # Translation of calendarsupport6 to Norwegian Nynorsk
 #
 # Eirik U. Birkeland <eirbir@gmail.com>, 2009, 2010.
-# Karl Ove Hufthammer <karl@huftis.org>, 2009, 2010, 2016, 2018, 2020.
+# Karl Ove Hufthammer <karl@huftis.org>, 2009, 2010, 2016, 2018, 2020, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.08.2\n"
+"X-Generator: Lokalize 26.08.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
