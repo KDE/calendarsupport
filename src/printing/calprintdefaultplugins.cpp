@@ -471,7 +471,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                     drawNoteLines(p, notesBox, notesPosition);
                 }
             } else {
-                QString subitemCaption = i18np("1 Subitem:", "%1 Subitems:", relations.count());
+                const QString subitemCaption = i18np("1 Subitem:", "%1 Subitems:", relations.count());
 
                 QString subitemString;
                 QString statusString;
