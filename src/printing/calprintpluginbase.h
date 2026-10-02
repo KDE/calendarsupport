@@ -487,7 +487,7 @@ public:
                   int width,
                   int pageHeight,
                   const KCalendarCore::Todo::List &todoList,
-                  TodoParentStart *r);
+                  const TodoParentStart *r);
 
     /**
       Draws text lines splitting on page boundaries.

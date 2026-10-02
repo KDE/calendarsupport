@@ -528,10 +528,7 @@ int CalPrintPluginBase::drawBoxWithCaption(QPainter &p,
             } else {
                 rtb.setPlainText(contents);
             }
-            int boxHeight = allbox.height();
-            if (!sameLine) {
-                boxHeight -= captionBox.height();
-            }
+            const int boxHeight = allbox.height() - captionBox.height();
             rtb.setPageSize(QSize(textBox.width(), boxHeight));
             rtb.setDefaultFont(textFont);
             p.save();
@@ -1613,7 +1610,7 @@ void CalPrintPluginBase::drawTodo(int &count,
                                   int width,
                                   int pageHeight,
                                   const KCalendarCore::Todo::List &todoList,
-                                  TodoParentStart *r)
+                                  const TodoParentStart *r)
 {
     QString outStr;
     const auto locale = QLocale::system();
