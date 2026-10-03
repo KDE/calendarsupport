@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-17 00:44+0000\n"
+"POT-Creation-Date: 2026-10-03 00:45+0000\n"
 "PO-Revision-Date: 2012-12-25 15:13+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -1912,15 +1912,15 @@ msgstr "ការ​កំណត់ ៖"
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:928
-#: printing/calprintpluginbase.cpp:1068 printing/calprintpluginbase.cpp:1125
+#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:925
+#: printing/calprintpluginbase.cpp:1065 printing/calprintpluginbase.cpp:1122
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:947
-#: printing/calprintpluginbase.cpp:1071
+#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:944
+#: printing/calprintpluginbase.cpp:1068
 #, fuzzy, kde-format
 #| msgctxt "summary, location"
 #| msgid "%1, %2"
@@ -2036,7 +2036,7 @@ msgid "To-do list"
 msgstr "ត្រូវ​ធ្វើ​"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1728
+#: printing/calprintpluginbase.cpp:1725
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2583,25 +2583,25 @@ msgstr ","
 msgid "Holiday"
 msgstr "ថ្ងៃ​ឈប់​សម្រាក​"
 
-#: printing/calprintpluginbase.cpp:618
+#: printing/calprintpluginbase.cpp:615
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "បាន​បោះពុម្ព ៖ %1"
 
-#: printing/calprintpluginbase.cpp:933
+#: printing/calprintpluginbase.cpp:930
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1-%2 %3"
 
-#: printing/calprintpluginbase.cpp:939
+#: printing/calprintpluginbase.cpp:936
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:1006
+#: printing/calprintpluginbase.cpp:1003
 #, fuzzy, kde-format
 #| msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
 #| msgid "%1's %2 Kolab %3"
@@ -2609,26 +2609,26 @@ msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%2 Kolab %3 របស់ %1"
 
-#: printing/calprintpluginbase.cpp:1132
+#: printing/calprintpluginbase.cpp:1129
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (ដល់​កំណត់​ ៖​ %2)​"
 
-#: printing/calprintpluginbase.cpp:1137
+#: printing/calprintpluginbase.cpp:1134
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (ដល់​កំណត់​ ៖​ %2)​"
 
-#: printing/calprintpluginbase.cpp:1144
+#: printing/calprintpluginbase.cpp:1141
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "&To-dos"
 msgid "To-do: %1"
 msgstr "ត្រូវ​ធ្វើ​"
 
-#: printing/calprintpluginbase.cpp:1878
+#: printing/calprintpluginbase.cpp:1875
 #, fuzzy, kde-format
 #| msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
 #| msgid "%1's %2 Kolab %3"
@@ -2636,7 +2636,7 @@ msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%2 Kolab %3 របស់ %1"
 
-#: printing/calprintpluginbase.cpp:1884
+#: printing/calprintpluginbase.cpp:1881
 #, fuzzy, kde-format
 #| msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
 #| msgid "%1's %2 Kolab %3"

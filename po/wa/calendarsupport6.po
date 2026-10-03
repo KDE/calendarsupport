@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-17 00:44+0000\n"
+"POT-Creation-Date: 2026-10-03 00:45+0000\n"
 "PO-Revision-Date: 2013-03-24 10:49+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1830,8 +1830,8 @@ msgstr "Apontiaedjes : "
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:928
-#: printing/calprintpluginbase.cpp:1068 printing/calprintpluginbase.cpp:1125
+#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:925
+#: printing/calprintpluginbase.cpp:1065 printing/calprintpluginbase.cpp:1122
 #, fuzzy, kde-format
 #| msgctxt "monthname year"
 #| msgid "%1 %2"
@@ -1839,8 +1839,8 @@ msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:947
-#: printing/calprintpluginbase.cpp:1071
+#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:944
+#: printing/calprintpluginbase.cpp:1068
 #, fuzzy, kde-format
 #| msgctxt "monthname year"
 #| msgid "%1 %2"
@@ -1947,7 +1947,7 @@ msgid "To-do list"
 msgstr "Djivêye des afés"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1728
+#: printing/calprintpluginbase.cpp:1725
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2469,25 +2469,25 @@ msgstr ","
 msgid "Holiday"
 msgstr "Condjî"
 
-#: printing/calprintpluginbase.cpp:618
+#: printing/calprintpluginbase.cpp:615
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "imprimé : %1"
 
-#: printing/calprintpluginbase.cpp:933
+#: printing/calprintpluginbase.cpp:930
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1-%2 %3"
 
-#: printing/calprintpluginbase.cpp:939
+#: printing/calprintpluginbase.cpp:936
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:1006
+#: printing/calprintpluginbase.cpp:1003
 #, fuzzy, kde-format
 #| msgctxt "date, from - to"
 #| msgid "%1, %2 - %3"
@@ -2495,7 +2495,7 @@ msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1, %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1132
+#: printing/calprintpluginbase.cpp:1129
 #, fuzzy, kde-format
 #| msgctxt "to-do due date"
 #| msgid "  (Due: %1)"
@@ -2503,7 +2503,7 @@ msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "  (Termene: %1)"
 
-#: printing/calprintpluginbase.cpp:1137
+#: printing/calprintpluginbase.cpp:1134
 #, fuzzy, kde-format
 #| msgctxt "to-do due date"
 #| msgid "  (Due: %1)"
@@ -2511,12 +2511,12 @@ msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "  (Termene: %1)"
 
-#: printing/calprintpluginbase.cpp:1144
+#: printing/calprintpluginbase.cpp:1141
 #, kde-format
 msgid "To-do: %1"
 msgstr "Afé: %1"
 
-#: printing/calprintpluginbase.cpp:1878
+#: printing/calprintpluginbase.cpp:1875
 #, fuzzy, kde-format
 #| msgctxt "Date range: Month dayStart - dayEnd"
 #| msgid "%1 %2 - %3"
@@ -2524,7 +2524,7 @@ msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2 - %3"
 
-#: printing/calprintpluginbase.cpp:1884
+#: printing/calprintpluginbase.cpp:1881
 #, fuzzy, kde-format
 #| msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 #| msgid "%1 %2 - %3 %4"
