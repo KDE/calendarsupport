@@ -33,13 +33,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <KCalendarCore/FreeBusy>
 #include <KCalendarCore/MemoryCalendar>
 
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 29, 0)
-#include <KCalUtils/DndFactory>
-#include <KCalUtils/ICalDrag>
-#include <KCalUtils/VCalDrag>
-#else
 #include <KCalendarCore/MimeData>
-#endif
 
 #include <KLocalizedString>
 
@@ -219,11 +213,7 @@ static bool containsValidIncidenceItemUrl(const QList<QUrl> &urls)
 bool CalendarSupport::canDecode(const QMimeData *md)
 {
     if (md) {
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 29, 0)
-        return containsValidIncidenceItemUrl(md->urls()) || KCalUtils::ICalDrag::canDecode(md) || KCalUtils::VCalDrag::canDecode(md);
-#else
         return containsValidIncidenceItemUrl(md->urls()) || KCalendarCore::MimeData::canDecode(md);
-#endif
     } else {
         return false;
     }
@@ -243,32 +233,8 @@ QList<QUrl> CalendarSupport::incidenceItemUrls(const QMimeData *mimeData)
 
 bool CalendarSupport::mimeDataHasIncidence(const QMimeData *mimeData)
 {
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 29, 0)
-    return !incidenceItemUrls(mimeData).isEmpty() || !incidences(mimeData).isEmpty();
-#else
     return !incidenceItemUrls(mimeData).isEmpty() || !KCalendarCore::MimeData::decodeIncidences(mimeData).isEmpty();
-#endif
 }
-
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 29, 0)
-KCalendarCore::Incidence::List CalendarSupport::incidences(const QMimeData *mimeData)
-{
-    KCalendarCore::Incidence::List incidences;
-
-#ifndef QT_NO_DRAGANDDROP
-    KCalendarCore::Calendar::Ptr const cal(KCalUtils::DndFactory::createDropCalendar(mimeData));
-    if (cal) {
-        const KCalendarCore::Incidence::List calIncidences = cal->incidences();
-        incidences.reserve(calIncidences.count());
-        for (const KCalendarCore::Incidence::Ptr &i : calIncidences) {
-            incidences.push_back(KCalendarCore::Incidence::Ptr(i->clone()));
-        }
-    }
-#endif
-
-    return incidences;
-}
-#endif
 
 Akonadi::Collection CalendarSupport::selectCollection(QWidget *parent, int &dialogCode, const QStringList &mimeTypes, const Akonadi::Collection &defCollection)
 {
