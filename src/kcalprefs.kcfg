@@ -17,7 +17,7 @@
           <label>Public (accessible to everyone)</label>
         </choice>
         <choice name="EventSecrecyConfidential">
-          <label>Confidential (accessible to you and others)</label>
+          <label>Confidential (accessible to you and select others)</label>
         </choice>
         <choice name="EventSecrecyPrivate">
           <label>Private (accessible to you only)</label>
@@ -32,7 +32,7 @@
           <label>Public (accessible to everyone)</label>
         </choice>
         <choice name="TodoSecrecyConfidential">
-          <label>Confidential (accessible to you and some others)</label>
+          <label>Confidential (accessible to you and select others)</label>
         </choice>
         <choice name="TodoSecrecyPrivate">
           <label>Private (accessible to you only)</label>
@@ -47,7 +47,7 @@
           <label>Public (accessible to everyone)</label>
         </choice>
         <choice name="JournalSecrecyConfidential">
-          <label>Confidential (accessible to you and some others)</label>
+          <label>Confidential (accessible to you and select others)</label>
         </choice>
         <choice name="JournalSecrecyPrivate">
           <label>Private (accessible to you only)</label>
