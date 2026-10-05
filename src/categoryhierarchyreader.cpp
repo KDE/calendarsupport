@@ -5,10 +5,10 @@
 */
 
 #include "categoryhierarchyreader.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <QComboBox>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 namespace CategoryConfig

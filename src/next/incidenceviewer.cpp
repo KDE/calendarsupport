@@ -6,7 +6,6 @@
 */
 
 #include "incidenceviewer.h"
-using namespace Qt::Literals::StringLiterals;
 #include "incidenceviewer_p.h"
 
 #include "attachmenthandler.h"
@@ -27,6 +26,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include <QVBoxLayout>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 TextBrowser::TextBrowser(QWidget *parent)

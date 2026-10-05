@@ -6,7 +6,6 @@
 */
 
 #include "freebusyitemmodel.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <Akonadi/FreeBusyManager>
 
@@ -15,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QLocale>
 #include <QTimerEvent>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 class ItemPrivateData

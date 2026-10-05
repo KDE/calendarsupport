@@ -8,7 +8,6 @@
 */
 
 #include "calprintpluginbase.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "cellitem.h"
 #include "kcalprefs.h"
@@ -37,6 +36,8 @@ using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 #include <cmath>
+
+using namespace Qt::Literals::StringLiterals;
 
 static QString cleanStr(const QString &instr)
 {

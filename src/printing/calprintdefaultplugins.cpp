@@ -10,7 +10,6 @@
 */
 
 #include "calprintdefaultplugins.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "kcalprefs.h"
 #include "utils.h"
@@ -31,6 +30,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include <QPainter>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 /**************************************************************

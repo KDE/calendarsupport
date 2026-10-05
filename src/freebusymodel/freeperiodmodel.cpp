@@ -6,7 +6,6 @@
 */
 
 #include "freeperiodmodel.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KFormat>
 #include <KLocalizedString>
@@ -15,6 +14,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QLocale>
 #include <QTimeZone>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 FreePeriodModel::FreePeriodModel(QObject *parent)

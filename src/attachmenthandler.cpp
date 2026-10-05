@@ -18,7 +18,6 @@
   @author Allen Winter \<winter@kde.org\>
 */
 #include "attachmenthandler.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "calendarsupport_debug.h"
 
@@ -41,6 +40,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QPointer>
 #include <QTemporaryFile>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KCalendarCore;
 using namespace Akonadi;
 

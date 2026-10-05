@@ -7,7 +7,6 @@
 */
 
 #include "utils.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "calendarsupport_debug.h"
 #include "kcalprefs.h"
@@ -44,6 +43,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <QPointer>
 #include <QStyle>
 #include <QUrlQuery>
+
+using namespace Qt::Literals::StringLiterals;
 
 KCalendarCore::Event::Ptr CalendarSupport::event(const KCalendarCore::Incidence::Ptr &incidence)
 {

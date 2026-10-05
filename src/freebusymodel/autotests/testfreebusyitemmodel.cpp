@@ -6,7 +6,6 @@
 */
 
 #include "testfreebusyitemmodel.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "../freebusyitem.h"
 #include "../freebusyitemmodel.h"
@@ -16,6 +15,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QAbstractItemModelTester>
 #include <QTest>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 // Workaround QTBUG-51789 causing a crash when QtWebEngineWidgets

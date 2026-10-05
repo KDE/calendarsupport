@@ -6,7 +6,6 @@
 */
 
 #include "kcalprefs.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "calendarsupport_debug.h"
 #include "identitymanager.h"
@@ -26,6 +25,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include <KEMailSettings>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 Q_GLOBAL_STATIC(KCalPrefs, globalPrefs)

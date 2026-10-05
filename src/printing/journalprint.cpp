@@ -5,12 +5,12 @@
 */
 
 #include "journalprint.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "calendarsupport_debug.h"
 #include "utils.h"
 #include <KConfigGroup>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 /**************************************************************

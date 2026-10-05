@@ -7,7 +7,6 @@
 */
 
 #include "eventarchiver.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "kcalprefs.h"
 
@@ -34,6 +33,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QTemporaryFile>
 #include <QTimeZone>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KCalendarCore;
 using namespace CalendarSupport;
 

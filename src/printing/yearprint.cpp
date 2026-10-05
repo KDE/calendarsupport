@@ -5,7 +5,6 @@
 */
 
 #include "yearprint.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "calendarsupport_debug.h"
 #include <KConfigGroup>
@@ -13,6 +12,8 @@ using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 #include <cmath>
+
+using namespace Qt::Literals::StringLiterals;
 
 /**************************************************************
  *           Print Year

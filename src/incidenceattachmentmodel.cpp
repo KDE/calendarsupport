@@ -6,13 +6,13 @@
 */
 
 #include "incidenceattachmentmodel.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
 #include <Akonadi/Monitor>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 using namespace Akonadi;
 

@@ -7,9 +7,10 @@
 #pragma once
 
 #include "calprintpluginbase.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "ui_calprintyearconfig_base.h"
+
+using namespace Qt::Literals::StringLiterals;
 
 namespace CalendarSupport
 {

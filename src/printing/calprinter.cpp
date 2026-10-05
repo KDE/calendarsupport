@@ -6,7 +6,6 @@
 */
 
 #include "calprinter.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "calprintdefaultplugins.h"
 #include "journalprint.h"
@@ -27,6 +26,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QStackedWidget>
 #include <QVBoxLayout>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
 CalPrinter::CalPrinter(QWidget *parent, const KCalendarCore::Calendar::Ptr &calendar, bool uniqItem)
