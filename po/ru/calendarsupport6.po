@@ -40,7 +40,7 @@ msgstr "неизвестный@адрес"
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive/Delete Past Events and To-dos"
-msgstr "Архивирование старых событий"
+msgstr "Архивирование или удаление старых событий и задач"
 
 #: archivedialog.cpp:50
 #, kde-format
@@ -83,7 +83,7 @@ msgstr "Поместить в архив записи старше чем:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
-msgstr "Включить однократное архивирование или очистку устаревших записей"
+msgstr "Включить однократное архивирование или удаление устаревших записей"
 
 #: archivedialog.cpp:85
 #, kde-format
@@ -93,9 +93,9 @@ msgid ""
 "be archived or purged. The items will be archived unless the \"Delete only\" "
 "option is enabled; else the items will be purged and not saved."
 msgstr ""
-"Архивировать или очистить события и задачи старше указанной даты. Записи "
-"будут помещаться в архив, только если опция «Только удалить» выключена, "
-"иначе они будут очищены без сохранения."
+"Архивировать или удалить события и задачи старше указанной даты. Записи "
+"будут помещаться в архив, только если параметр «Только удалять» выключен, "
+"иначе они будут удалены без сохранения."
 
 #: archivedialog.cpp:93
 #, kde-format
@@ -125,7 +125,7 @@ msgstr "&Автоматически архивировать записи ста
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable automatic archiving or purging of older items"
-msgstr "Включить автоматическое архивирование или очистку устаревших записей"
+msgstr "Включить автоматическое архивирование или удаление устаревших записей"
 
 #: archivedialog.cpp:110
 #, kde-format
@@ -249,7 +249,7 @@ msgstr "Архивировать &события"
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge events"
-msgstr "Архивировать или очистить события"
+msgstr "Архивировать или удалять события"
 
 #: archivedialog.cpp:168
 #, kde-format
@@ -269,7 +269,7 @@ msgstr "Архивировать завершённые &задачи"
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge completed to-dos"
-msgstr "Архивировать или очистить завершённые задачи"
+msgstr "Архивировать или удалять завершённые задачи"
 
 #: archivedialog.cpp:174
 #, kde-format
@@ -289,7 +289,7 @@ msgstr "&Только удалять, не сохранять в архиве"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Purge the old items without saving them"
-msgstr "Очистить устаревшие записи без сохранения"
+msgstr "Удалять устаревшие записи без сохранения"
 
 #: archivedialog.cpp:181
 #, kde-format
@@ -483,8 +483,8 @@ msgid ""
 "“Users” module in System Settings. Uncheck this box to be able to specify "
 "your full name and e-mail."
 msgstr ""
-"Использовать общие настройки электронной почты, которые определены профилем "
-"пользователя в настройках системы. Снимите флажок, чтобы указать полное имя "
+"Использовать общие параметры электронной почты, заданные в модуле "
+"«Пользователи» Параметров системы. Снимите флажок, чтобы указать полное имя "
 "и адрес электронной почты."
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
@@ -676,7 +676,7 @@ msgid ""
 "is specified in the adjacent spinbox."
 msgstr ""
 "Единица времени напоминания по умолчанию для всех создаваемых объектов. "
-"Время указано в соседнем поле со счетчиком."
+"Время указано в соседнем поле со счётчиком."
 
 #. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
 #: kcalprefs.kcfg:100
@@ -728,7 +728,7 @@ msgid ""
 "shown as non-working days in the date navigator, the agenda view, etc."
 msgstr ""
 "Регионы, праздники которых будут учитываться в календаре. Заданные праздники "
-"будет отображаться как нерабочие дни в навигаторе и других местах."
+"будут показываться как нерабочие дни в навигаторе и других местах."
 
 #. i18n: ectx: label, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:121
@@ -740,7 +740,7 @@ msgstr "Используемые категории для учёта празд
 #: kcalprefs.kcfg:122
 #, kde-format
 msgid "Select which holiday categories to display"
-msgstr "Категории праздников, которые будут отображаться"
+msgstr "Категории праздников, которые будут показываться"
 
 #. i18n: ectx: whatsthis, entry (HolidayCategories), group (Time &amp; Date)
 #: kcalprefs.kcfg:123
@@ -749,7 +749,7 @@ msgid ""
 "Select which holiday categories to display (public, cultural, religious, "
 "financial)."
 msgstr ""
-"Выбор категорий праздников для отображения (государственные, культурные, "
+"Выбор категорий праздников для показа (государственные, культурные, "
 "религиозные, финансовые)."
 
 #. i18n: ectx: label, entry, group (Group Scheduling)
@@ -769,8 +769,8 @@ msgid ""
 msgstr ""
 "Включить автоматическую генерацию писем при создании, обновлении, удалении "
 "событий или задач, затрагивающих других участников. Позволяет использовать "
-"совместную функциональность (например, настройка Kontact в качестве KDE "
-"Kolab client)."
+"возможности совместной работы (например, настройка Kontact в качестве "
+"клиента KDE Kolab)."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
 #: kcalprefs.kcfg:134
@@ -807,7 +807,7 @@ msgstr ""
 #: kcalprefs.kcfg:154
 #, kde-format
 msgid "Show timezone selectors in the event and todo editor dialog."
-msgstr "Показать искатели временной зоны в редакторе событий и задач."
+msgstr "Показывать выбор часового пояса в редакторе событий и задач."
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:161
@@ -877,7 +877,7 @@ msgstr "Что делать во время архивирования"
 #: kcalprefs.kcfg:198
 #, kde-format
 msgid "Delete old events"
-msgstr "Удалить старые события"
+msgstr "Удалять старые события"
 
 #. i18n: ectx: label, entry, group (Archive Dialog)
 #: kcalprefs.kcfg:201
@@ -898,7 +898,7 @@ msgid ""
 "Enter your full name here. This name will be displayed as \"Organizer\" in "
 "to-dos and events you create."
 msgstr ""
-"Полное имя владельца календаря, которое отображается в качестве "
+"Полное имя владельца календаря, которое показывается в качестве "
 "«Организатора» в созданных им задачах и событиях."
 
 # BUGME: strange: accelerator in .kcfg. --aspotashev
@@ -906,7 +906,7 @@ msgstr ""
 #: kcalprefs.kcfg:218
 #, kde-format
 msgid "E&mail address"
-msgstr "Адрес электронной почты"
+msgstr "Адрес &электронной почты"
 
 #. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
 #: kcalprefs.kcfg:219
@@ -916,7 +916,7 @@ msgid ""
 "the owner of the calendar, and displayed in events and to-dos you create."
 msgstr ""
 "Адрес электронной почты, который используется для идентификации владельца "
-"календаря и отображается в созданных им событиях и задачах."
+"календаря и показывается в созданных им событиях и задачах."
 
 #. i18n: ectx: label, entry, group (Colors)
 #: kcalprefs.kcfg:231
@@ -933,8 +933,8 @@ msgid ""
 "agenda or month views using the \"Only tag\" scheme."
 msgstr ""
 "Цвет, который используется в случаях, если у объекта нет метки или она не "
-"установлена. Этим цветом раскрашиваются объекты при просмотре распорядка дня "
-"или месяца, использующем схему «только метка»."
+"установлена. Этим цветом раскрашиваются объекты при просмотре расписания на "
+"день или месяца, использующем схему «только метка»."
 
 #. i18n: ectx: tooltip, entry, group (Colors)
 #: kcalprefs.kcfg:233
@@ -962,7 +962,7 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Свойства дня:</span></p></body></html>"
+"weight:600;\">Параметры печати дня:</span></p></body></html>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, mDateRangeGroup)
 #: printing/calprintdayconfig_base.ui:24
@@ -1133,7 +1133,7 @@ msgid ""
 "range to include all events</i>."
 msgstr ""
 "Можно напечатать события заданного периода времени. Укажите время окончания. "
-"Время окончания должно быть указано в поле <i>Время начала</i>. Примечание: "
+"Время начала должно быть указано в поле <i>Время начала</i>. Примечание: "
 "период может быть изменён, если включён параметр <i>Увеличить период, чтобы "
 "включить все события</i>."
 
@@ -1152,7 +1152,7 @@ msgid ""
 "Check this option to automatically determine the required time range, so all "
 "events will be shown."
 msgstr ""
-"Включите эту опцию для автоматического определения периода времени, "
+"Включите этот параметр для автоматического определения периода времени, "
 "включающего в себя все события."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeAllEvents)
@@ -1177,13 +1177,13 @@ msgid ""
 "The Filofax format prints the information for the days selected without a "
 "timeline."
 msgstr ""
-"Формат Filofax выводит информацию для дней, выбранных без временной шкалы."
+"Формат Filofax выводит информацию о выбранных днях без временной шкалы."
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: printing/calprintdayconfig_base.ui:212
 #, kde-format
 msgid "Print date &range as Filofax format, all on one page"
-msgstr "Печать &диапазона дат в виде формата Filofax, все на одной странице"
+msgstr "Печать &диапазона дат в формате Filofax, все на одной странице"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintdayconfig_base.ui:219
@@ -1239,7 +1239,7 @@ msgid ""
 "&#8220;Confidential&#8221;"
 msgstr ""
 "Установите этот флажок, чтобы исключить элементы, для которых установлен "
-"уровень доступа &#8220;Конфиденциально&#8221;"
+"уровень доступа «Конфиденциально»"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludeConfidential)
 #: printing/calprintdayconfig_base.ui:251
@@ -1265,7 +1265,7 @@ msgid ""
 "&#8220;Private&#8221;"
 msgstr ""
 "Установите этот флажок, чтобы исключить элементы, для которых установлен "
-"уровень доступа &#8220;Приватно&#8221;"
+"уровень доступа «Приватно»"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mExcludePrivate)
 #: printing/calprintdayconfig_base.ui:261
@@ -1319,7 +1319,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:283
 #, kde-format
 msgid "&Descriptions"
-msgstr "&Описание:"
+msgstr "&Описания"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mIncludeCategories)
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mCategories)
@@ -1371,8 +1371,8 @@ msgid ""
 "You should check this option if you want to print to-dos which are due on "
 "one of the dates which are in the supplied date range."
 msgstr ""
-"При включении этой опции будут распечатаны задачи, просроченные на дату "
-"печати."
+"При включении этого параметра будут напечатаны задачи, срок которых "
+"приходится на одну из дат указанного диапазона."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeTodos)
 #: printing/calprintdayconfig_base.ui:312
@@ -1380,7 +1380,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:312
 #, kde-format
 msgid "Include to-&dos that are due on the printed day(s)"
-msgstr "Включать просроченные на дату печати з&адачи"
+msgstr "Включать з&адачи со сроком в печатаемые дни"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mExcludeTime)
 #: printing/calprintdayconfig_base.ui:319
@@ -1406,7 +1406,7 @@ msgstr "Искл&ючить время из подробных элементо�
 #, kde-format
 msgctxt "@title general print settings"
 msgid "General"
-msgstr "Основное"
+msgstr "Общие"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mSingleLineLimit)
 #: printing/calprintdayconfig_base.ui:338
@@ -1434,7 +1434,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:344
 #, kde-format
 msgid "Limit events in each day to a &single line"
-msgstr "Ограничивать события каждого дня одной &линией"
+msgstr "Ограничивать события каждого дня одной &строкой"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:351
@@ -1443,14 +1443,15 @@ msgstr "Ограничивать события каждого дня одной
 #: printing/calprintweekconfig_base.ui:351
 #, kde-format
 msgid "Check this option to draw note lines in empty areas."
-msgstr "Выберите эту опцию, чтобы в пустых областях отображались линии записи."
+msgstr ""
+"Включите этот параметр, чтобы в пустых областях печатались линии для записей."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintdayconfig_base.ui:354
 #: printing/calprintweekconfig_base.ui:354
 #, kde-format
 msgid "Show note &lines in Filofax layout"
-msgstr "Показывать &линии записи в шаблоне в виде перекидных страниц блокнота"
+msgstr "Показывать &линии записи в шаблоне Filofax"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mColors)
 #: printing/calprintdayconfig_base.ui:361
@@ -1570,7 +1571,7 @@ msgstr "дата окончания не указана"
 #: printing/calprintdefaultplugins.cpp:159
 #, kde-format
 msgid "Due date: "
-msgstr "Срок:"
+msgstr "Срок: "
 
 #: printing/calprintdefaultplugins.cpp:162
 #, kde-format
@@ -1743,7 +1744,7 @@ msgstr "%1: "
 #, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
-msgstr "Статус: %1\n"
+msgstr "Состояние: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:526
 #, kde-format
@@ -1755,7 +1756,7 @@ msgstr "Приоритет: %1\n"
 #, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
-msgstr "Секретность: %1\n"
+msgstr "Конфиденциальность: %1\n"
 
 #: printing/calprintdefaultplugins.cpp:545
 #, kde-format
@@ -1802,12 +1803,12 @@ msgstr "%1 (%2): %3"
 #: printing/calprintdefaultplugins.cpp:603
 #, kde-format
 msgid "Status: %1"
-msgstr "Статус: %1"
+msgstr "Состояние: %1"
 
 #: printing/calprintdefaultplugins.cpp:607
 #, kde-format
 msgid "Secrecy: %1"
-msgstr "Секретность: %1"
+msgstr "Конфиденциальность: %1"
 
 #: printing/calprintdefaultplugins.cpp:613
 #, kde-format
@@ -1887,7 +1888,7 @@ msgstr "%1 %2 года"
 #, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
-msgstr "По выполнению"
+msgstr "По описанию"
 
 #: printing/calprintdefaultplugins.cpp:1537
 #, kde-format
@@ -1917,7 +1918,7 @@ msgstr "По проценту выполнения"
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
-msgstr "Метки"
+msgstr "По меткам"
 
 #: printing/calprintdefaultplugins.cpp:1547
 #, kde-format
@@ -1975,12 +1976,12 @@ msgstr "Метки"
 #: printing/calprintdefaultplugins.h:52
 #, kde-format
 msgid "Print &incidence"
-msgstr "Печать с&обытий"
+msgstr "Печать с&обытия"
 
 #: printing/calprintdefaultplugins.h:59
 #, kde-format
 msgid "Prints an incidence on one page"
-msgstr "Печать всех событий и задач недели на одной странице"
+msgstr "Печать события или задачи на одной странице"
 
 #: printing/calprintdefaultplugins.h:175
 #, kde-format
@@ -2026,7 +2027,7 @@ msgstr "Печать всех задач в виде иерархическог�
 #, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
-msgstr "Указан неверный шаблон печати."
+msgstr "Невозможно напечатать: указан неверный шаблон печати."
 
 #: printing/calprinter.cpp:115
 #, kde-format
@@ -2066,9 +2067,9 @@ msgid ""
 "\". You can also default to the orientation best suited to the selected "
 "style or to your printer's default setting."
 msgstr ""
-"Выберите ориентацию страницы: портрет или альбом. Можно выбрать ориентацию "
-"страницы по умолчанию, наиболее подходящую к выбранному стилю или настройкам "
-"печати."
+"Выберите ориентацию страницы: книжная или альбомная. Можно также выбрать "
+"ориентацию, наиболее подходящую для выбранного стиля, или ориентацию "
+"принтера по умолчанию."
 
 #: printing/calprinter.cpp:199
 #, kde-format
@@ -2087,13 +2088,13 @@ msgstr "Стандартная для принтера"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Portrait"
-msgstr "Портрет"
+msgstr "Книжная"
 
 #: printing/calprinter.cpp:202
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
-msgstr "Альбом"
+msgstr "Альбомная"
 
 #: printing/calprinter.cpp:224
 #, kde-format
@@ -2145,7 +2146,7 @@ msgstr ""
 #: printing/calprintincidenceconfig_base.ui:33
 #, kde-format
 msgid "Print incidence details"
-msgstr "Печать с&ведений о событиях или задачах"
+msgstr "Печать сведений о событиях или задачах"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mShowDetails)
 #: printing/calprintincidenceconfig_base.ui:36
@@ -2235,15 +2236,15 @@ msgid ""
 "Check this box if you want to draw note lines in the empty area of the "
 "print. This is useful if you want to hand-write notes on this print-out."
 msgstr ""
-"Рисовать линии для записи в пустой области. Данная опция полезна, если "
-"необходимо сделать заметки от руки к распечатанным событиям и задачам."
+"Рисовать линии для записи в пустой области. Это полезно, если необходимо "
+"сделать заметки от руки к распечатанным событиям и задачам."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mShowNoteLines)
 #: printing/calprintincidenceconfig_base.ui:100
 #: printing/calprintmonthconfig_base.ui:259
 #, kde-format
 msgid "Show note &lines"
-msgstr "Показать &линии записи"
+msgstr "Показывать &линии для записей"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintjournalconfig_base.ui:17
@@ -2393,7 +2394,7 @@ msgstr ""
 #: printing/calprintmonthconfig_base.ui:195
 #, kde-format
 msgid "Print daily recurring items"
-msgstr "Печатать е&жедневные события и задачи"
+msgstr "Печатать ежедневные события и задачи"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:198
@@ -2403,8 +2404,8 @@ msgid ""
 "events in the print. They take a lot of space and make the month view "
 "needlessly complicated."
 msgstr ""
-"Выключение этой опции позволит не печатать ежедневные повторяющиеся события "
-"и задачи. Такие события забивают просмотр месяца и усложняют его понимание."
+"Выключите этот параметр, чтобы не печатать ежедневные повторяющиеся события "
+"и задачи. Они занимают много места и без нужды усложняют просмотр месяца."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurDaily)
 #: printing/calprintmonthconfig_base.ui:201
@@ -2416,7 +2417,7 @@ msgstr "Включить е&жедневные события и задачи"
 #: printing/calprintmonthconfig_base.ui:208
 #, kde-format
 msgid "Print weekly recurring items"
-msgstr "Печатать еженедел&ьные события и задачи"
+msgstr "Печатать еженедельные события и задачи"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:211
@@ -2425,9 +2426,8 @@ msgid ""
 "Similar to \"Print daily recurring to-dos and events\". Weekly to-dos and "
 "events will be omitted when making a print of the selected month."
 msgstr ""
-"Выключение этой опции позволит не печатать еженедельные повторяющиеся "
-"события и задачи. Такие события забивают просмотр месяца и усложняют его "
-"понимание."
+"Аналогично параметру «Печатать ежедневные события и задачи»: при печати "
+"выбранного месяца еженедельные события и задачи будут пропущены."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mRecurWeekly)
 #: printing/calprintmonthconfig_base.ui:214
@@ -2439,13 +2439,13 @@ msgstr "Включить еженедел&ьные события и задач�
 #: printing/calprintmonthconfig_base.ui:230
 #, kde-format
 msgid "Print week numbers"
-msgstr "Печатать номера н&едель"
+msgstr "Печатать номера недель"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:233
 #, kde-format
 msgid "Enable this to print week numbers at the left of each row."
-msgstr "Показывать номера недель слева каждой строки."
+msgstr "Показывать номера недель слева от каждой строки."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mWeekNumbers)
 #: printing/calprintmonthconfig_base.ui:236
@@ -2560,7 +2560,7 @@ msgstr "Имя списка задач"
 #, kde-format
 msgid ""
 "Enter a name for this to-do list that will be put at the top of the print-out"
-msgstr "Имя списка задач, которое будет отображаться сверху"
+msgstr "Имя списка задач, которое будет напечатано вверху"
 
 #. i18n: ectx: property (text), widget (QLabel, mTitleLabel)
 #: printing/calprinttodoconfig_base.ui:32
@@ -2602,14 +2602,14 @@ msgstr "П&ериод:"
 #: printing/calprinttodoconfig_base.ui:258
 #, kde-format
 msgid "Print item priorities"
-msgstr "Печать свойства"
+msgstr "Печатать приоритеты"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPriority)
 #: printing/calprinttodoconfig_base.ui:261
 #, kde-format
 msgid "Check this option if you want to see the item priorities printed."
 msgstr ""
-"Выберите этот пункт, чтобы добавить в печатную версию свойства событий и "
+"Выберите этот пункт, чтобы добавить в печатную версию приоритеты событий и "
 "задач."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPriority)
@@ -2658,7 +2658,7 @@ msgstr ""
 #: printing/calprinttodoconfig_base.ui:293
 #, kde-format
 msgid "Du&e date"
-msgstr "Дата завершения"
+msgstr "Дата за&вершения"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mPercentComplete)
 #: printing/calprinttodoconfig_base.ui:303
@@ -2704,13 +2704,13 @@ msgstr "Порядок сортировки:"
 #: printing/calprinttodoconfig_base.ui:397
 #, kde-format
 msgid "Co&nnect sub-to-dos with its parent"
-msgstr "&Показать соединительные линии между подзадачами"
+msgstr "&Показывать соединительные линии между подзадачами"
 
 #. i18n: ectx: property (text), widget (QCheckBox, mStrikeOutCompleted)
 #: printing/calprinttodoconfig_base.ui:407
 #, kde-format
 msgid "Stri&ke out completed to-do summaries"
-msgstr "За&черкнуть заголовки завершённых задач"
+msgstr "За&черкивать заголовки завершённых задач"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: printing/calprintweekconfig_base.ui:17
@@ -2738,8 +2738,7 @@ msgstr ""
 #: printing/calprintweekconfig_base.ui:212
 #, kde-format
 msgid "Print date &range as Filofax format, one week per page"
-msgstr ""
-"Печать &диапазона дат в виде формата Filofax, по одной неделе на страницу"
+msgstr "Печать &диапазона дат в формате Filofax, по одной неделе на страницу"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeTimetable)
 #: printing/calprintweekconfig_base.ui:222
@@ -2789,7 +2788,7 @@ msgstr "&Год:"
 #: printing/calprintyearconfig_base.ui:99
 #, kde-format
 msgid "General"
-msgstr "Основное"
+msgstr "Общие"
 
 #. i18n: ectx: property (text), widget (QLabel, mPagesLabel)
 #: printing/calprintyearconfig_base.ui:105
@@ -2801,7 +2800,7 @@ msgstr "Количество &страниц:"
 #: printing/calprintyearconfig_base.ui:121
 #, kde-format
 msgid "Show &sub-day events as:"
-msgstr "События &дня:"
+msgstr "Показывать &события короче дня как:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, mSubDays)
 #. i18n: ectx: property (text), item, widget (QComboBox, mHolidays)
@@ -2817,13 +2816,13 @@ msgstr "Текст"
 #: printing/calprintyearconfig_base.ui:170
 #, kde-format
 msgid "Time Boxes"
-msgstr "Текст и время"
+msgstr "Блоки времени"
 
 #. i18n: ectx: property (text), widget (QLabel, mHolidaysLabel)
 #: printing/calprintyearconfig_base.ui:151
 #, kde-format
 msgid "Show &holidays as:"
-msgstr "&Праздники:"
+msgstr "Показывать &праздники как:"
 
 #: printing/journalprint.cpp:106
 #, kde-format
@@ -2939,7 +2938,7 @@ msgstr "звук"
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
-msgstr "отображение"
+msgstr "показ"
 
 #: utils.cpp:453
 #, kde-format
