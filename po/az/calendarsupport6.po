@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-04 00:47+0000\n"
+"POT-Creation-Date: 2026-10-06 00:47+0000\n"
 "PO-Revision-Date: 2025-10-06 01:19+0400\n"
 "Last-Translator: linux <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -502,9 +502,11 @@ msgid "Public (accessible to everyone)"
 msgstr ""
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
-#: kcalprefs.kcfg:20
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:20 kcalprefs.kcfg:35 kcalprefs.kcfg:50
 #, kde-format
-msgid "Confidential (accessible to you and others)"
+msgid "Confidential (accessible to you and select others)"
 msgstr ""
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
@@ -521,13 +523,6 @@ msgstr ""
 #| msgid "&To-dos"
 msgid "To-dos:"
 msgstr "& Tapşırıqlar"
-
-#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
-#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
-#: kcalprefs.kcfg:35 kcalprefs.kcfg:50
-#, kde-format
-msgid "Confidential (accessible to you and some others)"
-msgstr ""
 
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:44
@@ -1826,15 +1821,15 @@ msgstr "Ayarlar: "
 msgid "Tags: "
 msgstr "Yarlıqlar: "
 
-#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:925
-#: printing/calprintpluginbase.cpp:1065 printing/calprintpluginbase.cpp:1122
+#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:926
+#: printing/calprintpluginbase.cpp:1066 printing/calprintpluginbase.cpp:1123
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:944
-#: printing/calprintpluginbase.cpp:1068
+#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:945
+#: printing/calprintpluginbase.cpp:1069
 #, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
@@ -1847,7 +1842,7 @@ msgid "All day"
 msgstr "Bütün gün"
 
 #: printing/calprintdefaultplugins.cpp:1021
-#: printing/calprintdefaultplugins.cpp:1247 printing/yearprint.cpp:143
+#: printing/calprintdefaultplugins.cpp:1247 printing/yearprint.cpp:144
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
@@ -1929,7 +1924,7 @@ msgid "To-do list"
 msgstr "Tapşırıq siyahısı"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1725
+#: printing/calprintpluginbase.cpp:1726
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2436,71 +2431,71 @@ msgstr "Hər sətirin solunda həftə saylarının çapı üçün aktiv edin."
 msgid "Print week &numbers"
 msgstr "Həftə sayları&nın çapı"
 
-#: printing/calprintpluginbase.cpp:149
+#: printing/calprintpluginbase.cpp:150
 #, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Bu çap üslubunun heç bir tənzimləmə seçimləri yoxdur."
 
-#: printing/calprintpluginbase.cpp:305
+#: printing/calprintpluginbase.cpp:306
 #, kde-format
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
 msgstr ","
 
-#: printing/calprintpluginbase.cpp:317
+#: printing/calprintpluginbase.cpp:318
 #, kde-format
 msgid "Holiday"
 msgstr "Bayram"
 
-#: printing/calprintpluginbase.cpp:615
+#: printing/calprintpluginbase.cpp:616
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "çap edildi: %1"
 
-#: printing/calprintpluginbase.cpp:930
+#: printing/calprintpluginbase.cpp:931
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1-%2 %3"
 
-#: printing/calprintpluginbase.cpp:936
+#: printing/calprintpluginbase.cpp:937
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:1003
+#: printing/calprintpluginbase.cpp:1004
 #, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1, %2 %3"
 
-#: printing/calprintpluginbase.cpp:1129
+#: printing/calprintpluginbase.cpp:1130
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (Müddət: %2)"
 
-#: printing/calprintpluginbase.cpp:1134
+#: printing/calprintpluginbase.cpp:1135
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (Müddət: %2)"
 
-#: printing/calprintpluginbase.cpp:1141
+#: printing/calprintpluginbase.cpp:1142
 #, kde-format
 msgid "To-do: %1"
 msgstr "Tapşırıq: %1"
 
-#: printing/calprintpluginbase.cpp:1875
+#: printing/calprintpluginbase.cpp:1876
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2–%3"
 
-#: printing/calprintpluginbase.cpp:1881
+#: printing/calprintpluginbase.cpp:1882
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
@@ -2821,38 +2816,38 @@ msgstr "Şəxsi: %1"
 msgid "Journal entries"
 msgstr "Jurnal qeydləri"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:33
 #, kde-format
 msgid "Print &journal"
 msgstr "&Jurnalın çapı"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:38
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "Verilən tarix aralığındakı bütün jurnalları çap edir"
 
-#: printing/yearprint.h:32
+#: printing/yearprint.h:33
 #, kde-format
 msgid "Print &year"
 msgstr "İlin ça&pı"
 
-#: printing/yearprint.h:37
+#: printing/yearprint.h:38
 #, kde-format
 msgid "Prints a calendar for an entire year"
 msgstr "İllik təqvimi çap edir"
 
-#: utils.cpp:242
+#: utils.cpp:243
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "Təqvim seçimi"
 
-#: utils.cpp:243
+#: utils.cpp:244
 #, kde-format
 msgid "Select the calendar where this item will be stored."
 msgstr "Bu element saxlanılacaq təqvimi seçmək."
 
-#: utils.cpp:347
+#: utils.cpp:348
 #, fuzzy, kde-format
 #| msgctxt "this is the default calendar"
 #| msgid "%1 (Default Calendar)"
@@ -2860,7 +2855,7 @@ msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "%1 (Standart Təqvim)"
 
-#: utils.cpp:349
+#: utils.cpp:350
 #, fuzzy, kde-format
 #| msgctxt "this is the default calendar"
 #| msgid "%1 (Default Calendar)"
@@ -2868,104 +2863,104 @@ msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "%1 (Standart Təqvim)"
 
-#: utils.cpp:360
+#: utils.cpp:361
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr "Virtual"
 
-#: utils.cpp:362
+#: utils.cpp:363
 #, kde-format
 msgid "Folder type:"
 msgstr "Qovluq növü:"
 
-#: utils.cpp:372
+#: utils.cpp:373
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "heç biri"
 
-#: utils.cpp:375
+#: utils.cpp:376
 #, kde-format
 msgid "Content type:"
 msgstr "Tərkibinin növü:"
 
-#: utils.cpp:381
+#: utils.cpp:382
 #, kde-format
 msgid "Rights:"
 msgstr "İmtiyazlar:"
 
-#: utils.cpp:384
+#: utils.cpp:385
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "yalnız oxumaq"
 
-#: utils.cpp:386
+#: utils.cpp:387
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "oxumaq+yazmaq"
 
-#: utils.cpp:393
+#: utils.cpp:394
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr "hamısı"
 
-#: utils.cpp:396
+#: utils.cpp:397
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "səs"
 
-#: utils.cpp:398
+#: utils.cpp:399
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "görüntü"
 
-#: utils.cpp:400
+#: utils.cpp:401
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "e-poçt"
 
-#: utils.cpp:402
+#: utils.cpp:403
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "prosedur"
 
-#: utils.cpp:404
+#: utils.cpp:405
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr "digər"
 
-#: utils.cpp:408
+#: utils.cpp:409
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "heç biri"
 
-#: utils.cpp:411
+#: utils.cpp:412
 #, kde-format
 msgid "Blocked Reminders:"
 msgstr "Kilidlənmiş Xatırlatmalar:"
 
-#: utils.cpp:487
+#: utils.cpp:488
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:489
+#: utils.cpp:490
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:494
+#: utils.cpp:495
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"

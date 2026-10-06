@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-04 00:47+0000\n"
+"POT-Creation-Date: 2026-10-06 00:47+0000\n"
 "PO-Revision-Date: 2008-01-01 23:20+0200\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian (Official spelling) <i18n@mova.org>\n"
@@ -514,9 +514,11 @@ msgid "Public (accessible to everyone)"
 msgstr ""
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
-#: kcalprefs.kcfg:20
+#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
+#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
+#: kcalprefs.kcfg:20 kcalprefs.kcfg:35 kcalprefs.kcfg:50
 #, kde-format
-msgid "Confidential (accessible to you and others)"
+msgid "Confidential (accessible to you and select others)"
 msgstr ""
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
@@ -533,13 +535,6 @@ msgstr ""
 #| msgid "To-dos"
 msgid "To-dos:"
 msgstr "Заданьні"
-
-#. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
-#. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
-#: kcalprefs.kcfg:35 kcalprefs.kcfg:50
-#, kde-format
-msgid "Confidential (accessible to you and some others)"
-msgstr ""
 
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:44
@@ -1816,16 +1811,16 @@ msgstr "&Настаўленні"
 msgid "Tags: "
 msgstr ""
 
-#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:925
-#: printing/calprintpluginbase.cpp:1065 printing/calprintpluginbase.cpp:1122
+#: printing/calprintdefaultplugins.cpp:758 printing/calprintpluginbase.cpp:926
+#: printing/calprintpluginbase.cpp:1066 printing/calprintpluginbase.cpp:1123
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:944
-#: printing/calprintpluginbase.cpp:1068
+#: printing/calprintdefaultplugins.cpp:761 printing/calprintpluginbase.cpp:945
+#: printing/calprintpluginbase.cpp:1069
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "summary, categories"
@@ -1840,7 +1835,7 @@ msgid "All day"
 msgstr "Дзень цалкам"
 
 #: printing/calprintdefaultplugins.cpp:1021
-#: printing/calprintdefaultplugins.cpp:1247 printing/yearprint.cpp:143
+#: printing/calprintdefaultplugins.cpp:1247 printing/yearprint.cpp:144
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
@@ -1924,7 +1919,7 @@ msgid "To-do list"
 msgstr "Сьпіс заданьняў"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1725
+#: printing/calprintpluginbase.cpp:1726
 #, fuzzy, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2404,77 +2399,77 @@ msgstr "Паказваць нумары тыдняў злева кожнага �
 msgid "Print week &numbers"
 msgstr "Друкаваць нумары тыдняў"
 
-#: printing/calprintpluginbase.cpp:149
+#: printing/calprintpluginbase.cpp:150
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Гэты шаблон друку не мае ніякіх налад."
 
-#: printing/calprintpluginbase.cpp:305
+#: printing/calprintpluginbase.cpp:306
 #, fuzzy, kde-format
 #| msgid ", "
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
 msgstr ","
 
-#: printing/calprintpluginbase.cpp:317
+#: printing/calprintpluginbase.cpp:318
 #, kde-format
 msgid "Holiday"
 msgstr "Свята"
 
-#: printing/calprintpluginbase.cpp:615
+#: printing/calprintpluginbase.cpp:616
 #, fuzzy, kde-format
 #| msgid "Undo (%1)"
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "Вярнуць: %1"
 
-#: printing/calprintpluginbase.cpp:930
+#: printing/calprintpluginbase.cpp:931
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1 - %2"
 
-#: printing/calprintpluginbase.cpp:936
+#: printing/calprintpluginbase.cpp:937
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1 - %2"
 
-#: printing/calprintpluginbase.cpp:1003
+#: printing/calprintpluginbase.cpp:1004
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1 - %2"
 
-#: printing/calprintpluginbase.cpp:1129
+#: printing/calprintpluginbase.cpp:1130
 #, fuzzy, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "  (завяршэнні: %1)"
 
-#: printing/calprintpluginbase.cpp:1134
+#: printing/calprintpluginbase.cpp:1135
 #, fuzzy, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "  (завяршэнні: %1)"
 
-#: printing/calprintpluginbase.cpp:1141
+#: printing/calprintpluginbase.cpp:1142
 #, kde-format
 msgid "To-do: %1"
 msgstr "Заданьне: %1"
 
-#: printing/calprintpluginbase.cpp:1875
+#: printing/calprintpluginbase.cpp:1876
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 - %2"
 
-#: printing/calprintpluginbase.cpp:1881
+#: printing/calprintpluginbase.cpp:1882
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
@@ -2774,115 +2769,115 @@ msgstr "Асоба: %1"
 msgid "Journal entries"
 msgstr "Элемэнты часопіса"
 
-#: printing/journalprint.h:32
+#: printing/journalprint.h:33
 #, fuzzy, kde-format
 msgid "Print &journal"
 msgstr "Рэдагаваць часопіс"
 
-#: printing/journalprint.h:37
+#: printing/journalprint.h:38
 #, kde-format
 msgid "Prints all journals for a given date range"
 msgstr "Друк усіх запісаў дзённіка за паказаны перыяд"
 
-#: printing/yearprint.h:32
+#: printing/yearprint.h:33
 #, fuzzy, kde-format
 msgid "Print &year"
 msgstr "У тыднях"
 
-#: printing/yearprint.h:37
+#: printing/yearprint.h:38
 #, fuzzy, kde-format
 msgid "Prints a calendar for an entire year"
 msgstr "Друк усіх запісаў часопіса за паказаны перыяд"
 
-#: utils.cpp:242
+#: utils.cpp:243
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "Новы каляндар"
 
-#: utils.cpp:243
+#: utils.cpp:244
 #, fuzzy, kde-format
 msgid "Select the calendar where this item will be stored."
 msgstr "Дата завяршэння задачы."
 
-#: utils.cpp:347
+#: utils.cpp:348
 #, fuzzy, kde-format
 #| msgid "Use as &Default Calendar"
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "Выкарыстоўваць як каляндар па &ўмаўчаньні"
 
-#: utils.cpp:349
+#: utils.cpp:350
 #, fuzzy, kde-format
 #| msgid "Use as &Default Calendar"
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "Выкарыстоўваць як каляндар па &ўмаўчаньні"
 
-#: utils.cpp:360
+#: utils.cpp:361
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr ""
 
-#: utils.cpp:362
+#: utils.cpp:363
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Folder type:"
 msgstr "Каляндар"
 
-#: utils.cpp:372
+#: utils.cpp:373
 #, fuzzy, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "(не)"
 
-#: utils.cpp:375
+#: utils.cpp:376
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Content type:"
 msgstr "Каляндар"
 
-#: utils.cpp:381
+#: utils.cpp:382
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:384
+#: utils.cpp:385
 #, fuzzy, kde-format
 #| msgid "read-only"
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "толькі чытанне"
 
-#: utils.cpp:386
+#: utils.cpp:387
 #, fuzzy, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "Замяніць"
 
-#: utils.cpp:393
+#: utils.cpp:394
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:396
+#: utils.cpp:397
 #, fuzzy, kde-format
 #| msgid "Audio"
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "Аўдыё"
 
-#: utils.cpp:398
+#: utils.cpp:399
 #, fuzzy, kde-format
 #| msgid "&Daily"
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "Што&дзень"
 
-#: utils.cpp:400
+#: utils.cpp:401
 #, fuzzy, kde-format
 #| msgctxt "@title:column attendee email"
 #| msgid "Email"
@@ -2890,42 +2885,42 @@ msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "Электронная пошта"
 
-#: utils.cpp:402
+#: utils.cpp:403
 #, fuzzy, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "Працягнуць"
 
-#: utils.cpp:404
+#: utils.cpp:405
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:408
+#: utils.cpp:409
 #, fuzzy, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "(не)"
 
-#: utils.cpp:411
+#: utils.cpp:412
 #, fuzzy, kde-format
 msgid "Blocked Reminders:"
 msgstr "На&паміны"
 
-#: utils.cpp:487
+#: utils.cpp:488
 #, fuzzy, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:489
+#: utils.cpp:490
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:494
+#: utils.cpp:495
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
