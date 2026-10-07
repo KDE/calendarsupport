@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-06 00:47+0000\n"
-"PO-Revision-Date: 2026-08-29 11:39+0200\n"
+"PO-Revision-Date: 2026-10-06 10:57+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 26.08.0\n"
+"X-Generator: Lokalize 26.08.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -505,10 +505,9 @@ msgstr "Publiek (toegankelijk voor iedereen)"
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20 kcalprefs.kcfg:35 kcalprefs.kcfg:50
-#, fuzzy, kde-format
-#| msgid "Confidential (accessible to you and some others)"
+#, kde-format
 msgid "Confidential (accessible to you and select others)"
-msgstr "Vertrouwelijk (toegankelijk voor u en enkele anderen)"
+msgstr "Vertrouwelijk (toegankelijk voor u en geselecteerde anderen)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)

@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-06 00:47+0000\n"
-"PO-Revision-Date: 2026-08-29 08:45+0200\n"
+"PO-Revision-Date: 2026-10-06 09:34+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -502,10 +502,9 @@ msgstr "Públic (accessible a tothom)"
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20 kcalprefs.kcfg:35 kcalprefs.kcfg:50
-#, fuzzy, kde-format
-#| msgid "Confidential (accessible to you and some others)"
+#, kde-format
 msgid "Confidential (accessible to you and select others)"
-msgstr "Confidencial (accessible a vós i alguns altres)"
+msgstr "Confidencial (accessible a vós i altres seleccionats)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)

@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-06 00:47+0000\n"
-"PO-Revision-Date: 2026-08-29 23:42+0200\n"
+"PO-Revision-Date: 2026-10-06 13:27+0200\n"
 "Last-Translator: Libor Filipek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 26.08.0\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -499,10 +499,9 @@ msgstr "Veřejné (přístupné pro všechny)"
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20 kcalprefs.kcfg:35 kcalprefs.kcfg:50
-#, fuzzy, kde-format
-#| msgid "Confidential (accessible to you and some others)"
+#, kde-format
 msgid "Confidential (accessible to you and select others)"
-msgstr "Důvěrné (přístupné pro vás a pozvané)"
+msgstr "Důvěrné (přístupné pro vás a další vybrané)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)

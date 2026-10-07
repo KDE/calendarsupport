@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-06 00:47+0000\n"
-"PO-Revision-Date: 2026-08-29 20:34+0300\n"
+"PO-Revision-Date: 2026-10-06 19:42+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -502,10 +502,9 @@ msgstr "Genel (herkes görebilir)"
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20 kcalprefs.kcfg:35 kcalprefs.kcfg:50
-#, fuzzy, kde-format
-#| msgid "Confidential (accessible to you and some others)"
+#, kde-format
 msgid "Confidential (accessible to you and select others)"
-msgstr "Gizli (size ve bazı birkaç kişiye açık)"
+msgstr "Gizli (size ve seçili bazı birkaç kişiye açık)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
