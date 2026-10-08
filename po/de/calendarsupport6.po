@@ -8,21 +8,22 @@
 # SPDX-FileCopyrightText: 2022, 2025 Frank Steinmetzger <dev-kde@felsenfleischer.de>
 # SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 # SPDX-FileCopyrightText: 2026 Alexander Becker <alex-at-kde-l10n-de@freenet.de>
-# Intevation GmbH, 2010.
+# SPDX-FileCopyrightText: 2026 Philipp Kiemle <l10n.daphipz@fastmail.de>
+# SPDX-FileCopyrightText: 2010 Intevation GmbH
 msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-21 00:45+0000\n"
-"PO-Revision-Date: 2026-04-24 22:33+0200\n"
-"Last-Translator: Alexander Becker <alex-at-kde-l10n-de@freenet.de>\n"
+"PO-Revision-Date: 2026-10-05 05:07+0200\n"
+"Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.04.0\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -496,10 +497,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:14
-#, fuzzy, kde-format
-#| msgid "&Events"
+#, kde-format
 msgid "Events:"
-msgstr "&Termine"
+msgstr "Termine:"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -507,13 +507,13 @@ msgstr "&Termine"
 #: kcalprefs.kcfg:17 kcalprefs.kcfg:32 kcalprefs.kcfg:47
 #, kde-format
 msgid "Public (accessible to everyone)"
-msgstr ""
+msgstr "Öffentlich (für jeden zugänglich)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20
 #, kde-format
 msgid "Confidential (accessible to you and others)"
-msgstr ""
+msgstr "Vertraulich (für Sie und bestimmte andere Personen zugänglich)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -521,28 +521,26 @@ msgstr ""
 #: kcalprefs.kcfg:23 kcalprefs.kcfg:38 kcalprefs.kcfg:53
 #, kde-format
 msgid "Private (accessible to you only)"
-msgstr ""
+msgstr "Privat (ausschließlich für Sie verfügbar)"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:29
-#, fuzzy, kde-format
-#| msgid "&To-dos"
+#, kde-format
 msgid "To-dos:"
-msgstr "&Aufgaben"
+msgstr "Aufgaben:"
 
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:35 kcalprefs.kcfg:50
 #, kde-format
 msgid "Confidential (accessible to you and some others)"
-msgstr ""
+msgstr "Vertraulich (für Sie und bestimmte andere Personen zugänglich)"
 
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:44
-#, fuzzy, kde-format
-#| msgid "&Journals"
+#, kde-format
 msgid "Journals:"
-msgstr "&Journale"
+msgstr "Journale:"
 
 #. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:62
