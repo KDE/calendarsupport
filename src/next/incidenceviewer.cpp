@@ -123,14 +123,6 @@ private:
     Q_DISABLE_COPY_MOVE(IncidenceViewerPrivate);
 };
 
-IncidenceViewer::IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent)
-    : QWidget(parent)
-    , d(new IncidenceViewerPrivate(this))
-{
-    d->mETM = calendar->entityTreeModel();
-    init();
-}
-
 IncidenceViewer::IncidenceViewer(Akonadi::EntityTreeModel *etm, QWidget *parent)
     : QWidget(parent)
     , d(new IncidenceViewerPrivate(this))
@@ -164,11 +156,6 @@ void IncidenceViewer::init()
 }
 
 IncidenceViewer::~IncidenceViewer() = default;
-
-void IncidenceViewer::setCalendar(Akonadi::ETMCalendar *calendar)
-{
-    d->mETM = calendar->entityTreeModel();
-}
 
 void IncidenceViewer::setModel(Akonadi::EntityTreeModel *model)
 {

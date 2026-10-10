@@ -70,10 +70,6 @@ public:
      * \a calendar is a pointer to a Calendar instance.
      * \a parent it the parent widget.
      */
-    CALENDARSUPPORT_DEPRECATED_VERSION(5, 24, "Use constructor with ETM")
-    explicit IncidenceViewer(Akonadi::ETMCalendar *calendar, QWidget *parent = nullptr);
-    /*!
-     */
     explicit IncidenceViewer(Akonadi::EntityTreeModel *etm, QWidget *parent = nullptr);
 
     /*!
@@ -88,13 +84,6 @@ public:
      * Destroys the incidence viewer.
      */
     ~IncidenceViewer() override;
-
-    /*!
-     * Sets the Calendar for this viewer.
-     * \a calendar is a pointer to a Calendar instance.
-     */
-    CALENDARSUPPORT_DEPRECATED_VERSION(5, 24, "Prefer passing an ETM via setModel()")
-    void setCalendar(Akonadi::ETMCalendar *calendar);
 
     /*!
      * Sets the model for this viewer.
