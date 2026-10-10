@@ -18,6 +18,7 @@
 #include <QTest>
 
 // Standard values for to-dos.
+// NOLINTBEGIN(bugprone-throwing-static-initialization)
 static const bool ALL_DAY = true;
 static const bool RECURS = true;
 static const QDateTime START_DT{QDate(2222, 6, 10), QTime(11, 0, 0)};
@@ -43,6 +44,7 @@ static const QString EXPECTED_DURATION_DT{QStringLiteral("2 days 30 minutes")};
 static const QString EXPECTED_PCT100{QStringLiteral("100%")};
 static const QString EXPECTED_PCT50{QStringLiteral("50%")};
 static const QString EXPECTED_PCT0{QStringLiteral("0%")};
+// NOLINTEND(bugprone-throwing-static-initialization)
 
 #ifndef Q_OS_WIN
 static void initLocale()
