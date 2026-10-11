@@ -56,6 +56,8 @@ target_sources(
         freebusymodel/freebusyitem.h
         collectionselection.h
         messagewidget.h
+        incidenceformatter.cpp
+        templates.qrc
 )
 
 ki18n_wrap_ui(KPim6CalendarSupport
@@ -120,6 +122,9 @@ target_link_libraries(
         KPim6::AkonadiCore
         KF6::CalendarCore
         KPim6::CalendarUtils
+        KF6::IconThemes
+        KF6::TextTemplate
+        KPim6::GrantleeTheme
 )
 
 set_target_properties(

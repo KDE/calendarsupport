@@ -9,6 +9,7 @@
 #include "utils.h"
 
 #include "calendarsupport_debug.h"
+#include "incidenceformatter_p.h"
 #include "kcalprefs.h"
 
 #include <Akonadi/AgentInstance>
@@ -24,8 +25,6 @@
 #include <Akonadi/ETMCalendar>
 
 #include <KHolidays/HolidayRegion>
-
-#include <KCalUtils/IncidenceFormatter>
 
 #include <KCalendarCore/CalFilter>
 #include <KCalendarCore/FileStorage>
@@ -419,12 +418,12 @@ QString CalendarSupport::toolTipString(const Akonadi::Collection &coll)
 
 QString CalendarSupport::toolTipString(const QString &sourceName, const KCalendarCore::IncidenceBase::Ptr &incidence, QDate date)
 {
-    return KCalUtils::IncidenceFormatter::toolTipStr(sourceName, incidence, date);
+    return IncidenceFormatter::toolTipStr(sourceName, incidence, date);
 }
 
 QString CalendarSupport::extensiveDisplayString(const QString &sourceName, const KCalendarCore::IncidenceBase::Ptr &incidence, QDate date)
 {
-    return KCalUtils::IncidenceFormatter::extensiveDisplayStr(sourceName, incidence, date);
+    return IncidenceFormatter::extensiveDisplayStr(sourceName, incidence, date);
 }
 
 QString CalendarSupport::subMimeTypeForIncidence(const KCalendarCore::Incidence::Ptr &incidence)

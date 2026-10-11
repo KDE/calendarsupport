@@ -1,0 +1,27 @@
+{% extends "org.kde.pim/calendarsupport/template_base.html" %}
+
+{% block body %}
+
+<h2>{% i18n "Free/Busy information for %1" incidence.organizer %}</h2>
+<h4>{% i18n "Busy times in date range %1 - %2:" incidence.start|date:"SHORT_DATE_FORMAT" incidence.end|date:"SHORT_DATE_FORMAT" %}</h4>
+
+<p>
+<em><b>{% i18nc "tag for busy period list" "Busy:" %}</b></em>
+
+{% for period in incidence.periods %}
+    {% if period.duration %}
+        {% i18nc "startDate for duration" "%1 for %2" period.dtStart|date:"SHORT_DATE_FORMAT" period.duration %}
+    {% else %}
+        {% if period.date %}
+            {% i18nc "date, fromTime - toTime" "%1, %2 - %3" period.date|date:"SHORT_DATE_FORMAT" period.start|time period.end|time %}
+        {% else %}
+            {% i18nc "fromDateTime - endDateTime" "%1 - %2" period.start|date:"SHORT_DATETIME_FORMAT" period.end|date:"SHORT_DATETIME_FORMAT" %}
+        {% endif %}
+    {% endif %}
+    {% if not forloop.last %}
+        <br/>
+    {% endif %}
+{% endfor %}
+</p>
+
+{% endblock body %}
