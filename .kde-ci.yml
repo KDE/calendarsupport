@@ -11,8 +11,8 @@ Dependencies:
     'pim/akonadi-calendar': '@same'
     'pim/kcalutils': '@same'
     'pim/kidentitymanagement': '@same'
-    'pim/kmime': '@same'
-    'libraries/ktextaddons': '@latest-kf6'
+    'frameworks/kmime': '@same'
+    'libraries/ktextaddons': '1.9'
 
 Options:
  require-passing-tests-on: ['@all']
