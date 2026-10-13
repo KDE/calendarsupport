@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-06 00:47+0000\n"
-"PO-Revision-Date: 2026-10-06 19:42+0300\n"
+"PO-Revision-Date: 2026-10-12 11:58+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -715,7 +715,7 @@ msgid ""
 "Check this box to prevent KOrganizer from marking the working hours on "
 "holidays."
 msgstr ""
-"K Organizatör’ün tatillerde çalışma saatlerini işaretlemesini bu kutuya "
+"KOrganizer’ın tatillerde çalışma saatlerini işaretlemesini bu kutuya "
 "tıklayarak engelleyebilirsiniz."
 
 #. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
@@ -775,7 +775,7 @@ msgstr ""
 "Bu düğmeye tıklayarak, diğer katılımcıları ilgilendiren etkinlikleri (veya "
 "yapılacak işleri) oluştururken, güncellerken veya silerken kendiliğinden "
 "posta üretilmesini sağlayabilirsiniz. Grup yazılımı işlevini kullanmak "
-"istiyorsanız; örneğin, Kontak’ı KDE Kolab istemcisi olarak düzenlemek "
+"istiyorsanız; örneğin, Kontact’i KDE Kolab istemcisi olarak düzenlemek "
 "istiyorsanız bu kutucuğu işaretlemeniz önerilir."
 
 #. i18n: ectx: label, entry (SendPolicy), group (Group Scheduling)
@@ -1504,7 +1504,7 @@ msgstr "&Renkleri kullan"
 #: printing/calprintyearconfig_base.ui:178
 #, kde-format
 msgid "Print a datetime footer on each page"
-msgstr "Her sayfada bir tarih zaman altbilgisi yazdır"
+msgstr "Her sayfada bir tarih zaman alt bilgisi yazdır"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mPrintFooter)
 #: printing/calprintdayconfig_base.ui:377
@@ -1519,7 +1519,7 @@ msgid ""
 "Check this box if you want to print a small footer on each page that "
 "contains the date of the print."
 msgstr ""
-"Her sayfada yazdırma tarihini içeren küçük bir altbilgi yazdırmak "
+"Her sayfada yazdırma tarihini içeren küçük bir alt bilgi yazdırmak "
 "istiyorsanız bu kutuyu işaretleyin."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mPrintFooter)
