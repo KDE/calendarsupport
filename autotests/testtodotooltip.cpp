@@ -103,7 +103,7 @@ static QString dateTimeToString(const QDateTime &date, bool dateOnly)
     }
 
 #if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 31, 0)
-    return QLocale().toString(date.toLocalTime(), QLocale::LongFormat));
+    return QLocale().toString(date.toLocalTime(), QLocale::LongFormat);
 #else
     const KFormat format;
     return format.formatDateTime(date.toLocalTime(), QLocale::LongFormat, KFormat::AddTimezoneAbbreviationIfNeeded);
