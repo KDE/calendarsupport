@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-06 00:47+0000\n"
+"POT-Creation-Date: 2026-10-15 00:46+0000\n"
 "PO-Revision-Date: 2026-10-07 15:51+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -473,6 +473,375 @@ msgstr "Fine:"
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
 msgstr "Durata:"
+
+#: incidenceformatter.cpp:285
+#, fuzzy, kde-format
+#| msgid "Show journals"
+msgid "Show mail"
+msgstr "Mostra diari"
+
+#: incidenceformatter.cpp:549
+#, fuzzy, kde-format
+#| msgid "1 hour "
+#| msgid_plural "%1 hours "
+msgctxt "hours part of duration"
+msgid "1 hour "
+msgid_plural "%1 hours "
+msgstr[0] "1 ora"
+msgstr[1] "%1 ore "
+
+#: incidenceformatter.cpp:553
+#, fuzzy, kde-format
+#| msgid "1 minute "
+#| msgid_plural "%1 minutes "
+msgctxt "minutes part duration"
+msgid "1 minute "
+msgid_plural "%1 minutes "
+msgstr[0] "1 minuto "
+msgstr[1] "%1 minuti "
+
+#: incidenceformatter.cpp:557
+#, kde-format
+msgctxt "seconds part of duration"
+msgid "1 second"
+msgid_plural "%1 seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: incidenceformatter.cpp:719
+#, kde-format
+msgctxt "Event start"
+msgid "<i>From:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:721
+#, kde-format
+msgctxt "Event end"
+msgid "<i>To:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:723
+#, kde-format
+msgctxt "datetime range for event"
+msgid "<i>Date:</i> %1 - %2"
+msgstr ""
+
+#: incidenceformatter.cpp:726 incidenceformatter.cpp:804
+#, kde-format
+msgid "<i>Date:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:732
+#, kde-format
+msgctxt "time for event"
+msgid "<i>Time:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:734
+#, kde-format
+msgctxt "time range for event"
+msgid "<i>Time:</i> %1 - %2"
+msgstr ""
+
+#: incidenceformatter.cpp:767
+#, fuzzy, kde-format
+#| msgctxt "to-do start datetime"
+#| msgid "Start: %1"
+msgctxt "To-do's start date"
+msgid "<i>Start:</i> %1"
+msgstr "Inizio: %1"
+
+#: incidenceformatter.cpp:770
+#, kde-format
+msgctxt "To-do's due date"
+msgid "<i>Due:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:777
+#, fuzzy, kde-format
+#| msgctxt "subitem Priority: N"
+#| msgid "Priority: %1\n"
+msgctxt "To-do's priority number"
+msgid "<i>Priority:</i> %1"
+msgstr "&Priorità: %1\n"
+
+#: incidenceformatter.cpp:782
+#, fuzzy, kde-format
+#| msgctxt "@title:column to-do percent completed"
+#| msgid "Completed"
+msgctxt "To-do's completed date"
+msgid "<i>Completed:</i> %1"
+msgstr "Completata"
+
+#: incidenceformatter.cpp:793
+#, kde-format
+msgctxt "To-do's percent complete:"
+msgid "<i>Percent Done:</i> %1%"
+msgstr ""
+
+#: incidenceformatter.cpp:812
+#, kde-format
+msgid "<i>Period start:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:813
+#, kde-format
+msgid "<i>Period end:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:838 templates/freebusy.html:5
+#, fuzzy, kde-format
+#| msgid "days of free/busy information"
+msgid "Free/Busy information for %1"
+msgstr "giorni delle informazioni libero/occupato"
+
+#: incidenceformatter.cpp:860 incidenceformatter.cpp:862
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "attendee name (attendee status)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: incidenceformatter.cpp:865
+#, fuzzy, kde-format
+#| msgctxt "4 digit year"
+#| msgid "%1"
+msgid "%1"
+msgstr "%1"
+
+#: incidenceformatter.cpp:891 incidenceformatter.cpp:1028
+#, fuzzy, kde-format
+#| msgctxt "@label an elipsis"
+#| msgid "..."
+msgctxt "ellipsis"
+msgid "..."
+msgstr "..."
+
+#: incidenceformatter.cpp:911
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Delegated to %1"
+msgid " (delegated by %1)"
+msgstr "Delegato a %1"
+
+#: incidenceformatter.cpp:914
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Delegated to %1"
+msgid " (delegated to %1)"
+msgstr "Delegato a %1"
+
+#: incidenceformatter.cpp:934 templates/event.html:112 templates/todo.html:93
+#, fuzzy, kde-format
+#| msgid "Organizer: "
+msgid "Organizer:"
+msgstr "Organizzatore: "
+
+#: incidenceformatter.cpp:945 templates/event.html:124 templates/todo.html:105
+#, kde-format
+msgid "Chair:"
+msgstr ""
+
+#: incidenceformatter.cpp:952 templates/event.html:137 templates/todo.html:118
+#, kde-format
+msgid "Required Participants:"
+msgstr ""
+
+#: incidenceformatter.cpp:959
+#, kde-format
+msgid "Optional Participants:"
+msgstr ""
+
+#: incidenceformatter.cpp:966 templates/event.html:163 templates/todo.html:144
+#, kde-format
+msgid "Observers:"
+msgstr ""
+
+#: incidenceformatter.cpp:988 templates/event.html:13 templates/journal.html:14
+#: templates/todo.html:14
+#, fuzzy, kde-format
+#| msgid "Calendar"
+msgid "Calendar:"
+msgstr "Calendario"
+
+#: incidenceformatter.cpp:996 templates/event.html:21 templates/todo.html:22
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Location:"
+msgid "Location:"
+msgstr "Luogo:"
+
+#: incidenceformatter.cpp:1003 templates/event.html:60 templates/todo.html:54
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip period duration"
+#| msgid "Duration:"
+msgid "Duration:"
+msgstr "Durata:"
+
+#: incidenceformatter.cpp:1009 incidenceformatter.cpp:1019
+#: templates/event.html:68 templates/todo.html:62
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Recurrence"
+msgid "Recurrence:"
+msgstr "Ricorrenza"
+
+#: incidenceformatter.cpp:1020 templates/todo.html:64
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "E&xceptions"
+msgid "Exception"
+msgstr "&Eccezioni"
+
+#: incidenceformatter.cpp:1036 printing/calprintdefaultplugins.cpp:436
+#: templates/event.html:96 templates/journal.html:30 templates/todo.html:74
+#, kde-format
+msgid "Description:"
+msgstr "Descrizione:"
+
+#: incidenceformatter.cpp:1050 templates/event.html:104 templates/todo.html:85
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Reminder:"
+msgid "Reminder:"
+msgid_plural "Reminders:"
+msgstr[0] "Promemoria:"
+msgstr[1] "Promemoria:"
+
+#: incidenceformatter.cpp:1078 templates/event.html:176
+#: templates/journal.html:38 templates/todo.html:157
+#, kde-format
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: incidenceformatter.cpp:1117 incidenceformatter.cpp:1143
+#: incidenceformatter.cpp:1155 printing/calprintdefaultplugins.cpp:346
+#, kde-format
+msgid "1 day"
+msgid_plural "%1 days"
+msgstr[0] "1 giorno"
+msgstr[1] "%1 giorni"
+
+#: incidenceformatter.cpp:1123 printing/calprintdefaultplugins.cpp:349
+#, kde-format
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "1 ora"
+msgstr[1] "%1 ore"
+
+#: incidenceformatter.cpp:1129 printing/calprintdefaultplugins.cpp:352
+#, kde-format
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "1 minuto"
+msgstr[1] "%1 minuti"
+
+#: incidenceformatter.cpp:1146
+#, fuzzy, kde-format
+#| msgctxt "repeat every X minutes"
+#| msgid "every "
+msgid "forever"
+msgstr "ogni "
+
+#: incidenceformatter.cpp:1188
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 before the start"
+msgctxt "N days/hours/minutes before the start datetime"
+msgid "%1 before the start"
+msgstr "%1 all'inizio"
+
+#: incidenceformatter.cpp:1190
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 after the start"
+msgctxt "N days/hours/minutes after the start datetime"
+msgid "%1 after the start"
+msgstr "%1 dall'inizio"
+
+#: incidenceformatter.cpp:1201
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "before the to-do is due"
+msgctxt "N days/hours/minutes before the due datetime"
+msgid "%1 before the to-do is due"
+msgstr "prima della fine della cosa da fare"
+
+#: incidenceformatter.cpp:1203
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 before the end"
+msgctxt "N days/hours/minutes before the end datetime"
+msgid "%1 before the end"
+msgstr "%1 alla fine"
+
+#: incidenceformatter.cpp:1207
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "after the to-do is due"
+msgctxt "N days/hours/minutes after the due datetime"
+msgid "%1 after the to-do is due"
+msgstr "dopo la fine della cosa da fare"
+
+#: incidenceformatter.cpp:1209
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 after the end"
+msgctxt "N days/hours/minutes after the end datetime"
+msgid "%1 after the end"
+msgstr "%1 dopo la fine"
+
+#: incidenceformatter.cpp:1227
+#, fuzzy, kde-format
+#| msgid "Edit %1"
+msgctxt "reminder occurs at datetime"
+msgid "at %1"
+msgstr "Modifica %1"
+
+#: incidenceformatter.cpp:1234
+#, fuzzy, kde-format
+#| msgid "Repeats: "
+msgid "repeats once"
+msgid_plural "repeats %1 times"
+msgstr[0] "Ripetizioni: "
+msgstr[1] "Ripetizioni: "
+
+#: incidenceformatter.cpp:1235
+#, kde-format
+msgctxt "interval is N days/hours/minutes"
+msgid "interval is %1"
+msgstr ""
+
+#: incidenceformatter.cpp:1236
+#, fuzzy, kde-format
+#| msgctxt "summary, location"
+#| msgid "%1, %2"
+msgctxt "(repeat string, interval string)"
+msgid "(%1, %2)"
+msgstr "%1, %2"
+
+#: incidenceformatter.cpp:1241
+#, kde-format
+msgctxt "alarm is disabled"
+msgid "disabled"
+msgstr ""
+
+#: incidenceformatter.cpp:1245
+#, fuzzy, kde-format
+#| msgctxt "blocking audio reminders for this calendar"
+#| msgid "audio"
+msgctxt "alarm will play a sound"
+msgid "audio"
+msgstr "audio"
+
+#: incidenceformatter.cpp:1248
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "the reminder string with its types list"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:9
@@ -1641,27 +2010,6 @@ msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
 msgstr "%1 dopo la fine"
 
-#: printing/calprintdefaultplugins.cpp:346
-#, kde-format
-msgid "1 day"
-msgid_plural "%1 days"
-msgstr[0] "1 giorno"
-msgstr[1] "%1 giorni"
-
-#: printing/calprintdefaultplugins.cpp:349
-#, kde-format
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "1 ora"
-msgstr[1] "%1 ore"
-
-#: printing/calprintdefaultplugins.cpp:352
-#, kde-format
-msgid "1 minute"
-msgid_plural "%1 minutes"
-msgstr[0] "1 minuto"
-msgstr[1] "%1 minuti"
-
 #: printing/calprintdefaultplugins.cpp:356
 #: printing/calprintdefaultplugins.cpp:666
 #, kde-format
@@ -1678,11 +2026,6 @@ msgstr "Organizzatore: "
 #, kde-format
 msgid "Location: "
 msgstr "Luogo: "
-
-#: printing/calprintdefaultplugins.cpp:436
-#, kde-format
-msgid "Description:"
-msgstr "Descrizione:"
 
 #: printing/calprintdefaultplugins.cpp:464
 #, kde-format
@@ -1936,7 +2279,7 @@ msgid "To-do list"
 msgstr "Cose da fare"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1726
+#: printing/calprintpluginbase.cpp:1726 templates/todo.html:179
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2862,127 +3205,362 @@ msgstr "Stampa &anno"
 msgid "Prints a calendar for an entire year"
 msgstr "Stampa un calendario per un anno intero"
 
-#: utils.cpp:243
+#: templates/attendee_row.html:17
+#, fuzzy
+#| msgid "KOrganizer"
+msgid "organizer"
+msgstr "KOrganizer"
+
+#: templates/attendee_row.html:21
+msgid "myself"
+msgstr ""
+
+#: templates/attendee_row.html:25
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Delegated to %1"
+msgid "delegated by %1)"
+msgstr "Delegato a %1"
+
+#: templates/attendee_row.html:29
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Delegated to %1"
+msgid "delegated to %1)"
+msgstr "Delegato a %1"
+
+#: templates/attendee_row.html:36
+msgid "Send email"
+msgstr "Invia messaggio di posta elettronica"
+
+#: templates/event.html:5
+#, fuzzy
+#| msgctxt "@title:column event description"
+#| msgid "Event"
+msgid "Event"
+msgstr "Evento"
+
+#: templates/event.html:30 templates/event.html:33 templates/event.html:40
+#: templates/event.html:43 templates/journal.html:22
+#, fuzzy
+#| msgid "Due date: "
+msgid "Date:"
+msgstr "Data di scadenza: "
+
+#: templates/event.html:31
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "<beginDate> - <endDate>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/event.html:34 templates/event.html:44
+#, fuzzy, kde-format
+#| msgctxt "4 digit year"
+#| msgid "%1"
+msgctxt "Date as string"
+msgid "%1"
+msgstr "%1"
+
+#: templates/event.html:41
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "<beginDateTime> - <endDateTime>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/event.html:47
+#, fuzzy
+#| msgid "Time"
+msgid "Time:"
+msgstr "Ora"
+
+#: templates/event.html:49
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "<beginTime> - <endTime>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/event.html:51
+#, fuzzy, kde-format
+#| msgctxt "4 digit year"
+#| msgid "%1"
+msgctxt "Time as string"
+msgid "%1"
+msgstr "%1"
+
+#: templates/event.html:70
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "E&xceptions"
+msgctxt "Exception in event recurrence"
+msgid "Exception"
+msgstr "&Eccezioni"
+
+#: templates/event.html:80
+#, fuzzy
+#| msgctxt "incidence category"
+#| msgid "Birthday"
+msgid "Birthday:"
+msgstr "Compleanno"
+
+#: templates/event.html:88
+msgid "Anniversary:"
+msgstr ""
+
+#: templates/event.html:150 templates/todo.html:131
+msgid "Optional participants:"
+msgstr ""
+
+#: templates/event.html:184 templates/todo.html:186
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Attachments:"
+msgid "Attachment:"
+msgid_plural "Attachments:"
+msgstr[0] "Allegati:"
+msgstr[1] "Allegati:"
+
+#: templates/event.html:197 templates/journal.html:47 templates/todo.html:200
+#, fuzzy, kde-format
+#| msgctxt "print date: formatted-datetime"
+#| msgid "printed: %1"
+msgid "Created: %1"
+msgstr "stampato: %1"
+
+#: templates/event.html:198 templates/journal.html:48 templates/todo.html:201
+#, fuzzy, kde-format
+#| msgctxt "print date: formatted-datetime"
+#| msgid "printed: %1"
+msgid "Modified: %1"
+msgstr "stampato: %1"
+
+#: templates/event.html:199 templates/journal.html:49 templates/todo.html:202
+#, fuzzy, kde-format
+#| msgid "Person: %1"
+msgid "Revision: %1"
+msgstr "Persona: %1"
+
+#: templates/freebusy.html:6
+#, kde-format
+msgid "Busy times in date range %1 - %2:"
+msgstr ""
+
+#: templates/freebusy.html:9
+#, fuzzy
+#| msgid "Busy"
+msgctxt "tag for busy period list"
+msgid "Busy:"
+msgstr "Occupato"
+
+#: templates/freebusy.html:13
+#, kde-format
+msgctxt "startDate for duration"
+msgid "%1 for %2"
+msgstr ""
+
+#: templates/freebusy.html:16
+#, fuzzy, kde-format
+#| msgctxt "weekday, shortmonthname daynumber"
+#| msgid "%1, %2 %3"
+msgctxt "date, fromTime - toTime"
+msgid "%1, %2 - %3"
+msgstr "%1, %3 %2"
+
+#: templates/freebusy.html:18
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "fromDateTime - endDateTime"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/incidence_header.html:10
+#, fuzzy
+#| msgid "Print &incidence"
+msgid "Recurring incidence"
+msgstr "Stampa &occorrenza"
+
+#: templates/incidence_header.html:14
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Set a reminder"
+msgid "Incidence with a reminder"
+msgstr "Imposta un promemoria"
+
+#: templates/incidence_header.html:18
+msgid "Incidence is read only"
+msgstr ""
+
+#: templates/journal.html:5
+msgid "Journal"
+msgstr "Diario"
+
+#: templates/todo.html:5
+#, fuzzy
+#| msgctxt "@title:tab"
+#| msgid "Todo View"
+msgid "Todo"
+msgstr "Vista delle cose da fare"
+
+#: templates/todo.html:30
+#, fuzzy
+#| msgctxt "@info:tooltip period start time"
+#| msgid "Start:"
+msgctxt "to-do start date/time"
+msgid "Start:"
+msgstr "Inizio:"
+
+#: templates/todo.html:42
+#, fuzzy
+#| msgctxt "to-do due datetime"
+#| msgid "&Due:"
+msgctxt "to-do due date/time"
+msgid "Due:"
+msgstr "&Scadenza:"
+
+#: templates/todo.html:165
+#, fuzzy
+#| msgid "Priority"
+msgid "Priority:"
+msgstr "Priorità"
+
+#: templates/todo.html:173
+#, fuzzy
+#| msgctxt "@title:column to-do percent completed"
+#| msgid "Completed"
+msgctxt "Completed: date"
+msgid "Completed:"
+msgstr "Completata"
+
+#: templates/todo.html:178
+#, fuzzy
+#| msgctxt "@option sort by percent completed"
+#| msgid "Percent Complete"
+msgid "Percent done:"
+msgstr "Percentuale completata"
+
+#: utils.cpp:242
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "Seleziona calendario"
 
-#: utils.cpp:244
+#: utils.cpp:243
 #, kde-format
 msgid "Select the calendar where this item will be stored."
 msgstr "Seleziona il calendario dove memorizzare questo elemento."
 
-#: utils.cpp:348
+#: utils.cpp:347
 #, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "%1 (Calendario degli eventi predefinito)"
 
-#: utils.cpp:350
+#: utils.cpp:349
 #, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "%1 (Calendario delle cose da fare predefinito)"
 
-#: utils.cpp:361
+#: utils.cpp:360
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr "Virtuale"
 
-#: utils.cpp:363
+#: utils.cpp:362
 #, kde-format
 msgid "Folder type:"
 msgstr "Tipo cartella:"
 
-#: utils.cpp:373
+#: utils.cpp:372
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "nessuno"
 
-#: utils.cpp:376
+#: utils.cpp:375
 #, kde-format
 msgid "Content type:"
 msgstr "Tipo di contenuto:"
 
-#: utils.cpp:382
+#: utils.cpp:381
 #, kde-format
 msgid "Rights:"
 msgstr "Permessi:"
 
-#: utils.cpp:385
+#: utils.cpp:384
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "sola lettura"
 
-#: utils.cpp:387
+#: utils.cpp:386
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "lettura e scrittura"
 
-#: utils.cpp:394
+#: utils.cpp:393
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr "tutti"
 
-#: utils.cpp:397
+#: utils.cpp:396
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "audio"
 
-#: utils.cpp:399
+#: utils.cpp:398
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "visualizzazione"
 
-#: utils.cpp:401
+#: utils.cpp:400
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "posta elettronica"
 
-#: utils.cpp:403
+#: utils.cpp:402
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "comando"
 
-#: utils.cpp:405
+#: utils.cpp:404
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr "altro"
 
-#: utils.cpp:409
+#: utils.cpp:408
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "nessuno"
 
-#: utils.cpp:412
+#: utils.cpp:411
 #, kde-format
 msgid "Blocked Reminders:"
 msgstr "Promemoria bloccati:"
 
-#: utils.cpp:488
+#: utils.cpp:487
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:490
+#: utils.cpp:489
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:495
+#: utils.cpp:494
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
@@ -3046,14 +3624,8 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "No Date"
 #~ msgstr "Senza data"
 
-#~ msgid "Calendar"
-#~ msgstr "Calendario"
-
 #~ msgid "Tasks"
 #~ msgstr "Attività"
-
-#~ msgid "Journal"
-#~ msgstr "Diario"
 
 #~ msgid "Notes"
 #~ msgstr "Note"
@@ -3153,10 +3725,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "incidence category"
 #~ msgid "Miscellaneous"
 #~ msgstr "Varie"
-
-#~ msgctxt "incidence category"
-#~ msgid "Birthday"
-#~ msgstr "Compleanno"
 
 #~ msgctxt "@info"
 #~ msgid "Unable to purge to-dos with uncompleted children."
@@ -4077,10 +4645,6 @@ msgstr "^%1 \\(.*\\)"
 #~ "unità di tempo. Puoi impostare quante unità di tempo nella casella a "
 #~ "fianco."
 
-#~ msgctxt "@label an elipsis"
-#~ msgid "..."
-#~ msgstr "..."
-
 #~ msgctxt "@info"
 #~ msgid "\"%1\" is a read-only item so modifications are not possible."
 #~ msgstr ""
@@ -4885,9 +5449,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "Attendee added"
 #~ msgstr "Partecipante aggiunto"
 
-#~ msgid "%1 - %2"
-#~ msgstr "%1 - %2"
-
 #~ msgid "- %1"
 #~ msgstr "- %1"
 
@@ -4940,10 +5501,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "End Time"
 #~ msgstr "Ora di fine"
 
-#~ msgctxt "@title:column event description"
-#~ msgid "Event"
-#~ msgstr "Evento"
-
 #~ msgctxt "@title:column event locatin"
 #~ msgid "Location"
 #~ msgstr "Luogo"
@@ -4963,10 +5520,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@title:column to-do priority"
 #~ msgid "Priority"
 #~ msgstr "Priorità"
-
-#~ msgctxt "@title:column to-do percent completed"
-#~ msgid "Completed"
-#~ msgstr "Completata"
 
 #~ msgctxt "@title:column to-do due date"
 #~ msgid "Due Date"
@@ -5023,9 +5576,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "Default export file"
 #~ msgid "calendar.html"
 #~ msgstr "calendario.html"
-
-#~ msgid "KOrganizer"
-#~ msgstr "KOrganizer"
 
 #~ msgid "A Personal Organizer"
 #~ msgstr "Un organizzatore personale"
@@ -5431,9 +5981,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "Add %1"
 #~ msgstr "Aggiungi %1"
-
-#~ msgid "Edit %1"
-#~ msgstr "Modifica %1"
 
 #~ msgctxt "@title::window"
 #~ msgid "Edit Calendar Filters"
@@ -5914,9 +6461,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "Publish"
 #~ msgstr "Pubblica"
-
-#~ msgid "days of free/busy information"
-#~ msgstr "giorni delle informazioni libero/occupato"
 
 #~ msgid "Server Information"
 #~ msgstr "Informazioni server"
@@ -6488,9 +7032,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "Display to-dos in the month view"
 #~ msgstr "Mostra cose da fare nella vista mensile"
-
-#~ msgid "Show journals"
-#~ msgstr "Mostra diari"
 
 #~ msgid "Check this box to display journals in the month view."
 #~ msgstr ""
@@ -7871,10 +8412,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "Select a year"
 #~ msgstr "Seleziona un anno"
 
-#~ msgctxt "4 digit year"
-#~ msgid "%1"
-#~ msgstr "%1"
-
 #~ msgctxt "@title:tab personal settings"
 #~ msgid "Personal"
 #~ msgstr "Personale"
@@ -8000,10 +8537,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@title:tab"
 #~ msgid "Month View"
 #~ msgstr "Vista mensile"
-
-#~ msgctxt "@title:tab"
-#~ msgid "Todo View"
-#~ msgstr "Vista delle cose da fare"
 
 #~ msgctxt "@title:group"
 #~ msgid "Other Options"
@@ -8364,10 +8897,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr "Organizzatore: %1"
 
 #~ msgctxt "@label"
-#~ msgid "Delegated to %1"
-#~ msgstr "Delegato a %1"
-
-#~ msgctxt "@label"
 #~ msgid "Delegated from %1"
 #~ msgstr "Delegato da %1"
 
@@ -8393,10 +8922,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "Sets the start time for this to-do."
 #~ msgstr "Imposta l'orario di inizio per questa cosa da fare."
-
-#~ msgctxt "to-do due datetime"
-#~ msgid "&Due:"
-#~ msgstr "&Scadenza:"
 
 #~ msgid "Ti&me associated"
 #~ msgstr "&Ora associata"
@@ -8445,10 +8970,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "The start date cannot be after the due date."
 #~ msgstr "La data d'inizio non può essere posteriore alla data di scadenza."
-
-#~ msgctxt "to-do start datetime"
-#~ msgid "Start: %1"
-#~ msgstr "Inizio: %1"
 
 #~ msgctxt "to-do due datetime"
 #~ msgid "   Due: %1"
@@ -8604,10 +9125,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@info:whatsthis"
 #~ msgid "Activates a reminder for this event or to-do."
 #~ msgstr "Attiva un promemoria per questo evento o cosa da fare."
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set a reminder"
-#~ msgstr "Imposta un promemoria"
 
 #~ msgctxt "@info:whatsthis"
 #~ msgid ""
@@ -8948,10 +9465,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@option:check"
 #~ msgid "T&ime associated"
 #~ msgstr "&Ora associata"
-
-#~ msgctxt "@label"
-#~ msgid "Reminder:"
-#~ msgstr "Promemoria:"
 
 #~ msgctxt "@label"
 #~ msgid "S&how time as:"
@@ -9494,10 +10007,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid " of the year"
 #~ msgstr " dell'anno"
 
-#~ msgctxt "@title:group"
-#~ msgid "E&xceptions"
-#~ msgstr "&Eccezioni"
-
 #~ msgctxt "@info:whatsthis"
 #~ msgid ""
 #~ "A date that should be considered an exception to the recurrence rules for "
@@ -9748,10 +10257,6 @@ msgstr "^%1 \\(.*\\)"
 #~ "Un evento o attività con ricorrenza settimanale, deve essere associato ad "
 #~ "almeno un giorno della settimana."
 
-#~ msgctxt "@title:window"
-#~ msgid "Recurrence"
-#~ msgstr "Ricorrenza"
-
 #~ msgid ""
 #~ "Unable to turn sub-to-do into a top-level to-do, because it cannot be "
 #~ "locked."
@@ -9814,10 +10319,6 @@ msgstr "^%1 \\(.*\\)"
 #~ "cambia spesso o può essere spostato (o cancellato) dalla posizione "
 #~ "attuale."
 
-#~ msgctxt "@label"
-#~ msgid "Location:"
-#~ msgstr "Luogo:"
-
 #~ msgctxt "@info:tooltip"
 #~ msgid "Provide a location for the attachment file"
 #~ msgstr "Fornisci una posizione per il file dell'allegato"
@@ -9833,10 +10334,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@label"
 #~ msgid "Size:"
 #~ msgstr "Dimensione:"
-
-#~ msgctxt "@label"
-#~ msgid "Attachments:"
-#~ msgstr "Allegati:"
 
 #~ msgctxt "@info:whatsthis"
 #~ msgid ""
@@ -10164,14 +10661,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "before the to-do starts"
 #~ msgstr "prima dell'inizio della cosa da fare"
 
-#~ msgctxt "@item:inlistbox"
-#~ msgid "before the to-do is due"
-#~ msgstr "prima della fine della cosa da fare"
-
-#~ msgctxt "@item:inlistbox"
-#~ msgid "after the to-do is due"
-#~ msgstr "dopo la fine della cosa da fare"
-
 #~ msgctxt "@info:tooltip"
 #~ msgid "Select the reminder trigger relative to the start or due time"
 #~ msgstr ""
@@ -10202,9 +10691,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr ""
 #~ "Specifica un file contenente un suono da riprodurre quando il promemoria "
 #~ "viene attivato"
-
-#~ msgid "Time"
-#~ msgstr "Ora"
 
 #~ msgid "Set the reminder trigger time"
 #~ msgstr "Imposta l'orario di attivazione del promemoria"
@@ -10300,10 +10786,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid " Minute(s)"
 #~ msgstr " Minuto/i"
 
-#~ msgctxt "repeat every X minutes"
-#~ msgid "every "
-#~ msgstr "ogni "
-
 #~ msgid "Display optional text when the reminder is triggered"
 #~ msgstr "Mostra il testo opzionale quando il promemoria viene attivato"
 
@@ -10345,9 +10827,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr ""
 #~ "Marca questa opzione se vuoi inviare un messaggio di posta elettronica "
 #~ "quando il promemoria viene attivato."
-
-#~ msgid "Send email"
-#~ msgstr "Invia messaggio di posta elettronica"
 
 #~ msgid "Display &text:"
 #~ msgstr "Mostra &testo:"

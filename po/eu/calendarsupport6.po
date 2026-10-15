@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-06 00:47+0000\n"
+"POT-Creation-Date: 2026-10-15 00:46+0000\n"
 "PO-Revision-Date: 2026-09-25 18:32+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -466,6 +466,361 @@ msgstr "Bukatu:"
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
 msgstr "Iraupena:"
+
+#: incidenceformatter.cpp:285
+#, fuzzy, kde-format
+#| msgid "New &Journal..."
+msgid "Show mail"
+msgstr "E&gunkari berria..."
+
+#: incidenceformatter.cpp:549
+#, fuzzy, kde-format
+#| msgid "1 hour "
+#| msgid_plural "%1 hours "
+msgctxt "hours part of duration"
+msgid "1 hour "
+msgid_plural "%1 hours "
+msgstr[0] "ordubete "
+msgstr[1] "%1 ordu "
+
+#: incidenceformatter.cpp:553
+#, fuzzy, kde-format
+#| msgid "1 minute "
+#| msgid_plural "%1 minutes "
+msgctxt "minutes part duration"
+msgid "1 minute "
+msgid_plural "%1 minutes "
+msgstr[0] "minutu 1 "
+msgstr[1] "%1 minutu "
+
+#: incidenceformatter.cpp:557
+#, kde-format
+msgctxt "seconds part of duration"
+msgid "1 second"
+msgid_plural "%1 seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: incidenceformatter.cpp:719
+#, kde-format
+msgctxt "Event start"
+msgid "<i>From:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:721
+#, kde-format
+msgctxt "Event end"
+msgid "<i>To:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:723
+#, kde-format
+msgctxt "datetime range for event"
+msgid "<i>Date:</i> %1 - %2"
+msgstr ""
+
+#: incidenceformatter.cpp:726 incidenceformatter.cpp:804
+#, kde-format
+msgid "<i>Date:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:732
+#, kde-format
+msgctxt "time for event"
+msgid "<i>Time:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:734
+#, kde-format
+msgctxt "time range for event"
+msgid "<i>Time:</i> %1 - %2"
+msgstr ""
+
+#: incidenceformatter.cpp:767
+#, fuzzy, kde-format
+#| msgid "Start: %1"
+msgctxt "To-do's start date"
+msgid "<i>Start:</i> %1"
+msgstr "Hasiera: %1"
+
+#: incidenceformatter.cpp:770
+#, kde-format
+msgctxt "To-do's due date"
+msgid "<i>Due:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:777
+#, fuzzy, kde-format
+#| msgctxt "subitem Priority: N"
+#| msgid "Priority: %1\n"
+msgctxt "To-do's priority number"
+msgid "<i>Priority:</i> %1"
+msgstr "Lehentasuna: %1\n"
+
+#: incidenceformatter.cpp:782
+#, fuzzy, kde-format
+#| msgid "Complete"
+msgctxt "To-do's completed date"
+msgid "<i>Completed:</i> %1"
+msgstr "Osatuta"
+
+#: incidenceformatter.cpp:793
+#, kde-format
+msgctxt "To-do's percent complete:"
+msgid "<i>Percent Done:</i> %1%"
+msgstr ""
+
+#: incidenceformatter.cpp:812
+#, kde-format
+msgid "<i>Period start:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:813
+#, kde-format
+msgid "<i>Period end:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:838 templates/freebusy.html:5
+#, fuzzy, kde-format
+#| msgid "days of free/busy information"
+msgid "Free/Busy information for %1"
+msgstr "libre/lanpetuta informazio egunak"
+
+#: incidenceformatter.cpp:860 incidenceformatter.cpp:862
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "attendee name (attendee status)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: incidenceformatter.cpp:865
+#, fuzzy, kde-format
+#| msgid "%1"
+msgid "%1"
+msgstr "%1"
+
+#: incidenceformatter.cpp:891 incidenceformatter.cpp:1028
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgctxt "ellipsis"
+msgid "..."
+msgstr "Editatu..."
+
+#: incidenceformatter.cpp:911
+#, fuzzy, kde-format
+msgid " (delegated by %1)"
+msgstr "Ezabatu %1"
+
+#: incidenceformatter.cpp:914
+#, fuzzy, kde-format
+msgid " (delegated to %1)"
+msgstr "Ezabatu %1"
+
+#: incidenceformatter.cpp:934 templates/event.html:112 templates/todo.html:93
+#, fuzzy, kde-format
+#| msgid "Organizer: "
+msgid "Organizer:"
+msgstr "Antolatzailea: "
+
+#: incidenceformatter.cpp:945 templates/event.html:124 templates/todo.html:105
+#, kde-format
+msgid "Chair:"
+msgstr ""
+
+#: incidenceformatter.cpp:952 templates/event.html:137 templates/todo.html:118
+#, kde-format
+msgid "Required Participants:"
+msgstr ""
+
+#: incidenceformatter.cpp:959
+#, kde-format
+msgid "Optional Participants:"
+msgstr ""
+
+#: incidenceformatter.cpp:966 templates/event.html:163 templates/todo.html:144
+#, kde-format
+msgid "Observers:"
+msgstr ""
+
+#: incidenceformatter.cpp:988 templates/event.html:13 templates/journal.html:14
+#: templates/todo.html:14
+#, fuzzy, kde-format
+#| msgid "Calendar"
+msgid "Calendar:"
+msgstr "Egutegia"
+
+#: incidenceformatter.cpp:996 templates/event.html:21 templates/todo.html:22
+#, fuzzy, kde-format
+msgid "Location:"
+msgstr "&Kokalekua"
+
+#: incidenceformatter.cpp:1003 templates/event.html:60 templates/todo.html:54
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip period duration"
+#| msgid "Duration:"
+msgid "Duration:"
+msgstr "Iraupena:"
+
+#: incidenceformatter.cpp:1009 incidenceformatter.cpp:1019
+#: templates/event.html:68 templates/todo.html:62
+#, fuzzy, kde-format
+#| msgid "Rec&urrence"
+msgid "Recurrence:"
+msgstr "&Periodikotasuna"
+
+#: incidenceformatter.cpp:1020 templates/todo.html:64
+#, fuzzy, kde-format
+#| msgid "E&xceptions"
+msgid "Exception"
+msgstr "&Salbuespenak"
+
+#: incidenceformatter.cpp:1036 printing/calprintdefaultplugins.cpp:436
+#: templates/event.html:96 templates/journal.html:30 templates/todo.html:74
+#, kde-format
+msgid "Description:"
+msgstr "Deskribapena:"
+
+#: incidenceformatter.cpp:1050 templates/event.html:104 templates/todo.html:85
+#, fuzzy, kde-format
+#| msgid "&Reminder:"
+msgid "Reminder:"
+msgid_plural "Reminders:"
+msgstr[0] "&Oroigarria:"
+msgstr[1] "&Oroigarria:"
+
+#: incidenceformatter.cpp:1078 templates/event.html:176
+#: templates/journal.html:38 templates/todo.html:157
+#, kde-format
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: incidenceformatter.cpp:1117 incidenceformatter.cpp:1143
+#: incidenceformatter.cpp:1155 printing/calprintdefaultplugins.cpp:346
+#, kde-format
+msgid "1 day"
+msgid_plural "%1 days"
+msgstr[0] "egun bat"
+msgstr[1] "%1 egun"
+
+#: incidenceformatter.cpp:1123 printing/calprintdefaultplugins.cpp:349
+#, kde-format
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "ordu 1"
+msgstr[1] "%1 ordu"
+
+#: incidenceformatter.cpp:1129 printing/calprintdefaultplugins.cpp:352
+#, kde-format
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "minutu 1"
+msgstr[1] "%1 minutu"
+
+#: incidenceformatter.cpp:1146
+#, fuzzy, kde-format
+#| msgid "every "
+msgid "forever"
+msgstr "errepikatze-aldia "
+
+#: incidenceformatter.cpp:1188
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 before the start"
+msgctxt "N days/hours/minutes before the start datetime"
+msgid "%1 before the start"
+msgstr "%1 hasteko"
+
+#: incidenceformatter.cpp:1190
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 after the start"
+msgctxt "N days/hours/minutes after the start datetime"
+msgid "%1 after the start"
+msgstr "%1 hasi ondoren"
+
+#: incidenceformatter.cpp:1201
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 before the start"
+msgctxt "N days/hours/minutes before the due datetime"
+msgid "%1 before the to-do is due"
+msgstr "%1 hasiera baina lehen"
+
+#: incidenceformatter.cpp:1203
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 before the end"
+msgctxt "N days/hours/minutes before the end datetime"
+msgid "%1 before the end"
+msgstr "%1 amaitzeko"
+
+#: incidenceformatter.cpp:1207
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 after the start"
+msgctxt "N days/hours/minutes after the due datetime"
+msgid "%1 after the to-do is due"
+msgstr "%1 hasieraren ondoren"
+
+#: incidenceformatter.cpp:1209
+#, fuzzy, kde-format
+#| msgctxt "N days/hours/minutes before/after the start/end"
+#| msgid "%1 after the end"
+msgctxt "N days/hours/minutes after the end datetime"
+msgid "%1 after the end"
+msgstr "%1 amaitu ondoren"
+
+#: incidenceformatter.cpp:1227
+#, fuzzy, kde-format
+#| msgid "Edit %1"
+msgctxt "reminder occurs at datetime"
+msgid "at %1"
+msgstr "Editatu %1"
+
+#: incidenceformatter.cpp:1234
+#, fuzzy, kde-format
+#| msgid "Repeats: "
+msgid "repeats once"
+msgid_plural "repeats %1 times"
+msgstr[0] "Errepikapenak: "
+msgstr[1] "Errepikapenak: "
+
+#: incidenceformatter.cpp:1235
+#, kde-format
+msgctxt "interval is N days/hours/minutes"
+msgid "interval is %1"
+msgstr ""
+
+#: incidenceformatter.cpp:1236
+#, fuzzy, kde-format
+#| msgctxt "summary, location"
+#| msgid "%1, %2"
+msgctxt "(repeat string, interval string)"
+msgid "(%1, %2)"
+msgstr "%1, %2"
+
+#: incidenceformatter.cpp:1241
+#, kde-format
+msgctxt "alarm is disabled"
+msgid "disabled"
+msgstr ""
+
+#: incidenceformatter.cpp:1245
+#, fuzzy, kde-format
+#| msgctxt "blocking audio reminders for this calendar"
+#| msgid "audio"
+msgctxt "alarm will play a sound"
+msgid "audio"
+msgstr "audioa"
+
+#: incidenceformatter.cpp:1248
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "the reminder string with its types list"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:9
@@ -1626,27 +1981,6 @@ msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
 msgstr "%1 amaitu ondoren"
 
-#: printing/calprintdefaultplugins.cpp:346
-#, kde-format
-msgid "1 day"
-msgid_plural "%1 days"
-msgstr[0] "egun bat"
-msgstr[1] "%1 egun"
-
-#: printing/calprintdefaultplugins.cpp:349
-#, kde-format
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "ordu 1"
-msgstr[1] "%1 ordu"
-
-#: printing/calprintdefaultplugins.cpp:352
-#, kde-format
-msgid "1 minute"
-msgid_plural "%1 minutes"
-msgstr[0] "minutu 1"
-msgstr[1] "%1 minutu"
-
 #: printing/calprintdefaultplugins.cpp:356
 #: printing/calprintdefaultplugins.cpp:666
 #, kde-format
@@ -1663,11 +1997,6 @@ msgstr "Antolatzailea: "
 #, kde-format
 msgid "Location: "
 msgstr "Kokalekua: "
-
-#: printing/calprintdefaultplugins.cpp:436
-#, kde-format
-msgid "Description:"
-msgstr "Deskribapena:"
 
 #: printing/calprintdefaultplugins.cpp:464
 #, kde-format
@@ -1921,7 +2250,7 @@ msgid "To-do list"
 msgstr "Egitekoen zerrenda"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1726
+#: printing/calprintpluginbase.cpp:1726 templates/todo.html:179
 #, kde-format
 msgid "%1%"
 msgstr "% %1"
@@ -2840,127 +3169,348 @@ msgstr "Inprimatu &urtea"
 msgid "Prints a calendar for an entire year"
 msgstr "Urte oso baterako egutegi bat inprimatzen du"
 
-#: utils.cpp:243
+#: templates/attendee_row.html:17
+#, fuzzy
+#| msgid "KOrganizer"
+msgid "organizer"
+msgstr "KOrganizer"
+
+#: templates/attendee_row.html:21
+msgid "myself"
+msgstr ""
+
+#: templates/attendee_row.html:25
+#, fuzzy, kde-format
+msgid "delegated by %1)"
+msgstr "Ezabatu %1"
+
+#: templates/attendee_row.html:29
+#, fuzzy, kde-format
+msgid "delegated to %1)"
+msgstr "Ezabatu %1"
+
+#: templates/attendee_row.html:36
+#, fuzzy
+#| msgid "Send Email"
+msgid "Send email"
+msgstr "Bidali e-posta"
+
+#: templates/event.html:5
+#, fuzzy
+#| msgid "Events"
+msgid "Event"
+msgstr "Gertaerak"
+
+#: templates/event.html:30 templates/event.html:33 templates/event.html:40
+#: templates/event.html:43 templates/journal.html:22
+#, fuzzy
+#| msgid "&Date:"
+msgid "Date:"
+msgstr "&Data:"
+
+#: templates/event.html:31
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "<beginDate> - <endDate>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/event.html:34 templates/event.html:44
+#, fuzzy, kde-format
+#| msgid "%1"
+msgctxt "Date as string"
+msgid "%1"
+msgstr "%1"
+
+#: templates/event.html:41
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "<beginDateTime> - <endDateTime>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/event.html:47
+#, fuzzy
+msgid "Time:"
+msgstr "Ize&nburua: "
+
+#: templates/event.html:49
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "<beginTime> - <endTime>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/event.html:51
+#, fuzzy, kde-format
+#| msgid "%1"
+msgctxt "Time as string"
+msgid "%1"
+msgstr "%1"
+
+#: templates/event.html:70
+#, fuzzy
+#| msgid "E&xceptions"
+msgctxt "Exception in event recurrence"
+msgid "Exception"
+msgstr "&Salbuespenak"
+
+#: templates/event.html:80
+#, fuzzy
+#| msgctxt "incidence category"
+#| msgid "Birthday"
+msgid "Birthday:"
+msgstr "Urtebetetzea"
+
+#: templates/event.html:88
+msgid "Anniversary:"
+msgstr ""
+
+#: templates/event.html:150 templates/todo.html:131
+msgid "Optional participants:"
+msgstr ""
+
+#: templates/event.html:184 templates/todo.html:186
+#, fuzzy
+msgid "Attachment:"
+msgid_plural "Attachments:"
+msgstr[0] "&Eranskinak"
+msgstr[1] "&Eranskinak"
+
+#: templates/event.html:197 templates/journal.html:47 templates/todo.html:200
+#, fuzzy, kde-format
+#| msgctxt "print date: formatted-datetime"
+#| msgid "printed: %1"
+msgid "Created: %1"
+msgstr "inprimatuta: %1"
+
+#: templates/event.html:198 templates/journal.html:48 templates/todo.html:201
+#, fuzzy, kde-format
+#| msgctxt "print date: formatted-datetime"
+#| msgid "printed: %1"
+msgid "Modified: %1"
+msgstr "inprimatuta: %1"
+
+#: templates/event.html:199 templates/journal.html:49 templates/todo.html:202
+#, fuzzy, kde-format
+#| msgid "Person: %1"
+msgid "Revision: %1"
+msgstr "Pertsona: %1"
+
+#: templates/freebusy.html:6
+#, kde-format
+msgid "Busy times in date range %1 - %2:"
+msgstr ""
+
+#: templates/freebusy.html:9
+#, fuzzy
+#| msgid "Busy"
+msgctxt "tag for busy period list"
+msgid "Busy:"
+msgstr "Lanpetuta"
+
+#: templates/freebusy.html:13
+#, kde-format
+msgctxt "startDate for duration"
+msgid "%1 for %2"
+msgstr ""
+
+#: templates/freebusy.html:16
+#, fuzzy, kde-format
+#| msgctxt "weekday, shortmonthname daynumber"
+#| msgid "%1, %2 %3"
+msgctxt "date, fromTime - toTime"
+msgid "%1, %2 - %3"
+msgstr "%1, %2 %3"
+
+#: templates/freebusy.html:18
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "fromDateTime - endDateTime"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/incidence_header.html:10
+#, fuzzy
+#| msgid "Print &incidence"
+msgid "Recurring incidence"
+msgstr "Inprimatu gertak&izuna"
+
+#: templates/incidence_header.html:14
+#, fuzzy
+msgid "Incidence with a reminder"
+msgstr "Oroigarria"
+
+#: templates/incidence_header.html:18
+msgid "Incidence is read only"
+msgstr ""
+
+#: templates/journal.html:5
+msgid "Journal"
+msgstr "Egunkaria"
+
+#: templates/todo.html:5
+#, fuzzy
+#| msgid "To-do View"
+msgid "Todo"
+msgstr "Egiteke ikuspegia"
+
+#: templates/todo.html:30
+#, fuzzy
+#| msgctxt "@info:tooltip period start time"
+#| msgid "Start:"
+msgctxt "to-do start date/time"
+msgid "Start:"
+msgstr "Hasi:"
+
+#: templates/todo.html:42
+#, fuzzy
+#| msgid "&Due:"
+msgctxt "to-do due date/time"
+msgid "Due:"
+msgstr "&Iraungipena:"
+
+#: templates/todo.html:165
+#, fuzzy
+#| msgid "Priority"
+msgid "Priority:"
+msgstr "Lehentasuna"
+
+#: templates/todo.html:173
+#, fuzzy
+#| msgid "Complete"
+msgctxt "Completed: date"
+msgid "Completed:"
+msgstr "Osatuta"
+
+#: templates/todo.html:178
+#, fuzzy
+#| msgctxt "@option sort by percent completed"
+#| msgid "Percent Complete"
+msgid "Percent done:"
+msgstr "Osatutako ehunekoa"
+
+#: utils.cpp:242
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "Hautatu egunkaria"
 
-#: utils.cpp:244
+#: utils.cpp:243
 #, kde-format
 msgid "Select the calendar where this item will be stored."
 msgstr "Hautatu elementu hau gorde behar duen egutegia."
 
-#: utils.cpp:348
+#: utils.cpp:347
 #, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "%1 (ekitaldeien egutegi lehenetsia)"
 
-#: utils.cpp:350
+#: utils.cpp:349
 #, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "%1 (Zereginen egutegi lehenetsia)"
 
-#: utils.cpp:361
+#: utils.cpp:360
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr "alegiazkoa"
 
-#: utils.cpp:363
+#: utils.cpp:362
 #, kde-format
 msgid "Folder type:"
 msgstr "Karpeta mota:"
 
-#: utils.cpp:373
+#: utils.cpp:372
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "bat ere ez"
 
-#: utils.cpp:376
+#: utils.cpp:375
 #, kde-format
 msgid "Content type:"
 msgstr "Eduki mota:"
 
-#: utils.cpp:382
+#: utils.cpp:381
 #, kde-format
 msgid "Rights:"
 msgstr "Eskubideak:"
 
-#: utils.cpp:385
+#: utils.cpp:384
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "soilik irakurtzea"
 
-#: utils.cpp:387
+#: utils.cpp:386
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "irakurtzea+idaztea"
 
-#: utils.cpp:394
+#: utils.cpp:393
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr "denak"
 
-#: utils.cpp:397
+#: utils.cpp:396
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "audioa"
 
-#: utils.cpp:399
+#: utils.cpp:398
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "azaltzea"
 
-#: utils.cpp:401
+#: utils.cpp:400
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "e-posta"
 
-#: utils.cpp:403
+#: utils.cpp:402
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "prozedura"
 
-#: utils.cpp:405
+#: utils.cpp:404
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr "bestelakoa"
 
-#: utils.cpp:409
+#: utils.cpp:408
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "bat ere ez"
 
-#: utils.cpp:412
+#: utils.cpp:411
 #, kde-format
 msgid "Blocked Reminders:"
 msgstr "Blokeatutako oroigarriak:"
 
-#: utils.cpp:488
+#: utils.cpp:487
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:490
+#: utils.cpp:489
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:495
+#: utils.cpp:494
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
@@ -3024,14 +3574,8 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "No Date"
 #~ msgstr "Datarik ez"
 
-#~ msgid "Calendar"
-#~ msgstr "Egutegia"
-
 #~ msgid "Tasks"
 #~ msgstr "Atazak"
-
-#~ msgid "Journal"
-#~ msgstr "Egunkaria"
 
 #~ msgid "Notes"
 #~ msgstr "Oharrak"
@@ -3131,10 +3675,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "incidence category"
 #~ msgid "Miscellaneous"
 #~ msgstr "Bestelakoa"
-
-#~ msgctxt "incidence category"
-#~ msgid "Birthday"
-#~ msgstr "Urtebetetzea"
 
 #~ msgctxt "@info"
 #~ msgid "Unable to purge to-dos with uncompleted children."
@@ -4540,12 +5080,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr "Amaierako ordua"
 
 #, fuzzy
-#~| msgid "Events"
-#~ msgctxt "@title:column event description"
-#~ msgid "Event"
-#~ msgstr "Gertaerak"
-
-#, fuzzy
 #~ msgctxt "@title:column event locatin"
 #~ msgid "Location"
 #~ msgstr "&Kokalekua"
@@ -4572,12 +5106,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@title:column to-do priority"
 #~ msgid "Priority"
 #~ msgstr "Lehentasuna"
-
-#, fuzzy
-#~| msgid "Complete"
-#~ msgctxt "@title:column to-do percent completed"
-#~ msgid "Completed"
-#~ msgstr "Osatuta"
 
 #, fuzzy
 #~| msgid "Due Date"
@@ -5186,9 +5714,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "Publish"
 #~ msgstr "Argitaratu"
 
-#~ msgid "days of free/busy information"
-#~ msgstr "libre/lanpetuta informazio egunak"
-
 #~ msgid "Server Information"
 #~ msgstr "Zerbitzariaren informazioa"
 
@@ -5490,12 +6015,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@title:tab"
 #~ msgid "Month View"
 #~ msgstr "Hilabete ikuspegia"
-
-#, fuzzy
-#~| msgid "To-do View"
-#~ msgctxt "@title:tab"
-#~ msgid "Todo View"
-#~ msgstr "Egiteke ikuspegia"
 
 #, fuzzy
 #~| msgid "Other Options"
@@ -6024,11 +6543,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr "Gaitu korritze-barrak hilabete ikuspegiaren gelaxketan"
 
 #, fuzzy
-#~| msgid "New &Journal..."
-#~ msgid "Show journals"
-#~ msgstr "E&gunkari berria..."
-
-#, fuzzy
 #~| msgid ""
 #~| "Check this box to display a confirmation dialog when deleting items."
 #~ msgid "Check this box to display journals in the month view."
@@ -6386,12 +6900,6 @@ msgstr "^%1 \\(.*\\)"
 #~| msgid "Select a month"
 #~ msgid "Select a year"
 #~ msgstr "Hautatu hilabete bat"
-
-#, fuzzy
-#~| msgid "%1"
-#~ msgctxt "4 digit year"
-#~ msgid "%1"
-#~ msgstr "%1"
 
 #~ msgid "Configure Day Numbers"
 #~ msgstr "Konfiguratu egunen zenbakiak"
@@ -7305,12 +7813,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr "aste"
 
 #, fuzzy
-#~| msgid "Edit..."
-#~ msgctxt "@label an elipsis"
-#~ msgid "..."
-#~ msgstr "Editatu..."
-
-#, fuzzy
 #~| msgid "Reminder"
 #~ msgctxt "@title"
 #~ msgid "Reminder"
@@ -7477,9 +7979,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "Add %1"
 #~ msgstr "Gehitu %1"
-
-#~ msgid "Edit %1"
-#~ msgstr "Editatu %1"
 
 #, fuzzy
 #~| msgid "Additional email addresses:"
@@ -8194,9 +8693,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "Attendee added"
 #~ msgstr "Partaideak kenduta"
 
-#~ msgid "%1 - %2"
-#~ msgstr "%1 - %2"
-
 #~ msgid "- %1"
 #~ msgstr "- %1"
 
@@ -8321,9 +8817,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "T&itle:"
 #~ msgstr "&Izenburua:"
 
-#~ msgid "&Date:"
-#~ msgstr "&Data:"
-
 #~ msgid "&Time: "
 #~ msgstr "&Ordua: "
 
@@ -8389,16 +8882,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Store the attachment file inside the calendar"
 #~ msgstr "Gehitu eranskina"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Location:"
-#~ msgstr "&Kokalekua"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Attachments:"
-#~ msgstr "&Eranskinak"
 
 #, fuzzy
 #~ msgctxt "@info:whatsthis"
@@ -8864,11 +9347,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@label"
 #~ msgid "Organizer: %1"
 #~ msgstr "Antolatzailea: %1"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Delegated to %1"
-#~ msgstr "Ezabatu %1"
 
 #, fuzzy
 #~| msgid "Delete To-do"
@@ -9430,12 +9908,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr "&egunean"
 
 #, fuzzy
-#~| msgid "E&xceptions"
-#~ msgctxt "@title:group"
-#~ msgid "E&xceptions"
-#~ msgstr "&Salbuespenak"
-
-#, fuzzy
 #~| msgid ""
 #~| "A date that should be considered an exception to the recurrence rules "
 #~| "for this event or to-do."
@@ -9777,12 +10249,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgid "Sets the due date for this to-do."
 #~ msgstr "Egiteke honen iraungipen data ezartzen du."
 
-#, fuzzy
-#~| msgid "&Due:"
-#~ msgctxt "to-do due datetime"
-#~ msgid "&Due:"
-#~ msgstr "&Iraungipena:"
-
 #~ msgid "Ti&me associated"
 #~ msgstr "Lotutako &ordua du"
 
@@ -9795,12 +10261,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr ""
 #~ "Egiteke honen hasierako eta iraungipen datek lotutako orduak dituzten ala "
 #~ "ez ezartzen du."
-
-#, fuzzy
-#~| msgid "Rec&urrence"
-#~ msgctxt "@label"
-#~ msgid "Recurrence:"
-#~ msgstr "&Periodikotasuna"
 
 #~ msgid "Sets the current completion status of this to-do as a percentage."
 #~ msgstr "Uneko egitekoaren osatze egoera adierazten du portzentai moduan."
@@ -9846,12 +10306,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "The start date cannot be after the due date."
 #~ msgstr "Hasierako data ezin da iraungipen data baina ondoren ezarri."
-
-#, fuzzy
-#~| msgid "Start: %1"
-#~ msgctxt "to-do start datetime"
-#~ msgid "Start: %1"
-#~ msgstr "Hasiera: %1"
 
 #, fuzzy
 #~| msgid "   Due: %1"
@@ -9996,11 +10450,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgctxt "@info:whatsthis"
 #~ msgid "Activates a reminder for this event or to-do."
 #~ msgstr "Gertaera edo egiteko honen oroigarria aktibatzen du."
-
-#, fuzzy
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set a reminder"
-#~ msgstr "Oroigarria"
 
 #, fuzzy
 #~| msgid ""
@@ -10290,20 +10739,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr "Editatu &oroigarriak"
 
 #, fuzzy
-#~| msgctxt "N days/hours/minutes before/after the start/end"
-#~| msgid "%1 before the start"
-#~ msgctxt "@item:inlistbox"
-#~ msgid "before the to-do starts"
-#~ msgstr "%1 hasiera baina lehen"
-
-#, fuzzy
-#~| msgctxt "N days/hours/minutes before/after the start/end"
-#~| msgid "%1 after the start"
-#~ msgctxt "@item:inlistbox"
-#~ msgid "after the to-do starts"
-#~ msgstr "%1 hasieraren ondoren"
-
-#, fuzzy
 #~| msgid "&General"
 #~ msgctxt "@title:tab general event settings"
 #~ msgid "&General"
@@ -10544,10 +10979,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr "Hautatu &kategoriak..."
 
 #, fuzzy
-#~ msgid "Time"
-#~ msgstr "Ize&nburua: "
-
-#, fuzzy
 #~| msgid "Enter the reminder time here."
 #~ msgid "Set the reminder trigger time"
 #~ msgstr "Sartu oroigarriaren ordua hemen."
@@ -10632,12 +11063,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr "minutu"
 
 #, fuzzy
-#~| msgid "every "
-#~ msgctxt "repeat every X minutes"
-#~ msgid "every "
-#~ msgstr "errepikatze-aldia "
-
-#, fuzzy
 #~| msgid ""
 #~| "Check this option if you want to have to-dos on the print, placed by "
 #~| "their due date."
@@ -10691,11 +11116,6 @@ msgstr "^%1 \\(.*\\)"
 #~ msgstr ""
 #~ "Hautatu aukera hau egitekoak ikusi nahi badituzu, bere iraungipen dataren "
 #~ "arabera kokatuta."
-
-#, fuzzy
-#~| msgid "Send Email"
-#~ msgid "Send email"
-#~ msgstr "Bidali e-posta"
 
 #, fuzzy
 #~ msgid "Display &text:"
@@ -10906,11 +11326,6 @@ msgstr "^%1 \\(.*\\)"
 #~ "Bilera hona mugitu da\n"
 #~ "Hasiera  %1\n"
 #~ "Amaiera: %2."
-
-#, fuzzy
-#~| msgid "KOrganizer"
-#~ msgid "Korganizer"
-#~ msgstr "KOrganizer"
 
 #, fuzzy
 #~| msgid "Could not load calendar '%1'."
@@ -11443,12 +11858,6 @@ msgstr "^%1 \\(.*\\)"
 
 #~ msgid "Birthdays"
 #~ msgstr "Urtebetetzeak"
-
-#, fuzzy
-#~| msgid "&Reminder:"
-#~ msgctxt "@label"
-#~ msgid "Reminder:"
-#~ msgstr "&Oroigarria:"
 
 #, fuzzy
 #~| msgid "event"

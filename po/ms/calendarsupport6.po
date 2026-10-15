@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mimos\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-06 00:47+0000\n"
+"POT-Creation-Date: 2026-10-15 00:46+0000\n"
 "PO-Revision-Date: 2005-11-26 19:59+0800\n"
 "Last-Translator: MIMOS <opensource@mimos.my>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -489,6 +489,341 @@ msgstr "&Tamat:"
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
 msgstr "Tempoh:"
+
+#: incidenceformatter.cpp:285
+#, fuzzy, kde-format
+msgid "Show mail"
+msgstr "&Jurnal"
+
+#: incidenceformatter.cpp:549
+#, fuzzy, kde-format
+msgctxt "hours part of duration"
+msgid "1 hour "
+msgid_plural "%1 hours "
+msgstr[0] "_n: 1 jam"
+msgstr[1] "%1 jam"
+
+#: incidenceformatter.cpp:553
+#, fuzzy, kde-format
+msgctxt "minutes part duration"
+msgid "1 minute "
+msgid_plural "%1 minutes "
+msgstr[0] "_n: 1 minit"
+msgstr[1] "%1 minit"
+
+#: incidenceformatter.cpp:557
+#, kde-format
+msgctxt "seconds part of duration"
+msgid "1 second"
+msgid_plural "%1 seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: incidenceformatter.cpp:719
+#, kde-format
+msgctxt "Event start"
+msgid "<i>From:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:721
+#, kde-format
+msgctxt "Event end"
+msgid "<i>To:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:723
+#, kde-format
+msgctxt "datetime range for event"
+msgid "<i>Date:</i> %1 - %2"
+msgstr ""
+
+#: incidenceformatter.cpp:726 incidenceformatter.cpp:804
+#, kde-format
+msgid "<i>Date:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:732
+#, kde-format
+msgctxt "time for event"
+msgid "<i>Time:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:734
+#, kde-format
+msgctxt "time range for event"
+msgid "<i>Time:</i> %1 - %2"
+msgstr ""
+
+#: incidenceformatter.cpp:767
+#, fuzzy, kde-format
+#| msgid "Start: %1"
+msgctxt "To-do's start date"
+msgid "<i>Start:</i> %1"
+msgstr "Mula: %1"
+
+#: incidenceformatter.cpp:770
+#, kde-format
+msgctxt "To-do's due date"
+msgid "<i>Due:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:777
+#, fuzzy, kde-format
+#| msgid "&Priority:"
+msgctxt "To-do's priority number"
+msgid "<i>Priority:</i> %1"
+msgstr "&Keutamaan:"
+
+#: incidenceformatter.cpp:782
+#, fuzzy, kde-format
+#| msgid "Complete"
+msgctxt "To-do's completed date"
+msgid "<i>Completed:</i> %1"
+msgstr "Selesai"
+
+#: incidenceformatter.cpp:793
+#, kde-format
+msgctxt "To-do's percent complete:"
+msgid "<i>Percent Done:</i> %1%"
+msgstr ""
+
+#: incidenceformatter.cpp:812
+#, kde-format
+msgid "<i>Period start:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:813
+#, kde-format
+msgid "<i>Period end:</i> %1"
+msgstr ""
+
+#: incidenceformatter.cpp:838 templates/freebusy.html:5
+#, fuzzy, kde-format
+#| msgid "days of free/busy information"
+msgid "Free/Busy information for %1"
+msgstr "maklumat hari lapang/sibuk"
+
+#: incidenceformatter.cpp:860 incidenceformatter.cpp:862
+#, fuzzy, kde-format
+#| msgctxt "short_weekday date (e.g. Mon 13)"
+#| msgid "%1 %2"
+msgctxt "attendee name (attendee status)"
+msgid "%1 (%2)"
+msgstr "%1 %2"
+
+#: incidenceformatter.cpp:865
+#, fuzzy, kde-format
+#| msgid "%1"
+msgid "%1"
+msgstr "%1"
+
+#: incidenceformatter.cpp:891 incidenceformatter.cpp:1028
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgctxt "ellipsis"
+msgid "..."
+msgstr "Edit..."
+
+#: incidenceformatter.cpp:911
+#, fuzzy, kde-format
+msgid " (delegated by %1)"
+msgstr "Hapuskan%1"
+
+#: incidenceformatter.cpp:914
+#, fuzzy, kde-format
+msgid " (delegated to %1)"
+msgstr "Hapuskan%1"
+
+#: incidenceformatter.cpp:934 templates/event.html:112 templates/todo.html:93
+#, fuzzy, kde-format
+msgid "Organizer:"
+msgstr "Penyusun: %1"
+
+#: incidenceformatter.cpp:945 templates/event.html:124 templates/todo.html:105
+#, kde-format
+msgid "Chair:"
+msgstr ""
+
+#: incidenceformatter.cpp:952 templates/event.html:137 templates/todo.html:118
+#, kde-format
+msgid "Required Participants:"
+msgstr ""
+
+#: incidenceformatter.cpp:959
+#, kde-format
+msgid "Optional Participants:"
+msgstr ""
+
+#: incidenceformatter.cpp:966 templates/event.html:163 templates/todo.html:144
+#, kde-format
+msgid "Observers:"
+msgstr ""
+
+#: incidenceformatter.cpp:988 templates/event.html:13 templates/journal.html:14
+#: templates/todo.html:14
+#, fuzzy, kde-format
+#| msgid "Calendar"
+msgid "Calendar:"
+msgstr "Kalendar"
+
+#: incidenceformatter.cpp:996 templates/event.html:21 templates/todo.html:22
+#, fuzzy, kde-format
+msgid "Location:"
+msgstr "&Lokasi:"
+
+#: incidenceformatter.cpp:1003 templates/event.html:60 templates/todo.html:54
+#, fuzzy, kde-format
+#| msgid "Duration: "
+msgid "Duration:"
+msgstr "Tempoh:"
+
+#: incidenceformatter.cpp:1009 incidenceformatter.cpp:1019
+#: templates/event.html:68 templates/todo.html:62
+#, fuzzy, kde-format
+#| msgid "Rec&urrence"
+msgid "Recurrence:"
+msgstr "Peng&ulangan"
+
+#: incidenceformatter.cpp:1020 templates/todo.html:64
+#, fuzzy, kde-format
+#| msgid "E&xceptions"
+msgid "Exception"
+msgstr "&Pengecualian"
+
+#: incidenceformatter.cpp:1036 printing/calprintdefaultplugins.cpp:436
+#: templates/event.html:96 templates/journal.html:30 templates/todo.html:74
+#, fuzzy, kde-format
+msgid "Description:"
+msgstr "&Huraian"
+
+#: incidenceformatter.cpp:1050 templates/event.html:104 templates/todo.html:85
+#, fuzzy, kde-format
+#| msgid "&Reminder:"
+msgid "Reminder:"
+msgid_plural "Reminders:"
+msgstr[0] "Pe&ringatan:"
+msgstr[1] "Pe&ringatan:"
+
+#: incidenceformatter.cpp:1078 templates/event.html:176
+#: templates/journal.html:38 templates/todo.html:157
+#, kde-format
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: incidenceformatter.cpp:1117 incidenceformatter.cpp:1143
+#: incidenceformatter.cpp:1155 printing/calprintdefaultplugins.cpp:346
+#, fuzzy, kde-format
+msgid "1 day"
+msgid_plural "%1 days"
+msgstr[0] "_n: 1 hari"
+msgstr[1] "%1 hari"
+
+#: incidenceformatter.cpp:1123 printing/calprintdefaultplugins.cpp:349
+#, fuzzy, kde-format
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "_n: 1 jam"
+msgstr[1] "%1 jam"
+
+#: incidenceformatter.cpp:1129 printing/calprintdefaultplugins.cpp:352
+#, fuzzy, kde-format
+msgid "1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "_n: 1 minit"
+msgstr[1] "%1 minit"
+
+#: incidenceformatter.cpp:1146
+#, fuzzy, kde-format
+#| msgid "every "
+msgid "forever"
+msgstr "setiap"
+
+#: incidenceformatter.cpp:1188
+#, fuzzy, kde-format
+msgctxt "N days/hours/minutes before the start datetime"
+msgid "%1 before the start"
+msgstr "Sebelum Pemulaan"
+
+#: incidenceformatter.cpp:1190
+#, fuzzy, kde-format
+msgctxt "N days/hours/minutes after the start datetime"
+msgid "%1 after the start"
+msgstr "Selepas pemulaan"
+
+#: incidenceformatter.cpp:1201
+#, fuzzy, kde-format
+msgctxt "N days/hours/minutes before the due datetime"
+msgid "%1 before the to-do is due"
+msgstr "Sebelum Pemulaan"
+
+#: incidenceformatter.cpp:1203
+#, fuzzy, kde-format
+msgctxt "N days/hours/minutes before the end datetime"
+msgid "%1 before the end"
+msgstr "sebelum tamat"
+
+#: incidenceformatter.cpp:1207
+#, fuzzy, kde-format
+msgctxt "N days/hours/minutes after the due datetime"
+msgid "%1 after the to-do is due"
+msgstr "Selepas pemulaan"
+
+#: incidenceformatter.cpp:1209
+#, fuzzy, kde-format
+msgctxt "N days/hours/minutes after the end datetime"
+msgid "%1 after the end"
+msgstr "Selepas Tamat"
+
+#: incidenceformatter.cpp:1227
+#, fuzzy, kde-format
+#| msgid "Edit %1"
+msgctxt "reminder occurs at datetime"
+msgid "at %1"
+msgstr "Edit %1"
+
+#: incidenceformatter.cpp:1234
+#, fuzzy, kde-format
+msgid "repeats once"
+msgid_plural "repeats %1 times"
+msgstr[0] "Ulang"
+msgstr[1] "Ulang"
+
+#: incidenceformatter.cpp:1235
+#, kde-format
+msgctxt "interval is N days/hours/minutes"
+msgid "interval is %1"
+msgstr ""
+
+#: incidenceformatter.cpp:1236
+#, fuzzy, kde-format
+#| msgctxt "monthname year"
+#| msgid "%1 %2"
+msgctxt "(repeat string, interval string)"
+msgid "(%1, %2)"
+msgstr "%1 %2"
+
+#: incidenceformatter.cpp:1241
+#, kde-format
+msgctxt "alarm is disabled"
+msgid "disabled"
+msgstr ""
+
+#: incidenceformatter.cpp:1245
+#, fuzzy, kde-format
+#| msgid "Audio"
+msgctxt "alarm will play a sound"
+msgid "audio"
+msgstr "Audio"
+
+#: incidenceformatter.cpp:1248
+#, fuzzy, kde-format
+#| msgctxt "short_weekday date (e.g. Mon 13)"
+#| msgid "%1 %2"
+msgctxt "the reminder string with its types list"
+msgid "%1 (%2)"
+msgstr "%1 %2"
 
 #. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
 #: kcalprefs.kcfg:9
@@ -1628,27 +1963,6 @@ msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
 msgstr "Selepas Tamat"
 
-#: printing/calprintdefaultplugins.cpp:346
-#, fuzzy, kde-format
-msgid "1 day"
-msgid_plural "%1 days"
-msgstr[0] "_n: 1 hari"
-msgstr[1] "%1 hari"
-
-#: printing/calprintdefaultplugins.cpp:349
-#, fuzzy, kde-format
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "_n: 1 jam"
-msgstr[1] "%1 jam"
-
-#: printing/calprintdefaultplugins.cpp:352
-#, fuzzy, kde-format
-msgid "1 minute"
-msgid_plural "%1 minutes"
-msgstr[0] "_n: 1 minit"
-msgstr[1] "%1 minit"
-
 #: printing/calprintdefaultplugins.cpp:356
 #: printing/calprintdefaultplugins.cpp:666
 #, fuzzy, kde-format
@@ -1666,11 +1980,6 @@ msgstr "Penyusun: %1"
 #, fuzzy, kde-format
 msgid "Location: "
 msgstr "&Lokasi:"
-
-#: printing/calprintdefaultplugins.cpp:436
-#, fuzzy, kde-format
-msgid "Description:"
-msgstr "&Huraian"
 
 #: printing/calprintdefaultplugins.cpp:464
 #, kde-format
@@ -1948,7 +2257,7 @@ msgid "To-do list"
 msgstr "Senarai tugasan"
 
 #: printing/calprintdefaultplugins.cpp:1646
-#: printing/calprintpluginbase.cpp:1726
+#: printing/calprintpluginbase.cpp:1726 templates/todo.html:179
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -2848,143 +3157,359 @@ msgstr "Cetak &minggu"
 msgid "Prints a calendar for an entire year"
 msgstr "Mencetak semua jurnal untuk julat tarikh tertentu"
 
-#: utils.cpp:243
+#: templates/attendee_row.html:17
+#, fuzzy
+#| msgid "KOrganizer"
+msgid "organizer"
+msgstr "KOrganizer"
+
+#: templates/attendee_row.html:21
+msgid "myself"
+msgstr ""
+
+#: templates/attendee_row.html:25
+#, fuzzy, kde-format
+msgid "delegated by %1)"
+msgstr "Hapuskan%1"
+
+#: templates/attendee_row.html:29
+#, fuzzy, kde-format
+msgid "delegated to %1)"
+msgstr "Hapuskan%1"
+
+#: templates/attendee_row.html:36
+#, fuzzy
+#| msgid "Send Email"
+msgid "Send email"
+msgstr "Hantar E-mel"
+
+#: templates/event.html:5
+#, fuzzy
+#| msgid "Events"
+msgid "Event"
+msgstr "Peristiwa"
+
+#: templates/event.html:30 templates/event.html:33 templates/event.html:40
+#: templates/event.html:43 templates/journal.html:22
+#, fuzzy
+#| msgid "&Date:"
+msgid "Date:"
+msgstr "&Tarikh:"
+
+#: templates/event.html:31
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "<beginDate> - <endDate>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/event.html:34 templates/event.html:44
+#, fuzzy, kde-format
+#| msgid "%1"
+msgctxt "Date as string"
+msgid "%1"
+msgstr "%1"
+
+#: templates/event.html:41
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "<beginDateTime> - <endDateTime>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/event.html:47
+#, fuzzy
+msgid "Time:"
+msgstr "&Masa"
+
+#: templates/event.html:49
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "<beginTime> - <endTime>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/event.html:51
+#, fuzzy, kde-format
+#| msgid "%1"
+msgctxt "Time as string"
+msgid "%1"
+msgstr "%1"
+
+#: templates/event.html:70
+#, fuzzy
+#| msgid "E&xceptions"
+msgctxt "Exception in event recurrence"
+msgid "Exception"
+msgstr "&Pengecualian"
+
+#: templates/event.html:80
+#, fuzzy
+#| msgid "Birthday"
+msgid "Birthday:"
+msgstr "Hari Lahir"
+
+#: templates/event.html:88
+msgid "Anniversary:"
+msgstr ""
+
+#: templates/event.html:150 templates/todo.html:131
+msgid "Optional participants:"
+msgstr ""
+
+#: templates/event.html:184 templates/todo.html:186
+#, fuzzy
+msgid "Attachment:"
+msgid_plural "Attachments:"
+msgstr[0] "La&mpiran"
+msgstr[1] "La&mpiran"
+
+#: templates/event.html:197 templates/journal.html:47 templates/todo.html:200
+#, fuzzy, kde-format
+#| msgid "Undo (%1)"
+msgid "Created: %1"
+msgstr "Batalkan (%1)"
+
+#: templates/event.html:198 templates/journal.html:48 templates/todo.html:201
+#, fuzzy, kde-format
+#| msgid "Undo (%1)"
+msgid "Modified: %1"
+msgstr "Batalkan (%1)"
+
+#: templates/event.html:199 templates/journal.html:49 templates/todo.html:202
+#, fuzzy, kde-format
+#| msgid "Person: %1"
+msgid "Revision: %1"
+msgstr "Orang: %1"
+
+#: templates/freebusy.html:6
+#, kde-format
+msgid "Busy times in date range %1 - %2:"
+msgstr ""
+
+#: templates/freebusy.html:9
+#, fuzzy
+#| msgid "Busy"
+msgctxt "tag for busy period list"
+msgid "Busy:"
+msgstr "Sibuk"
+
+#: templates/freebusy.html:13
+#, fuzzy, kde-format
+#| msgctxt "monthname year"
+#| msgid "%1 %2"
+msgctxt "startDate for duration"
+msgid "%1 for %2"
+msgstr "%1 %2"
+
+#: templates/freebusy.html:16
+#, fuzzy, kde-format
+msgctxt "date, fromTime - toTime"
+msgid "%1, %2 - %3"
+msgstr "%1 - %2"
+
+#: templates/freebusy.html:18
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "fromDateTime - endDateTime"
+msgid "%1 - %2"
+msgstr "%1 - %2"
+
+#: templates/incidence_header.html:10
+#, fuzzy
+msgid "Recurring incidence"
+msgstr "Cetak Kejadian Jenis"
+
+#: templates/incidence_header.html:14
+#, fuzzy
+msgid "Incidence with a reminder"
+msgstr "Pe&ringatan:"
+
+#: templates/incidence_header.html:18
+msgid "Incidence is read only"
+msgstr ""
+
+#: templates/journal.html:5
+#, fuzzy
+#| msgid "&Journal"
+msgid "Journal"
+msgstr "&Jurnal"
+
+#: templates/todo.html:5
+#, fuzzy
+#| msgid "To-do View"
+msgid "Todo"
+msgstr "Paparan Tugasan"
+
+#: templates/todo.html:30
+#, fuzzy
+#| msgid "&Start:"
+msgctxt "to-do start date/time"
+msgid "Start:"
+msgstr "&Mula:"
+
+#: templates/todo.html:42
+#, fuzzy
+msgctxt "to-do due date/time"
+msgid "Due:"
+msgstr "%Cukup Tempoh:"
+
+#: templates/todo.html:165
+#, fuzzy
+#| msgid "Priority"
+msgid "Priority:"
+msgstr "Keutamaan"
+
+#: templates/todo.html:173
+#, fuzzy
+#| msgid "Complete"
+msgctxt "Completed: date"
+msgid "Completed:"
+msgstr "Selesai"
+
+#: templates/todo.html:178
+#, fuzzy
+#| msgid "Percent Complete"
+msgid "Percent done:"
+msgstr "Peratusan Siap"
+
+#: utils.cpp:242
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "Kalendar baru"
 
-#: utils.cpp:244
+#: utils.cpp:243
 #, fuzzy, kde-format
 #| msgid "Sets the due date for this to-do."
 msgid "Select the calendar where this item will be stored."
 msgstr "Mengeset tarikh jangkaan untuk tugasan ini."
 
-#: utils.cpp:348
+#: utils.cpp:347
 #, fuzzy, kde-format
 #| msgid "Use as &Default Calendar"
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "Gunakan sebagai Kalendar &Piawai"
 
-#: utils.cpp:350
+#: utils.cpp:349
 #, fuzzy, kde-format
 #| msgid "Use as &Default Calendar"
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "Gunakan sebagai Kalendar &Piawai"
 
-#: utils.cpp:361
+#: utils.cpp:360
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr ""
 
-#: utils.cpp:363
+#: utils.cpp:362
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Folder type:"
 msgstr "Kalendar"
 
-#: utils.cpp:373
+#: utils.cpp:372
 #, fuzzy, kde-format
 #| msgid "(None)"
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "(Tiada)"
 
-#: utils.cpp:376
+#: utils.cpp:375
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Content type:"
 msgstr "Kalendar"
 
-#: utils.cpp:382
+#: utils.cpp:381
 #, kde-format
 msgid "Rights:"
 msgstr ""
 
-#: utils.cpp:385
+#: utils.cpp:384
 #, fuzzy, kde-format
 #| msgid "read-only"
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "baca saja"
 
-#: utils.cpp:387
+#: utils.cpp:386
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr ""
 
-#: utils.cpp:394
+#: utils.cpp:393
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr ""
 
-#: utils.cpp:397
+#: utils.cpp:396
 #, fuzzy, kde-format
 #| msgid "Audio"
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "Audio"
 
-#: utils.cpp:399
+#: utils.cpp:398
 #, fuzzy, kde-format
 #| msgid "&Daily"
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "&Harian"
 
-#: utils.cpp:401
+#: utils.cpp:400
 #, fuzzy, kde-format
 #| msgid "Email"
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "E-mel"
 
-#: utils.cpp:403
+#: utils.cpp:402
 #, fuzzy, kde-format
 #| msgid "Proceed"
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "Teruskan"
 
-#: utils.cpp:405
+#: utils.cpp:404
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr ""
 
-#: utils.cpp:409
+#: utils.cpp:408
 #, fuzzy, kde-format
 #| msgid "(None)"
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "(Tiada)"
 
-#: utils.cpp:412
+#: utils.cpp:411
 #, fuzzy, kde-format
 msgid "Blocked Reminders:"
 msgstr "&Peringatan"
 
-#: utils.cpp:488
+#: utils.cpp:487
 #, fuzzy, kde-format
 #| msgid "%1"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1"
 
-#: utils.cpp:490
+#: utils.cpp:489
 #, fuzzy, kde-format
 #| msgctxt "short_weekday date (e.g. Mon 13)"
 #| msgid "%1 %2"
 msgid "%1 (%2)"
 msgstr "%1 %2"
 
-#: utils.cpp:495
+#: utils.cpp:494
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
@@ -3059,14 +3584,6 @@ msgstr ""
 #~ msgctxt "@option do not specify a date"
 #~ msgid "No Date"
 #~ msgstr "&Tarikh:"
-
-#~ msgid "Calendar"
-#~ msgstr "Kalendar"
-
-#, fuzzy
-#~| msgid "&Journal"
-#~ msgid "Journal"
-#~ msgstr "&Jurnal"
 
 #, fuzzy
 #~| msgctxt "Date range: Month dayStart - dayEnd"
@@ -3154,12 +3671,6 @@ msgstr ""
 #~ "and not pleasure"
 #~ msgid "Travel"
 #~ msgstr "Perjalanan"
-
-#, fuzzy
-#~| msgid "Birthday"
-#~ msgctxt "incidence category"
-#~ msgid "Birthday"
-#~ msgstr "Hari Lahir"
 
 #, fuzzy
 #~ msgctxt "@info"
@@ -4541,12 +5052,6 @@ msgstr ""
 #~ msgstr "Masa Tamat"
 
 #, fuzzy
-#~| msgid "Events"
-#~ msgctxt "@title:column event description"
-#~ msgid "Event"
-#~ msgstr "Peristiwa"
-
-#, fuzzy
 #~ msgctxt "@title:column event locatin"
 #~ msgid "Location"
 #~ msgstr "&Lokasi:"
@@ -4573,12 +5078,6 @@ msgstr ""
 #~ msgctxt "@title:column to-do priority"
 #~ msgid "Priority"
 #~ msgstr "Keutamaan"
-
-#, fuzzy
-#~| msgid "Complete"
-#~ msgctxt "@title:column to-do percent completed"
-#~ msgid "Completed"
-#~ msgstr "Selesai"
 
 #, fuzzy
 #~| msgid "Due Date"
@@ -5097,9 +5596,6 @@ msgstr ""
 #~ msgid "Publish"
 #~ msgstr "Terbitkan"
 
-#~ msgid "days of free/busy information"
-#~ msgstr "maklumat hari lapang/sibuk"
-
 #~ msgid "Server Information"
 #~ msgstr "Maklumat Pelayan"
 
@@ -5290,12 +5786,6 @@ msgstr ""
 #~ msgctxt "@title:tab"
 #~ msgid "Month View"
 #~ msgstr "Paparan Bulan"
-
-#, fuzzy
-#~| msgid "To-do View"
-#~ msgctxt "@title:tab"
-#~ msgid "Todo View"
-#~ msgstr "Paparan Tugasan"
 
 #, fuzzy
 #~| msgid "Other Options"
@@ -5623,10 +6113,6 @@ msgstr ""
 #~ msgstr "Aktifkan bar skrol dalam sel paparan bulan "
 
 #, fuzzy
-#~ msgid "Show journals"
-#~ msgstr "&Jurnal"
-
-#, fuzzy
 #~ msgid "Check this box to display journals in the month view."
 #~ msgstr ""
 #~ "Semak opsyen ini apabila anda ingin pengesahan semasa menghapuskan item."
@@ -5832,12 +6318,6 @@ msgstr ""
 #~| msgid "Select a month"
 #~ msgid "Select a year"
 #~ msgstr "Pilih satu bulan"
-
-#, fuzzy
-#~| msgid "%1"
-#~ msgctxt "4 digit year"
-#~ msgid "%1"
-#~ msgstr "%1"
 
 #~ msgid "Configure Day Numbers"
 #~ msgstr "Konfigur Bilangan Hari"
@@ -6719,12 +7199,6 @@ msgstr ""
 #~ msgstr "minggu"
 
 #, fuzzy
-#~| msgid "Edit..."
-#~ msgctxt "@label an elipsis"
-#~ msgid "..."
-#~ msgstr "Edit..."
-
-#, fuzzy
 #~ msgctxt "@title"
 #~ msgid "Reminder"
 #~ msgstr "Pe&ringatan:"
@@ -6878,9 +7352,6 @@ msgstr ""
 
 #~ msgid "Add %1"
 #~ msgstr "Tambah %1"
-
-#~ msgid "Edit %1"
-#~ msgstr "Edit %1"
 
 #, fuzzy
 #~| msgid "Additional email addresses:"
@@ -7526,9 +7997,6 @@ msgstr ""
 #~ msgid "Attendee added"
 #~ msgstr "Penghadir Dibuang"
 
-#~ msgid "%1 - %2"
-#~ msgstr "%1 - %2"
-
 #~ msgid "- %1"
 #~ msgstr "- %1"
 
@@ -7635,9 +8103,6 @@ msgstr ""
 #~ msgid "T&itle:"
 #~ msgstr "&Tajuk:"
 
-#~ msgid "&Date:"
-#~ msgstr "&Tarikh:"
-
 #~ msgid "&Time: "
 #~ msgstr "&Waktu:"
 
@@ -7703,16 +8168,6 @@ msgstr ""
 #~ msgctxt "@info:tooltip"
 #~ msgid "Store the attachment file inside the calendar"
 #~ msgstr "Tambah Lampiran"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Location:"
-#~ msgstr "&Lokasi:"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Attachments:"
-#~ msgstr "La&mpiran"
 
 #, fuzzy
 #~ msgctxt "@info:whatsthis"
@@ -8173,11 +8628,6 @@ msgstr ""
 #~ msgctxt "@label"
 #~ msgid "Organizer: %1"
 #~ msgstr "Penyusun: %1"
-
-#, fuzzy
-#~ msgctxt "@label"
-#~ msgid "Delegated to %1"
-#~ msgstr "Hapuskan%1"
 
 #, fuzzy
 #~| msgid "Delete To-do"
@@ -8739,12 +9189,6 @@ msgstr ""
 #~ msgstr " pada &tahun"
 
 #, fuzzy
-#~| msgid "E&xceptions"
-#~ msgctxt "@title:group"
-#~ msgid "E&xceptions"
-#~ msgstr "&Pengecualian"
-
-#, fuzzy
 #~| msgid ""
 #~| "A date that should be considered an exception to the recurrence rules "
 #~| "for this event or to-do."
@@ -9090,11 +9534,6 @@ msgstr ""
 #~ msgid "Sets the due date for this to-do."
 #~ msgstr "Mengeset tarikh jangkaan untuk tugasan ini."
 
-#, fuzzy
-#~ msgctxt "to-do due datetime"
-#~ msgid "&Due:"
-#~ msgstr "%Cukup Tempoh:"
-
 #~ msgid "Ti&me associated"
 #~ msgstr "&Masa berkaitan"
 
@@ -9107,12 +9546,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Mengeset sama ada permulaan tugasan dan tarikh jangkaan dikaitkan dengan "
 #~ "waktu atau tidak."
-
-#, fuzzy
-#~| msgid "Rec&urrence"
-#~ msgctxt "@label"
-#~ msgid "Recurrence:"
-#~ msgstr "Peng&ulangan"
 
 #~ msgid "Sets the current completion status of this to-do as a percentage."
 #~ msgstr ""
@@ -9159,12 +9592,6 @@ msgstr ""
 
 #~ msgid "The start date cannot be after the due date."
 #~ msgstr "Tarikh mula tidak boleh selepas tarikh cukup tempoh."
-
-#, fuzzy
-#~| msgid "Start: %1"
-#~ msgctxt "to-do start datetime"
-#~ msgid "Start: %1"
-#~ msgstr "Mula: %1"
 
 #, fuzzy
 #~| msgid "   Due: %1"
@@ -9307,11 +9734,6 @@ msgstr ""
 #~ msgctxt "@info:whatsthis"
 #~ msgid "Activates a reminder for this event or to-do."
 #~ msgstr "Mengaktifkan peringatan untuk peristiwa atau tugasan ini."
-
-#, fuzzy
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set a reminder"
-#~ msgstr "Pe&ringatan:"
 
 #, fuzzy
 #~| msgid ""
@@ -9572,16 +9994,6 @@ msgstr ""
 #~ msgstr "&Peringatan"
 
 #, fuzzy
-#~ msgctxt "@item:inlistbox"
-#~ msgid "before the to-do starts"
-#~ msgstr "Sebelum Pemulaan"
-
-#, fuzzy
-#~ msgctxt "@item:inlistbox"
-#~ msgid "after the to-do starts"
-#~ msgstr "Selepas pemulaan"
-
-#, fuzzy
 #~| msgid "&General"
 #~ msgctxt "@title:tab general event settings"
 #~ msgid "&General"
@@ -9823,10 +10235,6 @@ msgstr ""
 #~ msgstr "Pilih kate&gori..."
 
 #, fuzzy
-#~ msgid "Time"
-#~ msgstr "&Masa"
-
-#, fuzzy
 #~ msgid "Set the reminder trigger time"
 #~ msgstr "Waktu bunyi penggera piawai:"
 
@@ -9901,12 +10309,6 @@ msgstr ""
 #~ msgstr "minit"
 
 #, fuzzy
-#~| msgid "every "
-#~ msgctxt "repeat every X minutes"
-#~ msgid "every "
-#~ msgstr "setiap"
-
-#, fuzzy
 #~| msgid ""
 #~| "Check this option if you want to have to-dos on the print, placed by "
 #~| "their due date."
@@ -9960,11 +10362,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Semak opsyen ini jika anda ingin tugasan pada cetakan diletak berdasarkan "
 #~ "tarikh."
-
-#, fuzzy
-#~| msgid "Send Email"
-#~ msgid "Send email"
-#~ msgstr "Hantar E-mel"
 
 #, fuzzy
 #~ msgid "Display &text:"
@@ -10162,11 +10559,6 @@ msgstr ""
 #~ "Mesyuarat telah dialihkan ke\n"
 #~ "Mula: %1\n"
 #~ "Tamat: %2."
-
-#, fuzzy
-#~| msgid "KOrganizer"
-#~ msgid "Korganizer"
-#~ msgstr "KOrganizer"
 
 #, fuzzy
 #~| msgid "Could not load calendar '%1'."
@@ -10612,12 +11004,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Birthdays"
 #~ msgstr "Hari Lahir"
-
-#, fuzzy
-#~| msgid "&Reminder:"
-#~ msgctxt "@label"
-#~ msgid "Reminder:"
-#~ msgstr "Pe&ringatan:"
 
 #, fuzzy
 #~| msgid "event"
@@ -11243,13 +11629,6 @@ msgstr ""
 #~ msgid_plural "occurrences"
 #~ msgstr[0] "&kejadian"
 #~ msgstr[1] "&kejadian"
-
-#, fuzzy
-#~| msgctxt "monthname year"
-#~| msgid "%1 %2"
-#~ msgctxt "for N %OCCURRENCE[S]"
-#~ msgid "for %1 %2"
-#~ msgstr "%1 %2"
 
 #, fuzzy
 #~ msgid "Attendees:"
