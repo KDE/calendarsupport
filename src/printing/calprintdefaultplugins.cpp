@@ -20,9 +20,10 @@
 #include <Akonadi/Item>
 
 #include <KCalendarCore/Visitor>
+#include <KFormat>
 
-#include <KCalUtils/IncidenceFormatter>
 #if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
+#include <KCalUtils/IncidenceFormatter>
 #include <KCalUtils/Stringify>
 #endif
 
@@ -102,6 +103,20 @@ void CalPrintIncidence::doSaveConfig()
     CalPrintPluginBase::doSaveConfig();
 }
 
+static QString dateTimeToString(const QDateTime &date, bool dateOnly)
+{
+    if (dateOnly) {
+        return QLocale().toString(date.toLocalTime().date(), QLocale::LongFormat);
+    }
+
+#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 31, 0)
+    return QLocale().toString(date.toLocalTime(), QLocale::LongFormat);
+#else
+    const KFormat format;
+    return format.formatDateTime(date.toLocalTime(), QLocale::LongFormat, KFormat::AddTimezoneAbbreviationIfNeeded);
+#endif
+}
+
 namespace
 {
 class TimePrintStringsVisitor : public KCalendarCore::Visitor
@@ -122,7 +137,7 @@ protected:
     {
         if (event->dtStart().isValid()) {
             mStartCaption = i18n("Start date: ");
-            mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(event->dtStart(), event->allDay(), false);
+            mStartString = dateTimeToString(event->dtStart(), event->allDay());
         } else {
             mStartCaption = i18n("No start date");
             mStartString.clear();
@@ -130,7 +145,7 @@ protected:
 
         if (event->hasEndDate()) {
             mEndCaption = i18n("End date: ");
-            mEndString = KCalUtils::IncidenceFormatter::dateTimeToString(event->dtEnd(), event->allDay(), false);
+            mEndString = dateTimeToString(event->dtEnd(), event->allDay());
         } else if (event->hasDuration()) {
             mEndCaption = i18n("Duration: ");
             int const mins = event->duration().asSeconds() / 60;
@@ -151,7 +166,7 @@ protected:
     {
         if (todo->hasStartDate()) {
             mStartCaption = i18n("Start date: ");
-            mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(todo->dtStart(), todo->allDay(), false);
+            mStartString = dateTimeToString(todo->dtStart(), todo->allDay());
         } else {
             mStartCaption = i18n("No start date");
             mStartString.clear();
@@ -159,7 +174,7 @@ protected:
 
         if (todo->hasDueDate()) {
             mEndCaption = i18n("Due date: ");
-            mEndString = KCalUtils::IncidenceFormatter::dateTimeToString(todo->dtDue(), todo->allDay(), false);
+            mEndString = dateTimeToString(todo->dtDue(), todo->allDay());
         } else {
             mEndCaption = i18n("No due date");
             mEndString.clear();
@@ -170,7 +185,7 @@ protected:
     bool visit(const KCalendarCore::Journal::Ptr &journal) override
     {
         mStartCaption = i18n("Start date: ");
-        mStartString = KCalUtils::IncidenceFormatter::dateTimeToString(journal->dtStart(), journal->allDay(), false);
+        mStartString = dateTimeToString(journal->dtStart(), journal->allDay());
         mEndCaption.clear();
         mEndString.clear();
         return true;
