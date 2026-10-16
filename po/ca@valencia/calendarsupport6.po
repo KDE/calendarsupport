@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-15 00:46+0000\n"
-"PO-Revision-Date: 2026-10-06 09:34+0200\n"
+"PO-Revision-Date: 2026-10-15 09:48+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -468,12 +468,10 @@ msgstr "Duració:"
 #: incidenceformatter.cpp:285
 #, kde-format
 msgid "Show mail"
-msgstr ""
+msgstr "Mostra el correu"
 
 #: incidenceformatter.cpp:549
-#, fuzzy, kde-format
-#| msgid "1 hour "
-#| msgid_plural "%1 hours "
+#, kde-format
 msgctxt "hours part of duration"
 msgid "1 hour "
 msgid_plural "%1 hours "
@@ -481,9 +479,7 @@ msgstr[0] "1 hora "
 msgstr[1] "%1 hores "
 
 #: incidenceformatter.cpp:553
-#, fuzzy, kde-format
-#| msgid "1 minute "
-#| msgid_plural "%1 minutes "
+#, kde-format
 msgctxt "minutes part duration"
 msgid "1 minute "
 msgid_plural "%1 minutes "
@@ -495,164 +491,154 @@ msgstr[1] "%1 minuts "
 msgctxt "seconds part of duration"
 msgid "1 second"
 msgid_plural "%1 seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 segon"
+msgstr[1] "%1 segons"
 
 #: incidenceformatter.cpp:719
 #, kde-format
 msgctxt "Event start"
 msgid "<i>From:</i> %1"
-msgstr ""
+msgstr "<i>De:</i> %1"
 
 #: incidenceformatter.cpp:721
 #, kde-format
 msgctxt "Event end"
 msgid "<i>To:</i> %1"
-msgstr ""
+msgstr "<i>A:</i> %1"
 
 #: incidenceformatter.cpp:723
 #, kde-format
 msgctxt "datetime range for event"
 msgid "<i>Date:</i> %1 - %2"
-msgstr ""
+msgstr "<i>Data:</i> %1 – %2"
 
 #: incidenceformatter.cpp:726 incidenceformatter.cpp:804
 #, kde-format
 msgid "<i>Date:</i> %1"
-msgstr ""
+msgstr "<i>Data:</i> %1"
 
 #: incidenceformatter.cpp:732
 #, kde-format
 msgctxt "time for event"
 msgid "<i>Time:</i> %1"
-msgstr ""
+msgstr "<i>Hora:</i> %1"
 
 #: incidenceformatter.cpp:734
 #, kde-format
 msgctxt "time range for event"
 msgid "<i>Time:</i> %1 - %2"
-msgstr ""
+msgstr "<i>Hora:</i> %1 – %2"
 
 #: incidenceformatter.cpp:767
 #, kde-format
 msgctxt "To-do's start date"
 msgid "<i>Start:</i> %1"
-msgstr ""
+msgstr "<i>Inici:</i> %1"
 
 #: incidenceformatter.cpp:770
 #, kde-format
 msgctxt "To-do's due date"
 msgid "<i>Due:</i> %1"
-msgstr ""
+msgstr "<i>Venciment:</i> %1"
 
 #: incidenceformatter.cpp:777
-#, fuzzy, kde-format
-#| msgctxt "subitem Priority: N"
-#| msgid "Priority: %1\n"
+#, kde-format
 msgctxt "To-do's priority number"
 msgid "<i>Priority:</i> %1"
-msgstr "Prioritat: %1\n"
+msgstr "<i>Prioritat:</i> %1"
 
 #: incidenceformatter.cpp:782
 #, kde-format
 msgctxt "To-do's completed date"
 msgid "<i>Completed:</i> %1"
-msgstr ""
+msgstr "<i>Completada:</i> %1"
 
 #: incidenceformatter.cpp:793
 #, kde-format
 msgctxt "To-do's percent complete:"
 msgid "<i>Percent Done:</i> %1%"
-msgstr ""
+msgstr "<i>Percentatge completat:</i> %1%"
 
 #: incidenceformatter.cpp:812
 #, kde-format
 msgid "<i>Period start:</i> %1"
-msgstr ""
+msgstr "<i>Període d'inici:</i> %1"
 
 #: incidenceformatter.cpp:813
 #, kde-format
 msgid "<i>Period end:</i> %1"
-msgstr ""
+msgstr "<i>Període final:</i> %1"
 
 #: incidenceformatter.cpp:838 templates/freebusy.html:5
 #, kde-format
 msgid "Free/Busy information for %1"
-msgstr ""
+msgstr "Informació de lliure/ocupat per a %1"
 
 #: incidenceformatter.cpp:860 incidenceformatter.cpp:862
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
+#, kde-format
 msgctxt "attendee name (attendee status)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
 #: incidenceformatter.cpp:865
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: incidenceformatter.cpp:891 incidenceformatter.cpp:1028
 #, kde-format
 msgctxt "ellipsis"
 msgid "..."
-msgstr ""
+msgstr "…"
 
 #: incidenceformatter.cpp:911
 #, kde-format
 msgid " (delegated by %1)"
-msgstr ""
+msgstr " (s'ha delegat per %1)"
 
 #: incidenceformatter.cpp:914
 #, kde-format
 msgid " (delegated to %1)"
-msgstr ""
+msgstr " (s'ha delegat a %1)"
 
 #: incidenceformatter.cpp:934 templates/event.html:112 templates/todo.html:93
-#, fuzzy, kde-format
-#| msgid "Organizer: "
+#, kde-format
 msgid "Organizer:"
-msgstr "Organitzador: "
+msgstr "Organitzador:"
 
 #: incidenceformatter.cpp:945 templates/event.html:124 templates/todo.html:105
 #, kde-format
 msgid "Chair:"
-msgstr ""
+msgstr "Presidix:"
 
 #: incidenceformatter.cpp:952 templates/event.html:137 templates/todo.html:118
 #, kde-format
 msgid "Required Participants:"
-msgstr ""
+msgstr "Participants requerits:"
 
 #: incidenceformatter.cpp:959
 #, kde-format
 msgid "Optional Participants:"
-msgstr ""
+msgstr "Participants opcionals:"
 
 #: incidenceformatter.cpp:966 templates/event.html:163 templates/todo.html:144
 #, kde-format
 msgid "Observers:"
-msgstr ""
+msgstr "Observadors:"
 
 #: incidenceformatter.cpp:988 templates/event.html:13 templates/journal.html:14
 #: templates/todo.html:14
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Select Calendar"
+#, kde-format
 msgid "Calendar:"
-msgstr "Trieu un calendari"
+msgstr "Calendari:"
 
 #: incidenceformatter.cpp:996 templates/event.html:21 templates/todo.html:22
-#, fuzzy, kde-format
-#| msgid "Location: "
+#, kde-format
 msgid "Location:"
-msgstr "Ubicació: "
+msgstr "Ubicació:"
 
 #: incidenceformatter.cpp:1003 templates/event.html:60 templates/todo.html:54
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip period duration"
-#| msgid "Duration:"
+#, kde-format
 msgid "Duration:"
 msgstr "Duració:"
 
@@ -660,14 +646,12 @@ msgstr "Duració:"
 #: templates/event.html:68 templates/todo.html:62
 #, kde-format
 msgid "Recurrence:"
-msgstr ""
+msgstr "Recurrència:"
 
 #: incidenceformatter.cpp:1020 templates/todo.html:64
-#, fuzzy, kde-format
-#| msgctxt "except for listed dates"
-#| msgid " except"
+#, kde-format
 msgid "Exception"
-msgstr " excepte"
+msgstr "Excepció"
 
 #: incidenceformatter.cpp:1036 printing/calprintdefaultplugins.cpp:436
 #: templates/event.html:96 templates/journal.html:30 templates/todo.html:74
@@ -676,21 +660,19 @@ msgid "Description:"
 msgstr "Descripció:"
 
 #: incidenceformatter.cpp:1050 templates/event.html:104 templates/todo.html:85
-#, fuzzy, kde-format
-#| msgid "Reminder: "
-#| msgid_plural "%1 reminders: "
+#, kde-format
 msgid "Reminder:"
 msgid_plural "Reminders:"
-msgstr[0] "Recordatori: "
-msgstr[1] "%1 recordatoris: "
+msgstr[0] "Recordatori:"
+msgstr[1] "Recordatoris:"
 
 #: incidenceformatter.cpp:1078 templates/event.html:176
 #: templates/journal.html:38 templates/todo.html:157
 #, kde-format
 msgid "Tag:"
 msgid_plural "Tags:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Etiqueta:"
+msgstr[1] "Etiquetes:"
 
 #: incidenceformatter.cpp:1117 incidenceformatter.cpp:1143
 #: incidenceformatter.cpp:1155 printing/calprintdefaultplugins.cpp:346
@@ -717,52 +699,40 @@ msgstr[1] "%1 minuts"
 #: incidenceformatter.cpp:1146
 #, kde-format
 msgid "forever"
-msgstr ""
+msgstr "per sempre"
 
 #: incidenceformatter.cpp:1188
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 before the start"
+#, kde-format
 msgctxt "N days/hours/minutes before the start datetime"
 msgid "%1 before the start"
 msgstr "%1 abans de l'inici"
 
 #: incidenceformatter.cpp:1190
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 after the start"
+#, kde-format
 msgctxt "N days/hours/minutes after the start datetime"
 msgid "%1 after the start"
 msgstr "%1 després de l'inici"
 
 #: incidenceformatter.cpp:1201
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 before the end"
+#, kde-format
 msgctxt "N days/hours/minutes before the due datetime"
 msgid "%1 before the to-do is due"
-msgstr "%1 abans del final"
+msgstr "%1 abans que vença la tasca pendent"
 
 #: incidenceformatter.cpp:1203
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 before the end"
+#, kde-format
 msgctxt "N days/hours/minutes before the end datetime"
 msgid "%1 before the end"
 msgstr "%1 abans del final"
 
 #: incidenceformatter.cpp:1207
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 after the end"
+#, kde-format
 msgctxt "N days/hours/minutes after the due datetime"
 msgid "%1 after the to-do is due"
-msgstr "%1 després del final"
+msgstr "%1 després que vença la tasca pendent"
 
 #: incidenceformatter.cpp:1209
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 after the end"
+#, kde-format
 msgctxt "N days/hours/minutes after the end datetime"
 msgid "%1 after the end"
 msgstr "%1 després del final"
@@ -771,47 +741,41 @@ msgstr "%1 després del final"
 #, kde-format
 msgctxt "reminder occurs at datetime"
 msgid "at %1"
-msgstr ""
+msgstr "a les %1"
 
 #: incidenceformatter.cpp:1234
-#, fuzzy, kde-format
-#| msgid "Repeats: "
+#, kde-format
 msgid "repeats once"
 msgid_plural "repeats %1 times"
-msgstr[0] "Repeticions: "
-msgstr[1] "Repeticions: "
+msgstr[0] "es repetix una vegada"
+msgstr[1] "es repetix %1 vegades"
 
 #: incidenceformatter.cpp:1235
 #, kde-format
 msgctxt "interval is N days/hours/minutes"
 msgid "interval is %1"
-msgstr ""
+msgstr "l'interval és %1"
 
 #: incidenceformatter.cpp:1236
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt "(repeat string, interval string)"
 msgid "(%1, %2)"
-msgstr "%1, %2"
+msgstr "(%1, %2)"
 
 #: incidenceformatter.cpp:1241
 #, kde-format
 msgctxt "alarm is disabled"
 msgid "disabled"
-msgstr ""
+msgstr "desactivada"
 
 #: incidenceformatter.cpp:1245
-#, fuzzy, kde-format
-#| msgctxt "blocking audio reminders for this calendar"
-#| msgid "audio"
+#, kde-format
 msgctxt "alarm will play a sound"
 msgid "audio"
 msgstr "àudio"
 
 #: incidenceformatter.cpp:1248
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
+#, kde-format
 msgctxt "the reminder string with its types list"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
@@ -2269,7 +2233,7 @@ msgstr "Llista de tasques pendents"
 #: printing/calprintpluginbase.cpp:1726 templates/todo.html:179
 #, kde-format
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: printing/calprintdefaultplugins.cpp:1657
 #, kde-format
@@ -3192,198 +3156,157 @@ msgid "Prints a calendar for an entire year"
 msgstr "Imprimix un calendari de tot un any"
 
 #: templates/attendee_row.html:17
-#, fuzzy
-#| msgid "Organizer: "
 msgid "organizer"
-msgstr "Organitzador: "
+msgstr "organitzador"
 
 #: templates/attendee_row.html:21
 msgid "myself"
-msgstr ""
+msgstr "jo mateix"
 
 #: templates/attendee_row.html:25
 #, kde-format
 msgid "delegated by %1)"
-msgstr ""
+msgstr "s'ha delegat per a %1)"
 
 #: templates/attendee_row.html:29
 #, kde-format
 msgid "delegated to %1)"
-msgstr ""
+msgstr "s'ha delegat a %1)"
 
 #: templates/attendee_row.html:36
-#, fuzzy
-#| msgctxt "blocking email reminders for this calendar"
-#| msgid "email"
 msgid "Send email"
-msgstr "correu electrònic"
+msgstr "Envia un correu"
 
 #: templates/event.html:5
-#, fuzzy
-#| msgid "Events:"
 msgid "Event"
-msgstr "Esdeveniments:"
+msgstr "Esdeveniment"
 
 #: templates/event.html:30 templates/event.html:33 templates/event.html:40
 #: templates/event.html:43 templates/journal.html:22
-#, fuzzy
-#| msgid "Due date: "
 msgid "Date:"
-msgstr "Data de venciment: "
+msgstr "Data:"
 
 #: templates/event.html:31
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "<beginDate> - <endDate>"
 msgid "%1 - %2"
 msgstr "%1 – %2"
 
 #: templates/event.html:34 templates/event.html:44
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "Date as string"
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: templates/event.html:41
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "<beginDateTime> - <endDateTime>"
 msgid "%1 - %2"
 msgstr "%1 – %2"
 
 #: templates/event.html:47
 msgid "Time:"
-msgstr ""
+msgstr "Hora:"
 
 #: templates/event.html:49
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "<beginTime> - <endTime>"
 msgid "%1 - %2"
 msgstr "%1 – %2"
 
 #: templates/event.html:51
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "Time as string"
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: templates/event.html:70
-#, fuzzy
-#| msgctxt "except for listed dates"
-#| msgid " except"
 msgctxt "Exception in event recurrence"
 msgid "Exception"
-msgstr " excepte"
+msgstr "Excepció"
 
 #: templates/event.html:80
 msgid "Birthday:"
-msgstr ""
+msgstr "Data de naixement:"
 
 #: templates/event.html:88
 msgid "Anniversary:"
-msgstr ""
+msgstr "Aniversari:"
 
 #: templates/event.html:150 templates/todo.html:131
 msgid "Optional participants:"
-msgstr ""
+msgstr "Participants opcionals:"
 
 #: templates/event.html:184 templates/todo.html:186
-#, fuzzy
-#| msgid "1 Attachment:"
-#| msgid_plural "%1 Attachments:"
 msgid "Attachment:"
 msgid_plural "Attachments:"
-msgstr[0] "1 adjunt:"
-msgstr[1] "%1 adjunts:"
+msgstr[0] "Adjunt:"
+msgstr[1] "Adjunts:"
 
 #: templates/event.html:197 templates/journal.html:47 templates/todo.html:200
-#, fuzzy, kde-format
-#| msgctxt "print date: formatted-datetime"
-#| msgid "printed: %1"
+#, kde-format
 msgid "Created: %1"
-msgstr "impresa: %1"
+msgstr "Creat: %1"
 
 #: templates/event.html:198 templates/journal.html:48 templates/todo.html:201
-#, fuzzy, kde-format
-#| msgctxt "print date: formatted-datetime"
-#| msgid "printed: %1"
+#, kde-format
 msgid "Modified: %1"
-msgstr "impresa: %1"
+msgstr "Modificat: %1"
 
 #: templates/event.html:199 templates/journal.html:49 templates/todo.html:202
-#, fuzzy, kde-format
-#| msgid "Person: %1"
+#, kde-format
 msgid "Revision: %1"
-msgstr "Persona: %1"
+msgstr "Revisió: %1"
 
 #: templates/freebusy.html:6
 #, kde-format
 msgid "Busy times in date range %1 - %2:"
-msgstr ""
+msgstr "Temps d'ocupat en l'interval de dates %1 – %2:"
 
 #: templates/freebusy.html:9
-#, fuzzy
-#| msgid "Busy"
 msgctxt "tag for busy period list"
 msgid "Busy:"
-msgstr "Ocupat"
+msgstr "Ocupat:"
 
 #: templates/freebusy.html:13
 #, kde-format
 msgctxt "startDate for duration"
 msgid "%1 for %2"
-msgstr ""
+msgstr "%1 durant %2"
 
 #: templates/freebusy.html:16
-#, fuzzy, kde-format
-#| msgctxt "weekday, shortmonthname daynumber"
-#| msgid "%1, %2 %3"
+#, kde-format
 msgctxt "date, fromTime - toTime"
 msgid "%1, %2 - %3"
-msgstr "%1, %2 %3"
+msgstr "%1, %2 – %3"
 
 #: templates/freebusy.html:18
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "fromDateTime - endDateTime"
 msgid "%1 - %2"
 msgstr "%1 – %2"
 
 #: templates/incidence_header.html:10
-#, fuzzy
-#| msgid "Print &incidence"
 msgid "Recurring incidence"
-msgstr "Imprimix les &incidències"
+msgstr "Incidència recurrent"
 
 #: templates/incidence_header.html:14
 msgid "Incidence with a reminder"
-msgstr ""
+msgstr "Incidència amb un recordatori"
 
 #: templates/incidence_header.html:18
 msgid "Incidence is read only"
-msgstr ""
+msgstr "Incidència de només de lectura"
 
 #: templates/journal.html:5
-#, fuzzy
-#| msgid "Journals:"
 msgid "Journal"
-msgstr "Diaris:"
+msgstr "Diari"
 
 #: templates/todo.html:5
 msgid "Todo"
-msgstr ""
+msgstr "Tasca pendent"
 
 #: templates/todo.html:30
-#, fuzzy
-#| msgctxt "@info:tooltip period start time"
-#| msgid "Start:"
 msgctxt "to-do start date/time"
 msgid "Start:"
 msgstr "Inici:"
@@ -3391,28 +3314,20 @@ msgstr "Inici:"
 #: templates/todo.html:42
 msgctxt "to-do due date/time"
 msgid "Due:"
-msgstr ""
+msgstr "Venciment:"
 
 #: templates/todo.html:165
-#, fuzzy
-#| msgid "Priority"
 msgid "Priority:"
-msgstr "Prioritat"
+msgstr "Prioritat:"
 
 #: templates/todo.html:173
-#, fuzzy
-#| msgctxt "@label to-do percentage complete"
-#| msgid "Complete"
 msgctxt "Completed: date"
 msgid "Completed:"
-msgstr "Finalitzat"
+msgstr "Finalitzada:"
 
 #: templates/todo.html:178
-#, fuzzy
-#| msgctxt "@option sort by percent completed"
-#| msgid "Percent Complete"
 msgid "Percent done:"
-msgstr "Percentatge de realització"
+msgstr "Percentatge completat:"
 
 #: utils.cpp:242
 #, kde-format
