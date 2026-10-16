@@ -3,12 +3,12 @@ description: Calendar Support library
 tier: 3
 type: functional
 platforms:
-    - name: All
+  - name: All
 portingAid: false
 deprecated: false
 release: false
 libraries:
-    - cmake: "KPim6::CalendarSupport"
+  - cmake: "KPim6::CalendarSupport"
 cmakename: KPim6CalendarSupport
 
 public_lib: true
