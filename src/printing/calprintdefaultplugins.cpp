@@ -509,7 +509,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                         subitemString +=
                             i18nc("subitem due date",
                                   "Due Date: %1\n",
-                                  QLocale().toString(todo->dateTime(KCalendarCore::Incidence ::RoleEnd).toLocalTime().date(), QLocale::ShortFormat));
+                                  QLocale().toString(todo->dateTime(KCalendarCore::Incidence::RoleEnd).toLocalTime().date(), QLocale::ShortFormat));
 
                         if (!todo->allDay()) {
                             subitemString +=
