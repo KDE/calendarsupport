@@ -11,13 +11,12 @@
 #include "identitymanager.h"
 
 #include <Akonadi/EntityTreeModel>
-#include <Akonadi/TagAttribute>
 #include <Akonadi/TagCache>
-#include <Akonadi/TagModifyJob>
 
 #include <KMime/HeaderParsing>
 
 #include <QAbstractItemModel>
+#include <QColor>
 #include <QPointer>
 
 #include <KEmailAddress>

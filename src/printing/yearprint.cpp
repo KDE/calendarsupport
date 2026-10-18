@@ -9,6 +9,8 @@
 #include "calendarsupport_debug.h"
 #include <KConfigGroup>
 #include <KLocalizedString>
+#include <QLocale>
+#include <QPainter>
 using namespace CalendarSupport;
 
 #include <cmath>

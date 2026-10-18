@@ -8,6 +8,7 @@
 
 #include "calendarsupport_export.h"
 #include <QList>
+#include <QString>
 
 namespace CalendarSupport
 {

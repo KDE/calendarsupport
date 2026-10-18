@@ -16,11 +16,13 @@
 #include <KCalendarCore/Event>
 #include <KCalendarCore/Todo>
 
+#include <QColor>
 #include <QDateTime>
-#include <QPainter>
+#include <QRect>
 
 class PrintCellItem;
-class QWidget;
+class QBrush;
+class QPainter;
 
 #define PORTRAIT_HEADER_HEIGHT 80 // header height, for portrait orientation
 #define LANDSCAPE_HEADER_HEIGHT 54 // header height, for landscape orientation

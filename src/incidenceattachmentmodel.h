@@ -7,7 +7,6 @@
 
 #pragma once
 
-#include <Akonadi/Attribute>
 #include <Akonadi/Item>
 
 #include <KCalendarCore/Incidence>
@@ -15,10 +14,6 @@
 #include <QAbstractListModel>
 
 #include <memory>
-
-namespace Akonadi
-{
-}
 
 namespace CalendarSupport
 {

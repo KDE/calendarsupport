@@ -12,6 +12,7 @@
 #include "yearprint.h"
 
 #include <KConfigGroup>
+#include <KLocalizedString>
 #include <KMessageBox>
 #include <KStandardGuiItem>
 #include <KWindowStateSaver>
@@ -20,8 +21,11 @@
 #include <QDialogButtonBox>
 #include <QGridLayout>
 #include <QGroupBox>
+#include <QLabel>
+#include <QPointer>
 #include <QPrintDialog>
 #include <QPrintPreviewDialog>
+#include <QRadioButton>
 #include <QSplitter>
 #include <QStackedWidget>
 #include <QVBoxLayout>

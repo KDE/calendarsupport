@@ -19,7 +19,7 @@
 #include "ui_calprintweekconfig_base.h"
 
 #include <KLocalizedString>
-using namespace Qt::Literals::StringLiterals;
+
 namespace CalendarSupport
 {
 /*!
@@ -42,7 +42,7 @@ public:
      */
     [[nodiscard]] QString groupName() const override
     {
-        return u"Print incidence"_s;
+        return QStringLiteral("Print incidence");
     }
 
     /*!
@@ -167,7 +167,7 @@ public:
     ~CalPrintDay() override;
     [[nodiscard]] QString groupName() const override
     {
-        return u"Print day"_s;
+        return QStringLiteral("Print day");
     }
 
     [[nodiscard]] QString description() const override
@@ -226,7 +226,7 @@ public:
 
     [[nodiscard]] QString groupName() const override
     {
-        return u"Print week"_s;
+        return QStringLiteral("Print week");
     }
 
     [[nodiscard]] QString description() const override
@@ -292,7 +292,7 @@ public:
     ~CalPrintMonth() override;
     QString groupName() const override
     {
-        return u"Print month"_s;
+        return QStringLiteral("Print month");
     }
 
     QString description() const override
@@ -347,7 +347,7 @@ public:
 
     QString groupName() const override
     {
-        return u"Print to-dos"_s;
+        return QStringLiteral("Print to-dos");
     }
 
     QString description() const override

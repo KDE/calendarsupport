@@ -25,7 +25,6 @@
 #include <Akonadi/ItemFetchJob>
 
 #include <KIO/FileCopyJob>
-#include <KIO/JobUiDelegate>
 #include <KIO/OpenUrlJob>
 #include <KIO/StatJob>
 #include <KJob>
@@ -34,11 +33,14 @@
 #include <KMessageBox>
 
 #include <QDesktopServices>
+#include <QDir>
 #include <QFile>
 #include <QFileDialog>
+#include <QMap>
 #include <QMimeDatabase>
 #include <QPointer>
 #include <QTemporaryFile>
+#include <QUrl>
 
 using namespace Qt::Literals::StringLiterals;
 using namespace KCalendarCore;

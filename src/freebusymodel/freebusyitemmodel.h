@@ -16,8 +16,6 @@
 
 #include <memory>
 
-class ItemPrivateData;
-
 namespace CalendarSupport
 {
 /*!

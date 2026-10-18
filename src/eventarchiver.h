@@ -18,6 +18,7 @@
 #include <QObject>
 
 class QDate;
+class QWidget;
 
 namespace Akonadi
 {

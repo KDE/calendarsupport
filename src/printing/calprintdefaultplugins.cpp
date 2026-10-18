@@ -11,13 +11,10 @@
 
 #include "calprintdefaultplugins.h"
 
-#include "kcalprefs.h"
 #include "utils.h"
 
+#include <algorithm>
 #include <cmath>
-
-#include <Akonadi/CalendarUtils>
-#include <Akonadi/Item>
 
 #include <KCalendarCore/Visitor>
 #include <KFormat>

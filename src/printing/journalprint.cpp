@@ -7,8 +7,10 @@
 #include "journalprint.h"
 
 #include "calendarsupport_debug.h"
-#include "utils.h"
 #include <KConfigGroup>
+#include <KLocalizedString>
+#include <QLocale>
+#include <QPainter>
 
 using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;

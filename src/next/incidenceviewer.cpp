@@ -14,15 +14,12 @@
 
 #include "incidenceattachmentmodel.h"
 
-#include <Akonadi/CalendarBase>
 #include <Akonadi/CalendarUtils>
 #include <Akonadi/CollectionFetchJob>
-#include <Akonadi/ETMCalendar>
 #include <Akonadi/ItemFetchScope>
 
 #include <KJob>
 #include <QRegularExpression>
-#include <QTextBrowser>
 
 #include <QVBoxLayout>
 

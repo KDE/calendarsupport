@@ -8,7 +8,7 @@
 
 #include "messagewidget.h"
 
-#include <QApplication>
+#include <QCoreApplication>
 #include <QKeyEvent>
 
 using namespace CalendarSupport;

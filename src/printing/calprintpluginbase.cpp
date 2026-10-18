@@ -13,7 +13,6 @@
 #include "kcalprefs.h"
 #include "utils.h"
 
-#include <Akonadi/Item>
 #include <Akonadi/TagCache>
 
 #include "calendarsupport_debug.h"
@@ -26,17 +25,16 @@
 #include <QFrame>
 #include <QLabel>
 #include <QLocale>
+#include <QPainter>
 #include <QTextCursor>
 #include <QTextDocument>
 #include <QTextDocumentFragment>
 #include <QTimeZone>
 #include <QVBoxLayout>
-#include <qmath.h>
-
-using namespace CalendarSupport;
 
 #include <cmath>
 
+using namespace CalendarSupport;
 using namespace Qt::Literals::StringLiterals;
 
 static QString cleanStr(const QString &instr)

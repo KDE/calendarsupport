@@ -18,6 +18,7 @@
 #include <KCalendarCore/Journal>
 #include <KCalendarCore/Todo>
 
+#include <QDate>
 #include <QModelIndex>
 
 namespace KCalendarCore
@@ -28,10 +29,11 @@ class CalFilter;
 class QAbstractItemModel;
 class QDrag;
 class QMimeData;
+class QUrl;
+class QWidget;
 
 namespace CalendarSupport
 {
-class Calendar;
 /*!
  * returns the event from an incidence, or a null pointer if the item has no such payload
  */

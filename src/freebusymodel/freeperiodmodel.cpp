@@ -14,6 +14,8 @@
 #include <QLocale>
 #include <QTimeZone>
 
+#include <algorithm>
+
 using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 

@@ -13,6 +13,9 @@
 
 #include <calendarsupport_debug.h>
 
+#include <kcalendarcore_version.h>
+#include <kcoreaddons_version.h>
+
 // #include "grantleetemplatemanager_p.h"
 #if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
 #include <KCalUtils/Stringify>
@@ -25,7 +28,6 @@
 #include <KTextTemplate/Template>
 
 #include <KCalendarCore/Event>
-#include <KCalendarCore/Exceptions>
 #include <KCalendarCore/FreeBusy>
 #include <KCalendarCore/Journal>
 #include <KCalendarCore/Todo>
@@ -43,7 +45,10 @@ using namespace KCalendarCore;
 #include <KLocalizedString>
 
 #include <QLocale>
+#include <QSharedPointer>
 #include <QTextDocumentFragment>
+#include <QTimeZone>
+#include <QUrl>
 
 using namespace Qt::Literals;
 using namespace CalendarSupport;

@@ -11,14 +11,13 @@
 #include "eventarchiver.h"
 #include "kcalprefs.h"
 
-#include <Akonadi/IncidenceChanger>
-
 #include <KDateComboBox>
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KUrlRequester>
 #include <QComboBox>
+#include <QCursor>
 #include <QHBoxLayout>
 #include <QUrl>
 

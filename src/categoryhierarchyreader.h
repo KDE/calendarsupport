@@ -8,6 +8,7 @@
 
 #include "calendarsupport_export.h"
 
+#include <QStringList>
 #include <QVariant>
 
 class QComboBox;

@@ -10,8 +10,6 @@
 
 #include "ui_calprintyearconfig_base.h"
 
-using namespace Qt::Literals::StringLiterals;
-
 namespace CalendarSupport
 {
 class CalPrintYear : public CalPrintPluginBase
@@ -25,7 +23,7 @@ public:
 
     [[nodiscard]] QString groupName() const override
     {
-        return u"Print year"_s;
+        return QStringLiteral("Print year");
     }
 
     [[nodiscard]] QString description() const override

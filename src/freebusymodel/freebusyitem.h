@@ -13,6 +13,8 @@
 
 #include <KCalendarCore/FreeBusy>
 
+class QWidget;
+
 namespace CalendarSupport
 {
 /*!

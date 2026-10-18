@@ -7,6 +7,7 @@
 #include "categoryhierarchyreader.h"
 
 #include <QComboBox>
+#include <QMap>
 
 using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;

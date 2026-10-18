@@ -13,6 +13,7 @@
 
 #include <KLocalizedString>
 
+#include <QMap>
 #include <QTimeZone>
 
 using namespace CalendarSupport;

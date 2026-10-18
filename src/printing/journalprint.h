@@ -10,7 +10,7 @@
 
 #include "ui_calprintjournalconfig_base.h"
 
-using namespace Qt::Literals::StringLiterals;
+#include <KLocalizedString>
 
 namespace CalendarSupport
 {
@@ -25,7 +25,7 @@ public:
 
     [[nodiscard]] QString groupName() const override
     {
-        return u"Print journal"_s;
+        return QStringLiteral("Print journal");
     }
 
     [[nodiscard]] QString description() const override

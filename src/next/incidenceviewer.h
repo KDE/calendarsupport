@@ -21,7 +21,6 @@ class QAbstractItemModel;
 namespace Akonadi
 {
 class EntityTreeModel;
-class ETMCalendar;
 }
 
 namespace CalendarSupport

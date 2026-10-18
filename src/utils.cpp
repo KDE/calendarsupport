@@ -22,14 +22,12 @@
 #include <Akonadi/CollectionDialog>
 
 #include <Akonadi/BlockAlarmsAttribute>
-#include <Akonadi/ETMCalendar>
 
 #include <KHolidays/HolidayRegion>
 
 #include <KCalendarCore/CalFilter>
 #include <KCalendarCore/FileStorage>
 #include <KCalendarCore/FreeBusy>
-#include <KCalendarCore/MemoryCalendar>
 
 #include <KCalendarCore/MimeData>
 
@@ -38,10 +36,17 @@
 #include <QApplication>
 #include <QDrag>
 #include <QFile>
+#include <QIcon>
+#include <QLocale>
 #include <QMimeData>
 #include <QPointer>
+#include <QRegularExpression>
 #include <QStyle>
 #include <QUrlQuery>
+
+#include <algorithm>
+#include <cassert>
+#include <memory>
 
 using namespace Qt::Literals::StringLiterals;
 
