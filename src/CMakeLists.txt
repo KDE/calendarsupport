@@ -121,7 +121,6 @@ target_link_libraries(
         KF6::Codecs
         KPim6::AkonadiCore
         KF6::CalendarCore
-        KPim6::CalendarUtils
         KF6::IconThemes
         KF6::TextTemplate
         KPim6::GrantleeTheme
