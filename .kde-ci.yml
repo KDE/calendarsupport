@@ -9,7 +9,6 @@ Dependencies:
       'frameworks/kholidays': '@latest-kf6'
       'pim/akonadi': '@same'
       'pim/akonadi-calendar': '@same'
-      'pim/kcalutils': '@same'
       'pim/kidentitymanagement': '@same'
       'frameworks/kmime': '@latest-kf6'
       'frameworks/kiconthemes': '@latest-kf6'

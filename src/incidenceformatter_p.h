@@ -15,9 +15,9 @@
 namespace CalendarSupport
 {
 /*!
- \class KCalUtils::IncidenceFormatter
- \inmodule KCalUtils
- \inheaderfile KCalUtils/IncidenceFormatter
+ \class CalendarSupport::IncidenceFormatter
+ \inmodule CalendarSupport
+ \inheaderfile CalendarSupport/IncidenceFormatter
 
   \brief
   Provides methods to format Incidences in various ways for display purposes.
