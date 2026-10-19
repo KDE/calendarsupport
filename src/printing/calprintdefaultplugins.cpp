@@ -19,11 +19,6 @@
 #include <KCalendarCore/Visitor>
 #include <KFormat>
 
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-#include <KCalUtils/IncidenceFormatter>
-#include <KCalUtils/Stringify>
-#endif
-
 #include <KConfigGroup>
 
 #include <QPainter>
@@ -295,11 +290,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
         if ((*it)->recurs()) {
             QRect const recurBox(timesBox.left() + padding(), h + padding(), timesBox.right() - padding(), lineHeight);
             KCalendarCore::Recurrence const *recurs = (*it)->recurrence();
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-            QString displayString = KCalUtils::IncidenceFormatter::recurrenceString((*it));
-#else
             QString displayString = (*it)->recurrenceDescription();
-#endif
             // exception dates
             QString exceptString;
             if (!recurs->exDates().isEmpty()) {
@@ -495,11 +486,7 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                         continue;
                     }
                     // format the status
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-                    statusString = KCalUtils::Stringify::incidenceStatus(todo->status());
-#else
                     statusString = KCalendarCore::Incidence::statusName(todo->status());
-#endif
                     if (statusString.isEmpty()) {
                         if (todo->status() == KCalendarCore::Incidence::StatusNone) {
                             statusString = i18nc("no status", "none");
@@ -538,17 +525,9 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                         subitemString += u'\n';
                     }
                     subitemString += i18nc("subitem Status: statusString", "Status: %1\n", statusString);
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-                    subitemString += KCalUtils::IncidenceFormatter::recurrenceString(todo) + u'\n';
-#else
                     subitemString += todo->recurrenceDescription() + u'\n';
-#endif
                     subitemString += i18nc("subitem Priority: N", "Priority: %1\n", QString::number(todo->priority()));
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-                    subitemString += i18nc("subitem Secrecy: secrecyString", "Secrecy: %1\n", KCalUtils::Stringify::incidenceSecrecy(todo->secrecy()));
-#else
                     subitemString += i18nc("subitem Secrecy: secrecyString", "Secrecy: %1\n", KCalendarCore::Incidence::secrecyName(todo->secrecy()));
-#endif
                     subitemString += u'\n';
                 }
                 drawBoxWithCaption(p,
@@ -602,16 +581,6 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                 if (!attendeeString.isEmpty()) {
                     attendeeString += u'\n';
                 }
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-                attendeeString += i18nc(
-                    "Formatting of an attendee: "
-                    "'Name (Role): Status', e.g. 'Reinhold Kainhofer "
-                    "<reinhold@kainhofer.com> (Participant): Awaiting Response'",
-                    "%1 (%2): %3",
-                    (*ait).fullName(),
-                    KCalUtils::Stringify::attendeeRole((*ait).role()),
-                    KCalUtils::Stringify::attendeeStatus((*ait).status()));
-#else
                 attendeeString += i18nc(
                     "Formatting of an attendee: "
                     "'Name (Role): Status', e.g. 'Reinhold Kainhofer "
@@ -620,7 +589,6 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
                     (*ait).fullName(),
                     KCalendarCore::Attendee::roleName((*ait).role()),
                     KCalendarCore::Attendee::statusName((*ait).status()));
-#endif
             }
             drawBoxWithCaption(p,
                                attendeesBox,
@@ -634,22 +602,12 @@ void CalPrintIncidence::print(QPainter &p, int width, int height)
 
         if (mShowOptions) {
             QString optionsString;
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-            if (!KCalUtils::Stringify::incidenceStatus((*it)->status()).isEmpty()) {
-                optionsString += i18n("Status: %1", KCalUtils::Stringify::incidenceStatus((*it)->status()));
-#else
             if (!KCalendarCore::Incidence::statusName((*it)->status()).isEmpty()) {
                 optionsString += i18n("Status: %1", KCalendarCore::Incidence::statusName((*it)->status()));
-#endif
                 optionsString += u'\n';
             }
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-            if (!KCalUtils::Stringify::incidenceSecrecy((*it)->secrecy()).isEmpty()) {
-                optionsString += i18n("Secrecy: %1", KCalUtils::Stringify::incidenceSecrecy((*it)->secrecy()));
-#else
             if (!KCalendarCore::Incidence::secrecyName((*it)->secrecy()).isEmpty()) {
                 optionsString += i18n("Secrecy: %1", KCalendarCore::Incidence::secrecyName((*it)->secrecy()));
-#endif
                 optionsString += u'\n';
             }
             if ((*it)->type() == KCalendarCore::Incidence::TypeEvent) {

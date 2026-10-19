@@ -13,13 +13,9 @@
 
 #include <calendarsupport_debug.h>
 
-#include <kcalendarcore_version.h>
 #include <kcoreaddons_version.h>
 
 // #include "grantleetemplatemanager_p.h"
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-#include <KCalUtils/Stringify>
-#endif
 
 #include <GrantleeTheme/GrantleeKi18nLocalizer>
 
@@ -251,11 +247,7 @@ static QString cleanHtml(const QString &html)
             attendeeData[QStringLiteral("delegate")] = a.delegate();
         }
         if (showStatus) {
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-            attendeeData[QStringLiteral("status")] = KCalUtils::Stringify::attendeeStatus(a.status());
-#else
             attendeeData[QStringLiteral("status")] = Attendee::statusName(a.status());
-#endif
         }
 
         attendeeDataList << attendeeData;
@@ -396,11 +388,7 @@ static QString cleanHtml(const QString &html)
     incidence[QStringLiteral("endTime")] = endDt.time();
     incidence[QStringLiteral("duration")] = durationString(event);
     incidence[QStringLiteral("isException")] = event->hasRecurrenceId();
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-    incidence[QStringLiteral("recurrence")] = KCalUtils::Stringify::recurrenceString(event);
-#else
     incidence[QStringLiteral("recurrence")] = event->recurrenceDescription();
-#endif
 
     if (event->customProperty("KABC", "BIRTHDAY") == QLatin1StringView("YES")) {
         incidence[QStringLiteral("birthday")] = displayViewFormatBirthday(event);
@@ -479,11 +467,7 @@ static QString cleanHtml(const QString &html)
     incidence[QStringLiteral("duration")] = durationString(todo);
     incidence[QStringLiteral("isException")] = todo->hasRecurrenceId();
     if (todo->recurs()) {
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-        incidence[QStringLiteral("recurrence")] = KCalUtils::Stringify::recurrenceString(todo);
-#else
         incidence[QStringLiteral("recurrence")] = todo->recurrenceDescription();
-#endif
     }
 
     incidence[QStringLiteral("description")] = displayViewFormatDescription(todo);
@@ -860,12 +844,7 @@ bool IncidenceFormatter::ToolTipVisitor::visit(const FreeBusy::Ptr &fb)
         personString += QLatin1StringView(R"(<img valign="top" src=")") + iconPath + QLatin1StringView("\">") + QLatin1StringView("&nbsp;");
     }
     if (status != Attendee::None) {
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-        personString +=
-            i18nc("attendee name (attendee status)", "%1 (%2)", printName.isEmpty() ? email : printName, KCalUtils::Stringify::attendeeStatus(status));
-#else
         personString += i18nc("attendee name (attendee status)", "%1 (%2)", printName.isEmpty() ? email : printName, Attendee::statusName(status));
-#endif
     } else {
         personString += i18n("%1", printName.isEmpty() ? email : printName);
     }
@@ -1012,11 +991,7 @@ QString IncidenceFormatter::ToolTipVisitor::generateToolTip(const Incidence::Ptr
     if (incidence->recurs()) {
         tmp += QLatin1StringView("<br>");
         tmp += QLatin1StringView("<i>") + i18n("Recurrence:") + QLatin1StringView("</i>") + QLatin1StringView("&nbsp;");
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-        tmp += KCalUtils::Stringify::recurrenceString(incidence);
-#else
         tmp += incidence->recurrenceDescription();
-#endif
     }
 
     if (incidence->hasRecurrenceId()) {

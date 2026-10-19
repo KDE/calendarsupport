@@ -18,10 +18,6 @@
 #include <KCalendarCore/ICalFormat>
 #include <KCalendarCore/MemoryCalendar>
 
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-#include <KCalUtils/Stringify>
-#endif
-
 #include "calendarsupport_debug.h"
 #include <KIO/FileCopyJob>
 #include <KIO/StatJob>
@@ -275,11 +271,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     if (!archiveStore.save()) {
         QString errmess;
         if (format->exception()) {
-#if KCALENDARCORE_VERSION < QT_VERSION_CHECK(6, 30, 0)
-            errmess = KCalUtils::Stringify::errorMessage(*format->exception());
-#else
             errmess = format->exception()->errorMessage();
-#endif
         } else {
             errmess = i18nc("save failure cause unknown", "Reason unknown");
         }
