@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-17 00:50+0000\n"
+"POT-Creation-Date: 2026-10-19 00:47+0000\n"
 "PO-Revision-Date: 2026-09-25 18:32+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -32,19 +32,19 @@ msgstr "Anonimoa"
 msgid "nobody@nowhere"
 msgstr "inorez@inonez"
 
-#: archivedialog.cpp:43
+#: archivedialog.cpp:42
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive/Delete Past Events and To-dos"
 msgstr "Artxibatu/ezabatu iragandako gertaerak eta zereginak"
 
-#: archivedialog.cpp:50
+#: archivedialog.cpp:49
 #, kde-format
 msgctxt "@action:button"
 msgid "&Archive"
 msgstr "&Artxibatu"
 
-#: archivedialog.cpp:62
+#: archivedialog.cpp:61
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -56,7 +56,7 @@ msgstr ""
 "uneko egutegitik ezabatzen ditu. Artxibo fitxategia dagoeneko existitzen "
 "bada, gehitu egingo zaizkio (<link url=\"#\">Nola berreskuratu</link>)"
 
-#: archivedialog.cpp:67
+#: archivedialog.cpp:66
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -69,19 +69,19 @@ msgstr ""
 "zenukeen bezala irekita. Ez da gordetzen formatu berezi batean, vCalendar "
 "gisa baizik."
 
-#: archivedialog.cpp:82
+#: archivedialog.cpp:81
 #, kde-format
 msgctxt "@option:radio"
 msgid "Archive now items older than:"
 msgstr "Artxibatu orain hau baina zaharragoak diren elementuak:"
 
-#: archivedialog.cpp:83
+#: archivedialog.cpp:82
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable one time archiving or purging of older items"
 msgstr "Gaitu elementu zaharragoak behin artxibatzea edo guztiz kentzea"
 
-#: archivedialog.cpp:85
+#: archivedialog.cpp:84
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -94,13 +94,13 @@ msgstr ""
 "dira «Ezabatu bakarrik» aukera gaituta egon ezean, orduan elementuak gorde "
 "ordez, guztiz kenduko dira."
 
-#: archivedialog.cpp:93
+#: archivedialog.cpp:92
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the one time archiving cut-off date"
 msgstr "Ezarri behin artxibatzeko muga-eguna."
 
-#: archivedialog.cpp:95
+#: archivedialog.cpp:94
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -112,19 +112,19 @@ msgstr ""
 "zaharrago guztiak gorde eta ezabatu egingo dira, berriagoak (eta zehazki "
 "egun horretako gertaerak) mantendu egingo dira."
 
-#: archivedialog.cpp:107
+#: archivedialog.cpp:106
 #, kde-format
 msgctxt "@option:radio"
 msgid "Automaticall&y archive items older than:"
 msgstr "Automatikok&i artxibatu hau baino zaharragoak diren elementuak:"
 
-#: archivedialog.cpp:108
+#: archivedialog.cpp:107
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Enable automatic archiving or purging of older items"
 msgstr "Gaitu elementu zaharragoak artxibatzea edo guztiz kentzea"
 
-#: archivedialog.cpp:110
+#: archivedialog.cpp:109
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -136,13 +136,13 @@ msgstr ""
 "eta zereginak artxibatu behar diren; honek esan nahi du, ezarpenak aldatzeko "
 "ezik, ez duzula elkarrizketa-koadro hau berriz erabili beharko."
 
-#: archivedialog.cpp:123
+#: archivedialog.cpp:122
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the archival age in days, weeks or months"
 msgstr "Ezarri artxibatzeko adina egun, aste edo hilabetetan"
 
-#: archivedialog.cpp:125
+#: archivedialog.cpp:124
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -152,13 +152,13 @@ msgstr ""
 "Artxibatu beharreko gertaera eta zereginen adina. Zaharragoak diren elementu "
 "guztiak gorde eta ezabatu egingo dira, berriagoak mantendu egingo dira."
 
-#: archivedialog.cpp:130
+#: archivedialog.cpp:129
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the units for the automatic archive age"
 msgstr "Ezarri automatikoki artxibatzeko adinaren unitateak"
 
-#: archivedialog.cpp:131
+#: archivedialog.cpp:130
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Select the time units (days, weeks or months) for automatic archiving."
@@ -166,43 +166,43 @@ msgstr ""
 "Aukeratu artxibatze automatikorako denbora unitateak (egun, aste edo "
 "hilabete)."
 
-#: archivedialog.cpp:133
+#: archivedialog.cpp:132
 #, kde-format
 msgctxt "@item:inlistbox expires in daily units"
 msgid "Day(s)"
 msgstr "Egun"
 
-#: archivedialog.cpp:134
+#: archivedialog.cpp:133
 #, kde-format
 msgctxt "@item:inlistbox expiration in weekly units"
 msgid "Week(s)"
 msgstr "Aste"
 
-#: archivedialog.cpp:135
+#: archivedialog.cpp:134
 #, kde-format
 msgctxt "@item:inlistbox expiration in monthly units"
 msgid "Month(s)"
 msgstr "Hilabete"
 
-#: archivedialog.cpp:140
+#: archivedialog.cpp:139
 #, kde-format
 msgctxt "@label"
 msgid "Archive &file:"
 msgstr "Artxibo &fitxategia:"
 
-#: archivedialog.cpp:144
+#: archivedialog.cpp:143
 #, kde-format
 msgctxt "@label filter for KUrlRequester"
 msgid "iCalendar Files (*.ics)"
 msgstr "iCalendar fitxategiak (*.ics)"
 
-#: archivedialog.cpp:145
+#: archivedialog.cpp:144
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the location of the archive"
 msgstr "Ezarri artxiboaren kokalekua"
 
-#: archivedialog.cpp:147
+#: archivedialog.cpp:146
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -217,13 +217,13 @@ msgstr ""
 "dezakezu beste edozein egutegirekin egingo zenukeen bezala. Ez da gordeko "
 "formatu berezi batean, iCalendar formatua erabiltzen du."
 
-#: archivedialog.cpp:156
+#: archivedialog.cpp:155
 #, kde-format
 msgctxt "@title:group"
 msgid "Type of Items to Archive"
 msgstr "Artxibatu beharreko elementu-motak"
 
-#: archivedialog.cpp:158
+#: archivedialog.cpp:157
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -235,19 +235,19 @@ msgstr ""
 "artxibatuko dira goran adierazitako data baino lehen igaro direnean; "
 "zereginak berriz, data aurretik amaitu direnean."
 
-#: archivedialog.cpp:166
+#: archivedialog.cpp:165
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive &Events"
 msgstr "Artxibatu &gertaerak"
 
-#: archivedialog.cpp:167
+#: archivedialog.cpp:166
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge events"
 msgstr "Artxibatu gertaerak edo guztiz kendu"
 
-#: archivedialog.cpp:168
+#: archivedialog.cpp:167
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -257,19 +257,19 @@ msgstr ""
 "Hautatu aukera hau gainean adierazitako data aurretik igarotako gertaerak "
 "artxibatzeko."
 
-#: archivedialog.cpp:171
+#: archivedialog.cpp:170
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive Completed &To-dos"
 msgstr "Artxibatu osatutako &Zereginak"
 
-#: archivedialog.cpp:172
+#: archivedialog.cpp:171
 #, kde-format
 msgctxt "@option:check"
 msgid "Archive or purge completed to-dos"
 msgstr "Artxibatu edo guztiz kendu osatutako zereginak"
 
-#: archivedialog.cpp:174
+#: archivedialog.cpp:173
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -279,19 +279,19 @@ msgstr ""
 "Hautatu aukera hau gorago adierazitako data aurretik amaitutako zereginak "
 "artxibatzeko."
 
-#: archivedialog.cpp:178
+#: archivedialog.cpp:177
 #, kde-format
 msgctxt "@option:check"
 msgid "&Delete only, do not save"
 msgstr "E&zabatu bakarrik, ez gorde"
 
-#: archivedialog.cpp:179
+#: archivedialog.cpp:178
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Purge the old items without saving them"
 msgstr "Erabat kendu elementu zaharrak haiek gorde gabe"
 
-#: archivedialog.cpp:181
+#: archivedialog.cpp:180
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -301,24 +301,24 @@ msgstr ""
 "Hautatu aukera hau gertaera zaharrak eta zereginak haiek gorde gabe "
 "ezabatzeko. Ondoren ezingo da gertaerarik berreskuratu."
 
-#: archivedialog.cpp:242
+#: archivedialog.cpp:241
 #, kde-format
 msgctxt "@info"
 msgid "The archive file name is not valid."
 msgstr "Artxiboaren fitxategi-izena ez da onargarria."
 
-#: attachmenthandler.cpp:99
+#: attachmenthandler.cpp:101
 #, kde-format
 msgid "No attachment named \"%1\" found in the incidence."
 msgstr "Intzidentzian ez da aurkitu «%1» izeneko eranskinik."
 
-#: attachmenthandler.cpp:110
+#: attachmenthandler.cpp:112
 #, kde-format
 msgid ""
 "The attachment \"%1\" is a web link that is inaccessible from this computer. "
 msgstr "«%1» eranskina ordenagailu honetatik atzi ezin den web esteka bat da."
 
-#: attachmenthandler.cpp:126
+#: attachmenthandler.cpp:128
 #, kde-format
 msgid ""
 "The calendar invitation stored in this email message is broken in some way. "
@@ -327,12 +327,12 @@ msgstr ""
 "E-posta honetan gordetako egutegiko gonbidapena nolabait hautsita dago. Ezin "
 "du aurrera egin."
 
-#: attachmenthandler.cpp:188 attachmenthandler.cpp:243
+#: attachmenthandler.cpp:190 attachmenthandler.cpp:245
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Ezin da eranskinarentzako aldi baterako fitxategi bat sortu."
 
-#: attachmenthandler.cpp:221
+#: attachmenthandler.cpp:223
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
@@ -390,27 +390,27 @@ msgstr "Ezin da artxiboan idatzi. %1"
 msgid "Archiving events"
 msgstr "Gertaerak artxibatzea"
 
-#: freebusymodel/freebusycalendar.cpp:109
+#: freebusymodel/freebusycalendar.cpp:110
 #, kde-format
 msgid "Free"
 msgstr "Libre"
 
-#: freebusymodel/freebusycalendar.cpp:112
+#: freebusymodel/freebusycalendar.cpp:113
 #, kde-format
 msgid "Busy"
 msgstr "Lanpetuta"
 
-#: freebusymodel/freebusycalendar.cpp:115
+#: freebusymodel/freebusycalendar.cpp:116
 #, kde-format
 msgid "Unavailable"
 msgstr "Eskuraezina"
 
-#: freebusymodel/freebusycalendar.cpp:118
+#: freebusymodel/freebusycalendar.cpp:119
 #, kde-format
 msgid "Tentative"
 msgstr "Saiakera"
 
-#: freebusymodel/freebusycalendar.cpp:121
+#: freebusymodel/freebusycalendar.cpp:122
 #, kde-format
 msgid "Unknown"
 msgstr "Ezezaguna"
@@ -420,13 +420,13 @@ msgstr "Ezezaguna"
 msgid "Attendee"
 msgstr "Partaidea"
 
-#: freebusymodel/freeperiodmodel.cpp:124
+#: freebusymodel/freeperiodmodel.cpp:126
 #, kde-format
 msgctxt "@label Day of the week name, example: Monday,"
 msgid "%1,"
 msgstr "%1,"
 
-#: freebusymodel/freeperiodmodel.cpp:141
+#: freebusymodel/freeperiodmodel.cpp:143
 #, kde-format
 msgctxt ""
 "@label A time period duration. It is preceded/followed (based on the "
@@ -435,7 +435,7 @@ msgctxt ""
 msgid "%1 %2, %3 to %4"
 msgstr "%2k %1, %3 -> %4"
 
-#: freebusymodel/freeperiodmodel.cpp:162
+#: freebusymodel/freeperiodmodel.cpp:164
 #, kde-format
 msgctxt ""
 "@label A time period duration. KLocale is used to format the components. "
@@ -443,37 +443,37 @@ msgctxt ""
 msgid "%1, %2 %3, %4 to %5"
 msgstr "%1, %3k %2, %4 -> %5"
 
-#: freebusymodel/freeperiodmodel.cpp:176
+#: freebusymodel/freeperiodmodel.cpp:178
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Free Period"
 msgstr "Tarte librea"
 
-#: freebusymodel/freeperiodmodel.cpp:178
+#: freebusymodel/freeperiodmodel.cpp:180
 #, kde-format
 msgctxt "@info:tooltip period start time"
 msgid "Start:"
 msgstr "Hasi:"
 
-#: freebusymodel/freeperiodmodel.cpp:181
+#: freebusymodel/freeperiodmodel.cpp:183
 #, kde-format
 msgctxt "@info:tooltip period end time"
 msgid "End:"
 msgstr "Bukatu:"
 
-#: freebusymodel/freeperiodmodel.cpp:184
+#: freebusymodel/freeperiodmodel.cpp:186
 #, kde-format
 msgctxt "@info:tooltip period duration"
 msgid "Duration:"
 msgstr "Iraupena:"
 
-#: incidenceformatter.cpp:285
+#: incidenceformatter.cpp:290
 #, fuzzy, kde-format
 #| msgid "New &Journal..."
 msgid "Show mail"
 msgstr "E&gunkari berria..."
 
-#: incidenceformatter.cpp:549
+#: incidenceformatter.cpp:554
 #, fuzzy, kde-format
 #| msgid "1 hour "
 #| msgid_plural "%1 hours "
@@ -483,7 +483,7 @@ msgid_plural "%1 hours "
 msgstr[0] "ordubete "
 msgstr[1] "%1 ordu "
 
-#: incidenceformatter.cpp:553
+#: incidenceformatter.cpp:558
 #, fuzzy, kde-format
 #| msgid "1 minute "
 #| msgid_plural "%1 minutes "
@@ -493,7 +493,7 @@ msgid_plural "%1 minutes "
 msgstr[0] "minutu 1 "
 msgstr[1] "%1 minutu "
 
-#: incidenceformatter.cpp:557
+#: incidenceformatter.cpp:562
 #, kde-format
 msgctxt "seconds part of duration"
 msgid "1 second"
@@ -501,55 +501,55 @@ msgid_plural "%1 seconds"
 msgstr[0] ""
 msgstr[1] ""
 
-#: incidenceformatter.cpp:719
+#: incidenceformatter.cpp:724
 #, kde-format
 msgctxt "Event start"
 msgid "<i>From:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:721
+#: incidenceformatter.cpp:726
 #, kde-format
 msgctxt "Event end"
 msgid "<i>To:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:723
+#: incidenceformatter.cpp:728
 #, kde-format
 msgctxt "datetime range for event"
 msgid "<i>Date:</i> %1 - %2"
 msgstr ""
 
-#: incidenceformatter.cpp:726 incidenceformatter.cpp:804
+#: incidenceformatter.cpp:731 incidenceformatter.cpp:809
 #, kde-format
 msgid "<i>Date:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:732
+#: incidenceformatter.cpp:737
 #, kde-format
 msgctxt "time for event"
 msgid "<i>Time:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:734
+#: incidenceformatter.cpp:739
 #, kde-format
 msgctxt "time range for event"
 msgid "<i>Time:</i> %1 - %2"
 msgstr ""
 
-#: incidenceformatter.cpp:767
+#: incidenceformatter.cpp:772
 #, fuzzy, kde-format
 #| msgid "Start: %1"
 msgctxt "To-do's start date"
 msgid "<i>Start:</i> %1"
 msgstr "Hasiera: %1"
 
-#: incidenceformatter.cpp:770
+#: incidenceformatter.cpp:775
 #, kde-format
 msgctxt "To-do's due date"
 msgid "<i>Due:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:777
+#: incidenceformatter.cpp:782
 #, fuzzy, kde-format
 #| msgctxt "subitem Priority: N"
 #| msgid "Priority: %1\n"
@@ -557,130 +557,130 @@ msgctxt "To-do's priority number"
 msgid "<i>Priority:</i> %1"
 msgstr "Lehentasuna: %1\n"
 
-#: incidenceformatter.cpp:782
+#: incidenceformatter.cpp:787
 #, fuzzy, kde-format
 #| msgid "Complete"
 msgctxt "To-do's completed date"
 msgid "<i>Completed:</i> %1"
 msgstr "Osatuta"
 
-#: incidenceformatter.cpp:793
+#: incidenceformatter.cpp:798
 #, kde-format
 msgctxt "To-do's percent complete:"
 msgid "<i>Percent Done:</i> %1%"
 msgstr ""
 
-#: incidenceformatter.cpp:812
+#: incidenceformatter.cpp:817
 #, kde-format
 msgid "<i>Period start:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:813
+#: incidenceformatter.cpp:818
 #, kde-format
 msgid "<i>Period end:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:838 templates/freebusy.html:5
+#: incidenceformatter.cpp:843 templates/freebusy.html:5
 #, fuzzy, kde-format
 #| msgid "days of free/busy information"
 msgid "Free/Busy information for %1"
 msgstr "libre/lanpetuta informazio egunak"
 
-#: incidenceformatter.cpp:860 incidenceformatter.cpp:862
+#: incidenceformatter.cpp:865 incidenceformatter.cpp:867
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgctxt "attendee name (attendee status)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: incidenceformatter.cpp:865
+#: incidenceformatter.cpp:870
 #, fuzzy, kde-format
 #| msgid "%1"
 msgid "%1"
 msgstr "%1"
 
-#: incidenceformatter.cpp:891 incidenceformatter.cpp:1028
+#: incidenceformatter.cpp:896 incidenceformatter.cpp:1033
 #, fuzzy, kde-format
 #| msgid "Edit..."
 msgctxt "ellipsis"
 msgid "..."
 msgstr "Editatu..."
 
-#: incidenceformatter.cpp:911
+#: incidenceformatter.cpp:916
 #, fuzzy, kde-format
 msgid " (delegated by %1)"
 msgstr "Ezabatu %1"
 
-#: incidenceformatter.cpp:914
+#: incidenceformatter.cpp:919
 #, fuzzy, kde-format
 msgid " (delegated to %1)"
 msgstr "Ezabatu %1"
 
-#: incidenceformatter.cpp:934 templates/event.html:112 templates/todo.html:93
+#: incidenceformatter.cpp:939 templates/event.html:112 templates/todo.html:93
 #, fuzzy, kde-format
 #| msgid "Organizer: "
 msgid "Organizer:"
 msgstr "Antolatzailea: "
 
-#: incidenceformatter.cpp:945 templates/event.html:124 templates/todo.html:105
+#: incidenceformatter.cpp:950 templates/event.html:124 templates/todo.html:105
 #, kde-format
 msgid "Chair:"
 msgstr ""
 
-#: incidenceformatter.cpp:952 templates/event.html:137 templates/todo.html:118
+#: incidenceformatter.cpp:957 templates/event.html:137 templates/todo.html:118
 #, kde-format
 msgid "Required Participants:"
 msgstr ""
 
-#: incidenceformatter.cpp:959
+#: incidenceformatter.cpp:964
 #, kde-format
 msgid "Optional Participants:"
 msgstr ""
 
-#: incidenceformatter.cpp:966 templates/event.html:163 templates/todo.html:144
+#: incidenceformatter.cpp:971 templates/event.html:163 templates/todo.html:144
 #, kde-format
 msgid "Observers:"
 msgstr ""
 
-#: incidenceformatter.cpp:988 templates/event.html:13 templates/journal.html:14
+#: incidenceformatter.cpp:993 templates/event.html:13 templates/journal.html:14
 #: templates/todo.html:14
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Calendar:"
 msgstr "Egutegia"
 
-#: incidenceformatter.cpp:996 templates/event.html:21 templates/todo.html:22
+#: incidenceformatter.cpp:1001 templates/event.html:21 templates/todo.html:22
 #, fuzzy, kde-format
 msgid "Location:"
 msgstr "&Kokalekua"
 
-#: incidenceformatter.cpp:1003 templates/event.html:60 templates/todo.html:54
+#: incidenceformatter.cpp:1008 templates/event.html:60 templates/todo.html:54
 #, fuzzy, kde-format
 #| msgctxt "@info:tooltip period duration"
 #| msgid "Duration:"
 msgid "Duration:"
 msgstr "Iraupena:"
 
-#: incidenceformatter.cpp:1009 incidenceformatter.cpp:1019
+#: incidenceformatter.cpp:1014 incidenceformatter.cpp:1024
 #: templates/event.html:68 templates/todo.html:62
 #, fuzzy, kde-format
 #| msgid "Rec&urrence"
 msgid "Recurrence:"
 msgstr "&Periodikotasuna"
 
-#: incidenceformatter.cpp:1020 templates/todo.html:64
+#: incidenceformatter.cpp:1025 templates/todo.html:64
 #, fuzzy, kde-format
 #| msgid "E&xceptions"
 msgid "Exception"
 msgstr "&Salbuespenak"
 
-#: incidenceformatter.cpp:1036 printing/calprintdefaultplugins.cpp:451
+#: incidenceformatter.cpp:1041 printing/calprintdefaultplugins.cpp:448
 #: templates/event.html:96 templates/journal.html:30 templates/todo.html:74
 #, kde-format
 msgid "Description:"
 msgstr "Deskribapena:"
 
-#: incidenceformatter.cpp:1050 templates/event.html:104 templates/todo.html:85
+#: incidenceformatter.cpp:1055 templates/event.html:104 templates/todo.html:85
 #, fuzzy, kde-format
 #| msgid "&Reminder:"
 msgid "Reminder:"
@@ -688,7 +688,7 @@ msgid_plural "Reminders:"
 msgstr[0] "&Oroigarria:"
 msgstr[1] "&Oroigarria:"
 
-#: incidenceformatter.cpp:1078 templates/event.html:176
+#: incidenceformatter.cpp:1083 templates/event.html:176
 #: templates/journal.html:38 templates/todo.html:157
 #, kde-format
 msgid "Tag:"
@@ -696,35 +696,35 @@ msgid_plural "Tags:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: incidenceformatter.cpp:1117 incidenceformatter.cpp:1143
-#: incidenceformatter.cpp:1155 printing/calprintdefaultplugins.cpp:361
+#: incidenceformatter.cpp:1122 incidenceformatter.cpp:1148
+#: incidenceformatter.cpp:1160 printing/calprintdefaultplugins.cpp:358
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] "egun bat"
 msgstr[1] "%1 egun"
 
-#: incidenceformatter.cpp:1123 printing/calprintdefaultplugins.cpp:364
+#: incidenceformatter.cpp:1128 printing/calprintdefaultplugins.cpp:361
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "ordu 1"
 msgstr[1] "%1 ordu"
 
-#: incidenceformatter.cpp:1129 printing/calprintdefaultplugins.cpp:367
+#: incidenceformatter.cpp:1134 printing/calprintdefaultplugins.cpp:364
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] "minutu 1"
 msgstr[1] "%1 minutu"
 
-#: incidenceformatter.cpp:1146
+#: incidenceformatter.cpp:1151
 #, fuzzy, kde-format
 #| msgid "every "
 msgid "forever"
 msgstr "errepikatze-aldia "
 
-#: incidenceformatter.cpp:1188
+#: incidenceformatter.cpp:1193
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 before the start"
@@ -732,7 +732,7 @@ msgctxt "N days/hours/minutes before the start datetime"
 msgid "%1 before the start"
 msgstr "%1 hasteko"
 
-#: incidenceformatter.cpp:1190
+#: incidenceformatter.cpp:1195
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 after the start"
@@ -740,7 +740,7 @@ msgctxt "N days/hours/minutes after the start datetime"
 msgid "%1 after the start"
 msgstr "%1 hasi ondoren"
 
-#: incidenceformatter.cpp:1201
+#: incidenceformatter.cpp:1206
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 before the start"
@@ -748,7 +748,7 @@ msgctxt "N days/hours/minutes before the due datetime"
 msgid "%1 before the to-do is due"
 msgstr "%1 hasiera baina lehen"
 
-#: incidenceformatter.cpp:1203
+#: incidenceformatter.cpp:1208
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 before the end"
@@ -756,7 +756,7 @@ msgctxt "N days/hours/minutes before the end datetime"
 msgid "%1 before the end"
 msgstr "%1 amaitzeko"
 
-#: incidenceformatter.cpp:1207
+#: incidenceformatter.cpp:1212
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 after the start"
@@ -764,7 +764,7 @@ msgctxt "N days/hours/minutes after the due datetime"
 msgid "%1 after the to-do is due"
 msgstr "%1 hasieraren ondoren"
 
-#: incidenceformatter.cpp:1209
+#: incidenceformatter.cpp:1214
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 after the end"
@@ -772,14 +772,14 @@ msgctxt "N days/hours/minutes after the end datetime"
 msgid "%1 after the end"
 msgstr "%1 amaitu ondoren"
 
-#: incidenceformatter.cpp:1227
+#: incidenceformatter.cpp:1232
 #, fuzzy, kde-format
 #| msgid "Edit %1"
 msgctxt "reminder occurs at datetime"
 msgid "at %1"
 msgstr "Editatu %1"
 
-#: incidenceformatter.cpp:1234
+#: incidenceformatter.cpp:1239
 #, fuzzy, kde-format
 #| msgid "Repeats: "
 msgid "repeats once"
@@ -787,13 +787,13 @@ msgid_plural "repeats %1 times"
 msgstr[0] "Errepikapenak: "
 msgstr[1] "Errepikapenak: "
 
-#: incidenceformatter.cpp:1235
+#: incidenceformatter.cpp:1240
 #, kde-format
 msgctxt "interval is N days/hours/minutes"
 msgid "interval is %1"
 msgstr ""
 
-#: incidenceformatter.cpp:1236
+#: incidenceformatter.cpp:1241
 #, fuzzy, kde-format
 #| msgctxt "summary, location"
 #| msgid "%1, %2"
@@ -801,13 +801,13 @@ msgctxt "(repeat string, interval string)"
 msgid "(%1, %2)"
 msgstr "%1, %2"
 
-#: incidenceformatter.cpp:1241
+#: incidenceformatter.cpp:1246
 #, kde-format
 msgctxt "alarm is disabled"
 msgid "disabled"
 msgstr ""
 
-#: incidenceformatter.cpp:1245
+#: incidenceformatter.cpp:1250
 #, fuzzy, kde-format
 #| msgctxt "blocking audio reminders for this calendar"
 #| msgid "audio"
@@ -815,7 +815,7 @@ msgctxt "alarm will play a sound"
 msgid "audio"
 msgstr "audioa"
 
-#: incidenceformatter.cpp:1248
+#: incidenceformatter.cpp:1253
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgctxt "the reminder string with its types list"
@@ -1882,227 +1882,227 @@ msgstr ""
 msgid "Print &Footer"
 msgstr "Inprimatu orri-oi&na"
 
-#: printing/calprintdefaultplugins.cpp:139
-#: printing/calprintdefaultplugins.cpp:168
-#: printing/calprintdefaultplugins.cpp:187
+#: printing/calprintdefaultplugins.cpp:136
+#: printing/calprintdefaultplugins.cpp:165
+#: printing/calprintdefaultplugins.cpp:184
 #, kde-format
 msgid "Start date: "
 msgstr "Haserako data:"
 
-#: printing/calprintdefaultplugins.cpp:142
-#: printing/calprintdefaultplugins.cpp:171
+#: printing/calprintdefaultplugins.cpp:139
+#: printing/calprintdefaultplugins.cpp:168
 #, kde-format
 msgid "No start date"
 msgstr "Ez dago haserako datarik"
 
-#: printing/calprintdefaultplugins.cpp:147
+#: printing/calprintdefaultplugins.cpp:144
 #, kde-format
 msgid "End date: "
 msgstr "Amaierako data:"
 
-#: printing/calprintdefaultplugins.cpp:150
+#: printing/calprintdefaultplugins.cpp:147
 #, kde-format
 msgid "Duration: "
 msgstr "Iraunpena: "
 
-#: printing/calprintdefaultplugins.cpp:153
+#: printing/calprintdefaultplugins.cpp:150
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
 msgstr[0] "ordubete "
 msgstr[1] "%1 ordu "
 
-#: printing/calprintdefaultplugins.cpp:156
+#: printing/calprintdefaultplugins.cpp:153
 #, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
 msgstr[0] "minutu 1 "
 msgstr[1] "%1 minutu "
 
-#: printing/calprintdefaultplugins.cpp:159
+#: printing/calprintdefaultplugins.cpp:156
 #, kde-format
 msgid "No end date"
 msgstr "Ez dago amaierako datarik"
 
-#: printing/calprintdefaultplugins.cpp:176
+#: printing/calprintdefaultplugins.cpp:173
 #, kde-format
 msgid "Due date: "
 msgstr "Muga-eguna: "
 
-#: printing/calprintdefaultplugins.cpp:179
+#: printing/calprintdefaultplugins.cpp:176
 #, kde-format
 msgid "No due date"
 msgstr "Muga-egunik gabe"
 
-#: printing/calprintdefaultplugins.cpp:309
+#: printing/calprintdefaultplugins.cpp:306
 #, kde-format
 msgctxt "except for listed dates"
 msgid " except"
 msgstr "salbu"
 
-#: printing/calprintdefaultplugins.cpp:316
+#: printing/calprintdefaultplugins.cpp:313
 #, kde-format
 msgid "Repeats: "
 msgstr "Errepikapenak: "
 
-#: printing/calprintdefaultplugins.cpp:324
+#: printing/calprintdefaultplugins.cpp:321
 #, kde-format
 msgid "No reminders"
 msgstr "Oroigarririk gabe"
 
-#: printing/calprintdefaultplugins.cpp:327
+#: printing/calprintdefaultplugins.cpp:324
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
 msgstr[0] "Oroigarria: "
 msgstr[1] "%1 oroigarri: "
 
-#: printing/calprintdefaultplugins.cpp:341
+#: printing/calprintdefaultplugins.cpp:338
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the start"
 msgstr "%1 hasteko"
 
-#: printing/calprintdefaultplugins.cpp:344
+#: printing/calprintdefaultplugins.cpp:341
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the start"
 msgstr "%1 hasi ondoren"
 
-#: printing/calprintdefaultplugins.cpp:349
+#: printing/calprintdefaultplugins.cpp:346
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the end"
 msgstr "%1 amaitzeko"
 
-#: printing/calprintdefaultplugins.cpp:352
+#: printing/calprintdefaultplugins.cpp:349
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
 msgstr "%1 amaitu ondoren"
 
-#: printing/calprintdefaultplugins.cpp:371
-#: printing/calprintdefaultplugins.cpp:681
+#: printing/calprintdefaultplugins.cpp:368
+#: printing/calprintdefaultplugins.cpp:678
 #, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr ", "
 
-#: printing/calprintdefaultplugins.cpp:376
+#: printing/calprintdefaultplugins.cpp:373
 #, kde-format
 msgid "Organizer: "
 msgstr "Antolatzailea: "
 
-#: printing/calprintdefaultplugins.cpp:389
+#: printing/calprintdefaultplugins.cpp:386
 #, kde-format
 msgid "Location: "
 msgstr "Kokalekua: "
 
-#: printing/calprintdefaultplugins.cpp:479
+#: printing/calprintdefaultplugins.cpp:476
 #, kde-format
 msgid "Notes:"
 msgstr "Oharrak:"
 
-#: printing/calprintdefaultplugins.cpp:489
+#: printing/calprintdefaultplugins.cpp:486
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
 msgstr[0] "Azpi-elementu 1:"
 msgstr[1] "%1 azpi-elementu:"
 
-#: printing/calprintdefaultplugins.cpp:508
+#: printing/calprintdefaultplugins.cpp:505
 #, kde-format
 msgctxt "no status"
 msgid "none"
 msgstr "bat ere ez"
 
-#: printing/calprintdefaultplugins.cpp:510
+#: printing/calprintdefaultplugins.cpp:507
 #, kde-format
 msgctxt "unknown status"
 msgid "unknown"
 msgstr "Ezezaguna"
 
-#: printing/calprintdefaultplugins.cpp:517
+#: printing/calprintdefaultplugins.cpp:514
 #, kde-format
 msgctxt "subitem start date"
 msgid "Start Date: %1\n"
 msgstr "Hasierako data: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:520
+#: printing/calprintdefaultplugins.cpp:517
 #, kde-format
 msgctxt "subitem start time"
 msgid "Start Time: %1\n"
 msgstr "Hasierako ordua: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:526
+#: printing/calprintdefaultplugins.cpp:523
 #, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
 msgstr "Muga-eguna: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:532
+#: printing/calprintdefaultplugins.cpp:529
 #, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
 msgstr "Muga-ordua: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:536
+#: printing/calprintdefaultplugins.cpp:533
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
 msgstr "%1: "
 
-#: printing/calprintdefaultplugins.cpp:543
+#: printing/calprintdefaultplugins.cpp:540
 #, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
 msgstr "Egoera: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:549
+#: printing/calprintdefaultplugins.cpp:546
 #, kde-format
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
 msgstr "Lehentasuna: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:551
-#: printing/calprintdefaultplugins.cpp:553
+#: printing/calprintdefaultplugins.cpp:548
+#: printing/calprintdefaultplugins.cpp:550
 #, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
 msgstr "Isilpekotasuna: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:572
+#: printing/calprintdefaultplugins.cpp:569
 #, kde-format
 msgid "No Attachments"
 msgstr "Eranskinik gabe"
 
-#: printing/calprintdefaultplugins.cpp:575
+#: printing/calprintdefaultplugins.cpp:572
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
 msgstr[0] "Eranskin 1:"
 msgstr[1] "%1 eranskin:"
 
-#: printing/calprintdefaultplugins.cpp:581
+#: printing/calprintdefaultplugins.cpp:578
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
 msgstr "  "
 
-#: printing/calprintdefaultplugins.cpp:598
+#: printing/calprintdefaultplugins.cpp:595
 #, kde-format
 msgid "No Attendees"
 msgstr "Partaiderik ez"
 
-#: printing/calprintdefaultplugins.cpp:600
+#: printing/calprintdefaultplugins.cpp:597
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
 msgstr[0] "Partaide 1:"
 msgstr[1] "%1 partaide:"
 
-#: printing/calprintdefaultplugins.cpp:613
-#: printing/calprintdefaultplugins.cpp:622
+#: printing/calprintdefaultplugins.cpp:610
+#: printing/calprintdefaultplugins.cpp:619
 #, kde-format
 msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
@@ -2110,77 +2110,77 @@ msgctxt ""
 msgid "%1 (%2): %3"
 msgstr "%1 (%2): %3"
 
+#: printing/calprintdefaultplugins.cpp:639
 #: printing/calprintdefaultplugins.cpp:642
-#: printing/calprintdefaultplugins.cpp:645
 #, kde-format
 msgid "Status: %1"
 msgstr "Egoera: %1"
 
+#: printing/calprintdefaultplugins.cpp:648
 #: printing/calprintdefaultplugins.cpp:651
-#: printing/calprintdefaultplugins.cpp:654
 #, kde-format
 msgid "Secrecy: %1"
 msgstr "Isilpekotasuna: %1"
 
-#: printing/calprintdefaultplugins.cpp:661
+#: printing/calprintdefaultplugins.cpp:658
 #, kde-format
 msgid "Show as: Busy"
 msgstr "Erakutsi honela: Lanpetuta"
 
-#: printing/calprintdefaultplugins.cpp:663
+#: printing/calprintdefaultplugins.cpp:660
 #, kde-format
 msgid "Show as: Free"
 msgstr "Erakutsi honela: Libre"
 
-#: printing/calprintdefaultplugins.cpp:669
+#: printing/calprintdefaultplugins.cpp:666
 #, kde-format
 msgid "This task is overdue!"
 msgstr "Zeregin hau atzeratuta dago!"
 
-#: printing/calprintdefaultplugins.cpp:675
+#: printing/calprintdefaultplugins.cpp:672
 #, kde-format
 msgid "Settings: "
 msgstr "Ezarpenak: "
 
-#: printing/calprintdefaultplugins.cpp:680
+#: printing/calprintdefaultplugins.cpp:677
 #, kde-format
 msgid "Tags: "
 msgstr "Etiketak:"
 
-#: printing/calprintdefaultplugins.cpp:773 printing/calprintpluginbase.cpp:926
-#: printing/calprintpluginbase.cpp:1066 printing/calprintpluginbase.cpp:1123
+#: printing/calprintdefaultplugins.cpp:770 printing/calprintpluginbase.cpp:924
+#: printing/calprintpluginbase.cpp:1064 printing/calprintpluginbase.cpp:1121
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:776 printing/calprintpluginbase.cpp:945
-#: printing/calprintpluginbase.cpp:1069
+#: printing/calprintdefaultplugins.cpp:773 printing/calprintpluginbase.cpp:943
+#: printing/calprintpluginbase.cpp:1067
 #, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:831
+#: printing/calprintdefaultplugins.cpp:828
 #, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
 msgstr "Egun osokoa"
 
-#: printing/calprintdefaultplugins.cpp:1036
-#: printing/calprintdefaultplugins.cpp:1262 printing/yearprint.cpp:144
+#: printing/calprintdefaultplugins.cpp:1033
+#: printing/calprintdefaultplugins.cpp:1259 printing/yearprint.cpp:146
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr "%1–%2"
 
-#: printing/calprintdefaultplugins.cpp:1284
+#: printing/calprintdefaultplugins.cpp:1281
 #, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
 msgstr "%1–%2 (%3. astea)"
 
-#: printing/calprintdefaultplugins.cpp:1286
+#: printing/calprintdefaultplugins.cpp:1283
 #, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
@@ -2190,95 +2190,95 @@ msgstr ""
 "%1–%2\n"
 "(%3. astea)"
 
-#: printing/calprintdefaultplugins.cpp:1471
+#: printing/calprintdefaultplugins.cpp:1468
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:1584
+#: printing/calprintdefaultplugins.cpp:1581
 #, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "Laburpena"
 
-#: printing/calprintdefaultplugins.cpp:1585
+#: printing/calprintdefaultplugins.cpp:1582
 #, kde-format
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "Haserako data"
 
-#: printing/calprintdefaultplugins.cpp:1586
+#: printing/calprintdefaultplugins.cpp:1583
 #, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "Muga-eguna"
 
-#: printing/calprintdefaultplugins.cpp:1587
+#: printing/calprintdefaultplugins.cpp:1584
 #, kde-format
 msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "Lehentasuna"
 
-#: printing/calprintdefaultplugins.cpp:1588
+#: printing/calprintdefaultplugins.cpp:1585
 #, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "Osatutako ehunekoa"
 
-#: printing/calprintdefaultplugins.cpp:1589
+#: printing/calprintdefaultplugins.cpp:1586
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr "Etiketak"
 
-#: printing/calprintdefaultplugins.cpp:1595
+#: printing/calprintdefaultplugins.cpp:1592
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "Goranzkoa"
 
-#: printing/calprintdefaultplugins.cpp:1596
+#: printing/calprintdefaultplugins.cpp:1593
 #, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Beheranzkoa"
 
-#: printing/calprintdefaultplugins.cpp:1609
+#: printing/calprintdefaultplugins.cpp:1606
 #, kde-format
 msgid "To-do list"
 msgstr "Egitekoen zerrenda"
 
-#: printing/calprintdefaultplugins.cpp:1661
-#: printing/calprintpluginbase.cpp:1726 templates/todo.html:179
+#: printing/calprintdefaultplugins.cpp:1658
+#: printing/calprintpluginbase.cpp:1724 templates/todo.html:179
 #, kde-format
 msgid "%1%"
 msgstr "% %1"
 
-#: printing/calprintdefaultplugins.cpp:1672
+#: printing/calprintdefaultplugins.cpp:1669
 #, kde-format
 msgid "Priority"
 msgstr "Lehentasuna"
 
-#: printing/calprintdefaultplugins.cpp:1682
+#: printing/calprintdefaultplugins.cpp:1679
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "Epemuga"
 
-#: printing/calprintdefaultplugins.cpp:1692
+#: printing/calprintdefaultplugins.cpp:1689
 #, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
 msgstr "Hasi"
 
-#: printing/calprintdefaultplugins.cpp:1702
+#: printing/calprintdefaultplugins.cpp:1699
 #, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "Osatuta"
 
-#: printing/calprintdefaultplugins.cpp:1712
+#: printing/calprintdefaultplugins.cpp:1709
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
@@ -2334,43 +2334,43 @@ msgstr "Inprimatu e&gitekoak"
 msgid "Prints all to-dos in a (tree-like) list"
 msgstr "Egiteko guztiak (zuhaitz itxurako) zerrenda batean inprimatzen ditu"
 
-#: printing/calprinter.cpp:115
+#: printing/calprinter.cpp:119
 #, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
 msgstr "Ezin inprimatu, inprimatzeko estilo baliogabe bat zehaztu da."
 
-#: printing/calprinter.cpp:115
+#: printing/calprinter.cpp:119
 #, kde-format
 msgctxt "@title:window"
 msgid "Printing error"
 msgstr "Inprimatze errorea"
 
-#: printing/calprinter.cpp:158
+#: printing/calprinter.cpp:162
 #, kde-format
 msgctxt "@title:window"
 msgid "Print"
 msgstr "Inprimatzea"
 
-#: printing/calprinter.cpp:177
+#: printing/calprinter.cpp:181
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "Inprimatze estiloa"
 
-#: printing/calprinter.cpp:189
+#: printing/calprinter.cpp:193
 #, kde-format
 msgctxt "@label"
 msgid "Page &orientation:"
 msgstr "Orriaren &orientazioa:"
 
-#: printing/calprinter.cpp:194
+#: printing/calprinter.cpp:198
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Set the print orientation"
 msgstr "Ezarri inprimatzeko orientazioa"
 
-#: printing/calprinter.cpp:196
+#: printing/calprinter.cpp:200
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2383,37 +2383,37 @@ msgstr ""
 "inprimagailuaren ezarpen lehenetsiari hobekien egokitzen zaion orientaziora "
 "lehenetsi dezakezu."
 
-#: printing/calprinter.cpp:199
+#: printing/calprinter.cpp:203
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Default Orientation of Selected Style"
 msgstr "Erabili hautatutako estiloaren orientazio lehenetsia"
 
-#: printing/calprinter.cpp:200
+#: printing/calprinter.cpp:204
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
 msgstr "Erabili inprimagailuaren lehenespena"
 
-#: printing/calprinter.cpp:201
+#: printing/calprinter.cpp:205
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Portrait"
 msgstr "Erretratua (bertikala)"
 
-#: printing/calprinter.cpp:202
+#: printing/calprinter.cpp:206
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Landscape"
 msgstr "Paisaia (horizontala)"
 
-#: printing/calprinter.cpp:224
+#: printing/calprinter.cpp:228
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the type of print"
 msgstr "Hautatu inprimatze mota"
 
-#: printing/calprinter.cpp:226
+#: printing/calprinter.cpp:230
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -2426,7 +2426,7 @@ msgstr ""
 "guztiak (egun bat, astebete edo hilabete esaterako), edo agian zure "
 "zereginen zerrenda inprimatu nahi duzu."
 
-#: printing/calprinter.cpp:254
+#: printing/calprinter.cpp:258
 #, kde-format
 msgctxt "@action:button"
 msgid "&Preview"
@@ -2765,71 +2765,71 @@ msgstr ""
 msgid "Print week &numbers"
 msgstr "Inprimatu asteen &zenbakiak"
 
-#: printing/calprintpluginbase.cpp:150
+#: printing/calprintpluginbase.cpp:148
 #, kde-format
 msgctxt "@label:textbox"
 msgid "This printing style does not have any configuration options."
 msgstr "Inprimatze estilo honek ez du konfigurazio aukerarik."
 
-#: printing/calprintpluginbase.cpp:306
+#: printing/calprintpluginbase.cpp:304
 #, kde-format
 msgctxt "@item:intext delimiter for joining holiday names"
 msgid ","
 msgstr ","
 
-#: printing/calprintpluginbase.cpp:318
+#: printing/calprintpluginbase.cpp:316
 #, kde-format
 msgid "Holiday"
 msgstr "Jaieguna"
 
-#: printing/calprintpluginbase.cpp:616
+#: printing/calprintpluginbase.cpp:614
 #, kde-format
 msgctxt "print date: formatted-datetime"
 msgid "printed: %1"
 msgstr "inprimatuta: %1"
 
-#: printing/calprintpluginbase.cpp:931
+#: printing/calprintpluginbase.cpp:929
 #, kde-format
 msgctxt "starttime - endtime summary"
 msgid "%1-%2 %3"
 msgstr "%1-%2 %3"
 
-#: printing/calprintpluginbase.cpp:937
+#: printing/calprintpluginbase.cpp:935
 #, kde-format
 msgctxt "starttime - endtime summary, location"
 msgid "%1-%2 %3, %4"
 msgstr "%1-%2 %3, %4"
 
-#: printing/calprintpluginbase.cpp:1004
+#: printing/calprintpluginbase.cpp:1002
 #, kde-format
 msgctxt "weekday, shortmonthname daynumber"
 msgid "%1, %2 %3"
 msgstr "%1, %2 %3"
 
-#: printing/calprintpluginbase.cpp:1130
+#: printing/calprintpluginbase.cpp:1128
 #, kde-format
 msgctxt "to-do summary (Due: datetime)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (epe-muga: %2)"
 
-#: printing/calprintpluginbase.cpp:1135
+#: printing/calprintpluginbase.cpp:1133
 #, kde-format
 msgctxt "to-do summary (Due: date)"
 msgid "%1 (Due: %2)"
 msgstr "%1 (epe-muga: %2)"
 
-#: printing/calprintpluginbase.cpp:1142
+#: printing/calprintpluginbase.cpp:1140
 #, kde-format
 msgid "To-do: %1"
 msgstr "Egitekoa %1"
 
-#: printing/calprintpluginbase.cpp:1876
+#: printing/calprintpluginbase.cpp:1874
 #, kde-format
 msgctxt "Date range: Month dayStart - dayEnd"
 msgid "%1 %2–%3"
 msgstr "%1 %2–%3"
 
-#: printing/calprintpluginbase.cpp:1882
+#: printing/calprintpluginbase.cpp:1880
 #, kde-format
 msgctxt "Date range: monthStart dayStart - monthEnd dayEnd"
 msgid "%1 %2–%3 %4"
@@ -3133,18 +3133,18 @@ msgstr "Ordu-laukiak"
 msgid "Show &holidays as:"
 msgstr "Erakutsi o&por egunak honela:"
 
-#: printing/journalprint.cpp:106
+#: printing/journalprint.cpp:108
 #, kde-format
 msgctxt "Description - date"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: printing/journalprint.cpp:128
+#: printing/journalprint.cpp:130
 #, kde-format
 msgid "Person: %1"
 msgstr "Pertsona: %1"
 
-#: printing/journalprint.cpp:158
+#: printing/journalprint.cpp:160
 #, kde-format
 msgid "Journal entries"
 msgstr "Eguneroko sarrerak"
@@ -3159,12 +3159,12 @@ msgstr "Inprimatu &egunerakoa"
 msgid "Prints all journals for a given date range"
 msgstr "Adierazitako data barruti bateko eguneroko guztiak inprimatzen ditu"
 
-#: printing/yearprint.h:33
+#: printing/yearprint.h:31
 #, kde-format
 msgid "Print &year"
 msgstr "Inprimatu &urtea"
 
-#: printing/yearprint.h:38
+#: printing/yearprint.h:36
 #, kde-format
 msgid "Prints a calendar for an entire year"
 msgstr "Urte oso baterako egutegi bat inprimatzen du"
@@ -3390,127 +3390,127 @@ msgstr "Osatuta"
 msgid "Percent done:"
 msgstr "Osatutako ehunekoa"
 
-#: utils.cpp:242
+#: utils.cpp:247
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Calendar"
 msgstr "Hautatu egunkaria"
 
-#: utils.cpp:243
+#: utils.cpp:248
 #, kde-format
 msgid "Select the calendar where this item will be stored."
 msgstr "Hautatu elementu hau gorde behar duen egutegia."
 
-#: utils.cpp:347
+#: utils.cpp:352
 #, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
 msgstr "%1 (ekitaldeien egutegi lehenetsia)"
 
-#: utils.cpp:349
+#: utils.cpp:354
 #, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
 msgstr "%1 (Zereginen egutegi lehenetsia)"
 
-#: utils.cpp:360
+#: utils.cpp:365
 #, kde-format
 msgctxt "a virtual folder type"
 msgid "Virtual"
 msgstr "alegiazkoa"
 
-#: utils.cpp:362
+#: utils.cpp:367
 #, kde-format
 msgid "Folder type:"
 msgstr "Karpeta mota:"
 
-#: utils.cpp:372
+#: utils.cpp:377
 #, kde-format
 msgctxt "collection has no mimetypes to show the user"
 msgid "none"
 msgstr "bat ere ez"
 
-#: utils.cpp:375
+#: utils.cpp:380
 #, kde-format
 msgid "Content type:"
 msgstr "Eduki mota:"
 
-#: utils.cpp:381
+#: utils.cpp:386
 #, kde-format
 msgid "Rights:"
 msgstr "Eskubideak:"
 
-#: utils.cpp:384
+#: utils.cpp:389
 #, kde-format
 msgctxt "the calendar is read-only"
 msgid "read-only"
 msgstr "soilik irakurtzea"
 
-#: utils.cpp:386
+#: utils.cpp:391
 #, kde-format
 msgctxt "the calendar is read and write"
 msgid "read+write"
 msgstr "irakurtzea+idaztea"
 
-#: utils.cpp:393
+#: utils.cpp:398
 #, kde-format
 msgctxt "blocking all reminders for this calendar"
 msgid "all"
 msgstr "denak"
 
-#: utils.cpp:396
+#: utils.cpp:401
 #, kde-format
 msgctxt "blocking audio reminders for this calendar"
 msgid "audio"
 msgstr "audioa"
 
-#: utils.cpp:398
+#: utils.cpp:403
 #, kde-format
 msgctxt "blocking display pop-up dialog reminders for this calendar"
 msgid "display"
 msgstr "azaltzea"
 
-#: utils.cpp:400
+#: utils.cpp:405
 #, kde-format
 msgctxt "blocking email reminders for this calendar"
 msgid "email"
 msgstr "e-posta"
 
-#: utils.cpp:402
+#: utils.cpp:407
 #, kde-format
 msgctxt "blocking run a command reminders for this calendar"
 msgid "procedure"
 msgstr "prozedura"
 
-#: utils.cpp:404
+#: utils.cpp:409
 #, kde-format
 msgctxt "blocking unknown type reminders for this calendar"
 msgid "other"
 msgstr "bestelakoa"
 
-#: utils.cpp:408
+#: utils.cpp:413
 #, kde-format
 msgctxt "not blocking any reminder types for this calendar"
 msgid "none"
 msgstr "bat ere ez"
 
-#: utils.cpp:411
+#: utils.cpp:416
 #, kde-format
 msgid "Blocked Reminders:"
 msgstr "Blokeatutako oroigarriak:"
 
-#: utils.cpp:487
+#: utils.cpp:492
 #, kde-format
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "^%1"
 
-#: utils.cpp:489
+#: utils.cpp:494
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: utils.cpp:494
+#: utils.cpp:499
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
