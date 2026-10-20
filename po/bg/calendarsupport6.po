@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-19 00:47+0000\n"
-"PO-Revision-Date: 2026-10-07 23:41+0200\n"
+"POT-Creation-Date: 2026-10-20 00:53+0000\n"
+"PO-Revision-Date: 2026-10-19 16:24+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.08.1\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #, kde-format
 msgid "Anonymous"
@@ -338,18 +338,18 @@ msgstr "Запазване на прикачените файлове"
 msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>недефинирани</placeholder>"
 
-#: eventarchiver.cpp:132
+#: eventarchiver.cpp:128
 #, kde-format
 msgid "There are no items before %1"
 msgstr "Няма събития преди %1"
 
-#: eventarchiver.cpp:133
+#: eventarchiver.cpp:129
 #, kde-format
 msgctxt "@title:window"
 msgid "Archive"
 msgstr "Архивиране"
 
-#: eventarchiver.cpp:163
+#: eventarchiver.cpp:159
 #, kde-format
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -358,29 +358,29 @@ msgstr ""
 "Изтриване на всички събития преди %1 без да бъдат записани?\n"
 "Ще бъдат изтрити следните събития:"
 
-#: eventarchiver.cpp:167
+#: eventarchiver.cpp:163
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Old Items"
 msgstr "Изтриване на старите елементи"
 
-#: eventarchiver.cpp:284
+#: eventarchiver.cpp:276
 #, kde-format
 msgctxt "save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Неизвестна причина"
 
-#: eventarchiver.cpp:286
+#: eventarchiver.cpp:278
 #, kde-format
 msgid "Cannot write archive file %1. %2"
 msgstr "Не може да се запише архивен файл %1. %2"
 
-#: eventarchiver.cpp:297
+#: eventarchiver.cpp:289
 #, kde-format
 msgid "Cannot write archive. %1"
 msgstr "Не може да се запише архив. %1"
 
-#: eventarchiver.cpp:306
+#: eventarchiver.cpp:298
 #, kde-format
 msgid "Archiving events"
 msgstr "Архивиране на събитие"
@@ -462,353 +462,317 @@ msgctxt "@info:tooltip period duration"
 msgid "Duration:"
 msgstr "Времетраене:"
 
-#: incidenceformatter.cpp:290
+#: incidenceformatter.cpp:282
 #, kde-format
 msgid "Show mail"
-msgstr ""
+msgstr "Показване на имейл"
 
-#: incidenceformatter.cpp:554
-#, fuzzy, kde-format
-#| msgid "1 hour "
-#| msgid_plural "%1 hours "
+#: incidenceformatter.cpp:538
+#, kde-format
 msgctxt "hours part of duration"
 msgid "1 hour "
 msgid_plural "%1 hours "
-msgstr[0] "1 час "
-msgstr[1] "%1 часа "
+msgstr[0] "1 час"
+msgstr[1] "%1 часа"
 
-#: incidenceformatter.cpp:558
-#, fuzzy, kde-format
-#| msgid "1 minute "
-#| msgid_plural "%1 minutes "
+#: incidenceformatter.cpp:542
+#, kde-format
 msgctxt "minutes part duration"
 msgid "1 minute "
 msgid_plural "%1 minutes "
-msgstr[0] "1 минута "
-msgstr[1] "%1 минути "
+msgstr[0] "1 минута"
+msgstr[1] "%1 минути"
 
-#: incidenceformatter.cpp:562
+#: incidenceformatter.cpp:546
 #, kde-format
 msgctxt "seconds part of duration"
 msgid "1 second"
 msgid_plural "%1 seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 секунда"
+msgstr[1] "%1 секунди"
 
-#: incidenceformatter.cpp:724
+#: incidenceformatter.cpp:708
 #, kde-format
 msgctxt "Event start"
 msgid "<i>From:</i> %1"
-msgstr ""
+msgstr "<i>От:</i> %1"
 
-#: incidenceformatter.cpp:726
+#: incidenceformatter.cpp:710
 #, kde-format
 msgctxt "Event end"
 msgid "<i>To:</i> %1"
-msgstr ""
+msgstr "<i>До:</i> %1"
 
-#: incidenceformatter.cpp:728
+#: incidenceformatter.cpp:712
 #, kde-format
 msgctxt "datetime range for event"
 msgid "<i>Date:</i> %1 - %2"
-msgstr ""
+msgstr "<i>Дата:</i> %1 - %2"
 
-#: incidenceformatter.cpp:731 incidenceformatter.cpp:809
+#: incidenceformatter.cpp:715 incidenceformatter.cpp:793
 #, kde-format
 msgid "<i>Date:</i> %1"
-msgstr ""
+msgstr "<i>Дата:</i> %1"
 
-#: incidenceformatter.cpp:737
+#: incidenceformatter.cpp:721
 #, kde-format
 msgctxt "time for event"
 msgid "<i>Time:</i> %1"
-msgstr ""
+msgstr "<i>Час:</i> %1"
 
-#: incidenceformatter.cpp:739
+#: incidenceformatter.cpp:723
 #, kde-format
 msgctxt "time range for event"
 msgid "<i>Time:</i> %1 - %2"
-msgstr ""
+msgstr "<i>Време:</i> %1 - %2"
 
-#: incidenceformatter.cpp:772
+#: incidenceformatter.cpp:756
 #, kde-format
 msgctxt "To-do's start date"
 msgid "<i>Start:</i> %1"
-msgstr ""
+msgstr "<i>Начало:</i> %1"
 
-#: incidenceformatter.cpp:775
+#: incidenceformatter.cpp:759
 #, kde-format
 msgctxt "To-do's due date"
 msgid "<i>Due:</i> %1"
-msgstr ""
+msgstr "<i>Краен срок:</i> %1"
 
-#: incidenceformatter.cpp:782
-#, fuzzy, kde-format
-#| msgctxt "subitem Priority: N"
-#| msgid "Priority: %1\n"
+#: incidenceformatter.cpp:766
+#, kde-format
 msgctxt "To-do's priority number"
 msgid "<i>Priority:</i> %1"
-msgstr "Приоритет: %1\n"
+msgstr "<i>Приоритет:</i> %1"
 
-#: incidenceformatter.cpp:787
+#: incidenceformatter.cpp:771
 #, kde-format
 msgctxt "To-do's completed date"
 msgid "<i>Completed:</i> %1"
-msgstr ""
+msgstr "<i>Завършено на:</i> %1"
 
-#: incidenceformatter.cpp:798
+#: incidenceformatter.cpp:782
 #, kde-format
 msgctxt "To-do's percent complete:"
 msgid "<i>Percent Done:</i> %1%"
-msgstr ""
+msgstr "<i>Процент на завършване:</i> %1%"
 
-#: incidenceformatter.cpp:817
+#: incidenceformatter.cpp:801
 #, kde-format
 msgid "<i>Period start:</i> %1"
-msgstr ""
+msgstr "<i>Начало на периода:</i> %1"
 
-#: incidenceformatter.cpp:818
+#: incidenceformatter.cpp:802
 #, kde-format
 msgid "<i>Period end:</i> %1"
-msgstr ""
+msgstr "<i>Край на периода:</i> %1"
 
-#: incidenceformatter.cpp:843 templates/freebusy.html:5
+#: incidenceformatter.cpp:827 templates/freebusy.html:5
 #, kde-format
 msgid "Free/Busy information for %1"
-msgstr ""
+msgstr "Информация за заетост за %1"
 
-#: incidenceformatter.cpp:865 incidenceformatter.cpp:867
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
+#: incidenceformatter.cpp:847
+#, kde-format
 msgctxt "attendee name (attendee status)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: incidenceformatter.cpp:870
-#, fuzzy, kde-format
-#| msgid "%1%"
+#: incidenceformatter.cpp:849
+#, kde-format
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
-#: incidenceformatter.cpp:896 incidenceformatter.cpp:1033
+#: incidenceformatter.cpp:875 incidenceformatter.cpp:1008
 #, kde-format
 msgctxt "ellipsis"
 msgid "..."
-msgstr ""
+msgstr "..."
 
-#: incidenceformatter.cpp:916
+#: incidenceformatter.cpp:895
 #, kde-format
 msgid " (delegated by %1)"
-msgstr ""
+msgstr "(делегирано от %1)"
 
-#: incidenceformatter.cpp:919
+#: incidenceformatter.cpp:898
 #, kde-format
 msgid " (delegated to %1)"
-msgstr ""
+msgstr "(делегирано на %1)"
 
-#: incidenceformatter.cpp:939 templates/event.html:112 templates/todo.html:93
-#, fuzzy, kde-format
-#| msgid "Organizer: "
+#: incidenceformatter.cpp:918 templates/event.html:112 templates/todo.html:93
+#, kde-format
 msgid "Organizer:"
-msgstr "Организатор: "
+msgstr "Организатор:"
 
-#: incidenceformatter.cpp:950 templates/event.html:124 templates/todo.html:105
+#: incidenceformatter.cpp:929 templates/event.html:124 templates/todo.html:105
 #, kde-format
 msgid "Chair:"
-msgstr ""
+msgstr "Председател:"
 
-#: incidenceformatter.cpp:957 templates/event.html:137 templates/todo.html:118
+#: incidenceformatter.cpp:936 templates/event.html:137 templates/todo.html:118
 #, kde-format
 msgid "Required Participants:"
-msgstr ""
+msgstr "Задължителни участници:"
 
-#: incidenceformatter.cpp:964
+#: incidenceformatter.cpp:943
 #, kde-format
 msgid "Optional Participants:"
-msgstr ""
+msgstr "Допълнителни участници:"
 
-#: incidenceformatter.cpp:971 templates/event.html:163 templates/todo.html:144
+#: incidenceformatter.cpp:950 templates/event.html:163 templates/todo.html:144
 #, kde-format
 msgid "Observers:"
-msgstr ""
+msgstr "Наблюдатели:"
 
-#: incidenceformatter.cpp:993 templates/event.html:13 templates/journal.html:14
+#: incidenceformatter.cpp:972 templates/event.html:13 templates/journal.html:14
 #: templates/todo.html:14
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Select Calendar"
+#, kde-format
 msgid "Calendar:"
-msgstr "Избиране на календар"
+msgstr "Календар:"
 
-#: incidenceformatter.cpp:1001 templates/event.html:21 templates/todo.html:22
-#, fuzzy, kde-format
-#| msgid "Location: "
+#: incidenceformatter.cpp:980 templates/event.html:21 templates/todo.html:22
+#, kde-format
 msgid "Location:"
-msgstr "Място: "
+msgstr "Местоположение:"
 
-#: incidenceformatter.cpp:1008 templates/event.html:60 templates/todo.html:54
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip period duration"
-#| msgid "Duration:"
+#: incidenceformatter.cpp:987 templates/event.html:60 templates/todo.html:54
+#, kde-format
 msgid "Duration:"
-msgstr "Времетраене:"
+msgstr "Продължителност:"
 
-#: incidenceformatter.cpp:1014 incidenceformatter.cpp:1024
+#: incidenceformatter.cpp:993 incidenceformatter.cpp:999
 #: templates/event.html:68 templates/todo.html:62
 #, kde-format
 msgid "Recurrence:"
-msgstr ""
+msgstr "Повторение:"
 
-#: incidenceformatter.cpp:1025 templates/todo.html:64
-#, fuzzy, kde-format
-#| msgctxt "except for listed dates"
-#| msgid " except"
+#: incidenceformatter.cpp:1000 templates/todo.html:64
+#, kde-format
 msgid "Exception"
-msgstr " с изключение на"
+msgstr "Изключение"
 
-#: incidenceformatter.cpp:1041 printing/calprintdefaultplugins.cpp:448
+#: incidenceformatter.cpp:1016 printing/calprintdefaultplugins.cpp:439
 #: templates/event.html:96 templates/journal.html:30 templates/todo.html:74
 #, kde-format
 msgid "Description:"
 msgstr "Описание:"
 
-#: incidenceformatter.cpp:1055 templates/event.html:104 templates/todo.html:85
-#, fuzzy, kde-format
-#| msgid "Reminder: "
-#| msgid_plural "%1 reminders: "
+#: incidenceformatter.cpp:1030 templates/event.html:104 templates/todo.html:85
+#, kde-format
 msgid "Reminder:"
 msgid_plural "Reminders:"
-msgstr[0] "Напомняне: "
-msgstr[1] "%1 напомняния: "
+msgstr[0] "Напоминане:"
+msgstr[1] "Напоминания:"
 
-#: incidenceformatter.cpp:1083 templates/event.html:176
+#: incidenceformatter.cpp:1058 templates/event.html:176
 #: templates/journal.html:38 templates/todo.html:157
 #, kde-format
 msgid "Tag:"
 msgid_plural "Tags:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Етикет:"
+msgstr[1] "Етикети:"
 
-#: incidenceformatter.cpp:1122 incidenceformatter.cpp:1148
-#: incidenceformatter.cpp:1160 printing/calprintdefaultplugins.cpp:358
+#: incidenceformatter.cpp:1097 incidenceformatter.cpp:1123
+#: incidenceformatter.cpp:1135 printing/calprintdefaultplugins.cpp:349
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] "1 ден"
 msgstr[1] "%1 дни"
 
-#: incidenceformatter.cpp:1128 printing/calprintdefaultplugins.cpp:361
+#: incidenceformatter.cpp:1103 printing/calprintdefaultplugins.cpp:352
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "1 час"
 msgstr[1] "%1 час"
 
-#: incidenceformatter.cpp:1134 printing/calprintdefaultplugins.cpp:364
+#: incidenceformatter.cpp:1109 printing/calprintdefaultplugins.cpp:355
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] "1 минута"
 msgstr[1] "%1 минути"
 
-#: incidenceformatter.cpp:1151
+#: incidenceformatter.cpp:1126
 #, kde-format
 msgid "forever"
-msgstr ""
+msgstr "винаги"
 
-#: incidenceformatter.cpp:1193
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 before the start"
+#: incidenceformatter.cpp:1168
+#, kde-format
 msgctxt "N days/hours/minutes before the start datetime"
 msgid "%1 before the start"
 msgstr "%1 преди началото"
 
-#: incidenceformatter.cpp:1195
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 after the start"
+#: incidenceformatter.cpp:1170
+#, kde-format
 msgctxt "N days/hours/minutes after the start datetime"
 msgid "%1 after the start"
 msgstr "%1 след началото"
 
-#: incidenceformatter.cpp:1206
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 before the end"
+#: incidenceformatter.cpp:1181
+#, kde-format
 msgctxt "N days/hours/minutes before the due datetime"
 msgid "%1 before the to-do is due"
-msgstr "%1 преди края"
+msgstr "%1 преди крайния срок на задачата"
 
-#: incidenceformatter.cpp:1208
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 before the end"
+#: incidenceformatter.cpp:1183
+#, kde-format
 msgctxt "N days/hours/minutes before the end datetime"
 msgid "%1 before the end"
 msgstr "%1 преди края"
 
-#: incidenceformatter.cpp:1212
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 after the end"
+#: incidenceformatter.cpp:1187
+#, kde-format
 msgctxt "N days/hours/minutes after the due datetime"
 msgid "%1 after the to-do is due"
-msgstr "%1 след края"
+msgstr "%1 след крайния срок за задачата"
 
-#: incidenceformatter.cpp:1214
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 after the end"
+#: incidenceformatter.cpp:1189
+#, kde-format
 msgctxt "N days/hours/minutes after the end datetime"
 msgid "%1 after the end"
 msgstr "%1 след края"
 
-#: incidenceformatter.cpp:1232
+#: incidenceformatter.cpp:1207
 #, kde-format
 msgctxt "reminder occurs at datetime"
 msgid "at %1"
-msgstr ""
+msgstr "в %1"
 
-#: incidenceformatter.cpp:1239
-#, fuzzy, kde-format
-#| msgid "Repeats: "
+#: incidenceformatter.cpp:1214
+#, kde-format
 msgid "repeats once"
 msgid_plural "repeats %1 times"
-msgstr[0] "Повторения: "
-msgstr[1] "Повторения: "
+msgstr[0] "повтаря се веднъж"
+msgstr[1] "повтаря се %1 пъти"
 
-#: incidenceformatter.cpp:1240
+#: incidenceformatter.cpp:1215
 #, kde-format
 msgctxt "interval is N days/hours/minutes"
 msgid "interval is %1"
-msgstr ""
+msgstr "интервалът е %1"
 
-#: incidenceformatter.cpp:1241
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#: incidenceformatter.cpp:1216
+#, kde-format
 msgctxt "(repeat string, interval string)"
 msgid "(%1, %2)"
-msgstr "%1, %2"
+msgstr "(%1, %2)"
 
-#: incidenceformatter.cpp:1246
+#: incidenceformatter.cpp:1221
 #, kde-format
 msgctxt "alarm is disabled"
 msgid "disabled"
-msgstr ""
+msgstr "деактивиран"
 
-#: incidenceformatter.cpp:1250
-#, fuzzy, kde-format
-#| msgctxt "blocking audio reminders for this calendar"
-#| msgid "audio"
+#: incidenceformatter.cpp:1225
+#, kde-format
 msgctxt "alarm will play a sound"
 msgid "audio"
-msgstr "аудио"
+msgstr "звук"
 
-#: incidenceformatter.cpp:1253
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
+#: incidenceformatter.cpp:1228
+#, kde-format
 msgctxt "the reminder string with its types list"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
@@ -1874,227 +1838,225 @@ msgstr ""
 msgid "Print &Footer"
 msgstr "Отпечатване на &долен колонтитул"
 
-#: printing/calprintdefaultplugins.cpp:136
-#: printing/calprintdefaultplugins.cpp:165
-#: printing/calprintdefaultplugins.cpp:184
+#: printing/calprintdefaultplugins.cpp:131
+#: printing/calprintdefaultplugins.cpp:160
+#: printing/calprintdefaultplugins.cpp:179
 #, kde-format
 msgid "Start date: "
 msgstr "Начална дата: "
 
-#: printing/calprintdefaultplugins.cpp:139
-#: printing/calprintdefaultplugins.cpp:168
+#: printing/calprintdefaultplugins.cpp:134
+#: printing/calprintdefaultplugins.cpp:163
 #, kde-format
 msgid "No start date"
 msgstr "Без начална дата"
 
-#: printing/calprintdefaultplugins.cpp:144
+#: printing/calprintdefaultplugins.cpp:139
 #, kde-format
 msgid "End date: "
 msgstr "Крайна дата: "
 
-#: printing/calprintdefaultplugins.cpp:147
+#: printing/calprintdefaultplugins.cpp:142
 #, kde-format
 msgid "Duration: "
 msgstr "Продължителност: "
 
-#: printing/calprintdefaultplugins.cpp:150
+#: printing/calprintdefaultplugins.cpp:145
 #, kde-format
 msgid "1 hour "
 msgid_plural "%1 hours "
 msgstr[0] "1 час "
 msgstr[1] "%1 часа "
 
-#: printing/calprintdefaultplugins.cpp:153
+#: printing/calprintdefaultplugins.cpp:148
 #, kde-format
 msgid "1 minute "
 msgid_plural "%1 minutes "
 msgstr[0] "1 минута "
 msgstr[1] "%1 минути "
 
-#: printing/calprintdefaultplugins.cpp:156
+#: printing/calprintdefaultplugins.cpp:151
 #, kde-format
 msgid "No end date"
 msgstr "Без крайна дата"
 
-#: printing/calprintdefaultplugins.cpp:173
+#: printing/calprintdefaultplugins.cpp:168
 #, kde-format
 msgid "Due date: "
 msgstr "Насрочена дата: "
 
-#: printing/calprintdefaultplugins.cpp:176
+#: printing/calprintdefaultplugins.cpp:171
 #, kde-format
 msgid "No due date"
 msgstr "Без насрочена дата"
 
-#: printing/calprintdefaultplugins.cpp:306
+#: printing/calprintdefaultplugins.cpp:297
 #, kde-format
 msgctxt "except for listed dates"
 msgid " except"
 msgstr " с изключение на"
 
-#: printing/calprintdefaultplugins.cpp:313
+#: printing/calprintdefaultplugins.cpp:304
 #, kde-format
 msgid "Repeats: "
 msgstr "Повторения: "
 
-#: printing/calprintdefaultplugins.cpp:321
+#: printing/calprintdefaultplugins.cpp:312
 #, kde-format
 msgid "No reminders"
 msgstr "Без напомняния"
 
-#: printing/calprintdefaultplugins.cpp:324
+#: printing/calprintdefaultplugins.cpp:315
 #, kde-format
 msgid "Reminder: "
 msgid_plural "%1 reminders: "
 msgstr[0] "Напомняне: "
 msgstr[1] "%1 напомняния: "
 
-#: printing/calprintdefaultplugins.cpp:338
+#: printing/calprintdefaultplugins.cpp:329
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the start"
 msgstr "%1 преди началото"
 
-#: printing/calprintdefaultplugins.cpp:341
+#: printing/calprintdefaultplugins.cpp:332
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the start"
 msgstr "%1 след началото"
 
-#: printing/calprintdefaultplugins.cpp:346
+#: printing/calprintdefaultplugins.cpp:337
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 before the end"
 msgstr "%1 преди края"
 
-#: printing/calprintdefaultplugins.cpp:349
+#: printing/calprintdefaultplugins.cpp:340
 #, kde-format
 msgctxt "N days/hours/minutes before/after the start/end"
 msgid "%1 after the end"
 msgstr "%1 след края"
 
-#: printing/calprintdefaultplugins.cpp:368
-#: printing/calprintdefaultplugins.cpp:678
+#: printing/calprintdefaultplugins.cpp:359
+#: printing/calprintdefaultplugins.cpp:636
 #, kde-format
 msgctxt "Spacer for the joined list of categories/tags"
 msgid ", "
 msgstr ", "
 
-#: printing/calprintdefaultplugins.cpp:373
+#: printing/calprintdefaultplugins.cpp:364
 #, kde-format
 msgid "Organizer: "
 msgstr "Организатор: "
 
-#: printing/calprintdefaultplugins.cpp:386
+#: printing/calprintdefaultplugins.cpp:377
 #, kde-format
 msgid "Location: "
 msgstr "Място: "
 
-#: printing/calprintdefaultplugins.cpp:476
+#: printing/calprintdefaultplugins.cpp:467
 #, kde-format
 msgid "Notes:"
 msgstr "Бележки:"
 
-#: printing/calprintdefaultplugins.cpp:486
+#: printing/calprintdefaultplugins.cpp:477
 #, kde-format
 msgid "1 Subitem:"
 msgid_plural "%1 Subitems:"
 msgstr[0] "1 поделемент:"
 msgstr[1] "%1 поделемента:"
 
-#: printing/calprintdefaultplugins.cpp:505
+#: printing/calprintdefaultplugins.cpp:492
 #, kde-format
 msgctxt "no status"
 msgid "none"
 msgstr "без"
 
-#: printing/calprintdefaultplugins.cpp:507
+#: printing/calprintdefaultplugins.cpp:494
 #, kde-format
 msgctxt "unknown status"
 msgid "unknown"
 msgstr "(неизвестен)"
 
-#: printing/calprintdefaultplugins.cpp:514
+#: printing/calprintdefaultplugins.cpp:501
 #, kde-format
 msgctxt "subitem start date"
 msgid "Start Date: %1\n"
 msgstr "Начална дата: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:517
+#: printing/calprintdefaultplugins.cpp:504
 #, kde-format
 msgctxt "subitem start time"
 msgid "Start Time: %1\n"
 msgstr "Начален час: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:523
+#: printing/calprintdefaultplugins.cpp:510
 #, kde-format
 msgctxt "subitem due date"
 msgid "Due Date: %1\n"
 msgstr "Насрочена дата: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:529
+#: printing/calprintdefaultplugins.cpp:516
 #, kde-format
 msgctxt "subitem due time"
 msgid "Due Time: %1\n"
 msgstr "Насрочен час: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:533
+#: printing/calprintdefaultplugins.cpp:520
 #, kde-format
 msgctxt "subitem counter"
 msgid "%1: "
 msgstr "%1: "
 
-#: printing/calprintdefaultplugins.cpp:540
+#: printing/calprintdefaultplugins.cpp:527
 #, kde-format
 msgctxt "subitem Status: statusString"
 msgid "Status: %1\n"
 msgstr "Състояние: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:546
+#: printing/calprintdefaultplugins.cpp:529
 #, kde-format
 msgctxt "subitem Priority: N"
 msgid "Priority: %1\n"
 msgstr "Приоритет: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:548
-#: printing/calprintdefaultplugins.cpp:550
+#: printing/calprintdefaultplugins.cpp:530
 #, kde-format
 msgctxt "subitem Secrecy: secrecyString"
 msgid "Secrecy: %1\n"
 msgstr "Поверителност: %1\n"
 
-#: printing/calprintdefaultplugins.cpp:569
+#: printing/calprintdefaultplugins.cpp:548
 #, kde-format
 msgid "No Attachments"
 msgstr "Без прикрепени файлове"
 
-#: printing/calprintdefaultplugins.cpp:572
+#: printing/calprintdefaultplugins.cpp:551
 #, kde-format
 msgid "1 Attachment:"
 msgid_plural "%1 Attachments:"
 msgstr[0] "1 прикрепен файл:"
 msgstr[1] "%1 прикрепени файла:"
 
-#: printing/calprintdefaultplugins.cpp:578
+#: printing/calprintdefaultplugins.cpp:557
 #, kde-format
 msgctxt "Spacer for list of attachments"
 msgid "  "
 msgstr "  "
 
-#: printing/calprintdefaultplugins.cpp:595
+#: printing/calprintdefaultplugins.cpp:574
 #, kde-format
 msgid "No Attendees"
 msgstr "Няма участници"
 
-#: printing/calprintdefaultplugins.cpp:597
+#: printing/calprintdefaultplugins.cpp:576
 #, kde-format
 msgid "1 Attendee:"
 msgid_plural "%1 Attendees:"
 msgstr[0] "1 участник:"
 msgstr[1] "%1 участника:"
 
-#: printing/calprintdefaultplugins.cpp:610
-#: printing/calprintdefaultplugins.cpp:619
+#: printing/calprintdefaultplugins.cpp:588
 #, kde-format
 msgctxt ""
 "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold Kainhofer "
@@ -2102,77 +2064,75 @@ msgctxt ""
 msgid "%1 (%2): %3"
 msgstr "%1 (%2): %3"
 
-#: printing/calprintdefaultplugins.cpp:639
-#: printing/calprintdefaultplugins.cpp:642
+#: printing/calprintdefaultplugins.cpp:606
 #, kde-format
 msgid "Status: %1"
 msgstr "Състояние: %1"
 
-#: printing/calprintdefaultplugins.cpp:648
-#: printing/calprintdefaultplugins.cpp:651
+#: printing/calprintdefaultplugins.cpp:610
 #, kde-format
 msgid "Secrecy: %1"
 msgstr "Поверителност: %1"
 
-#: printing/calprintdefaultplugins.cpp:658
+#: printing/calprintdefaultplugins.cpp:616
 #, kde-format
 msgid "Show as: Busy"
 msgstr "Показване като: зает"
 
-#: printing/calprintdefaultplugins.cpp:660
+#: printing/calprintdefaultplugins.cpp:618
 #, kde-format
 msgid "Show as: Free"
 msgstr "Показване като: свободен"
 
-#: printing/calprintdefaultplugins.cpp:666
+#: printing/calprintdefaultplugins.cpp:624
 #, kde-format
 msgid "This task is overdue!"
 msgstr "Тази задача е просрочена!"
 
-#: printing/calprintdefaultplugins.cpp:672
+#: printing/calprintdefaultplugins.cpp:630
 #, kde-format
 msgid "Settings: "
 msgstr "Настройки: "
 
-#: printing/calprintdefaultplugins.cpp:677
+#: printing/calprintdefaultplugins.cpp:635
 #, kde-format
 msgid "Tags: "
 msgstr "Етикети: "
 
-#: printing/calprintdefaultplugins.cpp:770 printing/calprintpluginbase.cpp:924
+#: printing/calprintdefaultplugins.cpp:728 printing/calprintpluginbase.cpp:924
 #: printing/calprintpluginbase.cpp:1064 printing/calprintpluginbase.cpp:1121
 #, kde-format
 msgctxt "summary, location"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:773 printing/calprintpluginbase.cpp:943
+#: printing/calprintdefaultplugins.cpp:731 printing/calprintpluginbase.cpp:943
 #: printing/calprintpluginbase.cpp:1067
 #, kde-format
 msgctxt "summary, categories"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: printing/calprintdefaultplugins.cpp:828
+#: printing/calprintdefaultplugins.cpp:786
 #, kde-format
 msgctxt "label for timetable all-day boxes"
 msgid "All day"
 msgstr "Цял ден"
 
-#: printing/calprintdefaultplugins.cpp:1033
-#: printing/calprintdefaultplugins.cpp:1259 printing/yearprint.cpp:146
+#: printing/calprintdefaultplugins.cpp:991
+#: printing/calprintdefaultplugins.cpp:1217 printing/yearprint.cpp:146
 #, kde-format
 msgctxt "date from-to"
 msgid "%1–%2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:1281
+#: printing/calprintdefaultplugins.cpp:1239
 #, kde-format
 msgctxt "date from - to (week number)"
 msgid "%1–%2 (Week %3)"
 msgstr "%1–%2 (Седмица %3)"
 
-#: printing/calprintdefaultplugins.cpp:1283
+#: printing/calprintdefaultplugins.cpp:1241
 #, kde-format
 msgctxt "date from - to\\n(week number)"
 msgid ""
@@ -2182,95 +2142,95 @@ msgstr ""
 "%1 -\n"
 "%2 (Седмица %3)"
 
-#: printing/calprintdefaultplugins.cpp:1468
+#: printing/calprintdefaultplugins.cpp:1426
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: printing/calprintdefaultplugins.cpp:1581
+#: printing/calprintdefaultplugins.cpp:1539
 #, kde-format
 msgctxt "@option sort by summary"
 msgid "Summary"
 msgstr "Резюме"
 
-#: printing/calprintdefaultplugins.cpp:1582
+#: printing/calprintdefaultplugins.cpp:1540
 #, kde-format
 msgctxt "@option sort by start date/time"
 msgid "Start Date"
 msgstr "Начална дата"
 
-#: printing/calprintdefaultplugins.cpp:1583
+#: printing/calprintdefaultplugins.cpp:1541
 #, kde-format
 msgctxt "@option sort by due date/time"
 msgid "Due Date"
 msgstr "Насрочена дата"
 
-#: printing/calprintdefaultplugins.cpp:1584
+#: printing/calprintdefaultplugins.cpp:1542
 #, kde-format
 msgctxt "@option sort by priority"
 msgid "Priority"
 msgstr "Приоритет"
 
-#: printing/calprintdefaultplugins.cpp:1585
+#: printing/calprintdefaultplugins.cpp:1543
 #, kde-format
 msgctxt "@option sort by percent completed"
 msgid "Percent Complete"
 msgstr "Процент завършено"
 
-#: printing/calprintdefaultplugins.cpp:1586
+#: printing/calprintdefaultplugins.cpp:1544
 #, kde-format
 msgctxt "@option sort by tags"
 msgid "Tags"
 msgstr "Етикети"
 
-#: printing/calprintdefaultplugins.cpp:1592
+#: printing/calprintdefaultplugins.cpp:1550
 #, kde-format
 msgctxt "@option sort in increasing order"
 msgid "Ascending"
 msgstr "Възходящ"
 
-#: printing/calprintdefaultplugins.cpp:1593
+#: printing/calprintdefaultplugins.cpp:1551
 #, kde-format
 msgctxt "@option sort in decreasing order"
 msgid "Descending"
 msgstr "Низходящ"
 
-#: printing/calprintdefaultplugins.cpp:1606
+#: printing/calprintdefaultplugins.cpp:1564
 #, kde-format
 msgid "To-do list"
 msgstr "Списък със задачи"
 
-#: printing/calprintdefaultplugins.cpp:1658
+#: printing/calprintdefaultplugins.cpp:1616
 #: printing/calprintpluginbase.cpp:1724 templates/todo.html:179
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
-#: printing/calprintdefaultplugins.cpp:1669
+#: printing/calprintdefaultplugins.cpp:1627
 #, kde-format
 msgid "Priority"
 msgstr "Приоритет"
 
-#: printing/calprintdefaultplugins.cpp:1679
+#: printing/calprintdefaultplugins.cpp:1637
 #, kde-format
 msgctxt "@label to-do due date"
 msgid "Due"
 msgstr "Срок"
 
-#: printing/calprintdefaultplugins.cpp:1689
+#: printing/calprintdefaultplugins.cpp:1647
 #, kde-format
 msgctxt "@label to-do start date"
 msgid "Start"
 msgstr "Начало"
 
-#: printing/calprintdefaultplugins.cpp:1699
+#: printing/calprintdefaultplugins.cpp:1657
 #, kde-format
 msgctxt "@label to-do percentage complete"
 msgid "Complete"
 msgstr "Завършени"
 
-#: printing/calprintdefaultplugins.cpp:1709
+#: printing/calprintdefaultplugins.cpp:1667
 #, kde-format
 msgctxt "@label to-do categories"
 msgid "Tags"
@@ -3165,198 +3125,157 @@ msgid "Prints a calendar for an entire year"
 msgstr "Отпечатване на календара за цяла година"
 
 #: templates/attendee_row.html:17
-#, fuzzy
-#| msgid "Organizer: "
 msgid "organizer"
-msgstr "Организатор: "
+msgstr "организатор"
 
 #: templates/attendee_row.html:21
 msgid "myself"
-msgstr ""
+msgstr "аз"
 
 #: templates/attendee_row.html:25
 #, kde-format
 msgid "delegated by %1)"
-msgstr ""
+msgstr "делегирано от %1)"
 
 #: templates/attendee_row.html:29
 #, kde-format
 msgid "delegated to %1)"
-msgstr ""
+msgstr "делегиран на %1)"
 
 #: templates/attendee_row.html:36
-#, fuzzy
-#| msgctxt "blocking email reminders for this calendar"
-#| msgid "email"
 msgid "Send email"
-msgstr "е-поща"
+msgstr "Изпращане на имейл"
 
 #: templates/event.html:5
-#, fuzzy
-#| msgid "Events:"
 msgid "Event"
-msgstr "Събития:"
+msgstr "Събитие"
 
 #: templates/event.html:30 templates/event.html:33 templates/event.html:40
 #: templates/event.html:43 templates/journal.html:22
-#, fuzzy
-#| msgid "Due date: "
 msgid "Date:"
-msgstr "Насрочена дата: "
+msgstr "Дата:"
 
 #: templates/event.html:31
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "<beginDate> - <endDate>"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: templates/event.html:34 templates/event.html:44
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "Date as string"
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: templates/event.html:41
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "<beginDateTime> - <endDateTime>"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: templates/event.html:47
 msgid "Time:"
-msgstr ""
+msgstr "Час:"
 
 #: templates/event.html:49
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "<beginTime> - <endTime>"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: templates/event.html:51
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "Time as string"
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: templates/event.html:70
-#, fuzzy
-#| msgctxt "except for listed dates"
-#| msgid " except"
 msgctxt "Exception in event recurrence"
 msgid "Exception"
-msgstr " с изключение на"
+msgstr "Изключение"
 
 #: templates/event.html:80
 msgid "Birthday:"
-msgstr ""
+msgstr "Рожден ден:"
 
 #: templates/event.html:88
 msgid "Anniversary:"
-msgstr ""
+msgstr "Годишнина:"
 
 #: templates/event.html:150 templates/todo.html:131
 msgid "Optional participants:"
-msgstr ""
+msgstr "Допълнителни участници:"
 
 #: templates/event.html:184 templates/todo.html:186
-#, fuzzy
-#| msgid "1 Attachment:"
-#| msgid_plural "%1 Attachments:"
 msgid "Attachment:"
 msgid_plural "Attachments:"
-msgstr[0] "1 прикрепен файл:"
-msgstr[1] "%1 прикрепени файла:"
+msgstr[0] "Прикачен файл:"
+msgstr[1] "Прикачени файлове:"
 
 #: templates/event.html:197 templates/journal.html:47 templates/todo.html:200
-#, fuzzy, kde-format
-#| msgctxt "print date: formatted-datetime"
-#| msgid "printed: %1"
+#, kde-format
 msgid "Created: %1"
-msgstr "отпечатано на: %1"
+msgstr "Създадено на: %1"
 
 #: templates/event.html:198 templates/journal.html:48 templates/todo.html:201
-#, fuzzy, kde-format
-#| msgctxt "print date: formatted-datetime"
-#| msgid "printed: %1"
+#, kde-format
 msgid "Modified: %1"
-msgstr "отпечатано на: %1"
+msgstr "Последна промяна: %1"
 
 #: templates/event.html:199 templates/journal.html:49 templates/todo.html:202
-#, fuzzy, kde-format
-#| msgid "Person: %1"
+#, kde-format
 msgid "Revision: %1"
-msgstr "Човек: %1"
+msgstr "Ревизия: %1"
 
 #: templates/freebusy.html:6
 #, kde-format
 msgid "Busy times in date range %1 - %2:"
-msgstr ""
+msgstr "Заети периоди в интервала от %1 до %2:"
 
 #: templates/freebusy.html:9
-#, fuzzy
-#| msgid "Busy"
 msgctxt "tag for busy period list"
 msgid "Busy:"
-msgstr "Зает"
+msgstr "Заето:"
 
 #: templates/freebusy.html:13
 #, kde-format
 msgctxt "startDate for duration"
 msgid "%1 for %2"
-msgstr ""
+msgstr "%1 за %2"
 
 #: templates/freebusy.html:16
-#, fuzzy, kde-format
-#| msgctxt "weekday, shortmonthname daynumber"
-#| msgid "%1, %2 %3"
+#, kde-format
 msgctxt "date, fromTime - toTime"
 msgid "%1, %2 - %3"
-msgstr "%1, %2 %3"
+msgstr "%1, %2 - %3"
 
 #: templates/freebusy.html:18
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "fromDateTime - endDateTime"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: templates/incidence_header.html:10
-#, fuzzy
-#| msgid "Print &incidence"
 msgid "Recurring incidence"
-msgstr "Отпечатване на &събитие"
+msgstr "Повтарящо се събитие"
 
 #: templates/incidence_header.html:14
 msgid "Incidence with a reminder"
-msgstr ""
+msgstr "Събитие с напомняне"
 
 #: templates/incidence_header.html:18
 msgid "Incidence is read only"
-msgstr ""
+msgstr "Събитието е само за четене"
 
 #: templates/journal.html:5
-#, fuzzy
-#| msgid "Journals:"
 msgid "Journal"
-msgstr "Дневници:"
+msgstr "Дневник"
 
 #: templates/todo.html:5
 msgid "Todo"
-msgstr ""
+msgstr "Задачи"
 
 #: templates/todo.html:30
-#, fuzzy
-#| msgctxt "@info:tooltip period start time"
-#| msgid "Start:"
 msgctxt "to-do start date/time"
 msgid "Start:"
 msgstr "Начало:"
@@ -3364,28 +3283,20 @@ msgstr "Начало:"
 #: templates/todo.html:42
 msgctxt "to-do due date/time"
 msgid "Due:"
-msgstr ""
+msgstr "Краен срок:"
 
 #: templates/todo.html:165
-#, fuzzy
-#| msgid "Priority"
 msgid "Priority:"
-msgstr "Приоритет"
+msgstr "Приоритет:"
 
 #: templates/todo.html:173
-#, fuzzy
-#| msgctxt "@label to-do percentage complete"
-#| msgid "Complete"
 msgctxt "Completed: date"
 msgid "Completed:"
-msgstr "Завършени"
+msgstr "Завършено на:"
 
 #: templates/todo.html:178
-#, fuzzy
-#| msgctxt "@option sort by percent completed"
-#| msgid "Percent Complete"
 msgid "Percent done:"
-msgstr "Процент завършено"
+msgstr "Процент завършеност:"
 
 #: utils.cpp:247
 #, kde-format
