@@ -10,6 +10,8 @@ LAST-MODIFIED:20150930T095037Z
 DESCRIPTION:Dear diary\,\n\ntoday I went to Prague and it was 
  amazing.\n\nEnd of story.\n
 SUMMARY:Dear diary
+COMMENT:the time I visited Prague
+COMMENT:it was so much fun I hope to go again some day
 DTSTART;TZID=Europe/Prague:20150921T080000
 END:VJOURNAL
 BEGIN:VTIMEZONE

@@ -77,7 +77,12 @@
     {% endif %}
 
     <!-- Comments -->
-    {# TODO #}
+    {% if incidence.comments %}
+    <tr>
+        <th valign="top">{% i18np "Comment:" "Comments:" incidence.comments|length %}</th>
+        <td>{{ incidence.comments|join:"<br/>" }}</td>
+    </tr>
+    {% endif %}
 
     <!-- Reminders -->
     {% if incidence.reminders %}

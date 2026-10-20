@@ -223,6 +223,20 @@ static QString cleanHtml(const QString &html)
 
     return QString();
 }
+[[nodiscard]] static QStringList displayViewFormatComments(const Incidence::Ptr &incidence)
+{
+    const QStringList comments = incidence->comments();
+    QStringList commentsData;
+    if (!comments.isEmpty()) {
+        commentsData.reserve(comments.size());
+
+        for (const QString &comment : comments) {
+            // cleanHtml first since non rich text might have html tags (like "<p>whatever</p>")
+            commentsData.append(string2HTML(cleanHtml(comment)));
+        }
+    }
+    return commentsData;
+}
 
 [[nodiscard]] static QVariantList displayViewFormatAttendeeRoleList(const Incidence::Ptr &incidence, Attendee::Role role, bool showStatus)
 {
@@ -399,8 +413,7 @@ static QString cleanHtml(const QString &html)
     }
 
     incidence[QStringLiteral("description")] = displayViewFormatDescription(event);
-    // TODO: print comments?
-
+    incidence[QStringLiteral("comments")] = displayViewFormatComments(event);
     incidence[QStringLiteral("reminders")] = reminderStringList(event);
     incidence[QStringLiteral("organizer")] = displayViewFormatOrganizer(event);
     const bool showStatus = incOrganizerOwnsCalendar(event);
@@ -471,9 +484,7 @@ static QString cleanHtml(const QString &html)
     }
 
     incidence[QStringLiteral("description")] = displayViewFormatDescription(todo);
-
-    // TODO: print comments?
-
+    incidence[QStringLiteral("comments")] = displayViewFormatComments(todo);
     incidence[QStringLiteral("reminders")] = reminderStringList(todo);
     incidence[QStringLiteral("organizer")] = displayViewFormatOrganizer(todo);
     const bool showStatus = incOrganizerOwnsCalendar(todo);
@@ -506,6 +517,7 @@ static QString cleanHtml(const QString &html)
     incidence[QStringLiteral("calendar")] = sourceName;
     incidence[QStringLiteral("date")] = journal->dtStart().toLocalTime();
     incidence[QStringLiteral("description")] = displayViewFormatDescription(journal);
+    incidence[QStringLiteral("comments")] = displayViewFormatComments(journal);
     incidence[QStringLiteral("categories")] = journal->categories();
     incidence[QStringLiteral("creationDate")] = journal->created().toLocalTime();
     incidence[QStringLiteral("modificationDate")] = journal->lastModified().toLocalTime();
@@ -1015,6 +1027,18 @@ QString IncidenceFormatter::ToolTipVisitor::generateToolTip(const Incidence::Ptr
         tmp += QLatin1StringView("<hr>");
         tmp += QLatin1StringView("<i>") + i18n("Description:") + QLatin1StringView("</i>") + QLatin1StringView("<br>");
         tmp += desc;
+    }
+
+    if (!incidence->comments().isEmpty()) {
+        const int commentCount = incidence->comments().count();
+        tmp += QLatin1StringView("<br>");
+        tmp += QLatin1StringView("<i>") + i18np("Comment:", "Comments:", commentCount) + QLatin1StringView("</i>") + QLatin1StringView("&nbsp;");
+        if (commentCount > 1) {
+            tmp += QLatin1StringView("<br> * ");
+            tmp += incidence->comments().join(QLatin1StringView("<br> * "));
+        } else {
+            tmp += incidence->comments().join(QLatin1StringView("<br>"));
+        }
     }
 
     bool needAnHorizontalLine = true;
