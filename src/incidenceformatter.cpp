@@ -207,6 +207,23 @@ static QString cleanHtml(const QString &html)
     return iamOrganizer(incidence);
 }
 
+[[nodiscard]] static QString displayViewFormatLocation(const Incidence::Ptr &incidence)
+{
+    const QString location = incidence->location();
+    if (!location.isEmpty()) {
+        if (!incidence->locationIsRich() && !location.startsWith(QLatin1StringView("<!DOCTYPE HTML"))) {
+            // cleanHtml first since non rich text might have html tags (like "<p>whatever</p>")
+            return string2HTML(cleanHtml(location));
+        } else if (!location.startsWith(QLatin1StringView("<!DOCTYPE HTML"))) {
+            return incidence->richLocation();
+        } else {
+            return location;
+        }
+    }
+
+    return QString();
+}
+
 [[nodiscard]] static QString displayViewFormatDescription(const Incidence::Ptr &incidence)
 {
     const QString description = incidence->description();
@@ -223,6 +240,7 @@ static QString cleanHtml(const QString &html)
 
     return QString();
 }
+
 [[nodiscard]] static QStringList displayViewFormatComments(const Incidence::Ptr &incidence)
 {
     const QStringList comments = incidence->comments();
@@ -236,6 +254,25 @@ static QString cleanHtml(const QString &html)
         }
     }
     return commentsData;
+}
+
+[[nodiscard]] static QString GEOUrl(const Incidence::Ptr &incidence)
+{
+    QUrl geoUrl;
+    if (incidence->hasGeo()) {
+        geoUrl.setScheme(QStringLiteral("geo"));
+        geoUrl.setPath(QString::number(incidence->geoLatitude()) + QLatin1Char(',') + QString::number(incidence->geoLongitude()));
+    }
+    return geoUrl.url();
+}
+
+[[nodiscard]] static QString displayViewFormatGEO(const Incidence::Ptr &incidence)
+{
+    QString geoData;
+    if (incidence->hasGeo()) {
+        geoData = i18nc("latitude longitude", "%1 %2", incidence->geoLatitude(), incidence->geoLongitude());
+    }
+    return geoData;
 }
 
 [[nodiscard]] static QVariantList displayViewFormatAttendeeRoleList(const Incidence::Ptr &incidence, Attendee::Role role, bool showStatus)
@@ -370,12 +407,8 @@ static QString cleanHtml(const QString &html)
     QVariantHash incidence = incidenceTemplateHeader(event);
 
     incidence[QStringLiteral("calendar")] = sourceName;
-    const QString richLocation = event->richLocation();
-    if (richLocation.startsWith(QLatin1StringView("http:/")) || richLocation.startsWith(QLatin1StringView("https:/"))) {
-        incidence[QStringLiteral("location")] = QStringLiteral("<a href=\"%1\">%1</a>").arg(richLocation);
-    } else {
-        incidence[QStringLiteral("location")] = richLocation;
-    }
+    incidence[QStringLiteral("location")] = displayViewFormatLocation(event);
+    incidence[QStringLiteral("geourl")] = GEOUrl(event);
 
     const auto startDts = event->startDateTimesForDate(date, QTimeZone::systemTimeZone());
     QDateTime startDt;
@@ -440,7 +473,8 @@ static QString cleanHtml(const QString &html)
     QVariantHash incidence = incidenceTemplateHeader(todo);
 
     incidence[QStringLiteral("calendar")] = sourceName;
-    incidence[QStringLiteral("location")] = todo->richLocation();
+    incidence[QStringLiteral("location")] = displayViewFormatLocation(todo);
+    incidence[QStringLiteral("geourl")] = GEOUrl(todo);
 
     const bool hastStartDate = todo->hasStartDate();
     const bool hasDueDate = todo->hasDueDate();
@@ -991,6 +1025,12 @@ QString IncidenceFormatter::ToolTipVisitor::generateToolTip(const Incidence::Ptr
         tmp += QLatin1StringView("<br>");
         tmp += QLatin1StringView("<i>") + i18n("Location:") + QLatin1StringView("</i>") + QLatin1StringView("&nbsp;");
         tmp += incidence->richLocation();
+    }
+
+    if (incidence->hasGeo()) {
+        tmp += QLatin1StringView("<br>");
+        tmp += QLatin1StringView("<i>") + i18n("Map Coordinates:") + QLatin1StringView("</i>") + QLatin1StringView("&nbsp;");
+        tmp += displayViewFormatGEO(incidence);
     }
 
     QString const durStr = durationString(incidence);

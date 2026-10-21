@@ -17,10 +17,17 @@
     {% endif %}
 
     <!-- Location -->
-    {% if incidence.location %}
+    {% if incidence.location or incidence.geourl %}
     <tr>
         <th valign="top">{% i18n "Location:" %}</th>
-        <td>{{ incidence.location|safe }}</td>
+        <td>
+        {% if incidence.location %}
+            {{ incidence.location|safe }}
+        {% endif %}
+        {% if incidence.geourl %}
+            <a href="{{ incidence.geourl }}">Open Map</a>
+        {% endif %}
+        </td>
     </tr>
     {% endif %}
 
