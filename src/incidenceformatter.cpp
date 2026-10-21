@@ -52,7 +52,7 @@ using namespace CalendarSupport;
 static QString renderTemplate(const QString &templateName, const QVariantHash &data)
 {
     KTextTemplate::Engine engine;
-    QSharedPointer<KTextTemplate::FileSystemTemplateLoader> loader(new KTextTemplate::FileSystemTemplateLoader);
+    const QSharedPointer<KTextTemplate::FileSystemTemplateLoader> loader(new KTextTemplate::FileSystemTemplateLoader);
     loader->setTemplateDirs({u":/"_s});
     engine.addTemplateLoader(loader);
     engine.addDefaultLibrary(QStringLiteral("ktexttemplate_i18ntags"));
@@ -71,7 +71,7 @@ static QString renderTemplate(const QString &templateName, const QVariantHash &d
 
     KTextTemplate::Context ctx;
     ctx.insert(QStringLiteral("incidence"), data);
-    QSharedPointer<GrantleeTheme::GrantleeKi18nLocalizer> localizer(new GrantleeTheme::GrantleeKi18nLocalizer);
+    const QSharedPointer<GrantleeTheme::GrantleeKi18nLocalizer> localizer(new GrantleeTheme::GrantleeKi18nLocalizer);
     localizer->setApplicationDomain("calendarsupport6");
     ctx.setLocalizer(localizer);
     return tpl->render(&ctx);
