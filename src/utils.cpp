@@ -443,6 +443,7 @@ QList<QDate> CalendarSupport::workDays(QDate startDate, QDate endDate)
     const int mask(~(KCalPrefs::instance()->mWorkWeekMask));
     const int numDays = startDate.daysTo(endDate) + 1;
 
+    result.reserve(numDays);
     for (int i = 0; i < numDays; ++i) {
         const QDate date = startDate.addDays(i);
         if (!(mask & (1 << (date.dayOfWeek() - 1)))) {

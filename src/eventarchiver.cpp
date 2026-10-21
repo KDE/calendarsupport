@@ -110,11 +110,10 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
     }
     if (KCalPrefs::instance()->mArchiveTodos) {
         const KCalendarCore::Todo::List rawTodos = calendar->rawTodos();
-
         for (const KCalendarCore::Todo::Ptr &todo : rawTodos) {
             Q_ASSERT(todo);
             if (isSubTreeComplete(calendar, todo, limitDate)) {
-                todos.append(todo);
+                todos.append(todo); // clazy:exclude=reserve-candidates
             }
         }
     }

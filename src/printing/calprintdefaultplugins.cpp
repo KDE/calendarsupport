@@ -1713,6 +1713,7 @@ void CalPrintTodos::print(QPainter &p, int width, int height)
 
     // Create list of to-dos which will be printed
     todoList = mCalendar->todos(sortField, sortDirection);
+    tempList.reserve(todoList.size());
     switch (mTodoPrintType) {
     case TodosAll:
         break;

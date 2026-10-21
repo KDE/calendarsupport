@@ -148,7 +148,7 @@ void CalPrintJournal::print(QPainter &p, int width, int height)
         for (const KCalendarCore::Journal::Ptr &j : allJournals) {
             const QDate dt = j->dtStart().date();
             if (mFromDate <= dt && dt <= mToDate) {
-                journals.append(j);
+                journals.append(j); // clazy:exclude=reserve-candidates
             }
         }
     }
