@@ -124,7 +124,7 @@ void EventArchiver::run(const Akonadi::ETMCalendar::Ptr &calendar,
     if (incidences.isEmpty()) {
         if (withGUI && errorIfNone) {
             KMessageBox::information(widget,
-                                     i18n("There are no items before %1", QLocale::system().toString(limitDate, QLocale::ShortFormat)),
+                                     i18nc("@info", "There are no items before %1", QLocale::system().toString(limitDate, QLocale::ShortFormat)),
                                      i18nc("@title:window", "Archive"),
                                      u"ArchiverNoIncidences"_s);
         }
@@ -155,9 +155,10 @@ void EventArchiver::deleteIncidences(Akonadi::IncidenceChanger *changer, QDate l
 
     if (withGUI) {
         const int result = KMessageBox::warningContinueCancelList(widget,
-                                                                  i18n("Delete all items before %1 without saving?\n"
-                                                                       "The following items will be deleted:",
-                                                                       QLocale::system().toString(limitDate, QLocale::ShortFormat)),
+                                                                  i18nc("@info",
+                                                                        "Delete all items before %1 without saving?\n"
+                                                                        "The following items will be deleted:",
+                                                                        QLocale::system().toString(limitDate, QLocale::ShortFormat)),
                                                                   incidenceStrs,
                                                                   i18nc("@title:window", "Delete Old Items"),
                                                                   KStandardGuiItem::del());
@@ -272,9 +273,9 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
         if (format->exception()) {
             errmess = format->exception()->errorMessage();
         } else {
-            errmess = i18nc("save failure cause unknown", "Reason unknown");
+            errmess = i18nc("@info save failure cause unknown", "Reason unknown");
         }
-        KMessageBox::error(widget, i18n("Cannot write archive file %1. %2", archiveStore.fileName(), errmess));
+        KMessageBox::error(widget, i18nc("@info", "Cannot write archive file %1. %2", archiveStore.fileName(), errmess));
         QFile::remove(tmpFileName);
         return;
     }
@@ -285,7 +286,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
         auto job = KIO::file_copy(QUrl::fromLocalFile(archiveFile), archiveURL);
         KJobWidgets::setWindow(job, widget);
         if (!job->exec()) {
-            KMessageBox::error(widget, i18n("Cannot write archive. %1", job->errorString()));
+            KMessageBox::error(widget, i18nc("@info", "Cannot write archive. %1", job->errorString()));
             QFile::remove(tmpFileName);
             return;
         }
@@ -294,7 +295,7 @@ void EventArchiver::archiveIncidences(const Akonadi::ETMCalendar::Ptr &calendar,
     QFile::remove(tmpFileName);
 
     // We don't want it to ask to send invitations for each incidence.
-    changer->startAtomicOperation(i18n("Archiving events"));
+    changer->startAtomicOperation(i18nc("@info/plain", "Archiving events"));
 
     // Delete archived events from calendar
     const Akonadi::Item::List items = calendar->itemList(incidences);

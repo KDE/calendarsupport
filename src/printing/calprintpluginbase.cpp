@@ -1002,7 +1002,7 @@ void CalPrintPluginBase::drawDayBox(QPainter &p,
                           "%1, %2 %3",
                           QLocale::system().dayName(qd.dayOfWeek()),
                           QLocale::system().monthName(qd.month(), QLocale::ShortFormat),
-                          QString::number(qd.day()));
+                          QString::number(qd.day())); // krazy:exclude=i18ncheckarg
     } else {
         dayNumStr = QString::number(qd.day());
     }
