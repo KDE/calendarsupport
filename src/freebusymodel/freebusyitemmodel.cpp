@@ -17,6 +17,8 @@
 using namespace Qt::Literals::StringLiterals;
 using namespace CalendarSupport;
 
+namespace
+{
 class ItemPrivateData
 {
 public:
@@ -67,6 +69,7 @@ private:
     QList<ItemPrivateData *> childItems;
     ItemPrivateData *parentItem = nullptr;
 };
+}
 
 class CalendarSupport::FreeBusyItemModelPrivate
 {
