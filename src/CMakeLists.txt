@@ -26,13 +26,13 @@ target_sources(
         printing/calprinter.cpp
         printing/journalprint.cpp
         printing/yearprint.cpp
-        next/incidenceviewer.cpp
+        incidenceviewer.cpp
         freebusymodel/freeperiodmodel.cpp
         freebusymodel/freebusyitem.cpp
         freebusymodel/freebusyitemmodel.cpp
         freebusymodel/freebusycalendar.cpp
-        next/incidenceviewer.h
-        next/incidenceviewer_p.h
+        incidenceviewer.h
+        incidenceviewer_p.h
         categoryhierarchyreader.h
         calendarsingleton.h
         utils.h
@@ -146,6 +146,7 @@ ecm_generate_headers(CalendarSupport_CamelCase_HEADERS
   CollectionSelection
   KCalPrefs
   IdentityManager
+  IncidenceViewer
   EventArchiver
   CategoryHierarchyReader
   CalendarSingleton
@@ -165,14 +166,6 @@ ecm_generate_headers(CalendarSupport_CamelCaseprinter_HEADERS
   RELATIVE printing
 )
 
-ecm_generate_headers(CalendarSupport_CamelCasenext_HEADERS
-  HEADER_NAMES
-  IncidenceViewer
-  REQUIRED_HEADERS CalendarSupport_next_HEADERS
-  PREFIX CalendarSupport
-  RELATIVE next
-)
-
 ecm_generate_headers(CalendarSupport_CamelCasefreebusy_HEADERS
   HEADER_NAMES
   FreeBusyItem
@@ -188,7 +181,6 @@ install(
     FILES
         ${CalendarSupport_CamelCase_HEADERS}
         ${CalendarSupport_CamelCaseprinter_HEADERS}
-        ${CalendarSupport_CamelCasenext_HEADERS}
         ${CalendarSupport_CamelCasefreebusy_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/CalendarSupport
     COMPONENT Devel
@@ -205,7 +197,6 @@ install(
         ${CMAKE_CURRENT_BINARY_DIR}/kcalprefs_base.h
         ${CalendarSupport_HEADERS}
         ${CalendarSupport_printer_HEADERS}
-        ${CalendarSupport_next_HEADERS}
         ${CalendarSupport_freebusy_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/calendarsupport
     COMPONENT Devel
@@ -234,7 +225,6 @@ ecm_installed_library_check_include_strings(KPim6CalendarSupport
     ${CMAKE_CURRENT_BINARY_DIR}/kcalprefs_base.h
     ${CalendarSupport_HEADERS}
     ${CalendarSupport_printer_HEADERS}
-    ${CalendarSupport_next_HEADERS}
     ${CalendarSupport_freebusy_HEADERS}
     PREFIX calendarsupport
 )
@@ -243,7 +233,6 @@ ecm_installed_library_check_include_strings(KPim6CalendarSupport
     HEADERS
     ${CalendarSupport_CamelCase_HEADERS}
     ${CalendarSupport_CamelCaseprinter_HEADERS}
-    ${CalendarSupport_CamelCasenext_HEADERS}
     ${CalendarSupport_CamelCasefreebusy_HEADERS}
     PREFIX CalendarSupport
 )
