@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 00:53+0000\n"
+"POT-Creation-Date: 2026-10-22 00:51+0000\n"
 "PO-Revision-Date: 2013-02-13 17:42+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -300,12 +300,13 @@ msgstr "जोडपत्रे/पुरवण्या नाहीत"
 msgid "<placeholder>undefined</placeholder>"
 msgstr ""
 
-#: eventarchiver.cpp:128
+#: eventarchiver.cpp:127
 #, kde-format
+msgctxt "@info"
 msgid "There are no items before %1"
 msgstr ""
 
-#: eventarchiver.cpp:129
+#: eventarchiver.cpp:128
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "&Archive"
@@ -315,6 +316,7 @@ msgstr "संग्रह (&A)"
 
 #: eventarchiver.cpp:159
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
@@ -327,25 +329,32 @@ msgid "Delete Old Items"
 msgstr ""
 
 #: eventarchiver.cpp:276
-#, kde-format
-msgctxt "save failure cause unknown"
+#, fuzzy, kde-format
+#| msgctxt "save failure cause unknown"
+#| msgid "Reason unknown"
+msgctxt "@info save failure cause unknown"
 msgid "Reason unknown"
 msgstr "कारण माहित नाही"
 
 #: eventarchiver.cpp:278
 #, kde-format
+msgctxt "@info"
 msgid "Cannot write archive file %1. %2"
 msgstr ""
 
 #: eventarchiver.cpp:289
 #, kde-format
+msgctxt "@info"
 msgid "Cannot write archive. %1"
 msgstr ""
 
 #: eventarchiver.cpp:298
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "&Archive"
+msgctxt "@info/plain"
 msgid "Archiving events"
-msgstr ""
+msgstr "संग्रह (&A)"
 
 #: freebusymodel/freebusycalendar.cpp:110
 #, kde-format
@@ -374,7 +383,7 @@ msgstr ""
 msgid "Unknown"
 msgstr "अपरिचीत"
 
-#: freebusymodel/freebusyitemmodel.cpp:212
+#: freebusymodel/freebusyitemmodel.cpp:215
 #, fuzzy, kde-format
 #| msgid "&Attendees"
 msgid "Attendee"
@@ -436,12 +445,12 @@ msgctxt "@info:tooltip period duration"
 msgid "Duration:"
 msgstr "शिक्षण"
 
-#: incidenceformatter.cpp:282
+#: incidenceformatter.cpp:296
 #, kde-format
 msgid "Show mail"
 msgstr ""
 
-#: incidenceformatter.cpp:538
+#: incidenceformatter.cpp:550
 #, kde-format
 msgctxt "hours part of duration"
 msgid "1 hour "
@@ -449,7 +458,7 @@ msgid_plural "%1 hours "
 msgstr[0] ""
 msgstr[1] ""
 
-#: incidenceformatter.cpp:542
+#: incidenceformatter.cpp:554
 #, kde-format
 msgctxt "minutes part duration"
 msgid "1 minute "
@@ -457,7 +466,7 @@ msgid_plural "%1 minutes "
 msgstr[0] ""
 msgstr[1] ""
 
-#: incidenceformatter.cpp:546
+#: incidenceformatter.cpp:558
 #, kde-format
 msgctxt "seconds part of duration"
 msgid "1 second"
@@ -465,54 +474,54 @@ msgid_plural "%1 seconds"
 msgstr[0] ""
 msgstr[1] ""
 
-#: incidenceformatter.cpp:708
+#: incidenceformatter.cpp:720
 #, kde-format
 msgctxt "Event start"
 msgid "<i>From:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:710
+#: incidenceformatter.cpp:722
 #, kde-format
 msgctxt "Event end"
 msgid "<i>To:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:712
+#: incidenceformatter.cpp:724
 #, kde-format
 msgctxt "datetime range for event"
 msgid "<i>Date:</i> %1 - %2"
 msgstr ""
 
-#: incidenceformatter.cpp:715 incidenceformatter.cpp:793
+#: incidenceformatter.cpp:727 incidenceformatter.cpp:805
 #, kde-format
 msgid "<i>Date:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:721
+#: incidenceformatter.cpp:733
 #, kde-format
 msgctxt "time for event"
 msgid "<i>Time:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:723
+#: incidenceformatter.cpp:735
 #, kde-format
 msgctxt "time range for event"
 msgid "<i>Time:</i> %1 - %2"
 msgstr ""
 
-#: incidenceformatter.cpp:756
+#: incidenceformatter.cpp:768
 #, kde-format
 msgctxt "To-do's start date"
 msgid "<i>Start:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:759
+#: incidenceformatter.cpp:771
 #, kde-format
 msgctxt "To-do's due date"
 msgid "<i>Due:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:766
+#: incidenceformatter.cpp:778
 #, fuzzy, kde-format
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
@@ -520,34 +529,34 @@ msgctxt "To-do's priority number"
 msgid "<i>Priority:</i> %1"
 msgstr "प्राधान्यता"
 
-#: incidenceformatter.cpp:771
+#: incidenceformatter.cpp:783
 #, kde-format
 msgctxt "To-do's completed date"
 msgid "<i>Completed:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:782
+#: incidenceformatter.cpp:794
 #, kde-format
 msgctxt "To-do's percent complete:"
 msgid "<i>Percent Done:</i> %1%"
 msgstr ""
 
-#: incidenceformatter.cpp:801
+#: incidenceformatter.cpp:813
 #, kde-format
 msgid "<i>Period start:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:802
+#: incidenceformatter.cpp:814
 #, kde-format
 msgid "<i>Period end:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:827 templates/freebusy.html:5
+#: incidenceformatter.cpp:839 templates/freebusy.html:5
 #, kde-format
 msgid "Free/Busy information for %1"
 msgstr ""
 
-#: incidenceformatter.cpp:847
+#: incidenceformatter.cpp:859
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -557,95 +566,103 @@ msgctxt "attendee name (attendee status)"
 msgid "%1 (%2)"
 msgstr "%1 (%2): %3"
 
-#: incidenceformatter.cpp:849
+#: incidenceformatter.cpp:861
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgid "%1"
 msgstr "%1%"
 
-#: incidenceformatter.cpp:875 incidenceformatter.cpp:1008
+#: incidenceformatter.cpp:887 incidenceformatter.cpp:1020
 #, kde-format
 msgctxt "ellipsis"
 msgid "..."
 msgstr ""
 
-#: incidenceformatter.cpp:895
+#: incidenceformatter.cpp:907
 #, kde-format
 msgid " (delegated by %1)"
 msgstr ""
 
-#: incidenceformatter.cpp:898
+#: incidenceformatter.cpp:910
 #, kde-format
 msgid " (delegated to %1)"
 msgstr ""
 
-#: incidenceformatter.cpp:918 templates/event.html:112 templates/todo.html:93
+#: incidenceformatter.cpp:930 templates/event.html:120 templates/todo.html:98
 #, fuzzy, kde-format
 #| msgid "Organizer: "
 msgid "Organizer:"
 msgstr "आयोजक : "
 
-#: incidenceformatter.cpp:929 templates/event.html:124 templates/todo.html:105
+#: incidenceformatter.cpp:941 templates/event.html:132 templates/todo.html:110
 #, kde-format
 msgid "Chair:"
 msgstr ""
 
-#: incidenceformatter.cpp:936 templates/event.html:137 templates/todo.html:118
+#: incidenceformatter.cpp:948 templates/event.html:145 templates/todo.html:123
 #, kde-format
 msgid "Required Participants:"
 msgstr ""
 
-#: incidenceformatter.cpp:943
+#: incidenceformatter.cpp:955
 #, kde-format
 msgid "Optional Participants:"
 msgstr ""
 
-#: incidenceformatter.cpp:950 templates/event.html:163 templates/todo.html:144
+#: incidenceformatter.cpp:962 templates/event.html:171 templates/todo.html:149
 #, kde-format
 msgid "Observers:"
 msgstr ""
 
-#: incidenceformatter.cpp:972 templates/event.html:13 templates/journal.html:14
+#: incidenceformatter.cpp:984 templates/event.html:13 templates/journal.html:14
 #: templates/todo.html:14
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Calendar:"
 msgstr "दिनदर्शिका"
 
-#: incidenceformatter.cpp:980 templates/event.html:21 templates/todo.html:22
+#: incidenceformatter.cpp:992 templates/event.html:21 templates/todo.html:22
 #, fuzzy, kde-format
 #| msgctxt "incidence category"
 #| msgid "Education"
 msgid "Location:"
 msgstr "शिक्षण"
 
-#: incidenceformatter.cpp:987 templates/event.html:60 templates/todo.html:54
+#: incidenceformatter.cpp:999 templates/event.html:60 templates/todo.html:54
 #, fuzzy, kde-format
 #| msgctxt "incidence category"
 #| msgid "Education"
 msgid "Duration:"
 msgstr "शिक्षण"
 
-#: incidenceformatter.cpp:993 incidenceformatter.cpp:999
+#: incidenceformatter.cpp:1005 incidenceformatter.cpp:1011
 #: templates/event.html:68 templates/todo.html:62
 #, kde-format
 msgid "Recurrence:"
 msgstr ""
 
-#: incidenceformatter.cpp:1000 templates/todo.html:64
+#: incidenceformatter.cpp:1012 templates/todo.html:64
 #, fuzzy, kde-format
 #| msgctxt "incidence category"
 #| msgid "Education"
 msgid "Exception"
 msgstr "शिक्षण"
 
-#: incidenceformatter.cpp:1016 printing/calprintdefaultplugins.cpp:439
+#: incidenceformatter.cpp:1028 printing/calprintdefaultplugins.cpp:439
 #: templates/event.html:96 templates/journal.html:30 templates/todo.html:74
 #, kde-format
 msgid "Description:"
 msgstr "वर्णन :"
 
-#: incidenceformatter.cpp:1030 templates/event.html:104 templates/todo.html:85
+#: incidenceformatter.cpp:1035 templates/event.html:104
+#: templates/journal.html:38 templates/todo.html:82
+#, kde-format
+msgid "Comment:"
+msgid_plural "Comments:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: incidenceformatter.cpp:1054 templates/event.html:112 templates/todo.html:90
 #, fuzzy, kde-format
 #| msgid "No reminders"
 msgid "Reminder:"
@@ -653,42 +670,42 @@ msgid_plural "Reminders:"
 msgstr[0] "आठवण देणारे नाहीत"
 msgstr[1] "आठवण देणारे नाहीत"
 
-#: incidenceformatter.cpp:1058 templates/event.html:176
-#: templates/journal.html:38 templates/todo.html:157
+#: incidenceformatter.cpp:1082 templates/event.html:184
+#: templates/journal.html:46 templates/todo.html:162
 #, kde-format
 msgid "Tag:"
 msgid_plural "Tags:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: incidenceformatter.cpp:1097 incidenceformatter.cpp:1123
-#: incidenceformatter.cpp:1135 printing/calprintdefaultplugins.cpp:349
+#: incidenceformatter.cpp:1121 incidenceformatter.cpp:1147
+#: incidenceformatter.cpp:1159 printing/calprintdefaultplugins.cpp:349
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: incidenceformatter.cpp:1103 printing/calprintdefaultplugins.cpp:352
+#: incidenceformatter.cpp:1127 printing/calprintdefaultplugins.cpp:352
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: incidenceformatter.cpp:1109 printing/calprintdefaultplugins.cpp:355
+#: incidenceformatter.cpp:1133 printing/calprintdefaultplugins.cpp:355
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: incidenceformatter.cpp:1126
+#: incidenceformatter.cpp:1150
 #, kde-format
 msgid "forever"
 msgstr ""
 
-#: incidenceformatter.cpp:1168
+#: incidenceformatter.cpp:1192
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 before the start"
@@ -696,7 +713,7 @@ msgctxt "N days/hours/minutes before the start datetime"
 msgid "%1 before the start"
 msgstr "%1 सुरवात करण्याआधी"
 
-#: incidenceformatter.cpp:1170
+#: incidenceformatter.cpp:1194
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 after the start"
@@ -704,7 +721,7 @@ msgctxt "N days/hours/minutes after the start datetime"
 msgid "%1 after the start"
 msgstr "%1 सुरवात केल्यानंतर"
 
-#: incidenceformatter.cpp:1181
+#: incidenceformatter.cpp:1205
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 before the end"
@@ -712,7 +729,7 @@ msgctxt "N days/hours/minutes before the due datetime"
 msgid "%1 before the to-do is due"
 msgstr "%1 संपण्याआधी"
 
-#: incidenceformatter.cpp:1183
+#: incidenceformatter.cpp:1207
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 before the end"
@@ -720,7 +737,7 @@ msgctxt "N days/hours/minutes before the end datetime"
 msgid "%1 before the end"
 msgstr "%1 संपण्याआधी"
 
-#: incidenceformatter.cpp:1187
+#: incidenceformatter.cpp:1211
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 after the end"
@@ -728,7 +745,7 @@ msgctxt "N days/hours/minutes after the due datetime"
 msgid "%1 after the to-do is due"
 msgstr "%1 संपल्यानंतर "
 
-#: incidenceformatter.cpp:1189
+#: incidenceformatter.cpp:1213
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 after the end"
@@ -736,13 +753,13 @@ msgctxt "N days/hours/minutes after the end datetime"
 msgid "%1 after the end"
 msgstr "%1 संपल्यानंतर "
 
-#: incidenceformatter.cpp:1207
+#: incidenceformatter.cpp:1231
 #, kde-format
 msgctxt "reminder occurs at datetime"
 msgid "at %1"
 msgstr ""
 
-#: incidenceformatter.cpp:1214
+#: incidenceformatter.cpp:1238
 #, fuzzy, kde-format
 #| msgid "Repeats: "
 msgid "repeats once"
@@ -750,13 +767,13 @@ msgid_plural "repeats %1 times"
 msgstr[0] "पुनरावृत्ती : "
 msgstr[1] "पुनरावृत्ती : "
 
-#: incidenceformatter.cpp:1215
+#: incidenceformatter.cpp:1239
 #, kde-format
 msgctxt "interval is N days/hours/minutes"
 msgid "interval is %1"
 msgstr ""
 
-#: incidenceformatter.cpp:1216
+#: incidenceformatter.cpp:1240
 #, fuzzy, kde-format
 #| msgctxt "summary, location"
 #| msgid "%1, %2"
@@ -764,19 +781,19 @@ msgctxt "(repeat string, interval string)"
 msgid "(%1, %2)"
 msgstr "%1, %2"
 
-#: incidenceformatter.cpp:1221
+#: incidenceformatter.cpp:1245
 #, kde-format
 msgctxt "alarm is disabled"
 msgid "disabled"
 msgstr ""
 
-#: incidenceformatter.cpp:1225
+#: incidenceformatter.cpp:1249
 #, kde-format
 msgctxt "alarm will play a sound"
 msgid "audio"
 msgstr ""
 
-#: incidenceformatter.cpp:1228
+#: incidenceformatter.cpp:1252
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -2238,7 +2255,7 @@ msgid "To-do list"
 msgstr "कार्य यादी"
 
 #: printing/calprintdefaultplugins.cpp:1616
-#: printing/calprintpluginbase.cpp:1724 templates/todo.html:179
+#: printing/calprintpluginbase.cpp:1724 templates/todo.html:184
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -3286,11 +3303,11 @@ msgstr "वाढदिवस"
 msgid "Anniversary:"
 msgstr ""
 
-#: templates/event.html:150 templates/todo.html:131
+#: templates/event.html:158 templates/todo.html:136
 msgid "Optional participants:"
 msgstr ""
 
-#: templates/event.html:184 templates/todo.html:186
+#: templates/event.html:192 templates/todo.html:191
 #, fuzzy
 #| msgid "Attach&ments"
 msgid "Attachment:"
@@ -3298,21 +3315,21 @@ msgid_plural "Attachments:"
 msgstr[0] "पुरवण्या (&M)"
 msgstr[1] "पुरवण्या (&M)"
 
-#: templates/event.html:197 templates/journal.html:47 templates/todo.html:200
+#: templates/event.html:205 templates/journal.html:55 templates/todo.html:205
 #, fuzzy, kde-format
 #| msgctxt "print date: formatted-datetime"
 #| msgid "printed: %1"
 msgid "Created: %1"
 msgstr "छापले: %1"
 
-#: templates/event.html:198 templates/journal.html:48 templates/todo.html:201
+#: templates/event.html:206 templates/journal.html:56 templates/todo.html:206
 #, fuzzy, kde-format
 #| msgctxt "print date: formatted-datetime"
 #| msgid "printed: %1"
 msgid "Modified: %1"
 msgstr "छापले: %1"
 
-#: templates/event.html:199 templates/journal.html:49 templates/todo.html:202
+#: templates/event.html:207 templates/journal.html:57 templates/todo.html:207
 #, fuzzy, kde-format
 #| msgid "Person: %1"
 msgid "Revision: %1"
@@ -3385,14 +3402,14 @@ msgctxt "to-do due date/time"
 msgid "Due:"
 msgstr ""
 
-#: templates/todo.html:165
+#: templates/todo.html:170
 #, fuzzy
 #| msgctxt "@title:column todo item priority"
 #| msgid "Priority"
 msgid "Priority:"
 msgstr "प्राधान्यता"
 
-#: templates/todo.html:173
+#: templates/todo.html:178
 #, fuzzy
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -3400,7 +3417,7 @@ msgctxt "Completed: date"
 msgid "Completed:"
 msgstr "पूर्ण"
 
-#: templates/todo.html:178
+#: templates/todo.html:183
 #, fuzzy
 #| msgctxt "@title:column todo item completion in percent"
 #| msgid "Complete"
@@ -3527,14 +3544,14 @@ msgstr "काही नाही"
 msgid "Blocked Reminders:"
 msgstr "आठवण देणारे नाहीत"
 
-#: utils.cpp:492
+#: utils.cpp:493
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "search pattern for holidayname"
 msgid "^%1"
 msgstr "%1%"
 
-#: utils.cpp:494
+#: utils.cpp:495
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Formatting of an attendee: 'Name (Role): Status', e.g. 'Reinhold "
@@ -3543,7 +3560,7 @@ msgstr "%1%"
 msgid "%1 (%2)"
 msgstr "%1 (%2): %3"
 
-#: utils.cpp:499
+#: utils.cpp:500
 #, kde-format
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
