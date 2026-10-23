@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-22 00:51+0000\n"
-"PO-Revision-Date: 2026-10-15 20:47+0300\n"
+"PO-Revision-Date: 2026-10-22 19:32+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -343,8 +343,7 @@ msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>tanımlanmamış</placeholder>"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgid "There are no items before %1"
+#, kde-format
 msgctxt "@info"
 msgid "There are no items before %1"
 msgstr "%1 tarihinden önce öge yok"
@@ -356,10 +355,7 @@ msgid "Archive"
 msgstr "Arşiv"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid ""
-#| "Delete all items before %1 without saving?\n"
-#| "The following items will be deleted:"
+#, kde-format
 msgctxt "@info"
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -375,30 +371,25 @@ msgid "Delete Old Items"
 msgstr "Eski Ögeleri Sil"
 
 #: eventarchiver.cpp:276
-#, fuzzy, kde-format
-#| msgctxt "save failure cause unknown"
-#| msgid "Reason unknown"
+#, kde-format
 msgctxt "@info save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Nedeni bilinmiyor"
 
 #: eventarchiver.cpp:278
-#, fuzzy, kde-format
-#| msgid "Cannot write archive file %1. %2"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive file %1. %2"
 msgstr "%1 arşiv dosyasına yazılamıyor. %2"
 
 #: eventarchiver.cpp:289
-#, fuzzy, kde-format
-#| msgid "Cannot write archive. %1"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive. %1"
 msgstr "Arşive yazılamıyor. %1"
 
 #: eventarchiver.cpp:298
-#, fuzzy, kde-format
-#| msgid "Archiving events"
+#, kde-format
 msgctxt "@info/plain"
 msgid "Archiving events"
 msgstr "Etkinlikler arşivleniyor"
@@ -679,8 +670,8 @@ msgstr "Açıklama:"
 #, kde-format
 msgid "Comment:"
 msgid_plural "Comments:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Yorum:"
+msgstr[1] "Yorumlar:"
 
 #: incidenceformatter.cpp:1054 templates/event.html:112 templates/todo.html:90
 #, kde-format

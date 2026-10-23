@@ -343,7 +343,7 @@ msgstr "<placeholder>недефинирани</placeholder>"
 #| msgid "There are no items before %1"
 msgctxt "@info"
 msgid "There are no items before %1"
-msgstr "Няма събития преди %1"
+msgstr "Няма елементи преди %1"
 
 #: eventarchiver.cpp:128
 #, kde-format
@@ -361,8 +361,8 @@ msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
-"Изтриване на всички събития преди %1 без да бъдат записани?\n"
-"Ще бъдат изтрити следните събития:"
+"Изтриване на всички елементи преди %1 без запис?\n"
+"Следните елементи ще бъдат изтрити:"
 
 #: eventarchiver.cpp:163
 #, kde-format
@@ -383,21 +383,21 @@ msgstr "Неизвестна причина"
 #| msgid "Cannot write archive file %1. %2"
 msgctxt "@info"
 msgid "Cannot write archive file %1. %2"
-msgstr "Не може да се запише архивен файл %1. %2"
+msgstr "Грешка при запис на архивния файл %1. %2"
 
 #: eventarchiver.cpp:289
 #, fuzzy, kde-format
 #| msgid "Cannot write archive. %1"
 msgctxt "@info"
 msgid "Cannot write archive. %1"
-msgstr "Не може да се запише архив. %1"
+msgstr "Грешка при запис на архива. %1"
 
 #: eventarchiver.cpp:298
 #, fuzzy, kde-format
 #| msgid "Archiving events"
 msgctxt "@info/plain"
 msgid "Archiving events"
-msgstr "Архивиране на събитие"
+msgstr "Архивиране на събития"
 
 #: freebusymodel/freebusycalendar.cpp:110
 #, kde-format
@@ -672,11 +672,11 @@ msgstr "Описание:"
 
 #: incidenceformatter.cpp:1035 templates/event.html:104
 #: templates/journal.html:38 templates/todo.html:82
-#, kde-format
+#, fuzzy, kde-format
 msgid "Comment:"
 msgid_plural "Comments:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Коментар:"
+msgstr[1] "Коментари:"
 
 #: incidenceformatter.cpp:1054 templates/event.html:112 templates/todo.html:90
 #, kde-format

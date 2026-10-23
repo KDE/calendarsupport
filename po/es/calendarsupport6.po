@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-22 00:51+0000\n"
-"PO-Revision-Date: 2026-10-15 21:04+0100\n"
+"PO-Revision-Date: 2026-10-22 17:22+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -341,8 +341,7 @@ msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>no definido</placeholder>"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgid "There are no items before %1"
+#, kde-format
 msgctxt "@info"
 msgid "There are no items before %1"
 msgstr "No hay elementos antes de %1"
@@ -354,10 +353,7 @@ msgid "Archive"
 msgstr "Archivar"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid ""
-#| "Delete all items before %1 without saving?\n"
-#| "The following items will be deleted:"
+#, kde-format
 msgctxt "@info"
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -373,30 +369,25 @@ msgid "Delete Old Items"
 msgstr "Borrar elementos antiguos"
 
 #: eventarchiver.cpp:276
-#, fuzzy, kde-format
-#| msgctxt "save failure cause unknown"
-#| msgid "Reason unknown"
+#, kde-format
 msgctxt "@info save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Motivo desconocido"
 
 #: eventarchiver.cpp:278
-#, fuzzy, kde-format
-#| msgid "Cannot write archive file %1. %2"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive file %1. %2"
 msgstr "No se puede grabar al archivo comprimido %1. %2"
 
 #: eventarchiver.cpp:289
-#, fuzzy, kde-format
-#| msgid "Cannot write archive. %1"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive. %1"
 msgstr "No se puede grabar el archivo comprimido. %1"
 
 #: eventarchiver.cpp:298
-#, fuzzy, kde-format
-#| msgid "Archiving events"
+#, kde-format
 msgctxt "@info/plain"
 msgid "Archiving events"
 msgstr "Archivado de eventos"
@@ -677,8 +668,8 @@ msgstr "Descripción:"
 #, kde-format
 msgid "Comment:"
 msgid_plural "Comments:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Comentario:"
+msgstr[1] "Comentarios:"
 
 #: incidenceformatter.cpp:1054 templates/event.html:112 templates/todo.html:90
 #, kde-format

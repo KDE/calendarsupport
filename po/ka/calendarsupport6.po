@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-22 00:51+0000\n"
-"PO-Revision-Date: 2026-10-15 04:40+0200\n"
+"PO-Revision-Date: 2026-10-22 06:24+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -339,8 +339,7 @@ msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>აღუწერელი</placeholder>"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgid "There are no items before %1"
+#, kde-format
 msgctxt "@info"
 msgid "There are no items before %1"
 msgstr "%1-მდე ელემენტები არ არსებობს"
@@ -352,17 +351,14 @@ msgid "Archive"
 msgstr "არქივი"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid ""
-#| "Delete all items before %1 without saving?\n"
-#| "The following items will be deleted:"
+#, kde-format
 msgctxt "@info"
 msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
-"წავშალო ყველა ჩანაწერი %1-მდე შენახვის გარეშე?\n"
-"წაიშლება შემდეგი ჩანაწერები:"
+"წავშალო ყველა ელემენტი %1-მდე შენახვის გარეშე?\n"
+"წაიშლება შემდეგი ელემენტები:"
 
 #: eventarchiver.cpp:163
 #, kde-format
@@ -371,30 +367,25 @@ msgid "Delete Old Items"
 msgstr "ძველი ჩანაწერების წაშლა"
 
 #: eventarchiver.cpp:276
-#, fuzzy, kde-format
-#| msgctxt "save failure cause unknown"
-#| msgid "Reason unknown"
+#, kde-format
 msgctxt "@info save failure cause unknown"
 msgid "Reason unknown"
 msgstr "უცნობი მიზეზი"
 
 #: eventarchiver.cpp:278
-#, fuzzy, kde-format
-#| msgid "Cannot write archive file %1. %2"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive file %1. %2"
 msgstr "აქტივის ფაილის (%1) ჩაწერის შეცდომა: %2"
 
 #: eventarchiver.cpp:289
-#, fuzzy, kde-format
-#| msgid "Cannot write archive. %1"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive. %1"
 msgstr "არქივის ჩაწერის შეცდომა. %1"
 
 #: eventarchiver.cpp:298
-#, fuzzy, kde-format
-#| msgid "Archiving events"
+#, kde-format
 msgctxt "@info/plain"
 msgid "Archiving events"
 msgstr "მოვლენების დაარქივება"
@@ -675,8 +666,8 @@ msgstr "აღწერილობა:"
 #, kde-format
 msgid "Comment:"
 msgid_plural "Comments:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "კომენტარი:"
+msgstr[1] "კომენტარები:"
 
 #: incidenceformatter.cpp:1054 templates/event.html:112 templates/todo.html:90
 #, kde-format
@@ -3325,7 +3316,7 @@ msgstr "აირჩიეთ კალენდარი"
 #: utils.cpp:248
 #, kde-format
 msgid "Select the calendar where this item will be stored."
-msgstr "აირჩიეთ კალენდარი, სადაც ახალი ჩანაწერი იქნება დამახსოვრებული."
+msgstr "აირჩიეთ კალენდარი, სადაც ახალი ელემენტი იქნება დამახსოვრებული."
 
 #: utils.cpp:352
 #, kde-format
