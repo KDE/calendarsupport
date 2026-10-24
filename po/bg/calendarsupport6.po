@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-22 00:51+0000\n"
-"PO-Revision-Date: 2026-10-19 16:24+0200\n"
+"PO-Revision-Date: 2026-10-23 08:05+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -339,8 +339,7 @@ msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>недефинирани</placeholder>"
 
 #: eventarchiver.cpp:127
-#, fuzzy, kde-format
-#| msgid "There are no items before %1"
+#, kde-format
 msgctxt "@info"
 msgid "There are no items before %1"
 msgstr "Няма елементи преди %1"
@@ -352,10 +351,7 @@ msgid "Archive"
 msgstr "Архивиране"
 
 #: eventarchiver.cpp:159
-#, fuzzy, kde-format
-#| msgid ""
-#| "Delete all items before %1 without saving?\n"
-#| "The following items will be deleted:"
+#, kde-format
 msgctxt "@info"
 msgid ""
 "Delete all items before %1 without saving?\n"
@@ -371,30 +367,25 @@ msgid "Delete Old Items"
 msgstr "Изтриване на старите елементи"
 
 #: eventarchiver.cpp:276
-#, fuzzy, kde-format
-#| msgctxt "save failure cause unknown"
-#| msgid "Reason unknown"
+#, kde-format
 msgctxt "@info save failure cause unknown"
 msgid "Reason unknown"
 msgstr "Неизвестна причина"
 
 #: eventarchiver.cpp:278
-#, fuzzy, kde-format
-#| msgid "Cannot write archive file %1. %2"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive file %1. %2"
 msgstr "Грешка при запис на архивния файл %1. %2"
 
 #: eventarchiver.cpp:289
-#, fuzzy, kde-format
-#| msgid "Cannot write archive. %1"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive. %1"
 msgstr "Грешка при запис на архива. %1"
 
 #: eventarchiver.cpp:298
-#, fuzzy, kde-format
-#| msgid "Archiving events"
+#, kde-format
 msgctxt "@info/plain"
 msgid "Archiving events"
 msgstr "Архивиране на събития"
@@ -672,7 +663,7 @@ msgstr "Описание:"
 
 #: incidenceformatter.cpp:1035 templates/event.html:104
 #: templates/journal.html:38 templates/todo.html:82
-#, fuzzy, kde-format
+#, kde-format
 msgid "Comment:"
 msgid_plural "Comments:"
 msgstr[0] "Коментар:"

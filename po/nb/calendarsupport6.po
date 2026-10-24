@@ -3306,10 +3306,8 @@ msgid "Incidence is read only"
 msgstr ""
 
 #: templates/journal.html:5
-#, fuzzy
-#| msgid "Journal entries"
 msgid "Journal"
-msgstr "Dagboknotiser"
+msgstr "Journal"
 
 #: templates/todo.html:5
 msgid "Todo"
