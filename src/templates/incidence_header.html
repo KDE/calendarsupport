@@ -21,6 +21,9 @@
         {% endspaceless %}
         <td>
             <b><u>{{ incidence.summary|safe }}</u></b>
+             {% if incidence.summaryurl %}
+               <a href="{{ incidence.summaryurl }}">More Info</a>
+            {% endif %}
         </td>
     </tr>
 </table>

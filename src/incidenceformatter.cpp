@@ -256,6 +256,16 @@ static QString cleanHtml(const QString &html)
     return commentsData;
 }
 
+[[nodiscard]] static QString UrlUrl(const Incidence::Ptr &incidence)
+{
+    QString urlData;
+    const QUrl urlUrl(incidence->url());
+    if (urlUrl.isValid()) {
+        urlData = urlUrl.url();
+    }
+    return urlData;
+}
+
 [[nodiscard]] static QString GEOUrl(const Incidence::Ptr &incidence)
 {
     QUrl geoUrl;
@@ -393,6 +403,7 @@ static QString cleanHtml(const QString &html)
     incidenceData[QStringLiteral("recurs")] = incidence->recurs();
     incidenceData[QStringLiteral("isReadOnly")] = incidence->isReadOnly();
     incidenceData[QStringLiteral("summary")] = incidence->summary();
+    incidenceData[QStringLiteral("summaryurl")] = UrlUrl(incidence);
     incidenceData[QStringLiteral("allDay")] = incidence->allDay();
 
     return incidenceData;
