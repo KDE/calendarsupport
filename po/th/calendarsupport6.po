@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-22 00:51+0000\n"
+"POT-Creation-Date: 2026-10-26 00:50+0000\n"
 "PO-Revision-Date: 2008-07-21 16:18+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -526,13 +526,21 @@ msgctxt "@info:tooltip period duration"
 msgid "Duration:"
 msgstr "ช่วงเวลา: "
 
-#: incidenceformatter.cpp:296
+#: incidenceformatter.cpp:283
+#, fuzzy, kde-format
+#| msgctxt "monthname year"
+#| msgid "%1 %2"
+msgctxt "latitude longitude"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: incidenceformatter.cpp:343
 #, fuzzy, kde-format
 #| msgid "New &Journal..."
 msgid "Show mail"
 msgstr "บันทึกประจำวันใหม่..."
 
-#: incidenceformatter.cpp:550
+#: incidenceformatter.cpp:595
 #, fuzzy, kde-format
 #| msgid "1 hour "
 #| msgid_plural "%1 hours "
@@ -541,7 +549,7 @@ msgid "1 hour "
 msgid_plural "%1 hours "
 msgstr[0] "%1 ชั่วโมง"
 
-#: incidenceformatter.cpp:554
+#: incidenceformatter.cpp:599
 #, fuzzy, kde-format
 #| msgid "1 minute "
 #| msgid_plural "%1 minutes "
@@ -550,49 +558,49 @@ msgid "1 minute "
 msgid_plural "%1 minutes "
 msgstr[0] "%1 นาที"
 
-#: incidenceformatter.cpp:558
+#: incidenceformatter.cpp:603
 #, kde-format
 msgctxt "seconds part of duration"
 msgid "1 second"
 msgid_plural "%1 seconds"
 msgstr[0] ""
 
-#: incidenceformatter.cpp:720
+#: incidenceformatter.cpp:765
 #, kde-format
 msgctxt "Event start"
 msgid "<i>From:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:722
+#: incidenceformatter.cpp:767
 #, kde-format
 msgctxt "Event end"
 msgid "<i>To:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:724
+#: incidenceformatter.cpp:769
 #, kde-format
 msgctxt "datetime range for event"
 msgid "<i>Date:</i> %1 - %2"
 msgstr ""
 
-#: incidenceformatter.cpp:727 incidenceformatter.cpp:805
+#: incidenceformatter.cpp:772 incidenceformatter.cpp:850
 #, kde-format
 msgid "<i>Date:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:733
+#: incidenceformatter.cpp:778
 #, kde-format
 msgctxt "time for event"
 msgid "<i>Time:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:735
+#: incidenceformatter.cpp:780
 #, kde-format
 msgctxt "time range for event"
 msgid "<i>Time:</i> %1 - %2"
 msgstr ""
 
-#: incidenceformatter.cpp:768
+#: incidenceformatter.cpp:813
 #, fuzzy, kde-format
 #| msgctxt "to-do start datetime"
 #| msgid "Start: %1"
@@ -600,20 +608,20 @@ msgctxt "To-do's start date"
 msgid "<i>Start:</i> %1"
 msgstr "เริ่ม: %1"
 
-#: incidenceformatter.cpp:771
+#: incidenceformatter.cpp:816
 #, kde-format
 msgctxt "To-do's due date"
 msgid "<i>Due:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:778
+#: incidenceformatter.cpp:823
 #, fuzzy, kde-format
 #| msgid "&Priority:"
 msgctxt "To-do's priority number"
 msgid "<i>Priority:</i> %1"
 msgstr "ความสำคัญ:"
 
-#: incidenceformatter.cpp:783
+#: incidenceformatter.cpp:828
 #, fuzzy, kde-format
 #| msgctxt "@title:column percent complete"
 #| msgid "Complete"
@@ -621,29 +629,29 @@ msgctxt "To-do's completed date"
 msgid "<i>Completed:</i> %1"
 msgstr "เสร็จสมบูรณ์"
 
-#: incidenceformatter.cpp:794
+#: incidenceformatter.cpp:839
 #, kde-format
 msgctxt "To-do's percent complete:"
 msgid "<i>Percent Done:</i> %1%"
 msgstr ""
 
-#: incidenceformatter.cpp:813
+#: incidenceformatter.cpp:858
 #, kde-format
 msgid "<i>Period start:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:814
+#: incidenceformatter.cpp:859
 #, kde-format
 msgid "<i>Period end:</i> %1"
 msgstr ""
 
-#: incidenceformatter.cpp:839 templates/freebusy.html:5
+#: incidenceformatter.cpp:884 templates/freebusy.html:5
 #, fuzzy, kde-format
 #| msgid "days of free/busy information"
 msgid "Free/Busy information for %1"
 msgstr "วัน ของข้อมูลการว่าง/ไม่ว่าง"
 
-#: incidenceformatter.cpp:859
+#: incidenceformatter.cpp:904
 #, fuzzy, kde-format
 #| msgctxt "weekOfYear (year)"
 #| msgid "%1 (%2)"
@@ -651,147 +659,152 @@ msgctxt "attendee name (attendee status)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: incidenceformatter.cpp:861
+#: incidenceformatter.cpp:906
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgid "%1"
 msgstr "%1%"
 
-#: incidenceformatter.cpp:887 incidenceformatter.cpp:1020
+#: incidenceformatter.cpp:932 incidenceformatter.cpp:1071
 #, fuzzy, kde-format
 #| msgid "Edit..."
 msgctxt "ellipsis"
 msgid "..."
 msgstr "แก้ไข..."
 
-#: incidenceformatter.cpp:907
+#: incidenceformatter.cpp:952
 #, fuzzy, kde-format
 #| msgid "Delegated to %1"
 msgid " (delegated by %1)"
 msgstr "มอบหมายหน้าที่ให้ %1"
 
-#: incidenceformatter.cpp:910
+#: incidenceformatter.cpp:955
 #, fuzzy, kde-format
 #| msgid "Delegated to %1"
 msgid " (delegated to %1)"
 msgstr "มอบหมายหน้าที่ให้ %1"
 
-#: incidenceformatter.cpp:930 templates/event.html:120 templates/todo.html:98
+#: incidenceformatter.cpp:975 templates/event.html:127 templates/todo.html:105
 #, fuzzy, kde-format
 #| msgid "Organizer: "
 msgid "Organizer:"
 msgstr "ผู้จัด:"
 
-#: incidenceformatter.cpp:941 templates/event.html:132 templates/todo.html:110
+#: incidenceformatter.cpp:986 templates/event.html:139 templates/todo.html:117
 #, kde-format
 msgid "Chair:"
 msgstr ""
 
-#: incidenceformatter.cpp:948 templates/event.html:145 templates/todo.html:123
+#: incidenceformatter.cpp:993 templates/event.html:152 templates/todo.html:130
 #, kde-format
 msgid "Required Participants:"
 msgstr ""
 
-#: incidenceformatter.cpp:955
+#: incidenceformatter.cpp:1000
 #, kde-format
 msgid "Optional Participants:"
 msgstr ""
 
-#: incidenceformatter.cpp:962 templates/event.html:171 templates/todo.html:149
+#: incidenceformatter.cpp:1007 templates/event.html:178 templates/todo.html:156
 #, kde-format
 msgid "Observers:"
 msgstr ""
 
-#: incidenceformatter.cpp:984 templates/event.html:13 templates/journal.html:14
-#: templates/todo.html:14
+#: incidenceformatter.cpp:1029 templates/event.html:13
+#: templates/journal.html:14 templates/todo.html:14
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgid "Calendar:"
 msgstr "ปฏิทิน"
 
-#: incidenceformatter.cpp:992 templates/event.html:21 templates/todo.html:22
+#: incidenceformatter.cpp:1037 templates/event.html:21 templates/todo.html:22
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "Location:"
 msgid "Location:"
 msgstr "ตำแหน่ง:"
 
-#: incidenceformatter.cpp:999 templates/event.html:60 templates/todo.html:54
+#: incidenceformatter.cpp:1043
+#, kde-format
+msgid "Map Coordinates:"
+msgstr ""
+
+#: incidenceformatter.cpp:1050 templates/event.html:67 templates/todo.html:61
 #, fuzzy, kde-format
 #| msgid "Duration: "
 msgid "Duration:"
 msgstr "ช่วงเวลา: "
 
-#: incidenceformatter.cpp:1005 incidenceformatter.cpp:1011
-#: templates/event.html:68 templates/todo.html:62
+#: incidenceformatter.cpp:1056 incidenceformatter.cpp:1062
+#: templates/event.html:75 templates/todo.html:69
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Recurrence"
 msgid "Recurrence:"
 msgstr "การเกิดขึ้นอีก"
 
-#: incidenceformatter.cpp:1012 templates/todo.html:64
+#: incidenceformatter.cpp:1063 templates/todo.html:71
 #, fuzzy, kde-format
 #| msgctxt "@title:group"
 #| msgid "E&xceptions"
 msgid "Exception"
 msgstr "ข้อ&ยกเว้น"
 
-#: incidenceformatter.cpp:1028 printing/calprintdefaultplugins.cpp:439
-#: templates/event.html:96 templates/journal.html:30 templates/todo.html:74
+#: incidenceformatter.cpp:1079 printing/calprintdefaultplugins.cpp:439
+#: templates/event.html:103 templates/journal.html:30 templates/todo.html:81
 #, kde-format
 msgid "Description:"
 msgstr "รายละเอียด:"
 
-#: incidenceformatter.cpp:1035 templates/event.html:104
-#: templates/journal.html:38 templates/todo.html:82
+#: incidenceformatter.cpp:1086 templates/event.html:111
+#: templates/journal.html:38 templates/todo.html:89
 #, fuzzy, kde-format
 #| msgid "Comment:<br/>%1"
 msgid "Comment:"
 msgid_plural "Comments:"
 msgstr[0] "หมายเหตุ:<br/>%1"
 
-#: incidenceformatter.cpp:1054 templates/event.html:112 templates/todo.html:90
+#: incidenceformatter.cpp:1105 templates/event.html:119 templates/todo.html:97
 #, fuzzy, kde-format
 #| msgid "Reminder:"
 msgid "Reminder:"
 msgid_plural "Reminders:"
 msgstr[0] "เตือนความจำ:"
 
-#: incidenceformatter.cpp:1082 templates/event.html:184
-#: templates/journal.html:46 templates/todo.html:162
+#: incidenceformatter.cpp:1133 templates/event.html:191
+#: templates/journal.html:46 templates/todo.html:169
 #, kde-format
 msgid "Tag:"
 msgid_plural "Tags:"
 msgstr[0] ""
 
-#: incidenceformatter.cpp:1121 incidenceformatter.cpp:1147
-#: incidenceformatter.cpp:1159 printing/calprintdefaultplugins.cpp:349
+#: incidenceformatter.cpp:1172 incidenceformatter.cpp:1198
+#: incidenceformatter.cpp:1210 printing/calprintdefaultplugins.cpp:349
 #, kde-format
 msgid "1 day"
 msgid_plural "%1 days"
 msgstr[0] "%1 วัน"
 
-#: incidenceformatter.cpp:1127 printing/calprintdefaultplugins.cpp:352
+#: incidenceformatter.cpp:1178 printing/calprintdefaultplugins.cpp:352
 #, kde-format
 msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "%1 ชั่วโมง"
 
-#: incidenceformatter.cpp:1133 printing/calprintdefaultplugins.cpp:355
+#: incidenceformatter.cpp:1184 printing/calprintdefaultplugins.cpp:355
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] "%1 นาที"
 
-#: incidenceformatter.cpp:1150
+#: incidenceformatter.cpp:1201
 #, fuzzy, kde-format
 #| msgctxt "repeat every X minutes"
 #| msgid "every "
 msgid "forever"
 msgstr "ทุก ๆ "
 
-#: incidenceformatter.cpp:1192
+#: incidenceformatter.cpp:1243
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 before the start"
@@ -799,7 +812,7 @@ msgctxt "N days/hours/minutes before the start datetime"
 msgid "%1 before the start"
 msgstr "%1 ก่อนการเริ่ม"
 
-#: incidenceformatter.cpp:1194
+#: incidenceformatter.cpp:1245
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 after the start"
@@ -807,7 +820,7 @@ msgctxt "N days/hours/minutes after the start datetime"
 msgid "%1 after the start"
 msgstr "%1 หลังการเริ่ม"
 
-#: incidenceformatter.cpp:1205
+#: incidenceformatter.cpp:1256
 #, fuzzy, kde-format
 #| msgctxt "@info N days/hours/minutes before/after the start/end"
 #| msgid "%1 before the start"
@@ -815,7 +828,7 @@ msgctxt "N days/hours/minutes before the due datetime"
 msgid "%1 before the to-do is due"
 msgstr "%1 ก่อนการเริ่ม"
 
-#: incidenceformatter.cpp:1207
+#: incidenceformatter.cpp:1258
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 before the end"
@@ -823,7 +836,7 @@ msgctxt "N days/hours/minutes before the end datetime"
 msgid "%1 before the end"
 msgstr "%1 ก่อนสิ้นสุด"
 
-#: incidenceformatter.cpp:1211
+#: incidenceformatter.cpp:1262
 #, fuzzy, kde-format
 #| msgctxt "@info N days/hours/minutes before/after the start/end"
 #| msgid "%1 after the start"
@@ -831,7 +844,7 @@ msgctxt "N days/hours/minutes after the due datetime"
 msgid "%1 after the to-do is due"
 msgstr "%1 หลังการเริ่ม"
 
-#: incidenceformatter.cpp:1213
+#: incidenceformatter.cpp:1264
 #, fuzzy, kde-format
 #| msgctxt "N days/hours/minutes before/after the start/end"
 #| msgid "%1 after the end"
@@ -839,27 +852,27 @@ msgctxt "N days/hours/minutes after the end datetime"
 msgid "%1 after the end"
 msgstr "%1 หลังสิ้นสุด"
 
-#: incidenceformatter.cpp:1231
+#: incidenceformatter.cpp:1282
 #, fuzzy, kde-format
 #| msgid "Edit %1"
 msgctxt "reminder occurs at datetime"
 msgid "at %1"
 msgstr "แก้ไข %1"
 
-#: incidenceformatter.cpp:1238
+#: incidenceformatter.cpp:1289
 #, fuzzy, kde-format
 #| msgid "Repeats: "
 msgid "repeats once"
 msgid_plural "repeats %1 times"
 msgstr[0] "การทำซ้ำ: "
 
-#: incidenceformatter.cpp:1239
+#: incidenceformatter.cpp:1290
 #, kde-format
 msgctxt "interval is N days/hours/minutes"
 msgid "interval is %1"
 msgstr ""
 
-#: incidenceformatter.cpp:1240
+#: incidenceformatter.cpp:1291
 #, fuzzy, kde-format
 #| msgctxt "monthname year"
 #| msgid "%1 %2"
@@ -867,13 +880,13 @@ msgctxt "(repeat string, interval string)"
 msgid "(%1, %2)"
 msgstr "%1 %2"
 
-#: incidenceformatter.cpp:1245
+#: incidenceformatter.cpp:1296
 #, kde-format
 msgctxt "alarm is disabled"
 msgid "disabled"
 msgstr ""
 
-#: incidenceformatter.cpp:1249
+#: incidenceformatter.cpp:1300
 #, fuzzy, kde-format
 #| msgctxt "@option play a sound"
 #| msgid "Audio"
@@ -881,7 +894,7 @@ msgctxt "alarm will play a sound"
 msgid "audio"
 msgstr "เสียง"
 
-#: incidenceformatter.cpp:1252
+#: incidenceformatter.cpp:1303
 #, fuzzy, kde-format
 #| msgctxt "weekOfYear (year)"
 #| msgid "%1 (%2)"
@@ -2341,7 +2354,7 @@ msgid "To-do list"
 msgstr "รายการสิ่งที่จะทำ"
 
 #: printing/calprintdefaultplugins.cpp:1616
-#: printing/calprintpluginbase.cpp:1724 templates/todo.html:184
+#: printing/calprintpluginbase.cpp:1724 templates/todo.html:191
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -3352,55 +3365,55 @@ msgstr "ส่งอีเมล"
 msgid "Event"
 msgstr "เหตุการณ์"
 
-#: templates/event.html:30 templates/event.html:33 templates/event.html:40
-#: templates/event.html:43 templates/journal.html:22
+#: templates/event.html:37 templates/event.html:40 templates/event.html:47
+#: templates/event.html:50 templates/journal.html:22
 #, fuzzy
 #| msgid "&Date:"
 msgid "Date:"
 msgstr "วันที่: "
 
-#: templates/event.html:31
+#: templates/event.html:38
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "<beginDate> - <endDate>"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: templates/event.html:34 templates/event.html:44
+#: templates/event.html:41 templates/event.html:51
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "Date as string"
 msgid "%1"
 msgstr "%1%"
 
-#: templates/event.html:41
+#: templates/event.html:48
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "<beginDateTime> - <endDateTime>"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: templates/event.html:47
+#: templates/event.html:54
 #, fuzzy
 #| msgid "Time"
 msgid "Time:"
 msgstr "เวลา"
 
-#: templates/event.html:49
+#: templates/event.html:56
 #, fuzzy, kde-format
 #| msgid "%1 - %2"
 msgctxt "<beginTime> - <endTime>"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: templates/event.html:51
+#: templates/event.html:58
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgctxt "Time as string"
 msgid "%1"
 msgstr "%1%"
 
-#: templates/event.html:70
+#: templates/event.html:77
 #, fuzzy
 #| msgctxt "@title:group"
 #| msgid "E&xceptions"
@@ -3408,22 +3421,22 @@ msgctxt "Exception in event recurrence"
 msgid "Exception"
 msgstr "ข้อ&ยกเว้น"
 
-#: templates/event.html:80
+#: templates/event.html:87
 #, fuzzy
 #| msgctxt "incidence category"
 #| msgid "Birthday"
 msgid "Birthday:"
 msgstr "วันเกิด"
 
-#: templates/event.html:88
+#: templates/event.html:95
 msgid "Anniversary:"
 msgstr ""
 
-#: templates/event.html:158 templates/todo.html:136
+#: templates/event.html:165 templates/todo.html:143
 msgid "Optional participants:"
 msgstr ""
 
-#: templates/event.html:192 templates/todo.html:191
+#: templates/event.html:199 templates/todo.html:198
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Attachments:"
@@ -3431,19 +3444,19 @@ msgid "Attachment:"
 msgid_plural "Attachments:"
 msgstr[0] "สิ่งที่แนบมาด้วย:"
 
-#: templates/event.html:205 templates/journal.html:55 templates/todo.html:205
+#: templates/event.html:212 templates/journal.html:55 templates/todo.html:212
 #, fuzzy, kde-format
 #| msgid "Undo: %1"
 msgid "Created: %1"
 msgstr "เลิกทำ: %1"
 
-#: templates/event.html:206 templates/journal.html:56 templates/todo.html:206
+#: templates/event.html:213 templates/journal.html:56 templates/todo.html:213
 #, fuzzy, kde-format
 #| msgid "Undo: %1"
 msgid "Modified: %1"
 msgstr "เลิกทำ: %1"
 
-#: templates/event.html:207 templates/journal.html:57 templates/todo.html:207
+#: templates/event.html:214 templates/journal.html:57 templates/todo.html:214
 #, fuzzy, kde-format
 #| msgid "Person: %1"
 msgid "Revision: %1"
@@ -3512,7 +3525,7 @@ msgstr "บันทึกประจำวัน"
 msgid "Todo"
 msgstr "มุมมองสิ่งที่จะทำ"
 
-#: templates/todo.html:30
+#: templates/todo.html:37
 #, fuzzy
 #| msgctxt "@label event start time"
 #| msgid "&Start:"
@@ -3520,7 +3533,7 @@ msgctxt "to-do start date/time"
 msgid "Start:"
 msgstr "เริ่ม:"
 
-#: templates/todo.html:42
+#: templates/todo.html:49
 #, fuzzy
 #| msgctxt "to-do due datetime"
 #| msgid "&Due:"
@@ -3528,13 +3541,13 @@ msgctxt "to-do due date/time"
 msgid "Due:"
 msgstr "ครบกำหนด:"
 
-#: templates/todo.html:170
+#: templates/todo.html:177
 #, fuzzy
 #| msgid "Priority"
 msgid "Priority:"
 msgstr "ความสำคัญ"
 
-#: templates/todo.html:178
+#: templates/todo.html:185
 #, fuzzy
 #| msgctxt "@title:column percent complete"
 #| msgid "Complete"
@@ -3542,7 +3555,7 @@ msgctxt "Completed: date"
 msgid "Completed:"
 msgstr "เสร็จสมบูรณ์"
 
-#: templates/todo.html:183
+#: templates/todo.html:190
 #, fuzzy
 #| msgid "Percent Complete"
 msgid "Percent done:"
