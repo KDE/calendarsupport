@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:50+0000\n"
-"PO-Revision-Date: 2026-10-23 08:05+0200\n"
+"PO-Revision-Date: 2026-10-26 13:51+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -468,9 +468,7 @@ msgid "Duration:"
 msgstr "Времетраене:"
 
 #: incidenceformatter.cpp:283
-#, fuzzy, kde-format
-#| msgctxt "monthname year"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "latitude longitude"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -650,7 +648,7 @@ msgstr "Местоположение:"
 #: incidenceformatter.cpp:1043
 #, kde-format
 msgid "Map Coordinates:"
-msgstr ""
+msgstr "Координати на картата:"
 
 #: incidenceformatter.cpp:1050 templates/event.html:67 templates/todo.html:61
 #, kde-format

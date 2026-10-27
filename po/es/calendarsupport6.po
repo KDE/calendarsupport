@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:50+0000\n"
-"PO-Revision-Date: 2026-10-22 17:22+0100\n"
+"PO-Revision-Date: 2026-10-26 23:43+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -470,9 +470,7 @@ msgid "Duration:"
 msgstr "Duración:"
 
 #: incidenceformatter.cpp:283
-#, fuzzy, kde-format
-#| msgctxt "monthname year"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "latitude longitude"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -652,7 +650,7 @@ msgstr "Ubicación:"
 #: incidenceformatter.cpp:1043
 #, kde-format
 msgid "Map Coordinates:"
-msgstr ""
+msgstr "Coordenadas del mapa:"
 
 #: incidenceformatter.cpp:1050 templates/event.html:67 templates/todo.html:61
 #, kde-format
