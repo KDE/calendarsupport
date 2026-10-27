@@ -1593,7 +1593,7 @@ msgstr " excepte"
 #: printing/calprintdefaultplugins.cpp:295
 #, kde-format
 msgid "Repeats: "
-msgstr "Repite: "
+msgstr "Repete: "
 
 #: printing/calprintdefaultplugins.cpp:303
 #, kde-format
