@@ -466,9 +466,7 @@ msgid "Duration:"
 msgstr "Trvanie:"
 
 #: incidenceformatter.cpp:283
-#, fuzzy, kde-format
-#| msgctxt "monthname year"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "latitude longitude"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -651,7 +649,7 @@ msgstr "Umiestnenie:"
 #: incidenceformatter.cpp:1043
 #, kde-format
 msgid "Map Coordinates:"
-msgstr ""
+msgstr "Súradnice na mape:"
 
 #: incidenceformatter.cpp:1050 templates/event.html:67 templates/todo.html:61
 #, kde-format
