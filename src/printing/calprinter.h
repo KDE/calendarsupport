@@ -71,8 +71,6 @@ private Q_SLOTS:
 
 public:
     void print(int type, QDate fd, QDate td, const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(), bool preview = false);
-    KCalendarCore::Calendar::Ptr calendar() const;
-    KConfig *config() const;
 
 protected:
     PrintPlugin::List mPrintPlugins;
