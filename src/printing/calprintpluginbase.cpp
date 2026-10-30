@@ -1165,7 +1165,7 @@ void CalPrintPluginBase::drawIncidence(QPainter &p,
 
     QString firstLine{time};
     if (!firstLine.isEmpty()) {
-        firstLine += u" "_s;
+        firstLine += u" ";
     }
     firstLine += summary;
 
