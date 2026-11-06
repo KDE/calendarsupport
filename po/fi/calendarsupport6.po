@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-26 00:50+0000\n"
-"PO-Revision-Date: 2026-08-26 12:57+0300\n"
+"PO-Revision-Date: 2026-10-05 11:44+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -1065,10 +1065,9 @@ msgstr "Päivä alkaa kello"
 
 #. i18n: ectx: tooltip, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:108
-#, fuzzy, kde-format
-#| msgid "By default, enable reminders for new events"
+#, kde-format
 msgid "Set the default starting time for new events"
-msgstr "Käytä oletusarvoisesti muistutuksia uusille tehtäville"
+msgstr "Aseta uusien tapahtumien oletusaloitusaika"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:109
@@ -3361,6 +3360,8 @@ msgid "Incidence is read only"
 msgstr ""
 
 #: templates/journal.html:5
+#, fuzzy
+#| msgid "Journal"
 msgid "Journal"
 msgstr "Päiväkirja"
 
