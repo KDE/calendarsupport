@@ -33,7 +33,9 @@
 
 #include <KLocalizedString>
 
+#include <QAbstractItemModel>
 #include <QApplication>
+#include <QDialog>
 #include <QDrag>
 #include <QFile>
 #include <QIcon>

@@ -9,10 +9,11 @@
 #include "calendarsupport_export.h"
 #include "printplugin.h"
 
-#include <QComboBox>
 #include <QDialog>
-#include <QPushButton>
+class QAbstractButton;
 class QButtonGroup;
+class QComboBox;
+class QPushButton;
 class QStackedWidget;
 
 namespace CalendarSupport

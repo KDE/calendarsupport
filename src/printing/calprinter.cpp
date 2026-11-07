@@ -18,6 +18,7 @@
 #include <KWindowStateSaver>
 
 #include <QButtonGroup>
+#include <QComboBox>
 #include <QDialogButtonBox>
 #include <QGridLayout>
 #include <QGroupBox>
@@ -25,6 +26,7 @@
 #include <QPointer>
 #include <QPrintDialog>
 #include <QPrintPreviewDialog>
+#include <QPushButton>
 #include <QRadioButton>
 #include <QSplitter>
 #include <QStackedWidget>

@@ -18,6 +18,7 @@
 #include <kcoreaddons_version.h> //remove when KF_MIN_VERSION is "6.31"
 
 #include <QDebug>
+#include <QFile>
 #include <QIcon>
 #include <QLocale>
 #include <QProcess>

@@ -12,7 +12,6 @@
 #include "freebusyitem.h"
 
 #include <QAbstractItemModel>
-#include <QTimer>
 
 #include <memory>
 

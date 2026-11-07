@@ -14,6 +14,10 @@
 #include <KCalendarCore/Todo>
 #include <KFormat>
 
+#include <kcoreaddons_version.h> // remove when KF_MIN_VERSION is "6.31"
+
+#include <QDateTime>
+#include <QLocale>
 #include <QRegularExpression>
 #include <QTest>
 

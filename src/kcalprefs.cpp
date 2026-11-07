@@ -7,7 +7,6 @@
 
 #include "kcalprefs.h"
 
-#include "calendarsupport_debug.h"
 #include "identitymanager.h"
 
 #include <Akonadi/EntityTreeModel>

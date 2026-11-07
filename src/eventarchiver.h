@@ -12,7 +12,6 @@
 
 #include <Akonadi/ETMCalendar>
 #include <Akonadi/Item>
-#include <KCalendarCore/Event>
 #include <KCalendarCore/Todo>
 
 #include <QObject>

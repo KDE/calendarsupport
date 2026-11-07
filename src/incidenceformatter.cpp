@@ -15,8 +15,6 @@
 
 #include <kcoreaddons_version.h>
 
-// #include "grantleetemplatemanager_p.h"
-
 #include <GrantleeTheme/GrantleeKi18nLocalizer>
 
 #include <KTextTemplate/Engine>

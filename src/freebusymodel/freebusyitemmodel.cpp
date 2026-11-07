@@ -12,6 +12,7 @@
 #include <KLocalizedString>
 
 #include <QLocale>
+#include <QTimer>
 #include <QTimerEvent>
 
 using namespace Qt::Literals::StringLiterals;

@@ -13,6 +13,7 @@
 #include <Akonadi/CalendarUtils>
 #include <Akonadi/IncidenceChanger>
 
+#include <KCalendarCore/Event>
 #include <KCalendarCore/Exceptions>
 #include <KCalendarCore/FileStorage>
 #include <KCalendarCore/ICalFormat>

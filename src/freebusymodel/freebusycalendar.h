@@ -12,7 +12,6 @@
 #include "freebusyitemmodel.h"
 
 #include <KCalendarCore/Calendar>
-#include <KCalendarCore/Event>
 
 #include <memory>
 

@@ -10,6 +10,8 @@
 
 #include "ui_calprintyearconfig_base.h"
 
+#include <KLocalizedString>
+
 namespace CalendarSupport
 {
 class CalPrintYear : public CalPrintPluginBase

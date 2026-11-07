@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include <KCalendarCore/Incidence>
+#include <KCalendarCore/IncidenceBase>
 
 #include <QDate>
 

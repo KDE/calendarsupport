@@ -29,6 +29,7 @@ class CalFilter;
 class QAbstractItemModel;
 class QDrag;
 class QMimeData;
+class QObject;
 class QUrl;
 class QWidget;
 

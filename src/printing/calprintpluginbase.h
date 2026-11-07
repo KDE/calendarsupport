@@ -22,6 +22,7 @@
 
 class PrintCellItem;
 class QBrush;
+class QFont;
 class QPainter;
 
 #define PORTRAIT_HEADER_HEIGHT 80 // header height, for portrait orientation

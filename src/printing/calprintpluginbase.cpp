@@ -22,10 +22,12 @@
 
 #include <KLocalizedString>
 #include <QAbstractTextDocumentLayout>
+#include <QFontMetrics>
 #include <QFrame>
 #include <QLabel>
 #include <QLocale>
 #include <QPainter>
+#include <QPolygon>
 #include <QTextCursor>
 #include <QTextDocument>
 #include <QTextDocumentFragment>
