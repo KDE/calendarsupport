@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-08 02:58+0000\n"
-"PO-Revision-Date: 2026-10-26 07:46+0200\n"
+"PO-Revision-Date: 2026-11-11 22:59+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -578,7 +578,7 @@ msgstr "<i>Завершено:</i> %1"
 #, kde-format
 msgctxt "To-do's percent complete:"
 msgid "<i>Percent Done:</i> %1%"
-msgstr "<i>Выполнено:</i> %1%"
+msgstr "<i>Выполнено:</i> %1 %"
 
 #: incidenceformatter.cpp:856
 #, kde-format
@@ -2266,7 +2266,7 @@ msgstr "Список задач"
 #: printing/calprintpluginbase.cpp:1726 templates/todo.html:191
 #, kde-format
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: printing/calprintdefaultplugins.cpp:1627
 #, kde-format

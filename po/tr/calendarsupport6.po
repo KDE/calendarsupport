@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-08 02:58+0000\n"
-"PO-Revision-Date: 2026-11-03 21:31+0300\n"
+"PO-Revision-Date: 2026-11-10 21:38+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 26.08.0\n"
+"X-Generator: Lokalize 26.08.2\n"
 "(http: //www.transifex.com/projects/p/kdepim-k-tr/language/tr/)\n"
 "X-POOTLE-MTIME: 1413102218.000000\n"
 
@@ -2325,7 +2325,7 @@ msgstr "Tüm yapılacakları bir liste halinde (ağaç görünümü gibi) yazdı
 #, kde-format
 msgctxt "@info"
 msgid "Unable to print, an invalid print style was specified."
-msgstr "Yazdırılamıyor, geçersiz bir yazdırma biçemi belirtildi."
+msgstr "Yazdırılamıyor, geçersiz bir yazdırma stili belirtildi."
 
 #: printing/calprinter.cpp:121
 #, kde-format
@@ -2366,14 +2366,14 @@ msgid ""
 "style or to your printer's default setting."
 msgstr ""
 "Çıktınızın “dikey” veya “yatay” olarak yazdırılmasını seçin. Ayrıca seçilen "
-"biçeme en iyi uyan yönelimi veya yazıcının öntanımlı ayarlarını kullanmayı "
-"da seçebilirsiniz."
+"stile en iyi uyan yönelimi veya yazıcının öntanımlı ayarlarını kullanmayı da "
+"seçebilirsiniz."
 
 #: printing/calprinter.cpp:205
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Default Orientation of Selected Style"
-msgstr "Seçilen Biçemin Öntanımlı Yönünü Kullan"
+msgstr "Seçilen Stilin Öntanımlı Yönünü Kullan"
 
 #: printing/calprinter.cpp:206
 #, kde-format
