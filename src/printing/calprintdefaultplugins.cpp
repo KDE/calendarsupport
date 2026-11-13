@@ -101,7 +101,7 @@ static QString dateTimeToString(const QDateTime &date, bool dateOnly)
         return QLocale().toString(date.toLocalTime().date(), QLocale::LongFormat);
     }
 
-#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 31, 0)
+#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 32, 0)
     return QLocale().toString(date.toLocalTime(), QLocale::LongFormat);
 #else
     const KFormat format;
