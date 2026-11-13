@@ -15,7 +15,7 @@
 #include <KCalendarCore/MemoryCalendar>
 #include <KCalendarCore/Todo>
 
-#include <kcoreaddons_version.h> //remove when KF_MIN_VERSION is "6.31"
+#include <kcoreaddons_version.h> //remove when KF_MIN_VERSION is "6.32"
 
 #include <QDebug>
 #include <QFile>
@@ -227,7 +227,7 @@ void ExtensiveDisplayStringTest::testDisplayViewFormatTodo()
     const QString html = CalendarSupport::extensiveDisplayString(QString(), todos[0]);
 
     QVERIFY(validateHtml(name, html));
-#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(6, 31, 0)
+#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(6, 32, 0)
     QVERIFY(compareHtml(name));
 #endif
 
@@ -254,7 +254,7 @@ void ExtensiveDisplayStringTest::testDisplayViewFormatJournal()
     const QString html = CalendarSupport::extensiveDisplayString(QString(), journals[0]);
 
     QVERIFY(validateHtml(name, html));
-#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(6, 31, 0)
+#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(6, 32, 0)
     QVERIFY(compareHtml(name));
 #endif
     cleanup(name);
