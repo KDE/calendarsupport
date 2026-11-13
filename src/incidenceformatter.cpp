@@ -34,7 +34,7 @@ using namespace KCalendarCore;
 
 #include <ktexttohtml.h>
 
-#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(6, 31, 0)
+#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(6, 32, 0)
 #include <KFormat>
 #endif
 #include <KIconLoader>
@@ -1156,7 +1156,7 @@ QString IncidenceFormatter::dateTimeToString(const QDateTime &date, bool dateOnl
         return QLocale().toString(date.toLocalTime().date(), shortfmt ? QLocale::ShortFormat : QLocale::LongFormat);
     }
 
-#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 31, 0)
+#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 32, 0)
     return QLocale().toString(date.toLocalTime(), (shortfmt ? QLocale::ShortFormat : QLocale::LongFormat));
 #else
     const KFormat format;
