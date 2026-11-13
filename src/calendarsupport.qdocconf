@@ -9,6 +9,9 @@ documentationinheaders = true
 headerdirs += .
 sourcedirs += .
 
+excludedirs += \
+    freebusymodel/autotests
+
 outputformats = HTML
 
 depends += \
