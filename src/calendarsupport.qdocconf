@@ -1,6 +1,7 @@
 include($KDE_DOCS/global/qt-module-defaults.qdocconf)
 
 project = CalendarSupport
+moduleheader = calendarsupport_qdocmoduleheader.h
 description = Calendar Support library.
 
 
