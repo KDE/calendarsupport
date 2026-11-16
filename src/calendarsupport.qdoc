@@ -2,8 +2,8 @@
     \module CalendarSupport
     \title CalendarSupport C++ Classes
     \ingroup modules
-    \cmakepackage KPim6
-    \cmakecomponent CalendarSupport
+    \cmakepackage KPim6CalendarSupport
+    \cmaketargetitem KPim6::CalendarSupport
 
     \brief Calendar Support library.
 */
