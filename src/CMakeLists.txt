@@ -186,6 +186,12 @@ install(
     COMPONENT Devel
 )
 
+set(CALENDARSUPPORT_FILES
+    ${CalendarSupport_HEADERS}
+    ${CalendarSupport_printer_HEADERS}
+    ${CalendarSupport_freebusy_HEADERS}
+)
+
 install(
     FILES
         ${CMAKE_CURRENT_BINARY_DIR}/calendarsupport_export.h
@@ -195,9 +201,7 @@ install(
         ${CMAKE_CURRENT_BINARY_DIR}/ui_calprintmonthconfig_base.h
         ${CMAKE_CURRENT_BINARY_DIR}/ui_calprinttodoconfig_base.h
         ${CMAKE_CURRENT_BINARY_DIR}/kcalprefs_base.h
-        ${CalendarSupport_HEADERS}
-        ${CalendarSupport_printer_HEADERS}
-        ${CalendarSupport_freebusy_HEADERS}
+        ${CALENDARSUPPORT_FILES}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/CalendarSupport/calendarsupport
     COMPONENT Devel
 )
@@ -223,9 +227,7 @@ ecm_installed_library_check_include_strings(KPim6CalendarSupport
     ${CMAKE_CURRENT_BINARY_DIR}/ui_calprintmonthconfig_base.h
     ${CMAKE_CURRENT_BINARY_DIR}/ui_calprinttodoconfig_base.h
     ${CMAKE_CURRENT_BINARY_DIR}/kcalprefs_base.h
-    ${CalendarSupport_HEADERS}
-    ${CalendarSupport_printer_HEADERS}
-    ${CalendarSupport_freebusy_HEADERS}
+    ${CALENDARSUPPORT_FILES}
     PREFIX calendarsupport
 )
 
