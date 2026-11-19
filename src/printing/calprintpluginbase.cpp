@@ -876,15 +876,12 @@ void CalPrintPluginBase::drawAgendaDayBox(QPainter &p,
         }
     }
 
-    QListIterator<CellItem *> it1(cells);
-    while (it1.hasNext()) {
-        CellItem *placeItem = it1.next();
+    for (CellItem *placeItem : std::as_const(cells)) {
         CellItem::placeItem(cells, placeItem);
     }
 
-    QListIterator<CellItem *> it2(cells);
-    while (it2.hasNext()) {
-        auto placeItem = static_cast<PrintCellItem *>(it2.next());
+    for (CellItem *cellItem : std::as_const(cells)) {
+        auto placeItem = static_cast<PrintCellItem *>(cellItem);
         drawAgendaItem(placeItem, p, startPrintDate, endPrintDate, minlen, newbox, includeDescription, includeCategories, excludeTime);
     }
     qDeleteAll(cells);
@@ -1423,9 +1420,7 @@ void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays
     }
 
     // For Multi-day events, line them up nicely so that the boxes don't overlap
-    QListIterator<CellItem *> it1(timeboxItems);
-    while (it1.hasNext()) {
-        CellItem *placeItem = it1.next();
+    for (CellItem *placeItem : std::as_const(timeboxItems)) {
         CellItem::placeItem(timeboxItems, placeItem);
     }
     QDateTime const starttime(start, QTime(0, 0, 0));
@@ -1433,8 +1428,8 @@ void CalPrintPluginBase::drawMonth(QPainter &p, QDate dt, QRect box, int maxdays
 
     QFont const oldfont(p.font());
     p.setFont(QFont(u"sans-serif"_s, 7));
-    while (it1.hasNext()) {
-        auto placeItem = static_cast<PrintCellItem *>(it1.next());
+    for (CellItem *cellItem : std::as_const(timeboxItems)) {
+        auto placeItem = static_cast<PrintCellItem *>(cellItem);
         int const minsToStart = starttime.secsTo(placeItem->start()) / 60;
         int const minsToEnd = starttime.secsTo(placeItem->end()) / 60;
 
