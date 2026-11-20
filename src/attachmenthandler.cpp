@@ -183,7 +183,6 @@ bool AttachmentHandler::view(const Attachment &attachment)
         if (tempUrl.isValid()) {
             auto job = new KIO::OpenUrlJob(tempUrl, attachment.mimeType());
             job->setDeleteTemporaryFile(true);
-            job->setRunExecutables(true);
             job->start();
         } else {
             stat = false;
