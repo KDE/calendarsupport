@@ -317,8 +317,7 @@ msgid "<placeholder>undefined</placeholder>"
 msgstr "<placeholder>未定义</placeholder>"
 
 #: eventarchiver.cpp:128
-#, fuzzy, kde-format
-#| msgid "There are no items before %1"
+#, kde-format
 msgctxt "@info"
 msgid "There are no items before %1"
 msgstr "在 %1 之前没有项目"
@@ -330,16 +329,13 @@ msgid "Archive"
 msgstr "归档"
 
 #: eventarchiver.cpp:160
-#, fuzzy, kde-format
-#| msgid ""
-#| "Delete all items before %1 without saving?\n"
-#| "The following items will be deleted:"
+#, kde-format
 msgctxt "@info"
 msgid ""
 "Delete all items before %1 without saving?\n"
 "The following items will be deleted:"
 msgstr ""
-"要删除 %1 前的所有项目而不保存吗？\n"
+"要删除 %1 之前的所有项目而不保存吗？\n"
 "下列项目将被删除："
 
 #: eventarchiver.cpp:164
@@ -349,30 +345,25 @@ msgid "Delete Old Items"
 msgstr "删除老项目"
 
 #: eventarchiver.cpp:277
-#, fuzzy, kde-format
-#| msgctxt "save failure cause unknown"
-#| msgid "Reason unknown"
+#, kde-format
 msgctxt "@info save failure cause unknown"
 msgid "Reason unknown"
 msgstr "原因未知"
 
 #: eventarchiver.cpp:279
-#, fuzzy, kde-format
-#| msgid "Cannot write archive file %1. %2"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive file %1. %2"
 msgstr "无法写入归档文件 %1。%2"
 
 #: eventarchiver.cpp:290
-#, fuzzy, kde-format
-#| msgid "Cannot write archive. %1"
+#, kde-format
 msgctxt "@info"
 msgid "Cannot write archive. %1"
 msgstr "无法写入归档。%1"
 
 #: eventarchiver.cpp:299
-#, fuzzy, kde-format
-#| msgid "Archiving events"
+#, kde-format
 msgctxt "@info/plain"
 msgid "Archiving events"
 msgstr "正在归档事件"
@@ -455,31 +446,25 @@ msgid "Duration:"
 msgstr "间隔："
 
 #: incidenceformatter.cpp:281
-#, fuzzy, kde-format
-#| msgctxt "monthname year"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "latitude longitude"
 msgid "%1 %2"
-msgstr "%2年%1"
+msgstr "%1 %2"
 
 #: incidenceformatter.cpp:341
 #, kde-format
 msgid "Show mail"
-msgstr ""
+msgstr "显示邮件"
 
 #: incidenceformatter.cpp:593
-#, fuzzy, kde-format
-#| msgid "1 hour "
-#| msgid_plural "%1 hours "
+#, kde-format
 msgctxt "hours part of duration"
 msgid "1 hour "
 msgid_plural "%1 hours "
 msgstr[0] "%1 小时"
 
 #: incidenceformatter.cpp:597
-#, fuzzy, kde-format
-#| msgid "1 minute "
-#| msgid_plural "%1 minutes "
+#, kde-format
 msgctxt "minutes part duration"
 msgid "1 minute "
 msgid_plural "%1 minutes "
@@ -490,183 +475,171 @@ msgstr[0] "%1 分钟"
 msgctxt "seconds part of duration"
 msgid "1 second"
 msgid_plural "%1 seconds"
-msgstr[0] ""
+msgstr[0] "%1 秒"
 
 #: incidenceformatter.cpp:763
 #, kde-format
 msgctxt "Event start"
 msgid "<i>From:</i> %1"
-msgstr ""
+msgstr "<i>发件人：</i> %1"
 
 #: incidenceformatter.cpp:765
 #, kde-format
 msgctxt "Event end"
 msgid "<i>To:</i> %1"
-msgstr ""
+msgstr "<i>收件人：</i> %1"
 
 #: incidenceformatter.cpp:767
 #, kde-format
 msgctxt "datetime range for event"
 msgid "<i>Date:</i> %1 - %2"
-msgstr ""
+msgstr "<i>日期：</i> %1 - %2"
 
 #: incidenceformatter.cpp:770 incidenceformatter.cpp:848
 #, kde-format
 msgid "<i>Date:</i> %1"
-msgstr ""
+msgstr "<i>日期：</i> %1"
 
 #: incidenceformatter.cpp:776
 #, kde-format
 msgctxt "time for event"
 msgid "<i>Time:</i> %1"
-msgstr ""
+msgstr "<i>时间：</i> %1"
 
 #: incidenceformatter.cpp:778
 #, kde-format
 msgctxt "time range for event"
 msgid "<i>Time:</i> %1 - %2"
-msgstr ""
+msgstr "<i>时间：</i> %1 - %2"
 
 #: incidenceformatter.cpp:811
 #, kde-format
 msgctxt "To-do's start date"
 msgid "<i>Start:</i> %1"
-msgstr ""
+msgstr "<i>开始：</i> %1"
 
 #: incidenceformatter.cpp:814
 #, kde-format
 msgctxt "To-do's due date"
 msgid "<i>Due:</i> %1"
-msgstr ""
+msgstr "<i>到期：</i> %1"
 
 #: incidenceformatter.cpp:821
-#, fuzzy, kde-format
-#| msgctxt "subitem Priority: N"
-#| msgid "Priority: %1\n"
+#, kde-format
 msgctxt "To-do's priority number"
 msgid "<i>Priority:</i> %1"
-msgstr "优先级：%1\n"
+msgstr "<i>优先级：</i> %1"
 
 #: incidenceformatter.cpp:826
 #, kde-format
 msgctxt "To-do's completed date"
 msgid "<i>Completed:</i> %1"
-msgstr ""
+msgstr "<i>完成时间：</i> %1"
 
 #: incidenceformatter.cpp:837
 #, kde-format
 msgctxt "To-do's percent complete:"
 msgid "<i>Percent Done:</i> %1%"
-msgstr ""
+msgstr "<i>完成进度：</i> %1%"
 
 #: incidenceformatter.cpp:856
 #, kde-format
 msgid "<i>Period start:</i> %1"
-msgstr ""
+msgstr "<i>周期开始：</i> %1"
 
 #: incidenceformatter.cpp:857
 #, kde-format
 msgid "<i>Period end:</i> %1"
-msgstr ""
+msgstr "<i>周期结束：</i> %1"
 
 #: incidenceformatter.cpp:882 templates/freebusy.html:5
 #, kde-format
 msgid "Free/Busy information for %1"
-msgstr ""
+msgstr "%1 的空闲/忙碌信息"
 
 #: incidenceformatter.cpp:902
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
+#, kde-format
 msgctxt "attendee name (attendee status)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
 #: incidenceformatter.cpp:904
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: incidenceformatter.cpp:930 incidenceformatter.cpp:1069
 #, kde-format
 msgctxt "ellipsis"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #: incidenceformatter.cpp:950
 #, kde-format
 msgid " (delegated by %1)"
-msgstr ""
+msgstr " (由 %1 委托)"
 
 #: incidenceformatter.cpp:953
 #, kde-format
 msgid " (delegated to %1)"
-msgstr ""
+msgstr " (委托给 %1)"
 
 #: incidenceformatter.cpp:973 templates/event.html:127 templates/todo.html:105
-#, fuzzy, kde-format
-#| msgid "Organizer: "
+#, kde-format
 msgid "Organizer:"
 msgstr "组织者："
 
 #: incidenceformatter.cpp:984 templates/event.html:139 templates/todo.html:117
 #, kde-format
 msgid "Chair:"
-msgstr ""
+msgstr "主席："
 
 #: incidenceformatter.cpp:991 templates/event.html:152 templates/todo.html:130
 #, kde-format
 msgid "Required Participants:"
-msgstr ""
+msgstr "必须出席者："
 
 #: incidenceformatter.cpp:998
 #, kde-format
 msgid "Optional Participants:"
-msgstr ""
+msgstr "可选出席者："
 
 #: incidenceformatter.cpp:1005 templates/event.html:178 templates/todo.html:156
 #, kde-format
 msgid "Observers:"
-msgstr ""
+msgstr "观察员："
 
 #: incidenceformatter.cpp:1027 templates/event.html:13
 #: templates/journal.html:14 templates/todo.html:14
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Select Calendar"
+#, kde-format
 msgid "Calendar:"
-msgstr "选择日历"
+msgstr "日历："
 
 #: incidenceformatter.cpp:1035 templates/event.html:21 templates/todo.html:22
-#, fuzzy, kde-format
-#| msgid "Location: "
+#, kde-format
 msgid "Location:"
-msgstr "位置："
+msgstr "地点："
 
 #: incidenceformatter.cpp:1041
 #, kde-format
 msgid "Map Coordinates:"
-msgstr ""
+msgstr "地图坐标："
 
 #: incidenceformatter.cpp:1048 templates/event.html:67 templates/todo.html:61
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip period duration"
-#| msgid "Duration:"
+#, kde-format
 msgid "Duration:"
-msgstr "间隔："
+msgstr "时长："
 
 #: incidenceformatter.cpp:1054 incidenceformatter.cpp:1060
 #: templates/event.html:75 templates/todo.html:69
 #, kde-format
 msgid "Recurrence:"
-msgstr ""
+msgstr "重复："
 
 #: incidenceformatter.cpp:1061 templates/todo.html:71
-#, fuzzy, kde-format
-#| msgctxt "except for listed dates"
-#| msgid " except"
+#, kde-format
 msgid "Exception"
-msgstr " 除外"
+msgstr "例外"
 
 #: incidenceformatter.cpp:1077 printing/calprintdefaultplugins.cpp:439
 #: templates/event.html:103 templates/journal.html:30 templates/todo.html:81
@@ -679,22 +652,20 @@ msgstr "描述："
 #, kde-format
 msgid "Comment:"
 msgid_plural "Comments:"
-msgstr[0] ""
+msgstr[0] "备注："
 
 #: incidenceformatter.cpp:1103 templates/event.html:119 templates/todo.html:97
-#, fuzzy, kde-format
-#| msgid "Reminder: "
-#| msgid_plural "%1 reminders: "
+#, kde-format
 msgid "Reminder:"
 msgid_plural "Reminders:"
-msgstr[0] "%1 个提醒："
+msgstr[0] "提醒："
 
 #: incidenceformatter.cpp:1131 templates/event.html:191
 #: templates/journal.html:46 templates/todo.html:169
 #, kde-format
 msgid "Tag:"
 msgid_plural "Tags:"
-msgstr[0] ""
+msgstr[0] "标签："
 
 #: incidenceformatter.cpp:1170 incidenceformatter.cpp:1196
 #: incidenceformatter.cpp:1208 printing/calprintdefaultplugins.cpp:349
@@ -718,52 +689,40 @@ msgstr[0] "%1 分钟"
 #: incidenceformatter.cpp:1199
 #, kde-format
 msgid "forever"
-msgstr ""
+msgstr "永远"
 
 #: incidenceformatter.cpp:1241
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 before the start"
+#, kde-format
 msgctxt "N days/hours/minutes before the start datetime"
 msgid "%1 before the start"
 msgstr "开始前 %1"
 
 #: incidenceformatter.cpp:1243
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 after the start"
+#, kde-format
 msgctxt "N days/hours/minutes after the start datetime"
 msgid "%1 after the start"
 msgstr "开始后 %1"
 
 #: incidenceformatter.cpp:1254
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 before the end"
+#, kde-format
 msgctxt "N days/hours/minutes before the due datetime"
 msgid "%1 before the to-do is due"
-msgstr "结束前 %1"
+msgstr "待办事项到期前 %1"
 
 #: incidenceformatter.cpp:1256
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 before the end"
+#, kde-format
 msgctxt "N days/hours/minutes before the end datetime"
 msgid "%1 before the end"
 msgstr "结束前 %1"
 
 #: incidenceformatter.cpp:1260
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 after the end"
+#, kde-format
 msgctxt "N days/hours/minutes after the due datetime"
 msgid "%1 after the to-do is due"
-msgstr "结束后 %1"
+msgstr "待办事项到期后 %1"
 
 #: incidenceformatter.cpp:1262
-#, fuzzy, kde-format
-#| msgctxt "N days/hours/minutes before/after the start/end"
-#| msgid "%1 after the end"
+#, kde-format
 msgctxt "N days/hours/minutes after the end datetime"
 msgid "%1 after the end"
 msgstr "结束后 %1"
@@ -772,46 +731,40 @@ msgstr "结束后 %1"
 #, kde-format
 msgctxt "reminder occurs at datetime"
 msgid "at %1"
-msgstr ""
+msgstr "于 %1"
 
 #: incidenceformatter.cpp:1287
-#, fuzzy, kde-format
-#| msgid "Repeats: "
+#, kde-format
 msgid "repeats once"
 msgid_plural "repeats %1 times"
-msgstr[0] "重复："
+msgstr[0] "重复 %1 次"
 
 #: incidenceformatter.cpp:1288
 #, kde-format
 msgctxt "interval is N days/hours/minutes"
 msgid "interval is %1"
-msgstr ""
+msgstr "间隔为 %1"
 
 #: incidenceformatter.cpp:1289
-#, fuzzy, kde-format
-#| msgctxt "summary, location"
-#| msgid "%1, %2"
+#, kde-format
 msgctxt "(repeat string, interval string)"
 msgid "(%1, %2)"
-msgstr "%1，%2"
+msgstr "(%1，%2)"
 
 #: incidenceformatter.cpp:1294
 #, kde-format
 msgctxt "alarm is disabled"
 msgid "disabled"
-msgstr ""
+msgstr "已禁用"
 
 #: incidenceformatter.cpp:1298
-#, fuzzy, kde-format
-#| msgctxt "blocking audio reminders for this calendar"
-#| msgid "audio"
+#, kde-format
 msgctxt "alarm will play a sound"
 msgid "audio"
-msgstr "音频类"
+msgstr "音频"
 
 #: incidenceformatter.cpp:1301
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
+#, kde-format
 msgctxt "the reminder string with its types list"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
@@ -851,10 +804,9 @@ msgstr "公开 (所有人可访问)"
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (JournalSecrecyPolicy), group (Personal Settings)
 #: kcalprefs.kcfg:20 kcalprefs.kcfg:35 kcalprefs.kcfg:50
-#, fuzzy, kde-format
-#| msgid "Confidential (accessible to you and some others)"
+#, kde-format
 msgid "Confidential (accessible to you and select others)"
-msgstr "机密 (您和某些人可访问)"
+msgstr "机密 (您和选定的人可访问)"
 
 #. i18n: ectx: label, entry (EventSecrecyPolicy), group (Personal Settings)
 #. i18n: ectx: label, entry (TodoSecrecyPolicy), group (Personal Settings)
@@ -2492,13 +2444,13 @@ msgstr ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">日记打印选项：</span></p></body></html>"
+"weight:600;\">日志打印选项：</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mAllJournals)
 #: printing/calprintjournalconfig_base.ui:30
 #, kde-format
 msgid "&All journal entries"
-msgstr "全部日记项(&A)"
+msgstr "全部日志项(&A)"
 
 #. i18n: ectx: property (text), widget (QRadioButton, mRangeJournals)
 #: printing/calprintjournalconfig_base.ui:43
@@ -3050,17 +3002,17 @@ msgstr "个人：%1"
 #: printing/journalprint.cpp:160
 #, kde-format
 msgid "Journal entries"
-msgstr "日记项"
+msgstr "日志项"
 
 #: printing/journalprint.h:33
 #, kde-format
 msgid "Print &journal"
-msgstr "打印日记(&J)"
+msgstr "打印日志(&J)"
 
 #: printing/journalprint.h:38
 #, kde-format
 msgid "Prints all journals for a given date range"
-msgstr "打印给定日期范围中的全部日记"
+msgstr "打印给定日期范围中的全部日志"
 
 #: printing/yearprint.h:33
 #, kde-format
@@ -3073,226 +3025,177 @@ msgid "Prints a calendar for an entire year"
 msgstr "打印一整年的日历"
 
 #: templates/attendee_row.html:17
-#, fuzzy
-#| msgid "Organizer: "
 msgid "organizer"
-msgstr "组织者："
+msgstr "组织者"
 
 #: templates/attendee_row.html:21
 msgid "myself"
-msgstr ""
+msgstr "我自己"
 
 #: templates/attendee_row.html:25
 #, kde-format
 msgid "delegated by %1)"
-msgstr ""
+msgstr "由 %1 委托)"
 
 #: templates/attendee_row.html:29
 #, kde-format
 msgid "delegated to %1)"
-msgstr ""
+msgstr "委托给 %1)"
 
 #: templates/attendee_row.html:36
-#, fuzzy
-#| msgctxt "blocking email reminders for this calendar"
-#| msgid "email"
 msgid "Send email"
-msgstr "电子邮件"
+msgstr "发送邮件"
 
 #: templates/event.html:5
-#, fuzzy
-#| msgid "Events:"
 msgid "Event"
-msgstr "事件："
+msgstr "事件"
 
 #: templates/event.html:37 templates/event.html:40 templates/event.html:47
 #: templates/event.html:50 templates/journal.html:22
-#, fuzzy
-#| msgid "Due date: "
 msgid "Date:"
-msgstr "截止日期："
+msgstr "日期："
 
 #: templates/event.html:38
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "<beginDate> - <endDate>"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: templates/event.html:41 templates/event.html:51
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "Date as string"
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: templates/event.html:48
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "<beginDateTime> - <endDateTime>"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: templates/event.html:54
 msgid "Time:"
-msgstr ""
+msgstr "时间："
 
 #: templates/event.html:56
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "<beginTime> - <endTime>"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: templates/event.html:58
-#, fuzzy, kde-format
-#| msgid "%1%"
+#, kde-format
 msgctxt "Time as string"
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: templates/event.html:77
-#, fuzzy
-#| msgctxt "except for listed dates"
-#| msgid " except"
 msgctxt "Exception in event recurrence"
 msgid "Exception"
-msgstr " 除外"
+msgstr "例外"
 
 #: templates/event.html:87
 msgid "Birthday:"
-msgstr ""
+msgstr "生日："
 
 #: templates/event.html:95
 msgid "Anniversary:"
-msgstr ""
+msgstr "纪念日："
 
 #: templates/event.html:165 templates/todo.html:143
 msgid "Optional participants:"
-msgstr ""
+msgstr "可选出席者："
 
 #: templates/event.html:199 templates/todo.html:198
-#, fuzzy
-#| msgid "1 Attachment:"
-#| msgid_plural "%1 Attachments:"
 msgid "Attachment:"
 msgid_plural "Attachments:"
-msgstr[0] "%1 个附件："
+msgstr[0] "附件："
 
 #: templates/event.html:212 templates/journal.html:55 templates/todo.html:212
-#, fuzzy, kde-format
-#| msgctxt "print date: formatted-datetime"
-#| msgid "printed: %1"
+#, kde-format
 msgid "Created: %1"
-msgstr "打印于：%1"
+msgstr "创建时间：%1"
 
 #: templates/event.html:213 templates/journal.html:56 templates/todo.html:213
-#, fuzzy, kde-format
-#| msgctxt "print date: formatted-datetime"
-#| msgid "printed: %1"
+#, kde-format
 msgid "Modified: %1"
-msgstr "打印于：%1"
+msgstr "修改时间：%1"
 
 #: templates/event.html:214 templates/journal.html:57 templates/todo.html:214
-#, fuzzy, kde-format
-#| msgid "Person: %1"
+#, kde-format
 msgid "Revision: %1"
-msgstr "个人：%1"
+msgstr "修订版本：%1"
 
 #: templates/freebusy.html:6
 #, kde-format
 msgid "Busy times in date range %1 - %2:"
-msgstr ""
+msgstr "日期范围在 %1 - %2 之间的忙碌时段："
 
 #: templates/freebusy.html:9
-#, fuzzy
-#| msgid "Busy"
 msgctxt "tag for busy period list"
 msgid "Busy:"
-msgstr "忙碌"
+msgstr "忙碌："
 
 #: templates/freebusy.html:13
 #, kde-format
 msgctxt "startDate for duration"
 msgid "%1 for %2"
-msgstr ""
+msgstr "%1 开始，持续 %2"
 
 #: templates/freebusy.html:16
-#, fuzzy, kde-format
-#| msgctxt "weekday, shortmonthname daynumber"
-#| msgid "%1, %2 %3"
+#, kde-format
 msgctxt "date, fromTime - toTime"
 msgid "%1, %2 - %3"
-msgstr "%2 %3日，%1"
+msgstr "%1, %2 - %3"
 
 #: templates/freebusy.html:18
-#, fuzzy, kde-format
-#| msgctxt "Description - date"
-#| msgid "%1 - %2"
+#, kde-format
 msgctxt "fromDateTime - endDateTime"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
 #: templates/incidence_header.html:10
-#, fuzzy
-#| msgid "Print &incidence"
 msgid "Recurring incidence"
-msgstr "打印发生事件(&I)"
+msgstr "重复事件"
 
 #: templates/incidence_header.html:14
 msgid "Incidence with a reminder"
-msgstr ""
+msgstr "有提醒的事件"
 
 #: templates/incidence_header.html:18
 msgid "Incidence is read only"
-msgstr ""
+msgstr "事件只读"
 
 #: templates/journal.html:5
-#, fuzzy
-#| msgid "Journals:"
 msgid "Journal"
-msgstr "日志："
+msgstr "日志"
 
 #: templates/todo.html:5
 msgid "Todo"
-msgstr ""
+msgstr "待办事项"
 
 #: templates/todo.html:37
-#, fuzzy
-#| msgctxt "@info:tooltip period start time"
-#| msgid "Start:"
 msgctxt "to-do start date/time"
 msgid "Start:"
-msgstr "开始日期："
+msgstr "开始："
 
 #: templates/todo.html:49
 msgctxt "to-do due date/time"
 msgid "Due:"
-msgstr ""
+msgstr "到期："
 
 #: templates/todo.html:177
-#, fuzzy
-#| msgid "Priority"
 msgid "Priority:"
-msgstr "优先级"
+msgstr "优先级："
 
 #: templates/todo.html:185
-#, fuzzy
-#| msgctxt "@label to-do percentage complete"
-#| msgid "Complete"
 msgctxt "Completed: date"
 msgid "Completed:"
-msgstr "完成"
+msgstr "完成时间："
 
 #: templates/todo.html:190
-#, fuzzy
-#| msgctxt "@option sort by percent completed"
-#| msgid "Percent Complete"
 msgid "Percent done:"
-msgstr "完成百分比"
+msgstr "完成进度："
 
 #: utils.cpp:249
 #, kde-format
@@ -3419,6 +3322,3 @@ msgstr "%1 (%2)"
 msgctxt "replace pattern for holidayname (countrycode)"
 msgid "^%1 \\(.*\\)"
 msgstr "^%1 \\(.*\\)"
-
-#~ msgid "Confidential (accessible to you and others)"
-#~ msgstr "机密 (您和他人可访问)"
