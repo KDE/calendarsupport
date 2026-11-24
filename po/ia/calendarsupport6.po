@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-08 02:58+0000\n"
+"POT-Creation-Date: 2026-11-24 01:06+0000\n"
 "PO-Revision-Date: 2026-10-26 16:44+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -323,12 +323,12 @@ msgstr ""
 "Le invitation de calendario immagazinate in iste message de e-posta es "
 "corrupte. Non pote continuar."
 
-#: attachmenthandler.cpp:190 attachmenthandler.cpp:245
+#: attachmenthandler.cpp:189 attachmenthandler.cpp:244
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Incapace de crear un file temporanee per le attachamento."
 
-#: attachmenthandler.cpp:223
+#: attachmenthandler.cpp:222
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"

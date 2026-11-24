@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-08 02:58+0000\n"
+"POT-Creation-Date: 2026-11-24 01:06+0000\n"
 "PO-Revision-Date: 2026-10-05 11:44+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -318,12 +318,12 @@ msgid ""
 msgstr ""
 "Viestiin tallennettu kalenterikutsu on jollakin tapaa rikki. Ei voida jatkaa."
 
-#: attachmenthandler.cpp:190 attachmenthandler.cpp:245
+#: attachmenthandler.cpp:189 attachmenthandler.cpp:244
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Ei voida luoda liitteestä väliaikaistiedostoa."
 
-#: attachmenthandler.cpp:223
+#: attachmenthandler.cpp:222
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"

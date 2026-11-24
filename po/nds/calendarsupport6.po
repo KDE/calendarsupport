@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-08 02:58+0000\n"
+"POT-Creation-Date: 2026-11-24 01:06+0000\n"
 "PO-Revision-Date: 2014-08-13 22:18+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -325,12 +325,12 @@ msgid ""
 msgstr ""
 "Disse Nettbreef bargt en schaadhaftig Inladen. Wiedermaken nich mööglich."
 
-#: attachmenthandler.cpp:190 attachmenthandler.cpp:245
+#: attachmenthandler.cpp:189 attachmenthandler.cpp:244
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "För de Bilaag lett sik keen Temporeerdatei opstellen."
 
-#: attachmenthandler.cpp:223
+#: attachmenthandler.cpp:222
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgctxt "@title:window"

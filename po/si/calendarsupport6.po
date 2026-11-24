@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-08 02:58+0000\n"
+"POT-Creation-Date: 2026-11-24 01:06+0000\n"
 "PO-Revision-Date: 2011-05-05 13:59+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -285,12 +285,12 @@ msgid ""
 "Unable to continue."
 msgstr ""
 
-#: attachmenthandler.cpp:190 attachmenthandler.cpp:245
+#: attachmenthandler.cpp:189 attachmenthandler.cpp:244
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 
-#: attachmenthandler.cpp:223
+#: attachmenthandler.cpp:222
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"

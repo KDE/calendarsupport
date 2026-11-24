@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-08 02:58+0000\n"
+"POT-Creation-Date: 2026-11-24 01:06+0000\n"
 "PO-Revision-Date: 2012-12-25 15:13+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -341,12 +341,12 @@ msgid ""
 msgstr ""
 "ការ​អញ្ជើញ​ប្រតិទិន​ដែល​រក្សាទុក​ក្នុង​សារ​អ៊ីមែល​​ត្រូវ​បានខូច​ក្នុង​មធ្យោបាយ​មួយ​ចំនួន​ ។​ មិន​​អាច​បន្ត​បាន​ឡើយ​ ។"
 
-#: attachmenthandler.cpp:190 attachmenthandler.cpp:245
+#: attachmenthandler.cpp:189 attachmenthandler.cpp:244
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "មិន​អាច​បង្កើត​ឯកសារ​បណ្ដោះអាសន្ន​ សម្រាប់​ឯកសារ​ភ្ជាប់​បាន​ឡើយ​ ។"
 
-#: attachmenthandler.cpp:223
+#: attachmenthandler.cpp:222
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgctxt "@title:window"

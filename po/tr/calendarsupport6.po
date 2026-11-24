@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-08 02:58+0000\n"
-"PO-Revision-Date: 2026-11-16 18:53+0300\n"
+"POT-Creation-Date: 2026-11-24 01:06+0000\n"
+"PO-Revision-Date: 2026-11-23 18:10+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -326,12 +326,12 @@ msgstr ""
 "Bu e-posta iletisinde depolanmış takvim daveti bir şekilde bozulmuş. "
 "Sürdürülemiyor."
 
-#: attachmenthandler.cpp:190 attachmenthandler.cpp:245
+#: attachmenthandler.cpp:189 attachmenthandler.cpp:244
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Ek için geçici dosya oluşturulamıyor."
 
-#: attachmenthandler.cpp:223
+#: attachmenthandler.cpp:222
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
@@ -869,7 +869,7 @@ msgstr "Günce girdileri:"
 #: kcalprefs.kcfg:62
 #, kde-format
 msgid "Default appointment time"
-msgstr "Öntanımlı buluşma zamanı"
+msgstr "Varsayılan buluşma zamanı"
 
 #. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
 #: kcalprefs.kcfg:63
@@ -878,14 +878,14 @@ msgid ""
 "Enter the default time for events here. The default is used if you do not "
 "supply a start time."
 msgstr ""
-"Etkinlikler için öntanımlı zamanı buraya girin. Bir başlangıç zamanı "
-"belirtmediğinizde öntanımlı değer kullanılacaktır."
+"Etkinlikler için varsayılan zamanı buraya girin. Bir başlangıç zamanı "
+"belirtmediğinizde varsayılan değer kullanılacaktır."
 
 #. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:67
 #, kde-format
 msgid "Default duration of new appointment (HH:MM)"
-msgstr "Yeni buluşma için öntanımlı süre (SS:DD)"
+msgstr "Yeni buluşma için varsayılan süre (SS:DD)"
 
 #. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
 #: kcalprefs.kcfg:68
@@ -894,14 +894,14 @@ msgid ""
 "Enter default duration for events here. The default is used if you do not "
 "supply an end time."
 msgstr ""
-"Etkinlikler için öntanımlı süreyi buraya girin. Bir bitiş süresi "
-"belirmemişseniz öntanımlı değerler kullanılacaktır."
+"Etkinlikler için varsayılan süreyi buraya girin. Bir bitiş süresi "
+"belirmemişseniz varsayılan değerler kullanılacaktır."
 
 #. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:72
 #, kde-format
 msgid "Enable a default sound file for audio reminders"
-msgstr "Sesli anımsatıcılar için öntanımlı bir ses dosyası etkinleştir"
+msgstr "Sesli anımsatıcılar için varsayılan bir ses dosyası etkinleştir"
 
 #. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:73
@@ -911,7 +911,7 @@ msgid ""
 "default sound file for new reminders. You can always specify another file in "
 "the Reminder configuration accessible from the Event or To-do editors."
 msgstr ""
-"Belirtilen dosyanın yeni anımsatıcılar için öntanımlı ses dosyası olarak "
+"Belirtilen dosyanın yeni anımsatıcılar için varsayılan ses dosyası olarak "
 "kullanılmasını etkinleştirmek istiyorsanız bu kutuyu işaretleyin. Her zaman, "
 "Etkinlik veya Yapılacak Listesi düzenleyicilerinden erişilebilen Anımsatıcı "
 "yapılandırmasını kullanarak başka bir dosyayı belirtebilirsiniz."
@@ -920,7 +920,7 @@ msgstr ""
 #: kcalprefs.kcfg:77
 #, kde-format
 msgid "Default audio file"
-msgstr "Öntanımlı ses dosyası"
+msgstr "Varsayılan ses dosyası"
 
 #. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
 #: kcalprefs.kcfg:78
@@ -930,7 +930,7 @@ msgid ""
 "always specify another file in the Reminder configuration accessible from "
 "the Event or To-do editors."
 msgstr ""
-"Yeni anımsatıcılar için öntanımlı ses dosyası olarak kullanılacak bir dosya "
+"Yeni anımsatıcılar için varsayılan ses dosyası olarak kullanılacak bir dosya "
 "ayarlayın. Her zaman, Etkinlik veya Yapılacak Listesi düzenleyicilerinden "
 "erişilebilen Anımsatıcı yapılandırmasını kullanarak başka bir dosyayı "
 "belirtebilirsiniz."
@@ -956,7 +956,7 @@ msgstr ""
 #: kcalprefs.kcfg:83
 #, kde-format
 msgid "By default, enable reminders for new events"
-msgstr "Yeni etkinlikler için anımsatıcılara öntanımlı olarak izin ver"
+msgstr "Yeni etkinlikler için anımsatıcılara varsayılan olarak izin ver"
 
 #. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
 #: kcalprefs.kcfg:87
@@ -979,13 +979,13 @@ msgstr ""
 #: kcalprefs.kcfg:89
 #, kde-format
 msgid "By default, enable reminders for new to-dos"
-msgstr "Yeni yapılacak işler için anımsatıcılara öntanımlı olarak izin ver"
+msgstr "Yeni yapılacak işler için anımsatıcılara varsayılan olarak izin ver"
 
 #. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:93
 #, kde-format
 msgid "Default reminder time"
-msgstr "Öntanımlı anımsatma zamanı"
+msgstr "Varsayılan anımsatma zamanı"
 
 #. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:94
@@ -994,14 +994,14 @@ msgid ""
 "Enter the default reminder time for all newly created items. The time unit "
 "is specified in the adjacent combobox."
 msgstr ""
-"Yeni oluşturulan bütün ögeler için öntanımlı anımsatıcı süresini girin. "
+"Yeni oluşturulan bütün ögeler için varsayılan anımsatıcı süresini girin. "
 "Zaman birimi, yanındaki çoklu kutuyla belirlenecektir."
 
 #. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
 #: kcalprefs.kcfg:95
 #, kde-format
 msgid "Default time for reminders"
-msgstr "Anımsatıcılar için öntanımlı zaman"
+msgstr "Anımsatıcılar için varsayılan zaman"
 
 #. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
 #: kcalprefs.kcfg:99
@@ -1010,14 +1010,14 @@ msgid ""
 "Enter the default reminder time units for all newly created items. The time "
 "is specified in the adjacent spinbox."
 msgstr ""
-"Yeni oluşturulan bütün unsurlar için öntanımlı anımsatıcı süre birimini "
+"Yeni oluşturulan bütün unsurlar için varsayılan anımsatıcı süre birimini "
 "girin. Süre, yanındaki kaydırma kutucuğundan ayarlanacaktır."
 
 #. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
 #: kcalprefs.kcfg:100
 #, kde-format
 msgid "Default time unit for reminders"
-msgstr "Anımsatıcılar için öntanımlı zaman birimi"
+msgstr "Anımsatıcılar için varsayılan zaman birimi"
 
 #. i18n: ectx: label, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:107
@@ -1029,7 +1029,7 @@ msgstr "Gün başlangıcı"
 #: kcalprefs.kcfg:108
 #, kde-format
 msgid "Set the default starting time for new events"
-msgstr "Yeni etkinlikler için öntanımlı başlangıç zamanını ayarla"
+msgstr "Yeni etkinlikler için varsayılan başlangıç zamanını ayarla"
 
 #. i18n: ectx: whatsthis, entry (DayBegins), group (Time &amp; Date)
 #: kcalprefs.kcfg:109
@@ -2366,20 +2366,20 @@ msgid ""
 "style or to your printer's default setting."
 msgstr ""
 "Çıktınızın “dikey” veya “yatay” olarak yazdırılmasını seçin. Ayrıca seçilen "
-"stile en iyi uyan yönelimi veya yazıcının öntanımlı ayarlarını kullanmayı da "
-"seçebilirsiniz."
+"stile en iyi uyan yönelimi veya yazıcının varsayılan ayarlarını kullanmayı "
+"da seçebilirsiniz."
 
 #: printing/calprinter.cpp:205
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Default Orientation of Selected Style"
-msgstr "Seçilen Stilin Öntanımlı Yönünü Kullan"
+msgstr "Seçilen Stilin Varsayılan Yönünü Kullan"
 
 #: printing/calprinter.cpp:206
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Use Printer Default"
-msgstr "Yazıcının Öntanımlı Değerlerini Kullan"
+msgstr "Yazıcının Varsayılan Değerlerini Kullan"
 
 #: printing/calprinter.cpp:207
 #, kde-format
@@ -3345,13 +3345,13 @@ msgstr "Ögenin saklandığı yerdeki takvimi seç."
 #, kde-format
 msgctxt "this is the default event calendar"
 msgid "%1 (Default Event Calendar)"
-msgstr "%1 (Öntanımlı Etkinlik Takvimi)"
+msgstr "%1 (Varsayılan Etkinlik Takvimi)"
 
 #: utils.cpp:356
 #, kde-format
 msgctxt "this is the default todo calendar"
 msgid "%1 (Default Todo Calendar)"
-msgstr "%1 (Öntanımlı Yapılacaklar Takvimi)"
+msgstr "%1 (Varsayılan Yapılacaklar Takvimi)"
 
 #: utils.cpp:367
 #, kde-format

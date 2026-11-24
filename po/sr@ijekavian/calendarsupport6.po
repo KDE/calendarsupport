@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-08 02:58+0000\n"
+"POT-Creation-Date: 2026-11-24 01:06+0000\n"
 "PO-Revision-Date: 2016-03-20 14:17+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -325,13 +325,13 @@ msgstr ""
 "Календарска позивница складиштена у овој поруци е‑поште некако је искварена. "
 "Не могу да наставим."
 
-#: attachmenthandler.cpp:190 attachmenthandler.cpp:245
+#: attachmenthandler.cpp:189 attachmenthandler.cpp:244
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr "Не могу да направим привремени фајл за прилог."
 
 # >> @title:window
-#: attachmenthandler.cpp:223
+#: attachmenthandler.cpp:222
 #, fuzzy, kde-format
 #| msgid "Save Attachment"
 msgctxt "@title:window"

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendarsupport6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-08 02:58+0000\n"
+"POT-Creation-Date: 2026-11-24 01:06+0000\n"
 "PO-Revision-Date: 2026-11-21 13:24+0100\n"
 "Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -335,13 +335,13 @@ msgstr ""
 "Die Kalendereinladung aus dieser E-Mail scheint defekt zu sein. Es kann "
 "nicht fortgefahren werden."
 
-#: attachmenthandler.cpp:190 attachmenthandler.cpp:245
+#: attachmenthandler.cpp:189 attachmenthandler.cpp:244
 #, kde-format
 msgid "Unable to create a temporary file for the attachment."
 msgstr ""
 "Es war nicht möglich eine temporäre Datei für diesen Anhang zu erstellen."
 
-#: attachmenthandler.cpp:223
+#: attachmenthandler.cpp:222
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Attachment"
