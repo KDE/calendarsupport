@@ -26,6 +26,8 @@ public:
      */
     CellItem() = default;
 
+    /*!
+     */
     virtual ~CellItem() = default;
 
     /*!

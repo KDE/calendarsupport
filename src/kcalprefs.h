@@ -70,8 +70,14 @@ public:
     void fillMailDefaults();
 
 protected:
+    /*!
+     */
     void usrSetDefaults() override;
+    /*!
+     */
     void usrRead() override;
+    /*!
+     */
     bool usrSave() override;
 
 public:

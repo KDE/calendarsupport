@@ -106,8 +106,12 @@ bool isValidIncidenceItemUrl(const QUrl &url);
  */
 CALENDARSUPPORT_EXPORT bool canDecode(const QMimeData *mimeData);
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT QList<QUrl> incidenceItemUrls(const QMimeData *mimeData);
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT bool mimeDataHasIncidence(const QMimeData *mimeData);
 
 #ifndef QT_NO_DRAGANDDROP
@@ -144,18 +148,30 @@ CALENDARSUPPORT_EXPORT Akonadi::Item::List applyCalFilter(const Akonadi::Item::L
 CALENDARSUPPORT_EXPORT Akonadi::Collection
 selectCollection(QWidget *parent, int &dialogCode, const QStringList &mimeTypes, const Akonadi::Collection &defaultCollection = Akonadi::Collection());
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT Akonadi::Item itemFromIndex(const QModelIndex &index);
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT Akonadi::Item::List
 itemsFromModel(const QAbstractItemModel *model, const QModelIndex &parentIndex = QModelIndex(), int start = 0, int end = -1);
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT Akonadi::Collection::List
 collectionsFromModel(const QAbstractItemModel *model, const QModelIndex &parentIndex = QModelIndex(), int start = 0, int end = -1);
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT Akonadi::Collection::Id collectionIdFromIndex(const QModelIndex &index);
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT Akonadi::Collection::List collectionsFromIndexes(const QModelIndexList &indexes);
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT QString subMimeTypeForIncidence(const KCalendarCore::Incidence::Ptr &incidence);
 
 /*!
@@ -207,9 +223,15 @@ CALENDARSUPPORT_EXPORT QString extensiveDisplayString(const QString &sourceName,
  */
 CALENDARSUPPORT_EXPORT QStringList holiday(QDate date, const QStringList &categories = QStringList());
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT QStringList categories(const KCalendarCore::Incidence::List &incidences);
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT bool mergeCalendar(const QString &srcFilename, const KCalendarCore::Calendar::Ptr &destCalendar);
 
+/*!
+ */
 CALENDARSUPPORT_EXPORT void createAlarmReminder(const KCalendarCore::Alarm::Ptr &alarm, KCalendarCore::IncidenceBase::IncidenceType type);
 }

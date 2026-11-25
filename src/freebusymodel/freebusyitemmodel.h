@@ -29,10 +29,17 @@ namespace CalendarSupport
  * freebusy item.
  */
 class FreeBusyItemModelPrivate;
+/*!
+ * \class CalendarSupport::FreeBusyItemModel
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/FreeBusyItemModel
+ */
 class CALENDARSUPPORT_EXPORT FreeBusyItemModel : public QAbstractItemModel
 {
     Q_OBJECT
 public:
+    /*!
+     */
     enum Roles {
         AttendeeRole = Qt::UserRole,
         FreeBusyRole,

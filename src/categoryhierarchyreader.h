@@ -35,11 +35,21 @@ public:
     [[nodiscard]] static QStringList path(QString string);
 
 protected:
+    /*!
+     */
     CategoryHierarchyReader() = default;
 
+    /*!
+     */
     virtual void clear() = 0;
+    /*!
+     */
     virtual void goUp() = 0;
+    /*!
+     */
     virtual void addChild(const QString &label, const QVariant &userData = QVariant()) = 0;
+    /*!
+     */
     virtual int depth() const = 0;
 };
 

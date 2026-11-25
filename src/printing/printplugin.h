@@ -17,12 +17,17 @@
 
 namespace CalendarSupport
 {
-/**
+/*!
+ * \class CalendarSupport::CalPrinterBase
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/PrintPlugin
   Base class of Calendar printer class.
 */
 class CalPrinterBase
 {
 public:
+    /*!
+     */
     enum PrintType {
         Incidence = 100,
         Day = 200,
@@ -36,56 +41,71 @@ public:
     };
 };
 
-/**
+/*!
+ * \class CalendarSupport::PrintPlugin
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/PrintPlugin
   Base class for Calendar printing classes. Each sub class represents one
   calendar print format.
 */
 class PrintPlugin
 {
 public:
+    /*!
+     */
     PrintPlugin()
         : mConfigWidget(nullptr)
     {
     }
 
+    /*!
+     */
     virtual ~PrintPlugin() = default;
 
     using List = QList<PrintPlugin *>;
 
+    /*!
+     */
     virtual void setConfig(KConfig *cfg)
     {
         mConfig = cfg;
     }
 
+    /*!
+     */
     virtual void setCalendar(const KCalendarCore::Calendar::Ptr &cal)
     {
         mCalendar = cal;
     }
 
+    /*!
+     */
     virtual void setSelectedIncidences(const KCalendarCore::Incidence::List &inc)
     {
         mSelectedIncidences = inc;
     }
 
+    /*!
+     */
     [[nodiscard]] virtual KCalendarCore::Incidence::List selectedIncidences() const
     {
         return mSelectedIncidences;
     }
 
-    /**
+    /*!
      Returns KConfig group name where store settings
     */
     [[nodiscard]] virtual QString groupName() const = 0;
-    /**
+    /*!
       Returns short description of print format.
     */
     [[nodiscard]] virtual QString description() const = 0;
-    /**
+    /*!
       Returns long description of print format.
     */
     [[nodiscard]] virtual QString info() const = 0;
 
-    /**
+    /*!
       Returns the sort ID of the plugin. This value will be used to identify
       the config widget in the widget stack, and to sort the plugin name in the
       print style selection list.
@@ -98,7 +118,7 @@ public:
         return -1;
     }
 
-    /**
+    /*!
       Returns true if the plugin should be enabled; false otherwise.
     */
     [[nodiscard]] virtual bool enabled() const
@@ -106,6 +126,8 @@ public:
         return false;
     }
 
+    /*!
+     */
     QWidget *configWidget(QWidget *w)
     {
         if (!mConfigWidget) {
@@ -118,14 +140,16 @@ public:
 
     /* Create the config widget. setSettingsWidget will be automatically
        called on it */
+    /*!
+     */
     virtual QWidget *createConfigWidget(QWidget *) = 0;
 
-    /**
+    /*!
       Actually do the printing.
     */
     virtual void doPrint(QPrinter *printer) = 0;
 
-    /**
+    /*!
       Orientation of printout. Default is Portrait. If your plugin wants
       to use some other orientation as default (e.g. depending on some
       config settings), implement this function in your subclass and
@@ -136,7 +160,7 @@ public:
         return QPageLayout::Portrait;
     }
 
-    /**
+    /*!
       Load complete configuration.  Each implementation calls its parent's
       implementation to load parent configuration options, then loads its own.
     */
@@ -144,7 +168,7 @@ public:
     {
     }
 
-    /**
+    /*!
       Save complete configuration.  Each implementation saves its own
       configuration options, then calls its parent's implementation to save
       parent options.
@@ -154,21 +178,21 @@ public:
     }
 
 public:
-    /**
+    /*!
       Read settings from configuration widget and apply them to current object.
     */
     virtual void readSettingsWidget()
     {
     }
 
-    /**
+    /*!
       Set configuration widget to reflect settings of current object.
     */
     virtual void setSettingsWidget()
     {
     }
 
-    /**
+    /*!
       Set date range which should be printed.
     */
     virtual void setDateRange(const QDate &from, const QDate &to)
@@ -178,16 +202,28 @@ public:
     }
 
 protected:
+    /*!
+     */
     QDate mFromDate;
+    /*!
+     */
     QDate mToDate;
 
 protected:
+    /*!
+     */
     QPointer<QWidget> mConfigWidget;
-    /** The printer object. This will only be available in the doPrint method
+    /*! The printer object. This will only be available in the doPrint method
         of the selected plugin */
     QPrinter *mPrinter = nullptr;
+    /*!
+     */
     KCalendarCore::Calendar::Ptr mCalendar;
+    /*!
+     */
     KCalendarCore::Incidence::List mSelectedIncidences;
+    /*!
+     */
     KConfig *mConfig = nullptr;
 };
 

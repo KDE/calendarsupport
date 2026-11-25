@@ -26,6 +26,8 @@ class CALENDARSUPPORT_EXPORT FreePeriodModel : public QAbstractTableModel
 {
     Q_OBJECT
 public:
+    /*!
+     */
     enum Roles {
         PeriodRole = Qt::UserRole
     };

@@ -43,7 +43,11 @@ class CALENDARSUPPORT_EXPORT EventArchiver : public QObject
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit EventArchiver(QObject *parent = nullptr);
+    /*!
+     */
     ~EventArchiver() override;
 
     /*!

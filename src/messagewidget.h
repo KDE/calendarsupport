@@ -43,6 +43,8 @@ public:
      */
 
 protected:
+    /*!
+     */
     [[nodiscard]] bool eventFilter(QObject *watched, QEvent *event) override;
     /*!
      * Handles the show event for the message widget.

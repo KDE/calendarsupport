@@ -7,3 +7,9 @@
 
     \brief Calendar Support library.
 */
+
+/*!
+    \namespace CalendarSupport
+    \inmodule CalendarSupport
+    \brief The CalendarSupport namespace contains the classes of the CalendarSupport module.
+*/

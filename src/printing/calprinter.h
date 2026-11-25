@@ -31,6 +31,8 @@ class CALENDARSUPPORT_EXPORT CalPrinter : public QObject, public CalPrinterBase
 {
     Q_OBJECT
 public:
+    /*!
+     */
     enum ePrintOrientation {
         eOrientPlugin = 0,
         eOrientPrinter,
@@ -48,6 +50,8 @@ public:
     */
     CalPrinter(QWidget *par, const KCalendarCore::Calendar::Ptr &calendar, bool uniqItem = false);
 
+    /*!
+     */
     ~CalPrinter() override;
 
     /*!
@@ -71,9 +75,13 @@ private Q_SLOTS:
     void doPrint(CalendarSupport::PrintPlugin *selectedStyle, CalendarSupport::CalPrinter::ePrintOrientation dlgorientation, bool preview = false);
 
 public:
+    /*!
+     */
     void print(int type, QDate fd, QDate td, const KCalendarCore::Incidence::List &selectedIncidences = KCalendarCore::Incidence::List(), bool preview = false);
 
 protected:
+    /*!
+     */
     PrintPlugin::List mPrintPlugins;
 
 private:
@@ -83,20 +91,39 @@ private:
     const bool mUniqItem;
 };
 
+/*!
+ * \class CalendarSupport::CalPrintDialog
+ * \inmodule CalendarSupport
+ * \inheaderfile CalendarSupport/CalPrinter
+ */
 class CalPrintDialog : public QDialog
 {
     Q_OBJECT
 public:
+    /*!
+     */
     explicit CalPrintDialog(int initialPrintType, const PrintPlugin::List &plugins, QWidget *parent = nullptr, bool mUniqItem = false);
 
+    /*!
+     */
     ~CalPrintDialog() override;
 
+    /*!
+     */
     PrintPlugin *selectedPlugin();
+    /*!
+     */
     void setOrientation(CalPrinter::ePrintOrientation orientation);
+    /*!
+     */
     CalPrinter::ePrintOrientation orientation() const;
 
 public Q_SLOTS:
+    /*!
+     */
     void setPrintType(QAbstractButton *button);
+    /*!
+     */
     void setPreview(bool);
 
 private:
