@@ -111,7 +111,6 @@ target_link_libraries(
         KF6::ConfigGui
         Qt::PrintSupport
     PRIVATE
-        KF6::TextCustomEditor
         KF6::I18n
         KF6::Completion
         KF6::KIOWidgets
